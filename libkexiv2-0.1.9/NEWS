@@ -1,0 +1,81 @@
+0.1.9
+------------------------------------------------------------------------
+- Fix bug about to record an empty Exif or Iptc metadata container. 
+
+0.1.8
+------------------------------------------------------------------------
+
+- API changed: Move all Exiv2 classes acess methods to interanl provate container.
+               ABI number set to 5.0.0.
+- Fix broken compilation with Exiv2 0.18.
+- Support TIFF metadata writting mode (require Exiv2 >= 0.18).
+- Added new methods canWriteComment(), canWriteExif(), canWriteIptc().
+- Added new method supportMetadataWritting().
+- Do not change file time-stamp when metadata are changed.
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+
+001 ==> 158989 : digiKam won't start: MakerTagInfo registry full.
+002 ==> 157173 : Crash by adding gps data to pictures.
+
+0.1.7
+------------------------------------------------------------------------
+
+- API changed: Added a version method to get runtime library version.
+- Fix RemoveIptcTag() to handle all redondant Iptc tags at the same time.
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 157552 : negative altitudes are not shown in metadata GPS sidebar
+
+0.1.6
+------------------------------------------------------------------------
+- API Changed : Kexiv2 destructor is now virtual.
+                Krazy Code Checker fix (http://www.englishbreakfastnetwork.org/krazy)
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 137750: color mode2 nikon d70s not recognized as adobe rgb
+002 ==> 149267: digiKam crashes after finding gif,avi,txt and so on.
+003 ==> 148182: Iptc.Application2.Keywords appends always the 0-byte.
+
+0.1.5
+------------------------------------------------------------------------
+Fix release version informations.
+
+0.1.4
+------------------------------------------------------------------------
+Fix release version informations.
+
+0.1.3
+------------------------------------------------------------------------
+New features
+- API changed : added 4 new static methods to get Exif/Iptc tags description/title. 
+                moved depreceate protected methods used by digiKam core to private.
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 144604: Rotation causes Exif data corruption. GPS data fix
+
+General       : Make size of icons used in album icon view more configurable using a slider 
+                in status bar. 
+General       : Removing direct Exiv2 library depency. libkexiv2 interface is used everywhere 
+                instead.  
+
+0.1.2
+------------------------------------------------------------------------
+New features
+- added support for exiv2 from svn (next 0.14.0 release)
+- API changed: added printExiv2ExceptionError to manage Exiv2 C++ Exception error message 
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 142564 : digiKam-signature in iptc and exif tags.
+002 ==> 140297 : GPS kipi plugin truncates input coordinates, introducing inacuracy.
+
+0.1.1
+------------------------------------------------------------------------
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 141980 : digiKam crash when rescan certain files exiv2.
+
+0.1.0
+------------------------------------------------------------------------
+First implementation
+
+For details and info about previous versions, see ChangeLog.

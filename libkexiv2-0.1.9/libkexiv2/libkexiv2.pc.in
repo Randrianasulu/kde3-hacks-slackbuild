@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libkexiv2
+Description: A C++ library to manipulate EXIF/IPTC metadata using Exiv2 library. This library is used by digiKam and kipi-plugins.
+URL: http://www.kipi-plugins.org
+Requires:
+Version: 0.1.9
+Libs: -L${libdir} -lkexiv2
+Cflags: -I${includedir}

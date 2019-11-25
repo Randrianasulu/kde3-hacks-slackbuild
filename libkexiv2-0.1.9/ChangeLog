@@ -1,0 +1,982 @@
+V 0.1.9 - 2009-02-27
+----------------------------------------------------------------------------
+2009-02-22 14:14  cgilles
+
+	* libkexiv2/kexiv2.cpp: backport commit #
+
+2009-01-30 12:27  cgilles
+
+	* libkexiv2/kexiv2.cpp: backport commit #918639 from trunk
+
+2009-01-29 12:34  cgilles
+
+	* NEWS, libkexiv2/kexiv2.cpp: backport commit #918138 from trunk
+	  CCBUG: 175746
+
+2009-01-27 14:47  cgilles
+
+	* README: fix qt url
+
+2009-01-14 16:43  cgilles
+
+	* libkexiv2/kexiv2.cpp: compile with Exiv2 < 0.18
+
+2009-01-13 12:20  cgilles
+
+	* libkexiv2/kexiv2.cpp: backport commit #910445 from trunk
+
+2009-01-13 12:04  cgilles
+
+	* libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h: backport commit #910071
+	  from trunk
+
+2009-01-05 12:51  cgilles
+
+	* libkexiv2/kexiv2private.cpp, libkexiv2/kexiv2private.h: backport
+	  commit #905987 from trunk
+
+2008-12-14 18:46  cgilles
+
+	* NEWS, libkexiv2.lsm, libkexiv2.pc.in, libkexiv2/version.h: update
+	  release version
+
+2008-12-13 10:13  cgilles
+
+	* ChangeLog, libkexiv2.lsm: preparing libkexiv2 0.1.8 for KDE3
+
+2008-12-12 23:13  cgilles
+
+	* NEWS: update
+
+V 0.1.8 - 2008-12-13
+----------------------------------------------------------------------------
+2008-12-07 19:17  cgilles
+
+    * NEWS: update
+
+2008-12-07 19:16  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #894042 from trunk: do not
+      change file time stamp when metadata are changed
+      CCBUG: 150609
+      CCBUG: 157788
+      CCBUG: 144215
+
+2008-11-27 06:42  cgilles
+
+    * libkexiv2/kexiv2.cpp: sync with trunk
+      CCBUG: 169637
+
+2008-11-16 17:22  cgilles
+
+    * libkexiv2/kexiv2.cpp: libkexiv2 from KDE3 branch: backport commit
+      #885140 from trunk
+      CCBUG: 175304
+
+2008-11-15 09:31  cgilles
+
+    * libkexiv2/kexiv2.cpp: libkexiv2 from KDE3 branch : disable here
+      (for the moment) metadata writing mode with RAW TIFF/EP files
+      based.
+      Its supported in trunk as experimental.
+
+2008-08-29 14:55  cgilles
+
+    * libkexiv2/kexiv2.cpp: compile
+
+2008-08-29 14:52  cgilles
+
+    * libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h: backport commit #854462
+      from KDE4
+
+2008-08-19 08:25  cgilles
+
+    * libkexiv2/kexiv2.cpp: update TIFF/EP based RAW file foirmat
+      supported in writting mode with Exiv2 0.18
+
+2008-08-07 10:51  cgilles
+
+    * libkexiv2/kexiv2.cpp: wrong logic
+      BUG: 168567
+
+2008-08-01 10:55  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #840602 from KDE4
+
+2008-07-30 14:18  cgilles
+
+    * NEWS, libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h: sync with KDE4
+      api
+
+2008-07-11 08:12  cgilles
+
+    * libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h: backport commit #830775
+      from KDE4
+
+2008-07-10 20:34  cgilles
+
+    * libkexiv2/Makefile.am: libkexiv2 from KDE3 branch: same problem
+      here than with KDE4 : we missing to pass EXIV2_CFLAGS as include
+      dir during compilation (compilation failed if exiv2 is installed
+      in a specific dir)
+      CCMAIL: arnd.baecker@web.de
+
+2008-07-10 09:27  cgilles
+
+    * NEWS: update
+
+2008-07-10 09:26  cgilles
+
+    * libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h: backport canWrite*()
+      methods from KDE4
+
+2008-07-02 09:10  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #827085 from KDE4
+
+2008-07-02 09:06  cgilles
+
+    * NEWS: update
+
+2008-06-27 07:27  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport from KDE4
+
+2008-06-27 06:02  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport last changes from KDE4
+
+2008-06-26 15:37  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #824710 from KDE4
+
+2008-06-25 11:37  cgilles
+
+    * libkexiv2/kexiv2.cpp, libkexiv2/kexiv2private.cpp: backport
+      commit #824233 from KDE4
+
+2008-06-23 12:46  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #823447 from KDE4
+
+2008-06-22 20:52  cgilles
+
+    * libkexiv2/kexiv2.cpp: fix logic
+
+2008-06-22 20:51  cgilles
+
+    * libkexiv2/kexiv2.cpp: fix logic
+
+2008-06-22 20:48  cgilles
+
+    * libkexiv2/kexiv2.cpp: only JPEG canhost Exiv2::Comments
+
+2008-06-22 20:03  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #823203 from KDE4
+
+2008-06-22 19:03  cgilles
+
+    * libkexiv2/kexiv2.cpp: cmpile
+
+2008-06-22 18:04  cgilles
+
+    * NEWS: update
+
+2008-06-22 18:04  cgilles
+
+    * libkexiv2/kexiv2.cpp, libkexiv2/kexiv2private.cpp: backport
+      commit #823156 from KDE4 (fix broken compilation with current
+      Exiv2 from trunk - future Exiv2 0.18 with tiff write mode
+      support).
+      It's not yet fully compatible with new Exiv2 api.
+
+2008-06-13 07:13  cgilles
+
+    * libkexiv2/kexiv2.cpp: backport commit #820082 from KDE4
+
+2008-06-03 08:05  cgilles
+
+    * NEWS: update
+
+2008-06-03 08:04  cgilles
+
+    * libkexiv2/Makefile.am: fix library ABI number for 0.1.8 release
+
+2008-06-03 08:01  cgilles
+
+    * libkexiv2/kexiv2.cpp: polish
+
+2008-06-03 07:48  cgilles
+
+    * NEWS: update
+
+2008-06-03 07:46  cgilles
+
+    * libkexiv2/Makefile.am, libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h,
+      libkexiv2/kexiv2private.cpp, libkexiv2/kexiv2private.h: libkexiv2
+      from KDE3 branch : binary compatibility is broken here. API
+      change to export all Exiv2 access classes to internal private
+      container.
+      This fix is similar than last changes from KDE4 implementation.
+      BUGS: 158989
+
+2008-06-03 06:53  cgilles
+
+    * README, libkexiv2.lsm, libkexiv2.pc.in, libkexiv2/version.h: fix
+      release number
+
+2008-06-03 06:51  cgilles
+
+    * NEWS: update
+
+2008-05-26 06:11  cgilles
+
+    * NEWS, libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h: likexiv2 from
+      KDE3 branch : backport code from KDE4 : removeIptcTags will
+      handle all redondant IPTC tags at the same time, not only the
+      first one from tags list.
+      BUGS: 153207
+
+2008-05-16 12:18  cgilles
+
+    * libkexiv2/kexiv2.cpp: Fix memory leak if Exiv2 support XMP
+      (version >= 0.16)
+
+2008-03-25 21:51  anaselli
+
+    * NEWS: SVN_SILENT: updated
+
+2008-03-24 16:11  vfuoglio
+
+    * ChangeLog: Preparing for libkexiv2 release
+
+2008-03-24 16:09  vfuoglio
+
+    * ChangeLog, libkexiv2.lsm, libkexiv2/Makefile.am: Preparing
+      libkexiv2 0.1.7 release
+      
+      
+      SVN_SILENT:
+
+V 0.1.7 - 2008-03-24
+----------------------------------------------------------------------------
+2008-03-18 18:47  cgilles
+
+	* [r787192] libkexiv2/libkexiv2.pc.in:
+	  update
+
+2008-03-18 18:37  cgilles
+
+	* [r787184] libkexiv2/libkexiv2.lsm, libkexiv2/libkexiv2.pc.in:
+	  update
+
+2008-02-12 07:58  cgilles
+
+	* [r773947] libkexiv2/libkexiv2/kexiv2.cpp,
+	  libkexiv2/libkexiv2/kexiv2.h:
+	  libkexiv2 from KDE3 branch : set negative altitude value properly
+	  CCBUGS : 157552
+
+2007-12-30 22:00  anaselli
+
+	* [r754872] libkexiv2/libkexiv2/Makefile.am,
+	  libkexiv2/libkexiv2/kexiv2.cpp, libkexiv2/libkexiv2/kexiv2.h:
+	  Breakage of the year, new static method version has been added
+	  
+	  CCMAIL: kde-imaging@kde.org
+
+2007-12-14 14:11  cgilles
+
+	* [r748437] libkexiv2/libkexiv2.lsm, libkexiv2/libkexiv2.pc.in,
+	  libkexiv2/libkexiv2/version.h:
+	  new version
+
+2007-11-19 15:50  cgilles
+
+	* [r738755] libkexiv2/libkexiv2/kexiv2.cpp:
+	  print error code
+
+2007-09-26 10:50  cgilles
+
+	* [r717230] libkexiv2/libkexiv2/kexiv2.cpp:
+	  polish
+
+----------------------------------------------------------------------------
+V 0.1.6 - 2007-09-08
+----------------------------------------------------------------------------
+2007-09-01 10:46  cgilles
+
+	* [r707242] libkexiv2/libkexiv2/kexiv2.cpp:
+	  libkexiv2 from KDE3 branch : fix IPTC strings creation with
+	  non-zero value at end
+	  CCBUGS: 148182
+
+2007-08-25 08:03  cgilles
+
+	* [r704515] libkexiv2/libkexiv2/kexiv2.cpp:
+	  libkexiv2 from KDE3 branch : backport Marcel commit #693337 from
+	  trunk (KDE4) about to handle properly Exiv2 exceptions, depending
+	  of GCC visility option use to compile.
+	  CCBUGS: 148014
+	  --This l from KDEine, and those below, will be ignored--
+	  
+	  M kexiv2.cpp
+
+2007-08-21 20:48  cgilles
+
+	* [r703058] libkexiv2/libkexiv2/kexiv2.cpp:
+	  use EXIV2_TEST_VERSION instead EXIV2_CHECK_VERSION witch is
+	  depreciate now
+
+2007-08-21 18:54  cgilles
+
+	* [r703007] libkexiv2/libkexiv2/kexiv2.cpp:
+	  fix EXIV2_CHECK_VERSION macro handling
+
+2007-08-21 09:16  cgilles
+
+	* [r702839] libkexiv2/libkexiv2/kexiv2.cpp:
+	  libkexiv2 from KDE3 branch : return run-time version if Exiv2 if
+	  possible
+
+2007-06-13 08:12  cgilles
+
+	* [r674817] libkexiv2/libkexiv2/kexiv2.cpp:
+	  libkexiv2 from KDE3 branch : With Nikon camera, the AdobeRgb user
+	  color space is defined to set Exif.Photo.ColorSpace to
+	  Uncalibrated and Exif.Nikon3.ColorMode to MODE2.
+	  BUG: 137750
+
+2007-06-08 19:16  cgilles
+
+	* [r673015] libkexiv2/Makefile.am, libkexiv2/kexiv2.cpp,
+	  libkexiv2/kexiv2.h, libkexiv2/libkexiv2,
+	  libkexiv2/libkexiv2/Makefile.am, libkexiv2/libkexiv2/kexiv2.cpp,
+	  libkexiv2/libkexiv2/kexiv2.h,
+	  libkexiv2/libkexiv2/libkexiv2_export.h,
+	  libkexiv2/libkexiv2/version.h, libkexiv2/libkexiv2_export.h,
+	  libkexiv2/version.h:
+	  to be homogenous with trunk (KDE4), move all source code in
+	  libkexiv2 sub-folder
+
+2007-06-05 06:56  cgilles
+
+	* [r671625] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  libkexiv2 from branches : Krazy Code Checker fix
+	  (http://www.englishbreakfastnetwork.org/krazy)
+
+2007-06-05 06:29  cgilles
+
+	* [r671618] libkexiv2/kexiv2.cpp:
+	  libkexiv2 from branches : Krazy Code Checker fix
+	  (http://www.englishbreakfastnetwork.org/krazy)
+
+2007-06-04 11:35  cgilles
+
+	* [r671273] libkexiv2/CMakeLists.txt, libkexiv2/cmake:
+	  remove obsolete file
+
+----------------------------------------------------------------------------
+V 0.1.5 - 2007-05-08
+----------------------------------------------------------------------------
+Fixing: libtools version info again, we found not to be back compatible
+	with libkexiv 0.1.1, unfortunately since 0.1.2 version.
+
+----------------------------------------------------------------------------
+V 0.1.4 - 2007-05-06
+----------------------------------------------------------------------------
+Fixing: libtools version info
+
+2007-05-06 21:23  anaselli
+
+	* [r661885] libkexiv2/ChangeLog, libkexiv2/Makefile.am,
+	  libkexiv2/libkexiv2.lsm, libkexiv2/libkexiv2.pc.in,
+	  libkexiv2/version.h:
+	  Release 0.1.4
+	  - fix libtools version-info
+	  
+	  CCMAIL: kde-imaging@kde.org, digikam-devel@kde.org
+
+2007-05-06 21:14  anaselli
+
+	* [r661883] libkexiv2/Makefile.am:
+	  Changed to add libtools version managing into prepare script
+	  (hope this will avoid to forget it)
+
+----------------------------------------------------------------------------
+v 0.1.3 - 2007-05-05
+----------------------------------------------------------------------------
+2007-05-05 14:01  gkulzer
+
+	* [r661413] libkexiv2/ChangeLog:
+	  0.1.3 release, coordinated with digiKam 0.9.2-beta1 release
+
+2007-05-05 12:09  gkulzer
+
+	* [r661379] libkexiv2/ChangeLog, libkexiv2/NEWS,
+	  libkexiv2/libkexiv2.lsm:
+	  0.1.3 release, coordinated with digiKam 0.9.2-beta1 release
+
+2007-05-02 07:11  cgilles
+
+	* [r660285] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h,
+	  libkexiv2/libkexiv2_export.h, libkexiv2/version.h:
+	  fix headers
+
+2007-05-02 06:42  cgilles
+
+	* [r660276] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  libkexiv2 from trunk : test if file is readable before to load it
+	  in Exiv2.
+	  CCBUGS: 144895
+
+	* [r658899] BUG:144455
+	thanks a lot to St�phane Pontier, corrected a lot of spelling errors 
+	and missing mails
+	M /trunk/extragear/libs/libkexiv2/libkexiv2_export.h
+	M /trunk/extragear/libs/libkexiv2/kexiv2.cpp
+	M /trunk/extragear/libs/libkexiv2/version.h
+	M /trunk/extragear/libs/libkexiv2/kexiv2.h
+
+	* [r658847] GPS problem solved. BUG:144604
+	M /trunk/extragear/libs/libkexiv2/kexiv2.cpp
+
+Gilles patch
+	* [r658711]M /trunk/extragear/libs/libkexiv2/libkexiv2.pc.in
+	M /trunk/extragear/libs/libkexiv2/kexiv2.cpp
+	M /trunk/extragear/libs/libkexiv2/libkexiv2.lsm
+	M /trunk/extragear/libs/libkexiv2/version.h
+	M /trunk/extragear/libs/libkexiv2/NEWS
+	M /trunk/extragear/libs/libkexiv2/README
+	M /trunk/extragear/libs/libkexiv2/kexiv2.h
+
+V 0.1.2 - 2007-04-07
+----------------------------------------------------------------------------
+2007-03-26 07:54  cgilles
+
+	* [r646581] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  libkexiv2 from trunk : polish API : all "get...()" method must
+	  use const operator.
+
+2007-03-15 11:10  anaselli
+
+	* [r642771] libkexiv2/Makefile.am, libkexiv2/NEWS:
+	  API changed, please check if it is correct.
+	  
+	  CCMAIL: caulier.gilles@kdemail.net
+
+2007-03-15 09:09  cgilles
+
+	* [r642722] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  libkexiv2 from trunk : Fix broken compilation with current Exiv2
+	  implementation (next 0.14.0 release), duing a change with C++
+	  Exception rule. I recommend to cleanup and recompile this library
+	  and clients program witch use it.
+	  
+	  Note : libkexiv2 still compatible with older Exiv2 releases 0.12
+	  and 0.13
+	  
+	  CCMAIL: digikam-devel@kde.org
+
+2007-03-14 12:12  cgilles
+
+	* [r642432] libkexiv2/NEWS:
+	  --Cette ligupdatene, et les suivantes ci-dessous, seront
+	  ignorées--
+	  
+	  M NEWS
+
+2007-03-14 12:11  cgilles
+
+	* [r642431] libkexiv2/kexiv2.cpp:
+	  libkexiv2 from trunk : patch from Arnd Baecker about to avoid the
+	  GPS accuracy loss
+	  BUG: 140297
+
+2007-03-14 12:05  cgilles
+
+	* [r642427] libkexiv2/kexiv2.cpp:
+	  sanity check again about empty byte array
+
+2007-03-14 11:58  cgilles
+
+	* [r642421] libkexiv2/libkexiv2.lsm:
+	  fix version
+
+2007-03-14 11:58  cgilles
+
+	* [r642420] libkexiv2/libkexiv2.pc.in:
+	  fix version
+
+2007-03-14 11:57  cgilles
+
+	* [r642419] libkexiv2/version.h:
+	  fix version
+
+2007-03-11 10:58  cgilles
+
+	* [r641445] libkexiv2/kexiv2.cpp:
+	  libkexiv2 from trunk : when Exiv2 0.14.0 will be available, a new
+	  tag Exif.Image.ProcessingSoftware will be use to store program
+	  informations
+
+2007-03-11 10:31  cgilles
+
+	* [r641437] libkexiv2/NEWS:
+	  update
+
+2007-03-11 10:30  cgilles
+
+	* [r641436] libkexiv2/kexiv2.cpp:
+	  fix comment
+
+2007-03-11 10:29  cgilles
+
+	* [r641435] libkexiv2/kexiv2.cpp:
+	  libkexiv2 from trunk : set the Exif.Image.Software tag only if it
+	  doesn't exist.
+	  BUG: 142564
+
+2007-02-28 22:19  ach
+
+	* [r638128] libkexiv2:
+	  libkexiv2: ignore Makefile.in
+
+2007-02-28 22:14  ach
+
+	* [r638127] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h,
+	  libkexiv2/libkexiv2_export.h, libkexiv2/version.h:
+	  libkexiv2: remove unnecessary line break in license notice
+
+2007-02-28 22:13  ach
+
+	* [r638126] libkexiv2/AUTHORS:
+	  libkexiv2: add final newline to AUTHORS
+
+----------------------------------------------------------------------------
+V 0.1.1 - 2007-02-24
+----------------------------------------------------------------------------
+
+2007-02-24 20:53  anaselli
+
+	* [r636958] libkexiv2/ChangeLog, libkexiv2/Makefile.am,
+	  libkexiv2/NEWS, libkexiv2/libkexiv2.lsm,
+	  libkexiv2/libkexiv2.pc.in, libkexiv2/version.h:
+	  libkexiv2 0.1.1
+	  bug fixing release
+	  
+	  CCMAIL:kde-imaging@kde.org
+
+2007-02-22 12:01  cgilles
+
+	* [r636211] kipi-plugins/kipiplugins.kdevelop,
+	  kipi-plugins/rawconverter/batchdialog.cpp,
+	  kipi-plugins/rawconverter/singledialog.cpp,
+	  libkdcraw/dcraw/dcraw.c, libkdcraw/dcraw/kdcraw.1,
+	  libkdcraw/dcrawbinary.cpp, libkdcraw/dcrawsettingswidget.cpp,
+	  libkdcraw/dcrawsettingswidget.h, libkdcraw/kdcraw.cpp,
+	  libkdcraw/libkdcraw.kdevelop, libkdcraw/rawdecodingsettings.h,
+	  libkexiv2/libkexiv2.kdevelop:
+	  libkdcraw from trunk : backport last dcraw implementation "8.60"
+	  : the old noise reduction algorithm used with 8.54 version have
+	  been remplaced by a wavelet algorithm witch is more intuitive,
+	  more easy to use (just one threshold setting) and very powerfull.
+	  
+	  Kipi-plugins RAWConverter from svn trunk is fixed.
+	  The patch to use libkdcraw with current implementation of digiKam
+	  have been updated :
+	  
+	  http://digikam3rdparty.free.fr/misc.tarballs/libkdcrawdigikamport.patch
+	  
+	  CCMAIL: digikam-users@kde.org
+	  CCMAIL: digikam-devel@kde.org
+	  CCMAIL: kde-imaging@kde.org
+
+2007-02-20 17:22  cgilles
+
+	* [r635684] libkexiv2/kexiv2.cpp:
+	  libkexiv2 from trunk : sanity check if QByteArray are null size
+	  everywhere
+	  Feedback welcome...
+	  
+	  CCBUGS:141980
+
+2007-02-16 22:01  cgilles
+
+	* [r634334] kipi-plugins/rawconverter/actionthread.cpp,
+	  kipi-plugins/rawconverter/rawdecodingiface.cpp,
+	  libkdcraw/kdcraw.cpp, libkexiv2/kexiv2.cpp:
+	  fix comments
+
+2007-02-16 15:44  cgilles
+
+	* [r634186] libkexiv2/libkexiv2.kdevelop:
+	  kdevelop project
+
+2007-02-16 15:44  cgilles
+
+	* [r634184] libkexiv2/AUTHORS, libkexiv2/kexiv2.cpp,
+	  libkexiv2/kexiv2.h, libkexiv2/libkexiv2.lsm:
+	  fix email
+
+2007-02-15 13:15  cgilles
+
+	* [r633835] libkexiv2/kexiv2.cpp:
+	  indent
+
+2007-02-13 22:41  ach
+
+	* [r633377] libkexiv2/README:
+	  fix library name in README
+
+2007-02-12 15:26  cgilles
+
+	* [r632868] libkexiv2/configure.in.in:
+	  this condition is unused everywhere. removed
+
+2007-02-12 09:24  cgilles
+
+	* [r632763] libkexiv2/configure.in.in:
+	  revert
+
+2007-02-12 08:32  cgilles
+
+	* [r632755] libkexiv2/configure.in.in:
+	  polish
+
+----------------------------------------------------------------------------
+V 0.1.0 - 2007-02-11
+----------------------------------------------------------------------------
+
+2007-02-11 20:44  anaselli
+
+	* [r632646] libkexiv2/ChangeLog, libkexiv2/libkexiv2.lsm,
+	  libkexiv2/libkexiv2.pc.in:
+	  libkexiv2 0.1.0
+	  
+	  CCMAIL:kde-imaging@kde.org
+
+
+2007-02-09 06:50  cgilles
+
+	* [r631791] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  libkexiv2 from trunk : new method to extract Exiv2 library
+	  release numbers
+
+2007-02-06 22:12  cgilles
+
+	* [r630973] libkexiv2/version.h:
+	  compile
+
+2007-02-06 22:04  cgilles
+
+	* [r630967] libkexiv2/Makefile.am, libkexiv2/version.h:
+	  libkexiv2 from trunk : add version header file for this library
+	  CCMAIL: Achim Bohnet <ach@mpe.mpg.de>
+
+2007-02-06 21:39  cgilles
+
+	* [r630957] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  2 new methods to set IPTC or Exif tag using a bytes array
+
+2007-02-05 20:16  cgilles
+
+	* [r630585] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  factorize source code
+
+2007-02-05 14:38  cgilles
+
+	* [r630488] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  add boolean flag to add or not program name when a tag is
+	  changed/added
+
+2007-02-05 14:00  cgilles
+
+	* [r630471] libkexiv2/kexiv2.h:
+	  set load() like virtual method. Re-implemented in digiKam core
+
+2007-01-30 12:18  cgilles
+
+	* [r628573] libkexiv2/README:
+	  update
+
+2007-01-30 12:16  cgilles
+
+	* [r628572] libkexiv2/README:
+	  update
+
+2007-01-30 12:12  cgilles
+
+	* [r628569] libkexiv2/README:
+	  update
+
+2007-01-30 11:57  cgilles
+
+	* [r628566] libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h:
+	  libkexiv2 from trunk : polish implementation. Fix API doc
+
+2007-01-30 11:18  cgilles
+
+	* [r628554] libkexiv2/kexiv2.h:
+	  libkexiv2 from trunk : Finamize API doc.
+
+2007-01-30 10:23  cgilles
+
+	* [r628541] libkexiv2/kexiv2_export.h:
+	  wrong file name
+
+2007-01-30 10:22  cgilles
+
+	* [r628540] kipi-plugins/galleryexport/gallerytalker.cpp,
+	  kipi-plugins/gpssync/gpslistviewitem.cpp,
+	  kipi-plugins/gpssync/plugin_gpssync.cpp,
+	  kipi-plugins/jpeglossless/jpegtransform.h,
+	  kipi-plugins/metadataedit/exifadjust.cpp,
+	  kipi-plugins/metadataedit/exifcaption.cpp,
+	  kipi-plugins/metadataedit/exifdatetime.cpp,
+	  kipi-plugins/metadataedit/exifdevice.cpp,
+	  kipi-plugins/metadataedit/exifeditdialog.cpp,
+	  kipi-plugins/metadataedit/exiflens.cpp,
+	  kipi-plugins/metadataedit/exiflight.cpp,
+	  kipi-plugins/metadataedit/iptccaption.cpp,
+	  kipi-plugins/metadataedit/iptccategories.cpp,
+	  kipi-plugins/metadataedit/iptccredits.cpp,
+	  kipi-plugins/metadataedit/iptcdatetime.cpp,
+	  kipi-plugins/metadataedit/iptceditdialog.cpp,
+	  kipi-plugins/metadataedit/iptckeywords.cpp,
+	  kipi-plugins/metadataedit/iptcorigin.cpp,
+	  kipi-plugins/metadataedit/iptcstatus.cpp,
+	  kipi-plugins/metadataedit/iptcsubjects.cpp,
+	  kipi-plugins/metadataedit/plugin_metadataedit.cpp,
+	  kipi-plugins/rawconverter/dcrawiface.cpp,
+	  kipi-plugins/sendimages/sendimages.cpp,
+	  kipi-plugins/timeadjust/timeadjustdialog.cpp,
+	  libkexiv2/Makefile.am, libkexiv2/kexiv2.cpp, libkexiv2/kexiv2.h,
+	  libkexiv2/kexiv2_export.h, libkexiv2/libkexiv2.cpp,
+	  libkexiv2/libkexiv2.h:
+	  kipi-plugins from trunk : fix libkexiv2 header file name
+
+2007-01-30 09:45  cgilles
+
+	* [r628536] kipi-plugins/galleryexport/gallerytalker.cpp,
+	  kipi-plugins/gpssync/gpslistviewitem.cpp,
+	  kipi-plugins/gpssync/plugin_gpssync.cpp,
+	  kipi-plugins/jpeglossless/jpegtransform.cpp,
+	  kipi-plugins/jpeglossless/jpegtransform.h,
+	  kipi-plugins/metadataedit/exifadjust.cpp,
+	  kipi-plugins/metadataedit/exifcaption.cpp,
+	  kipi-plugins/metadataedit/exifdatetime.cpp,
+	  kipi-plugins/metadataedit/exifdevice.cpp,
+	  kipi-plugins/metadataedit/exifeditdialog.cpp,
+	  kipi-plugins/metadataedit/exiflens.cpp,
+	  kipi-plugins/metadataedit/exiflight.cpp,
+	  kipi-plugins/metadataedit/iptccaption.cpp,
+	  kipi-plugins/metadataedit/iptccategories.cpp,
+	  kipi-plugins/metadataedit/iptccredits.cpp,
+	  kipi-plugins/metadataedit/iptcdatetime.cpp,
+	  kipi-plugins/metadataedit/iptceditdialog.cpp,
+	  kipi-plugins/metadataedit/iptckeywords.cpp,
+	  kipi-plugins/metadataedit/iptcorigin.cpp,
+	  kipi-plugins/metadataedit/iptcstatus.cpp,
+	  kipi-plugins/metadataedit/iptcsubjects.cpp,
+	  kipi-plugins/metadataedit/plugin_metadataedit.cpp,
+	  kipi-plugins/rawconverter/dcrawiface.cpp,
+	  kipi-plugins/sendimages/sendimages.cpp,
+	  kipi-plugins/timeadjust/timeadjustdialog.cpp,
+	  libkexiv2/libkexiv2.cpp, libkexiv2/libkexiv2.h:
+	  kipi-plugins from trunk : fix libkexiv2 namespace and interface
+	  class name
+
+2007-01-30 09:02  cgilles
+
+	* [r628532] libkexiv2/libkexiv2.cpp, libkexiv2/libkexiv2.h:
+	  libkexiv2 from trunk : backport new method to handle color
+	  work-space of image. update API doc.
+
+2007-01-29 23:36  ach
+
+	* [r628396] libkexiv2/libkexiv2.h:
+	  libkexiv2: s/informations/information/
+
+2007-01-29 21:19  lure
+
+	* [r628356] libkexiv2/libkexiv2.h:
+	  Fix broken comment - did not compile on Kubuntu Feisty
+
+2007-01-29 19:57  cgilles
+
+	* [r628333] libkexiv2/libkexiv2.h:
+	  libkexiv2 from trunk : Doxygen API (uncomplete)
+
+2007-01-29 16:49  cgilles
+
+	* [r628263] libkexiv2/libkexiv2.pc.in:
+	  update
+
+2007-01-29 14:18  cgilles
+
+	* [r628206] libkexiv2/libkexiv2.cpp, libkexiv2/libkexiv2.h:
+	  libkexiv2 from trunk : backport all common methods from
+	  Digikam::DMetadata class. Backport all fix about comments
+	  encoding from Marcel. The implementation is clean now and ready
+	  to use with digiKam core.
+	  
+	  CCMAIL : marcel.wiesweg@gmx.de, digikam-devel@kde.org,
+	  kde-imaging@kde.org
+
+2007-01-29 09:50  cgilles
+
+	* [r628140] libkexiv2/libkexiv2.cpp, libkexiv2/libkexiv2.h:
+	  new protected methods to use with derivated class
+
+2007-01-28 10:32  ach
+
+	* [r627809] libkexiv2/libkexiv2.lsm, libkexiv2/libkexiv2.pc.in,
+	  prepare_libkexiv2.rb:
+	  libkexiv2: use same version everywhere
+
+2007-01-28 09:54  ach
+
+	* [r627801] libkexiv2/libkexiv2.pc.in:
+	  libkexiv2: fix libkexiv2.pc pkg-config file
+
+2007-01-28 09:47  ach
+
+	* [r627799] libkexiv2/configure.in.in:
+	  libkexiv2: Fix configure. PKGCONFIGFOUND was not set.
+	  
+	  CCMAIL: kde-imaging@kde.org
+
+2007-01-27 12:40  cgilles
+
+	* [r627622] libkexiv2/libkexiv2.cpp, libkexiv2/libkexiv2_export.h:
+	  kipi-plugins from trunk : libkexiv2 : do not use kdDebug() here
+	  because it's not thread-safe. Use qDebug() instead...
+	  
+	  CCBUGS: 133026
+
+2007-01-27 10:57  cgilles
+
+	* [r627593] libkexiv2/README:
+	  update
+
+2007-01-26 20:59  cgilles
+
+	* [r627509] libkexiv2/libkexiv2.lsm:
+	  update
+
+2007-01-26 20:40  cgilles
+
+	* [r627501] kipi-plugins/NEWS, kipi-plugins/README,
+	  kipi-plugins/common/Makefile.am, kipi-plugins/common/exiv2iface,
+	  kipi-plugins/configure.in.bot, kipi-plugins/configure.in.in,
+	  kipi-plugins/galleryexport/Makefile.am,
+	  kipi-plugins/galleryexport/gallerytalker.cpp,
+	  kipi-plugins/gpssync/Makefile.am,
+	  kipi-plugins/gpssync/gpslistviewitem.cpp,
+	  kipi-plugins/gpssync/gpslistviewitem.h,
+	  kipi-plugins/gpssync/plugin_gpssync.cpp,
+	  kipi-plugins/gpssync/plugin_gpssync.h,
+	  kipi-plugins/jpeglossless/Makefile.am,
+	  kipi-plugins/jpeglossless/jpegtransform.cpp,
+	  kipi-plugins/jpeglossless/jpegtransform.h,
+	  kipi-plugins/metadataedit/Makefile.am,
+	  kipi-plugins/metadataedit/exifadjust.cpp,
+	  kipi-plugins/metadataedit/exifcaption.cpp,
+	  kipi-plugins/metadataedit/exifdatetime.cpp,
+	  kipi-plugins/metadataedit/exifdevice.cpp,
+	  kipi-plugins/metadataedit/exifeditdialog.cpp,
+	  kipi-plugins/metadataedit/exiflens.cpp,
+	  kipi-plugins/metadataedit/exiflight.cpp,
+	  kipi-plugins/metadataedit/iptccaption.cpp,
+	  kipi-plugins/metadataedit/iptccategories.cpp,
+	  kipi-plugins/metadataedit/iptccredits.cpp,
+	  kipi-plugins/metadataedit/iptcdatetime.cpp,
+	  kipi-plugins/metadataedit/iptceditdialog.cpp,
+	  kipi-plugins/metadataedit/iptckeywords.cpp,
+	  kipi-plugins/metadataedit/iptcorigin.cpp,
+	  kipi-plugins/metadataedit/iptcstatus.cpp,
+	  kipi-plugins/metadataedit/iptcsubjects.cpp,
+	  kipi-plugins/metadataedit/plugin_metadataedit.cpp,
+	  kipi-plugins/rawconverter/Makefile.am,
+	  kipi-plugins/rawconverter/dcrawiface.cpp,
+	  kipi-plugins/rawconverter/dcrawiface.h,
+	  kipi-plugins/sendimages/Makefile.am,
+	  kipi-plugins/sendimages/sendimages.cpp,
+	  kipi-plugins/sendimages/sendimages.h,
+	  kipi-plugins/sync/Makefile.am,
+	  kipi-plugins/sync/gallerytalker.cpp,
+	  kipi-plugins/timeadjust/Makefile.am,
+	  kipi-plugins/timeadjust/timeadjustdialog.cpp,
+	  kipi-plugins/timeadjust/timeadjustdialog.h,
+	  libkexiv2/libkexiv2.cpp, libkexiv2/libkexiv2.h:
+	  kipi-plugins from trunk : all plugins use the new shared library
+	  libkexiv2 instead KipiPlugins::EXiv2Iface class.
+	  
+	  Marcel, next stage is to derivate the DigiKam::DMetadata class
+	  from LibKExiv2. Let's me hear when you whant to do it...
+	  
+	  CCMAIL: digikam-devel@kde.org, kde-imaging@kde.org,
+	  marcel.wiesweg@gmx.de
+
+2007-01-26 15:51  cgilles
+
+	* [r627439] libkexiv2/configure.in.bot, libkexiv2/configure.in.in:
+	  compile
+
+2007-01-26 15:38  cgilles
+
+	* [r627433] libkexiv2/libkexiv2.h:
+	  using Export rules
+
+2007-01-26 13:14  cgilles
+
+	* [r627401] libkexiv2/README:
+	  update
+
+2007-01-26 13:10  cgilles
+
+	* [r627400] libkexiv2/README:
+	  update
+
+2007-01-26 13:09  cgilles
+
+	* [r627399] libkexiv2/Makefile.am, libkexiv2/exiv2iface.cpp,
+	  libkexiv2/exiv2iface.h, libkexiv2/libkexiv2.cpp,
+	  libkexiv2/libkexiv2.h:
+	  exiv2iface ==> libkexiv2
+	  new namespace
+
+2007-01-26 12:58  cgilles
+
+	* [r627393] libkexiv2/exiv2iface.cpp, libkexiv2/exiv2iface.h,
+	  libkexiv2/libkexiv2_export.h:
+	  fix header
+
+2007-01-26 12:55  cgilles
+
+	* [r627390] libkexiv2, libkexiv2/AUTHORS, libkexiv2/COPYING,
+	  libkexiv2/ChangeLog, libkexiv2/INSTALL, libkexiv2/Makefile.am,
+	  libkexiv2/NEWS, libkexiv2/README, libkexiv2/configure.in.in,
+	  libkexiv2/exiv2iface.cpp, libkexiv2/exiv2iface.h,
+	  libkexiv2/libkexiv2.lsm, libkexiv2/libkexiv2.pc.in,
+	  libkexiv2/libkexiv2_export.h:
+	  New common library witch will be used by digiKam and kipi-plugins
+	  to handle Pictures metadata (Exif/Iptc).
+	  
+	  This shared library is a wrapper around Exiv2 library. It give a
+	  Qt like interface to control
+	  Exiv2 actions on pictures. Using this library will remove all
+	  duplicate code on kipi-plugins::exiv2iface and
+	  digikam::dmetadata.
+	  
+	  The current implementation is the same than
+	  kipi-plugins/exiv2iface. This library is not yet used in
+	  digiKam/kipi-plugins.
+	  We will added a new depency to this library in kipi-plugins in
+	  first and later to digiKam.
+	  
+	  CCMAIL: digikam-devel@kde.org, kde-imaging@kde.org,
+	  marcel.wiesweg@gmx.de
+
