@@ -392,7 +392,7 @@ QImage kio_digikamthumbnailProtocol::loadPNG(const QString& path)
         return qimage;
     }
 
-    if (setjmp(png_ptr->jmpbuf))
+    if (setjmp(png_jmpbuf(png_ptr)))
     {
         png_destroy_read_struct(&png_ptr, &info_ptr, NULL);
         fclose(f);
@@ -413,16 +413,16 @@ QImage kio_digikamthumbnailProtocol::loadPNG(const QString& path)
     if (color_type == PNG_COLOR_TYPE_PALETTE)
         png_set_expand(png_ptr);
 
-    if (info_ptr->color_type == PNG_COLOR_TYPE_RGB_ALPHA)
+    if (color_type == PNG_COLOR_TYPE_RGB_ALPHA)
         has_alpha = 1;
 
-    if (info_ptr->color_type == PNG_COLOR_TYPE_GRAY_ALPHA)
+    if (color_type == PNG_COLOR_TYPE_GRAY_ALPHA)
     {
         has_alpha = 1;
         has_grey = 1;
     }
 
-    if (info_ptr->color_type == PNG_COLOR_TYPE_GRAY)
+    if (color_type == PNG_COLOR_TYPE_GRAY)
         has_grey = 1;
 
     unsigned char **lines;
