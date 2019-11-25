@@ -9,3 +9,7 @@ Should be compileable with openssl 1.0.2 (so, konqueror will display new ssl-pro
 Not really secure!
 
 Includes patched HAL sources, so automounting will work
+
+For digikam/kipi-plugins I used this config:
+
+CXXFLAGS="-O2 -fpermissive" setarch i686 ./configure --prefix=/usr --enable-final --disable-debug  --enable-gcc-visibility  
