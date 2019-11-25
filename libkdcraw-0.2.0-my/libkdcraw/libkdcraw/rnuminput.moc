@@ -1,0 +1,261 @@
+/****************************************************************************
+** KDcrawIface::RIntNumInput meta object code from reading C++ file 'rnuminput.h'
+**
+** Created: Tue Jun 13 20:23:38 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "rnuminput.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KDcrawIface::RIntNumInput::className() const
+{
+    return "KDcrawIface::RIntNumInput";
+}
+
+QMetaObject *KDcrawIface::RIntNumInput::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KDcrawIface__RIntNumInput( "KDcrawIface::RIntNumInput", &KDcrawIface::RIntNumInput::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KDcrawIface::RIntNumInput::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KDcrawIface::RIntNumInput", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KDcrawIface::RIntNumInput::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KDcrawIface::RIntNumInput", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KDcrawIface::RIntNumInput::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QHBox::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "d", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"setValue", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"slotReset", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotValueChanged", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "setValue(int)", &slot_0, QMetaData::Public },
+	{ "slotReset()", &slot_1, QMetaData::Public },
+	{ "slotValueChanged(int)", &slot_2, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"reset", 0, 0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"valueChanged", 1, param_signal_1 };
+    static const QMetaData signal_tbl[] = {
+	{ "reset()", &signal_0, QMetaData::Public },
+	{ "valueChanged(int)", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KDcrawIface::RIntNumInput", parentObject,
+	slot_tbl, 3,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KDcrawIface__RIntNumInput.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KDcrawIface::RIntNumInput::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KDcrawIface::RIntNumInput" ) )
+	return this;
+    return QHBox::qt_cast( clname );
+}
+
+// SIGNAL reset
+void KDcrawIface::RIntNumInput::reset()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL valueChanged
+void KDcrawIface::RIntNumInput::valueChanged( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+bool KDcrawIface::RIntNumInput::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: setValue((int)static_QUType_int.get(_o+1)); break;
+    case 1: slotReset(); break;
+    case 2: slotValueChanged((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QHBox::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KDcrawIface::RIntNumInput::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: reset(); break;
+    case 1: valueChanged((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QHBox::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KDcrawIface::RIntNumInput::qt_property( int id, int f, QVariant* v)
+{
+    return QHBox::qt_property( id, f, v);
+}
+
+bool KDcrawIface::RIntNumInput::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *KDcrawIface::RDoubleNumInput::className() const
+{
+    return "KDcrawIface::RDoubleNumInput";
+}
+
+QMetaObject *KDcrawIface::RDoubleNumInput::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KDcrawIface__RDoubleNumInput( "KDcrawIface::RDoubleNumInput", &KDcrawIface::RDoubleNumInput::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KDcrawIface::RDoubleNumInput::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KDcrawIface::RDoubleNumInput", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KDcrawIface::RDoubleNumInput::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KDcrawIface::RDoubleNumInput", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KDcrawIface::RDoubleNumInput::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QHBox::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "d", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"setValue", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"slotReset", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotValueChanged", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "setValue(double)", &slot_0, QMetaData::Public },
+	{ "slotReset()", &slot_1, QMetaData::Public },
+	{ "slotValueChanged(double)", &slot_2, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"reset", 0, 0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"valueChanged", 1, param_signal_1 };
+    static const QMetaData signal_tbl[] = {
+	{ "reset()", &signal_0, QMetaData::Public },
+	{ "valueChanged(double)", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KDcrawIface::RDoubleNumInput", parentObject,
+	slot_tbl, 3,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KDcrawIface__RDoubleNumInput.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KDcrawIface::RDoubleNumInput::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KDcrawIface::RDoubleNumInput" ) )
+	return this;
+    return QHBox::qt_cast( clname );
+}
+
+// SIGNAL reset
+void KDcrawIface::RDoubleNumInput::reset()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL valueChanged
+void KDcrawIface::RDoubleNumInput::valueChanged( double t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+bool KDcrawIface::RDoubleNumInput::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: setValue((double)static_QUType_double.get(_o+1)); break;
+    case 1: slotReset(); break;
+    case 2: slotValueChanged((double)static_QUType_double.get(_o+1)); break;
+    default:
+	return QHBox::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KDcrawIface::RDoubleNumInput::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: reset(); break;
+    case 1: valueChanged((double)static_QUType_double.get(_o+1)); break;
+    default:
+	return QHBox::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KDcrawIface::RDoubleNumInput::qt_property( int id, int f, QVariant* v)
+{
+    return QHBox::qt_property( id, f, v);
+}
+
+bool KDcrawIface::RDoubleNumInput::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

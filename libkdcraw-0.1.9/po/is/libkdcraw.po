@@ -1,0 +1,529 @@
+# translation of libkdcraw.po to icelandic
+#
+# Sveinn í Felli <sveinki@nett.is>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdcraw\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-10-20 11:42+0000\n"
+"Last-Translator: Sveinn í Felli\n"
+"Language-Team: icelandic <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: libkdcraw/rcombobox.cpp:73 libkdcraw/rnuminput.cpp:74
+#: libkdcraw/rnuminput.cpp:172
+msgid "Reset to default value"
+msgstr "Frumstilla á upprunaleg gildi"
+
+#: libkdcraw/dcrawsettingswidget.cpp:183
+msgid "16 bits color depth"
+msgstr "16 bita litadýpt"
+
+#: libkdcraw/dcrawsettingswidget.cpp:184
+msgid ""
+"<p>If enabled, all RAW files will be decoded in 16-bit color depth using a "
+"linear gamma curve. To prevent dark picture rendering in the editor, it is "
+"recommended to use Color Management in this mode."
+"<p>If disabled, all RAW files will be decoded in 8-bit color depth with a "
+"BT.709 gamma curve and a 99th-percentile white point. This mode is faster than "
+"16-bit decoding."
+msgstr ""
+"<p>Ef þetta er vikjað, þá munu allar RAW skrár verða afkóðaðar í 16-bita "
+"litadýpt samkvæmt línulegum litrófsferli. Til að koma í veg vyrir dökka "
+"myndgerð í myndvinnsluhamnum, þá er mælt með að notuð sé litastýring (Color "
+"Management) í þessum ham."
+"<p>Ef þetta er óvirkt munu allar RAW skrár verða afkóðaðar í 8-bita litadýpt "
+"samkvæmt BT.709 litrófsferli og 99th-percentile hvítvægi. Þessi aðferð er mun "
+"hraðvirkari en 16-bita afkóðun."
+
+#: libkdcraw/dcrawsettingswidget.cpp:203
+msgid "Interpolate RGB as four colors"
+msgstr "Breyta RGB í fjóra liti"
+
+#: libkdcraw/dcrawsettingswidget.cpp:204
+msgid ""
+"<p><b>Interpolate RGB as four colors</b>"
+"<p>The default is to assume that all green pixels are the same. If even-row "
+"green pixels are more sensitive to ultraviolet light than odd-row this "
+"difference causes a mesh pattern in the output; using this option solves this "
+"problem with minimal loss of detail."
+"<p>To resume, this option blurs the image a little, but it eliminates false 2x2 "
+"mesh patterns with VNG quality method or mazes with AHD quality method."
+msgstr ""
+"<p><b>Breyta RGB í fjóra liti</b>"
+"<p>Sjálfgefið er að álykta að allir grænir dílar séu eins. Ef grænir dílar í "
+"slétttölulínum eru viðkvæmari fyrir útfjólubláu ljósi heldur en oddatölulínum "
+"þá getur sá munur valdið netmynstri í úttakinu; það að nota þessa aðferð leysir "
+"það vandamál án þess að fórna miklu af smáatriðum."
+"<p>Nánar; aðgerðin afskerpir myndina lítillega, en á móti eyðir hún tilbúnu 2x2 "
+"netmynstri með VNG-gæða aðferðinni eða AHD-gæðum."
+
+#: libkdcraw/dcrawsettingswidget.cpp:217
+#, c-format
+msgid "libraw %1"
+msgstr "libraw %1"
+
+#: libkdcraw/dcrawsettingswidget.cpp:220
+msgid "Visit dcraw project website"
+msgstr "Heimsækja vef dcraw verkefnisins"
+
+#: libkdcraw/dcrawsettingswidget.cpp:224
+msgid "Do not stretch or rotate pixels"
+msgstr "Ekki teygja eða snúa dílum"
+
+#: libkdcraw/dcrawsettingswidget.cpp:225
+msgid ""
+"<p><b>Do not stretch or rotate pixels</b>"
+"<p>For Fuji Super CCD cameras, show the image tilted 45 degrees. For cameras "
+"with non-square pixels, do not stretch the image to its correct aspect ratio. "
+"In any case, this option guarantees that each output pixel corresponds to one "
+"RAW pixel."
+"<p>"
+msgstr ""
+"<p><b>Ekki teygja eða snúa dílum</b>"
+"<p>Fyrir Fuji Super CCD myndavélar, sýna myndina með 45 gráðu halla. Fyrir "
+"myndavélar sem ekki hafa ferningslaga díla, þá á ekki að teygja myndina til að "
+"leiðrétta stærðarhlutföllin. Í öllu falli á þetta val að tryggja að hver díll "
+"úttaksmyndar samsvari einum RAW díl."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:235
+msgid "Quality:"
+msgstr "Gæði:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:237
+msgid "Bilinear"
+msgstr "Tvílínulegt"
+
+#: libkdcraw/dcrawsettingswidget.cpp:238
+msgid "VNG"
+msgstr "VNG"
+
+#: libkdcraw/dcrawsettingswidget.cpp:239
+msgid "PPG"
+msgstr "PPG"
+
+#: libkdcraw/dcrawsettingswidget.cpp:240
+msgid "AHD"
+msgstr "AHD"
+
+#: libkdcraw/dcrawsettingswidget.cpp:242
+msgid ""
+"<p><b>Quality (interpolation)</b>"
+"<p>Select here the demosaicing RAW images decoding interpolation method. A "
+"demosaicing algorithm is a digital image process used to interpolate a complete "
+"image from the partial raw data received from the color-filtered image sensor "
+"internal to many digital cameras in form of a matrix of colored pixels. Also "
+"known as CFA interpolation or color reconstruction, another common spelling is "
+"demosaicing. There are 4 methods to demosaicing RAW images:"
+"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
+"(default - for slow computer). In this method, the red value of a non-red pixel "
+"is computed as the average of the adjacent red pixels, and similar for blue and "
+"green."
+"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
+"computes gradients near the pixel of interest and uses the lower gradients "
+"(representing smoother and more similar parts of the image) to make an "
+"estimate."
+"<p><b>PPG</b>: use Patterned Pixel Grouping interpolation. Pixel Grouping uses "
+"assumptions about natural scenery in making estimates. It has fewer color "
+"artifacts on natural images than the Variable Number of Gradients method."
+"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
+"selects the direction of interpolation so as to maximize a homogeneity metric, "
+"thus typically minimizing color artifacts."
+"<p>"
+msgstr ""
+"<p><b>Gæði</b>"
+"<p>Veldu hér innskotsaðferð við afkóðun og aftiglun RAW mynda. "
+"Aftiglunarútreikningur (demosaicing algorithm) er stafrænt myndvinnsluferli sem "
+"nýtist til samsetningar heillar myndar út frá hlutum hrárra gagna sem koma frá "
+"litsíum myndflögu myndavélar og eru í formi fylkja af litadílum. Einnig þekkt "
+"undir nafninu CFA interpolation eða litendurbygging, enn ein stafsetningin er "
+"að kalla þetta demosaicing. Það eru 4 aðferðir til að aftigla RAW myndir:"
+"<p><b>Tvílínuleg</b>: notar háhraða en lággæða tvílínuleg innskot (sjálfgefið - "
+"fyrir hægvirkar tölvur). Í þessari aðferð þá er rautt gildi 'ekki-rauðs' díls "
+"(pixel) reiknað sem meðaltal nærliggjandi rauðra díla; sama er gert fyrir bláa "
+"og græna."
+"<p><b>VNG</b>: notar innskot með breytilegum fjölda litstigla (Variable Number "
+"of Gradients interpolation). Þessi aðferð reiknar litstigla í grennd við dílinn "
+"sem er til skoðunar og notar lægri litstiglana (sem gefa til kynna mýkri og "
+"líkari hluta myndar) til að áætla breytinguna. "
+"<p><b>PPG</b>: notar innskot miðað við mynsturhópa (Patterned Pixel Grouping "
+"interpolation). PPG styðst við fyrirfram gefnar forsendur um náttúrulegar "
+"aðstæður við útreikninga. Þannig minnka gallar á myndum sem teknar eru við "
+"algengar náttúrulegar aðstæður, miðað við VNG-aðferðina."
+"<p><b>AHD</b>: notar aðlöguð samleitnistýrð innskot (Adaptive "
+"Homogeneity-Directed interpolation). Þessi aðferð velur stefnu "
+"innskotsaðgerðarinnar þannig að sem mest einsleitni mælist, þannig nást að "
+"jafnaði minnst litatruflun."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:272
+msgid "Filter:"
+msgstr "Sía:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:273
+msgid ""
+"<p><b>Median Filter</b>"
+"<p>Set here the passes used by median filter applied after interpolation to "
+"Red-Green and Blue-Green channels."
+msgstr ""
+"<p><b>Miðgildissía</b>"
+"<p>Stilltu hér fjölda umferða sem miðgildissíunni er beitt eftir innskotsvörpun "
+"í rauð-grænu og blá-grænu litrásirnar."
+
+#: libkdcraw/dcrawsettingswidget.cpp:282
+msgid "Demosaicing"
+msgstr "Aftiglun"
+
+#: libkdcraw/dcrawsettingswidget.cpp:290
+msgid "Method:"
+msgstr "Aðferð:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:292
+msgid "Default D65"
+msgstr "Sjálfgefið D65"
+
+#: libkdcraw/dcrawsettingswidget.cpp:293
+msgid "Camera"
+msgstr "Myndavél"
+
+#: libkdcraw/dcrawsettingswidget.cpp:294
+msgid "Automatic"
+msgstr "Sjálfvirkt"
+
+#: libkdcraw/dcrawsettingswidget.cpp:295
+msgid "Manual"
+msgstr "Handvirkt"
+
+#: libkdcraw/dcrawsettingswidget.cpp:297
+msgid ""
+"<p><b>White Balance Method</b>"
+"<p>Configure the raw white balance :"
+"<p><b>Default D65</b>: Use a standard daylight D65 white balance (dcraw "
+"defaults)"
+"<p><b>Camera</b>: Use the white balance specified by the camera. If not "
+"available, reverts to default neutral white balance"
+"<p><b>Automatic</b>: Calculates an automatic white balance averaging the entire "
+"image"
+"<p><b>Manual</b>: Set a custom temperature and green level values"
+msgstr ""
+"<p><b>Hvítvægi</b>"
+"<p>Aðferðir til stillingar á RAW hvítvægi :"
+"<p><b>Sjálfgefið D65 hvítvægi</b>: Notar staðlaða dagsljóss D65 "
+"hvítvægisstillingu (sjálfgefið í dcraw)"
+"<p><b>Hvítvægi myndavélar</b>: Notar hvítvægisstillingar þær sem myndavélin "
+"tiltekur. Ef þær eru ekki aðgengilegar, er valin hlutlaus hvítvægisstilling"
+"<p><b>Sjálfvirkt hvítvægi</b>: Reiknar sjálfvirkt hvítvægi út frá meðalgildum "
+"allrar myndarinnar"
+"<p><b>Handstillt hvítvægi</b>: Þar þarf að stilla sérsniðið hitastig og gildi "
+"grænna tóna"
+
+#: libkdcraw/dcrawsettingswidget.cpp:309
+msgid "T(K):"
+msgstr "T(K):"
+
+#: libkdcraw/dcrawsettingswidget.cpp:310
+msgid "<p><b>Temperature</b><p>Set here the color temperature in Kelvin."
+msgstr "<p><b>Hitastig</b><p>Stilltu hér lithitastig í Kelvingráðum."
+
+#: libkdcraw/dcrawsettingswidget.cpp:317
+msgid "Green:"
+msgstr "Grænn:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:318
+msgid ""
+"<p>Set here the green component to set magenta color cast removal level."
+msgstr ""
+"<p>Stilltu hér græna blæinn sem ákvarðar hversu mikið þarf að fjarlægja af "
+"styrk fjólublás (magenta) litar."
+
+#: libkdcraw/dcrawsettingswidget.cpp:321
+msgid "Highlights:"
+msgstr "Hátónar:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:323
+msgid "Solid white"
+msgstr "Heilhvítur"
+
+#: libkdcraw/dcrawsettingswidget.cpp:324
+msgid "Unclip"
+msgstr "Afklemma"
+
+#: libkdcraw/dcrawsettingswidget.cpp:325
+msgid "Blend"
+msgstr "Blanda"
+
+#: libkdcraw/dcrawsettingswidget.cpp:326
+msgid "Rebuild"
+msgstr "Endurbyggja"
+
+#: libkdcraw/dcrawsettingswidget.cpp:328
+msgid ""
+"<p><b>Highlights</b>"
+"<p>Select here the highlight clipping method:"
+"<p><b>Solid white</b>: clip all highlights to solid white"
+"<p><b>Unclip</b>: leave highlights unclipped in various shades of pink"
+"<p><b>Blend</b>:Blend clipped and unclipped values together for a gradual fade "
+"to white"
+"<p><b>Rebuild</b>: reconstruct highlights using a level value"
+msgstr ""
+"<p><b>Hátónar</b>"
+"<p>Veldu hér hvernig hátónar verða meðhöndlaðir:"
+"<p><b>Heilhvítt</b>: Klippa alla hátóna yfir að heilum hvítum lit"
+"<p><b>Óklippt</b>: Skilja alla hátóna eftir í ýmsum blæbrigðum af ljósbleikum "
+"<p><b>Blend</b>:Bland klipptum og óklipptum gildum saman stígandi í áttina til "
+"hvíts"
+"<p><b>Endurbyggja</b>: Endurbyggja hátóna miðað við gildi hvítvægis."
+
+#: libkdcraw/dcrawsettingswidget.cpp:337
+msgid "Level:"
+msgstr "Styrkur:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:341
+msgid ""
+"<p><b>Level</b>"
+"<p>Specify the reconstruct highlight level. Low values favor whites and high "
+"values favor colors."
+msgstr ""
+"<p><b>Styrkur</b>"
+"<p>Tilgreinið styrk endurbyggðra hátóna. Lágt gildi styður frekar hvítt en hátt "
+"gildi liti."
+
+#: libkdcraw/dcrawsettingswidget.cpp:345
+msgid "Brightness:"
+msgstr "Birtustig:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:350
+msgid ""
+"<p><b>Brighness</b>"
+"<p>Specify the brightness level of output image.The default value is 1.0 (works "
+"in 8-bit mode only)."
+"<p>"
+msgstr ""
+"<p><b>Birtustig</b>"
+"<p>Tilgreindu birtustig endalegu myndarinnar.Sjálfgefið gildi er 1.0 (virkar "
+"bara í 8-bita ham)."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:360
+msgid "Black:"
+msgstr "Svartur:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:361
+msgid ""
+"<p><b>Black point</b>"
+"<p>Use a specific black point value to decode RAW pictures. If you set this "
+"option to off, the Black Point value will be automatically computed."
+"<p>"
+msgstr ""
+"<p><b>Svartgildi</b>"
+"<p>Nota sérstakt gildi svartpunkts til að afkóða RAW myndir. Ef þú slekkur á "
+"þessum möguleika þá verður gildið reiknað sjálfvirkt."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:368
+msgid ""
+"<p><b>Black point value</b>"
+"<p>Specify specific black point value of the output image."
+"<p>"
+msgstr ""
+"<p><b>Svartgildi</b>"
+"<p>Tilgreindu gildi svarts punkts í endanlegri mynd."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:371
+msgid "White:"
+msgstr "Hvítur:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:372
+msgid ""
+"<p><b>White point</b>"
+"<p>Use a specific white point value to decode RAW pictures. If you set this "
+"option to off, the White Point value will be automatically computed."
+"<p>"
+msgstr ""
+"<p><b>Hvítgildi</b>"
+"<p>Nota sérstakt gildi hvítpunkts til að afkóða RAW myndir. Ef þú slekkur á "
+"þessum möguleika þá verður gildið reiknað sjálfvirkt."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:379
+msgid ""
+"<p><b>White point value</b>"
+"<p>Specify specific white point value of the output image."
+"<p>"
+msgstr ""
+"<p><b>Hvítgildi</b>"
+"<p>Tilgreindu gildi hvíts punkts í endanlegri mynd."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:409
+msgid "White Balance"
+msgstr "Hvítvægi"
+
+#: libkdcraw/dcrawsettingswidget.cpp:417
+msgid "Enable noise reduction"
+msgstr "Virkja truflanasíu"
+
+#: libkdcraw/dcrawsettingswidget.cpp:418
+msgid ""
+"<p><b>Enable Noise Reduction</b>"
+"<p>Use wavelets to erase noise while preserving real detail."
+"<p>"
+msgstr ""
+"<p><b>Virkja truflanasíun</b>"
+"<p>Nota bylgjuútreikning til að þurrka út truflanir um leið og haldið er í "
+"raunveruleg smáatriði."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:424
+msgid "Threshold:"
+msgstr "Þröskuldur:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:425
+msgid ""
+"<p><b>Threshold</b>"
+"<p>Set here the noise reduction threshold value to use."
+msgstr "<p><b>Þröskuldur</b><p>Stilltu hér gildi þröskuldar á truflanasíu."
+
+#: libkdcraw/dcrawsettingswidget.cpp:428
+msgid "Enable Chromatic Aberration correction"
+msgstr "Virkja síu fyrir litskekkjuleiðréttingu"
+
+#: libkdcraw/dcrawsettingswidget.cpp:429
+msgid ""
+"<p><b>Enable Chromatic Aberration correction</b>"
+"<p>Enlarge the raw red and blue layers by the given factors, typically 0.999 to "
+"1.001, to correct chromatic aberration."
+"<p>"
+msgstr ""
+"<p><b>Virkja síu fyrir litskekkjuleiðréttingu</b>"
+"<p>Stækkar hráu rauðu og bláu litlögin um valin gildi, oft á bilinu 0.999 til "
+"1.001, til að leiðrétta litskekkju."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:433
+msgid "Red:"
+msgstr "Rautt:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:438
+msgid ""
+"<p><b>Red multiplier</b>"
+"<p>Set here the magnification factor of the red layer"
+msgstr "<p><b>Margfeldi rauðs</b><p>Stilltu hér stækkun rauða litlagsins"
+
+#: libkdcraw/dcrawsettingswidget.cpp:441
+msgid "Blue:"
+msgstr "Blátt:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:446
+msgid ""
+"<p><b>Blue multiplier</b>"
+"<p>Set here the magnification factor of the blue layer"
+msgstr "<p><b>Margfeldi blás</b><p>Stilltu hér stækkun bláa litlagsins"
+
+#: libkdcraw/dcrawsettingswidget.cpp:461
+msgid "Corrections"
+msgstr "Leiðréttingar"
+
+#: libkdcraw/dcrawsettingswidget.cpp:469
+msgid "Camera Profile:"
+msgstr "Litasnið myndavélar:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:471
+msgid "None"
+msgstr "Ekkert"
+
+#: libkdcraw/dcrawsettingswidget.cpp:472
+msgid "Embedded"
+msgstr "Ígætt"
+
+#: libkdcraw/dcrawsettingswidget.cpp:473 libkdcraw/dcrawsettingswidget.cpp:492
+msgid "Custom"
+msgstr "Sérsniðið"
+
+#: libkdcraw/dcrawsettingswidget.cpp:475
+msgid ""
+"<p><b>Camera Profile</b>"
+"<p>Select here the input color space used to decode RAW data."
+"<p><b>None</b>: no input color profile is used during RAW decoding."
+"<p><b>Embedded</b>: use embedded color profile from RAW file if exist."
+"<p><b>Custom</b>: use a custom input color space profile."
+msgstr ""
+"<p><b>Litasnið myndavélar</b>"
+"<p>Veldu hér litrýmd þá sem inntak RAW kóðunar mun miðast við."
+"<p><b>None</b>: ekkert litasnið verður notað við RAW-afkóðung."
+"<p><b>Ígrætt</b>: notað verður litasnið það sem ígrætt er í RAW-skrá, ef slíkt "
+"finnst."
+"<p><b>Sérsniðið</b>: nota sérsniðið litasnið fyrir inntak."
+
+#: libkdcraw/dcrawsettingswidget.cpp:483 libkdcraw/dcrawsettingswidget.cpp:513
+msgid "ICC Files (*.icc; *.icm)"
+msgstr "ICC skrár (*.icc; *.icm)"
+
+#: libkdcraw/dcrawsettingswidget.cpp:485
+msgid "Workspace:"
+msgstr "Litrýmd:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:487
+msgid "Raw (linear)"
+msgstr "Hrágögn (línuleg)"
+
+#: libkdcraw/dcrawsettingswidget.cpp:488
+msgid "sRGB"
+msgstr "sRGB"
+
+#: libkdcraw/dcrawsettingswidget.cpp:489
+msgid "Adobe RGB"
+msgstr "Adobe RGB"
+
+#: libkdcraw/dcrawsettingswidget.cpp:490
+msgid "Wide Gamut"
+msgstr "Vítt litasvið"
+
+#: libkdcraw/dcrawsettingswidget.cpp:491
+msgid "Pro-Photo"
+msgstr "Pro-Photo"
+
+#: libkdcraw/dcrawsettingswidget.cpp:494
+msgid ""
+"<p><b>Workspace</b>"
+"<p>Select here the output color space used to decode RAW data."
+"<p><b>Raw (linear)</b>: in this mode, no output color space is used during RAW "
+"decoding."
+"<p><b>sRGB</b>: this is a RGB color space, created cooperatively by "
+"Hewlett-Packard and Microsoft. It is the best choice for images destined for "
+"the Web and portrait photography."
+"<p><b>Adobe RGB</b>: this color space is an extended RGB color space, developed "
+"by Adobe. It is used for photography applications such as advertising and fine "
+"art."
+"<p><b>Wide Gamut</b>: this color space is an expanded version of the Adobe RGB "
+"color space."
+"<p><b>Pro-Photo</b>: this color space is an RGB color space, developed by "
+"Kodak, that offers an especially large gamut designed for use with photographic "
+"outputs in mind."
+"<p><b>Custom</b>: use a custom output color space profile."
+msgstr ""
+"<p><b>Litrýmd</b>"
+"<p>Veldu hér litrýmd þá sem úttak RAW kóðunar mun miðast við."
+"<p><b>RAW (línulegt)</b>: í þessum ham er engin vörpun í neina litrýmd á meðan "
+"kóðuð eru RAW gögn."
+"<p><b>sRGB</b>: þetta er ein gerð RGB litrýmdar, unnin í samvinnu "
+"Hewlett-Packard og Microsoft. Þetta er besta litrýmdin fyrir myndir á vefinn, "
+"skjáinn og hugsanlega portrettljósmyndir."
+"<p><b>Adobe RGB</b>: þetta er útvíkkuð RGB litrýmd, þróað af Adobe. Þetta er "
+"notað í mörgum ljósmyndaforritum við auglýsingagerð og framsetningu listrænna "
+"mynda."
+"<p><b>Vítt litasvið</b>: (Wide Gamut) þessi litrýmd er útvíkkuð útgáfa af Adobe "
+"RGB litrýmdinni."
+"<p><b>Pro-Photo</b>:  þetta er ein gerð RGB litrýmdar, þróuð af Kodak, sem "
+"gefur færi á sérstaklega breiðu litasviði, hugsað til notkunar með ýmsum gerðum "
+"ljósmyndaútprentunar. "
+"<p><b>Sérsniðið</b>: nota sérsniðið litasnið til úttaks."
+
+#: libkdcraw/dcrawsettingswidget.cpp:525
+msgid "Color Management"
+msgstr "Litastýring"

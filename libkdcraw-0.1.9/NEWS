@@ -1,0 +1,157 @@
+0.1.9
+------------------------------------------------------------------------
+Added Leica RWL raw format in list of supported files.
+Updated to LibRaw 0.7.2 :
+ - More accurate types conversion in libraw_datastream.h to make compilers happy.
+ - New postprocessing parameter auto_bright_thr: set portion of clipped pixels for 
+   auto brightening code (instead of dcraw-derived hardcoded 1%).
+ - '-U' option for dcraw_emu sample sets auto_bright_thr parameter.
+Updated to LibRaw 0.7.1 :
+ - Fixed broken OpenMP support.
+Updated to LibRaw 0.7.0 :
+ - Black (masked) pixels data extracted from RAW and avaliable in application.
+ - Application can turn off RAW data filtering (black level subtraction,
+   zero pixels removal and raw tone curve).
+ - New 'input framework' released. Reading raw data from file and memory buffer supported from scratch.
+   LibRaw-using application can implement own data reading functions (e.g. reading from network stream).
+ - Fuji SuperCCD: raw data extracted without 45-degree rotation.
+ - New sample applications: 4channels and unprocessed_raw.
+ - Imported (subsequentally) new dcraw versions from 8.89 to 8.93 (up to date) 
+
+Updated to libraw 0.6.15: 
+ - more accurate pentax dSLR support
+ - fixes in Kodak 620x/720x identification
+ - faster identification procedure for some formats.
+ - Fixed bug in custom gamma curve creation
+
+Updated to libraw 0.6.14: 
+ - user-specified gamma curve.
+ - Pentax K2000/Km support.
+ - Changes in Canon sRAW processing (support for 5D2 fw 1.07).
+
+0.1.8
+------------------------------------------------------------------------
+Updated to libraw 0.6.13:
+ - Bugfixes in RIFF reading code. . 
+Updated to libraw 0.6.12: 
+ - Hasselblad V96C support. 
+Updated to libraw 0.6.11: 
+ - Fixed serious bug in loading metadata from external JPG file.
+Updated to libraw 0.6.10:
+ - Support for loading White Balance data from Sony ARW files edited with Sony IDC software.
+Updated to libraw 0.6.9:
+ - Better support for Samsung S85.
+ - Fixed possible integer overflow in wavelet denoising code.
+Updated to libraw 0.6.8:
+ - Changes in QuickTake 100 files processing.
+Updated to libraw 0.6.7:
+ -Added support for Samsung S85.
+ -Changes in external jpeg (metadata) processing.
+Updated to libraw 0.6.6:
+ -Changes in Panasonic FZ50 processing code.
+Updated to libraw 0.6.5:
+ -Fixed file descriptor and buffer memory leak when thumbnail extractor is called,
+  but library object is not properly initialized.
+ -Fixes in Imacon files unpacking.
+ -Fixes in Hasselblad .fff files unpacking.
+
+Fix PPM color preview extraction.
+
+0.1.7
+------------------------------------------------------------------------
+Updated to LibRaw 0.6.3 : NEF processing code changed (some overflow control added).
+Updated to LibRaw 0.6.2.
+New cameras: Canon G10 & 5D Mk2, Leaf AFi 7, Leica D-LUX4, 
+             Panasonic FX150 & G 1, Fujifilm IS Pro.
+
+0.1.6
+------------------------------------------------------------------------
+Updated to LibRaw 0.6.1.
+Ported to LibRaw 0.6.0 Api. Removed dcraw.c and DcrawBinary class.
+New cameras: Canon 50D, Sony A900, Nikon D90 & P6000, Panasonic LX3 FZ28.
+
+0.1.5
+------------------------------------------------------------------------
+- API changed: Add white point settings support (dcraw -S option)
+               Add new method to set/check brigness settings aviability
+               Raw decoding settings widget re-designed to group each 
+               options by features using tabs.
+               Add support dcraw options -m -A -P -p -o.
+               Add new signal emited when something is changed in settings.
+               Add new integer and double slider widgets with
+               default values and reset buttons.
+               Add new combo box widget with a default item and reset button.
+               Add new method to extract whole embedded JPEG image data as a 
+               byte array.
+
+- Updated dcraw to 8.87
+  New camera : Kodak C603, Nikon D700, Canon EOS 1000D,
+  Canon PowerShot SD300, and Olympus E-520.
+  Removed useless code from ppg_interpolate().
+- Updated dcraw to 8.86
+  New camera : Sony A300.
+  Fixed camera WB on the A200.
+  Set model-specific saturation levels in adobe_coeff().
+  No new options introduced.
+- Updated dcraw to 8.85
+  New camera : Olympus E-420.
+  No new options introduced.
+- Updated dcraw to 8.84
+  New cameras: Canon EOS 450D, Nikon D60, and Fuji S100FS.
+  Copied new matrices from Adobe DNG Converter 4.4.
+  sRAW support in 1.393 broke Fuji DNG files, now fixed.
+  No new options introduced.
+
+0.1.4
+------------------------------------------------------------------------
+- updated dcraw to 8.83
+  new cameras: Apple QuickTake 200, Fuji IS-1, Sony DSLR-A350, Pentax K20D,
+               Nokia N95, Canon PowerShots A460, Canon PowerShots A530, 
+	       Canon PowerShots A650.
+  no new options introduced.
+- updated dcraw to 8.82
+  new cameras: Sony DSLR-A200, Sony DSLR-A700, Sony XCD-SX910CR, STV680 VGA
+  no new options introduced.
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 142055 : Which whitebalance is used.
+
+0.1.3
+------------------------------------------------------------------------
+- updated dcraw to 8.81
+  new cameras: Canon G7, Fuji FinePix S9100/S9600, Olympus SP560UZ, Panasonic DMC-L10
+
+- updated dcraw to 8.80
+  new cameras: Hasselblad H3D, Olympus E-3, Canon EOS 40D, Canon PowerShot G9,
+               Canon EOS-1Ds Mark III, AVT F-080C, Nikon D3, Nikon D300,
+               Nikon Coolpix S6, Panasonic DMC-FZ18, Sony DSLR-A700
+
+  -m number_of_passes
+     After interpolation, clean up color artifacts by repeatedly applying a 3x3
+     median filter to the R-G and B-G channels.
+  - Licence : is GPL compatible again == less wories)
+
+0.1.2
+------------------------------------------------------------------------
+
+New features
+- updated internal dcraw from 8.60 to 8.77. API changed.
+- add new chromatic aberration reduction options (patch from Guillaume Castagnino).
+
+0.1.1
+------------------------------------------------------------------------
+
+New features
+- API changed: * KDcraw destructor is now virtual.
+               * Added DcrawSettingsContainer destructor.
+               * Separate embedded JPEG preview extraction and half decoding methods
+                 to get a preview of RAW pictures.
+
+Bugs fixed from B.K.O (http://bugs.kde.org):
+001 ==> 145482 : libkdraw compile fails on Cygwin.
+
+0.1.0
+------------------------------------------------------------------------
+First implementation
+
+For details and info about previous versions, see ChangeLog.

@@ -1,0 +1,299 @@
+dnl =======================================================
+dnl FILE: ./admin/configure.in.min
+dnl =======================================================
+
+dnl    This file is part of the KDE libraries/packages
+dnl    Copyright (C) 2001 Stephan Kulow (coolo@kde.org)
+ 
+dnl    This file is free software; you can redistribute it and/or
+dnl    modify it under the terms of the GNU Library General Public
+dnl    License as published by the Free Software Foundation; either
+dnl    version 2 of the License, or (at your option) any later version.
+ 
+dnl    This library is distributed in the hope that it will be useful,
+dnl    but WITHOUT ANY WARRANTY; without even the implied warranty of
+dnl    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+dnl    Library General Public License for more details.
+ 
+dnl    You should have received a copy of the GNU Library General Public License
+dnl    along with this library; see the file COPYING.LIB.  If not, write to
+dnl    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+dnl    Boston, MA 02110-1301, USA.
+
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+dnl This ksh/zsh feature conflicts with `cd blah ; pwd`
+unset CDPATH
+
+dnl Checking host/target/build systems, for make, install etc.
+AC_CANONICAL_SYSTEM 
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(libkdcraw-0.1.9, "3.5.10") dnl searches for some needed programs
+
+KDE_SET_PREFIX
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+AC_ENABLE_SHARED(yes)
+AC_ENABLE_STATIC(no)
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+KDE_USE_QT(3.2)
+AC_PATH_KDE
+dnl =======================================================
+dnl FILE: configure.in.in
+dnl =======================================================
+
+#MIN_CONFIG(3.2)
+CXXFLAGS="$CXXFLAGS $KDE_DEFAULT_CXXFLAGS"
+
+KDE_ENABLE_HIDDEN_VISIBILITY
+
+KDE_INIT_DOXYGEN([KEG Libraries API Reference], [Version $VERSION])
+
+dnl =======================================================
+dnl FILE: ./libkdcraw/configure.in.in
+dnl =======================================================
+
+AC_ARG_VAR(PKGCONFIGFOUND, [Path to pkg-config])
+AC_CHECK_PROG(PKGCONFIGFOUND, pkg-config,[yes])
+
+#-----------------------------------------------------------------
+# Library API version
+# -----------------------------------------------------------------
+
+ABI_MAJOR=4
+VERSION_INFO="4:3:0"
+
+AC_SUBST(ABI_MAJOR)
+AC_SUBST(VERSION_INFO)
+
+# AM_PROG_CC_C_O to avoid that automake complains for it
+AM_PROG_CC_C_O
+
+# -----------------------------------------------------------------
+# lcms check
+# -----------------------------------------------------------------
+
+have_lcms_header='no'
+KDE_CHECK_HEADER(lcms/lcms.h,have_lcms_header='yes',,)
+if test "$have_lcms_header" = 'yes'
+then
+    AC_DEFINE(LCMS_HEADER, <lcms/lcms.h>, [The correct header])
+else
+    # Alternative! Debian does it this way...
+    KDE_CHECK_HEADER(lcms.h,have_lcms_header='yes',,)
+    if test "$have_lcms_header" = 'yes'
+    then
+        AC_DEFINE(LCMS_HEADER, <lcms.h>, [The correct header])
+    fi
+fi
+
+LCMS_LIBS=''
+have_lcms='no'
+if test "$have_lcms_header" = 'yes'
+then
+    saved_cflags="$CFLAGS"
+    saved_ldflags="$LDFLAGS"
+    saved_libs=$LIBS
+    LIBS="$LIBS -llcms"
+    CFLAGS="$CFLAGS $all_includes"
+    LDFLAGS="$LDFLAGS $all_libraries"
+
+    AC_TRY_LINK([
+#define inline __inline /* gcc is in ansi mode */
+#include LCMS_HEADER
+#if LCMS_VERSION < 112
+choke!
+#endif
+], [
+cmsOpenProfileFromFile("foo", "r");
+],
+        [LCMS_LIBS='-llcms'; have_lcms='yes'])
+    LIBS=$saved_libs
+    CFLAGS=$saved_cflags
+    LDFLAGS=$saved_ldflags
+fi
+
+if test -z "$LCMS_LIBS"; then
+    DO_NOT_COMPILE="$DO_NOT_COMPILE libkdcraw"
+fi
+
+AC_SUBST(LCMS_LIBS)
+
+#AM_CONDITIONAL(compile_LIBKDCRAW, [test x$have_lcms != xyes])
+
+AC_OUTPUT([ libkdcraw/libkdcraw.pc ])
+
+# -----------------------------------------------------------------
+# enable hidden visibility only if kde >= 3.3.2 and kdelibs has
+# been compiled with visibility enabled
+# -----------------------------------------------------------------
+
+AC_LANG_PUSH(C++)
+libkdcraw_kdemacros_cppflags=$CPPFLAGS
+CPPFLAGS="$CPPFLAGS $all_includes"  
+AC_MSG_CHECKING([if kdemacros.h is usable])
+AC_COMPILE_IFELSE(
+ [
+   #include <kdemacros.h>
+   #include <string>
+   int other_func( void ) KDE_EXPORT;
+   int other_func( void )
+   { 
+      std::string s("KDE_EXPORT");
+      return 0;
+   }
+ ], 
+ [ AC_MSG_RESULT([yes])
+   AC_DEFINE(KDEMACROS_USABLE, 1, [kdemacros.h usable]) ], 
+ [ AC_MSG_RESULT([no]) ] 
+)
+CPPFLAGS=$libkdcraw_kdemacros_cppflags
+AC_LANG_POP(C++)
+
+# -----------------------------------------------------------------
+# enable OpenMP support to use parallelized code from LibRaw
+# (default: disabled). this mode speed-up demosaicing operations.
+# -----------------------------------------------------------------
+
+AC_MSG_CHECKING(whether to enable parallel demosaicing operation from LibRaw using openmp...)
+AC_ARG_ENABLE([openmp], [AC_HELP_STRING([--enable-openmp],
+        [enable openmp [default=disabled] ])],
+        if test $enableval = yes; then
+           [AC_MSG_RESULT(yes)]
+           [AC_DEFINE([USING_OPENMP], 1, [using openmp])]
+           USING_OPENMP=yes
+           [CXXFLAGS="$CXXFLAGS -fopenmp"]
+           [OPENMP_LDFLAGS=" -lgomp "]
+        fi
+        ,
+        [AC_MSG_RESULT(no)]
+        [AC_DEFINE([USING_OPENMP], 0, [using openmp])]
+        USING_OPENMP=no
+        [OPENMP_LDFLAGS=""]
+        )
+AC_SUBST(OPENMP_LDFLAGS)
+KDE_CREATE_SUBDIRSLIST
+AM_CONDITIONAL(libkexiv2_SUBDIR_included, test "x$libkexiv2_SUBDIR_included" = xyes)
+AM_CONDITIONAL(libkipi_SUBDIR_included, test "x$libkipi_SUBDIR_included" = xyes)
+AM_CONDITIONAL(libkdcraw_SUBDIR_included, test "x$libkdcraw_SUBDIR_included" = xyes)
+AM_CONDITIONAL(po_SUBDIR_included, test "x$po_SUBDIR_included" = xyes)
+AC_CONFIG_FILES([ Makefile ])
+AC_CONFIG_FILES([ libkdcraw/Makefile ])
+AC_CONFIG_FILES([ libkdcraw/icons/Makefile ])
+AC_CONFIG_FILES([ libkdcraw/libkdcraw/Makefile ])
+AC_CONFIG_FILES([ libkdcraw/libraw/Makefile ])
+AC_CONFIG_FILES([ libkdcraw/test/Makefile ])
+AC_CONFIG_FILES([ po/Makefile ])
+AC_CONFIG_FILES([ po/ca/Makefile ])
+AC_CONFIG_FILES([ po/da/Makefile ])
+AC_CONFIG_FILES([ po/de/Makefile ])
+AC_CONFIG_FILES([ po/el/Makefile ])
+AC_CONFIG_FILES([ po/es/Makefile ])
+AC_CONFIG_FILES([ po/et/Makefile ])
+AC_CONFIG_FILES([ po/is/Makefile ])
+AC_CONFIG_FILES([ po/it/Makefile ])
+AC_CONFIG_FILES([ po/ja/Makefile ])
+AC_CONFIG_FILES([ po/ms/Makefile ])
+AC_CONFIG_FILES([ po/nds/Makefile ])
+AC_CONFIG_FILES([ po/nl/Makefile ])
+AC_CONFIG_FILES([ po/pa/Makefile ])
+AC_CONFIG_FILES([ po/pt/Makefile ])
+AC_CONFIG_FILES([ po/pt_BR/Makefile ])
+AC_CONFIG_FILES([ po/sk/Makefile ])
+AC_CONFIG_FILES([ po/sr/Makefile ])
+AC_CONFIG_FILES([ po/sr@Latn/Makefile ])
+AC_CONFIG_FILES([ po/sv/Makefile ])
+AC_CONFIG_FILES([ po/th/Makefile ])
+AC_CONFIG_FILES([ po/uk/Makefile ])
+AC_OUTPUT
+dnl Put here things to be done at the very end - telling users
+dnl about additional packages to install.
+
+echo ""
+echo "-- libkdcraw configure results -------------------"
+
+if test "x$have_lcms" != "xyes"; then
+  echo "-- lcms found..................... NO"
+  echo ""
+  echo "libkdcraw needs Lcms library. You need to install the lcms development package."
+  echo "Lcms website is at http://www.littlecms.com"
+  echo ""
+  all_tests=bad
+else
+  echo "-- lcms found..................... YES"
+fi
+
+if test "x$USING_OPENMP" != "xyes"; then
+  echo "-- compile with OpenMP support.... NO (Optional)"
+  all_tests=bad
+else
+  echo "-- compile with OpenMP support.... YES (Optional)"
+fi
+
+
+# Check if KDE_SET_PREFIX was called, and --prefix was passed to configure
+if test -n "$kde_libs_prefix" -a -n "$given_prefix"; then
+  # And if so, warn when they don't match
+  if test "$kde_libs_prefix" != "$given_prefix"; then
+    # And if kde doesn't know about the prefix yet
+    echo ":"`kde-config --path exe`":" | grep ":$given_prefix/bin/:" 2>&1 >/dev/null
+    if test $? -ne 0; then
+      echo ""
+      echo "Warning: you chose to install this package in $given_prefix,"
+      echo "but KDE was found in $kde_libs_prefix."
+      echo "For this to work, you will need to tell KDE about the new prefix, by ensuring"
+      echo "that KDEDIRS contains it, e.g. export KDEDIRS=$given_prefix:$kde_libs_prefix"
+      echo "Then restart KDE."
+      echo ""
+    fi
+  fi
+fi
+
+if test x$GXX = "xyes" -a x$kde_have_gcc_visibility = "xyes" -a x$kde_cv_val_qt_gcc_visibility_patched = "xno"; then
+  echo ""
+  echo "Your GCC supports symbol visibility, but the patch for Qt supporting visibility"
+  echo "was not included. Therefore, GCC symbol visibility support remains disabled."
+  echo ""
+  echo "For better performance, consider including the Qt visibility supporting patch"
+  echo "located at:"
+  echo ""
+  echo "http://bugs.kde.org/show_bug.cgi?id=109386"
+  echo ""
+  echo "and recompile all of Qt and KDE. Note, this is entirely optional and"
+  echo "everything will continue to work just fine without it."
+  echo ""
+fi
+
+if test "$all_tests" = "bad"; then
+  if test ! "$cache_file" = "/dev/null"; then
+    echo ""
+    echo "Please remove the file $cache_file after changing your setup"
+    echo "so that configure will find the changes next time."
+    echo ""
+  fi
+else
+  echo ""
+  echo "Good - your configure finished. Start make now"
+  echo ""
+fi

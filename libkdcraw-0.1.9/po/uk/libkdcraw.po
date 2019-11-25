@@ -1,0 +1,525 @@
+# Translation of libkdcraw.po to Ukrainian
+#
+# Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdcraw\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-06-11 22:01-0700\n"
+"Last-Translator: Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: libkdcraw/rcombobox.cpp:73 libkdcraw/rnuminput.cpp:74
+#: libkdcraw/rnuminput.cpp:172
+msgid "Reset to default value"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:183
+msgid "16 bits color depth"
+msgstr "16-бітова глибина кольору"
+
+#: libkdcraw/dcrawsettingswidget.cpp:184
+msgid ""
+"<p>If enabled, all RAW files will be decoded in 16-bit color depth using a "
+"linear gamma curve. To prevent dark picture rendering in the editor, it is "
+"recommended to use Color Management in this mode."
+"<p>If disabled, all RAW files will be decoded in 8-bit color depth with a "
+"BT.709 gamma curve and a 99th-percentile white point. This mode is faster than "
+"16-bit decoding."
+msgstr ""
+"<p>Якщо ввімкнено, всі RAW-файли будуть декодуватись у 16-бітову глибину "
+"кольору за допомогою лінійної кривої гами. Для отримання доброї якості "
+"зображення рекомендовано в цьому режимі вживати керування кольором. "
+"<p>Якщо вимкнено, всі RAW-файли будуть декодуватись у 8-бітову глибину кольору "
+"за допомогою кривої гами BT.709 і 99% білої точки. Цей режим швидший за "
+"16-бітове перетворення."
+
+#: libkdcraw/dcrawsettingswidget.cpp:203
+msgid "Interpolate RGB as four colors"
+msgstr "Інтерполювати RGB як чотири кольори"
+
+#: libkdcraw/dcrawsettingswidget.cpp:204
+msgid ""
+"<p><b>Interpolate RGB as four colors</b>"
+"<p>The default is to assume that all green pixels are the same. If even-row "
+"green pixels are more sensitive to ultraviolet light than odd-row this "
+"difference causes a mesh pattern in the output; using this option solves this "
+"problem with minimal loss of detail."
+"<p>To resume, this option blurs the image a little, but it eliminates false 2x2 "
+"mesh patterns with VNG quality method or mazes with AHD quality method."
+msgstr ""
+"<p><b>Інтерполювати RGB як чотири кольори</b>"
+"<p>Типово припускається, що всі зелені пікселі однакові. Однак, якщо зелені "
+"пікселі парних рядів більш чутливі до ультрафіолетового світла, ніж пікселі в "
+"непарних рядах, то ця різниця утворює на зображенні сітку. Вживання цього "
+"параметра вирішує цю проблему з мінімальною втратою якості."
+"<p>Якщо коротко, цей параметр трохи розмиває зображення, але позбувається "
+"фальшивого візерунка сітки 2x2 за допомогою методу якості VNG або "
+"переплітається з методом AHD."
+
+#: libkdcraw/dcrawsettingswidget.cpp:217
+#, fuzzy, c-format
+msgid "libraw %1"
+msgstr "dcraw: %1"
+
+#: libkdcraw/dcrawsettingswidget.cpp:220
+msgid "Visit dcraw project website"
+msgstr "Відвідайте веб-сайт проекту dcraw"
+
+#: libkdcraw/dcrawsettingswidget.cpp:224
+msgid "Do not stretch or rotate pixels"
+msgstr "Не розтягувати і не обертати пікселі"
+
+#: libkdcraw/dcrawsettingswidget.cpp:225
+msgid ""
+"<p><b>Do not stretch or rotate pixels</b>"
+"<p>For Fuji Super CCD cameras, show the image tilted 45 degrees. For cameras "
+"with non-square pixels, do not stretch the image to its correct aspect ratio. "
+"In any case, this option guarantees that each output pixel corresponds to one "
+"RAW pixel."
+"<p>"
+msgstr ""
+"<p><b>Не розтягувати і не обертати пікселі</b>"
+"<p>Для камер з Fuji Super CCD показувати зображення з нахилом 45 градусів. Для "
+"камер з неквадратними пікселями - не розтягувати зображення до його правильних "
+"пропорцій. Цей параметр гарантує, що кожний піксель виводу відповідає одному "
+"пікселю формату RAW."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:235
+msgid "Quality:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:237
+msgid "Bilinear"
+msgstr "Білінійна"
+
+#: libkdcraw/dcrawsettingswidget.cpp:238
+msgid "VNG"
+msgstr "VNG"
+
+#: libkdcraw/dcrawsettingswidget.cpp:239
+msgid "PPG"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:240
+msgid "AHD"
+msgstr "AHD"
+
+#: libkdcraw/dcrawsettingswidget.cpp:242
+msgid ""
+"<p><b>Quality (interpolation)</b>"
+"<p>Select here the demosaicing RAW images decoding interpolation method. A "
+"demosaicing algorithm is a digital image process used to interpolate a complete "
+"image from the partial raw data received from the color-filtered image sensor "
+"internal to many digital cameras in form of a matrix of colored pixels. Also "
+"known as CFA interpolation or color reconstruction, another common spelling is "
+"demosaicing. There are 4 methods to demosaicing RAW images:"
+"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
+"(default - for slow computer). In this method, the red value of a non-red pixel "
+"is computed as the average of the adjacent red pixels, and similar for blue and "
+"green."
+"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
+"computes gradients near the pixel of interest and uses the lower gradients "
+"(representing smoother and more similar parts of the image) to make an "
+"estimate."
+"<p><b>PPG</b>: use Patterned Pixel Grouping interpolation. Pixel Grouping uses "
+"assumptions about natural scenery in making estimates. It has fewer color "
+"artifacts on natural images than the Variable Number of Gradients method."
+"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
+"selects the direction of interpolation so as to maximize a homogeneity metric, "
+"thus typically minimizing color artifacts."
+"<p>"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:272
+msgid "Filter:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:273
+msgid ""
+"<p><b>Median Filter</b>"
+"<p>Set here the passes used by median filter applied after interpolation to "
+"Red-Green and Blue-Green channels."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:282
+msgid "Demosaicing"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:290
+msgid "Method:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:292
+msgid "Default D65"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:293
+msgid "Camera"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:294
+msgid "Automatic"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:295
+msgid "Manual"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:297
+msgid ""
+"<p><b>White Balance Method</b>"
+"<p>Configure the raw white balance :"
+"<p><b>Default D65</b>: Use a standard daylight D65 white balance (dcraw "
+"defaults)"
+"<p><b>Camera</b>: Use the white balance specified by the camera. If not "
+"available, reverts to default neutral white balance"
+"<p><b>Automatic</b>: Calculates an automatic white balance averaging the entire "
+"image"
+"<p><b>Manual</b>: Set a custom temperature and green level values"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:309
+msgid "T(K):"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:310
+#, fuzzy
+msgid "<p><b>Temperature</b><p>Set here the color temperature in Kelvin."
+msgstr "<p><b>Поріг</b><p>Вкажіть поріг зменшення шуму."
+
+#: libkdcraw/dcrawsettingswidget.cpp:317
+msgid "Green:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:318
+msgid ""
+"<p>Set here the green component to set magenta color cast removal level."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:321
+msgid "Highlights:"
+msgstr "Виблиски:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:323
+msgid "Solid white"
+msgstr "Чисте біле"
+
+#: libkdcraw/dcrawsettingswidget.cpp:324
+msgid "Unclip"
+msgstr "Не об'єднувати"
+
+#: libkdcraw/dcrawsettingswidget.cpp:325
+msgid "Blend"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:326
+msgid "Rebuild"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:328
+#, fuzzy
+msgid ""
+"<p><b>Highlights</b>"
+"<p>Select here the highlight clipping method:"
+"<p><b>Solid white</b>: clip all highlights to solid white"
+"<p><b>Unclip</b>: leave highlights unclipped in various shades of pink"
+"<p><b>Blend</b>:Blend clipped and unclipped values together for a gradual fade "
+"to white"
+"<p><b>Rebuild</b>: reconstruct highlights using a level value"
+msgstr ""
+"<p><b>Виблиски</b>"
+"<p>Виберіть спосіб обрізання виблисків:"
+"<p><b>Чисте біле</b>: об'єднати всі виблиски в чисте біле "
+"<p><b>Не об'єднувати</b>: залишити виблиски у відтінках рожевого "
+"<p><b>Реконструювати</b>: реконструювати виблиски, вживаючи значення рівня."
+
+#: libkdcraw/dcrawsettingswidget.cpp:337
+msgid "Level:"
+msgstr "Рівень:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:341
+msgid ""
+"<p><b>Level</b>"
+"<p>Specify the reconstruct highlight level. Low values favor whites and high "
+"values favor colors."
+msgstr ""
+"<p><b>Рівень</b> "
+"<p>Вкажіть рівень для реконструкції виблисків в зображенні виводу. Низькі "
+"значення - надається перевага білому, великі значення - кольорам."
+
+#: libkdcraw/dcrawsettingswidget.cpp:345
+msgid "Brightness:"
+msgstr "Яскравість:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:350
+msgid ""
+"<p><b>Brighness</b>"
+"<p>Specify the brightness level of output image.The default value is 1.0 (works "
+"in 8-bit mode only)."
+"<p>"
+msgstr ""
+"<p><b>Яскравість</b> "
+"<p>Вкажіть рівень яскравості зображення виводу.Типовий: 1.0 (працює тільки в "
+"8-бітовому режимі)."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:360
+msgid "Black:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:361
+msgid ""
+"<p><b>Black point</b>"
+"<p>Use a specific black point value to decode RAW pictures. If you set this "
+"option to off, the Black Point value will be automatically computed."
+"<p>"
+msgstr ""
+"<p><b>Чорна точка</b>"
+"<p>Вживати певне значення чорної точки для декодування зображень RAW. Якщо ви "
+"вимкнете цей параметр, то значення чорної точки буде вирахуване автоматично."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:368
+msgid ""
+"<p><b>Black point value</b>"
+"<p>Specify specific black point value of the output image."
+"<p>"
+msgstr ""
+"<p><b>Значення чорної точки</b>"
+"<p>Вкажіть значення чорної точки зображення виводу."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:371
+msgid "White:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:372
+#, fuzzy
+msgid ""
+"<p><b>White point</b>"
+"<p>Use a specific white point value to decode RAW pictures. If you set this "
+"option to off, the White Point value will be automatically computed."
+"<p>"
+msgstr ""
+"<p><b>Чорна точка</b>"
+"<p>Вживати певне значення чорної точки для декодування зображень RAW. Якщо ви "
+"вимкнете цей параметр, то значення чорної точки буде вирахуване автоматично."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:379
+#, fuzzy
+msgid ""
+"<p><b>White point value</b>"
+"<p>Specify specific white point value of the output image."
+"<p>"
+msgstr ""
+"<p><b>Значення чорної точки</b>"
+"<p>Вкажіть значення чорної точки зображення виводу."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:409
+#, fuzzy
+msgid "White Balance"
+msgstr "Вживати баланс білого з камери"
+
+#: libkdcraw/dcrawsettingswidget.cpp:417
+msgid "Enable noise reduction"
+msgstr "Увімкнути зменшення шуму"
+
+#: libkdcraw/dcrawsettingswidget.cpp:418
+msgid ""
+"<p><b>Enable Noise Reduction</b>"
+"<p>Use wavelets to erase noise while preserving real detail."
+"<p>"
+msgstr ""
+"<p><b>Увімкнути зменшення шуму</b>"
+"<p>Вживайте wavelets для стирання шуму, але залишаючи без зміни деталі."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:424
+msgid "Threshold:"
+msgstr "Поріг:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:425
+msgid ""
+"<p><b>Threshold</b>"
+"<p>Set here the noise reduction threshold value to use."
+msgstr "<p><b>Поріг</b><p>Вкажіть поріг зменшення шуму."
+
+#: libkdcraw/dcrawsettingswidget.cpp:428
+#, fuzzy
+msgid "Enable Chromatic Aberration correction"
+msgstr "Увімкнути зменшення шуму"
+
+#: libkdcraw/dcrawsettingswidget.cpp:429
+msgid ""
+"<p><b>Enable Chromatic Aberration correction</b>"
+"<p>Enlarge the raw red and blue layers by the given factors, typically 0.999 to "
+"1.001, to correct chromatic aberration."
+"<p>"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:433
+msgid "Red:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:438
+msgid ""
+"<p><b>Red multiplier</b>"
+"<p>Set here the magnification factor of the red layer"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:441
+msgid "Blue:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:446
+msgid ""
+"<p><b>Blue multiplier</b>"
+"<p>Set here the magnification factor of the blue layer"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:461
+msgid "Corrections"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:469
+msgid "Camera Profile:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:471
+msgid "None"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:472
+msgid "Embedded"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:473 libkdcraw/dcrawsettingswidget.cpp:492
+msgid "Custom"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:475
+msgid ""
+"<p><b>Camera Profile</b>"
+"<p>Select here the input color space used to decode RAW data."
+"<p><b>None</b>: no input color profile is used during RAW decoding."
+"<p><b>Embedded</b>: use embedded color profile from RAW file if exist."
+"<p><b>Custom</b>: use a custom input color space profile."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:483 libkdcraw/dcrawsettingswidget.cpp:513
+msgid "ICC Files (*.icc; *.icm)"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:485
+#, fuzzy
+msgid "Workspace:"
+msgstr "Простір кольорів:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:487
+msgid "Raw (linear)"
+msgstr "Raw (лінійний)"
+
+#: libkdcraw/dcrawsettingswidget.cpp:488
+msgid "sRGB"
+msgstr "sRGB"
+
+#: libkdcraw/dcrawsettingswidget.cpp:489
+msgid "Adobe RGB"
+msgstr "Adobe RGB"
+
+#: libkdcraw/dcrawsettingswidget.cpp:490
+msgid "Wide Gamut"
+msgstr "Широка гама"
+
+#: libkdcraw/dcrawsettingswidget.cpp:491
+msgid "Pro-Photo"
+msgstr "Pro-Photo"
+
+#: libkdcraw/dcrawsettingswidget.cpp:494
+msgid ""
+"<p><b>Workspace</b>"
+"<p>Select here the output color space used to decode RAW data."
+"<p><b>Raw (linear)</b>: in this mode, no output color space is used during RAW "
+"decoding."
+"<p><b>sRGB</b>: this is a RGB color space, created cooperatively by "
+"Hewlett-Packard and Microsoft. It is the best choice for images destined for "
+"the Web and portrait photography."
+"<p><b>Adobe RGB</b>: this color space is an extended RGB color space, developed "
+"by Adobe. It is used for photography applications such as advertising and fine "
+"art."
+"<p><b>Wide Gamut</b>: this color space is an expanded version of the Adobe RGB "
+"color space."
+"<p><b>Pro-Photo</b>: this color space is an RGB color space, developed by "
+"Kodak, that offers an especially large gamut designed for use with photographic "
+"outputs in mind."
+"<p><b>Custom</b>: use a custom output color space profile."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:525
+msgid "Color Management"
+msgstr ""
+
+#~ msgid "<qt><p>Unable to find the <b>%1</b> executable:<br>This binary program is required to support Raw file formats. You can continue, but you will not be able to handle any Raw images. Please check the installation of libkdcraw package on your computer."
+#~ msgstr "<qt><p>Не вдалося знайти програму <b>%1</b>: <br>Ця програма потрібна для підтримки формату файлів Raw. Можете продовжувати без неї, але ви не зможете переглядати і редагувати зображення Raw. Будь ласка, перевірте на вашому комп'ютері інсталяцію пакунка libkdcraw."
+
+#~ msgid "<qt><p><b>%1</b> executable is not up to date:<br> The version %2 of this binary program have been found on your computer. This version is too old to run properly. You can continue, but you will not be able to handle any Raw images. Please check the installation of libkdcraw package on your computer."
+#~ msgstr "<qt> <p>Програму <b>%1</b> не оновлено: <br> На вашому комп'ютері було знайдено версію %2 цієї програми. Ця версія застара для того, щоб належно працювати. Можете продовжити, але ви не зможете переглядати і редагувати файли формату Raw. Будь ласка, перевірте на вашому комп'ютері інсталяцію libkdcraw."
+
+#, fuzzy
+#~ msgid "Camera White Balance"
+#~ msgstr "Вживати баланс білого з камери"
+
+#, fuzzy
+#~ msgid "Automatic White Balance"
+#~ msgstr "Автоматичний баланс кольору"
+
+#, fuzzy
+#~ msgid "Manual White balance"
+#~ msgstr "Вживати баланс білого з камери"
+
+#~ msgid "Black point"
+#~ msgstr "Чорна точка"
+
+#~ msgid "Red multiplier:"
+#~ msgstr "Коефіцієнт червоного:"
+
+#~ msgid "Blue multiplier:"
+#~ msgstr "Коефіцієнт синього:"
+
+#~ msgid "Standard"
+#~ msgstr "Стандартний"
+
+#~ msgid "Advanced"
+#~ msgstr "Додаткові"
+
+#~ msgid "Quality (interpolation):"
+#~ msgstr "Якість (інтерполяція):"
+
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. If this can not be found, reverts to the default (which is to use fixed daylight values, calculated from sample images)."
+#~ msgstr "<p><b>Вживати баланс білого з камери</b> <p>Вживати налаштування балансу білого з камери. Типово вживаються фіксовані значення денного світла, які вираховуються з зображень-зразків. Якщо його неможливо знайти, то повернути до типового."
+
+#, fuzzy
+#~ msgid "<p><b>Automatic color balance</b></p>Calculate the white balance by averaging the entire image."
+#~ msgstr "<p><b>Автоматичний баланс кольору</b></p>Типовим є використання фіксованого балансу кольорів, який взято на основі білої картки сфотографованої при сонячному світлі."
+
+#~ msgid "Color balance multipliers"
+#~ msgstr "Коефіцієнти балансу кольору"
+
+#~ msgid "Green 1 multiplier:"
+#~ msgstr "Коефіцієнт зеленого 1:"
+
+#~ msgid "Green 2 multiplier:"
+#~ msgstr "Коефіцієнт зеленого 2:"
+
+#~ msgid "Reconstruct"
+#~ msgstr "Реконструювати"

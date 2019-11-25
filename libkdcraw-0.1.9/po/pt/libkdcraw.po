@@ -1,0 +1,573 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdcraw\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-08-24 17:11+0100\n"
+"Last-Translator: José Nuno Coelho Pires <jncp@netcabo.pt>\n"
+"Language-Team: pt <kde-i18n-pt@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: CCD Adaptive Homogeneity CIELab VNG Fuji RAW Hewlett\n"
+"X-POFile-SpellExtra: Variable Directed Packard dcraw Kodak AHD libkdcraw\n"
+"X-POFile-SpellExtra: of Number CFA Gamute sRGB Photo Gradients BT wavelets\n"
+"X-POFile-SpellExtra: PPG\n"
+
+#: libkdcraw/rcombobox.cpp:73 libkdcraw/rnuminput.cpp:74
+#: libkdcraw/rnuminput.cpp:172
+msgid "Reset to default value"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:183
+msgid "16 bits color depth"
+msgstr "Profundidade de cor de 16 bits"
+
+#: libkdcraw/dcrawsettingswidget.cpp:184
+msgid ""
+"<p>If enabled, all RAW files will be decoded in 16-bit color depth using a "
+"linear gamma curve. To prevent dark picture rendering in the editor, it is "
+"recommended to use Color Management in this mode."
+"<p>If disabled, all RAW files will be decoded in 8-bit color depth with a "
+"BT.709 gamma curve and a 99th-percentile white point. This mode is faster than "
+"16-bit decoding."
+msgstr ""
+"<p>Se activar a opção, todos os ficheiros RAW serão descodificados para uma "
+"profundidade de cor de 16 bits, usando uma curva de gama linear. Para evitar o "
+"desenho de imagens pretas no editor, recomenda-se que use a Gestão de Cores "
+"neste modo."
+"<p>Se estiver desactivada, todos os ficheiros RAW serão descodificados para uma "
+"profundidade de cor de 8 bits, com uma curva de gama BT.709 e um ponto branco "
+"no percentil-99. Este modo é mais rápido que a descodificação de 16 bits."
+
+#: libkdcraw/dcrawsettingswidget.cpp:203
+msgid "Interpolate RGB as four colors"
+msgstr "Interpolar o RGB como quatro cores"
+
+#: libkdcraw/dcrawsettingswidget.cpp:204
+msgid ""
+"<p><b>Interpolate RGB as four colors</b>"
+"<p>The default is to assume that all green pixels are the same. If even-row "
+"green pixels are more sensitive to ultraviolet light than odd-row this "
+"difference causes a mesh pattern in the output; using this option solves this "
+"problem with minimal loss of detail."
+"<p>To resume, this option blurs the image a little, but it eliminates false 2x2 "
+"mesh patterns with VNG quality method or mazes with AHD quality method."
+msgstr ""
+"<p><b>Interpolar o RGB como quatro cores.</b>"
+"<p>Por omissão é assumido que todos os pontos verdes são o mesmo.  Se o pontos "
+"verdes da linhas pares forem mais sensíveis à luz ultravioleta do que os das "
+"linhas ímpares esta diferença cria um padrão no resultado; se usar esta opção, "
+"resolve o problema com uma perda mínima de detalhe."
+"<p>Em resumo, esta opção borra a imagem um pouco, mas elimina os falsos padrões "
+"em malha 2x2 com o método de qualidade VNG ou os labirintos com o método AHD."
+
+#: libkdcraw/dcrawsettingswidget.cpp:217
+#, fuzzy, c-format
+msgid "libraw %1"
+msgstr "dcraw %1"
+
+#: libkdcraw/dcrawsettingswidget.cpp:220
+msgid "Visit dcraw project website"
+msgstr "Visite a página Web do projecto 'dcraw'"
+
+#: libkdcraw/dcrawsettingswidget.cpp:224
+msgid "Do not stretch or rotate pixels"
+msgstr "Não encolher ou rodar os pixels"
+
+#: libkdcraw/dcrawsettingswidget.cpp:225
+msgid ""
+"<p><b>Do not stretch or rotate pixels</b>"
+"<p>For Fuji Super CCD cameras, show the image tilted 45 degrees. For cameras "
+"with non-square pixels, do not stretch the image to its correct aspect ratio. "
+"In any case, this option guarantees that each output pixel corresponds to one "
+"RAW pixel."
+"<p>"
+msgstr ""
+"<p><b>Não encolher ou rodar os pixels</b>"
+"<p>Nas máquinas Fuji Super CCD, mostra a imagem rodada em 45 graus. Para as "
+"máquinas com pixels não-quadrados, não estica a imagem para a sua proporção "
+"correcta. Em qualquer um dos casos, esta opção garante que cada pixel no "
+"resultado corresponde a um pixel RAW."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:235
+msgid "Quality:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:237
+msgid "Bilinear"
+msgstr "Bilinear"
+
+#: libkdcraw/dcrawsettingswidget.cpp:238
+msgid "VNG"
+msgstr "VNG"
+
+#: libkdcraw/dcrawsettingswidget.cpp:239
+msgid "PPG"
+msgstr "PPG"
+
+#: libkdcraw/dcrawsettingswidget.cpp:240
+msgid "AHD"
+msgstr "AHD"
+
+#: libkdcraw/dcrawsettingswidget.cpp:242
+#, fuzzy
+msgid ""
+"<p><b>Quality (interpolation)</b>"
+"<p>Select here the demosaicing RAW images decoding interpolation method. A "
+"demosaicing algorithm is a digital image process used to interpolate a complete "
+"image from the partial raw data received from the color-filtered image sensor "
+"internal to many digital cameras in form of a matrix of colored pixels. Also "
+"known as CFA interpolation or color reconstruction, another common spelling is "
+"demosaicing. There are 4 methods to demosaicing RAW images:"
+"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
+"(default - for slow computer). In this method, the red value of a non-red pixel "
+"is computed as the average of the adjacent red pixels, and similar for blue and "
+"green."
+"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
+"computes gradients near the pixel of interest and uses the lower gradients "
+"(representing smoother and more similar parts of the image) to make an "
+"estimate."
+"<p><b>PPG</b>: use Patterned Pixel Grouping interpolation. Pixel Grouping uses "
+"assumptions about natural scenery in making estimates. It has fewer color "
+"artifacts on natural images than the Variable Number of Gradients method."
+"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
+"selects the direction of interpolation so as to maximize a homogeneity metric, "
+"thus typically minimizing color artifacts."
+"<p>"
+msgstr ""
+"<p><b>Qualidade</b>"
+"<p>Seleccione aqui o método de interpolação na descodificação para remover o "
+"mosaico das imagens RAW. Um algoritmo de remoção do mosaico é um processo "
+"digital da imagem, usado para interpolar uma imagem completa a partir dos dados "
+"parciais em bruto que são recebidos do sensor de imagem com filtros de cores, o "
+"qual é interno em muitas máquinas digitais sob a forma de uma matriz de pixels "
+"coloridos. É também conhecido por interpolação CFA ou reconstrução de cores, "
+"sendo o outro termo comum a remoção de mosaicos. Existem 3 métodos para remover "
+"o mosaico das imagens RAW:"
+"<p><b>Bilinear</b>: usa a interpolação bilinear, rápida mas de baixa qualidade "
+"(predefinida - para computadores lentos). Neste método, o valor de vermelho de "
+"um pixel não-vermelho é calculado como a média dos pixels vermelhos adjacentes, "
+"aplicando-se o mesmo princípio para o verde e o azul."
+"<p><b>VNG</b>: usa a interpolação VNG (Variable Number of Gradients - Número de "
+"Gradientes Variável). Este método calcula os gradientes, perto do pixel de "
+"interesse, e usa os gradientes menores (que representam as partes mais suaves e "
+"semelhantes da imagem) para fazer uma estimativa."
+"<p><b>AHD</b>: usa a interpolação AHD (Adaptive Homogeneity-Directed - "
+"Adaptativa e Direccionada à Homogeneidade). Este método selecciona a direcção "
+"da interpolação, de modo a maximizar uma métrica de homogeneidade, minimizando "
+"desta forma os artefactos de cores."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:272
+msgid "Filter:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:273
+msgid ""
+"<p><b>Median Filter</b>"
+"<p>Set here the passes used by median filter applied after interpolation to "
+"Red-Green and Blue-Green channels."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:282
+msgid "Demosaicing"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:290
+msgid "Method:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:292
+msgid "Default D65"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:293
+msgid "Camera"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:294
+msgid "Automatic"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:295
+msgid "Manual"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:297
+msgid ""
+"<p><b>White Balance Method</b>"
+"<p>Configure the raw white balance :"
+"<p><b>Default D65</b>: Use a standard daylight D65 white balance (dcraw "
+"defaults)"
+"<p><b>Camera</b>: Use the white balance specified by the camera. If not "
+"available, reverts to default neutral white balance"
+"<p><b>Automatic</b>: Calculates an automatic white balance averaging the entire "
+"image"
+"<p><b>Manual</b>: Set a custom temperature and green level values"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:309
+msgid "T(K):"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:310
+#, fuzzy
+msgid "<p><b>Temperature</b><p>Set here the color temperature in Kelvin."
+msgstr ""
+"<p><b>Multiplicador de vermelho</b>"
+"<p>Configure aqui o factor de ampliação da camada vermelha"
+
+#: libkdcraw/dcrawsettingswidget.cpp:317
+msgid "Green:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:318
+msgid ""
+"<p>Set here the green component to set magenta color cast removal level."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:321
+msgid "Highlights:"
+msgstr "Tons claros:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:323
+msgid "Solid white"
+msgstr "Branco puro"
+
+#: libkdcraw/dcrawsettingswidget.cpp:324
+msgid "Unclip"
+msgstr "Retirar o recorte"
+
+#: libkdcraw/dcrawsettingswidget.cpp:325
+msgid "Blend"
+msgstr "Misturar"
+
+#: libkdcraw/dcrawsettingswidget.cpp:326
+msgid "Rebuild"
+msgstr "Reconstruir"
+
+#: libkdcraw/dcrawsettingswidget.cpp:328
+msgid ""
+"<p><b>Highlights</b>"
+"<p>Select here the highlight clipping method:"
+"<p><b>Solid white</b>: clip all highlights to solid white"
+"<p><b>Unclip</b>: leave highlights unclipped in various shades of pink"
+"<p><b>Blend</b>:Blend clipped and unclipped values together for a gradual fade "
+"to white"
+"<p><b>Rebuild</b>: reconstruct highlights using a level value"
+msgstr ""
+"<p><b>Tons claros</b>"
+"<p>Seleccione aqui o método de recorte dos tons claros:"
+"<p><b>Branco puro</b>: ajusta todos os tons claros para o branco puro"
+"<p><b>Retirar o recorte</b>: deixa os tons claros não-recortados, em vários "
+"tons de rosa"
+"<p><b>Misturar</b>:Mistura os valores recortados e não recortados em conjunto, "
+"para gerar um desvanecimento gradual para branco"
+"<p><b>Reconstruir</b>: reconstrói os tons claros, usando um nível predefinido."
+
+#: libkdcraw/dcrawsettingswidget.cpp:337
+msgid "Level:"
+msgstr "Nível:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:341
+msgid ""
+"<p><b>Level</b>"
+"<p>Specify the reconstruct highlight level. Low values favor whites and high "
+"values favor colors."
+msgstr ""
+"<p><b>Nível</b>"
+"<p>Indique o nível de tons claros na reconstrução da imagem resultante. Os "
+"valores baixos favorecem os brancos e os valores altos favorecem as cores."
+
+#: libkdcraw/dcrawsettingswidget.cpp:345
+msgid "Brightness:"
+msgstr "Brilho:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:350
+msgid ""
+"<p><b>Brighness</b>"
+"<p>Specify the brightness level of output image.The default value is 1.0 (works "
+"in 8-bit mode only)."
+"<p>"
+msgstr ""
+"<p><b>Brilho</b>"
+"<p>Indique o nível de brilho da imagem resultante. O valor por omissão é 1,0 "
+"(funciona apenas no modo de 8 bits)."
+
+#: libkdcraw/dcrawsettingswidget.cpp:360
+msgid "Black:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:361
+msgid ""
+"<p><b>Black point</b>"
+"<p>Use a specific black point value to decode RAW pictures. If you set this "
+"option to off, the Black Point value will be automatically computed."
+"<p>"
+msgstr ""
+"<p><b>Ponto preto</b>"
+"<p>Use um valor específico do ponto preto para descodificar as imagens RAW. Se "
+"desligar esta opção, o valor do Ponto Preto será calculado automaticamente."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:368
+msgid ""
+"<p><b>Black point value</b>"
+"<p>Specify specific black point value of the output image."
+"<p>"
+msgstr ""
+"<p><b>Valor do ponto preto</b>"
+"<p>Indique um valor do ponto preto específico, para a imagem resultante."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:371
+msgid "White:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:372
+#, fuzzy
+msgid ""
+"<p><b>White point</b>"
+"<p>Use a specific white point value to decode RAW pictures. If you set this "
+"option to off, the White Point value will be automatically computed."
+"<p>"
+msgstr ""
+"<p><b>Ponto preto</b>"
+"<p>Use um valor específico do ponto preto para descodificar as imagens RAW. Se "
+"desligar esta opção, o valor do Ponto Preto será calculado automaticamente."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:379
+#, fuzzy
+msgid ""
+"<p><b>White point value</b>"
+"<p>Specify specific white point value of the output image."
+"<p>"
+msgstr ""
+"<p><b>Valor do ponto preto</b>"
+"<p>Indique um valor do ponto preto específico, para a imagem resultante."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:409
+#, fuzzy
+msgid "White Balance"
+msgstr "Usar o balanceamento de branco da máquina"
+
+#: libkdcraw/dcrawsettingswidget.cpp:417
+msgid "Enable noise reduction"
+msgstr "Activar a redução de ruído"
+
+#: libkdcraw/dcrawsettingswidget.cpp:418
+msgid ""
+"<p><b>Enable Noise Reduction</b>"
+"<p>Use wavelets to erase noise while preserving real detail."
+"<p>"
+msgstr ""
+"<p><b>Activar a Redução de Ruído</b>"
+"<p>Usa 'wavelets' (padrões ondulatórios) para eliminar o ruído, preservando à "
+"mesma o detalhe real."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:424
+msgid "Threshold:"
+msgstr "Limiar:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:425
+msgid ""
+"<p><b>Threshold</b>"
+"<p>Set here the noise reduction threshold value to use."
+msgstr ""
+"<p><b>Limiar:</b>"
+"<p>Defina aqui o valor-limite da redução de ruído a usar."
+
+#: libkdcraw/dcrawsettingswidget.cpp:428
+msgid "Enable Chromatic Aberration correction"
+msgstr "Activar a correcção da Aberração Cromática"
+
+#: libkdcraw/dcrawsettingswidget.cpp:429
+msgid ""
+"<p><b>Enable Chromatic Aberration correction</b>"
+"<p>Enlarge the raw red and blue layers by the given factors, typically 0.999 to "
+"1.001, to correct chromatic aberration."
+"<p>"
+msgstr ""
+"<p><b>Activar a correcção da Aberração Cromática</b>"
+"<p>Aumenta as camadas de vermelho e azul pelos factores indicados, tipicamente "
+"entre 0,999 e 1,001, de modo a corrigir a aberração cromática."
+"<p>"
+
+#: libkdcraw/dcrawsettingswidget.cpp:433
+msgid "Red:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:438
+msgid ""
+"<p><b>Red multiplier</b>"
+"<p>Set here the magnification factor of the red layer"
+msgstr ""
+"<p><b>Multiplicador de vermelho</b>"
+"<p>Configure aqui o factor de ampliação da camada vermelha"
+
+#: libkdcraw/dcrawsettingswidget.cpp:441
+#, fuzzy
+msgid "Blue:"
+msgstr "Misturar"
+
+#: libkdcraw/dcrawsettingswidget.cpp:446
+msgid ""
+"<p><b>Blue multiplier</b>"
+"<p>Set here the magnification factor of the blue layer"
+msgstr ""
+"<p><b>Multiplicador de azul</b>"
+"<p>Configure aqui o factor de ampliação da camada azul"
+
+#: libkdcraw/dcrawsettingswidget.cpp:461
+msgid "Corrections"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:469
+msgid "Camera Profile:"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:471
+msgid "None"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:472
+msgid "Embedded"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:473 libkdcraw/dcrawsettingswidget.cpp:492
+msgid "Custom"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:475
+msgid ""
+"<p><b>Camera Profile</b>"
+"<p>Select here the input color space used to decode RAW data."
+"<p><b>None</b>: no input color profile is used during RAW decoding."
+"<p><b>Embedded</b>: use embedded color profile from RAW file if exist."
+"<p><b>Custom</b>: use a custom input color space profile."
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:483 libkdcraw/dcrawsettingswidget.cpp:513
+msgid "ICC Files (*.icc; *.icm)"
+msgstr ""
+
+#: libkdcraw/dcrawsettingswidget.cpp:485
+#, fuzzy
+msgid "Workspace:"
+msgstr "Espaço de cores:"
+
+#: libkdcraw/dcrawsettingswidget.cpp:487
+msgid "Raw (linear)"
+msgstr "Bruto (linear)"
+
+#: libkdcraw/dcrawsettingswidget.cpp:488
+msgid "sRGB"
+msgstr "sRGB"
+
+#: libkdcraw/dcrawsettingswidget.cpp:489
+msgid "Adobe RGB"
+msgstr "RGB da Adobe"
+
+#: libkdcraw/dcrawsettingswidget.cpp:490
+msgid "Wide Gamut"
+msgstr "Gamute Amplo"
+
+#: libkdcraw/dcrawsettingswidget.cpp:491
+msgid "Pro-Photo"
+msgstr "Pro-Photo"
+
+#: libkdcraw/dcrawsettingswidget.cpp:494
+#, fuzzy
+msgid ""
+"<p><b>Workspace</b>"
+"<p>Select here the output color space used to decode RAW data."
+"<p><b>Raw (linear)</b>: in this mode, no output color space is used during RAW "
+"decoding."
+"<p><b>sRGB</b>: this is a RGB color space, created cooperatively by "
+"Hewlett-Packard and Microsoft. It is the best choice for images destined for "
+"the Web and portrait photography."
+"<p><b>Adobe RGB</b>: this color space is an extended RGB color space, developed "
+"by Adobe. It is used for photography applications such as advertising and fine "
+"art."
+"<p><b>Wide Gamut</b>: this color space is an expanded version of the Adobe RGB "
+"color space."
+"<p><b>Pro-Photo</b>: this color space is an RGB color space, developed by "
+"Kodak, that offers an especially large gamut designed for use with photographic "
+"outputs in mind."
+"<p><b>Custom</b>: use a custom output color space profile."
+msgstr ""
+"<p><b>Espaço de cores</b>"
+"<p>Seleccione aqui o espaço de cores resultante que é usado para descodificar "
+"os dados RAW."
+"<p><b>Bruto (linear)</b>: neste modo, não é usado nenhum espaço de cores "
+"resultante na descodificação do RAW."
+"<p><b>sRGB</b>: este espaço de cores é um espaço de cores RGB, criado em "
+"cooperação entre a Hewlett-Packard e a Microsoft, sendo a melhor escolha para "
+"as imagens destinadas à Web e aos retratos fotográficos."
+"<p><b>RGB da Adobe</b>: este espaço de cores é um espaço de cores RGB, "
+"desenvolvido pela Adobe, que é usado em aplicações de fotografia como a "
+"publicidade e a arte."
+"<p><b>Gamute Amplo</b>: este espaço de cores é uma versão expandida do espaço "
+"de cores RGB da Adobe."
+"<p><b>Pro-Photo</b>: este espaço de cores é um espaço RGB, desenvolvido pela "
+"Kodak, que oferece um gamute especialmente grande, desenhado para ser usado com "
+"resultados fotográficos em mente."
+
+#: libkdcraw/dcrawsettingswidget.cpp:525
+msgid "Color Management"
+msgstr ""
+
+#~ msgid "<qt><p>Unable to find the <b>%1</b> executable:<br>This binary program is required to support Raw file formats. You can continue, but you will not be able to handle any Raw images. Please check the installation of libkdcraw package on your computer."
+#~ msgstr "<qt><p>Não foi possível encontrar o executável <b>%1</b>:<br>Este programa binário é necessário para suportar os formatos de ficheiro RAW. Poderá continuar, mas não será capaz de lidar com nenhumas imagens RAW. Verifique por favor a instalação do pacote 'libkdcraw' no seu computador."
+
+#~ msgid "<qt><p><b>%1</b> executable is not up to date:<br> The version %2 of this binary program have been found on your computer. This version is too old to run properly. You can continue, but you will not be able to handle any Raw images. Please check the installation of libkdcraw package on your computer."
+#~ msgstr "<qt><p>O executável <b>%1</b> não está actualizado:<br>É necessária a versão %2 deste programa binário para suportar os formatos de ficheiro RAW. Esta versão é demasiado antiga para funcionar convenientemente. Poderá continuar, mas não será capaz de lidar com nenhumas imagens RAW. Verifique por favor a instalação do pacote 'libkdcraw' no seu computador."
+
+#, fuzzy
+#~ msgid "Camera White Balance"
+#~ msgstr "Usar o balanceamento de branco da máquina"
+
+#, fuzzy
+#~ msgid "Automatic White Balance"
+#~ msgstr "Balanceamento de cores automático"
+
+#, fuzzy
+#~ msgid "Manual White balance"
+#~ msgstr "Usar o balanceamento de branco da máquina"
+
+#~ msgid "Black point"
+#~ msgstr "Ponto preto"
+
+#~ msgid "Red multiplier:"
+#~ msgstr "Multiplicador de vermelho:"
+
+#~ msgid "Blue multiplier:"
+#~ msgstr "Multiplicador de azul:"
+
+#~ msgid "Standard"
+#~ msgstr "Normal"
+
+#~ msgid "Advanced"
+#~ msgstr "Avançado"
+
+#~ msgid "Quality (interpolation):"
+#~ msgstr "Qualidade (interpolação):"
+
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. If this can not be found, reverts to the default (which is to use fixed daylight values, calculated from sample images)."
+#~ msgstr "<p><b>Usar o balanceamento de branco da máquina</b><p>Utiliza a configuração personalizada de balanceamento de branco da máquina fotográfica. Se esta não for encontrada, é usada a predefinida (onde são utilizados valores fixos de luz do dia, calculados a partir de imagens de exemplo)."
+
+#~ msgid "<p><b>Automatic color balance</b></p>Calculate the white balance by averaging the entire image."
+#~ msgstr "<p><b>Balanceamento de cores automático</b><p>Calcula o balanceamento de branco, fazendo a média em toda a imagem."
+
+#~ msgid "Color balance multipliers"
+#~ msgstr "Multiplicadores do balanceamento de cores"
+
+#~ msgid "Green 1 multiplier:"
+#~ msgstr "Multiplicador do verde 1:"
+
+#~ msgid "Green 2 multiplier:"
+#~ msgstr "Multiplicador do verde 2:"

@@ -1,0 +1,241 @@
+How to release kipi & co.
+----------------------------------------
+
+1. Before the final release
+2. Release libkipi
+3. Release libkexiv2
+4. Release kipi-plugins
+5. Notes on svn2cl
+6. Notes on new release script (create_tarball.rb)
+
+
+----------------------------------------
+1. Before the final release
+----------------------------------------
+
+Some days before releasing the final, remember to announce 
+the translations commit deadline to kde-i18-doc@kde.org.
+
+----------------------------------------
+2. Release libkipi
+----------------------------------------
+
+ a) Update release info
+    libkipi/libkipi.lsm
+    libkipi/libkipi/version.h
+    libkipi/libkipi.pc.in
+
+    To do that you can use the "prepare_libkipi.rb" script, change the 
+    release version ("version" and "version_n" fields) and run it.
+    Don't forget to commit your changes :)
+
+ b) Update Changelog
+    - to do that use the "release_kipi_changelog.sh" script
+      release_kipi_changelog.sh libkipi oldest-revision-or-date new-release-version
+    - edit Changelog and modify the wrong lines (if any)
+    - Commit your changes
+
+ c) Build the source tarball
+    - go into makerelease directory
+    - run "create_tarball.rb -p libkipi -v X.Y.Z"
+      with X.Y.Z as the right package version
+    or
+    - use the "release_libkipi.rb"
+      edit the script and change the "version" field
+      if you're releasing an svn snapshot set "usesvnver" to "yes"
+      run it and get libkipiXXX.tar.bz2
+
+ d) Uncompress and test the tarball
+    - check if all the files are right in
+    - check if the file RELEASE.rev is in and with the right revision number
+    - check if it builds correctly.
+    - diff headerfiles installed in <incdir>/kde/libkipi/ with last release
+      and check for binary compatibility (see e.g.,
+      http://developer.kde.org/documentation/other/binarycompatibility.html)
+      Every API change should be refleced in a changed version-info in
+      libkipi/libkipi/Makefile.am (see e.g.,
+      http://www.gnu.org/software/libtool/manual.html#Versioning)
+
+ e) Upload tarball for testing 
+    Before an official release upload the tarball for testing used sites are
+    digikam3rdparty.free.fr or www.linux.it/~anaselli/kipi-plugins - depends 
+    on who is releasing :)
+    Send a mail to kde-imaging@kde.org and digikam-devel@kde.org to have a 
+    feedback from pakagers before posting an offical release annoucement.
+
+  f) Upload tarbal on SF and update kipi site
+     official site for uploading the release is http://sourceforge.net/projects/kipi
+     web page to be update is http://extragear.kde.org/apps/kipi/
+     to update this last you have to get, change and commit it from
+     XXX@svn.kde.org/home/kde/trunk/www/areas/extragear/apps/kipi
+     Send a mail to announce the official release.
+
+----------------------------------------
+3. Release libkexiv2
+----------------------------------------
+
+ a) Update release info
+   libkexiv2/libkexiv2.lsm
+   libkexiv2/version.h
+   libkexiv2/libkexiv2.pc.in
+   libkexiv2/Makefile.am
+   libkexiv2/ChangeLog
+
+   To do that you can use the "prepare_libkexiv2.rb" script, change the 
+   release version ("version", "version_n", "version_info" and "chlog_rev" fields) 
+   and run it.
+   Don't forget to fix Changelog and commit your changes :)
+
+ c) Build the source tarball
+    - go into makerelease directory
+    - run "create_tarball.rb -p libkexiv2 -v X.Y.Z"
+      with X.Y.Z as the right package version
+    or
+    - use the "release_libkexiv2.rb"
+      edit the script and change the "version" field
+      if you're releasing an svn snapshot set "usesvnver" to "yes"
+      run it and get libkexiv2XXX.tar.bz2
+
+ d) Uncompress and test the tarball
+    - check if all the files are right in
+    - check if the file RELEASE.rev is in and with the right revision number
+    - check if it builds correctly.
+    - diff headerfiles installed in <incdir>/kde/libkexiv2/ with last release
+      and check for binary compatibility (see e.g.,
+      http://developer.kde.org/documentation/other/binarycompatibility.html)
+      Every API change should be refleced in a changed version-info in
+      libkexiv2/Makefile.am (see e.g.,
+      http://www.gnu.org/software/libtool/manual.html#Versioning)
+
+ e) Upload tarball for testing 
+    Before an official release upload the tarball for testing used sites are
+    digikam3rdparty.free.fr or www.linux.it/~anaselli/kipi-plugins - depends 
+    on who is releasing :)
+    Send a mail to kde-imaging@kde.org and digikam-devel@kde.org to have a 
+    feedback from pakagers before posting an offical release annoucement.
+
+  f) Upload tarbal on SF and update kipi site
+     official site for uploading the release is http://sourceforge.net/projects/kipi
+     web page to be update is http://extragear.kde.org/apps/kipi/
+     to update this last you have to get, change and commit it from
+     XXX@svn.kde.org/home/kde/trunk/www/areas/extragear/apps/kipi
+     Send a mail to announce the official release.
+
+----------------------------------------
+4. Release kipi-plugins
+----------------------------------------
+
+ a) Update release info
+    kipi-plugins/kipi-plugins.lsm
+    kipi-plugins/common/include/pluginsversion.h
+    (kipi-plugins/ChangeLog)
+
+    To do that you can use the "prepare_kipiplugins.rb" script, change the 
+    release version ("version" field) and run it.
+
+    Using svn2cl (http://ch.tudelft.nl/~arthur/svn2cl/) you can 
+    add ChangeLog info with this script as well, to do that
+    follow the instructions:
+    - set usesv2cl to "yes"
+    - set svn2cl, svnbase, svnroot according to your account
+    - set chlog_rev to the last revision (+1) of the last release
+      (look at ChangeLog file, last commit)
+    - use the script as usual and skip step b)
+    - edit ChangeLog and modify the wrong lines (if any)
+    
+
+    Don't forget to commit your changes.
+
+ b) Update ChangeLog
+    - if you're using svn2cl you can do that at step a)
+    - to do that use the "release_kipi_changelog.sh" script
+      release_kipi_changelog.sh kipi-plugins oldest-revision-or-date new-release-version
+    - edit Changelog and modify the wrong lines (if any)
+    - Commit your changes
+
+ c) Build the source tarball
+    - go into makerelease directory
+    - run "create_tarball.rb -p kipi-plugins -v X.Y.Z"
+      with X.Y.Z as the right package version
+    or
+    - use the "release_kipi-plugins.rb"
+      edit the script and change the "version" field and check the "addPo" one for po files
+      if you're releasing an svn snapshot set "usesvnver" to "yes"
+      run it and get kipi-pluginsXXX.tar.bz2
+
+ d) Uncompress and test the tarball
+    - check if all the files are right in
+    - check if the file RELEASE.rev is in and with the right revision number
+    - check if it builds correctly.
+
+ e) Upload tarball for testing 
+    Before an official release upload the tarball for testing used sites are
+    digikam3rdparty.free.fr or www.linux.it/~anaselli/kipi-plugins - depends 
+    on who is releasing :)
+    Send a mail to kde-imaging@kde.org and digikam-devel@kde.org to have a 
+    feedback from pakagers before posting an offical release annoucement.
+
+  f) Upload tarbal on SF and update kipi site
+     official site for uploading the release is http://sourceforge.net/projects/kipi
+     web page to be update is http://extragear.kde.org/apps/kipi/
+     to update this last you have to get, change and commit it from
+     XXX@svn.kde.org/home/kde/trunk/www/areas/extragear/apps/kipi
+     Send a mail to announce the official release at least to:
+     - kde-extra-gear@kde.org
+     - kde-announce@kde.org
+     - kde-imaging@kde.org 
+     - digikam-devel@kde.org
+     - gwenview-general@lists.sourceforge.net
+
+
+----------------------------------------
+5. Notes on svn2cl
+----------------------------------------
+
+Latest versions (>= 0.9) of svn2cl offer the --ignore-message-starting option
+and --ignore-message-starting=SVN_SILENT should work.
+Programmers often write SVN_SILENT or CVS_SILENT (obsolete) everywhere
+in the commit comment, that means such an option could not work.
+Moreover it can be used only once, so just to skip SVN_SILENT or CVS_SILENT
+not both.
+
+The easiest way was to to hack into svn2cl.xsl (mine is /usr/share/svn2cl/svn2cl.xsl). 
+Add the following lines:
+
+ <!-- skip entries where the message contains SVN_SILENT -->
+  <xsl:template match="logentry[contains(msg,'SVN_SILENT')]">
+  </xsl:template>
+ <!-- skip entries where the message contains SILENT -->
+  <xsl:template match="logentry[contains(msg,'SILENT')]">
+  </xsl:template>
+
+just before the template:
+
+ <!-- format one entry from the log -->
+ <xsl:template match="logentry">
+  ...
+
+
+----------------------------------------
+6. Notes on new release script (create_tarball.rb)
+----------------------------------------
+
+You can find new release script, called create_tarball.rb,
+under libs/makerelase directory.
+This script makes other release ones obsolete.
+
+Usage: create_tarball [options]
+    -u, --user USERNAME              svn account
+    -w, --https                      Using https instead of svn+ssh
+    -n, --noaccount                  Using svn://anonsvn.kde.org/ instead of svn+ssh
+    -p, --package NAME               Package name
+    -v, --version VER                Package version
+    -h, --help                       Show this usage statement
+
+Package name is mandatory
+
+Package information is into config.ini (same directory as above).
+Example of usage:
+./create_tarball.rb -p libkexiv2 -v 0.1.7 
+
+
