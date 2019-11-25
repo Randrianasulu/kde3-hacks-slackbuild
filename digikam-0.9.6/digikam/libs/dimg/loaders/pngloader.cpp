@@ -120,7 +120,7 @@ bool PNGLoader::load(const QString& filePath, DImgLoaderObserver *observer)
     // PNG error handling. If an error occurs during reading, libpng
     // will jump here
 
-    if (setjmp(png_ptr->jmpbuf))
+    if (setjmp(png_jmpbuf(png_ptr)))
     {
         DDebug() << k_funcinfo << "Internal libPNG error during reading file. Process aborted!" << endl;
         png_destroy_read_struct(&png_ptr, &info_ptr, NULL);
@@ -526,7 +526,7 @@ bool PNGLoader::save(const QString& filePath, DImgLoaderObserver *observer)
     // PNG error handling. If an error occurs during writing, libpng
     // will jump here
 
-    if (setjmp(png_ptr->jmpbuf))
+    if (setjmp(png_jmpbuf(png_ptr)))
     {
         DDebug() << k_funcinfo << "Internal libPNG error during writing file. Process aborted!" << endl;
         fclose(f);
