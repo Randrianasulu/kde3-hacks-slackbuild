@@ -1,0 +1,20 @@
+--- /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/Qt.cpp.old	2010-10-23 21:14:34.000000000 +0200
++++ /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/Qt.cpp	2010-10-23 21:12:19.000000000 +0200
+@@ -1772,7 +1772,7 @@
+ VALUE
+ getmetainfo(VALUE self, int &offset, int &index)
+ {
+-    const char * signalname = rb_id2name(rb_frame_last_func());
++    const char * signalname = rb_id2name(rb_frame_this_func());
+     VALUE metaObject_value = rb_funcall(qt_internal_module, rb_intern("getMetaObject"), 1, self);
+ 
+     smokeruby_object *ometa = value_obj_info(metaObject_value);
+@@ -1862,7 +1862,7 @@
+     // Now, I need to find out if this means me
+     int index;
+     char *slotname;
+-    bool isSignal = qstrcmp(rb_id2name(rb_frame_last_func()), "qt_emit") == 0;
++    bool isSignal = qstrcmp(rb_id2name(rb_frame_this_func()), "qt_emit") == 0;
+     VALUE mocArgs = getslotinfo(self, id, slotname, index, isSignal);
+     if(mocArgs == Qnil) {
+ 		// No ruby slot/signal found, assume the target is a C++ one

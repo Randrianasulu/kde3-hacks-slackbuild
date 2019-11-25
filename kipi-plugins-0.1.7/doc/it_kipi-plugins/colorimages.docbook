@@ -1,0 +1,126 @@
+<chapter id="colorimages">
+<chapterinfo>
+
+<title
+>Colorazione delle immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin per la colorazione delle immagini di Kipi è uno strumento per cambiare o migliorare la resa dei colori. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Questo plugin può essere usato per il miglioramento non interattivo delle immagini in un album. Usa il programma "convert" del pacchetto "ImageMagick". È disponibile un'anteprima (parziale o completa) dell'effetto. Sono stati implementati dieci tipi di filtri di colore: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Riduci il contrasto</emphasis
+>: riduce il contrasto dell'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Profondità</emphasis
+>: cambia la profondità del colore dell'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Equalizza</emphasis
+>: applica una equalizzazione degli istogrammi dell'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Sfuma</emphasis
+>: i colori entro una certa distanza vengono considerati uguali.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Scale di grigio</emphasis
+>: converte le immagini a colori in immagini in scala di grigio.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Aumenta il contrasto</emphasis
+>: aumenta il contrasto dell'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Monocromatico</emphasis
+>: trasforma l'immagine in bianco e nero.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Negativo</emphasis
+>: rimpiazza ogni pixel con il suo colore complementare.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Normalizza</emphasis
+>: trasforma l'immagine in modo da utilizzare l'intero intervallo dei colori.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Segmentazione</emphasis
+>: segmenta un'immagine analizzando gli istogrammi dei componenti dei colori.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Delinea</emphasis
+>: delinea l'immagine (tecnica inversa alla sfumatura).</para
+></listitem>
+</itemizedlist>
+
+<para
+>Puoi vedere alcuni esempi costruiti con questo plugin a questo <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/ColorImages/index.html"
+><citetitle
+>URL</citetitle
+></ulink
+>.</para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

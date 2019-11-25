@@ -1,0 +1,75 @@
+<chapter id="jpeglossless">
+<chapterinfo>
+
+<title
+>JPEG senza perdita</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin JPEG senza perdita di Kipi è uno strumento per trasformare le immagini senza perdita di qualità a causa della compressione. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Questo plugin è disponibili dall'interno dell'applicazione ospite. Permette, per le trasformazioni elencate sotto, di salvare immagini in formato JPEG, che normalmente perde precisione ogni volta che salvi (altrimenti non ci sarebbe nessuna riduzione delle dimensioni) senza perdere qualità né informazioni Exif: </para>
+
+<itemizedlist>
+<listitem
+><para
+>Esegui una rotazione di 90, 180 o 270 gradi di JPEG senza perdita.</para
+></listitem>
+<listitem
+><para
+>Esegui un ribaltamento orizzontale o verticale di JPEG senza perdita.</para
+></listitem>
+<listitem
+><para
+>Esegui una conversione in bianco e nero di JPEG senza perdita.</para
+></listitem>
+<listitem
+><para
+>Regolazione automatica di ribaltamento o rotazione in base al tag Exif.</para
+></listitem>
+<listitem
+><para
+>Fai una ricompressione di immagini JPEG senza perdita.</para
+></listitem>
+</itemizedlist>
+<para
+>In conseguenza del salvataggio senza perdita la dimensione del file sarà più grande (simile a quella del formato senza perdita PNG) perché non c'è compressione delle informazioni di codifica dei colori. </para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

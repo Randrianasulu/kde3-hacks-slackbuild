@@ -1,0 +1,128 @@
+/****************************************************************************
+** Digikam::BatchAlbumsSyncMetadata meta object code from reading C++ file 'batchalbumssyncmetadata.h'
+**
+** Created: Wed Jun 14 03:52:29 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "batchalbumssyncmetadata.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::BatchAlbumsSyncMetadata::className() const
+{
+    return "Digikam::BatchAlbumsSyncMetadata";
+}
+
+QMetaObject *Digikam::BatchAlbumsSyncMetadata::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__BatchAlbumsSyncMetadata( "Digikam::BatchAlbumsSyncMetadata", &Digikam::BatchAlbumsSyncMetadata::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::BatchAlbumsSyncMetadata::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::BatchAlbumsSyncMetadata", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::BatchAlbumsSyncMetadata::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::BatchAlbumsSyncMetadata", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::BatchAlbumsSyncMetadata::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = DProgressDlg::staticMetaObject();
+    static const QUMethod slot_0 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_1 = {"slotStart", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_ptr, "ImageInfoList", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotAlbumParsed", 1, param_slot_2 };
+    static const QUMethod slot_3 = {"slotComplete", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotCancel()", &slot_0, QMetaData::Protected },
+	{ "slotStart()", &slot_1, QMetaData::Private },
+	{ "slotAlbumParsed(const ImageInfoList&)", &slot_2, QMetaData::Private },
+	{ "slotComplete()", &slot_3, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalComplete", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalComplete()", &signal_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::BatchAlbumsSyncMetadata", parentObject,
+	slot_tbl, 4,
+	signal_tbl, 1,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__BatchAlbumsSyncMetadata.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::BatchAlbumsSyncMetadata::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::BatchAlbumsSyncMetadata" ) )
+	return this;
+    return DProgressDlg::qt_cast( clname );
+}
+
+// SIGNAL signalComplete
+void Digikam::BatchAlbumsSyncMetadata::signalComplete()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+bool Digikam::BatchAlbumsSyncMetadata::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotCancel(); break;
+    case 1: slotStart(); break;
+    case 2: slotAlbumParsed((const ImageInfoList&)*((const ImageInfoList*)static_QUType_ptr.get(_o+1))); break;
+    case 3: slotComplete(); break;
+    default:
+	return DProgressDlg::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::BatchAlbumsSyncMetadata::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalComplete(); break;
+    default:
+	return DProgressDlg::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::BatchAlbumsSyncMetadata::qt_property( int id, int f, QVariant* v)
+{
+    return DProgressDlg::qt_property( id, f, v);
+}
+
+bool Digikam::BatchAlbumsSyncMetadata::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

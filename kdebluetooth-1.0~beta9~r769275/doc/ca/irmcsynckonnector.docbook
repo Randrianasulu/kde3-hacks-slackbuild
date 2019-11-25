@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>Konnector IrMCSync per a Kitchensync</title>
+<para
+>Aquest programa és un connector Konnector per a kitchensync, i us permet sincronitza el vostre dispositiu -si aquest suporta IrMCSync- amb el vostre calendari i/o llibreta d'adreces. </para>
+<para
+>De moment estan suportats el calendari i la llibreta d'adreces! </para>
+<para
+>SUGGEREIXO FER UNA CÒPIA DEL VOSTRE CALENDARI I DE LA VOSTRA LLIBRETA D'ADRECES ABANS D'INTENTAR CAP SINCRONITZACIÓ. No em faig responsable si les vostres dades es corrompen o destrueixen. </para>
+
+
+<sect2>
+<title
+>Necessitem informació de depuració!</title>
+<para
+>SI US PLAU, executeu kitchensync des d'un intèrpret de comandaments o redireccioneu la sortida estàndard i d'error cap a un fitxer, de manera que si teniu problemes me la pugueu enviar. Per habilitar les característiques de depuració podeu iniciar "kdebugdialog" i establir les opcions relacionades (des de 5.200) i l'opció genèrica. </para>
+</sect2>
+
+<sect2>
+<title
+>Compilació.</title>
+<para
+>The actuall kitchensync from kdepim CVS has more features and work better than the kdepim 3.3.0 version. I'll suggest to use this version. You have to install at least kitchensync (and all his subprojects) from CVS. </para>
+<para
+>There's also a kdepim-3.3.0 version that you can find in the irmcsync_kdepim_3_3_branch but it's not mantained anymore. I'll concentrate my work on the CVS one. This version depends on kdepim-3.3.0 and the older or younger versions, so you have to get and install it. If you want to fetch the irmcsync_kdepim_3_3_branch you have to move to kdebluetooth/irmcsync/irmcsynckonnector and type: cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch </para
+>	
+
+<para
+>Per habilitar la compilació del konnector haureu d'afegir el directori "irmcsync" en la variable SUBDIR de kdebluetooth/Makefile.am. </para>
+</sect2>
+
+<sect2>
+<title
+>Usar KitchenSync.</title>
+<para
+>A dia d'avui (25-03-2004) KitchenSync és molt experimental, de manera que podeu sofrir diversos problemes. </para>
+<para
+>Després de tenir-lo carregat, haureu d'escollir els konnectors a usar. Almenys necessitareu afegir 2 konnectors per a fer una sincronització, però podeu usar tan sols un per a realitzar proves. </para>
+<para
+>Per afegir un konnector aneu a <guimenuitem
+>Arranjament->Configura Kitchensync</guimenuitem
+> </para>
+<para
+>Si obteniu alguns errors i l'estri està ben dibuixat, intenteu redimensionar la finestra de configuració. Llavores, en la llista desplegable Recursos obtindreu diverses eleccions, CAP ÉS PRÀCTICA I ESTARÀ DESHABILITADA, tan sols "konnector" és correcta. </para>
+<para
+>Per exemple, podeu afegir el Konnector IrMCSync i un Konnector local. </para>
+<para
+>En el Konnector IrMCSync seleccioneu el vostre dispositiu, i marqueu la caixa Sincronitza el calendari o la llibreta d'adreces (de moment no podreu sincronitzar ambdós a la vegada). En el Konnector local seleccioneu un fitxer de calendari I un fitxer de KAddressBook (heu de seleccionar ambdós i amb els noms de fitxer correcte o no funcionarà). Us suggereixo crear un directori temporal en el que col·locar una còpia original de la vostra llibreta d'adreces i de calendari, de manera que pugueu fer algunes proves sense perill. </para>
+<para
+>Normalment els trobareu en aquests directoris: </para>
+<para
+>CALENDARI: <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>LLIBRETA D'ADRECES: <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>A continuació creeu un perfil en <guimenuitem
+>Arranjament->Configura perfils</guimenuitem
+> i per a cada perfil podeu afegir diverses parts, cadascuna de les quals te una funció diferent: </para>
+<itemizedlist>
+<listitem>
+<para
+>Part de sincronització: Fer la sincronització REAL. </para>
+</listitem>
+<listitem>
+<para
+>Depuració de konnector: Us permet depurar un Konnector. </para>
+</listitem>
+<listitem>
+<para
+>Còpia de seguretat de Konnector: Fa una còpia de seguretat de les dades. </para>
+</listitem>
+<listitem>
+<para
+>Part de resum: Tal i com el seu nom indica. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Si desitgeu sincronitzar, almenys haureu d'escollir la "Part de sincronització". </para>
+<para
+>Tot seguit, per a fer la sincronització, feu clic sobre el botó superior esquerra. </para>
+<para
+>Podeu comprovar el konnector, creant un perfil amb la part de depuració de konnector i prement el dispositiu de connexió, llavores prémer el botó Llegeix la sincronització. </para>
+</sect2>
+</sect1>
+

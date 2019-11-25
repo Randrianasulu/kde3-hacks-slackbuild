@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Koncepter</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Bluetooth sikkerhed: Parringsenheder</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Hvad er "parring"?</title>
+<para
+>Meget ofte er det nødvendigt for en enhed at kunne bekræfte sin identitet, når den vil tilgå en tjeneste. I det tilfælde skal de to enheder <phrase
+>parres</phrase
+>. Når to enheder er parret, kan de være sikre på identiteten af den anden. Uden parring ville man være nødt til at bruge adressen eller navnet på enheden og den kan let forfalskes. </para>
+<para
+>Parring sker normalt kun en gang mellem to enheder. Efter parringen sker <phrase
+>identifikationen</phrase
+> automatisk. </para>
+<para
+>Normalt<emphasis
+>vil parringsprocessen starte automatisk når behovet opstår</emphasis
+>. Man behøver ikke bekymre sig om en enhed ikke er parret hvis man vil tilgå en af dens tjenester. Hvis identifikationen mislykkes, startes parringsprocessen automatisk igen. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Hvordan virker det?</title>
+
+<para
+>Enheder parres for at kende identiteten af den modsatte side. Det første skridt kan ikke ske automatisk. <emphasis
+>Du </emphasis
+> er nødt til at vide hvad der forsøger at parre sig med enheden. Dette sker ved at indtaste et "PIN"-nummer på begge enheder. Begrebet "PIN" er meget udbredt, men misvisende. Det er ikke den samme slags PIN som den man bruger når man hæver penge i en hæveautomat. Man behøver ikke huske den og efter parringen er sket behøver man ikke at holde den hemmelig. Man skal blot sørge for, at ingen andre end en selv eller vedkommende med den anden enhed, kender PIN-nummeret, før efter det er indtastet på hver enhed. </para>
+<para
+>For at være på den sikre side skal du for det første holde PIN-nummeret hemmeligt under parringsprocessen, for det andet skal du bruge et tilfældigt tal der er svært at gætte sig til. KDE Bluetooth hjælper dig her ved selv at danne et tilfældigt tal på otte cifre hvis dette er muligt. Du kan også bruge bogstaver til PIN-nummeret, men så kan du få problemer med at indtaste dem på en mobiltelefon. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>PIN-hjælperen</title>
+<para
+>Men hvor skal PIN-nummeret indtastes? Som førnævnt vil enhederne selv spørge dig efter tallene når det er nødvendigt. Mht. BlueZ er tingene en smule mere komplicerede. Der er talrige måder for BlueZ at få PIN-nummeret fra brugeren. </para>
+<para
+>Den normale måde at konfigurere BlueZs hcid til at bruge et "PIN-hjælpeprogram" og indstille "sikkerhedsbrugeren;" i <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Denne hjælper er et lille program der ikke gør andet end at spørge brugeren om et nummer og udskrive dette til sdtout. BlueZ har sin egen PIN-hjælper der hedder "bluepin", som ser ud til at skabe en del problemer. Så er der en bedre PIN-hjælper der hedder "kbluepin". Se <link linkend="installation.setup"
+>instruktioner til instillinger</link
+> for at instille PIN-hjælperen og hvad man skal gøre hvis ikke det virker. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Håndtering af parrede enheder</title>
+<para
+>Efter at have parret mange enheder kan man spørge sig selv hvilke enheder der er parret og hvilke der ikke er. Man vil måske også gerne fjerne en parring. Svaret er for det meste dårlige nyheder. </para>
+<para
+>For det første, ingen enhed kan nogensinde vide hvilke enheder den er parret med. Når to enheder er parret, deler de en fælles <phrase
+>forbindelsesnøgle</phrase
+>, der blev dannet under parringsprocessen, baseret på PIN-nummeret og nogle andre ingredienser.Fordi den modsatte side kan beslutte sig for at slette en forbindelsesnøgle uden varsel, kan det ikke garanteres at en given enhed har en forbindelsesnøgle bare fordi den modsatte side stadig har en. Er forbindelsesnøglen forsvundet, er enhederne ikke længere parret. Man kan selvfølgelig være sikker på at en enhed <emphasis
+>ikke</emphasis
+> er parret, hvis man ikke har en forbindelsesnøgle til den. </para>
+<para
+>Så hvordan fjerner man så link? Det afhænger af enheden. De fleste telefoner eller lommecomputere har en liste af "parrede" eller "betroede" enheder, hvor du kan fjerne enkelte link. I den aktuelle udgave af Bluez utils (2.6) er link-nøglerne normalt i filen <filename
+>/etc/bluetooth/link_key</filename
+>. Eftersom link nøglerne skal hemmeligholdes er denne fil kun tilgængelig for root. Du kan trygt slette denne fil, men så forsvinder alle din parrede enheder og siden filen er binær, er det svært at læse den uden et specielt værktøj. For øjeblikket har kdebluetooth ikke et værktøj til at læse eller skrive til denne fil fordi Bluez måde at håndtere link nøgler snart (eller senere) ændrer sig. </para>
+<para
+>Der er et specielt irritationsmoment hvis man ofte skifter mellem styresystemer og man på begge bruger bluetooth (Linux&lt;->Windows normalt): Når man parrer en telefon på Linux og derefter opstarter i Windows, så ved Windows intet om forbindelsesnøglerne som BlueZ håndterer. Så det ser ud som om computeren har slettet forbindelsesnøglen og du er nødt til at parre enhederne igen. Afhængigt af enhederne er det muligvis ikke muligt at parre dem igen uden at fjerne den "gamle" forbindelsesnøgle på telefonen først. Det samme problem kan opstå med BlueZ selv, hvis man vælger "parring single;" i <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Så i øjeblikket skal man være opmærksom på dette problem. Benyt ikke Bluetooth under begge styresystemer eller benyt forskellige Bluetooth-adaptere til hvert styresystem. Det er også muligt at flytte forbindelsesnøglerne mellem Windows og Linux, men jeg kender ingen værktøjer der kan gøre det. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

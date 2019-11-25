@@ -1,0 +1,594 @@
+# translation of kipiplugin_cdarchiving.po to Serbian
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_cdarchiving\n"
+"POT-Creation-Date: 2008-06-10 23:47+0200\n"
+"PO-Revision-Date: 2008-03-04 14:57+0100\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Часлав Илић,Слободан Симић"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "caslav.ilic@gmx.net,simicsl@verat.net"
+
+#: cdarchiving.cpp:157 cdarchivingdialog.cpp:160 cdarchivingdialog.cpp:164
+#: cdarchivingdialog.cpp:598
+msgid "CD (650Mb)"
+msgstr "CD (650 MB)"
+
+#: cdarchiving.cpp:163
+msgid "KIPI Albums Archiving"
+msgstr "Архивирање KIPI-јевих албума"
+
+#: cdarchiving.cpp:179
+msgid "CD Albums"
+msgstr "CD албуми"
+
+#: cdarchiving.cpp:180
+msgid "KIPI Album CD archiving"
+msgstr "Архивирање KIPI-јевих албума на CD"
+
+#: cdarchiving.cpp:181 cdarchivingdialog.cpp:453
+msgid "LINUX"
+msgstr "LINUX"
+
+#: cdarchiving.cpp:182 cdarchivingdialog.cpp:465
+msgid "K3b CD-DVD Burning application"
+msgstr "K3b, програм за CD-DVD резање"
+
+#: cdarchiving.cpp:184
+msgid "KIPI CD-Archiving plugin"
+msgstr "KIPI-јев прикључак за CD архивирање"
+
+#: cdarchiving.cpp:418
+msgid "Cannot start K3b program : fork failed."
+msgstr "Не могу да покренем програм K3b: рачвање није успело."
+
+#: cdarchiving.cpp:457
+msgid "K3b is done; removing temporary folder...."
+msgstr "K3b је готов; уклањам привремену фасциклу..."
+
+#: cdarchiving.cpp:467
+msgid "Cannot remove temporary folder '%1'."
+msgstr "Не могу да уклоним привремену фасциклу „%1“."
+
+#: cdarchiving.cpp:497 cdarchiving.cpp:589
+msgid "Cannot remove folder '%1'."
+msgstr "Не могу да уклоним фасциклу „%1“."
+
+#: cdarchiving.cpp:510 cdarchiving.cpp:559
+msgid "Could not create folder '%1'."
+msgstr "Нисам могао да направим фасциклу „%1“."
+
+#: cdarchiving.cpp:626 cdarchiving.cpp:1056
+msgid "Could not open file '%1'."
+msgstr "Нисам могао да отворим фајл „%1“."
+
+#: cdarchiving.cpp:651
+msgid "Could not create folder '%1' in '%2'."
+msgstr "Нисам могао да направим фасциклу „%1“ у „%2“."
+
+#: cdarchiving.cpp:744 cdarchiving.cpp:1197
+msgid "Album list"
+msgstr "Листа албума"
+
+#: cdarchiving.cpp:749
+msgid "Album "
+msgstr "Албум "
+
+#: cdarchiving.cpp:759
+msgid "<i>Caption:</i>"
+msgstr "<i>Коментар:</i>"
+
+#: cdarchiving.cpp:762
+msgid "<i>Collection:</i>"
+msgstr "<i>Колекција:</i>"
+
+#: cdarchiving.cpp:765
+msgid "<i>Date:</i>"
+msgstr "<i>Датум:</i>"
+
+#: cdarchiving.cpp:767
+msgid "<i>Images:</i>"
+msgstr "<i>Слике:</i>"
+
+#: cdarchiving.cpp:850 cdarchiving.cpp:933 cdarchiving.cpp:1235
+msgid "KB"
+msgstr "kB"
+
+#: cdarchiving.cpp:895 cdarchiving.cpp:898
+msgid " images"
+msgstr " слика"
+
+#: cdarchiving.cpp:959 cdarchiving.cpp:999 cdarchiving.cpp:1241
+msgid "Valid HTML 4.01."
+msgstr "Исправан HTML 4.01."
+
+#: cdarchiving.cpp:963 cdarchiving.cpp:1003
+msgid "Album archive created with <a href=\"%1\">%2</a> on %3"
+msgstr "Архива албума направљена је помоћу <a href=\"%1\">%2</a> дана %3"
+
+#: cdarchiving.cpp:982
+msgid "<i>Album list:</i>"
+msgstr "<i>Листа албума:</i>"
+
+#: cdarchiving.cpp:1190
+msgid "Previous"
+msgstr "Претходни"
+
+#: cdarchiving.cpp:1195
+msgid "Album index"
+msgstr "Индекс албума"
+
+#: cdarchiving.cpp:1202
+msgid "Next"
+msgstr "Следећи"
+
+#: cdarchiving.cpp:1247
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "Галерија слика направљена је помоћу <a href=\"%1\">%2</a> дана %3"
+
+#: cdarchiving.cpp:1410
+msgid "Creating project header..."
+msgstr "Правим заглавље пројекта..."
+
+#: cdarchiving.cpp:1425 cdarchiving.cpp:1463 cdarchiving.cpp:1593
+#: cdarchivingdialog.cpp:163 cdarchivingdialog.cpp:607
+msgid "DVD (4,7Gb)"
+msgstr "DVD (4.7 GB)"
+
+#: cdarchiving.cpp:1583
+msgid "Adding Album '%1' into project..."
+msgstr "Додајем албум „%1“ у пројекат..."
+
+#: cdarchivingdialog.cpp:88
+msgid "Configure Archive to CD"
+msgstr "Подеси архиву за CD"
+
+#: cdarchivingdialog.cpp:91
+msgid "Create CD/DVD Archive"
+msgstr "Направи CD/DVD архиву"
+
+#: cdarchivingdialog.cpp:101
+msgid "CD/DVD Archiving"
+msgstr "Архивирање CD/DVD-а"
+
+#: cdarchivingdialog.cpp:104
+msgid ""
+"An Album CD/DVD Archiving Kipi plugin.\n"
+"This plugin use K3b CD/DVD burning software available at\n"
+"http://www.k3b.org"
+msgstr ""
+"Kipi-јев прикључак за архивирање албума на CD/DVD.\n"
+"Овај прикључак користи K3b, програм за резање CD/DVD-а\n"
+"који можете наћи на http://www.k3b.org"
+
+#: cdarchivingdialog.cpp:109
+msgid "Author"
+msgstr "Аутор"
+
+#: cdarchivingdialog.cpp:112
+msgid "Contributor"
+msgstr "Допринео"
+
+#: cdarchivingdialog.cpp:115
+msgid "Image navigation mode patches"
+msgstr "Закрпе режима навигације слика"
+
+#: cdarchivingdialog.cpp:118
+msgid "Bugfix"
+msgstr "Исправке грешака"
+
+#: cdarchivingdialog.cpp:124
+msgid "Plugin Handbook"
+msgstr "Приручник прикључка"
+
+#: cdarchivingdialog.cpp:140
+msgid "Selection"
+msgstr "Избор"
+
+#: cdarchivingdialog.cpp:140
+msgid "Album Selection"
+msgstr "Избор албума"
+
+#: cdarchivingdialog.cpp:150
+msgid "Target Media Information"
+msgstr "Информације о циљном медијуму"
+
+#: cdarchivingdialog.cpp:154
+msgid "<p>Information about the backup medium."
+msgstr "<p>Информације о медијуму за резерву."
+
+#: cdarchivingdialog.cpp:161 cdarchivingdialog.cpp:601
+msgid "CD (700Mb)"
+msgstr "CD (700 MB)"
+
+#: cdarchivingdialog.cpp:162 cdarchivingdialog.cpp:604
+msgid "CD (880Mb)"
+msgstr "CD (880 MB)"
+
+#: cdarchivingdialog.cpp:166
+msgid "<p>Select here the backup media format."
+msgstr "<p>Изаберите овде формат медијума за резерву."
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface"
+msgstr "HTML интерфејс"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface Look"
+msgstr "Изглед HTML интерфејса"
+
+#: cdarchivingdialog.cpp:189
+msgid "Build CD HTML interface"
+msgstr "Изгради HTML интерфејс за CD"
+
+#: cdarchivingdialog.cpp:193
+msgid "<p>This option adds a HTML interface to browse the CD's contents."
+msgstr "<p>Ова опција додаје HTML интерфејс за прегледање садржаја CD-а."
+
+#: cdarchivingdialog.cpp:197
+msgid "Add \"autorun\" functionality"
+msgstr "Додај могућност аутоматског покретања"
+
+#: cdarchivingdialog.cpp:201
+msgid "<p>This option adds MS Windows(tm) autorunning capability to the CD."
+msgstr ""
+"<p>Ова опција додаје MS Windows-ову могућност аутоматског покретања на CD."
+
+#: cdarchivingdialog.cpp:205
+msgid "Archive title:"
+msgstr "Наслов архиве:"
+
+#: cdarchivingdialog.cpp:208
+msgid "Album Archiving"
+msgstr "Архивирање албума"
+
+#: cdarchivingdialog.cpp:211
+msgid "<p>Enter here the title of the CD archive."
+msgstr "<p>Унесите овде наслов CD архиве."
+
+#: cdarchivingdialog.cpp:217
+msgid "I&mages per row:"
+msgstr "Слика по &врсти:"
+
+#: cdarchivingdialog.cpp:218
+msgid ""
+"<p>Enter here the number of images per row on the album page. A good value is "
+"'4'."
+msgstr ""
+"<p>Унесите овде број слика по врсти на страни албума. Добра вредност је 4."
+
+#: cdarchivingdialog.cpp:229
+msgid "Thumbnail size:"
+msgstr "Величина сличица:"
+
+#: cdarchivingdialog.cpp:231
+msgid "<p>The new size of thumbnails in pixels"
+msgstr "<p>Нова величина сличица у пикселима."
+
+#: cdarchivingdialog.cpp:241
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>Изаберите овде формат фајла слике за сличице.<p>"
+
+#: cdarchivingdialog.cpp:242
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Добар формат фајлова за Веб, али користи компресију са губицима."
+"<p><b>PNG</b>: Проширив формат фајлова за добру компресију растерских слика, "
+"без губитака. PNG је слободна од патената замена за GIF, а може да замени и "
+"TIFF у многим уобичајеним применама. PNG је пројектован да ради добро у "
+"применама за прегледање на вези, као што је Веб (World Wide Web), тако да је "
+"потпуно серијски са опцијом прогресивног приказа. Такође, PNG може да складишти "
+"податке о гами и хроматичности ради побољшаног поклапања боја на разноврсним "
+"платформама."
+
+#: cdarchivingdialog.cpp:253
+msgid "Thumbnail file format:"
+msgstr "Формат фајлова сличица:"
+
+#: cdarchivingdialog.cpp:269
+msgid "<p>Select here the font name used for the pages."
+msgstr "<p>Изаберите овде име фонта који се користи на странама."
+
+#: cdarchivingdialog.cpp:271
+msgid "Fon&t name:"
+msgstr "&Име фонта:"
+
+#: cdarchivingdialog.cpp:284
+msgid "<p>Select here the font size used for the pages."
+msgstr "<p>Изаберите овде величину фонта који се користи на странама."
+
+#: cdarchivingdialog.cpp:286
+msgid "Font si&ze:"
+msgstr "&Величина фонта:"
+
+#: cdarchivingdialog.cpp:299
+msgid "<p>Select here the foreground color used for the pages."
+msgstr "<p>Изаберите овде боју исцртавања која се користи на странама."
+
+#: cdarchivingdialog.cpp:301
+msgid "&Foreground color:"
+msgstr "Боја ис&цртавања:"
+
+#: cdarchivingdialog.cpp:314
+msgid "<p>Select here the background color used for the pages."
+msgstr "<p>Изаберите овде боју позадине која се користи на странама."
+
+#: cdarchivingdialog.cpp:316
+msgid "&Background color:"
+msgstr "Боја &позадине:"
+
+#: cdarchivingdialog.cpp:329
+msgid "<p>Select here the image border's size in pixels."
+msgstr "<p>Изаберите овде величину ивица слике у пикселима."
+
+#: cdarchivingdialog.cpp:331
+msgid "Image border s&ize:"
+msgstr "Ве&личина ивица слике:"
+
+#: cdarchivingdialog.cpp:344
+msgid "<p>Select here the color used for the image borders."
+msgstr "<p>Изаберите овде боју која се користи за ивице слике."
+
+#: cdarchivingdialog.cpp:347
+msgid "Image bo&rder color:"
+msgstr "Боја ивиц&а слике:"
+
+#: cdarchivingdialog.cpp:418
+msgid "Volume Descriptor"
+msgstr "Описивач тома"
+
+#: cdarchivingdialog.cpp:418
+msgid "Media Volume Descriptor"
+msgstr "Описивач тома на медијуму"
+
+#: cdarchivingdialog.cpp:427
+msgid "Volume name:"
+msgstr "Име тома:"
+
+#: cdarchivingdialog.cpp:430
+msgid "CD Album"
+msgstr "CD Album"
+
+#: cdarchivingdialog.cpp:434
+msgid "<p>Enter here the media volume name (32 characters max.)"
+msgstr "<p>Унесите овде име тома на медијуму (највише 32 знака)."
+
+#: cdarchivingdialog.cpp:438
+msgid "Volume set name:"
+msgstr "Име скупа томова:"
+
+#: cdarchivingdialog.cpp:441
+msgid "Album CD archive"
+msgstr "Album CD archive"
+
+#: cdarchivingdialog.cpp:446
+msgid "<p>Enter here the media volume global name (128 characters max.)"
+msgstr ""
+"<p>Унесите овде глобално име томова на медијумима (највише 128 знакова)."
+
+#: cdarchivingdialog.cpp:450
+msgid "System:"
+msgstr "Систем:"
+
+#: cdarchivingdialog.cpp:458
+msgid "<p>Enter here the media burning system name (32 characters max.)"
+msgstr "<p>Унесите овде име система за резање медијума (највише 32 знака)."
+
+#: cdarchivingdialog.cpp:462
+msgid "Application:"
+msgstr "Програм:"
+
+#: cdarchivingdialog.cpp:470
+msgid "<p>Enter here the media burning application name (128 characters max.)."
+msgstr "<p>Унесите овде име програма за резање медијума (највише 128 знакова)."
+
+#: cdarchivingdialog.cpp:475
+msgid "Publisher:"
+msgstr "Издавач:"
+
+#: cdarchivingdialog.cpp:478
+msgid "KIPI [KDE Images Program Interface]"
+msgstr "KIPI [KDE Images Program Interface]"
+
+#: cdarchivingdialog.cpp:483
+msgid "<p>Enter here the media publisher name (128 characters max.)."
+msgstr "<p>Унесите овде име издавача (највише 128 знакова)."
+
+#: cdarchivingdialog.cpp:487
+msgid "Preparer:"
+msgstr "Припремач:"
+
+#: cdarchivingdialog.cpp:490
+msgid "KIPI CD Archiving plugin"
+msgstr "KIPI CD Archiving plugin"
+
+#: cdarchivingdialog.cpp:494
+msgid "<p>Enter here the media preparer name (128 characters max.)."
+msgstr "<p>Унесите овде име припремача медијума (највише 128 знакова)."
+
+#: cdarchivingdialog.cpp:501
+msgid "Media Burning"
+msgstr "Резање медијума"
+
+#: cdarchivingdialog.cpp:502
+msgid "CD/DVD Burning Setup"
+msgstr "Подешавање CD/DVD резања"
+
+#: cdarchivingdialog.cpp:511
+msgid "&K3b binary path:"
+msgstr "Путања &до K3b-а:"
+
+#: cdarchivingdialog.cpp:521
+msgid "<p>The path name to the K3b binary program."
+msgstr "<p>Путања до извршног програма K3b-а."
+
+#: cdarchivingdialog.cpp:525
+msgid "Application parameters:"
+msgstr "Параметри програма:"
+
+#: cdarchivingdialog.cpp:533
+msgid ""
+"<p>Enter parameters which will be used when starting the burning application. "
+"Newer versions of K3b might need --nofork, older versions might not need it. "
+"(128 characters max.)."
+msgstr ""
+"<p>Унесите параметре који ће бити коришћени када се покрене програм за "
+"нарезивање. Новијим верзијама K3b-а ће можда требати --nofork, старијим "
+"верзијама можда и неће (највише 128 знакова)."
+
+#: cdarchivingdialog.cpp:540
+msgid "Advanced Burning Options"
+msgstr "Напредне опције резања"
+
+#: cdarchivingdialog.cpp:548
+msgid "Media burning On-The-Fly"
+msgstr "Резање медијума „у лету“"
+
+#: cdarchivingdialog.cpp:550
+msgid ""
+"<p>This option uses the \"On-The-Fly\" media burning capability; this does not "
+"use a media image."
+msgstr ""
+"<p>Ова опција користи могућност резања медијума „у лету“, тј. без коришћења "
+"слике медијума."
+
+#: cdarchivingdialog.cpp:554
+msgid "Check media"
+msgstr "Провери медијум"
+
+#: cdarchivingdialog.cpp:556
+msgid ""
+"<p>This option verifies the media after the burning process. You must use K3b "
+"release >= 0.10.0"
+msgstr ""
+"<p>Ова опција проверава медијум после резања. За ово морате имати K3b верзије "
+"0.10.0 или веће."
+
+#: cdarchivingdialog.cpp:560
+msgid "Start burning process automatically"
+msgstr "Почни са резањем аутоматски"
+
+#: cdarchivingdialog.cpp:563
+msgid ""
+"<p>This option start automatically the burning process when K3b is loaded."
+msgstr "<p>Ова опција аутоматски започиње резање када се K3b учита."
+
+#: cdarchivingdialog.cpp:623
+msgid "Total size: "
+msgstr "Укупна величина: "
+
+#: cdarchivingdialog.cpp:624
+msgid "<b>%1</b></font> / <b>%2</b>"
+msgstr "<b>%1</b></font> / <b>%2</b>"
+
+#: cdarchivingdialog.cpp:634
+msgid "You must selected at least one Album to archive."
+msgstr "Морате изабрати бар један албум за архивирање."
+
+#: cdarchivingdialog.cpp:642
+msgid "K3b binary path is not valid. Please check it."
+msgstr "Путања до извршног фајла K3b-а није исправна. Проверите је."
+
+#: cdarchivingdialog.cpp:648
+msgid "Target media size is too big. Please change your album selection."
+msgstr "Величина циљног медијума је превелика. Измените свој избор албума."
+
+#: plugin_cdarchiving.cpp:61
+msgid "Archive to CD/DVD..."
+msgstr "Архивирај на CD/DVD..."
+
+#: plugin_cdarchiving.cpp:126
+msgid "Archive to CD/DVD"
+msgstr "Архивирај на CD/DVD..."
+
+#: plugin_cdarchiving.cpp:147
+msgid "Initialising..."
+msgstr "Иницијализујем..."
+
+#: plugin_cdarchiving.cpp:154
+msgid "Making main HTML interface..."
+msgstr "Правим главни HTML интерфејс..."
+
+#: plugin_cdarchiving.cpp:160
+msgid "Making HTML pages for Album '%1'..."
+msgstr "Правим HTML стране за албум „%1“..."
+
+#: plugin_cdarchiving.cpp:166
+msgid "Making AutoRun interface..."
+msgstr "Правим интерфејс за аутоматско покретање..."
+
+#: plugin_cdarchiving.cpp:172
+msgid "Creating thumbnail for '%1'..."
+msgstr "Правим сличицу за „%1“..."
+
+#: plugin_cdarchiving.cpp:178
+msgid "Making K3b project..."
+msgstr "Правим K3b-ов пројекат..."
+
+#: plugin_cdarchiving.cpp:207
+msgid "Main HTML interface creation completed."
+msgstr "Прављење главног HTML интерфејса је завршено."
+
+#: plugin_cdarchiving.cpp:214
+msgid "HTML page creation for Album '%1' completed."
+msgstr "Прављење HTML стране за албум „%1“ је завршено."
+
+#: plugin_cdarchiving.cpp:221
+msgid "Creating thumbnail for '%1' done."
+msgstr "Прављење сличице за „%1“ је завршено."
+
+#: plugin_cdarchiving.cpp:228
+msgid "AutoRun interface creation completed."
+msgstr "Прављење интерфејса за аутоматско покретање је завршено."
+
+#: plugin_cdarchiving.cpp:235
+msgid "K3b project creation completed."
+msgstr "Прављење K3b-овог пројекта је завршено."
+
+#: plugin_cdarchiving.cpp:253
+msgid "Failed to create thumbnail for '%1'"
+msgstr "Нисам успео да направим сличицу за „%1“"
+
+#: plugin_cdarchiving.cpp:262
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "Нисам успео да направим HTML интерфејс: %1"
+
+#: plugin_cdarchiving.cpp:273
+msgid "Failed to create HTML pages for Album '%1'"
+msgstr "Нисам успео да направим HTML стране за албум „%1“"
+
+#: plugin_cdarchiving.cpp:285
+msgid "Failed to create K3b project."
+msgstr "Нисам успео да направим K3b-ов пројекат."
+
+#: plugin_cdarchiving.cpp:327
+msgid "Starting K3b program..."
+msgstr "Покрећем програм K3b..."

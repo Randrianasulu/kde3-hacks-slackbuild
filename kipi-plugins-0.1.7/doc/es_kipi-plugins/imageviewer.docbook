@@ -1,0 +1,268 @@
+<chapter id="imageviewer">
+<chapterinfo>
+
+<title
+>Visor de imágenes OpenGL</title>
+
+<authorgroup>
+    <author
+><firstname
+>Markus</firstname
+><surname
+>Leuthold</surname
+> <affiliation
+><address
+><email
+>kusi _EN forum punto titlis _punto org</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El visor de imágenes de Kipi es una herramienta muy rápida y flexible para ver imágenes basada en OpenGL </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>El visor de imágenes de KIPI permite mostrar una selección de imágenes y realizar operaciones básicas, tales como rotación, ampliación o desenfoque. El uso del visor se basa en los accesos rápidos de teclado y movimientos del ratón. Se hace énfasis en la velocidad con la que se muestra así como la rapidez de acceso a las funciones. </para>
+
+
+<variablelist
+><title
+>Accesos de imagen</title>
+<varlistentry
+><term
+>Siguiente imagen</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Bajar rueda de desplazamiento</para
+></listitem>
+<listitem
+><para
+>Flecha abajo/derecha</para
+></listitem>
+<listitem
+><para
+>Espacio</para
+></listitem>
+<listitem
+><para
+>Tecla N</para
+></listitem>
+<listitem
+><para
+>AvPág</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Imagen anterior</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Subir rueda de desplazamiento</para
+></listitem>
+<listitem
+><para
+>Flecha arriba/izquierda</para
+></listitem>
+<listitem
+><para
+>Tecla P</para
+></listitem>
+<listitem
+><para
+>RePág</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Salir</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Esc</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+<variablelist>
+	<title
+>Muestra</title>
+	<varlistentry>
+		<term
+>Cambiar entre pantalla completa/normal</term>
+		<listitem>
+			<para
+>Al arrancar, se mostrará de forma predeterminada una imagen a pantalla completa. Puede cambiarse al modo de ventana </para>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>Tecla F</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term
+>Cambiar la acción de la rueda de desplazamiento</term>
+		<listitem>
+			<para
+>Cambia el comportamiento de la rueda de desplazamiento entre continuar con la siguiente imagen o ampliar la imagen </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Tecla C</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Rotación</term>
+		<listitem>
+			<para
+>La rotación es solo temporal y no se guardará en el archivo </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Tecla R</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+	
+	
+	<varlistentry>
+		<term
+>Reiniciar vista</term>
+		<listitem>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>doble pulsación</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Tamaño original</term>
+		<listitem>
+			<para
+>Cada punto de la imagen se corresponde con un punto de la pantalla </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Tecla O</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+</variablelist>
+
+<variablelist>
+	<title
+>Ampliación</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>mover el ratón arriba/abajo pulsando su botón derecho</para>
+				</listitem>
+				<listitem>
+					<para
+>rueda de desplazamiento (en caso de que haya cambiado la acción de la rueda de desplazamiento</para>
+				</listitem>
+				<listitem>
+					<para
+>más/menos</para>
+				</listitem>
+				<listitem>
+					<para
+>Ctrl + rueda de desplazamiento</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+
+<variablelist>
+	<title
+>Enfoque</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>mover el ratón mientras se pulsa su botón izquierdo</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

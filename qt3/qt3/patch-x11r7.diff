@@ -1,0 +1,19 @@
+--- mkspecs/linux-g++/qmake.conf	2012-03-01 05:29:53.655766074 +0000
++++ mkspecs/linux-g++/qmake.conf	2012-03-01 05:30:55.583764762 +0000
+@@ -39,12 +39,12 @@
+ 
+ QMAKE_INCDIR		=
+ QMAKE_LIBDIR		=
+-QMAKE_INCDIR_X11	= /usr/X11R6/include
+-QMAKE_LIBDIR_X11	= /usr/X11R6/lib
++QMAKE_INCDIR_X11	= /usr/X11R7/include
++QMAKE_LIBDIR_X11	= /usr/X11R7/lib
+ QMAKE_INCDIR_QT		= $(QTDIR)/include
+ QMAKE_LIBDIR_QT		= $(QTDIR)/lib
+-QMAKE_INCDIR_OPENGL	= /usr/X11R6/include
+-QMAKE_LIBDIR_OPENGL	= /usr/X11R6/lib
++QMAKE_INCDIR_OPENGL	= /usr/X11R7/include
++QMAKE_LIBDIR_OPENGL	= /usr/X11R7/lib
+ 
+ QMAKE_LINK		= g++
+ QMAKE_LINK_SHLIB	= g++

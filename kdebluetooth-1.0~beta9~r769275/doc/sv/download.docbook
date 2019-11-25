@@ -1,0 +1,122 @@
+<chapter id="download">
+<title
+>Skaffa KDE:s Blåtandsramverk</title>
+<sect1 id="download.tarballs">
+<title
+>Källkod</title>
+<para
+>KDE:s Blåtandsramverk utvecklas för närvarande som en del av <ulink url="http://extragear.kde.org"
+>kdeextragear-3</ulink
+>. Du kan ladda ner och kompilera källkoden själv, men vi rekommenderar att du använder ett paket för din distribution. Att använda ett paket sparar dig en hel del tid och gråa hår, när beroenden ändras eller filer flyttas omkring. </para>
+
+<para
+>Ladda ner komprimerade arkiv av <ulink url="http://sourceforge.net/project/showfiles.php?group_id=89888"
+> utgåvor av kdebluetooth</ulink
+>. </para>
+
+<para
+>Eller prova med följande otestade <ulink url="http://fred.hexbox.de/debian/"
+>aktuella versioner</ulink
+>. </para>
+
+</sect1>
+
+<sect1 id="download.packages">
+<title
+>Paket</title>
+<para>
+<variablelist>
+<title
+>Distributioner som för närvarande stöds</title>
+<varlistentry>
+
+<term
+>Debian Sid</term>
+<listitem
+><para
+>Du kan använda följande rader i <filename
+>/etc/apt/sources.list</filename
+>: <screen
+># KDE-Bluetooth
+deb http://fred.hexbox.de/debian ./
+</screen>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Gentoo Linux</term>
+<listitem>
+<para
+>Den senaste ebuild finns redan i gentoo portage-trädet. Du kan också titta på http://bugs.gentoo.org efter en vilande ebuild som inte ännu har arkiverats.</para>
+<para
+>Du kan ladda ner en CVS-ebuild för kdebluetooth <ulink url="http://members.xoom.virgilio.it/motaboy/ebuilds"
+>härifrån</ulink
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>SuSe</term>
+
+<listitem
+><para
+>Du kan ladda ner RPM-paket för SuSe 8.2 <ulink url="http://sra.itc.it/people/merzi/kdebluetooth-0.0.cvs.20040210.i686.rpm"
+>härifrån</ulink
+> (tack till Filippo Biondi), för SuSe 9.0 <ulink url="http://www.hilzinger.hu/ch/linux.html"
+>härifrån</ulink
+> (tack till Marcel Hilzinger) eller RPM .spec-filen för SuSe 9.0 <ulink url="http://sra.itc.it/people/merzi/kdebluetooth.spec"
+>härifrån</ulink
+> (tack till Michael Sabielny).</para>
+
+<para
+>1 - Hämta senaste SVN-versionen av kde-bluetooth.2 - Skapa ett komprimerat arkiv från den: <filename
+>tar cvjf kdebluetooth.tar.bz2 kdebluetooth</filename
+>.3 - Kopiera arkivet till <filename
+>/usr/src/packages/SOURCES</filename
+>.4 - Kopiera spec-filen till <filename
+>/usr/src/packages/SPECS</filename
+>. 5 - Försäkra dig om att all nödvändig ytterligare programvara är installerad: <filename
+>kdelibs3 kdelibs3-devel qt3 qt3-devel openobex arts</filename
+> <filename
+>bluez-sdp bluez-libs bluez-utils xmms xmms-devel</filename
+>. 6 - Bygg paketet med <filename
+>cd /usr/src/packages</filename
+> <filename
+>rpmbuild -ba SPECS/kdebluetooth.spec</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="download.cvs">
+<title
+>Anonym SVN</title>
+<para
+>KDE:s Blåtandsramverk utvecklas i <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE extragear</ulink
+>. CVS på kde-bluetooth.sf.net används inte längre. </para>
+<para
+>För att hämta nuvarande utvecklingsversion av kdebluetooth, gör följande: <screen>
+svn checkout -N svn://svn.kde.org/home/kde/trunk/extragear/pim
+cd pim
+svn checkout svn://anonsvn.kde.org/home/kde/trunk/KDE/kde-common/admin
+svn update kdebluetooth
+make -f Makefile.cvs
+./configure --prefix=$(kde-config --prefix)
+cd kdebluetooth
+make
+make install
+</screen
+> Beroende på din distribution kan du behöva ändra några väljare till skriptet configure. Om du inte har en god anledning att inte göra det, ska du använda prefix för KDE-installationen som prefix för ./configure. Se <command
+>kde-config --prefix</command
+> för att ta reda på rätt prefix och <command
+>./configure --help</command
+> för fler tillgängliga väljare. </para>
+</sect1>
+</chapter>

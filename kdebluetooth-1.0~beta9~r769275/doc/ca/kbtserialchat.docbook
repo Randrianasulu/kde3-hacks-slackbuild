@@ -1,0 +1,29 @@
+<sect1 id="components.kbtserialchat">
+<title
+>kbtserialchat: Una eina de xat molt simple</title>
+<para
+>L'eina kbtserialchat és un client/servidor de xat molt simple. El seu principal propòsit és la depuració i servir com a exemple de com escriure un servidor Bluetooth que sigui gestionat per kbluetoothd i com escriure un client que pugui iniciar-se amb el <link linkend="components.kio_sdp"
+>kioslave SDP</link
+>. </para>
+
+<sect2>
+<title
+>Usar l'eina de xat</title>
+<para
+>kbtserialchat implementa el protocol de port sèrie, pel que si l'inicieu, us mostrarà tots els dispositius que proveeixen el perfil de port sèrie. Això inclou altres ordinadors que tinguin instal·lada L'estructura Bluetooth per a KDE, però també telèfons que suportin dit perfil. </para>
+<para
+>Quan es connecta a un altra servidor kbtserialchat, kbtserialchat també apareixerà en l'altra sistema i tots dos podran enviar tranquilament missatges de text. També us podeu connectar al port sèrie dels telèfons Bluetooth i enviar-lis comandaments AT arbitraris. Per a marcar un número, escriviu <command
+>ATD&lt;número&gt;;</command
+>. </para>
+<para
+>Atès que no te gaire sentit connectar kbtserialchat a un port sèrie d'un dispositiu que usi intercanvi de dades binaries, podeu usar aquesta opció no només per a connectar amb els serveis d'un port sèrie, si no també amb cada servei basat en Rfcomm, com el perfil de mans lliures o el d'auriculars. Com aquests serveis a l'inici no apareixen llistats en el diàleg, podeu usar el següent truc: Navegueu pels serveis d'un dispositiu amb kio_sdp (usant la URL <ulink url="sdp:/"
+>sdp:/</ulink
+>). Llavores, en comptes de simplement fer clic sobr3 el servei, feu clic dret sobre seu i seleccioneu <guimenuitem
+>Obre amb...</guimenuitem
+>. Introduïu <command
+>kbtserialchat</command
+> en el diàleg, premeu &Intro;. I ja esteu connectat. </para>
+</sect2>
+
+</sect1>
+

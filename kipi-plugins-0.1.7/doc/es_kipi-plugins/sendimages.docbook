@@ -1,0 +1,186 @@
+<chapter id="sendimages">
+<chapterinfo>
+
+<title
+>Envío de imágenes</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard@kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento «envío de imágenes» de Kipi para envíar imágenes directamente a través del correo electrónico. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Con este complemento de Kipi puede enviar por correo electrónico las imágenes seleccionadas con su cliente de correo electrónico favorito. Es posible redimensionar los elementos. Puede utilizar arrastrar y soltar para añadir más imágenes en la lista de envío. </para>
+
+<sect1 id="using-plugin-mailselectiondialog">
+<title
+>Diálogo de selección de imágenes</title>
+
+<para
+>Una vez abierto el complemento desde la aplicación servidora aparecerá la ventana de <emphasis
+>Imágenes</emphasis
+> con sus imágenes preseleccionadas en la lista de envío. Con el botón <guilabel
+>Añadir imágenes</guilabel
+> se abrirá el navegador de archivos para añadir los archivos que necesite de la forma habitual. La imagen situada bajo el cursor se mostrará en la parte derecha. </para>
+
+<tip
+><para
+>Puede utilizar la capacidad de arrastrar y soltar entre la ventana de la aplicación servidora y la lista de archivos de imágenes para añadir nuevos elementos al correo electrónico. </para
+></tip>
+
+<para
+>Al pulsar el segundo botón <guilabel
+>Eliminar imágenes</guilabel
+> las imágenes seleccionadas (resaltadas en la lista) se eliminarán de la lista de envío. </para>
+
+<para
+>Cuando haya terminado de seleccionar archivos, pulse <guilabel
+>Aceptar</guilabel
+> para abrir la ventana del diálogo 'nuevo correo electrónico' de su cliente de correo electrónico favorito. Necesitará añadir la dirección y el asunto. Las imágenes seleccionadas se habrán asociado. </para>
+
+<warning
+><para
+>Asegúrese de no sobrecargar su propio límite de transmisión de correo electrónico, ya que muchos proveedores limitan el tamaño del correo electrónico a algunos megabytes de datos. Utilice varios correos electrónicos si desea enviar muchos datos. </para
+></warning>
+
+<figure>
+    <title
+>El diálogo de selección de imagen</title>
+    <graphic srccredit="The Image Selection Dialog" fileref="sendimages_imageselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-mailsettingsdialog">
+<title
+>Diálogo de correo</title>
+
+<para
+>El diálogo de correo se utiliza para cambiar las configuraciones de las imágenes a enviar. Estas configuraciones se recordarán cuando cierre el complemento hasta que las cambie. </para>
+
+<para
+>Seleccione su cliente de correo electrónico favorito en el menú desplegable (si utiliza <application
+>Thunderbird</application
+>, el campo inferior le permitirá seleccionar la ruta correcta de acuerdo con su instalación). </para>
+
+<note
+><para
+>Si desea utilizar el servicio GMail, necesitará instalar <application
+>GMailAgent</application
+> en su ordenador, disponible en <ulink url="http://gmailagent.sourceforge.net"
+>esta dirección</ulink
+>. </para
+></note>
+
+<para
+>Si selecciona <guilabel
+>Añadir comentarios al archivo asociado</guilabel
+> los comentarios incluídos con las imágenes se incluirán en un archivo de texto y se asociarán al correo. </para>
+
+<para
+>Los siguientes 3 elementos le permitirán configurar la calidad de la imagen a enviar. Seleccione uno de ellos. El ratio de <guilabel
+>Compresión de nuevas imágenes</guilabel
+> se puede seleccionar con el deslizador del cuadro de valor. 75% es un ratio de compresión estándar para archivos <guilabel
+>JPEG</guilabel
+>. Configurar la compresión al 100% dará como resultado una compresión sin pérdidas a costa de un tamaño de archivo más grande. La diferencia de tamaño de archivo entre 90% y 100% puede ser un poco dramático, y la ganancia de calidad pequeña. Se obtendrá una buena calidad con una compresión del 85%. </para>
+
+<para
+>El formato <guilabel
+>PNG</guilabel
+> del menú desplegable <guilabel
+>Formato de nuevas imágenes</guilabel
+> no está bien adaptado para reducir el tamaño del archivo de imagen fotográfica, pero es el mejor para los elementos de la compresión sin pérdida de forma similar al formato TIFF. <guilabel
+>PNG</guilabel
+> debería utilizarse si usa un marcador de velocidad de internet y si desea conservar la calidad fotográfica. En otro caso, el formato recomendado es <guilabel
+>JPEG</guilabel
+>. </para>
+
+<note
+><para
+>Si selecciona <guilabel
+>JPEG</guilabel
+> como <guilabel
+>Formato de imágenes nuevas</guilabel
+> y los archivos originales estaban en formato <guilabel
+>JPEG</guilabel
+>, se conservan los datos Exif originales en las imágenes del correo electrónico. </para
+></note>
+
+<figure>
+    <title
+>El diálogo de correo</title>
+    <graphic srccredit="The Mail Dialog" fileref="sendimages_mail.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-emailimagesinaction">
+<title
+>Las imágenes de correo electrónico en acción</title>
+
+<para
+>Un diálogo de progreso le proporcionará información del proceso. Pulse el botón <guilabel
+>Cancelar</guilabel
+> durante este proceso si desea detener el proceso. </para>
+
+<para
+>Cuando se completen todos los trabajos, este diálogo no se cerrará automáticamente y el usuario puede consultar los mensajes del proceso en caso de que se produjeran errores. El cliente de correo se iniciará automáticamente al finalizar. Pulse el botón <guilabel
+>Cerrar</guilabel
+> para cerrar el diálogo. </para>
+
+<figure>
+    <title
+>El complemento de envío de imágenes por correo electrónico en acción</title>
+    <graphic srccredit="The E-mail Images Plugin in Action" fileref="sendimages_progress.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

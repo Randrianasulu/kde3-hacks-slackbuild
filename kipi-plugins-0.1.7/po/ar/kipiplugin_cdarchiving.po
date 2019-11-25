@@ -1,0 +1,578 @@
+# translation of kipiplugin_cdarchiving.po to
+#
+# محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_cdarchiving\n"
+"POT-Creation-Date: 2008-06-10 23:47+0200\n"
+"PO-Revision-Date: 2006-08-12 14:48+0200\n"
+"Last-Translator: محمد سعد  Mohamed SAAD <metehyi@free.fr>\n"
+"Language-Team:  <ar@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Mohamed SAAD محمد سعد"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "metehyi@free.fr"
+
+#: cdarchiving.cpp:157 cdarchivingdialog.cpp:160 cdarchivingdialog.cpp:164
+#: cdarchivingdialog.cpp:598
+msgid "CD (650Mb)"
+msgstr ""
+
+#: cdarchiving.cpp:163
+msgid "KIPI Albums Archiving"
+msgstr ""
+
+#: cdarchiving.cpp:179
+msgid "CD Albums"
+msgstr ""
+
+#: cdarchiving.cpp:180
+msgid "KIPI Album CD archiving"
+msgstr ""
+
+#: cdarchiving.cpp:181 cdarchivingdialog.cpp:453
+msgid "LINUX"
+msgstr "لينكس"
+
+#: cdarchiving.cpp:182 cdarchivingdialog.cpp:465
+msgid "K3b CD-DVD Burning application"
+msgstr ""
+
+#: cdarchiving.cpp:184
+msgid "KIPI CD-Archiving plugin"
+msgstr ""
+
+#: cdarchiving.cpp:418
+msgid "Cannot start K3b program : fork failed."
+msgstr ""
+
+#: cdarchiving.cpp:457
+msgid "K3b is done; removing temporary folder...."
+msgstr "انهى K3b عمله ، حذف المجلد الوقتي..."
+
+#: cdarchiving.cpp:467
+msgid "Cannot remove temporary folder '%1'."
+msgstr "لا استطيع حذف المجلد المؤقت  '%1'."
+
+#: cdarchiving.cpp:497 cdarchiving.cpp:589
+msgid "Cannot remove folder '%1'."
+msgstr "لا استطيع حذف المجلد '%1'."
+
+#: cdarchiving.cpp:510 cdarchiving.cpp:559
+msgid "Could not create folder '%1'."
+msgstr "لا استطيع انشاء المجلد '%1'."
+
+#: cdarchiving.cpp:626 cdarchiving.cpp:1056
+msgid "Could not open file '%1'."
+msgstr "لم استطع فتح الملف '%1'."
+
+#: cdarchiving.cpp:651
+msgid "Could not create folder '%1' in '%2'."
+msgstr "لم استطع انشاء المجلد '%1' في '%2'."
+
+#: cdarchiving.cpp:744 cdarchiving.cpp:1197
+msgid "Album list"
+msgstr ""
+
+#: cdarchiving.cpp:749
+msgid "Album "
+msgstr ""
+
+#: cdarchiving.cpp:759
+#, fuzzy
+msgid "<i>Caption:</i>"
+msgstr "<i>مجموعة: </i>"
+
+#: cdarchiving.cpp:762
+msgid "<i>Collection:</i>"
+msgstr "<i>مجموعة: </i>"
+
+#: cdarchiving.cpp:765
+msgid "<i>Date:</i>"
+msgstr "<i>تاريخ:</i>"
+
+#: cdarchiving.cpp:767
+msgid "<i>Images:</i>"
+msgstr "<i>صور:</i>"
+
+#: cdarchiving.cpp:850 cdarchiving.cpp:933 cdarchiving.cpp:1235
+msgid "KB"
+msgstr "KB"
+
+#: cdarchiving.cpp:895 cdarchiving.cpp:898
+msgid " images"
+msgstr " صور"
+
+#: cdarchiving.cpp:959 cdarchiving.cpp:999 cdarchiving.cpp:1241
+msgid "Valid HTML 4.01."
+msgstr "Valid HTML 4.01."
+
+#: cdarchiving.cpp:963 cdarchiving.cpp:1003
+msgid "Album archive created with <a href=\"%1\">%2</a> on %3"
+msgstr ""
+
+#: cdarchiving.cpp:982
+msgid "<i>Album list:</i>"
+msgstr ""
+
+#: cdarchiving.cpp:1190
+msgid "Previous"
+msgstr "سابقا"
+
+#: cdarchiving.cpp:1195
+msgid "Album index"
+msgstr ""
+
+#: cdarchiving.cpp:1202
+msgid "Next"
+msgstr "التالي"
+
+#: cdarchiving.cpp:1247
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr ""
+
+#: cdarchiving.cpp:1410
+msgid "Creating project header..."
+msgstr ""
+
+#: cdarchiving.cpp:1425 cdarchiving.cpp:1463 cdarchiving.cpp:1593
+#: cdarchivingdialog.cpp:163 cdarchivingdialog.cpp:607
+msgid "DVD (4,7Gb)"
+msgstr "DVD (4,7Gb)"
+
+#: cdarchiving.cpp:1583
+msgid "Adding Album '%1' into project..."
+msgstr ""
+
+#: cdarchivingdialog.cpp:88
+msgid "Configure Archive to CD"
+msgstr ""
+
+#: cdarchivingdialog.cpp:91
+msgid "Create CD/DVD Archive"
+msgstr "انشاء محفوظات CD/DVD"
+
+#: cdarchivingdialog.cpp:101
+msgid "CD/DVD Archiving"
+msgstr ""
+
+#: cdarchivingdialog.cpp:104
+msgid ""
+"An Album CD/DVD Archiving Kipi plugin.\n"
+"This plugin use K3b CD/DVD burning software available at\n"
+"http://www.k3b.org"
+msgstr ""
+
+#: cdarchivingdialog.cpp:109
+msgid "Author"
+msgstr "المؤلف"
+
+#: cdarchivingdialog.cpp:112
+msgid "Contributor"
+msgstr "مساهم"
+
+#: cdarchivingdialog.cpp:115
+msgid "Image navigation mode patches"
+msgstr ""
+
+#: cdarchivingdialog.cpp:118
+msgid "Bugfix"
+msgstr ""
+
+#: cdarchivingdialog.cpp:124
+msgid "Plugin Handbook"
+msgstr ""
+
+#: cdarchivingdialog.cpp:140
+msgid "Selection"
+msgstr ""
+
+#: cdarchivingdialog.cpp:140
+msgid "Album Selection"
+msgstr ""
+
+#: cdarchivingdialog.cpp:150
+msgid "Target Media Information"
+msgstr ""
+
+#: cdarchivingdialog.cpp:154
+msgid "<p>Information about the backup medium."
+msgstr ""
+
+#: cdarchivingdialog.cpp:161 cdarchivingdialog.cpp:601
+msgid "CD (700Mb)"
+msgstr "CD (700Mb)"
+
+#: cdarchivingdialog.cpp:162 cdarchivingdialog.cpp:604
+msgid "CD (880Mb)"
+msgstr "CD (880Mb)"
+
+#: cdarchivingdialog.cpp:166
+msgid "<p>Select here the backup media format."
+msgstr ""
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface"
+msgstr ""
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface Look"
+msgstr "مظهر واجهة HTML"
+
+#: cdarchivingdialog.cpp:189
+msgid "Build CD HTML interface"
+msgstr "بناء واجهة CD HTML"
+
+#: cdarchivingdialog.cpp:193
+msgid "<p>This option adds a HTML interface to browse the CD's contents."
+msgstr "هذا الخيار يضيف واجهة HTML  لتصفح محتوى القرص المدمج."
+
+#: cdarchivingdialog.cpp:197
+msgid "Add \"autorun\" functionality"
+msgstr "أضف وظيفة \"autorun\""
+
+#: cdarchivingdialog.cpp:201
+msgid "<p>This option adds MS Windows(tm) autorunning capability to the CD."
+msgstr "هذا الخيار يضيف التشغيل التلقائي للقرص المدمج على نمط MS Windows(tm)."
+
+#: cdarchivingdialog.cpp:205
+msgid "Archive title:"
+msgstr "اسم المحفوظات:"
+
+#: cdarchivingdialog.cpp:208
+msgid "Album Archiving"
+msgstr "حفظ دفتر الصور"
+
+#: cdarchivingdialog.cpp:211
+msgid "<p>Enter here the title of the CD archive."
+msgstr "<p>أدخل هنا الاسم لمحفوظات القرص المدمج."
+
+#: cdarchivingdialog.cpp:217
+msgid "I&mages per row:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:218
+msgid ""
+"<p>Enter here the number of images per row on the album page. A good value is "
+"'4'."
+msgstr "أدخل هنا عدد الصور في الصف الواحد على دفتر الصور. قيمة عادية هي '4'."
+
+#: cdarchivingdialog.cpp:229
+msgid "Thumbnail size:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:231
+msgid "<p>The new size of thumbnails in pixels"
+msgstr ""
+
+#: cdarchivingdialog.cpp:241
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr ""
+
+#: cdarchivingdialog.cpp:242
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+
+#: cdarchivingdialog.cpp:253
+msgid "Thumbnail file format:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:269
+msgid "<p>Select here the font name used for the pages."
+msgstr ""
+
+#: cdarchivingdialog.cpp:271
+msgid "Fon&t name:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:284
+msgid "<p>Select here the font size used for the pages."
+msgstr ""
+
+#: cdarchivingdialog.cpp:286
+msgid "Font si&ze:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:299
+msgid "<p>Select here the foreground color used for the pages."
+msgstr ""
+
+#: cdarchivingdialog.cpp:301
+msgid "&Foreground color:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:314
+msgid "<p>Select here the background color used for the pages."
+msgstr ""
+
+#: cdarchivingdialog.cpp:316
+msgid "&Background color:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:329
+msgid "<p>Select here the image border's size in pixels."
+msgstr ""
+
+#: cdarchivingdialog.cpp:331
+msgid "Image border s&ize:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:344
+msgid "<p>Select here the color used for the image borders."
+msgstr "<p>اختر هنا اللون المستعمل لحافات الصورة."
+
+#: cdarchivingdialog.cpp:347
+msgid "Image bo&rder color:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:418
+msgid "Volume Descriptor"
+msgstr "واصف الجزء"
+
+#: cdarchivingdialog.cpp:418
+msgid "Media Volume Descriptor"
+msgstr "واصف جزء الوسائط"
+
+#: cdarchivingdialog.cpp:427
+msgid "Volume name:"
+msgstr "اسم الجزء:"
+
+#: cdarchivingdialog.cpp:430
+msgid "CD Album"
+msgstr "دفتر صور CD Album"
+
+#: cdarchivingdialog.cpp:434
+msgid "<p>Enter here the media volume name (32 characters max.)"
+msgstr "<p>ادخل هنا اسم جزء الوسائط (32 حرف لا اكثر)"
+
+#: cdarchivingdialog.cpp:438
+msgid "Volume set name:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:441
+msgid "Album CD archive"
+msgstr ""
+
+#: cdarchivingdialog.cpp:446
+msgid "<p>Enter here the media volume global name (128 characters max.)"
+msgstr "<p>ادخل هنا اسم الجزء الشامل للوسائط (128 حرف لا اكثر)"
+
+#: cdarchivingdialog.cpp:450
+msgid "System:"
+msgstr "نظام:"
+
+#: cdarchivingdialog.cpp:458
+msgid "<p>Enter here the media burning system name (32 characters max.)"
+msgstr "<p>ادخل هنا اسم نظام حرق الوسائط (32 حرف لا اكثر)"
+
+#: cdarchivingdialog.cpp:462
+msgid "Application:"
+msgstr "تطبيق:"
+
+#: cdarchivingdialog.cpp:470
+msgid "<p>Enter here the media burning application name (128 characters max.)."
+msgstr "<p>ادخل هنا اسم التطبيق لاحراق الوسائظ (128 حرف لا اكثر)."
+
+#: cdarchivingdialog.cpp:475
+msgid "Publisher:"
+msgstr "الناشر:"
+
+#: cdarchivingdialog.cpp:478
+msgid "KIPI [KDE Images Program Interface]"
+msgstr ""
+
+#: cdarchivingdialog.cpp:483
+msgid "<p>Enter here the media publisher name (128 characters max.)."
+msgstr "<p>ادخل هنا اسم ناشر الوسائط (128 حرف لا اكثر)."
+
+#: cdarchivingdialog.cpp:487
+msgid "Preparer:"
+msgstr "المحضر:"
+
+#: cdarchivingdialog.cpp:490
+msgid "KIPI CD Archiving plugin"
+msgstr ""
+
+#: cdarchivingdialog.cpp:494
+msgid "<p>Enter here the media preparer name (128 characters max.)."
+msgstr "<p>ادخل هنا اسم محضر الوسائط (128 حرف لا اكثر)."
+
+#: cdarchivingdialog.cpp:501
+msgid "Media Burning"
+msgstr "حرق وسائط"
+
+#: cdarchivingdialog.cpp:502
+msgid "CD/DVD Burning Setup"
+msgstr "اعدادات حرق الاقراص المدمجة/الاقراص الرقمية المرئية CD/DVD"
+
+#: cdarchivingdialog.cpp:511
+msgid "&K3b binary path:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:521
+msgid "<p>The path name to the K3b binary program."
+msgstr ""
+
+#: cdarchivingdialog.cpp:525
+msgid "Application parameters:"
+msgstr ""
+
+#: cdarchivingdialog.cpp:533
+msgid ""
+"<p>Enter parameters which will be used when starting the burning application. "
+"Newer versions of K3b might need --nofork, older versions might not need it. "
+"(128 characters max.)."
+msgstr ""
+
+#: cdarchivingdialog.cpp:540
+msgid "Advanced Burning Options"
+msgstr "خيارات حرق متقدمة"
+
+#: cdarchivingdialog.cpp:548
+msgid "Media burning On-The-Fly"
+msgstr ""
+
+#: cdarchivingdialog.cpp:550
+msgid ""
+"<p>This option uses the \"On-The-Fly\" media burning capability; this does not "
+"use a media image."
+msgstr ""
+
+#: cdarchivingdialog.cpp:554
+msgid "Check media"
+msgstr ""
+
+#: cdarchivingdialog.cpp:556
+msgid ""
+"<p>This option verifies the media after the burning process. You must use K3b "
+"release >= 0.10.0"
+msgstr ""
+
+#: cdarchivingdialog.cpp:560
+msgid "Start burning process automatically"
+msgstr "بدء اجراء الاحراق تلقائيا"
+
+#: cdarchivingdialog.cpp:563
+msgid ""
+"<p>This option start automatically the burning process when K3b is loaded."
+msgstr ""
+
+#: cdarchivingdialog.cpp:623
+msgid "Total size: "
+msgstr ""
+
+#: cdarchivingdialog.cpp:624
+msgid "<b>%1</b></font> / <b>%2</b>"
+msgstr ""
+
+#: cdarchivingdialog.cpp:634
+msgid "You must selected at least one Album to archive."
+msgstr ""
+
+#: cdarchivingdialog.cpp:642
+msgid "K3b binary path is not valid. Please check it."
+msgstr ""
+
+#: cdarchivingdialog.cpp:648
+msgid "Target media size is too big. Please change your album selection."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:61
+msgid "Archive to CD/DVD..."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:126
+msgid "Archive to CD/DVD"
+msgstr ""
+
+#: plugin_cdarchiving.cpp:147
+msgid "Initialising..."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:154
+msgid "Making main HTML interface..."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:160
+msgid "Making HTML pages for Album '%1'..."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:166
+msgid "Making AutoRun interface..."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:172
+msgid "Creating thumbnail for '%1'..."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:178
+msgid "Making K3b project..."
+msgstr "جاري انشاء مشروع K3b..."
+
+#: plugin_cdarchiving.cpp:207
+msgid "Main HTML interface creation completed."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:214
+msgid "HTML page creation for Album '%1' completed."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:221
+msgid "Creating thumbnail for '%1' done."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:228
+msgid "AutoRun interface creation completed."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:235
+msgid "K3b project creation completed."
+msgstr ""
+
+#: plugin_cdarchiving.cpp:253
+msgid "Failed to create thumbnail for '%1'"
+msgstr ""
+
+#: plugin_cdarchiving.cpp:262
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr ""
+
+#: plugin_cdarchiving.cpp:273
+msgid "Failed to create HTML pages for Album '%1'"
+msgstr ""
+
+#: plugin_cdarchiving.cpp:285
+msgid "Failed to create K3b project."
+msgstr "فشلت في انشاء مشروع K3b."
+
+#: plugin_cdarchiving.cpp:327
+msgid "Starting K3b program..."
+msgstr "بدء تشغيل برنامج K3b"
+
+#~ msgid "CD/DVD Archiving Handbook"
+#~ msgstr "كتيًب ادارة المحفوظات للاقراص المدمجة و الاقراص الرقمية المرئية CD/DVD"
+
+#~ msgid "<i>Comment:</i>"
+#~ msgstr "<i>تعليق: </i>"

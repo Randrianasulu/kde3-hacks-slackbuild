@@ -1,0 +1,63 @@
+<sect1 id="components.kio_obex">
+  <title>OBEX-kioslave: Browse folders over Bluetooth</title>
+
+  <sect2>
+    <title>General</title>
+    <para>The OBEX protocol is designed for use with mobile devices. If you have &quot;beamed&quot;  already a vcard from a mobile device to an other mobile device, you have used OBEX. But there are also other applications for the OBEX protocol. Most notably the filesystem browsing protocol. If the mobile device understands this protocol, you can browse, up and download files to your mobiles filesystem storage using this client implementations. Also syncronisation protocols like IrMCSync or SyncML have OBEX bindings and can be accessed using this client, even if there is no usage for syncronisation in konquerror.</para>
+    <para>OBEX protocols can use many different transports. The original transport was IrDA, but there also exsist transport bindings for Bluetooth, serial lines and tcp/ip connections.</para>
+    <para>OBEX supports 2 way authentication. The first, most known way, is authentications of the client by the server. So the server implementation can verify the clients identity. But also the client can verify the servers identity. For authentication a MD5 checksum challenge is used. This enshures that plain passwords are never sent over the transport medium.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title>URL format</title>
+    <para>OBEX resources are accessed using URLs. The protocol part is clearly obex: The path component holds the path on the server. The host part is a bit mor complex.</para>
+    <para>For servers accessible over tcp/ip the host part is as usual. You can use the hostname or ip address of the server host to contact. Also If the server runs on a non standard port (the standard port is 650) you can append the port number as usual.
+    Example:
+    <userinput>OBEX://hostname:port/path</userinput></para>
+    <para>For IrDA or Bluetooth transports you can use the hardware address in the standard notation with octets separated by double colons. Neat, but a bit difficult to remember the hardware address of your Bluetooth device.
+    Example:
+    <userinput>obex://[ef:01:23:45]/path</userinput>
+    or
+    <userinput>obex://[12:34:ef:01:23:45]/path</userinput></para>
+    <para>Therfore it is possible to define hostaliases for use with the OBEX protocol. These aliases are defined in the OBEX KControl module. You can set up a human readable name, discover devices and finally assign a hardware address to that name. Also Devices ober serial transports are accessible via those aliases. For IrDA and Bluetooth there are handy predefined aliases named irda or bluetooth. Both do device discovery and try to connect to the first device it finds.</para>
+    <para>Good luck browsing your neighbor's mobile :))</para>
+  </sect2>
+
+  <sect2>
+    <title>Tips &amp; Tricks</title>
+    <para>
+    Like every other kioslave, you can directly open and save files to bluetooth
+    devices with kio_obex. So if you write a shopping list for instance, you can
+    simply type it with kedit and save it on your phone.
+    </para>
+    <para>
+    You can make this procedure must faster by adding a bookmark to the 
+    bookmark list of the file-save-dialog.
+    </para>
+  </sect2>
+  
+  <sect2>
+    <title>Limitations</title>
+
+    <sect3 id="obex_and_kde">
+      <title>OBEX and KDE</title>
+      <para>Since a kioclient can't control the number of slave which are accessing the same destination it is often the case that there are multiple slaves running. But OBEX transports, except the tcp/ip transport, support only one transport connection to the device. This leads to kioslaves which fail to connect with "Device or resource Busy". OBEX has a partial solution for that problem. If the server supports this, one can transmit packets for multiple connections on one transport connection. But, I have not seen a device which announced this feature. And this would require a separate transport daemon for each destination. So, if I see devices providing this feature, I will start to implement that daemon.</para>
+      <para>There is no special method to rename or move a file on the device. So this is done by copying the data from and to the device. This is slow and will start two kioslaves which will have the problem described above.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title>Device compatibility</title>
+      <para>Since this client implements an open standard There is a real hope that there are much devices out there witch will work well. But there are always exceptions.</para>
+      <para>The client is developed with a SIEMENS S45i using IrDA or the SIEMENS specific BFB protocol on the serial line. As you can imagine this works.</para>
+      <para>The NOKIA 3650 mobile has a firmware bug in some versions. Mobiles with this bug return invalid XML files for folder listings. This leads to empty directories. Thie bug is reported to be in at least firmware version 2.50. The firmware version 3.16 fixed this bug. Thanks to Fred Schaettgen &lt;Sch@ttgen.net&gt; for testing.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

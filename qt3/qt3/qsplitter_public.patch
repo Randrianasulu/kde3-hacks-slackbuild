@@ -1,0 +1,203 @@
+From f97ed1fa6cdcdb4e70979899145f3d3da34c3932 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Sat, 06 Aug 2011 06:36:40 +0000
+Subject: Expose some QSplitter private classes for added functionality in Trinity
+
+This is not a security risk
+---
+diff --git a/src/widgets/qsplitter.cpp b/src/widgets/qsplitter.cpp
+index 4810911..efbe870 100644
+--- a/src/widgets/qsplitter.cpp
++++ b/src/widgets/qsplitter.cpp
+@@ -52,39 +52,9 @@
+ #include "qptrlist.h"
+ #include "qstyle.h"
+ 
+-class QSplitterHandle : public QWidget
+-{
+-    Q_OBJECT
+-public:
+-    QSplitterHandle( Orientation o,
+-		     QSplitter *parent, const char* name=0 );
+-    void setOrientation( Orientation o );
+-    Orientation orientation() const { return orient; }
+-
+-    bool opaque() const { return s->opaqueResize(); }
+-
+-    QSize sizeHint() const;
+-
+-    int id() const { return myId; } // d->list.at(id())->wid == this
+-    void setId( int i ) { myId = i; }
+-
+-protected:
+-    void paintEvent( QPaintEvent * );
+-    void mouseMoveEvent( QMouseEvent * );
+-    void mousePressEvent( QMouseEvent * );
+-    void mouseReleaseEvent( QMouseEvent * );
+-
+-private:
+-    Orientation orient;
+-    bool opaq;
+-    int myId;
+-
+-    QSplitter *s;
+-};
+-
+ #include "qsplitter.moc"
+ 
+-const uint Default = 2;
++const uint Default = QT_QSPLITTER_DEFAULT;
+ 
+ static int mouseOffset;
+ static int opaqueOldPos = -1; // this assumes that there's only one mouse
+@@ -180,45 +150,6 @@ void QSplitterHandle::paintEvent( QPaintEvent * )
+ 					    QStyle::Style_Horizontal : 0) );
+ }
+ 
+-class QSplitterLayoutStruct : public Qt
+-{
+-public:
+-    QCOORD sizer;
+-    uint isHandle : 1;
+-    uint collapsible : 2;
+-    uint resizeMode : 2;
+-    QWidget *wid;
+-
+-    QSplitterLayoutStruct()
+-	: sizer( -1 ), collapsible( Default ) { }
+-    QCOORD getSizer( Orientation orient );
+-};
+-
+-QCOORD QSplitterLayoutStruct::getSizer( Orientation orient )
+-{
+-    if ( sizer == -1 ) {
+-	QSize s = wid->sizeHint();
+-	if ( !s.isValid() || wid->testWState(WState_Resized) )
+-	    s = wid->size();
+-	sizer = ( orient == Horizontal ) ? s.width() : s.height();
+-    }
+-    return sizer;
+-}
+-
+-class QSplitterPrivate
+-{
+-public:
+-    QSplitterPrivate()
+-	: opaque( FALSE ), firstShow( TRUE ), childrenCollapsible( TRUE ),
+-	  handleWidth( 0 ) { }
+-
+-    QPtrList<QSplitterLayoutStruct> list;
+-    bool opaque : 8;
+-    bool firstShow : 8;
+-    bool childrenCollapsible : 8;
+-    int handleWidth;
+-};
+-
+ 
+ /*!
+     \class QSplitter
+diff --git a/src/widgets/qsplitter.h b/src/widgets/qsplitter.h
+index 97b95ad..c159e0f 100644
+--- a/src/widgets/qsplitter.h
++++ b/src/widgets/qsplitter.h
+@@ -48,11 +48,52 @@
+ 
+ #ifndef QT_NO_SPLITTER
+ 
++#define QT_QSPLITTER_DEFAULT 2
++
+ class QSplitterHandle;
+ class QSplitterPrivate;
+ class QSplitterLayoutStruct;
+ class QTextStream;
+ 
++class QSplitterPrivate
++{
++public:
++    QSplitterPrivate()
++	: opaque( FALSE ), firstShow( TRUE ), childrenCollapsible( TRUE ),
++	  handleWidth( 0 ) { }
++
++    QPtrList<QSplitterLayoutStruct> list;
++    bool opaque : 8;
++    bool firstShow : 8;
++    bool childrenCollapsible : 8;
++    int handleWidth;
++};
++
++class QSplitterLayoutStruct : public Qt
++{
++public:
++    QCOORD sizer;
++    uint isHandle : 1;
++    uint collapsible : 2;
++    uint resizeMode : 2;
++    QWidget *wid;
++
++    QSplitterLayoutStruct()
++	: sizer( -1 ), collapsible( QT_QSPLITTER_DEFAULT ) { }
++    QCOORD getSizer( Orientation orient );
++};
++
++QCOORD QSplitterLayoutStruct::getSizer( Orientation orient )
++{
++    if ( sizer == -1 ) {
++	QSize s = wid->sizeHint();
++	if ( !s.isValid() || wid->testWState(WState_Resized) )
++	    s = wid->size();
++	sizer = ( orient == Horizontal ) ? s.width() : s.height();
++    }
++    return sizer;
++}
++
+ class Q_EXPORT QSplitter : public QFrame
+ {
+     Q_OBJECT
+@@ -111,7 +152,7 @@ protected:
+     virtual void setRubberband( int );
+     void getRange( int id, int *, int * );
+ 
+-private:
++public: //private:
+     enum { DefaultResizeMode = 3 };
+ 
+     void init();
+@@ -164,6 +205,36 @@ Q_EXPORT QTextStream& operator<<( QTextStream&, const QSplitter& );
+ Q_EXPORT QTextStream& operator>>( QTextStream&, QSplitter& );
+ #endif
+ 
++class QSplitterHandle : public QWidget
++{
++    Q_OBJECT
++public:
++    QSplitterHandle( Orientation o,
++		     QSplitter *parent, const char* name=0 );
++    void setOrientation( Orientation o );
++    Orientation orientation() const { return orient; }
++
++    bool opaque() const { return s->opaqueResize(); }
++
++    QSize sizeHint() const;
++
++    int id() const { return myId; } // d->list.at(id())->wid == this
++    void setId( int i ) { myId = i; }
++
++protected:
++    void paintEvent( QPaintEvent * );
++    void mouseMoveEvent( QMouseEvent * );
++    void mousePressEvent( QMouseEvent * );
++    void mouseReleaseEvent( QMouseEvent * );
++
++public: // private:
++    Orientation orient;
++    bool opaq;
++    int myId;
++
++    QSplitter *s;
++};
++
+ #endif // QT_NO_SPLITTER
+ 
+ #endif // QSPLITTER_H
+--
+cgit v0.9.0.2-52-g1de3

@@ -1,0 +1,170 @@
+<chapter id="installation">
+<title
+>Installatie</title>
+
+<sect1 id="installation.requirements">
+<title
+>Benodigdheden</title>
+<para
+>Afhankelijkheden (die dient zowel de bibliotheken als ook de corresponderende dev-pakketten te hebben): </para>
+<itemizedlist>
+<listitem
+><para
+>KDE 3.2 of nieuwer </para
+></listitem>
+<listitem
+><para
+>Openobex 1.0 of nieuwer </para
+></listitem>
+<listitem
+><para
+>Qt 3.2 of nieuwer </para
+></listitem>
+<listitem
+><para
+>bluez-libs 2.5 of nieuwer </para
+></listitem>
+<listitem
+><para
+>bluez-utils 2.5 of nieuwer </para
+></listitem>
+</itemizedlist>
+<!--<para
+>For the handsfree client you will also need libogg, libvorbisenc and libvorbisfile.</para
+>-->
+<para
+>Voor de Bemused-server hebt u xmms-dev nodig. </para>
+<para
+>Onthoud dat het compileren mogelijk ook wel lukt met oudere versies van bovengenoemde bibliotheken. Als u het met succes hebt gecompileerd met een oudere versie, of als het compileren faalt ondanks dat u de juiste versies hebt geïnstalleerd, laat het ons dan even weten. </para>
+</sect1>
+
+
+<sect1 id="installation.compilation">
+<title
+>Compilatie en installatie</title>
+<para
+>Pak het Tar-archief uit, <command
+>cd kdebluetooth</command
+>, voer dan het commando <command
+>./configure --prefix=...</command
+>. KDE dient te zijn ingesteld om het opgegeven prefix te gebruiken. Meestal is dit <filename
+>/usr</filename
+> (bij SUSE is het <filename
+>/opt/kde3</filename
+>), maar u kunt ook andere mappen toevoegen door middel van de omgevingsvariabele $KDEDIRS. Zie <ulink url="http://www.kde.org/documentation/faq/install.html"
+> http://www.kde.org/documentation/faq/install.html</ulink
+> voor meer informatie. </para>
+<para
+>Als het compileren geslaagd is, dan kunt u de installatie starten met <command
+>make install</command
+>. We raden het u echter met klem aan om een <link linkend="download.packages"
+>softwarepakket</link
+> te gebruiken in plaats van de broncode zelf te compileren. Als u geen prefix exclusief voor kdebluetooth hebt gebruikt, dan moet u veel moeite doen om na enkele opwaarderingen de rommel op te ruimen. </para>
+</sect1>
+
+
+<sect1 id="installation.setup">
+<title
+>Instellingen</title>
+<para
+>Het KDE Bluetooth-framework zelf heeft bijna geen aanvullende instellingen nodig. Maar voordat u het kunt gebruiken dient u Linux' Bluetooth-stak BlueZ correct in te stellen. Ga voor meer informatie hierover naar <ulink url="http://www.bluez.org"
+>de website van BlueZ</ulink
+>. BlueZ levert een daemon genaamd <command
+>hcid</command
+>. Deze is verantwoordelijk voor het contact maken met uw apparaten en het beheren van beveilingsgerelateerde zaken. Het wordt gebruikelijk gestart tijdens het opstarten van Linux via een init-script. </para>
+<para
+>Voor kbluetooth adviseren we de volgende instellingen (ongewijzigde of irrelevante secties zijn vervangen door '...'): <screen>
+options {
+...
+        # Security Manager mode
+        #   none - Security manager disabled
+        #   auto - Use local PIN for incoming connections
+        #   user - Always ask user for a PIN
+        #
+        # Use 'security user' to use the graphical pin helper only
+        # 'auto' means that for incoming connection the static number 
+        # in the file /etc/bluetooth/pin is used.
+        security user;
+
+        # Pairing mode
+        # Allow to overwrite an existing pairing 
+        pairing multi;
+
+        # PIN helper
+        # Use kdebluetooth's own pin helper. 
+        # Errors messages can be found in the syslog.
+        # !! CHANGE ME !! Change the path according to your own setup
+        pin_helper /usr/local/lib/kdebluetooth/kbluepin;
+}
+
+# Default settings for HCI devices
+device {
+...
+        # Local device class
+        # "Uncategorized computer", which pretends 
+        # to support just about anything.
+        class 0xff0100;
+        
+        # For some mobile phones you will have to tag your system
+        # as a Audio/Handsfree device to be able to use your computer
+        # as a Handsfree (only when connecting from the phone)
+        # class 0xff0408;
+
+        iscan enable; pscan enable;
+        lm accept;
+        lp hold,sniff,park;
+
+        # Authentication and Encryption
+        # If you enable this, a device *must* be paired to access any
+        # service on your computer
+        #auth enable;
+        #encrypt enable;
+}
+
+</screen
+> Onthoud dat u <command
+>hicd</command
+> dient te herstarten na elke wijziging in dit bestand. Als iets niet werkt tijdens het opzetten van een paarkoppeling tussen de apparaten, kijk dan in uw systeem' syslog (op Debian: <filename
+>/var/log/syslog</filename
+>) wat er mis is gegaan. </para>
+<para
+>Voor wat basis achtergrondinformatie over Bluetooth-beveiliging, zie de sectie <link linkend="concepts.pairing"
+>Paarkoppelingen</link
+>. </para>
+
+<para
+>Een andere daemon die dient te draaien is BlueZ's <command
+>sdpd</command
+>. Deze daemon wordt gebruikt om de beschrijvingen van diensten die door andere apparaten worden aangeleverd te publiceren. </para>
+<para
+>Als beide draaien, controleer dan of uw Bluetooth-apparaat werkt met behulp van de commandoprompt-programma's die BlueZ meelevert: </para>
+<screen
+>root:~# hciconfig      &lt;- controleert of de adapter is gevonden en draait
+hci0:   Type: USB
+        BD Address: 00:10:60:A3:8B:DE ACL MTU: 192:8  SCO MTU: 64:8
+        UP RUNNING PSCAN ISCAN AUTH ENCRYPT
+        RX bytes:176023 acl:2046 sco:0 events:1809 errors:0
+        TX bytes:23000 acl:971 sco:0 commands:469 errors:0
+
+root:~# hcitool inq    &lt;- probeert te zoeken naar andere waarneembare apparaten
+Inquiring ...
+        00:A0:32:1A:B0:27       clock offset: 0x122b    class: 0x000100
+
+root:~# sdptool browse FF:FF:FF:00:00:00
+Browsing FF:FF:FF:00:00:00 ...
+Service Name: SDP Server
+Service Description: Bluetooth service discovery server
+Service Provider: BlueZ
+Service RecHandle: 0x0
+...
+root:~#
+</screen>
+<para
+>Het eerste commando controleert of uw bluetooth-adapter werkt, het tweede commando zoekt naar andere apparaten binnen het bereik (deze dienen op 'waarneembaar' te zijn gezet). Het derde commando toont een lijst met de diensten die u aanbiedt aan de andere bluetooth-apparaten. Als u kbluetooth al hebt draaien, dan zult u hier de volledige lijst met actieve diensten zien, inclusief OBEX push etc. Als dit allemaal goed is gegaan, dan zult u kdebluetooth kunnen gebruiken zonder verdere instelling. </para>
+<para
+>Start nu de metaserver van kdebluetooth: <command
+>kbluetoothd</command
+>. Er wordt vervolgens een kdebluetooth-pictogram in uw systeemvak geplaatst. Zolang kbluetoothd draait zijn alle diensten die door kdebluetooth worden aangeleverd beschikbaar. Klik eens met de linker en rechter muisknop op de pictogram en verken de verschillende instellingen. Veel plezier! </para>
+</sect1>
+
+</chapter>

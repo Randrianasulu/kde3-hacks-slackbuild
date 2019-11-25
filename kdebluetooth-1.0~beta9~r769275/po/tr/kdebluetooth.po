@@ -1,0 +1,1587 @@
+# translation of kdebluetooth.po to
+# Görkem Çetin <gorkem@kde.org>, 2004.
+# S.Çağlar Onur <caglar@uludag.org.tr>, 2005.
+# İsmail Şimşek <simsek@kde.org.tr>, 2005.
+# Gökçen Eraslan <gokcene@anadolu.edu.tr>, 2005.
+# serdar soytetir <tulliana@gmail.com>, 2007.
+# translation of kbluetoothd.po to
+msgid ""
+msgstr ""
+"Project-Id-Version: kdebluetooth\n"
+"POT-Creation-Date: 2007-09-13 08:28+0200\n"
+"PO-Revision-Date: 2007-06-13 23:17+0300\n"
+"Last-Translator: serdar soytetir <tulliana@gmail.com>\n"
+"Language-Team:  <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+
+#: kbtserialchat/main.cpp:23
+msgid "A KDE KPart Application"
+msgstr "Bir KDE KPart Uygulaması"
+
+#: kbtobexsrv/main.cpp:28 kbtobexsrv/main.cpp:29 kbtobexsrv/main.cpp:30
+#: kbtserialchat/main.cpp:29 kbtserialchat/main.cpp:30
+#: kbtserialchat/main.cpp:31
+msgid "Used by kbluetoothd"
+msgstr "kbluetoothd tarafından kullanıldı"
+
+#: kbtobexclient/main.cpp:37 kbtserialchat/main.cpp:32
+msgid "Used by kio_sdp"
+msgstr "kio_sdp tarafından kullanıldı"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 16
+#: kbtserialchat/main.cpp:41 rc.cpp:3
+#, no-c-format
+msgid "Bluetooth Serial Chat"
+msgstr "Bluetooth Seri Port İletişimi"
+
+#: libkbluetooth/namerequest.cpp:52
+#, fuzzy
+msgid "Device is not available."
+msgstr "<i>kullanılabilir değil</i>"
+
+#: libkbluetooth/namerequest.cpp:59
+#, fuzzy
+msgid "HCI device open failed."
+msgstr "Bağlantı başarısız"
+
+#: libkbluetooth/namerequest.cpp:73
+msgid "HCI name request failed."
+msgstr ""
+
+#: libkbluetooth/hcisocket.cpp:60
+#, fuzzy
+msgid "Error creating socket"
+msgstr "%1 dosyasına yazarken bir hata oluştu."
+
+#: libkbluetooth/hcisocket.cpp:72
+msgid "Error binding to socket"
+msgstr ""
+
+#: libkbluetooth/hcisocket.cpp:84
+msgid "HCI filter setup failed"
+msgstr ""
+
+#: libkbluetooth/hcisocket.cpp:118
+#, c-format
+msgid "HCI socket error: 0x%1."
+msgstr ""
+
+#: libkbluetooth/hcidefault.cpp:82
+msgid "Use bluetooth device hciX (alternative: $HCI_DEVICE)"
+msgstr ""
+
+#: libkbluetooth/inquiry.cpp:154
+msgid "Timeout while waiting for end of inquiry."
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 128
+#: libkbluetooth/serviceselectionwidget.cpp:104 rc.cpp:167 rc.cpp:239
+#, fuzzy, no-c-format
+msgid "Searching..."
+msgstr "Bekliyor..."
+
+#: libkbluetooth/serviceselectionwidget.cpp:200
+#, fuzzy
+msgid "Bluetooth Service Selection"
+msgstr "Hiç Bluetooth adaptörü bulunamadı!"
+
+#: libkbluetooth/serviceselectionwidget.cpp:309
+msgid "Clear the device cache?"
+msgstr ""
+
+#: kioclient/main.cpp:22
+msgid "KIO command line client"
+msgstr "KIO komut satırı istemcisi"
+
+#: kioclient/main.cpp:31
+msgid "List date"
+msgstr "Tarihi listele"
+
+#: kioclient/main.cpp:32
+msgid "List user"
+msgstr "Kullanıcıyı listele"
+
+#: kioclient/main.cpp:33
+msgid "List icon name"
+msgstr "Simge adını listele"
+
+#: kioclient/main.cpp:34
+msgid "List group"
+msgstr "Grubu listele"
+
+#: kioclient/main.cpp:35
+msgid "List extra"
+msgstr "Daha fazla listele"
+
+#: kioclient/main.cpp:36
+msgid "Do not list name"
+msgstr "İsimleri listeleme"
+
+#: kioclient/main.cpp:37
+msgid "List access permissions"
+msgstr "Erişim izinlerini listele"
+
+#: kioclient/main.cpp:38
+msgid "List modification time"
+msgstr "Değiştirilme zamanını listele"
+
+#: kioclient/main.cpp:39
+msgid "List access time"
+msgstr "Erişim zamanını listele"
+
+#: kioclient/main.cpp:40
+msgid "List creation time"
+msgstr "Oluşturulma zamanını listele"
+
+#: kioclient/main.cpp:41
+msgid "List file type"
+msgstr "Dosya tipini listele"
+
+#: kioclient/main.cpp:42
+msgid "List link destination"
+msgstr "Hedefi listele"
+
+#: kioclient/main.cpp:43
+msgid "List URL"
+msgstr "URL listele"
+
+#: kioclient/main.cpp:44
+msgid "List mime type"
+msgstr "Mime tipini listele"
+
+#: kioclient/main.cpp:45
+msgid "List guessed mime type"
+msgstr "Tahmin edilen mime tipini listele"
+
+#: kioclient/main.cpp:46
+msgid "List XML properties"
+msgstr "XML özelliklerini listele"
+
+#: kioclient/main.cpp:47
+msgid "List size"
+msgstr "Boyutu listele"
+
+#: kioclient/main.cpp:48
+msgid "Output file. Defaults to stdout"
+msgstr "Çıktı dosyası. stdout için öntanımlılar"
+
+#: kioclient/main.cpp:49
+msgid "Input file. Defaults to stdin"
+msgstr "Girdi dosyası. stdin için öntanımlılar"
+
+#: kioclient/main.cpp:50
+msgid "Show a progress window"
+msgstr "Bir ilerleme penceresi göster"
+
+#: kioclient/main.cpp:51
+msgid "Ask (graphically) before overwriting files"
+msgstr "Dosyaların üzerine yazmadan önce (arayüzde) sor"
+
+#: kioclient/main.cpp:52
+msgid "Show messages from the kioslave"
+msgstr "Kioslave'den gelen iletileri göster"
+
+#: kioclient/main.cpp:53
+msgid "Command (ls, cat, put, cp, rm, mv, mkdir, rmdir)"
+msgstr "Komut (ls, cat, put, cp, rm, mv, mkdir, rmdir)"
+
+#: kioclient/main.cpp:60
+msgid "kio client"
+msgstr "kio istemcisi"
+
+#: kioclient/commandhandler.cpp:25
+msgid "Arguments missing."
+msgstr "Argümanlar yok."
+
+#: kioclient/commandhandler.cpp:94
+#, c-format
+msgid "unknown command: %1"
+msgstr "bilinmeyen komut: %1"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Emre Aladağ, Serdar Soytetir"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "emre@emrealadag.com, tulliana@gmail.com"
+
+#. i18n: file ./kbluemon/mondialog.ui line 30
+#: kbluemon/main.cpp:38 kbluemon/main.cpp:49 rc.cpp:21
+#, no-c-format
+msgid "KBlueMon"
+msgstr "KBlueMon"
+
+#: kbluelock/main.cpp:54 kbluemon/main.cpp:53 kbluetooth/main.cpp:36
+#: kinputwizard/main.cpp:52
+msgid "Author"
+msgstr "Yazar"
+
+#: kbluemon/main.cpp:61
+#, fuzzy
+msgid ""
+"KBlueMon is already running.\n"
+msgstr ""
+"KBlueLock zaten çalışıyor.\n"
+
+#: kbluemon/monitor.cpp:57 kbluemon/monitor.cpp:331 kbluemon/monitor.cpp:424
+#, fuzzy
+msgid "Scanning..."
+msgstr "Bekliyor..."
+
+#: kbluemon/monitor.cpp:150
+#, fuzzy
+msgid "Service Discovery disabled"
+msgstr "Hiç servis bulunamadı"
+
+#: kbluemon/monitor.cpp:151 kbluemon/monitor.cpp:200 kbluemon/monitor.cpp:203
+#: kbluemon/monitor.cpp:206 kbluemon/monitor.cpp:222 kbluemon/monitor.cpp:253
+msgid "<i>not available</i>"
+msgstr "<i>kullanılabilir değil</i>"
+
+#: kbluemon/monitor.cpp:221 kbluemon/monitor.cpp:248
+msgid "no Services discovered"
+msgstr "Hiç servis bulunamadı"
+
+#. i18n: file ./kbluemon/mondialog.ui line 529
+#: kbluemon/monitor.cpp:338 kbluemon/monitor.cpp:423 rc.cpp:72
+#, fuzzy, no-c-format
+msgid "St&op Scan"
+msgstr "Taramayı Durdur"
+
+#: kbluemon/monitor.cpp:344 kbluemon/monitor.cpp:445
+#, fuzzy
+msgid "St&art Scan"
+msgstr "Taramayı Başlat"
+
+#: kbluemon/monitor.cpp:414
+#, fuzzy
+msgid "Periodic Discovery started"
+msgstr "Hiç servis bulunamadı"
+
+#: kbluemon/monitor.cpp:416
+msgid "Failed to start Periodic Discovery! ("
+msgstr ""
+
+#: kbluelock/kbluelock.cpp:363 kbluemon/monitor.cpp:501
+#: kinputwizard/inputwizard.cpp:554
+#, fuzzy
+msgid "Device Discovery started"
+msgstr "Hiç servis bulunamadı"
+
+#: kioslave/sdp/btsdp.cpp:43
+msgid "No working Bluetooth adapter found."
+msgstr "Çalışan bir Bluetooth adaptörü bulunamadı."
+
+#: kioslave/bluetooth/kiobluetooth.cpp:87 kioslave/sdp/btsdp.cpp:131
+msgid "Bluetooth neighborhood"
+msgstr "Bluetooth komşuları"
+
+#: kioslave/sdp/btsdp.cpp:139
+msgid "More services"
+msgstr "Daha fazla servis"
+
+#: kioslave/sdp/btsdp.cpp:145
+msgid "Could not stat %1. Unknown device"
+msgstr "%1 başlatılamadı. Bilinmeyen aygıt"
+
+#: kioslave/sdp/btsdp.cpp:201
+#, c-format
+msgid "Retrieving services for %1."
+msgstr "%1 için servisler bulunuyor."
+
+#: kioslave/obex/kio_obex2/kio_obexprotocol.cpp:252
+msgid "Disconnecting"
+msgstr "Bağlantı kesiliyor"
+
+#: kioslave/obex/kio_obex2/kio_obexprotocol.cpp:254
+msgid "Disconnected"
+msgstr "Bağantı kesildi"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:41
+msgid "Protocol name"
+msgstr "Protokol adı"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:42
+#: kioslave/bluetooth/kiobluetooth.cpp:43
+msgid "Socket name"
+msgstr "Soket adı"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:93
+#, c-format
+msgid "Could not stat %1."
+msgstr "%1 başlatılamadı."
+
+#: kbtobexclient/fileview.cpp:72
+msgid "Location: "
+msgstr "Konum: "
+
+#: kbtobexclient/fileview.cpp:94
+msgid ""
+"<qt>Click this button to enter the parent folder."
+"<p>For instance, if the current location is file:/home/%1 clicking this button "
+"will take you to file:/home.</qt>"
+msgstr ""
+"<qt>Bir üst dizine gitmek için bu düğmeye tıklayın."
+"<p>Mesela, şu an geçerli konum file:/home/%1 ise bu butona tıklamak sizi, "
+"file:/home'a götürür.</qt>"
+
+#: kbtobexclient/fileview.cpp:98
+msgid "Click this button to move backwards one step in the browsing history."
+msgstr "Gezdiğiniz geçmişte, bir adım geriye gitmek için bu düğmeye tıklayın."
+
+#: kbtobexclient/fileview.cpp:100
+msgid "Click this button to move forward one step in the browsing history."
+msgstr "Gezdiğiniz geçmişte, bir adım ileriye gitmek için bu düğmeye tıklayın."
+
+#: kbtobexclient/fileview.cpp:102
+msgid "Click this button to reload the contents of the current location."
+msgstr "Şu anki konumun içeriğini yenilemek için bu düğmeye tıklayın."
+
+#: kbtobexclient/fileview.cpp:105
+msgid "Click this button to create a new folder."
+msgstr "Yeni dizin oluşturmak için bu düğmeye tıklayın."
+
+#: kbtobexclient/fileview.cpp:109
+msgid ""
+"<qt>This is the configuration menu for the file dialog. Various options can be "
+"accessed from this menu including: "
+"<ul>"
+"<li>how files are sorted in the list</li>"
+"<li>types of view, including icon and list</li>"
+"<li>showing of hidden files</li>"
+"<li>the Quick Access navigation panel</li>"
+"<li>file previews</li>"
+"<li>separating folders from files</li></ul></qt>"
+msgstr ""
+"<qt>Burası dosyalarla ilgili yapılandırma menüsüdür. Aşağıdakileri de içeren "
+"çeşitli ayarlara buradan erşilebilir: "
+"<ul>"
+"<li>Dosyaların listedeki sıralanış şekli</li> "
+"<li>Liste ve simgeleri içeren görünüm biçimleri</li> "
+"<li>Gizli dosyaların gösterilmesi</li> "
+"<li>Hızlı Erişim gezinti paneli</li> "
+"<li>Dosya önizlemeleri</li> "
+"<li>Dizinlerin dosyalardan ayrılması</li></ul></qt>"
+
+#: kbtobexclient/fileview.cpp:136
+msgid "Filter:"
+msgstr "Fİltre:"
+
+#: kbtobexclient/fileview.cpp:142
+msgid "*|All Files"
+msgstr "*|Tüm Dosyalar"
+
+#: kbtobexclient/fileview.cpp:143
+msgid "image/jpeg |JPEG Image Files"
+msgstr "image/jpeg |JPEG Resim Dosyaları"
+
+#: kbtobexclient/main.cpp:31
+msgid "A KDE Bluetooth Framework Application"
+msgstr "Bir KDE Bluetooth Çalışma Ortamı Uygulaması"
+
+#: kbtobexclient/main.cpp:46
+msgid "Bluetooth OBEX Object Push client"
+msgstr "Bluetooth OBEX Nesnesi Destek istemcisi"
+
+#: kbtobexclient/main.cpp:52
+msgid "Author, Maintainer"
+msgstr "Yazar, Sorumlu"
+
+#: kbtobexclient/diroperator.cpp:75
+msgid "Short View"
+msgstr "Kısa Görünüm"
+
+#: kbtobexclient/fileiconview.cpp:58
+msgid "&Cancel Selected Files"
+msgstr "Seçili &Dosyaları İptal Et"
+
+#: kbtobexclient/fileiconview.cpp:63
+msgid "&New Project"
+msgstr "&Yeni Proje"
+
+#: kbtobexclient/mainwindow.cpp:125 kbtobexclient/mainwindow.cpp:148
+#: kbtobexclient/mainwindow.cpp:156
+msgid "Project View"
+msgstr "Proje Görünümü"
+
+#: kbtobexclient/mainwindow.cpp:139
+msgid "File to send:"
+msgstr "Gönderilecek dosya:"
+
+#: kbtobexclient/mainwindow.cpp:145
+msgid "Send"
+msgstr "Gönder"
+
+#: kbtobexclient/mainwindow.cpp:148
+msgid "Files View"
+msgstr "Dosya Görünümü"
+
+#: kbtobexclient/mainwindow.cpp:156
+msgid "Devices View"
+msgstr "Aygıt Görünümü"
+
+#: kbtobexclient/mainwindow.cpp:161
+msgid "Device selector:"
+msgstr "Aygıt seçici:"
+
+#: kbtobexclient/mainwindow.cpp:192
+msgid "Show Device Selector"
+msgstr "Aygıt Seçiciyi Göster"
+
+#: kbtobexclient/mainwindow.cpp:194
+msgid "Show File Selector"
+msgstr "Dosya Seçiciyi Göster"
+
+#: kbtobexclient/mainwindow.cpp:196
+msgid "Show File Browser"
+msgstr "Dosya Tarayıcısını Göster"
+
+#: kbtobexclient/mainwindow.cpp:274
+msgid ""
+"\n"
+" Continue with the remaining files?"
+msgstr ""
+"\n"
+" Geriye kalan dosyalarla birlikte devam edilsin mi?"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 27
+#: rc.cpp:6
+#, no-c-format
+msgid "<font color=\"#0000ff\" size=\"+2\">Bluetooth Serial Chat</font>"
+msgstr "<font color=\"#0000ff\" size=\"+2\">Bluetooth Seri Sohbeti</font>"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 54
+#: rc.cpp:9
+#, no-c-format
+msgid "&Send"
+msgstr "&Gönder"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 57
+#: rc.cpp:12
+#, no-c-format
+msgid "Alt+S, Return"
+msgstr "Alt+G, Enter"
+
+#. i18n: file ./libkbluetooth/serviceselectionwidgetbase.ui line 54
+#: rc.cpp:15
+#, fuzzy, no-c-format
+msgid "&Search"
+msgstr "Bekliyor..."
+
+#. i18n: file ./libkbluetooth/serviceselectionwidgetbase.ui line 67
+#: rc.cpp:18
+#, no-c-format
+msgid "&Clear"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 46
+#: rc.cpp:24 rc.cpp:152 rc.cpp:221
+#, no-c-format
+msgid "Name"
+msgstr "İsim"
+
+#. i18n: file ./kbluemon/mondialog.ui line 57
+#: rc.cpp:27
+#, no-c-format
+msgid "Signal"
+msgstr "Sinyal"
+
+#. i18n: file ./kbluemon/mondialog.ui line 68
+#: rc.cpp:30
+#, no-c-format
+msgid "Class"
+msgstr "Sınıf"
+
+#. i18n: file ./kbluemon/mondialog.ui line 79
+#: rc.cpp:33 rc.cpp:155 rc.cpp:224
+#, no-c-format
+msgid "Address"
+msgstr "Adres"
+
+#. i18n: file ./kbluemon/mondialog.ui line 90
+#: rc.cpp:36
+#, no-c-format
+msgid "Icon"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 164
+#: rc.cpp:39
+#, no-c-format
+msgid "Address:"
+msgstr "Adres:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 212
+#: rc.cpp:42
+#, no-c-format
+msgid "Name:"
+msgstr "İsim:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 241
+#: rc.cpp:46
+#, no-c-format
+msgid "Typ:"
+msgstr "Tip:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 270
+#: rc.cpp:50
+#, no-c-format
+msgid "Signal:"
+msgstr "Sinyal:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 301
+#: rc.cpp:53
+#, no-c-format
+msgid "Version:"
+msgstr "Sürüm:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 330
+#: rc.cpp:57
+#, no-c-format
+msgid "Revision:"
+msgstr "Revizyon:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 359
+#: rc.cpp:61
+#, no-c-format
+msgid "Manufacturer:"
+msgstr "Üretici:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 388
+#: rc.cpp:65
+#, no-c-format
+msgid "Category:"
+msgstr "Kategori:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 462
+#: rc.cpp:69
+#, no-c-format
+msgid "Services"
+msgstr "Servisler"
+
+#. i18n: file ./kbluemon/mondialog.ui line 532
+#: rc.cpp:75 rc.cpp:81 rc.cpp:191 rc.cpp:230
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file ./kbluemon/mondialog.ui line 564
+#: rc.cpp:84
+#, no-c-format
+msgid "Periodic Scan"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 572
+#: rc.cpp:87
+#, no-c-format
+msgid "Discover Remote Services"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 575
+#: rc.cpp:90
+#, no-c-format
+msgid ""
+"Discovering the available Services of the Remote Device takes quiet longer."
+msgstr ""
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 16
+#: kcm_btpaired/kcm_btpaired.cpp:51 rc.cpp:94
+#, fuzzy, no-c-format
+msgid "Paired/Trusted Devices"
+msgstr "&Eşleşmiş Aygıtlar..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 27
+#: rc.cpp:97
+#, no-c-format
+msgid ""
+"Currently connected Bluetooth devices with proven identity (<i>"
+"paired devices</i>):"
+msgstr ""
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 33
+#: rc.cpp:100
+#, no-c-format
+msgid "Device"
+msgstr "Aygıt"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 74
+#: rc.cpp:103
+#, no-c-format
+msgid "&Remove Pairing..."
+msgstr "Eşlemeyi &Kaldır..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 77
+#: rc.cpp:106
+#, fuzzy, no-c-format
+msgid "Alt+R"
+msgstr "Alt+O"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 85
+#: rc.cpp:109
+#, fuzzy, no-c-format
+msgid "Remove Trust..."
+msgstr "Eşlemeyi &Kaldır..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 115
+#: rc.cpp:113
+#, no-c-format
+msgid ""
+"<b>Note:</b> The pairing procedure to add new devices will be started "
+"automatically if you access a service which requests a secure connection."
+msgstr ""
+"<b>Not:</b>Eğer güvenli bağlantı gerektiren bir hizmete erişirseniz, yeni "
+"aygıtları eşleme işlemi kendiliğinden başlayacaktır."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 154
+#: rc.cpp:116
+#, no-c-format
+msgid "Export..."
+msgstr "Dışa Aktar..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 157
+#: rc.cpp:119
+#, no-c-format
+msgid "Let's you "
+msgstr "Size izin verir"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 16
+#: rc.cpp:122
+#, no-c-format
+msgid "Export Link Keys"
+msgstr "Bağlantı Anahtarlarını Dışa Aktar"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 35
+#: rc.cpp:125
+#, no-c-format
+msgid ""
+"Pairing a device in a dual boot setup breaks an alreay established pairing in "
+"the other operating system, because the link keys stored by each OS are not "
+"identical. Here you can export BlueZ's keys for use with Windows, so that you "
+"don't have to pair devices again each time you switch the OS."
+msgstr ""
+"Çift açılış konumunda bir aygıtı eşlemek, diğer işletim sistemindeki mevcut "
+"bağlantıyı sonlandırır, çünkü her işletim sisteminde saklanan bağlantı "
+"anahtarları özdeş değildir. Buradan BlueZ anahtarlarını Windows ile kullanmak "
+"üzere dışarı aktarabilirsiniz. Böylece her işletim sistemi değiştirdiğinizde "
+"aygıtları eşlemek zorunda kalmazsınız."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 46
+#: rc.cpp:128
+#, no-c-format
+msgid "Read more about dual boot setups..."
+msgstr "Çiftli açılış ayarları hakkında daha fazlasını okuyun..."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 71
+#: rc.cpp:131
+#, no-c-format
+msgid "Bluetooth Stacks Used Besides BlueZ"
+msgstr "BlueZ Arkasında Kullanılan Mavidiş Katmanları"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 82
+#: rc.cpp:134
+#, no-c-format
+msgid "Widcomm Bluetooth stack"
+msgstr "Widcomm Mavidiş katmanı"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 90
+#: rc.cpp:137
+#, no-c-format
+msgid "Microsoft Bluetooth stack"
+msgstr "Microsoft Mavidiş katmanı"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 142
+#: rc.cpp:140
+#, no-c-format
+msgid "Save to File..."
+msgstr "Dosyaya Kaydet..."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 150
+#: rc.cpp:143
+#, no-c-format
+msgid "Send via OBEX Push..."
+msgstr "OBEX Desteği ile Gönder..."
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 16
+#: rc.cpp:146
+#, no-c-format
+msgid "New Device"
+msgstr "Yeni Aygıt"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 52
+#: rc.cpp:149
+#, fuzzy, no-c-format
+msgid "<b>New Input Device:</b>"
+msgstr "<b>yeni Girdi Aygıtı:</b>"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 80
+#: rc.cpp:158 rc.cpp:184
+#, no-c-format
+msgid "3"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 114
+#: rc.cpp:161
+#, fuzzy, no-c-format
+msgid "&Setup"
+msgstr "ayarla"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 117
+#: rc.cpp:164
+#, fuzzy, no-c-format
+msgid "Alt+S"
+msgstr "Alt+O"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 16
+#: rc.cpp:172
+#, no-c-format
+msgid "Input Devices"
+msgstr "Girdi Aygıtları"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 34
+#: rc.cpp:175
+#, fuzzy, no-c-format
+msgid "<font size=\"+1\">Configured Input Devices:</font>"
+msgstr "<b>Yapılandırılmış Girdi Aygıtları:</b>"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 48
+#: rc.cpp:178
+#, no-c-format
+msgid "1"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 59
+#: rc.cpp:181
+#, no-c-format
+msgid "2"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 216
+#: rc.cpp:188
+#, fuzzy, no-c-format
+msgid "C&onnect"
+msgstr "Bağlandı"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 236
+#: rc.cpp:197
+#, fuzzy, no-c-format
+msgid "Alt+D"
+msgstr "Alt+O"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 261
+#: rc.cpp:200
+#, fuzzy, no-c-format
+msgid "&Add New Devices >>"
+msgstr "Yeni Aygıtlar Ekle >>"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 264
+#: rc.cpp:203
+#, fuzzy, no-c-format
+msgid "Alt+A"
+msgstr "Alt+O"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 278
+#: rc.cpp:209 rc.cpp:236
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 16
+#: kbluelock/main.cpp:38 kbluelock/main.cpp:50 rc.cpp:212
+#, no-c-format
+msgid "KBlueLock"
+msgstr "KBlueLock"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 27
+#: rc.cpp:215
+#, no-c-format
+msgid "Lock the screen if the selected device disappears"
+msgstr ""
+
+#. i18n: file ./kbluelock/lockdialog.ui line 38
+#: rc.cpp:218
+#, no-c-format
+msgid "Unlock the screen if the selected device appears again"
+msgstr ""
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 16
+#: kbluetooth/sdprecord.cpp:362 kbluetooth/sdprecord.cpp:374 rc.cpp:242
+#, no-c-format
+msgid "KDE Bluetooth Framework"
+msgstr "KDE Bluetooth Ortamı"
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 37
+#: rc.cpp:245
+#, no-c-format
+msgid ""
+"<p><font size=\"+2\">Incoming File Transfer</font></p>\n"
+"<b>%1</b> wants to send you some files."
+"<br/>\n"
+"Press <i>Save</i> to accept all files or drag them to another application or "
+"folder."
+msgstr ""
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 78
+#: rc.cpp:250
+#, no-c-format
+msgid "Waiting..."
+msgstr "Bekliyor..."
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 101
+#: rc.cpp:253
+#, no-c-format
+msgid "Open destination folder:"
+msgstr "Hedef dizini aç:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 30
+#: rc.cpp:262
+#, no-c-format
+msgid "AdapterDialog"
+msgstr "Adaptör Penceresi"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 59
+#: rc.cpp:265
+#, no-c-format
+msgid "Device Settings"
+msgstr "Aygıt Ayarları"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 98
+#: rc.cpp:268
+#, no-c-format
+msgid "Adapter Name:"
+msgstr "Adaptör Adı:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 129
+#: rc.cpp:271
+#, no-c-format
+msgid "Mode:"
+msgstr "Kip:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 163
+#: rc.cpp:274
+#, no-c-format
+msgid "Discoverable Timeout:"
+msgstr "Bulma İşlemi Zaman Aşımı Süresi:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 213
+#: rc.cpp:278
+#, no-c-format
+msgid "Timeout after the adapter gets invisible"
+msgstr ""
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 235
+#: rc.cpp:281
+#, no-c-format
+msgid "Class of Device:"
+msgstr "Aygıtın Sınıfı:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 241
+#: rc.cpp:284
+#, no-c-format
+msgid "Unspecified"
+msgstr "Belirtilmemiş"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 246
+#: rc.cpp:287
+#, no-c-format
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 251
+#: rc.cpp:290
+#, no-c-format
+msgid "Laptop"
+msgstr "Dizüstü"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 291
+#: rc.cpp:293
+#, no-c-format
+msgid "Device Information"
+msgstr "Aygıt Bilgileri"
+
+#. i18n: file ./kbluetooth/authdialog.ui line 16
+#: rc.cpp:298
+#, no-c-format
+msgid "PinDefaultDialog"
+msgstr ""
+
+#. i18n: file ./kbluetooth/authdialog.ui line 32
+#: rc.cpp:301
+#, no-c-format
+msgid ""
+"<font size=\"+2\">Bluetooth Authorization Request</font>\n"
+"<p><b>%1</b> (device address <b>%2</b>) %3.</p>\n"
+"\n"
+"<p>\n"
+"If you aren't sure about the identity of the other party, then reject \n"
+"this authorization request.</p>"
+msgstr ""
+"<font size=\"+2\">Bluetooth İzin İsteği</font>\n"
+"<p><b>%1</b> (aygıt adresi <b>%2</b>) sizin Bluetooth aygıtınızla\n"
+"eşleştirilmek istiyor.Bu, kimliği denetlenmiş ve güvenli bağlantılar için "
+"gereklidir.</p>\n"
+"\n"
+"<p>\n"
+"Eğer karşı tarafın kimliğinden eminseniz, lütfen aşağıya, diğer aygıt\n"
+"tarafından kullanılan PIN ile aynı PIN'i giriniz.</p>"
+
+#. i18n: file ./kbluetooth/pindefdialog.ui line 29
+#: rc.cpp:309
+#, no-c-format
+msgid ""
+"<font size=\"+2\">Bluetooth Pairing Request</font>\n"
+"<p><b>%1</b> (device address <b>%2</b>) wants to pair with your\n"
+"Bluetooth device, which is needed for authenticated and secure connections.\n"
+"</p>"
+"<p>\n"
+"If you are sure about the identity of the other party, then please enter\n"
+"the same PIN below as was used by the other device.</p>"
+msgstr ""
+"<font size=\"+2\">Bluetooth Eşleşme İsteği</font>\n"
+"<p><b>%1</b> (aygıt adresi <b>%2</b>) sizin Bluetooth aygıtınızla\n"
+"eşleştirilmek istiyor.Bu, kimliği denetlenmiş ve güvenli bağlantılar için "
+"gereklidir. \n"
+"</p> "
+"<p>\n"
+"Eğer karşı tarafın kimliğinden eminseniz, lütfen aşağıya, diğer aygıt\n"
+"tarafından kullanılan PIN ile aynı PIN'i giriniz.</p>"
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 16
+#: rc.cpp:317
+#, no-c-format
+msgid "MyDialog1"
+msgstr ""
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 103
+#: rc.cpp:320
+#, no-c-format
+msgid ""
+"<p>The Bluetooth device \"<b>%1</b>\" wants to use the service <b>%2</b>.</p>\n"
+"<p>Do you want to allow this access? </p>"
+msgstr ""
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 121
+#: rc.cpp:324
+#, no-c-format
+msgid "Future policy for this device and service:"
+msgstr ""
+
+#: kcm_btpaired/pairedtab.cpp:288
+msgid "- trusted "
+msgstr ""
+
+#: kcm_btpaired/pairedtab.cpp:288
+#, fuzzy
+msgid " device"
+msgstr "aygıt yok"
+
+#: kcm_btpaired/pairedtab.cpp:302
+msgid "%1 (%2) %3"
+msgstr ""
+
+#: kcm_btpaired/pairedtab.cpp:313
+#, c-format
+msgid "Last Seen: %1"
+msgstr "Son görülme: %1"
+
+#: kcm_btpaired/pairedtab.cpp:321
+#, c-format
+msgid "Last Used: %1"
+msgstr "Son kullanılma: %1"
+
+#: kcm_btpaired/kcm_btpaired.cpp:76
+msgid ""
+"<h1>BtPaired</h1>With this module you can manage the list of paired Bluetooth "
+"Devices."
+msgstr ""
+"<h1>BtPaired</h1>Bu araçla eşlenmiş Mavidiş Aygıtları Listesini "
+"yönetebilirsiniz."
+
+#: kinputwizard/main.cpp:36 kinputwizard/main.cpp:48
+msgid "KInputWizard"
+msgstr "KInputWizard"
+
+#: kbluelock/main.cpp:39 kinputwizard/main.cpp:37
+msgid "Copyright (C) 2007 Novell, Inc."
+msgstr "Telif Hakları (C) 2007 Novell, Inc."
+
+#: kinputwizard/main.cpp:57
+msgid ""
+"KInputWizard is already running.\n"
+msgstr ""
+"KInputWizard zaten çalışıyor.\n"
+
+#: kinputwizard/inputwizard.cpp:244 kinputwizard/inputwizard.cpp:489
+#: kinputwizard/inputwizard.cpp:505
+#, fuzzy
+msgid "&Disconnect"
+msgstr "Bağantı kesildi"
+
+#: kinputwizard/inputwizard.cpp:246 kinputwizard/inputwizard.cpp:494
+#: kinputwizard/inputwizard.cpp:502
+#, fuzzy
+msgid "&Connect"
+msgstr "Bağlandı"
+
+#: kinputwizard/inputwizard.cpp:273
+#, fuzzy
+msgid "&Add New Device <<"
+msgstr "Yeni Aygıt Ekle <<"
+
+#: kinputwizard/inputwizard.cpp:287
+#, fuzzy
+msgid "&Add New Device >>"
+msgstr "Yeni Aygıtlar Ekle >>"
+
+#: kinputwizard/inputwizard.cpp:391
+#, fuzzy
+msgid "Creating Input Device"
+msgstr "Girdi Aygıtı Oluşturulurken Hata"
+
+#: kinputwizard/inputwizard.cpp:391
+msgid "You have to select a remote Device to setup!"
+msgstr ""
+
+#: kinputwizard/inputwizard.cpp:415
+msgid "Creating Input Device failed"
+msgstr "Girdi Aygıtı Oluşturulurken Hata"
+
+#: kinputwizard/inputwizard.cpp:415
+msgid "Failed to create the input device for %1!"
+msgstr "%1 için girdi aygıtı oluşturma işlemi başarısız oldu!"
+
+#: kinputwizard/inputwizard.cpp:458
+msgid "Connect now?"
+msgstr "Şimdi bağlanılsın mı?"
+
+#: kinputwizard/inputwizard.cpp:459
+msgid "Would you like to connect to %1 now?"
+msgstr "%1 konumuna şimdi bağlanmak ister misiniz?"
+
+#: kinputwizard/inputwizard.cpp:488
+msgid "Connection succesfull"
+msgstr "Bağlantı başarılı"
+
+#: kinputwizard/inputwizard.cpp:488
+msgid "Connection to %1 successful established!"
+msgstr "%1 konumuna başarılı şekilde bağlanıldı!"
+
+#: kinputwizard/inputwizard.cpp:493
+msgid "Connection failed"
+msgstr "Bağlantı başarısız"
+
+#: kinputwizard/inputwizard.cpp:493
+msgid "Could not connect to "
+msgstr "Şuna bağlanılamadı "
+
+#: kinputwizard/inputwizard.cpp:493
+msgid ""
+"\n"
+" Check if the device is available and bluetooth enabled."
+msgstr ""
+"\n"
+" Bluetooth'un etkinleştirildiğinden ve aygıtın kullanılabilir olduğundan emin "
+"olun."
+
+#: kinputwizard/inputwizard.cpp:501
+msgid "Disconnect succesfull"
+msgstr "Bağlantı başarılı şekilde kesildi"
+
+#: kinputwizard/inputwizard.cpp:501 kinputwizard/inputwizard.cpp:504
+msgid "Connection to "
+msgstr "Şuna bağlanılıyor "
+
+#: kinputwizard/inputwizard.cpp:501
+msgid " successful disconnected!"
+msgstr " başarılı bağlantı kesildi!"
+
+#: kinputwizard/inputwizard.cpp:504
+msgid "Disconnect failed"
+msgstr "Bağlantı kesme işlemi başarısız"
+
+#: kinputwizard/inputwizard.cpp:504
+msgid " could not be disconnected!"
+msgstr " bağlantı kesilemedi!"
+
+#: libkobex/kobexclient.cpp:139 libkobex/kobexserver.cpp:177
+#, fuzzy
+msgid "Connecting..."
+msgstr "Bağlantı kesiliyor"
+
+#: libkobex/kobexclient.cpp:175 libkobex/kobexserver.cpp:220
+#, fuzzy
+msgid "Disconnecting..."
+msgstr "Bağlantı kesiliyor"
+
+#: libkobex/kobexclient.cpp:79
+msgid ""
+"Error connecting to phone\n"
+"Response message: "
+msgstr ""
+
+#: libkobex/kobexclient.cpp:93
+msgid ""
+"Error sending file %1 to phone\n"
+"Response message: "
+msgstr ""
+
+#: libkobex/kobexclient.cpp:105
+msgid ""
+"Error getting data from phone\n"
+"Response message: "
+msgstr ""
+
+#: libkobex/kobexclient.cpp:120
+#, fuzzy
+msgid "Done"
+msgstr "hiçbiri"
+
+#: libkobex/kobexclient.cpp:164
+msgid "Error connecting transport"
+msgstr ""
+
+#: libkobex/kobexclient.cpp:208
+#, fuzzy
+msgid "Sending "
+msgstr "Gönder"
+
+#: libkobex/kobexclient.cpp:208
+msgid ""
+" to phone\n"
+"\n"
+msgstr ""
+
+#: libkobex/kobexclient.cpp:217
+msgid "Requesting stream start..."
+msgstr ""
+
+#: libkobex/kobexclient.cpp:254
+#, fuzzy
+msgid "Streaming data..."
+msgstr "Bekliyor..."
+
+#: kbluelock/main.cpp:61
+msgid ""
+"KBlueLock is already running.\n"
+msgstr ""
+"KBlueLock zaten çalışıyor.\n"
+
+#: kbluelock/kbluelock.cpp:215 kbluelock/kbluelock.cpp:308
+msgid ""
+"<p align='center'>KBlueLock <b>ON</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+msgstr ""
+"<p align='center'>KBlueLock <b>AÇIK</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+
+#: kbluelock/kbluelock.cpp:227
+msgid "KBlueLock - No Device selectetd"
+msgstr "KBlueLock - Atgıt seçilmedi"
+
+#: kbluelock/kbluelock.cpp:227
+msgid "To enable KBlueLock you have to choose a Device."
+msgstr ""
+
+#: kbluelock/kbluelock.cpp:289
+msgid ""
+"<p align='center'>KBlueLock <b>OFF</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+msgstr ""
+
+#: kbluelock/kbluelock.cpp:344
+msgid "&Disable"
+msgstr "&Pasifleştir"
+
+#: kbluelock/kbluelock.cpp:350
+msgid "&Enable"
+msgstr "&Etkinleştir"
+
+#: kbtobexsrv/main.cpp:24
+msgid "KDE OBEX Push Server for Bluetooth"
+msgstr ""
+
+#: kbtobexsrv/main.cpp:63
+msgid ""
+"kbtobexsrv will be called automatically by kbluetoothd when another device "
+"tries to send you some files. You don't have to run it manually."
+msgstr ""
+
+#: kbtobexsrv/maindlg.cpp:158
+#, c-format
+msgid "Receiving %1"
+msgstr "%1 alınıyor"
+
+#: kbtobexsrv/maindlg.cpp:208
+msgid "Disconnected."
+msgstr "Bağlantı kesildi."
+
+#: kbtobexsrv/maindlg.cpp:217
+msgid ""
+"The selected folder does not exist.                            Please select "
+"another folder."
+msgstr ""
+"Seçtiğiniz dizin yok.                            Lütfen başka bir dizin seçin."
+
+#: kbtobexsrv/maindlg.cpp:218
+msgid "Obex Server"
+msgstr "Obex Sunucu"
+
+#: kbtobexsrv/maindlg.cpp:254
+msgid "%1 already exists. Do you want to use %2 as filename instead?"
+msgstr "%1 zaten var. Dosya adı olarak %2 kullanmak ister misiniz?"
+
+#: kbtobexsrv/maindlg.cpp:255
+msgid "Rename"
+msgstr "Yeniden Adlandır"
+
+#: kbtobexsrv/maindlg.cpp:255
+msgid "Overwrite"
+msgstr "Üzerine Yaz"
+
+#: kbtobexsrv/maindlg.cpp:271
+#, c-format
+msgid "Error writing file %1."
+msgstr "%1 dosyasına yazarken bir hata oluştu."
+
+#: kbtobexsrv/maindlg.cpp:285
+msgid ""
+"The following files already existed in the target folder and were not saved "
+"again with a different name:"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:105
+#, c-format
+msgid "Could not create a socket for service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:106
+msgid ""
+"<p>KBluetooth was unable to create a socket for the service %1. The error "
+"message was <i>%2</i> (Error code %3)."
+"<p>Make sure that BlueZ is installed correctly and all modules are loaded "
+"(bluez, l2cap, rfcomm..)."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:136
+msgid ""
+"<p>Could not enable security features for <b>%1</b>.The service will not be "
+"started.</p>"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:139
+msgid ""
+"<p>KBluetoothD was unable to enable authentication and/or encryption for the "
+"service %1, so this service will not be started.</p>"
+"<p> The error code returned by setsockopt() was %3 (<i>%2</i>)</p>"
+"<p>To use encryption/authentication for selected services, you need a Linux "
+"kernel >= 2.6.10-mh3. For older kernels you have to disable encryption and "
+"authentication for this service."
+"<br/> <i>Be careful with allowing unconfirmed connections in that case, since "
+"the peer address could be faked.</i></p>"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:174
+#, c-format
+msgid "Could not listen to a socket for service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:175
+msgid ""
+"<p>KBluetoothD was unable to listen to a socket for the service %1. The error "
+"message was <i>%2</i> (Error code %3)."
+"<p>Make sure that BlueZ is installed correctly and all modules are loaded "
+"(bluez, l2cap, rfcomm..)."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:199
+#, c-format
+msgid "Could not bind to a socket for service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:200
+msgid ""
+"<p>KBluetoothD was unable to bind to a socket for the service %1 on channel %2. "
+"The error message was <i>%3</i> (Error code %4)."
+"<p>Make sure that BlueZ is installed correctly."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:215
+#, c-format
+msgid "Could not assign a channel to service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:216
+msgid ""
+"<p>KBluetoothD was unable to find an unused Rfcomm channel for the service %1, "
+"so other devices will not be able to access that service.</p>"
+"<p>Possible reasons:"
+"<br/> "
+"<ul> "
+"<li>Several services are configured to use the same channel.</li> "
+"<li>Other Bluetooth services are blocking the ports. </li> </ul> Checklist: "
+"<ul> "
+"<li>%2 will try to use channels form %3 to %4 - are they all used by other "
+"services?"
+"<li>Does <i>/proc/bluetooth/rfcomm</i> show more listening sockets than the "
+"Bluetooth services tab in the Control Center? </ul> </p>"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:478
+msgid "Connection from <b>%1</b><br/>to channel %3 (<b>%2</b>)"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:530
+msgid "Call \"%1\" failed"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:52
+msgid "Kbluetoothd: access to %1 from %2: ALLOW"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:57
+msgid "Kbluetoothd: access to %1 from %2: DENY"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:62
+msgid "Kbluetoothd: access to %1 from %2: ASK"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:74
+msgid "Unchanged"
+msgstr ""
+
+#: kbluetooth/authorize.cpp:30 kbluetooth/confirmation.cpp:90
+msgid "Accept"
+msgstr "Kabul Et"
+
+#: kbluetooth/authorize.cpp:30
+msgid "Reject"
+msgstr "Reddet"
+
+#: kbluetooth/authorize.cpp:30
+msgid "Always Accept"
+msgstr "Her Zaman Kabul Et"
+
+#: kbluetooth/authorize.cpp:39
+msgid "wants to act as Input Device"
+msgstr "bir girdi aygıtı olarak çalışmak ister"
+
+#: kbluetooth/main.cpp:20 kbluetooth/main.cpp:32 kbluetooth/trayicon.cpp:378
+#: kbluetooth/trayicon.cpp:400 kbluetooth/trayicon.cpp:414
+#: kbluetooth/trayicon.cpp:427 kbluetooth/trayicon.cpp:441
+msgid "KBluetooth"
+msgstr "KBluetooth"
+
+#: kbluetooth/main.cpp:24
+msgid "Show the tray icon if it was disabled before."
+msgstr "Eğer daha önce kapatılmış ise, sistem çekmecesi simgesini göster."
+
+#: kbluetooth/main.cpp:44
+msgid ""
+"KBluetooth is already running.\n"
+msgstr ""
+"KBluetooth zaten çalışıyor.\n"
+
+#: kbluetooth/main.cpp:58
+msgid ""
+"Can't connect to DBus!\n"
+"Unable to start kbluetooth. \n"
+"\n"
+" \t\t\t\t\t\t\t\t\tRestart dbus and the bluetooth service"
+msgstr ""
+
+#: kbluetooth/trayicon.cpp:42
+msgid "KBlue&Mon"
+msgstr "KBlueMo&n"
+
+#: kbluetooth/trayicon.cpp:48
+msgid "KBlue&Lock"
+msgstr "KBlueL&ock"
+
+#: kbluetooth/trayicon.cpp:54
+#, fuzzy
+msgid "&Send File..."
+msgstr "Dosyaya Kaydet..."
+
+#: kbluetooth/trayicon.cpp:60
+msgid "&Configuration"
+msgstr "&Yapılandırma"
+
+#: kbluetooth/trayicon.cpp:76
+msgid "&Input Devices..."
+msgstr "&Girdi Aygıtları..."
+
+#: kbluetooth/trayicon.cpp:82
+msgid "&Devices..."
+msgstr "&Aygıtlar..."
+
+#: kbluetooth/trayicon.cpp:88
+#, fuzzy
+msgid "&Paired/Trusted Devices..."
+msgstr "&Eşleşmiş Aygıtlar..."
+
+#: kbluetooth/trayicon.cpp:97
+#, fuzzy
+msgid "&Obex Server"
+msgstr "Obex Sunucu"
+
+#: kbluetooth/trayicon.cpp:242
+msgid ""
+"KBluetooth will run in hidden mode now and only show up when there is a "
+"connection. To enable the permanent tray icon start KBluetooth again."
+msgstr ""
+"KBluetooth şimdi gizli kipe geçecek ve sadece bir bağlantı olduğunda görünecek. "
+"Sistem çekmecesi simgesinin kalıcı olmasını istiyorsanız, KBluetooth'u yeniden "
+"başlatın."
+
+#: kbluetooth/trayicon.cpp:244
+msgid "Hidden Mode"
+msgstr "Gizli Kip"
+
+#: kbluetooth/trayicon.cpp:254
+msgid "Not connected"
+msgstr "Bağlı değil"
+
+#: kbluetooth/trayicon.cpp:284
+msgid ""
+"Adapter: %1\n"
+"Address: %2\n"
+"Mode: %3\n"
+"Connected to: "
+msgstr ""
+
+#: kbluetooth/trayicon.cpp:377
+msgid "Could not execute the btpaired Control Center module."
+msgstr "btpaired Kontrol Merkezi modülü çalıştırılamıyor."
+
+#: kbluetooth/trayicon.cpp:399
+msgid "Could not execute kinputwizard."
+msgstr "Kinputwizard çalıştırılamadı."
+
+#: kbluetooth/trayicon.cpp:413
+msgid "Could not execute KBlueMon."
+msgstr "KBlueMon çalıştırılamadı."
+
+#: kbluetooth/trayicon.cpp:426
+msgid "Could not execute KBlueLock."
+msgstr "KBlueLock çalıştırılamadı."
+
+#: kbluetooth/trayicon.cpp:440
+#, fuzzy
+msgid "Could not execute KBtobexclient."
+msgstr "KBlueMon çalıştırılamadı."
+
+#: kbluetooth/trayicon.cpp:470
+msgid "Should KBluetooth still be restarted when you login?"
+msgstr "KBluetooth, oturum açtığınızda başlatılsın mı?"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Automatically Start KBluetooth?"
+msgstr "KBluetooth otomatik olarak başlatılsın mı?"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Start"
+msgstr "Başlat"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Do Not Start"
+msgstr "Başlatma"
+
+#: kbluetooth/trayicon.cpp:516
+msgid "Connected to <b>%1</b><br/>(<b>%2</b>)"
+msgstr ""
+
+#: kbluetooth/trayicon.cpp:575
+msgid "<i>Bluetooth Monitor</i><br/> Problem connecting with <b>%1</b>:"
+msgstr "<i>Bluetooth İzleyicisi</i><br/> %1 ile bağlantıda sorun:"
+
+#: kbluetooth/sdprecord.cpp:357
+msgid "Failed to register an SDP record."
+msgstr ""
+
+#: kbluetooth/sdprecord.cpp:358
+#, c-format
+msgid ""
+"Please make sure that sdpd is running; \n"
+"without it, other devices will not be able to find out \n"
+"which services your computer offers. \n"
+"The error code returned by sdp_record_register() was %1"
+msgstr ""
+
+#: kbluetooth/sdprecord.cpp:370
+msgid "Failed to connect to the SDP server."
+msgstr ""
+
+#: kbluetooth/sdprecord.cpp:371
+msgid ""
+"Please make sure that sdpd is running; \n"
+"without it, other devices will not be able to find out \n"
+"which services your computer offers."
+msgstr ""
+
+#: kbluetooth/adapterconfig.cpp:49
+msgid "off"
+msgstr "kapalı"
+
+#: kbluetooth/adapterconfig.cpp:50
+msgid "connectable"
+msgstr "bağlanılabilir"
+
+#: kbluetooth/adapterconfig.cpp:51
+msgid "discoverable"
+msgstr "bulunabilir"
+
+#: kbluetooth/adapterconfig.cpp:107
+msgid "MAC Address: <b>%1</b>"
+msgstr "MAC Adresi: <b>%1</b>"
+
+#: kbluetooth/adapterconfig.cpp:110
+msgid "Version: <b>%1</b>"
+msgstr "Sürüm: <b>%1</b>"
+
+#: kbluetooth/adapterconfig.cpp:128
+msgid "none"
+msgstr "hiçbiri"
+
+#: kbluetooth/adapterconfig.cpp:132
+msgid " minutes"
+msgstr "dakika"
+
+#: kbluetooth/deviceconfig.cpp:45 kbluetooth/deviceconfig.cpp:124
+msgid "No Bluetooth device found!"
+msgstr "Hiç Bluetooth adaptörü bulunamadı!"
+
+#: kbluetooth/deviceconfig.cpp:46 kbluetooth/deviceconfig.cpp:125
+msgid "no device"
+msgstr "aygıt yok"
+
+#~ msgid "Always &Visible"
+#~ msgstr "Daima &Görünür"
+
+#~ msgid "Paired Devices"
+#~ msgstr "Eşlenmiş Aygıtlar"
+
+#~ msgid "address"
+#~ msgstr "adres"
+
+#~ msgid "Add new Device >>"
+#~ msgstr "Yeni Aygıt Ekle >>"
+
+#~ msgid "connect"
+#~ msgstr "bağlan"
+
+#~ msgid "delete"
+#~ msgstr "sil"
+
+#~ msgid "disconnect"
+#~ msgstr "bağlantıyı kes"
+
+#~ msgid "Configure &Services..."
+#~ msgstr "Servisleri Ya&pılandır..."

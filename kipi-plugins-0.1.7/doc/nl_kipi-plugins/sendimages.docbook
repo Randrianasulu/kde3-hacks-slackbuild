@@ -1,0 +1,188 @@
+<chapter id="sendimages">
+<chapterinfo>
+
+<title
+>Afbeeldingen verzenden</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>De Kipi-plugin <quote
+>Afbeeldingen verzenden</quote
+> is een hulpmiddel voor het verzenden van afbeeldingen via e-mail. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inleiding</title>
+
+<para
+>Met deze plugin kunt u de geselecteerde afbeeldingen via e-mail versturen met behulp van uw favoriete e-mailprogramma. Het is mogelijk om de afbeeldingsgrootte te wijzigen. U kunt meer afbeeldingen aan de lijst toevoegen door ze er naartoe te slepen. </para>
+
+<sect1 id="using-plugin-mailselectiondialog">
+<title
+>Dialoog afbeeldingsselectie</title>
+
+<para
+>Nadat u de plugin vanuit het hoofdprogramma hebt gestart verschijnt de dialoog <emphasis
+>Opties voor e-mailen van afbeeldingen</emphasis
+>. In dit venster ziet u een lijst met de geselecteerde afbeeldingen. Met de knop <guilabel
+>Afbeeldingen toevoegen</guilabel
+> kunt u bladeren naar de afbeeldingen die u wilt toevoegen. De gemarkeerde afbeelding in de lijst wordt rechts in het voorbeeld getoond. </para>
+
+<tip
+><para
+>U kunt ook afbeeldingen vanuit het hoofdprogramma naar de afbeeldingenlijst slepen om ze toe te voegen. </para
+></tip>
+
+<para
+>Door op de knop <guilabel
+>Afbeeldingen verwijderen</guilabel
+> verwijdert u de geselecteerde bestanden uit de afbeeldingenlijst. </para>
+
+<para
+>Nadat u uw afbeeldingen geselecteerd hebt klikt u op <guilabel
+>OK</guilabel
+> om de afbeeldingen naar uw e-mailprogramma te sturen. Het e-mailprogramma opent dan een opsteller waarin de afbeeldingen als bijlage zijn ingesloten. Voer het e-mailadres van de geadresseerde in en het onderwerp en verzend de e-mail zoals gebruikelijk. </para>
+
+<warning
+><para
+>Verzeker u ervan dat u niet het e-maillimiet van één van de geadresseerden overschrijd. De meeste providers hanteren een limiet per e-mailbericht van enkele megabytes. Stuur de afbeeldingen in meerdere e-mailberichten als u er veel wilt verzenden. </para
+></warning>
+
+<figure>
+    <title
+>De dialoog afbeeldingsselectie</title>
+    <graphic srccredit="The Image Selection Dialog" fileref="sendimages_imageselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-mailsettingsdialog">
+<title
+>Dialoog E-mail</title>
+
+<para
+>De sectie e-mail wordt gebruikt om de instellingen voor het verzenden van de afbeeldingen te wijzigen. Deze instellingen worden vastgehouden bij een volgende start van het programma. </para>
+
+<para
+>Selecteer uw favoriete e-mailprogramma in het uitvouwmenu. Als u <application
+>Thunderbird</application
+> gebruikt, dan kunt u in het veld eronder aangeven waar het programma is geïnstalleerd op uw computer. </para>
+
+<note
+><para
+>Als u de GMail service wilt gebruiken, dan dient u het programma <application
+>GMailAgent</application
+> op uw computer te installeren. Het is beschikbaar op <ulink url="http://gmailagent.sourceforge.net"
+>dit adres</ulink
+>. </para
+></note>
+
+<para
+>Als u het keuzevakje <guilabel
+>Commentaar meesturen als bijlage</guilabel
+> inschakelt, dan worden de commentaren die bij de afbeeldingen horen samengevoegd in een tekstbestand en bij de e-mail gevoegd. </para>
+
+<para
+>De opties daaronder bieden de mogelijkheid om de afbeeldingskwaliteit in te stellen. Selecteer hier één van. Met de schuifregelaar bij <guilabel
+>Compressie voor nieuwe afbeeldingen</guilabel
+> bepaalt de te gebruiken compressieverhouding. 75% is gebruikelijk bij <guilabel
+>JPEG</guilabel
+>-bestanden. Als u de compressie op 100% zet, dan krijgt u een verliesloze compressie en de grootste bestandsgrootte. Het verschil in bestandsgrootte tussen 90% en 100% is vrij groot, terwijl de winst in kwaliteit gering is. Een erg goede kwaliteit wordt al behaald bij 85% compressie. </para>
+
+<para
+>Het uitvouwmenu <guilabel
+>Afbeeldingsformaat</guilabel
+> biedt de mogelijkheid om te kiezen tussen PNG en JPEG. <guilabel
+>PNG</guilabel
+> levert vrij grote bestanden op, maar is het meest geschikt voor het verliesloos comprimeren, zoals TIFF dat kan. <guilabel
+>PNG</guilabel
+> is vooral aan te raden als u een breedbandverbinding hebt en u de fotokwaliteit wilt behouden. In alle andere gevallen is <guilabel
+>JPEG</guilabel
+> aan te bevelen. </para>
+
+<note
+><para
+>Als u kiest voor <guilabel
+>JPEG</guilabel
+> als <guilabel
+>bestandsformaat</guilabel
+>, en de oorspronkelijke bestanden zijn in <guilabel
+>JPEG</guilabel
+>, dan wordt de oorspronkelijke EXIF-informatie behouden. </para
+></note>
+
+<figure>
+    <title
+>De dialoog E-mail</title>
+    <graphic srccredit="The Mail Dialog" fileref="sendimages_mail.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-emailimagesinaction">
+<title
+>Verzenden van afbeeldingen in actie</title>
+
+<para
+>Een voortgangsdialoog geeft aan hoe ver het proces gevorderd is. Druk op de knop <guilabel
+>Annuleren</guilabel
+> gedurende de voortgang als u de operatie wilt afbreken. </para>
+
+<para
+>Als alle taken voltooid zijn wordt de dialoog niet meteen gesloten. U kunt dan de voortgangsmeldingen nalezen om te kijken of er niets is fout gegaan. Het e-mailprogramma wordt automatisch opgestart. Druk op de knop <guilabel
+>Sluiten</guilabel
+> om de dialoog af te sluiten. </para>
+
+<figure>
+    <title
+>De plugin Afbeeldingen e-mailen in actie</title>
+    <graphic srccredit="The E-mail Images Plugin in Action" fileref="sendimages_progress.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

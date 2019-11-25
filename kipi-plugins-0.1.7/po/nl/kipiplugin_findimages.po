@@ -1,0 +1,373 @@
+# translation of kipiplugin_findimages.po to Dutch
+# translation of kipiplugin_findimages.po to
+# vertaling van digikamplugin_findimages.po naar Nederlands
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Jasper van der Marel <jasper.van.der.marel@wanadoo.nl>, 2004.
+# Sander Devrieze <s.devrieze@pandora.be>, 2004.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2004.
+# Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2006, 2008.
+# Rinse de Vries <RinseDeVries@home.nl>, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_findimages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-02 23:15+0100\n"
+"Last-Translator: Rinse de Vries <rinsedevries@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Jasper van der Marel,Sander Devrieze,Wilbert Berendsen,Rinse de Vries"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ",s.devrieze@pandora.be,wbsoft@xs4all.nl,rinsedevries@kde.nl"
+
+#: displaycompare.cpp:135 finddupplicatedialog.cpp:81
+#: finddupplicatedialog.cpp:89 plugin_findimages.cpp:104
+msgid "Find Duplicate Images"
+msgstr "Dubbele afbeeldingen zoeken"
+
+#: displaycompare.cpp:138 finddupplicatedialog.cpp:92
+msgid ""
+"A Kipi plugin to find duplicate images\n"
+"This plugin is based on ShowImg implementation algorithm"
+msgstr ""
+"Een KIPI-plugin voor het zoeken naar dubbele afbeeldingen\n"
+"Deze plugin is gebaseerd op de ShowImg-implementatie"
+
+#: displaycompare.cpp:142 finddupplicatedialog.cpp:96
+msgid "Maintainer"
+msgstr "Onderhouder"
+
+#: displaycompare.cpp:145 finddupplicatedialog.cpp:99
+msgid "Original author"
+msgstr "Oorspronkelijke auteur"
+
+#: displaycompare.cpp:148 finddupplicatedialog.cpp:102
+msgid "Find duplicate images algorithm"
+msgstr "Algoritme voor het zoeken naar dubbele afbeeldingen"
+
+#: displaycompare.cpp:154 finddupplicatedialog.cpp:108
+msgid "Plugin Handbook"
+msgstr "Plugin-handboek"
+
+#: displaycompare.cpp:169
+msgid "Original Files"
+msgstr "Originele bestanden"
+
+#: displaycompare.cpp:181
+msgid "<p>The preview of files with duplicates."
+msgstr "<p>Het voorbeeld van bestanden met dubbelen."
+
+#: displaycompare.cpp:196
+msgid "<p>This list contains all files with many duplicates."
+msgstr "<p>Deze lijst bevat alle bestanden met veel dubbelen."
+
+#: displaycompare.cpp:204
+msgid "Similar Files"
+msgstr "Gelijkaardige bestanden"
+
+#: displaycompare.cpp:216
+msgid "<p>The preview of duplicate files."
+msgstr "<p>Voorbeeld van dubbele bestanden."
+
+#: displaycompare.cpp:231
+msgid "<p>This list contains all duplicates files."
+msgstr "<p>Deze lijst bevat alle dubbele bestanden."
+
+#: displaycompare.cpp:232
+msgid "Identical To"
+msgstr "Identiek aan"
+
+#: displaycompare.cpp:261
+#, c-format
+msgid ""
+"_n: 1 Original Image with Duplicate Images Has Been Found\n"
+"%n Original Images with Duplicate Images Have Been Found"
+msgstr ""
+"Er is 1 originele afbeelding met dubbele afbeeldingen gevonden\n"
+"Er zijn %n originele afbeeldingen met dubbele afbeeldingen gevonden"
+
+#: displaycompare.cpp:311
+#, c-format
+msgid ""
+"Cannot remove duplicate file:\n"
+"%1"
+msgstr ""
+"Dubbel bestand\n"
+"%1\n"
+"kan niet worden verwijderd."
+
+#: displaycompare.cpp:332
+#, c-format
+msgid ""
+"Cannot remove original file:\n"
+"%1"
+msgstr ""
+"Origineel bestand\n"
+"%1\n"
+"kan niet worden verwijderd"
+
+#: displaycompare.cpp:353 displaycompare.cpp:430
+msgid "Image size: %1x%2 pixels"
+msgstr "Afbeeldinggrootte: %1x%2 pixels"
+
+#: displaycompare.cpp:355 displaycompare.cpp:432
+#, c-format
+msgid ""
+"_n: File size: 1 byte\n"
+"File size: %n bytes"
+msgstr ""
+"Bestandsgrootte: 1 byte\n"
+"Bestandsgrootte: %n bytes"
+
+#: displaycompare.cpp:356 displaycompare.cpp:433
+#, c-format
+msgid "Modified: %1"
+msgstr "Gewijzigd: %1"
+
+#: displaycompare.cpp:359 displaycompare.cpp:436
+#, c-format
+msgid "Album: %1"
+msgstr "Album: %1"
+
+#: displaycompare.cpp:360
+#, c-format
+msgid "Comments: %1"
+msgstr "Commentaar: %1"
+
+#: displaycompare.cpp:437
+#, c-format
+msgid "Caption: %1"
+msgstr "Titel: %1"
+
+#: finddupplicatedialog.cpp:125
+msgid "Selection"
+msgstr "Selectie"
+
+#: finddupplicatedialog.cpp:126
+msgid "Album's Selection"
+msgstr "Selectie van album"
+
+#: finddupplicatedialog.cpp:140
+msgid "Method & Cache"
+msgstr "Methode en cache"
+
+#: finddupplicatedialog.cpp:140
+msgid "Find-Duplicates Method & Cache Configuration"
+msgstr "Methode om dubbelen te zoeken en cache-configuratie"
+
+#: finddupplicatedialog.cpp:147
+msgid "Method"
+msgstr "Methode"
+
+#: finddupplicatedialog.cpp:151
+msgid "Search method:"
+msgstr "Zoekmethode:"
+
+#: finddupplicatedialog.cpp:153
+msgid "Almost"
+msgstr "Bijna"
+
+#: finddupplicatedialog.cpp:154
+msgid "Fast"
+msgstr "Snel"
+
+#: finddupplicatedialog.cpp:156
+msgid ""
+"<p>Select here the search method used to find duplicate images in the Albums "
+"database."
+"<p><b>Almost</b>: the algorithm calculates an approximate difference between "
+"images. This method is slower but robust. You can affine the thresholding using "
+"the \"Approximate Threshold\" parameter."
+"<p><b>Fast</b>: the algorithm compares bit-by-bit the files for fast image "
+"parsing. This method is faster but is not as robust."
+msgstr ""
+"<p>Selecteer hier de zoekmethode voor de dubbele afbeeldingen in de "
+"albumdatabase"
+"<p><b>Bijna</b>: dit algoritme berekent het verschil tussen afbeeldingen. Deze "
+"methode is langzamer maar betrouwbaarder. De drempelwaarden kunnen worden "
+"aangepast met de parameter \"benaderingdrempel\"."
+"<p><b>Snel</b>: dit algoritme vergelijkt de bestanden bit voor bit voor een "
+"snelle verwerking van de afbeeldingen. Deze methode is sneller maar minder "
+"betrouwbaar."
+
+#: finddupplicatedialog.cpp:165
+msgid "Approximate threshold:"
+msgstr "Benaderingdrempel:"
+
+#: finddupplicatedialog.cpp:169
+msgid ""
+"<p>Select here the approximate threshold value, as a percentage, for the "
+"'Almost' find-duplicates method. This value is used by the algorithm to "
+"distinguish two similar images. The default value is 88."
+msgstr ""
+"<p>Selecteer hier de benaderingdrempel in procenten voor de 'bijna' zoekmethode "
+"voor dubbelen. Deze waarde wordt gebruikt door het algoritme om de "
+"gelijkaardige afbeeldingen van elkaar te onderscheiden. De standaardwaarde is "
+"88."
+
+#: finddupplicatedialog.cpp:177
+msgid "Cache Maintenance"
+msgstr "Cache-onderhoud"
+
+#: finddupplicatedialog.cpp:178
+msgid ""
+"The find-duplicate-images process uses a cache folder for images' fingerprints\n"
+"to speed up the analysis of items from Albums."
+msgstr ""
+"Het proces voor het zoeken van dubbele afbeeldingen gebruikt een cache-map "
+"voor\n"
+"vingerafdrukken van afbeeldingen om de albumitems sneller te kunnen analyseren."
+
+#: finddupplicatedialog.cpp:182
+msgid "&Update Cache"
+msgstr "&Cache bijwerken"
+
+#: finddupplicatedialog.cpp:183
+msgid "<p>Update the cache data for the selected Albums."
+msgstr "<p>Werk de cache-gegevens van de geselecteerde albums bij."
+
+#: finddupplicatedialog.cpp:185
+msgid "&Purge Cache (Albums Selected)"
+msgstr "&Cache opschonen (geselecteerde albums)"
+
+#: finddupplicatedialog.cpp:186
+msgid "<p>Purge the cache data for the selected Albums."
+msgstr "<p>Wis de cachegegevens van de geselecteerde albums."
+
+#: finddupplicatedialog.cpp:188
+msgid "&Purge All Caches"
+msgstr "Alle caches &opschonen"
+
+#: finddupplicatedialog.cpp:189
+msgid "<p>Purge the cache data for all Albums."
+msgstr "<p>Wis de cachegegevens van alle albums."
+
+#: finddupplicatedialog.cpp:247
+msgid "You must select at least one Album for the update cache process."
+msgstr "Selecteer tenminste één album om de cache te kunnen bijwerken."
+
+#: finddupplicatedialog.cpp:269
+msgid "You must select at least one Album for the purge cache process."
+msgstr "Selecteer tenminste één album om de cache te kunnen opschonen."
+
+#: finddupplicatedialog.cpp:289
+msgid "You must select at least one Album for which to find duplicate images."
+msgstr "Selecteer tenminste één album om dubbele afbeeldingen in te zoeken."
+
+#: finddupplicateimages.cpp:172
+msgid "No identical files found"
+msgstr "Geen identieke bestanden gevonden"
+
+#: finddupplicateimages.cpp:245
+msgid "Selected Albums cache purged successfully!"
+msgstr "De cache van de geselecteerde albums is succesvol opgeschoond."
+
+#: finddupplicateimages.cpp:247
+msgid "Cannot purge selected Albums cache!"
+msgstr "De cache van de geselecteerde albums kon niet worden opgeschoond."
+
+#: finddupplicateimages.cpp:258
+msgid "All cache purged successfully!"
+msgstr "Alle caches zijn succesvol opgeschoond!"
+
+#: finddupplicateimages.cpp:260
+msgid "Cannot purge all cache!"
+msgstr "Niet alle caches konden worden opgeschoond."
+
+#: finddupplicateimages.cpp:270
+msgid "Updating in progress..."
+msgstr "Bijwerken is bezig..."
+
+#: finddupplicateimages.cpp:280
+msgid "Selected Albums cache updated successfully!"
+msgstr "De cache van de geselecteerde albums is succesvol bijgewerkt!"
+
+#: finddupplicateimages.cpp:292
+msgid ""
+"Updating in progress for:\n"
+msgstr ""
+"Bijwerken is bezig voor:\n"
+
+#: plugin_findimages.cpp:69
+msgid "&Find Duplicate Images..."
+msgstr "Dubbele a&fbeeldingen zoeken..."
+
+#: plugin_findimages.cpp:146
+msgid "Similar comparison for '%1'"
+msgstr "Gelijksoortige vergelijking van '%1'"
+
+#: plugin_findimages.cpp:153
+msgid "Exact comparison for '%1'"
+msgstr "Exacte vergelijking van '%1'"
+
+#: plugin_findimages.cpp:159
+msgid "Creating fingerprint for '%1'"
+msgstr "Vingerafdruk voor '%1' wordt aangemaakt"
+
+#: plugin_findimages.cpp:165
+msgid "Fast parsing for '%1'"
+msgstr "Snelle ontleding voor '%1'"
+
+#: plugin_findimages.cpp:172
+#, c-format
+msgid ""
+"_n: Checking 1 image...\n"
+"Checking %n images..."
+msgstr ""
+"1 afbeelding wordt gecontroleerd...\n"
+"%n afbeeldingen worden gecontroleerd..."
+
+#: plugin_findimages.cpp:194
+msgid "Failed to create fingerprint for '%1'"
+msgstr "Het aanmaken van een vingerafdruk voor '%1' is mislukt"
+
+#: plugin_findimages.cpp:201
+msgid "Failed to find similar images."
+msgstr "Het zoeken naar gelijksoortige afbeeldingen is mislukt."
+
+#: plugin_findimages.cpp:207
+msgid "Failed to find exact image."
+msgstr "Het zoeken naar een exacte afbeelding is mislukt."
+
+#: plugin_findimages.cpp:214
+msgid "Failed to check images..."
+msgstr "Het controleren van afbeeldingen is mislukt..."
+
+#: plugin_findimages.cpp:234
+msgid "Fingerprint created for '%1'"
+msgstr "Vingerafdruk aangemaakt voor '%1'"
+
+#: plugin_findimages.cpp:241
+msgid "Fast parsing completed for '%1'"
+msgstr "De snelle ontleding voor '%1' is voltooid"
+
+#: plugin_findimages.cpp:248
+msgid "Finding similar images for '%1' completed."
+msgstr "Het zoeken naar gelijksoortige afbeeldingen voor '%1' is voltooid."
+
+#: plugin_findimages.cpp:255
+msgid "Finding exact images for '%1' completed."
+msgstr "Het zoeken naar exacte afbeeldingen voor '%1' is voltooid."
+
+#: plugin_findimages.cpp:263
+msgid "Checking images complete..."
+msgstr "Het controleren van afbeeldingen is voltooid..."
+
+#: plugin_findimages.cpp:288
+msgid "Displaying results..."
+msgstr "Resultaten worden getoond..."

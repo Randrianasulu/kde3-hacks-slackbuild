@@ -1,0 +1,75 @@
+<chapter id="jpeglossless">
+<chapterinfo>
+
+<title
+>JPEG Verlustfrei</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI "JPEG Verlustfrei" Modul ist ein Werkzeug, um Bilder zu ändern ohne Ihre Qualität zu beeinträchtigen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Dieses Modul erlaubt es, für die unten aufgeführten Aktionen, Bilder im JPEG-Format zu speichern, ohne die üblichen Verluste an Qualität bzw. Metadaten. </para>
+
+<itemizedlist>
+<listitem
+><para
+>Verlustfreie Drehung 90/180/270 Grad.</para
+></listitem>
+<listitem
+><para
+>Verlustfreie horizontale oder vertikale Spiegelung.</para
+></listitem>
+<listitem
+><para
+>Verlustfreie Konvertierung nach schwarz/weiss.</para
+></listitem>
+<listitem
+><para
+>Automatische Drehung/Spiegelung anhand der Exif-Informantionen.</para
+></listitem>
+<listitem
+><para
+>Verlustfreie Neukomprimierung.</para
+></listitem>
+</itemizedlist>
+<para
+>Die Konsequenz der verlustfreien Speicherung ist es das die Dateigröße steigt, da keine Komprimierung der Farbinformationen stattfindet. Dies findet man z.B. auch beim PNG Format wieder. </para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

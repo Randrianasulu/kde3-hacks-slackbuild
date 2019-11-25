@@ -1,0 +1,156 @@
+<chapter id="faq">
+<title
+>Spørgsmål og svar</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para
+>Mit problem er ikke i denne OSS. Hvor ellers kan jeg ellers finde hjælp?</para>
+</question>
+<answer>
+<para
+>Vi har en <ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth"
+>e-mail-liste</ulink
+> hvor du kan indsende dine spørgsmål og kommentarer. Kig venligst først i arkivet før du spørger, men tøv ikke med at spørge os hvis du ikke fandt noget der kan hjælpe.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Intet virker, selv et kommandolinjeværktøj såsom <command
+>hcitool inq</command
+> finder ikke noget.</para>
+</question>
+<answer>
+<para
+>kdebluetooth afhænger af en fungerende opsætning af bluetooth. Hvis det er dit problem, kan du bede om hjælp på vores e-mail-liste, men det rigtigste og bedste sted at spørge om BlueZ er naturligvis <ulink url="http://www.bluez.org"
+>BlueZ</ulink
+>BlueZ's e-mail-liste. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Er kdebluetooth død? Der er ingen ændringer i Sourceforge CVS mere.</para>
+</question>
+<answer>
+<para
+>kdebluetooth flyttede til <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE Extragear</ulink
+> (<ulink url="http://extragear.kde.org"
+>extragear's hjem</ulink
+>).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Mine telefoner beder mig om en PIN, men jeg ved ikke hvor den skal indtastes på min computer.</para>
+</question>
+<answer>
+<para
+>BlueZ skulle få en PIN dialog frem automatisk, når du bruger <programlisting
+>sikkerhedsbruger;</programlisting
+> i  <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Sommetider virker standardværktøjet  <command
+>bluepin</command
+> fra BlueZ ikke; du kan prøve at bruge vores KDE-Stil erstatning <command
+>kbluepin</command
+> i stedet for. Put noget i retning af <programlisting
+>pin_helper /usr/bin/kdebluetooth/kbluepin;</programlisting
+> i  <filename
+>hcid.conf</filename
+> og start BlueZ's <command
+>hcid</command
+> igen. </para>
+<para
+>Dette er rent faktisk et BlueZ problem og har ikke noget at gøre med KDE Bluetooth skelettet så længe du ikke bruger kbluepin. Jeg vil gerne lave et link til passende dokumentation for BlueZ håndtering af pin+ting her, men jeg kan ikke finde det noget sted for øjeblikket. Hjælp er velkommen :) </para>
+<para
+>Hvis du hele tiden har besvær med kbluepin (eller bluepin eller en vilkårlig hjælper med pin), skulle du tage og kigge i dine logfiler ( <filename
+>/var/log/syslog</filename
+> eller lignende). </para>
+<para
+>Hvis du er ny med hensyn til bluetooth så læs venligst <link linkend="concepts.pairing"
+>det basale om parring</link
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Når jeg forsøger at parre min computer op med min telefon, siger KBluetoothD "Ikke tilladt". </para>
+</question>
+<answer>
+<para
+>Hvis pin-hjælperen for hcid er sat rigtigt op, så vil en dialog komme frem, der beder dig om den PIN-kode som du også indtastede i din telefon. Hvis du klikker på "Annullér" eller hvis pin-hjælperprogrammet ikke kan findes eller startes af en eller anden grund, vil kbluetoothd komme med en advarsel. Tjek dit system logger for at se hvorfor hcid ikke kunne starte pin-hjælperprogrammet. </para
+></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Jeg ønsker at bruge en tjeneste der bliver tilbudt af kdebluetooth, men min klient-enhed ønsker at forbinde til en anden kanal end den der bruges af kbluetoothd. </para>
+</question>
+<answer>
+<para
+>Normalt skal bluetooth-tjenester ikke bruge faste kanalnumre, men i stedet bruge SDP-databasen il at finde den rigtige kanal. Men hvis du virkelig har brug for det, kan du kopiere desktopfilerne fra <filename
+>$PREFIX/share/services</filename
+> til <filename
+>$HOME/.kde/share/services</filename
+> og redigere kanalnummeret. Dette vil sætte den globale opsætning ud af kraft efter KDE startes igen.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jeg bruger adskillige dongler på den samme PC. Hvordan kan jeg vælge den der skal bruges? </para>
+</question>
+<answer>
+<para
+>Nogle af vores programmer har et kommandolinjeflag til at ændre  standard bluetooth-enheden ('--hcidevice hci1' for eksempel). Alternativt kan du også bruge miljøvariablen HCI_DEVICE. Det sidste vil måske endda virke for de af vores værktøjer der ikke tager kommandolinjeflag. Bemærk at kbluetoothd selv ikke virker særlig godt med flere adaptorer for øjeblikket. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>./configure kan ikke finde min kdelibs/qt/...</para>
+</question>
+<answer>
+<para
+>Sørg for at du har installeret udviklingspakerne for de respektive biblioteker.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jeg får en fejlmeddelelse som: "File generated with too recent version of Qt Designer (3.2 vs. 3.1.x)"</para>
+</question>
+<answer>
+<para
+>Qt Designer gemmer sit versionsnummer i ui-filerne når som helst du ændrer en. Dette giver fejl når du forsøger at kompilere kdebluetooth med en ældre udgave af Qt. Det synes dog at være sikkert at ændre version fra 3.2 til 3.1. Dette kan du gøre meget nemt ved at køre  downgrade_ui scriptet hvis vi ved et tilfælde indsendte nogle ændringer uden at nulstille versionsnumrene.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jeg kan starte kbluetoothd, men denrigtige ikon (K-Bluetooth-Logo) mangler og en generisk dokumentikon vises i stedet</para>
+</question>
+<answer>
+<para
+>Dette betyder sædvanligvis at du har installeret kdebluetooth til et sted hvor KDE ikke søger efter ressourcer Det er ikkenok at have kbluetoothd i $PATH. Du skal også sørge for at du bruger et  --prefix for ./configure som KDE kender til. Du kan få KDE's indstillede ikonmapper med kde-config-værktøjet: kde-config --path icon. De præfikser der bruges af KDE kan indstilles med KDEDIRS miljøvariablen.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>

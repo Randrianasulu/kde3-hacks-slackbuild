@@ -1,0 +1,10 @@
+#define KDE_USE_FINAL 1
+#include "metadatalistview.cpp"
+#include "metadatalistviewitem.cpp"
+#include "metadatawidget.cpp"
+#include "iptcwidget.cpp"
+#include "exifwidget.cpp"
+#include "mdkeylistviewitem.cpp"
+#include "makernotewidget.cpp"
+#include "gpswidget.cpp"
+#include "worldmapwidget.cpp"

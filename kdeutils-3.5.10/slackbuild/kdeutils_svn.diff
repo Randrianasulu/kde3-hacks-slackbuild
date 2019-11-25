@@ -1,0 +1,27 @@
+--- branches/KDE/3.5/kdeutils/kgpg/listkeys.h	2005/08/17 12:35:21	450010
++++ branches/KDE/3.5/kdeutils/kgpg/listkeys.h	2009/07/12 06:41:19	995144
+@@ -51,7 +51,7 @@
+ class KgpgInterface;
+ class KSelectAction;
+ 
+-typedef struct gpgKey
++struct gpgKey
+ {
+         QString gpgkeymail;
+         QString gpgkeyname;
+
+--- branches/KDE/3.5/kdeutils/kcalc/kcalcdisplay.cpp	2007/01/05 01:10:35	620021
++++ branches/KDE/3.5/kdeutils/kcalc/kcalcdisplay.cpp	2008/12/09 03:44:58	894668
+@@ -102,11 +102,7 @@
+ 
+ void KCalcDisplay::slotCopy(void)
+ {
+-	QString txt;
+-	if (_num_base != NB_DECIMAL)
+-		txt = QLabel::text();
+-	else
+-		txt = _display_amount.toQString();
++	QString txt = QLabel::text();
+ 	if (_num_base == NB_HEX)
+ 		txt.prepend( "0x" );
+ 	(QApplication::clipboard())->setText(txt, QClipboard::Clipboard);

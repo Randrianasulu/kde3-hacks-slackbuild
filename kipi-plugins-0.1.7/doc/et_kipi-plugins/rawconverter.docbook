@@ -1,0 +1,169 @@
+<chapter id="rawconverter">
+<chapterinfo>
+
+<title
+>Toorpiltide teisendaja</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi <quote
+>toorteisendamise</quote
+> plugin võimaldab teisendada toorpilte. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>See Kipi plugin võimaldab importida pilte, mis on salvestatud <emphasis
+>toorvormingus</emphasis
+> (RAW), ning teisendada need meelepärasesse pildivormingusse (<guilabel
+>JPEG</guilabel
+>, <guilabel
+>TIFF</guilabel
+>, <guilabel
+>PPM</guilabel
+>). </para>
+
+<para
+>Enne teisendamist ja isegi enne toorvormingus pildi loomist tuleks siiski üht-teist arvesse võtta. Toorvormingus (RAW) säilub algne säritusinfo põhimõtteliselt kadudeta (tihendamisel kasutatakse pööratavaid kadudeta algoritme). Paljud fotograafid eelistavad pildistada toorvormingus, sest kaamera enda teisendamisprogramm pole sageli nii hea kui paljud piltide digitaaltöötluse programmid. Digikaamera valge tasakaal küll registreeritakse, aga seda ei rakendata pildile. Mõned CMOS CCD-d loovad neljavärvifiltri andmestiku (RGBG): punane, roheline, sinine ja veel üks roheline mask kontrastiparanduseks. See plugin arvestab sellega. </para>
+
+<para
+>Teisendamiseks kasutatakse õigupoolest Dave Coffini käsureavahendit <emphasis
+>dcraw</emphasis
+> (Dave: "Ärge oodakegi, et dcraw annaks tulemuseks samasuguseid pilte nagu kaamera tootja tarkvara. Vahel annab dcraw palju parema tulemuse!"). </para>
+
+<sect1 id="using-plugin-rawconversiondialog">
+<title
+>Ühe pildi teisendamise dialoog</title>
+
+<para
+>Vali toorfail, mida soovid teisendada, ja ava plugin vajalikust rakendusest. Ilmub ühe pildi teisendamiseks mõeldud <emphasis
+>toorpiltide teisendaja</emphasis
+> aken. <guilabel
+>Eelvaatlus</guilabel
+> näitab sulle sinu valitud seadistuste mõju lõpptulemusele. </para>
+
+<para
+>Nüüd saad märke- ja väärtuskastidega optimeerida teisendamist. Esimese märkekastiga on võimalik kasutada kaamera värvus- ehk valge tasakaalu seadistusi. Muuta saab ka olulisemaid parameetreid, näiteks heledus ja punase/sinise kordaja. Kui tulemus pole just parim, ära muretse - alati on võimalik pilti hiljem veel paremaks muuta. </para>
+
+<para
+>Kontrastiinfo kasutamiseks saab valida <guilabel
+>Neljavärvi-RGBG</guilabel
+> teisendamise (kui su kaamera töötab RGB režiimis, ei ole muidugi RGBG võimalusel mingit toimet). </para>
+
+<para
+>Kui eelvaatlus sind rahuldab, vali üks kolmest võimalikut väljundivormingust. Failinimi jääb samaks, muutub ainult laiend. <guilabel
+>JPEG</guilabel
+> on küll kadudega vorming, kuid failid on see-eest teistega võrreldes oluliselt väiksemad. </para>
+
+<para
+>Sildistatud pildivorming (<guilabel
+>TIFF</guilabel
+>) säilitab kogu sinu pildi info ja kasutab kadudeta LZW tihendust. </para>
+
+<para
+>Portable PixMap vorming (<guilabel
+>PPM</guilabel
+>) annab tulemuseks suurima väljundfaili, mis sisaldab peaaegu kõiki algandmeid. </para>
+
+<tip
+><para
+>Kui kavatsed oma piltidega veel palju ette võtta või neid tunduvalt töödelda, siis ära kasuta vormingut <guilabel
+>JPEG</guilabel
+>, sest see lubab ette võtta ainult piiratud arvu operatsioone, enne kui märgatavalt halveneb. Algandmete säilitamiseks on <guilabel
+>TIFF</guilabel
+> ja <guilabel
+>PPM</guilabel
+> märksa etemad. </para
+></tip>
+
+<note
+><para
+>Kui valid <guilabel
+>salvestamisvorming</guilabel
+>uks <guilabel
+>JPEG</guilabel
+>, lisatakse toorfailides leiduvad metaandmed <guilabel
+>JPEG</guilabel
+> faili EXIF-infona. </para
+></note>
+
+<para
+>Kui oled lõpetanud, vajuta teisendamise alustamiseks nupule <guilabel
+>Töötle</guilabel
+>. Kui aga soovid teisendamise katkestada, siis klõpsa nupule <guilabel
+>Katkesta</guilabel
+>. </para>
+
+<figure>
+    <title
+>Toorteisendaja dialoog ühe pildi korral</title>
+    <graphic srccredit="The RAW Converter Dialog in Single Mode" fileref="raw_converter_single.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-rawbatchdialog">
+<title
+>Pakkteisenduse dialoog</title>
+
+<para
+>Pakktöötluse režiimis saab teisendada korraga ka palju pilte. Seda tasuks aga proovida alles siis, kui oled parimates seadistustes selgusele jõudnud üht pilti teisendada proovides. </para>
+
+<para
+>Enamik seadistusi on samasugused ühe pildi teisendamisega. Lisavõimalus on lasta üle kirjutada olemasolevad võimalused (mida oled näiteks loonud varasemate katsetustega). Eelvaatlust mõistagi kasutada ei saa. Edenemisriba näitab reaalajas teisendamise kulgemist. </para>
+
+<figure>
+    <title
+>Toorpiltide pakkteisenduse dialoog</title>
+    <graphic srccredit="The Batch RAW Converter Dialog" fileref="raw_converter_batch.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

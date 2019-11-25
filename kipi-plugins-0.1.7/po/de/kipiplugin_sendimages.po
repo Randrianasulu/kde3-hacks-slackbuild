@@ -1,0 +1,462 @@
+# translation of kipiplugin_sendimages.po to german
+# translation of kipiplugin_sendimages.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2004, 2006.
+# Cyrill Helg <linux@solnet.ch>, 2004, 2005.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Oliver Dörr <kde@doerr-privat.de>, 2003, 2004, 2005, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sendimages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-03-01 16:42+0100\n"
+"Last-Translator: Oliver Dörr <kde@doerr-privat.de>\n"
+"Language-Team: german <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr,Thomas Reitelbach"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de,tr@erdfunkstelle.de"
+
+#: listimageserrordialog.cpp:67
+msgid "Image File Name"
+msgstr "Bilddateiname"
+
+#: listimageserrordialog.cpp:68
+msgid "From Album"
+msgstr "Aus dem Album"
+
+#: plugin_sendimages.cpp:76
+msgid "Email Images..."
+msgstr "Bilder per E-Mail versenden ..."
+
+#: plugin_sendimages.cpp:148
+msgid "Preparing images to send"
+msgstr "Bilder zum Senden vorbereiten"
+
+#: plugin_sendimages.cpp:170
+#, c-format
+msgid ""
+"_n: Preparing 1 image to send....\n"
+"Preparing %n images to send...."
+msgstr ""
+"Bild wird zum Senden vorbereitet ...\n"
+"%n Bilder werden zum Senden vorbereitet ..."
+
+#: plugin_sendimages.cpp:176
+msgid "Resizing '%1' from Album '%2'..."
+msgstr "Größenänderung von \"%1\" aus Album \"%2\" ..."
+
+#: plugin_sendimages.cpp:183
+msgid "Using '%1' from Album '%2' without resizing..."
+msgstr "\"%1\" aus Album \"%2\" ohne Größenänderung verwenden ..."
+
+#: plugin_sendimages.cpp:206
+msgid "Failed to resize '%1' from Album '%2'"
+msgstr "Größe von \"%1\" aus Album \"%2\" lässt sich nicht ändern."
+
+#: plugin_sendimages.cpp:225
+msgid "Resizing '%1' from Album '%2' completed."
+msgstr "Die Größe von \"%1\" aus dem Album \"%2\" wurde geändert."
+
+#: plugin_sendimages.cpp:232
+msgid "All preparatory operations completed."
+msgstr "Alle vorbereitenden Schritte wurden durchgeführt."
+
+#: plugin_sendimages.cpp:270
+msgid "Creating comments file if necessary..."
+msgstr "Kommentardatei wird erstellt, falls nötig ..."
+
+#: plugin_sendimages.cpp:275
+msgid "Starting mailer agent..."
+msgstr "E-Mailprogramm wird gestartet ..."
+
+#: sendimages.cpp:335
+msgid "no caption"
+msgstr "Keine Beschriftung"
+
+#: sendimages.cpp:339
+msgid ""
+"Caption for image \"%1\": %2\n"
+msgstr ""
+"Beschriftung des Bildes \"%1\": %2\n"
+
+#: sendimages.cpp:348
+msgid ""
+"Tags: %2\n"
+msgstr ""
+"Stichworte: %2\n"
+
+#: sendimages.cpp:359 sendimages.cpp:365
+msgid "comments.txt"
+msgstr "kommentare.txt"
+
+#: sendimages.cpp:376
+msgid "Error during resize images process."
+msgstr "Bei der Größenänderung des Bildes trat ein Fehler auf."
+
+#: sendimages.cpp:377
+msgid "Cannot resize the following image files:"
+msgstr "Die folgenden Bilder können nicht in der Größe verändert werden:"
+
+#: sendimages.cpp:378
+msgid "Do you want them to be added as attachments (without resizing)?"
+msgstr ""
+"Sollen diese Bilder als Anhang in der Originalgröße hinzugefügt werden?"
+
+#: sendimages.cpp:488 sendimages.cpp:517 sendimages.cpp:539 sendimages.cpp:565
+#: sendimages.cpp:628 sendimages.cpp:885
+msgid ""
+"Cannot start '%1' program;\n"
+"please check your installation."
+msgstr ""
+"Das Programm \"%1\" lässt sich nicht starten.\n"
+"Bitte überprüfen Sie die Installation."
+
+#: sendimages.cpp:645
+#, c-format
+msgid "Cannot remove temporary folder %1."
+msgstr "Der temporäre Ordner \"%1\" lässt sich nicht löschen."
+
+#: sendimagesdialog.cpp:140
+msgid "Email Images Options"
+msgstr "Einstellungen zum Senden von Bildern"
+
+#: sendimagesdialog.cpp:158
+msgid "Send Images"
+msgstr "Bilder senden"
+
+#: sendimagesdialog.cpp:161
+msgid "A Kipi plugin for emailing images"
+msgstr "Ein KIPI-Modul zum Senden von Bildern."
+
+#: sendimagesdialog.cpp:164
+msgid "Author and maintainer"
+msgstr "Autor und Betreuer"
+
+#: sendimagesdialog.cpp:167 sendimagesdialog.cpp:170
+msgid "Developer"
+msgstr "Entwickler"
+
+#: sendimagesdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr "Modul-Handbuch"
+
+#: sendimagesdialog.cpp:251
+msgid "Images"
+msgstr "Bilder"
+
+#: sendimagesdialog.cpp:252
+msgid "Images to EMail"
+msgstr "Bilder zum Senden"
+
+#: sendimagesdialog.cpp:264
+msgid ""
+"<p>This is the list of images  to email. If you want to add some images click "
+"on the 'Add Images...' button or use the drag-and-drop."
+msgstr ""
+"<p>Dies ist die Liste der Bilder, die per E-Mail versendet werden sollen. Wenn "
+"Sie Bilder hinzufügen möchten, können Sie entweder den Knopf \"Hinzufügen\" "
+"drücken oder die Bilder auf die Liste ziehen und dort ablegen."
+
+#: sendimagesdialog.cpp:270
+msgid "&Add ..."
+msgstr "&Hinzufügen ..."
+
+#: sendimagesdialog.cpp:271
+msgid "<p>Add images to the list."
+msgstr "<p>Fügt die Bilder zur Liste hinzu."
+
+#: sendimagesdialog.cpp:273
+msgid "<p>Remove selected images from the list."
+msgstr "<p>Entfernt die ausgewählten Bilder aus der Liste."
+
+#: sendimagesdialog.cpp:281
+msgid "<p>Preview of the currently selected image on the list."
+msgstr "<p>Vorschau des aktuellen Bildes aus der Liste."
+
+#: sendimagesdialog.cpp:288
+msgid "Image Description"
+msgstr "Bildbeschreibung"
+
+#: sendimagesdialog.cpp:292
+msgid "<p>The description of the currently selected image on the list."
+msgstr "<p>Die Beschreibung des aktuellen Bildes aus der Liste."
+
+#: sendimagesdialog.cpp:364
+msgid "Mail"
+msgstr "E-Mail"
+
+#: sendimagesdialog.cpp:365
+msgid "Mail Options"
+msgstr "E-Mail-Einstellungen"
+
+#: sendimagesdialog.cpp:375
+msgid "Mail agent:"
+msgstr "E-Mail-Programm:"
+
+#: sendimagesdialog.cpp:390
+msgid ""
+"<p>Select here your preferred external mail agent program.These mail agent "
+"versions are supported:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+msgstr ""
+"<p>Wählen Sie Ihr bevorzugtes externes E-Mail-Programm. Die folgenden "
+"E-Mail-Programme werden unterstützt:"
+"<p><b>Balsa</b>: >= 2.x "
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4 "
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>Kmail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9 "
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+
+#: sendimagesdialog.cpp:412
+msgid "&Thunderbird binary path:"
+msgstr "&Thunderbird-Programmpfad:"
+
+#: sendimagesdialog.cpp:422
+msgid "<p>The path name to the Thunderbird binary program."
+msgstr "<p>Der Programmpfad zu Thunderbird."
+
+#: sendimagesdialog.cpp:426
+msgid "Attach a file with caption and tags"
+msgstr "Eine Datei mit Beschriftungen und Stichworten anhängen"
+
+#: sendimagesdialog.cpp:427
+msgid ""
+"<p>If you enable this option, all image captions and tags will be added as an "
+"attached file."
+msgstr ""
+"<p>Wenn diese Einstellung aktiviert ist, werden alle Beschriftungen und "
+"Stichworte in einer angehängten Datei hinzugefügt."
+
+#: sendimagesdialog.cpp:430
+msgid "Generate new filenames from image captions (if available)"
+msgstr ""
+"Neue Dateinamen aus den Bildbeschriftungen generieren (falls verfügbar)"
+
+#: sendimagesdialog.cpp:435
+msgid "Image Properties"
+msgstr "Bildeigenschaften"
+
+#: sendimagesdialog.cpp:439
+msgid "<p>The properties of images to send."
+msgstr "<p>Die Eigenschaften der Bilder, die gesendet werden sollen."
+
+#: sendimagesdialog.cpp:444
+msgid "Adjust image properties"
+msgstr "Bildeigenschaften einstellen"
+
+#: sendimagesdialog.cpp:445
+msgid ""
+"<p>If you enable this option, all images to send can be resized and "
+"recompressed."
+msgstr ""
+"<p>Wenn diese Einstellung aktiviert ist, können Sie für Bilder, die gesendet "
+"werden, die Größe und den Kompressiongrad ändern."
+
+#: sendimagesdialog.cpp:454
+msgid "Very Small (320 pixels)"
+msgstr "Sehr klein (320 Pixel)"
+
+#: sendimagesdialog.cpp:455
+msgid "Small (640 pixels)"
+msgstr "Klein (640 Pixel)"
+
+#: sendimagesdialog.cpp:456 sendimagesdialog.cpp:460
+msgid "Medium (800 pixels)"
+msgstr "Mittel (800 Pixel)"
+
+#: sendimagesdialog.cpp:457
+msgid "Big (1024 pixels)"
+msgstr "Groß (1024 Pixel)"
+
+#: sendimagesdialog.cpp:458
+msgid "Very Big (1280 pixels)"
+msgstr "Sehr groß (1280 Pixel)"
+
+#: sendimagesdialog.cpp:459
+msgid "Huge - for printing (1600 pixels)"
+msgstr "Riesig - zum Drucken (1600 Pixel)"
+
+#: sendimagesdialog.cpp:461
+msgid ""
+"<p>Select here the images size to send:"
+"<p><b>%1</b>: use this if you have a very slow internet connection or if the "
+"target mailbox size is very limited."
+"<p><b>%2</b>: use this if you have a slow internet connection and if the target "
+"mailbox size is limited."
+"<p><b>%3</b>: this is the default value for a medium internet connection and a "
+"target mailbox size."
+"<p><b>%4</b>: use this if you have a high-speed internet connection and if the "
+"target mailbox size is not limited."
+"<p><b>%5</b>: use this if you have no size or speed restrictions."
+"<p><b>%6</b>: use this only for printing purpose."
+"<p>"
+msgstr ""
+"<p>Wählen Sie hier die Größe der Bilder, die gesendet werden:"
+"<p><b>%1</b>: sollte benutzt werden, wenn Sie eine sehr langsame "
+"Internetverbindung haben oder der Speicher der Empfänger-Mailbox sehr klein "
+"ist."
+"<p><b>%2</b>: wird benutzt, wenn Sie eine langsame Internetverbindung haben "
+"oder der Speicher der Empfänger-Mailbox klein ist."
+"<p><b>%3</b>: dies ist die Voreinstellung für eine mittelmäßige "
+"Internetverbindung und Mailboxgröße."
+"<p><b>%4</b>: sollte bei einer schnellen Internetverbindung und bei einer "
+"Mailbox ohne Größenbeschränkung gewählt werden."
+"<p><b>%5</b>: sollte nur benutzt werden, wenn sie keine Einschränkungen bzgl. "
+"der Geschwindigkeit Ihrer Verbindung und der Größe der Empfängermailbox haben. "
+"<p><b>%6</b>: benutzen Sie diese nur wenn Sie drucken möchten."
+"<p>"
+
+#: sendimagesdialog.cpp:472
+msgid "very small (320 pixels)"
+msgstr "Sehr klein (320 Pixel)"
+
+#: sendimagesdialog.cpp:473
+msgid "small (640 pixels)"
+msgstr "Klein (640 Pixel)"
+
+#: sendimagesdialog.cpp:474
+msgid "medium (800 pixels)"
+msgstr "Mittel (800 Pixel)"
+
+#: sendimagesdialog.cpp:475
+msgid "big (1024 pixels)"
+msgstr "Groß (1024 Pixel)"
+
+#: sendimagesdialog.cpp:476
+msgid "very big (1280 pixels)"
+msgstr "Sehr groß (1280 Pixel)"
+
+#: sendimagesdialog.cpp:477
+msgid "huge - for printing (1600 pixels)"
+msgstr "Riesig - zum Drucken (1600 Pixel)"
+
+#: sendimagesdialog.cpp:480
+msgid "Sent image size:"
+msgstr "Größe der gesendeten Bilder:"
+
+#: sendimagesdialog.cpp:490
+msgid "Sent image quality level:"
+msgstr "Qualität der gesendeten Bilder:"
+
+#: sendimagesdialog.cpp:492
+msgid "<p>The new compression value of images to send:<p>"
+msgstr "<p>Der neue Kompressionswert der zu sendenden Bilder:<p>"
+
+#: sendimagesdialog.cpp:493
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: sehr hohe Kompression"
+"<p><b>25</b>: hohe Kompression"
+"<p><b>50</b>: mittlere Kompression"
+"<p><b>75</b>: niedrige Kompression (Voreinstellung)"
+"<p><b>100</b>: keine Kompression"
+
+#: sendimagesdialog.cpp:510
+msgid "<p>Select here the images files format to send.<p>"
+msgstr "<p>Wählen Sie hier das Bildformat für die zu sendenden Bilder.<p>"
+
+#: sendimagesdialog.cpp:511
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Das \"Joint Photographic Experts Group\"-Dateiformat ist ein gutes "
+"Webdateiformat, das Kompression mit Datenverlust nutzt."
+"<p><b>PNG</b>: Das \"Portable Network Graphics\"-Format ist ein erweiterbares "
+"Dateiformat zum verlustfreien, portablen und komprimierten Speichern von "
+"Rasterbildern. PNG ermöglicht eine patentfreie Ersetzung des GIF-Formates und "
+"kann in vielen Fällen auch das TIFF-Format ersetzen. PNG wurde entworfen, um in "
+"Online-Bildbetrachtungsprogrammen, wie z. B. im World Wide Web, eingesetzt zu "
+"werden. Es kann optional eine Voransicht von Bildern während des Ladens "
+"anzeigen. Weiterhin kann PNG Gamma- und Farbwertdaten für eine verbesserte "
+"Bildanzeige in heterogenen Plattformen speichern."
+
+#: sendimagesdialog.cpp:521
+msgid "Image file format:"
+msgstr "Bilddateiformat:"
+
+#: sendimagesdialog.cpp:532
+msgid "Maximum Email size limit:"
+msgstr "Maximale Größe der E-Mail:"
+
+#: sendimagesdialog.cpp:533
+msgid "MB"
+msgstr "MB"
+
+#: sendimagesdialog.cpp:623
+#, c-format
+msgid "Caption: %1"
+msgstr "Beschriftung: %1"
+
+#: sendimagesdialog.cpp:624
+#, c-format
+msgid "Album: %1"
+msgstr "Album: %1"
+
+#: sendimagesdialog.cpp:654
+msgid "You must add some images to send."
+msgstr "Sie müssen Bilder zum Senden hinzufügen."
+
+#: sendimagesdialog.cpp:664
+msgid "Thunderbird binary path is not valid. Please check it."
+msgstr ""
+"Der Programmpfad zu Thunderbird ist ungültig. Bitte überprüfen Sie die "
+"Einstellung."
+
+#: sendimagesdialog.cpp:683
+msgid "Image List"
+msgstr "Bilderliste"
+
+#: sendimagesdialog.cpp:685
+#, c-format
+msgid ""
+"_n: Image List (1 item)\n"
+"Image List (%n items)"
+msgstr ""
+"Bilderliste (1 Bild)\n"
+"Bilderliste (%n Bilder)"

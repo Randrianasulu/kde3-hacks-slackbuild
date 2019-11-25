@@ -1,0 +1,134 @@
+/****************************************************************************
+** Digikam::SetupICC meta object code from reading C++ file 'setupicc.h'
+**
+** Created: Wed Jun 14 03:45:26 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "setupicc.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::SetupICC::className() const
+{
+    return "Digikam::SetupICC";
+}
+
+QMetaObject *Digikam::SetupICC::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__SetupICC( "Digikam::SetupICC", &Digikam::SetupICC::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::SetupICC::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupICC", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::SetupICC::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupICC", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::SetupICC::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"processLCMSURL", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotToggledWidgets", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotToggleManagedView", 1, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotFillCombos", 1, param_slot_3 };
+    static const QUMethod slot_4 = {"slotClickedIn", 0, 0 };
+    static const QUMethod slot_5 = {"slotClickedWork", 0, 0 };
+    static const QUMethod slot_6 = {"slotClickedMonitor", 0, 0 };
+    static const QUMethod slot_7 = {"slotClickedProof", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "processLCMSURL(const QString&)", &slot_0, QMetaData::Private },
+	{ "slotToggledWidgets(bool)", &slot_1, QMetaData::Private },
+	{ "slotToggleManagedView(bool)", &slot_2, QMetaData::Private },
+	{ "slotFillCombos(const QString&)", &slot_3, QMetaData::Private },
+	{ "slotClickedIn()", &slot_4, QMetaData::Private },
+	{ "slotClickedWork()", &slot_5, QMetaData::Private },
+	{ "slotClickedMonitor()", &slot_6, QMetaData::Private },
+	{ "slotClickedProof()", &slot_7, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::SetupICC", parentObject,
+	slot_tbl, 8,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__SetupICC.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::SetupICC::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::SetupICC" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Digikam::SetupICC::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: processLCMSURL((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 1: slotToggledWidgets((bool)static_QUType_bool.get(_o+1)); break;
+    case 2: slotToggleManagedView((bool)static_QUType_bool.get(_o+1)); break;
+    case 3: slotFillCombos((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 4: slotClickedIn(); break;
+    case 5: slotClickedWork(); break;
+    case 6: slotClickedMonitor(); break;
+    case 7: slotClickedProof(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::SetupICC::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::SetupICC::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Digikam::SetupICC::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

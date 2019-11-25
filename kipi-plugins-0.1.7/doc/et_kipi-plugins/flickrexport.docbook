@@ -1,0 +1,180 @@
+<chapter id="flickrexport">
+<chapterinfo>
+
+<title
+>Flickri eksport</title>
+
+<authorgroup>
+    <author
+><firstname
+>Vardhman</firstname
+><surname
+>Jain</surname
+> <affiliation
+><address
+><email
+>vardhman at students dot iiit dot net</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+  <para
+>Kipi Flickri ekspordi plugin võimaldab kasutajatel laadida oma fotosid <ulink url="http://www.flickr.com"
+>Flickri</ulink
+> veebiserverisse. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+  <para
+>Flickr kujutab endast fotode haldamise rakendust internetis. See pakub võimalust näidata oma fotosid kõigile, kellele soovid neid näitada. Flickri abil võid näidata oma lemmikfotosid kogu maailmale, laadida üles telefonikaameraga võetud pilte ning turvaliselt ja eraviisiliselt jagada oma pilte sõprade või perega, millises maailma punktis nad ka ei asuks. </para>
+  
+  <para
+>Flickri ekspordi pluginaga saab laadida oma pildikogu enda masinast Flickri internetiserverisse. </para>
+
+<sect1 id="using-plugin-flickrexport"
+> 
+  <title
+>Plugina esmakordne käivitamine</title>
+  
+  <para
+>Plugina esmakordsel käivitamisel tuleb kasutajal hankida endale märgis, mida kasutatakse autentimisel. Ilmub järgmine dialoog ning käivitatakse veebilehitseja aken, kus kasutaja saab ennast registreerida <ulink url="http://www.flickr.com"
+>Flickri</ulink
+> kasutajaks. </para>
+  
+  <figure>
+      <title
+>Esialgse registreerimise dialoog</title>
+      <graphic srccredit="The First Sign Up Dialog Preview" fileref="flickrexportsignup.png"/>
+  </figure>
+  
+  <para
+>Eduka registreerimise järel on võimalik hakata saatma oma fotosid Flickri veebiserverisse. Kasutaja ette ilmub eduka registreerimise järel järgmine lehekülg. </para>
+  
+  <figure>
+      <title
+>Flickri eduka registreerimise teade</title>
+      <graphic srccredit="The Successfull Signup Flickr page" fileref="flickrexportauthenticated.png"/>
+  </figure>
+  
+  <para
+>Sulge veebilehitseja aken ja naase rakenduse dialoogi juurde. Klõpsuga nupule <guilabel
+>Jah</guilabel
+> käivitub fotode Flickrisse üleslaadimise liides, mida kirjeldatakse järgmises osas. </para>
+
+</sect1>
+
+<sect1 id="uploading-using-plugin-flickrexport"
+> 
+<title
+>Plugina kasutamine</title>
+
+  
+  <para
+>Kui avada Flickri ekspordi plugin teist või enamat korda, ilmbu järgmine dialoog, mis näitab kasutaja parajasti kehtivaid õigusi. Üleslaadimiseks on vajalik kirjutamisõigus. Plugin ei võimalda praegu seda muude õigustega teha. Kasutaja käest päritakse, kas ta soovib kehtivate õigustega jätkata. </para>
+     <figure>
+      <title
+>Kehtivate õiguste dialoog</title>
+      <graphic srccredit="The " fileref="flickrexportcontinue.png"/>
+  </figure>
+
+      <para
+>Klõpsuga nupule <guilabel
+>Jah</guilabel
+> ilmub dialoog fotode üleslaadimiseks Flickrisse. </para>
+   <para
+>Klõpsuga nupule <guilabel
+>Ei</guilabel
+> korratakse autentimist. </para>
+  
+      <para
+>Üleslaadimise peadialoog näeb välja selline: </para>
+  
+  	
+  <figure>
+      <title
+>Üleslaadimise peadialoog</title>
+      <graphic srccredit="The Main Uploading Dialog Preview" fileref="flickrexportuploaddialog.png"/>
+  </figure>
+  
+  <para
+>Nupule <guilabel
+>Lisa fotod</guilabel
+> tuleb klõpsata siis, kui dialoogis on määratud kõik vajalikud valikud. Sellele nupule klõpsates avaneb piltide valimise dialoog, kus saab valida vajalikud fotod. Klõpsuga nupule OK käivitubki üleslaadimine. </para>
+  
+
+  <para
+>Väljal <guilabel
+>Sildid</guilabel
+> võib anda komadega eraldatult rea sõnasid, mis omistatakse siltidena üleslaaditavatele fotodele. </para>
+  
+  <para
+>Märkekastidega <guilabel
+>Avalik</guilabel
+>, <guilabel
+>Sõbrad</guilabel
+> ja <guilabel
+>Perekond</guilabel
+> saab määrata üleslaaditavatele piltidele ligipääsuõigused. Vaikimisi on üleslaaditud pildid privaatsed. </para>
+  
+  <para
+>Kui märkida kast <guilabel
+>Fotode suuruse muutmine enne üleslaadimist</guilabel
+>, muudetakse enne fotode saatmist nende suurust. Väärtused võetakse liitkastist <guilabel
+>Maksimummõõtmed</guilabel
+>. </para>
+  
+  <para
+>Liitkastis <guilabel
+>Maksimummõõtmed</guilabel
+> saab määrata maksimaale kõrguse, mis fotodele enne üleslaadimist antakse. Laius arvutatakse automaatselt nii, et säiliks foto proportsioon. </para>
+  
+ <figure>
+      <title
+>Saatmise edenemine dialoog</title>
+      <graphic srccredit="The Uploading Progress Dialog Preview" fileref="flickrexportuploading.png"/>
+  </figure>
+  <para
+>Fotode üleslaadimise katkestamiseks tuleb klõpsata nupule <guilabel
+>Loobu</guilabel
+>. </para>
+
+<para
+>Flickri kasutaja saab üleslaaditud pilte vaadata <ulink url="http://www.flickr.com"
+>Flickri</ulink
+> veebileheküljel. </para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: ts
+End:
+-->

@@ -1,0 +1,143 @@
+/****************************************************************************
+** KTTask meta object code from reading C++ file 'kttask.h'
+**
+** Created: Sun Feb 1 00:52:14 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kttask.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KTTask::className() const
+{
+    return "KTTask";
+}
+
+QMetaObject *KTTask::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KTTask( "KTTask", &KTTask::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KTTask::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KTTask", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KTTask::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KTTask", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KTTask::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialog::staticMetaObject();
+    static const QUMethod slot_0 = {"slotBrowse", 0, 0 };
+    static const QUMethod slot_1 = {"slotCommandChanged", 0, 0 };
+    static const QUMethod slot_2 = {"slotDailyChanged", 0, 0 };
+    static const QUMethod slot_3 = {"slotOK", 0, 0 };
+    static const QUMethod slot_4 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_5 = {"slotAllMonths", 0, 0 };
+    static const QUMethod slot_6 = {"slotMonthChanged", 0, 0 };
+    static const QUMethod slot_7 = {"slotAllDaysOfMonth", 0, 0 };
+    static const QUMethod slot_8 = {"slotDayOfMonthChanged", 0, 0 };
+    static const QUMethod slot_9 = {"slotAllDaysOfWeek", 0, 0 };
+    static const QUMethod slot_10 = {"slotDayOfWeekChanged", 0, 0 };
+    static const QUMethod slot_11 = {"slotAllHours", 0, 0 };
+    static const QUMethod slot_12 = {"slotHourChanged", 0, 0 };
+    static const QUMethod slot_13 = {"slotAllMinutes", 0, 0 };
+    static const QUMethod slot_14 = {"slotMinuteChanged", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotBrowse()", &slot_0, QMetaData::Private },
+	{ "slotCommandChanged()", &slot_1, QMetaData::Private },
+	{ "slotDailyChanged()", &slot_2, QMetaData::Private },
+	{ "slotOK()", &slot_3, QMetaData::Private },
+	{ "slotCancel()", &slot_4, QMetaData::Private },
+	{ "slotAllMonths()", &slot_5, QMetaData::Private },
+	{ "slotMonthChanged()", &slot_6, QMetaData::Private },
+	{ "slotAllDaysOfMonth()", &slot_7, QMetaData::Private },
+	{ "slotDayOfMonthChanged()", &slot_8, QMetaData::Private },
+	{ "slotAllDaysOfWeek()", &slot_9, QMetaData::Private },
+	{ "slotDayOfWeekChanged()", &slot_10, QMetaData::Private },
+	{ "slotAllHours()", &slot_11, QMetaData::Private },
+	{ "slotHourChanged()", &slot_12, QMetaData::Private },
+	{ "slotAllMinutes()", &slot_13, QMetaData::Private },
+	{ "slotMinuteChanged()", &slot_14, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KTTask", parentObject,
+	slot_tbl, 15,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KTTask.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KTTask::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KTTask" ) )
+	return this;
+    return KDialog::qt_cast( clname );
+}
+
+bool KTTask::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotBrowse(); break;
+    case 1: slotCommandChanged(); break;
+    case 2: slotDailyChanged(); break;
+    case 3: slotOK(); break;
+    case 4: slotCancel(); break;
+    case 5: slotAllMonths(); break;
+    case 6: slotMonthChanged(); break;
+    case 7: slotAllDaysOfMonth(); break;
+    case 8: slotDayOfMonthChanged(); break;
+    case 9: slotAllDaysOfWeek(); break;
+    case 10: slotDayOfWeekChanged(); break;
+    case 11: slotAllHours(); break;
+    case 12: slotHourChanged(); break;
+    case 13: slotAllMinutes(); break;
+    case 14: slotMinuteChanged(); break;
+    default:
+	return KDialog::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KTTask::qt_emit( int _id, QUObject* _o )
+{
+    return KDialog::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KTTask::qt_property( int id, int f, QVariant* v)
+{
+    return KDialog::qt_property( id, f, v);
+}
+
+bool KTTask::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

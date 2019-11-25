@@ -1,0 +1,281 @@
+# translation of kipiplugin_htmlexport.po to russian
+#
+# Dmitry A. Bugay <sam@vhnet.ru>, 2006.
+# Nick Shaforostoff <shafff@ukr.net>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_htmlexport\n"
+"POT-Creation-Date: 2008-07-08 22:18+0200\n"
+"PO-Revision-Date: 2006-11-28 19:14+0200\n"
+"Last-Translator: Nick Shaforostoff <shafff@ukr.net>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Николай Шафоростов"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "shafff@ukr.net"
+
+#: generator.cpp:175
+msgid "Could not find theme in '%1'"
+msgstr "Невозможно найти тему в '%1'"
+
+#: generator.cpp:182
+msgid "Copying theme"
+msgstr "Копирование темы"
+
+#: generator.cpp:194
+msgid "Could not copy theme"
+msgstr "Невозможно копировать тему"
+
+#: generator.cpp:203
+msgid "Could not open file '%1' for writing"
+msgstr "Невозможно открыть файл '%1' для записи"
+
+#: generator.cpp:207
+msgid "Could not save image to file '%1'"
+msgstr "Невозможно сохранить изображение в файл %1"
+
+#: generator.cpp:236
+msgid "Could not read image '%1'"
+msgstr "Невозможно открыть изображение '%1'"
+
+#: generator.cpp:242
+msgid "Format of image '%1' is unknown"
+msgstr "Неизвестный формаат изображения %1"
+
+#: generator.cpp:251
+msgid "Error loading image '%1'"
+msgstr "Не удалось загрузить изображение '%1'"
+
+#: generator.cpp:287
+msgid "Could not save image '%1' to '%2'"
+msgstr "Невозможно сохранить изображение '%1' в файл '%2'"
+
+#: generator.cpp:305
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "Невозможно сохранить эскиз изображения '%1' в '%2'"
+
+#: generator.cpp:329
+#, fuzzy
+msgid "Could not create gallery.xml"
+msgstr "Невозможно создать gallery.xml"
+
+#: generator.cpp:340
+msgid "Generating files for \"%1\""
+msgstr "Создание файлов для \"%1\""
+
+#: generator.cpp:372
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: generator.cpp:373
+msgid "Next"
+msgstr "Следующий"
+
+#: generator.cpp:374
+msgid "Collection List"
+msgstr "Коллекция"
+
+#: generator.cpp:375
+#, fuzzy
+msgid "Original Image"
+msgstr "Не уменьшать размер фотографий (использовать оригинальные)"
+
+#: generator.cpp:376
+msgid "Go Up"
+msgstr ""
+
+#: generator.cpp:403
+msgid "Generating HTML files"
+msgstr "Создание HTML файлов"
+
+#: generator.cpp:409
+msgid "Could not load XSL file '%1'"
+msgstr "Невозможно загрузить XLS файл '%1'"
+
+#: generator.cpp:415
+msgid "Could not load XML file '%1'"
+msgstr "Невозможно загрузить XML файл'%1'"
+
+#: generator.cpp:447
+msgid "Error processing XML file"
+msgstr "Ошибка обработки XML файла"
+
+#: generator.cpp:454
+#, fuzzy
+msgid "Could not open '%1' for writing"
+msgstr "Невозможно открыть '%1' для записи"
+
+#: generator.cpp:472
+#, fuzzy
+msgid "Could not create folder '%1' in '%2'"
+msgstr "Невозможно сохранить изображение '%1' в файл '%2'"
+
+#: plugin.cpp:67
+msgid "HTML Gallery..."
+msgstr "HTML Галерея..."
+
+#: plugin.cpp:85
+msgid "Generating gallery..."
+msgstr "Создание галереи..."
+
+#. i18n: file imagesettingspage.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "ImageSettingsPage"
+msgstr "ImageSettingsPage"
+
+#. i18n: file imagesettingspage.ui line 35
+#: rc.cpp:6
+#, no-c-format
+msgid "Full Image"
+msgstr "Полностью Изображение"
+
+#. i18n: file imagesettingspage.ui line 99
+#: rc.cpp:9
+#, no-c-format
+msgid "Thumbnail"
+msgstr "Эскиз"
+
+#. i18n: file imagesettingspage.ui line 158
+#: rc.cpp:12
+#, no-c-format
+msgid "Save image"
+msgstr "Сохранить изображение"
+
+#. i18n: file imagesettingspage.ui line 186
+#: rc.cpp:15
+#, no-c-format
+msgid "Max size:"
+msgstr "Максимальный размер:"
+
+#. i18n: file imagesettingspage.ui line 197
+#: rc.cpp:18 rc.cpp:39
+#, no-c-format
+msgid "Format:"
+msgstr "Формат:"
+
+#. i18n: file imagesettingspage.ui line 214
+#: rc.cpp:21 rc.cpp:42
+#, no-c-format
+msgid "JPEG"
+msgstr "JPEG"
+
+#. i18n: file imagesettingspage.ui line 219
+#: rc.cpp:24 rc.cpp:45
+#, no-c-format
+msgid "PNG"
+msgstr "PNG"
+
+#. i18n: file imagesettingspage.ui line 231
+#: rc.cpp:27 rc.cpp:36
+#, no-c-format
+msgid "Quality:"
+msgstr "Качество:"
+
+#. i18n: file imagesettingspage.ui line 273
+#: rc.cpp:30
+#, no-c-format
+msgid "Include full-size original images for download"
+msgstr ""
+
+#. i18n: file imagesettingspage.ui line 320
+#: rc.cpp:33
+#, no-c-format
+msgid "Use original image"
+msgstr "Не уменьшать размер фотографий (использовать оригинальные)"
+
+#. i18n: file imagesettingspage.ui line 431
+#: rc.cpp:48
+#, no-c-format
+msgid "Size:"
+msgstr "Размер:"
+
+#. i18n: file outputpage.ui line 35
+#: rc.cpp:51
+#, no-c-format
+msgid "Destination folder:"
+msgstr "Папка назначения:"
+
+#. i18n: file outputpage.ui line 53
+#: rc.cpp:54
+#, no-c-format
+msgid "Open in browser"
+msgstr "Открыть в браузере"
+
+#. i18n: file themeparameterspage.ui line 16
+#: rc.cpp:57
+#, fuzzy, no-c-format
+msgid "Form1"
+msgstr "Формат:"
+
+#. i18n: file themeparameterspage.ui line 38
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+
+#: wizard.cpp:139
+msgid ""
+"_: '%1' is a label for a theme parameter\n"
+"%1:"
+msgstr ""
+
+#: wizard.cpp:175
+msgid "HTML Export"
+msgstr "Экспорт HTML"
+
+#: wizard.cpp:178
+msgid "A KIPI plugin to export image collections to HTML pages"
+msgstr ""
+
+#: wizard.cpp:181
+msgid "Author and Maintainer"
+msgstr ""
+
+#: wizard.cpp:187
+msgid "Plugin Handbook"
+msgstr ""
+
+#: wizard.cpp:191
+msgid "Collection Selection"
+msgstr "Выбор коллекции"
+
+#: wizard.cpp:195
+msgid "Theme"
+msgstr "Тема"
+
+#: wizard.cpp:200
+msgid "Theme Parameters"
+msgstr ""
+
+#: wizard.cpp:203
+msgid "Image Settings"
+msgstr "Параметры изображения"
+
+#: wizard.cpp:207
+msgid "Output"
+msgstr "Вывод"
+
+#: wizard.cpp:250
+#, c-format
+msgid "Author: %1"
+msgstr "Автор: %1"
+
+#~ msgid "Could not create '%1"
+#~ msgstr "Невозможно создать '%1"

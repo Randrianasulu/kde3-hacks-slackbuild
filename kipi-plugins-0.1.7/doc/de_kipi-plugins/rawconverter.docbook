@@ -1,0 +1,169 @@
+<chapter id="rawconverter">
+<chapterinfo>
+
+<title
+>RAW-Bildkonverter</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul <quote
+>RAW-Bildkonverter</quote
+> ist ein Werkzeug, um Bilder im RAW-Format zu konvertieren. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Mit diesem KIPI Modul können Sie Ihre im <emphasis
+>RAW-Format</emphasis
+> gespeicherten Bilder in eins von drei Formaten <guilabel
+>JPEG</guilabel
+>, <guilabel
+>TIFF</guilabel
+> oder <guilabel
+>PPM</guilabel
+> importieren bzw. konvertieren. </para>
+
+<para
+>Ein paar Dinge sollten Sie wissen bevor Sie Bilder aus dem RAW-Format konvertieren und sogar bevor Sie diese Bilder mit Ihrer Kamera machen. RAW-Bildformate enthalten die Originalinformationen die Ihre Kamera während der Belichtung einliest. selbst wenn die Bilder komprimiert werden geschieht dies mit verlustfreien Algorithmen. Viele Photographen bevorzugen es daher Ihre Photos im RAW Modus aufzunehmen, da die eingebauten Kamera Konvertierungsprogramme schlechtere Ergebnisse erzeugen, als das was mit Bildbearbeitungen manuell erreichbar ist. Der Weißabgleich Ihrer Digitalkamera wird registriert, aber nicht angewendet. Einige CMOS CCD's erstellen vier Farbdaten. Rot, Grün, Blau und eine weitere Grünmaske zur Verbesserung des Kontrastes. Dieses Modul kann dies berücksichtigen. </para>
+
+<para
+>Die Konvertierung basiert auf dem Kommandozeilen Werkzeug <emphasis
+>dcraw</emphasis
+> von Dave Coffin. Ein Originalzitat von Ihm ist:  "Erwarten Sie von dcraw nicht das es dieselben Ergebnisse erzeugt, wie die Software von Ihrem Kamerahersteller. Manchmal bekommen Sie mit dcraw bessere Ergebnisse!". </para>
+
+<sect1 id="using-plugin-rawconversiondialog">
+<title
+>Konvertierungsdialog für einzelne Bilder</title>
+
+<para
+>Wählen Sie zuerst die RAW-Datei die konvertiert werden soll und starten Sie das Modul. Das <emphasis
+>Raw-Bildkonverter</emphasis
+> Fenster erscheint dann im Modus für ein einzelnes Bild. Mit dem Knopf <guilabel
+>Vorschau</guilabel
+> können Sie den Effekt Ihrer aktuellen Einstellungen auf das Bild betrachten. </para>
+
+<para
+>Sie können nun die Werte neu justieren um den Konvertierungsprozess zu optimieren. Die erste Option entscheidet, ob die Kameraeinstellungen für den Weißabgleich genutzt werden sollen. Die wesentlichen Parameter wie Gamma, Helligkeit und Rot/Blau Verstärker können justiert werden. Falls das Ergebnis nicht optimal ist können Sie das Bild später weiter bearbeiten. </para>
+
+<para
+>Eine <guilabel
+>Vierfarben  RGBG</guilabel
+> Konvertierung kann ausgewählt werden, damit Sie die Kontrastinformationen benutzen können. Falls Ihre Kamera im RGB Modus arbeitet hat der RGBG Schalter keinen Effekt. </para>
+
+<para
+>Sobald Sie mit der Vorschau zufrieden sind, können Sie eins der drei Ausgabeformate wählen und das Konvertierungsergebnis speichern. Der Dateiname bleibt gleich und nur die Erweiterung wird entsprechend angepasst. <guilabel
+>JPEG</guilabel
+> benutzt einen verlustbehafteten Algorithmus und produziert dafür die kleinsten Dateigrößen. </para>
+
+<para
+>Das Tagged Image Format, <guilabel
+>TIFF</guilabel
+>, behält alle Informationen Ihres Bildes und benutzt die verlustfreie LZW Komprimierung. </para>
+
+<para
+>Das Portable PixMap Format, <guilabel
+>PPM</guilabel
+>, erzeugt die größten Ausgabedateien und enthält die meisten Daten. </para>
+
+<tip
+><para
+>Falls Sie vorhaben Ihre Bilder häufig zu bearbeiten oder Sie später anderweitig weiter zu nutzen sollten Sie nicht das <guilabel
+>JPEG</guilabel
+> Format wählen, da es nur eine begrenzte Anzahl von Operationen erlaubt bevor sich die Bildqualität verschlechtert. <guilabel
+>TIFF</guilabel
+> und <guilabel
+>PPM</guilabel
+> sind besser angepasst, um die Originaldaten zu behalten. </para
+></tip>
+
+<note
+><para
+>Falls Sie <guilabel
+>JPEG</guilabel
+> als <guilabel
+>Speicherformat</guilabel
+> wählen werden die Metadaten die in der RAW-Datei enthalten sind in der <guilabel
+>JPEG</guilabel
+> Datei in den Exif-Informationen gespeichert. </para
+></note>
+
+<para
+>Wenn Sie Ihre Einstellungen angepasst haben können Sie mit dem <guilabel
+>Ausführen</guilabel
+> Knopf die Konvertierung starten. Falls Sie diesen Prozess wieder abbrechen wollen, so können Sie dazu <guilabel
+>Abbrechen</guilabel
+> benutzen. </para>
+
+<figure>
+    <title
+>Der Konvertierungsdialog für einzelne Bilder</title>
+    <graphic srccredit="The RAW Converter Dialog in Single Mode" fileref="raw_converter_single.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-rawbatchdialog">
+<title
+>Konvertierungsdialog im Stapelverarbeitungsmodus</title>
+
+<para
+>Der Stapelverarbeitungsmodus erlaubt es Ihnen verschiedene Bilder auf einmal zu konvertieren. Benutzen Sie diesen Modus daher wenn Sie sich sicher sind, z.B. durch Testen an einem einzelnen Bild, welches die besten Einstellungen sind. </para>
+
+<para
+>Die verfügbaren Einstellungen sind nahezu identisch mit der Version für einzelne Bilder. Sie haben hier jedoch die Möglichkeit existierende Datei automatisch zu überschreiben. Das ist hilfreich, falls diese in einem früheren Versuch erzeugt wurden. Eine Vorschau ist allerdings nicht verfügbar. Der Fortschrittsbalken zeigt an wie weit die Konvertierung fortgeschritten ist. </para>
+
+<figure>
+    <title
+>Der Konvertierungsdialog im Stapelverarbeitungsmodus</title>
+    <graphic srccredit="The Batch RAW Converter Dialog" fileref="raw_converter_batch.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

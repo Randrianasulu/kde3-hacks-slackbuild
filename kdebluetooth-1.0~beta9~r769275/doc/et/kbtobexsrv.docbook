@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>OBEX saatmisserver: failide vastuvõtmine</title>
+<para
+>Enamik Bluetoothi toega mobiiltelefone või PDA-sid võimaldab saata faile mobiililt arvutile. Muidugi võib olla mugavam kasutada <link linkend="components.kio_obex"
+>OBEX FTP KIO moodulit</link
+> failide saatmiseks telefonilt arvutile, kuid mitte kõik seadmed ei toeta seda. Samas toetavad peaaegu kõik Bluetoothi seadmed OBEX objekti saatmist. </para>
+
+<sect2>
+<title
+>OBEX saatmisserveri kasutamine</title>
+<para
+>OBEX saatmisserveriga tegeleb kbluetoothd ning see käivitatakse automaatselt, kui vastav võimalus on sisse lülitatud ja keegi püüab sulle faile saata. Palun uuri kbluetoothd dokumentatsioonist, kuidas <link linkend="components.kbluetoothd.serviceconfig"
+>teenuseid sisse või välja lülitada</link
+> (OBEX saatmisserver on nime all <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Faili mobiililt arvutile saates muutub kbluetoothd ikoon paneelil siniseks ja nähtavale ilmub väike hüpikaken. Vaikimisi (sõltuvalt <link linkend="components.kbluetoothd.confirmation"
+>sisenevate ühenduste seadistusest</link
+>) on vaja kõigepealt ühendusega nõustuda ning seejärel ilmub OBEX saatmisserveri peaaken ja algab faili vastuvõtmine. </para>
+<para
+>Sisenevad failid salvestatakse kataloogi <filename
+>/tmp</filename
+> ja kustutatakse pärast OBEX saatmisserveri sulgemist. Faile saab salvestada kahel moel: </para>
+<itemizedlist>
+<listitem>
+<para
+>Klõpsuga nupul <guibutton
+>OK</guibutton
+>, mis salvestab kõik saadud failid eelnevalt määratud asukohta.</para>
+</listitem>
+<listitem>
+<para
+>Lohistades ühe või mitu faili mingisse muusse asukohta. See on eriti abiks, kui soovid saata faile e-postiga, sest nii võid failid lohistada otse KMaili, ilma et peaks neid kuhugi ajutiselt salvestama. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

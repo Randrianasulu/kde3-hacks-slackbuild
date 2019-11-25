@@ -1,0 +1,185 @@
+<chapter id="imagesgallery">
+<chapterinfo>
+
+<title
+>Pildigalerii</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi pildigalerii pluginaga saab albumite kogu eksportida HTML-leheküljele. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>Selle pluginaga saab eksportida albumid HTML-leheküljele, et neid seejärel veebis avaldada. Albumite valimine ja õigupoolest kogu operatsioon on imelihtne. HTML-i renderdamist saab väga mitmeti seadistada. Parima rahvusvahelise mõistetavuse huvides kasutatakse UTF-8 kodeeringut. </para>
+
+<para
+>Mõningaid näiteid plugina kasutamise võib näha aadressil <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/index.htm"
+><citetitle
+>url.</citetitle
+></ulink
+> </para>
+
+<sect1 id="using-plugin-imagesgallerycollectionselection">
+<title
+>Kogu valimise dialoog</title>
+
+<para
+>Plugin võimaldab seadistusi kohandada neljal kaardil. Kaardil <guilabel
+>Valik</guilabel
+> saab valida albumid, mida soovid HTML-leheküljele eksportida. Vali siin lihtsalt vajalikud albumid (neid näidatakse lihtsa puuna). Paremal asuva kolme nupuga saab korraga valida palju albumeid. Allpool on näidatud albumi ID-pilti tekstiga, mis jääb HTML-leheküljel näha päisena. </para>
+
+<figure>
+    <title
+>Kogu valimise dialoog</title>
+    <graphic srccredit="The Collections Selection Dialog" fileref="imagegallery_collectionselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerylooksettings">
+<title
+>Välimusseadistuste dialoog</title>
+
+<para
+>Kaardil <guilabel
+>Välimus</guilabel
+> saab määrata lehekülgede üldise välimuse ja paigutuse. Siin peaks kõik valikud iseenda eest rääkima. <guilabel
+>Luuakse lehekülg igale pildile</guilabel
+> võimaldab luua galerii, kus igale pildile vastab HTML-lehekülg, s.t. et pildile klõpsates avatakse veebilehitsejas antud pilti näitav uus lehekülg. Kui see kastike märkimata jätta, avatakse pildid neile klõpsamisel otsekohe vaikimisi piltide näitamise rakenduses (nt. Kuickshow). </para>
+
+<figure>
+    <title
+>Välimusseadistuste dialoog</title>
+    <graphic srccredit="The Look Settings Dialog" fileref="imagegallery_looksettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryalbumsettings">
+<title
+>Albumiseadistuste dialoog</title>
+
+<para
+>Kaardil <guilabel
+>Album</guilabel
+> saab määrata, kuhu ja kuidas salvestatakse galerii koos kõigi sellega seotud piltidega. Vali kataloog, kuhu soovid galerii salvestada (kontrolli, et sul oleks ikka selles kataloogis kirjutamisõigus). Seal luuakse kõike sisaldav alamkataloog KIPIHTMLExport. </para>
+
+<para
+>Kui märkida ära kastike <guilabel
+>Sihtpiltide suurust muudetakse</guilabel
+>, saab alloleva liuguriga määrata sihtpiltide maksimaalse suuruse (pikslites). Määratud väärtusest suuremad pildid kahandatakse, väiksemate piltide korral midagi ei muudeta. Järgmised kaks märkekasti võimaldavad määrata piltide tihendamist. Kui soovid ruumi kettal kokku hoida, vali piltide tihendamine ja vähenda vaikimisi antud tihendustaset. Seejärel saad valida JPEG (väiksemad failid, kuid kadudega) ning PNG (kadudeta ja vaba) vormingu vahel. </para>
+
+<note
+><para
+>JPEG vormingu valimisel sihtpiltidele säilitatakse kogu algsete JPEG-failide EXIF-info. </para
+></note>
+
+<para
+>Kastikese <guilabel
+>Määratakse erinev värvisügavus</guilabel
+> märkimisel saab muuta vaikimisi värvisügavust. See mõjutab mõistagi ka failisuurust. Ülejäänud valikud peaksid olema enesestmõistetavad. </para>
+
+<figure>
+    <title
+>Albumiseadistuste dialoog</title>
+    <graphic srccredit="The Album Settings Dialog" fileref="imagegallery_albumsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerythumbsettings">
+<title
+>Pisipildiseadistuste dialoog</title>
+
+<para
+>Kaardil <guilabel
+>Pisipildid</guilabel
+> saab määrata enam-vähem samu asju, mis esinesid kaardil <guilabel
+>Album</guilabel
+>, aga pisipiltide ehk siis galeriis näidatavate väikeste pildikeste kohta. </para>
+
+<figure>
+    <title
+>Pisipildiseadistuste dialoog</title>
+    <graphic srccredit="The Thumbnails Settings Dialog" fileref="imagegallery_thumbsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryinaction">
+<title
+>Pildigalerii</title>
+
+<para
+>Asja edenemisest annab kasutajale märku edenemisdialoog. Kui soovid sel ajal operatsiooni katkestada, klõpsa nupule <guilabel
+>Loobu</guilabel
+>. </para>
+
+<figure>
+    <title
+>Pildigalerii plugin</title>
+    <graphic srccredit="The Images Gallery Plugin in Action" fileref="imagegallery_progress.png"/>
+</figure>
+
+<para
+>Kui kõik on valmis, ei suleta dialoogi automaatselt ning sa saad uurida töötlemisaegseid teateid, mis on eriti mõttekas juhul, kui esines mingeid vigu. Lõpuks käivitatakse automaatselt veebilehitseja, kus võid oma galeriid imetleda. Dialoogi sulgemiseks klõpsa nupule <guilabel
+>Sulge</guilabel
+>. </para>
+
+<figure>
+    <title
+>Pildigalerii eelvaatlus Konqueroris</title>
+    <graphic srccredit="The Images Gallery Preview in Konqueror" fileref="imagegallery_preview.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

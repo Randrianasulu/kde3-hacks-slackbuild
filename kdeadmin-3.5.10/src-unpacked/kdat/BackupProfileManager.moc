@@ -1,0 +1,158 @@
+/****************************************************************************
+** BackupProfileManager meta object code from reading C++ file 'BackupProfileManager.h'
+**
+** Created: Sun Feb 1 00:52:57 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "BackupProfileManager.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *BackupProfileManager::className() const
+{
+    return "BackupProfileManager";
+}
+
+QMetaObject *BackupProfileManager::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_BackupProfileManager( "BackupProfileManager", &BackupProfileManager::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString BackupProfileManager::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BackupProfileManager", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString BackupProfileManager::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BackupProfileManager", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* BackupProfileManager::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUParameter param_signal_0[] = {
+	{ "backupProfile", &static_QUType_ptr, "BackupProfile", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"sigBackupProfileAdded", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ "backupProfile", &static_QUType_ptr, "BackupProfile", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"sigBackupProfileRemoved", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ "backupProfile", &static_QUType_ptr, "BackupProfile", QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"sigBackupProfileModified", 1, param_signal_2 };
+    static const QMetaData signal_tbl[] = {
+	{ "sigBackupProfileAdded(BackupProfile*)", &signal_0, QMetaData::Public },
+	{ "sigBackupProfileRemoved(BackupProfile*)", &signal_1, QMetaData::Public },
+	{ "sigBackupProfileModified(BackupProfile*)", &signal_2, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"BackupProfileManager", parentObject,
+	0, 0,
+	signal_tbl, 3,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_BackupProfileManager.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* BackupProfileManager::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "BackupProfileManager" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL sigBackupProfileAdded
+void BackupProfileManager::sigBackupProfileAdded( BackupProfile* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL sigBackupProfileRemoved
+void BackupProfileManager::sigBackupProfileRemoved( BackupProfile* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL sigBackupProfileModified
+void BackupProfileManager::sigBackupProfileModified( BackupProfile* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+bool BackupProfileManager::qt_invoke( int _id, QUObject* _o )
+{
+    return QObject::qt_invoke(_id,_o);
+}
+
+bool BackupProfileManager::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: sigBackupProfileAdded((BackupProfile*)static_QUType_ptr.get(_o+1)); break;
+    case 1: sigBackupProfileRemoved((BackupProfile*)static_QUType_ptr.get(_o+1)); break;
+    case 2: sigBackupProfileModified((BackupProfile*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return QObject::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool BackupProfileManager::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool BackupProfileManager::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

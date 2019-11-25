@@ -1,0 +1,28 @@
+--- branches/KDE/4.2/kdelibs/khtml/rendering/render_text.cpp	2009/04/03 17:21:41	948756
++++ branches/KDE/4.2/kdelibs/khtml/rendering/render_text.cpp	2009/04/03 17:23:58	948757
+@@ -1167,9 +1167,12 @@
+ 
+         // If line-breaks survive to here they are preserved
+         if ( c == '\n' ) {
+-            m_hasBreak = true;
+-            isNewline = true;
+-            isSpace = false;
++            if (style()->preserveLF()) {
++                m_hasBreak = true;
++                isNewline = true;
++                isSpace = false;
++            } else
++                isSpace = true;
+         } else
+             isSpace = c == ' ';
+ 
+@@ -1223,7 +1226,8 @@
+             {
+                 if ( firstLine ) {
+                     firstLine = false;
+-                    m_beginMinWidth = currMaxWidth;
++                    if (!style()->autoWrap())
++                        m_beginMinWidth = currMaxWidth;
+                 }
+ 
+                 if(currMaxWidth > m_maxWidth) m_maxWidth = currMaxWidth;

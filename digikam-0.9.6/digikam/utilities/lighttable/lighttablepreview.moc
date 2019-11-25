@@ -1,0 +1,232 @@
+/****************************************************************************
+** Digikam::LightTablePreview meta object code from reading C++ file 'lighttablepreview.h'
+**
+** Created: Wed Jun 14 03:55:41 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "lighttablepreview.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::LightTablePreview::className() const
+{
+    return "Digikam::LightTablePreview";
+}
+
+QMetaObject *Digikam::LightTablePreview::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__LightTablePreview( "Digikam::LightTablePreview", &Digikam::LightTablePreview::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::LightTablePreview::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::LightTablePreview", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::LightTablePreview::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::LightTablePreview", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::LightTablePreview::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = PreviewWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "loadingDescription", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "image", &static_QUType_ptr, "DImg", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotGotImagePreview", 2, param_slot_0 };
+    static const QUMethod slot_1 = {"slotNextPreload", 0, 0 };
+    static const QUMethod slot_2 = {"slotContextMenu", 0, 0 };
+    static const QUParameter param_slot_3[] = {
+	{ "tagID", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotAssignTag", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ "tagID", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotRemoveTag", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "rating", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotAssignRating", 1, param_slot_5 };
+    static const QUMethod slot_6 = {"slotThemeChanged", 0, 0 };
+    static const QUMethod slot_7 = {"slotCornerButtonPressed", 0, 0 };
+    static const QUParameter param_slot_8[] = {
+	{ 0, &static_QUType_varptr, "\x08", QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"slotPanIconSelectionMoved", 2, param_slot_8 };
+    static const QUMethod slot_9 = {"slotPanIconHiden", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotGotImagePreview(const LoadingDescription&,const DImg&)", &slot_0, QMetaData::Private },
+	{ "slotNextPreload()", &slot_1, QMetaData::Private },
+	{ "slotContextMenu()", &slot_2, QMetaData::Private },
+	{ "slotAssignTag(int)", &slot_3, QMetaData::Private },
+	{ "slotRemoveTag(int)", &slot_4, QMetaData::Private },
+	{ "slotAssignRating(int)", &slot_5, QMetaData::Private },
+	{ "slotThemeChanged()", &slot_6, QMetaData::Private },
+	{ "slotCornerButtonPressed()", &slot_7, QMetaData::Private },
+	{ "slotPanIconSelectionMoved(const QRect&,bool)", &slot_8, QMetaData::Private },
+	{ "slotPanIconHiden()", &slot_9, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_ptr, "ImageInfoList", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalDroppedItems", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalDeleteItem", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalEditItem", 1, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"signalPreviewLoaded", 1, param_signal_3 };
+    static const QUMethod signal_4 = {"signalSlideShow", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalDroppedItems(const ImageInfoList&)", &signal_0, QMetaData::Public },
+	{ "signalDeleteItem(ImageInfo*)", &signal_1, QMetaData::Public },
+	{ "signalEditItem(ImageInfo*)", &signal_2, QMetaData::Public },
+	{ "signalPreviewLoaded(bool)", &signal_3, QMetaData::Public },
+	{ "signalSlideShow()", &signal_4, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::LightTablePreview", parentObject,
+	slot_tbl, 10,
+	signal_tbl, 5,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__LightTablePreview.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::LightTablePreview::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::LightTablePreview" ) )
+	return this;
+    return PreviewWidget::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalDroppedItems
+void Digikam::LightTablePreview::signalDroppedItems( const ImageInfoList& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalDeleteItem
+void Digikam::LightTablePreview::signalDeleteItem( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalEditItem
+void Digikam::LightTablePreview::signalEditItem( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalPreviewLoaded
+void Digikam::LightTablePreview::signalPreviewLoaded( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 3, t0 );
+}
+
+// SIGNAL signalSlideShow
+void Digikam::LightTablePreview::signalSlideShow()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 4 );
+}
+
+bool Digikam::LightTablePreview::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotGotImagePreview((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(const DImg&)*((const DImg*)static_QUType_ptr.get(_o+2))); break;
+    case 1: slotNextPreload(); break;
+    case 2: slotContextMenu(); break;
+    case 3: slotAssignTag((int)static_QUType_int.get(_o+1)); break;
+    case 4: slotRemoveTag((int)static_QUType_int.get(_o+1)); break;
+    case 5: slotAssignRating((int)static_QUType_int.get(_o+1)); break;
+    case 6: slotThemeChanged(); break;
+    case 7: slotCornerButtonPressed(); break;
+    case 8: slotPanIconSelectionMoved((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1)),(bool)static_QUType_bool.get(_o+2)); break;
+    case 9: slotPanIconHiden(); break;
+    default:
+	return PreviewWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::LightTablePreview::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalDroppedItems((const ImageInfoList&)*((const ImageInfoList*)static_QUType_ptr.get(_o+1))); break;
+    case 1: signalDeleteItem((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 2: signalEditItem((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 3: signalPreviewLoaded((bool)static_QUType_bool.get(_o+1)); break;
+    case 4: signalSlideShow(); break;
+    default:
+	return PreviewWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::LightTablePreview::qt_property( int id, int f, QVariant* v)
+{
+    return PreviewWidget::qt_property( id, f, v);
+}
+
+bool Digikam::LightTablePreview::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

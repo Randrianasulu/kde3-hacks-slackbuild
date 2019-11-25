@@ -1,0 +1,2712 @@
+# translation of kipiplugin_metadataedit.po to Swedish
+#
+# Stefan Asserhäll <stefan.asserhall@comhem.se>, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_metadataedit\n"
+"POT-Creation-Date: 2008-12-02 09:44+0100\n"
+"PO-Revision-Date: 2008-12-02 18:24+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Stefan Asserhäll"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "stefan.asserhall@comhem.se"
+
+#: commenteditdialog.cpp:77 plugin_metadataedit.cpp:510
+msgid "Edit Image Caption"
+msgstr "Redigera bildrubrik"
+
+#: commenteditdialog.cpp:86 commentremovedialog.cpp:84 exifeditdialog.cpp:165
+#: iptceditdialog.cpp:181
+msgid "Edit Metadata"
+msgstr "Redigera metadata"
+
+#: commenteditdialog.cpp:89
+msgid "A Plugin to edit images' metadata"
+msgstr "Ett insticksprogram för att redigera metadata i bilder"
+
+#: commenteditdialog.cpp:92 commentremovedialog.cpp:90 exifeditdialog.cpp:171
+#: iptceditdialog.cpp:187
+msgid "Author and Maintainer"
+msgstr "Upphovsman och underhåll"
+
+#: commenteditdialog.cpp:97 commentremovedialog.cpp:95 exifeditdialog.cpp:176
+#: iptceditdialog.cpp:192
+msgid "Plugin Handbook"
+msgstr "Handbok för insticksprogrammet"
+
+#: commenteditdialog.cpp:105
+msgid ""
+"<p>Enter the image caption hosted by <b>%1</b>. This field is not limited "
+"(excepted with IPTC). UTF-8 encoding will be used to save text."
+msgstr ""
+"<p>Ange bildrubriken skapad av <b>%1</b>. Fältet är inte begränsat (utom med "
+"IPTC). UTF-8 kodning används för att spara text."
+
+#: commenteditdialog.cpp:113 exifcaption.cpp:156 iptccaption.cpp:104
+msgid "Sync JFIF Comment section"
+msgstr "Synkronisera JFIF-kommentarsektion"
+
+#: commenteditdialog.cpp:114 iptccaption.cpp:108
+msgid "Sync EXIF Comment"
+msgstr "Synkronisera EXIF-kommentar"
+
+#: commenteditdialog.cpp:115 exifcaption.cpp:157
+msgid ""
+"Sync IPTC caption (warning: limited to 2000 printable Ascii characters set)"
+msgstr ""
+"Synkronisera IPTC-rubrik (varning: begränsad till 2000 utskrivningsbara "
+"ASCII-tecken)"
+
+#: commenteditdialog.cpp:118
+msgid ""
+"<b>Note: captions from currently selected images will be permanently "
+"replaced.</b>"
+msgstr ""
+"<b>Observera: Rubriker för bilderna som för närvarande är markerade kommer "
+"ersättas permanent.</b>"
+
+#: commentremovedialog.cpp:75
+msgid "Remove Image Captions"
+msgstr "Ta bort bildrubriker"
+
+#: commentremovedialog.cpp:87 exifeditdialog.cpp:168
+msgid "A Plugin to edit pictures metadata"
+msgstr "Ett insticksprogram för att redigera metadata i bilder"
+
+#: commentremovedialog.cpp:103
+#, c-format
+msgid "Remove caption created by %1"
+msgstr "Ta bort rubrik skapad av %1"
+
+#: commentremovedialog.cpp:106
+msgid "Remove JFIF Comment section"
+msgstr "Ta bort JFIF-kommentarsektion"
+
+#: commentremovedialog.cpp:107
+msgid "Remove EXIF Comment"
+msgstr "Ta bort EXIF-kommentar"
+
+#: commentremovedialog.cpp:108
+msgid "Remove IPTC caption"
+msgstr "Ta bort IPTC-rubrik"
+
+#: commentremovedialog.cpp:110
+msgid ""
+"<b>Note: Captions from currently selected images will be permanently "
+"removed.</b>"
+msgstr ""
+"<b>Observera: Rubriker för bilderna som för närvarande är markerade kommer tas "
+"bort permanent.</b>"
+
+#: exifadjust.cpp:99
+msgid "Brightness (APEX):"
+msgstr "Ljusstyrka (APEX):"
+
+#: exifadjust.cpp:103
+msgid ""
+"<p>Set here the brightness adjustment value in APEX unit used by camera to take "
+"the picture."
+msgstr ""
+"<p>Ange inställningen av ljusstyrka i APEX enheter som användes av kameran för "
+"att ta bilden."
+
+#: exifadjust.cpp:108
+msgid "Gain Control:"
+msgstr "Förstärkningskontroll:"
+
+#: exifadjust.cpp:110
+msgid "None"
+msgstr "Ingen"
+
+#: exifadjust.cpp:111
+msgid "Low gain up"
+msgstr "Låg förstärkning upp"
+
+#: exifadjust.cpp:112
+msgid "High gain up"
+msgstr "Hög förstärkning upp"
+
+#: exifadjust.cpp:113
+msgid "Low gain down"
+msgstr "Låg förstärkning ner"
+
+#: exifadjust.cpp:114
+msgid "High gain down"
+msgstr "Hög förstärkning ner"
+
+#: exifadjust.cpp:117
+msgid ""
+"<p>Set here the degree of overall image gain adjustment used by camera to take "
+"the picture."
+msgstr ""
+"<p>Ange graden av övergripande justering av förstärkning som användes av "
+"kameran för att ta bilden."
+
+#: exifadjust.cpp:122
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: exifadjust.cpp:124 exifadjust.cpp:136 exifadjust.cpp:148
+msgid "Normal"
+msgstr "Normal"
+
+#: exifadjust.cpp:125 exifadjust.cpp:149
+msgid "Soft"
+msgstr "Låg"
+
+#: exifadjust.cpp:126 exifadjust.cpp:150
+msgid "Hard"
+msgstr "Hög"
+
+#: exifadjust.cpp:129
+msgid ""
+"<p>Set here the direction of contrast processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Ange typ av kontrastbehandling som utfördes av kameran för att ta bilden."
+
+#: exifadjust.cpp:134
+msgid "Saturation:"
+msgstr "Färgmättnad:"
+
+#: exifadjust.cpp:137
+msgid "Low"
+msgstr "Låg"
+
+#: exifadjust.cpp:138
+msgid "High"
+msgstr "Hög"
+
+#: exifadjust.cpp:141
+msgid ""
+"<p>Set here the direction of saturation processing applied by the camera to "
+"take the picture."
+msgstr ""
+"<p>Ange typ av färgmättnadsbehandling som utfördes av kameran för att ta "
+"bilden."
+
+#: exifadjust.cpp:146
+msgid "Sharpness:"
+msgstr "Skärpa:"
+
+#: exifadjust.cpp:153
+msgid ""
+"<p>Set here the direction of sharpness processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Ange typ av skärpebehandling som utfördes av kameran för att ta bilden."
+
+#: exifadjust.cpp:158
+msgid "Custom rendered:"
+msgstr "Egen återgivning:"
+
+#: exifadjust.cpp:160
+msgid "Normal process"
+msgstr "Normal process"
+
+#: exifadjust.cpp:161
+msgid "Custom process"
+msgstr "Egen process"
+
+#: exifadjust.cpp:164
+msgid ""
+"<p>Set here the use of special processing on image data, such as rendering "
+"geared to output."
+msgstr ""
+"<p>Ange användning av specialbehandling av bilddata här, såsom återgivning "
+"anpassad till utskrift."
+
+#: exifcaption.cpp:106
+msgid "Document name (*):"
+msgstr "Dokumentnamn (*):"
+
+#: exifcaption.cpp:111
+msgid ""
+"<p>Enter the name of the document from which this image was been scanned. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Ange namnet på dokumentet som bilden lästs in ifrån här. Fältet är begränsat "
+"till ASCII-tecken."
+
+#: exifcaption.cpp:117
+msgid "Image description (*):"
+msgstr "Bildbeskrivning (*):"
+
+#: exifcaption.cpp:122
+msgid "<p>Enter the image title. This field is limited to ASCII characters."
+msgstr "<p>Ange bildens titel. Fältet är begränsat till ASCII-tecken."
+
+#: exifcaption.cpp:127
+msgid "Artist (*):"
+msgstr "Artist (*):"
+
+#: exifcaption.cpp:132
+msgid ""
+"<p>Enter the image author's name. This field is limited to ASCII characters."
+msgstr ""
+"<p>Ange namn på upphovsmannen till bilden. Fältet är begränsat till "
+"ASCII-tecken."
+
+#: exifcaption.cpp:137
+msgid "Copyright (*):"
+msgstr "Copyright (*):"
+
+#: exifcaption.cpp:142
+msgid ""
+"<p>Enter the copyright owner of the image. This field is limited to ASCII "
+"characters."
+msgstr ""
+"<p>Ange innehavaren av bildens upphovsrätt här. Fältet är begränsat till "
+"ASCII-tecken."
+
+#: exifcaption.cpp:147 iptccaption.cpp:102
+msgid "Caption:"
+msgstr "Rubrik:"
+
+#: exifcaption.cpp:149
+msgid ""
+"<p>Enter the image's caption. This field is not limited. UTF8 encoding will be "
+"used to save the text."
+msgstr ""
+"<p>Ange bildens rubrik. Fältet är inte begränsat. UTF-8 kodning används för att "
+"spara text."
+
+#: exifcaption.cpp:153
+#, c-format
+msgid "Sync captions entered through %1"
+msgstr "Synkronisera rubriker inmatade via %1"
+
+#: exifcaption.cpp:168 exifdevice.cpp:338
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/EXIF'>EXIF</a></b> "
+"text tags marked by (*) only support printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> characters set.</b>"
+msgstr ""
+"<b>Observera: <a href='http://sv.wikipedia.org/wiki/Exif'>EXIF</a>"
+"-texttaggar markerade med (*) stöder bara den utskrivningsbara delen av "
+"teckenuppsättningen <a href='http://sv.wikipedia.org/wiki/ASCII'>ASCII</a>.</b>"
+
+#: exifdatetime.cpp:103
+msgid "Creation date and time"
+msgstr "Skapad datum och tid"
+
+#: exifdatetime.cpp:104
+msgid "Creation sub-second"
+msgstr "Skapad delsekund"
+
+#: exifdatetime.cpp:108 iptcdatetime.cpp:116
+#, c-format
+msgid "Sync creation date entered through %1"
+msgstr "Synkronisera skapad datum inmatad via %1"
+
+#: exifdatetime.cpp:111
+msgid "Sync IPTC creation date"
+msgstr "Synkronisera IPTC skapad datum"
+
+#: exifdatetime.cpp:122
+msgid ""
+"<p>Set here the date and time of image creation. In this standard it is the "
+"date and time the file was changed."
+msgstr ""
+"<p>Ange datum och tid då bilden skapades här. I denna standard är det datum och "
+"tid då filen ändrades."
+
+#: exifdatetime.cpp:124
+msgid ""
+"<p>Set here the fractions of seconds for the date and time of image creation."
+msgstr "<p>Ange delar av sekunder för datum och tid då bilden skapades här."
+
+#: exifdatetime.cpp:129
+msgid "Original date and time"
+msgstr "Originalets datum och tid"
+
+#: exifdatetime.cpp:130
+msgid "Original sub-second"
+msgstr "Originalets delsekund"
+
+#: exifdatetime.cpp:138
+msgid ""
+"<p>Set here the date and time when the original image data was generated. For a "
+"digital still camera the date and time the picture was taken are recorded."
+msgstr ""
+"<p>Ange datum och tid då originalbildens data skapades här. För en digital "
+"stillbildskamera är det datum och tid då bilden togs som lagras."
+
+#: exifdatetime.cpp:141
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the original "
+"image data was generated."
+msgstr ""
+"<p>Ange delar av sekunder för datum och tid då originalbildens data skapades "
+"här."
+
+#: exifdatetime.cpp:146
+msgid "Digitization date and time"
+msgstr "Digitaliseringsdatum och -tid"
+
+#: exifdatetime.cpp:147
+msgid "Digitization sub-second"
+msgstr "Digitaliseringsdelsekund"
+
+#: exifdatetime.cpp:155
+msgid ""
+"<p>Set here the date and time when the image was stored as digital data. If, "
+"for example, an image was captured by a digital still camera and at the same "
+"time the file was recorded, then Original and Digitization date and time will "
+"have the same contents."
+msgstr ""
+"<p>Ange datum och tid då bilden lagrades som digital data. Om en bild till "
+"exempel togs av en digital stillbildskamera och filen lagrades samtidigt, "
+"kommer datum och tid för original och digitalisering att ha samma innehåll."
+
+#: exifdatetime.cpp:160
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the image was "
+"stored as digital data."
+msgstr ""
+"<p>Ange delar av sekunder för datum och tid när bilden lagrades som digital "
+"data här."
+
+#: exifdevice.cpp:134
+msgid "Device manufacturer (*):"
+msgstr "Enhetens tillverkare (*):"
+
+#: exifdevice.cpp:139
+msgid ""
+"<p>Set here the manufacturer of image input equipment used to take the picture. "
+"This field is limited to ASCII characters."
+msgstr ""
+"<p>Ange tillverkaren av bildinläsningsutrustningen som användes för att ta "
+"bilden här. Fältet är begränsat till ASCII-tecken."
+
+#: exifdevice.cpp:144
+msgid "Device model (*):"
+msgstr "Enhetens modell (*):"
+
+#: exifdevice.cpp:149
+msgid ""
+"<p>Set here the model of image input equipment used to take the picture. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Ange bildinläsningsutrustningens modell som användes för att ta bilden här. "
+"Fältet är begränsat till ASCII-tecken."
+
+#: exifdevice.cpp:154
+msgid "Device type:"
+msgstr "Enhetens typ:"
+
+#: exifdevice.cpp:156
+msgid "Film scanner"
+msgstr "Filmläsare"
+
+#: exifdevice.cpp:157
+msgid "Reflection print scanner"
+msgstr "Bildläsare för trycksaker"
+
+#: exifdevice.cpp:158
+msgid "Digital still camera"
+msgstr "Digital stillbildskamera"
+
+#: exifdevice.cpp:161
+msgid "<p>Select here the image input equipment type used to take the picture."
+msgstr ""
+"<p>Ange typ av bildinläsningsutrustning som användes för att ta bilden."
+
+#: exifdevice.cpp:164
+msgid ""
+"<b>Warning: EXIF <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data"
+"'>Makernotes</a></b> can be unreadable if you set wrong device "
+"manufacturer/model description.</b>"
+msgstr ""
+"<b>Varning: EXIF <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data"
+"'>Tillverkaranmärkningar</a></b> kan vara oläsbara om du anger fel beskrivning "
+"av enhet, tillverkare eller modell.</b>"
+
+#: exifdevice.cpp:175
+msgid "Exposure time (seconds):"
+msgstr "Exponeringstid (sekunder):"
+
+#: exifdevice.cpp:184
+msgid ""
+"<p>Set on this option to set the exposure time of picture, given in seconds."
+msgstr ""
+"<p>Aktivera alternativet för att ange exponeringstid för en bild, angiven i "
+"sekunder."
+
+#: exifdevice.cpp:189
+msgid "Exposure program:"
+msgstr "Exponeringsprogram:"
+
+#: exifdevice.cpp:191 exifdevice.cpp:298
+msgid "Not defined"
+msgstr "Inte definierat"
+
+#: exifdevice.cpp:192 exifdevice.cpp:210 exiflight.cpp:194
+msgid "Manual"
+msgstr "Manuellt"
+
+#: exifdevice.cpp:193 exifdevice.cpp:209 exiflight.cpp:193
+msgid "Auto"
+msgstr "Automatiskt"
+
+#: exifdevice.cpp:194
+msgid "Aperture priority"
+msgstr "Bländarprioritet"
+
+#: exifdevice.cpp:195
+msgid "Shutter priority"
+msgstr "Slutarprioritet"
+
+#: exifdevice.cpp:196
+msgid "Creative program"
+msgstr "Kreativt program"
+
+#: exifdevice.cpp:197
+msgid "Action program"
+msgstr "Rörelseprogram"
+
+#: exifdevice.cpp:198
+msgid "Portrait mode"
+msgstr "Porträttläge"
+
+#: exifdevice.cpp:199
+msgid "Landscape mode"
+msgstr "Landskapsläge"
+
+#: exifdevice.cpp:202
+msgid ""
+"<p>Select here the program used by the camera to set exposure when the picture "
+"have been taken."
+msgstr ""
+"<p>Ange programmet som användes av kameran för att ställa in exponeringen när "
+"bilden togs här."
+
+#: exifdevice.cpp:207
+msgid "Exposure mode:"
+msgstr "Exponeringsläge:"
+
+#: exifdevice.cpp:211
+msgid "Auto bracket"
+msgstr "Automatiskt inringning"
+
+#: exifdevice.cpp:214
+msgid ""
+"<p>Select here the mode used by the camera to set exposure when the picture "
+"have been shot. In auto-bracketing mode, the camera shoots a series of frames "
+"of the same scene at different exposure settings."
+msgstr ""
+"<p>Ange läget som kameran använde för att ställa in exponeringen när bilden "
+"togs. I automatiskt inringningsläge tar kameran en följd med bilder av samma "
+"motiv med olika exponeringsinställningar."
+
+#: exifdevice.cpp:222
+msgid "Exposure bias (APEX):"
+msgstr "Exponeringsavvikelse (APEX):"
+
+#: exifdevice.cpp:226
+msgid ""
+"<p>Set here the exposure bias value in APEX unit used by camera to take the "
+"picture."
+msgstr ""
+"<p>Ange exponeringsavvikelse i APEX enheter som användes av kameran för att ta "
+"bilden."
+
+#: exifdevice.cpp:234
+msgid "Metering mode:"
+msgstr "Måttläge"
+
+#: exifdevice.cpp:236 exiflight.cpp:137
+msgid "Unknown"
+msgstr "Okänt"
+
+#: exifdevice.cpp:237
+msgid "Average"
+msgstr "Medelvärde"
+
+#: exifdevice.cpp:238
+msgid "Center weighted average"
+msgstr "Centrerat viktat medelvärde"
+
+#: exifdevice.cpp:239
+msgid "Spot"
+msgstr "Punkt"
+
+#: exifdevice.cpp:240
+msgid "Multi-spot"
+msgstr "Flera punkter"
+
+#: exifdevice.cpp:241
+msgid "Multi-segment"
+msgstr "Flera segment"
+
+#: exifdevice.cpp:242
+msgid "Partial"
+msgstr "Delvis"
+
+#: exifdevice.cpp:243
+msgid "Other"
+msgstr "Annat"
+
+#: exifdevice.cpp:246
+msgid ""
+"<p>Select here the metering mode used by the camera to set exposure when the "
+"picture have been shot."
+msgstr ""
+"<p>Ange mätarläget som användes av kameran för att ställa in exponeringen när "
+"bilden togs här."
+
+#: exifdevice.cpp:251
+msgid "Sensitivity (ISO):"
+msgstr "Känslighet (ISO):"
+
+#: exifdevice.cpp:291
+msgid ""
+"<p>Select here the ISO Speed of the camera witch have taken the picture."
+msgstr "<p>Ange känsligheten i ISO för kameran som bilden togs med."
+
+#: exifdevice.cpp:296
+msgid "Sensing method:"
+msgstr "Avbildningsmetod:"
+
+#: exifdevice.cpp:299
+msgid "One-chip color area"
+msgstr "Färgområde med en krets"
+
+#: exifdevice.cpp:300
+msgid "Two-chip color area"
+msgstr "Färgområde med två kretsar"
+
+#: exifdevice.cpp:301
+msgid "Three-chip color area"
+msgstr "Färgområde med tre kretsar"
+
+#: exifdevice.cpp:302
+msgid "Color sequential area"
+msgstr "Färgområde i sekvens"
+
+#: exifdevice.cpp:303
+msgid "Trilinear sensor"
+msgstr "Trilinjär sensor"
+
+#: exifdevice.cpp:304
+msgid "Color sequential linear"
+msgstr "Färglinjär i sekvens"
+
+#: exifdevice.cpp:307
+msgid ""
+"<p>Select here the image sensor type used by the camera to take the picture."
+msgstr "<p>Ange typ av bildsensor som användes av kameran för att ta bilden."
+
+#: exifdevice.cpp:312
+msgid "Scene capture type:"
+msgstr "Scentagningstyp:"
+
+#: exifdevice.cpp:314
+msgid "Standard"
+msgstr "Standard"
+
+#: exifdevice.cpp:317
+msgid "Night scene"
+msgstr "Nattscen"
+
+#: exifdevice.cpp:320
+msgid ""
+"<p>Select here the type of scene used by the camera to take the picture."
+msgstr "<p>Ange typ av scen som användes av kameran för att ta bilden."
+
+#: exifdevice.cpp:325
+msgid "Subject distance type:"
+msgstr "Motivets avståndstyp:"
+
+#: exifdevice.cpp:327
+msgid "Unknow"
+msgstr "Okänd"
+
+#: exifdevice.cpp:328
+msgid "Macro"
+msgstr "Makro"
+
+#: exifdevice.cpp:329
+msgid "Close view"
+msgstr "Närbild"
+
+#: exifdevice.cpp:330
+msgid "Distant view"
+msgstr "Fjärrbild"
+
+#: exifdevice.cpp:333
+msgid ""
+"<p>Select here the type of distance between the subject and the image input "
+"equipment."
+msgstr "<p>Välj avståndstyp mellan motivet och avbildningsutrustningen här."
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption"
+msgstr "Rubrik"
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption Information"
+msgstr "Rubrikinformation"
+
+#: exifeditdialog.cpp:142 iptceditdialog.cpp:150
+msgid "Date & Time"
+msgstr "Datum och tid"
+
+#: exifeditdialog.cpp:142
+msgid "Date and Time"
+msgstr "Datum och tid"
+
+#: exifeditdialog.cpp:146
+msgid "Lens"
+msgstr "Lins"
+
+#: exifeditdialog.cpp:146
+msgid "Lens Settings"
+msgstr "Linsinställningar"
+
+#: exifeditdialog.cpp:150
+msgid "Device"
+msgstr "Enhet"
+
+#: exifeditdialog.cpp:150
+msgid "Capture Device Settings"
+msgstr "Avbildningsenheten inställningar"
+
+#: exifeditdialog.cpp:154
+msgid "Light"
+msgstr "Ljus"
+
+#: exifeditdialog.cpp:154
+msgid "Light Source Information"
+msgstr "Information om ljuskälla"
+
+#: exifeditdialog.cpp:158
+msgid "Adjustments"
+msgstr "Justeringar"
+
+#: exifeditdialog.cpp:158
+msgid "Pictures Adjustments"
+msgstr "Bildjustering"
+
+#: exifeditdialog.cpp:283
+msgid "Edit EXIF Metadata"
+msgstr "Redigera EXIF metadata"
+
+#: exifeditdialog.cpp:284 iptceditdialog.cpp:310
+msgid "(read only)"
+msgstr "(skrivskyddad)"
+
+#: exiflens.cpp:157
+msgid "Focal length (mm):"
+msgstr "Brännvidd (mm):"
+
+#: exiflens.cpp:161
+msgid ""
+"<p>Set here the lens focal length in milimeters used by camera to take the "
+"picture."
+msgstr ""
+"<p>Ange linsens brännvidd i millimeter som användes av kameran för att ta "
+"bilden."
+
+#: exiflens.cpp:166
+msgid "Focal length in 35mm film (mm):"
+msgstr "Brännvidd för 35 mm film (mm):"
+
+#: exiflens.cpp:170
+msgid ""
+"<p>Set here equivalent focal length assuming a 35mm film camera, in mm. A value "
+"of 0 means the focal length is unknown."
+msgstr ""
+"<p>Ange motsvarande brännvid med en tänkt 35 mm filmkamera, i mm. Värdet 0 "
+"betyder att brännvidden är okänd."
+
+#: exiflens.cpp:176
+msgid "Digital zoom ratio:"
+msgstr "Digitalt zoomförhållande:"
+
+#: exiflens.cpp:180
+msgid "<p>Set here the digital zoom ratio used by camera to take the picture."
+msgstr ""
+"<p>Ange digitalt zoomförhållande som användes av kameran för att ta bilden."
+
+#: exiflens.cpp:185
+msgid "Lens aperture (f-number):"
+msgstr "Linsens bländare (f-nummer):"
+
+#: exiflens.cpp:190
+msgid "<p>Select here the lens aperture used by camera to take the picture."
+msgstr "<p>Ange linsens bländare som användes av kameran för att ta bilden."
+
+#: exiflens.cpp:195
+msgid "Max. lens aperture (f-number):"
+msgstr "Linsens maximala bländare (f-nummer):"
+
+#: exiflens.cpp:200
+msgid ""
+"<p>Select here the smallest aperture of the lens used by camera to take the "
+"picture."
+msgstr ""
+"<p>Ange den minsta bländaren för linsen som användes av kameran för att ta "
+"bilden."
+
+#: exiflight.cpp:85
+msgid "No flash"
+msgstr "Ingen blixt"
+
+#: exiflight.cpp:86
+msgid "Fired"
+msgstr "Utlöst"
+
+#: exiflight.cpp:87
+msgid "Fired, no strobe return light"
+msgstr "Utlöst, inget återsänt ljus"
+
+#: exiflight.cpp:88
+msgid "Fired, strobe return light"
+msgstr "Utlöst, återsänt ljus"
+
+#: exiflight.cpp:89
+msgid "Yes, compulsory"
+msgstr "Ja, obligatorisk"
+
+#: exiflight.cpp:90
+msgid "Yes, compulsory, no return light"
+msgstr "Ja, obligatorisk, inget återsänt ljus"
+
+#: exiflight.cpp:91
+msgid "Yes, compulsory, return light"
+msgstr "Ja, obligatorisk, återsänt ljus"
+
+#: exiflight.cpp:92
+msgid "No, compulsory"
+msgstr "Nej, obligatorisk"
+
+#: exiflight.cpp:93
+msgid "No, auto"
+msgstr "Nej, automatisk"
+
+#: exiflight.cpp:94
+msgid "Yes, auto"
+msgstr "Ja, automatisk"
+
+#: exiflight.cpp:95
+msgid "Yes, auto, no return light"
+msgstr "Ja, automatisk, inget återsänt ljus"
+
+#: exiflight.cpp:96
+msgid "Yes, auto, return light"
+msgstr "Ja, automatisk, återsänt ljus"
+
+#: exiflight.cpp:97
+msgid "No flash function"
+msgstr "Ingen blixtfunktion"
+
+#: exiflight.cpp:98
+msgid "Yes, red-eye"
+msgstr "Ja, röda ögon"
+
+#: exiflight.cpp:99
+msgid "Yes, red-eye, no return light"
+msgstr "Ja, röda ögon, inget återsänt ljus"
+
+#: exiflight.cpp:100
+msgid "Yes, red-eye, return light"
+msgstr "Ja, röda ögon, återsänt ljus"
+
+#: exiflight.cpp:101
+msgid "Yes, compulsory, red-eye"
+msgstr "Ja, obligatorisk, röda ögon"
+
+#: exiflight.cpp:102
+msgid "Yes, compulsory, red-eye, no return light"
+msgstr "Ja, obligatorisk, röda ögon, inget återsänt ljus"
+
+#: exiflight.cpp:103
+msgid "Yes, compulsory, red-eye, return light"
+msgstr "Ja, obligatorisk, röda ögon, återsänt ljus"
+
+#: exiflight.cpp:104
+msgid "Yes, auto, red-eye"
+msgstr "Ja, automatisk, röda ögon"
+
+#: exiflight.cpp:105
+msgid "Yes, auto, red-eye, no return light"
+msgstr "Ja, automatisk, röda ögon, inget återsänt ljus"
+
+#: exiflight.cpp:106
+msgid "Yes, auto, red-eye, return light"
+msgstr "Ja, automatisk, röda ögon, återsänt ljus"
+
+#: exiflight.cpp:135
+msgid "Light source:"
+msgstr "Ljuskälla:"
+
+#: exiflight.cpp:138
+msgid "Daylight"
+msgstr "Dagsljus"
+
+#: exiflight.cpp:139
+msgid "Fluorescent"
+msgstr "Fluorescerande"
+
+#: exiflight.cpp:140
+msgid "Tungsten (incandescent light)"
+msgstr "Wolfram (glödlampsljus)"
+
+#: exiflight.cpp:141
+msgid "Flash"
+msgstr "Blixt"
+
+#: exiflight.cpp:142
+msgid "Fine weather"
+msgstr "Vackert väder"
+
+#: exiflight.cpp:143
+msgid "Cloudy weather"
+msgstr "Molnigt väder"
+
+#: exiflight.cpp:144
+msgid "Shade"
+msgstr "Skugga"
+
+#: exiflight.cpp:145
+msgid "Daylight fluorescent (D 5700 - 7100K)"
+msgstr "Dagsljus fluorescerande (D 5700 - 7100K)"
+
+#: exiflight.cpp:146
+msgid "Day white fluorescent (N 4600 - 5400K)"
+msgstr "Dagsljus vitt fluorescerande (N 4600 - 5400K)"
+
+#: exiflight.cpp:147
+msgid "Cool white fluorescent (W 3900 - 4500K)"
+msgstr "Kallt vitt fluorescerande (W 3900 - 4500K)"
+
+#: exiflight.cpp:148
+msgid "White fluorescent (WW 3200 - 3700K)"
+msgstr "Vitt fluorescerande (WW 3200 - 3700K)"
+
+#: exiflight.cpp:149
+msgid "Standard light A"
+msgstr "Standardljus A"
+
+#: exiflight.cpp:150
+msgid "Standard light B"
+msgstr "Standardljus B"
+
+#: exiflight.cpp:151
+msgid "Standard light C"
+msgstr "Standardljus C"
+
+#: exiflight.cpp:152
+msgid "D55"
+msgstr "D55"
+
+#: exiflight.cpp:153
+msgid "D65"
+msgstr "D65"
+
+#: exiflight.cpp:154
+msgid "D75"
+msgstr "D75"
+
+#: exiflight.cpp:155
+msgid "D50"
+msgstr "D50"
+
+#: exiflight.cpp:156
+msgid "ISO studio tungsten"
+msgstr "ISO studio wolfram"
+
+#: exiflight.cpp:157
+msgid "Other light source"
+msgstr "Annan ljuskälla"
+
+#: exiflight.cpp:160
+msgid "<p>Select here the kind of light source used to take the picture."
+msgstr "<p>Ange typ av ljuskälla som användes för att ta bilden."
+
+#: exiflight.cpp:165
+msgid "Flash mode:"
+msgstr "Blixtläge:"
+
+#: exiflight.cpp:174
+msgid ""
+"<p>Select here the flash program mode used by camera to take the picture."
+msgstr "<p>Ange blixtprogramläge som användes av kameran för att ta bilden."
+
+#: exiflight.cpp:179
+msgid "Flash energy (BCPS):"
+msgstr "Blixtenergi (BCPS):"
+
+#: exiflight.cpp:183
+msgid ""
+"<p>Set here the flash energy used to take the picture in BCPS unit. Beam Candle "
+"Power Seconds is the measure of effective intensity of a light source when it "
+"is focused into a beam by a reflector or lens. This value is the effective "
+"intensity for a period of one second."
+msgstr ""
+"<p>Ange blixtenergin som användes för att ta bilden i BCPS enheter här. BCPS "
+"(Beam Candle Power Seconds) är måttet på reell styrka hos en ljuskälla när den "
+"fokuseras i en stråle av en reflektor eller lins. Värdet är den reella styrkan "
+"under en tidsperiod av en sekund."
+
+#: exiflight.cpp:191
+msgid "White balance:"
+msgstr "Vitbalans:"
+
+#: exiflight.cpp:197
+msgid ""
+"<p>Select here the white balance mode set by camera when the picture have been "
+"shot."
+msgstr ""
+"<p>Ange vitbalansläget inställt av kameran efter bilden har tagits här."
+
+#: iptccaption.cpp:105
+#, c-format
+msgid "Sync caption entered through %1"
+msgstr "Synkronisera rubrik inmatad via %1"
+
+#: iptccaption.cpp:119
+msgid ""
+"<p>Enter the content description. This field is limited to 2000 ASCII "
+"characters."
+msgstr ""
+"<p>Ange beskrivningen av innehållet. Fältet är begränsat till 2000 "
+"ASCII-tecken."
+
+#: iptccaption.cpp:124
+msgid "Caption Writer:"
+msgstr "Rubrikförfattare:"
+
+#: iptccaption.cpp:130
+msgid ""
+"<p>Enter the name of the caption author. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ange namnet på upphovsmannen till rubriken. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptccaption.cpp:135
+msgid "Headline:"
+msgstr "Överskrift:"
+
+#: iptccaption.cpp:141
+msgid ""
+"<p>Enter here the content synopsis. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Ange en sammanfattning av innehållet här. Fältet är begränsat till 256 "
+"ASCII-tecken."
+
+#: iptccaption.cpp:146
+msgid "Special Instructions:"
+msgstr "Särskilda instruktioner:"
+
+#: iptccaption.cpp:152
+msgid ""
+"<p>Enter the editorial usage instructions. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Ange redaktionell användningsinstruktion. Fältet är begränsat till 256 "
+"ASCII-tecken."
+
+#: iptccaption.cpp:157 iptccategories.cpp:129 iptccredits.cpp:165
+#: iptckeywords.cpp:116 iptcorigin.cpp:437 iptcstatus.cpp:207
+#: iptcsubjects.cpp:116
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"text tags only support the printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"characters set and limit strings size. Use contextual help for details.</b>"
+msgstr ""
+"<b>Observera: <a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a>"
+"-texttaggar stöder bara den utskrivningsbara delen av teckenuppsättningen <a "
+"href='http://sv.wikipedia.org/wiki/ASCII'>ASCII</a>, och begränsade "
+"stränglängder. Använd den sammanhangsberoende hjälpen för detaljerad "
+"information.</b>"
+
+#: iptccategories.cpp:95
+msgid "Identify subject of content (3 chars max):"
+msgstr "Identifiera innehållets motiv (maximalt tre tecken):"
+
+#: iptccategories.cpp:99
+msgid ""
+"<p>Set here the category of content. This field is limited to 3 ASCII "
+"characters."
+msgstr ""
+"<p>Ange innehållets kategori här. Fältet är begränsat till 3 ASCII-tecken."
+
+#: iptccategories.cpp:102
+msgid "Supplemental categories:"
+msgstr "Kompletterande kategorier:"
+
+#: iptccategories.cpp:107
+msgid ""
+"<p>Enter here a new supplemental category of content. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Ange en ny kompletterande kategori för innehållet. Fältet är begränsat till "
+"32 ASCII-tecken."
+
+#: iptccategories.cpp:113 iptckeywords.cpp:102 iptcsubjects.cpp:102
+msgid "&Add"
+msgstr "&Lägg till"
+
+#: iptccredits.cpp:99
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: iptccredits.cpp:105
+msgid ""
+"<p>Set here the necessary copyright notice. This field is limited to 128 ASCII "
+"characters."
+msgstr ""
+"<p>Ange nödvändig copyright här. Fältet är begränsat till 128 ASCII-tecken."
+
+#: iptccredits.cpp:110
+msgid "Byline:"
+msgstr "Byline:"
+
+#: iptccredits.cpp:116
+msgid ""
+"<p>Set here the name of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ange namnet på den som skapat innehållet här. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptccredits.cpp:121
+msgid "Byline Title:"
+msgstr "Byline titel:"
+
+#: iptccredits.cpp:127
+msgid ""
+"<p>Set here the title of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ange titel på den som skapat innehållet här. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptccredits.cpp:132
+msgid "Credit:"
+msgstr "Erkännande:"
+
+#: iptccredits.cpp:138
+msgid ""
+"<p>Set here the content provider. This field is limited to 32 ASCII characters."
+msgstr ""
+"<p>Ange den som tillhandahållit innehållet här. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptccredits.cpp:143
+msgid "Source:"
+msgstr "Källa:"
+
+#: iptccredits.cpp:149
+msgid ""
+"<p>Set here the original owner of content. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ange den ursprungliga ägaren av innehållet. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptccredits.cpp:154
+msgid "Contact:"
+msgstr "Kontakt:"
+
+#: iptccredits.cpp:160
+msgid ""
+"<p>Set here the person or organisation to contact. This field is limited to 128 "
+"ASCII characters."
+msgstr ""
+"<p>Ange personen eller organisationen att kontakta här. Fältet är begränsat "
+"till 128 ASCII-tecken."
+
+#: iptcdatetime.cpp:112
+msgid "Creation date"
+msgstr "Skapad datum"
+
+#: iptcdatetime.cpp:113
+msgid "Creation time"
+msgstr "Skapad tid"
+
+#: iptcdatetime.cpp:119
+msgid "Sync EXIF creation date"
+msgstr "Synkronisera EXIF skapad datum"
+
+#: iptcdatetime.cpp:130
+msgid "<p>Set here the creation date of intellectual content."
+msgstr "<p>Ange datum det upphovsrättsliga innehållet skapades här."
+
+#: iptcdatetime.cpp:132
+msgid "<p>Set here the creation time of intellectual content."
+msgstr "<p>Ange tid det upphovsrättsliga innehållet skapades här."
+
+#: iptcdatetime.cpp:137
+msgid "Release date"
+msgstr "Utgivningsdatum"
+
+#: iptcdatetime.cpp:138
+msgid "Release time"
+msgstr "Utgivningstid"
+
+#: iptcdatetime.cpp:147
+msgid "<p>Set here the earliest intended usable date of intellectual content."
+msgstr ""
+"<p>Ange tidigast avsedda datum för användning av det upphovsrättsliga "
+"innehållet här."
+
+#: iptcdatetime.cpp:149
+msgid "<p>Set here the earliest intended usable time of intellectual content."
+msgstr ""
+"<p>Ange tidigast avsedda tid för användning av det upphovsrättsliga innehållet "
+"här."
+
+#: iptcdatetime.cpp:154
+msgid "Expiration date"
+msgstr "Utgångsdatum"
+
+#: iptcdatetime.cpp:155
+msgid "Expiration time"
+msgstr "Utgångstid"
+
+#: iptcdatetime.cpp:164
+msgid "<p>Set here the latest intended usable date of intellectual content."
+msgstr ""
+"<p>Ange senast avsedda datum för användning av det upphovsrättsliga innehållet "
+"här."
+
+#: iptcdatetime.cpp:166
+msgid "<p>Set here the latest intended usable time of intellectual content."
+msgstr ""
+"<p>Ange senast avsedda tid för användning av det upphovsrättsliga innehållet "
+"här."
+
+#: iptcdatetime.cpp:171
+msgid "Digitization date"
+msgstr "Digitaliseringsdatum"
+
+#: iptcdatetime.cpp:172
+msgid "Digitization time"
+msgstr "Digitaliseringstid"
+
+#: iptcdatetime.cpp:181
+msgid "<p>Set here the creation date of digital representation."
+msgstr "<p>Ange datum den digitala representationen skapades här."
+
+#: iptcdatetime.cpp:183
+msgid "<p>Set here the creation time of digital representation."
+msgstr "<p>Ange tid den digitala representationen skapades här."
+
+#: iptceditdialog.cpp:150
+msgid "Date and Time Information"
+msgstr "Information om datum och tid"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects"
+msgstr "Motiv"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects Information"
+msgstr "Motivinformation"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords"
+msgstr "Nyckelord"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords Information"
+msgstr "Nyckelordsinformation"
+
+#: iptceditdialog.cpp:162
+msgid "Categories"
+msgstr "Kategorier"
+
+#: iptceditdialog.cpp:162
+msgid "Categories Information"
+msgstr "Kategori-information"
+
+#: iptceditdialog.cpp:166
+msgid "Credits"
+msgstr "Erkännanden"
+
+#: iptceditdialog.cpp:166
+msgid "Credits Information"
+msgstr "Information om erkännanden"
+
+#: iptceditdialog.cpp:170
+msgid "Status"
+msgstr "Status"
+
+#: iptceditdialog.cpp:170
+msgid "Status Information"
+msgstr "Statusinformation"
+
+#: iptceditdialog.cpp:174
+msgid "Origin"
+msgstr "Ursprung"
+
+#: iptceditdialog.cpp:174
+msgid "Origin Information"
+msgstr "Ursprungsinformation"
+
+#: iptceditdialog.cpp:184
+msgid "A Plugin to edit image metadata"
+msgstr "Ett insticksprogram för att redigera metadata i bilder"
+
+#: iptceditdialog.cpp:309
+msgid "Edit IPTC Metadata"
+msgstr "Redigera IPTC metadata"
+
+#: iptckeywords.cpp:91
+msgid "Use information retrieval words:"
+msgstr "Använd informationssökningsord:"
+
+#: iptckeywords.cpp:96
+msgid ""
+"<p>Enter here a new keyword. This field is limited to 64 ASCII characters."
+msgstr ""
+"<p>Ange ett nytt nyckelord här. Fältet är begränsat till 64 ASCII-tecken."
+
+#: iptcorigin.cpp:76
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: iptcorigin.cpp:77
+msgid "Albania"
+msgstr "Albanien"
+
+#: iptcorigin.cpp:78
+msgid "Algeria"
+msgstr "Algeriet"
+
+#: iptcorigin.cpp:79
+msgid "American Samoa"
+msgstr "Amerikanska Samoa"
+
+#: iptcorigin.cpp:80
+msgid "Andorra"
+msgstr "Andorra"
+
+#: iptcorigin.cpp:81 iptcorigin.cpp:83
+msgid "Angola"
+msgstr "Angola"
+
+#: iptcorigin.cpp:82
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: iptcorigin.cpp:84
+msgid "Antarctica"
+msgstr "Antarktis"
+
+#: iptcorigin.cpp:85
+msgid "Antigua and Barbuda"
+msgstr "Antigua och Barbuda"
+
+#: iptcorigin.cpp:86
+msgid "Argentina"
+msgstr "Argentina"
+
+#: iptcorigin.cpp:87
+msgid "Armenia"
+msgstr "Armenien"
+
+#: iptcorigin.cpp:88
+msgid "Aruba"
+msgstr "Aruba"
+
+#: iptcorigin.cpp:89
+msgid "Australia"
+msgstr "Australien"
+
+#: iptcorigin.cpp:90
+msgid "Austria"
+msgstr "Österrike"
+
+#: iptcorigin.cpp:91
+msgid "Azerbaijan"
+msgstr "Azerbajdzjan"
+
+#: iptcorigin.cpp:92
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: iptcorigin.cpp:93
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: iptcorigin.cpp:94
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: iptcorigin.cpp:95
+msgid "Barbados"
+msgstr "Barbados"
+
+#: iptcorigin.cpp:96
+msgid "Belarus"
+msgstr "Vitryssland"
+
+#: iptcorigin.cpp:97
+msgid "Belgium"
+msgstr "Belgien"
+
+#: iptcorigin.cpp:98
+msgid "Belize"
+msgstr "Belize"
+
+#: iptcorigin.cpp:99
+msgid "Benin"
+msgstr "Benin"
+
+#: iptcorigin.cpp:100
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: iptcorigin.cpp:101
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: iptcorigin.cpp:102
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: iptcorigin.cpp:103
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnien-Hercegovina"
+
+#: iptcorigin.cpp:104
+msgid "Botswana"
+msgstr "Botswana"
+
+#: iptcorigin.cpp:105
+msgid "Bouvet Island"
+msgstr "Bouvetön"
+
+#: iptcorigin.cpp:106
+msgid "Brazil"
+msgstr "Brasilien"
+
+#: iptcorigin.cpp:107
+msgid "British Indian Ocean Territory"
+msgstr "Brittiska territoriet i Indiska Oceanen"
+
+#: iptcorigin.cpp:108
+msgid "British Virgin Islands"
+msgstr "Brittiska jungfruöarna"
+
+#: iptcorigin.cpp:109
+msgid "Brunei Darussalam"
+msgstr "Brunei Darussalam"
+
+#: iptcorigin.cpp:110
+msgid "Bulgaria"
+msgstr "Bulgarien"
+
+#: iptcorigin.cpp:111
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: iptcorigin.cpp:112
+msgid "Burundi"
+msgstr "Burundi"
+
+#: iptcorigin.cpp:113
+msgid "Cambodia"
+msgstr "Kambodja"
+
+#: iptcorigin.cpp:114
+msgid "Cameroon"
+msgstr "Kamerun"
+
+#: iptcorigin.cpp:115
+msgid "Canada"
+msgstr "Kanada"
+
+#: iptcorigin.cpp:116
+msgid "Cape Verde"
+msgstr "Kap Verde"
+
+#: iptcorigin.cpp:117
+msgid "Cayman Islands"
+msgstr "Caymanöarna"
+
+#: iptcorigin.cpp:118
+msgid "Central African Republic"
+msgstr "Centralafrikanska Republiken"
+
+#: iptcorigin.cpp:119
+msgid "Chad"
+msgstr "Tchad"
+
+#: iptcorigin.cpp:120
+msgid "Chile"
+msgstr "Chile"
+
+#: iptcorigin.cpp:121
+msgid "China"
+msgstr "Kina"
+
+#: iptcorigin.cpp:122
+msgid "Christmas Island "
+msgstr "Julön"
+
+#: iptcorigin.cpp:123
+msgid "Cocos Islands"
+msgstr "Kokosöarna"
+
+#: iptcorigin.cpp:124
+msgid "Colombia"
+msgstr "Colombia"
+
+#: iptcorigin.cpp:125
+msgid "Comoros"
+msgstr "Comorerna"
+
+#: iptcorigin.cpp:126
+msgid "Zaire"
+msgstr "Zaire"
+
+#: iptcorigin.cpp:127
+msgid "Congo"
+msgstr "Kongo"
+
+#: iptcorigin.cpp:128
+msgid "Cook Islands"
+msgstr "Cooköarna"
+
+#: iptcorigin.cpp:129
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: iptcorigin.cpp:130
+msgid "Ivory Coast"
+msgstr "Elfenbenskusten"
+
+#: iptcorigin.cpp:131
+msgid "Cuba"
+msgstr "Kuba"
+
+#: iptcorigin.cpp:132
+msgid "Cyprus"
+msgstr "Cypern"
+
+#: iptcorigin.cpp:133
+msgid "Czech Republic"
+msgstr "Tjeckien"
+
+#: iptcorigin.cpp:134
+msgid "Denmark"
+msgstr "Danmark"
+
+#: iptcorigin.cpp:135
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: iptcorigin.cpp:136
+msgid "Dominica"
+msgstr "Dominica"
+
+#: iptcorigin.cpp:137
+msgid "Dominican Republic"
+msgstr "Dominikanska Republiken"
+
+#: iptcorigin.cpp:138
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: iptcorigin.cpp:139
+msgid "Egypt"
+msgstr "Egypten"
+
+#: iptcorigin.cpp:140
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: iptcorigin.cpp:141
+msgid "Equatorial Guinea"
+msgstr "Ekvatorialguinea"
+
+#: iptcorigin.cpp:142
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: iptcorigin.cpp:143
+msgid "Estonia"
+msgstr "Estland"
+
+#: iptcorigin.cpp:144
+msgid "Ethiopia"
+msgstr "Etiopien"
+
+#: iptcorigin.cpp:145
+msgid "Faeroe Islands"
+msgstr "Färöarna"
+
+#: iptcorigin.cpp:146
+msgid "Falkland Islands"
+msgstr "Falklandsöarna"
+
+#: iptcorigin.cpp:147
+msgid "Fiji Islands"
+msgstr "Fiji"
+
+#: iptcorigin.cpp:148
+msgid "Finland"
+msgstr "Finland"
+
+#: iptcorigin.cpp:149
+msgid "France"
+msgstr "Frankrike"
+
+#: iptcorigin.cpp:150
+msgid "French Guiana"
+msgstr "Franska Guyana"
+
+#: iptcorigin.cpp:151
+msgid "French Polynesia"
+msgstr "Franska Polynesien"
+
+#: iptcorigin.cpp:152
+msgid "French Southern Territories"
+msgstr "Franska södra territorierna"
+
+#: iptcorigin.cpp:153
+msgid "Gabon"
+msgstr "Gabon"
+
+#: iptcorigin.cpp:154
+msgid "Gambia"
+msgstr "Gambia"
+
+#: iptcorigin.cpp:155
+msgid "Georgia"
+msgstr "Georgien"
+
+#: iptcorigin.cpp:156
+msgid "Germany"
+msgstr "Tyskland"
+
+#: iptcorigin.cpp:157
+msgid "Ghana"
+msgstr "Ghana"
+
+#: iptcorigin.cpp:158
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: iptcorigin.cpp:159
+msgid "Greece"
+msgstr "Grekland"
+
+#: iptcorigin.cpp:160
+msgid "Greenland"
+msgstr "Grönland"
+
+#: iptcorigin.cpp:161
+msgid "Grenada"
+msgstr "Grenada"
+
+#: iptcorigin.cpp:162
+msgid "Guadaloupe"
+msgstr "Guadeloupe"
+
+#: iptcorigin.cpp:163
+msgid "Guam"
+msgstr "Guam"
+
+#: iptcorigin.cpp:164
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: iptcorigin.cpp:165
+msgid "Guinea"
+msgstr "Guinea"
+
+#: iptcorigin.cpp:166
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: iptcorigin.cpp:167
+msgid "Guyana"
+msgstr "Guyana"
+
+#: iptcorigin.cpp:168
+msgid "Haiti"
+msgstr "Haiti"
+
+#: iptcorigin.cpp:169
+msgid "Heard and McDonald Islands"
+msgstr "Heardön och McDonaldöarna"
+
+#: iptcorigin.cpp:170
+msgid "Vatican"
+msgstr "Vatikanstaten"
+
+#: iptcorigin.cpp:171
+msgid "Honduras"
+msgstr "Honduras"
+
+#: iptcorigin.cpp:172
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: iptcorigin.cpp:173
+msgid "Croatia"
+msgstr "Kroatien"
+
+#: iptcorigin.cpp:174
+msgid "Hungary"
+msgstr "Ungern"
+
+#: iptcorigin.cpp:175
+msgid "Iceland"
+msgstr "Island"
+
+#: iptcorigin.cpp:176
+msgid "India"
+msgstr "Indien"
+
+#: iptcorigin.cpp:177
+msgid "Indonesia"
+msgstr "Indonesien"
+
+#: iptcorigin.cpp:178
+msgid "Iran"
+msgstr "Iran"
+
+#: iptcorigin.cpp:179
+msgid "Iraq"
+msgstr "Irak"
+
+#: iptcorigin.cpp:180
+msgid "Ireland"
+msgstr "Irland"
+
+#: iptcorigin.cpp:181
+msgid "Israel"
+msgstr "Israel"
+
+#: iptcorigin.cpp:182
+msgid "Italy"
+msgstr "Italien"
+
+#: iptcorigin.cpp:183
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: iptcorigin.cpp:184
+msgid "Japan"
+msgstr "Japan"
+
+#: iptcorigin.cpp:185
+msgid "Jordan"
+msgstr "Jordanien"
+
+#: iptcorigin.cpp:186
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#: iptcorigin.cpp:187
+msgid "Kenya"
+msgstr "Kenya"
+
+#: iptcorigin.cpp:188
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: iptcorigin.cpp:189 iptcorigin.cpp:190
+msgid "Korea"
+msgstr "Korea"
+
+#: iptcorigin.cpp:191
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: iptcorigin.cpp:192
+msgid "Kyrgyz Republic"
+msgstr "Kirgizistan"
+
+#: iptcorigin.cpp:193
+msgid "Lao"
+msgstr "Laos"
+
+#: iptcorigin.cpp:194
+msgid "Latvia"
+msgstr "Lettland"
+
+#: iptcorigin.cpp:195
+msgid "Lebanon"
+msgstr "Libanon"
+
+#: iptcorigin.cpp:196
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: iptcorigin.cpp:197
+msgid "Liberia"
+msgstr "Liberia"
+
+#: iptcorigin.cpp:198
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libyska arabiska Jamahiriya"
+
+#: iptcorigin.cpp:199
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: iptcorigin.cpp:200
+msgid "Lithuania"
+msgstr "Litauen"
+
+#: iptcorigin.cpp:201
+msgid "Luxembourg"
+msgstr "Luxemburg"
+
+#: iptcorigin.cpp:202
+msgid "Macao"
+msgstr "Macao"
+
+#: iptcorigin.cpp:203
+msgid "Macedonia"
+msgstr "Makedonien"
+
+#: iptcorigin.cpp:204
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: iptcorigin.cpp:205
+msgid "Malawi"
+msgstr "Malawi"
+
+#: iptcorigin.cpp:206
+msgid "Malaysia"
+msgstr "Malaysia"
+
+#: iptcorigin.cpp:207
+msgid "Maldives"
+msgstr "Maldiverna"
+
+#: iptcorigin.cpp:208
+msgid "Mali"
+msgstr "Mali"
+
+#: iptcorigin.cpp:209
+msgid "Malta"
+msgstr "Malta"
+
+#: iptcorigin.cpp:210
+msgid "Marshall Islands"
+msgstr "Marshallöarna"
+
+#: iptcorigin.cpp:211
+msgid "Martinique"
+msgstr "Martinique"
+
+#: iptcorigin.cpp:212
+msgid "Mauritania"
+msgstr "Mauretanien"
+
+#: iptcorigin.cpp:213
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: iptcorigin.cpp:214
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: iptcorigin.cpp:215
+msgid "Mexico"
+msgstr "Mexico"
+
+#: iptcorigin.cpp:216
+msgid "Micronesia"
+msgstr "Mikronesien"
+
+#: iptcorigin.cpp:217
+msgid "Moldova"
+msgstr "Moldova"
+
+#: iptcorigin.cpp:218
+msgid "Monaco"
+msgstr "Monaco"
+
+#: iptcorigin.cpp:219
+msgid "Mongolia"
+msgstr "Mongoliet"
+
+#: iptcorigin.cpp:220
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: iptcorigin.cpp:221
+msgid "Morocco"
+msgstr "Marocko"
+
+#: iptcorigin.cpp:222
+msgid "Mozambique"
+msgstr "Moçambique"
+
+#: iptcorigin.cpp:223
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: iptcorigin.cpp:224
+msgid "Namibia"
+msgstr "Namibia"
+
+#: iptcorigin.cpp:225
+msgid "Nauru"
+msgstr "Nauru"
+
+#: iptcorigin.cpp:226
+msgid "Nepal"
+msgstr "Nepal"
+
+#: iptcorigin.cpp:227
+msgid "Netherlands Antilles"
+msgstr "Nederländska Antillerna"
+
+#: iptcorigin.cpp:228
+msgid "Netherlands"
+msgstr "Nederländerna"
+
+#: iptcorigin.cpp:229
+msgid "New Caledonia"
+msgstr "Nya Caledonien"
+
+#: iptcorigin.cpp:230
+msgid "New Zealand"
+msgstr "Nya Zeeland"
+
+#: iptcorigin.cpp:231
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: iptcorigin.cpp:232
+msgid "Niger"
+msgstr "Niger"
+
+#: iptcorigin.cpp:233
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: iptcorigin.cpp:234
+msgid "Niue"
+msgstr "Niue"
+
+#: iptcorigin.cpp:235
+msgid "Norfolk Island"
+msgstr "Norfolkön"
+
+#: iptcorigin.cpp:236
+msgid "Northern Mariana Islands"
+msgstr "Nordmarianerna"
+
+#: iptcorigin.cpp:237
+msgid "Norway"
+msgstr "Norge"
+
+#: iptcorigin.cpp:238
+msgid "Oman"
+msgstr "Oman"
+
+#: iptcorigin.cpp:239
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: iptcorigin.cpp:240
+msgid "Palau"
+msgstr "Palau"
+
+#: iptcorigin.cpp:241
+msgid "Palestinian Territory"
+msgstr "Palestinska territoriet"
+
+#: iptcorigin.cpp:242
+msgid "Panama"
+msgstr "Panama"
+
+#: iptcorigin.cpp:243
+msgid "Papua New Guinea"
+msgstr "Papua Nya Guinea"
+
+#: iptcorigin.cpp:244
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: iptcorigin.cpp:245
+msgid "Peru"
+msgstr "Peru"
+
+#: iptcorigin.cpp:246
+msgid "Philippines"
+msgstr "Filippinerna"
+
+#: iptcorigin.cpp:247
+msgid "Pitcairn Island"
+msgstr "Pitcairn"
+
+#: iptcorigin.cpp:248
+msgid "Poland"
+msgstr "Polen"
+
+#: iptcorigin.cpp:249
+msgid "Portugal"
+msgstr "Portugal"
+
+#: iptcorigin.cpp:250
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: iptcorigin.cpp:251
+msgid "Qatar"
+msgstr "Qatar"
+
+#: iptcorigin.cpp:252
+msgid "Reunion"
+msgstr "Reunion"
+
+#: iptcorigin.cpp:253
+msgid "Romania"
+msgstr "Rumänien"
+
+#: iptcorigin.cpp:254
+msgid "Russian Federation"
+msgstr "Ryska federationen"
+
+#: iptcorigin.cpp:255
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: iptcorigin.cpp:256
+msgid "St. Helena"
+msgstr "Sankta Helena"
+
+#: iptcorigin.cpp:257
+msgid "St. Kitts and Nevis"
+msgstr "Saint Kitts och Nevis"
+
+#: iptcorigin.cpp:258
+msgid "St. Lucia"
+msgstr "Saint Lucia"
+
+#: iptcorigin.cpp:259
+msgid "St. Pierre and Miquelon"
+msgstr "Saint-Pierre och Miquelon"
+
+#: iptcorigin.cpp:260
+msgid "St. Vincent and the Grenadines"
+msgstr "Saint Vincent och Grenadinerna"
+
+#: iptcorigin.cpp:261
+msgid "Samoa"
+msgstr "Samoa"
+
+#: iptcorigin.cpp:262
+msgid "San Marino"
+msgstr "San Marino"
+
+#: iptcorigin.cpp:263
+msgid "Sao Tome and Principe"
+msgstr "São Tomé och Príncipe"
+
+#: iptcorigin.cpp:264
+msgid "Saudi Arabia"
+msgstr "Saudiarabien"
+
+#: iptcorigin.cpp:265
+msgid "Senegal"
+msgstr "Senegal"
+
+#: iptcorigin.cpp:266
+msgid "Serbia and Montenegro"
+msgstr "Serbien och Montenegro"
+
+#: iptcorigin.cpp:267
+msgid "Seychelles"
+msgstr "Seychellerna"
+
+#: iptcorigin.cpp:268
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: iptcorigin.cpp:269
+msgid "Singapore"
+msgstr "Singapor"
+
+#: iptcorigin.cpp:270
+msgid "Slovakia"
+msgstr "Slovakien"
+
+#: iptcorigin.cpp:271
+msgid "Slovenia"
+msgstr "Slovenien"
+
+#: iptcorigin.cpp:272
+msgid "Solomon Islands"
+msgstr "Salomonöarna"
+
+#: iptcorigin.cpp:273
+msgid "Somalia"
+msgstr "Somalia"
+
+#: iptcorigin.cpp:274
+msgid "South Africa"
+msgstr "Sydafrika"
+
+#: iptcorigin.cpp:275
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Sydgeorgien och Sydsandwichöarna"
+
+#: iptcorigin.cpp:276
+msgid "Spain"
+msgstr "Spanien"
+
+#: iptcorigin.cpp:277
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: iptcorigin.cpp:278
+msgid "Sudan"
+msgstr "Sudan"
+
+#: iptcorigin.cpp:279
+msgid "Suriname"
+msgstr "Surinam"
+
+#: iptcorigin.cpp:280
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "Svalbard och Jan Mayen"
+
+#: iptcorigin.cpp:281
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: iptcorigin.cpp:282
+msgid "Sweden"
+msgstr "Sverige"
+
+#: iptcorigin.cpp:283
+msgid "Switzerland"
+msgstr "Schweiz"
+
+#: iptcorigin.cpp:284
+msgid "Syrian Arab Republic"
+msgstr "Arabrepubliken Syrien"
+
+#: iptcorigin.cpp:285
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: iptcorigin.cpp:286
+msgid "Tajikistan"
+msgstr "Tadzjikistan"
+
+#: iptcorigin.cpp:287
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: iptcorigin.cpp:288
+msgid "Thailand"
+msgstr "Thailand"
+
+#: iptcorigin.cpp:289
+msgid "Timor-Leste"
+msgstr "Timor-Leste"
+
+#: iptcorigin.cpp:290
+msgid "Togo"
+msgstr "Togo"
+
+#: iptcorigin.cpp:291
+msgid "Tokelau Islands"
+msgstr "Tokelauöarna"
+
+#: iptcorigin.cpp:292
+msgid "Tonga"
+msgstr "Tonga"
+
+#: iptcorigin.cpp:293
+msgid "Trinidad and Tobago"
+msgstr "Trinidad och Tobago"
+
+#: iptcorigin.cpp:294
+msgid "Tunisia"
+msgstr "Tunisien"
+
+#: iptcorigin.cpp:295
+msgid "Turkey"
+msgstr "Turkiet"
+
+#: iptcorigin.cpp:296
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: iptcorigin.cpp:297
+msgid "Turks and Caicos Islands"
+msgstr "Turks- och Caicosöarna"
+
+#: iptcorigin.cpp:298
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: iptcorigin.cpp:299
+msgid "US Virgin Islands"
+msgstr "Amerikanska Jungfruöarna"
+
+#: iptcorigin.cpp:300
+msgid "Uganda"
+msgstr "Uganda"
+
+#: iptcorigin.cpp:301
+msgid "Ukraine"
+msgstr "Ukraina"
+
+#: iptcorigin.cpp:302
+msgid "United Arab Emirates"
+msgstr "Förenade Arabemiraten"
+
+#: iptcorigin.cpp:303
+msgid "United Kingdom"
+msgstr "Storbritannien"
+
+#: iptcorigin.cpp:304
+msgid "United States Minor Outlying Islands"
+msgstr "Förenta Staternas mindre öar"
+
+#: iptcorigin.cpp:305
+msgid "United States of America"
+msgstr "Förenta staterna"
+
+#: iptcorigin.cpp:306
+msgid "Uruguay, Eastern Republic of"
+msgstr "Uruguay"
+
+#: iptcorigin.cpp:307
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: iptcorigin.cpp:308
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: iptcorigin.cpp:309
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: iptcorigin.cpp:310
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: iptcorigin.cpp:311
+msgid "Wallis and Futuna Islands "
+msgstr "Wallis- och Futunaöarna"
+
+#: iptcorigin.cpp:312
+msgid "Western Sahara"
+msgstr "Västsahara"
+
+#: iptcorigin.cpp:313
+msgid "Yemen"
+msgstr "Yemen"
+
+#: iptcorigin.cpp:314
+msgid "Zambia"
+msgstr "Zambia"
+
+#: iptcorigin.cpp:315
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: iptcorigin.cpp:319
+msgid "United Nations"
+msgstr "Förenta nationerna"
+
+#: iptcorigin.cpp:320
+msgid "European Union"
+msgstr "Europeiska Unionen"
+
+#: iptcorigin.cpp:321
+msgid "Space"
+msgstr "I rymden"
+
+#: iptcorigin.cpp:322
+msgid "At Sea"
+msgstr "På sjön"
+
+#: iptcorigin.cpp:323
+msgid "In Flight"
+msgstr "Under flygning"
+
+#: iptcorigin.cpp:324
+msgid "England"
+msgstr "England"
+
+#: iptcorigin.cpp:325
+msgid "Scotland"
+msgstr "Skottland"
+
+#: iptcorigin.cpp:326
+msgid "Northern Ireland"
+msgstr "Nordirland"
+
+#: iptcorigin.cpp:327
+msgid "Wales"
+msgstr "Wales"
+
+#: iptcorigin.cpp:328
+msgid "Palestine"
+msgstr "Palestina"
+
+#: iptcorigin.cpp:329
+msgid "Gaza"
+msgstr "Gaza"
+
+#: iptcorigin.cpp:330
+msgid "Jericho"
+msgstr "Jeriko"
+
+#: iptcorigin.cpp:369
+msgid "Object name:"
+msgstr "Objektnamn:"
+
+#: iptcorigin.cpp:373
+msgid ""
+"<p>Set here the shorthand reference of content. This field is limited to 64 "
+"ASCII characters."
+msgstr ""
+"<p>Ange den kortfattade referensen till innehållet här. Fältet är begränsat "
+"till 64 ASCII-tecken."
+
+#: iptcorigin.cpp:378
+msgid "Location:"
+msgstr "Plats:"
+
+#: iptcorigin.cpp:382
+msgid ""
+"<p>Set here the full country name referenced by the content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Ange det fullständiga landsnamnet som innehållet refererar till här. Fältet "
+"är begränsat till 64 ASCII-tecken."
+
+#: iptcorigin.cpp:388
+msgid "City:"
+msgstr "Stad:"
+
+#: iptcorigin.cpp:392
+msgid ""
+"<p>Set here the city of content origin. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ange staden för innehållets ursprung här. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptcorigin.cpp:397
+msgid "Sublocation:"
+msgstr "Detaljplats:"
+
+#: iptcorigin.cpp:401
+msgid ""
+"<p>Set here the content location within city. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ange innehållets plats inne i staden här. Fältet är begränsat till 32 "
+"ASCII-tecken."
+
+#: iptcorigin.cpp:406
+msgid "State/Province:"
+msgstr "Stat/Provins:"
+
+#: iptcorigin.cpp:410
+msgid ""
+"<p>Set here the Province or State of content origin. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Ange provins eller stat för innehållets ursprung här. Fältet är begränsat "
+"till 32 ASCII-tecken."
+
+#: iptcorigin.cpp:415
+msgid "Country:"
+msgstr "Land:"
+
+#: iptcorigin.cpp:424
+msgid "<p>Select here country name of content origin."
+msgstr "<p>Ange landsnamn för innehållets ursprung här."
+
+#: iptcorigin.cpp:428
+msgid "Original transmission reference:"
+msgstr "Referens till ursprunglig överföring:"
+
+#: iptcorigin.cpp:432
+msgid ""
+"<p>Set here the location of original content transmission. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Ange platsen för den ursprungliga överföringen av innehållet här. Fältet är "
+"begränsat till 32 ASCII-tecken."
+
+#: iptcstatus.cpp:104
+msgid "Edit Status:"
+msgstr "Redigeringsstatus:"
+
+#: iptcstatus.cpp:110
+msgid ""
+"<p>Set here the content status. This field is limited to 64 ASCII characters."
+msgstr ""
+"<p>Ange innehållets status här. Fältet är begränsat till 64 ASCII-tecken."
+
+#: iptcstatus.cpp:115
+msgid "Priority:"
+msgstr "Prioritet:"
+
+#: iptcstatus.cpp:117
+msgid "0: None"
+msgstr "0: Ingen"
+
+#: iptcstatus.cpp:118
+msgid "1: High"
+msgstr "1: Hög"
+
+#: iptcstatus.cpp:122
+msgid "5: Normal"
+msgstr "5: Normal"
+
+#: iptcstatus.cpp:125
+msgid "8: Low"
+msgstr "8: Låg"
+
+#: iptcstatus.cpp:128
+msgid "<p>Select here the editorial urgency of content."
+msgstr "<p>Välj redaktionell brådska för innehållet här."
+
+#: iptcstatus.cpp:132
+msgid "Object Cycle:"
+msgstr "Objektcykel:"
+
+#: iptcstatus.cpp:134
+msgid "Morning"
+msgstr "Morgon"
+
+#: iptcstatus.cpp:135
+msgid "Afternoon"
+msgstr "Eftermiddag"
+
+#: iptcstatus.cpp:136
+msgid "Evening"
+msgstr "Kväll"
+
+#: iptcstatus.cpp:139
+msgid "<p>Select here the editorial cycle of content."
+msgstr "<p>Ange den redaktionella cykeln för innehållet här."
+
+#: iptcstatus.cpp:143
+msgid "Object Type:"
+msgstr "Objekttyp:"
+
+#: iptcstatus.cpp:148
+msgid "News"
+msgstr "Nyheter"
+
+#: iptcstatus.cpp:149
+msgid "Data"
+msgstr "Data"
+
+#: iptcstatus.cpp:150
+msgid "Advisory"
+msgstr "Rådgivande"
+
+#: iptcstatus.cpp:154
+msgid "<p>Select here the editorial type of content."
+msgstr "<p>Ange innehållets redaktionella typ här."
+
+#: iptcstatus.cpp:155
+msgid ""
+"<p>Set here the editorial type description of content. This field is limited to "
+"64 ASCII characters."
+msgstr ""
+"<p>Ange innehållets redaktionella typ här. Fältet är begränsat till 64 "
+"ASCII-tecken."
+
+#: iptcstatus.cpp:160
+msgid "Object Attribute:"
+msgstr "Objektegenskap:"
+
+#: iptcstatus.cpp:165
+msgid "Current"
+msgstr "Aktuellt"
+
+#: iptcstatus.cpp:166
+msgid "Analysis"
+msgstr "Analys"
+
+#: iptcstatus.cpp:167
+msgid "Archive material"
+msgstr "Arkivmaterial"
+
+#: iptcstatus.cpp:168
+msgid "Background"
+msgstr "Bakgrund"
+
+#: iptcstatus.cpp:169
+msgid "Feature"
+msgstr "Huvudnyhet"
+
+#: iptcstatus.cpp:170
+msgid "Forecast"
+msgstr "Rapport"
+
+#: iptcstatus.cpp:171
+msgid "History"
+msgstr "Historia"
+
+#: iptcstatus.cpp:172
+msgid "Obituary"
+msgstr "Dödsruna"
+
+#: iptcstatus.cpp:173
+msgid "Opinion"
+msgstr "Åsikt"
+
+#: iptcstatus.cpp:174
+msgid "Polls & Surveys"
+msgstr "Opinionsundersökningar"
+
+#: iptcstatus.cpp:175
+msgid "Profile"
+msgstr "Profil"
+
+#: iptcstatus.cpp:176
+msgid "Results Listings & Table"
+msgstr "Resultatlista och tabell"
+
+#: iptcstatus.cpp:177
+msgid "Side bar & Supporting information"
+msgstr "Sidorad och stödinformations"
+
+#: iptcstatus.cpp:178
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#: iptcstatus.cpp:179
+msgid "Transcript & Verbatim"
+msgstr "Återgivning och ordagrant"
+
+#: iptcstatus.cpp:180
+msgid "Interview"
+msgstr "Intervju"
+
+#: iptcstatus.cpp:181
+msgid "From the Scene"
+msgstr "Från skådeplatsen"
+
+#: iptcstatus.cpp:182
+msgid "Retrospective"
+msgstr "Tillbakablick"
+
+#: iptcstatus.cpp:183
+msgid "Statistics"
+msgstr "Statistik"
+
+#: iptcstatus.cpp:184
+msgid "Update"
+msgstr "Uppdatering"
+
+#: iptcstatus.cpp:185
+msgid "Wrap-up"
+msgstr "Avslutning"
+
+#: iptcstatus.cpp:186
+msgid "Press Release"
+msgstr "Pressrelease"
+
+#: iptcstatus.cpp:190
+msgid "<p>Select here the editorial attribute of content."
+msgstr "<p>Välj innehållets redaktionella egenskap här."
+
+#: iptcstatus.cpp:191
+msgid ""
+"<p>Set here the editorial attribute description of content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Ange innehållets redaktionella egenskap här. Fältet är begränsat till 64 "
+"ASCII-tecken."
+
+#: iptcstatus.cpp:196
+msgid "Job Identification:"
+msgstr "Jobbidentifikation:"
+
+#: iptcstatus.cpp:202
+msgid ""
+"<p>Set here the string that identifies content that recurs. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Ange strängen som identifierar återkommande innehåll här. Fältet är "
+"begränsat till 32 ASCII-tecken."
+
+#: iptcsubjects.cpp:91
+msgid "Use structured definition of the subject matter:"
+msgstr "Använd strukturerad definition av bildens motiv:"
+
+#: iptcsubjects.cpp:96
+msgid ""
+"<p>Enter here a new subject. This field is limited to 236 ASCII characters."
+msgstr "<p>Ange ett nytt motiv här. Fältet är begränsat till 236 ASCII-tecken."
+
+#: plugin_metadataedit.cpp:68
+msgid "Metadata"
+msgstr "Metadata"
+
+#: plugin_metadataedit.cpp:73
+msgid "Edit EXIF..."
+msgstr "Redigera EXIF..."
+
+#: plugin_metadataedit.cpp:81
+msgid "Remove EXIF..."
+msgstr "Ta bort EXIF..."
+
+#: plugin_metadataedit.cpp:89
+msgid "Import EXIF..."
+msgstr "Importera EXIF..."
+
+#: plugin_metadataedit.cpp:99
+msgid "Edit IPTC..."
+msgstr "Redigera IPTC..."
+
+#: plugin_metadataedit.cpp:107
+msgid "Remove IPTC..."
+msgstr "Ta bort IPTC..."
+
+#: plugin_metadataedit.cpp:115
+msgid "Import IPTC..."
+msgstr "Importera IPTC..."
+
+#: plugin_metadataedit.cpp:125
+msgid "Edit Captions..."
+msgstr "Redigera rubriker..."
+
+#: plugin_metadataedit.cpp:133
+msgid "Remove Captions..."
+msgstr "Ta bort rubriker..."
+
+#: plugin_metadataedit.cpp:179
+msgid ""
+"EXIF metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"EXIF metadata kommer att tas bort permanent från alla bilder som för närvarande "
+"är markerade.\n"
+"Vill du fortsätta?"
+
+#: plugin_metadataedit.cpp:181 plugin_metadataedit.cpp:220
+msgid "Remove EXIF Metadata"
+msgstr "Ta bort EXIF metadata"
+
+#: plugin_metadataedit.cpp:218
+msgid "Unable to remove EXIF metadata from:"
+msgstr "Kunde inte ta bort EXIF metadata från:"
+
+#: plugin_metadataedit.cpp:233
+msgid "Select File to Import EXIF metadata"
+msgstr "Välj fil för att importera EXIF-metadata"
+
+#: plugin_metadataedit.cpp:241 plugin_metadataedit.cpp:387
+msgid "Cannot load metadata from \"%1\""
+msgstr "Kan inte ladda metadata från \"%1\""
+
+#: plugin_metadataedit.cpp:242 plugin_metadataedit.cpp:251
+#: plugin_metadataedit.cpp:260 plugin_metadataedit.cpp:300
+msgid "Import EXIF Metadata"
+msgstr "Importera EXIF metadata"
+
+#: plugin_metadataedit.cpp:250
+msgid "\"%1\" do not have EXIF metadata"
+msgstr "\"%1\" har ingen EXIF-metadata"
+
+#: plugin_metadataedit.cpp:257
+msgid ""
+"EXIF metadata from current selected pictures will be permanently replaced by "
+"the EXIF content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"EXIF metadata  från bilderna som för närvarande är markerade kommer att "
+"ersättas permanent med EXIF-innehållet i \"%1\".\n"
+"Vill du fortsätta?"
+
+#: plugin_metadataedit.cpp:298
+msgid "Unable to set EXIF metadata from:"
+msgstr "Kunde inte ställa in EXIF metadata från:"
+
+#: plugin_metadataedit.cpp:325
+msgid ""
+"IPTC metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"IPTC metadata kommer att tas bort permanent från alla bilder som för närvarande "
+"är markerade.\n"
+"Vill du fortsätta?"
+
+#: plugin_metadataedit.cpp:327 plugin_metadataedit.cpp:366
+msgid "Remove IPTC Metadata"
+msgstr "Ta bort IPTC metadata"
+
+#: plugin_metadataedit.cpp:364
+msgid "Unable to remove IPTC metadata from:"
+msgstr "Kunde inte ta bort IPTC metadata från:"
+
+#: plugin_metadataedit.cpp:379
+msgid "Select File to Import IPTC metadata"
+msgstr "Välj fil för att importera IPTC-metadata"
+
+#: plugin_metadataedit.cpp:388 plugin_metadataedit.cpp:397
+#: plugin_metadataedit.cpp:406 plugin_metadataedit.cpp:446
+msgid "Import IPTC Metadata"
+msgstr "Importera IPTC metadata"
+
+#: plugin_metadataedit.cpp:396
+msgid "\"%1\" do not have IPTC metadata"
+msgstr "\"%1\" har ingen IPTC-metadata"
+
+#: plugin_metadataedit.cpp:403
+msgid ""
+"IPTC metadata from current selected pictures will be permanently replaced by "
+"the IPTC content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"IPTC metadata från bilderna som för närvarande är markerade kommer att ersättas "
+"permanent med IPTC-innehållet i \"%1\".\n"
+"Vill du fortsätta?"
+
+#: plugin_metadataedit.cpp:444
+msgid "Unable to set IPTC metadata from:"
+msgstr "Kunde inte lägga till IPTC metadata från:"
+
+#: plugin_metadataedit.cpp:508
+msgid "Unable to set captions as image metadata from:"
+msgstr "Kunde inte lägga till rubriker som bildmetadata från:"
+
+#: plugin_metadataedit.cpp:575
+msgid "Unable to remove caption as image metadata from:"
+msgstr "Kunde inte ta bort rubriker som bildmetadata från:"
+
+#: plugin_metadataedit.cpp:577
+msgid "Remove Image Caption"
+msgstr "Ta bort bildrubrik"

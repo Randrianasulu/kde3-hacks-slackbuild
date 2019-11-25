@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>OBEX Push Server: bestanden ontvangen</title>
+<para
+>Met de meeste Bluetooth-geschikte mobiele telefoons en PDA's kunt u bestanden verzenden van het apparaat naar uw computer. De meest comfortabele manier om dat te doen is met behulp van de <link linkend="components.kio_obex"
+>kioslave OBEX FTP</link
+> de bestanden van de telefoon naar uw computer te trekken. Helaas ondersteunen niet alle apparaten dit. OBEX Object push wordt wel door de meeste Bluetooth-apparaten ondersteund. </para>
+
+<sect2>
+<title
+>De OBEX push-server gebruiken</title>
+<para
+>De OBEX Push-server wordt beheerd door kbluetoothd en wordt automatisch gestart (indien geactiveerd) als iemand u enkele bestanden stuurt. Lees de documentatie van kbluetoothd over hoe u <link linkend="components.kbluetoothd.serviceconfig"
+>diensten kunt activeren of deactiveren</link
+> (de OBEX Push-server wordt vermeld als <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Als u een bestand van uw mobiel naar uw computer stuurt, dan wordt uw systeemvakpictogram van kbluetoothd blauw en opent deze een klein dialoog. Standaard (afhankelijk van uw <link linkend="components.kbluetoothd.confirmation"
+>instellingen voor inkomende verbindingen</link
+>) dient u de verbinding eerst te accepteren. Daarna wordt het hoofdvenster van OBEX Push geopend en begint de bestandsoverdracht. </para>
+<para
+>Inkomende bestanden worden opgeslagen in de map <filename
+>/tmp</filename
+> en worden verwijderd zodra u de OBEX Push-server sluit. Om de bestanden op te slaan hebt u twee opties: </para>
+<itemizedlist>
+<listitem>
+<para
+>Klik op <guibutton
+>OK</guibutton
+> om alle ontvangen bestanden op te slaan op een vooringestelde locatie.</para>
+</listitem>
+<listitem>
+<para
+>Versleep één of meerdere bestanden naar een andere locatie. Dit is vooral handig als u de bestanden via e-mail wilt versturen. U kunt namelijk de bestanden rechtstreeks naar een kmail-venster slepen zonder dat u ze in een tijdelijke map hoeft op te slaan. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

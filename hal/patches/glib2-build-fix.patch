@@ -1,0 +1,73 @@
+diff -pru hal-0.5.14/hald/linux/addons/addon-generic-backlight.c hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-generic-backlight.c
+--- hal-0.5.14/hald/linux/addons/addon-generic-backlight.c	2009-08-24 14:42:30.000000000 +0200
++++ hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-generic-backlight.c	2012-01-22 18:49:43.292215369 +0100
+@@ -35,7 +35,7 @@
+ #include <sys/stat.h>
+ #include <unistd.h> 
+ 
+-#include <glib/gmain.h>
++#include <glib.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 
+diff -pru hal-0.5.14/hald/linux/addons/addon-input.c hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-input.c
+--- hal-0.5.14/hald/linux/addons/addon-input.c	2009-08-24 14:42:30.000000000 +0200
++++ hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-input.c	2012-01-22 18:50:34.345163835 +0100
+@@ -41,8 +41,7 @@
+ #else
+   #include <linux/input.h>
+ #endif
+-#include <glib/gmain.h>
+-#include <glib/gprintf.h>
++#include <glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 
+ #include "libhal/libhal.h"
+diff -pru hal-0.5.14/hald/linux/addons/addon-ipw-killswitch.c hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-ipw-killswitch.c
+--- hal-0.5.14/hald/linux/addons/addon-ipw-killswitch.c	2009-08-24 14:42:30.000000000 +0200
++++ hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-ipw-killswitch.c	2012-01-22 18:51:19.306960927 +0100
+@@ -36,8 +36,6 @@
+ #include <unistd.h> 
+ 
+ #include <glib.h>
+-#include <glib/gmain.h>
+-#include <glib/gstdio.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 
+diff -pru hal-0.5.14/hald/linux/addons/addon-leds.c hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-leds.c
+--- hal-0.5.14/hald/linux/addons/addon-leds.c	2009-08-24 14:42:30.000000000 +0200
++++ hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-leds.c	2012-01-22 18:52:07.111611020 +0100
+@@ -36,8 +36,6 @@
+ #include <unistd.h> 
+ 
+ #include <glib.h>
+-#include <glib/gmain.h>
+-#include <glib/gstdio.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 
+diff -pru hal-0.5.14/hald/linux/addons/addon-rfkill-killswitch.c hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-rfkill-killswitch.c
+--- hal-0.5.14/hald/linux/addons/addon-rfkill-killswitch.c	2009-08-24 14:42:30.000000000 +0200
++++ hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-rfkill-killswitch.c	2012-01-22 18:52:39.079311546 +0100
+@@ -36,8 +36,6 @@
+ #include <unistd.h> 
+ 
+ #include <glib.h>
+-#include <glib/gmain.h>
+-#include <glib/gstdio.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 
+diff -pru hal-0.5.14/hald/linux/addons/addon-storage.c hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-storage.c
+--- hal-0.5.14/hald/linux/addons/addon-storage.c	2009-08-24 14:42:30.000000000 +0200
++++ hal-0.5.14-do-not-include-glib-internal/hald/linux/addons/addon-storage.c	2012-01-22 18:53:25.867792994 +0100
+@@ -39,7 +39,7 @@
+ #include <string.h>
+ #include <sys/ioctl.h>
+ #include <unistd.h>
+-#include <glib/gmain.h>
++#include <glib.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 

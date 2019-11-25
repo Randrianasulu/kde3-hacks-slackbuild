@@ -1,0 +1,87 @@
+<sect1 id="components.handsfree">
+<title
+>kbthandsfree: Ring op og snak ved brug af din computer</title>
+<para
+>handsfree-klienten er en implementation af Bluetooth handsfree profil. Denne protokol ligner headset-profilen, men sørger for flere funktioner end den ældre headset-profil. Oprindeligt blev handsfree-profilen designet til brug for enheder i b iler uden at skulle bruge hænderne, men det er mere og mere almindeligt for Bluetooth-apparater at understøtte handsfree-profilen i dag. </para>
+<para
+>Med kbthandsfree kan du bruge din computer som en handsfree-enhed. Du kan ringe op til numre (selv fra <link linkend="handsfree.kaddressbook"
+>kde's adressebog</link
+>) </para>
+
+<sect2>
+<title
+>Krav</title>
+<sect3>
+<title
+>Kerne SCO-støtte</title>
+<para
+>For stemmetransmission over bluetooth, må handsfree-profilen oprette  en 'SCO'-forbindelse. Dette er en speciel forbindelsestype for bluetooth som er optimeret for stemmedata. Uheldigvis blev støtte for SCO brudt i ældre udgaver af 2.4-kernerne. For kerner før 2.4.24, vil det måske hjælpe at anvende programrettelser lavet af Marcel Holtmann på <ulink url="http://www.bluez.org
+>"
+> www.bluez.org</ulink
+>. Hvad der er endnu mere uheldigt er at støtte for SCO synes stadig at være i stykker i 2.6-serien af Linux, og der er ingen rettelser til at ordne problemet for øjeblikket (korrigér mig venligst hvis jeg tager fejl). Så den eneste måde at bruge kbthandsfree som en rigtig handsfree er at bruge en nylig 2.4-kerne. Uden støtte for SCO, kan du kun bruge kbthandsfree til at ringe op og lignende. </para>
+</sect3>
+
+<sect3>
+<title
+>Adaptor SCO-støtte</title>
+<para
+>Ikke alle Bluetooth adaptere støtter SCO rigtigt. Ældre Mitsumi dongler synes at give problemer for eksempel, selv om modulet påstår at understøtte SCO. Jeg kender ingen måde at find ud af om det virker ud over at forsøge det. Nyere moduler baseret på det (meget almindelige) CSR-chipset vil dog sandsynligvis virke. </para>
+</sect3>
+
+<sect3>
+<title
+>Stemme-tilstand</title>
+<para
+>Din bluetooth-adapter skal være sat til den rigtige stemme-tilstand for at få transmission af stemme til at virke. For øjeblikket er kun tilstanden 0x0060 understøttet af kbthandsfree. Dette er standarden for den nuværende bluez-udgave, men du kan ændre dette med kommandoen <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Enhedsklasse</title>
+<para
+>Hvis du ønsker at etablere forbindelsen til kbthandsfree ved at bruge din telefon i stedet for at kalde kbthandsfree på PC'en, skal du sørge for at din PC bliver genkendt som en handsfree-enhed. Når du har aktiveret handsfree i det lokale tjenester-faneblad af kdebluetooth' indstilling, vil skelettet automatisk indstille en rigtig SDP-post som fortæller telefonen at din computer tilbyder handsfree-tjenesten. </para>
+<para
+>Men visse telefoner såsom T68i afhænger af en rigtigt sat enhedsklasse (en mere lavt-niveau indstillin som tjekkes før SDP-posten) der identificerer den som en handsfree i stedet for som en computer. Du kan gøre dette ved at ændre klasselinjen 0xXXXXXX i hcid.conf til klasse 0x700408 (HUSK: er dette kompatibelt med de flag der er nødvendige for obex..?) eller med <command
+>khciconfig</command
+>. Idet en bluetooth-enhed kun kan have en enhedsklasse af gangen, vil din computer måske blive vist som en audio/handsfree-enhed når der søges efter den med andre bluetooth-enheder. Men vi kender ikke til alvorlige bivirkninger forårsaget af dette. </para>
+<para
+>Sædvanligvis er det nemmere at forbinde fra computeren til en handsfree end den anden vej. Men enhedsklassens indstilling er også nødvendig hvis du ønsker at din telefon skal forbinde automatisk til computeren når der er et indkommende opkald. Ikke alle telefoner kan gøre dette. De fleste Nokia kan for eksempel ikke mens S/E T68i kan. Bemærk venligst at handsfree-enheden skal være den første på listen af parrede enheder for at få T68i til at forbinde til den automatisk. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Vink og Tricks</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Efter KDE 3.2 kan du indstille adressebogen til at bruge eksterne programmer til at ringe op. For  at bruge kbthandsfree til dette, start <command
+>kaddressbook</command
+>, og gå så til <command
+>Opsætning</command
+>, <command
+>Indstil kaddressbook...</command
+>, <command
+>Adressebog</command
+>-fanebladet <command
+>Generelt</command
+> og brug <command
+>kbthandsfree --phonenumber %N</command
+> som telefonscript. For yderligere kommandolinjeflag tjek  out <command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>Du kan få et bedre overblik over konversationer der er optaget i konqueror hvis du vælger  "Info-listevisning" som visningstilstand. Dette vil vise markeringerne for ogg/vorbis filer, så du kan nemt se hvem der ringede og hvor længe du snakkede. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

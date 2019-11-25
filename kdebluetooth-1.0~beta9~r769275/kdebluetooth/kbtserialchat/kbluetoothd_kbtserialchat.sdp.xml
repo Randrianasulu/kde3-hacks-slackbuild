@@ -1,0 +1,42 @@
+<sdprecord>
+<attributes>
+
+<!-- Service name -->
+<attribute id='0x0100'>
+<str>KBtSerialChat</str>
+</attribute>
+
+<!-- Service description -->
+<attribute id='0x0101'>
+<str>KDE Bluetooth Serial Chat Service</str>
+</attribute>
+
+<!-- Service class ID list -->
+<attribute id='0x0001'>
+<seq>
+<!-- Serial port -->
+<uuid val='0x1101' size='16'/>
+</seq>
+</attribute>
+
+<!-- Protocol descriptor list -->
+<attribute id='0x0004'>
+<seq>
+<!-- L2CAP -->
+<seq><uuid val='0x0100' size='16'/></seq>
+<!-- Rfcomm -->
+<seq><uuid val='0x0003' size='16'/>
+<uint valref='rfcommchannel' size='8'/></seq>
+</seq>
+</attribute>
+
+<!-- Browse group list-->
+<attribute id='0x0005'>
+<seq>
+<!-- Public Browse Group -->
+<uuid val='0x1002' size='16'/>
+</seq>
+</attribute>
+
+</attributes>
+</sdprecord>

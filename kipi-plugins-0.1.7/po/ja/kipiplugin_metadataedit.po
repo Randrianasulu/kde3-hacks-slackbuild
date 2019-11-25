@@ -1,0 +1,2598 @@
+# translation of kipiplugin_metadataedit.po to Japanese
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_metadataedit\n"
+"POT-Creation-Date: 2008-12-02 09:44+0100\n"
+"PO-Revision-Date: 2007-10-06 20:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko Bando"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: commenteditdialog.cpp:77 plugin_metadataedit.cpp:510
+msgid "Edit Image Caption"
+msgstr "画像のキャプションを編集"
+
+#: commenteditdialog.cpp:86 commentremovedialog.cpp:84 exifeditdialog.cpp:165
+#: iptceditdialog.cpp:181
+msgid "Edit Metadata"
+msgstr "メタデータを編集"
+
+#: commenteditdialog.cpp:89
+msgid "A Plugin to edit images' metadata"
+msgstr "画像のメタデータを編集するためのプラグイン"
+
+#: commenteditdialog.cpp:92 commentremovedialog.cpp:90 exifeditdialog.cpp:171
+#: iptceditdialog.cpp:187
+msgid "Author and Maintainer"
+msgstr "作者およびメンテナ"
+
+#: commenteditdialog.cpp:97 commentremovedialog.cpp:95 exifeditdialog.cpp:176
+#: iptceditdialog.cpp:192
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: commenteditdialog.cpp:105
+msgid ""
+"<p>Enter the image caption hosted by <b>%1</b>. This field is not limited "
+"(excepted with IPTC). UTF-8 encoding will be used to save text."
+msgstr ""
+"<p><b>%1</b> の画像のキャプションを入力します。IPTC 以外ではこのフィールドには文字の制限はありません。テキストは UTF-8 "
+"エンコーディングで保存されます。"
+
+#: commenteditdialog.cpp:113 exifcaption.cpp:156 iptccaption.cpp:104
+msgid "Sync JFIF Comment section"
+msgstr "JFIF コメントセクションを同期"
+
+#: commenteditdialog.cpp:114 iptccaption.cpp:108
+msgid "Sync EXIF Comment"
+msgstr "Exif コメントを同期"
+
+#: commenteditdialog.cpp:115 exifcaption.cpp:157
+msgid ""
+"Sync IPTC caption (warning: limited to 2000 printable Ascii characters set)"
+msgstr "IPTC キャプションを同期 (注意: 印字可能な ASCII 文字に限る、2000 文字まで)"
+
+#: commenteditdialog.cpp:118
+msgid ""
+"<b>Note: captions from currently selected images will be permanently "
+"replaced.</b>"
+msgstr "注意: 現在選択されている画像のキャプションは恒久的に置き換えられます。"
+
+#: commentremovedialog.cpp:75
+msgid "Remove Image Captions"
+msgstr "画像のキャプションを削除"
+
+#: commentremovedialog.cpp:87 exifeditdialog.cpp:168
+msgid "A Plugin to edit pictures metadata"
+msgstr "画像のメタデータを編集するためのプラグイン"
+
+#: commentremovedialog.cpp:103
+#, c-format
+msgid "Remove caption created by %1"
+msgstr "%1 で作成されたキャプションを削除"
+
+#: commentremovedialog.cpp:106
+msgid "Remove JFIF Comment section"
+msgstr "JFIF コメントセクションを削除"
+
+#: commentremovedialog.cpp:107
+msgid "Remove EXIF Comment"
+msgstr "Exif コメントを削除"
+
+#: commentremovedialog.cpp:108
+msgid "Remove IPTC caption"
+msgstr "IPTC キャプションを削除"
+
+#: commentremovedialog.cpp:110
+msgid ""
+"<b>Note: Captions from currently selected images will be permanently "
+"removed.</b>"
+msgstr "注意: 現在選択されている画像のキャプションは恒久的に削除されます。"
+
+#: exifadjust.cpp:99
+msgid "Brightness (APEX):"
+msgstr "輝度値 (APEX):"
+
+#: exifadjust.cpp:103
+msgid ""
+"<p>Set here the brightness adjustment value in APEX unit used by camera to take "
+"the picture."
+msgstr "<p>写真の撮影時にカメラによって使用された輝度の補正値を APEX 単位で設定します。"
+
+#: exifadjust.cpp:108
+msgid "Gain Control:"
+msgstr "ゲインコントロール:"
+
+#: exifadjust.cpp:110
+msgid "None"
+msgstr "なし"
+
+#: exifadjust.cpp:111
+msgid "Low gain up"
+msgstr "増感、弱"
+
+#: exifadjust.cpp:112
+msgid "High gain up"
+msgstr "増感、強"
+
+#: exifadjust.cpp:113
+msgid "Low gain down"
+msgstr "減感、弱"
+
+#: exifadjust.cpp:114
+msgid "High gain down"
+msgstr "減感、強"
+
+#: exifadjust.cpp:117
+msgid ""
+"<p>Set here the degree of overall image gain adjustment used by camera to take "
+"the picture."
+msgstr "<p>写真の撮影時にカメラによって使用された画像全体のゲイン補正の度合いを設定します。"
+
+#: exifadjust.cpp:122
+msgid "Contrast:"
+msgstr "コントラスト:"
+
+#: exifadjust.cpp:124 exifadjust.cpp:136 exifadjust.cpp:148
+msgid "Normal"
+msgstr "標準"
+
+#: exifadjust.cpp:125 exifadjust.cpp:149
+msgid "Soft"
+msgstr "ソフト"
+
+#: exifadjust.cpp:126 exifadjust.cpp:150
+msgid "Hard"
+msgstr "ハード"
+
+#: exifadjust.cpp:129
+msgid ""
+"<p>Set here the direction of contrast processing applied by the camera to take "
+"the picture."
+msgstr "<p>写真の撮影時にカメラによって適用されたコントラスト補正の方向を設定します。"
+
+#: exifadjust.cpp:134
+msgid "Saturation:"
+msgstr "彩度:"
+
+#: exifadjust.cpp:137
+msgid "Low"
+msgstr "低"
+
+#: exifadjust.cpp:138
+msgid "High"
+msgstr "高"
+
+#: exifadjust.cpp:141
+msgid ""
+"<p>Set here the direction of saturation processing applied by the camera to "
+"take the picture."
+msgstr "<p>写真の撮影時にカメラによって適用された彩度補正の方向を設定します。"
+
+#: exifadjust.cpp:146
+msgid "Sharpness:"
+msgstr "シャープネス:"
+
+#: exifadjust.cpp:153
+msgid ""
+"<p>Set here the direction of sharpness processing applied by the camera to take "
+"the picture."
+msgstr "<p>写真の撮影時にカメラによって適用されたシャープネス補正の方向を設定します。"
+
+#: exifadjust.cpp:158
+msgid "Custom rendered:"
+msgstr "カスタム画像処理:"
+
+#: exifadjust.cpp:160
+msgid "Normal process"
+msgstr "標準処理"
+
+#: exifadjust.cpp:161
+msgid "Custom process"
+msgstr "カスタム処理"
+
+#: exifadjust.cpp:164
+msgid ""
+"<p>Set here the use of special processing on image data, such as rendering "
+"geared to output."
+msgstr "<p>出力を考慮したレンダリングなどの特殊な処理が画像データに使用されたかどうかを設定します。"
+
+#: exifcaption.cpp:106
+msgid "Document name (*):"
+msgstr "ドキュメント名 (*):"
+
+#: exifcaption.cpp:111
+msgid ""
+"<p>Enter the name of the document from which this image was been scanned. This "
+"field is limited to ASCII characters."
+msgstr "<p>この画像がスキャンされた元の文書の名前を入力します。このフィールドは ASCII 文字に限ります。"
+
+#: exifcaption.cpp:117
+msgid "Image description (*):"
+msgstr "画像の説明 (*):"
+
+#: exifcaption.cpp:122
+msgid "<p>Enter the image title. This field is limited to ASCII characters."
+msgstr "<p>画像のタイトルを入力します。このフィールドは ASCII 文字に限ります。"
+
+#: exifcaption.cpp:127
+msgid "Artist (*):"
+msgstr "アーティスト (*):"
+
+#: exifcaption.cpp:132
+msgid ""
+"<p>Enter the image author's name. This field is limited to ASCII characters."
+msgstr "<p>画像の作者の名前を入力します。このフィールドは ASCII 文字に限ります。"
+
+#: exifcaption.cpp:137
+msgid "Copyright (*):"
+msgstr "著作権 (*):"
+
+#: exifcaption.cpp:142
+msgid ""
+"<p>Enter the copyright owner of the image. This field is limited to ASCII "
+"characters."
+msgstr "<p>画像の著作権保持者を入力します。このフィールドは ASCII 文字に限ります。"
+
+#: exifcaption.cpp:147 iptccaption.cpp:102
+msgid "Caption:"
+msgstr "キャプション:"
+
+#: exifcaption.cpp:149
+msgid ""
+"<p>Enter the image's caption. This field is not limited. UTF8 encoding will be "
+"used to save the text."
+msgstr "<p>画像のキャプションを入力します。このフィールドには文字の制限はありません。テキストは UTF-8 エンコーディングで保存されます。"
+
+#: exifcaption.cpp:153
+#, c-format
+msgid "Sync captions entered through %1"
+msgstr "%1 から入力されたキャプションを同期"
+
+#: exifcaption.cpp:168 exifdevice.cpp:338
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/EXIF'>EXIF</a></b> "
+"text tags marked by (*) only support printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> characters set.</b>"
+msgstr ""
+"<p>注意: アスタリスク (*) の付いた <b><a href='http://en.wikipedia.org/wiki/Exif'>Exif</a>"
+"</b> タグには印字可能な <b><a href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"文字セットしか使えません。</p>"
+
+#: exifdatetime.cpp:103
+msgid "Creation date and time"
+msgstr "画像の作成日時"
+
+#: exifdatetime.cpp:104
+msgid "Creation sub-second"
+msgstr "作成時刻のサブセック"
+
+#: exifdatetime.cpp:108 iptcdatetime.cpp:116
+#, c-format
+msgid "Sync creation date entered through %1"
+msgstr "%1 から入力された作成日を同期"
+
+#: exifdatetime.cpp:111
+msgid "Sync IPTC creation date"
+msgstr "IPTC 作成日を同期"
+
+#: exifdatetime.cpp:122
+msgid ""
+"<p>Set here the date and time of image creation. In this standard it is the "
+"date and time the file was changed."
+msgstr "<p>画像が作成された日時を設定します。この規格では、これはファイルが変更された日時になります。"
+
+#: exifdatetime.cpp:124
+msgid ""
+"<p>Set here the fractions of seconds for the date and time of image creation."
+msgstr "<p>画像が作成された時刻を秒単位まで設定します。"
+
+#: exifdatetime.cpp:129
+msgid "Original date and time"
+msgstr "原画像の生成日時"
+
+#: exifdatetime.cpp:130
+msgid "Original sub-second"
+msgstr "原画像生成時刻のサブセック"
+
+#: exifdatetime.cpp:138
+msgid ""
+"<p>Set here the date and time when the original image data was generated. For a "
+"digital still camera the date and time the picture was taken are recorded."
+msgstr "<p>原画像データが生成された日時を設定します。デジタルスチルカメラの場合、これは写真が撮影された日時になります。"
+
+#: exifdatetime.cpp:141
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the original "
+"image data was generated."
+msgstr "<p>原画像が生成された時刻を秒単位まで設定します。"
+
+#: exifdatetime.cpp:146
+msgid "Digitization date and time"
+msgstr "デジタルデータの作成日時"
+
+#: exifdatetime.cpp:147
+msgid "Digitization sub-second"
+msgstr "デジタルデータ作成時刻のサブセック"
+
+#: exifdatetime.cpp:155
+msgid ""
+"<p>Set here the date and time when the image was stored as digital data. If, "
+"for example, an image was captured by a digital still camera and at the same "
+"time the file was recorded, then Original and Digitization date and time will "
+"have the same contents."
+msgstr ""
+"<p>画像がデジタルデータとして保存された日時を設定します。画像がデジタルスチルカメラで撮影され、同時にファイルに記録された場合、原画像の生成日時とデジタルデー"
+"タの作成日時は同じになります。"
+
+#: exifdatetime.cpp:160
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the image was "
+"stored as digital data."
+msgstr "<p>デジタルデータが作成された時刻を秒単位まで設定します。"
+
+#: exifdevice.cpp:134
+msgid "Device manufacturer (*):"
+msgstr "デバイスのメーカー (*):"
+
+#: exifdevice.cpp:139
+msgid ""
+"<p>Set here the manufacturer of image input equipment used to take the picture. "
+"This field is limited to ASCII characters."
+msgstr "<p>写真の撮影に使用された画像入力機器の製造者名を入力します。このフィールドは ASCII 文字に限ります。"
+
+#: exifdevice.cpp:144
+msgid "Device model (*):"
+msgstr "デバイスのモデル (*):"
+
+#: exifdevice.cpp:149
+msgid ""
+"<p>Set here the model of image input equipment used to take the picture. This "
+"field is limited to ASCII characters."
+msgstr "<p>写真の撮影に使用された画像入力機器のモデルを入力します。このフィールドは ASCII 文字に限ります。"
+
+#: exifdevice.cpp:154
+msgid "Device type:"
+msgstr "デバイスの種類:"
+
+#: exifdevice.cpp:156
+msgid "Film scanner"
+msgstr "フィルムスキャナ"
+
+#: exifdevice.cpp:157
+msgid "Reflection print scanner"
+msgstr ""
+
+#: exifdevice.cpp:158
+msgid "Digital still camera"
+msgstr "デジタルスチルカメラ"
+
+#: exifdevice.cpp:161
+msgid "<p>Select here the image input equipment type used to take the picture."
+msgstr "<p>写真の撮影に使用された画像入力機器の種類を選択します。"
+
+#: exifdevice.cpp:164
+#, fuzzy
+msgid ""
+"<b>Warning: EXIF <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data"
+"'>Makernotes</a></b> can be unreadable if you set wrong device "
+"manufacturer/model description.</b>"
+msgstr ""
+"注意: デバイスのメーカー/モデルの記述を間違えると Exif の <a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_Info"
+"rmation'>メーカーノート</a> が読めなくなる場合があります。"
+
+#: exifdevice.cpp:175
+msgid "Exposure time (seconds):"
+msgstr "露出時間 (秒):"
+
+#: exifdevice.cpp:184
+msgid ""
+"<p>Set on this option to set the exposure time of picture, given in seconds."
+msgstr "<p>このオプションで写真の露出時間を秒で設定します。"
+
+#: exifdevice.cpp:189
+msgid "Exposure program:"
+msgstr "露出プログラム:"
+
+#: exifdevice.cpp:191 exifdevice.cpp:298
+msgid "Not defined"
+msgstr "未定義"
+
+#: exifdevice.cpp:192 exifdevice.cpp:210 exiflight.cpp:194
+msgid "Manual"
+msgstr "マニュアル"
+
+#: exifdevice.cpp:193 exifdevice.cpp:209 exiflight.cpp:193
+msgid "Auto"
+msgstr "オート"
+
+#: exifdevice.cpp:194
+msgid "Aperture priority"
+msgstr "絞り優先"
+
+#: exifdevice.cpp:195
+msgid "Shutter priority"
+msgstr "シャッター優先"
+
+#: exifdevice.cpp:196
+msgid "Creative program"
+msgstr "クリエイティブプログラム"
+
+#: exifdevice.cpp:197
+msgid "Action program"
+msgstr "アクションプログラム"
+
+#: exifdevice.cpp:198
+msgid "Portrait mode"
+msgstr "ポートレートモード"
+
+#: exifdevice.cpp:199
+msgid "Landscape mode"
+msgstr "ランドスケープモード"
+
+#: exifdevice.cpp:202
+msgid ""
+"<p>Select here the program used by the camera to set exposure when the picture "
+"have been taken."
+msgstr "<p>写真の撮影時に露出時間をセットするためにカメラによって使用されたプログラムを選択します。"
+
+#: exifdevice.cpp:207
+msgid "Exposure mode:"
+msgstr "露出モード:"
+
+#: exifdevice.cpp:211
+msgid "Auto bracket"
+msgstr "オートブラケット"
+
+#: exifdevice.cpp:214
+msgid ""
+"<p>Select here the mode used by the camera to set exposure when the picture "
+"have been shot. In auto-bracketing mode, the camera shoots a series of frames "
+"of the same scene at different exposure settings."
+msgstr ""
+"<p>写真の撮影時に露出時間をセットするためにカメラによって使用されたモードを選択します。オートブラケットモードでは、カメラは異なる露出で連続して数枚撮影します"
+"。"
+
+#: exifdevice.cpp:222
+msgid "Exposure bias (APEX):"
+msgstr "露出補正値 (APEX):"
+
+#: exifdevice.cpp:226
+msgid ""
+"<p>Set here the exposure bias value in APEX unit used by camera to take the "
+"picture."
+msgstr "<p>写真の撮影時にカメラによって使用された露出補正値を APEX 単位で設定します。"
+
+#: exifdevice.cpp:234
+msgid "Metering mode:"
+msgstr "測光方式:"
+
+#: exifdevice.cpp:236 exiflight.cpp:137
+msgid "Unknown"
+msgstr "不明"
+
+#: exifdevice.cpp:237
+msgid "Average"
+msgstr "平均測光"
+
+#: exifdevice.cpp:238
+msgid "Center weighted average"
+msgstr "中央重点測光"
+
+#: exifdevice.cpp:239
+msgid "Spot"
+msgstr "スポット測光"
+
+#: exifdevice.cpp:240
+msgid "Multi-spot"
+msgstr "マルチスポット測光"
+
+#: exifdevice.cpp:241
+msgid "Multi-segment"
+msgstr "分割測光"
+
+#: exifdevice.cpp:242
+msgid "Partial"
+msgstr "部分測光"
+
+#: exifdevice.cpp:243
+msgid "Other"
+msgstr "その他"
+
+#: exifdevice.cpp:246
+msgid ""
+"<p>Select here the metering mode used by the camera to set exposure when the "
+"picture have been shot."
+msgstr "<p>写真の撮影時に露出時間をセットするためにカメラによって使用された測光方式を選択します。"
+
+#: exifdevice.cpp:251
+msgid "Sensitivity (ISO):"
+msgstr "感度 (ISO):"
+
+#: exifdevice.cpp:291
+msgid ""
+"<p>Select here the ISO Speed of the camera witch have taken the picture."
+msgstr "<p>写真を撮影したカメラの ISO スピードを選択します。"
+
+#: exifdevice.cpp:296
+msgid "Sensing method:"
+msgstr "センサー方式:"
+
+#: exifdevice.cpp:299
+msgid "One-chip color area"
+msgstr "単板カラーセンサー"
+
+#: exifdevice.cpp:300
+msgid "Two-chip color area"
+msgstr "二板カラーセンサー"
+
+#: exifdevice.cpp:301
+msgid "Three-chip color area"
+msgstr "三板カラーセンサー"
+
+#: exifdevice.cpp:302
+msgid "Color sequential area"
+msgstr "色順次エリアセンサー"
+
+#: exifdevice.cpp:303
+msgid "Trilinear sensor"
+msgstr "三線リニアセンサー"
+
+#: exifdevice.cpp:304
+msgid "Color sequential linear"
+msgstr "色順次リニアセンサー"
+
+#: exifdevice.cpp:307
+msgid ""
+"<p>Select here the image sensor type used by the camera to take the picture."
+msgstr "<p>写真の撮影時にカメラによって使用された画像センサーのタイプを選択します。"
+
+#: exifdevice.cpp:312
+msgid "Scene capture type:"
+msgstr "シーン撮影タイプ:"
+
+#: exifdevice.cpp:314
+msgid "Standard"
+msgstr "標準"
+
+#: exifdevice.cpp:317
+msgid "Night scene"
+msgstr "夜景"
+
+#: exifdevice.cpp:320
+msgid ""
+"<p>Select here the type of scene used by the camera to take the picture."
+msgstr "<p>写真の撮影時にカメラによって使用されたシーンのタイプを選択します。"
+
+#: exifdevice.cpp:325
+msgid "Subject distance type:"
+msgstr "被写体距離のタイプ:"
+
+#: exifdevice.cpp:327
+msgid "Unknow"
+msgstr "不明"
+
+#: exifdevice.cpp:328
+msgid "Macro"
+msgstr "マクロ"
+
+#: exifdevice.cpp:329
+msgid "Close view"
+msgstr "近景"
+
+#: exifdevice.cpp:330
+msgid "Distant view"
+msgstr "遠景"
+
+#: exifdevice.cpp:333
+msgid ""
+"<p>Select here the type of distance between the subject and the image input "
+"equipment."
+msgstr "<p>被写体と画像入力機器の距離のタイプを選択します。"
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption"
+msgstr "キャプション"
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption Information"
+msgstr "キャプション情報"
+
+#: exifeditdialog.cpp:142 iptceditdialog.cpp:150
+msgid "Date & Time"
+msgstr "日付と時間"
+
+#: exifeditdialog.cpp:142
+msgid "Date and Time"
+msgstr "日付と時間"
+
+#: exifeditdialog.cpp:146
+msgid "Lens"
+msgstr "レンズ"
+
+#: exifeditdialog.cpp:146
+msgid "Lens Settings"
+msgstr "レンズの設定"
+
+#: exifeditdialog.cpp:150
+msgid "Device"
+msgstr "デバイス"
+
+#: exifeditdialog.cpp:150
+msgid "Capture Device Settings"
+msgstr "記録デバイスの設定"
+
+#: exifeditdialog.cpp:154
+msgid "Light"
+msgstr "光源"
+
+#: exifeditdialog.cpp:154
+msgid "Light Source Information"
+msgstr "光源情報"
+
+#: exifeditdialog.cpp:158
+msgid "Adjustments"
+msgstr "補正"
+
+#: exifeditdialog.cpp:158
+msgid "Pictures Adjustments"
+msgstr "画像補正"
+
+#: exifeditdialog.cpp:283
+msgid "Edit EXIF Metadata"
+msgstr "Exif メタデータを編集"
+
+#: exifeditdialog.cpp:284 iptceditdialog.cpp:310
+msgid "(read only)"
+msgstr "(読み取り専用)"
+
+#: exiflens.cpp:157
+msgid "Focal length (mm):"
+msgstr "焦点距離 (mm):"
+
+#: exiflens.cpp:161
+msgid ""
+"<p>Set here the lens focal length in milimeters used by camera to take the "
+"picture."
+msgstr "<p>写真の撮影時にカメラによって使用されたレンズ焦点距離をミリメートルで設定します。"
+
+#: exiflens.cpp:166
+msgid "Focal length in 35mm film (mm):"
+msgstr "35mm 換算の焦点距離 (mm):"
+
+#: exiflens.cpp:170
+msgid ""
+"<p>Set here equivalent focal length assuming a 35mm film camera, in mm. A value "
+"of 0 means the focal length is unknown."
+msgstr "<p>35 mm フィルムカメラの焦点距離に換算した焦点距離をミリメートルで設定します。値 = 0 は焦点距離不明を意味します。"
+
+#: exiflens.cpp:176
+msgid "Digital zoom ratio:"
+msgstr "デジタルズーム率:"
+
+#: exiflens.cpp:180
+msgid "<p>Set here the digital zoom ratio used by camera to take the picture."
+msgstr "<p>写真の撮影時にカメラによって使用されたデジタルズーム率を選択します。"
+
+#: exiflens.cpp:185
+msgid "Lens aperture (f-number):"
+msgstr "レンズ絞り値 (F 値):"
+
+#: exiflens.cpp:190
+msgid "<p>Select here the lens aperture used by camera to take the picture."
+msgstr "<p>写真の撮影時にカメラによって使用されたレンズの絞り値を選択します。"
+
+#: exiflens.cpp:195
+msgid "Max. lens aperture (f-number):"
+msgstr "レンズ最小絞り値 (F 値):"
+
+#: exiflens.cpp:200
+msgid ""
+"<p>Select here the smallest aperture of the lens used by camera to take the "
+"picture."
+msgstr "<p>写真の撮影時にカメラによって使用されたレンズの最小絞り値を選択します。"
+
+#: exiflight.cpp:85
+msgid "No flash"
+msgstr "フラッシュなし"
+
+#: exiflight.cpp:86
+msgid "Fired"
+msgstr "ストロボ発光"
+
+#: exiflight.cpp:87
+msgid "Fired, no strobe return light"
+msgstr "ストロボ発光、ストロボのリターン検出されず"
+
+#: exiflight.cpp:88
+msgid "Fired, strobe return light"
+msgstr "ストロボ発光、ストロボのリターン検出"
+
+#: exiflight.cpp:89
+msgid "Yes, compulsory"
+msgstr "はい、強制発光"
+
+#: exiflight.cpp:90
+msgid "Yes, compulsory, no return light"
+msgstr "はい、強制発光、リターン検出されず"
+
+#: exiflight.cpp:91
+msgid "Yes, compulsory, return light"
+msgstr "はい、強制発光、リターン検出"
+
+#: exiflight.cpp:92
+msgid "No, compulsory"
+msgstr "いいえ、発光禁止"
+
+#: exiflight.cpp:93
+msgid "No, auto"
+msgstr "いいえ、自動発光"
+
+#: exiflight.cpp:94
+msgid "Yes, auto"
+msgstr "はい、自動発光"
+
+#: exiflight.cpp:95
+msgid "Yes, auto, no return light"
+msgstr "はい、自動発光、リターン検出されず"
+
+#: exiflight.cpp:96
+msgid "Yes, auto, return light"
+msgstr "はい、自動発光、リターン検出"
+
+#: exiflight.cpp:97
+msgid "No flash function"
+msgstr "フラッシュ機能なし"
+
+#: exiflight.cpp:98
+msgid "Yes, red-eye"
+msgstr "はい、赤目軽減"
+
+#: exiflight.cpp:99
+msgid "Yes, red-eye, no return light"
+msgstr "はい、赤目軽減、リターン検出されず"
+
+#: exiflight.cpp:100
+msgid "Yes, red-eye, return light"
+msgstr "はい、赤目軽減、リターン検出"
+
+#: exiflight.cpp:101
+msgid "Yes, compulsory, red-eye"
+msgstr "はい、強制発光、赤目軽減"
+
+#: exiflight.cpp:102
+msgid "Yes, compulsory, red-eye, no return light"
+msgstr "はい、強制発光、赤目軽減、リターン検出されず"
+
+#: exiflight.cpp:103
+msgid "Yes, compulsory, red-eye, return light"
+msgstr "はい、強制発光、赤目軽減、リターン検出"
+
+#: exiflight.cpp:104
+msgid "Yes, auto, red-eye"
+msgstr "はい、自動発光、赤目軽減"
+
+#: exiflight.cpp:105
+msgid "Yes, auto, red-eye, no return light"
+msgstr "はい、自動発光、赤目軽減、リターン検出されず"
+
+#: exiflight.cpp:106
+msgid "Yes, auto, red-eye, return light"
+msgstr "はい、自動発光、赤目軽減、リターン検出"
+
+#: exiflight.cpp:135
+msgid "Light source:"
+msgstr "光源:"
+
+#: exiflight.cpp:138
+msgid "Daylight"
+msgstr "昼光"
+
+#: exiflight.cpp:139
+msgid "Fluorescent"
+msgstr "蛍光灯"
+
+#: exiflight.cpp:140
+msgid "Tungsten (incandescent light)"
+msgstr "タングステン (白熱灯)"
+
+#: exiflight.cpp:141
+msgid "Flash"
+msgstr "フラッシュ"
+
+#: exiflight.cpp:142
+msgid "Fine weather"
+msgstr "晴天"
+
+#: exiflight.cpp:143
+msgid "Cloudy weather"
+msgstr "曇天"
+
+#: exiflight.cpp:144
+msgid "Shade"
+msgstr "日陰"
+
+#: exiflight.cpp:145
+msgid "Daylight fluorescent (D 5700 - 7100K)"
+msgstr "昼光色蛍光灯 (D 5700 - 7100K)"
+
+#: exiflight.cpp:146
+msgid "Day white fluorescent (N 4600 - 5400K)"
+msgstr "昼白色蛍光灯 (N 4600 - 5400K)"
+
+#: exiflight.cpp:147
+msgid "Cool white fluorescent (W 3900 - 4500K)"
+msgstr "白色蛍光灯 (W 3900 - 4500K)"
+
+#: exiflight.cpp:148
+msgid "White fluorescent (WW 3200 - 3700K)"
+msgstr "温白色蛍光灯 (WW 3200 - 3700K)"
+
+#: exiflight.cpp:149
+msgid "Standard light A"
+msgstr "標準光 A"
+
+#: exiflight.cpp:150
+msgid "Standard light B"
+msgstr "標準光 B"
+
+#: exiflight.cpp:151
+msgid "Standard light C"
+msgstr "標準光 C"
+
+#: exiflight.cpp:152
+msgid "D55"
+msgstr "D55"
+
+#: exiflight.cpp:153
+msgid "D65"
+msgstr "D65"
+
+#: exiflight.cpp:154
+msgid "D75"
+msgstr "D75"
+
+#: exiflight.cpp:155
+msgid "D50"
+msgstr "D50"
+
+#: exiflight.cpp:156
+msgid "ISO studio tungsten"
+msgstr "ISO スタジオタングステン"
+
+#: exiflight.cpp:157
+msgid "Other light source"
+msgstr "その他の光源"
+
+#: exiflight.cpp:160
+msgid "<p>Select here the kind of light source used to take the picture."
+msgstr "<p>写真の撮影時に使用された光源の種類を選択します。"
+
+#: exiflight.cpp:165
+msgid "Flash mode:"
+msgstr "フラッシュモード:"
+
+#: exiflight.cpp:174
+msgid ""
+"<p>Select here the flash program mode used by camera to take the picture."
+msgstr "<p>写真の撮影時にカメラによって使用されたフラッシュプログラムのモードを選択します。"
+
+#: exiflight.cpp:179
+msgid "Flash energy (BCPS):"
+msgstr "フラッシュ強度 (BCPS):"
+
+#: exiflight.cpp:183
+msgid ""
+"<p>Set here the flash energy used to take the picture in BCPS unit. Beam Candle "
+"Power Seconds is the measure of effective intensity of a light source when it "
+"is focused into a beam by a reflector or lens. This value is the effective "
+"intensity for a period of one second."
+msgstr ""
+
+#: exiflight.cpp:191
+msgid "White balance:"
+msgstr "ホワイトバランス:"
+
+#: exiflight.cpp:197
+msgid ""
+"<p>Select here the white balance mode set by camera when the picture have been "
+"shot."
+msgstr "<p>写真の撮影時にカメラによってセットされたホワイトバランスモードを選択します。"
+
+#: iptccaption.cpp:105
+#, c-format
+msgid "Sync caption entered through %1"
+msgstr "%1 から入力されたキャプションを同期"
+
+#: iptccaption.cpp:119
+msgid ""
+"<p>Enter the content description. This field is limited to 2000 ASCII "
+"characters."
+msgstr "<p>コンテンツの説明を入力します。このフィールドは ASCII 文字に限ります (2000 文字まで)。"
+
+#: iptccaption.cpp:124
+msgid "Caption Writer:"
+msgstr "キャプションの書き手:"
+
+#: iptccaption.cpp:130
+msgid ""
+"<p>Enter the name of the caption author. This field is limited to 32 ASCII "
+"characters."
+msgstr "<p>キャプションの作成者の名前を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptccaption.cpp:135
+msgid "Headline:"
+msgstr "ヘッドライン:"
+
+#: iptccaption.cpp:141
+msgid ""
+"<p>Enter here the content synopsis. This field is limited to 256 ASCII "
+"characters."
+msgstr "<p>コンテンツの要約を入力します。このフィールドは ASCII 文字に限ります (256 文字まで)。"
+
+#: iptccaption.cpp:146
+msgid "Special Instructions:"
+msgstr "特別な指示:"
+
+#: iptccaption.cpp:152
+msgid ""
+"<p>Enter the editorial usage instructions. This field is limited to 256 ASCII "
+"characters."
+msgstr "<p>編集者への使用上の指示を入力します。このフィールドは ASCII 文字に限ります (256 文字まで)。"
+
+#: iptccaption.cpp:157 iptccategories.cpp:129 iptccredits.cpp:165
+#: iptckeywords.cpp:116 iptcorigin.cpp:437 iptcstatus.cpp:207
+#: iptcsubjects.cpp:116
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"text tags only support the printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"characters set and limit strings size. Use contextual help for details.</b>"
+msgstr ""
+"<p>注意: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"のテキストタグには印字可能な <b><a href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"文字セットしか使えず、文字数にも制限があります。詳しくは各項目のヘルプを参照してください。</p>"
+
+#: iptccategories.cpp:95
+msgid "Identify subject of content (3 chars max):"
+msgstr "コンテンツのサブジェクト (最大 3 文字):"
+
+#: iptccategories.cpp:99
+msgid ""
+"<p>Set here the category of content. This field is limited to 3 ASCII "
+"characters."
+msgstr "<p>コンテンツのカテゴリを入力します。このフィールドは ASCII 文字に限ります (3 文字まで)。"
+
+#: iptccategories.cpp:102
+msgid "Supplemental categories:"
+msgstr "補助カテゴリ:"
+
+#: iptccategories.cpp:107
+msgid ""
+"<p>Enter here a new supplemental category of content. This field is limited to "
+"32 ASCII characters."
+msgstr "<p>コンテンツの新しい補助カテゴリを入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptccategories.cpp:113 iptckeywords.cpp:102 iptcsubjects.cpp:102
+msgid "&Add"
+msgstr "追加(&A)"
+
+#: iptccredits.cpp:99
+msgid "Copyright:"
+msgstr "著作権:"
+
+#: iptccredits.cpp:105
+msgid ""
+"<p>Set here the necessary copyright notice. This field is limited to 128 ASCII "
+"characters."
+msgstr "<p>必要な著作権文言を入力します。このフィールドは ASCII 文字に限ります (128 文字まで)。"
+
+#: iptccredits.cpp:110
+msgid "Byline:"
+msgstr "署名者:"
+
+#: iptccredits.cpp:116
+msgid ""
+"<p>Set here the name of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr "<p>コンテンツの作成者の名前を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptccredits.cpp:121
+msgid "Byline Title:"
+msgstr "署名者の肩書:"
+
+#: iptccredits.cpp:127
+msgid ""
+"<p>Set here the title of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr "<p>コンテンツの作成者の肩書を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptccredits.cpp:132
+msgid "Credit:"
+msgstr "クレジット:"
+
+#: iptccredits.cpp:138
+msgid ""
+"<p>Set here the content provider. This field is limited to 32 ASCII characters."
+msgstr "<p>コンテンツの提供者を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptccredits.cpp:143
+msgid "Source:"
+msgstr "出所:"
+
+#: iptccredits.cpp:149
+msgid ""
+"<p>Set here the original owner of content. This field is limited to 32 ASCII "
+"characters."
+msgstr "<p>コンテンツのオリジナルの所有者を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptccredits.cpp:154
+msgid "Contact:"
+msgstr "連絡先:"
+
+#: iptccredits.cpp:160
+msgid ""
+"<p>Set here the person or organisation to contact. This field is limited to 128 "
+"ASCII characters."
+msgstr "<p>連絡先の個人または組織名を入力します。このフィールドは ASCII 文字に限ります (128 文字まで)。"
+
+#: iptcdatetime.cpp:112
+msgid "Creation date"
+msgstr "作成日"
+
+#: iptcdatetime.cpp:113
+msgid "Creation time"
+msgstr "作成時間"
+
+#: iptcdatetime.cpp:119
+msgid "Sync EXIF creation date"
+msgstr "Exif 作成日を同期"
+
+#: iptcdatetime.cpp:130
+msgid "<p>Set here the creation date of intellectual content."
+msgstr "<p>知的コンテンツの作成日を設定します。"
+
+#: iptcdatetime.cpp:132
+msgid "<p>Set here the creation time of intellectual content."
+msgstr "<p>知的コンテンツの作成時間を設定します。"
+
+#: iptcdatetime.cpp:137
+msgid "Release date"
+msgstr "公開日"
+
+#: iptcdatetime.cpp:138
+msgid "Release time"
+msgstr "公開時間"
+
+#: iptcdatetime.cpp:147
+msgid "<p>Set here the earliest intended usable date of intellectual content."
+msgstr "<p>知的コンテンツの使用を許可する期間の開始日を設定します。"
+
+#: iptcdatetime.cpp:149
+msgid "<p>Set here the earliest intended usable time of intellectual content."
+msgstr "<p>知的コンテンツの使用を許可する期間の開始時間を設定します。"
+
+#: iptcdatetime.cpp:154
+msgid "Expiration date"
+msgstr "失効日"
+
+#: iptcdatetime.cpp:155
+msgid "Expiration time"
+msgstr "失効時間"
+
+#: iptcdatetime.cpp:164
+msgid "<p>Set here the latest intended usable date of intellectual content."
+msgstr "<p>知的コンテンツの使用を許可する期間の終了日を設定します。"
+
+#: iptcdatetime.cpp:166
+msgid "<p>Set here the latest intended usable time of intellectual content."
+msgstr "<p>知的コンテンツの使用を許可する期間の終了時間を設定します。"
+
+#: iptcdatetime.cpp:171
+msgid "Digitization date"
+msgstr "デジタル化された日"
+
+#: iptcdatetime.cpp:172
+msgid "Digitization time"
+msgstr "デジタル化された時間"
+
+#: iptcdatetime.cpp:181
+msgid "<p>Set here the creation date of digital representation."
+msgstr "<p>コンテンツがデジタル化された日付を設定します。"
+
+#: iptcdatetime.cpp:183
+msgid "<p>Set here the creation time of digital representation."
+msgstr "<p>コンテンツがデジタル化された時間を設定します。"
+
+#: iptceditdialog.cpp:150
+msgid "Date and Time Information"
+msgstr "日付と時間に関する情報"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects"
+msgstr "サブジェクト"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects Information"
+msgstr "サブジェクト情報"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords"
+msgstr "キーワード"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords Information"
+msgstr "キーワード情報"
+
+#: iptceditdialog.cpp:162
+msgid "Categories"
+msgstr "カテゴリ"
+
+#: iptceditdialog.cpp:162
+msgid "Categories Information"
+msgstr "カテゴリ情報"
+
+#: iptceditdialog.cpp:166
+msgid "Credits"
+msgstr "クレジット"
+
+#: iptceditdialog.cpp:166
+msgid "Credits Information"
+msgstr "クレジット情報"
+
+#: iptceditdialog.cpp:170
+msgid "Status"
+msgstr "ステータス"
+
+#: iptceditdialog.cpp:170
+msgid "Status Information"
+msgstr "ステータス情報"
+
+#: iptceditdialog.cpp:174
+msgid "Origin"
+msgstr "出所"
+
+#: iptceditdialog.cpp:174
+msgid "Origin Information"
+msgstr "出所情報"
+
+#: iptceditdialog.cpp:184
+msgid "A Plugin to edit image metadata"
+msgstr "画像のメタデータを編集するためのプラグイン"
+
+#: iptceditdialog.cpp:309
+msgid "Edit IPTC Metadata"
+msgstr "IPTC メタデータを編集"
+
+#: iptckeywords.cpp:91
+msgid "Use information retrieval words:"
+msgstr "情報に関連する検索語を使う:"
+
+#: iptckeywords.cpp:96
+msgid ""
+"<p>Enter here a new keyword. This field is limited to 64 ASCII characters."
+msgstr "<p>新しいキーワードを入力します。このフィールドは ASCII 文字に限ります (64 文字まで)。"
+
+#: iptcorigin.cpp:76
+msgid "Afghanistan"
+msgstr "アフガニスタン"
+
+#: iptcorigin.cpp:77
+msgid "Albania"
+msgstr "アルバニア"
+
+#: iptcorigin.cpp:78
+msgid "Algeria"
+msgstr "アルジェリア"
+
+#: iptcorigin.cpp:79
+msgid "American Samoa"
+msgstr "米領サモア"
+
+#: iptcorigin.cpp:80
+msgid "Andorra"
+msgstr "アンドラ"
+
+#: iptcorigin.cpp:81 iptcorigin.cpp:83
+msgid "Angola"
+msgstr "アンゴラ"
+
+#: iptcorigin.cpp:82
+msgid "Anguilla"
+msgstr "アンギラ"
+
+#: iptcorigin.cpp:84
+msgid "Antarctica"
+msgstr "南極"
+
+#: iptcorigin.cpp:85
+msgid "Antigua and Barbuda"
+msgstr "アンティグア・バーブーダ"
+
+#: iptcorigin.cpp:86
+msgid "Argentina"
+msgstr "アルゼンチン"
+
+#: iptcorigin.cpp:87
+msgid "Armenia"
+msgstr "アルメニア"
+
+#: iptcorigin.cpp:88
+msgid "Aruba"
+msgstr "アルバ"
+
+#: iptcorigin.cpp:89
+msgid "Australia"
+msgstr "オーストラリア"
+
+#: iptcorigin.cpp:90
+msgid "Austria"
+msgstr "オーストリア"
+
+#: iptcorigin.cpp:91
+msgid "Azerbaijan"
+msgstr "アゼルバイジャン"
+
+#: iptcorigin.cpp:92
+msgid "Bahamas"
+msgstr "バハマ"
+
+#: iptcorigin.cpp:93
+msgid "Bahrain"
+msgstr "バーレーン"
+
+#: iptcorigin.cpp:94
+msgid "Bangladesh"
+msgstr "バングラデシュ"
+
+#: iptcorigin.cpp:95
+msgid "Barbados"
+msgstr "バルバドス"
+
+#: iptcorigin.cpp:96
+msgid "Belarus"
+msgstr "ベラルーシ"
+
+#: iptcorigin.cpp:97
+msgid "Belgium"
+msgstr "ベルギー"
+
+#: iptcorigin.cpp:98
+msgid "Belize"
+msgstr "ベリーズ"
+
+#: iptcorigin.cpp:99
+msgid "Benin"
+msgstr "ベナン"
+
+#: iptcorigin.cpp:100
+msgid "Bermuda"
+msgstr "バミューダ諸島"
+
+#: iptcorigin.cpp:101
+msgid "Bhutan"
+msgstr "ブータン"
+
+#: iptcorigin.cpp:102
+msgid "Bolivia"
+msgstr "ボリビア"
+
+#: iptcorigin.cpp:103
+msgid "Bosnia and Herzegovina"
+msgstr "ボスニア・ヘルツェゴビナ"
+
+#: iptcorigin.cpp:104
+msgid "Botswana"
+msgstr "ボツワナ"
+
+#: iptcorigin.cpp:105
+msgid "Bouvet Island"
+msgstr "ブーベ島"
+
+#: iptcorigin.cpp:106
+msgid "Brazil"
+msgstr "ブラジル"
+
+#: iptcorigin.cpp:107
+msgid "British Indian Ocean Territory"
+msgstr "英領インド洋地域"
+
+#: iptcorigin.cpp:108
+msgid "British Virgin Islands"
+msgstr "英領バージン諸島"
+
+#: iptcorigin.cpp:109
+msgid "Brunei Darussalam"
+msgstr "ブルネイ"
+
+#: iptcorigin.cpp:110
+msgid "Bulgaria"
+msgstr "ブルガリア"
+
+#: iptcorigin.cpp:111
+msgid "Burkina Faso"
+msgstr "ブルキナファソ"
+
+#: iptcorigin.cpp:112
+msgid "Burundi"
+msgstr "ブルンジ"
+
+#: iptcorigin.cpp:113
+msgid "Cambodia"
+msgstr "カンボジア"
+
+#: iptcorigin.cpp:114
+msgid "Cameroon"
+msgstr "カメルーン"
+
+#: iptcorigin.cpp:115
+msgid "Canada"
+msgstr "カナダ"
+
+#: iptcorigin.cpp:116
+msgid "Cape Verde"
+msgstr "カーボベルデ"
+
+#: iptcorigin.cpp:117
+msgid "Cayman Islands"
+msgstr "ケイマン諸島"
+
+#: iptcorigin.cpp:118
+msgid "Central African Republic"
+msgstr "中央アフリカ共和国"
+
+#: iptcorigin.cpp:119
+msgid "Chad"
+msgstr "チャド"
+
+#: iptcorigin.cpp:120
+msgid "Chile"
+msgstr "チリ"
+
+#: iptcorigin.cpp:121
+msgid "China"
+msgstr "中国"
+
+#: iptcorigin.cpp:122
+msgid "Christmas Island "
+msgstr "クリスマス島"
+
+#: iptcorigin.cpp:123
+msgid "Cocos Islands"
+msgstr "ココス諸島"
+
+#: iptcorigin.cpp:124
+msgid "Colombia"
+msgstr "コロンビア"
+
+#: iptcorigin.cpp:125
+msgid "Comoros"
+msgstr "コモロ"
+
+# Not in TopicSet; Deprecated; コンゴ民主共和国の旧名
+#: iptcorigin.cpp:126
+msgid "Zaire"
+msgstr "ザイール"
+
+#: iptcorigin.cpp:127
+msgid "Congo"
+msgstr "コンゴ共和国"
+
+#: iptcorigin.cpp:128
+msgid "Cook Islands"
+msgstr "クック諸島"
+
+#: iptcorigin.cpp:129
+msgid "Costa Rica"
+msgstr "コスタリカ"
+
+#: iptcorigin.cpp:130
+msgid "Ivory Coast"
+msgstr "コートジボワール"
+
+#: iptcorigin.cpp:131
+msgid "Cuba"
+msgstr "キューバ"
+
+#: iptcorigin.cpp:132
+msgid "Cyprus"
+msgstr "キプロス"
+
+#: iptcorigin.cpp:133
+msgid "Czech Republic"
+msgstr "チェコ"
+
+#: iptcorigin.cpp:134
+msgid "Denmark"
+msgstr "デンマーク"
+
+#: iptcorigin.cpp:135
+msgid "Djibouti"
+msgstr "ジブチ"
+
+#: iptcorigin.cpp:136
+msgid "Dominica"
+msgstr "ドミニカ"
+
+#: iptcorigin.cpp:137
+msgid "Dominican Republic"
+msgstr "ドミニカ共和国"
+
+#: iptcorigin.cpp:138
+msgid "Ecuador"
+msgstr "エクアドル"
+
+#: iptcorigin.cpp:139
+msgid "Egypt"
+msgstr "エジプト"
+
+#: iptcorigin.cpp:140
+msgid "El Salvador"
+msgstr "エルサルバドル"
+
+#: iptcorigin.cpp:141
+msgid "Equatorial Guinea"
+msgstr "赤道ギニア"
+
+#: iptcorigin.cpp:142
+msgid "Eritrea"
+msgstr "エリトリア"
+
+#: iptcorigin.cpp:143
+msgid "Estonia"
+msgstr "エストニア"
+
+#: iptcorigin.cpp:144
+msgid "Ethiopia"
+msgstr "エチオピア"
+
+#: iptcorigin.cpp:145
+msgid "Faeroe Islands"
+msgstr "フェロー諸島"
+
+#: iptcorigin.cpp:146
+msgid "Falkland Islands"
+msgstr "フォークランド諸島"
+
+#: iptcorigin.cpp:147
+msgid "Fiji Islands"
+msgstr "フィジー"
+
+#: iptcorigin.cpp:148
+msgid "Finland"
+msgstr "フィンランド"
+
+#: iptcorigin.cpp:149
+msgid "France"
+msgstr "フランス"
+
+#: iptcorigin.cpp:150
+msgid "French Guiana"
+msgstr "仏領ギアナ"
+
+#: iptcorigin.cpp:151
+msgid "French Polynesia"
+msgstr "仏領ポリネシア"
+
+#: iptcorigin.cpp:152
+msgid "French Southern Territories"
+msgstr "仏領極南諸島"
+
+#: iptcorigin.cpp:153
+msgid "Gabon"
+msgstr "ガボン"
+
+#: iptcorigin.cpp:154
+msgid "Gambia"
+msgstr "ガンビア"
+
+#: iptcorigin.cpp:155
+msgid "Georgia"
+msgstr "グルジア"
+
+#: iptcorigin.cpp:156
+msgid "Germany"
+msgstr "ドイツ"
+
+#: iptcorigin.cpp:157
+msgid "Ghana"
+msgstr "ガーナ"
+
+#: iptcorigin.cpp:158
+msgid "Gibraltar"
+msgstr "ジブラルタル"
+
+#: iptcorigin.cpp:159
+msgid "Greece"
+msgstr "ギリシャ"
+
+#: iptcorigin.cpp:160
+msgid "Greenland"
+msgstr "グリーンランド"
+
+#: iptcorigin.cpp:161
+msgid "Grenada"
+msgstr "グレナダ"
+
+#: iptcorigin.cpp:162
+msgid "Guadaloupe"
+msgstr "グアドループ"
+
+#: iptcorigin.cpp:163
+msgid "Guam"
+msgstr "グアム"
+
+#: iptcorigin.cpp:164
+msgid "Guatemala"
+msgstr "グアテマラ"
+
+#: iptcorigin.cpp:165
+msgid "Guinea"
+msgstr "ギニア"
+
+#: iptcorigin.cpp:166
+msgid "Guinea-Bissau"
+msgstr "ギニアビサウ"
+
+#: iptcorigin.cpp:167
+msgid "Guyana"
+msgstr "ガイアナ"
+
+#: iptcorigin.cpp:168
+msgid "Haiti"
+msgstr "ハイチ"
+
+#: iptcorigin.cpp:169
+msgid "Heard and McDonald Islands"
+msgstr "ハード島・マクドナルド諸島"
+
+#: iptcorigin.cpp:170
+msgid "Vatican"
+msgstr "バチカン"
+
+#: iptcorigin.cpp:171
+msgid "Honduras"
+msgstr "ホンジュラス"
+
+#: iptcorigin.cpp:172
+msgid "Hong Kong"
+msgstr "香港"
+
+#: iptcorigin.cpp:173
+msgid "Croatia"
+msgstr "クロアチア"
+
+#: iptcorigin.cpp:174
+msgid "Hungary"
+msgstr "ハンガリー"
+
+#: iptcorigin.cpp:175
+msgid "Iceland"
+msgstr "アイスランド"
+
+#: iptcorigin.cpp:176
+msgid "India"
+msgstr "インド"
+
+#: iptcorigin.cpp:177
+msgid "Indonesia"
+msgstr "インドネシア"
+
+#: iptcorigin.cpp:178
+msgid "Iran"
+msgstr "イラン"
+
+#: iptcorigin.cpp:179
+msgid "Iraq"
+msgstr "イラク"
+
+#: iptcorigin.cpp:180
+msgid "Ireland"
+msgstr "アイルランド"
+
+#: iptcorigin.cpp:181
+msgid "Israel"
+msgstr "イスラエル"
+
+#: iptcorigin.cpp:182
+msgid "Italy"
+msgstr "イタリア"
+
+#: iptcorigin.cpp:183
+msgid "Jamaica"
+msgstr "ジャマイカ"
+
+#: iptcorigin.cpp:184
+msgid "Japan"
+msgstr "日本"
+
+#: iptcorigin.cpp:185
+msgid "Jordan"
+msgstr "ヨルダン"
+
+#: iptcorigin.cpp:186
+msgid "Kazakhstan"
+msgstr "カザフスタン"
+
+#: iptcorigin.cpp:187
+msgid "Kenya"
+msgstr "ケニア"
+
+#: iptcorigin.cpp:188
+msgid "Kiribati"
+msgstr "キリバス"
+
+#: iptcorigin.cpp:189 iptcorigin.cpp:190
+msgid "Korea"
+msgstr ""
+
+#: iptcorigin.cpp:191
+msgid "Kuwait"
+msgstr "クウェート"
+
+#: iptcorigin.cpp:192
+msgid "Kyrgyz Republic"
+msgstr "キルギス"
+
+#: iptcorigin.cpp:193
+msgid "Lao"
+msgstr "ラオス"
+
+#: iptcorigin.cpp:194
+msgid "Latvia"
+msgstr "ラトビア"
+
+#: iptcorigin.cpp:195
+msgid "Lebanon"
+msgstr "レバノン"
+
+#: iptcorigin.cpp:196
+msgid "Lesotho"
+msgstr "レソト"
+
+#: iptcorigin.cpp:197
+msgid "Liberia"
+msgstr "リベリア"
+
+#: iptcorigin.cpp:198
+msgid "Libyan Arab Jamahiriya"
+msgstr "リビア"
+
+#: iptcorigin.cpp:199
+msgid "Liechtenstein"
+msgstr "リヒテンシュタイン"
+
+#: iptcorigin.cpp:200
+msgid "Lithuania"
+msgstr "リトアニア"
+
+#: iptcorigin.cpp:201
+msgid "Luxembourg"
+msgstr "ルクセンブルク"
+
+#: iptcorigin.cpp:202
+msgid "Macao"
+msgstr "マカオ"
+
+#: iptcorigin.cpp:203
+msgid "Macedonia"
+msgstr "マケドニア"
+
+#: iptcorigin.cpp:204
+msgid "Madagascar"
+msgstr "マダガスカル"
+
+#: iptcorigin.cpp:205
+msgid "Malawi"
+msgstr "マラウイ"
+
+#: iptcorigin.cpp:206
+msgid "Malaysia"
+msgstr "マレーシア"
+
+#: iptcorigin.cpp:207
+msgid "Maldives"
+msgstr "モルディブ"
+
+#: iptcorigin.cpp:208
+msgid "Mali"
+msgstr "マリ"
+
+#: iptcorigin.cpp:209
+msgid "Malta"
+msgstr "マルタ"
+
+#: iptcorigin.cpp:210
+msgid "Marshall Islands"
+msgstr "マーシャル諸島"
+
+#: iptcorigin.cpp:211
+msgid "Martinique"
+msgstr "マルティニク"
+
+#: iptcorigin.cpp:212
+msgid "Mauritania"
+msgstr "モーリタニア"
+
+#: iptcorigin.cpp:213
+msgid "Mauritius"
+msgstr "モーリシャス"
+
+#: iptcorigin.cpp:214
+msgid "Mayotte"
+msgstr "マヨット"
+
+#: iptcorigin.cpp:215
+msgid "Mexico"
+msgstr "メキシコ"
+
+#: iptcorigin.cpp:216
+msgid "Micronesia"
+msgstr "ミクロネシア"
+
+#: iptcorigin.cpp:217
+msgid "Moldova"
+msgstr "モルドバ"
+
+#: iptcorigin.cpp:218
+msgid "Monaco"
+msgstr "モナコ"
+
+#: iptcorigin.cpp:219
+msgid "Mongolia"
+msgstr "モンゴル"
+
+#: iptcorigin.cpp:220
+msgid "Montserrat"
+msgstr "モンセラット"
+
+#: iptcorigin.cpp:221
+msgid "Morocco"
+msgstr "モロッコ"
+
+#: iptcorigin.cpp:222
+msgid "Mozambique"
+msgstr "モザンビーク"
+
+#: iptcorigin.cpp:223
+msgid "Myanmar"
+msgstr "ミャンマー"
+
+#: iptcorigin.cpp:224
+msgid "Namibia"
+msgstr "ナミビア"
+
+#: iptcorigin.cpp:225
+msgid "Nauru"
+msgstr "ナウル"
+
+#: iptcorigin.cpp:226
+msgid "Nepal"
+msgstr "ネパール"
+
+#: iptcorigin.cpp:227
+msgid "Netherlands Antilles"
+msgstr "オランダ領アンティル"
+
+#: iptcorigin.cpp:228
+msgid "Netherlands"
+msgstr "オランダ"
+
+#: iptcorigin.cpp:229
+msgid "New Caledonia"
+msgstr "ニューカレドニア"
+
+#: iptcorigin.cpp:230
+msgid "New Zealand"
+msgstr "ニュージーランド"
+
+#: iptcorigin.cpp:231
+msgid "Nicaragua"
+msgstr "ニカラグア"
+
+#: iptcorigin.cpp:232
+msgid "Niger"
+msgstr "ニジェール"
+
+#: iptcorigin.cpp:233
+msgid "Nigeria"
+msgstr "ナイジェリア"
+
+#: iptcorigin.cpp:234
+msgid "Niue"
+msgstr "ニウエ"
+
+#: iptcorigin.cpp:235
+msgid "Norfolk Island"
+msgstr "ノーフォーク島"
+
+#: iptcorigin.cpp:236
+msgid "Northern Mariana Islands"
+msgstr "北マリアナ諸島連邦"
+
+#: iptcorigin.cpp:237
+msgid "Norway"
+msgstr "ノルウェー"
+
+#: iptcorigin.cpp:238
+msgid "Oman"
+msgstr "オマーン"
+
+#: iptcorigin.cpp:239
+msgid "Pakistan"
+msgstr "パキスタン"
+
+#: iptcorigin.cpp:240
+msgid "Palau"
+msgstr "パラオ"
+
+#: iptcorigin.cpp:241
+msgid "Palestinian Territory"
+msgstr "パレスチナ"
+
+#: iptcorigin.cpp:242
+msgid "Panama"
+msgstr "パナマ"
+
+#: iptcorigin.cpp:243
+msgid "Papua New Guinea"
+msgstr "パプアニューギニア"
+
+#: iptcorigin.cpp:244
+msgid "Paraguay"
+msgstr "パラグアイ"
+
+#: iptcorigin.cpp:245
+msgid "Peru"
+msgstr "ペルー"
+
+#: iptcorigin.cpp:246
+msgid "Philippines"
+msgstr "フィリピン"
+
+#: iptcorigin.cpp:247
+msgid "Pitcairn Island"
+msgstr "ピトケアン島"
+
+#: iptcorigin.cpp:248
+msgid "Poland"
+msgstr "ポーランド"
+
+#: iptcorigin.cpp:249
+msgid "Portugal"
+msgstr "ポルトガル"
+
+#: iptcorigin.cpp:250
+msgid "Puerto Rico"
+msgstr "プエルトリコ"
+
+#: iptcorigin.cpp:251
+msgid "Qatar"
+msgstr "カタール"
+
+#: iptcorigin.cpp:252
+msgid "Reunion"
+msgstr "レユニオン"
+
+#: iptcorigin.cpp:253
+msgid "Romania"
+msgstr "ルーマニア"
+
+#: iptcorigin.cpp:254
+msgid "Russian Federation"
+msgstr "ロシア"
+
+#: iptcorigin.cpp:255
+msgid "Rwanda"
+msgstr "ルワンダ"
+
+#: iptcorigin.cpp:256
+msgid "St. Helena"
+msgstr "セントヘレナ島"
+
+#: iptcorigin.cpp:257
+msgid "St. Kitts and Nevis"
+msgstr "セントクリストファー・ネビス"
+
+#: iptcorigin.cpp:258
+msgid "St. Lucia"
+msgstr "セントルシア"
+
+#: iptcorigin.cpp:259
+msgid "St. Pierre and Miquelon"
+msgstr "サンピエール島・ミクロン島"
+
+#: iptcorigin.cpp:260
+msgid "St. Vincent and the Grenadines"
+msgstr "セントビンセント・グレナディーン"
+
+#: iptcorigin.cpp:261
+msgid "Samoa"
+msgstr "サモア"
+
+#: iptcorigin.cpp:262
+msgid "San Marino"
+msgstr "サンマリノ"
+
+#: iptcorigin.cpp:263
+msgid "Sao Tome and Principe"
+msgstr "サントメ・プリンシペ"
+
+#: iptcorigin.cpp:264
+msgid "Saudi Arabia"
+msgstr "サウジアラビア"
+
+#: iptcorigin.cpp:265
+msgid "Senegal"
+msgstr "セネガル"
+
+#: iptcorigin.cpp:266
+msgid "Serbia and Montenegro"
+msgstr "セルビア・モンテネグロ"
+
+#: iptcorigin.cpp:267
+msgid "Seychelles"
+msgstr "セーシェル"
+
+#: iptcorigin.cpp:268
+msgid "Sierra Leone"
+msgstr "シエラレオネ"
+
+#: iptcorigin.cpp:269
+msgid "Singapore"
+msgstr "シンガポール"
+
+#: iptcorigin.cpp:270
+msgid "Slovakia"
+msgstr "スロバキア"
+
+#: iptcorigin.cpp:271
+msgid "Slovenia"
+msgstr "スロベニア"
+
+#: iptcorigin.cpp:272
+msgid "Solomon Islands"
+msgstr "ソロモン諸島"
+
+#: iptcorigin.cpp:273
+msgid "Somalia"
+msgstr "ソマリア"
+
+#: iptcorigin.cpp:274
+msgid "South Africa"
+msgstr "南アフリカ"
+
+#: iptcorigin.cpp:275
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "南ジョージア島・南サンドイッチ諸島"
+
+#: iptcorigin.cpp:276
+msgid "Spain"
+msgstr "スペイン"
+
+#: iptcorigin.cpp:277
+msgid "Sri Lanka"
+msgstr "スリランカ"
+
+#: iptcorigin.cpp:278
+msgid "Sudan"
+msgstr "スーダン"
+
+#: iptcorigin.cpp:279
+msgid "Suriname"
+msgstr "スリナム"
+
+#: iptcorigin.cpp:280
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "スバールバル諸島・ヤンマイエン島"
+
+#: iptcorigin.cpp:281
+msgid "Swaziland"
+msgstr "スワジランド"
+
+#: iptcorigin.cpp:282
+msgid "Sweden"
+msgstr "スウェーデン"
+
+#: iptcorigin.cpp:283
+msgid "Switzerland"
+msgstr "スイス"
+
+#: iptcorigin.cpp:284
+msgid "Syrian Arab Republic"
+msgstr "シリア"
+
+#: iptcorigin.cpp:285
+msgid "Taiwan"
+msgstr "台湾"
+
+#: iptcorigin.cpp:286
+msgid "Tajikistan"
+msgstr "タジキスタン"
+
+#: iptcorigin.cpp:287
+msgid "Tanzania"
+msgstr "タンザニア"
+
+#: iptcorigin.cpp:288
+msgid "Thailand"
+msgstr "タイ"
+
+#: iptcorigin.cpp:289
+msgid "Timor-Leste"
+msgstr "東ティモール"
+
+#: iptcorigin.cpp:290
+msgid "Togo"
+msgstr "トーゴ"
+
+#: iptcorigin.cpp:291
+msgid "Tokelau Islands"
+msgstr "トケラウ諸島"
+
+#: iptcorigin.cpp:292
+msgid "Tonga"
+msgstr "トンガ"
+
+#: iptcorigin.cpp:293
+msgid "Trinidad and Tobago"
+msgstr "トリニダード・トバゴ"
+
+#: iptcorigin.cpp:294
+msgid "Tunisia"
+msgstr "チュニジア"
+
+#: iptcorigin.cpp:295
+msgid "Turkey"
+msgstr "トルコ"
+
+#: iptcorigin.cpp:296
+msgid "Turkmenistan"
+msgstr "トルクメニスタン"
+
+#: iptcorigin.cpp:297
+msgid "Turks and Caicos Islands"
+msgstr "タークス諸島・カイコス諸島"
+
+#: iptcorigin.cpp:298
+msgid "Tuvalu"
+msgstr "ツバル"
+
+#: iptcorigin.cpp:299
+msgid "US Virgin Islands"
+msgstr "米領バージン諸島"
+
+#: iptcorigin.cpp:300
+msgid "Uganda"
+msgstr "ウガンダ"
+
+#: iptcorigin.cpp:301
+msgid "Ukraine"
+msgstr "ウクライナ"
+
+#: iptcorigin.cpp:302
+msgid "United Arab Emirates"
+msgstr "アラブ首長国連邦"
+
+#: iptcorigin.cpp:303
+msgid "United Kingdom"
+msgstr "英国"
+
+#: iptcorigin.cpp:304
+msgid "United States Minor Outlying Islands"
+msgstr "米領太平洋諸島"
+
+#: iptcorigin.cpp:305
+msgid "United States of America"
+msgstr "米国"
+
+#: iptcorigin.cpp:306
+msgid "Uruguay, Eastern Republic of"
+msgstr "ウルグアイ"
+
+#: iptcorigin.cpp:307
+msgid "Uzbekistan"
+msgstr "ウズベキスタン"
+
+#: iptcorigin.cpp:308
+msgid "Vanuatu"
+msgstr "バヌアツ"
+
+#: iptcorigin.cpp:309
+msgid "Venezuela"
+msgstr "ベネズエラ"
+
+#: iptcorigin.cpp:310
+msgid "Viet Nam"
+msgstr "ベトナム"
+
+#: iptcorigin.cpp:311
+msgid "Wallis and Futuna Islands "
+msgstr "ワリス・フテュナ諸島"
+
+#: iptcorigin.cpp:312
+msgid "Western Sahara"
+msgstr "西サハラ"
+
+#: iptcorigin.cpp:313
+msgid "Yemen"
+msgstr "イエメン"
+
+#: iptcorigin.cpp:314
+msgid "Zambia"
+msgstr "ザンビア"
+
+#: iptcorigin.cpp:315
+msgid "Zimbabwe"
+msgstr "ジンバブエ"
+
+#: iptcorigin.cpp:319
+msgid "United Nations"
+msgstr "国際連合"
+
+#: iptcorigin.cpp:320
+msgid "European Union"
+msgstr "欧州連合"
+
+#: iptcorigin.cpp:321
+msgid "Space"
+msgstr "宇宙"
+
+#: iptcorigin.cpp:322
+msgid "At Sea"
+msgstr "海上"
+
+#: iptcorigin.cpp:323
+msgid "In Flight"
+msgstr "飛行中"
+
+#: iptcorigin.cpp:324
+msgid "England"
+msgstr "イングランド"
+
+#: iptcorigin.cpp:325
+msgid "Scotland"
+msgstr "スコットランド"
+
+#: iptcorigin.cpp:326
+msgid "Northern Ireland"
+msgstr "北アイルランド"
+
+#: iptcorigin.cpp:327
+msgid "Wales"
+msgstr "ウェールズ"
+
+#: iptcorigin.cpp:328
+msgid "Palestine"
+msgstr "パレスチナ"
+
+#: iptcorigin.cpp:329
+msgid "Gaza"
+msgstr "ガザ"
+
+#: iptcorigin.cpp:330
+msgid "Jericho"
+msgstr "エリコ"
+
+#: iptcorigin.cpp:369
+msgid "Object name:"
+msgstr "オブジェクト名:"
+
+#: iptcorigin.cpp:373
+msgid ""
+"<p>Set here the shorthand reference of content. This field is limited to 64 "
+"ASCII characters."
+msgstr "<p>コンテンツの省略名を入力します。このフィールドは ASCII 文字に限ります (64 文字まで)。"
+
+#: iptcorigin.cpp:378
+msgid "Location:"
+msgstr "場所:"
+
+#: iptcorigin.cpp:382
+msgid ""
+"<p>Set here the full country name referenced by the content. This field is "
+"limited to 64 ASCII characters."
+msgstr "<p>コンテンツの出所国の完全な名前を入力します。このフィールドは ASCII 文字に限ります (64 文字まで)。"
+
+#: iptcorigin.cpp:388
+msgid "City:"
+msgstr "市:"
+
+#: iptcorigin.cpp:392
+msgid ""
+"<p>Set here the city of content origin. This field is limited to 32 ASCII "
+"characters."
+msgstr "<p>コンテンツの出所の市を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptcorigin.cpp:397
+msgid "Sublocation:"
+msgstr "町名:"
+
+#: iptcorigin.cpp:401
+msgid ""
+"<p>Set here the content location within city. This field is limited to 32 ASCII "
+"characters."
+msgstr "<p>コンテンツの出所の市の中の場所を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptcorigin.cpp:406
+msgid "State/Province:"
+msgstr "州 / 県:"
+
+#: iptcorigin.cpp:410
+msgid ""
+"<p>Set here the Province or State of content origin. This field is limited to "
+"32 ASCII characters."
+msgstr "<p>コンテンツの出所の州または県を入力します。このフィールドは ASCII 文字に限ります (32 文字まで)。"
+
+#: iptcorigin.cpp:415
+msgid "Country:"
+msgstr "国:"
+
+#: iptcorigin.cpp:424
+msgid "<p>Select here country name of content origin."
+msgstr "<p>コンテンツの出所国を選択します。"
+
+#: iptcorigin.cpp:428
+msgid "Original transmission reference:"
+msgstr ""
+
+#: iptcorigin.cpp:432
+msgid ""
+"<p>Set here the location of original content transmission. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+
+#: iptcstatus.cpp:104
+msgid "Edit Status:"
+msgstr "編集状況:"
+
+#: iptcstatus.cpp:110
+msgid ""
+"<p>Set here the content status. This field is limited to 64 ASCII characters."
+msgstr "<p>コンテンツの編集状況を入力します。このフィールドは ASCII 文字に限ります (64 文字まで)。"
+
+#: iptcstatus.cpp:115
+msgid "Priority:"
+msgstr "優先度:"
+
+#: iptcstatus.cpp:117
+msgid "0: None"
+msgstr "0: なし"
+
+#: iptcstatus.cpp:118
+msgid "1: High"
+msgstr "1: 高"
+
+#: iptcstatus.cpp:122
+msgid "5: Normal"
+msgstr "5: 中"
+
+#: iptcstatus.cpp:125
+msgid "8: Low"
+msgstr "8: 低"
+
+#: iptcstatus.cpp:128
+msgid "<p>Select here the editorial urgency of content."
+msgstr "<p>コンテンツの編集上の緊急度を選択します。"
+
+#: iptcstatus.cpp:132
+msgid "Object Cycle:"
+msgstr ""
+
+#: iptcstatus.cpp:134
+msgid "Morning"
+msgstr "午前"
+
+#: iptcstatus.cpp:135
+msgid "Afternoon"
+msgstr "午後"
+
+#: iptcstatus.cpp:136
+msgid "Evening"
+msgstr "夜"
+
+#: iptcstatus.cpp:139
+msgid "<p>Select here the editorial cycle of content."
+msgstr ""
+
+#: iptcstatus.cpp:143
+msgid "Object Type:"
+msgstr "オブジェクトのタイプ:"
+
+#: iptcstatus.cpp:148
+msgid "News"
+msgstr "ニュース"
+
+#: iptcstatus.cpp:149
+msgid "Data"
+msgstr "データ"
+
+#: iptcstatus.cpp:150
+msgid "Advisory"
+msgstr "アドバイザリ"
+
+#: iptcstatus.cpp:154
+msgid "<p>Select here the editorial type of content."
+msgstr "<p>コンテンツの編集上のタイプを選択します。"
+
+#: iptcstatus.cpp:155
+msgid ""
+"<p>Set here the editorial type description of content. This field is limited to "
+"64 ASCII characters."
+msgstr "<p>コンテンツの編集上のタイプの説明を入力します。このフィールドは ASCII 文字に限ります (64 文字まで)。"
+
+#: iptcstatus.cpp:160
+msgid "Object Attribute:"
+msgstr "オブジェクトの属性:"
+
+#: iptcstatus.cpp:165
+msgid "Current"
+msgstr "現況"
+
+#: iptcstatus.cpp:166
+msgid "Analysis"
+msgstr "分析"
+
+#: iptcstatus.cpp:167
+msgid "Archive material"
+msgstr "アーカイブ資料"
+
+#: iptcstatus.cpp:168
+msgid "Background"
+msgstr "背景"
+
+#: iptcstatus.cpp:169
+msgid "Feature"
+msgstr "特集記事"
+
+#: iptcstatus.cpp:170
+msgid "Forecast"
+msgstr "予測"
+
+#: iptcstatus.cpp:171
+msgid "History"
+msgstr "歴史"
+
+#: iptcstatus.cpp:172
+msgid "Obituary"
+msgstr "死亡記事"
+
+#: iptcstatus.cpp:173
+msgid "Opinion"
+msgstr "意見・見解"
+
+#: iptcstatus.cpp:174
+msgid "Polls & Surveys"
+msgstr "世論調査"
+
+#: iptcstatus.cpp:175
+msgid "Profile"
+msgstr "プロフィール"
+
+#: iptcstatus.cpp:176
+msgid "Results Listings & Table"
+msgstr "結果リストと統計"
+
+#: iptcstatus.cpp:177
+msgid "Side bar & Supporting information"
+msgstr "補足や支援情報"
+
+#: iptcstatus.cpp:178
+msgid "Summary"
+msgstr "概要"
+
+#: iptcstatus.cpp:179
+msgid "Transcript & Verbatim"
+msgstr "逐語的な口述の清書"
+
+#: iptcstatus.cpp:180
+msgid "Interview"
+msgstr "インタビュー"
+
+#: iptcstatus.cpp:181
+msgid "From the Scene"
+msgstr "現地報告"
+
+#: iptcstatus.cpp:182
+msgid "Retrospective"
+msgstr "回顧"
+
+#: iptcstatus.cpp:183
+msgid "Statistics"
+msgstr "統計"
+
+#: iptcstatus.cpp:184
+msgid "Update"
+msgstr "更新版"
+
+#: iptcstatus.cpp:185
+msgid "Wrap-up"
+msgstr "要約"
+
+#: iptcstatus.cpp:186
+msgid "Press Release"
+msgstr "プレスリリース"
+
+#: iptcstatus.cpp:190
+msgid "<p>Select here the editorial attribute of content."
+msgstr "<p>コンテンツの編集上の属性を選択します。"
+
+#: iptcstatus.cpp:191
+msgid ""
+"<p>Set here the editorial attribute description of content. This field is "
+"limited to 64 ASCII characters."
+msgstr "<p>コンテンツの編集上の属性の説明を入力します。このフィールドは ASCII 文字に限ります (64 文字まで)。"
+
+#: iptcstatus.cpp:196
+msgid "Job Identification:"
+msgstr ""
+
+#: iptcstatus.cpp:202
+msgid ""
+"<p>Set here the string that identifies content that recurs. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+
+#: iptcsubjects.cpp:91
+msgid "Use structured definition of the subject matter:"
+msgstr ""
+
+#: iptcsubjects.cpp:96
+msgid ""
+"<p>Enter here a new subject. This field is limited to 236 ASCII characters."
+msgstr "<p>新しいサブジェクトを入力します。このフィールドは ASCII 文字に限ります (236 文字まで)。"
+
+#: plugin_metadataedit.cpp:68
+msgid "Metadata"
+msgstr "メタデータ"
+
+#: plugin_metadataedit.cpp:73
+msgid "Edit EXIF..."
+msgstr "Exif を編集..."
+
+#: plugin_metadataedit.cpp:81
+msgid "Remove EXIF..."
+msgstr "Exif を削除..."
+
+#: plugin_metadataedit.cpp:89
+msgid "Import EXIF..."
+msgstr "Exif をインポート..."
+
+#: plugin_metadataedit.cpp:99
+msgid "Edit IPTC..."
+msgstr "IPTC を編集..."
+
+#: plugin_metadataedit.cpp:107
+msgid "Remove IPTC..."
+msgstr "IPTC を削除..."
+
+#: plugin_metadataedit.cpp:115
+msgid "Import IPTC..."
+msgstr "IPTC をインポート..."
+
+#: plugin_metadataedit.cpp:125
+msgid "Edit Captions..."
+msgstr "キャプションを編集..."
+
+#: plugin_metadataedit.cpp:133
+msgid "Remove Captions..."
+msgstr "キャプションを削除..."
+
+#: plugin_metadataedit.cpp:179
+msgid ""
+"EXIF metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"Exif メタデータは現在選択されているすべての画像から完全に削除されます。\n"
+"続けますか？"
+
+#: plugin_metadataedit.cpp:181 plugin_metadataedit.cpp:220
+msgid "Remove EXIF Metadata"
+msgstr "Exif メタデータを削除"
+
+#: plugin_metadataedit.cpp:218
+msgid "Unable to remove EXIF metadata from:"
+msgstr "次から Exif メタデータを削除できません:"
+
+#: plugin_metadataedit.cpp:233
+msgid "Select File to Import EXIF metadata"
+msgstr "Exif メタデータをインポートするファイルを選択"
+
+#: plugin_metadataedit.cpp:241 plugin_metadataedit.cpp:387
+msgid "Cannot load metadata from \"%1\""
+msgstr "\"%1\" からメタデータを読み込めません"
+
+#: plugin_metadataedit.cpp:242 plugin_metadataedit.cpp:251
+#: plugin_metadataedit.cpp:260 plugin_metadataedit.cpp:300
+msgid "Import EXIF Metadata"
+msgstr "Exif メタデータをインポート"
+
+#: plugin_metadataedit.cpp:250
+msgid "\"%1\" do not have EXIF metadata"
+msgstr "\"%1\" には Exif メタデータがありません"
+
+#: plugin_metadataedit.cpp:257
+msgid ""
+"EXIF metadata from current selected pictures will be permanently replaced by "
+"the EXIF content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"現在選択されている画像の Exif メタデータは完全に \"%1\" の Exif の内容に置き換えられます。\n"
+"続けますか？"
+
+#: plugin_metadataedit.cpp:298
+msgid "Unable to set EXIF metadata from:"
+msgstr "次から Exif メタデータをセットできません:"
+
+#: plugin_metadataedit.cpp:325
+msgid ""
+"IPTC metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"IPTC メタデータは現在選択されているすべての画像から完全に削除されます。\n"
+"続けますか？"
+
+#: plugin_metadataedit.cpp:327 plugin_metadataedit.cpp:366
+msgid "Remove IPTC Metadata"
+msgstr "IPTC メタデータを削除"
+
+#: plugin_metadataedit.cpp:364
+msgid "Unable to remove IPTC metadata from:"
+msgstr "次から IPTC メタデータを削除できません:"
+
+#: plugin_metadataedit.cpp:379
+msgid "Select File to Import IPTC metadata"
+msgstr "IPTC メタデータをインポートするファイルを選択"
+
+#: plugin_metadataedit.cpp:388 plugin_metadataedit.cpp:397
+#: plugin_metadataedit.cpp:406 plugin_metadataedit.cpp:446
+msgid "Import IPTC Metadata"
+msgstr "IPTC メタデータをインポート"
+
+#: plugin_metadataedit.cpp:396
+msgid "\"%1\" do not have IPTC metadata"
+msgstr "\"%1\" には IPTC メタデータがありません"
+
+#: plugin_metadataedit.cpp:403
+msgid ""
+"IPTC metadata from current selected pictures will be permanently replaced by "
+"the IPTC content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"現在選択されている画像の IPTC メタデータは完全に \"%1\" の IPTC の内容に置き換えられます。\n"
+"続けますか？"
+
+#: plugin_metadataedit.cpp:444
+msgid "Unable to set IPTC metadata from:"
+msgstr "次から IPTC メタデータをセットできません:"
+
+#: plugin_metadataedit.cpp:508
+msgid "Unable to set captions as image metadata from:"
+msgstr "次から画像メタデータとしてキャプションをセットできません:"
+
+#: plugin_metadataedit.cpp:575
+msgid "Unable to remove caption as image metadata from:"
+msgstr "次から画像メタデータのキャプションを削除できません:"
+
+#: plugin_metadataedit.cpp:577
+msgid "Remove Image Caption"
+msgstr "画像のキャプションを削除"

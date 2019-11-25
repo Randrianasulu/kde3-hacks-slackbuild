@@ -1,0 +1,326 @@
+/****************************************************************************
+** Digikam::LightTableView meta object code from reading C++ file 'lighttableview.h'
+**
+** Created: Wed Jun 14 03:56:01 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "lighttableview.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::LightTableView::className() const
+{
+    return "Digikam::LightTableView";
+}
+
+QMetaObject *Digikam::LightTableView::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__LightTableView( "Digikam::LightTableView", &Digikam::LightTableView::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::LightTableView::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::LightTableView", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::LightTableView::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::LightTableView", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::LightTableView::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QFrame::staticMetaObject();
+    static const QUMethod slot_0 = {"slotDecreaseZoom", 0, 0 };
+    static const QUMethod slot_1 = {"slotIncreaseZoom", 0, 0 };
+    static const QUMethod slot_2 = {"slotDecreaseLeftZoom", 0, 0 };
+    static const QUMethod slot_3 = {"slotIncreaseLeftZoom", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotLeftZoomSliderChanged", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"slotDecreaseRightZoom", 0, 0 };
+    static const QUMethod slot_6 = {"slotIncreaseRightZoom", 0, 0 };
+    static const QUParameter param_slot_7[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"slotRightZoomSliderChanged", 1, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"slotLeftContentsMoved", 2, param_slot_8 };
+    static const QUParameter param_slot_9[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"slotRightContentsMoved", 2, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotLeftPreviewLoaded", 1, param_slot_10 };
+    static const QUParameter param_slot_11[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotRightPreviewLoaded", 1, param_slot_11 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotDecreaseZoom()", &slot_0, QMetaData::Public },
+	{ "slotIncreaseZoom()", &slot_1, QMetaData::Public },
+	{ "slotDecreaseLeftZoom()", &slot_2, QMetaData::Public },
+	{ "slotIncreaseLeftZoom()", &slot_3, QMetaData::Public },
+	{ "slotLeftZoomSliderChanged(int)", &slot_4, QMetaData::Public },
+	{ "slotDecreaseRightZoom()", &slot_5, QMetaData::Public },
+	{ "slotIncreaseRightZoom()", &slot_6, QMetaData::Public },
+	{ "slotRightZoomSliderChanged(int)", &slot_7, QMetaData::Public },
+	{ "slotLeftContentsMoved(int,int)", &slot_8, QMetaData::Private },
+	{ "slotRightContentsMoved(int,int)", &slot_9, QMetaData::Private },
+	{ "slotLeftPreviewLoaded(bool)", &slot_10, QMetaData::Private },
+	{ "slotRightPreviewLoaded(bool)", &slot_11, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalLeftPreviewLoaded", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalRightPreviewLoaded", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ 0, &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalLeftZoomFactorChanged", 1, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ 0, &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"signalRightZoomFactorChanged", 1, param_signal_3 };
+    static const QUParameter param_signal_4[] = {
+	{ 0, &static_QUType_ptr, "ImageInfoList", QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"signalLeftDroppedItems", 1, param_signal_4 };
+    static const QUParameter param_signal_5[] = {
+	{ 0, &static_QUType_ptr, "ImageInfoList", QUParameter::In }
+    };
+    static const QUMethod signal_5 = {"signalRightDroppedItems", 1, param_signal_5 };
+    static const QUMethod signal_6 = {"signalLeftPanelLeftButtonClicked", 0, 0 };
+    static const QUMethod signal_7 = {"signalRightPanelLeftButtonClicked", 0, 0 };
+    static const QUMethod signal_8 = {"signalSlideShow", 0, 0 };
+    static const QUParameter param_signal_9[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_9 = {"signalDeleteItem", 1, param_signal_9 };
+    static const QUParameter param_signal_10[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_10 = {"signalEditItem", 1, param_signal_10 };
+    static const QUParameter param_signal_11[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_11 = {"signalToggleOnSyncPreview", 1, param_signal_11 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalLeftPreviewLoaded(bool)", &signal_0, QMetaData::Public },
+	{ "signalRightPreviewLoaded(bool)", &signal_1, QMetaData::Public },
+	{ "signalLeftZoomFactorChanged(double)", &signal_2, QMetaData::Public },
+	{ "signalRightZoomFactorChanged(double)", &signal_3, QMetaData::Public },
+	{ "signalLeftDroppedItems(const ImageInfoList&)", &signal_4, QMetaData::Public },
+	{ "signalRightDroppedItems(const ImageInfoList&)", &signal_5, QMetaData::Public },
+	{ "signalLeftPanelLeftButtonClicked()", &signal_6, QMetaData::Public },
+	{ "signalRightPanelLeftButtonClicked()", &signal_7, QMetaData::Public },
+	{ "signalSlideShow()", &signal_8, QMetaData::Public },
+	{ "signalDeleteItem(ImageInfo*)", &signal_9, QMetaData::Public },
+	{ "signalEditItem(ImageInfo*)", &signal_10, QMetaData::Public },
+	{ "signalToggleOnSyncPreview(bool)", &signal_11, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::LightTableView", parentObject,
+	slot_tbl, 12,
+	signal_tbl, 12,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__LightTableView.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::LightTableView::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::LightTableView" ) )
+	return this;
+    return QFrame::qt_cast( clname );
+}
+
+// SIGNAL signalLeftPreviewLoaded
+void Digikam::LightTableView::signalLeftPreviewLoaded( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+// SIGNAL signalRightPreviewLoaded
+void Digikam::LightTableView::signalRightPreviewLoaded( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+// SIGNAL signalLeftZoomFactorChanged
+void Digikam::LightTableView::signalLeftZoomFactorChanged( double t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2, t0 );
+}
+
+// SIGNAL signalRightZoomFactorChanged
+void Digikam::LightTableView::signalRightZoomFactorChanged( double t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3, t0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalLeftDroppedItems
+void Digikam::LightTableView::signalLeftDroppedItems( const ImageInfoList& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 4 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalRightDroppedItems
+void Digikam::LightTableView::signalRightDroppedItems( const ImageInfoList& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 5 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalLeftPanelLeftButtonClicked
+void Digikam::LightTableView::signalLeftPanelLeftButtonClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 6 );
+}
+
+// SIGNAL signalRightPanelLeftButtonClicked
+void Digikam::LightTableView::signalRightPanelLeftButtonClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 7 );
+}
+
+// SIGNAL signalSlideShow
+void Digikam::LightTableView::signalSlideShow()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 8 );
+}
+
+// SIGNAL signalDeleteItem
+void Digikam::LightTableView::signalDeleteItem( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 9 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalEditItem
+void Digikam::LightTableView::signalEditItem( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 10 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalToggleOnSyncPreview
+void Digikam::LightTableView::signalToggleOnSyncPreview( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 11, t0 );
+}
+
+bool Digikam::LightTableView::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotDecreaseZoom(); break;
+    case 1: slotIncreaseZoom(); break;
+    case 2: slotDecreaseLeftZoom(); break;
+    case 3: slotIncreaseLeftZoom(); break;
+    case 4: slotLeftZoomSliderChanged((int)static_QUType_int.get(_o+1)); break;
+    case 5: slotDecreaseRightZoom(); break;
+    case 6: slotIncreaseRightZoom(); break;
+    case 7: slotRightZoomSliderChanged((int)static_QUType_int.get(_o+1)); break;
+    case 8: slotLeftContentsMoved((int)static_QUType_int.get(_o+1),(int)static_QUType_int.get(_o+2)); break;
+    case 9: slotRightContentsMoved((int)static_QUType_int.get(_o+1),(int)static_QUType_int.get(_o+2)); break;
+    case 10: slotLeftPreviewLoaded((bool)static_QUType_bool.get(_o+1)); break;
+    case 11: slotRightPreviewLoaded((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return QFrame::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::LightTableView::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalLeftPreviewLoaded((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: signalRightPreviewLoaded((bool)static_QUType_bool.get(_o+1)); break;
+    case 2: signalLeftZoomFactorChanged((double)static_QUType_double.get(_o+1)); break;
+    case 3: signalRightZoomFactorChanged((double)static_QUType_double.get(_o+1)); break;
+    case 4: signalLeftDroppedItems((const ImageInfoList&)*((const ImageInfoList*)static_QUType_ptr.get(_o+1))); break;
+    case 5: signalRightDroppedItems((const ImageInfoList&)*((const ImageInfoList*)static_QUType_ptr.get(_o+1))); break;
+    case 6: signalLeftPanelLeftButtonClicked(); break;
+    case 7: signalRightPanelLeftButtonClicked(); break;
+    case 8: signalSlideShow(); break;
+    case 9: signalDeleteItem((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 10: signalEditItem((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 11: signalToggleOnSyncPreview((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return QFrame::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::LightTableView::qt_property( int id, int f, QVariant* v)
+{
+    return QFrame::qt_property( id, f, v);
+}
+
+bool Digikam::LightTableView::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

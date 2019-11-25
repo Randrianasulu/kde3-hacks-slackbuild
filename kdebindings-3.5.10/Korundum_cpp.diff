@@ -1,0 +1,59 @@
+--- /tmp/kdebindings-3.5.10/korundum/rubylib/korundum/Korundum.cpp.old	2007-01-15 12:19:09.000000000 +0100
++++ /tmp/kdebindings-3.5.10/korundum/rubylib/korundum/Korundum.cpp	2010-10-23 23:45:42.000000000 +0200
+@@ -805,7 +805,7 @@
+ 			// isn't in the Smoke runtime
+ 			QValueList<DCOPRef> windowList;
+ 			
+-			for (long i = 0; i < RARRAY(result)->len; i++) {
++			for (long i = 0; i < RARRAY_LEN(result); i++) {
+ 				VALUE item = rb_ary_entry(result, i);
+ 				smokeruby_object *o = value_obj_info(item);
+ 				if( !o || !o->ptr)
+@@ -822,7 +822,7 @@
+ 			// And special case this type too 
+ 			QValueList<QCString> propertyList;
+ 			
+-			for (long i = 0; i < RARRAY(result)->len; i++) {
++			for (long i = 0; i < RARRAY_LEN(result); i++) {
+ 				VALUE item = rb_ary_entry(result, i);
+ 				propertyList.append(QCString(StringValuePtr(item)));
+ 			}
+@@ -836,7 +836,7 @@
+ 			// Convert the ruby hash to an array of key/value arrays
+ 			VALUE temp = rb_funcall(result, rb_intern("to_a"), 0);
+ 
+-			for (long i = 0; i < RARRAY(temp)->len; i++) {
++			for (long i = 0; i < RARRAY_LEN(temp); i++) {
+ 				VALUE action = rb_ary_entry(rb_ary_entry(temp, i), 0);
+ 				VALUE item = rb_ary_entry(rb_ary_entry(temp, i), 1);
+ 				
+@@ -926,7 +926,7 @@
+ {
+ 	VALUE dcopObject = rb_funcall(kde_module, rb_intern("createDCOPObject"), 1, self);
+ 	
+-    QString signalname(rb_id2name(rb_frame_last_func()));
++    QString signalname(rb_id2name(rb_frame_this_func()));
+     VALUE args = getdcopinfo(self, signalname);
+ 
+     if(args == Qnil) return Qfalse;
+@@ -1020,7 +1020,7 @@
+ 	
+ 	if (rb_funcall(kde_module, rb_intern("hasDCOPSignals"), 1, klass) == Qtrue) {
+ 		VALUE signalNames = rb_funcall(kde_module, rb_intern("getDCOPSignalNames"), 1, klass);
+-		for (long index = 0; index < RARRAY(signalNames)->len; index++) {
++		for (long index = 0; index < RARRAY_LEN(signalNames); index++) {
+ 			VALUE signal = rb_ary_entry(signalNames, index);
+ 			rb_define_method(klass, StringValuePtr(signal), (VALUE (*) (...)) k_dcop_signal, -1);
+ 		}
+@@ -1088,9 +1088,9 @@
+ 	QStrList *args = new QStrList;
+ 
+ 	if (value_args != Qnil) {
+-		for (long i = 0; i < RARRAY(value_args)->len; i++) {
++		for (long i = 0; i < RARRAY_LEN(value_args); i++) {
+ 			VALUE item = rb_ary_entry(value_args, i);
+-			args->append(QString::fromLatin1(StringValuePtr(item), RSTRING(item)->len));
++			args->append(QString::fromLatin1(StringValuePtr(item), RSTRING_LEN(item)));
+ 		}
+ 	}
+ 

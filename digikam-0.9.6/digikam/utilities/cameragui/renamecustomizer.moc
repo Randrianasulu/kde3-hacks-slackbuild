@@ -1,0 +1,140 @@
+/****************************************************************************
+** Digikam::RenameCustomizer meta object code from reading C++ file 'renamecustomizer.h'
+**
+** Created: Wed Jun 14 03:50:16 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "renamecustomizer.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::RenameCustomizer::className() const
+{
+    return "Digikam::RenameCustomizer";
+}
+
+QMetaObject *Digikam::RenameCustomizer::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__RenameCustomizer( "Digikam::RenameCustomizer", &Digikam::RenameCustomizer::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::RenameCustomizer::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::RenameCustomizer", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::RenameCustomizer::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::RenameCustomizer", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::RenameCustomizer::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QButtonGroup::staticMetaObject();
+    static const QUMethod slot_0 = {"restoreFocus", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotRadioButtonClicked", 1, param_slot_1 };
+    static const QUMethod slot_2 = {"slotRenameOptionsChanged", 0, 0 };
+    static const QUParameter param_slot_3[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotDateTimeBoxToggled", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotDateTimeFormatChanged", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"slotDateTimeButtonClicked", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "restoreFocus()", &slot_0, QMetaData::Public },
+	{ "slotRadioButtonClicked(int)", &slot_1, QMetaData::Private },
+	{ "slotRenameOptionsChanged()", &slot_2, QMetaData::Private },
+	{ "slotDateTimeBoxToggled(bool)", &slot_3, QMetaData::Private },
+	{ "slotDateTimeFormatChanged(int)", &slot_4, QMetaData::Private },
+	{ "slotDateTimeButtonClicked()", &slot_5, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalChanged", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalChanged()", &signal_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::RenameCustomizer", parentObject,
+	slot_tbl, 6,
+	signal_tbl, 1,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__RenameCustomizer.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::RenameCustomizer::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::RenameCustomizer" ) )
+	return this;
+    return QButtonGroup::qt_cast( clname );
+}
+
+// SIGNAL signalChanged
+void Digikam::RenameCustomizer::signalChanged()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+bool Digikam::RenameCustomizer::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: restoreFocus(); break;
+    case 1: slotRadioButtonClicked((int)static_QUType_int.get(_o+1)); break;
+    case 2: slotRenameOptionsChanged(); break;
+    case 3: slotDateTimeBoxToggled((bool)static_QUType_bool.get(_o+1)); break;
+    case 4: slotDateTimeFormatChanged((int)static_QUType_int.get(_o+1)); break;
+    case 5: slotDateTimeButtonClicked(); break;
+    default:
+	return QButtonGroup::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::RenameCustomizer::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalChanged(); break;
+    default:
+	return QButtonGroup::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::RenameCustomizer::qt_property( int id, int f, QVariant* v)
+{
+    return QButtonGroup::qt_property( id, f, v);
+}
+
+bool Digikam::RenameCustomizer::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

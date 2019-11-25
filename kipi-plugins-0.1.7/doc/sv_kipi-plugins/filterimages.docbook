@@ -1,0 +1,114 @@
+<chapter id="filterimages">
+<chapterinfo>
+
+<title
+>Filtrera bilder</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Filtrera bilder är ett verktyg för att utföra digital filtrering av bilder. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Det här insticksprogrammet kan användas för att filtrera bilder i ett album i bakgrunden. Det använder programmet "convert" från paketet "ImageMagick". En förhandsgranskning av bildeffekten (delvis eller fullständig) är tillgänglig. Nio filtertyper har implementerats: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Lägg till brus</emphasis
+>: Lägg till brus i en bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Kantutjämning</emphasis
+>: Ta bort bildpunktskanter.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Suddighet</emphasis
+>: Gör bilden suddigare med en Gaussisk operator.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Ytutjämna</emphasis
+>: Reducera ytbruset inne i en bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Förbättra</emphasis
+>: Använd ett digitalt filter för att förbättra en brusig bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Median</emphasis
+>: Använd ett medianfilter på en bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Brusreducering</emphasis
+>: Reducera brus i en bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Skärpa</emphasis
+>: Gör bilden skarpare med en Gaussisk operator.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Oskarp</emphasis
+>: Gör bilden skarpare med en oskarp mask-operator.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Du kan se några exempel skapade med insticksprogrammet på följande <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/FilterImages/index.html"
+><citetitle
+>webbadress</citetitle
+></ulink
+>.</para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

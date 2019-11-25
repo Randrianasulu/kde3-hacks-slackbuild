@@ -1,0 +1,17 @@
+--- kdebindings-3.5.10/python/sip/specs/linux-g++.orig	2007-10-08 13:47:57.000000000 +0400
++++ kdebindings-3.5.10/python/sip/specs/linux-g++	2015-09-25 14:32:31.210398520 +0300
+@@ -16,11 +16,11 @@
+ QMAKE_YACCFLAGS_MANGLE  = -p $base -b $base
+ QMAKE_YACC_HEADER       = $base.tab.h
+ QMAKE_YACC_SOURCE       = $base.tab.c
+-QMAKE_CFLAGS		= -pipe
++QMAKE_CFLAGS		= -pipe -fpermissive
+ QMAKE_CFLAGS_DEPS	= -M
+ QMAKE_CFLAGS_WARN_ON	= -Wall -W
+ QMAKE_CFLAGS_WARN_OFF	= -w
+-QMAKE_CFLAGS_RELEASE	= -O2
+-QMAKE_CFLAGS_DEBUG	= -g
++QMAKE_CFLAGS_RELEASE	= -O2  -fpermissive
++QMAKE_CFLAGS_DEBUG	= -g -fpermissive
+ QMAKE_CFLAGS_SHLIB	= -fPIC
+ QMAKE_CFLAGS_YACC	= -Wno-unused -Wno-parentheses

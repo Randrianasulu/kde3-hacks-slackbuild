@@ -1,0 +1,11 @@
+--- kpowersave-0.7.3/src/inactivity.cpp	2007-09-17 21:39:45.000000000 +0400
++++ kpowersave-0.7.3.orig/src/inactivity.cpp	2015-08-27 03:38:35.000000000 +0300
+@@ -325,7 +325,7 @@
+ 		blacklisted_running = false;
+ 	} 
+ 	else {
+-		if (pids.contains(QRegExp::QRegExp("[0-9]"))) {
++		if (pids.contains(QRegExp("[0-9]"))) {
+ 			kdDebug() << "BLACKLISTED IS RUNNING" << endl;
+ 			blacklisted_running = true;
+ 			blacklisted_running_last = idleTime;

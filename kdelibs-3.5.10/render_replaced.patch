@@ -1,0 +1,11 @@
+--- branches/KDE/4.2/kdelibs/khtml/rendering/render_replaced.cpp	2009/04/03 01:57:10	948443
++++ branches/KDE/4.2/kdelibs/khtml/rendering/render_replaced.cpp	2009/04/03 02:00:26	948444
+@@ -345,7 +345,7 @@
+     if ( m_widget ) {
+         resizeWidget( m_width-borderLeft()-borderRight()-paddingLeft()-paddingRight(),
+                       m_height-borderTop()-borderBottom()-paddingTop()-paddingBottom() );
+-        if (!isRedirectedWidget() && !isFrame() && !m_needsMask) {
++        if (!isRedirectedWidget() && (!isFrame() || document()->part()->parentPart()) && !m_needsMask) {
+             m_needsMask = true;
+             RenderLayer* rl = enclosingStackingContext();
+             RenderLayer* el = enclosingLayer();

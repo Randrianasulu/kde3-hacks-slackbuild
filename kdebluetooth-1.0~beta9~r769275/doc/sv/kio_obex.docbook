@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>OBEX I/O-slav: Bläddra i kataloger via Blåtand</title>
+
+  <sect2>
+    <title
+>Allmänt</title>
+    <para
+>OBEX-protokollet är konstruerat för att använda med mobilenheter. Om du redan har &quot;strålat&quot; ett visitkort från en mobilenhet till en annan mobilenhet, har du använd OBEX. Men det finns också andra tillämpningar av OBEX-protokollet. Det mest nämnvärda är bläddringsprotokollet för filsystem. Om mobilenheten förstår protokollet, kan du bläddra, ladda upp och ladda ner filer till mobilens filsystemlagring med den här klientimplementeringen. Dessutom har synkroniseringsprotokoll som IrMCSync eller SyncML kopplingar till OBEX, och kan kommas åt med den här klienten, även om det inte finns någon användning av synkronisering i Konqueror.</para>
+    <para
+>OBEX-protokoll kan använda många överföringssätt. Det ursprungliga överföringssättet var IrDA, men det finns också överföringskopplingar till Blåtand, seriella anslutningar och TCP-IP-anslutningar.</para>
+    <para
+>OBEX stöder tvåvägs behörighetskontroll. Det första, mest välkända sättet, är behörighetskontroll av klienten av servern. Serverimplementeringen kan alltså verifiera klientens identitet. Men klienten kan också verifiera serverns identitet. En utmaning med en MD5-summa används för behörighetskontroll. Det försäkrar att enkla lösenord aldrig skickas via överföringsmediet.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>Webbadressformat</title>
+    <para
+>OBEX-resurser kan kommas åt med webbadresser. Protokolldelen är uppenbarligen obex:. Sökvägskomponenten innehåller sökvägen på servern. Värddatordelen är något mer komplex.</para>
+    <para
+>För en server som kan kommas åt via TCP/IP är värddatordelen som vanligt. Du kan använda serverns värddatornamn eller IP-adress för att ansluta. Om servern dessutom använder en port som inte är standard (standardporten är 650), kan du lägga till portnumret som vanligt. Till exempel <userinput
+>obex://värddatornamn:port/sökväg</userinput
+>.</para>
+    <para
+>För överföring med IrDA eller Blåtand kan du använda hårdvaruadressen med standardskrivsättet oktetter åtskilda av dubbla kolon. Snyggt, men det är ganska svårt att komma ihåg hårdvaruadressen för en Blåtandsenhet. Till exempel <userinput
+>obex://[ef:01:23:45]/sökväg</userinput
+> eller <userinput
+>obex://[12:34:ef:01:23:45]/sökväg</userinput
+>.</para>
+    <para
+>Därför är det möjligt att definiera värddatoralias för användning med OBEX-protokollet. Dessa alias definieras i OBEX modul i Inställningscentralen. Du kan ange ett namn som är läsbart av människor, upptäcka enheter, och till sist tilldela en hårdvaruadress till namnet. Dessutom är enheter med serieöverföring åtkomliga via dessa alias. För IrDA och Blåtand finns det praktiska fördefinierade alias som heter irda och bluetooth. Båda upptäcker enheter och försöker ansluta till den första enheten de hittar.</para>
+    <para
+>Lycka till med att bläddra i grannens mobiltelefon.</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Tips och tricks</title>
+    <para
+>Som för alla andra I/O-slavar, kan du direkt öppna och spara filer i Blåtandsenheter med I/O-OBEX. Om du till exempel skriver en inköpslista, kan du helt enkelt skriva in den med Kedit, och spara den i telefonen. </para>
+    <para
+>Du kan göra den här proceduren mycket snabbare genom att lägga till ett bokmärke till bokmärkeslistan i dialogrutan för att spara filer. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Begränsningar</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX och KDE</title>
+      <para
+>Eftersom en I/O-slav klient inte kan styra antalet slavar som kommer åt samma mål, händer det ofta att flera slavar kör. Men förutom TCP/IP-överföringen stöder inte OBEX-överföringar mer än en överföringsanslutning till enheten. Det leder till I/O-slavar som misslyckas ansluta med "Enhet eller resurs upptagen". OBEX har en dellösning av problemet. Om servern stöder det, kan man överföra paket för flera anslutningar via en överföringsanslutning. Men jag har inte sett någon enhet som tillkännager funktionen, och det skulle kräva en separat överföringsdemon för varje mål. Om jag ser enheter som tillhandahåller funktionen, kommer jag börja implementera en sådan demon.</para>
+      <para
+>Det finns inget särskilt sätt att byta namn eller flytta en fil på enheten, så det görs genom att kopiera data från och till enheten. Det är långsamt och startar två I/O-slavar som får problemet som beskrivs ovan.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Fungerade enheter</title>
+      <para
+>Eftersom klienten implementerar en öppen standard finns det verkligt hopp om att det finns många enheter därute som fungerar bra. Men det finns alltid undantag.</para>
+      <para
+>Klienten är utvecklad med en SIEMENS S45i med användning av IrDA eller det SIEMENS-specifika BFB-protokollet på den seriella anslutningen. Som du kan föreställa dig, fungerar detta.</para>
+      <para
+>Mobiltelefonen NOKIA 3650 har ett fel i det fasta programmet i vissa versioner. Mobiler med det här felet returnerar ogiltiga XML-filer vid kataloglistningar. Det här resulterar i tomma kataloger. Felet har åtminstone rapporterats för version 2.50 av det fasta programmet. Version 3.16 av det fasta programmet rättade felet. Tack till Fred Schaettgen &lt;Sch@ttgen.net&gt; för tester.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

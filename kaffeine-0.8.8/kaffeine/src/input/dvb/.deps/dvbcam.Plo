@@ -1,0 +1,712 @@
+dvbcam.lo: dvbcam.cpp /usr/include/unistd.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/lib/gcc/i486-slackware-linux/4.5.2/include/stddef.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-slackware-linux/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/uio.h /usr/include/bits/stat.h \
+ /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
+ /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h /usr/include/bits/ioctl-types.h \
+ /usr/include/sys/ttydefaults.h /usr/include/sys/poll.h \
+ /usr/include/bits/poll.h /usr/include/linux/dvb/ca.h \
+ /usr/lib/qt3/include/qapplication.h \
+ /usr/lib/qt3/include/qdesktopwidget.h /usr/lib/qt3/include/qwidget.h \
+ /usr/lib/qt3/include/qwindowdefs.h /usr/lib/qt3/include/qobjectdefs.h \
+ /usr/lib/qt3/include/qglobal.h /usr/lib/qt3/include/qconfig.h \
+ /usr/lib/qt3/include/qmodules.h /usr/lib/qt3/include/qfeatures.h \
+ /usr/lib/qt3/include/qstring.h /usr/lib/qt3/include/qcstring.h \
+ /usr/lib/qt3/include/qmemarray.h /usr/lib/qt3/include/qgarray.h \
+ /usr/lib/qt3/include/qshared.h /usr/lib/qt3/include/qwinexport.h \
+ /usr/include/string.h /usr/include/xlocale.h \
+ /usr/lib/gcc/i486-slackware-linux/4.5.2/include-fixed/limits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.5.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/lib/qt3/include/qnamespace.h /usr/lib/qt3/include/qobject.h \
+ /usr/lib/qt3/include/qevent.h /usr/lib/qt3/include/qregion.h \
+ /usr/lib/qt3/include/qrect.h /usr/lib/qt3/include/qsize.h \
+ /usr/lib/qt3/include/qpoint.h /usr/lib/qt3/include/qmime.h \
+ /usr/lib/qt3/include/qmap.h /usr/lib/qt3/include/qdatastream.h \
+ /usr/lib/qt3/include/qiodevice.h /usr/lib/qt3/include/qpair.h \
+ /usr/lib/qt3/include/qvaluelist.h /usr/lib/qt3/include/qtl.h \
+ /usr/lib/qt3/include/qtextstream.h /usr/lib/qt3/include/qpaintdevice.h \
+ /usr/lib/qt3/include/qpalette.h /usr/lib/qt3/include/qcolor.h \
+ /usr/lib/qt3/include/qstringlist.h /usr/lib/qt3/include/qstrlist.h \
+ /usr/lib/qt3/include/qptrlist.h /usr/lib/qt3/include/qglist.h \
+ /usr/lib/qt3/include/qptrcollection.h /usr/lib/qt3/include/qbrush.h \
+ /usr/lib/qt3/include/qfont.h /usr/lib/qt3/include/qfontmetrics.h \
+ /usr/lib/qt3/include/qfontinfo.h /usr/lib/qt3/include/qsizepolicy.h \
+ /usr/lib/qt3/include/qasciidict.h /usr/lib/qt3/include/qgdict.h \
+ /usr/lib/qt3/include/qtranslator.h /usr/lib/qt3/include/qthread.h \
+ /usr/lib/qt3/include/qstring.h /usr/lib/qt3/include/qspinbox.h \
+ /usr/lib/qt3/include/qrangecontrol.h /usr/lib/qt3/include/qframe.h \
+ /usr/lib/qt3/include/qlabel.h /usr/lib/qt3/include/qtextbrowser.h \
+ /usr/lib/qt3/include/qpixmap.h /usr/lib/qt3/include/qtextedit.h \
+ /usr/lib/qt3/include/qscrollview.h /usr/lib/qt3/include/qscrollbar.h \
+ /usr/lib/qt3/include/qstylesheet.h /usr/lib/qt3/include/qptrvector.h \
+ /usr/lib/qt3/include/qgvector.h /usr/lib/qt3/include/qdict.h \
+ /usr/lib/qt3/include/qlineedit.h /usr/lib/qt3/include/qpushbutton.h \
+ /usr/lib/qt3/include/qbutton.h /usr/lib/qt3/include/qkeysequence.h \
+ /usr/lib/qt3/include/qiconset.h dvbcam.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvbapi/dvbca.h \
+ /usr/lib/gcc/i486-slackware-linux/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvbapi/dvbdemux.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_ai.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_utils.h \
+ /usr/include/sys/uio.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_ca.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/pmt_section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/endianops.h \
+ /usr/include/byteswap.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/crc32.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ac3_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/adaptation_field_data_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ancillary_data_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/announcement_support_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/application_signalling_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/bouquet_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ca_identifier_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/cable_delivery_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/cell_frequency_link_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/cell_list_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/component_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/types.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/content_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/content_identifier_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/country_availability_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/data_broadcast_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/data_broadcast_id_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/mhp_data_broadcast_id_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/default_authority_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/dsng_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/extended_event_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/frequency_list_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ip_mac_platform_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ip_mac_platform_provider_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ip_mac_stream_location_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/linkage_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/local_time_offset_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/types.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/mosaic_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_bouquet_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_component_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_network_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_service_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/network_name_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/nvod_reference_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/parental_rating_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/partial_transport_stream_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/pdc_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/private_data_specifier_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/related_content_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/satellite_delivery_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/s2_satellite_delivery_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/scrambling_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_availability_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_identifier_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_list_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_move_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/short_event_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/short_smoothing_buffer_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/stream_identifier_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/stuffing_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/subtitling_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ip_address_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ipv6_address_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ip_slash_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ip_source_slash_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ipv6_slash_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ipv6_source_slash_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/telephone_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/teletext_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/terrestrial_delivery_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/time_shifted_event_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/time_shifted_service_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/time_slice_fec_identifier_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/transport_stream_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/tva_id_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/vbi_data_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/vbi_teletext_descriptor.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_mmi.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_rm.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_tags.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_session.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_transport.h \
+ ../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_stdcam.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/cat_section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/odsmt_section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/pat_section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/tsdt_section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/metadata_section.h \
+ ../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/datagram_section.h \
+ /usr/lib/qt3/include/qmutex.h /usr/lib/qt3/include/qptrlist.h \
+ channeldesc.h /usr/lib/qt3/include/qdatetime.h \
+ /usr/lib/qt3/include/qvaluelist.h /usr/lib/qt3/include/qpixmap.h \
+ /usr/include/linux/dvb/frontend.h /usr/include/linux/types.h \
+ /usr/include/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h /usr/include/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h /usr/include/asm/posix_types.h \
+ /usr/include/asm/posix_types_32.h \
+ ../../../../kaffeine/src/input/dvb/plugins/epg/kaffeinedvbevents.h \
+ /usr/lib/qt3/include/qtimer.h /usr/lib/qt3/include/qfile.h \
+ /usr/lib/qt3/include/qobject.h /usr/include/kparts/part.h \
+ /usr/lib/qt3/include/qdom.h /usr/lib/qt3/include/qguardedptr.h \
+ /usr/include/kurl.h /usr/include/kdelibs_export.h \
+ /usr/include/kdemacros.h /usr/lib/qt3/include/qglobal.h \
+ /usr/include/kxmlguiclient.h /usr/lib/qt3/include/qmap.h \
+ /usr/lib/qt3/include/qstringlist.h /usr/include/kdelibs_export.h \
+ ../../../../kaffeine/src/input/dvb/plugins/epg/kaffeinedvbsection.h \
+ /usr/include/linux/dvb/dmx.h camdialog.h /usr/lib/qt3/include/qvariant.h \
+ /usr/lib/qt3/include/qdialog.h cammenudialog.h
+
+/usr/include/unistd.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.5.2/include/stddef.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.5.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/bits/ioctls.h:
+
+/usr/include/asm/ioctls.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/bits/ioctl-types.h:
+
+/usr/include/sys/ttydefaults.h:
+
+/usr/include/sys/poll.h:
+
+/usr/include/bits/poll.h:
+
+/usr/include/linux/dvb/ca.h:
+
+/usr/lib/qt3/include/qapplication.h:
+
+/usr/lib/qt3/include/qdesktopwidget.h:
+
+/usr/lib/qt3/include/qwidget.h:
+
+/usr/lib/qt3/include/qwindowdefs.h:
+
+/usr/lib/qt3/include/qobjectdefs.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qconfig.h:
+
+/usr/lib/qt3/include/qmodules.h:
+
+/usr/lib/qt3/include/qfeatures.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qmemarray.h:
+
+/usr/lib/qt3/include/qgarray.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+/usr/lib/qt3/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.5.2/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.5.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/qt3/include/qnamespace.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qevent.h:
+
+/usr/lib/qt3/include/qregion.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qmime.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qdatastream.h:
+
+/usr/lib/qt3/include/qiodevice.h:
+
+/usr/lib/qt3/include/qpair.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qtl.h:
+
+/usr/lib/qt3/include/qtextstream.h:
+
+/usr/lib/qt3/include/qpaintdevice.h:
+
+/usr/lib/qt3/include/qpalette.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/lib/qt3/include/qglist.h:
+
+/usr/lib/qt3/include/qptrcollection.h:
+
+/usr/lib/qt3/include/qbrush.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+/usr/lib/qt3/include/qfontmetrics.h:
+
+/usr/lib/qt3/include/qfontinfo.h:
+
+/usr/lib/qt3/include/qsizepolicy.h:
+
+/usr/lib/qt3/include/qasciidict.h:
+
+/usr/lib/qt3/include/qgdict.h:
+
+/usr/lib/qt3/include/qtranslator.h:
+
+/usr/lib/qt3/include/qthread.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qspinbox.h:
+
+/usr/lib/qt3/include/qrangecontrol.h:
+
+/usr/lib/qt3/include/qframe.h:
+
+/usr/lib/qt3/include/qlabel.h:
+
+/usr/lib/qt3/include/qtextbrowser.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/lib/qt3/include/qtextedit.h:
+
+/usr/lib/qt3/include/qscrollview.h:
+
+/usr/lib/qt3/include/qscrollbar.h:
+
+/usr/lib/qt3/include/qstylesheet.h:
+
+/usr/lib/qt3/include/qptrvector.h:
+
+/usr/lib/qt3/include/qgvector.h:
+
+/usr/lib/qt3/include/qdict.h:
+
+/usr/lib/qt3/include/qlineedit.h:
+
+/usr/lib/qt3/include/qpushbutton.h:
+
+/usr/lib/qt3/include/qbutton.h:
+
+/usr/lib/qt3/include/qkeysequence.h:
+
+/usr/lib/qt3/include/qiconset.h:
+
+dvbcam.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvbapi/dvbca.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.5.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvbapi/dvbdemux.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_ai.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_utils.h:
+
+/usr/include/sys/uio.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_ca.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/pmt_section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/endianops.h:
+
+/usr/include/byteswap.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/crc32.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ac3_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/adaptation_field_data_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ancillary_data_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/announcement_support_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/application_signalling_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/bouquet_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ca_identifier_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/cable_delivery_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/cell_frequency_link_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/cell_list_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/component_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/types.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/content_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/content_identifier_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/country_availability_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/data_broadcast_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/data_broadcast_id_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/mhp_data_broadcast_id_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/default_authority_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/dsng_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/extended_event_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/frequency_list_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ip_mac_platform_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ip_mac_platform_provider_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/ip_mac_stream_location_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/linkage_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/local_time_offset_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/types.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/mosaic_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_bouquet_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_component_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_network_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/multilingual_service_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/network_name_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/nvod_reference_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/parental_rating_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/partial_transport_stream_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/pdc_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/private_data_specifier_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/related_content_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/satellite_delivery_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/s2_satellite_delivery_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/scrambling_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_availability_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_identifier_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_list_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/service_move_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/short_event_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/short_smoothing_buffer_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/stream_identifier_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/stuffing_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/subtitling_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ip_address_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ipv6_address_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ip_slash_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ip_source_slash_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ipv6_slash_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/target_ipv6_source_slash_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/telephone_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/teletext_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/terrestrial_delivery_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/time_shifted_event_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/time_shifted_service_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/time_slice_fec_identifier_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/transport_stream_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/tva_id_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/vbi_data_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/dvb/vbi_teletext_descriptor.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_mmi.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_rm.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_app_tags.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_session.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_transport.h:
+
+../../../../kaffeine/src/input/dvb/lib/libdvben50221/en50221_stdcam.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/cat_section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/odsmt_section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/pat_section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/tsdt_section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/metadata_section.h:
+
+../../../../kaffeine/src/input/dvb/lib/libucsi/mpeg/datagram_section.h:
+
+/usr/lib/qt3/include/qmutex.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+channeldesc.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/include/linux/dvb/frontend.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/asm/posix_types_32.h:
+
+../../../../kaffeine/src/input/dvb/plugins/epg/kaffeinedvbevents.h:
+
+/usr/lib/qt3/include/qtimer.h:
+
+/usr/lib/qt3/include/qfile.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/include/kparts/part.h:
+
+/usr/lib/qt3/include/qdom.h:
+
+/usr/lib/qt3/include/qguardedptr.h:
+
+/usr/include/kurl.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/kdemacros.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/include/kxmlguiclient.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/include/kdelibs_export.h:
+
+../../../../kaffeine/src/input/dvb/plugins/epg/kaffeinedvbsection.h:
+
+/usr/include/linux/dvb/dmx.h:
+
+camdialog.h:
+
+/usr/lib/qt3/include/qvariant.h:
+
+/usr/lib/qt3/include/qdialog.h:
+
+cammenudialog.h:

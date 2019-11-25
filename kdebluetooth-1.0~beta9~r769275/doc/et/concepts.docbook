@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Kontseptsioonid</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Bluetoothi turvalisus: seadmete registreerimine</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Mis on registreerimine ("pairing")?</title>
+<para
+>Tihtipeale peab seade ennast autentima, kui see soovib mõnda teenust kasutada. Sellisel juhul tuleb kaks seadet omavahel <phrase
+>paari panna</phrase
+> ehk registreerida. Kui see on tehtud, võivad mõlemad seadmed olla kindlad, kes ja mis teine on. Ilma selleta tuleks tugineda ainult teise seadme aadressile või nimele, mida on aga üpris lihtne võltsida. </para>
+<para
+>Kaks seadet vajavad üldiselt ainult üht registreerimist. Pärast selle sooritamist <phrase
+>autenditakse</phrase
+> nende ühendus juba automaatselt. </para>
+<para
+>Tavaliselt <emphasis
+>käivitatakse registreerimine vajaduse korral automaatselt</emphasis
+> ja sa ei pea ise muret tundma, kuidas seda ette võtta, kui soovid oma seadmega mõnda teenust kasutada. Kui autentimine ebaõnnestub, alustatakse automaatselt registreerimist. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Kuidas see töötab?</title>
+
+<para
+>Seadmeid registreeritakse selleks, et olla partneri identiteedis kindel. Kuid esimest sammu ei saa siiski astuda automaatselt. <emphasis
+>Just sina</emphasis
+> pead veenduma, et sa ikka tead, mis tahab end sinu seadmel registreerida. Selleks tuleb mõlemas seadmes sisestada "PIN"-kood. Termin "PIN" on selles kontekstis laialt kasutusel, kuid eksitav. Siin ei tähenda see sugugi samasugust "PIN"-koodi, nagu tuleb sisestada näiteks rahaautomaadis. Sul ei ole vaja seda meelde jätta. Ning pärast seda (!), kui registreerimine on tehtud, ei ole seda vaja ka saladuses hoida. Vajalik on see saladuses hoida ainult seni, kuni sina (või ka kaks isikut) ei ole mõlemas seadmes seda sisestanud. </para>
+<para
+>Turvalisuse huvides on mõistagi mitte ainult PIN-i hoidmine salajas registreerimise ajal, vaid ka juhusliku arvu kasutamine, mida ei oleks hõlpus ära arvata. KDE Bluetooth aitab sind selle juures, tekitades võimaluse korral ise kaheksakohalise juhusliku arvu. PIN-is võib kasutada ka tähti, kuid see võib tuua kaasa probleeme selle sisestamisel mobiiltelefoni. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>PIN-i abiline ("PIN helper")</title>
+<para
+>Aga kuhu siis PIN sisestada? Märkisime juba, et seadmed pärivad PIN-i sinu käest siis, kui seda vaja läheb. BlueZi korral on asjad veidi keerulisemad. BlueZ võib kasutajalt PIN-i saada mitmel moel. </para>
+<para
+>Üsna tavaline on panna BlueZi hcid kasutama "PIN helperi rakendust" ja määrata failis <filename
+>/etc/bluetooth/hcid.conf</filename
+> "security user;". See abiline on iseenesest väike programm, mis lihtsalt pärib kasutajalt numbrit ja edastab selle standardväljundisse. Bluez pakub ka oma PIN-i abilist nimetusega "bluepin", kuid see paistab tekitavat üsna palju probleeme. Lisaks on olemas märksa vahvam PIN-i abiline "bluez-pin" ja mõistagi ka kdebluetoothi PIN-i abiline "kbluepin". Palun vaata <link linkend="installation.setup"
+>seadistusjuhistest</link
+> täpsemalt, kuidas PIN-i abilist kasutada ja mida ette võtta, kui see tõrgub. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Registreeritud seadmete haldamine</title>
+<para
+>Kui oled registreerinud mitmeid seadmed, võib tekkida küsimus, millised on juba registreeritud ja millised mitte. Võib-olla aga tekib sul vajadus registreerimine eemaldada. Sellisel juhul on meil sulle vähe head öelda. </para>
+<para
+>Esiteks ei saa ükski seade sulle öelda, millise seadmega on ta registreeritud. Registreerimisel loovad kaks seadet salajase <phrase
+>ühendusvõtme</phrase
+>, mis luuakse vastavalt PIN-i numbrist ja veel mõnest komponendist. Et seade võib ilma sellest teatamata otsustada ühendusvõtme kustutada, ei tähenda see, et ühendusvõti on mingil seadmel olemas, veel seda, et see on olemas ka teisel seadmel. Kui ühendusvõtit enam ei ole, ei kehti ka registreerimine. Aga samas võid muidugi olla kindel, et mingi seade <emphasis
+>ei ole</emphasis
+> registreeritud, kui sul puudub selle jaoks ühendusvõti. </para>
+<para
+>Mil moel siis võib ühendusvõtme kustutamine teoks saada? See sõltub seadmest. Enamikul telefonidest või pihuseadmetest on "registreeritud" või "usaldusväärsete" seadmete nimekiri, kust soovi korral on võimalik elemente eemaldada. BlueZi vahendite praeguse versiooni (2.6) korral on ühendusvõtmed tavaliselt failis <filename
+>/etc/bluetooth/link_key</filename
+>. Kuna ühendusvõtmed peavad olema salajased, pääseb sellele failile ligi ainult administraator. Faili võib muidugi hävitada ja ei juhtu midagi hullemat, kui et kaovad kõik sinu registreerimiste andmed. Et tegemist on binaarfailiga, läheb selle redigeerimiseks vaja spetsiaalseid vahendeid. Praegu puudub kdebluetoothil vahend, millega sellist faili lugeda või kirjutada, sest BlueZi ühendusvõtmete käsitlemise meetod peaks peagi (aga võib-olla ka mitte nii väga pea) muutuma. </para>
+<para
+>Veel ühe erilise murega tuleb arvestada siis, kui vahetad sageli Bluetoothi võimalustega operatsioonisüsteeme (tavaliselt Linux&lt;->Windows). Kui registreerid telefoni Linuxis ja käivitad seejärel Windowsi, ei tea viimane mitte kui midagi BlueZi hallatavatest ühendusvõtmetest. Nii paistab, nagu oleks arvuti kaotanud ühendusvõtme ja registreerimine tuleb uuesti ette võta. Sõltuvalt seadmest ei pruugi see minna väga kergesti, üsna tõenäoliselt võib olla vajalik eemaldada telefonilt eelnevalt "vana" ühendusvõti. Samasuguse probleemi otsa võib sattuda ka ainult BlueZi kasutades, kui valida failis <filename
+>/etc/bluetooth/hcid.conf</filename
+> "paring single;". Seega praegu tuleb sul lihtsalt probleem teatavaks võtta ja võimaluse korral mitte kasutada Bluetoothi mõlema operatsioonisüsteemiga vaheldumisi või vähemalt tarvitada kumbki puhul erinevat Bluetoothi adapterit. Põhimõtteliselt võib ühendusvõtmete liigutamine Linuxi ja Windowsi vahel ka võimalik olla, kuid ma ei tea ühtki vahendit, mis praegu seda suudaks. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

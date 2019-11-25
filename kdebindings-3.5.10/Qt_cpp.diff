@@ -1,0 +1,82 @@
+--- /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/Qt.cpp.old	2010-10-23 16:51:43.000000000 +0200
++++ /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/Qt.cpp	2010-10-23 16:54:10.000000000 +0200
+@@ -110,7 +110,7 @@
+ };
+ 
+ #define logger logger_backend
+-void rb_str_catf(VALUE self, const char *format, ...) __attribute__ ((format (printf, 2, 3)));
++void rb_str_catf_1(VALUE self, const char *format, ...) __attribute__ ((format (printf, 2, 3)));
+ 
+ static VALUE (*_new_kde)(int, VALUE *, VALUE) = 0;
+ static VALUE (*_kconfigskeletonitem_immutable)(VALUE) = 0;
+@@ -820,7 +820,7 @@
+     }
+ };
+ 
+-void rb_str_catf(VALUE self, const char *format, ...) 
++void rb_str_catf_1(VALUE self, const char *format, ...) 
+ {
+     va_list ap;
+     va_start(ap, format);
+@@ -985,16 +985,16 @@
+     VALUE r = rb_str_new2("");
+     Smoke::Method &meth = qt_Smoke->methods[id];
+     const char *tname = qt_Smoke->types[meth.ret].name;
+-    if(meth.flags & Smoke::mf_static) rb_str_catf(r, "static ");
+-    rb_str_catf(r, "%s ", (tname ? tname:"void"));
+-    rb_str_catf(r, "%s::%s(", qt_Smoke->classes[meth.classId].className, qt_Smoke->methodNames[meth.name]);
++    if(meth.flags & Smoke::mf_static) rb_str_catf_1(r, "static ");
++    rb_str_catf_1(r, "%s ", (tname ? tname:"void"));
++    rb_str_catf_1(r, "%s::%s(", qt_Smoke->classes[meth.classId].className, qt_Smoke->methodNames[meth.name]);
+     for(int i = 0; i < meth.numArgs; i++) {
+-	if(i) rb_str_catf(r, ", ");
++	if(i) rb_str_catf_1(r, ", ");
+ 	tname = qt_Smoke->types[qt_Smoke->argumentList[meth.args+i]].name;
+-	rb_str_catf(r, "%s", (tname ? tname:"void"));
++	rb_str_catf_1(r, "%s", (tname ? tname:"void"));
+     }
+-    rb_str_catf(r, ")");
+-    if(meth.flags & Smoke::mf_const) rb_str_catf(r, " const");
++    rb_str_catf_1(r, ")");
++    if(meth.flags & Smoke::mf_const) rb_str_catf_1(r, " const");
+     return r;
+ }
+ 
+@@ -2599,26 +2599,26 @@
+     if(rmeths != Qnil) {
+ 	int count = RARRAY(rmeths)->len;
+         for(int i = 0; i < count; i++) {
+-	    rb_str_catf(errmsg, "\t");
++	    rb_str_catf_1(errmsg, "\t");
+ 	    int id = NUM2INT(rb_ary_entry(rmeths, i));
+ 	    Smoke::Method &meth = qt_Smoke->methods[id];
+ 	    const char *tname = qt_Smoke->types[meth.ret].name;
+ 	    if(meth.flags & Smoke::mf_enum) {
+-			rb_str_catf(errmsg, "enum ");
+-			rb_str_catf(errmsg, "%s::%s", qt_Smoke->classes[meth.classId].className, qt_Smoke->methodNames[meth.name]);
+-			rb_str_catf(errmsg, "\n");
++			rb_str_catf_1(errmsg, "enum ");
++			rb_str_catf_1(errmsg, "%s::%s", qt_Smoke->classes[meth.classId].className, qt_Smoke->methodNames[meth.name]);
++			rb_str_catf_1(errmsg, "\n");
+ 	    } else {
+ 			if(meth.flags & Smoke::mf_static) rb_str_catf(errmsg, "static ");
+-			rb_str_catf(errmsg, "%s ", (tname ? tname:"void"));
+-			rb_str_catf(errmsg, "%s::%s(", qt_Smoke->classes[meth.classId].className, qt_Smoke->methodNames[meth.name]);
++			rb_str_catf_1(errmsg, "%s ", (tname ? tname:"void"));
++			rb_str_catf_1(errmsg, "%s::%s(", qt_Smoke->classes[meth.classId].className, qt_Smoke->methodNames[meth.name]);
+ 			for(int i = 0; i < meth.numArgs; i++) {
+-			if(i) rb_str_catf(errmsg, ", ");
++			if(i) rb_str_catf_1(errmsg, ", ");
+ 			tname = qt_Smoke->types[qt_Smoke->argumentList[meth.args+i]].name;
+-			rb_str_catf(errmsg, "%s", (tname ? tname:"void"));
++			rb_str_catf_1(errmsg, "%s", (tname ? tname:"void"));
+ 			}
+-			rb_str_catf(errmsg, ")");
+-			if(meth.flags & Smoke::mf_const) rb_str_catf(errmsg, " const");
+-			rb_str_catf(errmsg, "\n");
++			rb_str_catf_1(errmsg, ")");
++			if(meth.flags & Smoke::mf_const) rb_str_catf_1(errmsg, " const");
++			rb_str_catf_1(errmsg, "\n");
+         	}
+         }
+     }

@@ -1,0 +1,467 @@
+# translation of kipiplugin_rawconverter.po to British English
+# Andrew Coles <andrew_coles@yahoo.co.uk>, 2004, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2005-01-28 16:24+0000\n"
+"Last-Translator: Andrew Coles <andrew_coles@yahoo.co.uk>\n"
+"Language-Team: British English <kde-en-gb@kde.me.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Andrew Coles"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "andrew_coles@yahoo.co.uk"
+
+#: actionthread.cpp:168
+#, fuzzy
+msgid "Cannot identify Raw image"
+msgstr ""
+"Failed to identify raw image\n"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr ""
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Raw Images Batch Converter"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr ""
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Abort"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr ""
+
+#: batchdialog.cpp:102
+#, fuzzy
+msgid "Target File"
+msgstr "Target Image"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Camera"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Settings"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "RAW Image Converter"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Failed to convert raw image"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr ""
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr ""
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+#, fuzzy
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "Start converting the raw images from current settings."
+
+#: batchdialog.cpp:158
+#, fuzzy
+msgid "<p>Abort the current Raw files conversion"
+msgstr "Abort the current operation"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+#, fuzzy
+msgid "<p>Exit Raw Converter"
+msgstr "Exit Raw Converter"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr ""
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Save Raw Image converted from '%1' as"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Failed to save image %1"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "Raw Image Converter"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "Exit Raw Converter"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr ""
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Failed to load image after processing"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr ""
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+
+#: savesettingswidget.cpp:101
+#, fuzzy
+msgid "If Target File Exists:"
+msgstr "If Target File Exists"
+
+#: savesettingswidget.cpp:103
+#, fuzzy
+msgid "Overwrite automatically"
+msgstr "Overwrite"
+
+#: savesettingswidget.cpp:104
+#, fuzzy
+msgid "Open rename-file dialog"
+msgstr "Open file dialogue"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Raw Image Converter"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Preview"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Failed to convert raw image"
+
+#: singledialog.cpp:136
+#, fuzzy
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"Generate a Preview from current settings.\n"
+"Uses a simple bilinear interpolation for\n"
+"quick results."
+
+#: singledialog.cpp:140
+#, fuzzy
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"Convert the Raw Image from current settings.\n"
+"This uses a high-quality adaptive algorithm."
+
+#: singledialog.cpp:143
+#, fuzzy
+msgid "<p>Abort the current Raw file conversion"
+msgstr "Abort the current operation"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Failed to generate preview"
+
+#: singledialog.cpp:472
+#, fuzzy
+msgid "Failed to convert Raw image"
+msgstr "Failed to convert raw image"
+
+#: singledialog.cpp:477
+#, fuzzy
+msgid "Generating Preview..."
+msgstr "Generating Preview ..."
+
+#: singledialog.cpp:490
+#, fuzzy
+msgid "Converting Raw Image..."
+msgstr "Converting Raw Image ..."
+
+#, fuzzy
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "RAW Image Converter Handbook"
+
+#, fuzzy
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "RAW Image Converter Handbook"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "Raw Image Converter (Single)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "Raw Images Converter (Batch)..."
+
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "RAW Images Batch Converter"
+
+#, fuzzy
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "Abort the current operation"
+
+#~ msgid "Image Preview"
+#~ msgstr "Image Preview"
+
+#, fuzzy
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "A Kipi plugin for RAW images conversion\n"
+#~ "This plugin uses the Dave Coffin RAW photo decoder program \"dcraw\""
+
+#, fuzzy
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr ""
+#~ "Interpolate RGB as four colours. \n"
+#~ "The default is to assume that all green \n"
+#~ "pixels are the same. If even-row green \n"
+#~ "pixels are more sensitive to ultraviolet light \n"
+#~ "than odd-row this difference causes a mesh \n"
+#~ "pattern in the output; using this option solves \n"
+#~ "this problem with minimal loss of detail.\n"
+
+#~ msgid "Use camera white balance"
+#~ msgstr "Use camera white balance"
+
+#, fuzzy
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr ""
+#~ "Use the camera's custom white-balance settings.\n"
+#~ "The default  is to use fixed daylight values,\n"
+#~ "calculated from sample images."
+
+#, fuzzy
+#~ msgid "Brightness:"
+#~ msgstr "Brightness"
+
+#, fuzzy
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "A Kipi plugin for RAW image conversion\n"
+#~ "This plugin uses the Dave Coffin RAW photo decoder program \"dcraw\""
+
+#~ msgid ""
+#~ "Failed to start raw converter client.\n"
+#~ "Please check your installation."
+#~ msgstr ""
+#~ "Failed to start raw converter client.\n"
+#~ "Please check your installation."
+
+#~ msgid "Four color RGBG"
+#~ msgstr "Four color RGBG"
+
+#, fuzzy
+#~ msgid "<p>Specify the output brightness"
+#~ msgstr "Specify the output brightness"
+
+#, fuzzy
+#~ msgid "Red multiplier:"
+#~ msgstr "Red multiplier"
+
+#, fuzzy
+#~ msgid "<p>After all other color adjustments, multiply the red channel by this value"
+#~ msgstr ""
+#~ "After all other colour adjustments,\n"
+#~ "multiply the red channel by this value"
+
+#, fuzzy
+#~ msgid "Blue multiplier:"
+#~ msgstr "Blue multiplier"
+
+#, fuzzy
+#~ msgid "<p>After all other color adjustments, multiply the blue channel by this value"
+#~ msgstr ""
+#~ "After all other colour adjustments,\n"
+#~ "multiply the blue channel by this value"
+
+#~ msgid "Save Format"
+#~ msgstr "Save Format"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in JPEG Format. Warning!!! JPEG is a lossy format, but will give smaller-sized files. Minimum JPEG compression will be used during conversion."
+#~ msgstr ""
+#~ "Output the processed image in JPEG Format.\n"
+#~ "This is a lossy format, but will give\n"
+#~ "smaller-sized files"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in TIFF Format. This generates larges, without losing quality. Adobe Deflate compression will be used during conversion."
+#~ msgstr ""
+#~ "Output the processed image in TIFF Format.\n"
+#~ "This generates larges, without\n"
+#~ "losing quality"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in PPM Format. This generates the largest files, without losing quality"
+#~ msgstr ""
+#~ "Output the processed image in PPM Format.\n"
+#~ "This generates the largest files, without\n"
+#~ "losing quality"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in PNG Format. This generates larges, without losing quality. Maximum PNG compression will be used during conversion."
+#~ msgstr ""
+#~ "Output the processed image in TIFF Format.\n"
+#~ "This generates larges, without\n"
+#~ "losing quality"
+
+#~ msgid "Raw Image"
+#~ msgstr "Raw Image"
+
+#~ msgid ""
+#~ "Interpolate RGB as four colors.\n"
+#~ "The default is to assume that all green\n"
+#~ "pixels are the same. If even-row green\n"
+#~ "pixels are more sensitive to ultraviolet light\n"
+#~ "than odd-row this difference causes a mesh\n"
+#~ "pattern in the output; using this option solves\n"
+#~ "this problem with minimal loss of detail."
+#~ msgstr ""
+#~ "Interpolate RGB as four colours.\n"
+#~ "The default is to assume that all green\n"
+#~ "pixels are the same. If even-row green\n"
+#~ "pixels are more sensitive to ultraviolet light\n"
+#~ "than odd-row this difference causes a mesh\n"
+#~ "pattern in the output; using this option solves\n"
+#~ "this problem with minimal loss of detail."
+
+#~ msgid ""
+#~ "Output the processed images in JPEG Format.\n"
+#~ "This is a lossy format, but will give\n"
+#~ "smaller-sized files"
+#~ msgstr ""
+#~ "Output the processed images in JPEG Format.\n"
+#~ "This is a lossy format, but will give\n"
+#~ "smaller-sized files"
+
+#~ msgid ""
+#~ "Output the processed images in TIFF Format.\n"
+#~ "This generates large files, without\n"
+#~ "losing quality"
+#~ msgstr ""
+#~ "Output the processed images in TIFF Format.\n"
+#~ "This generates large files, without\n"
+#~ "losing quality"
+
+#~ msgid ""
+#~ "Output the processed images in PPM Format.\n"
+#~ "This generates the largest files, without\n"
+#~ "losing quality"
+#~ msgstr ""
+#~ "Output the processed images in PPM Format.\n"
+#~ "This generates the largest files, without\n"
+#~ "losing quality"
+
+#~ msgid "RAW Images Batch Converter Handbook"
+#~ msgstr "RAW Images Batch Converter Handbook"
+
+#~ msgid "Raw Converter Cannot Handle Following Items"
+#~ msgstr "Raw Converter Cannot Handle Following Items"
+
+#~ msgid ""
+#~ "dcraw is required for raw image conversion.\n"
+#~ "Please install it."
+#~ msgstr ""
+#~ "dcraw is required for raw image conversion.\n"
+#~ "Please install it."
+
+#~ msgid "Author and maintainer"
+#~ msgstr "Author and maintainer"
+
+#~ msgid "P&rocess"
+#~ msgstr "P&rocess"
+
+#~ msgid "Abort processing images"
+#~ msgstr "Abort processing images"
+
+#~ msgid "Exit raw converter"
+#~ msgstr "Exit raw converter"
+
+#~ msgid "Gamma"
+#~ msgstr "Gamma"
+
+#~ msgid "Specify the gamma value"
+#~ msgstr "Specify the gamma value"

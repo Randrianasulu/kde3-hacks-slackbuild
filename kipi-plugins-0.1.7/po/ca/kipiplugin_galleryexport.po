@@ -1,0 +1,248 @@
+# Translation of kipiplugin_galleryexport.po to Catalan
+#
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-03 23:04+0100\n"
+"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Josep Ma. Ferrer"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "txemaq@gmail.com"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Nom de galeria"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "URL"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Usuari"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Nom:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Nom d'usuari:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Contrasenya:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Usa la &galeria 2"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Galeries remotes"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Galeria remota nova"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Cap galeria seleccionada!"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Edita una galeria remota"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Esteu segur de voler suprimir aquesta galeria? Tots els paràmetres de "
+"sincronització es perdran. Aquesta acció no es pot pot desfer."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Suprimeix una galeria remota"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "L'URL de la galeria probablement és incorrecta"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Nom d'usuari o contrasenya incorrectes"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "S'ha rebut una resposta no vàlida de la galeria remota"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Ha fallat en llistar els àlbums"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Ha fallat en llistar les fotos"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Ha fallat en crear un àlbum nou"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Ha fallat en pujar la foto"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Àlbums"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Substitució de les opcions per defecte"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "El comentari estableix el títol"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "El comentari estableix la descripció"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Redimensiona les fotos abans de pujar-les"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Dimensió màxima:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Exportació de galeria</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "Àlbum &nou"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "&Afegeix fotos"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Exporta galeria"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"Un connector del Kipi per exportar col·leccions d'imatges a un servidor remot "
+"de galeries."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Autor"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Mantenidor"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Manual del connector"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Ha fallat en connectar a la galeria remota. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Voleu tornar a intentar-ho?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "No es permeten aquests caràcters en el nom de l'àlbum: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "S'està pujant l'arxiu %1 "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Ha fallat en pujar la foto a la galeria remota. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Voleu continuar?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Sincronització de la galeria remota..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Galeries remotes..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "El meu diàleg"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Introduïu el nom del nou àlbum</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Títol (opcional):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Nom (opcional):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Peu de foto (opcional):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Galeria nova"

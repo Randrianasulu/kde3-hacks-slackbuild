@@ -1,0 +1,185 @@
+<chapter id="imagesgallery">
+<chapterinfo>
+
+<title
+>Afbeeldingengalerij</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>De Kipi-plugin "Afbeeldingengalerij" is een hulpmiddel waarmee u een albumlijst kunt exporteren naar een HTML-pagina. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inleiding</title>
+
+<para
+>Deze plugin kan uw albums exporteren naar een afbeeldingengalerij in de vorm van HTML-pagina die u op internet kunt plaatsen. U kunt op eenvoudige wijze de te exporteren albums selecteren. Via een lijst met parameters kunt u bepalen hoe de HTML-pagina eruit zal zien. Voor de tekst wordt gebruik gemaakt van de tekenset UTF-8, zodat speciale tekens ook goed worden weergegeven. </para>
+
+<para
+>U kunt enkele voorbeelden die gemaakt zijn met deze plugin vinden op <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/index.htm"
+><citetitle
+>deze website</citetitle
+></ulink
+>. </para>
+
+<sect1 id="using-plugin-imagesgallerycollectionselection">
+<title
+>Dialoog Verzamelingselectie</title>
+
+<para
+>De plugin heeft vier secties waar u de opmaak van de galerij kunt bepalen. Bij de sectie <guilabel
+>Selectie</guilabel
+> kunt u de albums selecteren die u in de galerij wilt opnemen. Vink het hokje voor de te gebruiken albums aan (de albums worden niet in een boomstructuur weergegeven). Met de drie knoppen rechts kunt u op een snelle manier een groot aantal albums selecteren. Het kader daaronder toont de albumminiatuur die zal worden gebruikt als kop van de HTML-pagina. </para>
+
+<figure>
+    <title
+>De dialoog Albumselectie</title>
+    <graphic srccredit="The Collections Selection Dialog" fileref="imagegallery_collectionselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerylooksettings">
+<title
+>Dialoog Uiterlijk</title>
+
+<para
+>De sectie <guilabel
+>Uiterlijk</guilabel
+> bepaalt het algemene uiterlijk en opmaak van elke pagina. Deze opties in deze sectie spreken voor zich. Het keuzevakje <guilabel
+>Pagina's voor elke pagina aanmaken</guilabel
+> zal een galerij aanmaken met een HTML-pagina per afbeelding. Dus als u op een afbeelding klikt wordt er een nieuwe pagina geopend die de afbeelding weergeeft. Als u het keuzevakje leeg laat, dan worden afbeeldingen die de kijker aanklikt geopend in de standaardviewer, zoals Kuickshow. </para>
+
+<figure>
+    <title
+>De dialoog Uiterlijk</title>
+    <graphic srccredit="The Look Settings Dialog" fileref="imagegallery_looksettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryalbumsettings">
+<title
+>Dialoog Album</title>
+
+<para
+>De sectie <guilabel
+>Album</guilabel
+> bevat de instellingen voor waar en hoe de galerij en bijhorende afbeeldingen zullen worden opgeslagen. Selecteer een map waar u de galerij in wilt plaatsen. De plugin maakt dan een submap genaamd KIPIHTMLExport met daarin alle bestanden van de galerij. </para>
+
+<para
+>Als u het keuzevakje <guilabel
+>Doelafbeeldinggrootte wijzigen</guilabel
+> selecteert, dan kunt u de maximumgrootte van de doelafbeeldingen (in pixels) instellen met de schuifregelaar eronder. Afbeeldingen groter dan deze waarde zullen naar beneden worden geschaald, kleinere afbeeldingen blijven ongewijzigd. Met de volgende twee keuzevakjes  kunt u de compressie van de afbeeldingen instellen. Als u zuinig bent op uw schijfruimte, dan kunt u het keuzevakje voor een specifieke compressie van de doelafbeeldingen aanzetten en het compressieniveau veranderen. Daarna kunt u kiezen tussen JPEG (kleinste bestandsgrootte, maar met kwaliteitsverlies) en PNG (zonder kwaliteitsverlies en vrije licentie). </para>
+
+<note
+><para
+>Als u voor het JPEG-formaat kiest, dan wordt alle EXIF-informatie die de originele JPEG-bestanden bevatten behouden. </para
+></note>
+
+<para
+>Met het keuzevakje <guilabel
+>Andere kleurdiepte instellen</guilabel
+> kunt u de standaardkleurdiepte wijzigen. Dit heeft uiteraard invloed op de bestandsgrootte. De overige instellingen spreken voor zich. </para>
+
+<figure>
+    <title
+>De dialoog Albuminstellingen</title>
+    <graphic srccredit="The Album Settings Dialog" fileref="imagegallery_albumsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerythumbsettings">
+<title
+>Dialoog Miniaturen</title>
+
+<para
+>De sectie <guilabel
+>Miniaturen</guilabel
+> kunt u enkele opties voor de albumminiaturen instellen. Kijk voor een uitleg bij de uitleg over de sectie <guilabel
+>Album</guilabel
+> op deze pagina. </para>
+
+<figure>
+    <title
+>De dialoog Miniaturen instellen</title>
+    <graphic srccredit="The Thumbnails Settings Dialog" fileref="imagegallery_thumbsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryinaction">
+<title
+>Afbeeldingengalerij in actie</title>
+
+<para
+>Een voortgangsdialoog geeft aan hoe ver het proces gevorderd is. Druk op de knop <guilabel
+>Annuleren</guilabel
+> gedurende de voortgang als u de operatie wilt afbreken. </para>
+
+<figure>
+    <title
+>De plugin Afbeeldingengalerij in actie</title>
+    <graphic srccredit="The Images Gallery Plugin in Action" fileref="imagegallery_progress.png"/>
+</figure>
+
+<para
+>Als alle taken zijn voltooid, dan opent de plugin de galerij in een webbrowservenster. U kunt controleren of alles naar wens is verlopen. Mocht er iets fout zijn gegaan, dan kunt u in de voortgangsdialoog terugbladeren om te kijken op welk punt de generatie van de galerij is misgegaan. Als de galerij correct is aangemaakt kunt u het venster afsluiten met de knop <guilabel
+>Sluiten</guilabel
+>. </para>
+
+<figure>
+    <title
+>Het voorbeeld van de afbeeldingengalerij in Konqueror</title>
+    <graphic srccredit="The Images Gallery Preview in Konqueror" fileref="imagegallery_preview.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,385 @@
+# translation of kipiplugin_flickrexport.po to Thai
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_flickrexport\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-02-28 11:15+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <l10n@opentle.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: flickrtalker.cpp:144
+msgid "Getting the Frob"
+msgstr "กำลังรับค่า Frob"
+
+#: flickrtalker.cpp:178
+msgid "Checking if previous token is still valid"
+msgstr "กำลังตรวจสอบว่าตั๋วคราวก่อนยังใช้ได้อยู่หรือไม่"
+
+#: flickrtalker.cpp:203
+#, fuzzy
+msgid ""
+"Please Follow through the instructions in the browser window and return back to "
+"press ok if you are authenticated or press No"
+msgstr ""
+"โปรดทำตามในคำแนะในหน้าต่างบราวเซอร์จนเสร็จ หลังจากนั้นกลับมายังโปรแกรม "
+"และคลิกที่ปุ่ม ใช่ หากทำการล็อกอินเข้า Flickr เรียบร้อยแล้ว ถ้าไม่ใช่ "
+"ให้คลิกที่ปุ่ม ไม่ใช่"
+
+#: flickrtalker.cpp:205
+#, fuzzy
+msgid "Flickr Service Web Authorization"
+msgstr "Flickr::Kipi Plugin:Web Authorization"
+
+#: flickrtalker.cpp:210
+msgid "Authenticating the User on web"
+msgstr "กำลังตรวจสอบสิทธิ์ผู้ใช้ผ่านเวบ"
+
+#: flickrtalker.cpp:250
+msgid "Getting the Token from the server"
+msgstr "กำลังรับตั๋วเข้าใช้งานจากเซิร์ฟเวอร์"
+
+#: flickrtalker.cpp:492
+msgid "No photo specified"
+msgstr "ยังไม่มีการกำหนดภาพ"
+
+#: flickrtalker.cpp:495
+msgid "General upload failure"
+msgstr "การอัพโหลดทั่วไปล้มเหลว"
+
+#: flickrtalker.cpp:498
+msgid "Filesize was zero"
+msgstr "ขนาดแฟ้มเป็นศูนย์"
+
+#: flickrtalker.cpp:501
+msgid "Filetype was not recognised"
+msgstr "ไม่สามารถจัดการประเภทแฟ้มได้"
+
+#: flickrtalker.cpp:504
+msgid "User exceeded upload limit"
+msgstr "อัพโหลดเกินโควต้าของผู้ใช้แล้ว"
+
+#: flickrtalker.cpp:507
+msgid "Invalid signature"
+msgstr "ลายเซ็นดิจิตัลใช้ไม่ได้"
+
+#: flickrtalker.cpp:510
+msgid "Missing signature"
+msgstr "ไม่มีส่วนลายเซ็นดิจิตัล"
+
+#: flickrtalker.cpp:513
+msgid "Login Failed / Invalid auth token"
+msgstr "ล็อกอินล้มเหลว / ตั๋วใช้งานไม่ได้"
+
+#: flickrtalker.cpp:516
+msgid "Invalid API Key"
+msgstr "API Key ไม่ถูกต้อง"
+
+#: flickrtalker.cpp:519
+msgid "Service currently unavailable"
+msgstr "ไม่สามารถเชื่อมต่อบริการได้ในขณะนี้"
+
+#: flickrtalker.cpp:522
+msgid "Invalid Frob"
+msgstr "ค่า Frob ที่ได้ไม่ถูกต้อง"
+
+#: flickrtalker.cpp:525
+msgid "Format \"xxx\" not found"
+msgstr "ไม่พบรูปแบบ \"xxx\""
+
+#: flickrtalker.cpp:528
+msgid "Method \"xxx\" not found"
+msgstr "ไม่พบวิธีการ \"xxx\""
+
+#: flickrtalker.cpp:531
+msgid "Invalid SOAP envelope"
+msgstr "SOAP envelope ใช้ไม่ได้"
+
+#: flickrtalker.cpp:534
+msgid "Invalid XML-RPC Method Call"
+msgstr "เรียกใช้ XML-RPC Method ไม่ถูกต้อง"
+
+#: flickrtalker.cpp:537
+msgid "The POST method is now required for all setters"
+msgstr "ต้องการใช้วิธี POST สำหรับผู้ใช้งานทุกคน"
+
+#: flickrtalker.cpp:540
+msgid "Unknown error"
+msgstr "ไม่ทราบข้อผิดพลาด"
+
+#: flickrtalker.cpp:545
+msgid ""
+"Error Occured: %1\n"
+" We can not proceed further"
+msgstr ""
+"เกิดข้อผิดพลาด: %1\n"
+" ไม่สามารถทำงานต่อไปได้"
+
+#: flickrtalker.cpp:686
+msgid ""
+"_: As in the persmission to\n"
+"write"
+msgstr "เขียน"
+
+#: flickrtalker.cpp:688
+msgid ""
+"_: As in the permission to\n"
+"read"
+msgstr "อ่าน"
+
+#: flickrtalker.cpp:690
+msgid ""
+"_: As in the permission to\n"
+"delete"
+msgstr "ลบ"
+
+#: flickrtalker.cpp:720
+msgid ""
+"Your token is invalid. Would you like to get a new token to proceed ?\n"
+msgstr ""
+"ตั๋วของคุณที่มีอยู่ใช้ไม่ได้แล้ว คุณต้องการขอตั๋วเข้าใช้งานใหม่หรือไม่ ?\n"
+
+#: flickrtalker.cpp:896
+msgid "Failed to fetch photoSets List"
+msgstr "ล้มเหลวในการเรียกรายการชุดภาพถ่าย"
+
+#: flickrtalker.cpp:966
+msgid "Failed to upload photo"
+msgstr "ล้มเหลวในการอัพโหลดภาพถ่าย"
+
+#: flickrtalker.cpp:1012
+msgid "Failed to query photo information"
+msgstr "ล้มเหลวในการร้องขอข้อมูลภาพถ่าย"
+
+#: flickrwidget.cpp:78
+msgid ""
+"<qt><b>"
+"<h2><a href='http://www.flickr.com'><font color=\"#0065DE\">flick</font>"
+"<font color=\"#FF0084\">r</font></a> Export</h2></b></qt>"
+msgstr ""
+
+#: flickrwidget.cpp:95
+msgid "Added Tags: "
+msgstr ""
+
+#: flickrwidget.cpp:98
+#, fuzzy
+msgid "Use Host Application Tags"
+msgstr "ใช้ป้ายชื่อจากแอพพลิเคชัน ?"
+
+#: flickrwidget.cpp:100
+#, fuzzy
+msgid "Strip Space From Host Application Tags"
+msgstr "ใช้ป้ายชื่อจากแอพพลิเคชัน ?"
+
+#: flickrwidget.cpp:101
+msgid "Enter here new tags separated by space."
+msgstr ""
+
+#: flickrwidget.cpp:110
+msgid "Override Default Options"
+msgstr "ใช้แทนที่ค่าตัวเลือกปริยาย"
+
+#: flickrwidget.cpp:117
+#, fuzzy
+msgid ""
+"_: As in accessible for people\n"
+"Public (anyone can see them)"
+msgstr "สาธารณะ ?"
+
+#: flickrwidget.cpp:120
+msgid "Visible to Family"
+msgstr ""
+
+#: flickrwidget.cpp:123
+msgid "Visible to Friends"
+msgstr ""
+
+#: flickrwidget.cpp:126
+msgid "Resize photos before uploading"
+msgstr "ปรับขนาดมิติของภาพก่อนทำการอัพโหลด"
+
+#: flickrwidget.cpp:134
+#, fuzzy
+msgid "Maximum dimension (pixels):"
+msgstr "ขนาดมิติสูงสุดของภาพ (พิกเซล):"
+
+#: flickrwidget.cpp:141
+#, fuzzy
+msgid "JPEG Image Quality (higher is better):"
+msgstr "คุณภาพของภาพ (ค่าสูงยิ่งมีคุณภาพดี):"
+
+#: flickrwidget.cpp:158
+msgid "Account"
+msgstr ""
+
+#: flickrwidget.cpp:164
+#, fuzzy
+msgid "User Name: "
+msgstr "ชื่อผู้ใช้:"
+
+#: flickrwidget.cpp:167
+#, fuzzy
+msgid "Use a different account"
+msgstr "ล็อกอินเป็นบัญชีผู้ใช้อื่น"
+
+#: flickrwidget.cpp:192
+msgid "Files List"
+msgstr ""
+
+#: flickrwidget.cpp:193
+msgid "Upload Options"
+msgstr ""
+
+#: flickrwindow.cpp:79
+#, fuzzy
+msgid "Export to Flickr Web Service"
+msgstr "อัพโหลดภาพไปยัง Flickr..."
+
+#: flickrwindow.cpp:103
+msgid "Start Uploading"
+msgstr "เริ่มการอัพโหลดภาพ"
+
+#: flickrwindow.cpp:117
+msgid "Flickr Export"
+msgstr "อัพโหลดภาพไปยัง Flickr"
+
+#: flickrwindow.cpp:120
+msgid "A Kipi plugin to export image collection to Flickr web service."
+msgstr "ปลั๊กอิน Kipi สำหรับอัพโหลดภาพไปยังบริการเวบของ Flickr"
+
+#: flickrwindow.cpp:125
+msgid "Author and maintainer"
+msgstr "ผู้เขียนและผู้ดูแล"
+
+#: flickrwindow.cpp:128
+msgid "Developer"
+msgstr ""
+
+#: flickrwindow.cpp:133
+msgid "Plugin Handbook"
+msgstr ""
+
+#: flickrwindow.cpp:534
+#, fuzzy, c-format
+msgid "Uploading file %1"
+msgstr "กำลังอัพโหลดแฟ้ม %1 "
+
+#: flickrwindow.cpp:553
+msgid ""
+"Failed to upload photo into Flickr. %1\n"
+"Do you want to continue?"
+msgstr ""
+"ล้มเหลวในการอัพโหลดภาพไปยัง Flickr %1\n"
+"คุณต้องการจะทำต่อไปหรือไม่ ?"
+
+#: imageslist.cpp:94
+msgid "Thumbnail"
+msgstr ""
+
+#: imageslist.cpp:95
+#, fuzzy
+msgid "File Name"
+msgstr "ชื่อผู้ใช้:"
+
+#: imageslist.cpp:96
+msgid "<p>This is the list of images to upload on your Flickr account."
+msgstr ""
+
+#: imageslist.cpp:178
+msgid "&Add"
+msgstr ""
+
+#: login.cpp:65
+msgid "Username:"
+msgstr "ชื่อผู้ใช้:"
+
+#: login.cpp:68
+msgid "Password:"
+msgstr "รหัสผ่าน:"
+
+#: plugin_flickrexport.cpp:65
+msgid "Export to Flickr..."
+msgstr "อัพโหลดภาพไปยัง Flickr..."
+
+#. i18n: file flickralbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "New PhotoSet"
+msgstr "ชุดภาพถ่ายใหม่"
+
+#. i18n: file flickralbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Create New PhotoSet </h3>"
+msgstr "<h3>สร้างชุดภาพถ่ายใหม่ </h3>"
+
+#. i18n: file flickralbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "คำนำหน้า (ตัวเลือก):"
+
+#. i18n: file flickralbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "ชื่อ (ตัวเลือก):"
+
+#. i18n: file flickralbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "ป้ายภาพ (ตัวเลือก):"
+
+#, fuzzy
+#~ msgid "Use Current Selection"
+#~ msgstr "อัพโหลดภาพที่เลือกไว้แล้ว"
+
+#~ msgid "&Add Photos"
+#~ msgstr "เพิ่มภาพถ่าย"
+
+#~ msgid "<h2>Flickr Export</h2>"
+#~ msgstr "<h2>ส่งออกไปยังเวบ Flickr</h2>"
+
+#~ msgid "Tags:"
+#~ msgstr "ป้ายชื่อ:"
+
+#~ msgid "Family ?"
+#~ msgstr "ครอบครัว ?"
+
+#~ msgid "Friends ?"
+#~ msgstr "เพื่อน ?"
+
+#, fuzzy
+#~ msgid "Login Details"
+#~ msgstr "ข้อมูลผู้ใช้"
+
+#~ msgid "Select Images For uploading"
+#~ msgstr "เลือกภาพที่ต้องการจะอัพโหลด"
+
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "FlickrUploadr"
+#~ msgstr "ปลั๊กอินอัพโหลดภาพไปยัง Flickr"
+
+#~ msgid "Flickr Export Handbook"
+#~ msgstr "คู่มือการใช้อัพโหลดภาพไปยัง Flickr"

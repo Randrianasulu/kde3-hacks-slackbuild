@@ -1,0 +1,364 @@
+# translation of kipiplugin_acquireimages.po to turkish
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to Türkçe
+# translation of kipiplugin_acquireimages.po to Turkish
+# Görkem Çetin <gorkem@kde.org>, 2004.
+# Fuat Poyraz <fuat@halideediplisesi.k12.tr>, 2004.
+# Adem Alp YILDIZ <ademalp@linux-sevenler.org>, 2004.
+# İsmail Şimşek <simsek@kde.org.tr>, 2005.
+# Adem Alp YILDIZ <ademalp@kde.org.tr>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_acquireimages\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2005-06-28 21:24+0000\n"
+"Last-Translator: Adem Alp YILDIZ <ademalp@kde.org.tr>\n"
+"Language-Team: turkish <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.1\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Fuat Poyraz, İsmail Şimşek"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "fuat@halideediplisesi.k12.tr, thelightning@mynet.com"
+
+#: acquireimagedialog.cpp:105
+msgid "Save Target Image Options"
+msgstr "Hedef Resim Kaydetme Seçenekleri"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+msgid "Acquire images"
+msgstr "Resim al"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+msgid "A Kipi plugin to acquire images"
+msgstr "Resim alma için bir Kipi eklentisi"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr "Yazar ve sorumlu"
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr ""
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "resim"
+
+#: acquireimagedialog.cpp:180
+msgid "Target Image"
+msgstr "Hedef Resim"
+
+#: acquireimagedialog.cpp:181
+msgid "Target Image Options"
+msgstr "Hedef Resim Seçenekleri"
+
+#: acquireimagedialog.cpp:190
+#, fuzzy
+msgid "File Name && Caption"
+msgstr "Dosya İsmi ve Açıklamalar"
+
+#: acquireimagedialog.cpp:191
+#, fuzzy
+msgid "<p>The target image preview with the file name and caption."
+msgstr "<p>Dosya adı ve açıklaması ile hedef resim önizleme."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Dosya ismi (uzantısız):"
+
+#: acquireimagedialog.cpp:197
+msgid "acquired_image"
+msgstr "alınan_resim"
+
+#: acquireimagedialog.cpp:198
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Hedef resmin dosya ismini uzantısız giriniz (Otomatik olarak uygun dosya "
+"uzantısı ayarlanacaktır.)"
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr ""
+
+#: acquireimagedialog.cpp:209
+#, fuzzy
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Hedef resimin açıklamalarını buraya giriniz."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Hedef resim önizleme"
+
+#: acquireimagedialog.cpp:228
+msgid "Saving Options"
+msgstr "Ayarlar Kaydediliyor"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>Ayarlar hedef resim için kaydediliyor."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Resim sıkıştırma:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>Hedef resim için JPEG ve PNG biçimleri sıkıştırma değeri:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>çok yüksek sıkıştırma "
+"<p><b>25</b>yüksek sıkıştırma "
+"<p><b>50</b>orta derecede sıkıştırma "
+"<p><b>75</b>alçak sıkıştırma(öntanımlı değer)"
+"<p><b>100</b>sıkıştırma yok"
+
+#: acquireimagedialog.cpp:260
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Buradan hedef resmin biçimini seçin.<p>"
+
+#: acquireimagedialog.cpp:261
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Joint Photographic Experts' Group dosya biçimi Web için uygundur "
+"fakat kayıplı veri sıkıştırma tekniğini kullanmaktadır."
+"<p><b>PNG</b>: Portable Network Graphics dosya biçimi ham resimler için "
+"kayıpsız, taşınabilir, iyi sıkıştırılmış kayıt imkanı sağlar. PNG GIF için "
+"patentsiz bir alternatif sunar ve TIFF'in birçok genel kullanımını da ikame "
+"eder. PNG çevrimiçi görüntüleme uygulamaları için tasarlanmıştır, World Wide "
+"Web gibi, bu yüzden gelişmiş görüntüleme şartlarında tamamen akıcıdır. Aynı "
+"zamanda, PNG farklı ortamlarda daha iyi renk eşleşmesi için gamma ve "
+"chromaticity verilerini de saklar."
+
+#: acquireimagedialog.cpp:269
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: Tagged Image File Format halen daha popüler olan ve nispeten "
+"eski bir biçimdir. Çok esnek ve ortamdan bağımsız bir biçimdir. Birçok resim "
+"işleme uygulamaları tarafından da desteklenmektedir."
+
+#: acquireimagedialog.cpp:273
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: Portable Pixel Map doya biçimi, renkli bitmap bilgilerini "
+"saklamak için ortalama bir dosya biçimidir. PPM dosyaları ya ikilik veya ASCII "
+"olabilir ve boyut olarak 24 bit'e kadar piksel değerleri sklayabilir. Bu dosya "
+"biçimi resimleri kodlarken kaliteden kayıp vermemek için en büyük boyutlu metin "
+"dosyalarını oluşturur."
+
+#: acquireimagedialog.cpp:277
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: BitMaP dosya biçim Win32 ortamından bilinen oldukça popüler bir "
+"biçimdir. Boyut olarak 1-, 4-, 8-, veya 24-bitlik pikselli RGB grafik "
+"verilerini başarılı bir biçimde kaydeder. Veri ham veya 4-bit veya 8-bit RLE "
+"veri sıkıştırma algoritması kullanılarak sıkıştırılmış bir şekilde saklanır. "
+"BMP basit bir bitmap biçimi için mükemmel bir seçimdir ve oldukça geniş bir RGB "
+"resim verisi aralığını destekler."
+
+#: acquireimagedialog.cpp:284
+msgid "Image file format:"
+msgstr "Resim dosyası biçimi:"
+
+#: acquireimagedialog.cpp:303
+msgid "Selection"
+msgstr "Seçim"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Album Seçimi"
+
+#: acquireimagedialog.cpp:311
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Hedef Resmi Kaydedeceğiniz Klasörü Seçiniz"
+
+#: acquireimagedialog.cpp:320
+msgid "&Add New Folder"
+msgstr "&Yeni Dosya Ekle"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr "<p>Yeni bir dizin ekle."
+
+#: acquireimagedialog.cpp:328
+msgid "Album Description"
+msgstr "Albüm Açıklaması"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p>Seçim listesinde geçerli Albümün açıklaması"
+
+#: acquireimagedialog.cpp:393
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Koleksiyon: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Koleksiyon: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Tarih: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Nesneler: %1"
+
+#: acquireimagedialog.cpp:409
+msgid "You must select a target album for this image."
+msgstr "Bu resim için hedef bir albüm seçmelisiniz."
+
+#: acquireimagedialog.cpp:415
+msgid "You must provide a file name for this image."
+msgstr "Bu resim için bir dosya ismi belirlemelisiniz."
+
+#: acquireimagedialog.cpp:474
+msgid "Cannot write image file \"%1\"."
+msgstr "Resim dosyası yazılamadı\"%1\"."
+
+#: acquireimagedialog.cpp:483
+msgid "Could not upload image to \"%1\"."
+msgstr "Resim güncellenemedi\"%1\"."
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+"<qt> Yeni resim hakkında bilgi alınırken hata meydana geldi. Hata mesajı: "
+"%1</qt>"
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Resim Tara..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Ekran Görüntüsü..."
+
+#: plugin_acquireimages.cpp:114
+msgid "No KDE scan-service available; check your system."
+msgstr ""
+"KDE tarayıcı servisi ayarlı değil lütfen tarayıcı sisteminizi kontrol ediniz."
+
+#: plugin_acquireimages.cpp:115
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "KIPI'nin resim tarama eklentisi"
+
+#: screenshotdialog.cpp:71
+msgid "Screenshot"
+msgstr "Ekran görüntüsü"
+
+#: screenshotdialog.cpp:72
+msgid "&New Snapshot"
+msgstr "&Yeni Ekran Görüntüsü"
+
+#: screenshotdialog.cpp:82
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"Bu pencere tüm masaüstünüzü ya da yalnız tek bir uygulama\n"
+"pencere görüntüsünü alacaktır. Eğer sadece bir pencere görüntüsü\n"
+"alacaksanız, fare imleci artı şeklini alacaktır. Böylece fare ile tek\n"
+"bir pencere seçerek görüntü alabilirsiniz."
+
+#: screenshotdialog.cpp:90
+msgid "Grab the entire desktop"
+msgstr "Bütün masaüstünü al"
+
+#: screenshotdialog.cpp:91
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p>Bu seçeneği etkinleştirirseniz, bütün masaüstünün görüntüsü alınacaktır. "
+"Etkin değilse sadece aktif pencerenin görüntüsü alınacaktır."
+
+#: screenshotdialog.cpp:97
+msgid "Hide all host application windows"
+msgstr "Bütün yerel uygulama pencerelerini gizle"
+
+#: screenshotdialog.cpp:98
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr ""
+"<p>Bu ayarı etkinleştirirseniz, bütün yerel işlem pencereleri görüntü alma "
+"işlemi sırasında gizlenecektir."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Gecikme:"
+
+#: screenshotdialog.cpp:107
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr "<p>İşlem başlatılırken birkaç saniye bekleyin."
+
+#: screenshotdialog.cpp:261
+msgid "Unable to take snapshot."
+msgstr "Resim alma başarısız oldu."
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Ekran Görüntüsü Hatası"
+
+#~ msgid "Acquire Images Handbook"
+#~ msgstr "Resim Alma El Kitabı"
+
+#~ msgid "Comments:"
+#~ msgstr "Açıklamalar:"
+
+#~ msgid "Comment: %1"
+#~ msgstr "Açıklama: %1"

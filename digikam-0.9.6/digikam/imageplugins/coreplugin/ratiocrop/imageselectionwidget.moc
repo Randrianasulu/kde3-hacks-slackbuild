@@ -1,0 +1,175 @@
+/****************************************************************************
+** DigikamImagesPluginCore::ImageSelectionWidget meta object code from reading C++ file 'imageselectionwidget.h'
+**
+** Created: Wed Jun 14 10:03:32 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imageselectionwidget.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *DigikamImagesPluginCore::ImageSelectionWidget::className() const
+{
+    return "DigikamImagesPluginCore::ImageSelectionWidget";
+}
+
+QMetaObject *DigikamImagesPluginCore::ImageSelectionWidget::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_DigikamImagesPluginCore__ImageSelectionWidget( "DigikamImagesPluginCore::ImageSelectionWidget", &DigikamImagesPluginCore::ImageSelectionWidget::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString DigikamImagesPluginCore::ImageSelectionWidget::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::ImageSelectionWidget", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString DigikamImagesPluginCore::ImageSelectionWidget::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::ImageSelectionWidget", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* DigikamImagesPluginCore::ImageSelectionWidget::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "guideLinesType", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotGuideLines", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "color", &static_QUType_varptr, "\x0a", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotChangeGuideColor", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "size", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotChangeGuideSize", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotGuideLines(int)", &slot_0, QMetaData::Public },
+	{ "slotChangeGuideColor(const QColor&)", &slot_1, QMetaData::Public },
+	{ "slotChangeGuideSize(int)", &slot_2, QMetaData::Public }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ "rect", &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalSelectionMoved", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ "rect", &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalSelectionChanged", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ "newOrientation", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalSelectionOrientationChanged", 1, param_signal_2 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalSelectionMoved(QRect)", &signal_0, QMetaData::Public },
+	{ "signalSelectionChanged(QRect)", &signal_1, QMetaData::Public },
+	{ "signalSelectionOrientationChanged(int)", &signal_2, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"DigikamImagesPluginCore::ImageSelectionWidget", parentObject,
+	slot_tbl, 3,
+	signal_tbl, 3,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_DigikamImagesPluginCore__ImageSelectionWidget.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* DigikamImagesPluginCore::ImageSelectionWidget::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "DigikamImagesPluginCore::ImageSelectionWidget" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalSelectionMoved
+void DigikamImagesPluginCore::ImageSelectionWidget::signalSelectionMoved( QRect t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_varptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSelectionChanged
+void DigikamImagesPluginCore::ImageSelectionWidget::signalSelectionChanged( QRect t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_varptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSelectionOrientationChanged
+void DigikamImagesPluginCore::ImageSelectionWidget::signalSelectionOrientationChanged( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2, t0 );
+}
+
+bool DigikamImagesPluginCore::ImageSelectionWidget::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotGuideLines((int)static_QUType_int.get(_o+1)); break;
+    case 1: slotChangeGuideColor((const QColor&)*((const QColor*)static_QUType_ptr.get(_o+1))); break;
+    case 2: slotChangeGuideSize((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool DigikamImagesPluginCore::ImageSelectionWidget::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalSelectionMoved((QRect)(*((QRect*)static_QUType_ptr.get(_o+1)))); break;
+    case 1: signalSelectionChanged((QRect)(*((QRect*)static_QUType_ptr.get(_o+1)))); break;
+    case 2: signalSelectionOrientationChanged((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool DigikamImagesPluginCore::ImageSelectionWidget::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool DigikamImagesPluginCore::ImageSelectionWidget::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

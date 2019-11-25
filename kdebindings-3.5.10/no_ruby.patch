@@ -1,0 +1,8 @@
+--- kdebindings-3.5.10/configure.in.in.orig	2015-09-26 02:21:18.846398520 +0300
++++ kdebindings-3.5.10/configure.in.in	2015-09-26 02:21:39.926398520 +0300
+@@ -302,4 +302,4 @@
+ KDE_CHECK_KNS
+ 
+ dnl remove when fixed
+-DO_NOT_COMPILE="$DO_NOT_COMPILE dcopjava qtsharp"
++DO_NOT_COMPILE="$DO_NOT_COMPILE dcopjava qtsharp qtruby korundum"

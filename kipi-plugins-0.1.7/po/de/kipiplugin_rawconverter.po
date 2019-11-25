@@ -1,0 +1,268 @@
+# translation of kipiplugin_rawconverter.po to german
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Jan Tönjes <jan.toenjes@web.de>, 2003.
+# Oliver Dörr <kde@doerr-privat.de>, 2003, 2004, 2005, 2006, 2007, 2008.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-03-01 16:42+0100\n"
+"Last-Translator: Oliver Dörr <kde@doerr-privat.de>\n"
+"Language-Team: german <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Das Rohbild kann nicht erkannt werden."
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Marke: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Modell: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Erstellt: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Blende: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Fokus: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Belichtung: 1/%1 s\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Sensitivität: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "KIPI Stapel-Rohbildkonverter"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Kon&vertieren"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Abbrechen"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Vorschau"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Rohdatei"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Zieldatei"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Kamera"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "Rohbildkonverter"
+
+#: batchdialog.cpp:139
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Ein KIPI-Modul um Rohbilder umzuwandeln"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Ursprünglicher Autor"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr "Modul-Handbuch"
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr ""
+"<p>Startet die Umwandlung der Rohbilder mit den aktuellen Einstellungen."
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Bricht die aktuelle Konvertierung der Rohdateien ab."
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Rohkonverter beenden"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Es gibt keine Rohdatei in der Liste zu bearbeiten."
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Rohbild konvertiert von \"%1\" speichern unter"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Das Bild %1 lässt sich nicht speichern."
+
+#: plugin_rawconverter.cpp:84
+msgid "Raw Image Converter..."
+msgstr "Rohbildkonverter ..."
+
+#: plugin_rawconverter.cpp:92
+msgid "Batch Raw Converter..."
+msgstr "Stapelverarbeitungsrohkonverter ..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" ist keine Rohdatei."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Das Bild ließ sich nach der Bearbeitung nicht laden."
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Ausgabe-Dateiformat:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Wählen Sie hier das zu benutzenden Ausgabeformat:"
+"<p><b>JPEG</b>: gibt das verarbeitete Bild im JPEG-Format aus. Dieses Format "
+"ergibt kleinere Dateien. Eine minimale JPEG-Kompression wird während der "
+"Rohdekodierung benutzt."
+"<p><b>Achtung: Aufgrund des destruktiven Kompressionsalgorithmus ist JPEG ein "
+"qualitätsverlustbehaftetes Format.</b>"
+"<p><b>TIFF</b>: gibt das verarbeitete Bild im TIFF-Format aus. Dies generiert "
+"große Dateien ohne Qualitätsverlust. Die Adobe Deflate Kompression wird während "
+"der Konvertierung benutzt."
+"<p><b>PPM</b>: gibt das verarbeitete Bild im PPM-Format aus. Dies generiert die "
+"größten Dateien ohne Qualitätsverlust."
+"<p><b>PNG</b>: gibt die verarbeiteten Bilder im PNG-Format aus. Dies generiert "
+"große Dateien ohne Qualitätsverlust. Die maximale PNG-Kompression wird während "
+"der Konvertierung benutzt."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Falls die Zieldatei existiert"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Automatisch überschreiben"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Dialog zum Umbenennen von Dateien öffnen"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Rohbildkonverter"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Vorschau"
+
+#: singledialog.cpp:119
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Ein KIPI-Modul um Rohbilder umzuwandeln."
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Erzeugt eine Vorschau mit den aktuellen Einstellungen. Dazu wird eine "
+"einfache bilineare Interpolation benutzt, um ein schnelles Ergebnis zu "
+"erhalten."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Konvertiert das Rohbild mit den aktuellen Einstellungen. Dazu wird ein "
+"qualitativ hochwertiger adaptiver Algorithmus benutzt."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Bricht die laufende Umwandlung der Rohdatei ab."
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Die Vorschau lässt sich nicht erzeugen."
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Das Rohbild lässt sich nicht konvertieren."
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Vorschau wird erzeugt ..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Rohbild wird konvertiert ..."

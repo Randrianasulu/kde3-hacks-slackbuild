@@ -1,0 +1,365 @@
+# translation of kipiplugin_kameraklient.po to Thai
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_kameraklient\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2007-02-25 12:24+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <l10n@opentle.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: camerafolderview.cpp:33
+msgid "Camera Folders"
+msgstr "โฟลเดอร์กล้อง"
+
+#: cameraselection.cpp:55
+msgid "Camera Selection"
+msgstr "การเลือกกล้อง"
+
+#: cameraselection.cpp:60 cameraui.cpp:147 setupcamera.cpp:65
+msgid "KameraKlient"
+msgstr "จัดการกล้อง"
+
+#: cameraselection.cpp:63 cameraui.cpp:150
+msgid "A Digital camera interface Kipi plugin"
+msgstr "ปลั๊กอินของ Kipi สำหรับติดต่อกับกล้องถ่ายภาพดิจิตัล"
+
+#: cameraselection.cpp:67 cameraui.cpp:154 setupcamera.cpp:72
+msgid "Original author from Digikam project"
+msgstr "ผู้เขียนดั้งเดิมจากโครงการ Digikam"
+
+#: cameraselection.cpp:70 cameraui.cpp:157 setupcamera.cpp:75
+msgid "Porting the Digikam GPhoto2 interface to Kipi. Maintainer"
+msgstr "พอร์ตส่วนติดต่อโปรแกรม GPhoto2 ของ Digikam มายัง Kipi, ผู้ดูแล"
+
+#: cameraselection.cpp:76 cameraui.cpp:162 setupcamera.cpp:81
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "คู่มือการใช้ปลั๊กอินจัดการกล้อง"
+
+#: cameraselection.cpp:87
+msgid "Camera Configuration"
+msgstr "ปรับแต่งค่ากล้อง"
+
+#: cameraselection.cpp:95
+msgid "Cameras"
+msgstr "กล้อง"
+
+#: cameraselection.cpp:100
+msgid "Camera Port Type"
+msgstr "ประเภทพอร์ตเชื่อมต่อ"
+
+#: cameraselection.cpp:106
+msgid "USB"
+msgstr "พอร์ต USB"
+
+#: cameraselection.cpp:109
+msgid "Serial"
+msgstr "พอร์ตอนุกรม"
+
+#: cameraselection.cpp:114
+msgid "Camera Port Path"
+msgstr "เส้นทางไปยังพอร์ตเชื่อมต่"
+
+#: cameraselection.cpp:122
+msgid ""
+"only for serial port\n"
+"cameras"
+msgstr ""
+"ใช้สำหรับกล้องที่เชื่อมต่อ\n"
+"แบบอนุกรมเท่านั้น"
+
+#: cameraui.cpp:120
+msgid "Setup"
+msgstr "ตั้งค่า"
+
+#: cameraui.cpp:126
+msgid "Download"
+msgstr "ดาวน์โหลด"
+
+#: cameraui.cpp:129
+msgid "Upload"
+msgstr "อัพโหลด"
+
+#: cameraui.cpp:169 cameraui.cpp:289
+msgid "Connect"
+msgstr "เชื่อมต่อ"
+
+#: cameraui.cpp:180
+msgid "Download to: "
+msgstr "ดาวน์โหลดมายัง: "
+
+#: cameraui.cpp:186
+msgid "&Change"
+msgstr "เปลี่ยน"
+
+#: cameraui.cpp:207
+msgid "Ready"
+msgstr "พร้อม"
+
+#: cameraui.cpp:245
+msgid "Select all the images from the camera."
+msgstr "เลือกภาพทั้งหมดจากกล้อง"
+
+#: cameraui.cpp:247
+msgid "Select None"
+msgstr "ไม่เลือกเลย"
+
+#: cameraui.cpp:248
+msgid "Deselect all the images from the camera."
+msgstr "ยกเลิกการเลือกภาพทั้งหมดจากกล้อง"
+
+#: cameraui.cpp:250
+msgid "Invert Selection"
+msgstr "กลับค่าการเลือก"
+
+#: cameraui.cpp:251
+msgid "Invert the selection."
+msgstr "กลับค่าการเลือก"
+
+#: cameraui.cpp:253
+msgid "Select New Items"
+msgstr "เลือกรายการใหม่"
+
+#: cameraui.cpp:254
+msgid "Select all the that were not previously downloaded."
+msgstr "เลือกภาพที่ยังไม่ได้ทำการดาวน์โหลดทั้งหมด"
+
+#: cameraui.cpp:285
+msgid "Connected"
+msgstr "เชื่อมต่ออยู่"
+
+#: cameraui.cpp:286
+msgid "Disconnect"
+msgstr "ยกเลิกการเชื่อมต่อ"
+
+#: cameraui.cpp:288
+msgid "Disconnected"
+msgstr "ยุติการเชื่อมต่ออยู่"
+
+#: cameraui.cpp:413
+msgid "There is no configured camera!"
+msgstr "ยังไม่มีการตั้งค่ากล้องใด ๆ !"
+
+#: cameraui.cpp:438
+msgid "'%1' directory does not exist."
+msgstr "โฟลเดอร์ '%1' ยังไม่มีอยู่"
+
+#: cameraui.cpp:481
+msgid ""
+"About to delete these Image(s)\n"
+"Are you sure?"
+msgstr ""
+"กำลังจะทำการลบภาพเหล่านี้\n"
+"คุณแน่ใจหรือไม่ ?"
+
+#: cameraui.cpp:513
+msgid ""
+"Camera Folder '%1' contains item '%2'\n"
+" Please, enter New Name"
+msgstr ""
+"โฟลเดอร์ '%1' บนกล้อง มีรายการ '%2' อยู่แล้ว\n"
+"โปรดใส่ชื่อใหม่"
+
+#: cameraui.cpp:618
+msgid "Camera Not Initialized"
+msgstr "ยังไม่ได้เริ่มการทำงานของกล้อง"
+
+#: cameraui.cpp:626
+msgid "Please Select a Folder on Camera to Upload"
+msgstr "โปรดเลือกโฟลเดอร์บนกล้องเพื่อทำการอัพโหลด"
+
+#: cameraui.cpp:636
+msgid "Sorry! The directory is not writable!"
+msgstr "ขออภัย! ไม่สามารถเขียนไปยังโฟลเดอร์ได้!"
+
+#: dmessagebox.cpp:92
+msgid "More errors occurred and are shown below:"
+msgstr "เกิดข้อผิดพลาดจำนวนมาก โดยแสดงด้านล่างนี้:"
+
+#: gpcontroller.cpp:229
+msgid ""
+"Camera Model or Port not specified correctly.\n"
+"Please run Setup"
+msgstr ""
+"ยังไม่มีการกำหนดรุ่นของกล้องหรือพอร์ตเชื่อมต่ออย่างถูกต้อง\n"
+"โปรดใช้การตั้งค่า"
+
+#: gpcontroller.cpp:232
+msgid ""
+"Failed to initialize camera.\n"
+"Please ensure camera is connected properly and turned on"
+msgstr ""
+"ล้มเหลวในการเริ่มการทำงานกับกล้อง\n"
+"โปรดตรวจสอบว่าได้ทำการเชื่อมต่อกล้องและเปิดการทำงานเรียบร้อยแล้ว"
+
+#: gpcontroller.cpp:257
+msgid ""
+"Failed to get subfolder names from '%1'\n"
+msgstr ""
+"ล้มเหลวในการหาชื่อของโฟลเดอร์ย่อยจาก '%1'\n"
+
+#: gpcontroller.cpp:278
+msgid ""
+"Failed to get images information from '%1'\n"
+msgstr ""
+"ล้มเหลวในการหาข้อมูลของภาพจาก '%1'\n"
+
+#: gpcontroller.cpp:301
+msgid "Failed to get preview for '%1/%2'"
+msgstr "ล้มเหลวในการหาภาพแสดงตัวอย่างสำหรับ '%1/%2'"
+
+#: gpcontroller.cpp:310
+msgid "Failed to download '%1' from '%2'"
+msgstr "ล้มเหลวในการดาวน์โหลด '%1' จาก '%2'"
+
+#: gpcontroller.cpp:322 gpcontroller.cpp:334
+msgid "Failed to open '%1'"
+msgstr "ล้มเหลวในการเปิด '%1'"
+
+#: gpcontroller.cpp:346
+msgid "Failed to delete '%1'"
+msgstr "ล้มเหลวในการลบ '%1'"
+
+#: gpcontroller.cpp:358
+msgid "Failed to upload '%1'"
+msgstr "ล้มเหลวในการอัพโหลด '%1'"
+
+#: gpfileiteminfodlg.cpp:90
+msgid "MimeType:"
+msgstr "ชนิดแฟ้ม:"
+
+#: gpfileiteminfodlg.cpp:92 gpfileiteminfodlg.cpp:98 gpfileiteminfodlg.cpp:104
+#: gpfileiteminfodlg.cpp:111 gpfileiteminfodlg.cpp:118
+#: gpfileiteminfodlg.cpp:129 gpfileiteminfodlg.cpp:140
+#: gpfileiteminfodlg.cpp:151
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: gpfileiteminfodlg.cpp:96
+msgid "Date:"
+msgstr "วันที่:"
+
+#: gpfileiteminfodlg.cpp:102
+msgid "Size:"
+msgstr "ขนาด:"
+
+#: gpfileiteminfodlg.cpp:105
+msgid " bytes"
+msgstr " ไบต์"
+
+#: gpfileiteminfodlg.cpp:109
+msgid "Width:"
+msgstr "กว้าง:"
+
+#: gpfileiteminfodlg.cpp:116
+msgid "Height:"
+msgstr "สูง:"
+
+#: gpfileiteminfodlg.cpp:122
+msgid "Read permissions:"
+msgstr "สิทธิ์ในการอ่านแฟ้ม:"
+
+#: gpfileiteminfodlg.cpp:133
+msgid "Write permissions:"
+msgstr "สิทธิ์ในการเขียนแฟ้ม:"
+
+#: gpfileiteminfodlg.cpp:144
+msgid "Downloaded:"
+msgstr "ดาวน์โหลดแล้ว:"
+
+#: kameraklient.cpp:52
+msgid "Digital Camera"
+msgstr "กล้องถ่ายภาพดิจิตัล"
+
+#: savefiledialog.cpp:36
+msgid "File Already Exists"
+msgstr "มีแฟ้มอยู่แล้ว"
+
+#: savefiledialog.cpp:37
+msgid "The file '%1' already exists!"
+msgstr "มีแฟ้ม '%1' อยู่แล้ว!"
+
+#: savefiledialog.cpp:42
+msgid "Rename"
+msgstr "เปลี่ยนชื่อ"
+
+#: savefiledialog.cpp:44
+msgid "Skip"
+msgstr "ข้าม"
+
+#: savefiledialog.cpp:45
+msgid "Skip All"
+msgstr "ข้ามทั้งหมด"
+
+#: savefiledialog.cpp:46
+msgid "Overwrite"
+msgstr "เขียนทับ"
+
+#: savefiledialog.cpp:47
+msgid "Overwrite All"
+msgstr "เขียนทับทั้งหมด"
+
+#: setupcamera.cpp:60
+msgid "Setup Cameras"
+msgstr "ตั้งค่ากล้อง"
+
+#: setupcamera.cpp:68
+msgid "An Digital camera interface Kipi plugin"
+msgstr "ปลั๊กอิน Kipi สำหรับติดต่อและเชื่อมต่อกล้องถ่ายภาพดิจิตัล"
+
+#: setupcamera.cpp:99
+msgid "Model"
+msgstr "รุ่น"
+
+#: setupcamera.cpp:100
+msgid "Port"
+msgstr "พอร์ตเชื่อมต่อ"
+
+#: setupcamera.cpp:111
+msgid "Add..."
+msgstr "เพิ่ม..."
+
+#: setupcamera.cpp:113
+msgid "Edit..."
+msgstr "แก้ไข..."
+
+#: setupcamera.cpp:114
+msgid "Auto-Detect"
+msgstr "ตรวจหาอัตโนมัติ"
+
+#: setupcamera.cpp:194
+msgid ""
+"Failed to auto-detect camera!\n"
+"Please retry or try setting manually."
+msgstr ""
+"ล้มเหลวในการตรวจหากล้องโดยอัตโนมัติ !\n"
+"โปรดลองใหม่อีกครั้ง หรือใช้วิธีตั้งค่าด้วยตัวคุณเอง"
+
+#: setupcamera.cpp:205
+msgid "Already added camera: "
+msgstr "กล้องที่ทำการเพิ่มเรียบร้อยแล้ว: "
+
+#: setupcamera.cpp:207
+msgid "Found camera: "
+msgstr "กล้องที่พบ: "
+
+#~ msgid "Digital Camera interface"
+#~ msgstr "ส่วนติดต่อกล้องดิจิตัล"

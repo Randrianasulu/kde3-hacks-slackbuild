@@ -1,0 +1,167 @@
+<chapter id="rawconverter">
+<chapterinfo>
+
+<title
+>Raw-conversie</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>De Kipiplugin <quote
+>Raw-conversie</quote
+> is een conversiehulpmiddel voor afbeeldingen in een raw formaat. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inleiding</title>
+
+<para
+>Met deze plugin kunt u uw afbeeldingen importeren/converteren die zijn opgeslagen in <emphasis
+>RAW-formaat</emphasis
+> naar één van de volgende formaten: <guilabel
+>JPEG</guilabel
+>, <guilabel
+>TIFF</guilabel
+>, <guilabel
+>PPM</guilabel
+>. </para>
+
+<para
+>Enkele kanttekeningen voordat u gaat converteren, en zelfs voordat u foto's gaat maken in raw formaat. Het RAW-afbeeldingsformaat behoudt de oorspronkelijke informatie over de belichting in principe zonder verlies (wanneer gecomprimeerd, wordt er gebruik gemaakt van onomkeerbare, verliesloze compressiealgoritmes). Veel fotografen maken bij voorkeur hun foto's in RAW-modus omdat het in de camera ingebouwde conversieprogramma vaak minder goed is dan wat bereikt kan worden met digitale afbeeldingsverwerking. De witbalans van de digitale camera wordt geregistreerd, maar niet toegepast op de afbeelding. Sommige CMOS CCD's creëren vierkleuren filtergegevens, RGBG, rood, groen, blauw en een ander groen masker voor kleurverbetering. Deze plugin kan daar rekening mee houden. </para>
+
+<para
+>De conversie is gebaseerd op het commandoregelprogramma <emphasis
+>dcraw</emphasis
+> van Dave Coffin (Dave:"Verwacht niet dat dcraw dezelfde afbeeldingen kan produceren als de software van de camerafabrikant. Soms geeft dcraw betere resultaten!"). </para>
+
+<sect1 id="using-plugin-rawconversiondialog">
+<title
+>Enkelvoudige conversie</title>
+
+<para
+>Selecteer het raw-bestand dat u wilt converteren en open de plugin vanuit het hoofdprogramma. Het venster <emphasis
+>Raw-afbeelding converteren</emphasis
+> opent in enkelvoudige modus. Klik op <guilabel
+>Voorbeeld</guilabel
+> om het effect van uw instellingen te bekijken. </para>
+
+<para
+>Nu kunt u de beschikbare opties aanpassen om het conversieproces te optimaliseren. Het eerste keuzevakje geeft aan dat voor de witbalans de camera-instellingen gebruikt moet worden. De essentiële parameters, zoals gamma, helderheid en rood/blauw-versterking kunnen worden aangepast. Als het resultaat niet optimaal is, geen nood: u kunt later de afbeelding verder fijnafstemmen. </para>
+
+<para
+>Om gebruik te maken van contrastinformatie kunt u de <guilabel
+>vier kleuren RGBG</guilabel
+>-conversie selecteren. Let op, als uw camera in RGB-modus werkt, dan heeft deze instelling geen effect. </para>
+
+<para
+>Als u tevreden bent over het resultaat in het voorbeeld, dan kiest u een van de drie uitvoerformaten om het conversieresultaat op te slaan. De bestandsnaam blijft ongewijzigd, maar de extensie verandert. <guilabel
+>JPEG</guilabel
+> maakt gebruik van een verliesgevend algoritme en levert het kleinste bestand op. </para>
+
+<para
+>Het afbeeldingsformaat <guilabel
+>TIFF</guilabel
+> behoudt alle informatie van uw afbeelding en maakt gebruik van de verliesloze LZW-compressie. </para>
+
+<para
+>Het afbeeldingsformaat <guilabel
+>PPM</guilabel
+> produceert de grootste bestanden en bevat de meeste gegevens. </para>
+
+<tip
+><para
+>Als u van plan bent om uw afbeeldingen te bewerken, of ze veelvuldig op te slaan, dan is het onverstandig om het <guilabel
+>JPEG</guilabel
+>-formaat te kiezen. Dit formaat staat namelijk een beperkt aantal operaties toe voordat de kwaliteit zichtbaar afneemt. <guilabel
+>TIFF</guilabel
+> en <guilabel
+>PPM</guilabel
+> zijn beter ingericht voor het behouden van de oorspronkelijke kwaliteit. </para
+></tip>
+
+<note
+><para
+>Als u <guilabel
+>jPEG</guilabel
+> als afbeeldingsformaat kiest, dan zal de metadata die is ingesloten in het raw-bestand in de vorm van EXIF worden overgenomen in de <guilabel
+>JPEG</guilabel
+>-bestanden. </para
+></note>
+
+<para
+>Als u klaar bent klikt u op de knop <guilabel
+>Verwerken</guilabel
+> om de conversie te starten. Als u de conversie wilt afbreken klikt u op de knop <guilabel
+>Afbreken</guilabel
+>. </para>
+
+<figure>
+    <title
+>De dialoog Raw-conversie in enkelvoudige modus</title>
+    <graphic srccredit="The RAW Converter Dialog in Single Mode" fileref="raw_converter_single.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-rawbatchdialog">
+<title
+>Dialoog meervoudige conversie</title>
+
+<para
+>Deze dialoog staat u toe om een serie bestanden in één keer te converteren. Gebruik deze modus als u zeker bent van de beste instellingen, probeer deze dus eerst even uit in de enkelvoudige modus. </para>
+
+<para
+>De beschikbare instellingen zijn in grote lijnen identiek aan de enkelvoudige modus. Hier hebt u de aanvullende optie om bestaande bestanden te overschrijven (welke u bij een eerdere poging hebt aangemaakt). Er is geen voorbeeld beschikbaar. Een voortgangsbalk geeft de status van de conversie aan. </para>
+
+<figure>
+    <title
+>De dialoog meervoudige raw-conversie</title>
+    <graphic srccredit="The Batch RAW Converter Dialog" fileref="raw_converter_batch.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

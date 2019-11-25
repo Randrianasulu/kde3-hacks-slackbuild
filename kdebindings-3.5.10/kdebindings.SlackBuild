@@ -1,0 +1,115 @@
+#!/bin/sh
+CWD=`pwd`
+TMP=/tmp
+PKG=$TMP/package-kdebindings
+RUBY_VER=`ruby -v | awk '{ print $2 }' | awk -F"p" '{ print $1 }'`
+CPUOPT="-O2 -march=i686 -mtune=i686 -fpermissive"
+ARCH="i486"
+TARGET=$ARCH
+BUILD="ra1"
+VERSION="3.5.10"
+
+# Set the config option variables if they are not already set:
+if [ -r ../KDE.options ]; then
+  . ../KDE.options
+fi
+
+# The global options may be overridden here (if needed):
+if [ -r ./local.options ]; then
+  . ./local.options
+fi
+
+rm -rf $PKG
+mkdir -p $PKG/usr
+
+if [ ! -e /usr/lib/ruby/$RUBY_VER/i486-linux/ruby.h ]; then
+  ln -s /usr/include/ruby-$RUBY_VER/ruby.h /usr/lib/ruby/$RUBY_VER/i486-linux/
+fi
+
+if [ ! -d /usr/lib/ruby/$RUBY_VER/i486-linux/ruby ]; then
+  ln -s /usr/include/ruby-$RUBY_VER/ruby /usr/lib/ruby/$RUBY_VER/i486-linux/
+fi
+
+# Avoid a version number in .la files:
+if [ -d /usr/lib${LIBDIRSUFFIX}/qt3 ]; then
+  QTDIR=/usr/lib${LIBDIRSUFFIX}/qt3
+fi
+cd $TMP
+echo "Building kdebindings-$VERSION.tar.bz2..."
+tar xjvf $CWD/kdebindings-$VERSION.tar.bz2 || exit 1
+cd kdebindings-$VERSION || exit 1
+
+if [ -r $CWD/apply-patches.sh ]; then
+  . $CWD/apply-patches.sh
+fi
+
+make -f admin/Makefile.common
+
+# Kdebindings half ignores --mandir (putting a man page under /usr/man and
+# another under /usr/share/man), so it's better to use --mandir=/usr/share/man
+# and then fix the mess later...
+chown -R root:root .
+CFLAGS=$CPUOPT \
+CXXFLAGS=$CPUOPT \
+./configure \
+  --prefix=/usr \
+  --sysconfdir=/etc \
+  --mandir=/usr/share/man \
+  --disable-debug \
+  --without-java \
+  --without-ruby \
+  --program-prefix="" \
+  --program-suffix="" \
+  --build=$TARGET-slackware-linux
+
+# Compile perl bindings first due to the vendor_perl:
+cd dcopperl
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+cd ..
+
+# Lately I've needed this big hammer.  I don't know why.
+make
+if [ ! $? = 0 ]; then
+  mkdir -p smoke/qt/generate.pl.tmpdir
+  cp -a smoke/qt/* smoke/qt/generate.pl.tmpdir
+  # Also, no use of $NUMJOBS on kdebindings, as it has caused
+  # compiles to fail in the past...
+  make || exit 1
+fi
+
+## This was the old failsafe.  But it's just safer not to play.
+#if [ ! $? = 0 ]; then
+#  # Failed?  We'll give it one more chance single-threaded:
+#  make || exit 1
+#fi
+
+make install DESTDIR=$PKG
+mkdir -p $PKG/usr/doc/kdebindings-$VERSION
+cp -a AUTHORS COPYING COPYING.LIB INSTALL NEWS README $PKG/usr/doc/kdebindings-$VERSION
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+
+# Remove perllocal files:
+( cd $PKG ; find . -name perllocal.pod -exec rm "{}" \; )
+
+( cd $PKG
+  find . | xargs file | grep "executable" | grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
+  find . | xargs file | grep "shared object" | grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
+)
+
+# Kdebindings half ignores --mandir (putting a man page under /usr/man and
+# another under /usr/share/man), so it's better to use --mandir=/usr/share/man
+# and then fix the mess later...
+if [ -d $PKG/usr/man ]; then
+  gzip -9 $PKG/usr/man/man?/*
+fi
+if [ -d $PKG/usr/share/man ]; then
+  mv $PKG/usr/share/man $PKG/usr
+  rmdir $PKG/usr/share
+  gzip -9 $PKG/usr/man/man?/*
+fi
+
+cd $PKG
+makepkg -l y -c n ../kdebindings-$VERSION-$ARCH-$BUILD.txz
+

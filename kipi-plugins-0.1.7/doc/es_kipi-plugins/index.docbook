@@ -1,0 +1,349 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+ <!ENTITY kappname "&kipi;">
+ <!ENTITY % Spanish "INCLUDE"
+> <!-- change language only here -->
+ <!ENTITY doc-acquireimages SYSTEM "acquireimages.docbook">
+ <!ENTITY doc-calendar SYSTEM "calendar.docbook">
+ <!ENTITY doc-cdarchiving SYSTEM "cdarchiving.docbook">
+ <!ENTITY doc-colorimages SYSTEM "colorimages.docbook">
+ <!ENTITY doc-convertimages SYSTEM "convertimages.docbook">
+ <!ENTITY doc-effectimages SYSTEM "effectimages.docbook">
+ <!ENTITY doc-filterimages SYSTEM "filterimages.docbook">
+ <!ENTITY doc-findduplicateimages SYSTEM "findduplicateimages.docbook">
+ <!ENTITY doc-flickrexport SYSTEM "flickrexport.docbook">
+ <!ENTITY doc-galleryexport SYSTEM "galleryexport.docbook">
+ <!ENTITY doc-geolocalization SYSTEM "geolocalization.docbook">
+ <!ENTITY doc-imagesgallery SYSTEM "imagesgallery.docbook">
+ <!ENTITY doc-imageviewer SYSTEM "imageviewer.docbook">
+ <!ENTITY doc-jpeglossless SYSTEM "jpeglossless.docbook">
+ <!ENTITY doc-kameraklient SYSTEM "kameraklient.docbook">
+ <!ENTITY doc-metadataeditor SYSTEM "metadataeditor.docbook">
+ <!ENTITY doc-mpegencoder SYSTEM "mpegencoder.docbook">
+ <!ENTITY doc-printwizard SYSTEM "printwizard.docbook">
+ <!ENTITY doc-rawconverter SYSTEM "rawconverter.docbook">
+ <!ENTITY doc-recompressimages SYSTEM "recompressimages.docbook">
+ <!ENTITY doc-renameimages SYSTEM "renameimages.docbook">
+ <!ENTITY doc-resizeimages SYSTEM "resizeimages.docbook">
+ <!ENTITY doc-sendimages SYSTEM "sendimages.docbook">
+ <!ENTITY doc-slideshow SYSTEM "slideshow.docbook">
+ <!ENTITY doc-timeadjust SYSTEM "timeadjust.docbook">
+ <!ENTITY doc-wallpaper SYSTEM "wallpaper.docbook">
+]>
+
+<book lang="&language;">
+<bookinfo>
+<title
+>El manual de complementos de Kipi</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard@kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<othercredit role="translator"
+> <firstname
+>Santiago</firstname
+> <surname
+>Fernández Sancho</surname
+> <affiliation
+><address
+><email
+>santi@kde-es.org</email
+></address
+></affiliation
+> <contrib
+>Traductor</contrib
+> </othercredit
+> 
+
+<date
+>2007-02-09</date>
+<releaseinfo
+>0.1.3</releaseinfo
+> <!-- Used Kicker version here -->
+
+<copyright>
+<year
+>2004-2007</year>
+<holder
+>El equipo de desarrollo de Kipi</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<abstract>
+<para
+>Este es el manual para los complementos de Kipi, la interfaz de complementos de imágenes de &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+<keyword
+>Complementos</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introducción a los complementos de Kipi</title>
+
+<para
+>Una de las mejores cosas de los programas de administración de fotografía para KDE como «digiKam», «KPhotoAlbum», «GWenView» y «ShowImg» es la facilidad con la que se pueden extender las funcionalidades utilizando complementos. Los complementos pueden manipular archivos de imágenes prácticamente de cualquiera de las formas que los usuarios deseen. Su punto fuerte es que es mucho más sencillo añadir capacidades a la aplicación servidora escribiendo un pequeño complemento que modificar el núcleo de la aplicación servidora. Muchas de las valiosos complementos tienen entre 100 y 200 líneas de código C++. </para>
+
+<para
+>Los complementos son funciones adicionales para los programas servidores de administración de imágenes de KDE. Pueden añadir menús adicionales y accesos rápidos, y extender las funcionalidades de los programas servidores. Puede instalar muchos o unos pocos, a su elección desde el servidor de programas. </para>
+
+<para
+>Puede obtener más información sobre el uso y activación de los complementos en el manual del programa servidor. </para>
+
+<para
+>Las complementos instalados en este manual son: </para>
+
+<itemizedlist>
+<listitem>
+<para
+><link linkend="acquireimages"
+>Complemento para capturar imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="calendar"
+>Complemento de calendario.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="cdarchiving"
+>Complemento de archivado de CD.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="colorimages"
+>Complemento de coloración de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="convertimages"
+>Complemento de conversión de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="effectimages"
+>Complemento de efectos de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="filterimages"
+>Complemento de filtrado de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="findduplicateimages"
+>Complemento de búsqueda de imágenes duplicadas.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="flickrexport"
+>Complemento de exportado remoto a Flickr.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="galleryexport"
+>Complemento de exportado remoto de galería.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="geolocalization"
+>Complemento de geolocalización.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="imagesgallery"
+>Complemento de galería de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="imageviewer"
+>Complemento de visualización de imágenes OpenGL</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="jpeglossless"
+>Complemento JPEG sin pérdida.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="kameraklient"
+>Complemento de cliente de cámara digital.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="mpegencoder"
+>Complemento de codificación MPEG.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="metadataeditor"
+>Complemento del editor de metadatos.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="printwizard"
+>Complemento de asistente de impresión.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="rawconverter"
+>Complemento de conversión raw.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="recompressimages"
+>Complemento de recompresión de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="renameimages"
+>Complemento de renombrado de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="resizeimages"
+>Complemento de redimensionado de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="sendimages"
+>Complemento de envío de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="slideshow"
+>Complemento de presentación de imágenes.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="timeadjust"
+>Complemento de ajuste de hora.</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="wallpaper"
+>Complemento de fondos de escritorio.</link
+></para>
+</listitem>
+</itemizedlist>
+</chapter>
+
+&doc-acquireimages;
+&doc-calendar;
+&doc-cdarchiving;
+&doc-colorimages;
+&doc-convertimages;
+&doc-effectimages;
+&doc-filterimages;
+&doc-findduplicateimages;
+&doc-flickrexport;
+&doc-galleryexport;
+&doc-geolocalization;
+&doc-imagesgallery;
+&doc-imageviewer;
+&doc-jpeglossless;
+&doc-kameraklient;
+&doc-mpegencoder;
+&doc-metadataeditor;
+&doc-printwizard;
+&doc-rawconverter;
+&doc-recompressimages;
+&doc-renameimages;
+&doc-resizeimages;
+&doc-sendimages;
+&doc-slideshow;
+&doc-timeadjust;
+&doc-wallpaper;
+
+<chapter id="credits">
+<title
+>Créditos y licencia</title>
+
+<para
+>Los derechos de autor de cada complemento se encuentra descrito en el capítulo correspondiente. </para>
+
+<para
+>Derechos de autor de todas las imágenes. 2004-2007. Gilles Caulier <email
+>caulier.gilles@free.fr</email
+> y Gerhard Kulzer <email
+>gerhard@kulzer.net</email
+>. </para>
+&underFDL; &underGPL; </chapter>
+
+<!--
+<appendix id="installation">
+<title
+>Installation</title>
+<para
+>To be written
+</para>
+</appendix>
+-->
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+End:
+-->

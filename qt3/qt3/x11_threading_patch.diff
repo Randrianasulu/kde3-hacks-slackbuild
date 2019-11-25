@@ -1,0 +1,26 @@
+From 1f3965029290616c894f2d5e668ddfbd5795d6a0 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Mon, 23 Jan 2012 20:09:52 +0000
+Subject: Initialize X11 threading when Qt threading is enabled
+
+This closes Bug 812
+---
+diff --git a/src/kernel/qapplication_x11.cpp b/src/kernel/qapplication_x11.cpp
+index 4553fdf..7bc9f48 100644
+--- a/src/kernel/qapplication_x11.cpp
++++ b/src/kernel/qapplication_x11.cpp
+@@ -1632,6 +1632,12 @@ void qt_init_internal( int *argcptr, char **argv,
+     setlocale( LC_ALL, "" );		// use correct char set mapping
+     setlocale( LC_NUMERIC, "C" );	// make sprintf()/scanf() work
+ 
++#if defined(QT_THREAD_SUPPORT)
++    if ( qt_is_gui_used ) {
++	XInitThreads();
++    }
++#endif
++
+     if ( display ) {
+ 	// Qt part of other application
+ 
+--
+cgit v0.9.0.2-52-g1de3

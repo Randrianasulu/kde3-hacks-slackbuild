@@ -1,0 +1,38 @@
+From c1c8adb7fbbbe7be18f5f6652357e1ad1d0aeddd Mon Sep 17 00:00:00 2001
+From: Francois Andriot <francois.andriot@free.fr>
+Date: Mon, 28 Jan 2013 21:47:09 +0000
+Subject: Fix docbook support with libxml2 >= 2.6.x
+
+---
+diff --git a/kxsldbg/kxsldbgpart/libxsldbg/xsldbg.cpp b/kxsldbg/kxsldbgpart/libxsldbg/xsldbg.cpp
+index d333c73..88f811b 100644
+--- a/kxsldbg/kxsldbgpart/libxsldbg/xsldbg.cpp
++++ b/kxsldbg/kxsldbgpart/libxsldbg/xsldbg.cpp
+@@ -975,9 +975,13 @@ xsldbgLoadXmlData(void)
+ #endif
+ #ifdef LIBXML_DOCB_ENABLED
+     if (optionsGetIntOption(OPTIONS_DOCBOOK))
++#       if LIBXML_VERSION >= 20600
++        doc = xmlParseFile((char *) optionsGetStringOption(OPTIONS_DATA_FILE_NAME));
++#       else
+         doc = docbParseFile((char *)
+                             optionsGetStringOption(OPTIONS_DATA_FILE_NAME),
+                             NULL);
++#       endif
+     else
+ #endif
+ 
+@@ -1027,7 +1031,11 @@ xsldbgLoadXmlTemporary(const xmlChar * path)
+ #endif
+ #ifdef LIBXML_DOCB_ENABLED
+     if (optionsGetIntOption(OPTIONS_DOCBOOK))
++#       if LIBXML_VERSION >= 20600
++        doc = xmlParseFile((char *) path);
++#       else
+         doc = docbParseFile((char *) path, NULL);
++#       endif
+     else
+ #endif
+         doc = xmlSAXParseFile(&mySAXhdlr, (char *) path, 0);
+--
+cgit v0.9.0.2-52-g1de3

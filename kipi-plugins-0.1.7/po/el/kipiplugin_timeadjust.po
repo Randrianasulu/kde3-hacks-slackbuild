@@ -1,0 +1,159 @@
+# translation of kipiplugin_timeadjust.po to Greek
+#
+# Spiros Georgaras <sng@hellug.gr>, 2005, 2006, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_timeadjust\n"
+"POT-Creation-Date: 2008-03-17 12:48+0100\n"
+"PO-Revision-Date: 2007-06-25 12:38+0300\n"
+"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"Language-Team: Greek <i18ngr@lists.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Σπύρος Γεωργαράς,Τούσης Μανώλης"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sng@hellug.gr,manolis@koppermind.homelinux.org"
+
+#: plugin_timeadjust.cpp:61
+msgid "Adjust Time && Date..."
+msgstr "Ρύθμιση Ώρας && Ημερομηνίας..."
+
+#: timeadjustdialog.cpp:150 timeadjustdialog.cpp:509
+msgid "Adjust Time & Date"
+msgstr "Ρύθμιση Ώρας & Ημερομηνίας"
+
+#: timeadjustdialog.cpp:160
+msgid "Time Adjust"
+msgstr "Ρύθμιση ώρας"
+
+#: timeadjustdialog.cpp:163
+msgid "A Kipi plugin for adjusting time stamp of picture files"
+msgstr ""
+"Ένα πρόσθετο του Kipi για την προσαρμογή ημερομηνίας και ώρας στα αρχεία "
+"εικόνων"
+
+#: timeadjustdialog.cpp:167
+msgid "Author"
+msgstr "Συγγραφέας"
+
+#: timeadjustdialog.cpp:170
+msgid "Developper and maintainer"
+msgstr "Συγγραφέας και συντηρητής"
+
+#: timeadjustdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr ""
+
+#: timeadjustdialog.cpp:181
+msgid "Adjustment Type"
+msgstr "Τύπος ρύθμισης"
+
+#: timeadjustdialog.cpp:184
+msgid "Subtract"
+msgstr "Αφαίρεση"
+
+#: timeadjustdialog.cpp:185
+msgid "Set file date to EXIF/IPTC creation date"
+msgstr "Ορισμός ημερομηνίας αρχείου στην ημερομηνία δημιουργίας EXIF/IPTC"
+
+#: timeadjustdialog.cpp:186
+msgid "Custom date"
+msgstr "Προσαρμοσμένη ημερομηνία"
+
+#: timeadjustdialog.cpp:200
+msgid "Reset to current date"
+msgstr "Επαναφορά στη σημερινή ημερομηνία"
+
+#: timeadjustdialog.cpp:203
+#, fuzzy
+msgid "Update EXIF creation date"
+msgstr "Ενημέρωση ημερομηνίας δημιουργίας EXIF"
+
+#: timeadjustdialog.cpp:204
+msgid "Update IPTC creation date"
+msgstr "Ενημέρωση ημερομηνίας δημιουργίας IPTC"
+
+#: timeadjustdialog.cpp:210
+msgid "Adjustments"
+msgstr "Ρυθμίσεις"
+
+#: timeadjustdialog.cpp:218
+msgid "Hours:"
+msgstr "Ώρες:"
+
+#: timeadjustdialog.cpp:223
+msgid "Minutes:"
+msgstr "Λεπτά:"
+
+#: timeadjustdialog.cpp:228
+msgid "Seconds:"
+msgstr "Δευτερόλεπτα:"
+
+#: timeadjustdialog.cpp:233
+msgid "Days:"
+msgstr "Ημέρες:"
+
+#: timeadjustdialog.cpp:238
+msgid "Months:"
+msgstr "Μήνες:"
+
+#: timeadjustdialog.cpp:243
+msgid "Years:"
+msgstr "Χρόνια:"
+
+#: timeadjustdialog.cpp:250
+msgid "Example"
+msgstr "Παράδειγμα"
+
+#: timeadjustdialog.cpp:380
+#, c-format
+msgid ""
+"_n: 1 image will be changed; \n"
+"%n images will be changed; "
+msgstr ""
+"θα αλλαχτεί 1 εικόνα. \n"
+"θα αλλαχτούν %n εικόνες. "
+
+#: timeadjustdialog.cpp:383
+#, c-format
+msgid ""
+"_n: 1 image will be skipped due to an inexact date.\n"
+"%n images will be skipped due to inexact dates."
+msgstr ""
+"Θα παραβλεφθεί 1 εικόνα λόγω εσφαλμένης ημερομηνίας.\n"
+"Θα παραβλεφθούν %n εικόνες λόγω εσφαλμένης ημερομηνίας."
+
+#: timeadjustdialog.cpp:391
+#, c-format
+msgid ""
+"_n: 1 image will be changed\n"
+"%n images will be changed"
+msgstr ""
+"Θα αλλαχτεί 1 εικόνα\n"
+"Θα αλλαχτούν %n εικόνες"
+
+#: timeadjustdialog.cpp:404
+msgid "<b>%1</b><br>would, for example, change into<br><b>%2</b>"
+msgstr "το <b>%1</b>,<br>για παράδειγμα, θα άλλαζε σε <br><b>%2</b>"
+
+#: timeadjustdialog.cpp:507
+msgid "Unable to set date and time like picture metadata from:"
+msgstr "Αδύνατος ο ορισμός μεταδεδομένων εικόνας ημερομηνίας και ώρας από το:"
+
+#~ msgid "Time Adjust Handbook"
+#~ msgstr "Εγχειρίδιο ρύθμισης ώρας"
+
+#~ msgid "Adjust Time Stamp of Picture Files"
+#~ msgstr "Ρύθμιση ώρας και ημερομηνίας σε αρχεία εικόνων"

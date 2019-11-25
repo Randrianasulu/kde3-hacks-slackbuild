@@ -1,0 +1,194 @@
+/****************************************************************************
+** KNetworkConfDlg meta object code from reading C++ file 'knetworkconfdlg.h'
+**
+** Created: Sun Feb 1 00:56:14 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "knetworkconfdlg.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KNetworkConfDlg::className() const
+{
+    return "KNetworkConfDlg";
+}
+
+QMetaObject *KNetworkConfDlg::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KNetworkConfDlg( "KNetworkConfDlg", &KNetworkConfDlg::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KNetworkConfDlg::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KNetworkConfDlg", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KNetworkConfDlg::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KNetworkConfDlg", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KNetworkConfDlg::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"helpSlot", 0, 0 };
+    static const QUMethod slot_1 = {"aboutSlot", 0, 0 };
+    static const QUMethod slot_2 = {"updateProfileNameSlot", 0, 0 };
+    static const QUMethod slot_3 = {"languageChange", 0, 0 };
+    static const QUMethod slot_4 = {"enableButtonsSlot", 0, 0 };
+    static const QUMethod slot_5 = {"quitSlot", 0, 0 };
+    static const QUMethod slot_6 = {"moveUpServerSlot", 0, 0 };
+    static const QUMethod slot_7 = {"moveDownServerSlot", 0, 0 };
+    static const QUMethod slot_8 = {"configureDeviceSlot", 0, 0 };
+    static const QUParameter param_slot_9[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"enableApplyButtonSlot", 1, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"enableApplyButtonSlot", 1, param_slot_10 };
+    static const QUMethod slot_11 = {"addServerSlot", 0, 0 };
+    static const QUMethod slot_12 = {"removeServerSlot", 0, 0 };
+    static const QUMethod slot_13 = {"saveInfoSlot", 0, 0 };
+    static const QUMethod slot_14 = {"upDownInterfaceSlot", 0, 0 };
+    static const QUMethod slot_15 = {"addKnownHostSlot", 0, 0 };
+    static const QUMethod slot_16 = {"removeKnownHostSlot", 0, 0 };
+    static const QUMethod slot_17 = {"editKnownHostSlot", 0, 0 };
+    static const QUMethod slot_18 = {"startNetworkSlot", 0, 0 };
+    static const QUMethod slot_19 = {"stopNetworkSlot", 0, 0 };
+    static const QUMethod slot_20 = {"enableInterfaceSlot", 0, 0 };
+    static const QUMethod slot_21 = {"disableInterfaceSlot", 0, 0 };
+    static const QUMethod slot_22 = {"editServerSlot", 0, 0 };
+    static const QUMethod slot_23 = {"showInterfaceContextMenuSlot", 0, 0 };
+    static const QUMethod slot_24 = {"enableProfileSlot", 0, 0 };
+    static const QUMethod slot_25 = {"createProfileSlot", 0, 0 };
+    static const QUParameter param_slot_26[] = {
+	{ "item", &static_QUType_ptr, "QListViewItem", QUParameter::In }
+    };
+    static const QUMethod slot_26 = {"updateProfileNameSlot", 1, param_slot_26 };
+    static const QUMethod slot_27 = {"removeProfileSlot", 0, 0 };
+    static const QUMethod slot_28 = {"updateProfileSlot", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "helpSlot()", &slot_0, QMetaData::Public },
+	{ "aboutSlot()", &slot_1, QMetaData::Public },
+	{ "updateProfileNameSlot()", &slot_2, QMetaData::Public },
+	{ "languageChange()", &slot_3, QMetaData::Protected },
+	{ "enableButtonsSlot()", &slot_4, QMetaData::Private },
+	{ "quitSlot()", &slot_5, QMetaData::Private },
+	{ "moveUpServerSlot()", &slot_6, QMetaData::Private },
+	{ "moveDownServerSlot()", &slot_7, QMetaData::Private },
+	{ "configureDeviceSlot()", &slot_8, QMetaData::Private },
+	{ "enableApplyButtonSlot(bool)", &slot_9, QMetaData::Private },
+	{ "enableApplyButtonSlot(const QString&)", &slot_10, QMetaData::Private },
+	{ "addServerSlot()", &slot_11, QMetaData::Private },
+	{ "removeServerSlot()", &slot_12, QMetaData::Private },
+	{ "saveInfoSlot()", &slot_13, QMetaData::Private },
+	{ "upDownInterfaceSlot()", &slot_14, QMetaData::Private },
+	{ "addKnownHostSlot()", &slot_15, QMetaData::Private },
+	{ "removeKnownHostSlot()", &slot_16, QMetaData::Private },
+	{ "editKnownHostSlot()", &slot_17, QMetaData::Private },
+	{ "startNetworkSlot()", &slot_18, QMetaData::Private },
+	{ "stopNetworkSlot()", &slot_19, QMetaData::Private },
+	{ "enableInterfaceSlot()", &slot_20, QMetaData::Private },
+	{ "disableInterfaceSlot()", &slot_21, QMetaData::Private },
+	{ "editServerSlot()", &slot_22, QMetaData::Private },
+	{ "showInterfaceContextMenuSlot()", &slot_23, QMetaData::Private },
+	{ "enableProfileSlot()", &slot_24, QMetaData::Private },
+	{ "createProfileSlot()", &slot_25, QMetaData::Private },
+	{ "updateProfileNameSlot(QListViewItem*)", &slot_26, QMetaData::Private },
+	{ "removeProfileSlot()", &slot_27, QMetaData::Private },
+	{ "updateProfileSlot()", &slot_28, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KNetworkConfDlg", parentObject,
+	slot_tbl, 29,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KNetworkConfDlg.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KNetworkConfDlg::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KNetworkConfDlg" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool KNetworkConfDlg::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: helpSlot(); break;
+    case 1: aboutSlot(); break;
+    case 2: updateProfileNameSlot(); break;
+    case 3: languageChange(); break;
+    case 4: enableButtonsSlot(); break;
+    case 5: quitSlot(); break;
+    case 6: moveUpServerSlot(); break;
+    case 7: moveDownServerSlot(); break;
+    case 8: configureDeviceSlot(); break;
+    case 9: enableApplyButtonSlot((bool)static_QUType_bool.get(_o+1)); break;
+    case 10: enableApplyButtonSlot((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 11: addServerSlot(); break;
+    case 12: removeServerSlot(); break;
+    case 13: saveInfoSlot(); break;
+    case 14: upDownInterfaceSlot(); break;
+    case 15: addKnownHostSlot(); break;
+    case 16: removeKnownHostSlot(); break;
+    case 17: editKnownHostSlot(); break;
+    case 18: startNetworkSlot(); break;
+    case 19: stopNetworkSlot(); break;
+    case 20: enableInterfaceSlot(); break;
+    case 21: disableInterfaceSlot(); break;
+    case 22: editServerSlot(); break;
+    case 23: showInterfaceContextMenuSlot(); break;
+    case 24: enableProfileSlot(); break;
+    case 25: createProfileSlot(); break;
+    case 26: updateProfileNameSlot((QListViewItem*)static_QUType_ptr.get(_o+1)); break;
+    case 27: removeProfileSlot(); break;
+    case 28: updateProfileSlot(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KNetworkConfDlg::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KNetworkConfDlg::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool KNetworkConfDlg::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

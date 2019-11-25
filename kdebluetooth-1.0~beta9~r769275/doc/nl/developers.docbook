@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Programmeurinformatie</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>Kbluetoothd</title>
+<para
+>Deze sectie beschrijft hoe u kbluetoothd kunt gebruiken in uw eigen programma's en hoe u het vanuit scripts kunt benaderen voor het ophalen van gecachte apparaatnamen of iets dergelijks. </para>
+
+<sect2>
+<title
+>De name cache</title>
+<para
+>De name cache houdt alle name requests bij en slaat de resultaten op. Hiermee kunnen andere programma's en kbluetooth zelf de naam van een ander bluetoothd-apparaat vinden aan de hand van zijn unieke bluetoothd-apparaatadres, zelfs als het apparaat zelf niet bereikbaar is. Dit wordt vooral gebruikt om de gebruikerinterface plezieriger te maken, omdat Bluetooth-adressen als 00:60:AB:13:83:3D lastig te onthouden zijn. </para>
+<para
+>Dit zal mogelijk achterhaald zijn zodra BlueZ zijn eigen persistente name cache aanlevert. </para>
+<para
+>U kunt toegang krijgen tot de name cache via DCOP. Om adressen in de name cache vanaf de commandoregel op te zoeken, type <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;adres&gt;</command
+>. Om uit te vinden welk apparaat het laatste een gegeven naam gebruikte gebruikt u het commando <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;naam&gt;</command
+>. Dit commando is hoofdlettergevoelig. Wees erop verdacht dat meerdere apparaten gebruik kunnen maken van dezelfde naam. </para>
+</sect2>
+
+<sect2>
+<title
+>De meta server</title>
+<para
+>Als u een servertoepassing wilt implementeren voor een nieuw bluetooth-protocol, dan kunt u die op eenvoudige wijze integreren met kbluetoothd zodat uw server automatisch wordt gestart. </para>
+<para
+>U dient dan een XML-bestand aan te leveren dat het SDP-record en een corresponderend .desktop-bestand beschrijft. kbluetooth zal dan automatisch een SDP-record opzetten, een rfcomm-kanaal toewijzen en op het gekozen kanaal luisteren. Als iemand verbinding met uw apparaat maakt zal kbluetooth het starten en een socket doorgeven voor de reeds geaccepteerde verbinding er naartoe. Het nummer van de handle wordt doorgegeven als een commandoregelargument. </para>
+<para
+>Het kdebluetooth-pakket bevat <command
+>kbtserialchat</command
+>. Dit is (naast de functie voor het debuggen en eventueel zelfs chatten..) bedoeld als een eenvoudig voorbeeldprogramma over hoe een toepassing in het kbluetooth-raamwerk kan worden geïntegreerd. Aangezien kbtserialchat een client en een server tegelijk is hoeft u zich niet druk te maken over alle commandoregelargumenten die kbtserialchat uitvoert, in het bijzonder niet de SDP-adressen. </para>
+<para
+>Het formaat van SDP-XML-bestanden spreekt in principe voor zich als u bekend bent met de structuren van SDP-records. Een belangrijk punt is hoe de parameter voor de geselecteerde rfcomm-kanalen zijn weg vindt in het SPDS-record voor de server. Omdat het kanaal automatisch door kbluetooth wordt geselecteerd kunt u het niet hardcoden in het SDP-registratiebestand. In plaats daarvan dient u &lt;uint valref='rfcommchannel' size='8'/&gt; te gebruiken als een plaatshouder. De rfcomm-kanalen die geprobeerd worden zijn gedefinieerd in het bijhorende .desktop-bestand. <varname
+>-KDE-KBLUETOOTHD-port</varname
+> is het eerste kanaal dat geprobeerd wordt en <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> geeft het aantal opvolgende kanalen die in oplopende volgorde geprobeerd worden als een kanaal al in gebruik is bij een andere dienst. </para>
+<para
+>kbluetoothd ondersteunt momenteel alleen rfcomm, maar als er behoefte voor is zullen we ook ondersteuning leveren voor l2cap of vergelijkbaar. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>De Device Discovery Service</title>
+<para
+>kbluetooth kan actief zoeken naar andere apparaten en commando's uitvoeren zodra een apparaat is gevonden of verdwenen. U kunt dit apparaat instellen in kbluetooth's configuratiemodule onder tabblad "Apparaatwaarneming". </para>
+<para
+>De lijst met <emphasis
+>actieve</emphasis
+> waarneemtaken zoals getoond in de configuratiemodule is gewoon een lijst met programma's die zijn gevonden in de map <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. U kunt ook scripts toevoegen aan de globale sjabloonmap in <filename
+>$KDEDIR/share/apps/kdebluetooth/job-templates/</filename
+>. De scripts in deze mappen, welke eindigen op ".template", zullen worden getoond als de gebruiker klikt op de knop "Nieuwe taak toevoegen...". Het script wordt dan gekopieerd naar de map met actieve taken in de persoonlijke map van de gebruiker. </para>
+<para
+>De meegeleverde scripts zijn in tweeën gedeeld om het eenvoudiger te maken ze bij te werken zonder dat u de scripts opnieuw dient te installeren. Het ".template"-gedeelte bevat de door de gebruiker veranderbare instellingen die worden gekopieerd naar de persoonlijke map van die gebruiker. Dit script roept dan het ".real"-gedeelte aan wat achterblijft in de sjabloonmap. </para>
+<para
+>Om te beginnen met het schrijven van uw eigen waarneemtaak, klik op de knop "Nieuwe taak toevoegen..." en selecteer <phrase
+>Eigen_taak</phrase
+> (Custom_Job). Dit kopieert het bestand <filename
+>Custom_Job.template</filename
+> naar uw taakmap. Klik vervolgens op "Instellen..." om het script aan te passen. Dit script bevat alle mogelijke commandoregelopties en omgevingsvariabelen waar u toegang tot hebt. </para>
+<para
+>Wees er op verdacht dat wanneer u dit eigen script bewerkt, alle wijzigingen weg zijn als u het verwijdert uit de lijst met actieve taken. Als u uw script wilt distribueren, dan adviseren we dat u het ook opsplitst in een template-gedeelte voor de instellingen en een real-gedeelte dat het eigenlijke werk doet. </para>
+
+<para
+>Om in staat te zijn bestanden te uploaden, downloaden of verwijderen vanuit zo'n taak kunt u gebruik maken van <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Als u een handig script voor de apparaatwaarneming hebt geschreven dat handig kan zijn voor anderen, dan willen we het met alle plezier meeleveren met de volgende uitgave. </para>
+</sect2>
+
+</sect1>
+</chapter>
+

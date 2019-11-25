@@ -1,0 +1,47 @@
+<sect1 id="components.kio_sdp">
+<title
+>Bluetoothi/SDP KIO moodulid: seadmete ja teenuste otsing</title>
+<para
+>Bluetoothi ja SDP KIO moodul võimaldab otsida teisi Bluetoothi seadmeid ning näha ja kasutada nende teenuseid Konqueroris (või mõnes muus failihalduris, mis suudab kasutada KDE IO mooduli FILE raamistikku). </para>
+<sect2>
+<title
+>Bluetoothi/SDP KIO mooduli kasutamine</title>
+<para
+>Seadmete otsimiseks kirjuta lihtsalt Konqueroris <ulink url="bluetooth:/"
+>bluetooth:/</ulink
+>. Näed kohe oma süsteemi kirjet ning mõne sekundi pärast ilmuvad nähtavale ka kõik tuvastatud seadmed. </para>
+<para
+>Võib ka klõpsata Bluetoothi ikoonil Konquerori külgribal teenustekaardil otse kohtvõrgu (LAN) ja audio CD brauseri kõrval. Kui sa sellist ikooni ei näe, võib aidata külgriba lähtestamine: <guimenuitem
+>seadistusnupp -> Lisa uus -> Tagasi süsteemsete vaikeväärtuste juurde</guimenuitem
+> </para>
+<para
+>Seadme ilmumiseks peab see olema mõistagi sisse lülitatud, kuid ka tuvastatavas režiimis. Kui see nii ei ole, võid küll nende aadressi teades nendega ühendust võtta, kuid nad ei vasta ühelegi päringule. </para>
+<para
+>Seadet valides näed teenuseid, mida antud seade pakub. Kui kdebluetooth teenust toetab, võid sellel klõpsata vajaliku rakenduste käivitamiseks. Kui sa ei ole sellist võimalust välja lülitanud, avab Konqueror tavapärase faili avamise dialoogi. Kui teenus ei ole tuntud, avatakse aga dialoog "Ava kasutades...". </para>
+</sect2>
+
+<sect2>
+<title
+>Üksikasjalikumalt </title>
+<para
+>Kui sa täpselt tead, mida teed, võid vajaliku teenuse (näiteks kbthandsfree) avada ka Bluetoothi rakenduses, mis ei ole antud protokolli jaoks mõeldud, klõpsates hiire parema nupuga teenuse ikoonil ja valides kirje "Ava kasutades...". Iga teenust, mis tuleb toime AT käskudega rfcomm-i vahendusel, saab avada näiteks programmis <command
+>kbtserialchat</command
+>. </para>
+<para
+>Võib ka muuta rakenduste ja (tuntud) profiilide seost. See käib samamoodi nagu määramine, milline rakendus peaks avama MPEG-filme või PDF-faile: kio_obex omistab igale olemasolevale profiilile MIME tüübi ning iga kdebluetoothi klientrakendus seostatakse profiiliga, mis seda toetab. Veel tundmatute profiilide toetuse saab lisada spetsiaalse töölauafailiga kataloogis <filename
+>$PREFIX/share/services</filename
+>, näiteks <filename
+>sdpmime-serial-port-profile.desktop</filename
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>Praegused piirangud</title>
+<para
+>Moodul kio_sdp ei toeta veel pesastatud gruppe. Sellist võimalust ei ole raske lisada, kuid praegu ei ole see veel teostatud.</para>
+<para
+>Oma süsteemi teenustega ei saa ühendust võtta lihtsalt ikoonile "localhost" klõpsates. See lisati ainult käepärase viisina näha, millised teenused on süsteemis saadaval. </para>
+</sect2>
+
+</sect1>

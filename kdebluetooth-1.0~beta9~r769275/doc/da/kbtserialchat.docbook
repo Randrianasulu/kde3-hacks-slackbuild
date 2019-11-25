@@ -1,0 +1,29 @@
+<sect1 id="components.kbtserialchat">
+<title
+>kbtserialchat: Et meget enkelt chat-værktøj</title>
+<para
+>kbtserialchat-værktøjet er en meget enkel chat klient&amp;server. Dens hovedformål er til fejlretning og skal tjene som et eksempel på hvordan en bluetooth-server der håndteres af kbluetoothd skal skrives og hvordan en klient der kan startes med <link linkend="components.kio_sdp"
+>SDP kioslave</link
+> skal skrives. </para>
+
+<sect2>
+<title
+>Brug af chat-værktøjet</title>
+<para
+>kbtserialchat implementer 'Seriel port'-protokollen, så når du starter den, vil den vise dig alle enheder som giver 'Serial port'-profilen. Dette vil inkludere andre computere hvor KDE Bluetooth's skelet er installeret, men også telefoner som understøtter denne profil. </para>
+<para
+>Når du forbinder til en anden kbtserialchat-server, så vil kbtserialchat dukke op på det andet system og I kan glade sende hinanden dumme tekstbeskeder. Du kan også forbinde til den  serielle  port på Bluetooth-telefoner og sende vilkårlige AT-kommandoer. For at ringe et nummer op for eksempel, skrives <command
+>ATD&lt;nummer&gt;;</command
+>. </para>
+<para
+>Mens det måske ikke giver meget mening at forbinde kbtserialchat til en seriel port på en enhed der bruger den til at udveksle binære data, kan du bruge den ikke kun til at forbinde til tjenester på serielle porte, men til enhver tjeneste der er baseret på Rfcomm, såsom handsfree- eller headset-profilen. Da disse tjenester ikke er på listen i dialogen ved opstart, kan du bruge følgende trick: Gennemsøg tjenesterne på en  enhed med kio_sdp (ved brug af <ulink url="sdp:/"
+>sdp:/</ulink
+>-URL). I stedet for så blot at klikke på tjenesten, højreklik på den og vælg så <guimenuitem
+>Åbn med...</guimenuitem
+>. Indtast <command
+>kbtserialchat</command
+> i dialogen, tryk på Enter - og du er forbundet. </para>
+</sect2>
+
+</sect1>
+

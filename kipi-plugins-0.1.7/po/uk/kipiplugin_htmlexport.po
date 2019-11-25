@@ -1,0 +1,286 @@
+# Translation of kipiplugin_htmlexport.po to Ukrainian
+#
+# Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_htmlexport\n"
+"POT-Creation-Date: 2008-07-08 22:18+0200\n"
+"PO-Revision-Date: 2006-06-13 11:57-0700\n"
+"Last-Translator: Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: generator.cpp:175
+msgid "Could not find theme in '%1'"
+msgstr "Не вдалося знайти тему в \"%1\""
+
+#: generator.cpp:182
+msgid "Copying theme"
+msgstr "Копіювання теми"
+
+#: generator.cpp:194
+msgid "Could not copy theme"
+msgstr "Не вдалося скопіювати тему"
+
+#: generator.cpp:203
+#, fuzzy
+msgid "Could not open file '%1' for writing"
+msgstr "Не вдалося відкрити \"%1\" для запису"
+
+#: generator.cpp:207
+#, fuzzy
+msgid "Could not save image to file '%1'"
+msgstr "Не вдалося зберегти зображення \"%1\" до \"%2\""
+
+#: generator.cpp:236
+#, fuzzy
+msgid "Could not read image '%1'"
+msgstr "Не вдалося завантажити зображення \"%1\""
+
+#: generator.cpp:242
+msgid "Format of image '%1' is unknown"
+msgstr ""
+
+#: generator.cpp:251
+#, fuzzy
+msgid "Error loading image '%1'"
+msgstr "Не вдалося завантажити зображення \"%1\""
+
+#: generator.cpp:287
+msgid "Could not save image '%1' to '%2'"
+msgstr "Не вдалося зберегти зображення \"%1\" до \"%2\""
+
+#: generator.cpp:305
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "Не вдалося зберегти мініатюру для зображення \"%1\" до \"%2\""
+
+#: generator.cpp:329
+#, fuzzy
+msgid "Could not create gallery.xml"
+msgstr "Не вдалося створити gallery.xml"
+
+#: generator.cpp:340
+msgid "Generating files for \"%1\""
+msgstr "Створення файлів для \"%1\""
+
+#: generator.cpp:372
+msgid "Previous"
+msgstr "Назад"
+
+#: generator.cpp:373
+msgid "Next"
+msgstr "Далі"
+
+#: generator.cpp:374
+msgid "Collection List"
+msgstr "Список збірок"
+
+#: generator.cpp:375
+msgid "Original Image"
+msgstr ""
+
+#: generator.cpp:376
+msgid "Go Up"
+msgstr ""
+
+#: generator.cpp:403
+msgid "Generating HTML files"
+msgstr "Створення файлів HTML"
+
+#: generator.cpp:409
+msgid "Could not load XSL file '%1'"
+msgstr "Не вдалося завантажити файл XSL \"%1\""
+
+#: generator.cpp:415
+msgid "Could not load XML file '%1'"
+msgstr "Не вдалося завантажити файл XML \"%1\""
+
+#: generator.cpp:447
+msgid "Error processing XML file"
+msgstr "Помилка опрацювання XML-файла"
+
+#: generator.cpp:454
+#, fuzzy
+msgid "Could not open '%1' for writing"
+msgstr "Не вдалося відкрити \"%1\" для запису"
+
+#: generator.cpp:472
+#, fuzzy
+msgid "Could not create folder '%1' in '%2'"
+msgstr "Не вдалося зберегти зображення \"%1\" до \"%2\""
+
+#: plugin.cpp:67
+msgid "HTML Gallery..."
+msgstr "HTML-галерея..."
+
+#: plugin.cpp:85
+msgid "Generating gallery..."
+msgstr "Створення галереї..."
+
+#. i18n: file imagesettingspage.ui line 16
+#: rc.cpp:3
+#, fuzzy, no-c-format
+msgid "ImageSettingsPage"
+msgstr "Парамери зображення"
+
+#. i18n: file imagesettingspage.ui line 35
+#: rc.cpp:6
+#, no-c-format
+msgid "Full Image"
+msgstr "Ціле зображення"
+
+#. i18n: file imagesettingspage.ui line 99
+#: rc.cpp:9
+#, no-c-format
+msgid "Thumbnail"
+msgstr "Мініатюра"
+
+#. i18n: file imagesettingspage.ui line 158
+#: rc.cpp:12
+#, no-c-format
+msgid "Save image"
+msgstr ""
+
+#. i18n: file imagesettingspage.ui line 186
+#: rc.cpp:15
+#, no-c-format
+msgid "Max size:"
+msgstr "Максимальний розмір:"
+
+#. i18n: file imagesettingspage.ui line 197
+#: rc.cpp:18 rc.cpp:39
+#, no-c-format
+msgid "Format:"
+msgstr "Формат:"
+
+#. i18n: file imagesettingspage.ui line 214
+#: rc.cpp:21 rc.cpp:42
+#, no-c-format
+msgid "JPEG"
+msgstr "JPEG"
+
+#. i18n: file imagesettingspage.ui line 219
+#: rc.cpp:24 rc.cpp:45
+#, no-c-format
+msgid "PNG"
+msgstr "PNG"
+
+#. i18n: file imagesettingspage.ui line 231
+#: rc.cpp:27 rc.cpp:36
+#, no-c-format
+msgid "Quality:"
+msgstr "Якість:"
+
+#. i18n: file imagesettingspage.ui line 273
+#: rc.cpp:30
+#, no-c-format
+msgid "Include full-size original images for download"
+msgstr ""
+
+#. i18n: file imagesettingspage.ui line 320
+#: rc.cpp:33
+#, no-c-format
+msgid "Use original image"
+msgstr ""
+
+#. i18n: file imagesettingspage.ui line 431
+#: rc.cpp:48
+#, no-c-format
+msgid "Size:"
+msgstr "Розмір:"
+
+#. i18n: file outputpage.ui line 35
+#: rc.cpp:51
+#, no-c-format
+msgid "Destination folder:"
+msgstr "Тека призначення:"
+
+#. i18n: file outputpage.ui line 53
+#: rc.cpp:54
+#, no-c-format
+msgid "Open in browser"
+msgstr "Відкрити в переглядачі"
+
+#. i18n: file themeparameterspage.ui line 16
+#: rc.cpp:57
+#, fuzzy, no-c-format
+msgid "Form1"
+msgstr "Формат:"
+
+#. i18n: file themeparameterspage.ui line 38
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+
+#: wizard.cpp:139
+msgid ""
+"_: '%1' is a label for a theme parameter\n"
+"%1:"
+msgstr ""
+
+#: wizard.cpp:175
+msgid "HTML Export"
+msgstr ""
+
+#: wizard.cpp:178
+msgid "A KIPI plugin to export image collections to HTML pages"
+msgstr ""
+
+#: wizard.cpp:181
+msgid "Author and Maintainer"
+msgstr ""
+
+#: wizard.cpp:187
+msgid "Plugin Handbook"
+msgstr ""
+
+#: wizard.cpp:191
+msgid "Collection Selection"
+msgstr "Вибір збірки"
+
+#: wizard.cpp:195
+msgid "Theme"
+msgstr "Тема"
+
+#: wizard.cpp:200
+msgid "Theme Parameters"
+msgstr ""
+
+#: wizard.cpp:203
+msgid "Image Settings"
+msgstr "Парамери зображення"
+
+#: wizard.cpp:207
+msgid "Output"
+msgstr "Вивід"
+
+#: wizard.cpp:250
+#, c-format
+msgid "Author: %1"
+msgstr "Автор: %1"
+
+#~ msgid "Could not create '%1"
+#~ msgstr "Не вдалося створити \"%1\""
+
+#~ msgid "Resize full images"
+#~ msgstr "Змінити розмір цілих зображень"

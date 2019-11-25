@@ -1,0 +1,92 @@
+/****************************************************************************
+** Digikam::SetupSlideShow meta object code from reading C++ file 'setupslideshow.h'
+**
+** Created: Wed Jun 14 03:46:31 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "setupslideshow.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::SetupSlideShow::className() const
+{
+    return "Digikam::SetupSlideShow";
+}
+
+QMetaObject *Digikam::SetupSlideShow::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__SetupSlideShow( "Digikam::SetupSlideShow", &Digikam::SetupSlideShow::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::SetupSlideShow::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupSlideShow", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::SetupSlideShow::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupSlideShow", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::SetupSlideShow::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::SetupSlideShow", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__SetupSlideShow.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::SetupSlideShow::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::SetupSlideShow" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Digikam::SetupSlideShow::qt_invoke( int _id, QUObject* _o )
+{
+    return QWidget::qt_invoke(_id,_o);
+}
+
+bool Digikam::SetupSlideShow::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::SetupSlideShow::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Digikam::SetupSlideShow::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

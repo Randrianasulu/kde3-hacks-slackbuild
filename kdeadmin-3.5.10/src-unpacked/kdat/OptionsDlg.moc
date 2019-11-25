@@ -1,0 +1,110 @@
+/****************************************************************************
+** OptionsDlg meta object code from reading C++ file 'OptionsDlg.h'
+**
+** Created: Sun Feb 1 00:52:57 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "OptionsDlg.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *OptionsDlg::className() const
+{
+    return "OptionsDlg";
+}
+
+QMetaObject *OptionsDlg::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_OptionsDlg( "OptionsDlg", &OptionsDlg::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString OptionsDlg::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "OptionsDlg", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString OptionsDlg::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "OptionsDlg", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* OptionsDlg::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialogBase::staticMetaObject();
+    static const QUMethod slot_0 = {"slotOK", 0, 0 };
+    static const QUMethod slot_1 = {"slotApply", 0, 0 };
+    static const QUMethod slot_2 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_3 = {"slotChanged", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotOK()", &slot_0, QMetaData::Private },
+	{ "slotApply()", &slot_1, QMetaData::Private },
+	{ "slotCancel()", &slot_2, QMetaData::Private },
+	{ "slotChanged()", &slot_3, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"OptionsDlg", parentObject,
+	slot_tbl, 4,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_OptionsDlg.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* OptionsDlg::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "OptionsDlg" ) )
+	return this;
+    return KDialogBase::qt_cast( clname );
+}
+
+bool OptionsDlg::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotOK(); break;
+    case 1: slotApply(); break;
+    case 2: slotCancel(); break;
+    case 3: slotChanged(); break;
+    default:
+	return KDialogBase::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool OptionsDlg::qt_emit( int _id, QUObject* _o )
+{
+    return KDialogBase::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool OptionsDlg::qt_property( int id, int f, QVariant* v)
+{
+    return KDialogBase::qt_property( id, f, v);
+}
+
+bool OptionsDlg::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

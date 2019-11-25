@@ -1,0 +1,810 @@
+# translation of kipiplugin_mpegencoder.po to Swedish
+# Copyright (C) 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+#
+# Stefan Asserhäll <stefan.asserhall@comhem.se>, 2004, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_mpegencoder\n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2007-06-12 19:20+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Stefan Asserhäll"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "stefan.asserhall@comhem.se"
+
+#: checkbinprog.cpp:71
+msgid ""
+"Your 'ImageMagick' binary program path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"Sökvägen till binärprogrammet 'ImageMagick' är tom.\n"
+"Ställer in den till normalvärdet. Kontrollera inställningarna av alternativet."
+
+#: checkbinprog.cpp:77
+msgid ""
+"Your 'MjpegTools' binary programs path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"Sökvägen till binärprogrammet 'Mjpegtools' är tom.\n"
+"Ställer in den till normalvärdet. Kontrollera inställningarna av alternativet."
+
+#: checkbinprog.cpp:86
+msgid ""
+"Cannot find 'montage' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'montage' från paketet ImageMagick. Installera "
+"det."
+
+#: checkbinprog.cpp:89
+msgid ""
+"Cannot find 'composite' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'composite' från paketet ImageMagick. Installera "
+"det."
+
+#: checkbinprog.cpp:92
+msgid ""
+"Cannot find 'convert' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'convert' från paketet ImageMagick. Installera "
+"det."
+
+#: checkbinprog.cpp:95
+msgid ""
+"Cannot find 'identify' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'identify' från paketet ImageMagick. Installera "
+"det."
+
+#: checkbinprog.cpp:100
+msgid ""
+"Cannot find 'ppmtoy4m' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'ppmtoy4m' från paketet Mjpegtools. Installera "
+"det."
+
+#: checkbinprog.cpp:103
+msgid ""
+"Cannot find 'yuvscaler' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'yuvscaler' från paketet Mjpegtools. Installera "
+"det."
+
+#: checkbinprog.cpp:106
+msgid ""
+"Cannot find 'mpeg2enc' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'mpeg2enc' från paketet Mjpegtools. Installera "
+"det."
+
+#: checkbinprog.cpp:109
+msgid ""
+"Cannot find 'mplex' binary program from MjpegTools package. Please install it."
+msgstr ""
+"Kan inte hitta binärprogrammet 'mplex' från paketet Mjpegtools. Installera det."
+
+#: checkbinprog.cpp:113
+msgid ""
+"Cannot find 'mp2enc' binary program from MjpegTools package. Please install "
+"it.\n"
+"Audio capabilities will be disabled."
+msgstr ""
+"Kan inte hitta binärprogrammet 'mp2enc' från paketet Mjpegtools. Installera "
+"det.\n"
+"Ljudfunktioner kommer att vara avstängda."
+
+#: checkbinprog.cpp:120
+msgid ""
+"\n"
+"Check your installation and this plugin's options settings.\n"
+"\n"
+"Visit these URLs for more information:\n"
+"ImageMagick package: http://www.imagemagick.org/\n"
+"MjpegTools package: http://mjpeg.sourceforge.net/"
+msgstr ""
+"\n"
+"Kontrollera installationen och inställningsalternativ i detta insticksprogram.\n"
+"\n"
+"Besök gärna följande webbadresser för mer information:\n"
+"ImageMagick-paketet: http://www.imagemagick.org/\n"
+"Mjpegtools-paketet: http://mjpeg.sourceforge.net/"
+
+#. i18n: file kimg2mpgbase.ui line 437
+#: kimg2mpg.cpp:192 rc.cpp:82
+#, no-c-format
+msgid "none"
+msgstr "ingen"
+
+#: kimg2mpg.cpp:246
+msgid "MPEG Slideshow"
+msgstr "MPEG-bildspel"
+
+#: kimg2mpg.cpp:249
+msgid "A Kipi plugin for encoding images to an MPEG file."
+msgstr "Ett KIPI-insticksprogram för kodning av bilder till en MPEG-fil."
+
+#: kimg2mpg.cpp:252
+msgid "Author"
+msgstr "Upphovsman"
+
+#: kimg2mpg.cpp:255 kimg2mpg.cpp:258
+msgid "Maintainer"
+msgstr "Utvecklare"
+
+#: kimg2mpg.cpp:263
+msgid "Plugin Handbook"
+msgstr "Handbok för insticksprogrammet"
+
+#: kimg2mpg.cpp:312
+msgid "Select MPEG Output File"
+msgstr "Välj MPEG-utdatafil"
+
+#: kimg2mpg.cpp:329
+msgid "Select Audio Input File"
+msgstr "Välj ljudindatafil"
+
+#: kimg2mpg.cpp:383
+msgid "You can only move up one image file at once."
+msgstr "Du kan bara flytta upp en bildfil i taget."
+
+#: kimg2mpg.cpp:436
+#, c-format
+msgid "Image no. %1"
+msgstr "Bild nummer %1"
+
+#: kimg2mpg.cpp:472
+msgid "You can only move down one image file at once."
+msgstr "Du kan bara flytta ner en bildfil i taget."
+
+#: kimg2mpg.cpp:517
+msgid ""
+"Do you really abort this encoding process ?\n"
+"\n"
+"Warning: all work so-far will be lost."
+msgstr ""
+"Vill du verkligen avbryta kodningsprocessen?\n"
+"\n"
+"Varning: Allt arbete går förlorat."
+
+#: kimg2mpg.cpp:530
+msgid ""
+"Default chroma mode option works only with Mjpegtools version < 1.6.3\n"
+msgstr ""
+"Alternativet med kromatiskt standardläge fungerar bara med Mjpegtools versioner "
+"tidigare än 1.6.3\n"
+
+#: kimg2mpg.cpp:531
+msgid "Check your Mjpegtools version"
+msgstr "Kontrollera din version av Mjpegtools"
+
+#: kimg2mpg.cpp:533
+msgid "KIPImpegencoderChromaWarning"
+msgstr "KIPImpegkodareKromaVarning"
+
+#: kimg2mpg.cpp:553
+msgid "You must specify an existing audio file."
+msgstr "Du måste ange en befintlig ljudfil."
+
+#: kimg2mpg.cpp:561
+msgid "You must specify an MPEG output file name."
+msgstr "Du måste ange ett filnamn för MPEG-utdata."
+
+#: kimg2mpg.cpp:568
+msgid "You must specify a writable path for your output file."
+msgstr "Du måste ange en skrivbar sökväg till utdatafilen."
+
+#: kimg2mpg.cpp:574
+msgid "You must specify some input images files in the portfolio."
+msgstr "Du måste ange några indatabildfiler i mappen."
+
+#: kimg2mpg.cpp:580
+msgid ""
+"The output MPEG file '%1' already exists.\n"
+"Do you want overwrite this file?"
+msgstr ""
+"MPEG-utdatafilen '%1' finns redan.\n"
+"Vill du skriva över filen?"
+
+#: kimg2mpg.cpp:587
+msgid "A&bort"
+msgstr "Av&bryt"
+
+#: kimg2mpg.cpp:588
+msgid ""
+"Abort the portfolio MPEG encoding. Warning: all work so-far will be lost...."
+msgstr "Avbryt MPEG-kodning av mappen. Varning: Allt arbete går förlorat..."
+
+#: kimg2mpg.cpp:622
+msgid ""
+"THE COMMAND LINE IS :\n"
+"\n"
+msgstr ""
+"KOMMANDORADEN ÄR:\n"
+"\n"
+
+#: kimg2mpg.cpp:691
+msgid "Cannot access to file %1, please check the path is right."
+msgstr "Kan inte komma åt filen %1. Kontrollera att sökvägen är riktig."
+
+#: kimg2mpg.cpp:711
+msgid "Cannot start 'images2mpg' bash script : fork failed."
+msgstr "Kan inte starta bash-skriptet 'images2mpg': delning misslyckades."
+
+#: kimg2mpg.cpp:804
+msgid "%1 image [%2]"
+msgstr "%1 bild [%2]"
+
+#: kimg2mpg.cpp:806
+msgid "%1 images [%2]"
+msgstr "%1 bilder [%2]"
+
+#: kimg2mpg.cpp:842
+msgid "Encoding image file [%1/%2]..."
+msgstr "Kodar bildfile [%1/%2]..."
+
+#: kimg2mpg.cpp:857
+msgid "Initialising..."
+msgstr "Initierar..."
+
+#: kimg2mpg.cpp:861
+msgid "Merging MPEG flux..."
+msgstr "Sammanfogar MPEG-flöde..."
+
+#: kimg2mpg.cpp:867
+msgid "Encoding audio file..."
+msgstr "Kodar ljudfil..."
+
+#: kimg2mpg.cpp:882
+msgid ""
+"The 'images2mpg' script has returned an error during the MPEG encoding;\n"
+"the process has been aborted.\n"
+"\n"
+"Send a mail to the author..."
+msgstr ""
+"Skriptet 'images2mpg' returnerade ett fel under MPEG-kodningen.\n"
+"Processen har avbrutits.\n"
+"\n"
+"Skicka e-post till upphovsmannen..."
+
+#: kimg2mpg.cpp:885
+msgid "'images2mpg' Script-Execution Problem"
+msgstr "Problem med att köra skriptet 'images2mpg'"
+
+#: kimg2mpg.cpp:887
+msgid "Show Debugging Output"
+msgstr "Visa felsökningsutmatning"
+
+#: kimg2mpg.cpp:891
+msgid ""
+"\n"
+"EXIT STATUS : error during encoding process."
+msgstr ""
+"\n"
+"AVSLUTNINGSSTATUS: fel under kodningsprocessen."
+
+#: kimg2mpg.cpp:912
+msgid "Encoding terminated..."
+msgstr "Kodning avslutad..."
+
+#: kimg2mpg.cpp:914
+#, c-format
+msgid ""
+"The encoding process has terminated...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kodningsprocessen har avslutats...\n"
+"\n"
+"Kodningstid: %1"
+
+#: kimg2mpg.cpp:916
+msgid "'images2mpg' Script Execution Terminated"
+msgstr "Körning av skriptet 'images2mpg' avslutades"
+
+#: kimg2mpg.cpp:918 kimg2mpg.cpp:936
+msgid "Show Process Messages"
+msgstr "Visa processmeddelanden"
+
+#: kimg2mpg.cpp:923
+msgid ""
+"\n"
+"EXIT STATUS : encoding process finished successfully."
+msgstr ""
+"\n"
+"AVSLUTNINGSSTATUS: kodningsprocessen avslutades med lyckat resultat."
+
+#: kimg2mpg.cpp:930
+msgid "Encoding aborted..."
+msgstr "Kodning avbruten..."
+
+#: kimg2mpg.cpp:932
+#, c-format
+msgid ""
+"The encoding process has been aborted...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kodningsprocessen har avbrutits...\n"
+"\n"
+"Kodningstid: %1"
+
+#: kimg2mpg.cpp:934
+msgid "'images2mpg' Script Execution Aborted"
+msgstr "Körning av skriptet 'images2mpg' avbröts"
+
+#: kimg2mpg.cpp:941
+msgid ""
+"\n"
+"EXIT STATUS : encoding process aborted by user."
+msgstr ""
+"\n"
+"AVSLUTNINGSSTATUS: kodningsprocessen avbröts av användaren."
+
+#: kimg2mpg.cpp:967
+msgid ""
+"An encoding process is active;\n"
+"abort this process and exit ?"
+msgstr ""
+"En kodningsprocess är aktiv.\n"
+"Avbryt processen och avsluta?"
+
+#: kimg2mpg.cpp:991
+msgid "Create MPEG Slideshow"
+msgstr "Skapa MPEG-bildspel"
+
+#. i18n: file kimg2mpgbase.ui line 1157
+#: kimg2mpg.cpp:1013 rc.cpp:189
+#, no-c-format
+msgid "&Encode"
+msgstr "&Koda"
+
+#: kimg2mpg.cpp:1133
+msgid "Cannot remove temporary folder %1!"
+msgstr "Kan inte ta bort tillfällig katalog %1."
+
+#: kshowdebuggingoutput.cpp:35
+msgid "Debugging Output"
+msgstr "Felsökningsutmatning"
+
+#: kshowdebuggingoutput.cpp:38
+msgid "Copy to Clip&board"
+msgstr "Kopiera till klipp&bordet"
+
+#: optionsdialog.cpp:52
+msgid "MPEG Encoder Plugin Settings"
+msgstr "Inställning av insticksprogram för MPEG-kodning"
+
+#: optionsdialog.cpp:66
+msgid "ImageMagick Binary Programs Path"
+msgstr "ImageMagick-binärprogramsökväg"
+
+#: optionsdialog.cpp:76
+msgid "MjpegTools Binary Programs Path"
+msgstr "Mjpegtools-binärprogramsökväg"
+
+#: optionsdialog.cpp:109
+msgid "Select path to ImageMagick binary programs..."
+msgstr "Välj sökväg till ImageMagick-binärprogram..."
+
+#: optionsdialog.cpp:124
+msgid "Select path to MjpegTools binary programs..."
+msgstr "Välj sökväg till Mjpegtools-binärprogram..."
+
+#: plugin_mpegencoder.cpp:62
+msgid "Create MPEG Slide Show..."
+msgstr "Skapa MPEG-bildspel..."
+
+#. i18n: file kimg2mpgbase.ui line 45
+#: rc.cpp:3
+#, no-c-format
+msgid "Kimg2mpgBase"
+msgstr "Kimg2mpgBas"
+
+#. i18n: file kimg2mpgbase.ui line 75
+#: rc.cpp:6
+#, no-c-format
+msgid "Encoder Settings"
+msgstr "Inställning av kodning"
+
+#. i18n: file kimg2mpgbase.ui line 119
+#: rc.cpp:9
+#, no-c-format
+msgid "Video Format"
+msgstr "Videoformat"
+
+#. i18n: file kimg2mpgbase.ui line 128
+#: rc.cpp:12
+#, no-c-format
+msgid "XVCD"
+msgstr "XVCD"
+
+#. i18n: file kimg2mpgbase.ui line 133
+#: rc.cpp:15
+#, no-c-format
+msgid "SVCD"
+msgstr "SVCD"
+
+#. i18n: file kimg2mpgbase.ui line 138
+#: rc.cpp:18
+#, no-c-format
+msgid "VCD"
+msgstr "VCD"
+
+#. i18n: file kimg2mpgbase.ui line 143
+#: rc.cpp:21
+#, no-c-format
+msgid "DVD"
+msgstr "DVD"
+
+#. i18n: file kimg2mpgbase.ui line 160
+#: rc.cpp:24
+#, no-c-format
+msgid ""
+"This option specifies the video format for your MPEG file.\n"
+"For a high photographic resolution on a TV screen, select  'XVCD' (it is the "
+"same DVD resolution) although some old DVD players cannot read this format. "
+"'VCD'/'SVCD' are more compatible with DVD players, but they are only medium "
+"resolution. \n"
+"DVD is an experimental option."
+msgstr ""
+"Det här alternativet anger videoformat för MPEG-filen.\n"
+"För mycket bra fotografisk upplösning på skärmen välj 'XVCD' (det är samma som "
+"dvd-upplösningen), men vissa äldre dvd-spelare kan inte läsa formatet. Formaten "
+"'VCD' eller 'SVCD' fungerar bättre med dvd-spelare, men har bara medelmåttig "
+"upplösning.\n"
+"Formatet 'DVD' är ett experimentellt alternativ."
+
+#. i18n: file kimg2mpgbase.ui line 186
+#: rc.cpp:29
+#, no-c-format
+msgid "Video Type"
+msgstr "Videotyp"
+
+#. i18n: file kimg2mpgbase.ui line 195
+#: rc.cpp:32
+#, no-c-format
+msgid "PAL"
+msgstr "PAL"
+
+#. i18n: file kimg2mpgbase.ui line 200
+#: rc.cpp:35
+#, no-c-format
+msgid "NTSC"
+msgstr "NTSC"
+
+#. i18n: file kimg2mpgbase.ui line 205
+#: rc.cpp:38
+#, no-c-format
+msgid "SECAM"
+msgstr "SECAM"
+
+#. i18n: file kimg2mpgbase.ui line 221
+#: rc.cpp:41
+#, no-c-format
+msgid ""
+"This option specifies the video type for your MPEG file.\n"
+"NTSC is an American TV standard; PAL/SECAM is European."
+msgstr ""
+"Det här alternativet anger videotyp för MPEG-filen.\n"
+"NTSC är en amerikansk tv-standard, PAL/SECAM är europeisk."
+
+#. i18n: file kimg2mpgbase.ui line 247
+#: rc.cpp:45
+#, no-c-format
+msgid "Chroma Mode"
+msgstr "Kromatiskt läge"
+
+#. i18n: file kimg2mpgbase.ui line 261
+#: rc.cpp:51
+#, no-c-format
+msgid "444"
+msgstr "444"
+
+#. i18n: file kimg2mpgbase.ui line 266
+#: rc.cpp:54
+#, no-c-format
+msgid "420jpeg"
+msgstr "420jpeg"
+
+#. i18n: file kimg2mpgbase.ui line 271
+#: rc.cpp:57
+#, no-c-format
+msgid "420mpeg2"
+msgstr "420mpeg2"
+
+#. i18n: file kimg2mpgbase.ui line 287
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"This option specifies the chroma subsampling mode.\n"
+"Change it if you have problems with the default value."
+msgstr ""
+"Det här alternativet anger kromatiskt delsamplingsläge.\n"
+"Ändra det om du har problem med normalvärdet "
+
+#. i18n: file kimg2mpgbase.ui line 326
+#: rc.cpp:64
+#, no-c-format
+msgid "Image Settings"
+msgstr "Bildinställningar"
+
+#. i18n: file kimg2mpgbase.ui line 370
+#: rc.cpp:67
+#, no-c-format
+msgid "Image duration"
+msgstr "Bildlängd"
+
+#. i18n: file kimg2mpgbase.ui line 400
+#: rc.cpp:70
+#, no-c-format
+msgid ""
+"This option specifies the duration for each image in your MPEG file.\n"
+"10 seconds is a good value for an image portfolio.\n"
+"\n"
+"<b>Warning</b>: you may have some problems with your DVD player if the total "
+"MPEG duration is under 3 seconds."
+msgstr ""
+"Det här alternativet anger varaktigheten för varje bild i MPEG-filen.\n"
+"Tio sekunder är ett bra värde för en bildmapp.\n"
+"\n"
+"<b>Varning</b>: Du kan få vissa problem med dvd-spelaren om den totala längden "
+"av MPEG-filen är mindre än tre sekunder."
+
+#. i18n: file kimg2mpgbase.ui line 408
+#: rc.cpp:76
+#, no-c-format
+msgid "sec."
+msgstr "sek."
+
+#. i18n: file kimg2mpgbase.ui line 428
+#: rc.cpp:79
+#, no-c-format
+msgid "Transition speed"
+msgstr "Övergångshastighet"
+
+#. i18n: file kimg2mpgbase.ui line 442
+#: rc.cpp:85
+#, no-c-format
+msgid "1"
+msgstr "1"
+
+#. i18n: file kimg2mpgbase.ui line 447
+#: rc.cpp:88
+#, no-c-format
+msgid "2"
+msgstr "2"
+
+#. i18n: file kimg2mpgbase.ui line 452
+#: rc.cpp:91
+#, no-c-format
+msgid "4"
+msgstr "4"
+
+#. i18n: file kimg2mpgbase.ui line 457
+#: rc.cpp:94
+#, no-c-format
+msgid "5"
+msgstr "5"
+
+#. i18n: file kimg2mpgbase.ui line 462
+#: rc.cpp:97
+#, no-c-format
+msgid "10"
+msgstr "10"
+
+#. i18n: file kimg2mpgbase.ui line 467
+#: rc.cpp:100
+#, no-c-format
+msgid "20"
+msgstr "20"
+
+#. i18n: file kimg2mpgbase.ui line 484
+#: rc.cpp:103
+#, no-c-format
+msgid ""
+"This option specifies the transition speed between images in your MPEG file.\n"
+"'1' is a slow transition and '20' is a very fast transition.\n"
+"'2' is a good value for an image portfolio."
+msgstr ""
+"Det här alternativet anger övergångshastigheten mellan bilderna i MPEG-filen.\n"
+"Värdet '1' anger en långsam övergång och '20' är en mycket snabb övergång.\n"
+"För en bildmapp är '2' ett bra värde."
+
+#. i18n: file kimg2mpgbase.ui line 502
+#: rc.cpp:108
+#, no-c-format
+msgid "Background color"
+msgstr "Bakgrundsfärg"
+
+#. i18n: file kimg2mpgbase.ui line 526
+#: rc.cpp:111
+#, no-c-format
+msgid ""
+"You can select here the background color for your portfolio.\n"
+"This color is used to pad the image size to fit the TV screen size.\n"
+"Black is a good value for this."
+msgstr ""
+"Här kan du välja bakgrundsfärg för mappen.\n"
+"Färgen används för att anpassa bildstorleken till tv-skärmens storlek.\n"
+"Svart färg är ett bra val för detta."
+
+#. i18n: file kimg2mpgbase.ui line 559
+#: rc.cpp:116
+#, no-c-format
+msgid "Image Files in Portfolio"
+msgstr "Bildfiler i mappen"
+
+#. i18n: file kimg2mpgbase.ui line 562
+#: rc.cpp:119 rc.cpp:157
+#, no-c-format
+msgid "Preview the currently selected image."
+msgstr "Förhandsgranska nuvarande markerade bild."
+
+#. i18n: file kimg2mpgbase.ui line 591
+#: rc.cpp:122
+#, no-c-format
+msgid ""
+"This is the list of the image files for your portfolio.\n"
+"The portfolio's first image is on the top; the last image is on the bottom.\n"
+"If you want to add some images, click on the 'Add' button or use the "
+"drag-and-drop."
+msgstr ""
+"Det här är listan med bildfiler för mappen.\n"
+"Mappens första bild är överst, och den sista bilden är nederst.\n"
+"Om du vill lägga till några bilder, klicka på knappen 'Lägg till' eller använd "
+"drag och släpp."
+
+#. i18n: file kimg2mpgbase.ui line 607
+#: rc.cpp:127
+#, no-c-format
+msgid "textLabel1"
+msgstr "textetikett1"
+
+#. i18n: file kimg2mpgbase.ui line 610
+#: rc.cpp:130
+#, no-c-format
+msgid "Total number of images in the portfolio and sequence duration."
+msgstr "Totalt antal bilder i mappen och sekvensens varaktighet."
+
+#. i18n: file kimg2mpgbase.ui line 659
+#: rc.cpp:133
+#, no-c-format
+msgid "&Add..."
+msgstr "&Lägg till..."
+
+#. i18n: file kimg2mpgbase.ui line 662
+#: rc.cpp:136
+#, no-c-format
+msgid "Add some image files to the portfolio list."
+msgstr "Lägg till några bildfiler i mapplistan."
+
+#. i18n: file kimg2mpgbase.ui line 687
+#: rc.cpp:142
+#, no-c-format
+msgid "Remove some image files from the portfolio list."
+msgstr "Ta bort några bildfiler från mapplistan."
+
+#. i18n: file kimg2mpgbase.ui line 709
+#: rc.cpp:145
+#, no-c-format
+msgid "Image &Up"
+msgstr "Bild &upp"
+
+#. i18n: file kimg2mpgbase.ui line 712
+#: rc.cpp:148
+#, no-c-format
+msgid "Moving the current image up on the portfolio list."
+msgstr "Flyttar upp nuvarande bild i mapplistan."
+
+#. i18n: file kimg2mpgbase.ui line 734
+#: rc.cpp:151
+#, no-c-format
+msgid "Image D&own"
+msgstr "Bild &ner"
+
+#. i18n: file kimg2mpgbase.ui line 737
+#: rc.cpp:154
+#, no-c-format
+msgid "Moving the current image down on the portfolio list."
+msgstr "Flyttar upp nuvarande bild i mapplistan."
+
+#. i18n: file kimg2mpgbase.ui line 811
+#: rc.cpp:160
+#, no-c-format
+msgid "textLabel2"
+msgstr "textetikett2"
+
+#. i18n: file kimg2mpgbase.ui line 814
+#: rc.cpp:163
+#, no-c-format
+msgid "Currently selected image in the portfolio list."
+msgstr "Nuvarande markerade bilden i mapplistan."
+
+#. i18n: file kimg2mpgbase.ui line 862
+#: rc.cpp:166
+#, no-c-format
+msgid "MPEG Output Filename"
+msgstr "Filnamn för MPEG-utdata"
+
+#. i18n: file kimg2mpgbase.ui line 883
+#: rc.cpp:169
+#, no-c-format
+msgid ""
+"You can specify here the output MPEG filename.\n"
+"\n"
+"<b>Warning </b>: MPEG files are very big (if you have many images in your "
+"portfolio). Select a folder with a sufficient free disk space."
+msgstr ""
+"Här kan du ange filnamnet för MPEG-utdata.\n"
+"\n"
+"<b>Varning</b>: MPEG-filer är mycket stora filer (när du har många bilder i "
+"mappen). Välj en katalog med tillräckligt diskutrymme."
+
+#. i18n: file kimg2mpgbase.ui line 969
+#: rc.cpp:174
+#, no-c-format
+msgid "Audio Input Filename"
+msgstr "Filnamn för ljudindata"
+
+#. i18n: file kimg2mpgbase.ui line 991
+#: rc.cpp:177
+#, no-c-format
+msgid ""
+"You can specify here the input audio file name.\n"
+"This audio file name will be multiplexed with the portfolio video. \n"
+" \n"
+"<b>Warning</b>: if the audio duration is too long, it will be truncated."
+msgstr ""
+"Här kan du ange filnamnet för ljudindata.\n"
+"Ljudfilnamnet sammanfogas med videoflödet i mappen.\n"
+"\n"
+"<b>Varning</b>: Om ljudets varaktighet är för lång avkortas det."
+
+#. i18n: file kimg2mpgbase.ui line 1086
+#: rc.cpp:183
+#, no-c-format
+msgid "Current encoding task."
+msgstr "Nuvarande kodningsaktivitet."
+
+#. i18n: file kimg2mpgbase.ui line 1114
+#: rc.cpp:186
+#, no-c-format
+msgid "Encoding progress bar."
+msgstr "Förloppsrad för kodning."
+
+#. i18n: file kimg2mpgbase.ui line 1161
+#: rc.cpp:192
+#, no-c-format
+msgid ""
+"Start the portfolio MPEG encoding. \n"
+"The program uses the 'images2mpg' bash script."
+msgstr ""
+"Starta MPEG-kodning av mappen.\n"
+"Programmet använder bash-skriptet 'images2mpg'. "
+
+#. i18n: file kimg2mpgbase.ui line 1252
+#: rc.cpp:205
+#, no-c-format
+msgid "Abort the current encoding and exit."
+msgstr "Avbryt nuvarande kodning och avsluta."

@@ -1,0 +1,1596 @@
+# translation of kdebluetooth.po to Serbian
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdebluetooth\n"
+"POT-Creation-Date: 2007-09-13 08:28+0200\n"
+"PO-Revision-Date: 2007-08-02 14:58+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: kbtserialchat/main.cpp:23
+msgid "A KDE KPart Application"
+msgstr "KDE KPart program"
+
+#: kbtobexsrv/main.cpp:28 kbtobexsrv/main.cpp:29 kbtobexsrv/main.cpp:30
+#: kbtserialchat/main.cpp:29 kbtserialchat/main.cpp:30
+#: kbtserialchat/main.cpp:31
+msgid "Used by kbluetoothd"
+msgstr "Koristi ga kbluetoothd"
+
+#: kbtobexclient/main.cpp:37 kbtserialchat/main.cpp:32
+msgid "Used by kio_sdp"
+msgstr "Koristi ga kio_sdp"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 16
+#: kbtserialchat/main.cpp:41 rc.cpp:3
+#, no-c-format
+msgid "Bluetooth Serial Chat"
+msgstr "Bluetooth serijsko ćaskanje"
+
+#: libkbluetooth/namerequest.cpp:52
+#, fuzzy
+msgid "Device is not available."
+msgstr "<i>nedostupno</i>"
+
+#: libkbluetooth/namerequest.cpp:59
+#, fuzzy
+msgid "HCI device open failed."
+msgstr "Veza nije uspela"
+
+#: libkbluetooth/namerequest.cpp:73
+msgid "HCI name request failed."
+msgstr ""
+
+#: libkbluetooth/hcisocket.cpp:60
+#, fuzzy
+msgid "Error creating socket"
+msgstr "Greška pri pisanju fajla %1."
+
+#: libkbluetooth/hcisocket.cpp:72
+msgid "Error binding to socket"
+msgstr ""
+
+#: libkbluetooth/hcisocket.cpp:84
+msgid "HCI filter setup failed"
+msgstr ""
+
+#: libkbluetooth/hcisocket.cpp:118
+#, c-format
+msgid "HCI socket error: 0x%1."
+msgstr ""
+
+#: libkbluetooth/hcidefault.cpp:82
+msgid "Use bluetooth device hciX (alternative: $HCI_DEVICE)"
+msgstr ""
+
+#: libkbluetooth/inquiry.cpp:154
+msgid "Timeout while waiting for end of inquiry."
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 128
+#: libkbluetooth/serviceselectionwidget.cpp:104 rc.cpp:167 rc.cpp:239
+#, no-c-format
+msgid "Searching..."
+msgstr "Tražim..."
+
+#: libkbluetooth/serviceselectionwidget.cpp:200
+#, fuzzy
+msgid "Bluetooth Service Selection"
+msgstr "Bluetooth uređaj nije pronađen!"
+
+#: libkbluetooth/serviceselectionwidget.cpp:309
+msgid "Clear the device cache?"
+msgstr ""
+
+#: kioclient/main.cpp:22
+msgid "KIO command line client"
+msgstr "KIO klijent komandne linije"
+
+#: kioclient/main.cpp:31
+msgid "List date"
+msgstr "Listaj datum"
+
+#: kioclient/main.cpp:32
+msgid "List user"
+msgstr "Listaj korisnika"
+
+#: kioclient/main.cpp:33
+msgid "List icon name"
+msgstr "Listaj ime ikone"
+
+#: kioclient/main.cpp:34
+msgid "List group"
+msgstr "Listaj grupu"
+
+#: kioclient/main.cpp:35
+msgid "List extra"
+msgstr "Listaj dodatke"
+
+#: kioclient/main.cpp:36
+msgid "Do not list name"
+msgstr "Ne listaj ime"
+
+#: kioclient/main.cpp:37
+msgid "List access permissions"
+msgstr "Listaj dozvole pristupa"
+
+#: kioclient/main.cpp:38
+msgid "List modification time"
+msgstr "Listaj vreme izmene"
+
+#: kioclient/main.cpp:39
+msgid "List access time"
+msgstr "Listaj vreme pristupa"
+
+#: kioclient/main.cpp:40
+msgid "List creation time"
+msgstr "Listaj vreme stvaranja"
+
+#: kioclient/main.cpp:41
+msgid "List file type"
+msgstr "Listaj vrstu fajla"
+
+#: kioclient/main.cpp:42
+msgid "List link destination"
+msgstr "Listaj odredište veze"
+
+#: kioclient/main.cpp:43
+msgid "List URL"
+msgstr "Listaj URL"
+
+#: kioclient/main.cpp:44
+msgid "List mime type"
+msgstr "Listaj MIME tip"
+
+#: kioclient/main.cpp:45
+msgid "List guessed mime type"
+msgstr "Listaj pogođeni MIME tip"
+
+#: kioclient/main.cpp:46
+msgid "List XML properties"
+msgstr "Listaj XML svojstva"
+
+#: kioclient/main.cpp:47
+msgid "List size"
+msgstr "Listaj veličinu"
+
+#: kioclient/main.cpp:48
+msgid "Output file. Defaults to stdout"
+msgstr "Izlazni fajl. Podrazumevan je std.iz."
+
+#: kioclient/main.cpp:49
+msgid "Input file. Defaults to stdin"
+msgstr "Ulazni fajl. Podrazumevan je std.ul."
+
+#: kioclient/main.cpp:50
+msgid "Show a progress window"
+msgstr "Prikaži prozor napretka"
+
+#: kioclient/main.cpp:51
+msgid "Ask (graphically) before overwriting files"
+msgstr "Pitaj (grafički) pre prebrisivanja fajlova"
+
+#: kioclient/main.cpp:52
+msgid "Show messages from the kioslave"
+msgstr "Prikaži poruke od kioslave-a"
+
+#: kioclient/main.cpp:53
+msgid "Command (ls, cat, put, cp, rm, mv, mkdir, rmdir)"
+msgstr "Naredba (ls, cat, put, cp, rm, mv, mkdir, rmdir)"
+
+#: kioclient/main.cpp:60
+msgid "kio client"
+msgstr "KIO klijent"
+
+#: kioclient/commandhandler.cpp:25
+msgid "Arguments missing."
+msgstr "Nedostaju argumenti."
+
+#: kioclient/commandhandler.cpp:94
+#, c-format
+msgid "unknown command: %1"
+msgstr "nepoznata naredba: %1"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Časlav Ilić,Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "caslav.ilic@gmx.net,simicsl@verat.net"
+
+#. i18n: file ./kbluemon/mondialog.ui line 30
+#: kbluemon/main.cpp:38 kbluemon/main.cpp:49 rc.cpp:21
+#, no-c-format
+msgid "KBlueMon"
+msgstr "KBlueMon"
+
+#: kbluelock/main.cpp:54 kbluemon/main.cpp:53 kbluetooth/main.cpp:36
+#: kinputwizard/main.cpp:52
+msgid "Author"
+msgstr "Autor"
+
+#: kbluemon/main.cpp:61
+#, fuzzy
+msgid ""
+"KBlueMon is already running.\n"
+msgstr ""
+"KBlueLock već radi.\n"
+
+#: kbluemon/monitor.cpp:57 kbluemon/monitor.cpp:331 kbluemon/monitor.cpp:424
+#, fuzzy
+msgid "Scanning..."
+msgstr "Tražim..."
+
+#: kbluemon/monitor.cpp:150
+#, fuzzy
+msgid "Service Discovery disabled"
+msgstr "nema otkrivenih usluga"
+
+#: kbluemon/monitor.cpp:151 kbluemon/monitor.cpp:200 kbluemon/monitor.cpp:203
+#: kbluemon/monitor.cpp:206 kbluemon/monitor.cpp:222 kbluemon/monitor.cpp:253
+msgid "<i>not available</i>"
+msgstr "<i>nedostupno</i>"
+
+#: kbluemon/monitor.cpp:221 kbluemon/monitor.cpp:248
+msgid "no Services discovered"
+msgstr "nema otkrivenih usluga"
+
+#. i18n: file ./kbluemon/mondialog.ui line 529
+#: kbluemon/monitor.cpp:338 kbluemon/monitor.cpp:423 rc.cpp:72
+#, fuzzy, no-c-format
+msgid "St&op Scan"
+msgstr "Zaustavi pretraživanje"
+
+#: kbluemon/monitor.cpp:344 kbluemon/monitor.cpp:445
+#, fuzzy
+msgid "St&art Scan"
+msgstr "Pokreni pretraživanje"
+
+#: kbluemon/monitor.cpp:414
+#, fuzzy
+msgid "Periodic Discovery started"
+msgstr "nema otkrivenih usluga"
+
+#: kbluemon/monitor.cpp:416
+msgid "Failed to start Periodic Discovery! ("
+msgstr ""
+
+#: kbluelock/kbluelock.cpp:363 kbluemon/monitor.cpp:501
+#: kinputwizard/inputwizard.cpp:554
+#, fuzzy
+msgid "Device Discovery started"
+msgstr "nema otkrivenih usluga"
+
+#: kioslave/sdp/btsdp.cpp:43
+msgid "No working Bluetooth adapter found."
+msgstr "Bluetooth adapter nije pronađen."
+
+#: kioslave/bluetooth/kiobluetooth.cpp:87 kioslave/sdp/btsdp.cpp:131
+msgid "Bluetooth neighborhood"
+msgstr "Bluetooth komšiluk"
+
+#: kioslave/sdp/btsdp.cpp:139
+msgid "More services"
+msgstr "Još usluga"
+
+#: kioslave/sdp/btsdp.cpp:145
+msgid "Could not stat %1. Unknown device"
+msgstr "Ne mogu da izvršim stat %1. Nepoznat uređaj"
+
+#: kioslave/sdp/btsdp.cpp:201
+#, c-format
+msgid "Retrieving services for %1."
+msgstr "Dobavljam usluge za %1."
+
+#: kioslave/obex/kio_obex2/kio_obexprotocol.cpp:252
+msgid "Disconnecting"
+msgstr "Isključujem"
+
+#: kioslave/obex/kio_obex2/kio_obexprotocol.cpp:254
+msgid "Disconnected"
+msgstr "Nije povezan"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:41
+msgid "Protocol name"
+msgstr "Ime protokola"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:42
+#: kioslave/bluetooth/kiobluetooth.cpp:43
+msgid "Socket name"
+msgstr "Ime soketa"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:93
+#, c-format
+msgid "Could not stat %1."
+msgstr "Ne mogu da izvršim stat %1."
+
+#: kbtobexclient/fileview.cpp:72
+msgid "Location: "
+msgstr "Lokacija:"
+
+#: kbtobexclient/fileview.cpp:94
+msgid ""
+"<qt>Click this button to enter the parent folder."
+"<p>For instance, if the current location is file:/home/%1 clicking this button "
+"will take you to file:/home.</qt>"
+msgstr ""
+"<qt>Kliknite na ovo dugme da biste ušli u roditeljsku fasciklu."
+"<p>Na primer, ako je trenutna lokacija file:/home/%1 klik na ovo dugme će vas "
+"odvesti na file:/home.</qt>"
+
+#: kbtobexclient/fileview.cpp:98
+msgid "Click this button to move backwards one step in the browsing history."
+msgstr ""
+"Kliknite na ovo dugme da biste se vratili jedan korak unazad u istorijatu "
+"pregledanja."
+
+#: kbtobexclient/fileview.cpp:100
+msgid "Click this button to move forward one step in the browsing history."
+msgstr ""
+"Kliknite na ovo dugme da biste otišli jedan korak unapred u istorijatu "
+"pregledanja."
+
+#: kbtobexclient/fileview.cpp:102
+msgid "Click this button to reload the contents of the current location."
+msgstr "Kliknite na ovo dugme da biste ponovo učitali sadržaj tekuće lokacije."
+
+#: kbtobexclient/fileview.cpp:105
+msgid "Click this button to create a new folder."
+msgstr "Kliknite na ovo dugme da biste napravili novu fasciklu."
+
+#: kbtobexclient/fileview.cpp:109
+msgid ""
+"<qt>This is the configuration menu for the file dialog. Various options can be "
+"accessed from this menu including: "
+"<ul>"
+"<li>how files are sorted in the list</li>"
+"<li>types of view, including icon and list</li>"
+"<li>showing of hidden files</li>"
+"<li>the Quick Access navigation panel</li>"
+"<li>file previews</li>"
+"<li>separating folders from files</li></ul></qt>"
+msgstr ""
+"<qt>Ovo je meni za podešavanje fajl dijaloga. Razne opcije kojima se u ovom "
+"meniju može pristupiti uključuju: "
+"<ul>"
+"<li>kako su fajlovi skladišteni u listi</li>"
+"<li>tipovi prikaza, uključujući ikone i listu</li>"
+"<li>prikaz skrivenih fajlova</li>"
+"<li>navigacioni panel za brzi pristup</li>"
+"<li>pregledi fajlova</li>"
+"<li>razdvajanje fascikli od fajlova</li></ul></qt>"
+
+#: kbtobexclient/fileview.cpp:136
+msgid "Filter:"
+msgstr "Filter:"
+
+#: kbtobexclient/fileview.cpp:142
+msgid "*|All Files"
+msgstr "*|Svi fajlovi"
+
+#: kbtobexclient/fileview.cpp:143
+msgid "image/jpeg |JPEG Image Files"
+msgstr "image/jpeg|JPEG fajlovi slika"
+
+#: kbtobexclient/main.cpp:31
+msgid "A KDE Bluetooth Framework Application"
+msgstr "Bluetooth okvirni program za KDE"
+
+#: kbtobexclient/main.cpp:46
+msgid "Bluetooth OBEX Object Push client"
+msgstr "Klijent za bluetooth OBEX guranje objekata"
+
+#: kbtobexclient/main.cpp:52
+msgid "Author, Maintainer"
+msgstr "Autor, održava"
+
+#: kbtobexclient/diroperator.cpp:75
+msgid "Short View"
+msgstr "Kratki prikaz"
+
+#: kbtobexclient/fileiconview.cpp:58
+msgid "&Cancel Selected Files"
+msgstr "&Otkaži izabrane fajlove"
+
+#: kbtobexclient/fileiconview.cpp:63
+msgid "&New Project"
+msgstr "&Novi projekat"
+
+#: kbtobexclient/mainwindow.cpp:125 kbtobexclient/mainwindow.cpp:148
+#: kbtobexclient/mainwindow.cpp:156
+msgid "Project View"
+msgstr "Prikaz projekta"
+
+#: kbtobexclient/mainwindow.cpp:139
+msgid "File to send:"
+msgstr "Fajl za slanje:"
+
+#: kbtobexclient/mainwindow.cpp:145
+msgid "Send"
+msgstr "Pošalji"
+
+#: kbtobexclient/mainwindow.cpp:148
+msgid "Files View"
+msgstr "Prikaz fajlova"
+
+#: kbtobexclient/mainwindow.cpp:156
+msgid "Devices View"
+msgstr "Prikaz uređaja"
+
+#: kbtobexclient/mainwindow.cpp:161
+msgid "Device selector:"
+msgstr "Birač uređaja:"
+
+#: kbtobexclient/mainwindow.cpp:192
+msgid "Show Device Selector"
+msgstr "Prikaži birač uređaja"
+
+#: kbtobexclient/mainwindow.cpp:194
+msgid "Show File Selector"
+msgstr "Prikaži birač fajlova"
+
+#: kbtobexclient/mainwindow.cpp:196
+msgid "Show File Browser"
+msgstr "Prikaži pregledač fajlova"
+
+#: kbtobexclient/mainwindow.cpp:274
+msgid ""
+"\n"
+" Continue with the remaining files?"
+msgstr ""
+"\n"
+" Nastavi sa preostalim fajlovima?"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 27
+#: rc.cpp:6
+#, no-c-format
+msgid "<font color=\"#0000ff\" size=\"+2\">Bluetooth Serial Chat</font>"
+msgstr "<font color=\"#0000ff\" size=\"+2\">Bluetooth serijsko ćaskanje</font>"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 54
+#: rc.cpp:9
+#, no-c-format
+msgid "&Send"
+msgstr "&Pošalji"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 57
+#: rc.cpp:12
+#, no-c-format
+msgid "Alt+S, Return"
+msgstr "Alt+P, Return"
+
+#. i18n: file ./libkbluetooth/serviceselectionwidgetbase.ui line 54
+#: rc.cpp:15
+#, fuzzy, no-c-format
+msgid "&Search"
+msgstr "Tražim..."
+
+#. i18n: file ./libkbluetooth/serviceselectionwidgetbase.ui line 67
+#: rc.cpp:18
+#, no-c-format
+msgid "&Clear"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 46
+#: rc.cpp:24 rc.cpp:152 rc.cpp:221
+#, no-c-format
+msgid "Name"
+msgstr "Ime"
+
+#. i18n: file ./kbluemon/mondialog.ui line 57
+#: rc.cpp:27
+#, no-c-format
+msgid "Signal"
+msgstr "Signal"
+
+#. i18n: file ./kbluemon/mondialog.ui line 68
+#: rc.cpp:30
+#, no-c-format
+msgid "Class"
+msgstr "Klasa"
+
+#. i18n: file ./kbluemon/mondialog.ui line 79
+#: rc.cpp:33 rc.cpp:155 rc.cpp:224
+#, no-c-format
+msgid "Address"
+msgstr "Adresa"
+
+#. i18n: file ./kbluemon/mondialog.ui line 90
+#: rc.cpp:36
+#, no-c-format
+msgid "Icon"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 164
+#: rc.cpp:39
+#, no-c-format
+msgid "Address:"
+msgstr "Adresa:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 212
+#: rc.cpp:42
+#, no-c-format
+msgid "Name:"
+msgstr "Ime:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 241
+#: rc.cpp:46
+#, no-c-format
+msgid "Typ:"
+msgstr "Vrsta:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 270
+#: rc.cpp:50
+#, no-c-format
+msgid "Signal:"
+msgstr "Signal:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 301
+#: rc.cpp:53
+#, no-c-format
+msgid "Version:"
+msgstr "Verzija:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 330
+#: rc.cpp:57
+#, no-c-format
+msgid "Revision:"
+msgstr "Revizija:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 359
+#: rc.cpp:61
+#, no-c-format
+msgid "Manufacturer:"
+msgstr "Proizvođač:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 388
+#: rc.cpp:65
+#, no-c-format
+msgid "Category:"
+msgstr "Kategorija:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 462
+#: rc.cpp:69
+#, no-c-format
+msgid "Services"
+msgstr "Usluge"
+
+#. i18n: file ./kbluemon/mondialog.ui line 532
+#: rc.cpp:75 rc.cpp:81 rc.cpp:191 rc.cpp:230
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file ./kbluemon/mondialog.ui line 564
+#: rc.cpp:84
+#, no-c-format
+msgid "Periodic Scan"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 572
+#: rc.cpp:87
+#, no-c-format
+msgid "Discover Remote Services"
+msgstr ""
+
+#. i18n: file ./kbluemon/mondialog.ui line 575
+#: rc.cpp:90
+#, no-c-format
+msgid ""
+"Discovering the available Services of the Remote Device takes quiet longer."
+msgstr ""
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 16
+#: kcm_btpaired/kcm_btpaired.cpp:51 rc.cpp:94
+#, fuzzy, no-c-format
+msgid "Paired/Trusted Devices"
+msgstr "U&pareni uređaji..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 27
+#: rc.cpp:97
+#, no-c-format
+msgid ""
+"Currently connected Bluetooth devices with proven identity (<i>"
+"paired devices</i>):"
+msgstr ""
+"Trenutno povezani Bluetooth uređaji sa dokazanim identitetom (<i>"
+"upareni uređaji</i>):"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 33
+#: rc.cpp:100
+#, no-c-format
+msgid "Device"
+msgstr "Uređaj"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 74
+#: rc.cpp:103
+#, no-c-format
+msgid "&Remove Pairing..."
+msgstr "&Ukloni uparivanje..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 77
+#: rc.cpp:106
+#, no-c-format
+msgid "Alt+R"
+msgstr "Alt+U"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 85
+#: rc.cpp:109
+#, no-c-format
+msgid "Remove Trust..."
+msgstr "Ukloni poverenje..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 115
+#: rc.cpp:113
+#, no-c-format
+msgid ""
+"<b>Note:</b> The pairing procedure to add new devices will be started "
+"automatically if you access a service which requests a secure connection."
+msgstr ""
+"<b>Napomena:</b> Procedura uparivanja za dodavanje novih uređaja biće pokrenuta "
+"automatski ukoliko pristupite usluzi koja zahteva bezbednu vezu."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 154
+#: rc.cpp:116
+#, no-c-format
+msgid "Export..."
+msgstr "Izvezi..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 157
+#: rc.cpp:119
+#, no-c-format
+msgid "Let's you "
+msgstr "Dozvoljava vam da "
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 16
+#: rc.cpp:122
+#, no-c-format
+msgid "Export Link Keys"
+msgstr "Izvezi ključeve veze"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 35
+#: rc.cpp:125
+#, no-c-format
+msgid ""
+"Pairing a device in a dual boot setup breaks an alreay established pairing in "
+"the other operating system, because the link keys stored by each OS are not "
+"identical. Here you can export BlueZ's keys for use with Windows, so that you "
+"don't have to pair devices again each time you switch the OS."
+msgstr ""
+"Uparivanje uređaja na računarima sa mogućnošću podizanja dva operativna "
+"sistema, prekida već uspostavljeno uparivanje na drugom operativnom sistemu, "
+"zato što ključevi za svaki OS nisu identični. Ovde možete da izvezete ključeve "
+"za korišćenje sa Windows-om, tako da nećete morati ponovo da uparujete uređaje "
+"svaki put kada promenite operativni sistem."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 46
+#: rc.cpp:128
+#, no-c-format
+msgid "Read more about dual boot setups..."
+msgstr "Pročitajte više o podešavanjima dvostrukog butovanja..."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 71
+#: rc.cpp:131
+#, no-c-format
+msgid "Bluetooth Stacks Used Besides BlueZ"
+msgstr ""
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 82
+#: rc.cpp:134
+#, no-c-format
+msgid "Widcomm Bluetooth stack"
+msgstr ""
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 90
+#: rc.cpp:137
+#, no-c-format
+msgid "Microsoft Bluetooth stack"
+msgstr ""
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 142
+#: rc.cpp:140
+#, no-c-format
+msgid "Save to File..."
+msgstr "Snimi u fajl..."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 150
+#: rc.cpp:143
+#, no-c-format
+msgid "Send via OBEX Push..."
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 16
+#: rc.cpp:146
+#, no-c-format
+msgid "New Device"
+msgstr "Novi uređaj"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 52
+#: rc.cpp:149
+#, no-c-format
+msgid "<b>New Input Device:</b>"
+msgstr "<b>Novi ulazni uređaj:</b>"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 80
+#: rc.cpp:158 rc.cpp:184
+#, no-c-format
+msgid "3"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 114
+#: rc.cpp:161
+#, no-c-format
+msgid "&Setup"
+msgstr "&Postavke"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 117
+#: rc.cpp:164
+#, no-c-format
+msgid "Alt+S"
+msgstr "Alt+P"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 16
+#: rc.cpp:172
+#, no-c-format
+msgid "Input Devices"
+msgstr "Ulazni uređaji"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 34
+#: rc.cpp:175
+#, no-c-format
+msgid "<font size=\"+1\">Configured Input Devices:</font>"
+msgstr "<font size=\"+1\">Podešeni ulazni uređaji:</font>"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 48
+#: rc.cpp:178
+#, no-c-format
+msgid "1"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 59
+#: rc.cpp:181
+#, no-c-format
+msgid "2"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 216
+#: rc.cpp:188
+#, no-c-format
+msgid "C&onnect"
+msgstr "P&oveži se"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 236
+#: rc.cpp:197
+#, no-c-format
+msgid "Alt+D"
+msgstr ""
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 261
+#: rc.cpp:200
+#, no-c-format
+msgid "&Add New Devices >>"
+msgstr "Dod&aj nove uređaje >>"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 264
+#: rc.cpp:203
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 278
+#: rc.cpp:209 rc.cpp:236
+#, no-c-format
+msgid "Alt+C"
+msgstr ""
+
+#. i18n: file ./kbluelock/lockdialog.ui line 16
+#: kbluelock/main.cpp:38 kbluelock/main.cpp:50 rc.cpp:212
+#, no-c-format
+msgid "KBlueLock"
+msgstr "KBlueLock"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 27
+#: rc.cpp:215
+#, no-c-format
+msgid "Lock the screen if the selected device disappears"
+msgstr "Zaključaj ekran ako izabrani uređaj nestane"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 38
+#: rc.cpp:218
+#, fuzzy, no-c-format
+msgid "Unlock the screen if the selected device appears again"
+msgstr "Zaključaj ekran ako izabrani uređaj nestane"
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 16
+#: kbluetooth/sdprecord.cpp:362 kbluetooth/sdprecord.cpp:374 rc.cpp:242
+#, no-c-format
+msgid "KDE Bluetooth Framework"
+msgstr "Bluetooth okvir za KDE"
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 37
+#: rc.cpp:245
+#, no-c-format
+msgid ""
+"<p><font size=\"+2\">Incoming File Transfer</font></p>\n"
+"<b>%1</b> wants to send you some files."
+"<br/>\n"
+"Press <i>Save</i> to accept all files or drag them to another application or "
+"folder."
+msgstr ""
+"<p><font size=\"+2\">Dolazni prenos fajla</font></p>\n"
+"<b>%1</b> želi da vam pošalje neke fajlove."
+"<br/>\n"
+"Pritisnite <i>Sačuvaj</i> da prihvatite sve fajlove ili ih prevucite do drugog "
+"programa ili fascikle."
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 78
+#: rc.cpp:250
+#, no-c-format
+msgid "Waiting..."
+msgstr "Čekam..."
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 101
+#: rc.cpp:253
+#, no-c-format
+msgid "Open destination folder:"
+msgstr "Otvori odredišnu fasciklu:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 30
+#: rc.cpp:262
+#, no-c-format
+msgid "AdapterDialog"
+msgstr "Dijalog adaptera"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 59
+#: rc.cpp:265
+#, no-c-format
+msgid "Device Settings"
+msgstr "Postavke uređaja"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 98
+#: rc.cpp:268
+#, no-c-format
+msgid "Adapter Name:"
+msgstr "Ime adaptera:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 129
+#: rc.cpp:271
+#, no-c-format
+msgid "Mode:"
+msgstr "Režim:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 163
+#: rc.cpp:274
+#, no-c-format
+msgid "Discoverable Timeout:"
+msgstr "Vreme za otkrivanje:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 213
+#: rc.cpp:278
+#, no-c-format
+msgid "Timeout after the adapter gets invisible"
+msgstr "Vreme nakon koga adapter postaje nevidljiv"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 235
+#: rc.cpp:281
+#, no-c-format
+msgid "Class of Device:"
+msgstr "Klasa uređaja:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 241
+#: rc.cpp:284
+#, no-c-format
+msgid "Unspecified"
+msgstr "Neodređena"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 246
+#: rc.cpp:287
+#, no-c-format
+msgid "Desktop"
+msgstr "Radna površina"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 251
+#: rc.cpp:290
+#, no-c-format
+msgid "Laptop"
+msgstr "Laptop"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 291
+#: rc.cpp:293
+#, no-c-format
+msgid "Device Information"
+msgstr "Informacije o uređaju"
+
+#. i18n: file ./kbluetooth/authdialog.ui line 16
+#: rc.cpp:298
+#, no-c-format
+msgid "PinDefaultDialog"
+msgstr "Dijalog podrazumevanog PIB-a"
+
+#. i18n: file ./kbluetooth/authdialog.ui line 32
+#: rc.cpp:301
+#, no-c-format
+msgid ""
+"<font size=\"+2\">Bluetooth Authorization Request</font>\n"
+"<p><b>%1</b> (device address <b>%2</b>) %3.</p>\n"
+"\n"
+"<p>\n"
+"If you aren't sure about the identity of the other party, then reject \n"
+"this authorization request.</p>"
+msgstr ""
+"<font size=\"+2\">Bluetooth zahtev za autorizaciju</font>\n"
+"<p><b>%1</b> (adresa uređaja <b>%2</b>) %3.</p>\n"
+"\n"
+"<p>\n"
+"Ako niste sigurni u identitet druge strane,\n"
+"onda odbijte ovaj zahtev za autorizaciju.</p>"
+
+#. i18n: file ./kbluetooth/pindefdialog.ui line 29
+#: rc.cpp:309
+#, no-c-format
+msgid ""
+"<font size=\"+2\">Bluetooth Pairing Request</font>\n"
+"<p><b>%1</b> (device address <b>%2</b>) wants to pair with your\n"
+"Bluetooth device, which is needed for authenticated and secure connections.\n"
+"</p>"
+"<p>\n"
+"If you are sure about the identity of the other party, then please enter\n"
+"the same PIN below as was used by the other device.</p>"
+msgstr ""
+"<font size=\"+2\">Bluetooth zahtev uparivanja</font>\n"
+"<p><b>%1</b> (adresa uređaja <b>%2</b>) želi da se upari sa vašim\n"
+"bluetooth uređajem, što je potrebno za autentifikovane i bezbedne veze.\n"
+"</p>"
+"<p>\n"
+"Ako ste sigurni u identitet druge strane,\n"
+"unesite ispod isti PIN koji je korišćen za drugi uređaj.</p>"
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 16
+#: rc.cpp:317
+#, no-c-format
+msgid "MyDialog1"
+msgstr ""
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 103
+#: rc.cpp:320
+#, no-c-format
+msgid ""
+"<p>The Bluetooth device \"<b>%1</b>\" wants to use the service <b>%2</b>.</p>\n"
+"<p>Do you want to allow this access? </p>"
+msgstr ""
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 121
+#: rc.cpp:324
+#, no-c-format
+msgid "Future policy for this device and service:"
+msgstr ""
+
+#: kcm_btpaired/pairedtab.cpp:288
+#, fuzzy
+msgid "- trusted "
+msgstr "- proveren ulazni uređaj"
+
+#: kcm_btpaired/pairedtab.cpp:288
+#, fuzzy
+msgid " device"
+msgstr "nema uređaja"
+
+#: kcm_btpaired/pairedtab.cpp:302
+msgid "%1 (%2) %3"
+msgstr "%1 (%2) %3"
+
+#: kcm_btpaired/pairedtab.cpp:313
+#, c-format
+msgid "Last Seen: %1"
+msgstr "Poslednje viđen: %1"
+
+#: kcm_btpaired/pairedtab.cpp:321
+#, c-format
+msgid "Last Used: %1"
+msgstr "Poslednje korišćen: %1"
+
+#: kcm_btpaired/kcm_btpaired.cpp:76
+msgid ""
+"<h1>BtPaired</h1>With this module you can manage the list of paired Bluetooth "
+"Devices."
+msgstr ""
+"<h1>BtPaired</h1>Sa ovim modulom možete upravljati listom uparenih Bluetooth "
+"uređaja."
+
+#: kinputwizard/main.cpp:36 kinputwizard/main.cpp:48
+msgid "KInputWizard"
+msgstr "KInput čarobnjak"
+
+#: kbluelock/main.cpp:39 kinputwizard/main.cpp:37
+msgid "Copyright (C) 2007 Novell, Inc."
+msgstr "Autorska prava (C) 2007 Novell, Inc."
+
+#: kinputwizard/main.cpp:57
+msgid ""
+"KInputWizard is already running.\n"
+msgstr ""
+"KInput čarobnjak već radi.\n"
+
+#: kinputwizard/inputwizard.cpp:244 kinputwizard/inputwizard.cpp:489
+#: kinputwizard/inputwizard.cpp:505
+msgid "&Disconnect"
+msgstr "&Isključi"
+
+#: kinputwizard/inputwizard.cpp:246 kinputwizard/inputwizard.cpp:494
+#: kinputwizard/inputwizard.cpp:502
+msgid "&Connect"
+msgstr "&Poveži se"
+
+#: kinputwizard/inputwizard.cpp:273
+#, fuzzy
+msgid "&Add New Device <<"
+msgstr "Dodaj nov uređaj <<"
+
+#: kinputwizard/inputwizard.cpp:287
+#, fuzzy
+msgid "&Add New Device >>"
+msgstr "Dod&aj nove uređaje >>"
+
+#: kinputwizard/inputwizard.cpp:391
+msgid "Creating Input Device"
+msgstr "Pravim ulazni uređaj"
+
+#: kinputwizard/inputwizard.cpp:391
+msgid "You have to select a remote Device to setup!"
+msgstr "Morate izabrati udaljeni uređaj koji podešavate!"
+
+#: kinputwizard/inputwizard.cpp:415
+msgid "Creating Input Device failed"
+msgstr "Pravljenje ulaznog uređaja nije uspelo"
+
+#: kinputwizard/inputwizard.cpp:415
+msgid "Failed to create the input device for %1!"
+msgstr "Nisam uspeo da napravim ulazni uređaj za %1!"
+
+#: kinputwizard/inputwizard.cpp:458
+msgid "Connect now?"
+msgstr "Da se povežem sada?"
+
+#: kinputwizard/inputwizard.cpp:459
+msgid "Would you like to connect to %1 now?"
+msgstr "Želite li da se sada povežete sa %1?"
+
+#: kinputwizard/inputwizard.cpp:488
+msgid "Connection succesfull"
+msgstr "Povezivanje uspešno"
+
+#: kinputwizard/inputwizard.cpp:488
+msgid "Connection to %1 successful established!"
+msgstr "Veza sa %1 je uspešno uspostavljena!"
+
+#: kinputwizard/inputwizard.cpp:493
+msgid "Connection failed"
+msgstr "Veza nije uspela"
+
+#: kinputwizard/inputwizard.cpp:493
+msgid "Could not connect to "
+msgstr "Ne mogu da se povežem na "
+
+#: kinputwizard/inputwizard.cpp:493
+msgid ""
+"\n"
+" Check if the device is available and bluetooth enabled."
+msgstr ""
+"\n"
+" Proverite da li je uređaj dostupan i bluetooth uključen."
+
+#: kinputwizard/inputwizard.cpp:501
+msgid "Disconnect succesfull"
+msgstr "Prekidanje veze uspešno"
+
+#: kinputwizard/inputwizard.cpp:501 kinputwizard/inputwizard.cpp:504
+msgid "Connection to "
+msgstr "Veza sa "
+
+#: kinputwizard/inputwizard.cpp:501
+msgid " successful disconnected!"
+msgstr " uspešno isključena!"
+
+#: kinputwizard/inputwizard.cpp:504
+msgid "Disconnect failed"
+msgstr "Prekidanje veze neuspešno"
+
+#: kinputwizard/inputwizard.cpp:504
+msgid " could not be disconnected!"
+msgstr " veza se ne može prekinuti!"
+
+#: libkobex/kobexclient.cpp:139 libkobex/kobexserver.cpp:177
+#, fuzzy
+msgid "Connecting..."
+msgstr "Isključujem"
+
+#: libkobex/kobexclient.cpp:175 libkobex/kobexserver.cpp:220
+#, fuzzy
+msgid "Disconnecting..."
+msgstr "Isključujem"
+
+#: libkobex/kobexclient.cpp:79
+msgid ""
+"Error connecting to phone\n"
+"Response message: "
+msgstr ""
+
+#: libkobex/kobexclient.cpp:93
+msgid ""
+"Error sending file %1 to phone\n"
+"Response message: "
+msgstr ""
+
+#: libkobex/kobexclient.cpp:105
+msgid ""
+"Error getting data from phone\n"
+"Response message: "
+msgstr ""
+
+#: libkobex/kobexclient.cpp:120
+#, fuzzy
+msgid "Done"
+msgstr "ništa"
+
+#: libkobex/kobexclient.cpp:164
+msgid "Error connecting transport"
+msgstr ""
+
+#: libkobex/kobexclient.cpp:208
+#, fuzzy
+msgid "Sending "
+msgstr "Pošalji"
+
+#: libkobex/kobexclient.cpp:208
+msgid ""
+" to phone\n"
+"\n"
+msgstr ""
+
+#: libkobex/kobexclient.cpp:217
+msgid "Requesting stream start..."
+msgstr ""
+
+#: libkobex/kobexclient.cpp:254
+#, fuzzy
+msgid "Streaming data..."
+msgstr "Tražim..."
+
+#: kbluelock/main.cpp:61
+msgid ""
+"KBlueLock is already running.\n"
+msgstr ""
+"KBlueLock već radi.\n"
+
+#: kbluelock/kbluelock.cpp:215 kbluelock/kbluelock.cpp:308
+msgid ""
+"<p align='center'>KBlueLock <b>ON</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+msgstr ""
+"<p align='center'>KBlueLock <b>UKLJUČEN</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+
+#: kbluelock/kbluelock.cpp:227
+msgid "KBlueLock - No Device selectetd"
+msgstr "KBlueLock - Nije izabran uređaj"
+
+#: kbluelock/kbluelock.cpp:227
+msgid "To enable KBlueLock you have to choose a Device."
+msgstr "Da bi ste uključili KBlueLock morate izabrati uređaj."
+
+#: kbluelock/kbluelock.cpp:289
+msgid ""
+"<p align='center'>KBlueLock <b>OFF</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+msgstr ""
+"<p align='center'>KBlueLock <b>ISKLJUČEN</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+
+#: kbluelock/kbluelock.cpp:344
+msgid "&Disable"
+msgstr "&Isključi"
+
+#: kbluelock/kbluelock.cpp:350
+msgid "&Enable"
+msgstr "&Uključi"
+
+#: kbtobexsrv/main.cpp:24
+msgid "KDE OBEX Push Server for Bluetooth"
+msgstr ""
+
+#: kbtobexsrv/main.cpp:63
+msgid ""
+"kbtobexsrv will be called automatically by kbluetoothd when another device "
+"tries to send you some files. You don't have to run it manually."
+msgstr ""
+"kbtobexsrv će biti pozvan automatski od kbluetoothd-a kada drugi uređaj pokuša "
+"da vam pošalje neke fajlove. Ne morate ga pokretati ručno."
+
+#: kbtobexsrv/maindlg.cpp:158
+#, c-format
+msgid "Receiving %1"
+msgstr "Primam %1"
+
+#: kbtobexsrv/maindlg.cpp:208
+msgid "Disconnected."
+msgstr "Nije povezan."
+
+#: kbtobexsrv/maindlg.cpp:217
+msgid ""
+"The selected folder does not exist.                            Please select "
+"another folder."
+msgstr ""
+"Izabrana fascikla ne postoji.                            Izaberite drugu "
+"fasciklu."
+
+#: kbtobexsrv/maindlg.cpp:218
+msgid "Obex Server"
+msgstr "Obex server"
+
+#: kbtobexsrv/maindlg.cpp:254
+msgid "%1 already exists. Do you want to use %2 as filename instead?"
+msgstr "%1 već postoji. Želite li da koristite %2 umesto toga?"
+
+#: kbtobexsrv/maindlg.cpp:255
+msgid "Rename"
+msgstr "Preimenuj"
+
+#: kbtobexsrv/maindlg.cpp:255
+msgid "Overwrite"
+msgstr "Prebriši"
+
+#: kbtobexsrv/maindlg.cpp:271
+#, c-format
+msgid "Error writing file %1."
+msgstr "Greška pri pisanju fajla %1."
+
+#: kbtobexsrv/maindlg.cpp:285
+msgid ""
+"The following files already existed in the target folder and were not saved "
+"again with a different name:"
+msgstr ""
+"Sledeći fajlovi već postoje u ciljnoj fascikli i neće biti ponovo snimljeni sa "
+"drugim imenom:"
+
+#: kbluetooth/rfcommportlistener.cpp:105
+#, c-format
+msgid "Could not create a socket for service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:106
+msgid ""
+"<p>KBluetooth was unable to create a socket for the service %1. The error "
+"message was <i>%2</i> (Error code %3)."
+"<p>Make sure that BlueZ is installed correctly and all modules are loaded "
+"(bluez, l2cap, rfcomm..)."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:136
+msgid ""
+"<p>Could not enable security features for <b>%1</b>.The service will not be "
+"started.</p>"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:139
+msgid ""
+"<p>KBluetoothD was unable to enable authentication and/or encryption for the "
+"service %1, so this service will not be started.</p>"
+"<p> The error code returned by setsockopt() was %3 (<i>%2</i>)</p>"
+"<p>To use encryption/authentication for selected services, you need a Linux "
+"kernel >= 2.6.10-mh3. For older kernels you have to disable encryption and "
+"authentication for this service."
+"<br/> <i>Be careful with allowing unconfirmed connections in that case, since "
+"the peer address could be faked.</i></p>"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:174
+#, c-format
+msgid "Could not listen to a socket for service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:175
+msgid ""
+"<p>KBluetoothD was unable to listen to a socket for the service %1. The error "
+"message was <i>%2</i> (Error code %3)."
+"<p>Make sure that BlueZ is installed correctly and all modules are loaded "
+"(bluez, l2cap, rfcomm..)."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:199
+#, c-format
+msgid "Could not bind to a socket for service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:200
+msgid ""
+"<p>KBluetoothD was unable to bind to a socket for the service %1 on channel %2. "
+"The error message was <i>%3</i> (Error code %4)."
+"<p>Make sure that BlueZ is installed correctly."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:215
+#, c-format
+msgid "Could not assign a channel to service %1."
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:216
+msgid ""
+"<p>KBluetoothD was unable to find an unused Rfcomm channel for the service %1, "
+"so other devices will not be able to access that service.</p>"
+"<p>Possible reasons:"
+"<br/> "
+"<ul> "
+"<li>Several services are configured to use the same channel.</li> "
+"<li>Other Bluetooth services are blocking the ports. </li> </ul> Checklist: "
+"<ul> "
+"<li>%2 will try to use channels form %3 to %4 - are they all used by other "
+"services?"
+"<li>Does <i>/proc/bluetooth/rfcomm</i> show more listening sockets than the "
+"Bluetooth services tab in the Control Center? </ul> </p>"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:478
+msgid "Connection from <b>%1</b><br/>to channel %3 (<b>%2</b>)"
+msgstr ""
+
+#: kbluetooth/rfcommportlistener.cpp:530
+msgid "Call \"%1\" failed"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:52
+msgid "Kbluetoothd: access to %1 from %2: ALLOW"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:57
+msgid "Kbluetoothd: access to %1 from %2: DENY"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:62
+msgid "Kbluetoothd: access to %1 from %2: ASK"
+msgstr ""
+
+#: kbluetooth/confirmation.cpp:74
+msgid "Unchanged"
+msgstr ""
+
+#: kbluetooth/authorize.cpp:30 kbluetooth/confirmation.cpp:90
+msgid "Accept"
+msgstr "Prihvati"
+
+#: kbluetooth/authorize.cpp:30
+msgid "Reject"
+msgstr "Odbij"
+
+#: kbluetooth/authorize.cpp:30
+msgid "Always Accept"
+msgstr "Uvek prihvati"
+
+#: kbluetooth/authorize.cpp:39
+msgid "wants to act as Input Device"
+msgstr "želi da se ponaša kao ulazni uređaj"
+
+#: kbluetooth/main.cpp:20 kbluetooth/main.cpp:32 kbluetooth/trayicon.cpp:378
+#: kbluetooth/trayicon.cpp:400 kbluetooth/trayicon.cpp:414
+#: kbluetooth/trayicon.cpp:427 kbluetooth/trayicon.cpp:441
+msgid "KBluetooth"
+msgstr "KBluetooth"
+
+#: kbluetooth/main.cpp:24
+msgid "Show the tray icon if it was disabled before."
+msgstr "Prikaži kasetnu ikonu ako je ranije isključen."
+
+#: kbluetooth/main.cpp:44
+msgid ""
+"KBluetooth is already running.\n"
+msgstr ""
+"KBluetooth već radi.\n"
+
+#: kbluetooth/main.cpp:58
+msgid ""
+"Can't connect to DBus!\n"
+"Unable to start kbluetooth. \n"
+"\n"
+" \t\t\t\t\t\t\t\t\tRestart dbus and the bluetooth service"
+msgstr ""
+
+#: kbluetooth/trayicon.cpp:42
+msgid "KBlue&Mon"
+msgstr "KBlue&Mon"
+
+#: kbluetooth/trayicon.cpp:48
+msgid "KBlue&Lock"
+msgstr "KBlue&Lock"
+
+#: kbluetooth/trayicon.cpp:54
+#, fuzzy
+msgid "&Send File..."
+msgstr "Snimi u fajl..."
+
+#: kbluetooth/trayicon.cpp:60
+msgid "&Configuration"
+msgstr "&Podešavanje"
+
+#: kbluetooth/trayicon.cpp:76
+msgid "&Input Devices..."
+msgstr "&Ulazni uređaji..."
+
+#: kbluetooth/trayicon.cpp:82
+msgid "&Devices..."
+msgstr "U&ređaji..."
+
+#: kbluetooth/trayicon.cpp:88
+#, fuzzy
+msgid "&Paired/Trusted Devices..."
+msgstr "U&pareni uređaji..."
+
+#: kbluetooth/trayicon.cpp:97
+#, fuzzy
+msgid "&Obex Server"
+msgstr "Obex server"
+
+#: kbluetooth/trayicon.cpp:242
+msgid ""
+"KBluetooth will run in hidden mode now and only show up when there is a "
+"connection. To enable the permanent tray icon start KBluetooth again."
+msgstr ""
+"KBluetooth će raditi u skrivenom režimu i pojavljivati se samo kada se pojavi "
+"veza. Da biste uključili stalnu kasetnu ikonu, pokrenite KBluetooth ponovo."
+
+#: kbluetooth/trayicon.cpp:244
+msgid "Hidden Mode"
+msgstr "Skriveni režim"
+
+#: kbluetooth/trayicon.cpp:254
+msgid "Not connected"
+msgstr "Nije povezan"
+
+#: kbluetooth/trayicon.cpp:284
+#, fuzzy
+msgid ""
+"Adapter: %1\n"
+"Address: %2\n"
+"Mode: %3\n"
+"Connected to: "
+msgstr ""
+"Adapter: %1\n"
+"Adresa: %1\n"
+"Povezan na: "
+
+#: kbluetooth/trayicon.cpp:377
+msgid "Could not execute the btpaired Control Center module."
+msgstr "Nisam mogao da pokrenem btpaired, modul za Kontrolni centar."
+
+#: kbluetooth/trayicon.cpp:399
+msgid "Could not execute kinputwizard."
+msgstr "Ne mogu da izvršim kinputwizard."
+
+#: kbluetooth/trayicon.cpp:413
+msgid "Could not execute KBlueMon."
+msgstr "Ne mogu da izvršim KBlueMon."
+
+#: kbluetooth/trayicon.cpp:426
+msgid "Could not execute KBlueLock."
+msgstr "Ne mogu da izvršim KBlueLock."
+
+#: kbluetooth/trayicon.cpp:440
+#, fuzzy
+msgid "Could not execute KBtobexclient."
+msgstr "Ne mogu da izvršim KBlueMon."
+
+#: kbluetooth/trayicon.cpp:470
+msgid "Should KBluetooth still be restarted when you login?"
+msgstr "Da li bi KBluetooth i dalje trebalo da se pokreće kada se prijavite?"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Automatically Start KBluetooth?"
+msgstr "Automatski da pokrećem KBluetooth?"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Start"
+msgstr "Pokreni"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Do Not Start"
+msgstr "Ne pokreći"
+
+#: kbluetooth/trayicon.cpp:516
+msgid "Connected to <b>%1</b><br/>(<b>%2</b>)"
+msgstr ""
+
+#: kbluetooth/trayicon.cpp:575
+msgid "<i>Bluetooth Monitor</i><br/> Problem connecting with <b>%1</b>:"
+msgstr "<i>Bluetooth monitor</i><br/> Problem pri povezivanju sa <b>%1</b>:"
+
+#: kbluetooth/sdprecord.cpp:357
+msgid "Failed to register an SDP record."
+msgstr ""
+
+#: kbluetooth/sdprecord.cpp:358
+#, c-format
+msgid ""
+"Please make sure that sdpd is running; \n"
+"without it, other devices will not be able to find out \n"
+"which services your computer offers. \n"
+"The error code returned by sdp_record_register() was %1"
+msgstr ""
+
+#: kbluetooth/sdprecord.cpp:370
+msgid "Failed to connect to the SDP server."
+msgstr ""
+
+#: kbluetooth/sdprecord.cpp:371
+msgid ""
+"Please make sure that sdpd is running; \n"
+"without it, other devices will not be able to find out \n"
+"which services your computer offers."
+msgstr ""
+
+#: kbluetooth/adapterconfig.cpp:49
+msgid "off"
+msgstr "isključeno"
+
+#: kbluetooth/adapterconfig.cpp:50
+msgid "connectable"
+msgstr "može se povezati"
+
+#: kbluetooth/adapterconfig.cpp:51
+msgid "discoverable"
+msgstr "može se otkriti"
+
+#: kbluetooth/adapterconfig.cpp:107
+msgid "MAC Address: <b>%1</b>"
+msgstr "MAC adresa: <b>%1</b>"
+
+#: kbluetooth/adapterconfig.cpp:110
+msgid "Version: <b>%1</b>"
+msgstr "Verzija: <b>%1</b>"
+
+#: kbluetooth/adapterconfig.cpp:128
+msgid "none"
+msgstr "ništa"
+
+#: kbluetooth/adapterconfig.cpp:132
+msgid " minutes"
+msgstr " minuta"
+
+#: kbluetooth/deviceconfig.cpp:45 kbluetooth/deviceconfig.cpp:124
+msgid "No Bluetooth device found!"
+msgstr "Bluetooth uređaj nije pronađen!"
+
+#: kbluetooth/deviceconfig.cpp:46 kbluetooth/deviceconfig.cpp:125
+msgid "no device"
+msgstr "nema uređaja"
+
+#~ msgid "Always &Visible"
+#~ msgstr "Uvek &vidljivo"
+
+#~ msgid "Paired Devices"
+#~ msgstr "Upareni uređaji"
+
+#~ msgid "- trusted audio device"
+#~ msgstr "- proveren zvučni uređaj"
+
+#~ msgid "- trusted network device"
+#~ msgstr "- proveren mrežni uređaj"
+
+#~ msgid "- trusted serial device"
+#~ msgstr "- proveren serijski uređaj"
+
+#~ msgid "address"
+#~ msgstr "adresa"
+
+#~ msgid "Add new Device >>"
+#~ msgstr "Dodaj nov uređaj >>"

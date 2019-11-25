@@ -1,0 +1,609 @@
+# translation of kipiplugin_cdarchiving.po to dansk
+# Danish translation of kipiplugin_cdarchiving
+# Copyright (C)
+# Rune Rønde Laursen <runerl@skjoldhoej.dk>, 2004, 2005.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 2005, 2006.
+# Keld Simonsen <keld@dkuug.dk>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_cdarchiving\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-10 23:47+0200\n"
+"PO-Revision-Date: 2008-01-13 22:40+0100\n"
+"Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
+"Language-Team: dansk <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Rune Rønde Laursen, Keld Simonsen"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "runerl@skjoldhoej.dk"
+
+#: cdarchiving.cpp:157 cdarchivingdialog.cpp:160 cdarchivingdialog.cpp:164
+#: cdarchivingdialog.cpp:598
+msgid "CD (650Mb)"
+msgstr "CD (650Mb)"
+
+#: cdarchiving.cpp:163
+msgid "KIPI Albums Archiving"
+msgstr "KIPI albumarkivering"
+
+#: cdarchiving.cpp:179
+msgid "CD Albums"
+msgstr "CD-albummer"
+
+#: cdarchiving.cpp:180
+msgid "KIPI Album CD archiving"
+msgstr "KIPI Album CD-arkivering"
+
+#: cdarchiving.cpp:181 cdarchivingdialog.cpp:453
+msgid "LINUX"
+msgstr "LINUX"
+
+#: cdarchiving.cpp:182 cdarchivingdialog.cpp:465
+msgid "K3b CD-DVD Burning application"
+msgstr "K3b-CD og DVD-brændeprogram"
+
+#: cdarchiving.cpp:184
+msgid "KIPI CD-Archiving plugin"
+msgstr "KIPI CD-arkiveringsplugin"
+
+#: cdarchiving.cpp:418
+msgid "Cannot start K3b program : fork failed."
+msgstr "Kan ikke starte K3b-programmet : fork fejlede."
+
+#: cdarchiving.cpp:457
+msgid "K3b is done; removing temporary folder...."
+msgstr "K3b er færdig, sletter midlertidig mappe...."
+
+#: cdarchiving.cpp:467
+msgid "Cannot remove temporary folder '%1'."
+msgstr "Kan ikke slette midlertidig mappe '%1'."
+
+#: cdarchiving.cpp:497 cdarchiving.cpp:589
+msgid "Cannot remove folder '%1'."
+msgstr "Kan ikke slette mappe '%1'."
+
+#: cdarchiving.cpp:510 cdarchiving.cpp:559
+msgid "Could not create folder '%1'."
+msgstr "Kunne ikke oprette mappe '%1'."
+
+#: cdarchiving.cpp:626 cdarchiving.cpp:1056
+msgid "Could not open file '%1'."
+msgstr "Kunne ikke åbne fil '%1'."
+
+#: cdarchiving.cpp:651
+msgid "Could not create folder '%1' in '%2'."
+msgstr "Kunne ikke oprette mappe '%1' i '%2'."
+
+#: cdarchiving.cpp:744 cdarchiving.cpp:1197
+msgid "Album list"
+msgstr "Albumliste"
+
+#: cdarchiving.cpp:749
+msgid "Album "
+msgstr "Album"
+
+#: cdarchiving.cpp:759
+msgid "<i>Caption:</i>"
+msgstr "<i>Samling:</i>"
+
+#: cdarchiving.cpp:762
+msgid "<i>Collection:</i>"
+msgstr "<i>Samling:</i>"
+
+#: cdarchiving.cpp:765
+msgid "<i>Date:</i>"
+msgstr "<i>Dato:</i>"
+
+#: cdarchiving.cpp:767
+msgid "<i>Images:</i>"
+msgstr "<i>Billeder:</i>"
+
+#: cdarchiving.cpp:850 cdarchiving.cpp:933 cdarchiving.cpp:1235
+msgid "KB"
+msgstr "kB"
+
+#: cdarchiving.cpp:895 cdarchiving.cpp:898
+msgid " images"
+msgstr " billeder"
+
+#: cdarchiving.cpp:959 cdarchiving.cpp:999 cdarchiving.cpp:1241
+msgid "Valid HTML 4.01."
+msgstr "Gyldig HTML-4.01."
+
+#: cdarchiving.cpp:963 cdarchiving.cpp:1003
+msgid "Album archive created with <a href=\"%1\">%2</a> on %3"
+msgstr "Albumarkiv oprettet med <a href=\"%1\">%2</a> den %3"
+
+#: cdarchiving.cpp:982
+msgid "<i>Album list:</i>"
+msgstr "<i>Albumliste:</i>"
+
+#: cdarchiving.cpp:1190
+msgid "Previous"
+msgstr "Forrige"
+
+#: cdarchiving.cpp:1195
+msgid "Album index"
+msgstr "Albumindeks"
+
+#: cdarchiving.cpp:1202
+msgid "Next"
+msgstr "Næste"
+
+#: cdarchiving.cpp:1247
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "Billedgalleri oprettet med <a href=\"%1\">%2</a> den %3"
+
+#: cdarchiving.cpp:1410
+msgid "Creating project header..."
+msgstr "Opretter projektoverskrift..."
+
+#: cdarchiving.cpp:1425 cdarchiving.cpp:1463 cdarchiving.cpp:1593
+#: cdarchivingdialog.cpp:163 cdarchivingdialog.cpp:607
+msgid "DVD (4,7Gb)"
+msgstr "Dvd (4.7GB)"
+
+#: cdarchiving.cpp:1583
+msgid "Adding Album '%1' into project..."
+msgstr "Tilføjer album '%1' til projekt..."
+
+#: cdarchivingdialog.cpp:88
+msgid "Configure Archive to CD"
+msgstr "Indstil Arkiv til CD"
+
+#: cdarchivingdialog.cpp:91
+msgid "Create CD/DVD Archive"
+msgstr "Opret CD/DVD-arkiv"
+
+#: cdarchivingdialog.cpp:101
+msgid "CD/DVD Archiving"
+msgstr "CD/DVD-arkivering"
+
+#: cdarchivingdialog.cpp:104
+msgid ""
+"An Album CD/DVD Archiving Kipi plugin.\n"
+"This plugin use K3b CD/DVD burning software available at\n"
+"http://www.k3b.org"
+msgstr ""
+"En KIPI CD/DVD-albumarkiveringsplugin.\n"
+"Dette plugin benytter k3b CD/DVD-brændesoftware, der\n"
+" kan findes på http://www.k3b.org"
+
+#: cdarchivingdialog.cpp:109
+msgid "Author"
+msgstr "Forfatter"
+
+#: cdarchivingdialog.cpp:112
+msgid "Contributor"
+msgstr "Bidragyder"
+
+#: cdarchivingdialog.cpp:115
+msgid "Image navigation mode patches"
+msgstr "Rettelser til billednavigeringstilstand"
+
+#: cdarchivingdialog.cpp:118
+msgid "Bugfix"
+msgstr "Fejlrettelse"
+
+#: cdarchivingdialog.cpp:124
+msgid "Plugin Handbook"
+msgstr ""
+
+#: cdarchivingdialog.cpp:140
+msgid "Selection"
+msgstr "Markering"
+
+#: cdarchivingdialog.cpp:140
+msgid "Album Selection"
+msgstr "Albummarkering"
+
+#: cdarchivingdialog.cpp:150
+msgid "Target Media Information"
+msgstr "Målmedieoplysninger"
+
+#: cdarchivingdialog.cpp:154
+msgid "<p>Information about the backup medium."
+msgstr "<p>Oplysninger om arkiveringsmediet."
+
+#: cdarchivingdialog.cpp:161 cdarchivingdialog.cpp:601
+msgid "CD (700Mb)"
+msgstr "CD (700MB)"
+
+#: cdarchivingdialog.cpp:162 cdarchivingdialog.cpp:604
+msgid "CD (880Mb)"
+msgstr "CD (880MB)"
+
+#: cdarchivingdialog.cpp:166
+msgid "<p>Select here the backup media format."
+msgstr "<p>Vælg formatet på arkiveringsmediet."
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface"
+msgstr "HTML-grænseflade"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface Look"
+msgstr "HTML-grænsefladens udseende"
+
+#: cdarchivingdialog.cpp:189
+msgid "Build CD HTML interface"
+msgstr "Opret CD-HTML-grænseflade"
+
+#: cdarchivingdialog.cpp:193
+msgid "<p>This option adds a HTML interface to browse the CD's contents."
+msgstr ""
+"<p>Denne indstilling tilføjer en HTML-brugergrænseflade til at fremvise "
+"CD-arkivets indhold."
+
+#: cdarchivingdialog.cpp:197
+msgid "Add \"autorun\" functionality"
+msgstr "Tilføj \"autorun\"funktionalitet"
+
+#: cdarchivingdialog.cpp:201
+msgid "<p>This option adds MS Windows(tm) autorunning capability to the CD."
+msgstr ""
+"<p>Med denne indstilling vil CD-arkivet benytte MS-Windows(tm) autorun "
+"funktionalitet."
+
+#: cdarchivingdialog.cpp:205
+msgid "Archive title:"
+msgstr "Arkivtitel:"
+
+#: cdarchivingdialog.cpp:208
+msgid "Album Archiving"
+msgstr "Albumarkivering"
+
+#: cdarchivingdialog.cpp:211
+msgid "<p>Enter here the title of the CD archive."
+msgstr "<p>Her skrives titlen på arkivet."
+
+#: cdarchivingdialog.cpp:217
+msgid "I&mages per row:"
+msgstr "B&illeder pr. række:"
+
+#: cdarchivingdialog.cpp:218
+msgid ""
+"<p>Enter here the number of images per row on the album page. A good value is "
+"'4'."
+msgstr "<p>Angiv antallet af billeder i hver række. En god værdi er '4'."
+
+#: cdarchivingdialog.cpp:229
+msgid "Thumbnail size:"
+msgstr "Miniaturestørrelse:"
+
+#: cdarchivingdialog.cpp:231
+msgid "<p>The new size of thumbnails in pixels"
+msgstr "<p>Den nye miniaturestørrelse angivet i billedpunkter"
+
+#: cdarchivingdialog.cpp:241
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>Vælg filformat for miniaturer.<p>"
+
+#: cdarchivingdialog.cpp:242
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Joint Photographic Experts Group filformatet er velegnet til brug "
+"på WWW, men benytter en komprimeringsmetode hvorved der mistes "
+"billedinformation. "
+"<p><b>PNG</b>: Portable Networks Graphics filformatet er et udvidbart format "
+"til tabsfrit, portabelt, komprimeret lagring af rasterbilleder. PNG tilbyder en "
+"patentfri erstatning for GIF og kan også erstatte brugen af TIFF i visse "
+"situationer PNG er designet til at fungere godt i visningsprogrammer på nettet, "
+"for eksempel til World Wide Web, derfor er formatet muligt at streame og med "
+"mulighed for fremskridtsvisning. PNG kan også gemme gamma og farveinformation "
+"til forbedret farveoverensstemmelse på forskellige platforme."
+
+#: cdarchivingdialog.cpp:253
+msgid "Thumbnail file format:"
+msgstr "Miniaturefilformat:"
+
+#: cdarchivingdialog.cpp:269
+msgid "<p>Select here the font name used for the pages."
+msgstr "<p>Vælg skrifttypen der skal bruges til siderne."
+
+#: cdarchivingdialog.cpp:271
+msgid "Fon&t name:"
+msgstr "Skrift&typenavn:"
+
+#: cdarchivingdialog.cpp:284
+msgid "<p>Select here the font size used for the pages."
+msgstr "<p>Vælg skrifttypestørrelsen der skal bruges på siderne."
+
+#: cdarchivingdialog.cpp:286
+msgid "Font si&ze:"
+msgstr "Skrifttypestørre&lse:"
+
+#: cdarchivingdialog.cpp:299
+msgid "<p>Select here the foreground color used for the pages."
+msgstr "<p>Vælg forgrundsfarven der skal bruges på siderne."
+
+#: cdarchivingdialog.cpp:301
+msgid "&Foreground color:"
+msgstr "&Forgrundsfarve:"
+
+#: cdarchivingdialog.cpp:314
+msgid "<p>Select here the background color used for the pages."
+msgstr "<p>Vælg baggrundsfarven der skal bruges på siderne."
+
+#: cdarchivingdialog.cpp:316
+msgid "&Background color:"
+msgstr "&Baggrundsfarve:"
+
+#: cdarchivingdialog.cpp:329
+msgid "<p>Select here the image border's size in pixels."
+msgstr "<p>Vælg billedrammestørrelsen i billedpunkter."
+
+#: cdarchivingdialog.cpp:331
+msgid "Image border s&ize:"
+msgstr "B&illedrammestørrelse"
+
+#: cdarchivingdialog.cpp:344
+msgid "<p>Select here the color used for the image borders."
+msgstr "<p>Vælg billedrammens farve."
+
+#: cdarchivingdialog.cpp:347
+msgid "Image bo&rder color:"
+msgstr "Billed&rammefarve:"
+
+#: cdarchivingdialog.cpp:418
+msgid "Volume Descriptor"
+msgstr "Bindbeskrivelse"
+
+#: cdarchivingdialog.cpp:418
+msgid "Media Volume Descriptor"
+msgstr "Mediebindbeskrivelse"
+
+#: cdarchivingdialog.cpp:427
+msgid "Volume name:"
+msgstr "Bindnavn:"
+
+#: cdarchivingdialog.cpp:430
+msgid "CD Album"
+msgstr "CD-album"
+
+#: cdarchivingdialog.cpp:434
+msgid "<p>Enter here the media volume name (32 characters max.)"
+msgstr "<p>Her skal du skrive navnet på bindet (maksimalt 32 tegn)"
+
+#: cdarchivingdialog.cpp:438
+msgid "Volume set name:"
+msgstr "Bindsætnavn:"
+
+#: cdarchivingdialog.cpp:441
+msgid "Album CD archive"
+msgstr "Album CD-arkiv"
+
+#: cdarchivingdialog.cpp:446
+msgid "<p>Enter here the media volume global name (128 characters max.)"
+msgstr ""
+"<p>Her skal du skrive navnet på det overordnede bind (maksimalt 32 tegn)"
+
+#: cdarchivingdialog.cpp:450
+msgid "System:"
+msgstr "System:"
+
+#: cdarchivingdialog.cpp:458
+msgid "<p>Enter here the media burning system name (32 characters max.)"
+msgstr ""
+"<p>Her skal du skrive navnet på det brændbare medie (maksimalt 32 tegn)"
+
+#: cdarchivingdialog.cpp:462
+msgid "Application:"
+msgstr "Program:"
+
+#: cdarchivingdialog.cpp:470
+msgid "<p>Enter here the media burning application name (128 characters max.)."
+msgstr "<p>Her skal du skrive navnet på brændeprogrammet (maksimalt 128 tegn)"
+
+#: cdarchivingdialog.cpp:475
+msgid "Publisher:"
+msgstr "Udgiver:"
+
+#: cdarchivingdialog.cpp:478
+msgid "KIPI [KDE Images Program Interface]"
+msgstr "KIPI [KDE Images Program Interface]"
+
+#: cdarchivingdialog.cpp:483
+msgid "<p>Enter here the media publisher name (128 characters max.)."
+msgstr ""
+"<p>Her skal du skrive navnet på udgiveren af mediet(maksimalt 128 tegn)."
+
+#: cdarchivingdialog.cpp:487
+msgid "Preparer:"
+msgstr "Forbereder:"
+
+#: cdarchivingdialog.cpp:490
+msgid "KIPI CD Archiving plugin"
+msgstr "KIPI CD-arkiveringsplugin"
+
+#: cdarchivingdialog.cpp:494
+msgid "<p>Enter here the media preparer name (128 characters max.)."
+msgstr ""
+"<p>Her skal du skrive navnet på medieforberederen (maksimalt 128 tegn)."
+
+#: cdarchivingdialog.cpp:501
+msgid "Media Burning"
+msgstr "Mediebrænding"
+
+#: cdarchivingdialog.cpp:502
+msgid "CD/DVD Burning Setup"
+msgstr "Opsætning af CD/DVD-brænding"
+
+#: cdarchivingdialog.cpp:511
+msgid "&K3b binary path:"
+msgstr "&Sti til kørbar K3b:"
+
+#: cdarchivingdialog.cpp:521
+msgid "<p>The path name to the K3b binary program."
+msgstr "<p>Stien til det kørbare k3b program."
+
+#: cdarchivingdialog.cpp:525
+msgid "Application parameters:"
+msgstr "Programparametre:"
+
+#: cdarchivingdialog.cpp:533
+msgid ""
+"<p>Enter parameters which will be used when starting the burning application. "
+"Newer versions of K3b might need --nofork, older versions might not need it. "
+"(128 characters max.)."
+msgstr ""
+"<p>Indtast parametre som skal bruges når brændeprogrammet startes. Nyere "
+"udgaver  af K3b kan behøve --nofork, mens ældre versioner måske ikke behøver "
+"det (maksimalt 128 tegn)."
+
+#: cdarchivingdialog.cpp:540
+msgid "Advanced Burning Options"
+msgstr "Avancerede brændeindstillinger"
+
+#: cdarchivingdialog.cpp:548
+msgid "Media burning On-The-Fly"
+msgstr "On the fly-medieskrivning"
+
+#: cdarchivingdialog.cpp:550
+msgid ""
+"<p>This option uses the \"On-The-Fly\" media burning capability; this does not "
+"use a media image."
+msgstr ""
+"<p>Brug denne indstilling for at skrive til mediet \"on the fly\". "
+"Skrivemetoden anvender ikke noget filaftryk."
+
+#: cdarchivingdialog.cpp:554
+msgid "Check media"
+msgstr "Kontrollér medie"
+
+#: cdarchivingdialog.cpp:556
+msgid ""
+"<p>This option verifies the media after the burning process. You must use K3b "
+"release >= 0.10.0"
+msgstr ""
+"<p>Denne indstilling undersøger mediet efter en skrivning. Kræver K3b udgivelse "
+">= 0.10.0"
+
+#: cdarchivingdialog.cpp:560
+msgid "Start burning process automatically"
+msgstr "Start skriveprocessen automatisk"
+
+#: cdarchivingdialog.cpp:563
+msgid ""
+"<p>This option start automatically the burning process when K3b is loaded."
+msgstr ""
+"<p>Denne indstilling starter automatisk skriveprocessen når K3b er startet."
+
+#: cdarchivingdialog.cpp:623
+msgid "Total size: "
+msgstr "Total størrelse: "
+
+#: cdarchivingdialog.cpp:624
+msgid "<b>%1</b></font> / <b>%2</b>"
+msgstr "<b>%1</b></font> / <b>%2</b>"
+
+#: cdarchivingdialog.cpp:634
+msgid "You must selected at least one Album to archive."
+msgstr "Du skal vælge mindst et album for at arkivere."
+
+#: cdarchivingdialog.cpp:642
+msgid "K3b binary path is not valid. Please check it."
+msgstr "K3b kørbar sti er ugyldig. Tjek din installation."
+
+#: cdarchivingdialog.cpp:648
+msgid "Target media size is too big. Please change your album selection."
+msgstr "Det markerede er for stort til mediet. Ændr din albummarkering."
+
+#: plugin_cdarchiving.cpp:61
+msgid "Archive to CD/DVD..."
+msgstr "Arkivér til CD/DVD..."
+
+#: plugin_cdarchiving.cpp:126
+msgid "Archive to CD/DVD"
+msgstr "Arkivér til CD/DVD"
+
+#: plugin_cdarchiving.cpp:147
+msgid "Initialising..."
+msgstr "Initialiserer..."
+
+#: plugin_cdarchiving.cpp:154
+msgid "Making main HTML interface..."
+msgstr "Opretter HTML-grænseflade..."
+
+#: plugin_cdarchiving.cpp:160
+msgid "Making HTML pages for Album '%1'..."
+msgstr "Opretter HTML sider til album '%1'..."
+
+#: plugin_cdarchiving.cpp:166
+msgid "Making AutoRun interface..."
+msgstr "Opretter autorun grænseflade..."
+
+#: plugin_cdarchiving.cpp:172
+msgid "Creating thumbnail for '%1'..."
+msgstr "Opretter miniature for '%1'..."
+
+#: plugin_cdarchiving.cpp:178
+msgid "Making K3b project..."
+msgstr "Opretter K3b projekt..."
+
+#: plugin_cdarchiving.cpp:207
+msgid "Main HTML interface creation completed."
+msgstr "HTML-hovedgrænsefladeoprettelse udført."
+
+#: plugin_cdarchiving.cpp:214
+msgid "HTML page creation for Album '%1' completed."
+msgstr "HTML-sideoprettelse for album '%1' udført."
+
+#: plugin_cdarchiving.cpp:221
+msgid "Creating thumbnail for '%1' done."
+msgstr "Opretter miniature for '%1' udført."
+
+#: plugin_cdarchiving.cpp:228
+msgid "AutoRun interface creation completed."
+msgstr "Autorun grænsefladeoprettelse udført."
+
+#: plugin_cdarchiving.cpp:235
+msgid "K3b project creation completed."
+msgstr "K3b projektoprettelse udført."
+
+#: plugin_cdarchiving.cpp:253
+msgid "Failed to create thumbnail for '%1'"
+msgstr "Oprettelse af miniature for '%1' mislykkedes."
+
+#: plugin_cdarchiving.cpp:262
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "Oprettelse af HTMLgrænseflade mislykkedes: %1"
+
+#: plugin_cdarchiving.cpp:273
+msgid "Failed to create HTML pages for Album '%1'"
+msgstr "Oprettelse af HTML-sider til album '%1' mislykkedes."
+
+#: plugin_cdarchiving.cpp:285
+msgid "Failed to create K3b project."
+msgstr "K3b projektoprettelse mislykkedes."
+
+#: plugin_cdarchiving.cpp:327
+msgid "Starting K3b program..."
+msgstr "Starter K3b program..."
+
+#~ msgid "CD/DVD Archiving Handbook"
+#~ msgstr "Håndbog til CD/DVD-arkivering"

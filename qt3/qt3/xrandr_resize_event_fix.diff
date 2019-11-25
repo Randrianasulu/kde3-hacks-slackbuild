@@ -1,0 +1,67 @@
+From 6ff026570df6bf0d2988e5e94465fc8d19ef2133 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Thu, 24 May 2012 05:53:55 +0000
+Subject: Fix xrandr resize event failing on some systems
+
+---
+diff --git a/src/kernel/qapplication_x11.cpp b/src/kernel/qapplication_x11.cpp
+index 9f89c14..30220b4 100644
+--- a/src/kernel/qapplication_x11.cpp
++++ b/src/kernel/qapplication_x11.cpp
+@@ -3462,6 +3462,27 @@ int QApplication::x11ProcessEvent( XEvent* event )
+ 	return 0;
+     }
+ 
++#ifndef QT_NO_XRANDR
++    // XRandR doesn't care if Qt doesn't know about the widget, so handle XRandR stuff before the !widget check below
++    if (event->type == xrandr_eventbase + RRScreenChangeNotify
++	|| ( event->type == ConfigureNotify && event->xconfigure.window == QPaintDevice::x11AppRootWindow())) {
++	// update Xlib internals with the latest screen configuration
++	XRRUpdateConfiguration(event);
++
++	// update the size for desktop widget
++	int scr = XRRRootToScreen( appDpy, event->xany.window );
++	QWidget *w = desktop()->screen( scr );
++	QSize oldSize( w->size() );
++	w->crect.setWidth( DisplayWidth( appDpy, scr ) );
++        w->crect.setHeight( DisplayHeight( appDpy, scr ) );
++	if ( w->size() != oldSize ) {
++	    QResizeEvent e( w->size(), oldSize );
++	    QApplication::sendEvent( w, &e );
++	    emit desktop()->resized( scr );
++	}
++    }
++#endif // QT_NO_XRANDR
++
+     if ( !widget ) {				// don't know this windows
+ 	QWidget* popup = QApplication::activePopupWidget();
+ 	if ( popup ) {
+@@ -3512,26 +3533,6 @@ int QApplication::x11ProcessEvent( XEvent* event )
+     }
+ #endif
+ 
+-#ifndef QT_NO_XRANDR
+-    if (event->type == xrandr_eventbase + RRScreenChangeNotify
+-	|| ( event->type == ConfigureNotify && event->xconfigure.window == QPaintDevice::x11AppRootWindow())) {
+-	// update Xlib internals with the latest screen configuration
+-	XRRUpdateConfiguration(event);
+-
+-	// update the size for desktop widget
+-	int scr = XRRRootToScreen( appDpy, event->xany.window );
+-	QWidget *w = desktop()->screen( scr );
+-	QSize oldSize( w->size() );
+-	w->crect.setWidth( DisplayWidth( appDpy, scr ) );
+-        w->crect.setHeight( DisplayHeight( appDpy, scr ) );
+-	if ( w->size() != oldSize ) {
+-	    QResizeEvent e( w->size(), oldSize );
+-	    QApplication::sendEvent( w, &e );
+-	    emit desktop()->resized( scr );
+-	}
+-    }
+-#endif // QT_NO_XRANDR
+-
+     switch ( event->type ) {
+ 
+     case ButtonRelease:			// mouse event
+--
+cgit v0.9.0.2-52-g1de3

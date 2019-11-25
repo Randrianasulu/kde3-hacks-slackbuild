@@ -1,0 +1,18 @@
+Subject: Don't run executables such as desktop files and Wine .exe's
+From: wstephenson@suse.de
+Bug: 490696
+Patch-upstream: r951205
+Index: kmail/kmcommands.cpp
+===================================================================
+--- kmail/kmcommands.cpp	(revision 951204)
++++ kmail/kmcommands.cpp	(revision 951205)
+@@ -2414,7 +2414,8 @@ KMCommand::Result KMUrlClickedCommand::e
+         .arg( mUrl.prettyURL() ), QString::null, i18n("Execute"), KStdGuiItem::cancel() ) != KMessageBox::Yes)
+         return Canceled;
+     }
+-    (void) new KRun( mUrl );
++    KRun * runner = new KRun( mUrl );
++    runner->setRunExecutables( false );
+   }
+   else
+     return Failed;

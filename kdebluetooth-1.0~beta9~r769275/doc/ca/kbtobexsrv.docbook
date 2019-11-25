@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>Servidor d'enviament OBEX: Rebuda de fitxers</title>
+<para
+>La majoria de telèfons mòbils o PDA tenen habilitat el Bluetooth, el que us permetrà enviar fitxers des del mòbil al vostre ordinador. Tot i que pot ser més fàcil d'usar el <link linkend="components.kio_obex"
+>kioslave OBEX FTP</link
+> per a enviar els fitxers des del vostre telèfon cap al vostre ordinador, i per altra banda no tots els dispositius ho suporten. L'enviament d'objectes OBEX està suportat per la majoria de dispositius Bluetooth. </para>
+
+<sect2>
+<title
+>Usar el servidor d'enviament OBEX</title>
+<para
+>kbluetoothd gestiona el servidor d'enviament OBEX i s'iniciarà automàticament si està habilitat i algú intenta enviar-vos algun fitxer. Si us plau, feu una ullada a la documentació de kbluetoothd per a saber com <link linkend="components.kbluetoothd.serviceconfig"
+>des/habilitar serveis</link
+> (el servidor d'enviament OBEX apareix llistat com a <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Quan envieu un fitxer des del vostre mòbil cap al vostre ordinador, la icona de kbluetoothd en la safata del sistema es torna blava i mostra un petit missatge emergent. Per omissió (depenent de les vostres <link linkend="components.kbluetoothd.confirmation"
+>preferències per a les connexions entrants</link
+>) primer haureu d'acceptar la connexió, i a continuació la finestra principal d'enviament OBEX hauria d'aparèixer i iniciar la rebuda de fitxers. </para>
+<para
+>Els fitxers entrants es desen a <filename
+>/tmp</filename
+> i s'esborraran després que tanqueu el servidor d'enviament OBEX. Per a desar els fitxers, disposeu de dues opcions: </para>
+<itemizedlist>
+<listitem>
+<para
+>Feu clic a <guibutton
+>Bé</guibutton
+> per a desar tots els fitxers rebuts a una localització per omissió.</para>
+</listitem>
+<listitem>
+<para
+>Arrossegueu un o diversos fitxers a altres localitzacions. Això és especialment útil si voleu enviar fitxers per correu electrònic, atès que podeu arrossegar els fitxers directament a kmail sense desar-los primer en una localització temporal. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

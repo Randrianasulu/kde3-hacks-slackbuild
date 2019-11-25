@@ -1,0 +1,273 @@
+# translation of kipiplugin_htmlexport.po to
+#
+# Marek Laane <bald@starman.ee>, 2006-2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_htmlexport\n"
+"POT-Creation-Date: 2008-07-08 22:18+0200\n"
+"PO-Revision-Date: 2008-03-23 21:37+0300\n"
+"Last-Translator: Marek Laane <bald@starman.ee>\n"
+"Language-Team:  <kde-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.1\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Marek Laane"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "bald@starman.ee"
+
+#: generator.cpp:175
+msgid "Could not find theme in '%1'"
+msgstr "Teemat ei leitud asukohas '%1'"
+
+#: generator.cpp:182
+msgid "Copying theme"
+msgstr "Teema kopeerimine"
+
+#: generator.cpp:194
+msgid "Could not copy theme"
+msgstr "Teema kopeerimine nurjus"
+
+#: generator.cpp:203
+msgid "Could not open file '%1' for writing"
+msgstr "Pildi '%1' avamine kirjutamiseks nurjus"
+
+#: generator.cpp:207
+msgid "Could not save image to file '%1'"
+msgstr "Pildi salvestamine failina '%1' nurjus"
+
+#: generator.cpp:236
+msgid "Could not read image '%1'"
+msgstr "Pildi '%1' lugemine nurjus"
+
+#: generator.cpp:242
+msgid "Format of image '%1' is unknown"
+msgstr "Pildi '%1' vorming on tundmatu"
+
+#: generator.cpp:251
+msgid "Error loading image '%1'"
+msgstr "Viga pildi '%1' laadimisel"
+
+#: generator.cpp:287
+msgid "Could not save image '%1' to '%2'"
+msgstr "Pildi '%1' salvestamine asukohta '%2' nurjus"
+
+#: generator.cpp:305
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "Pildi '%1' pisipildi salvestamine asukohta '%2' nurjus"
+
+#: generator.cpp:329
+msgid "Could not create gallery.xml"
+msgstr "gallery.xml loomine nurjus"
+
+#: generator.cpp:340
+msgid "Generating files for \"%1\""
+msgstr "\"%1\" failide genereerimine"
+
+#: generator.cpp:372
+msgid "Previous"
+msgstr "Eelmine"
+
+#: generator.cpp:373
+msgid "Next"
+msgstr "Järgmine"
+
+#: generator.cpp:374
+msgid "Collection List"
+msgstr "Kogu nimekiri"
+
+#: generator.cpp:375
+msgid "Original Image"
+msgstr "Originaalpilt"
+
+#: generator.cpp:376
+msgid "Go Up"
+msgstr "Liigu üles"
+
+#: generator.cpp:403
+msgid "Generating HTML files"
+msgstr "HTML-failide genereerimine"
+
+#: generator.cpp:409
+msgid "Could not load XSL file '%1'"
+msgstr "XSL-faili '%1' laadimine nurjus"
+
+#: generator.cpp:415
+msgid "Could not load XML file '%1'"
+msgstr "XML-faili '%1' laadimine nurjtus"
+
+#: generator.cpp:447
+msgid "Error processing XML file"
+msgstr "Viga XML-faili töötlemisel"
+
+#: generator.cpp:454
+msgid "Could not open '%1' for writing"
+msgstr "'%1' avamine kirjutamiseks nurjus"
+
+#: generator.cpp:472
+msgid "Could not create folder '%1' in '%2'"
+msgstr "Kataloogi '%1' loomine asukohas '%2' nurjus"
+
+#: plugin.cpp:67
+msgid "HTML Gallery..."
+msgstr "HTML-galerii..."
+
+#: plugin.cpp:85
+msgid "Generating gallery..."
+msgstr "Galerii genereerimine..."
+
+#. i18n: file imagesettingspage.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "ImageSettingsPage"
+msgstr "ImageSettingsPage"
+
+#. i18n: file imagesettingspage.ui line 35
+#: rc.cpp:6
+#, no-c-format
+msgid "Full Image"
+msgstr "Täielik pilt"
+
+#. i18n: file imagesettingspage.ui line 99
+#: rc.cpp:9
+#, no-c-format
+msgid "Thumbnail"
+msgstr "Pisipilt"
+
+#. i18n: file imagesettingspage.ui line 158
+#: rc.cpp:12
+#, no-c-format
+msgid "Save image"
+msgstr "Pildi salvestamine"
+
+#. i18n: file imagesettingspage.ui line 186
+#: rc.cpp:15
+#, no-c-format
+msgid "Max size:"
+msgstr "Maks. suurus:"
+
+#. i18n: file imagesettingspage.ui line 197
+#: rc.cpp:18 rc.cpp:39
+#, no-c-format
+msgid "Format:"
+msgstr "Vorming:"
+
+#. i18n: file imagesettingspage.ui line 214
+#: rc.cpp:21 rc.cpp:42
+#, no-c-format
+msgid "JPEG"
+msgstr "JPEG"
+
+#. i18n: file imagesettingspage.ui line 219
+#: rc.cpp:24 rc.cpp:45
+#, no-c-format
+msgid "PNG"
+msgstr "PNG"
+
+#. i18n: file imagesettingspage.ui line 231
+#: rc.cpp:27 rc.cpp:36
+#, no-c-format
+msgid "Quality:"
+msgstr "Kvaliteet:"
+
+#. i18n: file imagesettingspage.ui line 273
+#: rc.cpp:30
+#, no-c-format
+msgid "Include full-size original images for download"
+msgstr "Täissuuruses "
+
+#. i18n: file imagesettingspage.ui line 320
+#: rc.cpp:33
+#, no-c-format
+msgid "Use original image"
+msgstr "Originaalpildi kasutamine"
+
+#. i18n: file imagesettingspage.ui line 431
+#: rc.cpp:48
+#, no-c-format
+msgid "Size:"
+msgstr "Suurus:"
+
+#. i18n: file outputpage.ui line 35
+#: rc.cpp:51
+#, no-c-format
+msgid "Destination folder:"
+msgstr "Sihtkataloog:"
+
+#. i18n: file outputpage.ui line 53
+#: rc.cpp:54
+#, no-c-format
+msgid "Open in browser"
+msgstr "Ava brauseris"
+
+#. i18n: file themeparameterspage.ui line 16
+#: rc.cpp:57
+#, no-c-format
+msgid "Form1"
+msgstr "Form1"
+
+#. i18n: file themeparameterspage.ui line 38
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+"Sellel kaardil saab muuta mõningaid teema parameetreid. Parameetrid erinevad "
+"vastavalt teemale."
+
+#: wizard.cpp:139
+msgid ""
+"_: '%1' is a label for a theme parameter\n"
+"%1:"
+msgstr "%1:"
+
+#: wizard.cpp:175
+msgid "HTML Export"
+msgstr "HTML eksport"
+
+#: wizard.cpp:178
+msgid "A KIPI plugin to export image collections to HTML pages"
+msgstr "KIPI plugin pildikogu eksportimiseks HTML-leheküljena"
+
+#: wizard.cpp:181
+msgid "Author and Maintainer"
+msgstr "Autor ja hooldaja"
+
+#: wizard.cpp:187
+msgid "Plugin Handbook"
+msgstr "Plugina käsiraamat"
+
+#: wizard.cpp:191
+msgid "Collection Selection"
+msgstr "Kogu Valik"
+
+#: wizard.cpp:195
+msgid "Theme"
+msgstr "Teema"
+
+#: wizard.cpp:200
+msgid "Theme Parameters"
+msgstr "Teema parameetrid"
+
+#: wizard.cpp:203
+msgid "Image Settings"
+msgstr "Pildi seadistused"
+
+#: wizard.cpp:207
+msgid "Output"
+msgstr "Väljund"
+
+#: wizard.cpp:250
+#, c-format
+msgid "Author: %1"
+msgstr "Autor: %1"

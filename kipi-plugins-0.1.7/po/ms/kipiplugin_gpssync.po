@@ -1,0 +1,760 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_gpssync\n"
+"POT-Creation-Date: 2008-11-18 08:53+0100\n"
+"PO-Revision-Date: 2007-09-26 18:02+0800\n"
+"Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
+"Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Sharuzzaman Ahmat Raslan"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "<sharuzzaman@myrealbox.com>"
+
+#: gpseditdialog.cpp:88
+#, fuzzy
+msgid "%1 - Edit Geographical Coordinates"
+msgstr "Tidak dapat Edit"
+
+#: gpseditdialog.cpp:98
+msgid ""
+"<p>Use the map on the right to select the location where the picture have been "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates."
+"<p>"
+msgstr ""
+
+#: gpseditdialog.cpp:102
+#, fuzzy
+msgid "Altitude:"
+msgstr "Altitud"
+
+#: gpseditdialog.cpp:103
+#, fuzzy
+msgid "Latitude:"
+msgstr "Latitud"
+
+#: gpseditdialog.cpp:104
+#, fuzzy
+msgid "Longitude:"
+msgstr "Longitud"
+
+#: gpseditdialog.cpp:118
+msgid "Goto Location"
+msgstr ""
+
+#: gpseditdialog.cpp:144 gpssyncdialog.cpp:248 gpssyncdialog.cpp:313
+#: gpssyncdialog.cpp:321 gpssyncdialog.cpp:443 gpssyncdialog.cpp:453
+#: gpssyncdialog.cpp:462 gpssyncdialog.cpp:494
+#, fuzzy
+msgid "GPS Sync"
+msgstr "Sync Me_negak:"
+
+#: gpseditdialog.cpp:147
+msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgstr ""
+
+#: gpseditdialog.cpp:150 gpssyncdialog.cpp:254
+#, fuzzy
+msgid "Author and Maintainer"
+msgstr "Penulis dan penyelenggara"
+
+#: gpseditdialog.cpp:155 gpssyncdialog.cpp:259 kmlexportconfig.cpp:292
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Sync Meng_ufuk:"
+
+#: gpseditdialog.cpp:306
+#, fuzzy
+msgid "Altitude value is not correct!"
+msgstr "Nilai diminta adalah bukan integer"
+
+#: gpseditdialog.cpp:307 gpseditdialog.cpp:315 gpseditdialog.cpp:323
+#: plugin_gpssync.cpp:251
+#, fuzzy
+msgid "Edit Geographical Coordinates"
+msgstr "Tidak dapat Edit"
+
+#: gpseditdialog.cpp:314
+#, fuzzy
+msgid "Latitude value is not correct!"
+msgstr "Nilai diminta adalah bukan integer"
+
+#: gpseditdialog.cpp:322
+#, fuzzy
+msgid "Longitude value is not correct!"
+msgstr "Nilai diminta adalah bukan integer"
+
+#: gpslistviewitem.cpp:108
+msgid "Interpolated"
+msgstr ""
+
+#: gpslistviewitem.cpp:112
+#, fuzzy
+msgid "Added"
+msgstr "(telah ditambah %s)"
+
+#: gpslistviewitem.cpp:114
+#, fuzzy
+msgid "Found"
+msgstr "%s tidak dijumpai"
+
+#: gpslistviewitem.cpp:132
+#, fuzzy
+msgid "Deleted!"
+msgstr "  %d %d%% dipadam"
+
+#: gpslistviewitem.cpp:145
+#, fuzzy
+msgid "Not available"
+msgstr "(Tiada)"
+
+#: gpssyncdialog.cpp:107 plugin_gpssync.cpp:73
+msgid "Geolocation"
+msgstr ""
+
+#: gpssyncdialog.cpp:114
+msgid "Correlate"
+msgstr ""
+
+#: gpssyncdialog.cpp:115
+msgid "Edit..."
+msgstr "Sunting..."
+
+#: gpssyncdialog.cpp:118
+msgid ""
+"Correlate in time and interpolate distance of data from GPX file with all "
+"images on the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:119
+msgid "Manually edit GPS coordinates of selected images from the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:120
+msgid "Remove GPS coordinates of selected images from the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:131
+msgid "Thumbnail"
+msgstr ""
+
+#: gpssyncdialog.cpp:132
+#, fuzzy
+msgid "File Name"
+msgstr "Nama fail"
+
+#: gpssyncdialog.cpp:133
+msgid "Camera time stamp"
+msgstr ""
+
+#: gpssyncdialog.cpp:134
+msgid "Latitude"
+msgstr "Latitud"
+
+#: gpssyncdialog.cpp:135
+msgid "Longitude"
+msgstr "Longitud"
+
+#: gpssyncdialog.cpp:136
+msgid "Altitude"
+msgstr "Altitud"
+
+#: gpssyncdialog.cpp:137
+msgid "Status"
+msgstr "Status"
+
+#: gpssyncdialog.cpp:147
+#, fuzzy
+msgid "Settings"
+msgstr "Setting"
+
+#: gpssyncdialog.cpp:151
+#, fuzzy
+msgid "Load GPX File..."
+msgstr "Tidak dapat memuatkan fail!"
+
+#: gpssyncdialog.cpp:153
+#, fuzzy
+msgid "Current GPX file:"
+msgstr "Tambah pada fail semasa"
+
+#: gpssyncdialog.cpp:154
+#, fuzzy
+msgid "No GPX file"
+msgstr "Tiada fail sedemikian"
+
+#: gpssyncdialog.cpp:158
+#, fuzzy
+msgid "Max. time gap (sec.):"
+msgstr "Baki masa: %s minit"
+
+#: gpssyncdialog.cpp:160
+msgid ""
+"<p>Sets the maximum difference in seconds from a GPS track point to the image "
+"time to be matched. If the time difference exceeds this setting, no match will "
+"be attempted."
+msgstr ""
+
+#: gpssyncdialog.cpp:164
+msgid "Time zone:"
+msgstr "Zon waktu:"
+
+#: gpssyncdialog.cpp:210
+msgid ""
+"<p>Sets the time zone the camera was set to during photo shooting, so that the "
+"time stamps of the images can be converted to GMT to match the GPS time "
+"reference.\n"
+"Note: positive offsets count eastwards from zero longitude (GMT), they are "
+"'ahead of time'."
+msgstr ""
+
+#: gpssyncdialog.cpp:216
+msgid "Interpolate"
+msgstr ""
+
+#: gpssyncdialog.cpp:217
+msgid ""
+"<p>Set this option to interpolate GPS track points which are not closely "
+"matched to the GPX data file."
+msgstr ""
+
+#: gpssyncdialog.cpp:220
+#, fuzzy
+msgid "Difference in min.:"
+msgstr "Integer: Min %s | Maks %s"
+
+#: gpssyncdialog.cpp:222
+msgid ""
+"<p>Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
+"file points to image time data."
+msgstr ""
+
+#: gpssyncdialog.cpp:251
+msgid "A plugin to synchronize images' metadata with a GPS device"
+msgstr ""
+
+#: gpssyncdialog.cpp:302 kmlexportconfig.cpp:193
+#, fuzzy
+msgid "%1|GPS Exchange Format"
+msgstr "Format sebagai Swap?"
+
+#: gpssyncdialog.cpp:303 kmlexportconfig.cpp:194
+#, fuzzy
+msgid "Select GPX File to Load"
+msgstr "Pilih fail eksport NFS untuk memuatkan banyak"
+
+#: gpssyncdialog.cpp:312 kmlexport.cpp:350
+#, fuzzy
+msgid "Cannot parse %1 GPX file!"
+msgstr "Tidak dapat membuka fail imej %s"
+
+#: gpssyncdialog.cpp:320 kmlexport.cpp:356
+msgid "The %1 GPX file do not have a date-time track to use!"
+msgstr ""
+
+#: gpssyncdialog.cpp:327
+#, fuzzy, c-format
+msgid "Points parsed: %1"
+msgstr "Titik Mount"
+
+#: gpssyncdialog.cpp:371
+#, c-format
+msgid ""
+"_n: 1 image from the list is not updated.\n"
+"%n images from the list are not updated."
+msgstr ""
+
+#: gpssyncdialog.cpp:374
+msgid ""
+"<p>%1\n"
+"Do you really want to close this window without applying changes?</p>"
+msgstr ""
+
+#: gpssyncdialog.cpp:442
+msgid "Cannot find pictures to correlate with GPX file data."
+msgstr ""
+
+#: gpssyncdialog.cpp:448
+#, c-format
+msgid ""
+"_n: GPS data of 1 image have been updated on the list using the GPX data file.\n"
+"GPS data of %n images have been updated on the list using the GPX data file."
+msgstr ""
+
+#: gpssyncdialog.cpp:451
+msgid "Press Apply button to update images metadata."
+msgstr ""
+
+#: gpssyncdialog.cpp:461
+msgid ""
+"Please, select at least one image from the list to edit GPS coordinates "
+"manually."
+msgstr ""
+
+#: gpssyncdialog.cpp:493
+msgid ""
+"Please, select at least one image from the list to remove GPS coordinates."
+msgstr ""
+
+#: kmlexport.cpp:63
+#, fuzzy
+msgid "Generating KML file..."
+msgstr "Pemindahan Fail (FTP)"
+
+#: kmlexport.cpp:83
+#, fuzzy, c-format
+msgid "Could not create '%1"
+msgstr ""
+"Tidak dapat mencipta\n"
+"direktori %s!"
+
+#: kmlexport.cpp:167
+#, fuzzy
+msgid "Could not read image '%1'"
+msgstr "Tidak dapat membaca fail %s."
+
+#: kmlexport.cpp:174
+#, fuzzy
+msgid "Format of image '%1' is unknown"
+msgstr "Algoritma hash tidak diketahui."
+
+#: kmlexport.cpp:184
+#, fuzzy
+msgid "Error loading image '%1'"
+msgstr "ralat memuatkan modul"
+
+#: kmlexport.cpp:224
+#, fuzzy
+msgid "Could not save image '%1' to '%2'"
+msgstr "Tidak dapat menulis ke fail %s."
+
+#: kmlexport.cpp:304
+#, fuzzy
+msgid "Creation of placemark '%1'"
+msgstr "Penciptaan Cakera But"
+
+#: kmlexport.cpp:311
+msgid "Could not save icon for image '%1' to '%2'"
+msgstr ""
+
+#: kmlexport.cpp:341
+#, fuzzy
+msgid "No GPX file Chosen!"
+msgstr ""
+"%s: fail `%s' tidak mempunyai simbol\n"
+
+#: kmlexport.cpp:363
+#, fuzzy
+msgid "Tracks"
+msgstr "Ke Hadapan 5 trek"
+
+#: kmlexport.cpp:443
+#, fuzzy
+msgid "No position data for '%1'"
+msgstr "Tiada data dijumpai utk nod terpilih"
+
+#: kmlexport.cpp:455
+#, c-format
+msgid ""
+"_n: No position data for 1 picture\n"
+"No position data for %n pictures"
+msgstr ""
+
+#: kmlexport.cpp:469
+#, fuzzy
+msgid "Move to final directory"
+msgstr "Gagal membaca direktori %s: %s"
+
+#: kmlexportconfig.cpp:66 kmlexportconfig.cpp:281
+#, fuzzy
+msgid "KML Export"
+msgstr "Direktori Eksport"
+
+#: kmlexportconfig.cpp:77
+#, fuzzy
+msgid "Target Preferences"
+msgstr "Lebih Keutamaan"
+
+#: kmlexportconfig.cpp:82
+#, fuzzy
+msgid "Target Type"
+msgstr "Jenis Pemasangan"
+
+#: kmlexportconfig.cpp:86
+msgid "&Local or web target used by GoogleEarth"
+msgstr ""
+
+#: kmlexportconfig.cpp:91
+msgid "Web target used by GoogleMap"
+msgstr ""
+
+#: kmlexportconfig.cpp:95
+msgid ""
+"When using GoogleMap, all image must have complete URL, icons are squared and "
+"when drawing a track, only linetrack is exported"
+msgstr ""
+
+#: kmlexportconfig.cpp:101
+#, fuzzy
+msgid "Picture altitude"
+msgstr "Padam hasil kerja?"
+
+#: kmlexportconfig.cpp:105 kmlexportconfig.cpp:256
+#, fuzzy
+msgid "clamp to ground"
+msgstr "_Simpan ke cakera liut"
+
+#: kmlexportconfig.cpp:106 kmlexportconfig.cpp:257
+#, fuzzy
+msgid "relative to ground"
+msgstr "Path relatif ke sintesis/hdlist:"
+
+#: kmlexportconfig.cpp:107 kmlexportconfig.cpp:258
+#, fuzzy
+msgid "absolute"
+msgstr "Multak"
+
+#: kmlexportconfig.cpp:108
+msgid ""
+"<p>Specifies how pictures are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+
+#: kmlexportconfig.cpp:119
+#, fuzzy
+msgid "Destination directory"
+msgstr "Direktori Default"
+
+#: kmlexportconfig.cpp:125
+msgid "Select a directory to save the kml file and pictures"
+msgstr ""
+
+#: kmlexportconfig.cpp:129
+#, fuzzy
+msgid "Destination URL"
+msgstr "URL Autokonfigurasi:"
+
+#: kmlexportconfig.cpp:136
+msgid "File name"
+msgstr "Nama fail"
+
+#: kmlexportconfig.cpp:147
+msgid "Sizes"
+msgstr ""
+
+#: kmlexportconfig.cpp:152
+#, fuzzy
+msgid "Icon size"
+msgstr "_Saiz (MB):"
+
+#: kmlexportconfig.cpp:163
+#, fuzzy
+msgid "Image size"
+msgstr "_Saiz (MB):"
+
+#: kmlexportconfig.cpp:178
+#, fuzzy
+msgid "GPX Tracks"
+msgstr "Ke Hadapan 5 trek"
+
+#: kmlexportconfig.cpp:184
+#, fuzzy
+msgid "Draw GPX track"
+msgstr "OpenOffice.org Draw"
+
+#: kmlexportconfig.cpp:188
+#, fuzzy
+msgid "GPX file"
+msgstr "Menyalin Fail"
+
+#: kmlexportconfig.cpp:197
+#, fuzzy
+msgid "Time zone"
+msgstr "Zon _Waktu"
+
+#: kmlexportconfig.cpp:200
+#, fuzzy
+msgid "GMT-12:00"
+msgstr "Etc/GMT-12"
+
+#: kmlexportconfig.cpp:201
+#, fuzzy
+msgid "GMT-11:00"
+msgstr "Etc/GMT-11"
+
+#: kmlexportconfig.cpp:202
+#, fuzzy
+msgid "GMT-10:00"
+msgstr "Etc/GMT-10"
+
+#: kmlexportconfig.cpp:203
+#, fuzzy
+msgid "GMT-09:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:204
+#, fuzzy
+msgid "GMT-08:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:205
+#, fuzzy
+msgid "GMT-07:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:206
+#, fuzzy
+msgid "GMT-06:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:207
+#, fuzzy
+msgid "GMT-05:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:208
+#, fuzzy
+msgid "GMT-04:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:209
+#, fuzzy
+msgid "GMT-03:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:210
+#, fuzzy
+msgid "GMT-02:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:211
+#, fuzzy
+msgid "GMT-01:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:212
+#, fuzzy
+msgid "GMT"
+msgstr "GMT"
+
+#: kmlexportconfig.cpp:213
+#, fuzzy
+msgid "GMT+01:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:214
+#, fuzzy
+msgid "GMT+02:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:215
+#, fuzzy
+msgid "GMT+03:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:216
+#, fuzzy
+msgid "GMT+04:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:217
+#, fuzzy
+msgid "GMT+05:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:218
+#, fuzzy
+msgid "GMT+06:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:219
+#, fuzzy
+msgid "GMT+07:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:220
+#, fuzzy
+msgid "GMT+08:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:221
+#, fuzzy
+msgid "GMT+09:00"
+msgstr "00:16:3e:"
+
+#: kmlexportconfig.cpp:222
+#, fuzzy
+msgid "GMT+10:00"
+msgstr "Etc/GMT-10"
+
+#: kmlexportconfig.cpp:223
+#, fuzzy
+msgid "GMT+11:00"
+msgstr "Etc/GMT-11"
+
+#: kmlexportconfig.cpp:224
+#, fuzzy
+msgid "GMT+12:00"
+msgstr "Etc/GMT-12"
+
+#: kmlexportconfig.cpp:225
+#, fuzzy
+msgid "GMT+13:00"
+msgstr "Etc/GMT-13"
+
+#: kmlexportconfig.cpp:226
+#, fuzzy
+msgid "GMT+14:00"
+msgstr "Etc/GMT-14"
+
+#: kmlexportconfig.cpp:227
+msgid ""
+"<p>Sets the time zone of the camera during picture shooting, so that the time "
+"stamps of the GPS can be converted to match the local time"
+msgstr ""
+
+#: kmlexportconfig.cpp:232
+#, fuzzy
+msgid "Track width"
+msgstr "lebar tidak sah: `%s'"
+
+#: kmlexportconfig.cpp:239
+#, fuzzy
+msgid "Track color"
+msgstr "Kedalaman _Warna:"
+
+#: kmlexportconfig.cpp:248
+msgid "Opacity:"
+msgstr ""
+
+#: kmlexportconfig.cpp:252
+#, fuzzy
+msgid "Track altitude"
+msgstr "Trek Seterusnya"
+
+#: kmlexportconfig.cpp:259
+msgid ""
+"<p>Specifies how the points are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+
+#: kmlexportconfig.cpp:284
+msgid "A Kipi plugin for kml exporting"
+msgstr ""
+
+#: kmlexportconfig.cpp:287
+msgid "Author"
+msgstr "Pengarang"
+
+#: kmlgpsdataparser.cpp:66
+#, fuzzy
+msgid "Track"
+msgstr "Trek Seterusnya"
+
+#: kmlgpsdataparser.cpp:95
+#, fuzzy
+msgid "Points"
+msgstr "Titik Mount"
+
+#: kmlgpsdataparser.cpp:105
+#, fuzzy
+msgid "Point"
+msgstr "titik 1"
+
+#: plugin_gpssync.cpp:78
+msgid "Correlator..."
+msgstr ""
+
+#: plugin_gpssync.cpp:86
+#, fuzzy
+msgid "Edit Coordinates..."
+msgstr "Kordinat Bulan"
+
+#: plugin_gpssync.cpp:94
+#, fuzzy
+msgid "Remove Coordinates..."
+msgstr "Kordinat Bulan"
+
+#: plugin_gpssync.cpp:105
+#, fuzzy
+msgid "KML Export..."
+msgstr "Direktori Eksport"
+
+#: plugin_gpssync.cpp:139
+msgid ""
+"<qt>"
+"<p>Unable to find the gpsbabel executable:"
+"<br> This program is required by this plugin to support GPS data file decoding. "
+"Please install gpsbabel as a package from your distributor or <a href=\"%1\">"
+"download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %2 is required by this plugin.</p></qt>"
+msgstr ""
+
+#: plugin_gpssync.cpp:156
+msgid ""
+"<qt>"
+"<p>gpsbabel executable is not up to date:"
+"<br> The version %1 of gpsbabel have been found on your computer. This version "
+"is too old to run properly with this plugin. Please update gpsbabel as a "
+"package from your distributor or <a href=\"%2\">download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %3 is required by this plugin</p></qt>"
+msgstr ""
+
+#: plugin_gpssync.cpp:249
+msgid "Unable to save geographical coordinates into:"
+msgstr ""
+
+#: plugin_gpssync.cpp:265
+msgid ""
+"Geographical coordinates will be definitively removed from all selected "
+"images.\n"
+"Do you want to continue ?"
+msgstr ""
+
+#: plugin_gpssync.cpp:267 plugin_gpssync.cpp:302
+#, fuzzy
+msgid "Remove Geographical Coordinates"
+msgstr ""
+"gagal untuk membuang %s: %s\n"
+
+#: plugin_gpssync.cpp:300
+msgid "Unable to remove geographical coordinates from:"
+msgstr ""
+
+#: plugin_gpssync.cpp:317
+msgid "KMLExport"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Read only"
+#~ msgstr "Baca-Saja"
+
+#, fuzzy
+#~ msgid "KMLExport Handbook"
+#~ msgstr "Buku panduan Digikam"
+
+#, fuzzy
+#~ msgid "Date Taken"
+#~ msgstr "Tarikh & Masa"

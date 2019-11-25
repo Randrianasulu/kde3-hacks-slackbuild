@@ -1,0 +1,793 @@
+# translation of kipiplugin_mpegencoder.po to Türkçe
+# translation of kipiplugin_mpegencoder.po to
+# Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
+#
+# Görkem Çetin <gorkem@kde.org>, 2004.
+# İsmail Şimşek <simsek@kde.org.tr>, 2005.
+# Engin Çağatay <engincagatay@yahoo.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_mpegencoder\n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2006-10-29 17:01+0200\n"
+"Last-Translator: Engin Çağatay <engincagatay@yahoo.com>\n"
+"Language-Team: Türkçe <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "İsmail Şimşek"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simsek@kde.org.tr"
+
+#: checkbinprog.cpp:71
+msgid ""
+"Your 'ImageMagick' binary program path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"'ImageMagick' program yolu boş görünüyor.\n"
+"Öntanımlı değer ayarlanıyor. Seçenek ayarlarına bakınız."
+
+#: checkbinprog.cpp:77
+msgid ""
+"Your 'MjpegTools' binary programs path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"'MjpegTools' program yolu boş görünüyor.\n"
+"Öntanımlı değer ayarlanıyor. Seçenek ayarlarına bakınız."
+
+#: checkbinprog.cpp:86
+msgid ""
+"Cannot find 'montage' binary program from ImageMagick package. Please install "
+"it."
+msgstr "ImageMagick paketinden 'montage' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:89
+msgid ""
+"Cannot find 'composite' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"ImageMagick paketinden 'composite' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:92
+msgid ""
+"Cannot find 'convert' binary program from ImageMagick package. Please install "
+"it."
+msgstr "ImageMagick paketinden 'convert' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:95
+msgid ""
+"Cannot find 'identify' binary program from ImageMagick package. Please install "
+"it."
+msgstr "ImageMagick paketinden 'identify' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:100
+msgid ""
+"Cannot find 'ppmtoy4m' binary program from MjpegTools package. Please install "
+"it."
+msgstr "MjpegTools paketinden 'ppmtoy4m' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:103
+msgid ""
+"Cannot find 'yuvscaler' binary program from MjpegTools package. Please install "
+"it."
+msgstr "MjpegTools paketinden 'yuvscaler' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:106
+msgid ""
+"Cannot find 'mpeg2enc' binary program from MjpegTools package. Please install "
+"it."
+msgstr "MjpegTools paketinden 'mpeg2enc' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:109
+msgid ""
+"Cannot find 'mplex' binary program from MjpegTools package. Please install it."
+msgstr "MjpegTools paketinden 'mplex' programı bulunamıyor. Lütfenkurunuz."
+
+#: checkbinprog.cpp:113
+msgid ""
+"Cannot find 'mp2enc' binary program from MjpegTools package. Please install "
+"it.\n"
+"Audio capabilities will be disabled."
+msgstr ""
+"MjpegTools paketinden 'mp2enc' programı bulunamıyor. Lütfenkurunuz.\n"
+"Ses yetenekleri devre dışı bırakılacak."
+
+#: checkbinprog.cpp:120
+msgid ""
+"\n"
+"Check your installation and this plugin's options settings.\n"
+"\n"
+"Visit these URLs for more information:\n"
+"ImageMagick package: http://www.imagemagick.org/\n"
+"MjpegTools package: http://mjpeg.sourceforge.net/"
+msgstr ""
+"\n"
+"Kurulumunuzu ve bu eklentinin seçenek ayarlarını kontrol ediniz.\n"
+"\n"
+"Daha fazla bilgi için şu adreslere bakınız:\n"
+"ImageMagick paketi: http://www.imagemagick.org/\n"
+"MjpegTools paketi: http://mjpeg.sourceforge.net/"
+
+#. i18n: file kimg2mpgbase.ui line 437
+#: kimg2mpg.cpp:192 rc.cpp:82
+#, no-c-format
+msgid "none"
+msgstr "hiçbiri"
+
+#: kimg2mpg.cpp:246
+msgid "MPEG Slideshow"
+msgstr "MPEG Slayt Gösterisi"
+
+#: kimg2mpg.cpp:249
+msgid "A Kipi plugin for encoding images to an MPEG file."
+msgstr "MPEG dosyası kodlamak için bir KİPİ eklentisi."
+
+#: kimg2mpg.cpp:252
+msgid "Author"
+msgstr "Yazar"
+
+#: kimg2mpg.cpp:255 kimg2mpg.cpp:258
+msgid "Maintainer"
+msgstr ""
+
+#: kimg2mpg.cpp:263
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "MPEG Slayt Gösterisi El Kitabı"
+
+#: kimg2mpg.cpp:312
+msgid "Select MPEG Output File"
+msgstr "MPEG Çıktı Dosyası Seç"
+
+#: kimg2mpg.cpp:329
+msgid "Select Audio Input File"
+msgstr "Ses Girdi Dosyası Seç"
+
+#: kimg2mpg.cpp:383
+msgid "You can only move up one image file at once."
+msgstr "Bir kerede sadece bir resim dosyasını yukarıya taşıyabilirsiniz."
+
+#: kimg2mpg.cpp:436
+#, c-format
+msgid "Image no. %1"
+msgstr "Resim no. %1"
+
+#: kimg2mpg.cpp:472
+msgid "You can only move down one image file at once."
+msgstr "Bir kerede sadece bir resim dosyasını aşağıya taşıyabilirsiniz."
+
+#: kimg2mpg.cpp:517
+msgid ""
+"Do you really abort this encoding process ?\n"
+"\n"
+"Warning: all work so-far will be lost."
+msgstr ""
+"Gerçekten kodlama işleminden çıkmak istiyor musunuz?\n"
+"\n"
+"Uyarı: yapılan tüm işlemler kaybolacak."
+
+#: kimg2mpg.cpp:530
+msgid ""
+"Default chroma mode option works only with Mjpegtools version < 1.6.3\n"
+msgstr ""
+
+#: kimg2mpg.cpp:531
+msgid "Check your Mjpegtools version"
+msgstr ""
+
+#: kimg2mpg.cpp:533
+msgid "KIPImpegencoderChromaWarning"
+msgstr ""
+
+#: kimg2mpg.cpp:553
+msgid "You must specify an existing audio file."
+msgstr "Mevcut bir ses dosyası belirtmelisiniz."
+
+#: kimg2mpg.cpp:561
+msgid "You must specify an MPEG output file name."
+msgstr "MPEG çıktı dosya adı belirlemelisiniz."
+
+#: kimg2mpg.cpp:568
+msgid "You must specify a writable path for your output file."
+msgstr "Çıktı dosyası için yazılabilir bir konum belirtmelisiniz."
+
+#: kimg2mpg.cpp:574
+msgid "You must specify some input images files in the portfolio."
+msgstr "Arşivinizde bazı resim dosyası girdileri belirlemelisiniz."
+
+#: kimg2mpg.cpp:580
+msgid ""
+"The output MPEG file '%1' already exists.\n"
+"Do you want overwrite this file?"
+msgstr ""
+"MPEG çıktı dosyası %1 zaten var.\n"
+"Üzerine yazmak istiyor musunuz?"
+
+#: kimg2mpg.cpp:587
+msgid "A&bort"
+msgstr "&Çık"
+
+#: kimg2mpg.cpp:588
+msgid ""
+"Abort the portfolio MPEG encoding. Warning: all work so-far will be lost...."
+msgstr "MPEG kodlamadan çık. Uyarı: yapılan tüm işlemler kaybolacak...."
+
+#: kimg2mpg.cpp:622
+msgid ""
+"THE COMMAND LINE IS :\n"
+"\n"
+msgstr ""
+"KOMUT SATIRI :\n"
+"\n"
+
+#: kimg2mpg.cpp:691
+msgid "Cannot access to file %1, please check the path is right."
+msgstr ""
+
+#: kimg2mpg.cpp:711
+msgid "Cannot start 'images2mpg' bash script : fork failed."
+msgstr "'images2mpg' kabuk skripti başlatılamadı : işlem başarılamadı."
+
+#: kimg2mpg.cpp:804
+msgid "%1 image [%2]"
+msgstr "%1 resim [%2]"
+
+#: kimg2mpg.cpp:806
+msgid "%1 images [%2]"
+msgstr "%1 resim [%2]"
+
+#: kimg2mpg.cpp:842
+msgid "Encoding image file [%1/%2]..."
+msgstr "Resim dosyası kodlanıyor [%1/%2]..."
+
+#: kimg2mpg.cpp:857
+msgid "Initialising..."
+msgstr "Başlatılıyor..."
+
+#: kimg2mpg.cpp:861
+msgid "Merging MPEG flux..."
+msgstr "MPEG akışı birleştiriliyor..."
+
+#: kimg2mpg.cpp:867
+msgid "Encoding audio file..."
+msgstr "Ses dosyası kodlanıyor..."
+
+#: kimg2mpg.cpp:882
+msgid ""
+"The 'images2mpg' script has returned an error during the MPEG encoding;\n"
+"the process has been aborted.\n"
+"\n"
+"Send a mail to the author..."
+msgstr ""
+"MPEG kodlaması sırasında 'images2mpg' skripti hata verdi;\n"
+"işlem durduruldu.\n"
+"\n"
+"Yazara bir eposta gönderiniz..."
+
+#: kimg2mpg.cpp:885
+msgid "'images2mpg' Script-Execution Problem"
+msgstr "'images2mpg' Skript Başlatma Problemi"
+
+#: kimg2mpg.cpp:887
+msgid "Show Debugging Output"
+msgstr "Derleme Çıktısını Göster"
+
+#: kimg2mpg.cpp:891
+msgid ""
+"\n"
+"EXIT STATUS : error during encoding process."
+msgstr ""
+"\n"
+"ÇIKIŞ DURUMU: kodlama işleminde hata."
+
+#: kimg2mpg.cpp:912
+msgid "Encoding terminated..."
+msgstr "Kodlama kesildi..."
+
+#: kimg2mpg.cpp:914
+#, c-format
+msgid ""
+"The encoding process has terminated...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kodlama işlemi kesildi...\n"
+"\n"
+"Kodlama süresi:%1"
+
+#: kimg2mpg.cpp:916
+msgid "'images2mpg' Script Execution Terminated"
+msgstr "'image2mpg' Skript Çalıştırma Kesildi"
+
+#: kimg2mpg.cpp:918 kimg2mpg.cpp:936
+msgid "Show Process Messages"
+msgstr "İşlem Mesajlarını Göster"
+
+#: kimg2mpg.cpp:923
+msgid ""
+"\n"
+"EXIT STATUS : encoding process finished successfully."
+msgstr ""
+"\n"
+"ÇIKIŞ DURUMU : kodlama işlemi başarıyla sonuçlandı."
+
+#: kimg2mpg.cpp:930
+msgid "Encoding aborted..."
+msgstr "Kodlama durduruldu..."
+
+#: kimg2mpg.cpp:932
+#, c-format
+msgid ""
+"The encoding process has been aborted...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kodlama işlemi durduruldu...\n"
+"\n"
+"Kodlama süresi:%1"
+
+#: kimg2mpg.cpp:934
+msgid "'images2mpg' Script Execution Aborted"
+msgstr "'images2mpg' Skript Çalıştırma Durduruldu"
+
+#: kimg2mpg.cpp:941
+msgid ""
+"\n"
+"EXIT STATUS : encoding process aborted by user."
+msgstr ""
+"\n"
+"ÇIKIŞ DURUMU : kodlama işlemi kullanıcı tarafından durduruldu."
+
+#: kimg2mpg.cpp:967
+msgid ""
+"An encoding process is active;\n"
+"abort this process and exit ?"
+msgstr ""
+"Kodlama işlemi devam ediyor;\n"
+"işlem durdurulup çıkılsın mı ?"
+
+#: kimg2mpg.cpp:991
+msgid "Create MPEG Slideshow"
+msgstr "MPEG Slayt Gösterisi Oluştur"
+
+#. i18n: file kimg2mpgbase.ui line 1157
+#: kimg2mpg.cpp:1013 rc.cpp:189
+#, no-c-format
+msgid "&Encode"
+msgstr "&Kodla"
+
+#: kimg2mpg.cpp:1133
+msgid "Cannot remove temporary folder %1!"
+msgstr "Geçici klasör %1 kaldırılamıyor!"
+
+#: kshowdebuggingoutput.cpp:35
+msgid "Debugging Output"
+msgstr "Derleme Çıktısı"
+
+#: kshowdebuggingoutput.cpp:38
+msgid "Copy to Clip&board"
+msgstr "&Panoya kopyala"
+
+#: optionsdialog.cpp:52
+msgid "MPEG Encoder Plugin Settings"
+msgstr "MPEG Kodlayıcı Eklentisi Ayarları"
+
+#: optionsdialog.cpp:66
+msgid "ImageMagick Binary Programs Path"
+msgstr "ImageMagick Programları Yolu"
+
+#: optionsdialog.cpp:76
+msgid "MjpegTools Binary Programs Path"
+msgstr "MjpegTools Programları Yolu"
+
+#: optionsdialog.cpp:109
+msgid "Select path to ImageMagick binary programs..."
+msgstr "ImageMagick programları için yol seçiniz..."
+
+#: optionsdialog.cpp:124
+msgid "Select path to MjpegTools binary programs..."
+msgstr "MjpegTools programları için yol seçiniz..."
+
+#: plugin_mpegencoder.cpp:62
+msgid "Create MPEG Slide Show..."
+msgstr "MPEG Slayt Gösterisi oluştur..."
+
+#. i18n: file kimg2mpgbase.ui line 45
+#: rc.cpp:3
+#, no-c-format
+msgid "Kimg2mpgBase"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 75
+#: rc.cpp:6
+#, fuzzy, no-c-format
+msgid "Encoder Settings"
+msgstr "MPEG Kodlayıcı Eklentisi Ayarları"
+
+#. i18n: file kimg2mpgbase.ui line 119
+#: rc.cpp:9
+#, no-c-format
+msgid "Video Format"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 128
+#: rc.cpp:12
+#, no-c-format
+msgid "XVCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 133
+#: rc.cpp:15
+#, no-c-format
+msgid "SVCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 138
+#: rc.cpp:18
+#, no-c-format
+msgid "VCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 143
+#: rc.cpp:21
+#, no-c-format
+msgid "DVD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 160
+#: rc.cpp:24
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the video format for your MPEG file.\n"
+"For a high photographic resolution on a TV screen, select  'XVCD' (it is the "
+"same DVD resolution) although some old DVD players cannot read this format. "
+"'VCD'/'SVCD' are more compatible with DVD players, but they are only medium "
+"resolution. \n"
+"DVD is an experimental option."
+msgstr ""
+"Bu seçenek, MPEG dosyanız için vide biçimini belirler. Bir TV ekranında yüksek "
+"fotoğrafik çözünürlük için XVCD seçin (DVD çözünürlüğü ile aynı); ancak eski "
+"bazı DVD çalarlar bu biçimi okuyamazlar. 'VCD/SVCD', DVD oynatıcıları ile daha "
+"uyumludur ama sadece orta çöznürlüktedirler. DVD deneysel bir seçenektir."
+
+#. i18n: file kimg2mpgbase.ui line 186
+#: rc.cpp:29
+#, no-c-format
+msgid "Video Type"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 195
+#: rc.cpp:32
+#, no-c-format
+msgid "PAL"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 200
+#: rc.cpp:35
+#, no-c-format
+msgid "NTSC"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 205
+#: rc.cpp:38
+#, no-c-format
+msgid "SECAM"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 221
+#: rc.cpp:41
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the video type for your MPEG file.\n"
+"NTSC is an American TV standard; PAL/SECAM is European."
+msgstr ""
+"Bu seçenek MPEG dosyanız için video tipini belirler. NTSC Amerika; PAL/SECAM "
+"iseAvrupa TV standartlarıdır."
+
+#. i18n: file kimg2mpgbase.ui line 247
+#: rc.cpp:45
+#, no-c-format
+msgid "Chroma Mode"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 261
+#: rc.cpp:51
+#, no-c-format
+msgid "444"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 266
+#: rc.cpp:54
+#, no-c-format
+msgid "420jpeg"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 271
+#: rc.cpp:57
+#, no-c-format
+msgid "420mpeg2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 287
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"This option specifies the chroma subsampling mode.\n"
+"Change it if you have problems with the default value."
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 326
+#: rc.cpp:64
+#, no-c-format
+msgid "Image Settings"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 370
+#: rc.cpp:67
+#, fuzzy, no-c-format
+msgid "Image duration"
+msgstr "Resim bekleme (saniye):"
+
+#. i18n: file kimg2mpgbase.ui line 400
+#: rc.cpp:70
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the duration for each image in your MPEG file.\n"
+"10 seconds is a good value for an image portfolio.\n"
+"\n"
+"<b>Warning</b>: you may have some problems with your DVD player if the total "
+"MPEG duration is under 3 seconds."
+msgstr ""
+"Bu seçenek MPEG dosyanızdaki her resim için bekleme süresini belirler. Bir "
+"resimarşivi için 10 saniye iyi bir değerdir. Uyarı: toplam MPEG bekleme sürsi 3 "
+"saniyenin altında ise DVD oynatıcınız ile bazı sorunlar yaşayabilirsiniz."
+
+#. i18n: file kimg2mpgbase.ui line 408
+#: rc.cpp:76
+#, no-c-format
+msgid "sec."
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 428
+#: rc.cpp:79
+#, fuzzy, no-c-format
+msgid "Transition speed"
+msgstr "Resimler arası geçiş hızı:"
+
+#. i18n: file kimg2mpgbase.ui line 442
+#: rc.cpp:85
+#, no-c-format
+msgid "1"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 447
+#: rc.cpp:88
+#, no-c-format
+msgid "2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 452
+#: rc.cpp:91
+#, no-c-format
+msgid "4"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 457
+#: rc.cpp:94
+#, no-c-format
+msgid "5"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 462
+#: rc.cpp:97
+#, no-c-format
+msgid "10"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 467
+#: rc.cpp:100
+#, no-c-format
+msgid "20"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 484
+#: rc.cpp:103
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the transition speed between images in your MPEG file.\n"
+"'1' is a slow transition and '20' is a very fast transition.\n"
+"'2' is a good value for an image portfolio."
+msgstr ""
+"Bu seçenek MPEG dosyanızda bulunan resimler arasındaki geçiş hızını "
+"belirler.'1' yavaş, '20' ise çok hızlı bir geçiştir. Bir resim arşivi için '2' "
+"iyi bir değerdir."
+
+#. i18n: file kimg2mpgbase.ui line 502
+#: rc.cpp:108
+#, fuzzy, no-c-format
+msgid "Background color"
+msgstr "Arkaplan rengi:"
+
+#. i18n: file kimg2mpgbase.ui line 526
+#: rc.cpp:111
+#, fuzzy, no-c-format
+msgid ""
+"You can select here the background color for your portfolio.\n"
+"This color is used to pad the image size to fit the TV screen size.\n"
+"Black is a good value for this."
+msgstr ""
+"Burada arşiviniz için arkaplan rengini seçebilirsiniz. Bu renk resim "
+"boyutlarını TV ekran boyutlarına uydururken dolgu olarak kullanılacaktır. Bunun "
+"için siyah iyi bir değerdir."
+
+#. i18n: file kimg2mpgbase.ui line 559
+#: rc.cpp:116
+#, no-c-format
+msgid "Image Files in Portfolio"
+msgstr "Arşivdeki Resim Dosyaları"
+
+#. i18n: file kimg2mpgbase.ui line 562
+#: rc.cpp:119 rc.cpp:157
+#, no-c-format
+msgid "Preview the currently selected image."
+msgstr "Seçili resmi önizleme."
+
+#. i18n: file kimg2mpgbase.ui line 591
+#: rc.cpp:122
+#, fuzzy, no-c-format
+msgid ""
+"This is the list of the image files for your portfolio.\n"
+"The portfolio's first image is on the top; the last image is on the bottom.\n"
+"If you want to add some images, click on the 'Add' button or use the "
+"drag-and-drop."
+msgstr ""
+"Bu, arşivinizdeki resim dosyalarının listesidir. Arşivin ilk resmi en üstte,son "
+"resmi ise en alttadır. Başka resim eklemek istiyorsanız, 'Ekle' "
+"düğmesinetıklayınız veya sürükle-bırak yöntemini kullanınız."
+
+#. i18n: file kimg2mpgbase.ui line 607
+#: rc.cpp:127
+#, no-c-format
+msgid "textLabel1"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 610
+#: rc.cpp:130
+#, no-c-format
+msgid "Total number of images in the portfolio and sequence duration."
+msgstr "Arşivde ve seride toplam resim sayısı."
+
+#. i18n: file kimg2mpgbase.ui line 659
+#: rc.cpp:133
+#, no-c-format
+msgid "&Add..."
+msgstr "&Ekle..."
+
+#. i18n: file kimg2mpgbase.ui line 662
+#: rc.cpp:136
+#, no-c-format
+msgid "Add some image files to the portfolio list."
+msgstr "Arşiv listesine başka resimler ekle."
+
+#. i18n: file kimg2mpgbase.ui line 687
+#: rc.cpp:142
+#, no-c-format
+msgid "Remove some image files from the portfolio list."
+msgstr "Arşiv listesinden bazı dosyaları çıkar."
+
+#. i18n: file kimg2mpgbase.ui line 709
+#: rc.cpp:145
+#, no-c-format
+msgid "Image &Up"
+msgstr "Resim &Yukarı"
+
+#. i18n: file kimg2mpgbase.ui line 712
+#: rc.cpp:148
+#, no-c-format
+msgid "Moving the current image up on the portfolio list."
+msgstr "Geçerli resmi arşiv listesinde yukarıya taşır."
+
+#. i18n: file kimg2mpgbase.ui line 734
+#: rc.cpp:151
+#, no-c-format
+msgid "Image D&own"
+msgstr "Resim &Aşağı"
+
+#. i18n: file kimg2mpgbase.ui line 737
+#: rc.cpp:154
+#, no-c-format
+msgid "Moving the current image down on the portfolio list."
+msgstr "Geçerli resmi arşiv listesinde aşağıya taşır."
+
+#. i18n: file kimg2mpgbase.ui line 811
+#: rc.cpp:160
+#, no-c-format
+msgid "textLabel2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 814
+#: rc.cpp:163
+#, no-c-format
+msgid "Currently selected image in the portfolio list."
+msgstr "Arşiv listesinde halen seçili resim."
+
+#. i18n: file kimg2mpgbase.ui line 862
+#: rc.cpp:166
+#, no-c-format
+msgid "MPEG Output Filename"
+msgstr "MPEG Çıktı Dosya Adı:"
+
+#. i18n: file kimg2mpgbase.ui line 883
+#: rc.cpp:169
+#, fuzzy, no-c-format
+msgid ""
+"You can specify here the output MPEG filename.\n"
+"\n"
+"<b>Warning </b>: MPEG files are very big (if you have many images in your "
+"portfolio). Select a folder with a sufficient free disk space."
+msgstr ""
+"Burada MPEG çıktınız için dosya adı belirleyebilirsiniz. Uyarı: MPEG dosyaları "
+"çokbüyüktür (arşivinizde çok sayıda resim var ise). Yeterli disk alanına sahip "
+"birklasör seçiniz. "
+
+#. i18n: file kimg2mpgbase.ui line 969
+#: rc.cpp:174
+#, no-c-format
+msgid "Audio Input Filename"
+msgstr "Ses Girdisi Dosya Adı"
+
+#. i18n: file kimg2mpgbase.ui line 991
+#: rc.cpp:177
+#, fuzzy, no-c-format
+msgid ""
+"You can specify here the input audio file name.\n"
+"This audio file name will be multiplexed with the portfolio video. \n"
+" \n"
+"<b>Warning</b>: if the audio duration is too long, it will be truncated."
+msgstr ""
+"Burada ses girdisi için dosya adı belirleyebilirsiniz. Bu ses dosyası adı "
+"görüntü arşivi ilekatmanlanacaktır. Uyarı: eğer ses süresi uzun ise "
+"kırpılacaktır."
+
+#. i18n: file kimg2mpgbase.ui line 1086
+#: rc.cpp:183
+#, no-c-format
+msgid "Current encoding task."
+msgstr "Geçerli kodlama görevi."
+
+#. i18n: file kimg2mpgbase.ui line 1114
+#: rc.cpp:186
+#, no-c-format
+msgid "Encoding progress bar."
+msgstr "Kodlama durum çubuğu."
+
+#. i18n: file kimg2mpgbase.ui line 1161
+#: rc.cpp:192
+#, fuzzy, no-c-format
+msgid ""
+"Start the portfolio MPEG encoding. \n"
+"The program uses the 'images2mpg' bash script."
+msgstr ""
+"Arşiv MPEG kodlamasına başla. Program 'images2mpg' kabukskriptini kullanır."
+
+#. i18n: file kimg2mpgbase.ui line 1252
+#: rc.cpp:205
+#, no-c-format
+msgid "Abort the current encoding and exit."
+msgstr "Şu andaki kodlamayı kes ve çık."
+
+#~ msgid "Video format, type and chroma mode:"
+#~ msgstr "Video biçimi, türü ve renk berraklığı kipi:"
+
+#~ msgid "Contributor"
+#~ msgstr "Katıda bulunan"

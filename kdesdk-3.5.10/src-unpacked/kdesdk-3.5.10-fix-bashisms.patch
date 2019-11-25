@@ -1,0 +1,88 @@
+diff -Ndur kdesdk-3.5.10/admin/cvs.sh kdesdk-3.5.10-fix-bashisms/admin/cvs.sh
+--- kdesdk-3.5.10/admin/cvs.sh	2008-08-19 23:23:58.000000000 +0300
++++ kdesdk-3.5.10-fix-bashisms/admin/cvs.sh	2014-11-30 03:37:09.086560745 +0200
+@@ -549,7 +549,12 @@
+ 	fi
+    fi
+    if find . -name \*.c\* -o -name \*.h\* | fgrep -v ".svn" | xargs fgrep -s -q KAboutData ; then
+-	echo -e 'i18n("_: NAME OF TRANSLATORS\\n"\n"Your names")\ni18n("_: EMAIL OF TRANSLATORS\\n"\n"Your emails")' > _translatorinfo.cpp
++	cat > _translatorinfo.cpp <<-EOF
++	i18n("_: NAME OF TRANSLATORS\n"
++	"Your names")
++	i18n("_: EMAIL OF TRANSLATORS\n"
++	"Your emails")
++	EOF
+    else echo " " > _translatorinfo.cpp
+    fi
+    perl -e '$mes=0; while (<STDIN>) { next if (/^(if\s|else\s|endif)/); if (/^messages:/) { $mes=1; print $_; next; } if ($mes) { if (/$\\(XGETTEXT\)/ && / -o/) { s/ -o \$\(podir\)/ _translatorinfo.cpp -o \$\(podir\)/ } print $_; } else { print $_; } }' < Makefile.am | egrep -v '^include ' > _transMakefile
+diff -Ndur kdesdk-3.5.10/kapptemplate/admin/cvs.sh kdesdk-3.5.10-fix-bashisms/kapptemplate/admin/cvs.sh
+--- kdesdk-3.5.10/kapptemplate/admin/cvs.sh	2008-08-19 23:23:58.000000000 +0300
++++ kdesdk-3.5.10-fix-bashisms/kapptemplate/admin/cvs.sh	2014-11-30 03:36:42.274562559 +0200
+@@ -549,7 +549,12 @@
+ 	fi
+    fi
+    if find . -name \*.c\* -o -name \*.h\* | fgrep -v ".svn" | xargs fgrep -s -q KAboutData ; then
+-	echo -e 'i18n("_: NAME OF TRANSLATORS\\n"\n"Your names")\ni18n("_: EMAIL OF TRANSLATORS\\n"\n"Your emails")' > _translatorinfo.cpp
++	cat > _translatorinfo.cpp <<-EOF
++	i18n("_: NAME OF TRANSLATORS\n"
++	"Your names")
++	i18n("_: EMAIL OF TRANSLATORS\n"
++	"Your emails")
++	EOF
+    else echo " " > _translatorinfo.cpp
+    fi
+    perl -e '$mes=0; while (<STDIN>) { next if (/^(if\s|else\s|endif)/); if (/^messages:/) { $mes=1; print $_; next; } if ($mes) { if (/$\\(XGETTEXT\)/ && / -o/) { s/ -o \$\(podir\)/ _translatorinfo.cpp -o \$\(podir\)/ } print $_; } else { print $_; } }' < Makefile.am | egrep -v '^include ' > _transMakefile
+diff -Ndur kdesdk-3.5.10/scripts/build-progress.sh kdesdk-3.5.10-fix-bashisms/scripts/build-progress.sh
+--- kdesdk-3.5.10/scripts/build-progress.sh	2005-09-10 11:21:03.000000000 +0300
++++ kdesdk-3.5.10-fix-bashisms/scripts/build-progress.sh	2014-11-30 03:35:14.215568516 +0200
+@@ -5,7 +5,7 @@
+ # <malte@kde.org> for the code :-)
+ set_title() {
+ if ([ "$TERM" = "xterm" ] || [ "$TERM" = "xterm-color" ] || [ "$TERM" = "screen" ]) && tty -s; then
+-  echo -ne "\033]0;$1\007"
++  printf "\033]0;$1\007"
+ fi
+ }
+ . ./kde-buildrc
+diff -Ndur kdesdk-3.5.10/scripts/cheatmake kdesdk-3.5.10-fix-bashisms/scripts/cheatmake
+--- kdesdk-3.5.10/scripts/cheatmake	2005-09-10 11:21:02.000000000 +0300
++++ kdesdk-3.5.10-fix-bashisms/scripts/cheatmake	2014-11-30 03:35:14.215568516 +0200
+@@ -31,7 +31,7 @@
+ fi
+ cd $builddir
+ srcdir=`egrep '^srcdir *=' Makefile | sed -e "s#srcdir *= *##"`
+-UNSERMAKE=`type -p unsermake`
++type unsermake >/dev/null 2>&1 && UNSERMAKE=unsermake || UNSERMAKE=
+ using_unsermake=
+ if head -n 1 Makefile | grep unsermake >/dev/null; then
+     using_unsermake=new
+diff -Ndur kdesdk-3.5.10/scripts/create_svnignore kdesdk-3.5.10-fix-bashisms/scripts/create_svnignore
+--- kdesdk-3.5.10/scripts/create_svnignore	2006-05-22 21:08:05.000000000 +0300
++++ kdesdk-3.5.10-fix-bashisms/scripts/create_svnignore	2014-11-30 03:35:14.215568516 +0200
+@@ -49,8 +49,8 @@
+ 		if fgrep -q .ui Makefile.am; then
+ 			uis=`ls -1 *.ui 2>/dev/null`
+ 			for ui in $uis; do
+-				addignore ${ui/.ui/.h}
+-				addignore ${ui/.ui/.cpp}
++				addignore ${ui%.ui}.h
++				addignore ${ui%.ui}.cpp
+ 			done
+ 		fi
+ 		
+diff -Ndur kdesdk-3.5.10/scripts/cvsaddcurrentdir kdesdk-3.5.10-fix-bashisms/scripts/cvsaddcurrentdir
+--- kdesdk-3.5.10/scripts/cvsaddcurrentdir	2005-09-10 11:21:02.000000000 +0300
++++ kdesdk-3.5.10-fix-bashisms/scripts/cvsaddcurrentdir	2014-11-30 03:35:14.215568516 +0200
+@@ -15,9 +15,10 @@
+ 
+ ask_for_adding() {
+ echo
+-read -p "Add file $file to cvs ? (y/n) " answer rest
++echo -n "Add file $file to cvs ? (y/n) "
++read answer rest
+ #if [ "$answer" != "y" ]; then echo $file; fi
+-if [ "$answer" == "y" ]; then cvs add $file; fi
++if [ "$answer" = "y" ]; then cvs add $file; fi
+ }
+ 
+ 

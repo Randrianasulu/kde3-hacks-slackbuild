@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>Irmcsync-anslutning för Kitchensync</title>
+<para
+>Det här programmet är ett anslutningsinsticksprogram för Kitchensync. Det låter dig synkronisera enheter som stöder Irmcsync med den lokala kalendern och/eller adressboken. </para>
+<para
+>Nu stöds kalendern och adressboken! </para>
+<para
+>JAG FÖRESLÅR ATT DU GÖR EN KOPIA AV KALENDERN OCH ADRESSBOKEN INNAN DU FÖRSÖKER SYNKRONISERA. Jag tar inget ansvar för om din information blir skadad eller förstörd. </para>
+
+
+<sect2>
+<title
+>Vi behöver felsökningsinformation!</title>
+<para
+>Kör gärna Kitchensync i ett skal, eller ställ om standardutmatningen och standardfelutmatningen till en fil, så att du kan skicka utmatningen från anslutningen om du får problem. För att aktivera felsökningsfunktionerna kan du starta "kdebugdialog" och aktivera alternativen som hör till Kitchensync (från 5200) och det allmänna alternativet. </para>
+</sect2>
+
+<sect2>
+<title
+>Kompilering.</title>
+<para
+>Det aktuella Kitchensync från kdepim SVN har fler funktioner och fungerar bättre än KDE 3.3.0-versionen. Jag föreslår att använda denna version. Du måste åtminstone installera kitchensync (och alla dess delprojekt) från SVN. </para>
+<para
+>Det finns också en version för kdepim 3.3.0 som du hittar i grenen irmcsync_kdepim_3_3_branch, men den underhålls inte längre. Jag koncentrerar mitt arbete på den som finns i SVN. Denna version beror på kdepim-3.3.0 och äldre eller nyare versioner, så du måste hämta och installera det. Om du vill hämta grenen irmcsync_kdepim_3_3_branch, måste du gå till kdebluetooth/irmcsync/irmcsynckonnector och skriva: cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch. </para
+>	
+
+<para
+>För att aktivera kompilering av anslutningen måste du lägga till katalogen "irmcsync" i variabeln SUBDIR i kdebluetooth/Makefile.am. </para>
+</sect2>
+
+<sect2>
+<title
+>Använda Kitchensync.</title>
+<para
+>Nuförtiden (2004-03-25) är Kitchensync mycket experimentell, så du kan stöta på diverse problem. </para>
+<para
+>Efter att ha startat det, måste du välja anslutningarna som ska användas. Du behöver minst två anslutningar för att göra en synkronisering, men du kan använda bara en för teständamål. </para>
+<para
+>För att lägga till en anslutning gå till <guimenuitem
+>Inställningar -> Anpassa Kitchensync</guimenuitem
+>. </para>
+<para
+>Om du får några fel och grafiska komponenter inte ritas upp riktigt, försök att ändra storlek på inställningsfönstret. INGEN ÄR ANVÄNDBAR OCH ALLA ÄR AVSTÄNGDA, bara "konnector" är riktigt. </para>
+<para
+>Du kan till exempel lägga till Irmcsync-anslutningen och en lokal anslutning. </para>
+<para
+>Välj enhet i Irmcsync-anslutningen, och markera kryssrutan Synkronisera kalender eller adressbok (för närvarande kan du inte synkronisera båda samtidigt). Välj en kalenderfil i den lokala anslutningen, och en adressbokfil (du måste välja båda och ha rätt filnamn, annars fungerar det inte). Jag föreslår att du skapar en tillfällig katalog där du lägger en kopia av ursprungliga adressbok- och kalenderfiler så att du kan göra några prov. </para>
+<para
+>Du hittar dem oftast i följande kataloger: </para>
+<para
+>Kalender: <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>Adressbok: <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>Därefter måste du skapa en profil i <guimenuitem
+>Inställningar -> Anpassa profiler</guimenuitem
+> och för varje profil kan du lägga till olika delar, där varje del utför olika funktioner: </para>
+<itemizedlist>
+<listitem>
+<para
+>Synkroniseringsdel: Gör den RIKTIGA synkroniseringen. </para>
+</listitem>
+<listitem>
+<para
+>Anslutning för felsökning: Låter dig felsöka en anslutning. </para>
+</listitem>
+<listitem>
+<para
+>Anslutning för säkerhetskopiering: Skapa en säkerhetskopia av data. </para>
+</listitem>
+<listitem>
+<para
+>Översiktsdel: Som namnet anger. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Om du vill synkronisera, måste du åtminstone välja "Synkroniseringsdel". </para>
+<para
+>För att därefter utföra synkroniseringen, klicka på knappen längst upp till vänster. </para>
+<para
+>Du kan markera anslutningen, skapa en profil med anslutningen för felsökning och trycka på Anslut enhet, och därefter på knappen Läs synkroniserade enheter. </para>
+</sect2>
+</sect1>
+

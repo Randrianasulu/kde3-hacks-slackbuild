@@ -1,0 +1,802 @@
+# translation of kipiplugin_mpegencoder.po to
+# translation of kipiplugin_mpegencoder.po to Czech
+# translation of kipiplugin_mpegencoder.po to cs_CZ
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Klara Cihlarova <koty@seznam.cz>, 2005.
+# Lukáš Tinkl <lukas@kde.org>, 2005.
+# Jakub Friedl <jfriedl@suse.cz>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_mpegencoder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2006-06-27 13:53+0200\n"
+"Last-Translator: Jakub Friedl <jfriedl@suse.cz>\n"
+"Language-Team:  <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Klára Cihlářová,Jakub Friedl"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "koty@seznam.cz,jfriedl@suse.cz"
+
+#: checkbinprog.cpp:71
+msgid ""
+"Your 'ImageMagick' binary program path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"Není nastavena cesta k programu 'ImageMagick' .\n"
+"Nastavuji výchozí hodnotu. Proveďte kontrolu nastavení."
+
+#: checkbinprog.cpp:77
+msgid ""
+"Your 'MjpegTools' binary programs path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"Není nastavena cesta k programu 'MjpegTools' .\n"
+"Nastavuji výchozí hodnotu. Proveďte kontrolu nastavení."
+
+#: checkbinprog.cpp:86
+msgid ""
+"Cannot find 'montage' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'montage' z balíčku ImageMagick. Prosím doinstalujte."
+
+#: checkbinprog.cpp:89
+msgid ""
+"Cannot find 'composite' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'composite' z balíčku ImageMagick. Prosím doinstalujte."
+
+#: checkbinprog.cpp:92
+msgid ""
+"Cannot find 'convert' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'convert' z balíčku ImageMagick. Prosím doinstalujte."
+
+#: checkbinprog.cpp:95
+msgid ""
+"Cannot find 'identify' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'identify' z balíčku ImageMagick. Prosím doinstalujte."
+
+#: checkbinprog.cpp:100
+msgid ""
+"Cannot find 'ppmtoy4m' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'ppmtoy4m' z balíčku MjpegTools. Prosím doinstalujte."
+
+#: checkbinprog.cpp:103
+msgid ""
+"Cannot find 'yuvscaler' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'yuvscaler' z balíčku MjpegTools. Prosím doinstalujte."
+
+#: checkbinprog.cpp:106
+msgid ""
+"Cannot find 'mpeg2enc' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Nemohu najít program 'mpeg2enc' z balíčku MjpegTools. Prosím doinstalujte."
+
+#: checkbinprog.cpp:109
+msgid ""
+"Cannot find 'mplex' binary program from MjpegTools package. Please install it."
+msgstr ""
+"Nemohu najít program 'mplex' z balíčku MjpegTools. Prosím doinstalujte."
+
+#: checkbinprog.cpp:113
+msgid ""
+"Cannot find 'mp2enc' binary program from MjpegTools package. Please install "
+"it.\n"
+"Audio capabilities will be disabled."
+msgstr ""
+"Nemohu najít program 'mp2enc' z balíčku MjpegTools. Prosím doinstalujte.\n"
+"Audio vlastnosti budou nedostupné."
+
+#: checkbinprog.cpp:120
+msgid ""
+"\n"
+"Check your installation and this plugin's options settings.\n"
+"\n"
+"Visit these URLs for more information:\n"
+"ImageMagick package: http://www.imagemagick.org/\n"
+"MjpegTools package: http://mjpeg.sourceforge.net/"
+msgstr ""
+"\n"
+"překontrolujte instalaci a nastavení pluginů.\n"
+"\n"
+"Více informací najdete na stránkách:\n"
+"ImageMagick: http://www.imagemagick.org/\n"
+"MjpegTools: http://mjpeg.sourceforge.net/"
+
+#. i18n: file kimg2mpgbase.ui line 437
+#: kimg2mpg.cpp:192 rc.cpp:82
+#, no-c-format
+msgid "none"
+msgstr "nic"
+
+#: kimg2mpg.cpp:246
+msgid "MPEG Slideshow"
+msgstr "MPEG prezentace"
+
+#: kimg2mpg.cpp:249
+msgid "A Kipi plugin for encoding images to an MPEG file."
+msgstr "Kipi plugin pro kódování obrázků do MPEG videa."
+
+#: kimg2mpg.cpp:252
+msgid "Author"
+msgstr ""
+
+#: kimg2mpg.cpp:255 kimg2mpg.cpp:258
+msgid "Maintainer"
+msgstr ""
+
+#: kimg2mpg.cpp:263
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Příručka MPEG prezentace"
+
+#: kimg2mpg.cpp:312
+msgid "Select MPEG Output File"
+msgstr "Vybrat výstupní MPEG soubor"
+
+#: kimg2mpg.cpp:329
+msgid "Select Audio Input File"
+msgstr "Vybrat vstupní audio soubor"
+
+#: kimg2mpg.cpp:383
+msgid "You can only move up one image file at once."
+msgstr "Přesunout nahoru můžete obrázky pouze po jednom."
+
+#: kimg2mpg.cpp:436
+#, c-format
+msgid "Image no. %1"
+msgstr "Obrázek č. %1"
+
+#: kimg2mpg.cpp:472
+msgid "You can only move down one image file at once."
+msgstr "najednou můžete přesunout dolů pouze jeden obrázek."
+
+#: kimg2mpg.cpp:517
+msgid ""
+"Do you really abort this encoding process ?\n"
+"\n"
+"Warning: all work so-far will be lost."
+msgstr ""
+"Skutečně chcete kódování přerušit?\n"
+"\n"
+"Varování: již překódované části budou ztraceny."
+
+#: kimg2mpg.cpp:530
+msgid ""
+"Default chroma mode option works only with Mjpegtools version < 1.6.3\n"
+msgstr ""
+
+#: kimg2mpg.cpp:531
+msgid "Check your Mjpegtools version"
+msgstr ""
+
+#: kimg2mpg.cpp:533
+msgid "KIPImpegencoderChromaWarning"
+msgstr ""
+
+#: kimg2mpg.cpp:553
+msgid "You must specify an existing audio file."
+msgstr "Musíte zadat existující zvukový soubor."
+
+#: kimg2mpg.cpp:561
+msgid "You must specify an MPEG output file name."
+msgstr "Musíte zadat výstupní jméno."
+
+#: kimg2mpg.cpp:568
+msgid "You must specify a writable path for your output file."
+msgstr "Musíte zadat zapisovatelnou cestu výstupního souboru."
+
+#: kimg2mpg.cpp:574
+msgid "You must specify some input images files in the portfolio."
+msgstr "Musíte zadat vstupní obrázky do videa."
+
+#: kimg2mpg.cpp:580
+msgid ""
+"The output MPEG file '%1' already exists.\n"
+"Do you want overwrite this file?"
+msgstr ""
+"Soubor '%1' již existuje.\n"
+"Chcete jej přepsat?"
+
+#: kimg2mpg.cpp:587
+msgid "A&bort"
+msgstr "Př&erušit"
+
+#: kimg2mpg.cpp:588
+msgid ""
+"Abort the portfolio MPEG encoding. Warning: all work so-far will be lost...."
+msgstr ""
+"Přerušit MPEG kódování. Varování? již překódované části budou ztraceny..."
+
+#: kimg2mpg.cpp:622
+msgid ""
+"THE COMMAND LINE IS :\n"
+"\n"
+msgstr ""
+"PŘÍKAZOVÁ ŘÁDKA JE:\n"
+"\n"
+
+#: kimg2mpg.cpp:691
+msgid "Cannot access to file %1, please check the path is right."
+msgstr ""
+
+#: kimg2mpg.cpp:711
+msgid "Cannot start 'images2mpg' bash script : fork failed."
+msgstr "Nelze spustit skript 'images2mpg': selhal fork."
+
+#: kimg2mpg.cpp:804
+msgid "%1 image [%2]"
+msgstr "%1 obrázek [%2]"
+
+#: kimg2mpg.cpp:806
+msgid "%1 images [%2]"
+msgstr "%1 obrázky [%2]"
+
+#: kimg2mpg.cpp:842
+msgid "Encoding image file [%1/%2]..."
+msgstr "Kódování obrázku [%1/%2]..."
+
+#: kimg2mpg.cpp:857
+msgid "Initialising..."
+msgstr "Inicializuji..."
+
+#: kimg2mpg.cpp:861
+msgid "Merging MPEG flux..."
+msgstr "Spojuji MPEG flux..."
+
+#: kimg2mpg.cpp:867
+msgid "Encoding audio file..."
+msgstr "Kódování audio souboru..."
+
+#: kimg2mpg.cpp:882
+msgid ""
+"The 'images2mpg' script has returned an error during the MPEG encoding;\n"
+"the process has been aborted.\n"
+"\n"
+"Send a mail to the author..."
+msgstr ""
+"Během MPEG kódování vrátil skript 'images2mpg' a proces byl přerušen.\n"
+"\n"
+"Odeslat zprávu autorovi..."
+
+#: kimg2mpg.cpp:885
+msgid "'images2mpg' Script-Execution Problem"
+msgstr "Problém při vykonání skriptu 'images2mpg' "
+
+#: kimg2mpg.cpp:887
+msgid "Show Debugging Output"
+msgstr "Zobrazit ladící výstup"
+
+#: kimg2mpg.cpp:891
+msgid ""
+"\n"
+"EXIT STATUS : error during encoding process."
+msgstr ""
+"\n"
+"NÁVRATOVÝ STAV: chyba během kódování."
+
+#: kimg2mpg.cpp:912
+msgid "Encoding terminated..."
+msgstr "Kódování ukončeno..."
+
+#: kimg2mpg.cpp:914
+#, c-format
+msgid ""
+"The encoding process has terminated...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kódování bylo ukončeno...\n"
+"\n"
+"Doba kódování: %1"
+
+#: kimg2mpg.cpp:916
+msgid "'images2mpg' Script Execution Terminated"
+msgstr "Vykonání skriptu 'images2mpg' bylo ukončeno"
+
+#: kimg2mpg.cpp:918 kimg2mpg.cpp:936
+msgid "Show Process Messages"
+msgstr "Zobrazit zprávy o průběhu"
+
+#: kimg2mpg.cpp:923
+msgid ""
+"\n"
+"EXIT STATUS : encoding process finished successfully."
+msgstr ""
+"\n"
+"NÁVRATOVÝ STAV : kódování úspěšně dokončeno."
+
+#: kimg2mpg.cpp:930
+msgid "Encoding aborted..."
+msgstr "Kódování přerušeno..."
+
+#: kimg2mpg.cpp:932
+#, c-format
+msgid ""
+"The encoding process has been aborted...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kódování bylo přerušeno...\n"
+"\n"
+"Doba trvání: %1"
+
+#: kimg2mpg.cpp:934
+msgid "'images2mpg' Script Execution Aborted"
+msgstr "Skript 'images2mpg' byl přerušen"
+
+#: kimg2mpg.cpp:941
+msgid ""
+"\n"
+"EXIT STATUS : encoding process aborted by user."
+msgstr ""
+"\n"
+"NÁVRATOVÝ STAV : kódování přerušeno uživatelem."
+
+#: kimg2mpg.cpp:967
+msgid ""
+"An encoding process is active;\n"
+"abort this process and exit ?"
+msgstr ""
+"Proces kódování je aktivní.\n"
+"Přerušit a ukončit?"
+
+#: kimg2mpg.cpp:991
+msgid "Create MPEG Slideshow"
+msgstr "Vytvořit MPEG prezentaci"
+
+#. i18n: file kimg2mpgbase.ui line 1157
+#: kimg2mpg.cpp:1013 rc.cpp:189
+#, no-c-format
+msgid "&Encode"
+msgstr "Za&kódovat"
+
+#: kimg2mpg.cpp:1133
+msgid "Cannot remove temporary folder %1!"
+msgstr "Nelze odstranit dočasný adresář %1!"
+
+#: kshowdebuggingoutput.cpp:35
+msgid "Debugging Output"
+msgstr "Ladící výstup"
+
+#: kshowdebuggingoutput.cpp:38
+msgid "Copy to Clip&board"
+msgstr "Kopírovat do sch&ránky"
+
+#: optionsdialog.cpp:52
+msgid "MPEG Encoder Plugin Settings"
+msgstr "Nastavení pluginu MPEG encoderu"
+
+#: optionsdialog.cpp:66
+msgid "ImageMagick Binary Programs Path"
+msgstr "Cesta k programům ImageMagick"
+
+#: optionsdialog.cpp:76
+msgid "MjpegTools Binary Programs Path"
+msgstr "Cesta k programům MjpegTools"
+
+#: optionsdialog.cpp:109
+msgid "Select path to ImageMagick binary programs..."
+msgstr "Nastavit cestu k programům ImageMagick"
+
+#: optionsdialog.cpp:124
+msgid "Select path to MjpegTools binary programs..."
+msgstr "Nastavit cestu k programům MjpegTools"
+
+#: plugin_mpegencoder.cpp:62
+msgid "Create MPEG Slide Show..."
+msgstr "Vytvořit MPEG prezentaci..."
+
+#. i18n: file kimg2mpgbase.ui line 45
+#: rc.cpp:3
+#, no-c-format
+msgid "Kimg2mpgBase"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 75
+#: rc.cpp:6
+#, fuzzy, no-c-format
+msgid "Encoder Settings"
+msgstr "Nastavení pluginu MPEG encoderu"
+
+#. i18n: file kimg2mpgbase.ui line 119
+#: rc.cpp:9
+#, no-c-format
+msgid "Video Format"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 128
+#: rc.cpp:12
+#, no-c-format
+msgid "XVCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 133
+#: rc.cpp:15
+#, no-c-format
+msgid "SVCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 138
+#: rc.cpp:18
+#, no-c-format
+msgid "VCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 143
+#: rc.cpp:21
+#, no-c-format
+msgid "DVD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 160
+#: rc.cpp:24
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the video format for your MPEG file.\n"
+"For a high photographic resolution on a TV screen, select  'XVCD' (it is the "
+"same DVD resolution) although some old DVD players cannot read this format. "
+"'VCD'/'SVCD' are more compatible with DVD players, but they are only medium "
+"resolution. \n"
+"DVD is an experimental option."
+msgstr ""
+"V této volbě nastavíte video formát MPEG souboru. Pro fotografické rozlišení "
+"nebo TV obrazovku zvolte 'XVCD' (stejné rozlišení jako DVD). POZOR, některé "
+"starší DVD tento formát nepodporují. Formát 'VCD'/'SVCD' je kompatibilní se "
+"všemi DVD přehrávači, ale podporuje pouze poloviční rozlišení. DVD je "
+"experimentální volba."
+
+#. i18n: file kimg2mpgbase.ui line 186
+#: rc.cpp:29
+#, no-c-format
+msgid "Video Type"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 195
+#: rc.cpp:32
+#, no-c-format
+msgid "PAL"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 200
+#: rc.cpp:35
+#, no-c-format
+msgid "NTSC"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 205
+#: rc.cpp:38
+#, no-c-format
+msgid "SECAM"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 221
+#: rc.cpp:41
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the video type for your MPEG file.\n"
+"NTSC is an American TV standard; PAL/SECAM is European."
+msgstr ""
+"Zde můžete nastavit video typ MPEG souboru. NTSC je americký standard; "
+"PAL/SECAM evropský."
+
+#. i18n: file kimg2mpgbase.ui line 247
+#: rc.cpp:45
+#, no-c-format
+msgid "Chroma Mode"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 261
+#: rc.cpp:51
+#, no-c-format
+msgid "444"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 266
+#: rc.cpp:54
+#, no-c-format
+msgid "420jpeg"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 271
+#: rc.cpp:57
+#, no-c-format
+msgid "420mpeg2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 287
+#: rc.cpp:60
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the chroma subsampling mode.\n"
+"Change it if you have problems with the default value."
+msgstr ""
+"Tato volba určuje režim podvzorkování barevné informace. Změňte ji, pokud máte "
+"problémy s výchozím nastavením."
+
+#. i18n: file kimg2mpgbase.ui line 326
+#: rc.cpp:64
+#, no-c-format
+msgid "Image Settings"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 370
+#: rc.cpp:67
+#, fuzzy, no-c-format
+msgid "Image duration"
+msgstr "Zobrazení obrázku (s):"
+
+#. i18n: file kimg2mpgbase.ui line 400
+#: rc.cpp:70
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the duration for each image in your MPEG file.\n"
+"10 seconds is a good value for an image portfolio.\n"
+"\n"
+"<b>Warning</b>: you may have some problems with your DVD player if the total "
+"MPEG duration is under 3 seconds."
+msgstr ""
+"Touto volbou nastavíte dobu zobrazení každého obrázku ve vašem MPEG souboru. "
+"Vhodnou hodnotou je 10 sekund. POZOR: U některých DVD prohlížečů může dojít k "
+"problémům, pokud je celková doba přehrávání MPEG souboru nižší než 3 sekundy."
+
+#. i18n: file kimg2mpgbase.ui line 408
+#: rc.cpp:76
+#, no-c-format
+msgid "sec."
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 428
+#: rc.cpp:79
+#, fuzzy, no-c-format
+msgid "Transition speed"
+msgstr "Rychlost přechodu mezi obrázky:"
+
+#. i18n: file kimg2mpgbase.ui line 442
+#: rc.cpp:85
+#, no-c-format
+msgid "1"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 447
+#: rc.cpp:88
+#, no-c-format
+msgid "2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 452
+#: rc.cpp:91
+#, no-c-format
+msgid "4"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 457
+#: rc.cpp:94
+#, no-c-format
+msgid "5"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 462
+#: rc.cpp:97
+#, no-c-format
+msgid "10"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 467
+#: rc.cpp:100
+#, no-c-format
+msgid "20"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 484
+#: rc.cpp:103
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the transition speed between images in your MPEG file.\n"
+"'1' is a slow transition and '20' is a very fast transition.\n"
+"'2' is a good value for an image portfolio."
+msgstr ""
+"Zde můžete nastavit rychlost přechodu mezi obrázky v MPEG osuboru. Pro pomalý "
+"přechod zadejte '1', pro velmi rychlý '20'. Rozumná hodnota je '2'."
+
+#. i18n: file kimg2mpgbase.ui line 502
+#: rc.cpp:108
+#, fuzzy, no-c-format
+msgid "Background color"
+msgstr "Barva pozadí:"
+
+#. i18n: file kimg2mpgbase.ui line 526
+#: rc.cpp:111
+#, fuzzy, no-c-format
+msgid ""
+"You can select here the background color for your portfolio.\n"
+"This color is used to pad the image size to fit the TV screen size.\n"
+"Black is a good value for this."
+msgstr ""
+"Zde můžete zadat barvu pozadí. Tato barva je použita pro vyplnění prázdných "
+"míst na obrazovce. Obvyklá barva je černá."
+
+#. i18n: file kimg2mpgbase.ui line 559
+#: rc.cpp:116
+#, no-c-format
+msgid "Image Files in Portfolio"
+msgstr "Soubory s obrázky"
+
+#. i18n: file kimg2mpgbase.ui line 562
+#: rc.cpp:119 rc.cpp:157
+#, no-c-format
+msgid "Preview the currently selected image."
+msgstr "Náhled zvoleného obrázku."
+
+#. i18n: file kimg2mpgbase.ui line 591
+#: rc.cpp:122
+#, fuzzy, no-c-format
+msgid ""
+"This is the list of the image files for your portfolio.\n"
+"The portfolio's first image is on the top; the last image is on the bottom.\n"
+"If you want to add some images, click on the 'Add' button or use the "
+"drag-and-drop."
+msgstr ""
+"Seznam obrázků do videa. První obrázek je vrchu, poslední naspodu. Pokud chcete "
+"přidat další obrázky, klikněte na tlačítko 'Přidat'."
+
+#. i18n: file kimg2mpgbase.ui line 607
+#: rc.cpp:127
+#, no-c-format
+msgid "textLabel1"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 610
+#: rc.cpp:130
+#, no-c-format
+msgid "Total number of images in the portfolio and sequence duration."
+msgstr "Celkový počet obrázků a trvání sekvence."
+
+#. i18n: file kimg2mpgbase.ui line 659
+#: rc.cpp:133
+#, no-c-format
+msgid "&Add..."
+msgstr "Přid&at..."
+
+#. i18n: file kimg2mpgbase.ui line 662
+#: rc.cpp:136
+#, no-c-format
+msgid "Add some image files to the portfolio list."
+msgstr "Přidání obrázku do seznamu videa."
+
+#. i18n: file kimg2mpgbase.ui line 687
+#: rc.cpp:142
+#, no-c-format
+msgid "Remove some image files from the portfolio list."
+msgstr "Odstranění obrázku ze seznamu videa."
+
+#. i18n: file kimg2mpgbase.ui line 709
+#: rc.cpp:145
+#, no-c-format
+msgid "Image &Up"
+msgstr "Obrázek nahor&u"
+
+#. i18n: file kimg2mpgbase.ui line 712
+#: rc.cpp:148
+#, no-c-format
+msgid "Moving the current image up on the portfolio list."
+msgstr "Přesunutí obrázku nahoru."
+
+#. i18n: file kimg2mpgbase.ui line 734
+#: rc.cpp:151
+#, no-c-format
+msgid "Image D&own"
+msgstr "&Obrázek dolů"
+
+#. i18n: file kimg2mpgbase.ui line 737
+#: rc.cpp:154
+#, no-c-format
+msgid "Moving the current image down on the portfolio list."
+msgstr "Přesunutí obrázku dolů na seznamu."
+
+#. i18n: file kimg2mpgbase.ui line 811
+#: rc.cpp:160
+#, no-c-format
+msgid "textLabel2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 814
+#: rc.cpp:163
+#, no-c-format
+msgid "Currently selected image in the portfolio list."
+msgstr "Zvolený obrázek ze seznamu."
+
+#. i18n: file kimg2mpgbase.ui line 862
+#: rc.cpp:166
+#, no-c-format
+msgid "MPEG Output Filename"
+msgstr "Název souboru"
+
+#. i18n: file kimg2mpgbase.ui line 883
+#: rc.cpp:169
+#, fuzzy, no-c-format
+msgid ""
+"You can specify here the output MPEG filename.\n"
+"\n"
+"<b>Warning </b>: MPEG files are very big (if you have many images in your "
+"portfolio). Select a folder with a sufficient free disk space."
+msgstr ""
+"Zde zadejte jméno výstupního MPEG souboru. Varování: MPEG soubory jsou velmi "
+"velké (pokud máte velké množství obrázků). Zvolte umístění s dostatečným volným "
+"prostorem."
+
+#. i18n: file kimg2mpgbase.ui line 969
+#: rc.cpp:174
+#, no-c-format
+msgid "Audio Input Filename"
+msgstr "Audio vstupní soubor"
+
+#. i18n: file kimg2mpgbase.ui line 991
+#: rc.cpp:177
+#, fuzzy, no-c-format
+msgid ""
+"You can specify here the input audio file name.\n"
+"This audio file name will be multiplexed with the portfolio video. \n"
+" \n"
+"<b>Warning</b>: if the audio duration is too long, it will be truncated."
+msgstr ""
+"Zde můžete zadat jméno audio souboru. Tento soubor bude připojen k videu. "
+"Varování: příliš dlouhý soubor bude oseknut."
+
+#. i18n: file kimg2mpgbase.ui line 1086
+#: rc.cpp:183
+#, no-c-format
+msgid "Current encoding task."
+msgstr "Aktuální kódování."
+
+#. i18n: file kimg2mpgbase.ui line 1114
+#: rc.cpp:186
+#, no-c-format
+msgid "Encoding progress bar."
+msgstr "Postup kódování."
+
+#. i18n: file kimg2mpgbase.ui line 1161
+#: rc.cpp:192
+#, fuzzy, no-c-format
+msgid ""
+"Start the portfolio MPEG encoding. \n"
+"The program uses the 'images2mpg' bash script."
+msgstr "Spuštění MPEG kódování. Program používá skript 'images2mpg'."
+
+#. i18n: file kimg2mpgbase.ui line 1252
+#: rc.cpp:205
+#, no-c-format
+msgid "Abort the current encoding and exit."
+msgstr "Přerušit kódování a ukončit."
+
+#~ msgid "Video format, type and chroma mode:"
+#~ msgstr "Video formát, typ a chromatický režim:"
+
+#~ msgid "Author and maintainer"
+#~ msgstr "Autor a správce"

@@ -1,0 +1,11 @@
+--- hald/linux/addons/addon-macbookpro-backlight.c.orig	2015-08-24 00:46:07.000000000 +0000
++++ hald/linux/addons/addon-macbookpro-backlight.c	2015-08-24 00:49:57.092501773 +0000
+@@ -39,7 +39,7 @@
+ #include <pci/pci.h>
+ #include <unistd.h> 
+ 
+-#include <glib/gmain.h>
++#include <glib.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 

@@ -1,0 +1,100 @@
+--- kdegraphics-3.5.10/kamera/kioslave/kamera.cpp.orig	2007-10-08 09:48:41.000000000 +0000
++++ kdegraphics-3.5.10/kamera/kioslave/kamera.cpp	2015-09-11 20:20:04.000000000 +0000
+@@ -55,10 +55,10 @@
+ {
+ 	KDE_EXPORT int kdemain(int argc, char **argv);
+ 
+-	static void frontendCameraStatus(GPContext *context, const char *format, va_list args, void *data);
++	static void frontendCameraStatus(GPContext *context, const char *status, void *data);
+ 	static unsigned int frontendProgressStart(
+-		GPContext *context, float totalsize, const char *format,
+-		va_list args, void *data
++		GPContext *context, float totalsize, const char *status,
++		void *data
+ 	);
+ 	static void frontendProgressUpdate(
+ 		GPContext *context, unsigned int id, float current, void *data
+@@ -785,11 +785,12 @@
+ 			return;
+ 		}
+ 		gp_port_info_list_get_info(port_info_list, idx, &port_info);
+-		gp_port_info_list_free(port_info_list);
++		
+ 
+ 		// create a new camera object
+ 		gpr = gp_camera_new(&m_camera);
+ 		if(gpr != GP_OK) {
++			gp_port_info_list_free(port_info_list);
+ 			error(KIO::ERR_UNKNOWN, gp_result_as_string(gpr));
+ 			return;
+ 		}
+@@ -805,6 +806,8 @@
+ 		gp_camera_set_port_speed(m_camera, 0); // TODO: the value needs to be configurable
+ 		kdDebug(7123) << "Opening camera model " << user << " at " << host << endl;
+ 
++		gp_port_info_list_free(port_info_list);
++
+ 		QString errstr;
+ 		if (!openCamera(errstr)) {
+ 			kdDebug(7123) << "Unable to init camera: " << gp_result_as_string(gpr) << endl;
+@@ -857,10 +860,7 @@
+ 	udsEntry.append(atom);
+ 
+ 	atom.m_uds = UDS_NAME;
+-	if (info.file.fields & GP_FILE_INFO_NAME)
+-		atom.m_str = QString::fromLocal8Bit(info.file.name);
+-	else
+-		atom.m_str = name;
++	atom.m_str = name;
+ 	udsEntry.append(atom);
+ 
+ 	if (info.file.fields & GP_FILE_INFO_SIZE) {
+@@ -986,10 +986,12 @@
+ }
+ 
+ unsigned int frontendProgressStart(
+-	GPContext * /*context*/, float totalsize, const char *format, va_list args,
++	GPContext * /*context*/, float totalsize, const char *status, 
+ 	void *data
+ ) {
+ 	KameraProtocol *object = (KameraProtocol*)data;
++
++#if 0
+ 	char *status;
+ 
+ 	/* We must copy the va_list to walk it twice, or all hell 
+@@ -1023,14 +1025,23 @@
+ 
+ 	object->infoMessage(QString::fromLocal8Bit(status));
+ 	delete [] status;
++
++#endif
++	/* libgphoto2 2.5 has resolved this already, no need for print */
++	object->infoMessage(QString::fromLocal8Bit(status));
++
+ 	object->totalSize((int)totalsize); // hack: call slot directly
+ 	return GP_OK;
+ }
+ 
+ // this callback function is activated on every status message from gphoto2
+-static void frontendCameraStatus(GPContext * /*context*/, const char *format, va_list args, void *data)
+-{
++static void frontendCameraStatus(
++	GPContext * /*context*/,
++	const char *status,
++	void *data
++) {
+ 	KameraProtocol *object = (KameraProtocol*)data;
++#if 0
+ 	char *status;
+ 
+ 	/* We must copy the va_list to walk it twice, or all hell 
+@@ -1063,4 +1074,8 @@
+ #endif
+ 	object->infoMessage(QString::fromLocal8Bit(status));
+ 	delete [] status;
++#endif
++	object->infoMessage(QString::fromLocal8Bit(status));
+ }
++
++

@@ -1,0 +1,141 @@
+/****************************************************************************
+** DigikamImagesPluginCore::HSLTool meta object code from reading C++ file 'hsltool.h'
+**
+** Created: Wed Jun 14 10:02:07 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "hsltool.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *DigikamImagesPluginCore::HSLTool::className() const
+{
+    return "DigikamImagesPluginCore::HSLTool";
+}
+
+QMetaObject *DigikamImagesPluginCore::HSLTool::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_DigikamImagesPluginCore__HSLTool( "DigikamImagesPluginCore::HSLTool", &DigikamImagesPluginCore::HSLTool::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString DigikamImagesPluginCore::HSLTool::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::HSLTool", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString DigikamImagesPluginCore::HSLTool::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::HSLTool", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* DigikamImagesPluginCore::HSLTool::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = Digikam::EditorTool::staticMetaObject();
+    static const QUMethod slot_0 = {"slotEffect", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ "channel", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotChannelChanged", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "scale", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotScaleChanged", 1, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ "color", &static_QUType_ptr, "Digikam::DColor", QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotColorSelectedFromTarget", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ "h", &static_QUType_int, 0, QUParameter::In },
+	{ "s", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotHSChanged", 2, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "h", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotHChanged", 1, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ "s", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotSChanged", 1, param_slot_6 };
+    static const QUMethod slot_7 = {"slotResetSettings", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotEffect()", &slot_0, QMetaData::Private },
+	{ "slotChannelChanged(int)", &slot_1, QMetaData::Private },
+	{ "slotScaleChanged(int)", &slot_2, QMetaData::Private },
+	{ "slotColorSelectedFromTarget(const Digikam::DColor&)", &slot_3, QMetaData::Private },
+	{ "slotHSChanged(int,int)", &slot_4, QMetaData::Private },
+	{ "slotHChanged(double)", &slot_5, QMetaData::Private },
+	{ "slotSChanged(double)", &slot_6, QMetaData::Private },
+	{ "slotResetSettings()", &slot_7, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"DigikamImagesPluginCore::HSLTool", parentObject,
+	slot_tbl, 8,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_DigikamImagesPluginCore__HSLTool.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* DigikamImagesPluginCore::HSLTool::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "DigikamImagesPluginCore::HSLTool" ) )
+	return this;
+    return EditorTool::qt_cast( clname );
+}
+
+bool DigikamImagesPluginCore::HSLTool::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotEffect(); break;
+    case 1: slotChannelChanged((int)static_QUType_int.get(_o+1)); break;
+    case 2: slotScaleChanged((int)static_QUType_int.get(_o+1)); break;
+    case 3: slotColorSelectedFromTarget((const Digikam::DColor&)*((const Digikam::DColor*)static_QUType_ptr.get(_o+1))); break;
+    case 4: slotHSChanged((int)static_QUType_int.get(_o+1),(int)static_QUType_int.get(_o+2)); break;
+    case 5: slotHChanged((double)static_QUType_double.get(_o+1)); break;
+    case 6: slotSChanged((double)static_QUType_double.get(_o+1)); break;
+    case 7: slotResetSettings(); break;
+    default:
+	return EditorTool::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool DigikamImagesPluginCore::HSLTool::qt_emit( int _id, QUObject* _o )
+{
+    return EditorTool::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool DigikamImagesPluginCore::HSLTool::qt_property( int id, int f, QVariant* v)
+{
+    return EditorTool::qt_property( id, f, v);
+}
+
+bool DigikamImagesPluginCore::HSLTool::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

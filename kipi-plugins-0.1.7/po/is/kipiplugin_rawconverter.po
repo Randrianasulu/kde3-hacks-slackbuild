@@ -1,0 +1,257 @@
+# translation of kipiplugin_rawconverter.po to Icelandic
+# translation of kipiplugin_rawconverter.po to
+#
+# Sveinn í Felli <sveinki@nett.is>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-04-01 11:41+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Sveinn í Felli"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sveinki@nett.is"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Get ekki þekkt RAW mynd"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Tegund: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Gerð: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Búið til: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Ljósop: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Brennivídd: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Lýsingartími: 1/%1 s\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Ljósnæmni: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Magnumbreyting RAW mynda"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "&Umbreyta"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "Hætt&a við"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Smámynd"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "RAW skrá"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Úttaksskrá"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Myndavél"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+msgid "Save settings"
+msgstr "Vista stillingar"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "Umbreyting RAW mynda"
+
+#: batchdialog.cpp:139
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "KIPI íforrit til að umbreyta RAW myndum"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Upprunalegur höfundur"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Viðhaldsforritari"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr "Handbók íforrits"
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>Byrja að umbreyta RAW myndunum með núverandi stillingum"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Hætti við núverandi umbreytingu RAW skráa"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Hætta í RAW umbreyti"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Það er engin RAW skrá í listanum!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Vista RAW mynd umbreyttri frá '%1' sem "
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Tókst ekki að vista mynd %1"
+
+#: plugin_rawconverter.cpp:84
+msgid "Raw Image Converter..."
+msgstr "Umbreyting RAW mynda..."
+
+#: plugin_rawconverter.cpp:92
+msgid "Batch Raw Converter..."
+msgstr "RAW magnbreytir..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" er ekki RAW skrá."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Tókst ekki að hlaða inn mynd eftir aðgerðina"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Skráarsnið úttaksskrár:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Veldu hér skráarsnið fyrir úttaksskrá:"
+"<p><b>JPEG</b>: umbreyta mynd yfir í JPEG snið. Þetta mun gefa smærri skrár. "
+"Minnsta mögulega JPEG verður notuð við RAW umbreytinguna."
+"<p><b>Aðvörun!!! vegna náttúru reikniritsins sem notað er, þá er JPEG snið sem "
+"tapar gögnum og gæðum við þjöppun.</b>"
+"<p><b>TIFF</b>: umbreyta mynd yfir í TIFF snið. Þetta gefur stórar skrár, án "
+"þess að tapa gæðum. Adobe Deflate þjöppun verður notuð við umbreytinguna."
+"<p><b>PPM</b>: umbreyta mynd yfir í PPM snið. Þetta gefur stærstu skrárnar, og "
+"gerist án þess að tapa gæðum."
+"<p><b>PNG</b>: umbreyta mynd yfir í PNG snið. Þetta gefur nokkuð stórar skrár, "
+"án þess að tapa gæðum. Mesta PNG þjöppun verður notuð við umbreytinguna."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Ef úttaksskrá er þegar til:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Skrifa yfir sjálfkrafa"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Opna endurnefningarglugga"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Umbreyting RAW mynda"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Forsýning"
+
+#: singledialog.cpp:119
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "KIPI íforrit til að umbreyta RAW myndum"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Bý til forsýningu út frá núverandi stillingum. Nota einfalda tvílínulega "
+"innskotsaðferð til að fá snögga útkomu."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Umbreyti RAW mynd með núverandi stillingum. Þetta notar hágæða aðlaganlegt "
+"reiknirit (adaptive algorithm)."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Hætti við núverandi umbreytingu RAW skráa"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Tókst ekki að búa til forsýningu"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Tókst ekki að umbreyta RAW mynd"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Bý til forsýningu..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Umbreyti RAW mynd..."

@@ -1,0 +1,11 @@
+--- kdeadmin-3.5.10/kpackage/packageDisplay.cpp	2005-10-10 16:53:28.000000000 +0200
++++ kdeadmin-3.5.10/kpackage/packageDisplay.cpp	2011-04-04 13:57:05.000000000 +0200
+@@ -389,7 +389,7 @@
+      KURL url;
+      if (package && package->packageState == packageInfo::INSTALLED) {
+        url.setPath( fileList->item2Path(index) ); // from local file to URL
+-       KRun::displayOpenWithDialog(KURL::List::List(url) );
++       KRun::displayOpenWithDialog(KURL::List(url) );
+       }      
+  }
+  

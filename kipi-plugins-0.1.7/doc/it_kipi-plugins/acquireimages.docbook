@@ -1,0 +1,156 @@
+<chapter id="acquireimages">
+<chapterinfo>
+
+<title
+>Acquisizione di immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>    
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin di acquisizione delle immagini di Kipi fornisce strumenti per catturare nuove immagini e salvarle nelle raccolte. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Questo plugin può essere usato per catturare e aggiungere nuove immagini nell'applicazione ospite da sorgenti esterne. In pratica, si possono usare due azioni: </para>
+
+<itemizedlist>
+
+<listitem>
+    <para
+><emphasis
+>Scansione immagini</emphasis
+>: usa l'interfaccia di Kokaa per scansionare immagini con uno scanner piatto supportato dal progetto Sane o un'altra sorgente di cattura come flussi video (perché funzioni devi aver installato Kooka e Sane). </para>
+</listitem>
+
+<listitem>
+    <para
+><emphasis
+>Istantanea</emphasis
+>: scattare istantanee. </para>
+</listitem>
+
+</itemizedlist>
+
+<sect1 id="using-plugin-acquirescan">
+<title
+>Finestra di scansione delle immagini</title>
+
+<para
+>Quando apri il menu <guilabel
+>Scansione immagini</guilabel
+> appare una finestra che ti permette di scegliere tra le fonti di acquisizione disponibili sul tuo computer. Scegli quella da cui vuoi acquisire. Puoi anche impostare la sorgente predefinita per la prossima volta. </para>
+
+<para
+>Quando appare la finestra di dialogo di Kooka, scegli le impostazioni di acquisizione alterando i valori predefiniti. Guarda l'anteprima e ritagliala prima di fare la decisione finale. La dimensione stimata del file è indicata nell'angolo in basso a destra. Vedi l'apposito <ulink url="help:/kooka/index.html"
+>manuale di Kooka</ulink
+> per maggiori informazioni. </para>
+
+<note
+><para
+>Assicurati che la finestra sia completamente visibile perché alcune impostazioni potrebbero essere nascoste se la finestra è troppo sottile. </para
+></note>
+
+<para
+>Premi il pulsante di scansione e attendi finché la scansione non sarà completata e apparirà la finestra <guilabel
+>Opzioni di salvataggio immagini destinazione</guilabel
+>. Qui puoi modificare la qualità di compressione e il tipo di file immagine (fai attenzione che il tipo BMP non è compresso e crea dei grandi file). Il secondo elemento in quella finestra ti permette di scegliere (o creare) la cartella in cui l'immagine sarà salvata. </para>
+
+<figure>
+    <title
+>La finestra di salvataggio della destinazione in azione</title>
+    <graphic srccredit="The Save Target Dialog in Action" fileref="acquire-savetargetpreview.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-acquirescreenshot">
+<title
+>Finestra delle istantanee</title>
+
+<para
+>Puoi scegliere la modalità di acquisizione <emphasis
+>Istantanea</emphasis
+> dal primo elemento del menu Importa->Istantanea... Apparirà una finestra che ti offrirà diverse modalità di scatto: </para>
+
+<itemizedlist>
+<listitem>
+   <para
+>Deseleziona l'elemento <guilabel
+>Cattura tutto il desktop</guilabel
+> per fare un'istantanea di una sola finestra sotto il cursore del mouse. </para>
+</listitem>
+<listitem>
+   <para
+>Quando è selezionato l'elemento <guilabel
+>Nascondi tutte le finestre dell'applicazione ospite</guilabel
+> l'applicazione ospite sparirà per lasciare spazio agli altri schermi e finestre. Altrimenti, dopo il ritardo, scatterai un'istantanea di tutto lo schermo e tutte le finestre attualmente visibili (se hai deselezionato <guilabel
+>Cattura tutto il desktop</guilabel
+> sarà fatta un'istantanea della finestra sotto il cursore del mouse). </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Il controllo del ritardo determina per quanto la Schermata attenderà prima di fare lo scatto. Se devi navigare a qualche altro schermo, imposta il ritardo in modo che basti per darti il tempo di spostarti. </para>
+
+<figure>
+    <title
+>La finestra Istantanea in azione</title>
+    <graphic srccredit="The Screenshot Dialog in Action" fileref="acquire-screenshotpreview.png"/>
+</figure>
+
+<para
+>Una volta che l'istantanea sarà stata scattata, apparirà la finestra <emphasis
+>Opzioni di salvataggio immagini destinazione</emphasis
+> con le stesse opzioni descritte sopra. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

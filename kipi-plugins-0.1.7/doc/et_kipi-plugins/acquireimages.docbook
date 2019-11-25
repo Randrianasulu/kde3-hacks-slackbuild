@@ -1,0 +1,156 @@
+<chapter id="acquireimages">
+<chapterinfo>
+
+<title
+>Pildihõive</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>    
+</authorgroup>
+
+<abstract>
+<para
+>Kipi pildivõiveplugina abil saab skaneerida või muul moel pilte võtta ning lisada neid oma kollektsiooni. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>Seda pluginat saab pruukida piltide hankimiseks mingist välisest allikast. Praegu saab kasutada kaht võimalust:  </para>
+
+<itemizedlist>
+
+<listitem>
+    <para
+><emphasis
+>Piltide skaneerimine</emphasis
+>: rakenduse Kooka abil SANE projekti toetusega skännerilt või mõnelt muult pildiallikalt (näiteks videovoog) piltide hankimine (selleks peab olema paigaldatud Kooka ja SANE). </para>
+</listitem>
+
+<listitem>
+    <para
+><emphasis
+>Ekraanipilt</emphasis
+>: arvutiekraanist pildi tegemine. </para>
+</listitem>
+
+</itemizedlist>
+
+<sect1 id="using-plugin-acquirescan">
+<title
+>Piltide skaneerimise dialoog</title>
+
+<para
+>Käsuga <guilabel
+>Skaneeri pilt</guilabel
+> avaneb dialoog, kus saab valida sellise pildihõiveviisi, mis on sinu arvutile parajasti kättesaadav. Vali sealt endale vajalik. Samuti võid määrata, et sama allikat kasutatakse vaikimisi ka edaspidi. </para>
+
+<para
+>Kooka dialoogi avanedes langeta oma valikud, muutes etteantud vaikevalikuid. Enne pildihõivet uuri eelvaatlust ja vajaduse korral kärbi seda. Oletatavat failisuurust näeb all paremas nurgas. Täpsemalt räägib sellest kõigest <ulink url="help:/kooka/index.html"
+>Kooka käsiraamat</ulink
+>. </para>
+
+<note
+><para
+>Kontrolli, et dialoog oleks piisavalt suur, sest kui aken on liiga kitsas, võivad mõned valikud sellest välja jääda. </para
+></note>
+
+<para
+>Klõpsa skaneerimisnupule ja oota, kuni skaneerimine läbi saab ning ilmub <guilabel
+>pildi salvestamise</guilabel
+> dialoog. Siin saab muuta tihendust ja pildi failitüüpi (arvesta, et BMP ei ole tihendatud ning tekitab päris suuri faile). Dialoogis saab soovi korral ka luua uue kataloogi, kuhu pilt salvestada. </para>
+
+<figure>
+    <title
+>Pildi salvestamise dialoog</title>
+    <graphic srccredit="The Save Target Dialog in Action" fileref="acquire-savetargetpreview.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-acquirescreenshot">
+<title
+>Ekraanipildi dialoog</title>
+
+<para
+><emphasis
+>Ekraanipildi</emphasis
+> saab teha menüükäsuga Import->Ekraanipilt. Ilmuvas dialoogis saab määrata mitu ekraanipildi tegemist puudutavat valikut. </para>
+
+<itemizedlist>
+<listitem>
+   <para
+>Kui soovid teha pildi ainult ühest aknast, eemalda märge kastist <guilabel
+>Pildile haaratakse terve töölaud</guilabel
+>. </para>
+</listitem>
+<listitem>
+   <para
+>Valik <guilabel
+>Peidetakse kõik käesoleva rakenduse aknad</guilabel
+> võimaldab pildi tegemise ajaks peita kõik selle rakenduse aknad, kus sa pildi tegemise käsu andsid, ning tuua nähtavale muud aknad. Vastasel juhul pildistatakse pärast viivitust see aken, mis on parajasti näha (kui oled eemaldanud märke kastist <guilabel
+>Pildile haaratakse terve töölaud</guilabel
+>, siis ainult aknast, mis asub hiirekursori all). </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Viivitusega saab määrata, kui palju aega oodatakse enne pildi tegelikku tegemist. See võib olla vajalik juhul, kui pead liikuma mõnele muule ekraanile või aknale. </para>
+
+<figure>
+    <title
+>Ekraanipildi dialoog</title>
+    <graphic srccredit="The Screenshot Dialog in Action" fileref="acquire-screenshotpreview.png"/>
+</figure>
+
+<para
+>Kui ekraanipilt on tehtud, ilmub samasugune <guilabel
+>pildi salvestamise</guilabel
+> dialoog, nagu eespool kirjeldatud. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,362 @@
+# translation of kipiplugin_acquireimages.po to german
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# translation of kipiplugin_acquireimages.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Oliver Dörr <kde@doerr-privat.de>, 2003, 2004, 2005, 2007, 2008.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2004, 2006, 2007, 2008.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_acquireimages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-09 16:03+0100\n"
+"Last-Translator: Thomas Reitelbach <tr@erdfunkstelle.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: LoKalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr,Thomas Reitelbach"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de,tr@erdfunkstelle.de"
+
+#: acquireimagedialog.cpp:105
+msgid "Save Target Image Options"
+msgstr "Zielbild-Einstellungen speichern"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+msgid "Acquire images"
+msgstr "Bilder einlesen"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+msgid "A Kipi plugin to acquire images"
+msgstr "Ein KIPI-Modul zum Einlesen von Bildern"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr "Autor und Betreuer"
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr "Handbuch zum Modul"
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "Bild"
+
+#: acquireimagedialog.cpp:180
+msgid "Target Image"
+msgstr "Zielbild"
+
+#: acquireimagedialog.cpp:181
+msgid "Target Image Options"
+msgstr "Zielbild-Einstellungen"
+
+#: acquireimagedialog.cpp:190
+msgid "File Name && Caption"
+msgstr "Dateiname && Beschriftung"
+
+#: acquireimagedialog.cpp:191
+msgid "<p>The target image preview with the file name and caption."
+msgstr ""
+"<p>Die Vorschau des Zielbildes mit dem Dateinamen und den Beschriftungen."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Dateiname (ohne Erweiterung):"
+
+#: acquireimagedialog.cpp:197
+msgid "acquired_image"
+msgstr "eingelesenes_bild"
+
+#: acquireimagedialog.cpp:198
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Geben Sie bitte hier den Dateinamen des Zielbildes ohne die Erweiterung an. "
+"Die Erweiterung wird automatisch, abhängig vom gewählten Dateiformat, "
+"hinzugefügt."
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr "Titel:"
+
+#: acquireimagedialog.cpp:209
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Geben Sie hier bitte den Titel für das Zielbild ein."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Die Vorschau des Zielbildes."
+
+#: acquireimagedialog.cpp:228
+msgid "Saving Options"
+msgstr "Speicheroptionen"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>Die Speicheroptionen des Zielbildes."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Bildkompression:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>Der Kompressionsgrad des Zielbildes für JPEG- und PNG-Formate:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: sehr hohe Kompression"
+"<p><b>25</b>: hohe Kompression"
+"<p><b>50</b>: mittlere Kompression"
+"<p><b>75</b>: niedrige Kompression (Voreinstellung)"
+"<p><b>100</b>: keine Kompression"
+
+#: acquireimagedialog.cpp:260
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Wählen Sie hier bitte das Dateiformat des Zielbildes.<p>"
+
+#: acquireimagedialog.cpp:261
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Das \"Joint Photographic Experts Group\"-Dateiformat ist ein gutes "
+"Webdateiformat, dessen Kompressionsverfahren aber verlustbehaftet ist."
+"<p><b>PNG</b>: Das \"Portable Network Graphics\"-Format ist ein erweiterbares "
+"Dateiformat zum verlustfreien, portablen und komprimierten Speichern von "
+"Rasterbildern. PNG ist ein möglicher patentfreier Ersatz für das GIF-Format und "
+"kann in vielen Fällen auch das TIFF-Format ersetzen. PNG wurde entworfen, um in "
+"Online-Bildbetrachtungsprogrammen, wie z. B. im World Wide Web, eingesetzt zu "
+"werden. Es ermöglicht es, bereits während dem Laden des Bildes eine Voransicht "
+"anzuzeigen. Weiterhin kann PNG Gamma- und Farbwertdaten für eine verbesserte "
+"Bildanzeige unter heterogenen Plattformen speichern."
+
+#: acquireimagedialog.cpp:269
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: das \"Tagged Image File Format\" ist ein sehr alter Standard, "
+"der heute immer noch sehr populär ist. Es ist ein sehr flexibles und "
+"plattformunabhängiges Format, das von vielen Bildbearbeitungsprogrammen und "
+"praktisch jeder Druckvorstufensoftware unterstützt wird."
+
+#: acquireimagedialog.cpp:273
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: das \"Portable Pixel Map\"-Format wird als Zwischenformat zum "
+"Speichern von Farb-Bitmap-Informationen genutzt. PPM-Dateien sind entweder "
+"binär oder ASCII und speichern Pixelwerte bis zu einer Farbtiefe von 24 Bit. "
+"Dieses Format generiert die größten Textdateien, um Bilder verlustfrei zu "
+"kodieren."
+
+#: acquireimagedialog.cpp:277
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: das \"BitMaP\"-Format ist ein populäres Bildformat aus der "
+"Win32-Welt. Es speichert auf effiziente Weise gerichtete oder ungerichtete "
+"RGB-Graphikdaten mit Pixelgrößen von 1-, 4-, 8-, oder 24-Bit. Die Daten können "
+"roh oder mit einem 4- oder 8-Bit RLE-Kompressionsalgorithmus gepackt werden. "
+"BMP ist eine ausgezeichnete Wahl für ein einfaches Bitmapformat, das eine sehr "
+"große Bandbreite von RGB-Bilddaten unterstützt."
+
+#: acquireimagedialog.cpp:284
+msgid "Image file format:"
+msgstr "Bilddateiformat:"
+
+#: acquireimagedialog.cpp:303
+msgid "Selection"
+msgstr "Auswahl"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Album auswählen"
+
+#: acquireimagedialog.cpp:311
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Ordner zum Speichern des Zielbildes auswählen"
+
+#: acquireimagedialog.cpp:320
+msgid "&Add New Folder"
+msgstr "Neuen Ordner &hinzufügen"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr "<p>Einen neuen Ordner hinzufügen."
+
+#: acquireimagedialog.cpp:328
+msgid "Album Description"
+msgstr "Albumbeschreibung"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p>Die Beschreibung des aktuellen Albums in der Auswahlliste."
+
+#: acquireimagedialog.cpp:393
+#, c-format
+msgid "Caption: %1"
+msgstr "Beschriftung: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Kollektion: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Erstellt am: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Bilder: %1"
+
+#: acquireimagedialog.cpp:409
+msgid "You must select a target album for this image."
+msgstr "Sie müssen ein Zielalbum für dieses Bild auswählen."
+
+#: acquireimagedialog.cpp:415
+msgid "You must provide a file name for this image."
+msgstr "Sie müssen einen Dateinamen für dieses Bild angeben."
+
+#: acquireimagedialog.cpp:474
+msgid "Cannot write image file \"%1\"."
+msgstr "Die Bilddatei \"%1\" lässt sich nicht schreiben."
+
+#: acquireimagedialog.cpp:483
+msgid "Could not upload image to \"%1\"."
+msgstr "Die Bilddatei lässt sich nicht nach \"%1\" hochladen."
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+"<qt>Fehler bei der Kommunikation mit der Anwendung über das neue Bild. Die "
+"Fehlermeldung lautet: %1</qt>"
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Bilder scannen ..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Bildschirmfoto ..."
+
+#: plugin_acquireimages.cpp:114
+msgid "No KDE scan-service available; check your system."
+msgstr ""
+"Es ist kein KDE-Scannerdienst verfügbar. Überprüfen Sie bitte Ihre "
+"Systemeinstellungen."
+
+#: plugin_acquireimages.cpp:115
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "KIPI-Modul zum \"Scannen von Bildern\""
+
+#: screenshotdialog.cpp:71
+msgid "Screenshot"
+msgstr "Bildschirmfoto"
+
+#: screenshotdialog.cpp:72
+msgid "&New Snapshot"
+msgstr "&Neues Bildschirmfoto"
+
+#: screenshotdialog.cpp:82
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"Dieser Dialog fängt entweder einen Schnappschuss der gesamten Arbeitsfläche\n"
+"oder eines einzelnen Programmfensters ein. Wenn Sie einen Schnappschuss für "
+"ein\n"
+"einzelnes Fenster holen möchten, wird der Mauszeiger zu einem Fadenkreuz,\n"
+"woraufhin Sie das gewünschte Fenster mit der Maus auswählen können."
+
+#: screenshotdialog.cpp:90
+msgid "Grab the entire desktop"
+msgstr "Ganze Arbeitsfläche aufnehmen"
+
+#: screenshotdialog.cpp:91
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p>Wenn diese Einstellung aktiviert ist, wird die komplette Arbeitsfläche "
+"aufgenommen; andernfalls nur das aktive Fenster."
+
+#: screenshotdialog.cpp:97
+msgid "Hide all host application windows"
+msgstr "Alle eigenen Programmfenster ausblenden"
+
+#: screenshotdialog.cpp:98
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr ""
+"<p>Wenn diese Einstellung aktiviert ist, werden beim Bildschirmfoto alle "
+"eigenen Fenster der Graphik-Anwendung ausgeblendet, so dass sie nicht im Foto "
+"erscheinen."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Verzögerung:"
+
+#: screenshotdialog.cpp:107
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr "<p>Die Verzögerung in Sekunden, bevor das Bildschirmfoto gemacht wird."
+
+#: screenshotdialog.cpp:261
+msgid "Unable to take snapshot."
+msgstr "Es kann kein Bildschirmfoto angefertigt werden."
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Bildschirmfoto-Fehler"

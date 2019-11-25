@@ -1,0 +1,218 @@
+<sect1 id="components.kbluetoothd">
+<title
+>Kbluetoothd: Kärnan i KDE:s Blåtandsramverk</title>
+<para
+>Kbluetoothd är en central del av KDE:s Blåtandsramverk. Det kör oftast hela tiden i systembrickan och startar andra tjänster som OBEX-servern eller Bemused vid behov. Dess ikon i systembrickan anger uppkopplade Blåtandsanslutningar och ger dig också snabbåtkomst till tjänstinställningen, senast använda tjänster, enheter inom räckhåll med mera. </para>
+<para
+>Programmerare som vill integrera sina program med Kbluetoothd, bör ta en titt på <link linkend="developers.kbluetoothd"
+>avsnittet för utvecklare</link
+> för mer information. </para>
+
+<sect2>
+<title
+>Starta Kbluetoothd</title>
+<para
+>Du kan starta Kbluetoothd genom att skriva <command
+>kbluetoothd</command
+> på kommandoraden eller genom att starta det från K-menyn (oftast System/Kbluetoothd). </para
+><para
+>Kbluetoothd visar en ikon i systembrickan, men om du inte tycker om den kan du inaktivera "Alltid synlig" med den sammanhangsberoende menyn för systembrickans ikon. Då kör Kbluetoothd utan något synligt användargränssnitt, till och med efter det har startats om. För att aktivera ikonen igen, starta helt enkelt om Kbluetoothd. Om ikonen är inaktiverad, visas den ändå under tiden för en Blåtandsanslutning. </para>
+<para
+>När Kbluetoothd kör ända till systemet stängs av, startas det om automatiskt nästa gång du loggar in. För att förhindra att Kbluetoothd från att starta automatiskt igen, avsluta det bara och tala om att det inte ska startas när du loggar in nästa gång.</para>
+ 
+</sect2>
+
+<sect2>
+<title
+>Vad Kbluetoothd gör</title>
+<para
+>Den viktigaste funktionen hos Kbluetoothd är dess Blåtandsmetaserver. Eftersom Kbluetoothd ändå kör hela tiden, övervakar den också Blåtandsenheten, talar om för dig när det finns några anslutningar och lagrar begäran om namn i en cache. Idén är att Kbluetoothd är det enda Blåtandsrelaterade programmet som alltid behöver köra, medan det ändå finns fullständig åtkomst till alla aktiverade tjänster. </para>
+<sect3>
+<title
+>Metaservern</title>
+<para
+>Om du vet vad inetd gör i ett Linux-system, har du redan en god idé om vad metaservern Kbluetoothd är till för: Den väntar på inkommande anslutningar på de riktiga tjänsthanterarnas vägnar och startar dem när det behövs. Du behöver alltså inte ha en OBEX-server som kör hela tiden, men när någon skickar en fil via OBEX, startas OBEX-servern automatiskt. </para>
+
+<para
+>Det finns flera anledningar att använda en sådan omväg: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Det minskar minnesbehovet när du använder flera tjänster. KDE:s Blåtandsramverk levereras för närvarande med fyra serverprogram: OBEX-servern, handsfree-klienten, Bemused-klienten och det seriella chattverktyget. Även om du kanske bara sällan behöver några av tjänsterna, kan du fortfarande ha dem aktiverade utan kostnad. </para>
+</listitem>
+
+<listitem>
+<para
+>Systembrickan skräpas inte ner med många ikoner som sällan används. </para>
+</listitem>
+
+<listitem>
+<para
+>Det förbättrar säkerheten och gör det enklare att hantera åtkomstkontroll. Kbluetoothd visar normalt en dialogruta som frågar efter godkännande vid en inkommande anslutning. Användaren kan överskrida dialogrutan och permanent tillåta eller neka till anslutning för varje tjänst och enhet. Det ger varje program som hanteras av Kbluetoothd fri åtkomstkontroll. </para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para
+>-->
+</listitem>
+
+<listitem>
+<para
+>Det har möjligheten att göra Blåtandstjänster tillförlitligare. Varje server startas för varje ny anslutning, så om en server kraschar, kan du försöka igen utan att behöva starta om den. </para>
+<para
+>Det kan vara en flaskhals för en webbserver att hanteras av inetd, men i fallet med Blåtand tar det ändå flera sekunder att skapa en förbindelse och varje åtgärd initieras oftast av användaren, vilket gör det okritiskt att använda en metaserver. </para>
+</listitem>
+
+<listitem>
+<para
+>Att registrera en tjänst med SDP-servern är mycket enkelt. Se <link linkend="developers.kbluetoothd"
+>avsnittet för utvecklare</link
+> om hur program som hanteras av Kbluetoothd registreras med SDP-servern. </para>
+</listitem>
+
+<listitem>
+<para
+>Enkla serverprogram, till och med skript, kan användas för att implementera en Blåtandsserver utan att använda Blåtandsrelaterade funktioner alls. </para>
+</listitem>
+</itemizedlist>
+<para
+>Du kan aktivera eller inaktivera tjänster som används av Kbluetoothd med dess modul i Inställningscentralen under fliken "Lokala tjänster". Där kan du också anpassa tjänstspecifika alternativ genom att markera en tjänst och klicka på knappen "Anpassa...". </para>
+<para
+>Under fliken "Bekräftelse" kan du anpassa hur Kbluetoothd reagerar på inkommande anslutningar. </para>
+</sect3>
+
+
+<sect3>
+<title
+>Tjänsten för att upptäcka enheter</title>
+<para
+>Det är viktigt för många program att veta om en given enhet för närvarande är inom räckhåll eller inte, eller till och med få reda på om en enhet kommer inom räckhåll eller försvinner. I motsats till USB, där inkopplingsramverket underrättar dig om nya enheter, finns det ingen sådan tjänst för Blåtand. </para>
+
+<para
+>Kbluetoothd fyller i detta gap med tjänsten för att upptäcka enheter. Den söker periodiskt efter enheter i närheten och håller en lista med de som för närvarande är inom räckhåll. För att komma åt en upptäckt enhet, högerklicka på Kbluetoothds ikon i systembrickan och titta i menyn "Öppna senaste". Menyn består av en del med tjänster som nyligen användes (som "OBEX FTP på min telefon") och, om det verkligen finns enheter som redan upptäckts, en andra del ovanför med en lista över enheter. Genom att klicka på en av dem visas enhetens tjänster i Konqueror. </para>
+<para
+>I Kbluetoothds modul i Inställningscentralen kan du ställa in om och hur ofta Kbluetoothd söker efter enheter ("Uppdatera grannlista periodiskt"). Jag rekommenderar att inte använda intervall kortare än en minut här, annars kan andra program ibland få problem att söka efter enheter. Det beror på att de flesta enheter inte förväntar sig att andra program ska använda Blåtand samtidigt. </para>
+<para
+>Många enheter <phrase
+>kan inte upptäckas</phrase
+> normalt av integritets- och säkerhetsskäl. I detta fall upptäcks inte enheten vid sökning efter enheter. Istället måste Kbluetoothd försöka att komma åt var och en av enheterna individuellt. Du kan lägga till en enhet i listan med enheter som inte kan upptäckas genom att klicka på "Ytterligare sökalternativ för enheter som inte kan upptäckas". Observera att du antingen tillfälligt måste ställa in enheten så att den kan upptäckas, eller känna till dess hårdvaruadress för att kunna lägga till den i listan. </para>
+<para
+>Detta förhindrar att andra program söker efter enheter eller till och med upprättar en förbindelse med en annan enhet under ungefär 30 sekunder <emphasis
+>för varje enhet</emphasis
+> om enheten inte för närvarande kan nås. Därför bör du använda ett ganska långt intervall här. Tio minuter verkar vara ett rimligt värde. Försök själv och ta reda på hur kort intervallet kan vara innan det börjar besvära dig. </para>
+
+<para
+>Att bara ha en lista över enheter som för närvarande kan nås är inte särskilt användbart. Du kan istället använda upptäcktstjänsten för att köra <phrase
+>upptäcktsjobb</phrase
+> när en enhet kommer inom räckhåll eller försvinner. Du kan enkelt skriva egna skript, se avsnittet för utvecklare om <link linkend="developers.kbluetoothd.discovery"
+>upptäcktsskript</link
+>. Kbluetoothd levereras dock redan med några skript, bland andra: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Upptäcktsprotokoll</term>
+<listitem
+><para
+>Det här skriptet skapar en HTML-sida med viss teknisk information för varje enhet när den upptäcks för första gången. Du kan använda det om du är nyfiken på vilka andra som använder Blåtand i närheten. Att ha skriptet igång hela tiden skadar inte nämnvärt, eftersom det bara försöker komma åt enheten när den upptäcks för första gången eller efter du tagit bort motsvarande HTML-sida. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kopete_AutoAway</term>
+<listitem
+><para
+>Detta ställer in tillgänglighetsstatus i Kopete, beroende på om du (tillsammans med din telefon) är inom räckhåll eller inte. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Photo_Copy</term>
+<listitem
+><para
+>Det här skriptet kontrollerar en katalog i din telefon via OBEX I/O-slaven om det finns nya filer, och kopierar dem till en lokal katalog. Det byter också namn på dem med filens datum som filnamn. Jag skrev det här skriptet för min Nokia 6230. Om du vill använda det för din egen telefon, måste du troligen ändra skriptet på många ställen. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Screensaver</term>
+<listitem
+><para
+>Starta eller avslutar skärmsläckaren eller skärmlåsningen varje gång någon av de bevakade enheterna kommer inom räckhåll eller försvinner. </para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>De flesta skript måste först anpassas för att fungera riktigt. Genom att klicka "configure" gör oftast bara att en editor dyker upp med skriptets inställningsdel. Var också medveten om att <emphasis
+> du kan behöva begränsa enheterna som rapporteras till varje jobb</emphasis
+>, om du inte vill att skriptet ska köras när någon annan går förbi med en påslagen Blåtandstelefon. </para>
+
+</sect3>
+
+<sect3>
+<title
+>Listan med "senast använda tjänster"</title>
+<para
+>Du kan snabbt komma åt tjänster som du tidigare använt genom att hitta dem i undermenyn "Senast använda" i Kbluetooths ikon i systembrickan. Om du redan skickat några filer till mobilen med namnet "Min telefon" via Kbtobexclient, hittar du ett menyalternativ med namnet "OBEX-utsändningsklient - Min telefon", som startar Kbtobexclient och omedelbart ansluter till din telefon utan en tidskrävande frågeprocess. </para>
+<para
+>Observera att Kbluetoothd visar alla tjänster som senast används, oberoende om respektive enhet för närvarande är tillräckligt nära eller inte. </para>
+<para
+>Funktionen måste stödjas av respektive program. </para>
+</sect3>
+
+<sect3>
+<title
+>Anslutningsövervakning</title>
+<para
+>Du kan se om det finns en Blåtandsanslutning för närvarande, genom att titta på ikonen för Kbluetoothd i systembrickan. Den blinkar om en anslutning håller på att upprättas, och blir blå när anslutningen väl är skapad. </para>
+<para
+>Du kan få mer information om aktuell anslutning genom att högerklicka på ikonen i systembrickan och välja "Anslutningsinformation...". </para>
+<para
+>Det som Kbluetooth visar här är ACL-länkar, inte Rfcomm-anslutningar. Om du är ansluten till en enda enhet med flera program (till exempel handsfree och Bemused), visas det fortfarande som en anslutning, eftersom det bara kan finnas en ACL-länk till en enda enhet åt gången. </para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title
+>Anpassa Kbluetoothd</title>
+<para
+>Normalt ska Kbluetoothd och servrarna som det hanterar fungera direkt. Men det finns ändå några alternativ du kan ändra. För att anpassa Kbluetoothd, kan du antingen använda KDE:s inställningscentral och gå till <guimenuitem
+>Internet och nätverk -> Blåtandstjänster</guimenuitem
+>, eller högerklicka på ikonen i systembrickan för Kbluetoothd och välja <guimenuitem
+>Inställning -> Tjänster...</guimenuitem
+>. </para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title
+>Bekräftelse av inkommande anslutningar</title>
+<para
+>Under den här fliken kan du ändra bekräftelseinställningar för inkommande anslutningar. Normalt visar Kbluetoothd en bekräftelsedialogruta innan själva serverprogrammet (som OBEX-utsändningsservern) startas. Här kan du inaktivera bekräftelsedialogrutan för vissa enheter och tjänster eller tala om för Kbluetoothd att tyst neka till inkommande anslutningar. </para>
+<para
+>Nya enhetsposter läggs till när du väljer kryssrutan "Acceptera alltid" i en bekräftelsedialogruta. </para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title
+>Lokala tjänster</title>
+<para
+>Under den här fliken kan du aktivera eller inaktivera enskilda Blåtandstjänster som hanteras av Kbluetoothd. Vissa tjänster tillhandahåller också några inställningsalternativ, som till exempel Bemused-servern. Om så är fallet, är <guibutton
+>Anpassa...</guibutton
+> aktiverad när du markerar respektive tjänst. </para>
+<para
+>Eftersom Kbluetoothd automatiskt tilldelar rfcomm-kanaler till tjänster, kan kanalen för en tjänst ändras när du använder andra Bluetooth-servrar. Om du behöver veta vilken kanal som tilldelades till en viss tjänst, talar den här dialogrutan om det för dig. </para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

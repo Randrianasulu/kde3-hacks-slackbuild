@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>Kioslave OBEX : Naviguer parmi les dossiers via Bluetooth</title>
+
+  <sect2>
+    <title
+>Général</title>
+    <para
+>Le protocole OBEX est destiné à être utilisé par les périphériques mobiles. Si vous avez déjà &quot;transféré&quot; une vcard d'un périphérique à un autre périphérique, vous avez alors utilisé OBEX. Mais il y a aussi d'autres applications utilisant le protocole OBEX. Le plus notable est le système de navigation dans les dossiers. Si le périphérique comprend ce protocole, vous pouvez naviguer, envoyer et télécharger dans le système de stockage utilisant ce client. Les protocoles de synchronisation tels lrMCSync ou SyncML peuvent aussi utiliser OBEX et y accéder en utilisant son client, même s'il n'y a pas d'utilisation de la synchronisation dans konqueror.</para>
+    <para
+>Les protocoles OBEX peuvent utiliser beaucoup de &quot;moyens de transport&quot; différents. Le &quot;moyen de transport&quot; original était IrDA, mais il existe aussi des &quot;moyens de transport&quot; pour Bluetooth, les ports série et les connexions tcp/ip.</para>
+    <para
+>OBEX gère l'authentification de deux manières. La première, la plus connue, est l'authentification d'un client par le serveur. Le serveur vérifie donc l'identité du client. Mais le client peut aussi vérifier l'identité du serveur. Pour l'authentification, une checksum MD5 est utilisée. Cela assure que des mots de passe lisibles ne soient jamais transportés via le &quot;moyen de transport&quot;.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>Format d'URL</title>
+    <para
+>Les ressources OBEX sont accessibles via une URL. Le protocole est obex : le composant path garde le chemin sur le serveur, la partie client est un peu plus complexe.</para>
+    <para
+>Pour les serveurs accessibles via tcp/ip, la partie hôte est la même que d'habitude. Vous pouvez utiliser le nom d'hôte ou l'adresse ip du serveur pour le contacter. De plus, si le serveur utilise un numéro de port non standard (le port standard est le 650) vous pouvez donner le numéro du port. Exemple <userinput
+>OBEX://nomhote:port/chemin</userinput
+></para>
+    <para
+>Pour IrDA ou Bluetooth, vous pouvez utiliser l'adresse du périphérique dans la notation standard avec les octets séparés par deux-points. C'est clair, mais il est un peu difficile de se souvenir de l'adresse de votre périphérique Bluetooth. Exemple : <userinput
+>obex://[ef:01:23:45]/chemin</userinput
+> ou <userinput
+>obex://[12:34:ef:01:23:45]/chemin</userinput
+></para>
+    <para
+>Il est possible de définir des noms d'hôtes pour les utiliser avec le protocole OBEX. Ces alias sont définis dans le module KControl d'OBEX. Vous pouvez mettre en place un nom, puis assigner à celui-ci un périphérique. Les périphériques utilisant des ports séries ober sont aussi accessibles via ces alias. Pour IrDa et bluetooth, il y a des alias prédéfinis appelés irda ou bluetooth. Ils vous permettent tous les deux d'essayer de vous connecter au premier périphérique qu'ils trouvent.</para>
+    <para
+>Bon courage si vous essayez de naviguer dans le portable de votre voisin :))</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Trucs et astuces</title>
+    <para
+>Comme n'importe quel kioslave, vous pouvez ouvrir et enregistrer des fichiers directement dans les périphériques bluetooth avec kio_obex. Si vous écrivez votre liste de courses par exemple, vous pouvez simplement la saisir avec kedit et l'enregistrer sur votre téléphone. </para>
+    <para
+>Vous pouvez accélérer cette procédure en ajoutant un signet à la liste des signets de la fenêtre d'enregistrement. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Conditions requises</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX et KDE</title>
+      <para
+>Etant donné qu'un kioclient ne peut contrôler le nombre d'esclaves accédant à la même destination, ce qui est souvent le cas quand plusieurs esclaves fonctionnent. Mais les "moyens de transport" OBEX, excepté le tcp/ip, ne gèrent qu'une seule connexion au périphérique. Cela entraîne l'échec de kioslave quand il veut se connecter, affichant un message comme « Périphérique ou Ressource Occupée ». OBEX a une solution partielle à ce problème. Si le serveur le gère, un périphérique peut transmettre des paquets à plusieurs connexions sur le même "moyen de transport". Mais, je n'ai pas vu de périphérique annonçant cette gestion. Et cela demanderait un démon différent pour chaque destination. Donc, si je vois des périphériques proposant cette option, je commencerai à implémenter ce démon.</para>
+      <para
+>Il n'y a pas de méthode spécifique pour renommer ou modifier un fichier sur un périphérique. Cela est donc fait en copiant les données depuis et vers le périphérique. Ceci est lent et lancera deux kioslaves qui auront le problème décrit ci-dessous.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Compatibilité des périphériques</title>
+      <para
+>Etant donné que le client implémente un standard ouvert, il y a un réel espoir que beaucoup de périphériques fonctionnent bien. Mais il y a toujours des exceptions.</para>
+      <para
+>Le client est développé avec un SIEMENS S45i utilisant IrDA ou le protocole BFB SIEMENS sur un port série. Comme vous pouvez l'imaginer, cela fonctionne.</para>
+      <para
+>Le NOKIA 3650 a un bug dans certaines versions. Les mobiles contenant ces bugs renverront des fichiers XML non valables lors du listage d'un dossier. Cela renvoie des dossiers vides. Ce bug est rapporté comme étant présent dans la version 2.50 du firmware. La version 3.16 a corrigé ce bogue. Merci à Fred Schaettgen &lt;Sch@ttgen.net&gt; pour le test.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

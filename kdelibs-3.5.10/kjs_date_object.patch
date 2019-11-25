@@ -1,0 +1,20 @@
+--- trunk/KDE/kdelibs/kjs/date_object.cpp	2009/05/10 14:19:44	966157
++++ trunk/KDE/kdelibs/kjs/date_object.cpp	2009/05/10 14:19:44	966158
+@@ -615,7 +615,7 @@
+ 
+   if (id == SetTime) {
+     double milli = roundValue(exec, args[0]);
+-    result = jsNumber(milli);
++    result = jsNumber(timeClip(milli));
+     thisDateObj->setInternalValue(result);
+     return result;
+   }
+@@ -711,7 +711,7 @@
+   if (id == SetYear || id == SetMilliSeconds || id == SetSeconds ||
+       id == SetMinutes || id == SetHours || id == SetDate ||
+       id == SetMonth || id == SetFullYear ) {
+-    result = jsNumber(isnan(ms) ? ms : makeTime(&t, ms, utc));
++    result = jsNumber(isnan(ms) ? ms : timeClip(makeTime(&t, ms, utc)));
+     thisDateObj->setInternalValue(result);
+   }
+ 

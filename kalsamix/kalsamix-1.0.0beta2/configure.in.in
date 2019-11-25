@@ -1,0 +1,30 @@
+#MIN_CONFIG(3.2.0)
+
+AM_INIT_AUTOMAKE(kalsamix, 1.0.0beta2)
+AC_C_BIGENDIAN
+AC_CHECK_KDEMAXPATHLEN
+
+dnl #SR Check for alsa-lib
+AC_CHECK_LIB(asound,snd_card_load)
+AC_CHECK_LIB(asound,snd_asoundlib_version,AC_DEFINE([HAS_SND_ASOUNDLIB_VERSION],[],[Has snd_asoundlib_version function]))
+
+AC_CHECK_LIB(asound,snd_mixer_selem_get_playback_dB,AC_DEFINE([HAS_SND_DECIBEL],[],[Has snd_mixer_selem decibel functions]))
+
+AC_CHECK_LIB(asound,snd_mixer_selem_set_playback_volume_all,AC_DEFINE([HAS_SND_VOLUME_ALL],[],[Has snd_mixer_selem_set_XXX_volume_all functions]))
+
+dnl #SR switch for vumeter
+AC_ARG_ENABLE(vumeter,
+  [ AC_HELP_STRING([--enable-vumeter],[Enables vu-meter compilation]) ],
+  [ case "$enableval" in
+    "yes")
+      AC_DEFINE([VUMETER],[],[enables vu-meter compilation])
+      AC_SUBST(ARTSKDE,-lartskde)
+    ;;
+    "no")
+      AC_SUBST(ARTSKDE,)
+    ;;
+    esac
+    ],
+  [   AC_DEFINE([VUMETER],[],[enables vu-meter compilation])
+      AC_SUBST(ARTSKDE,-lartskde) ]
+  )

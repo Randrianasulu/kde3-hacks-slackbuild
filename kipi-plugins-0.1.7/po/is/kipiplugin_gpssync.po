@@ -1,0 +1,717 @@
+# translation of kipiplugin_gpssync.po to Icelandic
+# translation of kipiplugin_gpssync.po to
+#
+# Sveinn í Felli <sveinki@nett.is>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_gpssync\n"
+"POT-Creation-Date: 2008-11-18 08:53+0100\n"
+"PO-Revision-Date: 2008-10-20 11:13+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Sveinn í Felli"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sveinki@nett.is"
+
+#: gpseditdialog.cpp:88
+msgid "%1 - Edit Geographical Coordinates"
+msgstr "%1 - Sýsla með landfræðileg hnit"
+
+#: gpseditdialog.cpp:98
+msgid ""
+"<p>Use the map on the right to select the location where the picture have been "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates."
+"<p>"
+msgstr ""
+"<p>Notaðu landakortið hér til hægri til að velja staðinn þar sem myndin var "
+"tekin. Smelltu með vinstri músarhnappnum á kortið eða færðu merkibendilinn til "
+"að fá upp GPS staðsetningarhnitin."
+"<p>"
+
+#: gpseditdialog.cpp:102
+msgid "Altitude:"
+msgstr "Hæð:"
+
+#: gpseditdialog.cpp:103
+msgid "Latitude:"
+msgstr "Breiddargráða:"
+
+#: gpseditdialog.cpp:104
+msgid "Longitude:"
+msgstr "Lengdargráða:"
+
+#: gpseditdialog.cpp:118
+msgid "Goto Location"
+msgstr "Staðsetning ákvörðunarstaðar"
+
+#: gpseditdialog.cpp:144 gpssyncdialog.cpp:248 gpssyncdialog.cpp:313
+#: gpssyncdialog.cpp:321 gpssyncdialog.cpp:443 gpssyncdialog.cpp:453
+#: gpssyncdialog.cpp:462 gpssyncdialog.cpp:494
+msgid "GPS Sync"
+msgstr "GPS Samræming"
+
+#: gpseditdialog.cpp:147
+msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgstr "Íforrit til að samræma metagögn mynda við GPS staðsetningartæki"
+
+#: gpseditdialog.cpp:150 gpssyncdialog.cpp:254
+msgid "Author and Maintainer"
+msgstr "Höfundur og umsjónarmaður"
+
+#: gpseditdialog.cpp:155 gpssyncdialog.cpp:259 kmlexportconfig.cpp:292
+msgid "Plugin Handbook"
+msgstr "Handbók íforrits"
+
+#: gpseditdialog.cpp:306
+msgid "Altitude value is not correct!"
+msgstr "Hæðargildi er ekki rétt!"
+
+#: gpseditdialog.cpp:307 gpseditdialog.cpp:315 gpseditdialog.cpp:323
+#: plugin_gpssync.cpp:251
+msgid "Edit Geographical Coordinates"
+msgstr "Sýsla með landfræðileg hnit"
+
+#: gpseditdialog.cpp:314
+msgid "Latitude value is not correct!"
+msgstr "Breiddargildi er ekki rétt!"
+
+#: gpseditdialog.cpp:322
+msgid "Longitude value is not correct!"
+msgstr "Lengdargildi er ekki rétt!"
+
+#: gpslistviewitem.cpp:108
+msgid "Interpolated"
+msgstr "Innskotið"
+
+#: gpslistviewitem.cpp:112
+msgid "Added"
+msgstr "Bætt við"
+
+#: gpslistviewitem.cpp:114
+msgid "Found"
+msgstr "Fundið"
+
+#: gpslistviewitem.cpp:132
+msgid "Deleted!"
+msgstr "Eytt!"
+
+#: gpslistviewitem.cpp:145
+msgid "Not available"
+msgstr "Ekki tiltækt"
+
+#: gpssyncdialog.cpp:107 plugin_gpssync.cpp:73
+msgid "Geolocation"
+msgstr "Hnattstaðsetning"
+
+#: gpssyncdialog.cpp:114
+msgid "Correlate"
+msgstr "Tenging"
+
+#: gpssyncdialog.cpp:115
+msgid "Edit..."
+msgstr "Breyta..."
+
+#: gpssyncdialog.cpp:118
+msgid ""
+"Correlate in time and interpolate distance of data from GPX file with all "
+"images on the list."
+msgstr ""
+"Tengja samat tímasetningar og skjóta inn staðsetningargögnum ír GPX-skrá fyrir "
+"allar myndirnar á listanum."
+
+#: gpssyncdialog.cpp:119
+msgid "Manually edit GPS coordinates of selected images from the list."
+msgstr "Sýsla handvirkt við GPS hnit valdra mynda á listanum."
+
+#: gpssyncdialog.cpp:120
+msgid "Remove GPS coordinates of selected images from the list."
+msgstr "Fjarlægja GPS hnit valdra mynda á listanum."
+
+#: gpssyncdialog.cpp:131
+msgid "Thumbnail"
+msgstr "Smámynd"
+
+#: gpssyncdialog.cpp:132
+msgid "File Name"
+msgstr "Skráarnafn"
+
+#: gpssyncdialog.cpp:133
+msgid "Camera time stamp"
+msgstr "Tímastimpill myndavélar"
+
+#: gpssyncdialog.cpp:134
+msgid "Latitude"
+msgstr "Breiddargráða"
+
+#: gpssyncdialog.cpp:135
+msgid "Longitude"
+msgstr "Lengdargráða"
+
+#: gpssyncdialog.cpp:136
+msgid "Altitude"
+msgstr "Hæð"
+
+#: gpssyncdialog.cpp:137
+msgid "Status"
+msgstr "Staða"
+
+#: gpssyncdialog.cpp:147
+msgid "Settings"
+msgstr "Stillingar"
+
+#: gpssyncdialog.cpp:151
+msgid "Load GPX File..."
+msgstr "Hlaða inn GPX skrá..."
+
+#: gpssyncdialog.cpp:153
+msgid "Current GPX file:"
+msgstr "Núverandi GPX skrá:"
+
+#: gpssyncdialog.cpp:154
+msgid "No GPX file"
+msgstr "Engin GPX skrá"
+
+#: gpssyncdialog.cpp:158
+msgid "Max. time gap (sec.):"
+msgstr "Mesti tímamunur (sek):"
+
+#: gpssyncdialog.cpp:160
+msgid ""
+"<p>Sets the maximum difference in seconds from a GPS track point to the image "
+"time to be matched. If the time difference exceeds this setting, no match will "
+"be attempted."
+msgstr ""
+"<p>Stillir hver mesti tímamunur má vera í sekúndum milli tökutíma myndar og GPS "
+"punkts svo samsvörun verði á milli. Ef tímamunurinn er meiri verður ekki tengt "
+"á milli."
+
+#: gpssyncdialog.cpp:164
+msgid "Time zone:"
+msgstr "Tímabelti:"
+
+#: gpssyncdialog.cpp:210
+msgid ""
+"<p>Sets the time zone the camera was set to during photo shooting, so that the "
+"time stamps of the images can be converted to GMT to match the GPS time "
+"reference.\n"
+"Note: positive offsets count eastwards from zero longitude (GMT), they are "
+"'ahead of time'."
+msgstr ""
+"<p>Stillir tímabelti við það þegar myndatakan fór fram, til þess að hægt sé að "
+"breyta tímamerkinu í GMT til að fá samsvörun við GPS tíma.\n"
+"Athugið: jákvæð hliðrun telst vera í austurátt frá núllbaug lengdar (GMT), þar "
+"er klukkan 'á undan'."
+
+#: gpssyncdialog.cpp:216
+msgid "Interpolate"
+msgstr "Tengja"
+
+#: gpssyncdialog.cpp:217
+msgid ""
+"<p>Set this option to interpolate GPS track points which are not closely "
+"matched to the GPX data file."
+msgstr ""
+"<p>Veldu þetta til að tengja GPS ferilpunkta sem ekki eru nákvæmlega paraðir "
+"við upplýsingar í GPX gagnaskrá."
+
+#: gpssyncdialog.cpp:220
+msgid "Difference in min.:"
+msgstr "Mismunur í mínútum.:"
+
+#: gpssyncdialog.cpp:222
+msgid ""
+"<p>Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
+"file points to image time data."
+msgstr ""
+"<p>Stillir mesta mögulega tímamun (mest 240 mín.) til að tengja GPX ferilpunkta "
+"við tímasetningu mynda."
+
+#: gpssyncdialog.cpp:251
+msgid "A plugin to synchronize images' metadata with a GPS device"
+msgstr "Íforrit til að samræma metagögn mynda við GPS staðsetningartæki"
+
+#: gpssyncdialog.cpp:302 kmlexportconfig.cpp:193
+msgid "%1|GPS Exchange Format"
+msgstr "%1|GPS samskiptasnið"
+
+#: gpssyncdialog.cpp:303 kmlexportconfig.cpp:194
+msgid "Select GPX File to Load"
+msgstr "Velja GPX skrá til að hlaða inn"
+
+#: gpssyncdialog.cpp:312 kmlexport.cpp:350
+msgid "Cannot parse %1 GPX file!"
+msgstr "Get ekki lesið %1 GPX skrá!"
+
+#: gpssyncdialog.cpp:320 kmlexport.cpp:356
+msgid "The %1 GPX file do not have a date-time track to use!"
+msgstr "GPX skráin %1 inniheldur ekki nothæfan tímastimplaðan feril!"
+
+#: gpssyncdialog.cpp:327
+#, c-format
+msgid "Points parsed: %1"
+msgstr "Lesnir punktar: %1"
+
+#: gpssyncdialog.cpp:371
+#, c-format
+msgid ""
+"_n: 1 image from the list is not updated.\n"
+"%n images from the list are not updated."
+msgstr ""
+"1 mynd úr þessum lista er ekki uppfærð.\n"
+"%n myndir úr þessum lista eru ekki uppfærðar."
+
+#: gpssyncdialog.cpp:374
+msgid ""
+"<p>%1\n"
+"Do you really want to close this window without applying changes?</p>"
+msgstr ""
+"<p>%1\n"
+"Viltu í alvörunni loka þessum glugga án þess að virkja breytingarnar?</p>"
+
+#: gpssyncdialog.cpp:442
+msgid "Cannot find pictures to correlate with GPX file data."
+msgstr "Get ekki fundið myndir sem hafa fylgni við GPX-gögnin."
+
+#: gpssyncdialog.cpp:448
+#, c-format
+msgid ""
+"_n: GPS data of 1 image have been updated on the list using the GPX data file.\n"
+"GPS data of %n images have been updated on the list using the GPX data file."
+msgstr ""
+"GPS gögn 1 myndar á listanum hafa verið uppfærð til samræmis við GPX "
+"gagnaskrá.\n"
+"GPS gögn %n mynda á listanum hafa verið uppfærð til samræmis við GPX gagnaskrá."
+
+#: gpssyncdialog.cpp:451
+msgid "Press Apply button to update images metadata."
+msgstr "Ýttu á 'Virkja' hnappinn til að uppfæra metaupplýsingar myndanna."
+
+#: gpssyncdialog.cpp:461
+msgid ""
+"Please, select at least one image from the list to edit GPS coordinates "
+"manually."
+msgstr ""
+"Vinsamlega veldu í það minnsta eina mynd úr listanum til að breyta GPS hnitum "
+"handvirkt."
+
+#: gpssyncdialog.cpp:493
+msgid ""
+"Please, select at least one image from the list to remove GPS coordinates."
+msgstr ""
+"Vinsamlega veldu í það minnsta eina mynd úr listanum til að eyða GPS hnitum."
+
+#: kmlexport.cpp:63
+msgid "Generating KML file..."
+msgstr "Bý til KML skrá..."
+
+#: kmlexport.cpp:83
+#, c-format
+msgid "Could not create '%1"
+msgstr "Gat ekki búið til '%1"
+
+#: kmlexport.cpp:167
+msgid "Could not read image '%1'"
+msgstr "Gat ekki lesið myndina '%1'"
+
+#: kmlexport.cpp:174
+msgid "Format of image '%1' is unknown"
+msgstr "Snið myndarinnar '%1' er óþekkjanlegt"
+
+#: kmlexport.cpp:184
+msgid "Error loading image '%1'"
+msgstr "Villa við hleðslu myndarinnar '%1'"
+
+#: kmlexport.cpp:224
+msgid "Could not save image '%1' to '%2'"
+msgstr "Gat ekki vistað myndina '%1' sem '%2'"
+
+#: kmlexport.cpp:304
+msgid "Creation of placemark '%1'"
+msgstr "Bjó til staðarmerkið '%1'"
+
+#: kmlexport.cpp:311
+msgid "Could not save icon for image '%1' to '%2'"
+msgstr "Gat ekki vistað táknmynd fyrir myndina '%1' í '%2'"
+
+#: kmlexport.cpp:341
+msgid "No GPX file Chosen!"
+msgstr "Engin GPX skrá valin!"
+
+#: kmlexport.cpp:363
+msgid "Tracks"
+msgstr "Ferlar"
+
+#: kmlexport.cpp:443
+msgid "No position data for '%1'"
+msgstr "Engin staðsetningargögn fyrir '%1'"
+
+#: kmlexport.cpp:455
+#, c-format
+msgid ""
+"_n: No position data for 1 picture\n"
+"No position data for %n pictures"
+msgstr ""
+"Engin staðsetningargögn fyrir 1 mynd\n"
+"Engin staðsetningargögn fyrir %n myndir"
+
+#: kmlexport.cpp:469
+msgid "Move to final directory"
+msgstr "Færa í endanlega möppu"
+
+#: kmlexportconfig.cpp:66 kmlexportconfig.cpp:281
+msgid "KML Export"
+msgstr "KML útflutningur"
+
+#: kmlexportconfig.cpp:77
+msgid "Target Preferences"
+msgstr "Eiginleikar úttaks"
+
+#: kmlexportconfig.cpp:82
+msgid "Target Type"
+msgstr "Gerð úttaks"
+
+#: kmlexportconfig.cpp:86
+msgid "&Local or web target used by GoogleEarth"
+msgstr "&Staðvært eða vefúttak notað af GoogleEarth"
+
+#: kmlexportconfig.cpp:91
+msgid "Web target used by GoogleMap"
+msgstr "vefúttak notað af GoogleMap"
+
+#: kmlexportconfig.cpp:95
+msgid ""
+"When using GoogleMap, all image must have complete URL, icons are squared and "
+"when drawing a track, only linetrack is exported"
+msgstr ""
+"Ef verið er að nota GoogleMap, þá verða allar myndir að vera með fullgerðar "
+"vefslóðir (URL), táknmyndir að vera ferningslaga og þegar ferlar eru teiknaðir "
+"er aðens hægt að flytja út línuferla (linetrack)"
+
+#: kmlexportconfig.cpp:101
+msgid "Picture altitude"
+msgstr "Hæð ljósmyndunar"
+
+#: kmlexportconfig.cpp:105 kmlexportconfig.cpp:256
+msgid "clamp to ground"
+msgstr "límt við jörð"
+
+#: kmlexportconfig.cpp:106 kmlexportconfig.cpp:257
+msgid "relative to ground"
+msgstr "afstætt miðað við jörð"
+
+#: kmlexportconfig.cpp:107 kmlexportconfig.cpp:258
+msgid "absolute"
+msgstr "algilt"
+
+#: kmlexportconfig.cpp:108
+msgid ""
+"<p>Specifies how pictures are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+"<p>Tiltekur hvernig myndir eru sýndar<dl><dt>límt við jörð (sjálfgefið)</dt><dd>"
+"Hundsar aðrar hæðarupplýsingar</dd><dt>afstætt miðað við jörð</dt><dd>"
+"Setur hæð hlutar miðað við raunverulega hæð jarðar á tilteknum stað.</dd><dt>"
+"algilt</dt><dd>Setur hæð hlutar miðað við sjávarmál, hver svo sem hæð jarðar er "
+"á þeim stað.</dd></dl>"
+
+#: kmlexportconfig.cpp:119
+msgid "Destination directory"
+msgstr "Móttökumappa"
+
+#: kmlexportconfig.cpp:125
+msgid "Select a directory to save the kml file and pictures"
+msgstr "Veldu möppu til að vista í kml skrána og myndirnar"
+
+#: kmlexportconfig.cpp:129
+msgid "Destination URL"
+msgstr "Marknetfang (URL)"
+
+#: kmlexportconfig.cpp:136
+msgid "File name"
+msgstr "Skráarheiti"
+
+#: kmlexportconfig.cpp:147
+msgid "Sizes"
+msgstr "Stærðir"
+
+#: kmlexportconfig.cpp:152
+msgid "Icon size"
+msgstr "Táknmyndastærð"
+
+#: kmlexportconfig.cpp:163
+msgid "Image size"
+msgstr "Stærð myndar"
+
+#: kmlexportconfig.cpp:178
+msgid "GPX Tracks"
+msgstr "GPX ferlar"
+
+#: kmlexportconfig.cpp:184
+msgid "Draw GPX track"
+msgstr "Teikna GPX feril"
+
+#: kmlexportconfig.cpp:188
+msgid "GPX file"
+msgstr "GPX skrá"
+
+#: kmlexportconfig.cpp:197
+msgid "Time zone"
+msgstr "Tímabelti"
+
+#: kmlexportconfig.cpp:200
+msgid "GMT-12:00"
+msgstr "GMT-12:00"
+
+#: kmlexportconfig.cpp:201
+msgid "GMT-11:00"
+msgstr "GMT-11:00"
+
+#: kmlexportconfig.cpp:202
+msgid "GMT-10:00"
+msgstr "GMT-10:00"
+
+#: kmlexportconfig.cpp:203
+msgid "GMT-09:00"
+msgstr "GMT-09:00"
+
+#: kmlexportconfig.cpp:204
+msgid "GMT-08:00"
+msgstr "GMT-08:00"
+
+#: kmlexportconfig.cpp:205
+msgid "GMT-07:00"
+msgstr "GMT-07:00"
+
+#: kmlexportconfig.cpp:206
+msgid "GMT-06:00"
+msgstr "GMT-06:00"
+
+#: kmlexportconfig.cpp:207
+msgid "GMT-05:00"
+msgstr "GMT-05:00"
+
+#: kmlexportconfig.cpp:208
+msgid "GMT-04:00"
+msgstr "GMT-04:00"
+
+#: kmlexportconfig.cpp:209
+msgid "GMT-03:00"
+msgstr "GMT-03:00"
+
+#: kmlexportconfig.cpp:210
+msgid "GMT-02:00"
+msgstr "GMT-02:00"
+
+#: kmlexportconfig.cpp:211
+msgid "GMT-01:00"
+msgstr "GMT-01:00"
+
+#: kmlexportconfig.cpp:212
+msgid "GMT"
+msgstr "GMT 00:00"
+
+#: kmlexportconfig.cpp:213
+msgid "GMT+01:00"
+msgstr "GMT+01:00"
+
+#: kmlexportconfig.cpp:214
+msgid "GMT+02:00"
+msgstr "GMT+02:00"
+
+#: kmlexportconfig.cpp:215
+msgid "GMT+03:00"
+msgstr "GMT+03:00"
+
+#: kmlexportconfig.cpp:216
+msgid "GMT+04:00"
+msgstr "GMT+04:00"
+
+#: kmlexportconfig.cpp:217
+msgid "GMT+05:00"
+msgstr "GMT+05:00"
+
+#: kmlexportconfig.cpp:218
+msgid "GMT+06:00"
+msgstr "GMT+06:00"
+
+#: kmlexportconfig.cpp:219
+msgid "GMT+07:00"
+msgstr "GMT+07:00"
+
+#: kmlexportconfig.cpp:220
+msgid "GMT+08:00"
+msgstr "GMT+08:00"
+
+#: kmlexportconfig.cpp:221
+msgid "GMT+09:00"
+msgstr "GMT+09:00"
+
+#: kmlexportconfig.cpp:222
+msgid "GMT+10:00"
+msgstr "GMT+10:00"
+
+#: kmlexportconfig.cpp:223
+msgid "GMT+11:00"
+msgstr "GMT+11:00"
+
+#: kmlexportconfig.cpp:224
+msgid "GMT+12:00"
+msgstr "GMT+12:00"
+
+#: kmlexportconfig.cpp:225
+msgid "GMT+13:00"
+msgstr "GMT+13:00"
+
+#: kmlexportconfig.cpp:226
+msgid "GMT+14:00"
+msgstr "GMT+14:00"
+
+#: kmlexportconfig.cpp:227
+msgid ""
+"<p>Sets the time zone of the camera during picture shooting, so that the time "
+"stamps of the GPS can be converted to match the local time"
+msgstr ""
+"<p>Stillir tímabelti myndavélar á meðan myndataka fór fram, svo að tímamerki "
+"GPS hnita megi verða breytt til að samsvara staðartíma"
+
+#: kmlexportconfig.cpp:232
+msgid "Track width"
+msgstr "Breidd ferils"
+
+#: kmlexportconfig.cpp:239
+msgid "Track color"
+msgstr "Litur ferils"
+
+#: kmlexportconfig.cpp:248
+msgid "Opacity:"
+msgstr "Gegnsæi:"
+
+#: kmlexportconfig.cpp:252
+msgid "Track altitude"
+msgstr "Hæð ferils"
+
+#: kmlexportconfig.cpp:259
+msgid ""
+"<p>Specifies how the points are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+"<p>Tiltekur hvernig punktar eru sýndir<dl><dt>límt við jörð (sjálfgefið)</dt>"
+"<dd>Hundsar aðrar hæðarupplýsingar</dd><dt>afstætt miðað við jörð</dt><dd>"
+"Setur hæð hlutar miðað við raunverulega hæð jarðar á tilteknum stað.</dd><dt>"
+"algilt</dt><dd>Setur hæð hlutar miðað við sjávarmál, hver svo sem hæð jarðar er "
+"á þeim stað.</dd></dl>"
+
+#: kmlexportconfig.cpp:284
+msgid "A Kipi plugin for kml exporting"
+msgstr "KIPI íforrit til KML útflutnings"
+
+#: kmlexportconfig.cpp:287
+msgid "Author"
+msgstr "Höfundur"
+
+#: kmlgpsdataparser.cpp:66
+msgid "Track"
+msgstr "Ferill"
+
+#: kmlgpsdataparser.cpp:95
+msgid "Points"
+msgstr "Punktar"
+
+#: kmlgpsdataparser.cpp:105
+msgid "Point"
+msgstr "Punktur"
+
+#: plugin_gpssync.cpp:78
+msgid "Correlator..."
+msgstr "Fylgni..."
+
+#: plugin_gpssync.cpp:86
+msgid "Edit Coordinates..."
+msgstr "Sýsla með hnit..."
+
+#: plugin_gpssync.cpp:94
+msgid "Remove Coordinates..."
+msgstr "Fjarlægja hnit..."
+
+#: plugin_gpssync.cpp:105
+msgid "KML Export..."
+msgstr "KML útflutningur..."
+
+#: plugin_gpssync.cpp:139
+msgid ""
+"<qt>"
+"<p>Unable to find the gpsbabel executable:"
+"<br> This program is required by this plugin to support GPS data file decoding. "
+"Please install gpsbabel as a package from your distributor or <a href=\"%1\">"
+"download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %2 is required by this plugin.</p></qt>"
+msgstr ""
+"<qt>"
+"<p>Fann ekki gpsbabel forritið:"
+"<br> Það forrit er nauðsynlegt fyrir þetta íforrit til að meðhöndla GPS "
+"afkóðun. Vinsamlega settu upp gpsbabel sem pakka frá dreifingunni þinni eða <a "
+"href=\"%1\">náðu í frumrit</a>.</p>"
+"<p>Ath: það þarf gpsbabel útgáfu %2 eða hærri til að íforritið virki.</p></qt>"
+
+#: plugin_gpssync.cpp:156
+msgid ""
+"<qt>"
+"<p>gpsbabel executable is not up to date:"
+"<br> The version %1 of gpsbabel have been found on your computer. This version "
+"is too old to run properly with this plugin. Please update gpsbabel as a "
+"package from your distributor or <a href=\"%2\">download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %3 is required by this plugin</p></qt>"
+msgstr ""
+"<qt>"
+"<p>Forritið gpsbabel er orðið ansi gamalt:"
+"<br> Útgáfa %1 af gpsbabel fannst á tölvunni þinni. Sú útgáfa er orðin of gömul "
+"til að virka almennilega með þessu íforriti.Vinsamlega settu upp gpsbabel sem "
+"pakka frá dreifingunni þinni eða <a href=\"%2\">náðu í frumrit</a>.</p>"
+"<p>Ath: það þarf gpsbabel útgáfu %3 eða hærri til að íforritið virki.</p></qt>"
+
+#: plugin_gpssync.cpp:249
+msgid "Unable to save geographical coordinates into:"
+msgstr "Tókst ekki að vista staðsetningarhnitum í:"
+
+#: plugin_gpssync.cpp:265
+msgid ""
+"Geographical coordinates will be definitively removed from all selected "
+"images.\n"
+"Do you want to continue ?"
+msgstr ""
+"Landfræðileg hnit verða fjarlægð af öllum myndum sem nú eru valdar.\n"
+"Viltu halda áfram ?"
+
+#: plugin_gpssync.cpp:267 plugin_gpssync.cpp:302
+msgid "Remove Geographical Coordinates"
+msgstr "Fjarlægja landfræðileg hnit"
+
+#: plugin_gpssync.cpp:300
+msgid "Unable to remove geographical coordinates from:"
+msgstr "Tókst ekki að fjarlægja landfræðileg hnit af:"
+
+#: plugin_gpssync.cpp:317
+msgid "KMLExport"
+msgstr "KMLExport"

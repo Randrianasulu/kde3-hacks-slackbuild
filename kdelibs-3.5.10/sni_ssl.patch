@@ -1,0 +1,35 @@
+From 45cf7d13eb68be0fd469fd49275c000a2c7bcc2f Mon Sep 17 00:00:00 2001
+From: Slávek Banko <slavek.banko@axis.cz>
+Date: Sun, 09 Apr 2017 18:17:40 +0000
+Subject: KSSL: Set hostname in TLSext to enable SNI support
+
+Signed-off-by: Slávek Banko <slavek.banko@axis.cz>
+---
+(limited to 'tdeio/kssl/kssl.cc')
+
+diff --git a/kdeio/kssl/kssl.cc b/kdeio/kssl/kssl.cc
+index e5f0921..0f34a55 100644
+--- a/kio/kssl/kssl.cc
++++ b/kio/kssl/kssl.cc
+@@ -329,6 +329,9 @@ int rc;
+ 		d->m_ssl = 0;
+ 		return rc;
+ 	}
++#ifdef SSL_CTRL_SET_TLSEXT_HOSTNAME
++	d->kossl->SSL_set_tlsext_host_name(d->m_ssl, d->proxyPeer.ascii());
++#endif
+ 
+ 	rc = d->kossl->SSL_accept(d->m_ssl);
+ 	if (rc == 1) {
+@@ -424,6 +427,9 @@ int rc;
+ 		d->m_ssl = 0;
+ 		return rc;
+ 	}
++#ifdef SSL_CTRL_SET_TLSEXT_HOSTNAME
++	d->kossl->SSL_set_tlsext_host_name(d->m_ssl, d->proxyPeer.ascii());
++#endif
+ 
+ connect_again:
+ 	rc = d->kossl->SSL_connect(d->m_ssl);
+--
+cgit v0.9.0.2-52-g1de3

@@ -1,0 +1,105 @@
+From bf0861baf08e739ab3721d642178dbab64015675 Mon Sep 17 00:00:00 2001
+From: Michele Calgaro <michele.calgaro@yahoo.it>
+Date: Fri, 16 Jan 2015 03:35:56 +0000
+Subject: Added required refreshItems logic. This relates to bug 146.
+
+Signed-off-by: Michele Calgaro <michele.calgaro@yahoo.it>
+---
+diff --git a/konqueror/iconview/konq_iconview.cc b/konqueror/iconview/konq_iconview.cc
+index 3b6432d..d90fe52 100644
+--- a/konqueror/iconview/konq_iconview.cc
++++ b/konqueror/iconview/konq_iconview.cc
+@@ -1228,6 +1228,7 @@ void KonqKfmIconView::slotRefreshItems( const KFileItemList& entries )
+             m_pIconView->updateContents();
+         }
+     }
++   KonqDirPart::refreshItems(entries);  // Pass refresh command to KonqDirPart too
+ }
+ 
+ void KonqKfmIconView::slotClear()
+diff --git a/konqueror/listview/konq_listviewwidget.cc b/konqueror/listview/konq_listviewwidget.cc
+index 0f245a5..ad7ada2 100644
+--- a/konqueror/listview/konq_listviewwidget.cc
++++ b/konqueror/listview/konq_listviewwidget.cc
+@@ -1376,6 +1376,7 @@ void KonqBaseListViewWidget::slotRefreshItems( const KFileItemList & entries )
+          }
+    }
+ 
++   m_pBrowserView->refreshItems(entries);  // Pass refresh command to KonqDirPart too
+    reportItemCounts();
+ }
+ 
+diff --git a/libkonq/konq_dirpart.cc b/libkonq/konq_dirpart.cc
+index 602496b..030cc90 100644
+--- a/libkonq/konq_dirpart.cc
++++ b/libkonq/konq_dirpart.cc
+@@ -440,20 +440,25 @@ void KonqDirPart::updatePasteAction() // KDE4: merge into method above
+     emit m_extension->enableAction( "paste", paste );
+ }
+ 
+-void KonqDirPart::newItems( const KFileItemList & entries )
++void KonqDirPart::newItems(const KFileItemList &entries)
+ {
+     d->dirSizeDirty = true;
+     if ( m_findPart ) {
+         emitTotalCount();
+     }
+ 
+-    emit itemsAdded( entries );
++    emit itemsAdded(entries);
+ }
+ 
+-void KonqDirPart::deleteItem( KFileItem * fileItem )
++void KonqDirPart::deleteItem(KFileItem * fileItem)
+ {
+     d->dirSizeDirty = true;
+-    emit itemRemoved( fileItem );
++    emit itemRemoved(fileItem);
++}
++
++void KonqDirPart::refreshItems(const KFileItemList &entries)
++{
++    emit itemsRefresh(entries);
+ }
+ 
+ void KonqDirPart::emitTotalCount()
+diff --git a/libkonq/konq_dirpart.h b/libkonq/konq_dirpart.h
+index 6b24bf9..4a8d82c 100644
+--- a/libkonq/konq_dirpart.h
++++ b/libkonq/konq_dirpart.h
+@@ -129,6 +129,11 @@ public:
+     void deleteItem( KFileItem * fileItem );
+ 
+     /**
++     * Refresh the items
++     */
++    void refreshItems(const KFileItemList &entries);
++
++    /**
+      * Show the counts for the directory in the status bar
+      */
+     void emitTotalCount();
+@@ -220,13 +225,19 @@ signals:
+      * Emitted as the part is updated with new items.
+      * Useful for informing plugins of changes in view.
+      */
+-    void itemsAdded( const KFileItemList& );
++    void itemsAdded(const KFileItemList &);
+ 
+     /**
+      * Emitted as the part is updated with these items.
+      * Useful for informing plugins of changes in view.
+      */
+-    void itemRemoved( const KFileItem* );
++    void itemRemoved(const KFileItem *);
++
++    /**
++     * Emitted when items need to be refreshed (for example when
++     * a file is renamed)
++     */
++    void itemsRefresh(const KFileItemList &);
+ 
+     /**
+      * Emitted with the list of filtered-out items whenever
+--
+cgit v0.9.0.2-52-g1de3

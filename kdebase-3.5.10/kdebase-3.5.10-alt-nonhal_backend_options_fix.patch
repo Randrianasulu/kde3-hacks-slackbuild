@@ -1,0 +1,104 @@
+--- kdebase-3.5.9/kioslave/media/mediamanager/mediamanager.cpp~	2008-02-22 15:22:12 +0300
++++ kdebase-3.5.9/kioslave/media/mediamanager/mediamanager.cpp	2008-02-22 15:20:56 +0300
+@@ -187,7 +187,12 @@ QStringList MediaManager::properties(con
+ QStringList MediaManager::mountoptions(const QString &name)
+ {
+ #ifdef COMPILE_HALBACKEND
+-    if (!m_halbackend)
++    // actually we should pass the request to a corresponding backend
++    // since HAL alone can't serve all possible media (it can be
++    // an NFS mount or something really weird). But other backends
++    // do not support variable mountoptions so I feel no sense
++    // to make severe changes. So here it is
++    if (!m_halbackend || !name.startsWith("/org/freedesktop/Hal/"))
+         return QStringList();
+     return m_halbackend->mountoptions(name);
+ #else
+@@ -198,7 +203,8 @@ QStringList MediaManager::mountoptions(c
+ bool MediaManager::setMountoptions(const QString &name, const QStringList &options)
+ {
+ #ifdef COMPILE_HALBACKEND
+-    if (!m_halbackend)
++    // see comments for mountoptions
++    if (!m_halbackend || !name.startsWith("/org/freedesktop/Hal/"))
+         return false;
+     return m_halbackend->setMountoptions(name, options);
+ #else
+@@ -209,27 +215,41 @@ bool MediaManager::setMountoptions(const
+ QString MediaManager::mount(const QString &name)
+ {
+ #ifdef COMPILE_HALBACKEND
+-    if (!m_halbackend)
+-        return i18n("Feature only available with HAL");
+-    return m_halbackend->mount(name);
+-#else
+-    if ( !m_fstabbackend ) // lying :)
+-        return i18n("Feature only available with HAL");
+-    return m_fstabbackend->mount( name );
++    // see comments for mountoptions
++    if (name.startsWith("/org/freedesktop/Hal/"))
++        if (m_halbackend)
++            return m_halbackend->mount( name );
++        else
++            return i18n("Feature only available with HAL");
++    else
+ #endif
++         if (name.startsWith("/org/kde/mediamanager/fstab/"))
++        if (m_fstabbackend)
++            return m_fstabbackend->mount( name );
++        else
++            return i18n("Feature only available with FSTAB support");
++    else
++        return i18n("Unable to find appropriate method to mount the resource");
+ }
+ 
+ QString MediaManager::unmount(const QString &name)
+ {
+ #ifdef COMPILE_HALBACKEND
+-    if (!m_halbackend)
+-        return i18n("Feature only available with HAL");
+-    return m_halbackend->unmount(name);
+-#else
+-    if ( !m_fstabbackend ) // lying :)
+-        return i18n("Feature only available with HAL");
+-    return m_fstabbackend->unmount( name );
++    // see comments for mountoptions
++    if (name.startsWith("/org/freedesktop/Hal/"))
++        if (m_halbackend)
++            return m_halbackend->unmount( name );
++        else
++            return i18n("Feature only available with HAL");
++    else
+ #endif
++         if (name.startsWith("/org/kde/mediamanager/fstab/"))
++        if (m_fstabbackend)
++            return m_fstabbackend->unmount( name );
++        else
++            return i18n("Feature only available with FSTAB support");
++    else
++        return i18n("Unable to find appropriate method to unmount the resource");
+ }
+ 
+ QString MediaManager::nameForLabel(const QString &label)
+--- kdebase-3.5.10/kioslave/media/mediamanager/halbackend.cpp~	2008-08-25 15:36:17 +0400
++++ kdebase-3.5.10/kioslave/media/mediamanager/halbackend.cpp	2008-08-25 15:38:55 +0400
+@@ -76,7 +76,7 @@ HALBackend::~HALBackend()
+         QPtrListIterator<Medium> it (medlist);
+         for ( const Medium *current_medium = it.current(); current_medium; current_medium = ++it)
+         {
+-            if( !current_medium->id().startsWith( "/org/kde" ))
++	    if (current_medium->id().startsWith("/org/freedesktop/Hal/"))
+                 unmount(current_medium->id());
+         }
+ 
+@@ -342,8 +342,8 @@ void HALBackend::DeviceCondition(const c
+ 	    QPtrListIterator<Medium> it (medlist);
+ 	    for ( const Medium *current_medium = it.current(); current_medium; current_medium = ++it)
+             {
+-                if( current_medium->id().startsWith( "/org/kde" ))
+-                    continue;
++		if (!current_medium->id().startsWith("/org/freedesktop/Hal/"))
++			continue;
+ 		QString driveUdi = libhal_device_get_property_QString(m_halContext, current_medium->id().latin1(), "block.storage_device");
+ 		if (driveUdi == udi)
+                 {

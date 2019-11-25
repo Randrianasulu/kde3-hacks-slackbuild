@@ -1,0 +1,41 @@
+From c8804353e5da9f1074f09f67f0fcd718c89e40bf Mon Sep 17 00:00:00 2001
+From: Slávek Banko <slavek.banko@axis.cz>
+Date: Mon, 29 Oct 2012 03:16:52 +0000
+Subject: Fix build on Ruby 1.9.x without pkgconfig file
+
+---
+diff --git a/amarok/configure.in.in b/amarok/configure.in.in
+index 4970aad..f879d3a 100644
+--- a/amarok/configure.in.in
++++ b/amarok/configure.in.in
+@@ -1104,9 +1104,26 @@ if test -n "$PKG_CONFIG"; then
+   RUBY_VERSION=`$PKG_CONFIG ruby --modversion 2>/dev/null`
+   if test -n "$RUBY_VERSION"; then
+     RUBY_CFLAGS=`$PKG_CONFIG ruby --cflags`
+-  else
++  fi
++  if test -z "$RUBY_VERSION"; then
+     RUBY_VERSION=`$PKG_CONFIG ruby-1.9 --modversion 2>/dev/null`
+-    RUBY_CFLAGS=`$PKG_CONFIG ruby-1.9 --cflags`
++    if test -n "$RUBY_VERSION"; then
++      RUBY_CFLAGS=`$PKG_CONFIG ruby-1.9 --cflags`
++    fi
++  fi
++  if test -z "$RUBY_VERSION"; then
++    # pkgconfig file does not exist but might be 1.9.1: RUBY_VERSION defined in ruby/version.h
++    if test -n "$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"rubyhdrdir"@:>@)'"; then
++      # rubyhdrdir parameter works only in >=1.9.1; this is 1.9.1
++      RUBY_MAJOR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"['MAJOR']"@:>@)'`
++      RUBY_MINOR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"['MINOR']"@:>@)'`
++      RUBY_TEENY=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"['TEENY']"@:>@)'`
++      if test "$RUBY_MAJOR" == "1" && test "$RUBY_MINOR" == "9"; then
++        RUBY_VERSION="$RUBY_MAJOR.$RUBY_MINOR.$RUBY_TEENY"
++        RUBY_CFLAGS="-I`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"rubyhdrdir"@:>@)'`"
++        RUBY_CFLAGS="$RUBY_CFLAGS/`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"arch"@:>@)'` $RUBY_CFLAGS"
++      fi
++    fi
+   fi
+   if test -n "$RUBY_VERSION"; then
+     RUBY_ARCHDIR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"archdir"@:>@)'`
+--
+cgit v0.9.0.2-52-g1de3

@@ -1,0 +1,161 @@
+/****************************************************************************
+** Digikam::EditorToolSettings meta object code from reading C++ file 'editortoolsettings.h'
+**
+** Created: Tue Jun 13 22:44:36 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "editortoolsettings.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::EditorToolSettings::className() const
+{
+    return "Digikam::EditorToolSettings";
+}
+
+QMetaObject *Digikam::EditorToolSettings::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__EditorToolSettings( "Digikam::EditorToolSettings", &Digikam::EditorToolSettings::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::EditorToolSettings::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorToolSettings", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::EditorToolSettings::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorToolSettings", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::EditorToolSettings::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QScrollView::staticMetaObject();
+    static const QUMethod signal_0 = {"signalOkClicked", 0, 0 };
+    static const QUMethod signal_1 = {"signalCancelClicked", 0, 0 };
+    static const QUMethod signal_2 = {"signalTryClicked", 0, 0 };
+    static const QUMethod signal_3 = {"signalDefaultClicked", 0, 0 };
+    static const QUMethod signal_4 = {"signalSaveAsClicked", 0, 0 };
+    static const QUMethod signal_5 = {"signalLoadClicked", 0, 0 };
+    static const QUMethod signal_6 = {"signalColorGuideChanged", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalOkClicked()", &signal_0, QMetaData::Public },
+	{ "signalCancelClicked()", &signal_1, QMetaData::Public },
+	{ "signalTryClicked()", &signal_2, QMetaData::Public },
+	{ "signalDefaultClicked()", &signal_3, QMetaData::Public },
+	{ "signalSaveAsClicked()", &signal_4, QMetaData::Public },
+	{ "signalLoadClicked()", &signal_5, QMetaData::Public },
+	{ "signalColorGuideChanged()", &signal_6, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::EditorToolSettings", parentObject,
+	0, 0,
+	signal_tbl, 7,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__EditorToolSettings.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::EditorToolSettings::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::EditorToolSettings" ) )
+	return this;
+    return QScrollView::qt_cast( clname );
+}
+
+// SIGNAL signalOkClicked
+void Digikam::EditorToolSettings::signalOkClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL signalCancelClicked
+void Digikam::EditorToolSettings::signalCancelClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+// SIGNAL signalTryClicked
+void Digikam::EditorToolSettings::signalTryClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2 );
+}
+
+// SIGNAL signalDefaultClicked
+void Digikam::EditorToolSettings::signalDefaultClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+// SIGNAL signalSaveAsClicked
+void Digikam::EditorToolSettings::signalSaveAsClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 4 );
+}
+
+// SIGNAL signalLoadClicked
+void Digikam::EditorToolSettings::signalLoadClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 5 );
+}
+
+// SIGNAL signalColorGuideChanged
+void Digikam::EditorToolSettings::signalColorGuideChanged()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 6 );
+}
+
+bool Digikam::EditorToolSettings::qt_invoke( int _id, QUObject* _o )
+{
+    return QScrollView::qt_invoke(_id,_o);
+}
+
+bool Digikam::EditorToolSettings::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalOkClicked(); break;
+    case 1: signalCancelClicked(); break;
+    case 2: signalTryClicked(); break;
+    case 3: signalDefaultClicked(); break;
+    case 4: signalSaveAsClicked(); break;
+    case 5: signalLoadClicked(); break;
+    case 6: signalColorGuideChanged(); break;
+    default:
+	return QScrollView::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::EditorToolSettings::qt_property( int id, int f, QVariant* v)
+{
+    return QScrollView::qt_property( id, f, v);
+}
+
+bool Digikam::EditorToolSettings::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,22 @@
+From 1db4f237a710955a817c7aca65a716d85573304b Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Sat, 10 Mar 2012 21:51:18 +0000
+Subject: Fix potential crash when Qt3 is used as part of another application due to multiple calls to XLib threading init function
+
+---
+diff --git a/src/kernel/qapplication_x11.cpp b/src/kernel/qapplication_x11.cpp
+index 45d83df..9f89c14 100644
+--- a/src/kernel/qapplication_x11.cpp
++++ b/src/kernel/qapplication_x11.cpp
+@@ -1646,7 +1646,8 @@ void qt_init_internal( int *argcptr, char **argv,
+     setlocale( LC_NUMERIC, "C" );	// make sprintf()/scanf() work
+ 
+ #if defined(QT_THREAD_SUPPORT)
+-    if ( qt_is_gui_used ) {
++    if (( qt_is_gui_used ) && ( !display )) {
++	// If Qt is running standalone with a GUI, initialize X11 threading
+ 	XInitThreads();
+     }
+ #endif
+--
+cgit v0.9.0.2-52-g1de3

@@ -1,0 +1,40 @@
+Source: kdebluetooth
+Section: kde
+Priority: optional
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: Michael Meskes <meskes@debian.org>, Achim Bohnet <ach@mpe.mpg.de>, Mark Purcell <msp@debian.org>
+Build-Depends: debhelper (>= 5.0.0), cdbs, kdelibs4-dev (>= 3.1.4), kdepim-dev, libopenobex1-dev (>= 1.3), libdbus-qt-1-dev, libobexftp-dev, automake1.9, autoconf
+Standards-Version: 3.7.2
+XS-Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/kdebluetooth/trunk/
+XS-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/kdebluetooth/trunk/
+
+Package: kdebluetooth
+Architecture: any
+Depends: ${shlibs:Depends}, bluez-utils (>= 3.9), python-qt4-dbus, python-qt4
+Suggests: python
+Description: KDE Bluetooth Framework
+ The KDE Bluetooth Framework provides several easy to use
+ tools to be used with Bluetooth devices.
+ .
+ Homepage: http://bluetooth.kmobiletools.org/
+
+Package: libkbluetooth0
+Architecture: any
+Section: net
+Depends: ${shlibs:Depends}
+Conflicts: qobex, qobex-dev
+Replaces: qobex, qobex-dev
+Description: shared libs for kdebluetooth
+ Contains the shared libs for KDE Bluetooth Framework. 
+ .
+ Homepage: http://bluetooth.kmobiletools.org/
+
+Package: libkbluetooth-dev
+Architecture: any
+Section: libdevel
+Depends: libkbluetooth0 (= ${binary:Version})
+Description: development files and headers kdebluetooth
+ Contains the development files for kdebluetooth
+ .
+ Homepage: http://bluetooth.kmobiletools.org/

@@ -1,0 +1,77 @@
+From d9227e4639f3489c25954aafa3657105881a3db1 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Thu, 27 Sep 2012 01:51:20 +0000
+Subject: Fix build system for ruby >= 1.9
+
+---
+diff --git a/amarok/configure.in.in b/amarok/configure.in.in
+index 4f5e68b..fc18b4f 100644
+--- a/amarok/configure.in.in
++++ b/amarok/configure.in.in
+@@ -1100,15 +1100,37 @@ AC_CHECK_TYPES([uint8_t, u_int8_t, uint16_t, u_int16_t, uint32_t, u_int32_t, uin
+ 
+ AC_PATH_PROG(RUBY, ruby, no)
+ 
+-ruby_includes=[`$RUBY -rrbconfig -e 'puts Config.expand( Config::MAKEFILE_CONFIG["archdir"] )'`]
+-ruby_ldflags=[`$RUBY -rrbconfig -e 'puts Config.expand( Config::MAKEFILE_CONFIG["LIBRUBYARG_SHARED"] )'`]
++if test -n "$PKG_CONFIG"; then
++  RUBY_VERSION=`$PKG_CONFIG ruby --modversion 2>/dev/null`
++  if test -n "$RUBY_VERSION"; then
++    RUBY_CFLAGS=`$PKG_CONFIG ruby --cflags`
++  else
++    RUBY_VERSION=`$PKG_CONFIG ruby-1.9 --modversion 2>/dev/null`
++    RUBY_CFLAGS=`$PKG_CONFIG ruby-1.9 --cflags`
++  fi
++  if test -n "$RUBY_VERSION"; then
++    RUBY_ARCHDIR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"archdir"@:>@)'`
++    RUBY_SITEARCHDIR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"sitearchdir"@:>@)'`
++    RUBY_SITEDIR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"sitelibdir"@:>@)'`
++    RUBY_RUBYLIBDIR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"rubylibdir"@:>@)'`
++    RUBY_LIBDIR=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"libdir"@:>@)'`
++    RUBY_LIBRUBYARG=`$RUBY -r rbconfig -e 'printf("%s",RbConfig::CONFIG@<:@"LIBRUBYARG_SHARED"@:>@)'`
++    AC_DEFINE_UNQUOTED(HAVE_RUBY_1_9, 1, [Defines if your system has Ruby 1.9.x])
++  fi
++fi
++if test -z "$RUBY_VERSION"; then
++  ruby_includes=[`$RUBY -rrbconfig -e 'puts Config.expand( Config::MAKEFILE_CONFIG["archdir"] )'`]
++  ruby_ldflags=[`$RUBY -rrbconfig -e 'puts Config.expand( Config::MAKEFILE_CONFIG["LIBRUBYARG_SHARED"] )'`] fi
++  RUBY_CFLAGS="-I$ruby_includes"
++  RUBY_LIBRUBYARG="$ruby_ldflags"
++fi
+ 
+-AC_SUBST(ruby_includes)
+-AC_SUBST(ruby_ldflags)
++AC_SUBST(RUBY_CFLAGS)
++AC_SUBST(RUBY_LIBRUBYARG)
+ OLDCFLAGS="$CFLAGS"
+-CFLAGS="-I$ruby_includes -Wall"
++CFLAGS="$RUBY_CFLAGS -Wall"
+ OLDCPPFLAGS="$CPPFLAGS"
+-CPPFLAGS="-I$ruby_includes" #no I don't know why CPPFLAGS is used
++CPPFLAGS="$RUBY_CFLAGS" #no I don't know why CPPFLAGS is used
+ AC_CHECK_HEADERS([ruby.h], [have_ruby_h=yes], [have_ruby_h=no]) #used in ruby check below
+ CFLAGS="$OLDCFLAGS"
+ CPPFLAGS="$OLDCPPFLAGS"
+diff --git a/amarok/src/mediadevice/daap/mongrel/http11/Makefile.am b/amarok/src/mediadevice/daap/mongrel/http11/Makefile.am
+index 15cf49e..d1236f5 100644
+--- a/amarok/src/mediadevice/daap/mongrel/http11/Makefile.am
++++ b/amarok/src/mediadevice/daap/mongrel/http11/Makefile.am
+@@ -4,14 +4,11 @@ amarokrubylib_LTLIBRARIES = libhttp11.la
+ 
+ amarokrubylib_DATA = http11.rb
+ 
+-INCLUDES = -I$(ruby_includes) -Dinline=__inline__ -Dasm=__asm__
++INCLUDES = $(RUBY_CFLAGS) -Dinline=__inline__ -Dasm=__asm__
+ 
+ libhttp11_la_LDFLAGS = \
+ 	-shared \
+-    $(ruby_ldflags)
+-
+-#http11_so_LIBADD = \
+-#    -lruby18
++    $(RUBY_LIBRUBYARG)
+ 
+ libhttp11_la_SOURCES = \
+     http11.c \
+--
+cgit v0.9.0.2-52-g1de3

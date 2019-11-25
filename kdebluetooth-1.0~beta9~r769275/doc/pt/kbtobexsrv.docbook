@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>Servidor de Envio OBEX: Receber ficheiros</title>
+<para
+>A maior parte dos telemóveis ou PDAs com Bluetooth permitem-lhe enviar ficheiro do dispositivo para o seu computador. Embora possa ser mais confortável utilizar o <link linkend="components.kio_obex"
+>'kioslave' OBEX FTP</link
+> para transferir os ficheiros do telemóvel para o computador, nem todos os dispositivos suportam isto. Por outro lado, o Envio de Objectos OBEX é suportado pela maior parte dos dispositivos Bluetooth. </para>
+
+<sect2>
+<title
+>Utilizar o Servidor de Envio OBEX</title>
+<para
+>O Servidor de Envio OBEX é gerido pelo kbluetoothd e será iniciado automaticamente se estiver activado e alguém lhe tentar enviar ficheiros. Por favor veja na documentação do kbluetoothd como <link linkend="components.kbluetoothd.serviceconfig"
+>activar ou desactivar serviços</link
+> (O Servidor de Envio OBEX Push está listado como <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Quando envia um ficheiro do seu telemóvel para o computador, o ícone de bandeja do kbluetoothd torna-se azul e mostra uma pequena janela. Por omissão (dependendo da sua <link linkend="components.kbluetoothd.confirmation"
+>configuração para ligações do exterior</link
+>) terá primeiro que aceitar a ligação, e em seguida a janela principal do Envio OBEX deverá aparecer e iniciar a recepção do ficheiro. </para>
+<para
+>Os ficheiros recebidos são gravados no <filename
+>/tmp</filename
+> e serão apagados quando fechar o servidor de Envio OBEX. Para gravar ficheiros, tem duas opções: </para>
+<itemizedlist>
+<listitem>
+<para
+>Carregue em <guibutton
+>OK</guibutton
+> para gravar todos os ficheiros recebidos para uma localização predefinida.</para>
+</listitem>
+<listitem>
+<para
+>Arraste um ou vários ficheiros para outra localização. Isto é especialmente útil se quiser enviar ficheiros por e-mail, uma vez que os pode arrastar directamente para o kmail sem os gravar primeiro para uma localização temporária. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

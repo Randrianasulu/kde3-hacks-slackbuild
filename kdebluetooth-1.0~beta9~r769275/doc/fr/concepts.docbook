@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Concepts</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Sécurité Bluetooth : Coupler des périphériques</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Qu'est-ce que le "Couplage" ?</title>
+<para
+>Très souvent il est nécessaire pour un périphérique de s'authentifier lui-même quand il veut accéder à un service. Dans ce cas les deux périphériques doivent être <phrase
+>couplés</phrase
+>. Quand deux périphériques sont couplés, ils peuvent être sûrs de l'identité de l'autre partie. Sans couplage, vous devriez vous fier à l'adresse ou le nom de l'autre périphérique, qui peut être falsifiée facilement. </para>
+<para
+>Le couplage n'est effectué la plupart du temps qu'une seule fois entre 2 périphériques. Après le couplage, les connexions entre les deux périphériques seront automatiquement <phrase
+>authentifiées</phrase
+>. </para>
+<para
+>Habituellement <emphasis
+> le processus de couplage sera lancé automatiquement quand il est nécessaire</emphasis
+>. Vous n'avez pas à vous inquiéter à propos d'un périphérique qui n'est pas couplé si vous voulez accéder à ses services. Si ils essaient de s'authentifier, mais échouent, le processus de couplage sera lancé automatiquement. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Comment cela fonctionne-t-il ?</title>
+
+<para
+>Mes périphériques sont couplés pour être sûrs de l'identité de l'autre partie. Mais si la première étape ne peut être effectuée automatiquement. <emphasis
+>Vous</emphasis
+> devez vous assurer de connaître qui veut se coupler avec votre périphérique. Cela est fait en entrant un code "PIN" dans les deux périphériques. La notion de "PIN" est largement utilisée, mais pas toujours à bon escient. Ce n'est pas le code PIN de votre carte bleue ou de votre carte SIM. Vous n'avez pas besoin de vous en souvenir. Et après que le couplage soit terminé vous n'avez pas besoin de le garder secret. Vous devez juste vous assurez que personne d'autre ne le connaisse avant que vous (ou vous deux) n'ayez saisi ce numéro dans chaque périphérique. </para>
+<para
+>Pour être en sécurité, vous ne devriez pas seulement garder le PIN secret durant le couplage, mais vous devriez aussi utiliser un numéro aléatoire, qui ne peut être trouvé facilement. KDE Bluetooth vous assiste ici en créant un nombre aléatoire à 8 chiffres lui-même si c'est possible. Vous pouvez aussi utiliser des lettres pour un pin, mais vous pourriez avoir des problèmes lors de la saisie sur le clavier de votre téléphone portable. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>L'assistant à la saisie du code PIN</title>
+<para
+>Mais où le code Pin doit-il être saisi ? Comme c'était noté précédemment, les périphériques vous demanderont simplement le code PIN quand il sera nécessaire. Pour BlueZ, les choses sont un petit peu plus compliquées. Il y a plusieurs manières pour BlueZ d'obtenir le code PIN de l'utilisateur. </para>
+<para
+>La manière habituelle est de configurer le hcid de BlueZ pour qu'il utilise un"Assistant à la saisie du code PIN" et de mettre "security user;" dans <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Cet assistant est un petit programme qui ne fait rien de plus que vous demander un numéro et de le faire sortir sur stdout. Bluez fournit son propre assistant appelé "bluepin", qui semble causer beaucoup de problèmes. Alors il y a un assistant plus pratique appelé "bluez-pin" et ce n'est pas tout il y a l'assistant de kdebluetooth : "kbluepin". Veuillez vous reporter aux <link linkend="installation.setup"
+>instructions d'installation</link
+> pour savoir comment mettre en place l'assistant et que faire si ça ne marche pas. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Gérer des périphériques couplés</title>
+<para
+>Après avoir couplé beaucoup de périphériques, vous pourriez vous demander quels périphériques sont couplés et lesquels ne le sont pas. Vous pouvez aussi vouloir supprimer un couplage. Les réponses sont la plupart du temps des mauvaises nouvelles. </para>
+<para
+>Tout d'abord, aucun périphérique ne peut connaître efficacement avec quels périphériques il est couplé. Quand deux périphériques sont couplés, ils partagent une <phrase
+>clé</phrase
+> secrète qui a été créée durant le processus de couplage, qui est basée sur le pin et d'autres ingrédients. Étant donné que l'autre côté peut décider de supprimer cette clé sans le notifier, avoir une clé pour un périphérique donné ne garantit pas que la clé existe toujours de l'autre côté. Si une clé n'est plus, le couplage n'est plus. Bien sûr vous pouvez être sûr que vous n'êtes <emphasis
+>pas</emphasis
+> couplé avec un périphérique si vous n'avez pas de clé pour lui. </para>
+<para
+>Alors comment les liens peuvent-ils être supprimés ? Cela dépend du périphérique. La plupart des téléphones ou PDA ont une liste des périphériques "couplés" ou "sûrs", où vous pouvez supprimer un élément. Pour la version actuelle de Bluez utils (2.6), les clés sont stockées habituellement dans le fichier <filename
+>/etc/bluetooth/link_key</filename
+>. Étant donné que les clés doivent être gardées secrètes, le fichier n'est accessible qu'en root. Vous pouvez supprimer ce fichier, mais alors tous vos couplages seront perdus. Et étant donné que ce fichier est binaire, vous ne pouvez pas facilement l'éditer sans outil spécifique. Actuellement, kdebluetooth ne contient pas d'outil pour lire ou écrire ce fichier, car la manipulation des clés par Bluez changera tôt (ou tard). </para>
+<para
+>Il y a un ennui spécial impliqué, quand vous basculez fréquemment entre différents systèmes d'exploitation qui utilisent bluetooth (Linux/Windows habituellement) : quand vous couplez votre téléphone sous Linux et démarrez alors Windows, Windows ne connaîtra rien des clés gérées par BlueZ. Cela apparaîtra donc comme si l'ordinateur avait perdu les clés et vous devrez vous coupler de nouveau. Selon les périphériques il peut être possible ou pas de se coupler de nouveau sans supprimer "l'ancienne" clé sur votre téléphone auparavant. Vous pouvez rencontrer le même problème avec Bluez lui-même si vous sélectionnez "pairing single;" dans <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Pour le moment soyez conscient de ce problème, n'utilisez pas Bluetooth sous deux OSes ou utilisez un adaptateur Bluetooth différent pour chaque OS. Il devrait aussi être possible de déplacer les clés entre windows et linux mais je ne connais aucun outil capable de faire cela. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

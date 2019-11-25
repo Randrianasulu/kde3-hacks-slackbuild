@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>Server Push OBEX: ricevere file</title>
+<para
+>La maggior parte dei cellulari o palmari predisposti per Bluetooth ti permetteranno di inviare file dal cellulare al computer. Sebbene potrebbe essere più comodo usare il <link linkend="components.kio_obex"
+>kioslave FTP OBEX</link
+> per tirare i file dal telefono al tuo computer, non tutti i dispositivi lo supportano. Il push di oggetti OBEX è al contrario supportato dalla maggior parte dei dispositivi Bluetooth. </para>
+
+<sect2>
+<title
+>Usare il server Push OBEX</title>
+<para
+>Il server Push OBEX è gestito da kbluetoothd e sarà avviato automaticamente se è attivato e qualcuno cerca di inviarti dei file. Per piacere vedi la documentazione di kbluetoothd per come <link linkend="components.kbluetoothd.serviceconfig"
+>attivare o disattivare i servizi</link
+> (Il server Push OBEX è elencato come <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Quando invii un file dal tuo cellulare al tuo computer, l'icona di vassoio di kbluetoothd diventerà blu e mostrerà una piccola vignetta. Come valore predefinito (a seconda delle tue <link linkend="components.kbluetoothd.confirmation"
+>impostazioni per le connessioni in arrivo</link
+>) dovrai prima accettare la connessione, quindi dovrebbe apparire la finestra principale di Push OBEX e iniziare a ricevere i file. </para>
+<para
+>I file in arrivo sono salvati in <filename
+>/tmp</filename
+> e saranno eliminati dopo che avrai chiuso il server Push OBEX. Per salvare i file, hai due possibilità: </para>
+<itemizedlist>
+<listitem>
+<para
+>Fai clic su <guibutton
+>OK</guibutton
+> per salvare tutti i file ricevuti in una posizione predefinita.</para>
+</listitem>
+<listitem>
+<para
+>Trascina uno o più file in qualche altra posizione. Ciò è utile specialmente se vuoi inviare i file per posta elettronica, perché puoi trascinare i file direttamente in kmail senza salvarli prima in una posizione temporanea. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

@@ -1,0 +1,252 @@
+# translation of kipiplugin_galleryexport.po to
+#
+# Sönke Dibbern <sdibbern@foni.net>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2007-05-23 02:35+0200\n"
+"Last-Translator: Sönke Dibbern <sdibbern@foni.net>\n"
+"Language-Team:  <nds@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+#, fuzzy
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Sönke Dibbern"
+
+#: _translatorinfo.cpp:3
+#, fuzzy
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sdibbern@foni.net"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr ""
+
+#: galleries.cpp:238
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
+#: galleries.cpp:239
+#, fuzzy
+msgid "User"
+msgstr "Bruker"
+
+#: galleryconfig.cpp:104
+#, fuzzy
+msgid "Name:"
+msgstr "Naam:"
+
+#: galleryconfig.cpp:108
+#, fuzzy
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+#, fuzzy
+msgid "Username:"
+msgstr "Brukernaam:"
+
+#: galleryconfig.cpp:116
+#, fuzzy
+msgid "Password:"
+msgstr "Passwoort:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr ""
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr ""
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr ""
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr ""
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr ""
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr ""
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr ""
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr ""
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr ""
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr ""
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr ""
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr ""
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr ""
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+#, fuzzy
+msgid "Albums"
+msgstr "Alben"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr ""
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr ""
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr ""
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr ""
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr ""
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr ""
+
+#: gallerywidget.cpp:147
+#, fuzzy
+msgid "&New Album"
+msgstr "&Nieg Album"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr ""
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr ""
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+
+#: gallerywindow.cpp:87
+#, fuzzy
+msgid "Author"
+msgstr "Autor"
+
+#: gallerywindow.cpp:90
+#, fuzzy
+msgid "Maintainer"
+msgstr "Pleger"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr ""
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr ""
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr ""
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr ""
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr ""
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr ""
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, fuzzy, no-c-format
+msgid "MyDialog"
+msgstr "Mien Dialoog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr ""
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr ""
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr ""
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr ""
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr ""

@@ -1,0 +1,268 @@
+<chapter id="imageviewer">
+<chapterinfo>
+
+<title
+>OpenGL Bildbetrachter</title>
+
+<authorgroup>
+    <author
+><firstname
+>Markus</firstname
+><surname
+>Leuthold</surname
+> <affiliation
+><address
+><email
+>kusi _AT forum dot titlis _dot org</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Der KIPI Bildbetrachter ist ein sehr schnelles und flexibles OpenGL basierendes Werkzeug, um sich Bilder anzusehen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Der KIPI Bildbetrachter erlaubt es Ihnene sich eine Auswahl von Bildern anzusehen und auf ihnen Basisoperationen wie Drehungen, Zoomen oder Verschieben durchzuführen. Der Betrachter lässt sich mit Kurzbefehlen und Mausgesten benutzen. Er wurde für eine schnelle Bildanzeige und schnellen Zugriff auf seine Funktionen entwickelt. </para>
+
+
+<variablelist
+><title
+>Bildzugriff</title>
+<varlistentry
+><term
+>Nächstes Bild</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Mausrad nach unten</para
+></listitem>
+<listitem
+><para
+>Nach unten/Rechte Pfeiltaste</para
+></listitem>
+<listitem
+><para
+>Leertaste</para
+></listitem>
+<listitem
+><para
+>Taste N</para
+></listitem>
+<listitem
+><para
+>Bild nach unten</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Vorheriges Bild</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Mausrad nach oben</para
+></listitem>
+<listitem
+><para
+>Nach oben/Linke Pfeiltaste</para
+></listitem>
+<listitem
+><para
+>Taste P</para
+></listitem>
+<listitem
+><para
+>Bild nach oben</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Beenden</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Esc</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+<variablelist>
+	<title
+>Anzeige</title>
+	<varlistentry>
+		<term
+>Vollbild/Normal wechseln</term>
+		<listitem>
+			<para
+>Nach dem Start wird ein Bild standardmäßig im Vollbildmodus angezeigt. Dies kann in einen Fenstermodus geändert werden. </para>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>Taste F</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term
+>Mausradaktion umschalten</term>
+		<listitem>
+			<para
+>Das Drehen des Mausrads wechselt entweder zwischen den Bildern oder den Zoom, des Bildes. </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Taste C</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Drehung</term>
+		<listitem>
+			<para
+>Die Drehung ist nur temporär und wird nicht in der Datei gespeichert. </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Taste R</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+	
+	
+	<varlistentry>
+		<term
+>Ansicht zurücksetzen</term>
+		<listitem>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>Doppelklick</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Originalgröße</term>
+		<listitem>
+			<para
+>Jedes Pixel des Bildes entspricht genau einem Pixel auf dem Bildschirm. </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Taste O</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+</variablelist>
+
+<variablelist>
+	<title
+>Zoomen</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>Bewegen Sie die Maus rauf oder runter, während Sie die rechte Maustaste drücken.</para>
+				</listitem>
+				<listitem>
+					<para
+>Mausrad, falls Sie die Mausradaktion angeschaltet haben.</para>
+				</listitem>
+				<listitem>
+					<para
+>Plus/Minus</para>
+				</listitem>
+				<listitem>
+					<para
+>Strg + Mausrad</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+
+<variablelist>
+	<title
+>Verschieben</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>Maus bewegen während die linke Taste gedrückt ist</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

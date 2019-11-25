@@ -1,0 +1,169 @@
+<chapter id="rawconverter">
+<chapterinfo>
+
+<title
+>Conversione grezza di immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin di Kipi per la <quote
+>Conversione grezza di immagini</quote
+> è uno strumento di conversione per i formati di immagine grezzi. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Con questo plugin di Kipi puoi importare o convertire le immagini conservate in <emphasis
+>formato grezzo</emphasis
+> in tre formati di tua scelta (<guilabel
+>JPEG</guilabel
+>, <guilabel
+>TIFF</guilabel
+>, <guilabel
+>PPM</guilabel
+>). </para>
+
+<para
+>Alcune considerazione prima di convertire, e anche prima di fare foto in formato grezzo. I formati di immagine grezzi mantengono le informazioni originali dell'esposizione senza perdite (quando compressi, usano algoritmi di compressione reversibili e senza perdita). Molti fotografi preferiscono fare le loro foto in modalità grezza perché il programma interno di conversione della fotocamera è spesso meno buono di quello che si può ottenere con l'elaborazione digitale delle immagini. Alcuni CMOS CCD creano dati con un filtro a quattro colori, RGBG, rosso, verde, blu, e un'altra maschera verde per migliorare il contrasto. Il plugin può ora tenerlo in conto. </para>
+
+<para
+>La conversione è in pratica basata sullo strumento da riga di comando <emphasis
+>dcraw</emphasis
+> di Dave Coffin (Dave: "Non aspettarti che dcraw produca le stesse immagini del software fornito dal produttore della fotocamera. A volte dcraw dà risultati migliori!"). </para>
+
+<sect1 id="using-plugin-rawconversiondialog">
+<title
+>Finestra di conversione singola</title>
+
+<para
+>Seleziona il file grezzo da convertire e apri il plugin dall'applicazione ospite. Apparirà la finestra <emphasis
+>Convertitore di immagini grezze</emphasis
+> in modalità singola. Fai clic su <guilabel
+>Anteprima</guilabel
+> per visualizzare l'effetto delle tue impostazioni che prende forma. </para>
+
+<para
+>Ora puoi regolare le caselle e i valori disponibili per ottimizzare il processo di conversione. La prima casella indica l'uso delle impostazioni della fotocamera per il bilanciamento del bianco. Possono essere regolati i parametri essenziali come la luminosità e l'amplificazione rosso/blu. Se il risultato non è proprio ottimale, non preoccuparti, è sempre possibile raffinare l'immagine in seguito. </para>
+
+<para
+>Una conversione a <guilabel
+>Quattro colori RGBG</guilabel
+> può essere selezionata per usare le informazioni sul contrasto (se la tua fotocamera funziona in modalità RGB, l'impostazione RGBG non ha nessun effetto). </para>
+
+<para
+>Se l'anteprima ti va bene, scegli uno dei tre formati di output per salvare il risultato della conversione. Il nome del file rimarrà lo stesso, cambia solo l'estensione. <guilabel
+>JPEG</guilabel
+> usa l'algoritmo con perdita e produce il file di output più piccolo. </para>
+
+<para
+>Il formato di immagine con tag (<guilabel
+>TIFF</guilabel
+>) mantiene tutte le informazioni della tua immagine usando la compressione LZW senza perdita. </para>
+
+<para
+>Il formato PixMap portabile (<guilabel
+>PPM</guilabel
+>) produce il file di output più grande e contiene la maggior quantità di dati. </para>
+
+<tip
+><para
+>Se intendi lavorare molto con le tue immagini, o se è probabile che dovrai riutilizzarle in seguito, non usare il formato <guilabel
+>JPEG</guilabel
+> perché permette un numero limitato di operazioni prima di deteriorarsi visibilmente. <guilabel
+>TIFF</guilabel
+> e <guilabel
+>PPM</guilabel
+> sono più adatti a mantenere i dati originali. </para
+></tip>
+
+<note
+><para
+>Se scegli <guilabel
+>JPEG</guilabel
+> come <guilabel
+>Formato di salvataggio</guilabel
+>, le informazioni aggiuntive incluse nel file grezzo saranno incluse nei file <guilabel
+>JPEG</guilabel
+> come informazioni Exif. </para
+></note>
+
+<para
+>Quando hai finito fai clic sul pulsante <guilabel
+>Elabora</guilabel
+> per avviare la conversione. Se vuoi interrompere la conversione dell'immagine, premi il pulsante <guilabel
+>Interrompi</guilabel
+>. </para>
+
+<figure>
+    <title
+>La finestra di conversione grezza in modalità singola</title>
+    <graphic srccredit="The RAW Converter Dialog in Single Mode" fileref="raw_converter_single.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-rawbatchdialog">
+<title
+>La finestra di conversione non interattiva</title>
+
+<para
+>Il convertitore in modalità non interattiva ti permette di convertire più immagini in una volta. Usa questa modalità se sei sicuro delle migliori impostazioni, vale a dire provale prima la modalità di conversione singola. </para>
+
+<para
+>Le impostazioni disponibili sono per lo più identiche alla finestra della modalità singola. Qui hai l'opzione aggiuntiva di sovrascrivere i file esistenti (che potresti aver creato in una prova precedente). Qui non è disponibile l'opzione di anteprima. Una barra di progresso indica lo stato della conversione in diretta. </para>
+
+<figure>
+    <title
+>La finestra di conversione grezza non interattiva</title>
+    <graphic srccredit="The Batch RAW Converter Dialog" fileref="raw_converter_batch.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

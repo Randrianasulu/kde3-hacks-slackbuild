@@ -1,0 +1,156 @@
+<chapter id="acquireimages">
+<chapterinfo>
+
+<title
+>Hämta bilder</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard snabela kulzer.net</email
+></address
+></affiliation>
+    </author
+>    
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Hämta bilder tillhandahåller verktyg för att fånga nya bilder och spara dem i samlingar. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Insticksprogrammet kan användas för att fånga och lägga till bilder i värdprogrammet från externa källor. I själva verket kan två åtgärder utföras: </para>
+
+<itemizedlist>
+
+<listitem>
+    <para
+><emphasis
+>Läs in bilder</emphasis
+>: Använd Kooka-gränssnittet för att läsa in bilder med en bildläsare som stöds av Sane-projektet eller en annan källa som videoströmmar (för att det ska fungera måste du ha installerat Kooka och Sane). </para>
+</listitem>
+
+<listitem>
+    <para
+><emphasis
+>Skärmdump</emphasis
+>: Ta en skärmdump. </para>
+</listitem>
+
+</itemizedlist>
+
+<sect1 id="using-plugin-acquirescan">
+<title
+>Dialogrutan Infånga bild</title>
+
+<para
+>När du väljer menyalternativet <guilabel
+>Läs in bilder</guilabel
+> dyker en dialogruta upp som låter dig välja mellan tillgängliga inläsningskällor på datorn. Välj den du vill läsa in från. Du kan också ställa in förvald källa för nästa gång. </para>
+
+<para
+>När Kookas dialogfönster dyker upp, välj inläsningsinställningar genom att ändra förvalda värden. Titta på förhandsgranskningen och beskär den innan du tar det slutliga beslutet. Uppskattad filstorlek anges i nedre högra hörnet. Se den specifika <ulink url="help:/kooka/index.html"
+>handboken för Kooka</ulink
+> för mer information. </para>
+
+<note
+><para
+>Försäkra dig om att dialogrutan är helt synlig, eftersom vissa inställningar kan vara dolda om fönstret är för smalt. </para
+></note>
+
+<para
+>Tryck på inläsningsknappen och vänta till inläsningen är klar och dialogrutan <guilabel
+>Spara alternativ för resultat</guilabel
+>. Här kan du ändra komprimeringskvalitet och bildfilens typ (var medveten om att typen BMP inte är komprimerad och skapar stora filer). Det andra alternativet i dialogrutan låter dig välja (och skapa) katalogen som bilden sparas i. </para>
+
+<figure>
+    <title
+>Dialogrutan Spara alternativ för resultat under arbete</title>
+    <graphic srccredit="The Save Target Dialog in Action" fileref="acquire-savetargetpreview.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-acquirescreenshot">
+<title
+>Dialogrutan Skärmdump</title>
+
+<para
+>Hämtningsalternativet <emphasis
+>Skärmdump</emphasis
+> kan du välja med det första menyalternativet -> Importera -> Skärmdump... Ett dialogfönster dyker upp som tillhandahåller olika dumpningslägen: </para>
+
+<itemizedlist>
+<listitem>
+   <para
+>Avmarkera knappen <guilabel
+>Fånga hela skrivbordet</guilabel
+> för att knäppa ett enstaka fönster under musmarkören. </para>
+</listitem>
+<listitem>
+   <para
+>När alternativet <guilabel
+>Dölj alla värdprogrammets fönster</guilabel
+> är markerat försvinner det anropande värdprogrammet för att lämna plats för övriga skärmar och fönster. Annars knäpper du skärmen eller fönstret som i själva verket är synligt, efter fördröjningen (om du avmarkerat <guilabel
+>Fånga hela skrivbordet</guilabel
+> knäpps fönstret under muspekaren). </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Fördröjningen avgör hur länge skärmbilden väntar till exponeringen sker. Om du behöver flytta dig till en annan skärm, ställ in fördröjningen stor nog för att ge dig tid att flytta dig. </para>
+
+<figure>
+    <title
+>Dialogrutan Skärmdump under arbete</title>
+    <graphic srccredit="The Screenshot Dialog in Action" fileref="acquire-screenshotpreview.png"/>
+</figure>
+
+<para
+>När skärmbilden väl har tagits, visas dialogrutan <emphasis
+>Alternativ för resultatbild</emphasis
+>, med samma alternativ som beskrivits ovan. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

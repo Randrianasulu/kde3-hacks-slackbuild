@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Info arendajatele</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Selles osas kirjeldatakse, kuidas saab kbluetoothd rakendada enda programmi teenistusse või kasutada seda skripti abil puhverdatud seadmenimede või muu sellise hankimiseks. </para>
+
+<sect2>
+<title
+>Nimepuhver</title>
+<para
+>Nimepuhver jälgib kõiki nimesoove ja salvestab tulemused. Seda kasutades saavad muud rakendused ja mõistagi ka kbluetoothd ise hankida bluetoothd seadme nime selle unikaalsest seadmeaadressist ka siis, kui seade ise ei asu parajasti tööpiirkonnas. Peamiselt saab seda pruukida kasutajaliidese muutmiseks sõbralikumaks, sest bluetoothi aadressid ei ole just kerged meeles pidada - näiteks 00:60:AB:13:83:3D. </para>
+<para
+>Usutavasti vajub see peagi ajalukku, kui BlueZ tuleb lõpuks välja omaenda püsiva nimepuhvriga. </para>
+<para
+>Nimepuhvrile pääseb ligi näiteks DCOP-i abil. Aadressi leidmiseks nimepuhrist kirjuta käsureal <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;aadress&gt;</command
+>. Kui tahad teada, milline seade kasutas viimati mingit nime, anna käsk <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;nimi&gt;</command
+>. See käsk on tõstutundlik. Samuti tasuks silmas pidada, et tegelikult võib ka mitu seadet kasutada üht ja sama nime. </para>
+</sect2>
+
+<sect2>
+<title
+>Metaserver</title>
+<para
+>Kui soovid kirjutada serverirakendust mõnele uuele Bluetoothi protokollile, saad selle hõlpsasti integreerida kbluetoothd-ga, mis võimaldab serveri automaatselt tööle panna. </para>
+<para
+>Sul tuleb tekitada XML fail, mis kirjeldab SDP kirjet ja vastavat töölauafaili. Kbluetoothd tekitab siis automaatselt SDP kirje, omistab rfcomm kanali ja hakkab valitud kanalit jälgima. Kui keegi sinu teenusega ühendust võtab, käivitab kbluetoothd selle ning eraldab juba aktsepteeritud ühendusele sokli. Käitleja number antakse käsureal argumendina. </para>
+<para
+>Paketis kdebluetooth on programm <command
+>kbtserialchat</command
+>, mis on mõeldud (peale selle, et seda saab kasutada silumiseks ja võib-olla isegi vestlemiseks...) lihtsaks näiteks selle kohta, kuidas rakendust kdebluetooth raamistikku integreerida. Et kbtserialchat on korraga nii klient kui ka server, ei ole sul vaja väga suurt tähelepanu pöörata kõikvõimalikele käsureal antavatele argumentidele nagu seda kbtserialchat teeb, eriti sdp-urlidele. </para>
+<para
+>SDP-XML-failide vorming peaks olema enesestmõistetav, kui endale vähegi selgeks teha SDP kirjete struktuur. Oluline on tähele panna, kuidas jõuab valitud rfcomm kanalite parameeter serveri SDP kirjesse. Et kbluetoothd valib kanali automaatselt, ei saa seda otseselt SDP registreerimisfaili sisse kirjutada. Selle asemel tuleb kohanäitajana anda &lt;uint valref='rfcommchannel' size='8'/&gt;. Järeleproovitavad rfcomm kanalid on määratud vastavas töölauafailis. <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> on esimesed järeleproovitavad kanalid ning <varname
+>X-KD-KBLUETOOTHD-autoPortRange</varname
+> annab järgmiste kanalite numbri, mida proovitakse kasvavas järjekorras, kui kanalit kasutab juba mõni muu teenus. </para>
+<para
+>Kbluetoothd toetab praegu ainult rfcomm-i, aga vajadusel on võimalik pakkuda ka l2cap või muu sellise tuge. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>Seadmete tuvastamise teenus</title>
+<para
+>kbluetoothd võib aktiivselt otsida seadmeid ning käivitada käske niipea, kui seade tuvastatakse või kui see kaob. Seda teenust saab seadistada KDE juhtimiskeskuses kbluetoothd moodulis kaardil "Seadmete tuvastamine". </para>
+<para
+>Juhtimiskeskuses näha olevate <emphasis
+>aktiivsete</emphasis
+> tuvastamistööde loend on lihtsalt nimekiri kataloogis <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+> asuvatest käivitatavatest failidest. Sa võid ka lisada uue skripti globaalsete mallide kataloogi <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Selle kataloogi skripte laiendiga ".template" näidatakse, kui klõpsata nupule "Lisa uus töö..." ning need lihtsalt kopeeritakse kasutaja kodukataloogis asuvasse aktiivsete tööde kataloogi. </para>
+<para
+>Kaasapandud skriptid on jagatud kaheks, et neid oleks lihtsam uuendada ilma skripte uuesti paigaldamata. ".template"-osa, mis kopeeritakse kodukataloogi,  sisaldab ainult kasutaja muudetavaid seadistusi. See skript kutsub seejärel välja ".real"-osa, mis jääb endiselt mallide kataloogi. </para>
+<para
+>Omaenda tuvastamistöö kirjutamiseks klõpsa "Lisa uus töö..." ning vali <phrase
+>kohandatud_töö</phrase
+>. See kopeerib <filename
+>Kohandatud_Töö.template</filename
+> sinu tööde kataloogi. Nüüd klõpsa skripti muutmiseks "Seadista...". Skript võib kasutada kõiki käsureavõtmeid ja keskkonnamuutujaid, mis on sulle üldse kättesaadavad. </para>
+<para
+>Arvesta, et kohandatud skripti redigeerides kaotad kõik muudatused, kui eemaldad selle aktiivsete tööde loendist. Kui soovid oma skripti levitada, soovitame sul see samuti jagada malliosaks, milles on seadistused ja reaalosaks, mis sooritab tegeliku töö. </para>
+
+<para
+>Sellise tuvastamistööga failide üles- ja allalaadimiseks või kustutamiseks saab kasutada programmi <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Kui kirjutad mõne vahva tuvastamisteenuse skripti, millest võiks kasu tõusta teistelegi, saada see ka meile ja me lisame selle oma komplekti. </para>
+</sect2>
+
+</sect1>
+</chapter>
+

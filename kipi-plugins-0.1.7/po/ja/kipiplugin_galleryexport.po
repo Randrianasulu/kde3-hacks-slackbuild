@@ -1,0 +1,243 @@
+# translation of kipiplugin_galleryexport.pot to japanese
+# Yukiko BANDO <ybando@k6.dion.ne.jp>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-02-29 20:00+0900\n"
+"Last-Translator: Yukiko BANDO <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko BANDO"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "ギャラリー名"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "URL"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "ユーザ名"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "名前:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "ユーザ名:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "パスワード:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "&Gallery 2 を使う"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "リモートギャラリー"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "新規リモートギャラリー"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "ギャラリーが選択されていません。"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "リモートギャラリーを編集"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr "本当にこのギャラリーを削除しますか？すべての同期設定は失われます。この操作は元に戻せません。"
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "リモートギャラリーを削除"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "ギャラリーの URL が正しくないようです。"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "ユーザ名またはパスワードが不正です。"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "リモートギャラリーからの応答が無効です。"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "アルバムリストの作成に失敗"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "写真リストの作成に失敗"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "新規アルバムの作成に失敗"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "写真のアップロードに失敗"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "アルバム"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "カスタムオプション"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "コメントをタイトルにする"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "コメントを説明にする"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "アップロード前に写真のサイズを変更"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "最大寸法:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>ギャラリーエクスポート</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "新規アルバム(&N)"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "写真を追加(&A)"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "ギャラリーエクスポート"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "Kipi プラグイン - 画像コレクションをリモートギャラリーにエクスポート"
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "作者"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "メンテナ"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "リモートギャラリーにログインできませんでした。"
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"もう一度試しますか？"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "これらの文字はアルバム名には使用できません: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "ファイル '%1' をアップロード"
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "リモートギャラリーに写真をアップロードできませんでした。"
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"続けますか？"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "リモートギャラリーの同期..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "リモートギャラリー..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MyDialog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>新しいアルバム名を入力</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "タイトル (オプション):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "名前 (オプション):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "キャプション (オプション):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "新規ギャラリー"

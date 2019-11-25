@@ -1,0 +1,751 @@
+# translation of kipiplugin_gpssync.po to Greek
+#
+# Spiros Georgaras <sng@hellug.gr>, 2006, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_gpssync\n"
+"POT-Creation-Date: 2008-11-18 08:53+0100\n"
+"PO-Revision-Date: 2007-04-29 14:00+0300\n"
+"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"Language-Team: Greek <i18ngr@lists.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Σπύρος Γεωργαράς, Τούσης Μανώλης"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org"
+
+#: gpseditdialog.cpp:88
+msgid "%1 - Edit Geographical Coordinates"
+msgstr "%1 - Επεξεργασία συντεταγμένων GPS"
+
+#: gpseditdialog.cpp:98
+#, fuzzy
+msgid ""
+"<p>Use the map on the right to select the location where the picture have been "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates."
+"<p>"
+msgstr ""
+"<p>Χρησιμοποιήστε το χάρτη στα δεξιά για να επιλέξετε την τοποθεσία σύλληψης "
+"της φωτογραφίας. Κάντε κλικ με το δεξί κουμπί του ποντικιού στο χάρτη για τη "
+"λήψη συντεταγμένων GPS."
+"<p>"
+
+#: gpseditdialog.cpp:102
+msgid "Altitude:"
+msgstr "Υψόμετρο:"
+
+#: gpseditdialog.cpp:103
+msgid "Latitude:"
+msgstr "Γεωγραφικό πλάτος:"
+
+#: gpseditdialog.cpp:104
+msgid "Longitude:"
+msgstr "Γεωγραφικό μήκος:"
+
+#: gpseditdialog.cpp:118
+#, fuzzy
+msgid "Goto Location"
+msgstr "Γεωτοποθέτηση"
+
+#: gpseditdialog.cpp:144 gpssyncdialog.cpp:248 gpssyncdialog.cpp:313
+#: gpssyncdialog.cpp:321 gpssyncdialog.cpp:443 gpssyncdialog.cpp:453
+#: gpssyncdialog.cpp:462 gpssyncdialog.cpp:494
+msgid "GPS Sync"
+msgstr "Συγχρονισμός GPS"
+
+#: gpseditdialog.cpp:147
+msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgstr "Ένα πρόσθετο συγχρονισμού μεταδεδομένων εικόνων με μια συσκευή GPS"
+
+#: gpseditdialog.cpp:150 gpssyncdialog.cpp:254
+msgid "Author and Maintainer"
+msgstr "Συγγραφέας και Συντηρητής"
+
+#: gpseditdialog.cpp:155 gpssyncdialog.cpp:259 kmlexportconfig.cpp:292
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Εγχειρίδιο του GPS Sync"
+
+#: gpseditdialog.cpp:306
+msgid "Altitude value is not correct!"
+msgstr "Λανθασμένη τιμή υψομέτρου!"
+
+#: gpseditdialog.cpp:307 gpseditdialog.cpp:315 gpseditdialog.cpp:323
+#: plugin_gpssync.cpp:251
+msgid "Edit Geographical Coordinates"
+msgstr "Επεξεργασία γεωγραφικών συντεταγμένων"
+
+#: gpseditdialog.cpp:314
+msgid "Latitude value is not correct!"
+msgstr "Λανθασμένη τιμή γεωγραφικού πλάτους!"
+
+#: gpseditdialog.cpp:322
+msgid "Longitude value is not correct!"
+msgstr "Λανθασμένη τιμή γεωγραφικού μήκους!"
+
+#: gpslistviewitem.cpp:108
+msgid "Interpolated"
+msgstr "Με παρεμβολή"
+
+#: gpslistviewitem.cpp:112
+msgid "Added"
+msgstr "Προστέθηκε"
+
+#: gpslistviewitem.cpp:114
+msgid "Found"
+msgstr "Βρέθηκε"
+
+#: gpslistviewitem.cpp:132
+msgid "Deleted!"
+msgstr "Διαγράφηκε!"
+
+#: gpslistviewitem.cpp:145
+msgid "Not available"
+msgstr "Μη διαθέσιμο"
+
+#: gpssyncdialog.cpp:107 plugin_gpssync.cpp:73
+#, fuzzy
+msgid "Geolocation"
+msgstr "Γεωτοποθέτηση"
+
+#: gpssyncdialog.cpp:114
+msgid "Correlate"
+msgstr "Συσχέτιση"
+
+#: gpssyncdialog.cpp:115
+msgid "Edit..."
+msgstr "Επεξεργασία..."
+
+#: gpssyncdialog.cpp:118
+msgid ""
+"Correlate in time and interpolate distance of data from GPX file with all "
+"images on the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:119
+#, fuzzy
+msgid "Manually edit GPS coordinates of selected images from the list."
+msgstr ""
+"Χειροκίνητη επεξεργασία συντεταγμένων GPS των επιλεγμένων εικόνων της λίστας."
+
+#: gpssyncdialog.cpp:120
+#, fuzzy
+msgid "Remove GPS coordinates of selected images from the list."
+msgstr "Αφαίρεση συντεταγμένων GPS από τις επιλεγμένες εικόνες της λίστας."
+
+#: gpssyncdialog.cpp:131
+msgid "Thumbnail"
+msgstr "Εικόνα επισκόπησης"
+
+#: gpssyncdialog.cpp:132
+msgid "File Name"
+msgstr "Όνομα αρχείου"
+
+#: gpssyncdialog.cpp:133
+msgid "Camera time stamp"
+msgstr ""
+
+#: gpssyncdialog.cpp:134
+msgid "Latitude"
+msgstr "Γεωγραφικό πλάτος"
+
+#: gpssyncdialog.cpp:135
+msgid "Longitude"
+msgstr "Γεωγραφικό μήκος"
+
+#: gpssyncdialog.cpp:136
+msgid "Altitude"
+msgstr "Υψόμετρο"
+
+#: gpssyncdialog.cpp:137
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: gpssyncdialog.cpp:147
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: gpssyncdialog.cpp:151
+msgid "Load GPX File..."
+msgstr "Φόρτωση αρχείου GPX..."
+
+#: gpssyncdialog.cpp:153
+msgid "Current GPX file:"
+msgstr "Τρέχον αρχείο GPX:"
+
+#: gpssyncdialog.cpp:154
+msgid "No GPX file"
+msgstr "Κανένα αρχείο GPX"
+
+#: gpssyncdialog.cpp:158
+#, fuzzy
+msgid "Max. time gap (sec.):"
+msgstr "Μέγ. χρόνος κενού:"
+
+#: gpssyncdialog.cpp:160
+#, fuzzy
+msgid ""
+"<p>Sets the maximum difference in seconds from a GPS track point to the image "
+"time to be matched. If the time difference exceeds this setting, no match will "
+"be attempted."
+msgstr ""
+"<p>Καθορίζει τη μέγιστη διαφορά σε δευτερόλεπτα από ένα σημείο ανίχνευσης GPS "
+"με το χρόνο εικόνας που θα αντιστοιχηθεί. Αν η διαφορά χρόνου υπερβαίνει αυτήν "
+"τη ρύθμιση δε θα γίνει καμία αντιστοίχηση."
+
+#: gpssyncdialog.cpp:164
+msgid "Time zone:"
+msgstr "Ωρολογιακή ζώνη:"
+
+#: gpssyncdialog.cpp:210
+#, fuzzy
+msgid ""
+"<p>Sets the time zone the camera was set to during photo shooting, so that the "
+"time stamps of the images can be converted to GMT to match the GPS time "
+"reference.\n"
+"Note: positive offsets count eastwards from zero longitude (GMT), they are "
+"'ahead of time'."
+msgstr ""
+"<p>Ορίστε εδώ την ωρολογιακή ζώνη στην οποία τραβήχτηκαν οι εικόνες, έτσι ώστε "
+"να γίνει μετατροπή σε GMT που να αντιστοιχίζεται με την GPS ώρα"
+
+#: gpssyncdialog.cpp:216
+msgid "Interpolate"
+msgstr "Παρεμβολή"
+
+#: gpssyncdialog.cpp:217
+msgid ""
+"<p>Set this option to interpolate GPS track points which are not closely "
+"matched to the GPX data file."
+msgstr ""
+"<p>Ενεργοποιήστε αυτή την επιλογή για το ταίριασμα σημείων GPS που δεν "
+"ταιριάζουν ακριβώς με το αρχείο δεδομένων GPX."
+
+#: gpssyncdialog.cpp:220
+msgid "Difference in min.:"
+msgstr "Διαφορά σε λεπτά:"
+
+#: gpssyncdialog.cpp:222
+msgid ""
+"<p>Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
+"file points to image time data."
+msgstr ""
+"<p>Ορίστε εδώ τη μέγιστη χρονική διαφορά σε λεπτά (μέγ. 240) για το ταίριασμα "
+"σημείων από το αρχείο GPX με τα δεδομένα ώρας της εικόνας."
+
+#: gpssyncdialog.cpp:251
+#, fuzzy
+msgid "A plugin to synchronize images' metadata with a GPS device"
+msgstr "Ένα πρόσθετο συγχρονισμού μεταδεδομένων εικόνων με μια συσκευή GPS"
+
+#: gpssyncdialog.cpp:302 kmlexportconfig.cpp:193
+msgid "%1|GPS Exchange Format"
+msgstr "%1|Μορφή ανταλλαγής GPS"
+
+#: gpssyncdialog.cpp:303 kmlexportconfig.cpp:194
+msgid "Select GPX File to Load"
+msgstr "Επιλογή αρχείου GPX για φόρτωμα"
+
+#: gpssyncdialog.cpp:312 kmlexport.cpp:350
+msgid "Cannot parse %1 GPX file!"
+msgstr "Αδυναμία ανάλυσης του αρχείου GPX %1!"
+
+#: gpssyncdialog.cpp:320 kmlexport.cpp:356
+msgid "The %1 GPX file do not have a date-time track to use!"
+msgstr "Το αρχείο GPX %1 δεν περιέχει καταγραφή ημερομηνίας-ώρας!"
+
+#: gpssyncdialog.cpp:327
+#, c-format
+msgid "Points parsed: %1"
+msgstr "Αναλυμένα σημεία: %1"
+
+#: gpssyncdialog.cpp:371
+#, fuzzy, c-format
+msgid ""
+"_n: 1 image from the list is not updated.\n"
+"%n images from the list are not updated."
+msgstr ""
+"Δεν ενημερώθηκε 1 εικόνα από τη λίστα.\n"
+"Δεν ενημερώθηκαν %n εικόνες από τη λίστα."
+
+#: gpssyncdialog.cpp:374
+#, fuzzy
+msgid ""
+"<p>%1\n"
+"Do you really want to close this window without applying changes?</p>"
+msgstr ""
+"<p>%1\n"
+"Θέλετε πραγματικά να κλείσετε αυτό το παράθυρο χωρίς να εφαρμοστούν οι "
+"αλλαγές;</p>"
+
+#: gpssyncdialog.cpp:442
+msgid "Cannot find pictures to correlate with GPX file data."
+msgstr "Αδυναμία εύρεσης εικόνων για συσχέτιση με τα δεδομένα του αρχείου GPX."
+
+#: gpssyncdialog.cpp:448
+#, fuzzy, c-format
+msgid ""
+"_n: GPS data of 1 image have been updated on the list using the GPX data file.\n"
+"GPS data of %n images have been updated on the list using the GPX data file."
+msgstr ""
+"Τα δεδομένα GPS 1 εικόνας έχουν ενημερωθεί από το αρχείο δεδομένων GPX.\n"
+"Τα δεδομένα GPS %n εικόνων έχουν ενημερωθεί από το αρχείο δεδομένων GPX."
+
+#: gpssyncdialog.cpp:451
+#, fuzzy
+msgid "Press Apply button to update images metadata."
+msgstr "Πατήστε Εφαρμογή για την ενημέρωση των μετα-δεδομένων των εικόνων."
+
+#: gpssyncdialog.cpp:461
+#, fuzzy
+msgid ""
+"Please, select at least one image from the list to edit GPS coordinates "
+"manually."
+msgstr ""
+"Παρακαλώ επιλέξτε τουλάχιστον μια εικόνα από τη λίστα για την επεξεργασία των "
+"συντεταγμένων GPS."
+
+#: gpssyncdialog.cpp:493
+#, fuzzy
+msgid ""
+"Please, select at least one image from the list to remove GPS coordinates."
+msgstr ""
+"Παρακαλώ επιλέξτε τουλάχιστον μια εικόνα από τη λίστα για την αφαίρεση των "
+"συντεταγμένων GPS."
+
+#: kmlexport.cpp:63
+msgid "Generating KML file..."
+msgstr "Δημιουργία αρχείου KML..."
+
+#: kmlexport.cpp:83
+#, c-format
+msgid "Could not create '%1"
+msgstr "Αδύνατη η δημιουργία του '%1'"
+
+#: kmlexport.cpp:167
+msgid "Could not read image '%1'"
+msgstr "Αδύνατη η ανάγνωση της εικόνας '%1'"
+
+#: kmlexport.cpp:174
+msgid "Format of image '%1' is unknown"
+msgstr "Η μορφή της εικόνας '%1' είναι άγνωστη"
+
+#: kmlexport.cpp:184
+msgid "Error loading image '%1'"
+msgstr "Σφάλμα κατά τη φόρτωση της εικόνας '%1'"
+
+#: kmlexport.cpp:224
+msgid "Could not save image '%1' to '%2'"
+msgstr "Αδύνατη η αποθήκευση της εικόνας '%1' στο '%2'"
+
+#: kmlexport.cpp:304
+msgid "Creation of placemark '%1'"
+msgstr "Δημιουργία σημείου τοποθεσίας '%1'"
+
+#: kmlexport.cpp:311
+msgid "Could not save icon for image '%1' to '%2'"
+msgstr "Αδυναμία αποθήκευσης εικονιδίου για την εικόνα '%1' στο '%2'"
+
+#: kmlexport.cpp:341
+msgid "No GPX file Chosen!"
+msgstr "Δεν επιλέχθηκε αρχείο GPX!"
+
+#: kmlexport.cpp:363
+msgid "Tracks"
+msgstr "Ίχνη"
+
+#: kmlexport.cpp:443
+msgid "No position data for '%1'"
+msgstr "Χωρίς δεδομένα θέσης για το '%1'"
+
+#: kmlexport.cpp:455
+#, c-format
+msgid ""
+"_n: No position data for 1 picture\n"
+"No position data for %n pictures"
+msgstr ""
+"Χωρίς δεδομένα θέσης για 1 εικόνα\n"
+"Χωρίς δεδομένα θέσης για %n εικόνες"
+
+#: kmlexport.cpp:469
+msgid "Move to final directory"
+msgstr "Μετακίνηση στον τελικό κατάλογο"
+
+#: kmlexportconfig.cpp:66 kmlexportconfig.cpp:281
+msgid "KML Export"
+msgstr "Εξαγωγή KML"
+
+#: kmlexportconfig.cpp:77
+msgid "Target Preferences"
+msgstr "Προτιμήσεις προορισμού"
+
+#: kmlexportconfig.cpp:82
+msgid "Target Type"
+msgstr "Τύπος προορισμού"
+
+#: kmlexportconfig.cpp:86
+msgid "&Local or web target used by GoogleEarth"
+msgstr "Προορισμός &τοπικός ή ιστού που χρησιμοποιείται από το GoogleEarth"
+
+#: kmlexportconfig.cpp:91
+msgid "Web target used by GoogleMap"
+msgstr "Προορισμός ιστού που χρησιμοποιείται από το GoogleMap"
+
+#: kmlexportconfig.cpp:95
+msgid ""
+"When using GoogleMap, all image must have complete URL, icons are squared and "
+"when drawing a track, only linetrack is exported"
+msgstr ""
+"Όταν χρησιμοποιείτε το GoogleMap, όλες οι εικόνες πρέπει να έχουν πλήρη URL, τα "
+"εικονίδια γίνονται τετράγωνα και όταν σχεδιάζεται κάποιο ίχνος, εξάγονται μόνο "
+"η γραμμές ίχνους"
+
+#: kmlexportconfig.cpp:101
+msgid "Picture altitude"
+msgstr "Υψόμετρο εικόνας"
+
+#: kmlexportconfig.cpp:105 kmlexportconfig.cpp:256
+msgid "clamp to ground"
+msgstr "στερέωση στο έδαφος"
+
+#: kmlexportconfig.cpp:106 kmlexportconfig.cpp:257
+msgid "relative to ground"
+msgstr "σχετικά με το έδαφος"
+
+#: kmlexportconfig.cpp:107 kmlexportconfig.cpp:258
+msgid "absolute"
+msgstr "απόλυτο"
+
+#: kmlexportconfig.cpp:108
+msgid ""
+"<p>Specifies how pictures are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+"<p>Καθορίζει την μέθοδο εμφάνισης των εικόνων<dl><dt>"
+"στερέωση στο έδαφος (προκαθορισμένο)</dt><dd>Υποδηλώνει την αγνόηση καθορισμού "
+"υψομέτρου</dd><dt>σχετικά με το έδαφος</dt><dd>Ορίζει το υψόμετρο του στοιχείου "
+"σχετικά με το πραγματικό υψόμετρο του εδάφους στη συγκεκριμένη τοποθεσία.</dd>"
+"<dt>απόλυτο</dt><dd>Ορίζει το υψόμετρο σε σχέση με το επίπεδο της θάλασσας, "
+"άσχετα με το πραγματικό υψόμετρο του εδάφους κάτω από το στοιχείο.</dd></dl>"
+
+#: kmlexportconfig.cpp:119
+msgid "Destination directory"
+msgstr "Κατάλογος προορισμού"
+
+#: kmlexportconfig.cpp:125
+msgid "Select a directory to save the kml file and pictures"
+msgstr ""
+"Επιλέξτε έναν κατάλογο για την αποθήκευση του αρχείου kml και των εικόνων"
+
+#: kmlexportconfig.cpp:129
+msgid "Destination URL"
+msgstr "URL προορισμού"
+
+#: kmlexportconfig.cpp:136
+msgid "File name"
+msgstr "Όνομα αρχείου"
+
+#: kmlexportconfig.cpp:147
+msgid "Sizes"
+msgstr "Μεγέθη"
+
+#: kmlexportconfig.cpp:152
+msgid "Icon size"
+msgstr "Μέγεθος εικονιδίου"
+
+#: kmlexportconfig.cpp:163
+msgid "Image size"
+msgstr "Μέγεθος εικόνας"
+
+#: kmlexportconfig.cpp:178
+msgid "GPX Tracks"
+msgstr "Ίχνη GPX"
+
+#: kmlexportconfig.cpp:184
+msgid "Draw GPX track"
+msgstr "Σχεδίαση ίχνους GPX"
+
+#: kmlexportconfig.cpp:188
+msgid "GPX file"
+msgstr "Αρχείο GPX"
+
+#: kmlexportconfig.cpp:197
+msgid "Time zone"
+msgstr "Ωρολογιακή ζώνη"
+
+#: kmlexportconfig.cpp:200
+msgid "GMT-12:00"
+msgstr "GMT-12:00"
+
+#: kmlexportconfig.cpp:201
+msgid "GMT-11:00"
+msgstr "GMT-11:00"
+
+#: kmlexportconfig.cpp:202
+msgid "GMT-10:00"
+msgstr "GMT-10:00"
+
+#: kmlexportconfig.cpp:203
+msgid "GMT-09:00"
+msgstr "GMT-09:00"
+
+#: kmlexportconfig.cpp:204
+msgid "GMT-08:00"
+msgstr "GMT-08:00"
+
+#: kmlexportconfig.cpp:205
+msgid "GMT-07:00"
+msgstr "GMT-07:00"
+
+#: kmlexportconfig.cpp:206
+msgid "GMT-06:00"
+msgstr "GMT-06:00"
+
+#: kmlexportconfig.cpp:207
+msgid "GMT-05:00"
+msgstr "GMT-05:00"
+
+#: kmlexportconfig.cpp:208
+msgid "GMT-04:00"
+msgstr "GMT-04:00"
+
+#: kmlexportconfig.cpp:209
+msgid "GMT-03:00"
+msgstr "GMT-03:00"
+
+#: kmlexportconfig.cpp:210
+msgid "GMT-02:00"
+msgstr "GMT-02:00"
+
+#: kmlexportconfig.cpp:211
+msgid "GMT-01:00"
+msgstr "GMT-01:00"
+
+#: kmlexportconfig.cpp:212
+msgid "GMT"
+msgstr "GMT"
+
+#: kmlexportconfig.cpp:213
+msgid "GMT+01:00"
+msgstr "GMT+01:00"
+
+#: kmlexportconfig.cpp:214
+msgid "GMT+02:00"
+msgstr "GMT+02:00"
+
+#: kmlexportconfig.cpp:215
+msgid "GMT+03:00"
+msgstr "GMT+03:00"
+
+#: kmlexportconfig.cpp:216
+msgid "GMT+04:00"
+msgstr "GMT+04:00"
+
+#: kmlexportconfig.cpp:217
+msgid "GMT+05:00"
+msgstr "GMT+05:00"
+
+#: kmlexportconfig.cpp:218
+msgid "GMT+06:00"
+msgstr "GMT+06:00"
+
+#: kmlexportconfig.cpp:219
+msgid "GMT+07:00"
+msgstr "GMT+07:00"
+
+#: kmlexportconfig.cpp:220
+msgid "GMT+08:00"
+msgstr "GMT+08:00"
+
+#: kmlexportconfig.cpp:221
+msgid "GMT+09:00"
+msgstr "GMT+09:00"
+
+#: kmlexportconfig.cpp:222
+msgid "GMT+10:00"
+msgstr "GMT+10:00"
+
+#: kmlexportconfig.cpp:223
+msgid "GMT+11:00"
+msgstr "GMT+11:00"
+
+#: kmlexportconfig.cpp:224
+msgid "GMT+12:00"
+msgstr "GMT+12:00"
+
+#: kmlexportconfig.cpp:225
+msgid "GMT+13:00"
+msgstr "GMT+13:00"
+
+#: kmlexportconfig.cpp:226
+msgid "GMT+14:00"
+msgstr "GMT+14:00"
+
+#: kmlexportconfig.cpp:227
+msgid ""
+"<p>Sets the time zone of the camera during picture shooting, so that the time "
+"stamps of the GPS can be converted to match the local time"
+msgstr ""
+"<p>Ορίστε εδώ την ωρολογιακή ζώνη της φωτογραφικής μηχανής κατά τη σύλληψη των "
+"εικόνων, έτσι ώστε οι να γίνει μετατροπή των ωρών GPS σε τοπική ώρα"
+
+#: kmlexportconfig.cpp:232
+msgid "Track width"
+msgstr "Πλάτος ίχνους"
+
+#: kmlexportconfig.cpp:239
+msgid "Track color"
+msgstr "Χρώμα ίχνους"
+
+#: kmlexportconfig.cpp:248
+msgid "Opacity:"
+msgstr "Αδιαφάνεια:"
+
+#: kmlexportconfig.cpp:252
+msgid "Track altitude"
+msgstr "Υψόμετρο ίχνους"
+
+#: kmlexportconfig.cpp:259
+msgid ""
+"<p>Specifies how the points are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+"<p>Καθορίζει την μέθοδο εμφάνισης των σημείων<dl><dt>"
+"στερέωση στο έδαφος (προκαθορισμένο)</dt><dd>Υποδηλώνει την αγνόηση καθορισμού "
+"υψομέτρου</dd><dt>σχετικά με το έδαφος</dt><dd>Ορίζει το υψόμετρο του στοιχείου "
+"σχετικά με το πραγματικό υψόμετρο του εδάφους στη συγκεκριμένη τοποθεσία.</dd>"
+"<dt>απόλυτο</dt><dd>Ορίζει το υψόμετρο σε σχέση με το επίπεδο της θάλασσας, "
+"άσχετα με το πραγματικό υψόμετρο του εδάφους κάτω από το στοιχείο.</dd></dl>"
+
+#: kmlexportconfig.cpp:284
+msgid "A Kipi plugin for kml exporting"
+msgstr "Ένα πρόσθετο Kipi για την εξαγωγή kml"
+
+#: kmlexportconfig.cpp:287
+msgid "Author"
+msgstr "Συγγραφέας"
+
+#: kmlgpsdataparser.cpp:66
+msgid "Track"
+msgstr "Ίχνος"
+
+#: kmlgpsdataparser.cpp:95
+msgid "Points"
+msgstr "Σημεία"
+
+#: kmlgpsdataparser.cpp:105
+msgid "Point"
+msgstr "Σημείο"
+
+#: plugin_gpssync.cpp:78
+msgid "Correlator..."
+msgstr "Συσχετιστής..."
+
+#: plugin_gpssync.cpp:86
+msgid "Edit Coordinates..."
+msgstr "Επεξεργασία συντεταγμένων..."
+
+#: plugin_gpssync.cpp:94
+msgid "Remove Coordinates..."
+msgstr "Αφαίρεση συντεταγμένων..."
+
+#: plugin_gpssync.cpp:105
+msgid "KML Export..."
+msgstr "Εξαγωγή KML..."
+
+#: plugin_gpssync.cpp:139
+msgid ""
+"<qt>"
+"<p>Unable to find the gpsbabel executable:"
+"<br> This program is required by this plugin to support GPS data file decoding. "
+"Please install gpsbabel as a package from your distributor or <a href=\"%1\">"
+"download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %2 is required by this plugin.</p></qt>"
+msgstr ""
+"<qt>"
+"<p>Αδυναμία εύρεσης του εκτελέσιμου gpsbabel:"
+"<br> Το πρόγραμμα αυτό απαιτείται από το πρόσθετο για την υποστήριξη "
+"αποκωδικοποίησης των δεδομένων GPS. Παρακαλώ εγκαταστήστε το gpsbabel από τα "
+"πακέτα της διανομής σας ή <a href=\"%1\">κάνετε λήψη τον πηγαίο κώδικα</a>.</p>"
+"<p>Σημείωση: χρειάζεται τουλάχιστον η έκδοση %2 του gpsbabel από αυτό το "
+"πρόσθετο.</p></qt>"
+
+#: plugin_gpssync.cpp:156
+msgid ""
+"<qt>"
+"<p>gpsbabel executable is not up to date:"
+"<br> The version %1 of gpsbabel have been found on your computer. This version "
+"is too old to run properly with this plugin. Please update gpsbabel as a "
+"package from your distributor or <a href=\"%2\">download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %3 is required by this plugin</p></qt>"
+msgstr ""
+"<qt>"
+"<p>Το εκτελέσιμο του gpsbabel δεν είναι ενημερωμένο:"
+"<br> Βρέθηκε η έκδοση %1 του gpsbabel στον υπολογιστή σας. Η έκδοση αυτή είναι "
+"πολύ παλιά για να λειτουργήσει σωστά το πρόσθετο αυτό. Παρακαλώ ενημερώστε το "
+"gpsbabel από τα πακέτα της διανομής σας ή το <a href=\"%2\"> "
+"κάνετε λήψη του πηγαίου κώδικα</a>.</p>"
+"<p>Σημείωση: απαιτείται τουλάχιστον η έκδοση %3 του gpsbabel από αυτό το "
+"πρόσθετο</p></qt>"
+
+#: plugin_gpssync.cpp:249
+msgid "Unable to save geographical coordinates into:"
+msgstr "Αδύνατη η αποθήκευση των γεωγραφικών συντεταγμένων στο:"
+
+#: plugin_gpssync.cpp:265
+#, fuzzy
+msgid ""
+"Geographical coordinates will be definitively removed from all selected "
+"images.\n"
+"Do you want to continue ?"
+msgstr ""
+"Οι γεωγραφικές συντεταγμένες θα αφαιρεθούν από όλες τις επιλεγμένες εικόνες.\n"
+"Θέλετε να συνεχίσετε;"
+
+#: plugin_gpssync.cpp:267 plugin_gpssync.cpp:302
+msgid "Remove Geographical Coordinates"
+msgstr "Αφαίρεση γεωγραφικών συντεταγμένων"
+
+#: plugin_gpssync.cpp:300
+msgid "Unable to remove geographical coordinates from:"
+msgstr "Αδύνατη η αφαίρεση των γεωγραφικών συντεταγμένων από το:"
+
+#: plugin_gpssync.cpp:317
+msgid "KMLExport"
+msgstr "KMLExport"
+
+#~ msgid "Read only"
+#~ msgstr "Μόνο για ανάγνωση"
+
+#~ msgid "KMLExport Handbook"
+#~ msgstr "Εγχειρίδιο KMLExport"
+
+#~ msgid "Date Taken"
+#~ msgstr "Ημερομηνία λήψης"
+
+#~ msgid "Correlate GPX file data with all pictures from the list."
+#~ msgstr "Συσχέτιση δεδομένων GPX με όλες τις εικόνες της λίστας."
+
+#~ msgid "Pictures Geolocalization"
+#~ msgstr "Γεωτοποθέτηση εικόνων"

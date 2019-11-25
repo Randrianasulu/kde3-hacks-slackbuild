@@ -1,0 +1,130 @@
+<sect1 id="components.othertools">
+<title
+>Täiendavad integreerimis- ja käsureavahendid</title>
+<para
+>Selles osas on ära toodud kbluetoothiga kaasas käivad väiksemad vahendid ja skriptid. Enamik neist on omaette üsna piiratud kasutusvõimalusega ja peamiselt mõeldud väljakutsumiseks skriptiga või mõne muu rakenduse poolt. </para>
+
+<sect2 id="components.othertools.kioclient">
+<title
+>kioclient: skript KIO raamistiku kasutamiseks</title>
+<para
+>See on väike abivahend KIO moodulite kasutamiseks käsurealt. Seega on <command
+>kioclient</command
+> tegelikult üldkasutatav utiliit, aga et seda varem olemas ei olnud, tuli mul see ise kirjutada. </para>
+<para
+><command
+>kioclient</command
+> võimaldab kopeerida, näha või kustutada suvalise faili või kataloogi, millele pääseb ligi KDE KIO raamistikuga. Faili saab kopeerida FTP-serverilt muule serverile WebDAV-i vahendusel või vaadata kataloogi sisu üle SSH kui_fish-i vahendusel. Või siis - ja see peaks sind juba rohkem huvitama - kasutada faile oma mobiiltelefonil kio_obex-i vahendusel. kioclienti kasutamiseks on kbluetoothd-ga kaasas näidisskript <command
+>copy_images</command
+>. </para>
+<para
+>Võimalikke argumente saab näha käsuga <command
+>kioclient --help</command
+>, kuid toome siin mõned näited, et saaksid asjast veidi aimu: <screen
+>$ kioclient cat http://www.kde.org | head -1
+&lt;?xml version="1.0" encoding="UTF-8"?>
+$ kioclient ls -s ftp://ftp.kde.org | head -4
+     4096 .
+     4096 ..
+     4096 bin
+     4096 dev
+$ kioclient ls bluetooth:/
+local system
+Fred's 6230
+Fred's 3650
+$ kioclient ls "sdp://Fred's 6230/"
+OBEX Object Push
+OBEX File Transfer
+Dial-up networking
+Nokia PC Suite
+COM 1
+Voice Gateway
+Audio Gateway
+SIM ACCESS
+.More Services
+$
+</screen>
+</para>
+<para
+>Palun arvesta, et kuigi kioclient on käsureaprogramm, saab seda siiski kasutada vaid KDE raames, nii et näiteks crontabi tööde sekka seda panna ei saa. Kuid see ei loe, kui kasutad seda kbluetoothd tuvastamisskriptide puhul. </para>
+
+</sect2>
+
+<sect2>
+<title
+>kbtsearch: seadmete otsimine skriptidega</title>
+<para
+>Nagu <command
+>kioclient</command
+> või KDE <command
+>kdialog</command
+>, on seegi käsureavahend mõeldud skriptide tarbeks. See pakub käsurealiidese kdebluetoothi kahele kõige sagedamini vajatavale otsingudialoogile - seadme ja teenuse otsingudialoogile. </para>
+<para
+>Seda saab näiteks tarvitada selleks, et lasta kasutajal valida Bluetoothi seade või leida tööpiirkonnas olevatelt seadmetelt mingi konkreetne teenus. Nagu ikka, peab teenuste valimise dialoog seadmed meeles ja täidab teenusteloendi varem leitud kirjetega. Parajasti saadaolevad teenused lisatakse loendisse mõnesekundilise viivitusega. </para>
+<para
+>Seadme otsimiseks anna lihtsalt käsk <command
+>kbtsearch --device</command
+>. Kui kasutaja on valinud seadme või sisestanud aadressi ja klõpsanud nupule <guibutton
+>OK</guibutton
+>, edastab kbtsearch seadme aadressi standardväljundisse ning lõpetab staatusega 0. Kui kasutaja klõpsab nupule <guibutton
+>Loobu</guibutton
+>, ei edastata midagi ja lõpetatakse staatusega 1: <screen
+>$ if ADDR=$(kbtsearch --device) ;
+
+> then echo "Selected address: $ADDR.";
+
+> else echo "No address selected."; fi
+Selected address: 00:60:57:5C:E6:BD.
+$
+</screen>
+</para>
+<para
+>Otsida võib ka seadet, mis teostab määratud Bluetoothi profiili, seda siis käsuga <command
+>kbtsearch --uuid &lt;teenuse-UUID</command
+>. Täieliku loendi standardse Bluetoothi profiili võimalike UUID-dega annavad <ulink url="https://www.bluetooth.org/foundry/assignnumb/document/service_discovery"
+>Bluetoothi omistatud numbrid (SDP)</ulink
+>. kbtsearch defineerib ka mõned sagedamini kasutatavate profiilide aliased. Nende teadasaamiseks anna käsk <command
+>kbtsearch --aliases</command
+>. </para>
+<para
+>Kui kasutaja valib teenuse ja klõpsab nupule <guibutton
+>OK</guibutton
+>, lõpetab kbtsearch staatusega 0 ja väljastb rea kujul '[aadress] [rfcomm-kanal]'. On selge, et sel on mingi tähendus ainult teenustele, mis ka tegelikult rfcomm-kanalit kasutavad. Praegu ei ole näiteks võimalik hankida L2CAP PSM-i. Aga kui sul seda vaja läheb, anna teada. <screen>
+$ if RET=( $(kbtsearch --uuid=FAX) ) ; 
+
+> then ADDRESS=${RET[0]}; CHANNEL=${RET[1]}; 
+
+> echo "Selected addr=$ADDRESS, channel=$CHANNEL."; 
+
+> else echo "No service selected."; 
+
+> fi
+Selected addr=00:60:57:5C:E6:BD, channel=1.
+$
+</screen
+> Lisavõtmeid näitab <command
+>kbtsearch --help</command
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>kbtfax: faksi saatmine KDE rakendustest</title>
+<para
+>See on abiskript, mis muudab lihtsamaks faksi saatmise KDE rakendustest. See sõltub vahenditest <command
+>efax</command
+>, <command
+>kdeprintfax</command
+>, <command
+>kdesu</command
+> (kaks viimast kuuluvad kdebase koosseisu) ning <command
+>rfcomm</command
+> (paketi bluez-utils koosseisus). </para>
+<para
+>Kui püüad saata faksi programmi <command
+>kdeprintfax</command
+> vahendusel, võid valida, millist taustarakendust selle programmiga kasutada. Üks võimalus on "EFax", teine "Muu". Vali "Muu" ja seejärel otsi üles kdebluetoothi koosseisu kuulvu skript kbtfax. Sisesta käsureale kõik see, mida skript nõuab. Ja ongi kõik! Muidugi võib selle juures ka paljugi valesti minna - kui midagi sellist juhtub ja sa tead, kuidas asja parandada, võid täiesti julgelt mulle paiga saata :-) </para>
+</sect2>
+
+</sect1>
+

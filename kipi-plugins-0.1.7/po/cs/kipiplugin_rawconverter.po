@@ -1,0 +1,368 @@
+# translation of kipiplugin_rawconverter.po to
+# translation of kipiplugin_rawconverter.po to Czech
+# translation of kipiplugin_rawconverter.po to cs_CZ
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Klara Cihlarova <koty@seznam.cz>, 2005.
+# Jakub Friedl <jfriedl@suse.cz>, 2005, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2006-05-29 13:54+0200\n"
+"Last-Translator: Jakub Friedl <jfriedl@suse.cz>\n"
+"Language-Team:  <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Klára Cihlářová,Jakub Friedl"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "koty@seznam.cz,jfriedl@suse.cz"
+
+#: actionthread.cpp:168
+#, fuzzy
+msgid "Cannot identify Raw image"
+msgstr ""
+"Selhala identifikace RAW obrázku\n"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr ""
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Hromadný převod RAW obrázků"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Pře&vést"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Přerušit"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Náhled"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "RAW soubor"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Cílový soubor"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Fotoaparát"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Nastavení"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+#, fuzzy
+msgid "RAW Image Converter"
+msgstr "Převod RAW obrázků"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Převod RAW obrázku selhal"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Původní autor"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Správce"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+#, fuzzy
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>Spuštění převodu RAW obrázků se současným nastavením"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Přerušit probíhající převod RAW souborů"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Ukončit RAW převod"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "V seznamu není žádný RAW soubor ke zpracování!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Uložit RAW obrázek převedný z '%1' na"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Chyba při ukládání obrázku %1"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "Převod RAW obrázků"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "<p>Ukončit RAW převod"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" není RAW soubor."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Chyba při zavedení obrázku po zpracování"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr ""
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+
+#: savesettingswidget.cpp:101
+#, fuzzy
+msgid "If Target File Exists:"
+msgstr "Pokud soubor existuje"
+
+#: savesettingswidget.cpp:103
+#, fuzzy
+msgid "Overwrite automatically"
+msgstr "Přepsat"
+
+#: savesettingswidget.cpp:104
+#, fuzzy
+msgid "Open rename-file dialog"
+msgstr "Otevřít souborový dialog"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Převod RAW obrázků"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "Ná&hled"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Převod RAW obrázku selhal"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Vytvoření náhledu podle aktuálních nastavení.\n"
+"Pro urychlení používá jednoduchou bilineární interpolaci."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Konverze RAW obrázku podle aktuálních nastavení.\n"
+"Používá kvalitní adaptivní algoritmus."
+
+#: singledialog.cpp:143
+#, fuzzy
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Přerušit probíhající převod RAW souborů"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Chyba při vytváření náhledu"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Převod RAW obrázku selhal"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Vytváření náhledu..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Převod RAW obrázku..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Příručka převodu RAW obrázků"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Příručka převodu RAW obrázků"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "Převod RAW obrázků (jednoduchý)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "Převod RAW obrázků (hromadný)"
+
+#, fuzzy
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "Hromadný převod RAW obrázků"
+
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "<p>Přerušit právě prováděnou konverzi RAW obrázků"
+
+#~ msgid "Image Preview"
+#~ msgstr "Náhled obrázku"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Kipi modul pro převod RAW obrázků\n"
+#~ "Tento program používá dekodér \"dcraw\", který napsal Dave Coffin"
+
+#, fuzzy
+#~ msgid "Not a RAW file"
+#~ msgstr "Není RAW soubor!"
+
+#, fuzzy
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr "<p>Interpolovat RGB jako čtyři barvy. Ve výchozím nastavení se předpokládá, že jsou všechny zelené pixely stejné. Pokud jsou zelené pixely v sudých řádcích citlivější na ultrafialové světlo než zelené pixely v lichých řádcích, vznikne ve výstupu síťovaný vzor. Použití této volby problém řeší s minimální ztrátou podrobností."
+
+#~ msgid "Use camera white balance"
+#~ msgstr "Použít vyvážení bílé fotoaparátu"
+
+#, fuzzy
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr "<p>Použít nastavení vyvážení bílé z fotoaparátu. Ve výchozím nastavení se používají hodnoty pro denní světlo, vypočítané ze vzorových obrázků."
+
+#~ msgid "Brightness:"
+#~ msgstr "Jas:"
+
+#, fuzzy
+#~ msgid "Raw (linear)"
+#~ msgstr "RAW soubor"
+
+#, fuzzy
+#~ msgid "<qt><p>Unable to find the <b>%1</b> executable:<br>This program is required by this plugin to support Raw files decoding. Please check %2 installation on your computer.</p></qt>"
+#~ msgstr "<qt><p>Nelze nalézt program dcraw:<br>Tento program je vyžadován pro zpracování  a převod formátu RAW. Nainstalujte prosím balík dcraw od vašeho distributora nebo si stáhněte jeho <a href=\"%2\">zdrojové kódy</a>.</p></qt>"
+
+#, fuzzy
+#~ msgid "<qt><p><b>%1</b> executable isn't up to date:<br>The version %2 of %3 have been found on your computer. This version is too old to run properly with this plugin. Please check %4 installation on your computer.</p><p>Note: at least, %5 version %6 is required by this plugin.</p></qt>"
+#~ msgstr "<qt><p>Nelze nalézt program dcraw:<br>Tento program je vyžadován pro zpracování  a převod formátu RAW. Nainstalujte prosím balík dcraw od vašeho distributora nebo si stáhněte jeho <a href=\"%2\">zdrojové kódy</a>.</p></qt>"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Kipi modul pro převod RAW obrázků\n"
+#~ "Tento program používá dekodér \"dcraw\", který napsal Dave Coffin"
+
+#~ msgid ""
+#~ "Failed to start raw converter client.\n"
+#~ "Please check your installation."
+#~ msgstr ""
+#~ "Selhalo spuštění klienta převodu.\n"
+#~ "Překontrolujte instalaci."
+
+#~ msgid "Four color RGBG"
+#~ msgstr "Čtyřbarevně RGBG"
+
+#~ msgid "<p>Specify the output brightness"
+#~ msgstr "<p>Zadejte hodnotu výstupního jasu"
+
+#~ msgid "Red multiplier:"
+#~ msgstr "Násobič červené:"
+
+#~ msgid "<p>After all other color adjustments, multiply the red channel by this value"
+#~ msgstr "<p>Po všech barevných úpravách vynásobí červený kanál zadanou hodnotou"
+
+#~ msgid "Blue multiplier:"
+#~ msgstr "Násobič modré:"
+
+#~ msgid "<p>After all other color adjustments, multiply the blue channel by this value"
+#~ msgstr "<p>Po všech barevných úpravách vynásobí modrý kanál zadanou hodnotou"
+
+#~ msgid "Save Format"
+#~ msgstr "Formát uložení"
+
+#~ msgid "<p>Output the processed image in JPEG Format. Warning!!! JPEG is a lossy format, but will give smaller-sized files. Minimum JPEG compression will be used during conversion."
+#~ msgstr "<p>Výstup zpracovaných obrázků v JPEG formátu. Varování!!! JPEG je ztrátový formát, výsledkem jsou ale menší soubory. Bude použita minimální JPEG komprese."
+
+#~ msgid "<p>Output the processed image in TIFF Format. This generates larges, without losing quality. Adobe Deflate compression will be used during conversion."
+#~ msgstr "<p>Výstup zpracovaných obrázků v TIFF formátu. Výsledkem jsou velké soubory bez ztráty kvality. Při konverzi je použita komprese Adobe Deflate."
+
+#~ msgid "<p>Output the processed image in PPM Format. This generates the largest files, without losing quality"
+#~ msgstr "<p>Výstup zpracovaných obrázků v PPM formátu. Výsledkem jsou největší soubory bez ztráty kvality."
+
+#~ msgid "<p>Output the processed image in PNG Format. This generates larges, without losing quality. Maximum PNG compression will be used during conversion."
+#~ msgstr "<p>Výstup zpracovaných obrázků v PNG formátu. Výsledkem jsou velké soubory bez ztráty kvality. Bude použita maximální možná PNG komprese."
+
+#~ msgid "None!"
+#~ msgstr "Žádný!"

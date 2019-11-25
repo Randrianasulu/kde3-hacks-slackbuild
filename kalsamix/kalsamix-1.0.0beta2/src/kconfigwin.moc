@@ -1,0 +1,208 @@
+/****************************************************************************
+** KConfigWin meta object code from reading C++ file 'kconfigwin.h'
+**
+** Created: Wed Dec 20 17:19:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kconfigwin.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KConfigWin::className() const
+{
+    return "KConfigWin";
+}
+
+QMetaObject *KConfigWin::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KConfigWin( "KConfigWin", &KConfigWin::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KConfigWin::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KConfigWin", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KConfigWin::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KConfigWin", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KConfigWin::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialogBase::staticMetaObject();
+    static const QUMethod slot_0 = {"slotOk", 0, 0 };
+    static const QUMethod slot_1 = {"slotChooseOSDFont", 0, 0 };
+    static const QUMethod slot_2 = {"slotChooseLBLFont", 0, 0 };
+    static const QUParameter param_slot_3[] = {
+	{ 0, &static_QUType_ptr, "KShortcut", QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotVolUpKey", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_ptr, "KShortcut", QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotVolDnKey", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"pnameChanged", 1, param_slot_5 };
+    static const QUMethod slot_6 = {"changeActiveCard", 0, 0 };
+    static const QUMethod slot_7 = {"changeLinkCard", 0, 0 };
+    static const QUMethod slot_8 = {"savePreset", 0, 0 };
+    static const QUMethod slot_9 = {"applyPreset", 0, 0 };
+    static const QUMethod slot_10 = {"delPreset", 0, 0 };
+    static const QUParameter param_slot_11[] = {
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"activePresetChanged", 1, param_slot_11 };
+    static const QUMethod slot_12 = {"newPlaybackGroup", 0, 0 };
+    static const QUMethod slot_13 = {"newCaptureGroup", 0, 0 };
+    static const QUMethod slot_14 = {"delGroup", 0, 0 };
+    static const QUParameter param_slot_15[] = {
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_15 = {"itemRenamed", 3, param_slot_15 };
+    static const QUParameter param_slot_16[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In },
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In },
+	{ 0, &static_QUType_varptr, "\x0e", QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"itemMousePressed", 4, param_slot_16 };
+    static const QUMethod slot_17 = {"itemMoveDown", 0, 0 };
+    static const QUMethod slot_18 = {"itemMoveUp", 0, 0 };
+    static const QUParameter param_slot_19[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_19 = {"itemGroupChanged", 1, param_slot_19 };
+    static const QUParameter param_slot_20[] = {
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In }
+    };
+    static const QUMethod slot_20 = {"itemClicked", 1, param_slot_20 };
+    static const QUParameter param_slot_21[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_21 = {"levelMethodChanged", 1, param_slot_21 };
+    static const QUMethod slot_22 = {"addLink", 0, 0 };
+    static const QUMethod slot_23 = {"delLink", 0, 0 };
+    static const QUParameter param_slot_24[] = {
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In }
+    };
+    static const QUMethod slot_24 = {"linkSelected", 1, param_slot_24 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotOk()", &slot_0, QMetaData::Public },
+	{ "slotChooseOSDFont()", &slot_1, QMetaData::Public },
+	{ "slotChooseLBLFont()", &slot_2, QMetaData::Public },
+	{ "slotVolUpKey(const KShortcut&)", &slot_3, QMetaData::Public },
+	{ "slotVolDnKey(const KShortcut&)", &slot_4, QMetaData::Public },
+	{ "pnameChanged(const QString&)", &slot_5, QMetaData::Public },
+	{ "changeActiveCard()", &slot_6, QMetaData::Public },
+	{ "changeLinkCard()", &slot_7, QMetaData::Public },
+	{ "savePreset()", &slot_8, QMetaData::Public },
+	{ "applyPreset()", &slot_9, QMetaData::Public },
+	{ "delPreset()", &slot_10, QMetaData::Public },
+	{ "activePresetChanged(QListViewItem*)", &slot_11, QMetaData::Public },
+	{ "newPlaybackGroup()", &slot_12, QMetaData::Public },
+	{ "newCaptureGroup()", &slot_13, QMetaData::Public },
+	{ "delGroup()", &slot_14, QMetaData::Public },
+	{ "itemRenamed(QListViewItem*,int,const QString&)", &slot_15, QMetaData::Public },
+	{ "itemMousePressed(int,QListViewItem*,const QPoint&,int)", &slot_16, QMetaData::Public },
+	{ "itemMoveDown()", &slot_17, QMetaData::Public },
+	{ "itemMoveUp()", &slot_18, QMetaData::Public },
+	{ "itemGroupChanged(int)", &slot_19, QMetaData::Public },
+	{ "itemClicked(QListViewItem*)", &slot_20, QMetaData::Public },
+	{ "levelMethodChanged(int)", &slot_21, QMetaData::Public },
+	{ "addLink()", &slot_22, QMetaData::Public },
+	{ "delLink()", &slot_23, QMetaData::Public },
+	{ "linkSelected(QListViewItem*)", &slot_24, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KConfigWin", parentObject,
+	slot_tbl, 25,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KConfigWin.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KConfigWin::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KConfigWin" ) )
+	return this;
+    return KDialogBase::qt_cast( clname );
+}
+
+bool KConfigWin::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotOk(); break;
+    case 1: slotChooseOSDFont(); break;
+    case 2: slotChooseLBLFont(); break;
+    case 3: slotVolUpKey((const KShortcut&)*((const KShortcut*)static_QUType_ptr.get(_o+1))); break;
+    case 4: slotVolDnKey((const KShortcut&)*((const KShortcut*)static_QUType_ptr.get(_o+1))); break;
+    case 5: pnameChanged((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 6: changeActiveCard(); break;
+    case 7: changeLinkCard(); break;
+    case 8: savePreset(); break;
+    case 9: applyPreset(); break;
+    case 10: delPreset(); break;
+    case 11: activePresetChanged((QListViewItem*)static_QUType_ptr.get(_o+1)); break;
+    case 12: newPlaybackGroup(); break;
+    case 13: newCaptureGroup(); break;
+    case 14: delGroup(); break;
+    case 15: itemRenamed((QListViewItem*)static_QUType_ptr.get(_o+1),(int)static_QUType_int.get(_o+2),(const QString&)static_QUType_QString.get(_o+3)); break;
+    case 16: itemMousePressed((int)static_QUType_int.get(_o+1),(QListViewItem*)static_QUType_ptr.get(_o+2),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+3)),(int)static_QUType_int.get(_o+4)); break;
+    case 17: itemMoveDown(); break;
+    case 18: itemMoveUp(); break;
+    case 19: itemGroupChanged((int)static_QUType_int.get(_o+1)); break;
+    case 20: itemClicked((QListViewItem*)static_QUType_ptr.get(_o+1)); break;
+    case 21: levelMethodChanged((int)static_QUType_int.get(_o+1)); break;
+    case 22: addLink(); break;
+    case 23: delLink(); break;
+    case 24: linkSelected((QListViewItem*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return KDialogBase::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KConfigWin::qt_emit( int _id, QUObject* _o )
+{
+    return KDialogBase::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KConfigWin::qt_property( int id, int f, QVariant* v)
+{
+    return KDialogBase::qt_property( id, f, v);
+}
+
+bool KConfigWin::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

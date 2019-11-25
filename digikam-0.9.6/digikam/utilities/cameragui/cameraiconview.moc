@@ -1,0 +1,260 @@
+/****************************************************************************
+** Digikam::CameraIconView meta object code from reading C++ file 'cameraiconview.h'
+**
+** Created: Wed Jun 14 03:48:18 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "cameraiconview.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::CameraIconView::className() const
+{
+    return "Digikam::CameraIconView";
+}
+
+QMetaObject *Digikam::CameraIconView::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__CameraIconView( "Digikam::CameraIconView", &Digikam::CameraIconView::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::CameraIconView::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::CameraIconView", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::CameraIconView::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::CameraIconView", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::CameraIconView::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = IconView::staticMetaObject();
+    static const QUMethod slot_0 = {"slotDownloadNameChanged", 0, 0 };
+    static const QUMethod slot_1 = {"slotSelectionChanged", 0, 0 };
+    static const QUMethod slot_2 = {"slotSelectAll", 0, 0 };
+    static const QUMethod slot_3 = {"slotSelectNone", 0, 0 };
+    static const QUMethod slot_4 = {"slotSelectInvert", 0, 0 };
+    static const QUMethod slot_5 = {"slotSelectNew", 0, 0 };
+    static const QUParameter param_slot_6[] = {
+	{ "pos", &static_QUType_varptr, "\x0e", QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotRightButtonClicked", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ "item", &static_QUType_ptr, "IconItem", QUParameter::In },
+	{ "pos", &static_QUType_varptr, "\x0e", QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"slotContextMenu", 2, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ "item", &static_QUType_ptr, "IconItem", QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"slotDoubleClicked", 1, param_slot_8 };
+    static const QUMethod slot_9 = {"slotThemeChanged", 0, 0 };
+    static const QUParameter param_slot_10[] = {
+	{ "hasSelection", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotUpdateDownloadNames", 1, param_slot_10 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotDownloadNameChanged()", &slot_0, QMetaData::Public },
+	{ "slotSelectionChanged()", &slot_1, QMetaData::Public },
+	{ "slotSelectAll()", &slot_2, QMetaData::Public },
+	{ "slotSelectNone()", &slot_3, QMetaData::Public },
+	{ "slotSelectInvert()", &slot_4, QMetaData::Public },
+	{ "slotSelectNew()", &slot_5, QMetaData::Public },
+	{ "slotRightButtonClicked(const QPoint&)", &slot_6, QMetaData::Private },
+	{ "slotContextMenu(IconItem*,const QPoint&)", &slot_7, QMetaData::Private },
+	{ "slotDoubleClicked(IconItem*)", &slot_8, QMetaData::Private },
+	{ "slotThemeChanged()", &slot_9, QMetaData::Private },
+	{ "slotUpdateDownloadNames(bool)", &slot_10, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_ptr, "CameraIconViewItem", QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalSelected", 2, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_ptr, "CameraIconViewItem", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalFileView", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ 0, &static_QUType_ptr, "KURL::List", QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalUpload", 1, param_signal_2 };
+    static const QUMethod signal_3 = {"signalDownload", 0, 0 };
+    static const QUMethod signal_4 = {"signalDownloadAndDelete", 0, 0 };
+    static const QUMethod signal_5 = {"signalDelete", 0, 0 };
+    static const QUMethod signal_6 = {"signalToggleLock", 0, 0 };
+    static const QUParameter param_signal_7[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_7 = {"signalNewSelection", 1, param_signal_7 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalSelected(CameraIconViewItem*,bool)", &signal_0, QMetaData::Public },
+	{ "signalFileView(CameraIconViewItem*)", &signal_1, QMetaData::Public },
+	{ "signalUpload(const KURL::List&)", &signal_2, QMetaData::Public },
+	{ "signalDownload()", &signal_3, QMetaData::Public },
+	{ "signalDownloadAndDelete()", &signal_4, QMetaData::Public },
+	{ "signalDelete()", &signal_5, QMetaData::Public },
+	{ "signalToggleLock()", &signal_6, QMetaData::Public },
+	{ "signalNewSelection(bool)", &signal_7, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::CameraIconView", parentObject,
+	slot_tbl, 11,
+	signal_tbl, 8,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__CameraIconView.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::CameraIconView::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::CameraIconView" ) )
+	return this;
+    return IconView::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalSelected
+void Digikam::CameraIconView::signalSelected( CameraIconViewItem* t0, bool t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_ptr.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalFileView
+void Digikam::CameraIconView::signalFileView( CameraIconViewItem* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalUpload
+void Digikam::CameraIconView::signalUpload( const KURL::List& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalDownload
+void Digikam::CameraIconView::signalDownload()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+// SIGNAL signalDownloadAndDelete
+void Digikam::CameraIconView::signalDownloadAndDelete()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 4 );
+}
+
+// SIGNAL signalDelete
+void Digikam::CameraIconView::signalDelete()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 5 );
+}
+
+// SIGNAL signalToggleLock
+void Digikam::CameraIconView::signalToggleLock()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 6 );
+}
+
+// SIGNAL signalNewSelection
+void Digikam::CameraIconView::signalNewSelection( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 7, t0 );
+}
+
+bool Digikam::CameraIconView::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotDownloadNameChanged(); break;
+    case 1: slotSelectionChanged(); break;
+    case 2: slotSelectAll(); break;
+    case 3: slotSelectNone(); break;
+    case 4: slotSelectInvert(); break;
+    case 5: slotSelectNew(); break;
+    case 6: slotRightButtonClicked((const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+1))); break;
+    case 7: slotContextMenu((IconItem*)static_QUType_ptr.get(_o+1),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+2))); break;
+    case 8: slotDoubleClicked((IconItem*)static_QUType_ptr.get(_o+1)); break;
+    case 9: slotThemeChanged(); break;
+    case 10: slotUpdateDownloadNames((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return IconView::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::CameraIconView::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalSelected((CameraIconViewItem*)static_QUType_ptr.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 1: signalFileView((CameraIconViewItem*)static_QUType_ptr.get(_o+1)); break;
+    case 2: signalUpload((const KURL::List&)*((const KURL::List*)static_QUType_ptr.get(_o+1))); break;
+    case 3: signalDownload(); break;
+    case 4: signalDownloadAndDelete(); break;
+    case 5: signalDelete(); break;
+    case 6: signalToggleLock(); break;
+    case 7: signalNewSelection((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return IconView::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::CameraIconView::qt_property( int id, int f, QVariant* v)
+{
+    return IconView::qt_property( id, f, v);
+}
+
+bool Digikam::CameraIconView::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

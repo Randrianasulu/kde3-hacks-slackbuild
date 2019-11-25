@@ -1,0 +1,172 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>MainDialogBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>MainDialogBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>418</width>
+            <height>454</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>KDE Bluetooth Framework</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>messageLabel</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>1</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>&lt;p&gt;&lt;font size="+2"&gt;Incoming File Transfer&lt;/font&gt;&lt;/p&gt;
+&lt;b&gt;%1&lt;/b&gt; wants to send you some files.&lt;br/&gt;
+Press &lt;i&gt;Save&lt;/i&gt; to accept all files or drag them to another application or folder.</string>
+            </property>
+            <property name="alignment">
+                <set>WordBreak|AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>fileViewFrame</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>2</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <property name="lineWidth">
+                <number>0</number>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="KSqueezedTextLabel">
+                    <property name="name">
+                        <cstring>statusText</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Waiting...</string>
+                    </property>
+                </widget>
+                <widget class="KProgress">
+                    <property name="name">
+                        <cstring>progress</cstring>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>openFolderCheckbox</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Open destination folder:</string>
+                    </property>
+                </widget>
+                <widget class="KURLRequester">
+                    <property name="name">
+                        <cstring>targetURLRequester</cstring>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="KPushButton">
+                    <property name="name">
+                        <cstring>acceptButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Save</string>
+                    </property>
+                </widget>
+                <widget class="KPushButton">
+                    <property name="name">
+                        <cstring>rejectButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<tabstops>
+    <tabstop>acceptButton</tabstop>
+    <tabstop>rejectButton</tabstop>
+    <tabstop>openFolderCheckbox</tabstop>
+    <tabstop>targetURLRequester</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    
+    
+    
+    
+    
+    
+    
+</includehints>
+</UI>

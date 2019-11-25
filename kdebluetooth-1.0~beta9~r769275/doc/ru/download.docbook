@@ -1,0 +1,114 @@
+<chapter id="download">
+<title
+>Загрузка &the.framework;</title>
+<sect1 id="download.packages">
+<title
+>Пакеты программы</title>
+<para
+>&The.framework; разрабатывался как часть kdeextragear-3. Описание можно загрузить с анонимного CVS. Если вы не планируете работать с исходными кодами или исправлять описание программ, то загрузите дистрибутив для вашей версии операционной системы. Установка готового пакета сэкономит вам время и нервы.  </para>
+
+<para>
+<variablelist>
+<title
+>Поддерживаемые дистрибутивы</title>
+<varlistentry>
+
+<term
+>Debian Sid</term>
+<listitem
+><para
+>Включите эти строки в <filename
+>/etc/apt/sources.list</filename
+>: <screen
+># KDE-Bluetooth
+deb http://www.stud.uni-karlsruhe.de/~uddw/debian ./
+</screen>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Gentoo Linux</term>
+<listitem>
+<para
+>Последние версии дистрибутивов размещены в дереве дистрибутива gentoo. На веб-сайте http://bugs.gentoo.org доступны последние нестабильные версии программы.</para>
+<para
+>Можно загрузить CVS дистрибутив для kdebluetooth с <ulink url="http://members.xoom.virgilio.it/motaboy/ebuilds"
+></ulink
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>SuSe</term>
+
+<listitem
+><para
+>Можно загрузить RPM для SuSe 8.2 с <ulink url="http://sra.itc.it/people/merzi/kdebluetooth-0.0.cvs.20040210.i686.rpm"
+> </ulink
+> и (благодаря Filippo Biondi) для SuSe 9.0 с <ulink url="http://www.hilzinger.hu/ch/linux.html"
+></ulink
+> (благодаря Marcel Hilzinger) или  RPM .spec файл для SuSe 9.0 с <ulink url="http://sra.itc.it/people/merzi/kdebluetooth.spec"
+></ulink
+> (благодаря Michael Sabielny).</para>
+
+<para
+>1) Загрузите последнюю версию kde-bluetooth с CVS. 2) Распакуйте файл архиватором bzip tar: <filename
+>tar cvjf kdebluetooth.tar.bz2 kdebluetooth</filename
+> 3) Скопируйте содержимое архива в <filename
+>/usr/src/packages/SOURCES</filename
+> 4) Скопируйте файл спецификации в  <filename
+>/usr/src/packages/SPECS</filename
+> 5) Убедитесь, что установлено все необходимое программное обеспечение: <filename
+>kdelibs3 kdelibs3-devel qt3 qt3-devel openobex arts</filename
+> <filename
+>bluez-sdp bluez-libs bluez-utils xmms xmms-devel</filename
+> 6) Скомпилируйте программу <filename
+>cd /usr/src/packages</filename
+> <filename
+>rpmbuild -ba SPECS/kdebluetooth.spec</filename
+> </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="download.tarballs">
+<title
+>Архивы</title>
+<para
+>Если установленная версия пакета не поддерживается, и вы не хотите устанавливать версию с CVS, загрузите архивный файл нестабильной версии программы <ulink url="http://www.stud.uni-karlsruhe.de/~uddw/kdebluetooth/"
+> </ulink
+>. Будем рады узнать ваше мнение о ней. </para>
+</sect1>
+
+<sect1 id="download.cvs">
+<title
+>Анонимный CVS</title>
+<para
+>KDE Bluetooth Framework разрабатывается в <ulink url="http://webcvs.kde.org/cgi-bin/cvsweb.cgi/kdeextragear-3/kdebluetooth"
+> kdeextragear-3</ulink
+>. CVS на  kde-bluetooth.sf.net более не используется. </para>
+<para
+>Для загрузки текущей версии kdebluetooth выполните следующие команды: <screen>
+export CVSROOT=:pserver:anonymous@anoncvs.kde.org:/home/kde
+cvs checkout kdeextragear-3/kdebluetooth
+cvs checkout -l kdeextragear-3
+cvs checkout kde-common
+cd kdeextragear-3
+ln -s ../kde-common/admin
+make -f Makefile.cvs
+./configure --prefix=... ..
+cd kdebluetooth
+make
+make install
+</screen
+> В зависимости от версии дистрибутива может потребоваться изменить параметры скрипта конфигурации. Список параметров скрипта выводится командой: <command
+>./configure --help</command
+>. </para>
+</sect1>
+</chapter>

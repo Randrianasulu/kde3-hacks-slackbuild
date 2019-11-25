@@ -1,0 +1,262 @@
+# translation of kipiplugin_galleryexport.po to Norwegian Bokmaal
+# translation of kipiplugin_galleryexport.po to Norsk Bokmål
+# Nils Kristian Tomren <project@nilsk.net>, 2005, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2006-02-25 23:09+0100\n"
+"Last-Translator: Nils Kristian Tomren <project@nilsk.net>\n"
+"Language-Team: Norwegian Bokmaal <i18n-no@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Nils Kristian Tomren"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "project@nilsk.net"
+
+#: galleries.cpp:237
+#, fuzzy
+msgid "Gallery Name"
+msgstr "Gallerieksport"
+
+#: galleries.cpp:238
+#, fuzzy
+msgid "URL"
+msgstr "URL:"
+
+#: galleries.cpp:239
+#, fuzzy
+msgid "User"
+msgstr "Brukernavn:"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr ""
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Brukernavn:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Passord:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr ""
+
+#: gallerylist.cpp:50
+#, fuzzy
+msgid "Remote Galleries"
+msgstr "Logg inn på fjerngalleri"
+
+#: gallerylist.cpp:142
+#, fuzzy
+msgid "New Remote Gallery"
+msgstr "Logg inn på fjerngalleri"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr ""
+
+#: gallerylist.cpp:167
+#, fuzzy
+msgid "Edit Remote Gallery"
+msgstr "Logg inn på fjerngalleri"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+
+#: gallerylist.cpp:192
+#, fuzzy
+msgid "Remove Remote Gallery"
+msgstr "Logg inn på fjerngalleri"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "Galleri-URL er muligens feil"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Feil brukernavn eller passeord angitt"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Ugyldig svar mottatt fra fjerngalleri"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Kunne ikke lage liste over album"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Kunne ikke lage liste over bilder"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Kunne ikke opprette nytt album"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Kunne ikke overføre bilde"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Album"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Overskriv standardinnstillinger"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr ""
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr ""
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Ende størrelse før overføring"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Maksimal størrelse:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Gallerieksport</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Nytt album"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "&Legg til bilder"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Gallerieksport"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"Et Kipi programtillegg for å eksportere bildesamlinger til en fjern Gallery "
+"tjener."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr ""
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr ""
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Kunne ikke logge inn på fjerngalleriet. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Vil du forsøke igjen?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Beklager, disse tegn tillates ikke i albumnavnet: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Overfører fil %1 "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Kunne ikke overføre fil til fjerngalleri. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Vil du fortsette?"
+
+#: plugin_galleryexport.cpp:77
+#, fuzzy
+msgid "Remote Gallery Sync..."
+msgstr "Eksporter til fjerngalleri …"
+
+#: plugin_galleryexport.cpp:86
+#, fuzzy
+msgid "Remote Galleries..."
+msgstr "Eksporter til fjerngalleri …"
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MinDialog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Tast inn nytt albumnavn</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Tittel (valgfri):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Navn (valgfri):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Overskrift (valgfri):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr ""
+
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Gallerieksport-håndbok"
+
+#~ msgid "Author and maintainer"
+#~ msgstr "Forfatter og vedlikeholder"

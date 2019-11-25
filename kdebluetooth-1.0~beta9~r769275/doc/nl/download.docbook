@@ -1,0 +1,124 @@
+<chapter id="download">
+<title
+>&the.framework; verkrijgen</title>
+<sect1 id="download.tarballs">
+<title
+>Bronnen</title>
+<para
+>&The.framework; wordt momenteel ontwikkeld als onderdeel van <ulink url="http://extragear.kde.org"
+>kdeextragear-3</ulink
+>. U kunt een kopie uitchecken via anonymous CVS, maar als u niet van plan bent om met de broncode te rommelen of patches naar ons te sturen, dan adviseren we u om een pakket voor uw distributie te gebruiken. Het gebruiken van pakketten bespaart u veel tijd en vele grijze haren wanneer afhankelijkheden veranderen of bestanden zijn verplaatst. </para>
+
+<para
+>Download tar-archieven van <ulink url="http://sourceforge.net/project/showfiles.php?group_id=89888"
+>uitgaven van kdebluetooth</ulink
+>. </para>
+
+<para
+>Of u kunt deze niet-geteste <ulink url="http://fred.hexbox.de/debian/"
+>snapshots</ulink
+> proberen. </para>
+
+</sect1>
+
+<sect1 id="download.packages">
+<title
+>Pakketten</title>
+<para>
+<variablelist>
+<title
+>Momenteel ondersteunde distributies</title>
+<varlistentry>
+
+<term
+>Debian Sid</term>
+<listitem
+><para
+>U kunt de volgende regels gebruiken in uw <filename
+>/etc/apt/sources.list</filename
+>: <screen
+># KDE-Bluetooth
+deb http://fred.hexbox.de/debian ./
+</screen>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Gentoo Linux</term>
+<listitem>
+<para
+>De laatste ebuild staat al in de gentoo portage tree. U kunt ook http://bugs.gentoo.org controleren voor ebuilds die nog niet zijn toegevoegd</para>
+<para
+>U kunt ook een CVS ebuild voor kdebluetooth downloaden op <ulink url="http://members.xoom.virgilio.it/motaboy/ebuilds"
+>deze site</ulink
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>SUSE</term>
+
+<listitem
+><para
+>U kunt de RPM voor SUSE 8.2 <ulink url="http://sra.itc.it/people/merzi/kdebluetooth-0.0.cvs.20040210.i686.rpm"
+>hier</ulink
+> downloaden (met dank aan Filoppo Biondi). Voor SUSE 9.0 kunt u hem <ulink url="http://www.hilzinger.hu/ch/linux.html"
+>hier</ulink
+> downloaden (met dank aan Marcel Hilzinger). SUSE 9.1 en latere versies worden standaard geleverd met kdebluetooth. Kijk op de <ulink url="ftp://ftp.suse.com/pub/susei386"
+>ftp-site van SUSE</ulink
+> als u de rpm-bestanden niet op de installatiedisks of in YaST terug kunt vinden. Er is ook een  RPM .spec-bestand voor SUSE 9.0 beschikbaar op <ulink url="http://sra.itc.it/people/merzi/kdebluetooth.spec"
+>deze locatie</ulink
+> (met dank aan Michael Sabielny).</para>
+
+<para
+>1) Haal de laatste SVN-versie van kde-bluetooth op. 2) Maak een met bzip2 ingepakt Tar-archief aan: <filename
+>tar cvjf kdebluetooth.tar.bz2 kdebluetooth</filename
+> 3) Kopieer het Tar-archief naar <filename
+>/usr/scr/packages/SOURCES</filename
+> 4) Kopieer het spec-bestand naar <filename
+>usr/src/packages/SPECS</filename
+> 5) Verzeker u ervan dat alle benodigde aanvullende software is geïnstalleerd: <filename
+>kdelibs3, kdelibs3-devel, qt3, qt3-devel, openobex, arts</filename
+> <filename
+>bluez-sdp, bluez-libs, bluez-utils, xmms, xmms-devel</filename
+> 6) Bouw het pakket met <filename
+>cd /usr/src/packages</filename
+> <filename
+>rpmbuild -ba SPECS/kdebluetooth.spec</filename
+> </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="download.cvs">
+<title
+>Anonymous SVN</title>
+<para
+>Het KDE Bluetooth Framework wordt ontwikkeld in <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE Extragear</ulink
+>. Het CVS op kde-bluetooth.sf.net wordt niet langer gebruikt. </para>
+<para
+>Om de huidige ontwikkelingsversie van kdebluetooth uit te checken doet u het volgende: <screen>
+svn checkout -N svn://svn.kde.org/home/kde/trunk/extragear/pim
+cd pim
+svn checkout svn://anonsvn.kde.org/home/kde/trunk/KDE/kde-common/admin
+svn update kdebluetooth
+make -f Makefile.cvs
+./configure --prefix=$(kde-config --prefix)
+cd kdebluetooth
+make
+make install
+</screen
+> Afhankelijk van u distributie dient u mogelijk enkele opties in het configure-script te wijzigen. Tenzij u een goede regen hebt gebruikt u altijd de prefix van uw KDE-installatie als argument voor ./configure.Zie <command
+>kde-config --prefix</command
+> voor een lijst met beschikbare prefixes en <command
+>./configure --help</command
+> voor een lijst met beschikbare opties. </para>
+</sect1>
+</chapter>

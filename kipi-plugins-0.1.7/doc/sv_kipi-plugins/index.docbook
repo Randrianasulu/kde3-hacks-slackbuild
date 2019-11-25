@@ -1,0 +1,349 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+ <!ENTITY kappname "&kipi;">
+ <!ENTITY % Swedish "INCLUDE"
+> <!-- change language only here -->
+ <!ENTITY doc-acquireimages SYSTEM "acquireimages.docbook">
+ <!ENTITY doc-calendar SYSTEM "calendar.docbook">
+ <!ENTITY doc-cdarchiving SYSTEM "cdarchiving.docbook">
+ <!ENTITY doc-colorimages SYSTEM "colorimages.docbook">
+ <!ENTITY doc-convertimages SYSTEM "convertimages.docbook">
+ <!ENTITY doc-effectimages SYSTEM "effectimages.docbook">
+ <!ENTITY doc-filterimages SYSTEM "filterimages.docbook">
+ <!ENTITY doc-findduplicateimages SYSTEM "findduplicateimages.docbook">
+ <!ENTITY doc-flickrexport SYSTEM "flickrexport.docbook">
+ <!ENTITY doc-galleryexport SYSTEM "galleryexport.docbook">
+ <!ENTITY doc-geolocation SYSTEM "geolocation.docbook">
+ <!ENTITY doc-imagesgallery SYSTEM "imagesgallery.docbook">
+ <!ENTITY doc-imageviewer SYSTEM "imageviewer.docbook">
+ <!ENTITY doc-jpeglossless SYSTEM "jpeglossless.docbook">
+ <!ENTITY doc-kameraklient SYSTEM "kameraklient.docbook">
+ <!ENTITY doc-metadataeditor SYSTEM "metadataeditor.docbook">
+ <!ENTITY doc-mpegencoder SYSTEM "mpegencoder.docbook">
+ <!ENTITY doc-printwizard SYSTEM "printwizard.docbook">
+ <!ENTITY doc-rawconverter SYSTEM "rawconverter.docbook">
+ <!ENTITY doc-recompressimages SYSTEM "recompressimages.docbook">
+ <!ENTITY doc-renameimages SYSTEM "renameimages.docbook">
+ <!ENTITY doc-resizeimages SYSTEM "resizeimages.docbook">
+ <!ENTITY doc-sendimages SYSTEM "sendimages.docbook">
+ <!ENTITY doc-slideshow SYSTEM "slideshow.docbook">
+ <!ENTITY doc-timeadjust SYSTEM "timeadjust.docbook">
+ <!ENTITY doc-wallpaper SYSTEM "wallpaper.docbook">
+]>
+
+<book lang="&language;">
+<bookinfo>
+<title
+>Handbok Kipi-insticksprogram</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_punkt_gilles_snabela_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_snabela_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@comhem.se</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+
+<date
+>2007-02-09</date>
+<releaseinfo
+>0.1.3</releaseinfo
+> <!-- Used Kicker version here -->
+
+<copyright>
+<year
+>2004-2007</year>
+<holder
+>Kipi-utvecklingsgruppen</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<abstract>
+<para
+>Det här är handboken för Kipi-insticksprogram, &kde;:s gränssnitt för bildinsticksprogram. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+<keyword
+>Insticksprogram</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introduktion till Kipi-insticksprogram</title>
+
+<para
+>En av de bästa sakerna med KDE:s fotohanteringsprogram som "Digikam", "Kfotoalbum", "Gwenview" och "Showimg" är hur enkelt deras funktion kan utökas genom att använda insticksprogram. Insticksprogram kan behandla bildfiler på nästan alla sätt som användare själv kan. Deras fördel är att det är mycket enklare att lägga till en funktion till värdprogrammet genom att skriva ett litet insticksprogram istället för att ändra kärnan i värdprogrammet. Många värdefulla insticksprogram har C++ källkod som bara når upp till ungefär 100 - 200 rader. </para>
+
+<para
+>Kipi-insticksprogram ger ytterligare funktioner till KDE:s värdprogram för bildhantering. De kan lägga till extra menyer och genvägar, och utöka värdprogrammens funktioner. Du kan installera så många eller så få som du vill, inifrån i värdprogrammen. </para>
+
+<para
+>Mer information om att använda och aktivera insticksprogrammen du vill ha är tillgänglig i värdprogrammens handböcker. </para>
+
+<para
+>Insticksprogrammen som ingår i den här handboken är: </para>
+
+<itemizedlist>
+<listitem>
+<para
+><link linkend="acquireimages"
+>Insticksprogrammet Hämta bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="calendar"
+>Insticksprogrammet Kalender</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="cdarchiving"
+>Insticksprogrammet Cd-arkivering</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="colorimages"
+>Insticksprogrammet Färglägg bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="convertimages"
+>Insticksprogrammet Konvertera bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="effectimages"
+>Insticksprogrammet Bildeffekter</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="filterimages"
+>Insticksprogrammet Filtrera bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="findduplicateimages"
+>Insticksprogrammet Sök duplicerade bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="flickrexport"
+>Insticksprogram för fjärrexport till Flickr</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="galleryexport"
+>Insticksprogrammet Galleriexport</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="geolocation"
+>Insticksprogrammet Lokalisera geografiskt</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="imagesgallery"
+>Insticksprogrammet Bildgalleri</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="imageviewer"
+>Insticksprogrammet OpenGL bildvisare</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="jpeglossless"
+>Insticksprogrammet Förlustfri JPEG</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="kameraklient"
+>Insticksprogrammet Gränssnitt till digitalkamera</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="mpegencoder"
+>Insticksprogrammet MPEG-kodning</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="metadataeditor"
+>insticksprogrammet Metadataeditor</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="printwizard"
+>Insticksprogrammet Utskriftsguide</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="rawconverter"
+>Insticksprogrammet Konvertering av obehandlade bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="recompressimages"
+>Insticksprogrammet Bildomkomprimering</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="renameimages"
+>Insticksprogrammet Bildnamnbyte</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="resizeimages"
+>Insticksprogrammet Ändra bildstorlek</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="sendimages"
+>Insticksprogrammet Skicka bilder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="slideshow"
+>Insticksprogrammet Bildspel</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="timeadjust"
+>Insticksprogrammet Justera tid</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="wallpaper"
+>Insticksprogrammet Ange skrivbordsunderlägg</link
+></para>
+</listitem>
+</itemizedlist>
+</chapter>
+
+&doc-acquireimages;
+&doc-calendar;
+&doc-cdarchiving;
+&doc-colorimages;
+&doc-convertimages;
+&doc-effectimages;
+&doc-filterimages;
+&doc-findduplicateimages;
+&doc-flickrexport;
+&doc-galleryexport;
+&doc-geolocation;
+&doc-imagesgallery;
+&doc-imageviewer;
+&doc-jpeglossless;
+&doc-kameraklient;
+&doc-mpegencoder;
+&doc-metadataeditor;
+&doc-printwizard;
+&doc-rawconverter;
+&doc-recompressimages;
+&doc-renameimages;
+&doc-resizeimages;
+&doc-sendimages;
+&doc-slideshow;
+&doc-timeadjust;
+&doc-wallpaper;
+
+<chapter id="credits">
+<title
+>Tack till och licens</title>
+
+<para
+>Copyright för varje miniprogram listas i motsvarande kapitel. </para>
+
+<para
+>Alla bilder är copyright 2004-2007 av Gilles Caulier <email
+>caulier_punkt_gilles_snabela_free.fr</email
+> och Gerhard Kulzer <email
+>gerhard_snabela_kulzer.net</email
+>. </para>
+&underFDL; &underGPL; </chapter>
+
+<!--
+<appendix id="installation">
+<title
+>Installation</title>
+<para
+>To be written
+</para>
+</appendix>
+-->
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+End:
+-->

@@ -1,0 +1,188 @@
+<chapter id="sendimages">
+<chapterinfo>
+
+<title
+>Bilder senden</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul <quote
+>Bilder senden</quote
+> ist ein Werkzeug, um Bilder direkt aus digiKam per E-Mail zusenden. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Mit diesem KIPI Modul können Sie ausgewählte Bilder mit Ihrem bevorzugten E-Mail Programm senden. Es ist auch mögliche die Größe der zusendenden Bilder vorher zu ändern. Weitere Bilder können auf die Liste der zu sendenden Bilder ziehen und dort ablegen. </para>
+
+<sect1 id="using-plugin-mailselectiondialog">
+<title
+>Bildauswahl</title>
+
+<para
+>Nach dem Sie das Modul gestartet haben wird das <emphasis
+>Bilder</emphasis
+>-Fenstermit den von Ihnen vorausgewählten Bildern angezeigt. Über den Knopf <guilabel
+>Bilder hinzufügen</guilabel
+> können Sie mit einem Dateiauswahldialog weitere Bilder hinzufügen. Für das zuletzt angewählte Bild wird eine Vorschau auf der rechten Seite angezeigt. </para>
+
+<tip
+><para
+>Sie können Bilder auch auf die Bilderliste ziehen und dort ablegen um Sie dadurch der Liste der zu sendenden Bilder hinzuzufügen. </para
+></tip>
+
+<para
+>Mit dem Knopf <guilabel
+>Bilder entfernen</guilabel
+> werden die ausgewählten Bilder aus der Liste der zu sendenden Bilder entfernt. </para>
+
+<para
+>Nachdem Sie alle Bilder ausgewählt haben können Sie mit dem Knopf <guilabel
+>OK</guilabel
+> das "Neue Nachricht"-Fenster Ihres E-Mail Klienten öffnen. Sie müssen hier nur noch die Adressen und den Betreff hinzufügen. Die von Ihnen ausgewählten Bilder sind schon als Anhang beigefügt. </para>
+
+<warning
+><para
+>Achten Sie darauf nicht zu viele Bilder auf einmal zu versenden. Die meisten E-Mail Konten haben Beschränkungen für die Größe der zu sendenden E-Mails. Es ist eventuell eine gute Idee mehrere Mails zu senden wenn Sie viele Bilder verschicken wollen. </para
+></warning>
+
+<figure>
+    <title
+>Die Bildauswahl</title>
+    <graphic srccredit="The Image Selection Dialog" fileref="sendimages_imageselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-mailsettingsdialog">
+<title
+>E-Mail Fenster</title>
+
+<para
+>Das E-Mail Fenster wird benutzt um die Einstellungen für das Senden der Bilder zu ändern. Ihre Konfiguration wird gespeichert und jedesmal wieder benutzt bis Sie sie ändern. </para>
+
+<para
+>Wählen Sie Ihren E-Mail Klienten aus dem Menü. Falls Sie <application
+>Thunderbird</application
+> auswählen, so müssen Sie in dem Eingabefeld darunter den richtigen Pfad für Ihre Installation angeben. </para>
+
+<note
+><para
+>Falls Sie den Google Mail Dienst benutzen, müssen Sie vorher den<application
+>GMailAgent</application
+> auf Ihrem Rechner installieren. Sie können diesen <ulink url="http://gmailagent.sourceforge.net"
+>hier</ulink
+> herunterladen. </para
+></note>
+
+<para
+>Nach der Anwahl von <guilabel
+>Kommentare in einer angehängten Datei hinzufügen</guilabel
+> werden die Kommentare zu den Bildern in eine Textdatei zusammengefügt und der Mail beigelegt. </para>
+
+<para
+>Die nächsten drei Einträge erlauben es Ihnen die Qualität der zu sendenden Bilder zu beeinflussen. Der Grad der <guilabel
+>Kommpression der neuen Bilder</guilabel
+> kann mit dem Schieber oder dem Eingabefeld gesetzt werden. 75% ist der Standardkompressionsgrad für <guilabel
+>JPEG</guilabel
+> Dateien. Eine Kompression von 100% würde eine verlustfreie Kompression mit sehr großen Dateien erzeugen. Der Unterschied in der Größe der Datei zwischen 90% und 100% kann sehr dramatisch sein, während der sichtbare Qualitätsunterschied vernachlässigbar ist. Eine sehr gute Qualität wird bei einer Kompression von 85% erreicht. </para>
+
+<para
+>Das <guilabel
+>PNG</guilabel
+> Format unter dem Menü <guilabel
+>Bilder Dateiformat</guilabel
+> ist nicht sehr geeignet, um die Größe von Fotodateien zu reduzieren, aber es ist am besten angepasst unter den verlustfreien Formaten wie z.B. TIFF. Sie sollten daher <guilabel
+>PNG</guilabel
+> benutzen, wenn Sie eine schnelle Internetverbindung haben und die Fotoqualität nicht geändert werden soll. Andernfalls empfehlen wir Ihnen das <guilabel
+>JPEG</guilabel
+>-Format. </para>
+
+<note
+><para
+>Wenn Sie <guilabel
+>JPEG</guilabel
+> unter <guilabel
+>Bilder Dateiformat</guilabel
+> auswählen und die Originaldateien im <guilabel
+>JPEG</guilabel
+> Format sind, dann werden die Original-Exifdaten den zu sendenden Bildern hinzugefügt. </para
+></note>
+
+<figure>
+    <title
+>Das E-Mail Fenster</title>
+    <graphic srccredit="The Mail Dialog" fileref="sendimages_mail.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-emailimagesinaction">
+<title
+>Bilder senden in Aktion</title>
+
+<para
+>Ein Fortschrittsfenster zeigt dem Benutzer an wie weit die Aktion ist. Drücken Sie <guilabel
+>Abbrechen</guilabel
+> um den Prozess abzubrechen. </para>
+
+<para
+>Wenn der Prozess fertig ist, wird das Fenster nicht automatisch geschlossen damit Sie sich die Statusmeldungen, auf der Suche nach Fehlern, ansehen können. Ihr Mailprogramm wird allerdings automatisch am Ende gestartet. Mit dem Knopf <guilabel
+>Schliessen</guilabel
+> können Sie dieses Fenster schliessen. </para>
+
+<figure>
+    <title
+>Das Bilder senden Modul in Aktion</title>
+    <graphic srccredit="The E-mail Images Plugin in Action" fileref="sendimages_progress.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

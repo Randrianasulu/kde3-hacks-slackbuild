@@ -1,0 +1,200 @@
+/****************************************************************************
+** KNetworkConfigParser meta object code from reading C++ file 'knetworkconfigparser.h'
+**
+** Created: Sun Feb 1 00:56:13 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "knetworkconfigparser.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KNetworkConfigParser::className() const
+{
+    return "KNetworkConfigParser";
+}
+
+QMetaObject *KNetworkConfigParser::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KNetworkConfigParser( "KNetworkConfigParser", &KNetworkConfigParser::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KNetworkConfigParser::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KNetworkConfigParser", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KNetworkConfigParser::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KNetworkConfigParser", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KNetworkConfigParser::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "platform", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"listIfaces", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "platform", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"runDetectionScript", 1, param_slot_1 };
+    static const QUMethod slot_2 = {"readIfconfigOutput", 0, 0 };
+    static const QUMethod slot_3 = {"readNetworkInfo", 0, 0 };
+    static const QUMethod slot_4 = {"readFromStdoutReloadScript", 0, 0 };
+    static const QUMethod slot_5 = {"sendNetworkInfoSavedSignalSlot", 0, 0 };
+    static const QUMethod slot_6 = {"concatXMLOutputSlot", 0, 0 };
+    static const QUMethod slot_7 = {"readXMLErrSlot", 0, 0 };
+    static const QUMethod slot_8 = {"showSupportedPlatformsDialogSlot", 0, 0 };
+    static const QUMethod slot_9 = {"readSupportedPlatformsSlot", 0, 0 };
+    static const QUMethod slot_10 = {"readListIfacesSlot", 0, 0 };
+    static const QUMethod slot_11 = {"readFromStdoutSaveNetworkInfo", 0, 0 };
+    static const QUMethod slot_12 = {"listIfacesSlot", 0, 0 };
+    static const QUMethod slot_13 = {"processExitedSlot", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "listIfaces(const QString&)", &slot_0, QMetaData::Public },
+	{ "runDetectionScript(QString)", &slot_1, QMetaData::Private },
+	{ "readIfconfigOutput()", &slot_2, QMetaData::Private },
+	{ "readNetworkInfo()", &slot_3, QMetaData::Private },
+	{ "readFromStdoutReloadScript()", &slot_4, QMetaData::Private },
+	{ "sendNetworkInfoSavedSignalSlot()", &slot_5, QMetaData::Private },
+	{ "concatXMLOutputSlot()", &slot_6, QMetaData::Private },
+	{ "readXMLErrSlot()", &slot_7, QMetaData::Private },
+	{ "showSupportedPlatformsDialogSlot()", &slot_8, QMetaData::Private },
+	{ "readSupportedPlatformsSlot()", &slot_9, QMetaData::Private },
+	{ "readListIfacesSlot()", &slot_10, QMetaData::Private },
+	{ "readFromStdoutSaveNetworkInfo()", &slot_11, QMetaData::Private },
+	{ "listIfacesSlot()", &slot_12, QMetaData::Private },
+	{ "processExitedSlot()", &slot_13, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"readyLoadingNetworkInfo", 0, 0 };
+    static const QUMethod signal_1 = {"readyIfconfigOutputSignal", 0, 0 };
+    static const QUMethod signal_2 = {"errorDetectingPlatform", 0, 0 };
+    static const QUMethod signal_3 = {"readyLoadingSupportedPlatforms", 0, 0 };
+    static const QUParameter param_signal_4[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"setReadOnly", 1, param_signal_4 };
+    static const QMetaData signal_tbl[] = {
+	{ "readyLoadingNetworkInfo()", &signal_0, QMetaData::Protected },
+	{ "readyIfconfigOutputSignal()", &signal_1, QMetaData::Protected },
+	{ "errorDetectingPlatform()", &signal_2, QMetaData::Protected },
+	{ "readyLoadingSupportedPlatforms()", &signal_3, QMetaData::Protected },
+	{ "setReadOnly(bool)", &signal_4, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KNetworkConfigParser", parentObject,
+	slot_tbl, 14,
+	signal_tbl, 5,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KNetworkConfigParser.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KNetworkConfigParser::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KNetworkConfigParser" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+// SIGNAL readyLoadingNetworkInfo
+void KNetworkConfigParser::readyLoadingNetworkInfo()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL readyIfconfigOutputSignal
+void KNetworkConfigParser::readyIfconfigOutputSignal()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+// SIGNAL errorDetectingPlatform
+void KNetworkConfigParser::errorDetectingPlatform()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2 );
+}
+
+// SIGNAL readyLoadingSupportedPlatforms
+void KNetworkConfigParser::readyLoadingSupportedPlatforms()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+// SIGNAL setReadOnly
+void KNetworkConfigParser::setReadOnly( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 4, t0 );
+}
+
+bool KNetworkConfigParser::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: listIfaces((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 1: runDetectionScript((QString)static_QUType_QString.get(_o+1)); break;
+    case 2: readIfconfigOutput(); break;
+    case 3: readNetworkInfo(); break;
+    case 4: readFromStdoutReloadScript(); break;
+    case 5: sendNetworkInfoSavedSignalSlot(); break;
+    case 6: concatXMLOutputSlot(); break;
+    case 7: readXMLErrSlot(); break;
+    case 8: showSupportedPlatformsDialogSlot(); break;
+    case 9: readSupportedPlatformsSlot(); break;
+    case 10: readListIfacesSlot(); break;
+    case 11: readFromStdoutSaveNetworkInfo(); break;
+    case 12: listIfacesSlot(); break;
+    case 13: processExitedSlot(); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KNetworkConfigParser::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: readyLoadingNetworkInfo(); break;
+    case 1: readyIfconfigOutputSignal(); break;
+    case 2: errorDetectingPlatform(); break;
+    case 3: readyLoadingSupportedPlatforms(); break;
+    case 4: setReadOnly((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return QObject::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KNetworkConfigParser::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool KNetworkConfigParser::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

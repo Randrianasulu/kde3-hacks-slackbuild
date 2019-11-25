@@ -1,0 +1,127 @@
+diff -urN /dev/shm/amarok-1.4.10/amarok/src/amarokcore/amarok.kcfg /dev/shm/amarok-1.4.10/amarok/src.new/amarokcore/amarok.kcfg
+--- /dev/shm/amarok-1.4.10/amarok/src/amarokcore/amarok.kcfg	2008-08-13 16:21:51.000000000 -0500
++++ /dev/shm/amarok-1.4.10/amarok/src.new/amarokcore/amarok.kcfg	2010-07-22 17:25:21.000000000 -0500
+@@ -216,6 +216,11 @@
+         <whatsthis>Set this to the style dir you want to use.</whatsthis>
+         <default>Default</default>
+     </entry>
++    <entry key="Show Menu Bar" type="Bool">
++        <label>Whether Menubar is shown</label>
++        <whatsthis>If set, Amarok displays a menubar on top of the application.</whatsthis>
++        <default>true</default>
++    </entry>
+     <entry key="Relative Playlist" type="Bool">
+         <label>Whether playlists store relative path</label>
+         <whatsthis>If set, Amarok's manually saved playlists will contain a relative path to each track, not an absolute path.</whatsthis>
+diff -urN /dev/shm/amarok-1.4.10/amarok/src/app.cpp /dev/shm/amarok-1.4.10/amarok/src.new/app.cpp
+--- /dev/shm/amarok-1.4.10/amarok/src/app.cpp	2008-08-13 16:21:51.000000000 -0500
++++ /dev/shm/amarok-1.4.10/amarok/src.new/app.cpp	2010-07-22 17:25:21.000000000 -0500
+@@ -678,6 +678,13 @@
+             m_pPlaylistWindow->setCaption( i18n("Amarok - %1").arg( EngineController::instance()->bundle().veryNiceTitle() ) );
+         else
+             m_pPlaylistWindow->setCaption( "Amarok" );
++
++
++        //m_pPlaylistWindow->show(); //must be shown //we do below now
++
++        //ensure that at least one Menu is plugged into an accessible UI element
++        if( !AmarokConfig::showMenuBar() && !Amarok::actionCollection()->action( "amarok_menu" )->isPlugged() )
++           playlistWindow()->createGUI();
+     }
+ 
+     playlistWindow()->applySettings();
+diff -urN /dev/shm/amarok-1.4.10/amarok/src/playlistwindow.cpp /dev/shm/amarok-1.4.10/amarok/src.new/playlistwindow.cpp
+--- /dev/shm/amarok-1.4.10/amarok/src/playlistwindow.cpp	2008-08-13 16:21:51.000000000 -0500
++++ /dev/shm/amarok-1.4.10/amarok/src.new/playlistwindow.cpp	2010-07-22 17:25:21.000000000 -0500
+@@ -139,6 +139,9 @@
+     ac->action( "stream_add" )->setIcon( Amarok::icon( "files" ) );
+     KStdAction::save( this, SLOT(savePlaylist()), ac, "playlist_save" )->setText( i18n("&Save Playlist As...") );
+     ac->action( "playlist_save" )->setIcon( Amarok::icon( "save" ) );
++#ifndef Q_WS_MAC
++    KStdAction::showMenubar( this, SLOT(slotToggleMenu()), ac );
++#endif
+ 
+     //FIXME: after string freeze rename to "Burn Current Playlist"?
+     new KAction( i18n("Burn to CD"), Amarok::icon( "burn" ), 0, this, SLOT(slotBurnPlaylist()), ac, "playlist_burn" );
+@@ -233,6 +236,8 @@
+ 
+ PlaylistWindow::~PlaylistWindow()
+ {
++    Amarok::config( "PlaylistWindow" )->writeEntry( "showMenuBar", m_menubar->isShown() );
++
+     AmarokConfig::setPlaylistWindowPos( pos() );  //TODO de XT?
+     AmarokConfig::setPlaylistWindowSize( size() ); //TODO de XT?
+ }
+@@ -308,6 +313,9 @@
+     connect( repeatAction, SIGNAL( activated( int ) ), playlist, SLOT( slotRepeatTrackToggled( int ) ) );
+ 
+     m_menubar = new KMenuBar( this );
++#ifndef Q_WS_MAC
++    m_menubar->setShown( AmarokConfig::showMenuBar() );
++#endif
+ 
+     //BEGIN Actions menu
+     KPopupMenu *actionsMenu = new KPopupMenu( m_menubar );
+@@ -381,6 +389,8 @@
+     m_settingsMenu = new KPopupMenu( m_menubar );
+     //TODO use KStdAction or KMainWindow
+ #ifndef Q_WS_MAC
++    static_cast<KToggleAction *>(actionCollection()->action(KStdAction::name(KStdAction::ShowMenubar)))->setChecked( AmarokConfig::showMenuBar() );
++    actionCollection()->action(KStdAction::name(KStdAction::ShowMenubar))->plug( m_settingsMenu );
+     m_settingsMenu->insertItem( AmarokConfig::showToolbar() ? i18n( "Hide Toolbar" ) : i18n("Show Toolbar"), ID_SHOW_TOOLBAR );
+     m_settingsMenu->insertItem( AmarokConfig::showPlayerWindow() ? i18n("Hide Player &Window") : i18n("Show Player &Window"), ID_SHOW_PLAYERWINDOW );
+     m_settingsMenu->insertSeparator();
+@@ -570,6 +580,13 @@
+     {
+         KToolBarButton* const button = static_cast<KToolBarButton*>( m_toolbar->child( (*it).latin1() ) );
+ 
++        if ( it == last ) {
++            //if the user has no PlayerWindow, he MUST have the menu action plugged
++            //NOTE this is not saved to the local XMLFile, which is what the user will want
++            if ( !AmarokConfig::showPlayerWindow() && !AmarokConfig::showMenuBar() && !button )
++                actionCollection()->action( "amarok_menu" )->plug( m_toolbar );
++        }
++
+         if ( button ) {
+             button->modeChange();
+             button->setFocusPolicy( QWidget::NoFocus );
+@@ -1031,6 +1048,20 @@
+         Playlist::instance()->setFocus();
+ }
+ 
++void PlaylistWindow::slotToggleMenu() //SLOT
++{
++    if( static_cast<KToggleAction *>(actionCollection()->action(KStdAction::name(KStdAction::ShowMenubar)))->isChecked() ) {
++        AmarokConfig::setShowMenuBar( true );
++        m_menubar->setShown( true );
++    }
++    else
++    {
++        AmarokConfig::setShowMenuBar( false );
++        m_menubar->setShown( false );
++    }
++    recreateGUI();
++}
++
+ void PlaylistWindow::slotMenuActivated( int index ) //SLOT
+ {
+     switch( index )
+@@ -1042,6 +1073,7 @@
+     case ID_SHOW_TOOLBAR:
+         m_toolbar->setShown( !m_toolbar->isShown() );
+         AmarokConfig::setShowToolbar( !AmarokConfig::showToolbar() );
++        actionCollection()->action(KStdAction::name(KStdAction::ShowMenubar))->setEnabled( m_toolbar->isShown() );
+         m_settingsMenu->changeItem( index, m_toolbar->isShown() ? i18n("Hide Toolbar") : i18n("Show Toolbar") );
+         break;
+     case ID_SHOW_PLAYERWINDOW:
+diff -urN /dev/shm/amarok-1.4.10/amarok/src/playlistwindow.h /dev/shm/amarok-1.4.10/amarok/src.new/playlistwindow.h
+--- /dev/shm/amarok-1.4.10/amarok/src/playlistwindow.h	2008-08-13 16:21:51.000000000 -0500
++++ /dev/shm/amarok-1.4.10/amarok/src.new/playlistwindow.h	2010-07-22 17:25:21.000000000 -0500
+@@ -91,6 +91,7 @@
+         void slotMenuActivated( int );
+         void actionsMenuAboutToShow();
+         void toolsMenuAboutToShow();
++        void slotToggleMenu();
+         void slotToggleFocus();
+         void slotEditFilter();
+         void slotSetFilter( const QString &filter );

@@ -1,0 +1,70 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>MainDialogBase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>MainDialogBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>363</width>
+            <height>244</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Bluetooth Serial Chat</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextEdit">
+            <property name="name">
+                <cstring>textEdit</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;font color="#0000ff" size="+2"&gt;Bluetooth Serial Chat&lt;/font&gt;</string>
+            </property>
+            <property name="wordWrap">
+                <enum>WidgetWidth</enum>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit</cstring>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>sendButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Send</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+S, Return</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<tabstops>
+    <tabstop>lineEdit</tabstop>
+    <tabstop>sendButton</tabstop>
+    <tabstop>textEdit</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

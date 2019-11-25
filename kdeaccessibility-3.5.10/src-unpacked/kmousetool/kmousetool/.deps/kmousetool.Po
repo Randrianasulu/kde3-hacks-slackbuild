@@ -1,0 +1,797 @@
+kmousetool.o: kmousetool.cpp Xmd_kmousetool.h kmousetool.h \
+ /usr/lib/qt3/include/qdir.h /usr/lib/qt3/include/qglobal.h \
+ /usr/lib/qt3/include/qconfig.h /usr/lib/qt3/include/qmodules.h \
+ /usr/lib/qt3/include/qfeatures.h /usr/lib/qt3/include/qstrlist.h \
+ /usr/lib/qt3/include/qstring.h /usr/lib/qt3/include/qcstring.h \
+ /usr/lib/qt3/include/qmemarray.h /usr/lib/qt3/include/qgarray.h \
+ /usr/lib/qt3/include/qshared.h /usr/lib/qt3/include/qwinexport.h \
+ /usr/include/string.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/include-fixed/limits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h /usr/lib/qt3/include/qptrlist.h \
+ /usr/lib/qt3/include/qglist.h /usr/lib/qt3/include/qptrcollection.h \
+ /usr/lib/qt3/include/qdatastream.h /usr/lib/qt3/include/qiodevice.h \
+ /usr/lib/qt3/include/qfileinfo.h /usr/lib/qt3/include/qfile.h \
+ /usr/include/stdio.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/include/stdarg.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/lib/qt3/include/qdatetime.h /usr/lib/qt3/include/qnamespace.h \
+ ../../config.h version.h /usr/include/kapplication.h \
+ /usr/include/kdeversion.h /usr/include/kdelibs_export.h \
+ /usr/include/kdemacros.h /usr/lib/qt3/include/qglobal.h \
+ /usr/lib/qt3/include/qapplication.h \
+ /usr/lib/qt3/include/qdesktopwidget.h /usr/lib/qt3/include/qwidget.h \
+ /usr/lib/qt3/include/qwindowdefs.h /usr/lib/qt3/include/qobjectdefs.h \
+ /usr/lib/qt3/include/qobject.h /usr/lib/qt3/include/qevent.h \
+ /usr/lib/qt3/include/qregion.h /usr/lib/qt3/include/qrect.h \
+ /usr/lib/qt3/include/qsize.h /usr/lib/qt3/include/qpoint.h \
+ /usr/lib/qt3/include/qmime.h /usr/lib/qt3/include/qmap.h \
+ /usr/lib/qt3/include/qpair.h /usr/lib/qt3/include/qvaluelist.h \
+ /usr/lib/qt3/include/qtl.h /usr/lib/qt3/include/qtextstream.h \
+ /usr/lib/qt3/include/qpaintdevice.h /usr/lib/qt3/include/qpalette.h \
+ /usr/lib/qt3/include/qcolor.h /usr/lib/qt3/include/qstringlist.h \
+ /usr/lib/qt3/include/qbrush.h /usr/lib/qt3/include/qfont.h \
+ /usr/lib/qt3/include/qfontmetrics.h /usr/lib/qt3/include/qfontinfo.h \
+ /usr/lib/qt3/include/qsizepolicy.h /usr/lib/qt3/include/qasciidict.h \
+ /usr/lib/qt3/include/qgdict.h /usr/lib/qt3/include/qtranslator.h \
+ /usr/lib/qt3/include/qpixmap.h /usr/include/kinstance.h \
+ /usr/lib/qt3/include/qstring.h /usr/include/ksystemtray.h \
+ /usr/include/kglobal.h /usr/lib/qt3/include/qlabel.h \
+ /usr/lib/qt3/include/qframe.h /usr/lib/qt3/include/qwidget.h mtstroke.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/vector \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_algobase.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++config.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/os_defines.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/cpu_defines.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/functexcept.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/exception_defines.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/cpp_type_traits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/type_traits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/numeric_traits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_pair.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/move.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/concept_check.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator_base_types.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator_base_funcs.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/debug/debug.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/allocator.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++allocator.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/new_allocator.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/new \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/exception \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_construct.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_uninitialized.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_vector.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/initializer_list \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_bvector.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/range_access.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/vector.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/fstream \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/istream \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ios \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/iosfwd \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stringfwd.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/postypes.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cwchar \
+ /usr/include/bits/wchar.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/char_traits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/localefwd.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++locale.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cctype \
+ /usr/include/ctype.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/ios_base.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/atomicity.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/gthr.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/atomic_word.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_classes.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/string \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/ostream_insert.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/cxxabi_forced.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_function.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/backward/binders.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_classes.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/streambuf \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/streambuf.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cwctype \
+ /usr/include/wctype.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/ctype_base.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/streambuf_iterator.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/ctype_inline.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ostream \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/ostream.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/istream.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/codecvt.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cstdio \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/basic_file.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++io.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/map \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_tree.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_map.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_multimap.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h kmousetoolui.h /usr/lib/qt3/include/qvariant.h \
+ kmousetool.moc /usr/lib/qt3/include/qmetaobject.h \
+ /usr/lib/qt3/include/qconnection.h \
+ /usr/lib/qt3/include/private/qucomextra_p.h \
+ /usr/lib/qt3/include/private/qucom_p.h /usr/lib/qt3/include/quuid.h \
+ /usr/include/kconfig.h /usr/lib/qt3/include/qvaluelist.h \
+ /usr/include/kconfigbase.h /usr/lib/qt3/include/qobject.h \
+ /usr/lib/qt3/include/qcolor.h /usr/lib/qt3/include/qfont.h \
+ /usr/lib/qt3/include/qdatetime.h /usr/lib/qt3/include/qstrlist.h \
+ /usr/lib/qt3/include/qstringlist.h /usr/lib/qt3/include/qmap.h \
+ /usr/include/kconfigdata.h /usr/include/klockfile.h \
+ /usr/include/ksharedptr.h /usr/X11R7/include/X11/Intrinsic.h \
+ /usr/X11R7/include/X11/Xlib.h /usr/X11R7/include/X11/X.h \
+ /usr/X11R7/include/X11/Xfuncproto.h /usr/X11R7/include/X11/Xosdefs.h \
+ /usr/X11R7/include/X11/Xutil.h /usr/X11R7/include/X11/keysym.h \
+ /usr/X11R7/include/X11/keysymdef.h /usr/X11R7/include/X11/Xresource.h \
+ /usr/X11R7/include/X11/Core.h /usr/X11R7/include/X11/Composite.h \
+ /usr/X11R7/include/X11/Constraint.h /usr/X11R7/include/X11/Object.h \
+ /usr/X11R7/include/X11/RectObj.h /usr/X11R7/include/X11/StringDefs.h \
+ /usr/X11R7/include/X11/extensions/xtestext1.h \
+ /usr/X11R7/include/X11/extensions/xtestext1const.h \
+ /usr/X11R7/include/X11/extensions/XTest.h \
+ /usr/X11R7/include/X11/extensions/XInput.h \
+ /usr/X11R7/include/X11/extensions/XI.h /usr/include/kdialog.h \
+ /usr/lib/qt3/include/qdialog.h /usr/include/kdelibs_export.h \
+ /usr/include/klocale.h /usr/lib/qt3/include/qpushbutton.h \
+ /usr/lib/qt3/include/qbutton.h /usr/lib/qt3/include/qkeysequence.h \
+ /usr/lib/qt3/include/qiconset.h /usr/lib/qt3/include/qpixmap.h \
+ /usr/lib/qt3/include/qpoint.h /usr/lib/qt3/include/qnamespace.h \
+ /usr/include/kmessagebox.h /usr/lib/qt3/include/qmessagebox.h \
+ /usr/lib/qt3/include/qdialog.h /usr/include/kguiitem.h \
+ /usr/lib/qt3/include/qiconset.h /usr/include/kicontheme.h \
+ /usr/lib/qt3/include/qptrlist.h /usr/include/kstdguiitem.h \
+ /usr/lib/qt3/include/qpair.h /usr/include/kaudioplayer.h \
+ /usr/include/kstandarddirs.h /usr/lib/qt3/include/qdict.h \
+ /usr/lib/qt3/include/qsound.h /usr/include/kglobalsettings.h \
+ /usr/include/kdebug.h /usr/lib/qt3/include/qlayout.h \
+ /usr/lib/qt3/include/qlineedit.h /usr/lib/qt3/include/qcheckbox.h \
+ /usr/include/kiconloader.h /usr/lib/qt3/include/qmovie.h \
+ /usr/include/kpushbutton.h /usr/include/knuminput.h \
+ /usr/lib/qt3/include/qspinbox.h /usr/lib/qt3/include/qrangecontrol.h \
+ /usr/include/kpopupmenu.h /usr/lib/qt3/include/qpopupmenu.h \
+ /usr/lib/qt3/include/qmenudata.h /usr/lib/qt3/include/qsignal.h \
+ /usr/lib/qt3/include/qvariant.h /usr/include/kpixmapeffect.h \
+ /usr/lib/qt3/include/qsize.h /usr/include/kpixmap.h \
+ /usr/include/kaboutapplication.h /usr/include/kaboutdata.h \
+ /usr/lib/qt3/include/qimage.h /usr/include/kaboutdialog.h \
+ /usr/include/kdialogbase.h /usr/include/kjanuswidget.h \
+ /usr/lib/qt3/include/qsplitter.h /usr/include/klistbox.h \
+ /usr/lib/qt3/include/qlistbox.h /usr/lib/qt3/include/qscrollview.h \
+ /usr/lib/qt3/include/qscrollbar.h /usr/include/netwm.h \
+ /usr/X11R7/include/X11/Xatom.h /usr/include/netwm_def.h \
+ /usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/iostream
+
+Xmd_kmousetool.h:
+
+kmousetool.h:
+
+/usr/lib/qt3/include/qdir.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qconfig.h:
+
+/usr/lib/qt3/include/qmodules.h:
+
+/usr/lib/qt3/include/qfeatures.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qmemarray.h:
+
+/usr/lib/qt3/include/qgarray.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+/usr/lib/qt3/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/lib/qt3/include/qglist.h:
+
+/usr/lib/qt3/include/qptrcollection.h:
+
+/usr/lib/qt3/include/qdatastream.h:
+
+/usr/lib/qt3/include/qiodevice.h:
+
+/usr/lib/qt3/include/qfileinfo.h:
+
+/usr/lib/qt3/include/qfile.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/include/stdarg.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/lib/qt3/include/qnamespace.h:
+
+../../config.h:
+
+version.h:
+
+/usr/include/kapplication.h:
+
+/usr/include/kdeversion.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/kdemacros.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qapplication.h:
+
+/usr/lib/qt3/include/qdesktopwidget.h:
+
+/usr/lib/qt3/include/qwidget.h:
+
+/usr/lib/qt3/include/qwindowdefs.h:
+
+/usr/lib/qt3/include/qobjectdefs.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qevent.h:
+
+/usr/lib/qt3/include/qregion.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qmime.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qpair.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qtl.h:
+
+/usr/lib/qt3/include/qtextstream.h:
+
+/usr/lib/qt3/include/qpaintdevice.h:
+
+/usr/lib/qt3/include/qpalette.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qbrush.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+/usr/lib/qt3/include/qfontmetrics.h:
+
+/usr/lib/qt3/include/qfontinfo.h:
+
+/usr/lib/qt3/include/qsizepolicy.h:
+
+/usr/lib/qt3/include/qasciidict.h:
+
+/usr/lib/qt3/include/qgdict.h:
+
+/usr/lib/qt3/include/qtranslator.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/include/kinstance.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/include/ksystemtray.h:
+
+/usr/include/kglobal.h:
+
+/usr/lib/qt3/include/qlabel.h:
+
+/usr/lib/qt3/include/qframe.h:
+
+/usr/lib/qt3/include/qwidget.h:
+
+mtstroke.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/vector:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_algobase.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++config.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/os_defines.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/cpu_defines.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/functexcept.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/exception_defines.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/type_traits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/numeric_traits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_pair.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/move.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/concept_check.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/debug/debug.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/allocator.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++allocator.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/new_allocator.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/new:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/exception:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_construct.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_vector.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/initializer_list:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_bvector.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/range_access.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/vector.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/fstream:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/istream:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ios:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/iosfwd:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stringfwd.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/postypes.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cwchar:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/char_traits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/localefwd.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++locale.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/ios_base.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ext/atomicity.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/gthr.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/atomic_word.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_classes.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/string:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/ostream_insert.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_function.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/backward/binders.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_classes.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/streambuf:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/streambuf.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/ctype_base.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/ctype_inline.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/ostream:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/ostream.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/istream.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/codecvt.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cstdio:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/basic_file.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/i486-slackware-linux/bits/c++io.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/map:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_tree.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_map.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/bits/stl_multimap.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+kmousetoolui.h:
+
+/usr/lib/qt3/include/qvariant.h:
+
+kmousetool.moc:
+
+/usr/lib/qt3/include/qmetaobject.h:
+
+/usr/lib/qt3/include/qconnection.h:
+
+/usr/lib/qt3/include/private/qucomextra_p.h:
+
+/usr/lib/qt3/include/private/qucom_p.h:
+
+/usr/lib/qt3/include/quuid.h:
+
+/usr/include/kconfig.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/include/kconfigbase.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/include/kconfigdata.h:
+
+/usr/include/klockfile.h:
+
+/usr/include/ksharedptr.h:
+
+/usr/X11R7/include/X11/Intrinsic.h:
+
+/usr/X11R7/include/X11/Xlib.h:
+
+/usr/X11R7/include/X11/X.h:
+
+/usr/X11R7/include/X11/Xfuncproto.h:
+
+/usr/X11R7/include/X11/Xosdefs.h:
+
+/usr/X11R7/include/X11/Xutil.h:
+
+/usr/X11R7/include/X11/keysym.h:
+
+/usr/X11R7/include/X11/keysymdef.h:
+
+/usr/X11R7/include/X11/Xresource.h:
+
+/usr/X11R7/include/X11/Core.h:
+
+/usr/X11R7/include/X11/Composite.h:
+
+/usr/X11R7/include/X11/Constraint.h:
+
+/usr/X11R7/include/X11/Object.h:
+
+/usr/X11R7/include/X11/RectObj.h:
+
+/usr/X11R7/include/X11/StringDefs.h:
+
+/usr/X11R7/include/X11/extensions/xtestext1.h:
+
+/usr/X11R7/include/X11/extensions/xtestext1const.h:
+
+/usr/X11R7/include/X11/extensions/XTest.h:
+
+/usr/X11R7/include/X11/extensions/XInput.h:
+
+/usr/X11R7/include/X11/extensions/XI.h:
+
+/usr/include/kdialog.h:
+
+/usr/lib/qt3/include/qdialog.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/klocale.h:
+
+/usr/lib/qt3/include/qpushbutton.h:
+
+/usr/lib/qt3/include/qbutton.h:
+
+/usr/lib/qt3/include/qkeysequence.h:
+
+/usr/lib/qt3/include/qiconset.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qnamespace.h:
+
+/usr/include/kmessagebox.h:
+
+/usr/lib/qt3/include/qmessagebox.h:
+
+/usr/lib/qt3/include/qdialog.h:
+
+/usr/include/kguiitem.h:
+
+/usr/lib/qt3/include/qiconset.h:
+
+/usr/include/kicontheme.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/include/kstdguiitem.h:
+
+/usr/lib/qt3/include/qpair.h:
+
+/usr/include/kaudioplayer.h:
+
+/usr/include/kstandarddirs.h:
+
+/usr/lib/qt3/include/qdict.h:
+
+/usr/lib/qt3/include/qsound.h:
+
+/usr/include/kglobalsettings.h:
+
+/usr/include/kdebug.h:
+
+/usr/lib/qt3/include/qlayout.h:
+
+/usr/lib/qt3/include/qlineedit.h:
+
+/usr/lib/qt3/include/qcheckbox.h:
+
+/usr/include/kiconloader.h:
+
+/usr/lib/qt3/include/qmovie.h:
+
+/usr/include/kpushbutton.h:
+
+/usr/include/knuminput.h:
+
+/usr/lib/qt3/include/qspinbox.h:
+
+/usr/lib/qt3/include/qrangecontrol.h:
+
+/usr/include/kpopupmenu.h:
+
+/usr/lib/qt3/include/qpopupmenu.h:
+
+/usr/lib/qt3/include/qmenudata.h:
+
+/usr/lib/qt3/include/qsignal.h:
+
+/usr/lib/qt3/include/qvariant.h:
+
+/usr/include/kpixmapeffect.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/include/kpixmap.h:
+
+/usr/include/kaboutapplication.h:
+
+/usr/include/kaboutdata.h:
+
+/usr/lib/qt3/include/qimage.h:
+
+/usr/include/kaboutdialog.h:
+
+/usr/include/kdialogbase.h:
+
+/usr/include/kjanuswidget.h:
+
+/usr/lib/qt3/include/qsplitter.h:
+
+/usr/include/klistbox.h:
+
+/usr/lib/qt3/include/qlistbox.h:
+
+/usr/lib/qt3/include/qscrollview.h:
+
+/usr/lib/qt3/include/qscrollbar.h:
+
+/usr/include/netwm.h:
+
+/usr/X11R7/include/X11/Xatom.h:
+
+/usr/include/netwm_def.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.6.3/../../../../include/c++/4.6.3/iostream:

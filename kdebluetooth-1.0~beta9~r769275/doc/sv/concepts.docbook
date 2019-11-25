@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Koncept</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Säkerhet i Blåtand: Para ihop enheter</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Vad är "Par"?</title>
+<para
+>Mycket ofta krävs att en enhet anger sin behörighet när den vill komma åt en tjänst. I detta fall måste de två enheterna <phrase
+>paras ihop</phrase
+>. När två enheter har parats ihop, kan de vara säkra på varandras identiteter. Om de inte paras ihop, skulle de behöva lita på adressen eller namnet på den andra enheten, vilka enkelt kan förfalskas. </para>
+<para
+>Paret bildas oftast en gång mellan två enheter. Efter paret har bildats, <phrase
+>behörighetskontrolleras</phrase
+> anslutningar mellan de två enheterna automatiskt. </para>
+<para
+>Oftast <emphasis
+>startas processen för att bilda par automatiskt när den behövs</emphasis
+>. Du behöver inte bekymra dig om att en enhet inte ingår i ett par om du vill komma åt dess tjänster. Om enheten försöker kontrollera behörighet, men misslyckas, startas processen för att bilda par automatiskt. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Hur fungerar det?</title>
+
+<para
+>Enheter paras ihop för att vara säker på den andra sidans identitet. Men det första steget kan inte göras automatiskt. <emphasis
+>Du</emphasis
+> måste försäkra dig om att du vet vem som vill para ihop sig med din enhet. Det görs genom att skriva in en "PIN-kod" i båda enheter. Begreppet "PIN-kod" användsofta, men är missvisande. Det är inte den sortens "PIN-kod" som du skriver in för att få ut pengar från bankomaten. Du behöver inte komma ihåg den, och efter (!) paret har bildats behöver du inte hålla den hemlig längre. Du behöver bara vara säker på att ingen annan vet om koden innan du (eller du och någon annan) har skrivit in koden i båda enheterna. </para>
+<para
+>För att vara på säkra sidan, bör du inte bara hålla PIN-koden säker medan processen att bilda ett par pågår, utan också använda ett slumptal som inte enkelt kan gissas. KDE Blåtand hjälper dig med detta genom att skapa ett 8-siffrors slumptal själv om möjligt. Du kan också använda bokstäver i en PIN-kod, men då kan du få problem med att skriva in den i PIN-dialogrutan på en mobiltelefon. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>PIN-hjälpprogrammet</title>
+<para
+>Men var ska PIN-koden skrivas in? Som tidigare anmärktes, frågar enheterna dig helt enkelt efter PIN-koden när den behövs. Med BlueZ är saker och ting något mer komplicerat. Det finns flera olika sätt för BlueZ att erhålla PIN-koden från användaren. </para>
+<para
+>Det vanliga sättet är att ställa in BlueZ:s hcid att använda ett "PIN-hjälpprogram" och ange "security user;" i <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Hjälpprogrammet är ett litet verktyg som inte gör något annat än fråga användaren efter en kod och skriva ut koden på standardutmatningen. BlueZ levereras med ett eget hjälpprogram, "bluepin", som verkar orsaka mängder med problem. Det finns också ett trevligare PIN-hjälpprogram som heter "bluez-pin", och sist men inte minst finns Kdebluetooths egna PIN-hjälpprogram "kbluepin". Se <link linkend="installation.setup"
+>inställningsinstruktionerna</link
+> om hur man ställer in PIN-hjälpprogrammet och vad man kan göra om det inte fungerar. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Hantera ihopparade enheter</title>
+<para
+>Efter du har parat ihop många enheter kanske du frågar dig själv vilka enheter som har parats ihop, och vilka som inte har det. Du kanske också vill ta bort ett par. Svaret är i huvudsak dåliga nyheter. </para>
+<para
+>För det första kan ingen enhet någonsin veta säkert med vilka enheter den är ihopparad. När två enheter bildar ett par delar den en hemlig <phrase
+>länknyckel</phrase
+>, som skapades under processen då paret bildades baserat på PIN-koden och vissa andra ingredienser. Eftersom den andra sidan kan bestämma sig för att ta bort en länknyckel utan att meddela det, garanterar inte innehav av en länknyckel till en given enhet att länknyckeln på andra sidan fortfarande finns. Om en länknyckel är borta, finns inte paret längre. Du kan förstås vara säker på att du <emphasis
+>inte</emphasis
+> bildar par med en enhet om du inte har en länknyckel till den. </para>
+<para
+>Så hur kan länknycklar tas bort? Det beror på enheten. De flesta telefoner och handdatorer har en lista med "par" eller "pålitliga" enheter, där du kan ta bort enstaka enheter på något sätt. I nuvarande version av BlueZ-verktygen (2.6), finns länknyckeln oftast i filen <filename
+>/etc/bluetooth/link_key</filename
+>. Eftersom länknyckeln måste hållas hemlig, kan filen bara kommas åt av systemadministratören. Du kan ta bort filen utan problem, men då försvinner alla bildade par, och eftersom filen är en binärfil, kan du inte enkelt redigera den utan ett specialverktyg. För närvarande innehåller inte Kdebluetooth ett verktyg för att läsa eller skriva i den här filen, eftersom hantering av länknycklar (förr eller) senare kommer att ändras i BlueZ. </para>
+<para
+>Det finns något som är särskilt irriterade när du ofta byter mellan olika operativsystem som båda använder Blåtand (oftast Linux &lt;-> Windows): Windows känner inte till länknycklarna som hanteras av BlueZ. Alltså verkar det som om datorn har slängt länknyckeln, och du måste bilda paret igen. Beroende på enheten kanske det inte ens är möjligt att bilda paret igen utan att först ta bort den "gamla" länknyckeln på telefonen. Du kan råka ut för samma problem med BlueZ själv om du väljer "paring single;" i <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Det enda du kan göra för ögonblicket är att vara medveten om problemet, och inte använda Blåtand med båda operativsystem, eller att använda olika Blåtandsenheter för varje operativsystem. Det kan också vara möjligt att flytta länknycklar mellan Windows och Linux, men jag känner inte till något verktyg som kan göra det. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

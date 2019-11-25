@@ -1,0 +1,27 @@
+Global
+- Check for error returns and recovery
+- Test and verify authentication.
+- Better MTU handling (max. MTU different from transports and
+  optimum blocksize ... )
+- confiure.in.in etc..
+- How to code devices in the url? (Host is case sensitive now)
+
+Transport
+- Bluetooth (does someone have unused bluetooth hardware?)
+- Ericcson serial
+- Plain serial
+- Async mode is not really async. If one obex packet can not be received
+  at once it may block ...
+- Remove QByteBuffer with something more intelligent. Is only used in the
+  BFB transport ...
+
+Client:
+- Handling of put and get where the request does not fit in one packet.
+- Error handling of packets that don't fit in the MTU.
+- If we send an abort we wait for an answer, but this is not always true ...
+
+Server:
+- Develop serverinterface.
+- Cleanup.
+- Test and verify.
+- KDE mess with fork

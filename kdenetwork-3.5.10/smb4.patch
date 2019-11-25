@@ -1,0 +1,24 @@
+--- filesharing/advanced/kcm_sambaconf/sambafile.cpp.orig	2019-10-07 21:43:41.216000000 +0000
++++ filesharing/advanced/kcm_sambaconf/sambafile.cpp	2019-10-07 21:47:35.336000000 +0000
+@@ -356,6 +356,12 @@
+     if (_parmOutput.find("3") > -1)
+       _sambaVersion = 3;
+   } 
++  
++  if (testParam.start(KProcess::Block,KProcess::Stdout)) {
++    if (_parmOutput.find("4") > -1)
++      _sambaVersion = 4;
++  } 
++  
+ 
+   kdDebug(5009) << "Samba version = " << _sambaVersion << endl;
+     
+@@ -373,7 +379,7 @@
+   testParam << "testparm";
+   testParam << "-s"; 
+   
+-  if (getSambaVersion() == 3)
++  if ((getSambaVersion() == 3) || (getSambaVersion() == 4))
+      testParam << "-v";
+ 
+ 

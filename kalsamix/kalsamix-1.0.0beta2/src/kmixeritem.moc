@@ -1,0 +1,175 @@
+/****************************************************************************
+** KMixerItem meta object code from reading C++ file 'kmixeritem.h'
+**
+** Created: Wed Dec 20 17:19:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kmixeritem.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KMixerItem::className() const
+{
+    return "KMixerItem";
+}
+
+QMetaObject *KMixerItem::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KMixerItem( "KMixerItem", &KMixerItem::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KMixerItem::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KMixerItem", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KMixerItem::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KMixerItem", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KMixerItem::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"toggleMuted", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "chan", &static_QUType_ptr, "unsigned int", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"toggleMuted", 2, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "val", &static_QUType_ptr, "long", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"setVolume", 2, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "val", &static_QUType_ptr, "long", QUParameter::In },
+	{ "chan", &static_QUType_ptr, "unsigned int", QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"setVolume", 3, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "muted", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"setMuted", 2, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "muted", &static_QUType_int, 0, QUParameter::In },
+	{ "chan", &static_QUType_ptr, "unsigned int", QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"setMuted", 3, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ "en", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"setEnumValue", 1, param_slot_6 };
+    static const QMetaData slot_tbl[] = {
+	{ "toggleMuted(KMixConst::Sense)", &slot_0, QMetaData::Public },
+	{ "toggleMuted(KMixConst::Sense,unsigned int)", &slot_1, QMetaData::Public },
+	{ "setVolume(KMixConst::Sense,long)", &slot_2, QMetaData::Public },
+	{ "setVolume(KMixConst::Sense,long,unsigned int)", &slot_3, QMetaData::Public },
+	{ "setMuted(KMixConst::Sense,int)", &slot_4, QMetaData::Public },
+	{ "setMuted(KMixConst::Sense,int,unsigned int)", &slot_5, QMetaData::Public },
+	{ "setEnumValue(int)", &slot_6, QMetaData::Public }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_ptr, "KMixerItem", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"changed", 1, param_signal_0 };
+    static const QMetaData signal_tbl[] = {
+	{ "changed(KMixerItem*)", &signal_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KMixerItem", parentObject,
+	slot_tbl, 7,
+	signal_tbl, 1,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KMixerItem.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KMixerItem::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KMixerItem" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL changed
+void KMixerItem::changed( KMixerItem* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+bool KMixerItem::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: toggleMuted((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1)))); break;
+    case 1: toggleMuted((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(unsigned int)(*((unsigned int*)static_QUType_ptr.get(_o+2)))); break;
+    case 2: setVolume((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(long)(*((long*)static_QUType_ptr.get(_o+2)))); break;
+    case 3: setVolume((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(long)(*((long*)static_QUType_ptr.get(_o+2))),(unsigned int)(*((unsigned int*)static_QUType_ptr.get(_o+3)))); break;
+    case 4: setMuted((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(int)static_QUType_int.get(_o+2)); break;
+    case 5: setMuted((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(int)static_QUType_int.get(_o+2),(unsigned int)(*((unsigned int*)static_QUType_ptr.get(_o+3)))); break;
+    case 6: setEnumValue((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KMixerItem::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: changed((KMixerItem*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return QWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KMixerItem::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool KMixerItem::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

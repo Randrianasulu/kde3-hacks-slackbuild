@@ -1,0 +1,397 @@
+/****************************************************************************
+** Digikam::CameraController meta object code from reading C++ file 'cameracontroller.h'
+**
+** Created: Wed Jun 14 03:49:11 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "cameracontroller.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::CameraController::className() const
+{
+    return "Digikam::CameraController";
+}
+
+QMetaObject *Digikam::CameraController::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__CameraController( "Digikam::CameraController", &Digikam::CameraController::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::CameraController::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::CameraController", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::CameraController::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::CameraController", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::CameraController::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUMethod slot_0 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_1 = {"slotConnect", 0, 0 };
+    static const QUMethod slot_2 = {"slotProcessNext", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotCancel()", &slot_0, QMetaData::Public },
+	{ "slotConnect()", &slot_1, QMetaData::Public },
+	{ "slotProcessNext()", &slot_2, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ "val", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalBusy", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ "msg", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalInfoMsg", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ "msg", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalErrorMsg", 1, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ "summary", &static_QUType_QString, 0, QUParameter::In },
+	{ "manual", &static_QUType_QString, 0, QUParameter::In },
+	{ "about", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"signalCameraInformations", 3, param_signal_3 };
+    static const QUParameter param_signal_4[] = {
+	{ "val", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"signalConnected", 1, param_signal_4 };
+    static const QUParameter param_signal_5[] = {
+	{ "folderList", &static_QUType_varptr, "\x04", QUParameter::In }
+    };
+    static const QUMethod signal_5 = {"signalFolderList", 1, param_signal_5 };
+    static const QUParameter param_signal_6[] = {
+	{ "infoList", &static_QUType_ptr, "GPItemInfoList", QUParameter::In }
+    };
+    static const QUMethod signal_6 = {"signalFileList", 1, param_signal_6 };
+    static const QUParameter param_signal_7[] = {
+	{ "itemInfo", &static_QUType_ptr, "GPItemInfo", QUParameter::In }
+    };
+    static const QUMethod signal_7 = {"signalUploaded", 1, param_signal_7 };
+    static const QUParameter param_signal_8[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In },
+	{ "status", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_8 = {"signalDownloaded", 3, param_signal_8 };
+    static const QUParameter param_signal_9[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_9 = {"signalSkipped", 2, param_signal_9 };
+    static const QUParameter param_signal_10[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In },
+	{ "status", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_10 = {"signalDeleted", 3, param_signal_10 };
+    static const QUParameter param_signal_11[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In },
+	{ "status", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_11 = {"signalLocked", 3, param_signal_11 };
+    static const QUParameter param_signal_12[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In },
+	{ "thumb", &static_QUType_varptr, "\x0f", QUParameter::In }
+    };
+    static const QUMethod signal_12 = {"signalThumbnail", 3, param_signal_12 };
+    static const QUParameter param_signal_13[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_13 = {"signalExifFromFile", 2, param_signal_13 };
+    static const QUParameter param_signal_14[] = {
+	{ "exifData", &static_QUType_varptr, "\x1d", QUParameter::In }
+    };
+    static const QUMethod signal_14 = {"signalExifData", 1, param_signal_14 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalBusy(bool)", &signal_0, QMetaData::Public },
+	{ "signalInfoMsg(const QString&)", &signal_1, QMetaData::Public },
+	{ "signalErrorMsg(const QString&)", &signal_2, QMetaData::Public },
+	{ "signalCameraInformations(const QString&,const QString&,const QString&)", &signal_3, QMetaData::Public },
+	{ "signalConnected(bool)", &signal_4, QMetaData::Public },
+	{ "signalFolderList(const QStringList&)", &signal_5, QMetaData::Public },
+	{ "signalFileList(const GPItemInfoList&)", &signal_6, QMetaData::Public },
+	{ "signalUploaded(const GPItemInfo&)", &signal_7, QMetaData::Public },
+	{ "signalDownloaded(const QString&,const QString&,int)", &signal_8, QMetaData::Public },
+	{ "signalSkipped(const QString&,const QString&)", &signal_9, QMetaData::Public },
+	{ "signalDeleted(const QString&,const QString&,bool)", &signal_10, QMetaData::Public },
+	{ "signalLocked(const QString&,const QString&,bool)", &signal_11, QMetaData::Public },
+	{ "signalThumbnail(const QString&,const QString&,const QImage&)", &signal_12, QMetaData::Public },
+	{ "signalExifFromFile(const QString&,const QString&)", &signal_13, QMetaData::Public },
+	{ "signalExifData(const QByteArray&)", &signal_14, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::CameraController", parentObject,
+	slot_tbl, 3,
+	signal_tbl, 15,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__CameraController.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::CameraController::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::CameraController" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+// SIGNAL signalBusy
+void Digikam::CameraController::signalBusy( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+// SIGNAL signalInfoMsg
+void Digikam::CameraController::signalInfoMsg( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+// SIGNAL signalErrorMsg
+void Digikam::CameraController::signalErrorMsg( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2, t0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalCameraInformations
+void Digikam::CameraController::signalCameraInformations( const QString& t0, const QString& t1, const QString& t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 3 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    static_QUType_QString.set(o+3,t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalConnected
+void Digikam::CameraController::signalConnected( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 4, t0 );
+}
+
+// SIGNAL signalFolderList
+void Digikam::CameraController::signalFolderList( const QStringList& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 5 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_varptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalFileList
+void Digikam::CameraController::signalFileList( const GPItemInfoList& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 6 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalUploaded
+void Digikam::CameraController::signalUploaded( const GPItemInfo& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 7 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalDownloaded
+void Digikam::CameraController::signalDownloaded( const QString& t0, const QString& t1, int t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 8 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    static_QUType_int.set(o+3,t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSkipped
+void Digikam::CameraController::signalSkipped( const QString& t0, const QString& t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 9 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalDeleted
+void Digikam::CameraController::signalDeleted( const QString& t0, const QString& t1, bool t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 10 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    static_QUType_bool.set(o+3,t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalLocked
+void Digikam::CameraController::signalLocked( const QString& t0, const QString& t1, bool t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 11 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    static_QUType_bool.set(o+3,t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalThumbnail
+void Digikam::CameraController::signalThumbnail( const QString& t0, const QString& t1, const QImage& t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 12 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    static_QUType_varptr.set(o+3,&t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalExifFromFile
+void Digikam::CameraController::signalExifFromFile( const QString& t0, const QString& t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 13 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalExifData
+void Digikam::CameraController::signalExifData( const QByteArray& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 14 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_varptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+bool Digikam::CameraController::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotCancel(); break;
+    case 1: slotConnect(); break;
+    case 2: slotProcessNext(); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::CameraController::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalBusy((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: signalInfoMsg((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 2: signalErrorMsg((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 3: signalCameraInformations((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(const QString&)static_QUType_QString.get(_o+3)); break;
+    case 4: signalConnected((bool)static_QUType_bool.get(_o+1)); break;
+    case 5: signalFolderList((const QStringList&)*((const QStringList*)static_QUType_ptr.get(_o+1))); break;
+    case 6: signalFileList((const GPItemInfoList&)*((const GPItemInfoList*)static_QUType_ptr.get(_o+1))); break;
+    case 7: signalUploaded((const GPItemInfo&)*((const GPItemInfo*)static_QUType_ptr.get(_o+1))); break;
+    case 8: signalDownloaded((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
+    case 9: signalSkipped((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2)); break;
+    case 10: signalDeleted((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 11: signalLocked((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 12: signalThumbnail((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(const QImage&)*((const QImage*)static_QUType_ptr.get(_o+3))); break;
+    case 13: signalExifFromFile((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2)); break;
+    case 14: signalExifData((const QByteArray&)*((const QByteArray*)static_QUType_ptr.get(_o+1))); break;
+    default:
+	return QObject::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::CameraController::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool Digikam::CameraController::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

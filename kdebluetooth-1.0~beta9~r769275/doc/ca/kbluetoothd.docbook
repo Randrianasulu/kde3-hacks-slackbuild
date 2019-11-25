@@ -1,0 +1,218 @@
+<sect1 id="components.kbluetoothd">
+<title
+>kbluetoothd: El cor de L'estructura Bluetooth per a KDE</title>
+<para
+>KBluetoothD és la peça central de l'estructura Bluetooth per a KDE. Està contínuament en execució, usualment a la safata del sistema i inicia altres serveis com el servidor OBEX o bemused sota demanda. La seva a la safata de sistema us indicarà l'estat de les connexions Bluetooth i també us proveirà un ràpid accés a la configuració del servei, els serveis usats recentment, els dispositius accessibles i més. </para>
+<para
+>Els programadors que vulguin integrar els seus programes amb kdebluetooth, hauran de donar un cop d'ull a la <link linkend="developers.kbluetoothd"
+>secció de desenvolupadors</link
+> per a obtenir més informació. </para>
+
+<sect2>
+<title
+>Iniciar kbluetoothd</title>
+<para
+>Podeu iniciar KBluetoothD escrivint <command
+>kbluetoothd</command
+> en la línia de comandaments o iniciant-lo des del Menú K (normalment Sistema/kbluetoothd). </para
+><para
+>KBluetoothD mostra una icona en la safata del sistema, però si no us agrada podeu deshabilitar "Sempre visible" en el menú de context de la icona de la safata del sistema. A continuació kbluetoothd serà executat sense la interfície d'usuari visible, encara que es reinicii. Per a Tornar a habilitar la icona, inicieu altra vegada kbluetoothd. Si s'havia deshabilitat la icona, apareixerà altra vegada durant la durada de la connexió d'un bluetooth. </para>
+<para
+>Si s'està executant kbluetoothd mentre es surt del sistema, s'iniciarà automàticament la següent vegada que hi accediu. Per a evitar que kbluetooth sigui iniciat automàticament, tanqueu-lo i digueu-li que no s'iniciï quan accediu la propera vegada.</para>
+ 
+</sect2>
+
+<sect2>
+<title
+>Què fa kbluetoothd</title>
+<para
+>La característica més important de kbluetoothd és el seu meta servidor de Bluetooth. Atès que kbluetoothd s'està executant contínuament, aquest monitoritza el vostre adaptador Bluetooth, indicant-vos quan es produeixen connexions i peticiones al cau de noms. La idea és que kbluetoothd tan sols és un programa relacionat amb Bluetooth que necessita estar en execució contínuament per a mantenir l'accés a tots els serveis activats. </para>
+<sect3>
+<title
+>El meta servidor</title>
+<para
+>Si sabeu el que fa inetd en un sistema Linux, llavores tindrà una idea de per a què serveix el meta servidor de kbluetoothd: Espera connexions entrants en representació dels manejadors de servei real i els inicia quan sigui necessari. Per això no necessitareu tenir contínuament en execució un servidor obex, però quan algú us enviï un fitxer via OBEX, llavores el servidor OBEX serà iniciat automàticament. </para>
+
+<para
+>Hi ha diverses motius per a usar semblant rodeig: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Redueix el requeriment de memòria quan s'usen diversos serveis. La estructura de Bluetooth per a KDE actualment inclou quatre programes de servidor: El servidor obex, el client de mans lliures, el client bemused i l'eina de xat. Tot i que rarament necessitareu algun d'aquests serveis, encara el podreu deixar habilitat sense problemes. </para>
+</listitem>
+
+<listitem>
+<para
+>La vostra safata del sistema no s'omplirà amb tot d'icones de poc ús. </para>
+</listitem>
+
+<listitem>
+<para
+>Millora la seguretat i fa que el control d'accés sigui simple de gestionar. KBluetoothD farà aparèixer un diàleg demanant permís en les connexions d'entrada. L'usuari pot solapar aquest diàleg i permetre o desautoritzar les connexions per a cada servei i dispositiu. Això permet que cada aplicació gestionada per kbluetoothd tingui control d'accés independent. </para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para
+>-->
+</listitem>
+
+<listitem>
+<para
+>Te la capacitat de fer més fiables els serveis Bluetooth. Cada servidor és iniciat per a cada nova connexió, per això si un servidor peta, podeu intentar-ho una altra vegada sense reiniciar-lo. </para>
+<para
+>En un servidor web es pot produir un coll d'ampolla que haurà de ser gestionat per inetd, però en el cas de Bluetooth, de tota manera la configuració de la connexió tarda alguns segons i cada acció la sol iniciar l'usuari, el qual fa ús d'un meta servidor no crític. </para>
+</listitem>
+
+<listitem>
+<para
+>El registre del servei amb el servidor SDP és molt simple. Si us plau, consulteu la <link linkend="developers.kbluetoothd"
+>secció de desenvolupament</link
+> per esbrinar com gestiona kbluetoothd el registre de l¡aplicació amb el servidor SDP. </para>
+</listitem>
+
+<listitem>
+<para
+>Es poden usar simples programes de servidor -fins i tot scripts- per a implementar un servidor Bluetooth sense usar funcions relacionades amb Bluetooth. </para>
+</listitem>
+</itemizedlist>
+<para
+>Podeu des/habilitar els serveis usats per kbluetoothd amb el mòdul del centre de control sota la pestanya "Serveis locals". També podeu configurar opcions específiques del servei seleccionant un servei i fent clic sobre el botó "Configura...". </para>
+<para
+>Sota la pestanya "Confirmació" podeu personalitzar com reaccionarà kbluetoothd amb les connexions entrants. </para>
+</sect3>
+
+
+<sect3>
+<title
+>El servei Descobriment de dispositius</title>
+<para
+>Per a moltes aplicacions és important saber si un dispositiu en concret és no accessible, fins i tot notificar si un dispositiu es connecta o desconnecta. A diferència de USB, on una estructura de connexió en calent (hotplug) notifica els nous dispositius, a Bluetooth no hi ha aquest servei. </para>
+
+<para
+>kbluetoothd omple aquest buit amb el servei Descobriment de dispositius. Aquest cerca periòdicament dispositius propers i manté una llista dels que estan actualment en línia. Per a accedir al dispositiu trobat, feu clic amb el botó dret sobre la icona de la safata del sistema de kbluetoothd i feu un cop d'ull al menú "Obre recent". Aquest menú està format per una secció per als serveis accedits recentment (tals com "obex ftp on MyPhone") i -si s'han trobat dispositius- una segona secció amb una llista de dispositius. Fent clic sobre un d'ells es mostraran els serveis d'aquest dispositiu en konqueror. </para>
+<para
+>En el mòdul del centre de control de kbluetoothd podeu configurar si i amb quina freqüència kbluetoothd cercarà els dispositius ("Actualitza periòdicament la llista de veïns:"). Us recomano no usar intervals inferiors a un minut, atès que si no les aplicacions poden tenir problemes cercant dispositius. Això es deu a que la majoria dels dispositius no esperen que altres aplicacions usin bluetooth alhora. </para>
+<para
+>Molts dispositius <phrase
+>no es poden descobrir</phrase
+> per omissió per motius de privacitat/seguretat. En aquest cas el dispositiu no serà detectat quan es cerquen dispositius. En aquest cas, kbluetoothd intenta accedir a cadascun d'aquests dispositius individualment. Podeu afegir un dispositiu a la llista de no descobert fent clic a "Opcions de recerca addicionals per a dispositius que no es poden descobrir". Si us plau, tingueu en compte que cadascun dels que configure es podran trobar temporalment a menys que conegueu la seva adreça de maquinari per a poder-la afegir a la llista. </para>
+<para
+>Això pot prevenir que altres programes cerquin dispositius o fins i tot estableixin una connexió a d'altres dispositius durant 30 segons <emphasis
+>per dispositiu</emphasis
+> si el dispositiu no es accessible actualment. De manera que haureu d'usar un interval de temps força gran. 10 minuts podria ser un valor raonable. Simplement intenteu-ho i trobeu un interval el prou petit fins que comenci a ser molest. </para>
+
+<para
+>Tenir una llista de dispositius que no es poden abastar no és molt útil. En el seu lloc useu el servei de descobriment de dispositius per a executar <phrase
+>Treballs de descobriment</phrase
+> quan un dispositiu sigui accessible o desaparegui. Aquests treballs de descobriment són scripts simples. Podeu escriure amb facilitat el vostre propi script -consulteu la secció de desenvolupament sobre <link linkend="developers.kbluetoothd.discovery"
+>scripts de descobriment</link
+>. Però kbluetoothd ja inclou alguns scripts, incloent: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Protocol de descobriment</term>
+<listitem
+><para
+>Aquest script crea una pàgina html amb informació tècnica per a cada dispositiu quan aquest és descobert per primera vegada. El podeu usar si teniu curiositat per a veure qui està usant Bluetooth a prop vostre. Tenir aquest script activat a tota hora no causarà cap mal, ja que tan sols intentarà accedir al dispositiu quan es descobreixi per primera vegada o després que s'hagi esborrat la pàgina html corresponent. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kopete_AutoAway</term>
+<listitem
+><para
+>Estableix l'estat de disponibilitat de kopete depenent de si (junt amb el vostre telèfon) està o no en el radi d'acció. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Photo_Copy</term>
+<listitem
+><para
+>Aquest script comprova una carpeta en el vostre telèfon via kio_obex per a comprovar si hi ha nous fitxers i copiar-los a un directori local. Els renomenarà amb la data del fitxer. He escrit aquest script per al meu Nokia 6230. Si el voleu usar per al vostre propi telèfon, haureu de canviar l'script en alguns llocs. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Screensaver</term>
+<listitem
+><para
+>Inicia o tanca el salvapantalles/blocat_de_pantalla cada vegada que en el radi d'acció es troba o desapareix un dels dispositius monitoritzats. </para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>La majoria dels scripts primer s'hauran de configurar per a que funcionin correctament. Fer clic a "Configura" normalment farà aparèixer kedit amb la part de la configuració de l'script. Sigueu conscient que <emphasis
+>haureu de limitar els dispositius relacionats amb cada treball</emphasis
+>, si no voleu que l'script s'executi quan algú més passa amb el telèfon Bluetooth activat. </para>
+
+</sect3>
+
+<sect3>
+<title
+>La llista "Serveis usats recentment"</title>
+<para
+>Podeu accedir ràpidament als serveis que heu usat anteriorment cercant en el submenú "Usats recentment" de la icona de kbluetoothd en la safata del sistema de . Si heu enviat fitxers al vostre mòbil amb el nom "Meu telèfon" via kbtobexclient, llavores trobareu una entrada de menú amb el nom "Client d'enviament obex - Meu telèfon", la qual iniciarà kbtobexclient i connectarà immediatament amb el vostre telèfon sense perdre temps en el procés de recerca. </para>
+<para
+>Si us plau, tingueu en compte que kbluetoothd mostra tots els serveis usats recentment, sense importar si el dispositiu es troba o no en el radi d'acció. </para>
+<para
+>Aquesta característica haurà d'estar suportada per l'aplicació respectiva. </para>
+</sect3>
+
+<sect3>
+<title
+>Monitor de connexió</title>
+<para
+>Podeu veure si hi ha una connexió Bluetooth cercant fent una ullada a la icona de kbluetoothd en la safata del sistema. Un parpelleig indica el començament d'una connexió i es tornarà blava una vegada la connexió hagi estat establerta. </para>
+<para
+>Podeu obtenir més informació sobre la connexió actual fent clic dret sobre la icona en la safata del sistema i seleccionant "Detalls de la connexió...". </para>
+<para
+>El que kbluetoothd mostra aquí són els enllaços ACL, no les connexions Rfcomm. Si esteu connectat a tan sols un dispositiu amb diversos programes (mans lliures i bemused, per exemple), es mostrarà com a una connexió, atès que tan sols hi pot haver un enllaç ACL a la vegada amb el mateix dispositiu. </para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title
+>Configurar kbluetoothd</title>
+<para
+>Usualment, kbluetoothd i els servidors gestionats per aquest haurien de funcionar trets de la caixa -nous de trinca-. Però hi ha algunes opcions que poden canviar. Per a configurar kbluetoothd, també pot usar el centre de control de KDE i anar a <guimenuitem
+>Internet i xarxa -> Serveis Bluetooth</guimenuitem
+>, o feu clic dret sobre la icona en la safata del sistema de kbluetoothd i seleccioneu <guimenuitem
+>Configuració -> Serveis...</guimenuitem
+> </para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title
+>Confirmació de les connexions entrants</title>
+<para
+>En aquesta pestanya podeu canviar les preferències de confirmació per a les connexions entrants. Per omissió, kbluetoothd us mostra un diàleg de confirmació abans d'iniciar el programa servidor actual (como el servidor d'enviament OBEX). Aquí podeu deshabilitar aquest diàleg de confirmació per a alguns dispositius/serveis o indicar-li a kbluetoothd que refusi silenciosament les connexions entrants. </para>
+<para
+>Es poden afegir entrades per a nous dispositius seleccionant la caixa de selecció "Accepta sempre" d'un diàleg de confirmació. </para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title
+>Serveis locals</title>
+<para
+>En aquesta pestanya podeu habilitar o deshabilitar determinats serveis Bluetooth que siguin gestionats per kbluetoothd. Alguns serveis també proveeixen algunes opcions de configuració, com el servidor bemused, per exemple. En aquest cas, <guibutton
+>Configura...</guibutton
+> serà habilitat quan seleccioneu el servei respectiu. </para>
+<para
+>Ja que kbluetoothd assigna automàticament els canals rfcomm als serveis, el canal emprat per un servei es pot canviar quan esteu usant altres servidors Bluetooth. Si necessiteu saber quin canal s'ha assignat a algun servei, se us mostrarà aquest diàleg. </para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

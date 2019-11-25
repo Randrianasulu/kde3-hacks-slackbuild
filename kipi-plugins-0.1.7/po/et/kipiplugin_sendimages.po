@@ -1,0 +1,446 @@
+# translation of kipiplugin_sendimages.po to Estonian
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Marek Laane <bald@starman.ee>, 2004-2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sendimages\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-03-23 21:55+0300\n"
+"Last-Translator: Marek Laane <bald@starman.ee>\n"
+"Language-Team: Estonian <kde-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Marek Laane"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "bald@starman.ee"
+
+#: listimageserrordialog.cpp:67
+msgid "Image File Name"
+msgstr "Pildifaili nimi"
+
+#: listimageserrordialog.cpp:68
+msgid "From Album"
+msgstr "Albumist"
+
+#: plugin_sendimages.cpp:76
+msgid "Email Images..."
+msgstr "Saada pildid e-postiga..."
+
+#: plugin_sendimages.cpp:148
+msgid "Preparing images to send"
+msgstr "Piltide ettevalmistamine saatmiseks"
+
+#: plugin_sendimages.cpp:170
+#, c-format
+msgid ""
+"_n: Preparing 1 image to send....\n"
+"Preparing %n images to send...."
+msgstr ""
+"1 pildi ettevalmistamine saatmiseks...\n"
+"%n pildi ettevalmistamine saatmiseks..."
+
+#: plugin_sendimages.cpp:176
+msgid "Resizing '%1' from Album '%2'..."
+msgstr "'%1' (albumist '%2') suuruse muutmine..."
+
+#: plugin_sendimages.cpp:183
+msgid "Using '%1' from Album '%2' without resizing..."
+msgstr "'%1' (albumist '%2') kasutamine suurust muutmata..."
+
+#: plugin_sendimages.cpp:206
+msgid "Failed to resize '%1' from Album '%2'"
+msgstr "'%1' (albumist '%2') suuruse muutmine ebaõnnestus"
+
+#: plugin_sendimages.cpp:225
+msgid "Resizing '%1' from Album '%2' completed."
+msgstr "'%1' (albumist '%2') suurus muudetud."
+
+#: plugin_sendimages.cpp:232
+msgid "All preparatory operations completed."
+msgstr "Kõik ettevalmistavad toimingud on tehtud."
+
+#: plugin_sendimages.cpp:270
+msgid "Creating comments file if necessary..."
+msgstr "Vajadusel kommentaaride faili loomine..."
+
+#: plugin_sendimages.cpp:275
+msgid "Starting mailer agent..."
+msgstr "E-posti kliendi käivitamine..."
+
+#: sendimages.cpp:335
+msgid "no caption"
+msgstr "pealdis puudub"
+
+#: sendimages.cpp:339
+msgid ""
+"Caption for image \"%1\": %2\n"
+msgstr ""
+"Pildi \"%1\" pealdis: %2\n"
+
+#: sendimages.cpp:348
+msgid ""
+"Tags: %2\n"
+msgstr ""
+"Sildid: %2\n"
+
+#: sendimages.cpp:359 sendimages.cpp:365
+msgid "comments.txt"
+msgstr "kommentaarid.txt"
+
+#: sendimages.cpp:376
+msgid "Error during resize images process."
+msgstr "Viga piltide suuruse muutmisel."
+
+#: sendimages.cpp:377
+msgid "Cannot resize the following image files:"
+msgstr "Järgmiste pildifailide suuruse muutmine ebaõnnestus:"
+
+#: sendimages.cpp:378
+msgid "Do you want them to be added as attachments (without resizing)?"
+msgstr ""
+"Kas soovid lisada need pildifailid kaasatud failidena (suurust muutmata)?"
+
+#: sendimages.cpp:488 sendimages.cpp:517 sendimages.cpp:539 sendimages.cpp:565
+#: sendimages.cpp:628 sendimages.cpp:885
+msgid ""
+"Cannot start '%1' program;\n"
+"please check your installation."
+msgstr ""
+"Programmi '%1' käivitamine ebaõnnestus.\n"
+"Palun kontrolli paigaldust."
+
+#: sendimages.cpp:645
+#, c-format
+msgid "Cannot remove temporary folder %1."
+msgstr "Ajutise kataloogi %1 eemaldamine ebaõnnestus."
+
+#: sendimagesdialog.cpp:140
+msgid "Email Images Options"
+msgstr "Piltide e-postiga saatmise valikud"
+
+#: sendimagesdialog.cpp:158
+msgid "Send Images"
+msgstr "Piltide saatmine"
+
+#: sendimagesdialog.cpp:161
+msgid "A Kipi plugin for emailing images"
+msgstr "Kipi piltide e-postiga saatmise plugin"
+
+#: sendimagesdialog.cpp:164
+msgid "Author and maintainer"
+msgstr "Autor ja hooldaja"
+
+#: sendimagesdialog.cpp:167 sendimagesdialog.cpp:170
+msgid "Developer"
+msgstr "Arendaja"
+
+#: sendimagesdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr "Plugina käsiraamat"
+
+#: sendimagesdialog.cpp:251
+msgid "Images"
+msgstr "Pildid"
+
+#: sendimagesdialog.cpp:252
+msgid "Images to EMail"
+msgstr "E-postiga saadetavad pildid"
+
+#: sendimagesdialog.cpp:264
+msgid ""
+"<p>This is the list of images  to email. If you want to add some images click "
+"on the 'Add Images...' button or use the drag-and-drop."
+msgstr ""
+"<p>See on e-postiga saadetavate piltide nimekiri. Kui soovid siia pilte lisada, "
+"klõpsa nupule 'Lisa pildid...' või lihtsalt lohista pildid nimekirja."
+
+#: sendimagesdialog.cpp:270
+msgid "&Add ..."
+msgstr "Lis&a..."
+
+#: sendimagesdialog.cpp:271
+msgid "<p>Add images to the list."
+msgstr "<p>Lisa pildid nimekirja."
+
+#: sendimagesdialog.cpp:273
+msgid "<p>Remove selected images from the list."
+msgstr "<p>Eemalda valitud pildid nimekirjast."
+
+#: sendimagesdialog.cpp:281
+msgid "<p>Preview of the currently selected image on the list."
+msgstr "<p>Nimekirjas valitud pildi eelvaatlus."
+
+#: sendimagesdialog.cpp:288
+msgid "Image Description"
+msgstr "Pildi kirjeldus"
+
+#: sendimagesdialog.cpp:292
+msgid "<p>The description of the currently selected image on the list."
+msgstr "<p>Nimekirjas valitud pildi kirjeldus."
+
+#: sendimagesdialog.cpp:364
+msgid "Mail"
+msgstr "E-post"
+
+#: sendimagesdialog.cpp:365
+msgid "Mail Options"
+msgstr "E-posti valikud"
+
+#: sendimagesdialog.cpp:375
+msgid "Mail agent:"
+msgstr "E-posti rakendus:"
+
+#: sendimagesdialog.cpp:390
+msgid ""
+"<p>Select here your preferred external mail agent program.These mail agent "
+"versions are supported:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+msgstr ""
+"<p>Vali eelistatud e-posti rakendus. Toetatud on järgmised versioonid:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+
+#: sendimagesdialog.cpp:412
+msgid "&Thunderbird binary path:"
+msgstr "&Thunderbirdi binaarprogrammi asukoht:"
+
+#: sendimagesdialog.cpp:422
+msgid "<p>The path name to the Thunderbird binary program."
+msgstr "<p>Thunderbirdi binaarprogrammi asukoht."
+
+#: sendimagesdialog.cpp:426
+msgid "Attach a file with caption and tags"
+msgstr "Pealdise ja siltidega faili kaasamine"
+
+#: sendimagesdialog.cpp:427
+msgid ""
+"<p>If you enable this option, all image captions and tags will be added as an "
+"attached file."
+msgstr ""
+"<p>Sisselülitamisel lisatakse kõik pildi pealdised ja sildid kirjale kaasatud "
+"failina."
+
+#: sendimagesdialog.cpp:430
+msgid "Generate new filenames from image captions (if available)"
+msgstr "Uute failinimede loomine pildi pealdiste põhjal (kui neid on)"
+
+#: sendimagesdialog.cpp:435
+msgid "Image Properties"
+msgstr "Pildi omadused"
+
+#: sendimagesdialog.cpp:439
+msgid "<p>The properties of images to send."
+msgstr "<p>Saadetavate piltide omadused."
+
+#: sendimagesdialog.cpp:444
+msgid "Adjust image properties"
+msgstr "Pildi omaduste kohandamine"
+
+#: sendimagesdialog.cpp:445
+msgid ""
+"<p>If you enable this option, all images to send can be resized and "
+"recompressed."
+msgstr ""
+"<p>Sisselülitamisel saab kõigi saadetavate piltide suurust ja tihendust muuta."
+
+#: sendimagesdialog.cpp:454
+msgid "Very Small (320 pixels)"
+msgstr "Väga väike (320 pikslit)"
+
+#: sendimagesdialog.cpp:455
+msgid "Small (640 pixels)"
+msgstr "Väike (640 pikslit)"
+
+#: sendimagesdialog.cpp:456 sendimagesdialog.cpp:460
+msgid "Medium (800 pixels)"
+msgstr "Keskmine (800 pikslit)"
+
+#: sendimagesdialog.cpp:457
+msgid "Big (1024 pixels)"
+msgstr "Suur (1024 pikslit)"
+
+#: sendimagesdialog.cpp:458
+msgid "Very Big (1280 pixels)"
+msgstr "Väga suur (1200 pikslit)"
+
+#: sendimagesdialog.cpp:459
+msgid "Huge - for printing (1600 pixels)"
+msgstr "Hiiglaslik - trükkimiseks (1600 pikslit)"
+
+#: sendimagesdialog.cpp:461
+msgid ""
+"<p>Select here the images size to send:"
+"<p><b>%1</b>: use this if you have a very slow internet connection or if the "
+"target mailbox size is very limited."
+"<p><b>%2</b>: use this if you have a slow internet connection and if the target "
+"mailbox size is limited."
+"<p><b>%3</b>: this is the default value for a medium internet connection and a "
+"target mailbox size."
+"<p><b>%4</b>: use this if you have a high-speed internet connection and if the "
+"target mailbox size is not limited."
+"<p><b>%5</b>: use this if you have no size or speed restrictions."
+"<p><b>%6</b>: use this only for printing purpose."
+"<p>"
+msgstr ""
+"<p>Vali siin saadetavate piltide suurus:"
+"<p><b>%1</b> kui sul on väga aeglane internetiühendus ja saaja postkasti "
+"vastuvõtumaht on väga väike."
+"<p><b>%2</b>: kui sul on aeglane internetiühendus ja saaja postkasti "
+"vastuvõtumaht on väike."
+"<p><b>%3</b>: vaikeväärtus tavalise internetiühenduse ja saaja postkasti "
+"vastuvõtumahu korral."
+"<p><b>%4</b>: kui sul on kiire internetiühendus ja saaja postkasti "
+"vastuvõtumaht ei ole piiratud."
+"<p><b>%5</b>: kui kiirus ega suurus ei sea mingeid piiranguid."
+"<p><b>%6</b>: see on mõeldud ainult trükkimiseks."
+"<p>"
+
+#: sendimagesdialog.cpp:472
+msgid "very small (320 pixels)"
+msgstr "väga väike (320 pikslit)"
+
+#: sendimagesdialog.cpp:473
+msgid "small (640 pixels)"
+msgstr "väike (640 pikslit)"
+
+#: sendimagesdialog.cpp:474
+msgid "medium (800 pixels)"
+msgstr "keskmine (800 pikslit)"
+
+#: sendimagesdialog.cpp:475
+msgid "big (1024 pixels)"
+msgstr "suur (1024 pikslit)"
+
+#: sendimagesdialog.cpp:476
+msgid "very big (1280 pixels)"
+msgstr "väga suur (1200 pikslit)"
+
+#: sendimagesdialog.cpp:477
+msgid "huge - for printing (1600 pixels)"
+msgstr "hiiglaslik (1600 pikslit)"
+
+#: sendimagesdialog.cpp:480
+msgid "Sent image size:"
+msgstr "Saadetavate piltide suurus:"
+
+#: sendimagesdialog.cpp:490
+msgid "Sent image quality level:"
+msgstr "Saadetavate piltide kvaliteet:"
+
+#: sendimagesdialog.cpp:492
+msgid "<p>The new compression value of images to send:<p>"
+msgstr "<p>Saadetavate piltide uus tihendusväärtus:<p>"
+
+#: sendimagesdialog.cpp:493
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: väga tugev tihendus"
+"<p><b>25</b>: tugev tihendus"
+"<p><b>50</b>: keskmine tihendus"
+"<p><b>75</b>: nõrk tihendus (vaikeväärtus)"
+"<p><b>100</b>: tihendus puudub"
+
+#: sendimagesdialog.cpp:510
+msgid "<p>Select here the images files format to send.<p>"
+msgstr "<p>Vali siin saadetavate piltide failivorming.<p>"
+
+#: sendimagesdialog.cpp:511
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Joint Photographic Experts Groupi failivorming on korralik "
+"failivorming veebile, kuid kasutab andmetekaoga tihendust."
+"<p><b>PNG</b>: Portable Network Graphicsi vorming on asjalik kadudeta, porditav "
+"ja korraliku tihendusega rasterpiltide failivorming. PNG pakub patendivaba "
+"asendust GIF-vormingule ning asendab suurel määral ka TIFF-vormingut. PNG on "
+"mõeldud ühtlasi korralikuks esitamiseks veebis, mistõttu seda saab igati "
+"kasutada internetipiltides. Samuti suudab PNG salvestada gamma- ja värviandmeid "
+"paljudel platvormidel korrektsete värvipiltide esitamiseks."
+
+#: sendimagesdialog.cpp:521
+msgid "Image file format:"
+msgstr "Piltide failivorming:"
+
+#: sendimagesdialog.cpp:532
+msgid "Maximum Email size limit:"
+msgstr "E-kirja maks. suurus:"
+
+#: sendimagesdialog.cpp:533
+msgid "MB"
+msgstr "MB"
+
+#: sendimagesdialog.cpp:623
+#, c-format
+msgid "Caption: %1"
+msgstr "Pealdis: %1"
+
+#: sendimagesdialog.cpp:624
+#, c-format
+msgid "Album: %1"
+msgstr "Album: %1"
+
+#: sendimagesdialog.cpp:654
+msgid "You must add some images to send."
+msgstr "Saatmiseks tuleb ikka mõni pilt ka valida."
+
+#: sendimagesdialog.cpp:664
+msgid "Thunderbird binary path is not valid. Please check it."
+msgstr ""
+"Thunderbirdi binaarprogrammi asukoht ei ole õige. Palun kontrolli seda."
+
+#: sendimagesdialog.cpp:683
+msgid "Image List"
+msgstr "Piltide nimekiri"
+
+#: sendimagesdialog.cpp:685
+#, c-format
+msgid ""
+"_n: Image List (1 item)\n"
+"Image List (%n items)"
+msgstr ""
+"Piltide nimekiri (1 element)\n"
+"Piltide nimekiri (%n elementi)"

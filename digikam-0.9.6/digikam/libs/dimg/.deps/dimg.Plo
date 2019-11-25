@@ -1,0 +1,481 @@
+dimg.lo: dimg.cpp /usr/include/stdc-predef.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/wchar.h \
+ /usr/include/c++/4.8.4/cstdio \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/c++config.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/os_defines.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/cpu_defines.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/lib/qt3/include/qfile.h \
+ /usr/lib/qt3/include/qiodevice.h /usr/lib/qt3/include/qglobal.h \
+ /usr/lib/qt3/include/qconfig.h /usr/lib/qt3/include/qmodules.h \
+ /usr/lib/qt3/include/qfeatures.h /usr/lib/qt3/include/qcstring.h \
+ /usr/lib/qt3/include/qmemarray.h /usr/lib/qt3/include/qgarray.h \
+ /usr/lib/qt3/include/qshared.h /usr/lib/qt3/include/qwinexport.h \
+ /usr/include/string.h /usr/include/xlocale.h \
+ /usr/lib/qt3/include/qstring.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/lib/qt3/include/qfileinfo.h /usr/lib/qt3/include/qfile.h \
+ /usr/lib/qt3/include/qdatetime.h /usr/lib/qt3/include/qnamespace.h \
+ /usr/lib/qt3/include/qmap.h /usr/lib/qt3/include/qdatastream.h \
+ /usr/lib/qt3/include/qpair.h /usr/lib/qt3/include/qvaluelist.h \
+ /usr/lib/qt3/include/qtl.h /usr/lib/qt3/include/qtextstream.h \
+ /usr/include/libkdcraw/version.h /usr/include/libkdcraw/kdcraw.h \
+ /usr/lib/qt3/include/qstring.h /usr/lib/qt3/include/qobject.h \
+ /usr/lib/qt3/include/qobjectdefs.h /usr/lib/qt3/include/qwindowdefs.h \
+ /usr/lib/qt3/include/qevent.h /usr/lib/qt3/include/qregion.h \
+ /usr/lib/qt3/include/qrect.h /usr/lib/qt3/include/qsize.h \
+ /usr/lib/qt3/include/qpoint.h /usr/lib/qt3/include/qmime.h \
+ /usr/lib/qt3/include/qmap.h /usr/lib/qt3/include/qimage.h \
+ /usr/lib/qt3/include/qpixmap.h /usr/lib/qt3/include/qpaintdevice.h \
+ /usr/lib/qt3/include/qcolor.h /usr/lib/qt3/include/qstringlist.h \
+ /usr/lib/qt3/include/qstrlist.h /usr/lib/qt3/include/qptrlist.h \
+ /usr/lib/qt3/include/qglist.h /usr/lib/qt3/include/qptrcollection.h \
+ /usr/include/kdemacros.h /usr/include/libkdcraw/libkdcraw_export.h \
+ /usr/include/libkdcraw/rawdecodingsettings.h \
+ /usr/lib/qt3/include/qrect.h /usr/include/libkdcraw/dcrawinfocontainer.h \
+ /usr/lib/qt3/include/qdatetime.h /usr/lib/qt3/include/qsize.h \
+ ../../../digikam/libs/dimg/loaders/pngloader.h /usr/include/png.h \
+ /usr/include/zlib.h /usr/include/zconf.h /usr/include/sys/types.h \
+ /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/pngconf.h /usr/include/setjmp.h \
+ /usr/include/bits/setjmp.h /usr/include/bits/timex.h \
+ ../../../digikam/libs/dimg/loaders/dimgloader.h \
+ /usr/lib/qt3/include/qcstring.h /usr/lib/qt3/include/qvariant.h dimg.h \
+ /usr/lib/qt3/include/qpixmap.h ../../../digikam/digikam/digikam_export.h \
+ ../../../config.h drawdecoding.h /usr/lib/qt3/include/qvaluelist.h \
+ /usr/lib/qt3/include/qpointarray.h \
+ /usr/include/libkdcraw/rawdecodingsettings.h dcolor.h \
+ /usr/lib/qt3/include/qcolor.h dcolorpixelaccess.h dcolorblend.h \
+ dcolorcomposer.h ../../../digikam/libs/dimg/loaders/jpegloader.h \
+ /usr/include/jpeglib.h /usr/include/jconfig.h /usr/include/jmorecfg.h \
+ ../../../digikam/libs/dimg/loaders/tiffloader.h /usr/include/tiffio.h \
+ /usr/include/tiff.h /usr/include/tiffconf.h /usr/include/tiffvers.h \
+ /usr/include/tiff.h ../../../digikam/libs/dimg/loaders/ppmloader.h \
+ ../../../digikam/libs/dimg/loaders/rawloader.h drawdecoding.h \
+ ../../../digikam/libs/dimg/loaders/jp2kloader.h \
+ /usr/include/jasper/jasper.h /usr/include/jasper/jas_config.h \
+ /usr/include/jasper/jas_types.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
+ /usr/include/bits/stdlib-float.h /usr/include/jasper/jas_version.h \
+ /usr/include/jasper/jas_init.h /usr/include/jasper/jas_cm.h \
+ /usr/include/jasper/jas_icc.h /usr/include/jasper/jas_stream.h \
+ /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/fcntl-linux.h /usr/include/bits/uio.h \
+ /usr/include/bits/stat.h /usr/include/jasper/jas_fix.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h /usr/include/jasper/jas_debug.h \
+ /usr/include/jasper/jas_getopt.h /usr/include/jasper/jas_image.h \
+ /usr/include/jasper/jas_seq.h /usr/include/jasper/jas_math.h \
+ /usr/include/assert.h /usr/include/jasper/jas_malloc.h \
+ /usr/include/jasper/jas_string.h /usr/include/jasper/jas_tmr.h \
+ /usr/include/sys/time.h /usr/include/jasper/jas_tvp.h \
+ ../../../digikam/libs/dimg/loaders/qimageloader.h \
+ ../../../digikam/libs/dimg/filters/icctransform.h exposurecontainer.h \
+ ddebug.h /usr/include/kdebug.h /usr/include/kdelibs_export.h \
+ /usr/lib/qt3/include/qglobal.h dimgprivate.h \
+ /usr/lib/qt3/include/qshared.h \
+ ../../../digikam/libs/dimg/loaders/dimgloaderobserver.h dimg.h
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/c++/4.8.4/cstdio:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/c++config.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/os_defines.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/cpu_defines.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/lib/qt3/include/qfile.h:
+
+/usr/lib/qt3/include/qiodevice.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qconfig.h:
+
+/usr/lib/qt3/include/qmodules.h:
+
+/usr/lib/qt3/include/qfeatures.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qmemarray.h:
+
+/usr/lib/qt3/include/qgarray.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+/usr/lib/qt3/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/qt3/include/qfileinfo.h:
+
+/usr/lib/qt3/include/qfile.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/lib/qt3/include/qnamespace.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qdatastream.h:
+
+/usr/lib/qt3/include/qpair.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qtl.h:
+
+/usr/lib/qt3/include/qtextstream.h:
+
+/usr/include/libkdcraw/version.h:
+
+/usr/include/libkdcraw/kdcraw.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qobjectdefs.h:
+
+/usr/lib/qt3/include/qwindowdefs.h:
+
+/usr/lib/qt3/include/qevent.h:
+
+/usr/lib/qt3/include/qregion.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qmime.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qimage.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/lib/qt3/include/qpaintdevice.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/lib/qt3/include/qglist.h:
+
+/usr/lib/qt3/include/qptrcollection.h:
+
+/usr/include/kdemacros.h:
+
+/usr/include/libkdcraw/libkdcraw_export.h:
+
+/usr/include/libkdcraw/rawdecodingsettings.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+/usr/include/libkdcraw/dcrawinfocontainer.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+../../../digikam/libs/dimg/loaders/pngloader.h:
+
+/usr/include/png.h:
+
+/usr/include/zlib.h:
+
+/usr/include/zconf.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/pngconf.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/bits/timex.h:
+
+../../../digikam/libs/dimg/loaders/dimgloader.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qvariant.h:
+
+dimg.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+../../../digikam/digikam/digikam_export.h:
+
+../../../config.h:
+
+drawdecoding.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qpointarray.h:
+
+/usr/include/libkdcraw/rawdecodingsettings.h:
+
+dcolor.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+dcolorpixelaccess.h:
+
+dcolorblend.h:
+
+dcolorcomposer.h:
+
+../../../digikam/libs/dimg/loaders/jpegloader.h:
+
+/usr/include/jpeglib.h:
+
+/usr/include/jconfig.h:
+
+/usr/include/jmorecfg.h:
+
+../../../digikam/libs/dimg/loaders/tiffloader.h:
+
+/usr/include/tiffio.h:
+
+/usr/include/tiff.h:
+
+/usr/include/tiffconf.h:
+
+/usr/include/tiffvers.h:
+
+/usr/include/tiff.h:
+
+../../../digikam/libs/dimg/loaders/ppmloader.h:
+
+../../../digikam/libs/dimg/loaders/rawloader.h:
+
+drawdecoding.h:
+
+../../../digikam/libs/dimg/loaders/jp2kloader.h:
+
+/usr/include/jasper/jasper.h:
+
+/usr/include/jasper/jas_config.h:
+
+/usr/include/jasper/jas_types.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/jasper/jas_version.h:
+
+/usr/include/jasper/jas_init.h:
+
+/usr/include/jasper/jas_cm.h:
+
+/usr/include/jasper/jas_icc.h:
+
+/usr/include/jasper/jas_stream.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/bits/fcntl-linux.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/jasper/jas_fix.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/jasper/jas_debug.h:
+
+/usr/include/jasper/jas_getopt.h:
+
+/usr/include/jasper/jas_image.h:
+
+/usr/include/jasper/jas_seq.h:
+
+/usr/include/jasper/jas_math.h:
+
+/usr/include/assert.h:
+
+/usr/include/jasper/jas_malloc.h:
+
+/usr/include/jasper/jas_string.h:
+
+/usr/include/jasper/jas_tmr.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/jasper/jas_tvp.h:
+
+../../../digikam/libs/dimg/loaders/qimageloader.h:
+
+../../../digikam/libs/dimg/filters/icctransform.h:
+
+exposurecontainer.h:
+
+ddebug.h:
+
+/usr/include/kdebug.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+dimgprivate.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+../../../digikam/libs/dimg/loaders/dimgloaderobserver.h:
+
+dimg.h:

@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Funda Wang <fundawang@linux.net.cn>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sendimages\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2005-05-15 18:54+0800\n"
+"Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
+"Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "开源软件国际化之 KDE 简体中文组"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "i18n-translation@lists.linux.net.cn"
+
+#: listimageserrordialog.cpp:67
+msgid "Image File Name"
+msgstr "图像文件名"
+
+#: listimageserrordialog.cpp:68
+msgid "From Album"
+msgstr "来自相册"
+
+#: plugin_sendimages.cpp:76
+msgid "Email Images..."
+msgstr "电邮图像..."
+
+#: plugin_sendimages.cpp:148
+msgid "Preparing images to send"
+msgstr "准备要发送的图像"
+
+#: plugin_sendimages.cpp:170
+#, c-format
+msgid ""
+"_n: Preparing 1 image to send....\n"
+"Preparing %n images to send...."
+msgstr "正在准备要发送的 %n 个图像..."
+
+#: plugin_sendimages.cpp:176
+msgid "Resizing '%1' from Album '%2'..."
+msgstr "正在从相册“%2”缩放“%1”..."
+
+#: plugin_sendimages.cpp:183
+msgid "Using '%1' from Album '%2' without resizing..."
+msgstr "正在使用相册“%2”中的“%1”而不进行缩放..."
+
+#: plugin_sendimages.cpp:206
+msgid "Failed to resize '%1' from Album '%2'"
+msgstr "将相册“%2”中的“%1”缩放失败"
+
+#: plugin_sendimages.cpp:225
+msgid "Resizing '%1' from Album '%2' completed."
+msgstr "从相册“%2”缩放“%1”完成。"
+
+#: plugin_sendimages.cpp:232
+msgid "All preparatory operations completed."
+msgstr "所有准备操作都已完成。"
+
+#: plugin_sendimages.cpp:270
+msgid "Creating comments file if necessary..."
+msgstr "正在创建所需的注释文件..."
+
+#: plugin_sendimages.cpp:275
+msgid "Starting mailer agent..."
+msgstr "正在启动邮件程序..."
+
+#: sendimages.cpp:335
+#, fuzzy
+msgid "no caption"
+msgstr "无注释"
+
+#: sendimages.cpp:339
+#, fuzzy
+msgid ""
+"Caption for image \"%1\": %2\n"
+msgstr ""
+"图像“%1”的注释：%2\n"
+"\n"
+
+#: sendimages.cpp:348
+msgid ""
+"Tags: %2\n"
+msgstr ""
+
+#: sendimages.cpp:359 sendimages.cpp:365
+msgid "comments.txt"
+msgstr "comments.txt"
+
+#: sendimages.cpp:376
+msgid "Error during resize images process."
+msgstr "缩放图像的过程出错。"
+
+#: sendimages.cpp:377
+msgid "Cannot resize the following image files:"
+msgstr "无法缩放下列图像文件："
+
+#: sendimages.cpp:378
+msgid "Do you want them to be added as attachments (without resizing)?"
+msgstr "您是否想要将其添加为附件(不进行缩放)？"
+
+#: sendimages.cpp:488 sendimages.cpp:517 sendimages.cpp:539 sendimages.cpp:565
+#: sendimages.cpp:628 sendimages.cpp:885
+msgid ""
+"Cannot start '%1' program;\n"
+"please check your installation."
+msgstr ""
+"无法启动“%1”程序；\n"
+"请检查您的安装。"
+
+#: sendimages.cpp:645
+#, c-format
+msgid "Cannot remove temporary folder %1."
+msgstr "无法删除临时文件夹 %1。"
+
+#: sendimagesdialog.cpp:140
+msgid "Email Images Options"
+msgstr "电邮图像选项"
+
+#: sendimagesdialog.cpp:158
+msgid "Send Images"
+msgstr "发送图像"
+
+#: sendimagesdialog.cpp:161
+msgid "A Kipi plugin for emailing images"
+msgstr "将图像以电子邮件寄出的 Kipi 插件"
+
+#: sendimagesdialog.cpp:164
+msgid "Author and maintainer"
+msgstr "作者和维护者"
+
+#: sendimagesdialog.cpp:167 sendimagesdialog.cpp:170
+msgid "Developer"
+msgstr ""
+
+#: sendimagesdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr ""
+
+#: sendimagesdialog.cpp:251
+msgid "Images"
+msgstr "图像"
+
+#: sendimagesdialog.cpp:252
+#, fuzzy
+msgid "Images to EMail"
+msgstr "要发送电子邮件的图像列表"
+
+#: sendimagesdialog.cpp:264
+msgid ""
+"<p>This is the list of images  to email. If you want to add some images click "
+"on the 'Add Images...' button or use the drag-and-drop."
+msgstr "<p>这是要发送电子邮件的图像列表。如鞥您想要添加更多图像，请单击“添加图像...”按钮或使用拖放。"
+
+#: sendimagesdialog.cpp:270
+#, fuzzy
+msgid "&Add ..."
+msgstr "添加图像(&A)..."
+
+#: sendimagesdialog.cpp:271
+msgid "<p>Add images to the list."
+msgstr "<p>将图像添加到列表中。"
+
+#: sendimagesdialog.cpp:273
+msgid "<p>Remove selected images from the list."
+msgstr "<p>从列表中删除选中图像。"
+
+#: sendimagesdialog.cpp:281
+msgid "<p>Preview of the currently selected image on the list."
+msgstr "<p>列表中目前选中图像的预览。"
+
+#: sendimagesdialog.cpp:288
+msgid "Image Description"
+msgstr "图像描述"
+
+#: sendimagesdialog.cpp:292
+msgid "<p>The description of the currently selected image on the list."
+msgstr "<p>列表中目前选中图像的描述。"
+
+#: sendimagesdialog.cpp:364
+msgid "Mail"
+msgstr "邮寄"
+
+#: sendimagesdialog.cpp:365
+msgid "Mail Options"
+msgstr "邮寄选项"
+
+#: sendimagesdialog.cpp:375
+msgid "Mail agent:"
+msgstr "邮件代理："
+
+#: sendimagesdialog.cpp:390
+msgid ""
+"<p>Select here your preferred external mail agent program.These mail agent "
+"versions are supported:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+msgstr ""
+
+#: sendimagesdialog.cpp:412
+msgid "&Thunderbird binary path:"
+msgstr "Thunderbird 二进制路径(&T)："
+
+#: sendimagesdialog.cpp:422
+msgid "<p>The path name to the Thunderbird binary program."
+msgstr "<p>Thunderbird 二进制程序的路径名称。"
+
+#: sendimagesdialog.cpp:426
+msgid "Attach a file with caption and tags"
+msgstr ""
+
+#: sendimagesdialog.cpp:427
+#, fuzzy
+msgid ""
+"<p>If you enable this option, all image captions and tags will be added as an "
+"attached file."
+msgstr "<p>如果您启用了此选项，图像的所有注释都会添加为附件。"
+
+#: sendimagesdialog.cpp:430
+msgid "Generate new filenames from image captions (if available)"
+msgstr ""
+
+#: sendimagesdialog.cpp:435
+#, fuzzy
+msgid "Image Properties"
+msgstr "图像属性"
+
+#: sendimagesdialog.cpp:439
+msgid "<p>The properties of images to send."
+msgstr "<p>要发送图像的属性。"
+
+#: sendimagesdialog.cpp:444
+#, fuzzy
+msgid "Adjust image properties"
+msgstr "图像属性"
+
+#: sendimagesdialog.cpp:445
+msgid ""
+"<p>If you enable this option, all images to send can be resized and "
+"recompressed."
+msgstr "<p>如果您启用了此选项，要发送的全部图像都将被缩放并重新压缩。"
+
+#: sendimagesdialog.cpp:454
+msgid "Very Small (320 pixels)"
+msgstr "非常小(320 像素)"
+
+#: sendimagesdialog.cpp:455
+msgid "Small (640 pixels)"
+msgstr "小(640 像素)"
+
+#: sendimagesdialog.cpp:456 sendimagesdialog.cpp:460
+msgid "Medium (800 pixels)"
+msgstr "中(800 像素)"
+
+#: sendimagesdialog.cpp:457
+msgid "Big (1024 pixels)"
+msgstr "大(1024 像素)"
+
+#: sendimagesdialog.cpp:458
+msgid "Very Big (1280 pixels)"
+msgstr "非常大(1280 像素)"
+
+#: sendimagesdialog.cpp:459
+#, fuzzy
+msgid "Huge - for printing (1600 pixels)"
+msgstr "非常大(1280 像素)"
+
+#: sendimagesdialog.cpp:461
+#, fuzzy
+msgid ""
+"<p>Select here the images size to send:"
+"<p><b>%1</b>: use this if you have a very slow internet connection or if the "
+"target mailbox size is very limited."
+"<p><b>%2</b>: use this if you have a slow internet connection and if the target "
+"mailbox size is limited."
+"<p><b>%3</b>: this is the default value for a medium internet connection and a "
+"target mailbox size."
+"<p><b>%4</b>: use this if you have a high-speed internet connection and if the "
+"target mailbox size is not limited."
+"<p><b>%5</b>: use this if you have no size or speed restrictions."
+"<p><b>%6</b>: use this only for printing purpose."
+"<p>"
+msgstr ""
+"<p>在此选择要发送的图像大小："
+"<p><b>%1</b>：如果您的互联网连接非常慢或者目标邮箱非常小，请选择此选项。"
+"<p><b>%2</b>：如果您的互联网连接较慢或者目标邮箱较小，请选择此选项。"
+"<p><b>%3</b>：这是中速互联网连接和中等邮箱大小的默认值。"
+"<p><b>%4</b>：如果您的互联网连接较快或者目标邮箱较大，请选择此选项。"
+"<p><b>%5</b>：如果您的连接速度和邮箱大小都没有限制，请选择此选项。"
+"<p>"
+
+#: sendimagesdialog.cpp:472
+msgid "very small (320 pixels)"
+msgstr "非常小(320 像素)"
+
+#: sendimagesdialog.cpp:473
+msgid "small (640 pixels)"
+msgstr "小(640 像素)"
+
+#: sendimagesdialog.cpp:474
+msgid "medium (800 pixels)"
+msgstr "中(800 像素)"
+
+#: sendimagesdialog.cpp:475
+msgid "big (1024 pixels)"
+msgstr "大(1024 像素)"
+
+#: sendimagesdialog.cpp:476
+msgid "very big (1280 pixels)"
+msgstr "非常大(1280 像素)"
+
+#: sendimagesdialog.cpp:477
+#, fuzzy
+msgid "huge - for printing (1600 pixels)"
+msgstr "非常大(1280 像素)"
+
+#: sendimagesdialog.cpp:480
+#, fuzzy
+msgid "Sent image size:"
+msgstr "新图像大小："
+
+#: sendimagesdialog.cpp:490
+msgid "Sent image quality level:"
+msgstr ""
+
+#: sendimagesdialog.cpp:492
+msgid "<p>The new compression value of images to send:<p>"
+msgstr "<p>要发送的图像的新压缩值：</p>"
+
+#: sendimagesdialog.cpp:493
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>：超高压缩比"
+"<p><b>25</b>：高压缩比"
+"<p><b>50</b>：中等压缩比"
+"<p><b>75</b>：低压缩比(默认值)"
+"<p><b>100</b>：不压缩"
+
+#: sendimagesdialog.cpp:510
+msgid "<p>Select here the images files format to send.<p>"
+msgstr "<p>在此选择要发送的图像文件格式。<p>"
+
+#: sendimagesdialog.cpp:511
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>：JPEG 文件格式是一种很好的 Web 文件格式，但它使用有损压缩。"
+"<p><b>PNG</b>：PNG 是一种扩展的文件格式，它使用无损压缩，对于像素图来说是一种便携的压缩存储方式。相对于 GIF，PNG "
+"提供了一种无专利困扰的替代产品，并且还取代了 TIFF 的很多通用情况。PNG 设计之初就考虑到在线应用，比如 WWW，所以它提供了渐进显示选项。同时，PNG "
+"还可以存储伽玛和色度信息，以便在异构平台中改进颜色匹配。"
+
+#: sendimagesdialog.cpp:521
+#, fuzzy
+msgid "Image file format:"
+msgstr "图像文件格式："
+
+#: sendimagesdialog.cpp:532
+msgid "Maximum Email size limit:"
+msgstr ""
+
+#: sendimagesdialog.cpp:533
+msgid "MB"
+msgstr ""
+
+#: sendimagesdialog.cpp:623
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "注释：%1"
+
+#: sendimagesdialog.cpp:624
+#, c-format
+msgid "Album: %1"
+msgstr "相册：%1"
+
+#: sendimagesdialog.cpp:654
+msgid "You must add some images to send."
+msgstr "您必须添加要发送的图像。"
+
+#: sendimagesdialog.cpp:664
+msgid "Thunderbird binary path is not valid. Please check it."
+msgstr "Thunderbird 二进制库路径无效。请检查。"
+
+#: sendimagesdialog.cpp:683
+msgid "Image List"
+msgstr "图像列表"
+
+#: sendimagesdialog.cpp:685
+#, c-format
+msgid ""
+"_n: Image List (1 item)\n"
+"Image List (%n items)"
+msgstr "图像列表(%n 项)"
+
+#~ msgid "Send Image Handbook"
+#~ msgstr "发送图像手册"
+
+#~ msgid "&Remove Images"
+#~ msgstr "删除图像(&R)"
+
+#~ msgid "Change properties of images"
+#~ msgstr "更改图像属性"
+
+#~ msgid "New images compression:"
+#~ msgstr "新图像压缩："
+
+#~ msgid "Add comments in attached file"
+#~ msgstr "在附加的文件中添加注释"

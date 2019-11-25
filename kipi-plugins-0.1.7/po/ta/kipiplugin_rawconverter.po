@@ -1,0 +1,463 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2005-03-10 01:24-0800\n"
+"Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
+"Language-Team:  <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "tamilpcteam"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "tamilpc@ambalam.com"
+
+#: actionthread.cpp:168
+#, fuzzy
+msgid "Cannot identify Raw image"
+msgstr ""
+"மூல பிம்பத்தை கண்டறிய இயலவில்லை\n"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr ""
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "மூல பிம்பங்கள் தொகுதி மாற்றி"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr ""
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&கைவிடுதல்"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "சிறிய பிம்பம்"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr ""
+
+#: batchdialog.cpp:102
+#, fuzzy
+msgid "Target File"
+msgstr "குறிக்கோள் பிம்பம்"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "காமிரா"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "அமைப்புகள்"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "மூல பிம்ப மாற்றி"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "மிகசரியான பிம்பத்தை கண்டுபிடிக்கபடவில்லை."
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr ""
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr ""
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+#, fuzzy
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "தற்போதைய அமைப்புகளில் இருந்து மூல பிம்பங்களை உருவாக்க தொடங்கு."
+
+#: batchdialog.cpp:158
+#, fuzzy
+msgid "<p>Abort the current Raw files conversion"
+msgstr "தற்போதைய செயலை நிறுத்து"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+#, fuzzy
+msgid "<p>Exit Raw Converter"
+msgstr "மூல மாற்றியில் இருந்து வெளியேறு"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr ""
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "'%1'ல் இருந்து மாற்றப்பட்ட மூல பிம்பத்தை இப்படியாகச் சேமி"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "பிம்பம் %1ஐ சேமிக்க முடியவில்லை"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "மூல பிம்ப மாற்றி"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "மூல மாற்றியில் இருந்து வெளியேறு"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr ""
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "செயல்பாட்டிற்குப் பின் பிம்பத்தை ஏற்ற முடியவில்லை"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr ""
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+
+#: savesettingswidget.cpp:101
+#, fuzzy
+msgid "If Target File Exists:"
+msgstr "குறிக்கோள் கோப்பு இருந்தால்"
+
+#: savesettingswidget.cpp:103
+#, fuzzy
+msgid "Overwrite automatically"
+msgstr "மேலெழுது"
+
+#: savesettingswidget.cpp:104
+#, fuzzy
+msgid "Open rename-file dialog"
+msgstr "கோப்பு உரையாடலைத் திற"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "மூல பிம்ப மாற்றி"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&முன்காட்சி"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "மிகசரியான பிம்பத்தை கண்டுபிடிக்கபடவில்லை."
+
+#: singledialog.cpp:136
+#, fuzzy
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"தற்போதைய அமைப்புகளில் இருந்து முன்காட்சியை உருவாக்கு.\n"
+"விரைவான முடிவுகளுக்கு ஒரு சுலபமான சரிவான இடைச்செருகலை\n"
+"பயன்படுத்துகிறது."
+
+#: singledialog.cpp:140
+#, fuzzy
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"தற்போதைய அமைப்புகளில் இருந்து மூல பிம்பத்தை மாற்று.\n"
+"இது ஒரு உயர்தர ஏற்றக்கூடிய அல்கரிதத்தை பயன்படுத்துகிறது."
+
+#: singledialog.cpp:143
+#, fuzzy
+msgid "<p>Abort the current Raw file conversion"
+msgstr "தற்போதைய செயலை நிறுத்து"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "முன்காட்சியை உருவாக்க முடியவில்லை"
+
+#: singledialog.cpp:472
+#, fuzzy
+msgid "Failed to convert Raw image"
+msgstr "மிகசரியான பிம்பத்தை கண்டுபிடிக்கபடவில்லை."
+
+#: singledialog.cpp:477
+#, fuzzy
+msgid "Generating Preview..."
+msgstr "முன்காட்சியை உருவாக்குகிறது..."
+
+#: singledialog.cpp:490
+#, fuzzy
+msgid "Converting Raw Image..."
+msgstr "Comment=கிபி முதல் பிம்ப மாற்றி"
+
+#, fuzzy
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "மூல பிம்ப மாற்றி கைப்புத்தகம்"
+
+#, fuzzy
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "மூல பிம்ப மாற்றி கைப்புத்தகம்"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "மூல பிம்ப மாற்ரி (ஒற்றை)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "மூல பிம்பங்கள் மாற்றி (தொகுதி)..."
+
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "மூல பிம்பங்கள் தொகுதி மாற்றி"
+
+#, fuzzy
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "தற்போதைய செயலை நிறுத்து"
+
+#~ msgid "Image Preview"
+#~ msgstr "பிம்ப முன்காட்சி"
+
+#, fuzzy
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "மூல பிம்பங்கள் மாற்றிக்கான ஒரு கிபி சொருகுப்பொருள்\n"
+#~ "இந்த சொருகுப்பொருள் Dave Coffin RAW புகைப்பட குறியீட்டு நிரல் \"dcraw\"ஐ பயன்படுத்துகிறது"
+
+#, fuzzy
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr ""
+#~ "Interpolate RGB as four colors. \n"
+#~ "The default is to assume that all green \n"
+#~ "pixels are the same. If even-row green \n"
+#~ "pixels are more sensitive to ultraviolet light \n"
+#~ "than odd-row this difference causes a mesh \n"
+#~ "pattern in the output; using this option solves \n"
+#~ "this problem with minimal loss of detail.\n"
+
+#~ msgid "Use camera white balance"
+#~ msgstr "வெள்ளையில் புகைப்படத்தை பயன்படுத்து"
+
+#, fuzzy
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr ""
+#~ "காமிராவின் தனிப்பயன் வெள்ளைப்பகுதி அமைப்புகளை பயன்படுத்து.\n"
+#~ "இந்த முன்னிருப்பு பொருத்தப்பட்ட பகல்நேர மதிப்புகளை, மாதிரி பிம்பங்களில் இருந்து கணிக்கும்."
+
+#, fuzzy
+#~ msgid "Brightness:"
+#~ msgstr "பிரகாசம்"
+
+#, fuzzy
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "மூல பிம்பங்கள் மாற்றிக்கான ஒரு கிபி சொருகுப்பொருள்\n"
+#~ "இந்த சொருகுப்பொருள் Dave Coffin RAW புகைப்பட குறியீட்டு நிரல் \"dcraw\"ஐ பயன்படுத்துகிறது"
+
+#~ msgid ""
+#~ "Failed to start raw converter client.\n"
+#~ "Please check your installation."
+#~ msgstr ""
+#~ "மூல மாற்றி உறுப்பினரை துவக்க முடியவில்லை.\n"
+#~ "உங்கள் நிறுவலை சரிப்பார்க்கவும்."
+
+#~ msgid "Four color RGBG"
+#~ msgstr "நான்கு வண்ண RGBG"
+
+#, fuzzy
+#~ msgid "<p>Specify the output brightness"
+#~ msgstr "வெளியீடு பிரகாசத்தை குறிப்பிடு"
+
+#, fuzzy
+#~ msgid "Red multiplier:"
+#~ msgstr "சிவப்பு இரட்டிப்பான்"
+
+#, fuzzy
+#~ msgid "<p>After all other color adjustments, multiply the red channel by this value"
+#~ msgstr ""
+#~ "மற்ற எல்லா வண்ண சரிப்படுத்தல்களுக்குப் பின், \n"
+#~ "சிவப்பு வழிமுறையை இந்த மதிப்பால் பெருக்கு."
+
+#, fuzzy
+#~ msgid "Blue multiplier:"
+#~ msgstr "நீலம் இரட்டிப்பான்"
+
+#, fuzzy
+#~ msgid "<p>After all other color adjustments, multiply the blue channel by this value"
+#~ msgstr ""
+#~ "மற்ற எல்லா வண்ண சரிப்படுத்தல்களுக்குப் பின், \n"
+#~ "நீல வழிமுறையை இந்த மதிப்பால் பெருக்கு."
+
+#~ msgid "Save Format"
+#~ msgstr "வடிவத்தை சேமி"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in JPEG Format. Warning!!! JPEG is a lossy format, but will give smaller-sized files. Minimum JPEG compression will be used during conversion."
+#~ msgstr ""
+#~ "JPEG வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது ஒரு நெகிழ்வான வடிவம், ஆனால் மிகச்சிறியதான அளவுடைய\n"
+#~ "கோப்புகளை தரும்."
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in TIFF Format. This generates larges, without losing quality. Adobe Deflate compression will be used during conversion."
+#~ msgstr ""
+#~ "TIFF வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது பிம்பத்தின் தரம் கெடாமல், பெரிய கோப்புகளை\n"
+#~ "உருவாக்குகிறது"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in PPM Format. This generates the largest files, without losing quality"
+#~ msgstr ""
+#~ "PPM வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது பிம்பத்தின் தரம் கெடாமல், மிகப்பெரிய கோப்புகளை\n"
+#~ "உருவாக்குகிறது"
+
+#, fuzzy
+#~ msgid "<p>Output the processed image in PNG Format. This generates larges, without losing quality. Maximum PNG compression will be used during conversion."
+#~ msgstr ""
+#~ "TIFF வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது பிம்பத்தின் தரம் கெடாமல், பெரிய கோப்புகளை\n"
+#~ "உருவாக்குகிறது"
+
+#~ msgid "Raw Image"
+#~ msgstr "மூல பிம்பம்"
+
+#~ msgid ""
+#~ "Interpolate RGB as four colors.\n"
+#~ "The default is to assume that all green\n"
+#~ "pixels are the same. If even-row green\n"
+#~ "pixels are more sensitive to ultraviolet light\n"
+#~ "than odd-row this difference causes a mesh\n"
+#~ "pattern in the output; using this option solves\n"
+#~ "this problem with minimal loss of detail."
+#~ msgstr ""
+#~ "Interpolate RGB as four colors.\n"
+#~ "The default is to assume that all green\n"
+#~ "pixels are the same. If even-row green\n"
+#~ "pixels are more sensitive to ultraviolet light\n"
+#~ "than odd-row this difference causes a mesh\n"
+#~ "pattern in the output; using this option solves\n"
+#~ "this problem with minimal loss of detail."
+
+#~ msgid ""
+#~ "Output the processed images in JPEG Format.\n"
+#~ "This is a lossy format, but will give\n"
+#~ "smaller-sized files"
+#~ msgstr ""
+#~ "JPEG வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது ஒரு நெகிழ்வான வடிவம், ஆனால் மிகச்சிறியதான அளவுடைய\n"
+#~ "கோப்புகளை தரும்."
+
+#~ msgid ""
+#~ "Output the processed images in TIFF Format.\n"
+#~ "This generates large files, without\n"
+#~ "losing quality"
+#~ msgstr ""
+#~ "TIFF வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது பிம்பத்தின் தரம் கெடாமல், பெரிய கோப்புகளை\n"
+#~ "உருவாக்குகிறது"
+
+#~ msgid ""
+#~ "Output the processed images in PPM Format.\n"
+#~ "This generates the largest files, without\n"
+#~ "losing quality"
+#~ msgstr ""
+#~ "PPM வடிவமைப்பில் உள்ள செயல்படுத்திய பிம்பங்களின் வெளியீடு.\n"
+#~ "இது பிம்பத்தின் தரம் கெடாமல், மிகப்பெரிய கோப்புகளை\n"
+#~ "உருவாக்குகிறது"
+
+#~ msgid "RAW Images Batch Converter Handbook"
+#~ msgstr "மூல பிம்பங்கள் தொகுதி மாற்றி கைப்புத்தகம்"
+
+#~ msgid "Raw Converter Cannot Handle Following Items"
+#~ msgstr "மூல மாற்றி பின்வரும் உருப்படிகளை கையாளாது"
+
+#~ msgid ""
+#~ "dcraw is required for raw image conversion.\n"
+#~ "Please install it."
+#~ msgstr ""
+#~ "dcraw மூல பிம்ப மாற்றிக்கு தேவைப்படுகிறது.\n"
+#~ "நிறுவவும்."
+
+#~ msgid "Author and maintainer"
+#~ msgstr "ஆசிரியர் மற்றும் மேம்பாட்டாளர்"
+
+#~ msgid "P&rocess"
+#~ msgstr "செயல்"
+
+#~ msgid "Abort processing images"
+#~ msgstr "செயல்படுத்தும் பிம்பங்களை நிறுத்து"
+
+#~ msgid "Exit raw converter"
+#~ msgstr "மூல மாற்றியில் இருந்து வெளியேறு"
+
+#~ msgid "Gamma"
+#~ msgstr "காமா"
+
+#~ msgid "Specify the gamma value"
+#~ msgstr "காமா மதிப்பை குறிப்பிடு"

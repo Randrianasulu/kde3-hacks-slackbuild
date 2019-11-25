@@ -1,0 +1,218 @@
+<sect1 id="components.kbluetoothd">
+<title
+>kbluetoothd: KDE Bluetoothi raamistiku tuum</title>
+<para
+>KBluetoothD on KDE Bluetoothi raamistiku keskne osa. See toimib metaserverina, mis käivitab vajadusel muud teenused, näiteks OBEX serveri, handsfree või Bemused serveri. Selle süsteemses salves paiknev ikoon näitab Bluetoothi ühenduse olemasolu, võimaldades ka kiiresti ligi pääseda teenuste seadistamisele, hiljuti kasutatud teenustele, saadaolevatele seadmetele ja veel paljule muule. </para>
+<para
+>Programmeerijatele, kes soovivad oma rakendust integreerida kdebluetoothiga, peaksid lugema lähemalt <link linkend="developers.kbluetoothd"
+>arendajatele mõeldud osa</link
+>. </para>
+
+<sect2>
+<title
+>Kbluetoothd käivitamine</title>
+<para
+>KBluetoothD on võimalik käivitada, kui kirjutada käsureale <command
+>kbluetoothd</command
+> või valida K menüüst vajalik kirje (tavaliselt Süsteem/Kbluetoothd). </para
+><para
+>KBluetoothD lisab süsteemsesse salve ikooni, aga kui see ei peaks sulle meeldima, võid ikooni kontekstimenüüst selle välja lülitada kirjel "Alati nähtav" klõpsates. Seejärel töötab kbluetoothd ilma kasutajale nähtava liideseta isegi pärast taaskäivitamist. Ikooni taasnägemiseks käivita lihtsalt kbluetoothd uuesti. Isegi kui ikoon on välja lülitatud, ilmub see siiski nähtavale Bluetoothi ühenduse ajaks. </para>
+<para
+>Kui kbluetoothd töötab süsteemi seiskamiseni, käivitatakse see arvuti uuel käivitamisel ja sisselogimisel automaatselt uuesti. Kui soovid, et nii ei juhtuks, sulge kbluetoothd ja kontrolli, et sisse ei oleks lülitatud automaatse käivitamise võimalus järgmisel sisselogimisel.</para>
+ 
+</sect2>
+
+<sect2>
+<title
+>Mida kbluetoothd teeb</title>
+<para
+>Kõige olulisem kbluetoothd pakutav teenus on Bluetoothi metaserver. Et kbluetoothd töötab nagunii pidevalt, jälgib see ka sinu Bluetoothi adapterit, teatab kõigist ühendustest ning puhverdab nimesoovid. Selle mõte on muuta kbluetoothd ainsaks Bluetoothiga seonduvaks programmiks, mida on vaja kogu aeg töös hoida ja mille abil ligi pääseda kõigile aktiveeritud teenustele. </para>
+<sect3>
+<title
+>Metaserver</title>
+<para
+>Kui tead, milleks on Linuxis mõeldud inetd, siis peaks olema hõlpus ette kujutada, mida teeb kbluetoothd metaserver: see ootab tegelike teenusekäitlejate eest sisenevaid ühendusi ja käivitab vajaduse korral sobiva käitleja. Nii ei ole vaja näiteks hoida kogu aeg töös OBEX serverit, aga kui keegi saadab sulle OBEX-it kasutades faili, käivitatakse see automaatselt. </para>
+
+<para
+>Sellisel vahendamisel on mitu põhjust: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>See vähendab mäluvajadust mitme teenuse kasutamisel. KDE Bluetoothi raamistik pakub praegu nelja serveriprogrammi: OBEX server, handsfree klient, Bemused klient ja jadaliini terminali rakendus. Mõningaid neist võib küll haruharva vaja minna, aga sellisel moel ei too nende lubamine ka mingeid täiendavaid vaevusi või kulu kaasa. </para>
+</listitem>
+
+<listitem>
+<para
+>Süsteemset salve ei koormata üle hulga harva kasutatavate ikoonidega. </para>
+</listitem>
+
+<listitem>
+<para
+>Paraneb turvalisus, ligipääsu kontrollimine on märksa hõlpsam. KBluetoothD avab vaikimisi dialoogi, küsides luba siseneva ühenduse vastuvõtmiseks. Kasutaja võib sellest küll ka loobuda ning ühenduse iga teenuse ja seadmega soovi korral püsivalt lubada või keelata. See annab igale kbluetoothd poolt hallatavale rakendusele automaatselt ligipääsu kontrolli. </para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para
+>-->
+</listitem>
+
+<listitem>
+<para
+>See võimaldab muuta Bluetoothi teenused usaldusväärsemaks. Iga uue ühenduse korral käivitatakse uus server, nii et kui server krahhi üle elab, võid proovida uuesti ühendust luua serverit taaskäivitamata. </para>
+<para
+>Veebiserveril võib inetd kasutamine kujuneda tõeliseks pudelikaelaks, kuid Bluetoothi korral võtab ühendus nagunii mitu sekundit aega ning kõik toimingud on reeglina kasutaja kontrolli all, seetõttu pole metaserveri kasutamine probleemiks. </para>
+</listitem>
+
+<listitem>
+<para
+>Teenuse registreerimine SDP serveris on väga lhtne. <link linkend="developers.kbluetoothd"
+>Arendajatele mõeldud osas</link
+> räägitakse lähemalt, kuidas seda teha. </para>
+</listitem>
+
+<listitem>
+<para
+>Bluetoothi serverina saab kasutada lihtsaid serveriprogramme, isegi kõigest skripte, ilma Bluetoothiga seotud funktsioone tarvitamatagi. </para>
+</listitem>
+</itemizedlist>
+<para
+>Kbluetoothd kasutatavaid teenuseid saab sisse või välja lülitada vastavast juhtimiskeskuse moodulist kaardil "Kohalikud teenused". Seadistada saab ka teenuste spetsiifilisi võimalusi, kui valida teenus ja klõpsata nupul "Seadista...". </para>
+<para
+>Kaardil "Kinnitus" saab määrata, kuidas kbluetoothd reageerib sisenevatele ühendustele. </para>
+</sect3>
+
+
+<sect3>
+<title
+>Seadmete tuvastamise teenus</title>
+<para
+>Paljudes rakendustes on oluline teada, kas mingi seade on parajasti tööpiirkonnas või mitte. Oluline võib olla ka saada märguianne, kui mõni seade jõuab tööpiirkonda või sellest väljub. Erinevalt USB-st, kus niinimetatud hotplugi raamistik annab kohe uutest seadmetest teada, ei ole Bluetoothi korral sellist teenust olemas. </para>
+
+<para
+>Kbluetoothd täidab selle lünga oma seadme tuvastamise teenusega. See otsib perioodiliselt lähikonnast seadmeid ning peab arvet nende üle, mis parajasti tööpiirkonnas viibivad. Tuvastatud seadme kasutamiseks klõpsa hiire parema nupuga kbluetoothd ikoonile süsteemses salves ja uuri alammenüüd "Ava hiljutine". Selles on kirjas hiljuti kasutatud teenused (näiteks "obex ftp Minutelefonil") ja kui on ka tuvastatud seadmeid, siis on teises osas näha ka seadmed. Mõnel neist klõpsates näidatakse antud seadmel saadaolevaid teenuseid Konquerori aknas. </para>
+<para
+>Juhtimiskeskuse kbluetoothd moodulis saab määrata, kas ja kui sageli kbluetoothd seadmeid otsib ("Perioodiline naabrite loendi uuendamine"). Mina soovitaks mitte kasutada intervalli alla minuti, sest muidu võib muudel rakendustel vahel tekkida seadmete otsimisel probleeme - enamik seadmeid ei eelda, et Bluetoothi kasutaks samal ajal ka muud rakendused. </para>
+<para
+>Paljud seadmed on privaatsus- või turvakaalutlustel vaikimisi <phrase
+>mittetuvastatavad</phrase
+>. Sellisel juhul seda seadmeid otsides ei leita. Kbluetoothd üritab seevastu selliseid seadmeid individuaalselt leida. Seadme saab lisada mittetuvastatavate seadmete loendisse, klõpsates "Mittetuvastatavate seadmete otsingu lisavalikud". Arvesta, et loendisse lisamiseks pead seadme kas või ajutiselt tuvastatavaks muutma või siis teadma selle riistvaralist aadressi. </para>
+<para
+>See takistab teistel programmidel seadmeid otsimast või isegi muu seadmega ühendust loomast umbes 30 sekundi kestel <emphasis
+>seadme kohta</emphasis
+>, kui seade ei ole parajasti kättesaadav. Seepärast oleks siin mõtet kasutada pigem pikemat intervalli. Näiteks kümme minutit tundub olevat väga mõistlik valik. Aga proovi seda ise ja leia intervall, millest väiksema määramine hakkab juba segavaks muutuma. </para>
+
+<para
+>Ainult parajasti kättesaadavate seadmete loendist pole mõistagi väga suurt kasu - erinevalt näiteks seadme teenuste tuvastamise teenuseset, mis seadme tööpiirkonda jõudmisel käivitab <phrase
+>tuvastamise töö</phrase
+>. Viimased on õigupoolest päris lihtsad skriptid, mida pole raske ka ise kirjutada - vaata lähemalt <link linkend="developers.kbluetoothd.discovery"
+>tuvastamisskriptide kohta käivat osa</link
+>. Kuid kbluetoothd pakub ka omalt poolt mõned skriptid, sealhulgas: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Tuvastamisprotokoll</term>
+<listitem
+><para
+>See skript loob iga seadme esmasel tuvastamisel HTML-lehekülje mõningase tehnilise infoga seadme kohta. Seda skripti saab kasutada, kui tunned näiteks huvi, kes kuskil lähikonnas veel Bluetoothi kasutab. Skript võib ka kogu aeg töötada ilma erilist koormust tekitamata, sest see püüab seadmele ligi pääseda ainult siis, kui seda ei ole varem tuvastatud või kui oled selle HTML-lehekülje kustutanud. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kopete_AutoAway</term>
+<listitem
+><para
+>See määrab sinu oleku Kopetes vastavalt sellele, kas sa oled (koos oma telefoniga) tööpiirkonnas või mitte. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Photo_Copy</term>
+<listitem
+><para
+>See skript kontrollib kio_obex-i vahendusel sinu telefonil uute failide olemasolu ja kopeerib need kohalikku kataloogi. Skript lisab kopeeritud failide nimele ka kuupäeva. Mina kirjutasin selle skripti enda Nokia 6230 jaoks. Kui soovid seda oma telefoni tarbeks pruukida, pead sa skripti ilmselt päris mitmes kohas muutma. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Ekraanisäästja</term>
+<listitem
+><para
+>Käivitab või tapab ekraanisäästja/lukustaja iga kord, kui jälgitavad seadmed tööpiirkonda jõuavad või sealt väljuvad. </para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Enamik skripte tuleb korrektseks tööks esmalt seadistada. Klõpsamine käsul "Seadista" avab tavaliselt tekstiredaktori kedit koos skripti konfiguratsiooniosaga. Arvesta ka seda, et <emphasis
+>ilmselt pead sa piirama ka töödele teada antavaid seadmeid</emphasis
+>, kui sa ei soovi, et skript käivitataks alati, kui möödub keegi telefoniga, millel on Bluetooth sisse lülitatud. </para>
+
+</sect3>
+
+<sect3>
+<title
+>"Hiljuti kasutatud teenuste" loend</title>
+<para
+>Varem kasutatud teenustele pääseb kiiresti ligi kbluetoothd süsteemse salve ikooni menüükirje "Hiljuti kasutatud" abil. Kui oled näiteks saatnud oma mobiilile "Minu mobiil" teenuse kbtobexclient vahendusel faile, leiad menüüst kirje "OBEX saatmise klient - Minu mobiil", mida valides käivitatakse kbtobexclient ja luuakse aegaviitmata telefoniga ühendus. </para>
+<para
+>Palun arvesta, et kbluetoothd näitab kõiki hiljuti kasutatud teenuseid sõltumata sellest, kas vastav seade on enam tööpiirkonnas või mitte. </para>
+<para
+>Seda võimalust peab toetama ka vastav rakendus. </para>
+</sect3>
+
+<sect3>
+<title
+>Ühenduse monitor</title>
+<para
+>Pilk kbluetoothd süsteemse salve ikoonile annab teada, kas parajasti on Bluetoothi ühendus olemas või mitte. See hakkab vilkuma ühenduse loomisel ja muutub siniseks, kui ühendus on loodud. </para>
+<para
+>Rohkem infot parajasti toimiva ühenduse kohta saab, kui klõpsata ikoonil hiire parema nupuga ja valida "Ühenduse üksikasjad...". </para>
+<para
+>Kbluetoothd näitab ACL linke, mitte aga Rfcomm ühendusi. Kui oled ühendatud ühe seadmega mitme programmi abil (näiteks handsfree ja bemused), näidatakse neid ometi ühe ühendusena, sest korraga saab ühe seadmega olla ainult üks ACL link. </para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title
+>Kbluetoothd seadistamine</title>
+<para
+>Üldiselt peaks kbluetoothd ja selle hallatavad serverid töötama ilma mingit lisapingutust nõudmata. Kuid teatud seadistusi on siiski võimalik muuta. Kbluetoothd seadistamiseks saab kasutada KDE juhtimiskeskust (<guimenuitem
+>Internet ja kohtvõrk -> Bluetoothi teenused</guimenuitem
+>) või klõpsu hiire parema nupuga kbluetoothd ikoonil süsteemses salves (<guimenuitem
+>Seadistamine -> Teenused...</guimenuitem
+>) </para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title
+>Sisenevate ühenduste lubamine</title>
+<para
+>Sellel kaardil saab muuta sisenevate ühenduste lubamise seadistusi. Vaikimisi avab kbluetoothd hüpikdialoogi, mis palub sul ühenduse lubada, enne kui käivitatakse tegelik serveriprogramm (näiteks OBEX saatmisserver). Siin saad mõne seadme puhul dialoogi avamise välja lülitada või anda kbluetoothd-le korralduse sisenevad ühendused vaikimisi ignoreerida. </para>
+<para
+>Uued seadmekirjed lisatakse, kui märgid ilmuvas kinnitusdialoogis kasti "Alati nõus". </para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title
+>Kohalikud teenused</title>
+<para
+>Sellel kaardil saab sisse või välja lülitada konkreetsed kbluetoothd hallatavad Bluetoothi teenused. Mõningatel teenustel on omaette seadistamisvõimalusi, näiteks Bemused serveril. Sellisel juhul on antud teenuse juures aktiveeritud nupp <guibutton
+>Seadista...</guibutton
+>. </para>
+<para
+>Kbluetoothd eraldab automaatselt teenustele rfcomm kanali, mistõttu ühe teenuse jaoks kasutatud kanal võib muutuda, kui kasutad mõnda muud Bluetooth serverit. Kui tahad teada, milline kanal on millisele teenusele eraldatud, saad seda näha just selles dialoogis. </para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

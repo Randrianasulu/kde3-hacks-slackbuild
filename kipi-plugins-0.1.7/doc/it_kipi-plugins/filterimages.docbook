@@ -1,0 +1,114 @@
+<chapter id="filterimages">
+<chapterinfo>
+
+<title
+>Filtraggio delle immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin per filtrare le immagini di Kipi è uno strumento per applicare un filtro digitale alle immagini. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Questo plugin può essere usato per filtrare non interattivamente le immagini in un album. Usa il programma "convert" dal pacchetto "ImageMagick". È disponibile un'anteprima dell'effetto sull'immagine. Sono stati implementati nove filtri: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Aggiungi disturbo</emphasis
+>: aggiunge del disturbo a un'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Anti aliasing</emphasis
+>: rimuove la scalettatura dei pixel.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Sfoca</emphasis
+>: sfoca l'immagine con un operatore gaussiano.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Smacchia</emphasis
+>: riduce le macchie in un'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Migliora</emphasis
+>: applica un filtro digitale per migliorare un'immagine disturbata.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Mediano</emphasis
+>: applica un filtro mediano all'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Riduzione disturbo</emphasis
+>: riduce il disturbo in un'immagine.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Aumenta contrasto</emphasis
+>: aumenta il contrasto dell'immagine con un operatore gaussiano.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Riduci contrasto</emphasis
+>: riduce il contrasto dell'immagine con un operatore maschera di riduzione di contrasto.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Puoi vedere alcuni esempi fatti con questi plugin a questo <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/FilterImages/index.html"
+><citetitle
+>URL</citetitle
+></ulink
+>.</para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

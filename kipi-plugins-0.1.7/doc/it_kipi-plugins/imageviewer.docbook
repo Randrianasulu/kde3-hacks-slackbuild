@@ -1,0 +1,268 @@
+<chapter id="imageviewer">
+<chapterinfo>
+
+<title
+>Visore di immagini OpenGL</title>
+
+<authorgroup>
+    <author
+><firstname
+>Markus</firstname
+><surname
+>Leuthold</surname
+> <affiliation
+><address
+><email
+>kusi@forum.titlis.org</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il visore di immagini di Kipi è uno strumento basato su OpenGL facile e veloce per visualizzare le immagini,  </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Il visore di immagini di Kipi permette di visualizzare una selezione di immagini e fare operazioni di base, come ruotare, ingrandire e scorrere. L'uso del visore è basato solo su scorciatoie da tastiera e gesti del mouse. È stato posto l'accento sulla velocità di visualizzazione oltre al rapido accesso alle funzioni. </para>
+
+
+<variablelist
+><title
+>Accesso alle immagini</title>
+<varlistentry
+><term
+>Prossima immagine</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Rotellina giù</para
+></listitem>
+<listitem
+><para
+>Freccia in basso o a destra</para
+></listitem>
+<listitem
+><para
+>Spazio</para
+></listitem>
+<listitem
+><para
+>Tasto N</para
+></listitem>
+<listitem
+><para
+>PgGiù</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Immagine precedente</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Rotellina su</para
+></listitem>
+<listitem
+><para
+>Freccia in alto o a sinistra</para
+></listitem>
+<listitem
+><para
+>Tasto P</para
+></listitem>
+<listitem
+><para
+>PgSu</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Esci</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Esc</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+<variablelist>
+	<title
+>Visualizza</title>
+	<varlistentry>
+		<term
+>Passa da schermo intero a vista normale</term>
+		<listitem>
+			<para
+>Come impostazione predefinita, all'avvio viene visualizzata un'immagine in modalità a schermo intero. Questa può venire cambiata alla modalità normale. </para>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>Tasto F</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term
+>Cambia l'azione della rotellina</term>
+		<listitem>
+			<para
+>Ruotare la rotellina va avanti alla prossima immagine o la ingrandisce. </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Tasto C</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Rotazione</term>
+		<listitem>
+			<para
+>La rotazione è solo temporanea e non viene salvata sul file. </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Tasto R</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+	
+	
+	<varlistentry>
+		<term
+>Azzera la vista</term>
+		<listitem>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>doppio clic</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Dimensioni originali</term>
+		<listitem>
+			<para
+>Ogni pixel dell'immagine corrisponde ad un pixel dello schermo. </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Tasto O</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+</variablelist>
+
+<variablelist>
+	<title
+>Ingrandimento</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>sposta il mouse in su o in giù tenendo premuto il pulsante destro.</para>
+				</listitem>
+				<listitem>
+					<para
+>rotellina (nel caso che hai cambiato la sua azione).</para>
+				</listitem>
+				<listitem>
+					<para
+>più/meno</para>
+				</listitem>
+				<listitem>
+					<para
+>Ctrl + rotellina</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+
+<variablelist>
+	<title
+>Scorrimento</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>sposta il mouse tenendo premuto il tasto sinistro.</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

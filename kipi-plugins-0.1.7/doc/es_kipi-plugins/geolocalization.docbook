@@ -1,0 +1,224 @@
+<chapter id="geolocalization">
+<chapterinfo>
+
+<title
+>Editor de geolocalización</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento de geolocalización de Kipi permite añadir y editar coordenadas GPS a los metadatos de la imagen. Los datos geográficos se guardan en la imagen (etiquetas EXIF) y la localización se puede mostrar en un mapa de un navegador externo. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>El complemento Kipi «geolocalización» proporciona las herramientas para localizar imágenes geográficamente en el sistema de coordenadas esféricas comunes (utilizadas por GPS/Galileo). Se utilizan la altitud, la latitud y la longitud. </para>
+<note
+><para
+>El complemento solo funciona con formatos de imágenes para los que <ulink url="http://www.exiv2.org"
+>libkexiv2</ulink
+> tenga soporte EXIF. </para
+></note>
+
+<sect1 id="geolocalization-title"
+>  <title
+>Geolocalización</title>
+<para
+>El complemento tiene dos métodos para marcar las imágenes con coordenadas: </para>
+<itemizedlist>
+    <listitem>
+        <para
+>Correlación de lotes de datos de registro GPS con una serie de imágenes. </para>
+    </listitem>
+    <listitem>
+        <para
+>Fijación semiautomática de coordenadas a imágenes individuales. </para>
+    </listitem>
+</itemizedlist>
+
+<sect2 id="geolocalization-correlator"
+>       <title
+>El módulo de correlación</title>
+        <para
+>Para correlacionar sus imágenes con datos geográficos necesitará tener disponible un registro GPS como un archivo XML en formato gpx (<ulink url="http://www.gpsbabel.org"
+>gpsbabel</ulink
+> y <ulink url="http://www.ncc.up.pt/gpsman/"
+>gpsman</ulink
+> pueden realizar la descarga y conversión de los datos de registro del dispositivo GPS). </para>
+        <para
+><menuchoice
+><guimenu
+>Imagen</guimenu
+> <guimenuitem
+>Geolocalización</guimenuitem
+> <guimenuitem
+>Correlador</guimenuitem
+></menuchoice
+>. Esta interfaz puede correlacionar una serie de imágenes con un registro de GPS. </para>
+            <example>
+               <title
+>El diálogo de geocorrelación se basa en fecha/hora EXIF y en un registro de datos (formato gpx).</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocalizationcorrelate.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Seleccione las imágenes que desea correlacionar en la vista principal de la aplicación, y a continuación utilice el menú. Aparecerá el diálogo anterior. Para indicar la posible correlación hora/localización debe cargar un archivo de registro con <guilabel
+>Cargar archivo GPX</guilabel
+> que contiene los datos GPS tomados en el mismo momento y localización que las imágenes que tomó con su cámara de fotos. </para>
+           <para
+>Cuando se carga el archivo, se realiza una correlación automática mostrando las coordenas en rojo. Los datos del registro GPS se guardan de forma invariable en hora GMT, por tanto deberá hacer coincidir la hora de su cámara con la GMT, lo que puede hacerse con <guilabel
+>Zona horaria</guilabel
+>. Seleccione aquí <emphasis
+>zona horaria de la cámara</emphasis
+>. </para>
+           <para
+>La característica <guilabel
+>Intervalo máximo de tiempo</guilabel
+> especifica el límite de tiempo dentro del cual la hora GPS y la de la cámara pueden considerarse coincidentes. El valor máximo es de 2000 segundos. </para>
+           <tip
+><para
+>Sino tiene datos de registros para las imágenes que se tomaran en el mismo lugar puede editar manualmente un archivo gpx y aplicárse a estas imágenes. El intervalo de 2000 segundos se correlacionará con todas las imágenes que se tomaran en dos tercios de hora (40 minutos). </para
+></tip>
+
+           <para
+>La opción <guilabel
+>Interpolar</guilabel
+> y <guilabel
+>Diferencia en minutos</guilabel
+> pueden utilizarse sino hay datos coincidentes. Si sabe que en realidad existe una correlación a pesar de que haya un gran lapso de tiempo entre la cámara y el GPS, puede establecer este límite aquí y pulsar en el botón <guilabel
+>Correlacionar</guilabel
+> para interpolar. </para>
+            <example>
+               <title
+>Correlación</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocalizationcorrelate1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>La diferencia máxima que se puede introducir aquí es de 240 minutos. </para>
+
+</sect2
+> 
+
+<sect2 id="geolocalization-edit-coordinates"
+>       <title
+>Editar coordenadas</title>
+            <example>
+               <title
+>Atribución semiautomática de coordenadas interactuando con el mapa</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocalizationeditcoords.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Las coordenadas pueden establecerse manualmente con este diálogo. Es útil si hay una serie de fotos tomadas en la misma localización. Como las coordenadas se memorizan desde un diálogo que llama al siguiente, es sencillo pulsar en <guilabel
+>Aceptar</guilabel
+> para fijar los datos anteriores en la foto actual. </para>
+           <para
+>En caso contrario, la localización podrá encontrarse y fijarse iterativamente con el mapa mostrado. PUlse en la región de interés, amplíela, ajuste la localización y pulse nuevamente, y así sucesivamente hasta que se ajuste lo suficiente. La altitud debe introducirse siempre de forma manual. El mapa puede cambiarse entre modo mapa, imágen de satélite o modo mixto. </para>
+</sect2>
+
+<sect2 id="geolocalization-manual"
+> <title
+>Etiquetado desde la línea de órdenes</title>
+  <para
+>Completamente fuera del contexto del complemento kipi, existen otras formas de etiquetar imágenes con el valor GPS. Veamos un pequeño script que utiliza exiftool para etiquetar un lote de imágenes. </para>
+
+
+<blockquote
+><screen
+>#!/bin/sh
+# script que sirve para utilizar de forma sencilla la línea de órdenes. Trata archivos regex o directorios completos.
+#
+#                        FORMATU                  Salida
+#                "%d grad %d' %.2f"\"    54 grad 59' 22.80"
+#                "%d grad %.4f min"      54 grad 59.3800 min
+#                "%.6f grados"         54.989667 grados
+
+if [ -z $1 ]; then 
+   echo "Uso: exiftool-gps-wrapper lat long [alt] archivo || dir (utilice coordenadas en coma flotante con signo)"
+else
+
+   if  [ -z "$4" ]; then  foo="$3"; alt=0
+   else                          foo="$4"; alt=$3
+   fi
+
+   echo $foo
+   if [ -e "$foo" ] ; then
+        latR=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
+        lonR=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+        lat=$(echo "$1" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # valor absoluto
+        lon=$(echo "$2" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # valor absoluto
+        # utilice la siguiente sintaxis para pegar con facilidad en Googlell=-1.23456,53.345345
+        #lonR=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
+        echo $lat, $latR, $lon, $lonR, $3, $4, $foo
+        
+        function setgpsinfo ()
+        {
+            exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$5 \
+            -GPSLongitudeRef=$4 -GPSLongitude=$3 -GPSLatitudeRef=$2 -GPSLatitude=$1 "$6"
+            exiftool -GPS:ALL "$6"
+        }
+
+        if [ -d "$foo" ] ; then
+
+            for i in "$foo" ; do    # la selección de archivos tratados depende del regex pasado
+                echo "i= "$i
+                setgpsinfo $lat $latR $lon $lonR $alt "$i"
+            done
+        else
+            setgpsinfo $lat $latR $lon $lonR $alt "$foo"
+        fi
+   else        echo "el archivo o la carpeta son erróneos"
+   fi
+fi                 
+</screen
+></blockquote>
+</sect2>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

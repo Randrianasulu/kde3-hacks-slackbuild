@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>Servidor OBEX: Recepción de archivos</title>
+<para
+>La mayor parte de los teléfonos móviles o PDAs tienen activado el Bluetooth, lo que le permitirá enviar archivos desde el móvil a su ordenador. Aunque puede ser más fácil de utilizar el <link linkend="components.kio_obex"
+>kioslave OBEX FTP</link
+> para enviar los archivos desde su teléfono a su ordenador, y por otra parte no todos los dispositivos soportan esto. El objeto OBEX de envío es soportado por la mayor parte de los dispositivos Bluetooth. </para>
+
+<sect2>
+<title
+>Utilizar el servidor OBEX</title>
+<para
+>kbluetoothd administra el servidor OBEX y se iniciará automáticamente si está activado y alguien intenta enviarle algún archivo. Por favor, eche un vistazo a la documentación de kbluetooth para saber cómo <link linkend="components.kbluetoothd.serviceconfig"
+>activar o desactivar servicios</link
+> (el servidor OBEX aparece listado como <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Cuando envía un archivo desde su móvil a su ordenador, el icono de kbluetoothd en la bandeja del sistema se vuelve azul y muestra una pequeña ventana emergente. De forma predeterminada (dependiendo de sus <link linkend="components.kbluetoothd.confirmation"
+>preferencias para las conexiones entrantes</link
+>) deberá aceptar primero la conexión, y a continuación la ventana principal de OBEX debería aparecer e iniciar la recepción de archivos. </para>
+<para
+>Los archivos entrantes se guardan en <filename
+>/tmp</filename
+> y se borrarán después de que cierre el servidor OBEX. Para guardar los archivos, tiene dos opciones: </para>
+<itemizedlist>
+<listitem>
+<para
+>Pulse <guibutton
+>Aceptar</guibutton
+> para guardar todos los archivos recibidos en una dirección predefinida.</para>
+</listitem>
+<listitem>
+<para
+>Arrastre uno o varios archivos a otras direcciones. Esto es especialmente práctico si desea enviar archivos por correo electrónico, ya que puede arrastrar los archivos directamente a kmail sin guardarlos primero en una dirección temporal. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

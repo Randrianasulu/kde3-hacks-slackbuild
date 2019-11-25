@@ -1,0 +1,375 @@
+From 9116c29739aa3e15eb5e052d335b1f76700f6b32 Mon Sep 17 00:00:00 2001
+From: tpearson <tpearson@283d02a7-25f6-0310-bc7c-ecb5cbfe19da>
+Date: Mon, 14 Dec 2009 08:57:48 +0000
+Subject: * kpdf page rotate options
+
+* kdvi options dialog enhancements
+* djvu plugin for kviewshell
+
+git-svn-id: svn://anonsvn.kde.org/home/kde/branches/trinity/kdegraphics@1062216 283d02a7-25f6-0310-bc7c-ecb5cbfe19da
+---
+diff --git a/kdvi/optionDialogSpecialWidget.cpp b/kdvi/optionDialogSpecialWidget.cpp
+index 1e24f6c..e93cdc7 100644
+--- a/kdvi/optionDialogSpecialWidget.cpp
++++ b/kdvi/optionDialogSpecialWidget.cpp
+@@ -46,7 +46,7 @@ optionDialogSpecialWidget::optionDialogSpecialWidget( QWidget* parent,  const ch
+   editorDescriptionString += i18n("Kile works very well");
+   
+   editorNameString        += "NEdit";
+-  editorCommandString     += "ncl -noask -line %l %f || nc -noask -line %l %f";
++  editorCommandString     += "nedit-nc -noask -line %l %f";
+   editorDescriptionString += i18n("NEdit perfectly supports inverse search.");
+   
+   editorNameString        += "VIM - Vi IMproved / GUI";
+diff --git a/kghostview/kghostview.desktop b/kghostview/kghostview.desktop
+index 66d3ee3..3e9ba00 100644
+--- a/kghostview/kghostview.desktop
++++ b/kghostview/kghostview.desktop
+@@ -84,3 +84,4 @@ GenericName[zh_TW]=PS/PDF 檢視器
+ GenericName[zu]=Umboniseli we PS/PDF
+ Terminal=false
+ Categories=Qt;KDE;Graphics;
++NoDisplay=true
+diff --git a/kpdf/core/generator.h b/kpdf/core/generator.h
+index ca0ea01..e0c892f 100644
+--- a/kpdf/core/generator.h
++++ b/kpdf/core/generator.h
+@@ -92,8 +92,8 @@ class Generator : public QObject
+  */
+ struct PixmapRequest
+ {
+-    PixmapRequest( int rId, int n, int w, int h, int p, bool a = false )
+-        : id( rId ), pageNumber( n ), width( w ), height( h ),
++    PixmapRequest( int rId, int n, int w, int h, int p, bool a = false, int r = 0 )
++        : id( rId ), pageNumber( n ), width( w ), height( h ), rotation( r ),
+         priority( p ), async( a ), page( 0 )  {};
+ 
+     // observer id
+@@ -102,6 +102,7 @@ struct PixmapRequest
+     int pageNumber;
+     int width;
+     int height;
++    int rotation;
+     // asyncronous request priority (less is better, 0 is max)
+     int priority;
+     // generate the pixmap in a thread and notify observer when done
+diff --git a/kpdf/core/generator_pdf/generator_pdf.cpp b/kpdf/core/generator_pdf/generator_pdf.cpp
+index 7ad3415..35020e5 100644
+--- a/kpdf/core/generator_pdf/generator_pdf.cpp
++++ b/kpdf/core/generator_pdf/generator_pdf.cpp
+@@ -316,7 +316,8 @@ void PDFGenerator::generatePixmap( PixmapRequest * request )
+     // 1. Set OutputDev parameters and Generate contents
+     // note: thread safety is set on 'false' for the GUI (this) thread
+     kpdfOutputDev->setParams( request->width, request->height, genObjectRects, genObjectRects, false );
+-    pdfdoc->displayPage( kpdfOutputDev, page->number() + 1, fakeDpiX, fakeDpiY, 0, false, true, false );
++    pdfdoc->displayPage( kpdfOutputDev, page->number() + 1, fakeDpiX, fakeDpiY, request->rotation,
++                         false, true, false );
+     if ( genObjectRects )
+         pdfdoc->processLinks( kpdfOutputDev, page->number() + 1 );
+ 
+@@ -1225,7 +1226,7 @@ void PDFPixmapGeneratorThread::run()
+     d->generator->kpdfOutputDev->setParams( width, height, 
+                                             genObjectRects, genObjectRects, TRUE /*thread safety*/ );
+     d->generator->pdfdoc->displayPage( d->generator->kpdfOutputDev, page->number() + 1,
+-                                       fakeDpiX, fakeDpiY, 0, false, true, false );
++                                       fakeDpiX, fakeDpiY, d->currentRequest->rotation, false, true, false );
+     if ( genObjectRects )
+         d->generator->pdfdoc->processLinks( d->generator->kpdfOutputDev, page->number() + 1 );
+ 
+diff --git a/kpdf/core/page.cpp b/kpdf/core/page.cpp
+index e6a847a..70bc71b 100644
+--- a/kpdf/core/page.cpp
++++ b/kpdf/core/page.cpp
+@@ -27,10 +27,40 @@ KPDFPage::KPDFPage( uint page, float w, float h, int r )
+     : m_number( page ), m_rotation( r ), m_width( w ), m_height( h ),
+     m_bookmarked( false ), m_text( 0 ), m_transition( 0 )
+ {
++    setRotation( r );
++}
++
++KPDFPage::~KPDFPage()
++{
++    deletePixmapsAndRects();
++    deleteHighlights();
++    delete m_text;
++    delete m_transition;
++}
++
++void KPDFPage::rotate90degrees()
++    {
++        float w = m_width;
++        m_width = m_height;
++        m_height = w;
++
++        // avoid Division-By-Zero problems in the program
++
++        if ( m_width <= 0 )
++        m_width = 1;
++        if ( m_height <= 0 )
++        m_height = 1;
++
++        deletePixmapsAndRects();
++    }
++
++void KPDFPage::setRotation( int r )
++{
+     // if landscape swap width <-> height (rotate 90deg CCW)
+     if ( r == 90 || r == 270 )
+     {
+-        m_width = h;
++        float w = m_width;
++        m_width = m_height;
+         m_height = w;
+     }
+     // avoid Division-By-Zero problems in the program
+@@ -38,17 +68,10 @@ KPDFPage::KPDFPage( uint page, float w, float h, int r )
+         m_width = 1;
+     if ( m_height <= 0 )
+         m_height = 1;
+-}
+ 
+-KPDFPage::~KPDFPage()
+-{
+     deletePixmapsAndRects();
+-    deleteHighlights();
+-    delete m_text;
+-    delete m_transition;
+ }
+ 
+-
+ bool KPDFPage::hasPixmap( int id, int width, int height ) const
+ {
+     if ( !m_pixmaps.contains( id ) )
+diff --git a/kpdf/core/page.h b/kpdf/core/page.h
+index ebd6e52..4a8be71 100644
+--- a/kpdf/core/page.h
++++ b/kpdf/core/page.h
+@@ -120,6 +120,9 @@ class KPDFPage
+         void deletePixmapsAndRects();
+         void deleteHighlights( int s_id = -1 );
+ 
++        void setRotation( int r );
++        void rotate90degrees();
++
+     private:
+         friend class PagePainter;
+         int m_number, m_rotation;
+diff --git a/kpdf/part.rc b/kpdf/part.rc
+index aa7409c..194e94a 100644
+--- a/kpdf/part.rc
++++ b/kpdf/part.rc
+@@ -1,5 +1,5 @@
+ <!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+-<kpartgui name="kpdf_part" version="18">
++<kpartgui name="kpdf_part" version="19">
+ <MenuBar>
+   <Menu name="file"><text>&amp;File</text>
+     <Action name="save" group="file_save"/>
+@@ -19,6 +19,8 @@
+     <Action name="zoom_fit_width"/>
+     <Action name="zoom_fit_page"/>
+     <Action name="zoom_fit_rect"/>
++    <Action name="rotate_right"/>
++    <Action name="rotate_left"/>
+     <Separator/>
+     <Action name="view_continuous"/>
+     <Action name="view_twopages"/>
+@@ -53,6 +55,8 @@
+   <Action name="zoom_in"/>
+   <Action name="zoom_to" />
+   <Action name="zoom_out"/>
++  <Action name="rotate_left"/>
++  <Action name="rotate_right"/>
+   <Separator/>
+   <Action name="zoom_fit_width"/>
+   <Action name="zoom_fit_page"/>
+diff --git a/kpdf/shell/kpdf.desktop b/kpdf/shell/kpdf.desktop
+index a276611..6cde8a9 100644
+--- a/kpdf/shell/kpdf.desktop
++++ b/kpdf/shell/kpdf.desktop
+@@ -78,5 +78,5 @@ Icon=kpdf
+ Type=Application
+ DocPath=kpdf/index.html
+ InitialPreference=7
+-Categories=Qt;KDE;Graphics;Viewer;
++Categories=Qt;KDE;Office;Viewer;
+ 
+diff --git a/kpdf/ui/pageview.cpp b/kpdf/ui/pageview.cpp
+index 247f1b1..866b8d6 100644
+--- a/kpdf/ui/pageview.cpp
++++ b/kpdf/ui/pageview.cpp
+@@ -71,6 +71,7 @@ public:
+     // view layout (columns and continuous in Settings), zoom and mouse
+     PageView::ZoomMode zoomMode;
+     float zoomFactor;
++    int rotation;
+     PageView::MouseMode mouseMode;
+     QPoint mouseGrabPos;
+     QPoint mousePressPos;
+@@ -185,6 +186,7 @@ PageView::PageView( QWidget *parent, KPDFDocument *document )
+     d->document = document;
+     d->zoomMode = (PageView::ZoomMode)KpdfSettings::zoomMode();
+     d->zoomFactor = KpdfSettings::zoomFactor();
++    d->rotation = 0;
+     d->mouseMode = MouseNormal;
+     d->mouseMidStartY = -1;
+     d->mouseOnRect = false;
+@@ -263,6 +265,14 @@ void PageView::setupActions( KActionCollection * ac )
+     d->aZoomFitText = new KToggleAction( i18n("Fit to &Text"), "viewmagfit", 0, ac, "zoom_fit_text" );
+     connect( d->aZoomFitText, SIGNAL( toggled( bool ) ), SLOT( slotFitToTextToggled( bool ) ) );
+ 
++    // rotate actions
++    KAction *action;
++    action = new KAction( i18n("Rotate Right"), "rotate_cw", KShortcut( "Ctrl+Shift++" ),
++                          this, SLOT( slotRotateRight() ), ac, "rotate_right" );
++
++    action = new KAction( i18n("Rotate Left"), "rotate_ccw", KShortcut( "Ctrl+Shift+-" ),
++                          this, SLOT( slotRotateLeft() ), ac, "rotate_left" );
++
+     // View-Layout actions
+     d->aViewTwoPages = new KToggleAction( i18n("&Two Pages"), "view_left_right", 0, ac, "view_twopages" );
+     connect( d->aViewTwoPages, SIGNAL( toggled( bool ) ), SLOT( slotTwoPagesToggled( bool ) ) );
+@@ -1867,7 +1877,7 @@ void PageView::slotRequestVisiblePixmaps( int newLeft, int newTop )
+         if ( !i->page()->hasPixmap( PAGEVIEW_ID, i->width(), i->height() ) )
+         {
+             PixmapRequest * p = new PixmapRequest(
+-                    PAGEVIEW_ID, i->pageNumber(), i->width(), i->height(), PAGEVIEW_PRIO, true );
++                    PAGEVIEW_ID, i->pageNumber(), i->width(), i->height(), PAGEVIEW_PRIO, true, d->rotation );
+             requestedPixmaps.push_back( p );
+         }
+ 
+@@ -1907,7 +1917,7 @@ void PageView::slotRequestVisiblePixmaps( int newLeft, int newTop )
+             // request the pixmap if not already present
+             if ( !i->page()->hasPixmap( PAGEVIEW_ID, i->width(), i->height() ) && i->width() > 0 )
+                 requestedPixmaps.push_back( new PixmapRequest(
+-                        PAGEVIEW_ID, i->pageNumber(), i->width(), i->height(), PAGEVIEW_PRELOAD_PRIO, true ) );
++                        PAGEVIEW_ID, i->pageNumber(), i->width(), i->height(), PAGEVIEW_PRELOAD_PRIO, true, d->rotation ) );
+         }
+ 
+         // add the page before the 'visible series' in preload
+@@ -1918,7 +1928,7 @@ void PageView::slotRequestVisiblePixmaps( int newLeft, int newTop )
+             // request the pixmap if not already present
+             if ( !i->page()->hasPixmap( PAGEVIEW_ID, i->width(), i->height() ) && i->width() > 0 )
+                 requestedPixmaps.push_back( new PixmapRequest(
+-                        PAGEVIEW_ID, i->pageNumber(), i->width(), i->height(), PAGEVIEW_PRELOAD_PRIO, true ) );
++                        PAGEVIEW_ID, i->pageNumber(), i->width(), i->height(), PAGEVIEW_PRELOAD_PRIO, true, d->rotation ) );
+         }
+     }
+ 
+@@ -2044,6 +2054,52 @@ void PageView::slotFitToTextToggled( bool on )
+     if ( on ) updateZoom( ZoomFitText );
+ }
+ 
++void PageView::slotRotateRight()
++{
++    d->rotation = ( d->rotation + 90 ) % 360;
++
++    QValueVector< PageViewItem * >::iterator iIt = d->items.begin(), iEnd = d->items.end();
++    for ( ; iIt != iEnd; ++iIt )
++    {
++        int r = const_cast<KPDFPage*>((*iIt)->page())->rotation();
++        r = ( r + 90 ) % 360;
++
++        const_cast<KPDFPage*>((*iIt)->page())->rotate90degrees();
++    }
++
++    // be sure to block updates to document's viewport
++    bool prevState = d->blockViewport;
++    d->blockViewport = true;
++    slotRelayoutPages();
++    d->blockViewport = prevState;
++    // request pixmaps
++    slotRequestVisiblePixmaps();
++}
++
++void PageView::slotRotateLeft()
++{
++    d->rotation -= 90;
++    if ( d->rotation < 0 ) d->rotation += 360;
++
++    QValueVector< PageViewItem * >::iterator iIt = d->items.begin(), iEnd = d->items.end();
++    for ( ; iIt != iEnd; ++iIt )
++    {
++        int r = const_cast<KPDFPage*>((*iIt)->page())->rotation();
++        r -= 90;
++        if ( r < 0 ) r += 360;
++
++        const_cast<KPDFPage*>((*iIt)->page())->rotate90degrees();
++    }
++
++    // be sure to block updates to document's viewport
++    bool prevState = d->blockViewport;
++    d->blockViewport = true;
++    slotRelayoutPages();
++    d->blockViewport = prevState;
++    // request pixmaps
++    slotRequestVisiblePixmaps();
++}
++
+ void PageView::slotTwoPagesToggled( bool on )
+ {
+     uint newColumns = on ? 2 : 1;
+diff --git a/kpdf/ui/pageview.h b/kpdf/ui/pageview.h
+index f6e4099..be082bd 100644
+--- a/kpdf/ui/pageview.h
++++ b/kpdf/ui/pageview.h
+@@ -135,6 +135,8 @@ class PageView : public QScrollView, public DocumentObserver
+         void slotFitToWidthToggled( bool );
+         void slotFitToPageToggled( bool );
+         void slotFitToTextToggled( bool );
++        void slotRotateRight();
++        void slotRotateLeft();
+         void slotTwoPagesToggled( bool );
+         void slotContinuousToggled( bool );
+         void slotSetMouseNormal();
+diff --git a/kpdf/xpdf/xpdf/Stream.cc b/kpdf/xpdf/xpdf/Stream.cc
+index ab63024..2021952 100644
+--- a/kpdf/xpdf/xpdf/Stream.cc
++++ b/kpdf/xpdf/xpdf/Stream.cc
+@@ -410,15 +410,12 @@ StreamPredictor::StreamPredictor(Stream *strA, int predictorA,
+   ok = gFalse;
+ 
+   nVals = width * nComps;
+-  if (width <= 0 || nComps <= 0 || nBits <= 0 ||
+-      nComps > gfxColorMaxComps || nBits > 16 ||
+-      width >= INT_MAX / nComps ||
+-      nVals >= (INT_MAX - 7) / nBits) {
+-    return;
+-  }
+   pixBytes = (nComps * nBits + 7) >> 3;
+   rowBytes = ((nVals * nBits + 7) >> 3) + pixBytes;
+-  if (rowBytes <= 0) {
++  if (width <= 0 || nComps <= 0 || nBits <= 0 ||
++      nComps > gfxColorMaxComps || nBits > 16 ||
++      width >= INT_MAX / nComps ||      // check for overflow in nVals
++      nVals >= (INT_MAX - 7) / nBits) { // check for overflow in rowBytes
+     return;
+   }
+   predLine = (Guchar *)gmalloc(rowBytes);
+diff --git a/kviewshell/plugins/djvu/libdjvu/DjVuGlobal.h b/kviewshell/plugins/djvu/libdjvu/DjVuGlobal.h
+index bfdd4dd..3d26c8c 100644
+--- a/kviewshell/plugins/djvu/libdjvu/DjVuGlobal.h
++++ b/kviewshell/plugins/djvu/libdjvu/DjVuGlobal.h
+@@ -70,7 +70,7 @@ inline void * operator new(size_t, void * ptr) { return ptr; }
+ #elif defined(HAVE_STDINCLUDES)
+ # include <new>
+ #else
+-# include <new.h>
++# include <new>
+ #endif
+ 
+ #ifdef WIN32
+diff --git a/kviewshell/plugins/djvu/libdjvu/Makefile.am b/kviewshell/plugins/djvu/libdjvu/Makefile.am
+index 4795da0..56a38dc 100644
+--- a/kviewshell/plugins/djvu/libdjvu/Makefile.am
++++ b/kviewshell/plugins/djvu/libdjvu/Makefile.am
+@@ -1,6 +1,6 @@
+ INCLUDES = -I$(top_srcdir) $(all_includes)
+ 
+-kde_module_LTLIBRARIES = libdjvu.la
++lib_LTLIBRARIES = libdjvu.la
+ libdjvu_la_LDFLAGS = -avoid-version $(all_libraries)
+ libdjvu_la_LIBADD = $(LIBJPEG)
+ libdjvu_la_SOURCES = Arrays.cpp DjVuDocEditor.cpp DjVuMessageLite.cpp GOS.cpp IW44Image.cpp \
+--
+cgit v0.9.0.2-52-g1de3

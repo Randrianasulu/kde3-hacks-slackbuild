@@ -1,0 +1,659 @@
+# translation of kipiplugin_imagesgallery.po to russian
+#
+# Dmitry A. Bugay <sam@vhnet.ru>, 2006.
+# Nick Shaforostoff <shafff@ukr.net>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_imagesgallery\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2006-12-13 18:14+0300\n"
+"Last-Translator: Andrey Cherepanov <sibskull@mail.ru>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Дмитрий Бугай"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sam@vhnet.ru"
+
+#: imagesgallery.cpp:187
+msgid "KIPI Album Image Gallery"
+msgstr ""
+
+#: imagesgallery.cpp:273
+msgid ""
+"The target folder\n"
+"'%1'\n"
+"already exists; do you want overwrite it? (all data in this folder will be "
+"lost.)"
+msgstr ""
+"Папка\n"
+"'%1'\n"
+"уже существует, перезаписать её? (Все данные будут потеряны)"
+
+#: imagesgallery.cpp:278 imagesgallery.cpp:503
+msgid "Cannot remove folder '%1'."
+msgstr "Не удалось удалить папку '%1'."
+
+#: imagesgallery.cpp:371 imagesgallery.cpp:469
+msgid "Could not create folder '%1'"
+msgstr "Не удалось создать папку '%1'"
+
+#: imagesgallery.cpp:556 imagesgallery.cpp:1192
+msgid "Could not open file '%1'"
+msgstr "Невозможно открыть файл '%1'"
+
+#: imagesgallery.cpp:592
+msgid "Could not create folder '%1' in '%2'"
+msgstr "Не удалось создать папку '%1' в '%2'"
+
+#: imagesgallery.cpp:714
+msgid "Album list"
+msgstr "Список альбомов"
+
+#: imagesgallery.cpp:718
+#, c-format
+msgid "Image Gallery for Album %1"
+msgstr "Галерея изображений для альбома %1"
+
+#: imagesgallery.cpp:732
+msgid "<i>Comment:</i>"
+msgstr "<i>Комментарий:</i>"
+
+#: imagesgallery.cpp:735
+msgid "<i>Collection:</i>"
+msgstr "<i>Коллекция:</i>"
+
+#: imagesgallery.cpp:738
+msgid "<i>Date:</i>"
+msgstr "<i>Дата:</i>"
+
+#: imagesgallery.cpp:741
+msgid "<i>Images:</i>"
+msgstr "<i>Изображения:</i>"
+
+#: imagesgallery.cpp:766
+msgid "<i>Subdirectories:</i>"
+msgstr "<i>Подкаталог:</i>"
+
+#: imagesgallery.cpp:853 imagesgallery.cpp:933 imagesgallery.cpp:1410
+msgid "KB"
+msgstr "кб"
+
+#: imagesgallery.cpp:882 imagesgallery.cpp:886
+#, c-format
+msgid ""
+"_n: 1 image\n"
+"%n images"
+msgstr ""
+"1 изображение\n"
+"%n изображения\n"
+"%n изображений"
+
+#: imagesgallery.cpp:1029 imagesgallery.cpp:1072 imagesgallery.cpp:1420
+msgid "Valid HTML 4.01"
+msgstr "HTML 4.01"
+
+#: imagesgallery.cpp:1032 imagesgallery.cpp:1076 imagesgallery.cpp:1425
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "Галерея изображений создана с <a href=\"%1\">%2</a> на %3"
+
+#: imagesgallery.cpp:1052
+msgid "<i>Album list:</i>"
+msgstr "<i>Список альбомов:</i>"
+
+#: imagesgallery.cpp:1123
+msgid "Could not create folder '%1' in '%2'."
+msgstr "Не удалось создать папку '%1' в '%2'."
+
+#: imagesgallery.cpp:1348 imagesgallery.cpp:1349
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: imagesgallery.cpp:1354
+msgid "Album index"
+msgstr "Указатель альбомов"
+
+#: imagesgallery.cpp:1359 imagesgallery.cpp:1360
+msgid "Albums list"
+msgstr "Список альбомов"
+
+#: imagesgallery.cpp:1366
+msgid "Next"
+msgstr "Следующий"
+
+#: imagesgallery.cpp:1636
+msgid ""
+"Cannot start 'mozilla' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить браузер 'mozilla'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1646
+msgid ""
+"Cannot start 'netscape' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить браузер 'netscape'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1656
+msgid ""
+"Cannot start 'opera' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить браузер 'opera'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1666
+msgid ""
+"Cannot start 'firefox' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить браузер 'firefox'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1676
+msgid ""
+"Cannot start 'galeon' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить браузер 'galeon'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1686
+msgid ""
+"Cannot start 'amaya' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить браузер 'amaya'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1696
+msgid ""
+"Cannot start 'quanta' web editor.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить веб редактор 'quanta'.\n"
+"Проверьте правильность установки."
+
+#: imagesgallery.cpp:1706
+msgid ""
+"Cannot start 'screem' web editor.\n"
+"Please check your installation."
+msgstr ""
+"Не удалось запустить веб-редактор 'screem'.\n"
+"Проверьте правильность установки."
+
+#: imgallerydialog.cpp:94
+msgid "Create Image Galleries"
+msgstr "Создать галерею"
+
+#: imgallerydialog.cpp:104
+msgid "Image Gallery"
+msgstr "Галерея рисунков"
+
+#: imgallerydialog.cpp:107
+msgid ""
+"A Kipi plugin for HTML album export.\n"
+"Based on KimgalleryPlugin implementation."
+msgstr ""
+
+#: imgallerydialog.cpp:111
+msgid "Author and maintainer"
+msgstr "Автор и сопровождающий"
+
+#: imgallerydialog.cpp:114
+msgid "Image navigation mode patches"
+msgstr ""
+
+#: imgallerydialog.cpp:117
+msgid "HTML implementation patches"
+msgstr "Патчи для работы с HTML"
+
+#: imgallerydialog.cpp:120 imgallerydialog.cpp:123
+msgid "Original HTML generator implementation"
+msgstr ""
+
+#: imgallerydialog.cpp:129
+msgid "Plugin Handbook"
+msgstr ""
+
+#: imgallerydialog.cpp:152
+msgid "Selection"
+msgstr "Выделение"
+
+#: imgallerydialog.cpp:152
+msgid "Album Selection"
+msgstr "Выбор альбома"
+
+#: imgallerydialog.cpp:165
+msgid "Look"
+msgstr "Вид"
+
+#: imgallerydialog.cpp:165
+msgid "Page Look"
+msgstr "Вид страницы"
+
+#: imgallerydialog.cpp:173
+msgid "Main &page title:"
+msgstr "Заголовок главной &страницы:"
+
+#: imgallerydialog.cpp:176
+msgid "Album Image Galleries"
+msgstr ""
+
+#: imgallerydialog.cpp:179
+msgid ""
+"<p>Enter here the title of the main HTML page (multiple Album selection only)."
+msgstr "<p>Введите название главной страницы."
+
+#: imgallerydialog.cpp:186
+msgid "I&mages per row:"
+msgstr "Изображений в &ряду:"
+
+#: imgallerydialog.cpp:187
+msgid ""
+"<p>Enter here the number of images per row in the album page. A good value is "
+"'4'."
+msgstr "<p>Введите число изображений в ряду. Хорошее значение - 4."
+
+#: imgallerydialog.cpp:196
+msgid "Show image file &name"
+msgstr "Показывать &имена файлов"
+
+#: imgallerydialog.cpp:197
+msgid ""
+"<p>If you enable this option, the image filenames will be added to the Album "
+"page."
+msgstr ""
+"<p>Если включён этот параметр, название изображения будет добавлено в альбом."
+
+#: imgallerydialog.cpp:204
+msgid "Show image file &size"
+msgstr "Показывать &размер файла"
+
+#: imgallerydialog.cpp:205
+msgid ""
+"<p>If you enable this option, the image file sizes will be added to the Album "
+"page."
+msgstr ""
+"<p>Если включён этот параметр, размер файла изображения будет добавлен в "
+"альбом."
+
+#: imgallerydialog.cpp:212
+msgid "Show image &dimensions"
+msgstr "Показывать &размеры картинки"
+
+#: imgallerydialog.cpp:213
+msgid ""
+"<p>If you enable this option, the image dimensions will be added to the Album "
+"page."
+msgstr ""
+"<p>Если включён этот параметр, размер изображения будет добавлен в альбом."
+
+#: imgallerydialog.cpp:220
+msgid "Show page creation date"
+msgstr "Показывать дату создания страницы"
+
+#: imgallerydialog.cpp:221
+msgid ""
+"<p>If you enable this option, the creation date will be added to the Album "
+"page."
+msgstr "<p>Если включён этот параметр, дата создания будет добавлена в альбом."
+
+#: imgallerydialog.cpp:228
+msgid "Create pages for each image"
+msgstr "Создание страниц для каждого изображения"
+
+#: imgallerydialog.cpp:229
+msgid "<p>If you enable this option, a HTML page will be added for each photo."
+msgstr ""
+"<p>Если включён этот параметр, для каждого фото будет использоваться своя "
+"страница."
+
+#: imgallerydialog.cpp:239
+msgid "Open image gallery in:"
+msgstr "Открыть галерею изображений в:"
+
+#: imgallerydialog.cpp:240
+msgid "<p>Select here the application to preview or edit the HTML pages."
+msgstr "<p>Выбрать приложение для просмотра или редактирования HTML страниц."
+
+#: imgallerydialog.cpp:266
+msgid "<p>Select here the font name to use for the pages."
+msgstr "<p>Выбрать шрифт для использования на страницах."
+
+#: imgallerydialog.cpp:272
+msgid "Fon&t name:"
+msgstr "&Шрифт:"
+
+#: imgallerydialog.cpp:285
+msgid "<p>Select here the font size to use for the pages."
+msgstr "<p>Выбрать размер шрифта."
+
+#: imgallerydialog.cpp:287
+msgid "Font si&ze:"
+msgstr "Р&азмер шрифта:"
+
+#: imgallerydialog.cpp:300
+msgid "<p>Select here the foreground color to use for the pages."
+msgstr "<p>Выбрать цвет текста для использования на страницах."
+
+#: imgallerydialog.cpp:302
+msgid "&Foreground color:"
+msgstr "Цвет &текста:"
+
+#: imgallerydialog.cpp:315
+msgid "<p>Select here the background color to use for the pages."
+msgstr "<p>Выбрать цвет фона."
+
+#: imgallerydialog.cpp:317
+msgid "&Background color:"
+msgstr "Цвет &фона:"
+
+#: imgallerydialog.cpp:330
+msgid "<p>Select here the image borders' size in pixels."
+msgstr "<p>Выбрать размер рамки изображения (в пикселях)."
+
+#: imgallerydialog.cpp:332
+msgid "Images borders s&ize:"
+msgstr "&Размер рамки изображений:"
+
+#: imgallerydialog.cpp:345
+msgid "<p>Select here the color to use for the image borders."
+msgstr "<p>Выбрать цвет рамки."
+
+#: imgallerydialog.cpp:348
+msgid "Image bo&rder color:"
+msgstr "Цвет &рамки:"
+
+#: imgallerydialog.cpp:368
+msgid "Album"
+msgstr "Альбом"
+
+#: imgallerydialog.cpp:368
+msgid "Photo Album"
+msgstr "Фото Альбом"
+
+#: imgallerydialog.cpp:376
+msgid "&Save gallery to:"
+msgstr "&Сохранить галерею в:"
+
+#: imgallerydialog.cpp:383
+msgid "<p>The folder name where the galleries will be saved."
+msgstr "<p>Имя папки, в которую будет сохранена галерея."
+
+#: imgallerydialog.cpp:387
+msgid "Resize target images"
+msgstr "Изменить размер изображений"
+
+#: imgallerydialog.cpp:390
+msgid "<p>If you enable this option, all target images can be resized."
+msgstr "<p>Если включён этот параметр, размер всех изображений будет изменён."
+
+#: imgallerydialog.cpp:395
+msgid "Target images size:"
+msgstr "Размер изображений:"
+
+#: imgallerydialog.cpp:397
+msgid "<p>The new size of the target images in pixels"
+msgstr "<p>Новый размер изображений в пикселях"
+
+#: imgallerydialog.cpp:401
+msgid "Use a specific target image compression"
+msgstr "Использовать сжатие изображений"
+
+#: imgallerydialog.cpp:405
+msgid ""
+"<p>If you enable this option, all target images can be compressed with a "
+"specific compression value."
+msgstr ""
+"<p>Если включён этот параметр, все изображения будут сжаты с настраиваемой "
+"степенью сжатия."
+
+#: imgallerydialog.cpp:410
+msgid "Target images compression:"
+msgstr "Сжатие изображений:"
+
+#: imgallerydialog.cpp:412
+msgid "<p>The compression value of the target images :<p>"
+msgstr "<p>Степень сжатия:<p>"
+
+#: imgallerydialog.cpp:413 imgallerydialog.cpp:558
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: очень высокое сжатие"
+"<p><b>25</b>: высокое сжатие"
+"<p><b>50</b>: среднее сжатие"
+"<p><b>75</b>: слабое сжатие (по умолчанию)"
+"<p><b>100</b>: без сжатия"
+
+#: imgallerydialog.cpp:430
+msgid "<p>Select here the image file format for the target images.<p>"
+msgstr "<p>Выбрать формат изображений.<p>"
+
+#: imgallerydialog.cpp:431 imgallerydialog.cpp:574
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+
+#: imgallerydialog.cpp:441
+msgid "Target images file format:"
+msgstr "Формат изображений:"
+
+#: imgallerydialog.cpp:451 imgallerydialog.cpp:596
+msgid "&Set different color depth:"
+msgstr "&Установить разную глубину цвета:"
+
+#: imgallerydialog.cpp:453
+msgid "<p>Select here the color depth used for the target image rendering."
+msgstr "<p>Выбрать глубину цвета для изображений."
+
+#: imgallerydialog.cpp:467
+#, fuzzy
+msgid "Use images album &captions"
+msgstr "Использовать &комментарии к альбому"
+
+#: imgallerydialog.cpp:471
+#, fuzzy
+msgid ""
+"<p>If you enable this option, the images Album captions will be used for "
+"generating subtitles for the images."
+msgstr ""
+"<p>Если включён этот параметр, комментарии будут использовать как заголовки для "
+"изображений."
+
+#: imgallerydialog.cpp:477
+#, fuzzy
+msgid "Show album cap&tion"
+msgstr "Показать &дату создания альбома"
+
+#: imgallerydialog.cpp:480
+#, fuzzy
+msgid ""
+"<p>If you enable this option, the Album caption will be shown in the gallery."
+msgstr "<p>Если включён этот параметр, будет показана дата создания альбома."
+
+#: imgallerydialog.cpp:485
+msgid "Show album &collection"
+msgstr ""
+
+#: imgallerydialog.cpp:488
+msgid ""
+"<p>If you enable this option, the Album collection will be shown in the "
+"gallery."
+msgstr ""
+
+#: imgallerydialog.cpp:493
+msgid "Show album creation &date"
+msgstr "Показать &дату создания альбома"
+
+#: imgallerydialog.cpp:496
+msgid ""
+"<p>If you enable this option, the Album creation date will be shown in the "
+"gallery."
+msgstr "<p>Если включён этот параметр, будет показана дата создания альбома."
+
+#: imgallerydialog.cpp:501
+msgid "Show &number of images in album"
+msgstr "Показать &число изображений в альбоме"
+
+#: imgallerydialog.cpp:504
+msgid ""
+"<p>If you enable this option, the number of images in Album will be shown in "
+"the gallery."
+msgstr ""
+"<p>Если включён этот параметр, будет показано число изображений в альбоме."
+
+#: imgallerydialog.cpp:529
+msgid "Thumbnails"
+msgstr "Эскизы"
+
+#: imgallerydialog.cpp:529
+msgid "Image Thumbnails"
+msgstr "Эскизы изображений"
+
+#: imgallerydialog.cpp:540
+msgid "Thumbnails size:"
+msgstr "Размер эскизов:"
+
+#: imgallerydialog.cpp:542
+msgid "<p>The new size of the thumbnails in pixels"
+msgstr "<p>Размер эскизов в пикселях"
+
+#: imgallerydialog.cpp:546
+msgid "Use a specific thumbnail compression"
+msgstr "Использовать сжатие эскизов"
+
+#: imgallerydialog.cpp:550
+msgid ""
+"<p>If you enable this option, all thumbnails can be compressed with a specific "
+"compression value."
+msgstr ""
+"<p>Если включён этот параметр, все эскизы будут сжаты с настраиваемой степенью "
+"сжатия."
+
+#: imgallerydialog.cpp:555
+msgid "Thumbnails compression:"
+msgstr "Сжатие эскизов:"
+
+#: imgallerydialog.cpp:557
+msgid "<p>The compression value of thumbnails :<p>"
+msgstr "<p>Степень сжатия эскизов:<p>"
+
+#: imgallerydialog.cpp:573
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>Выбрать формат эскизов.<p>"
+
+#: imgallerydialog.cpp:584
+msgid "Thumbnails file format:"
+msgstr "Формат эскизов:"
+
+#: imgallerydialog.cpp:598
+msgid "<p>Select here the color depth used for the thumbnail image rendering."
+msgstr "<p>Выбрать глубину цвета, используемую для отрисовки эскизов."
+
+#: imgallerydialog.cpp:640
+msgid "You must select at least one album."
+msgstr "Вы должны выбрать не менее одного альбома."
+
+#: imgallerydialog.cpp:648
+msgid "Image gallery folder does not exist; please check it..."
+msgstr "Папки галереи изображений не существует..."
+
+#: plugin_imagesgallery.cpp:59
+msgid "Images Gallery..."
+msgstr "Галерея изображений..."
+
+#: plugin_imagesgallery.cpp:123
+msgid "Album HTML Export"
+msgstr "Экспорт HTML альбома"
+
+#: plugin_imagesgallery.cpp:144
+msgid "Initialising..."
+msgstr "Инициализация..."
+
+#: plugin_imagesgallery.cpp:151
+msgid "Making main HTML interface..."
+msgstr "Создание головного HTML интерфейса..."
+
+#: plugin_imagesgallery.cpp:157
+msgid "Making HTML pages for Album '%1'..."
+msgstr "Создание HTML страниц для альбома '%1'..."
+
+#: plugin_imagesgallery.cpp:163
+msgid "Making HTML page for image '%1'..."
+msgstr "Создание HTML страницы для изображения '%1'..."
+
+#: plugin_imagesgallery.cpp:169
+msgid "Creating thumbnail for '%1'"
+msgstr "Создание эскизов для '%1'"
+
+#: plugin_imagesgallery.cpp:197
+msgid "Main HTML interface creation completed."
+msgstr "Создание головного HTML интерфейса завершено."
+
+#: plugin_imagesgallery.cpp:203
+msgid "HTML pages creation for Album '%1' completed."
+msgstr "Создание HTML страниц для альбома '%1' завершено."
+
+#: plugin_imagesgallery.cpp:209
+msgid "Creating thumbnail for '%1' completed."
+msgstr "Создание эскизов для '%1' завершено."
+
+#: plugin_imagesgallery.cpp:229
+msgid "Failed to create thumbnail for '%1'"
+msgstr "Не удалось создать эскизы для '%1'"
+
+#: plugin_imagesgallery.cpp:237
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "Не удалось создать HTML интерфейс: %1"
+
+#: plugin_imagesgallery.cpp:248
+msgid "Failed to create HTML page for Album '%1'"
+msgstr "Не удалось создатьHTML страницу для альбома '%1'"
+
+#: plugin_imagesgallery.cpp:259
+msgid "Failed to create HTML page for image '%1'"
+msgstr "Не удалось создатьHTML страницу для изображения '%1'"
+
+#: plugin_imagesgallery.cpp:302
+msgid "Starting browser program..."
+msgstr "Запуск браузера..."
+
+#~ msgid "Show album commen&ts"
+#~ msgstr "Показать коммента&рии"
+
+#~ msgid "<p>If you enable this option, the Album comments will be shown in the gallery."
+#~ msgstr "<p>Если включён этот параметр, комментарии будут показаны в галереи."
+
+#~ msgid "Couldn't open file '%1'"
+#~ msgstr "Не удалось открыть файл '%1'"

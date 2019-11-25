@@ -1,0 +1,75 @@
+diff -urN /dev/shm/kdeaddons-3.5.10/konq-plugins/arkplugin/arkplugin.cpp /dev/shm/kdeaddons-3.5.10.new/konq-plugins/arkplugin/arkplugin.cpp
+--- /dev/shm/kdeaddons-3.5.10/konq-plugins/arkplugin/arkplugin.cpp	2007-01-15 05:17:11.000000000 -0600
++++ /dev/shm/kdeaddons-3.5.10.new/konq-plugins/arkplugin/arkplugin.cpp	2010-08-22 14:07:40.752962840 -0500
+@@ -284,6 +284,20 @@
+         m_archiveMimeTypes << "application/x-lzop";
+     }
+ 
++    bool havelzma = false;
++    if ( !KStandardDirs::findExe( "lzma" ).isNull() && m_conf->readBoolEntry( "UseLzma", true ) )
++    {
++        havelzma = true;
++        m_archiveMimeTypes << "application/x-lzma";
++    }
++
++    bool havexz = false;
++    if ( !KStandardDirs::findExe( "xz" ).isNull() && m_conf->readBoolEntry( "UseXz", true ) )
++    {
++        havexz = true;
++        m_archiveMimeTypes << "application/x-xz";
++    }
++
+     if ( !KStandardDirs::findExe( "tar" ).isNull() && m_conf->readBoolEntry( "UseTar", true ) )
+     {
+         m_archiveMimeTypes << "application/x-tar";
+@@ -296,6 +310,10 @@
+         }
+         if ( havelzop )
+             m_archiveMimeTypes << "application/x-tzo";
++        if ( havelzma )
++            m_archiveMimeTypes << "application/x-tlz";
++        if ( havexz )
++            m_archiveMimeTypes << "application/x-txz";
+     }
+ 
+     if ( !KStandardDirs::findExe( "lha" ).isNull() && m_conf->readBoolEntry( "UseLha", false ) )
+@@ -330,6 +348,7 @@
+ 
+     if ( !KStandardDirs::findExe( "ar" ).isNull() && m_conf->readBoolEntry( "UseAr", false ) )
+         m_archiveMimeTypes << "application/x-archive";
++
+ }
+ 
+ void ArkMenu::extMimeTypes()
+@@ -356,6 +375,20 @@
+         m_extractMimeTypes << "application/x-lzop";
+     }
+ 
++    bool havelzma = false;
++    if ( !KStandardDirs::findExe( "lzma" ).isNull() )
++    {
++        havelzma = true;
++        m_archiveMimeTypes << "application/x-lzma";
++    }
++
++    bool havexz = false;
++    if ( !KStandardDirs::findExe( "xz" ).isNull() )
++    {
++        havexz = true;
++        m_archiveMimeTypes << "application/x-xz";
++    }
++
+     if ( !KStandardDirs::findExe( "tar" ).isNull() )
+     {
+         m_extractMimeTypes << "application/x-tar";
+@@ -368,6 +401,10 @@
+         }
+         if ( havelzop )
+             m_extractMimeTypes << "application/x-tzo";
++        if ( havelzma )
++            m_extractMimeTypes << "application/x-lzma";
++        if ( havexz )
++            m_extractMimeTypes << "application/x-xz";
+     }
+ 
+     if ( !KStandardDirs::findExe( "lha" ).isNull() )

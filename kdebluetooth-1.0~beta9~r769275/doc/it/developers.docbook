@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Informazioni per gli sviluppatori</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Questa sezione descrive come utilizzare kbluetoothd per la tua applicazione o accederci da script per recuperare nomi di dispositivi nella cache o cose simili. </para>
+
+<sect2>
+<title
+>La cache dei nomi</title>
+<para
+>La cache dei nomi tiene traccia di tutte le richieste di nomi e ne salva i risultati. Con essa, altre applicazioni e kbluetoothd stesso possono recuperare il nome di un altro dispositivo Bluetooth dal suo indirizzo Bluetooth univoco, anche se il dispositivo non è attualmente nel raggio operativo. Ciò è usato per lo più per rendere le interfacce utente più piacevoli, perché gli indirizzi Bluetooth come 00:60:AB:13:83:3D sono un po' difficili da ricordare. </para>
+<para
+>Sarà probabilmente obsoleto non appena BlueZ sarà equipaggiato con la sua cache dei nomi persistente. </para>
+<para
+>Puoi accedere alla cache dei nomi attraverso dcop. Per cercare un indirizzo nella cache dei nomi dalla riga di comando, scrivi <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;indirizzo&gt;</command
+>. Per trovare quale dispositivo ha usato per ultimo un certo nome, puoi eseguire <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;nome&gt;</command
+>. Questo comando non distingue le maiuscole. Nota inoltre come diversi dispositivi possano essere configurati per usare lo stesso nome. </para>
+</sect2>
+
+<sect2>
+<title
+>Il metaserver</title>
+<para
+>Se vuoi implementare un'applicazione server per un nuovo protocollo Bluetooth, puoi facilmente integrarlo con kbluetoothd, in modo che il tuo server sia avviato automaticamente. </para>
+<para
+>Devi fornire un file XML che descriva la voce SDP e un file desktop corrispondente. kbluetoothd imposterà automaticamente una voce SDP, assegnerà un canale rfcomm e inizierà ad ascoltare sul canale selezionato. Quando qualcuno si connette al tuo servizio, kbluetoothd lo avvierà e gli passerà un socket per la connessione già accettata. Il numero del codice è passato come argomento da riga di comando. </para>
+<para
+>Il pacchetto kbluetooth contiene <command
+>kbtserialchat</command
+>, che è inteso (oltre al suo uso per il debugging e addirittura per chiacchierare...) come un programma piuttosto semplice su come integrare un'applicazione nell'infrastruttura kdebluetoothd. Siccome kbtserialchat è un client e un server allo stesso tempo, non dovrai considerare tutti gli argomenti da riga di comando come fa kbtserialchat, specialmente non le URL SDP. </para>
+<para
+>Il formato dei file XML SDP dovrebbe descriversi da sé, se sai come sono strutturate le voci SDP. Un punto importante è come il parametro per i canali rfcomm selezionati riesca ad arrivare nella voce SDP del server. Siccome il canale è selezionato automaticamente da kbluetoothd, non puoi fissarlo nel file di registrazione SDP. Invece devi usare &lt;uint valref='rfcommchannel' size='8'/&gt; come segnaposto. I canali rfcomm che vengono provati sono definiti nel file desktop corrispondente. <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> sono i primi canali che vengono provati e <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> dà il numero di canali seguenti da provare in ordine ascendente se un canale è già usato da un altro servizio. </para>
+<para
+>kbluetoothd al momento supporta solo rfcomm, ma quando ce ne sarà bisogno, forniremo supporto anche per l2cap o simili. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>Il servizio di rilevamento dispositivi</title>
+<para
+>kbluetoothd può cercare attivamente altri dispositivi ed eseguire comandi non appena un dispositivo viene rilevato o sparisce. Puoi configurare questo servizio nel modulo del centro di controllo di kbluetoothd nella scheda "Rilevamento dispositivi". </para>
+<para
+>L'elenco dei processi di rilevamento <emphasis
+>attivi</emphasis
+> come mostrato nel modulo del centro di controllo è solo un elenco di eseguibili trovati nella cartella <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. Puoi anche aggiungere un nuovo script nella cartella dei modelli globali <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Gli script in questa cartella che finiscono per ".template" saranno mostrati quando l'utente fa clic su "Aggiungi nuovo processo..." e saranno semplicemenete copiati alla cartella dei processi attivi nella cartella HOME dell'utente. </para>
+<para
+>Gli script inclusi sono divisi in due per rendere più facile aggiornarli senza doverli reinstallare. La parte ".template" contiene solo le impostazioni modificabili dall'utente che sono copiate alla cartella HOME. Lo script quindi chiama la parte ".real" che rimane nella cartella dei modelli. </para>
+<para
+>Per iniziare a scrivere il tuo processo di rilevamento, fai clic su "Aggiungi nuovo processo..." e seleziona <phrase
+>Processo_personalizzato</phrase
+>. Ciò copierà <filename
+>Processo_personalizzato.template</filename
+> nella tua cartella dei processi. Ora fai clic su "Configura..." per cambiare lo script. Questo script elenca tutte le opzioni da riga di comando e variabili d'ambiente possibili a cui hai accesso. </para>
+<para
+>Fai attenzione che quando modifichi questo script personalizzato, tutti i cambiamenti sono persi se lo rimuovi dall'elenco dei processi attivi. Se vuoi distribuirlo, ti raccomandiamo di dividerlo in una parte .template per le impostazioni e una parte .real che faccia il lavoro vero e proprio. </para>
+
+<para
+>Per poter caricare, scaricare o eliminare file dall'interno di un processo di rilevamento, puoi usare <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Se hai scritto dei buoni script per il servizio di rilevamento dispositivi che potrebbero essere utili ad altri, saremo felici di includerli nella distribuzione :)= </para>
+</sect2>
+
+</sect1>
+</chapter>
+

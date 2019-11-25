@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>Kioslave OBEX: sfogliare cartelle attraverso Bluetooth</title>
+
+  <sect2>
+    <title
+>Generale</title>
+    <para
+>Il protocollo OBEX è progettato per essere usato con dispositivi mobili. Se hai già trasferito una vcard da un dispositivo mobile a un altro dispositivo mobile, hai usato OBEX. Però ci sono anche altre applicazioni per il protocollo OBEX. In particolare il protocollo di file system. Se il dispositivo mobile capisce questo protocollo, puoi sfogliare, caricare e scaricare file dal file system del tuo dispositivo mobile usando l'implementazione di questo client. Anche i protocolli di sincronizzazione come IrMCSync o SyncML hanno collegamenti OBEX, e ci si può accedere usando questo client, anche se la sincronizzazione non ha utilità in konqueror.</para>
+    <para
+>I protocolli OBEX possono usare molti trasporti diversi. Il trasporto originale era IrDA, ma esistono anche collegamenti di trasporto per Bluetooth, linee seriali e connessioni TCP/IP.</para>
+    <para
+>OBEX supporta l'autenticazione bidirezionale. La prima direzione, meglio conosciuta, è del client da parte del server. In questo modo l'implementazione del server può verificare l'identità del client. Ma anche il client può verificare l'identità del server. Per l'autenticazione viene usato un controllo con checksum MD5. Ciò garantisce che le password non siano mai inviate in chiaro sul mezzo di trasporto.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>Formato URL</title>
+    <para
+>Le risorse OBEX si accedono usando degli URL. La parte del protocollo è chiaramente obex:. Il componente del percorso contiene il percorso al server. La parte host è un po' più complessa.</para>
+    <para
+>Per server accessibili su TCP/IP la parte host è come di norma. Puoi anche usare il nome host o indirizzo ip dell'host server da contattare. Inoltre, se il server è in esecuzione su una porta non standard (la porta standard è la 650), puoi aggiungere il numero di porta come di solito. Esempio: <userinput
+>OBEX://nomeHost:porta/percorso</userinput
+></para>
+    <para
+>Per mezzi di trasporto IrDA e Bluetooth puoi usare l'indirizzo dell'hardware in notazione standard con ottetti separati da doppi due punti. Carino, ma è un po' difficile ricordare l'indirizzo hardware del tuo dispositivo Bluetooth. Esempio: <userinput
+>obex://[ef:01:23:45]/percorso</userinput
+> o <userinput
+>obex://[12:34:ef:01:23:45]/percorso</userinput
+></para>
+    <para
+>Perciò è possibile definire alias host da usare con il protocollo OBEX. Questi alias sono definiti nel modulo di KControl OBEX. Puoi configurare un nome leggibile, rilevare dispositivi e finalmente assegnare un indirizzo hardware a quel nome. Con questi alias sono accessibili anche dispositivi o trasporti seriali. Per IrDA e Bluetooth ci sono comodi alias predefiniti chiamati irda e bluetooth. Entrambi fanno il rilevamento dei dispositivi e cercano di connettersi al primo dispositivo che trovano.</para>
+    <para
+>Buona fortuna per la navigazione del cellulare del tuo vicino :))</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Trucchi e suggerimenti</title>
+    <para
+>Come ogni altro kioslave, puoi aprire direttamente dispositivi Bluetooth con kio_obex e salvarci file. Quindi, se per esempio scrivi una lista della spesa, puoi semplicemente scriverla con KEdit e salvarla sul tuo telefono. </para>
+    <para
+>Puoi accelerare questa procedura aggiungendo un segnalibro all'elenco dei segnalibri della finestra di dialogo di salvataggio dei file. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Limiti</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX e KDE</title>
+      <para
+>Siccome un kioclient non può controllare il numero di processi slave che accedono alla stessa destinazione, capita spesso che ce ne sia più di uno. Però i trasporti OBEX, eccetto il trasporto TCP/IP, supportano una sola connessione di trasporto alla volta. Ciò impedisce a dei kioslave di connettersi con un "Dispositivo o risorsa occupato". OBEX ha una soluzione parziale al problema. Se il server la supporta, si possono trasmettere pacchetti per connessioni multiple su una connessione di trasporto. Però, non ho visto nessun dispositivo che annunciasse questa funzionalità. Ciò richiederebbe un demone separato per ciascuna destinazione. Quindi, se vedrò dispositivi che forniscono questa funzionalità, inizierò a implementare il demone.</para>
+      <para
+>Non c'è un metodo particolare per rinominare o spostare un file sul dispositivo. Quindi, ciò si fa copiando i dati da e al dispositivo. Ciò è lento e avvierà due kioslave che avranno il problema sopra descritto.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Compatibilità con dispositivi</title>
+      <para
+>Siccome questo client implementa uno standard aperto c'è una speranza concreta che ci siano molti dispositivi, là fuori, che funzioneranno bene. Però ci saranno sempre eccezioni.</para>
+      <para
+>Il client è sviluppato con un Siemens S45i usando IrDA o il protocollo BFB specifico della Siemens sulla linea seriale. Come puoi immaginare questo funziona.</para>
+      <para
+>Il cellulare NOKIA 3650 ha un errore nel firmware in qualche versione. I cellulari con questo errore restituiscono file XML errati per gli elenchi delle cartelle. Ciò fa vedere cartelle vuote. L'errore è riportato essere almeno nel firmware 2.50. La versione del firmware 3.16 ha corretto questo errore. Grazie a Fred Schaettgen &lt;Sch@ttgen.net&gt; per i test.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

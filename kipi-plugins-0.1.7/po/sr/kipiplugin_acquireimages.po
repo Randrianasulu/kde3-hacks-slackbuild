@@ -1,0 +1,342 @@
+# translation of kipiplugin_acquireimages.po to
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007, 2008.
+# translation of kipiplugin_acquireimages.po to Serbian
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_acquireimages\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-04 14:59+0100\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Слободан Симић"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: acquireimagedialog.cpp:105
+msgid "Save Target Image Options"
+msgstr "Опције за снимање циљне слике"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+msgid "Acquire images"
+msgstr "Добави слике"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+msgid "A Kipi plugin to acquire images"
+msgstr "Прикључак Kipi-ја за добављање слика"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr "Аутор и одржавалац"
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr "Приручник прикључка"
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "слика"
+
+#: acquireimagedialog.cpp:180
+msgid "Target Image"
+msgstr "Циљна слика"
+
+#: acquireimagedialog.cpp:181
+msgid "Target Image Options"
+msgstr "Опције циљне слике"
+
+#: acquireimagedialog.cpp:190
+msgid "File Name && Caption"
+msgstr "Име фајла и коментари"
+
+#: acquireimagedialog.cpp:191
+msgid "<p>The target image preview with the file name and caption."
+msgstr "<p>Преглед циљне слике са именом фајла и коментарима."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Име фајла (без суфикса):"
+
+#: acquireimagedialog.cpp:197
+msgid "acquired_image"
+msgstr "acquired_image"
+
+#: acquireimagedialog.cpp:198
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Увде унесите име фајла циљне слике, без суфикса (биће аутоматски додат имену "
+"фајла на основу изабраног формата)."
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr "Коментар:"
+
+#: acquireimagedialog.cpp:209
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Овде унесите коментаре циљне слике."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Преглед циљне слике."
+
+#: acquireimagedialog.cpp:228
+msgid "Saving Options"
+msgstr "Опције снимања"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>Опције за снимање циљне слике."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Компресија слике:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>Вредност компресије циљне слике за формате JPEG и PNG:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: врло висока компресија"
+"<p><b>25</b>: висока компресија"
+"<p><b>50</b>: средња компресија"
+"<p><b>75</b>: ниска компресија (подразумевано)"
+"<p><b>100</b>: без компресије"
+
+#: acquireimagedialog.cpp:260
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Овде изаберите формат фајла за циљну слику.<p>"
+
+#: acquireimagedialog.cpp:261
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Добар формат фајлова за Веб, али користи компресију са губицима."
+"<p><b>PNG</b>: Проширив формат фајлова за добру компресију растерских слика, "
+"без губитака. PNG је слободна од патената замена за GIF, а може да замени и "
+"TIFF у многим уобичајеним применама. PNG је пројектован да ради добро у "
+"применама за прегледање на вези, као што је Веб (World Wide Web), тако да је "
+"потпуно серијски са опцијом прогресивног приказа. Такође, PNG може да складишти "
+"податке о гами и хроматичности ради побољшаног поклапања боја на разноврсним "
+"платформама."
+
+#: acquireimagedialog.cpp:269
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: Прилично стар стандард који је и даље врло популаран. Врло је "
+"флексибилан и платформски независан, подржавају га бројни програми за обраду "
+"слика и практично сав софтвер за припрему штампе."
+
+#: acquireimagedialog.cpp:273
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: Формат фајлова који се користи као посреднички формат за "
+"складиштење информација о битмапама у боји. PPM фајлови могу бити или бинарни "
+"или ASCII и складиштити вредности пиксела величине до 24 бита. Овај формат "
+"прави текстуалне фајлове највеће величине за кодирање слика без губитака у "
+"квалитету."
+
+#: acquireimagedialog.cpp:277
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: Популаран формат слика на у Windows-овом окружењу. Ефикасно "
+"складишти мапиране или немапиране RGB графичке податке у величини од 1, 4, 8, "
+"или 24 бита. Подаци могу бити складиштени сирово или користећи 4- или 8-битни "
+"RLE алгоритам за компресију података. BMP је изврстан избор за једноставан "
+"битмапски формат који подржава широк опсег RGB података о слици."
+
+#: acquireimagedialog.cpp:284
+msgid "Image file format:"
+msgstr "Формат фајла слике:"
+
+#: acquireimagedialog.cpp:303
+msgid "Selection"
+msgstr "Избор"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Избор албума"
+
+#: acquireimagedialog.cpp:311
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Изаберите фасциклу за снимање циљне слике"
+
+#: acquireimagedialog.cpp:320
+msgid "&Add New Folder"
+msgstr "&Додај нову фасциклу"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr "<p>Додај нову фасциклу."
+
+#: acquireimagedialog.cpp:328
+msgid "Album Description"
+msgstr "Опис албума"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p>Опис текућег албума у листи за избор."
+
+#: acquireimagedialog.cpp:393
+#, c-format
+msgid "Caption: %1"
+msgstr "Коментар: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Колекција: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Датум: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Ставке: %1"
+
+#: acquireimagedialog.cpp:409
+msgid "You must select a target album for this image."
+msgstr "Морате изабрати циљни албум за ову слику."
+
+#: acquireimagedialog.cpp:415
+msgid "You must provide a file name for this image."
+msgstr "Морате навести име фајла за ову слику."
+
+#: acquireimagedialog.cpp:474
+msgid "Cannot write image file \"%1\"."
+msgstr "Не могу да запишем фајл слике „%1“."
+
+#: acquireimagedialog.cpp:483
+msgid "Could not upload image to \"%1\"."
+msgstr "Нисам могао да окачим слику на „%1“."
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+"<qt>Грешка приликом обавештавања програма о новој слици. Грешка је била: %1</qt>"
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Скенирај слике..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Снимак екрана..."
+
+#: plugin_acquireimages.cpp:114
+msgid "No KDE scan-service available; check your system."
+msgstr "KDE сервис за скенирање није доступан; проверите свој систем."
+
+#: plugin_acquireimages.cpp:115
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "KIPI-јев прикључак за скенирање слика"
+
+#: screenshotdialog.cpp:71
+msgid "Screenshot"
+msgstr "Снимак екрана"
+
+#: screenshotdialog.cpp:72
+msgid "&New Snapshot"
+msgstr "&Нови снимак"
+
+#: screenshotdialog.cpp:82
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"Помоћу овог дијалога можете снимити или вашу радну површину\n"
+"или неки појединачни прозор. Ако снимате један прозор, ваш\n"
+"курсор миша претвориће се у нишан; тада, само мишем\n"
+"изаберите прозор."
+
+#: screenshotdialog.cpp:90
+msgid "Grab the entire desktop"
+msgstr "Сними целу радну површину"
+
+#: screenshotdialog.cpp:91
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p>Ако укључите ову опцију, снимиће се цела радна површина. У супротном, само "
+"активни прозори."
+
+#: screenshotdialog.cpp:97
+msgid "Hide all host application windows"
+msgstr "Сакриј све прозоре домаћинског програма"
+
+#: screenshotdialog.cpp:98
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr ""
+"<p>Ако укључите ову опцију, сви прозори домаћинског програма биће сакривени "
+"током снимања."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Застој:"
+
+#: screenshotdialog.cpp:107
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr "<p>Застој у секундама пре него што снимање почне."
+
+#: screenshotdialog.cpp:261
+msgid "Unable to take snapshot."
+msgstr "Не могу да направим снимак."
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Грешка при прављењу снимка"

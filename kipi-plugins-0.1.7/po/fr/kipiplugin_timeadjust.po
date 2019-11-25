@@ -1,0 +1,153 @@
+# translation of kipiplugin_timeadjust.po to français
+# David Jobet <david.jobet@free.fr>, 2004, 2005.
+# Tung Nguyen <ntung@free.fr>, 2005.
+# Fabien <fabien.ubuntu@gmail.com>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_timeadjust\n"
+"POT-Creation-Date: 2008-03-17 12:48+0100\n"
+"PO-Revision-Date: 2008-03-03 12:21+0100\n"
+"Last-Translator: Fabien <fabien.ubuntu@gmail.com>\n"
+"Language-Team: français <kde-francophone@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "David Jobet,Tung Nguyen"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "david dot jobet at free dot fr,ntung@free.fr"
+
+#: plugin_timeadjust.cpp:61
+msgid "Adjust Time && Date..."
+msgstr "Ajuster la date et l'heure..."
+
+#: timeadjustdialog.cpp:150 timeadjustdialog.cpp:509
+msgid "Adjust Time & Date"
+msgstr "Ajuster la date et l'heure"
+
+#: timeadjustdialog.cpp:160
+msgid "Time Adjust"
+msgstr "Ajuster la date et l'heure"
+
+#: timeadjustdialog.cpp:163
+msgid "A Kipi plugin for adjusting time stamp of picture files"
+msgstr "Un module externe KIPI pour ajuster la date et l'heure des images"
+
+#: timeadjustdialog.cpp:167
+msgid "Author"
+msgstr "Auteur"
+
+#: timeadjustdialog.cpp:170
+msgid "Developper and maintainer"
+msgstr "Développeur et mainteneur"
+
+#: timeadjustdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr "Manuel du module externe"
+
+#: timeadjustdialog.cpp:181
+msgid "Adjustment Type"
+msgstr "Type d'ajustement"
+
+#: timeadjustdialog.cpp:184
+msgid "Subtract"
+msgstr "Soustraire"
+
+#: timeadjustdialog.cpp:185
+msgid "Set file date to EXIF/IPTC creation date"
+msgstr ""
+"Définir la date du fichier en fonction de celle fournie par l'appareil photo "
+"(EXIF)"
+
+#: timeadjustdialog.cpp:186
+msgid "Custom date"
+msgstr "Date personnalisée"
+
+#: timeadjustdialog.cpp:200
+msgid "Reset to current date"
+msgstr "Remettre à la date actuelle"
+
+#: timeadjustdialog.cpp:203
+msgid "Update EXIF creation date"
+msgstr "Mettre à jour la date de création Exif"
+
+#: timeadjustdialog.cpp:204
+msgid "Update IPTC creation date"
+msgstr "Mettre à jour la date de création IPTC"
+
+#: timeadjustdialog.cpp:210
+msgid "Adjustments"
+msgstr "Ajustements"
+
+#: timeadjustdialog.cpp:218
+msgid "Hours:"
+msgstr "Heures : "
+
+#: timeadjustdialog.cpp:223
+msgid "Minutes:"
+msgstr "Minutes : "
+
+#: timeadjustdialog.cpp:228
+msgid "Seconds:"
+msgstr "Secondes : "
+
+#: timeadjustdialog.cpp:233
+msgid "Days:"
+msgstr "Jours : "
+
+#: timeadjustdialog.cpp:238
+msgid "Months:"
+msgstr "Mois : "
+
+#: timeadjustdialog.cpp:243
+msgid "Years:"
+msgstr "Années : "
+
+#: timeadjustdialog.cpp:250
+msgid "Example"
+msgstr "Exemple"
+
+#: timeadjustdialog.cpp:380
+#, c-format
+msgid ""
+"_n: 1 image will be changed; \n"
+"%n images will be changed; "
+msgstr ""
+"1 image sera modifiée, \n"
+"%n images seront modifiées, "
+
+#: timeadjustdialog.cpp:383
+#, c-format
+msgid ""
+"_n: 1 image will be skipped due to an inexact date.\n"
+"%n images will be skipped due to inexact dates."
+msgstr ""
+"1 image sera ignorée à cause d'une date inexacte.\n"
+"%n images seront ignorées à cause de dates inexactes."
+
+#: timeadjustdialog.cpp:391
+#, c-format
+msgid ""
+"_n: 1 image will be changed\n"
+"%n images will be changed"
+msgstr ""
+"1 image sera modifiée\n"
+"%n images seront modifiées"
+
+#: timeadjustdialog.cpp:404
+msgid "<b>%1</b><br>would, for example, change into<br><b>%2</b>"
+msgstr "<b>%1</b><br>serait, par example, changé en<br><b>%2</b>"
+
+#: timeadjustdialog.cpp:507
+msgid "Unable to set date and time like picture metadata from:"
+msgstr ""
+"Impossible de définir la date et l'heure dans les métadonnées des images pour :"

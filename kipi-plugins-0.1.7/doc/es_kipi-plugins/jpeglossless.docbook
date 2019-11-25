@@ -1,0 +1,75 @@
+<chapter id="jpeglossless">
+<chapterinfo>
+
+<title
+>JPEG sin pérdida</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento JPEG sin pérdida es una herramienta para transformar imágenes sin pérdida de calidad a causa de la compresión. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Este complemento está disponible desde la aplicación servidora. Permite guardar imágenes en formato JPEG, que normalmente está configurado con un nivel de compresión que pierde información (sino, no reduciría su tamaño), pero sin perder ni calidad ni información sobre los metadatos: </para>
+
+<itemizedlist>
+<listitem
+><para
+>Hacer una rotación JPEG sin pérdida de 90/180/270 grados.</para
+></listitem>
+<listitem
+><para
+>Hacer un reflejo vertical u horizontal JPEG sin pérdida.</para
+></listitem>
+<listitem
+><para
+>Hacer una conversión a blanco y negro JPEG sin pérdida.</para
+></listitem>
+<listitem
+><para
+>Rotación basada en etiquetas de orientación Exif o reflejo de autoajuste.</para
+></listitem>
+<listitem
+><para
+>Hacer recompresión sin pérdida de imágenes JPEG.</para
+></listitem>
+</itemizedlist>
+<para
+>Como consecuencia del guardado sin pérdida el tamaño del archivo se incrementará (similar al formato PNG sin pérdida) ya que no hace compresión de la información de codificación del color. </para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

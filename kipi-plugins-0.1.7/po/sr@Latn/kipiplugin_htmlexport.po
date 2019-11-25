@@ -1,0 +1,278 @@
+# translation of kipiplugin_htmlexport.po to Serbian
+#
+# Slobodan Simic <simicsl@verat.net>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_htmlexport\n"
+"POT-Creation-Date: 2008-07-08 22:18+0200\n"
+"PO-Revision-Date: 2007-07-18 14:41+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: generator.cpp:175
+msgid "Could not find theme in '%1'"
+msgstr "Ne mogu da nađem temu u „%1“"
+
+#: generator.cpp:182
+msgid "Copying theme"
+msgstr "Kopiram temu"
+
+#: generator.cpp:194
+msgid "Could not copy theme"
+msgstr "Ne mogu da kopiram temu"
+
+#: generator.cpp:203
+msgid "Could not open file '%1' for writing"
+msgstr "Ne mogu da otvorim fajl „%1“ radi upisa"
+
+#: generator.cpp:207
+msgid "Could not save image to file '%1'"
+msgstr "Ne mogu da snimim sliku u fajl „%1“"
+
+#: generator.cpp:236
+msgid "Could not read image '%1'"
+msgstr "Ne mogu da čitam sliku „%1“"
+
+#: generator.cpp:242
+msgid "Format of image '%1' is unknown"
+msgstr "Format slike „%1“ je nepoznat"
+
+#: generator.cpp:251
+msgid "Error loading image '%1'"
+msgstr "Greška pri učitavanju slike „%1“"
+
+#: generator.cpp:287
+msgid "Could not save image '%1' to '%2'"
+msgstr "Ne mogu da sačuvam sliku „%1“ u „%2“"
+
+#: generator.cpp:305
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "Ne mogu da sačuvam umanjeni prikaz za sliku „%1“ u „%2“"
+
+#: generator.cpp:329
+msgid "Could not create gallery.xml"
+msgstr "Ne mogu da napravim gallery.xml"
+
+#: generator.cpp:340
+msgid "Generating files for \"%1\""
+msgstr "Pravim fajlove za „%1“"
+
+#: generator.cpp:372
+msgid "Previous"
+msgstr "Prethodno"
+
+#: generator.cpp:373
+msgid "Next"
+msgstr "Sledeće"
+
+#: generator.cpp:374
+msgid "Collection List"
+msgstr "Lista zbirki"
+
+#: generator.cpp:375
+msgid "Original Image"
+msgstr "Originalna slika"
+
+#: generator.cpp:376
+msgid "Go Up"
+msgstr "Idi gore"
+
+#: generator.cpp:403
+msgid "Generating HTML files"
+msgstr "Pravim HTML fajlove"
+
+#: generator.cpp:409
+msgid "Could not load XSL file '%1'"
+msgstr "Ne mogu da učitam XSL fajl „%1“"
+
+#: generator.cpp:415
+msgid "Could not load XML file '%1'"
+msgstr "Ne mogu da učitam XML fajl „%1“"
+
+#: generator.cpp:447
+msgid "Error processing XML file"
+msgstr "Greška u obradi XML fajla"
+
+#: generator.cpp:454
+msgid "Could not open '%1' for writing"
+msgstr "Ne mogu da otvorim „%1“ radi upisa"
+
+#: generator.cpp:472
+msgid "Could not create folder '%1' in '%2'"
+msgstr "Ne mogu da napravim fasciklu „%1“ u „%2“"
+
+#: plugin.cpp:67
+msgid "HTML Gallery..."
+msgstr "HTML galerija..."
+
+#: plugin.cpp:85
+msgid "Generating gallery..."
+msgstr "Stvaram galeriju..."
+
+#. i18n: file imagesettingspage.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "ImageSettingsPage"
+msgstr "Strana podešavanja slike"
+
+#. i18n: file imagesettingspage.ui line 35
+#: rc.cpp:6
+#, no-c-format
+msgid "Full Image"
+msgstr "Puna slika"
+
+#. i18n: file imagesettingspage.ui line 99
+#: rc.cpp:9
+#, no-c-format
+msgid "Thumbnail"
+msgstr "Umanjeni prikaz"
+
+#. i18n: file imagesettingspage.ui line 158
+#: rc.cpp:12
+#, no-c-format
+msgid "Save image"
+msgstr "Snimi sliku"
+
+#. i18n: file imagesettingspage.ui line 186
+#: rc.cpp:15
+#, no-c-format
+msgid "Max size:"
+msgstr "Maks. veličina:"
+
+#. i18n: file imagesettingspage.ui line 197
+#: rc.cpp:18 rc.cpp:39
+#, no-c-format
+msgid "Format:"
+msgstr "Format:"
+
+#. i18n: file imagesettingspage.ui line 214
+#: rc.cpp:21 rc.cpp:42
+#, no-c-format
+msgid "JPEG"
+msgstr "JPEG"
+
+#. i18n: file imagesettingspage.ui line 219
+#: rc.cpp:24 rc.cpp:45
+#, no-c-format
+msgid "PNG"
+msgstr "PNG"
+
+#. i18n: file imagesettingspage.ui line 231
+#: rc.cpp:27 rc.cpp:36
+#, no-c-format
+msgid "Quality:"
+msgstr "Kvalitet:"
+
+#. i18n: file imagesettingspage.ui line 273
+#: rc.cpp:30
+#, no-c-format
+msgid "Include full-size original images for download"
+msgstr "Uključi originalne slike u punoj veličini za preuzimanje"
+
+#. i18n: file imagesettingspage.ui line 320
+#: rc.cpp:33
+#, no-c-format
+msgid "Use original image"
+msgstr "Koristi originalnu sliku"
+
+#. i18n: file imagesettingspage.ui line 431
+#: rc.cpp:48
+#, no-c-format
+msgid "Size:"
+msgstr "Veličina:"
+
+#. i18n: file outputpage.ui line 35
+#: rc.cpp:51
+#, no-c-format
+msgid "Destination folder:"
+msgstr "Odredišna fascikla:"
+
+#. i18n: file outputpage.ui line 53
+#: rc.cpp:54
+#, no-c-format
+msgid "Open in browser"
+msgstr "Otvori u pregledaču"
+
+#. i18n: file themeparameterspage.ui line 16
+#: rc.cpp:57
+#, no-c-format
+msgid "Form1"
+msgstr "Oblik1"
+
+#. i18n: file themeparameterspage.ui line 38
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+"Na ovoj strani možete izmeniti neke parametre. U zavisnosti od teme, različiti "
+"parametri su dostupni."
+
+#: wizard.cpp:139
+msgid ""
+"_: '%1' is a label for a theme parameter\n"
+"%1:"
+msgstr "%1:"
+
+#: wizard.cpp:175
+msgid "HTML Export"
+msgstr "Izvoz u HTML"
+
+#: wizard.cpp:178
+msgid "A KIPI plugin to export image collections to HTML pages"
+msgstr "KIPI priključak za izvoz zbirke slika u HTML strane"
+
+#: wizard.cpp:181
+msgid "Author and Maintainer"
+msgstr "Autor i održavalac"
+
+#: wizard.cpp:187
+msgid "Plugin Handbook"
+msgstr ""
+
+#: wizard.cpp:191
+msgid "Collection Selection"
+msgstr "Izbor zbirke"
+
+#: wizard.cpp:195
+msgid "Theme"
+msgstr "Tema"
+
+#: wizard.cpp:200
+msgid "Theme Parameters"
+msgstr "Parametri teme"
+
+#: wizard.cpp:203
+msgid "Image Settings"
+msgstr "Postavke slike"
+
+#: wizard.cpp:207
+msgid "Output"
+msgstr "Izlaz"
+
+#: wizard.cpp:250
+#, c-format
+msgid "Author: %1"
+msgstr "Autor: %1"
+
+#~ msgid "HTML Export Handbook"
+#~ msgstr "Priručnik za HTML izvoz"

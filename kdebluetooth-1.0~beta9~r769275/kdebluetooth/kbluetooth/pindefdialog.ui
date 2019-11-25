@@ -1,0 +1,70 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>PinDefaultDialog</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>PinDefaultDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>425</width>
+            <height>214</height>
+        </rect>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>messageLabel</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;font size="+2"&gt;Bluetooth Pairing Request&lt;/font&gt;
+&lt;p&gt;&lt;b&gt;%1&lt;/b&gt; (device address &lt;b&gt;%2&lt;/b&gt;) wants to pair with your
+Bluetooth device, which is needed for authenticated and secure connections.
+&lt;/p&gt;&lt;p&gt;
+If you are sure about the identity of the other party, then please enter
+the same PIN below as was used by the other device.&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>pinEdit</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>197</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

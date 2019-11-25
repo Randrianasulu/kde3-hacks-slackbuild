@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Concetti</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Sicurezza in Bluetooth: accoppiare i dispositivi</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Cos'è l'"accoppiamento"?</title>
+<para
+>Molto spesso si richiede che un dispositivo si identifichi quando vuole accedere a un servizio. In quel caso i due dispositivi devono essere <phrase
+>accoppiati</phrase
+>. Quando due dispositivi sono accoppiati, possono essere certi dell'identità dell'altro. Senza l'accoppiamento, dovresti affidarti all'indirizzo o al nome dell'altro dispositivo, che può facilmente essere falsificato. </para>
+<para
+>L'accoppiamento di solito avviene una volta tra due dispositivi. Dopo l'accoppiamento, le connessioni tra due dispositivi saranno <phrase
+>autenticate</phrase
+> automaticamente. </para>
+<para
+>Normalmente <emphasis
+>il processo di accoppiamento viene avviato automaticamente quando necessario</emphasis
+>. Non devi preoccuparti che un dispositivo non venga accoppiato se vuoi accedere ai suoi servizi. Se cerca di autenticarsi, ma non ci riesce, il processo di accoppiamento sarà avviato automaticamente. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Come funziona?</title>
+
+<para
+>I dispositivi sono accoppiati per accertarsi dell'identità dell'altro, ma il primo passo può essere fatto automaticamente. <emphasis
+>Tu</emphasis
+> devi assicurarti di sapere chi vuole accoppiarsi con il tuo dispositivo. Ciò viene fatto inserendo un numero "PIN" in entrambi i dispositivi. Il concetto di "PIN" è molto usato, ma è fuorviante. Non è lo stesso tipo di PIN che inserisci per prelevare soldi da un bancomat. Non devi ricordarlo. E dopo (!) che l'accoppiamento è avvenuto non devi mantenerlo segreto. Devi solo assicurarti che nessun altro conosca quel numero finché tu avrai (o voi avrete) inserito questo numero in ciascun dispositivo. </para>
+<para
+>Per andare sul sicuro, non solo dovresti tenere il PIN segreto durante il processo di accoppiamento, ma dovresti anche usare un numero casuale, che non possa essere indovinato facilmente. Qui KDE Bluetooth ti aiuta creando da solo un numero casuale di 8 cifre, se possibile. Puoi anche usare dei caratteri per un PIN, ma potresti avere problemi a inserirli nel dialogo del PIN su un cellulare. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>L'assistente dei PIN</title>
+<para
+>Ma dove si deve inserire il PIN? Come indicato prima, i dispositivi ti chiederanno il PIN semplicemente quando è necessario. Per BlueZ, le cose sono un po' più complicate. Ci sono diversi modi che BlueZ usa per ottenere il PIN dall'utente. </para>
+<para
+>Il modo normale è configurare hcid di BlueZ per l'uso di una "applicazione assistente PIN" e impostare "security user;" in <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Questo assistente è un piccolo programma che non fa altro che chiedere all'utente un numero e mettere quel numero su stdout. BlueZ è equipaggiato con il proprio assistente, chiamato "bluepin", che pare crei parecchi problemi. Quindi c'è un assistente PIN più carino chiamato "bluez-pin" e infine, ma non per importanza, c'è l'assistente PIN di kdebluetooth "kbluepin". Per piacere riferisciti alle <link linkend="installation.setup"
+>istruzioni di configurazione</link
+> per come impostare l'assistente PIN e cosa fare se non funziona. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Gestire dispositivi accoppiati</title>
+<para
+>Dopo aver accoppiato molti dispositivi potresti chiederti quali dispositivi sono accoppiati e quali no. Potresti anche voler rimuovere un accoppiamento. Le risposte sono per lo più cattive notizie. </para>
+<para
+>Primo, nessun dispositivo può mai essere sicuro di essere accoppiato o meno. Quando due dispositivi sono accoppiati, condividono una <phrase
+>chiave di collegamento</phrase
+> segreta, creata durante il processo di accoppiamento in base al numero PIN e altri ingredienti. Siccome l'altra parte potrebbe decidere di eliminare la chiave senza comunicarlo, avere una chiave di collegamento per un dispositivo non garantisce che la chiave di collegamento sull'altro lato esista ancora. Se una chiave di collegamento sparisce, l'accoppiamento non c'è più. Ovviamente puoi essere sicuro di <emphasis
+>non</emphasis
+> essere accoppiato con un dispositivo per cui non hai una chiave. </para>
+<para
+>Come si rimuove una chiave di collegamento? Dipende dal dispositivo. La maggior parte dei telefoni o palmari hanno un elenco di dispositivi "accoppiati" o "fidati", da cui puoi rimuovere elementi singoli in qualche modo. Nella versione attuale di BlueZ (2.6), le chiavi di collegamento risiedono normalmente nel file <filename
+>/etc/bluetooth/link_key</filename
+>. Siccome le chiavi di collegamento devono essere mantenute segrete, questo file è accessibile solo da root. Puoi eliminare in sicurezza questo file, ma tutte le tue chiavi di collegamento andranno perse. Siccome il file è binario, non puoi modificarlo facilmente senza uno strumento apposito. Al momento, kdebluetooth non contiene uno strumento per leggere o scrivere questo file, perché la gestione delle chiavi di collegamento di BlueZ cambierà presto (o tardi). </para>
+<para
+>C'è inoltre una seccatura particolare quando cambi frequentemente tra diversi sistemi operativi che entrambi usano Bluetooth (di solito Linux&lt;->Windows): quando accoppi il tuo telefono sotto Linux e poi avvii Windows, Windows non saprà nulla delle chiavi di collegamento gestite da BlueZ. Quindi parrà che il computer abbia eliminato la chiave di collegamento e dovrai accoppiare di nuovo. A seconda del tuo dispositivo potrebbe anche essere impossibile accoppiare di nuovo senza prima rimuovere la "vecchia" chiave di collegamento dal telefono. Puoi incorrere nello stesso problema con BlueZ stesso se selezioni "pairing single;" in <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Quindi per adesso sappi del problema, non usare Bluetooth sotto entrambi i sistemi operativi o usa un adattatore Bluetooth diverso per ogni sistema operativo. Potrebbe anche essere possibile spostare le chiavi di collegamento tra Windows e Linux, ma non conosco nessuno strumento che possa farlo. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

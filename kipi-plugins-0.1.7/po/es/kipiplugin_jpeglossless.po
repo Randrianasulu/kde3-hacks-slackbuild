@@ -1,0 +1,192 @@
+# translation of kipiplugin_jpeglossless.po to Español
+# traducción de kipiplugin_jpeglossless.po a Español
+# Translation of kipiplugin_jpeglossless to Castilian aka Spanish
+# This file is distributed under the same license as the Digikam package.
+# Copyright (C) Renchi Raju <renchi@pooh.tam.uiuc.edu>
+#
+# Enrique Matias Sanchez aka Quique <cronopios@gmail.com>, 2003, 2004, 2005.
+# santi <santi@kde-es.org>, 2005, 2006, 2007.
+# Santiago Fernandez Sancho <santi@kde-es.org>, 2006.
+# santi <hosgiliat@gmail.com>, 2007.
+# Santiago Fernández Sancho <santi@kde-es.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_jpeglossless\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-10-12 17:35+0200\n"
+"Last-Translator: Santiago Fernández Sancho <santi@kde-es.org>\n"
+"Language-Team: Español <kde-es@kybs.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"First-Translator: Quique <cronopios@gmail.com>\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: convert2grayscale.cpp:86 convert2grayscale.cpp:162 imageflip.cpp:86
+#: imagerotate.cpp:87 jpegtransform.cpp:162 jpegtransform.cpp:284
+msgid "Error in opening input file"
+msgstr "Error al abrir el archivo de entrada"
+
+#: convert2grayscale.cpp:92 imageflip.cpp:92 imagerotate.cpp:93
+msgid "Error in opening temporary file"
+msgstr "Error al abrir el archivo temporal"
+
+#: convert2grayscale.cpp:100
+msgid "Cannot convert to gray scale RAW file"
+msgstr "No se pudo convertir a escala de grises el archivo RAW"
+
+#: convert2grayscale.cpp:124 imageflip.cpp:124 imagerotate.cpp:127
+msgid "Cannot update source image"
+msgstr "No se puede actualizar el archivo de origen"
+
+#: convert2grayscale.cpp:171 jpegtransform.cpp:171 jpegtransform.cpp:227
+#: jpegtransform.cpp:293
+msgid "Error in opening output file"
+msgstr "Error al abrir el archivo de salida"
+
+#: convert2grayscale.cpp:261
+#, c-format
+msgid "Cannot convert to gray scale: %1"
+msgstr "No se pudo convertir a escala de grises: %1"
+
+#: imageflip.cpp:100 imagerotate.cpp:101
+msgid "Cannot rotate RAW file"
+msgstr "No se pudo girar el archivo RAW"
+
+#: imageflip.cpp:150 imageflip.cpp:180
+msgid "Nonstandard flip action"
+msgstr "Acción de giro no estándar"
+
+#: imageflip.cpp:216
+#, c-format
+msgid "Cannot flip: %1"
+msgstr "No se pudo reflejar: %1"
+
+#: imagerotate.cpp:163 imagerotate.cpp:204
+msgid "Nonstandard rotation angle"
+msgstr "Ángulo de giro no válido"
+
+#: imagerotate.cpp:240
+#, c-format
+msgid "Cannot rotate: %1"
+msgstr "No se pudo girar: %1"
+
+#: plugin_jpeglossless.cpp:82
+msgid "Auto Rotate/Flip Using Exif Information"
+msgstr "Girar/reflejar automáticamente usando la información Exif"
+
+#: plugin_jpeglossless.cpp:89
+msgid "Rotate"
+msgstr "Girar"
+
+#: plugin_jpeglossless.cpp:109
+msgid "Flip"
+msgstr "Girar"
+
+#: plugin_jpeglossless.cpp:114
+msgid "Horizontally"
+msgstr "Horizontalmente"
+
+#: plugin_jpeglossless.cpp:122
+msgid "Vertically"
+msgstr "Verticalmente"
+
+#: plugin_jpeglossless.cpp:130
+msgid "Convert to Black && White"
+msgstr "Convertir a blanco y negro"
+
+#: plugin_jpeglossless.cpp:189
+msgid "horizontaly"
+msgstr "horizontalmente"
+
+#: plugin_jpeglossless.cpp:195
+msgid "vertically"
+msgstr "verticalmente"
+
+#: plugin_jpeglossless.cpp:216
+#, c-format
+msgid "Flip images %1"
+msgstr "Reflejar imágenes %1"
+
+#: plugin_jpeglossless.cpp:239
+msgid "right (clockwise)"
+msgstr "derecho (en el sentido de las agujas del reloj)"
+
+#: plugin_jpeglossless.cpp:245
+msgid "left (counterclockwise)"
+msgstr "izquierda (en sentido contrario a las agujas del reloj)"
+
+#: plugin_jpeglossless.cpp:251
+msgid "using Exif orientation tag"
+msgstr "utilizando etiqueta de orientación Exif"
+
+#: plugin_jpeglossless.cpp:272
+#, c-format
+msgid "Rotate images %1"
+msgstr "Rotanr imágenes %1"
+
+#: plugin_jpeglossless.cpp:288
+msgid ""
+"<p>Are you sure you wish to convert the selected image(s) to black and white? "
+"This operation <b>cannot</b> be undone.</p>"
+msgstr ""
+"<p>¿Seguro que desea convertir las imágenes seleccionadas a blanco y negro? "
+"Esta operación <b>no puede</b> ser deshecha.</p>"
+
+#: plugin_jpeglossless.cpp:305
+msgid "Convert images to black & white"
+msgstr "Convertir imágenes a blanco y negro"
+
+#: plugin_jpeglossless.cpp:347
+msgid "Rotating Image \"%1\""
+msgstr "Rotando imagen «%1»"
+
+#: plugin_jpeglossless.cpp:352
+msgid "Flipping Image \"%1\""
+msgstr "Reflejando imagen «%1»"
+
+#: plugin_jpeglossless.cpp:357
+msgid "Converting to Black & White \"%1\""
+msgstr "Convirtiendo a blanco y negro «%1»"
+
+#: plugin_jpeglossless.cpp:378
+msgid "Failed to Rotate image"
+msgstr "No ha sido posible girar la imagen"
+
+#: plugin_jpeglossless.cpp:383
+msgid "Failed to Flip image"
+msgstr "No ha sido posible girar la imagen"
+
+#: plugin_jpeglossless.cpp:388
+msgid "Failed to convert image to Black & White"
+msgstr "No ha sido posible convertir a blanco y negro la imagen"
+
+#: plugin_jpeglossless.cpp:408
+msgid "Rotate image complete"
+msgstr "Girar imagen completa"
+
+#: plugin_jpeglossless.cpp:413
+msgid "Flip image complete"
+msgstr "Reflejar imagen completa"
+
+#: plugin_jpeglossless.cpp:418
+msgid "Convert to Black & White complete"
+msgstr "Conversión a blanco y negro completa"
+
+#: utils.cpp:90
+msgid "unable to open source file"
+msgstr "No es posible abrir el archivo fuente"
+
+#: utils.cpp:117
+msgid "unable to open temp file"
+msgstr "No es posible abrir el archivo temporal"
+
+#: utils.cpp:129
+msgid "Cannot rotate: unable to open temp file"
+msgstr "No se puede girar: no es posible abrir el archivo temporal"
+
+#: utils.cpp:178
+#, c-format
+msgid "Cannot update metadata: %1"
+msgstr "No se han podido actualizar los metadatos: %1"

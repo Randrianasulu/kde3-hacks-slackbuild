@@ -1,0 +1,154 @@
+<chapter id="acquireimages">
+<chapterinfo>
+
+<title
+>Afbeeldingen ophalen</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>    
+</authorgroup>
+
+<abstract>
+<para
+>De Kipi-plugin 'Afbeeldingen ophalen' is een set hulpmiddelen waarmee u nieuwe afbeeldingen kunt ophalen en aan uw collectie kunt toevoegen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inleiding</title>
+
+<para
+>Deze plugin kan worden gebruikt om enkele afbeeldingen vanuit een externe bron toe te voegen aan uw collectie. Hierbij worden twee handelingen aangeboden: </para>
+
+<itemizedlist>
+
+<listitem>
+    <para
+><emphasis
+>Afbeeldingen scannen</emphasis
+>: gebruik het programma Kooka om afbeeldingen in te scannen met een flatbed-scanner die door het SANE-project wordt ondersteund, of een andere bron, zoals videostreams. U hebt de programma's Kooka en SANE nodig om deze plugin te kunnen gebruiken. </para>
+</listitem>
+
+<listitem>
+    <para
+><emphasis
+>Schermafdrukken</emphasis
+>: maak een afbeelding van uw beeldscherminhoud. </para>
+</listitem>
+
+</itemizedlist>
+
+<sect1 id="using-plugin-acquirescan">
+<title
+>Dialoog Afbeelding scannen</title>
+
+<para
+>Als u het menu <guilabel
+>Afbeeldingen scannen</guilabel
+> opent, dan verschijnt er een dialoog waarin u uit de beschikbare bronnen op uw computer kunt kiezen. Kies de bron die u wilt gebruiken om de afbeelding te verkrijgen. U kunt hier ook een bron als standaard selecteren. </para>
+
+<para
+>Als het dialoogvenster van Kooka wordt geopend, breng eventuele wijzigingen aan in de instellingen. Kijk naar het voorbeeld en snijd deze bij voordat u uw uiteindelijke beslissing maakt. De geschatte bestandsgrootte wordt rechtsonder getoond. Zie ook het <ulink url="help:/kooka/index.html"
+>handboek van Kooka</ulink
+> voor meer informatie. </para>
+
+<note
+><para
+>Zorg ervoor dat de dialoog volledig zichtbaar is, sommige instellingen kunnen verborgen zijn als het venster te klein is. </para
+></note>
+
+<para
+>Druk op de scan-knop en wacht totdat het scannen is voltooid en de dialoog <guilabel
+>Doel opslaan</guilabel
+> verschijnt. Hier kunt u de compressiekwaliteit en het type afbeeldingsbestand wijzigen (onthoud dat BMP geen compressie gebruikt en een groot bestand oplevert). Bj het tweede item in de dialoog kunt u de map kiezen (of aanmaken) waarin u de afbeelding wilt opslaan. </para>
+
+<figure>
+    <title
+>De dialoog Doel opslaan in actie</title>
+    <graphic srccredit="The Save Target Dialog in Action" fileref="acquire-savetargetpreview.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-acquirescreenshot">
+<title
+>Schermafdrukdialoog</title>
+
+<para
+><emphasis
+>Schermafdruk</emphasis
+> kunt u kiezen via menuoptie Album->Importeren->Schermafdruk... In de dialoog die verschijnt kunt u kiezen uit de volgende schermafdrukmodi: </para>
+
+<itemizedlist>
+<listitem>
+   <para
+>Deselecteer <guilabel
+>Het hele bureaublad</guilabel
+> om een schermafdruk van het venster onder de muisaanwijzer te krijgen. </para>
+</listitem>
+<listitem>
+   <para
+><guilabel
+>Alle vensters van dit programma verbergen</guilabel
+> zorgt er voor dat digiKam zelf niet op het schermafdruk te zien zal zijn. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>De vertraging bepaalt hoe lang er zal worden gewacht voordat de schermafdruk wordt genomen. Als u nog wat wijzingen dient aan te brengen op uw scherm, stel de vertraging dan zo in dat u hier voldoende tijd voor hebt. </para>
+
+<figure>
+    <title
+>De schermafdrukdialoog in actie</title>
+    <graphic srccredit="The Screenshot Dialog in Action" fileref="acquire-screenshotpreview.png"/>
+</figure>
+
+<para
+>Zodra de schermafdruk genomen is verschijnt de dialoog <guilabel
+>Doel opslaan als</guilabel
+>, met dezelfde opties als hiervoor beschreven. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

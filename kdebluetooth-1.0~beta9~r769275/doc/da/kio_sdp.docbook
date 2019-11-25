@@ -1,0 +1,47 @@
+<sect1 id="components.kio_sdp">
+<title
+>Bluetooth/SDP-kioslaves: Søg efter enheder og tjenester</title>
+<para
+>Bluetooth- og Sdp-kioslaver tillader dig at søge efter andre bluetooth-enheder og give en liste af og bruge deres tjenester med konqueror (eller en vilkårlig anden filhåndtering der kan bruge KDE's Fil-IO skelet). </para>
+<sect2>
+<title
+>Brug af Bluetooth/SDP-kioslaver</title>
+<para
+>For at søge efter enheder, indtastes blot <ulink url="bluetooth:/"
+>bluetooth:/</ulink
+> i konqueror. Du vil øjeblikkeligt se en indgang for dit eget system, og så efter nogle få sekunder vil andre enheder der kan opdages dukke op, den ene efter den anden. </para>
+<para
+>Du kan også klikke på Bluetooth-ikonen i konqueror's sidebjælke i "Tjenester"-fanebladet, ved siden af LAN- og Lyd-cd-søgeren. Hvis du ikke kan se ikonen vil det måske hjælpe at nulstille sidebjælken med <guimenuitem
+>indstillingsknappen -> Tilføj ny -> Vend tilbage til systemets  standard</guimenuitem
+> </para>
+<para
+>For at enheder skal dukke op, skal de ikke blot være slået til, men også være i en tilstand hvor de kan opdages. Ellers kan du forbinde til dem hvis du kender adressen, men de vil ikke svare på en forespørgsel. </para>
+<para
+>Når du vælger en enhed vil du få en liste af de tjenester der publiceres af enheden. Hvis enheden er understøttet af kdebluetooth, kan du klikke på den for at starte det tilsvarende program. Med mindre du har deaktiveret det, vil konqueror komme frem med den almindelige fil-åbn-dialog. I det tilfælde at tjenesten ikke er kendt, vil du få en åbn-med-dialog i stedet for. </para>
+</sect2>
+
+<sect2>
+<title
+>Avancerede emner </title>
+<para
+>Hvis du ved hvad du foretager dig, kan du også åbne en given tjeneste (kbthandsfree for eksempel) med et bluetooth-program der ikke blev  designet for den specifikke profil ved at højreklikke på tjeneste-ikonen og vælge Åbn med. Hver tjeneste, der drejer sig om AT-kommandoer over rfcomm kan åbnes med <command
+>kbtserialchat</command
+> for eksempel. </para>
+<para
+>Du kan også ændre tilknytningen mellem programmer og (kendte) profiler på samme måde som du vælger hvilket program der skal åbne mpeg-film eller pdf filer: kio_obex tilknytter en mimetype til hver profil på listen og hvert klientprogram for kdebluetooth er knyttet til de profiler det understøtter. Støtte for endnu ikke genkendte profiler kan tilføjes med specielle desktop-filer i <filename
+>$PREFIX/share/services</filename
+>, såsom <filename
+>sdpmime-serial-port-profile.desktop</filename
+> for eksempel. </para>
+</sect2>
+
+<sect2>
+<title
+>Begrænsninger for øjeblikket</title>
+<para
+>kio_sdp har ikke støtte for indlejrede søgegrupper for øjeblikket. Dette vil ikke blive svært at tilføje, men var indtil videre ikke nødvendigt.</para>
+<para
+>Du kan ikke forbinde til tjenester på dit eget system ved blot at klikke på "localhost"-ikonen. Dette blev tilføjet kun som en nem måde at se hvilke tjenester der er publiceret af dit system. </para>
+</sect2>
+
+</sect1>

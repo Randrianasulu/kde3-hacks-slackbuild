@@ -1,0 +1,110 @@
+<sect1 id="components.handsfree">
+<title>kbthandsfree: Dial and talk using your computer</title>
+<para>
+The handsfree client is an implementation of the Bluetooth handsfree profile.
+This protocol is similar to the headset profile, but it provides more 
+functions than the older headset profile. Originally, the handsfree profile
+was designed for use in car handsfree  devices, but more and more common
+Bluetooth headset support the handsfree profile today. 
+</para>
+<para>
+With kbthandsfree you can use your computer as a handsfree device. You can
+dial numbers (even from <link linkend="handsfree.kaddressbook">kaddressbook</link>)
+</para>
+
+<sect2>
+<title>Requirements</title>
+<sect3>
+<title>Kernel SCO support</title>
+<para>
+For voice transmission over bluetooth, the handsfree profile needs the create
+an 'SCO'-connection. This is a special connection type of bluetooth which is 
+optimized for voice data. Unfortunately, support for SCO was broken in older
+versions of the 2.4-Kernels. For kernels before 2.4.24, it might help to apply
+the patches provided by Marcel Holtmann on <ulink url="http://www.bluez.org>">
+www.bluez.org</ulink>. What is even more unfortunate is that SCO support
+seems to be still broken in the 2.6 series of Linux, and there exists no patch
+to fix the problem currently (please correct me if I'm wrong).
+So the only way to use kbthandsfree as a real handsfree is to use a recent 2.4 kernel.
+Without SCO support, you can use kbthandsfree only to dial numbers and similar.
+</para>
+</sect3>
+
+<sect3>
+<title>Adaptor SCO support</title>
+<para>
+Not all Bluetooth adapters support SCO correctly. Older Mitsumi dongles seemed to 
+cause problems for example, even though the module claims to support SCO.
+I know of no way how to find out if it works except trying it. Newer modules
+based on the the (very common) CSR chipset are likely to work though.
+</para>
+</sect3>
+
+<sect3>
+<title>Voice mode</title>
+<para>
+Your bluetooth adapter must be set to the correct voice mode
+to make voice transmission work. Currently only mode 0x0060 is supported
+by kbthandsfree. This is the default in the current bluez version,
+but you can change it with the command <command>hciconfig hci0 voice 0x0060</command>.
+</para>
+</sect3>
+
+<sect3>
+<title>Device class</title>
+<para>
+If you want to establish the connection to kbthandsfree by using your phone instead
+of calling kbthandsfree on the PC, you have to make sure that your PC is
+recognized as a handsfree device. When you have enabled the handsfree in the
+local services tab of the kdebluetooth configuration, the framework will automatically
+set up a proper SDP record which tells the phone that your computer offers the 
+handsfree service.
+</para>
+<para>
+But some phones like the T68i depend on a properly set device class (a more low-level 
+setting which is checked before the SDP record) that identifies it as a handsfree 
+instead of a computer. You can do this by changing the class 0xXXXXXX line in hcid.conf 
+to class 0x700408 (TODO: is this compatible with flags needed for obex..?) or with <command>khciconfig</command>.
+Since a bluetooth device can only have one device class at a time, your computer
+might be displayed an audio/handsfree device when searching for it with other bluetooth
+devices. But we don't know of any serious side effects caused by that.
+</para>
+<para>
+Usually it's easier to connect from the computer to the handsfree than the other
+way round. But the device class setting is also needed if you want your phone to
+connect to the computer automatically when there is an incoming call. Not all phones
+can do it. Most Nokias can't for instance, while the S/E T68i can. Please note that
+the handsfree device device must be the first in the list of paired devices to
+make the T68i connect to it automatically.
+</para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title>Tips and Tricks</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook">
+Since KDE 3.2 you configure the addressbook to use external application to dial numbers.
+To use kbthandsfree for it, start <command>kaddressbook</command>, then go to
+<command>Settings</command>, <command>Configure kaddressbook...</command>,
+<command>Address Book</command>, Tab <command>General</command> and use 
+<command>kbthandsfree --phonenumber %N</command> as the phone script hook. For additional
+command line options check out <command>kbthandsfree --help</command>.
+</para>
+</listitem>
+
+<listitem>
+<para>
+You can get a better overview over the recorded conversations in konqueror if
+you select "Info Liste View" as view mode. This will display the tags of the 
+ogg/vorbis files, so you easily see who was calling and how long you were talking.
+</para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

@@ -1,0 +1,2984 @@
+# translation of kipiplugin_metadataedit.po to Italian
+# Andrea Rizzi <rizzi@kde.org>, 2003, 2004, 2005.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2004, 2005, 2006, 2007, 2008.
+# Andrea RIZZI <arizzi@pi.infn.it>, 2004.
+# Andrea RIZZI <rizzi@kde.org>, 2005.
+# Andrea Celli <a.celli@caltanet.it>, 2005.
+# translation of desktop_kdebase.po to
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_metadataedit\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-12-02 09:44+0100\n"
+"PO-Revision-Date: 2008-12-12 23:48+0100\n"
+"Last-Translator: Federico Zenith <federico.zenith@member.fsf.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Federico Zenith"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "federico.zenith@member.fsf.org"
+
+#: commenteditdialog.cpp:77 plugin_metadataedit.cpp:510
+msgid "Edit Image Caption"
+msgstr "Modifica la didascalia dell'immagine"
+
+#: commenteditdialog.cpp:86 commentremovedialog.cpp:84 exifeditdialog.cpp:165
+#: iptceditdialog.cpp:181
+msgid "Edit Metadata"
+msgstr "Modifica i dati aggiuntivi"
+
+#: commenteditdialog.cpp:89
+msgid "A Plugin to edit images' metadata"
+msgstr "Un plugin per modificare i dati aggiuntivi delle immagini"
+
+#: commenteditdialog.cpp:92 commentremovedialog.cpp:90 exifeditdialog.cpp:171
+#: iptceditdialog.cpp:187
+msgid "Author and Maintainer"
+msgstr "Autore e responsabile"
+
+#: commenteditdialog.cpp:97 commentremovedialog.cpp:95 exifeditdialog.cpp:176
+#: iptceditdialog.cpp:192
+msgid "Plugin Handbook"
+msgstr "Manuale del plugin"
+
+#: commenteditdialog.cpp:105
+msgid ""
+"<p>Enter the image caption hosted by <b>%1</b>. This field is not limited "
+"(excepted with IPTC). UTF-8 encoding will be used to save text."
+msgstr ""
+"<p>Inserisci la didascalia dell'immagine ospitata da <b>%1</b>"
+". Questo campo non è limitato (tranne che per IPTC). Si userà la codifica UTF-8 "
+"per salvare il testo."
+
+#: commenteditdialog.cpp:113 exifcaption.cpp:156 iptccaption.cpp:104
+msgid "Sync JFIF Comment section"
+msgstr "Sincronizza la sezione dei commenti JFIF"
+
+#: commenteditdialog.cpp:114 iptccaption.cpp:108
+msgid "Sync EXIF Comment"
+msgstr "Sincronizza il commento EXIF"
+
+#: commenteditdialog.cpp:115 exifcaption.cpp:157
+msgid ""
+"Sync IPTC caption (warning: limited to 2000 printable Ascii characters set)"
+msgstr ""
+"Sincronizza la didascalia IPTC (attenzione: limitata a 2000 caratteri "
+"stampabili ASCII)"
+
+#: commenteditdialog.cpp:118
+msgid ""
+"<b>Note: captions from currently selected images will be permanently "
+"replaced.</b>"
+msgstr ""
+"<b>Nota: le didascalie delle immagini attualmente selezionate saranno "
+"definitivamente sostituite.</b>"
+
+#: commentremovedialog.cpp:75
+msgid "Remove Image Captions"
+msgstr "Rimuovi le didascalie delle immagini"
+
+#: commentremovedialog.cpp:87 exifeditdialog.cpp:168
+msgid "A Plugin to edit pictures metadata"
+msgstr "Un plugin per modificare i dati aggiuntivi delle immagini"
+
+#: commentremovedialog.cpp:103
+#, c-format
+msgid "Remove caption created by %1"
+msgstr "Rimuovi la didascalia creata da %1"
+
+#: commentremovedialog.cpp:106
+msgid "Remove JFIF Comment section"
+msgstr "Rimuovi la sezione dei commenti JFIF"
+
+#: commentremovedialog.cpp:107
+msgid "Remove EXIF Comment"
+msgstr "Rimuovi il commento EXIF"
+
+#: commentremovedialog.cpp:108
+msgid "Remove IPTC caption"
+msgstr "Rimuovi la didascalia IPTC"
+
+#: commentremovedialog.cpp:110
+msgid ""
+"<b>Note: Captions from currently selected images will be permanently "
+"removed.</b>"
+msgstr ""
+"<b>Nota: le didascalie delle immagini attualmente selezionate saranno "
+"definitivamente rimosse.</b>"
+
+#: exifadjust.cpp:99
+msgid "Brightness (APEX):"
+msgstr "Luminosità (APEX):"
+
+#: exifadjust.cpp:103
+msgid ""
+"<p>Set here the brightness adjustment value in APEX unit used by camera to take "
+"the picture."
+msgstr ""
+"<p>Seleziona qui il valore di regolazione della luminosità in unità APEX usato "
+"dalla macchina fotografica per scattare la foto."
+
+#: exifadjust.cpp:108
+msgid "Gain Control:"
+msgstr "Controllo del guadagno:"
+
+#: exifadjust.cpp:110
+msgid "None"
+msgstr "Nessuno"
+
+#: exifadjust.cpp:111
+msgid "Low gain up"
+msgstr "Leggero aumento del guadagno"
+
+#: exifadjust.cpp:112
+msgid "High gain up"
+msgstr "Forte aumento del guadagno"
+
+#: exifadjust.cpp:113
+msgid "Low gain down"
+msgstr "Leggera riduzione del guadagno"
+
+#: exifadjust.cpp:114
+msgid "High gain down"
+msgstr "Forte riduzione del guadagno"
+
+#: exifadjust.cpp:117
+msgid ""
+"<p>Set here the degree of overall image gain adjustment used by camera to take "
+"the picture."
+msgstr ""
+"<p>Imposta qui il grado di regolazione complessiva del guadagno dell'immagine "
+"usato dalla macchina fotografica per scattare la foto."
+
+#: exifadjust.cpp:122
+msgid "Contrast:"
+msgstr "Contrasto:"
+
+#: exifadjust.cpp:124 exifadjust.cpp:136 exifadjust.cpp:148
+msgid "Normal"
+msgstr "Normale"
+
+#: exifadjust.cpp:125 exifadjust.cpp:149
+msgid "Soft"
+msgstr "Leggero"
+
+#: exifadjust.cpp:126 exifadjust.cpp:150
+msgid "Hard"
+msgstr "Forte"
+
+#: exifadjust.cpp:129
+msgid ""
+"<p>Set here the direction of contrast processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Seleziona qui la direzione dell'elaborazione del contrasto applicata dalla "
+"macchina fotografica per scattare la foto."
+
+#: exifadjust.cpp:134
+msgid "Saturation:"
+msgstr "Saturazione:"
+
+#: exifadjust.cpp:137
+msgid "Low"
+msgstr "Bassa"
+
+#: exifadjust.cpp:138
+msgid "High"
+msgstr "Alta"
+
+#: exifadjust.cpp:141
+msgid ""
+"<p>Set here the direction of saturation processing applied by the camera to "
+"take the picture."
+msgstr ""
+"<p>Seleziona qui la direzione dell'elaborazione della saturazione usata dalla "
+"macchina fotografica per scattare la foto."
+
+#: exifadjust.cpp:146
+msgid "Sharpness:"
+msgstr "Nitidezza:"
+
+#: exifadjust.cpp:153
+msgid ""
+"<p>Set here the direction of sharpness processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Seleziona qui la direzione dell'elaborazione della nitidezza usata dalla "
+"macchina fotografica per scattare la foto."
+
+#: exifadjust.cpp:158
+msgid "Custom rendered:"
+msgstr "Resa personalizzata:"
+
+#: exifadjust.cpp:160
+msgid "Normal process"
+msgstr "Elaborazione normale"
+
+#: exifadjust.cpp:161
+msgid "Custom process"
+msgstr "Elaborazione personalizzata"
+
+#: exifadjust.cpp:164
+msgid ""
+"<p>Set here the use of special processing on image data, such as rendering "
+"geared to output."
+msgstr ""
+"<p>Imposta qui l'uso di elaborazioni particolari sui dati dell'immagine, come "
+"una resa specifica per un certo output."
+
+#: exifcaption.cpp:106
+msgid "Document name (*):"
+msgstr "Nome del documento (*):"
+
+#: exifcaption.cpp:111
+msgid ""
+"<p>Enter the name of the document from which this image was been scanned. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Inserisci il nome del documento da cui è stata scansionata questa immagine. "
+"Questo campo è limitato a caratteri ASCII."
+
+#: exifcaption.cpp:117
+msgid "Image description (*):"
+msgstr "Descrizione dell'immagine (*):"
+
+#: exifcaption.cpp:122
+msgid "<p>Enter the image title. This field is limited to ASCII characters."
+msgstr ""
+"<p>Inserisci il titolo dell'immagine. Questo campo è limitato a caratteri "
+"ASCII."
+
+#: exifcaption.cpp:127
+msgid "Artist (*):"
+msgstr "Artista (*):"
+
+#: exifcaption.cpp:132
+msgid ""
+"<p>Enter the image author's name. This field is limited to ASCII characters."
+msgstr ""
+"<p>Inserisci il nome dell'autore dell'immagine. Questo campo è limitato a "
+"caratteri ASCII."
+
+#: exifcaption.cpp:137
+msgid "Copyright (*):"
+msgstr "Diritto d'autore (*):"
+
+#: exifcaption.cpp:142
+msgid ""
+"<p>Enter the copyright owner of the image. This field is limited to ASCII "
+"characters."
+msgstr ""
+"<p>Inserisci il detentore dei diritti d'autore dell'immagine. Questo campo è "
+"limitato a caratteri ASCII."
+
+#: exifcaption.cpp:147 iptccaption.cpp:102
+msgid "Caption:"
+msgstr "Didascalia:"
+
+#: exifcaption.cpp:149
+msgid ""
+"<p>Enter the image's caption. This field is not limited. UTF8 encoding will be "
+"used to save the text."
+msgstr ""
+"<p>Inserisci la didascalia dell'immagine. Questo campo non è limitato. Si userà "
+"la codifica UTF-8 per salvare il testo."
+
+#: exifcaption.cpp:153
+#, c-format
+msgid "Sync captions entered through %1"
+msgstr "Sincronizza le didascalie inserite con %1"
+
+#: exifcaption.cpp:168 exifdevice.cpp:338
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/EXIF'>EXIF</a></b> "
+"text tags marked by (*) only support printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> characters set.</b>"
+msgstr ""
+"<b>Nota: i tag <b><a "
+"href=\"http://it.wikipedia.org/wiki/Exchangeable_image_file_format\">EXIF</a>"
+"</b> segnati con (*) supportano solo l'insieme di caratteri stampabili <b>"
+"<a href=\"http://it.wikipedia.org/wiki/ASCII\">ASCII</a></b>.</b>"
+
+#: exifdatetime.cpp:103
+msgid "Creation date and time"
+msgstr "Data e ora di creazione"
+
+#: exifdatetime.cpp:104
+msgid "Creation sub-second"
+msgstr "Frazione di secondo di creazione"
+
+#: exifdatetime.cpp:108 iptcdatetime.cpp:116
+#, c-format
+msgid "Sync creation date entered through %1"
+msgstr "Sincronizza la data di creazione inserita con %1"
+
+#: exifdatetime.cpp:111
+msgid "Sync IPTC creation date"
+msgstr "Sincronizza la data di creazione IPTC"
+
+#: exifdatetime.cpp:122
+msgid ""
+"<p>Set here the date and time of image creation. In this standard it is the "
+"date and time the file was changed."
+msgstr ""
+"<p>Imposta qui la data e l'ora di creazione dell'immagine. In questo standard è "
+"la data e l'ora di modifica del file."
+
+#: exifdatetime.cpp:124
+msgid ""
+"<p>Set here the fractions of seconds for the date and time of image creation."
+msgstr ""
+"<p>Imposta qui la frazione di secondo per la data e l'ora di creazione "
+"dell'immagine."
+
+#: exifdatetime.cpp:129
+msgid "Original date and time"
+msgstr "Data e ora originali"
+
+#: exifdatetime.cpp:130
+msgid "Original sub-second"
+msgstr "Frazione di secondo originale"
+
+#: exifdatetime.cpp:138
+msgid ""
+"<p>Set here the date and time when the original image data was generated. For a "
+"digital still camera the date and time the picture was taken are recorded."
+msgstr ""
+"<p>Imposta qui la data e l'ora di quando sono stati generati i dati originali "
+"dell'immagine. Per una macchina fotografica digitale sono registrate la data e "
+"l'ora dello scatto dell'immagine."
+
+#: exifdatetime.cpp:141
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the original "
+"image data was generated."
+msgstr ""
+"<p>Imposta qui la frazione di secondo della data e ora di quando sono stati "
+"generati i dati originali dell'immagine."
+
+#: exifdatetime.cpp:146
+msgid "Digitization date and time"
+msgstr "Data e ora di digitalizzazione"
+
+#: exifdatetime.cpp:147
+msgid "Digitization sub-second"
+msgstr "Frazione di secondo di digitalizzazione"
+
+#: exifdatetime.cpp:155
+msgid ""
+"<p>Set here the date and time when the image was stored as digital data. If, "
+"for example, an image was captured by a digital still camera and at the same "
+"time the file was recorded, then Original and Digitization date and time will "
+"have the same contents."
+msgstr ""
+"<p>Imposta qui la data e l'ora di quando l'immagine è stata salvata come dati "
+"digitali. Se, per esempio, un'immagine è stata scattata da una macchina "
+"fotografica digitale e allo stesso tempo ne è stato registrato il file, la data "
+"e l'ora originali e di digitalizzazione avranno gli stessi contenuti."
+
+#: exifdatetime.cpp:160
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the image was "
+"stored as digital data."
+msgstr ""
+"<p>Imposta qui la frazione di secondo per la data e l'ora di quando l'immagine "
+"è stata salvata come dati digitali."
+
+#: exifdevice.cpp:134
+msgid "Device manufacturer (*):"
+msgstr "Produttore del dispositivo (*):"
+
+#: exifdevice.cpp:139
+msgid ""
+"<p>Set here the manufacturer of image input equipment used to take the picture. "
+"This field is limited to ASCII characters."
+msgstr ""
+"<p>Imposta qui la marca dello strumento di inserimento dell'immagine usato per "
+"scattare la foto. Questo campo è limitato a caratteri ASCII."
+
+#: exifdevice.cpp:144
+msgid "Device model (*):"
+msgstr "Modello del dispositivo (*):"
+
+#: exifdevice.cpp:149
+msgid ""
+"<p>Set here the model of image input equipment used to take the picture. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Imposta qui il modello dello strumento di inserimento dell'immagine usato "
+"per scattare la foto. Questo campo è limitato a caratteri ASCII."
+
+#: exifdevice.cpp:154
+msgid "Device type:"
+msgstr "Tipo di dispositivo:"
+
+#: exifdevice.cpp:156
+msgid "Film scanner"
+msgstr "Scanner a trasmissione"
+
+#: exifdevice.cpp:157
+msgid "Reflection print scanner"
+msgstr "Scanner a riflessione"
+
+#: exifdevice.cpp:158
+msgid "Digital still camera"
+msgstr "Macchina fotografica digitale"
+
+#: exifdevice.cpp:161
+msgid "<p>Select here the image input equipment type used to take the picture."
+msgstr ""
+"<p>Seleziona qui il tipo di dispositivo di input usato per ottenere la foto."
+
+#: exifdevice.cpp:164
+msgid ""
+"<b>Warning: EXIF <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data"
+"'>Makernotes</a></b> can be unreadable if you set wrong device "
+"manufacturer/model description.</b>"
+msgstr ""
+"<b>Attenzione: i <b><a "
+"href=\"http://it.wikipedia.org/wiki/Exchangeable_image_file_format#Informazione_"
+"MakerNote\">Makernote</a></b> di EXIF possono essere illeggibili se imposti una "
+"descrizione sbagliata di modello o produttore del dispositivo.</b>"
+
+#: exifdevice.cpp:175
+msgid "Exposure time (seconds):"
+msgstr "Tempo di esposizione (secondi):"
+
+#: exifdevice.cpp:184
+msgid ""
+"<p>Set on this option to set the exposure time of picture, given in seconds."
+msgstr ""
+"<p>Attiva questa opzione per impostare il tempo di esposizione dell'immagine, "
+"in secondi."
+
+#: exifdevice.cpp:189
+msgid "Exposure program:"
+msgstr "Programma di esposizione:"
+
+#: exifdevice.cpp:191 exifdevice.cpp:298
+msgid "Not defined"
+msgstr "Non definito"
+
+#: exifdevice.cpp:192 exifdevice.cpp:210 exiflight.cpp:194
+msgid "Manual"
+msgstr "Manuale"
+
+#: exifdevice.cpp:193 exifdevice.cpp:209 exiflight.cpp:193
+msgid "Auto"
+msgstr "Automatico"
+
+#: exifdevice.cpp:194
+msgid "Aperture priority"
+msgstr "Priorità del diaframma"
+
+#: exifdevice.cpp:195
+msgid "Shutter priority"
+msgstr "Priorità dell'otturatore"
+
+#: exifdevice.cpp:196
+msgid "Creative program"
+msgstr "Programma creativo"
+
+#: exifdevice.cpp:197
+msgid "Action program"
+msgstr "Programma d'azione"
+
+#: exifdevice.cpp:198
+msgid "Portrait mode"
+msgstr "Modalità per ritratti"
+
+#: exifdevice.cpp:199
+msgid "Landscape mode"
+msgstr "Modalità panoramica"
+
+#: exifdevice.cpp:202
+msgid ""
+"<p>Select here the program used by the camera to set exposure when the picture "
+"have been taken."
+msgstr ""
+"<p>Seleziona qui il programma usato dalla macchina fotografica per impostare "
+"l'esposizione quando è stata scattata la foto."
+
+#: exifdevice.cpp:207
+msgid "Exposure mode:"
+msgstr "Modalità di esposizione:"
+
+#: exifdevice.cpp:211
+msgid "Auto bracket"
+msgstr "Forcella automatica"
+
+#: exifdevice.cpp:214
+msgid ""
+"<p>Select here the mode used by the camera to set exposure when the picture "
+"have been shot. In auto-bracketing mode, the camera shoots a series of frames "
+"of the same scene at different exposure settings."
+msgstr ""
+"<p>Seleziona qui la modalità usata dalla macchina fotografica per impostare "
+"l'esposizione quando è stata scattata la foto. Nella modalità a forcella "
+"automatica, la macchina fa una serie di scatti della stessa scena a diverse "
+"impostazioni di esposizione."
+
+#: exifdevice.cpp:222
+msgid "Exposure bias (APEX):"
+msgstr "Correzione dell'esposizione (APEX):"
+
+#: exifdevice.cpp:226
+msgid ""
+"<p>Set here the exposure bias value in APEX unit used by camera to take the "
+"picture."
+msgstr ""
+"<p>Imposta qui la correzione dell'esposizione in unità APEX usata dalla "
+"macchina fotografica per scattare la foto."
+
+#: exifdevice.cpp:234
+msgid "Metering mode:"
+msgstr "Modalità di misurazione:"
+
+#: exifdevice.cpp:236 exiflight.cpp:137
+msgid "Unknown"
+msgstr "Sconosciuta"
+
+#: exifdevice.cpp:237
+msgid "Average"
+msgstr "Media"
+
+#: exifdevice.cpp:238
+msgid "Center weighted average"
+msgstr "Media pesata centrale"
+
+#: exifdevice.cpp:239
+msgid "Spot"
+msgstr "Spot"
+
+#: exifdevice.cpp:240
+msgid "Multi-spot"
+msgstr "Multispot"
+
+#: exifdevice.cpp:241
+msgid "Multi-segment"
+msgstr "Multisegmento"
+
+#: exifdevice.cpp:242
+msgid "Partial"
+msgstr "Parziale"
+
+#: exifdevice.cpp:243
+msgid "Other"
+msgstr "Altra"
+
+#: exifdevice.cpp:246
+msgid ""
+"<p>Select here the metering mode used by the camera to set exposure when the "
+"picture have been shot."
+msgstr ""
+"<p>Seleziona qui la modalità di misurazione usata dalla macchina fotografica "
+"per impostare l'esposizione quando è stata scattata la foto."
+
+#: exifdevice.cpp:251
+msgid "Sensitivity (ISO):"
+msgstr "Sensibilità (ISO):"
+
+#: exifdevice.cpp:291
+msgid ""
+"<p>Select here the ISO Speed of the camera witch have taken the picture."
+msgstr ""
+"<p>Seleziona qui la velocità ISO della macchina fotografica digitale che ha "
+"scattato la foto."
+
+#: exifdevice.cpp:296
+msgid "Sensing method:"
+msgstr "Metodo di misurazione:"
+
+#: exifdevice.cpp:299
+msgid "One-chip color area"
+msgstr "Area di colore a un chip"
+
+#: exifdevice.cpp:300
+msgid "Two-chip color area"
+msgstr "Area di colore a due chip"
+
+#: exifdevice.cpp:301
+msgid "Three-chip color area"
+msgstr "Area di colore a tre chip"
+
+#: exifdevice.cpp:302
+msgid "Color sequential area"
+msgstr "Area di colore sequenziale"
+
+#: exifdevice.cpp:303
+msgid "Trilinear sensor"
+msgstr "Sensore trilineare"
+
+#: exifdevice.cpp:304
+msgid "Color sequential linear"
+msgstr "Lineare a colore sequenziale"
+
+#: exifdevice.cpp:307
+msgid ""
+"<p>Select here the image sensor type used by the camera to take the picture."
+msgstr ""
+"<p>Seleziona qui il tipo di sensore dell'immagine usato dalla macchina "
+"fotografica per scattare la foto."
+
+#: exifdevice.cpp:312
+msgid "Scene capture type:"
+msgstr "Tipo di scena scattata:"
+
+#: exifdevice.cpp:314
+msgid "Standard"
+msgstr "Standard"
+
+#: exifdevice.cpp:317
+msgid "Night scene"
+msgstr "Scena notturna"
+
+#: exifdevice.cpp:320
+msgid ""
+"<p>Select here the type of scene used by the camera to take the picture."
+msgstr ""
+"<p>Seleziona qui il tipo di scena usata dalla macchina fotografica per scattare "
+"la foto."
+
+#: exifdevice.cpp:325
+msgid "Subject distance type:"
+msgstr "Tipo di distanza dell'oggetto:"
+
+#: exifdevice.cpp:327
+msgid "Unknow"
+msgstr "Sconosciuta"
+
+#: exifdevice.cpp:328
+msgid "Macro"
+msgstr "Macro"
+
+#: exifdevice.cpp:329
+msgid "Close view"
+msgstr "Vista ravvicinata"
+
+#: exifdevice.cpp:330
+msgid "Distant view"
+msgstr "Vista distante"
+
+#: exifdevice.cpp:333
+msgid ""
+"<p>Select here the type of distance between the subject and the image input "
+"equipment."
+msgstr ""
+"<p>Seleziona il tipo di distanza tra l'oggetto e il dispositivo di input "
+"dell'immagine."
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption"
+msgstr "Didascalia"
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption Information"
+msgstr "Informazioni sulla didascalia"
+
+#: exifeditdialog.cpp:142 iptceditdialog.cpp:150
+msgid "Date & Time"
+msgstr "Data e ora"
+
+#: exifeditdialog.cpp:142
+msgid "Date and Time"
+msgstr "Data e ora"
+
+#: exifeditdialog.cpp:146
+msgid "Lens"
+msgstr "Lente"
+
+#: exifeditdialog.cpp:146
+msgid "Lens Settings"
+msgstr "Impostazioni della lente"
+
+#: exifeditdialog.cpp:150
+msgid "Device"
+msgstr "Dispositivo"
+
+#: exifeditdialog.cpp:150
+msgid "Capture Device Settings"
+msgstr "Impostazioni del dispositivo di acquisizione"
+
+#: exifeditdialog.cpp:154
+msgid "Light"
+msgstr "Luce"
+
+#: exifeditdialog.cpp:154
+msgid "Light Source Information"
+msgstr "Informazioni sulle sorgenti di luce"
+
+#: exifeditdialog.cpp:158
+msgid "Adjustments"
+msgstr "Regolazioni"
+
+#: exifeditdialog.cpp:158
+msgid "Pictures Adjustments"
+msgstr "Regolazioni delle immagini"
+
+#: exifeditdialog.cpp:283
+msgid "Edit EXIF Metadata"
+msgstr "Modifica i dati aggiuntivi EXIF"
+
+#: exifeditdialog.cpp:284 iptceditdialog.cpp:310
+msgid "(read only)"
+msgstr "(sola lettura)"
+
+#: exiflens.cpp:157
+msgid "Focal length (mm):"
+msgstr "Lunghezza focale (mm):"
+
+#: exiflens.cpp:161
+msgid ""
+"<p>Set here the lens focal length in milimeters used by camera to take the "
+"picture."
+msgstr ""
+"<p>Imposta qui la lunghezza focale della lente in millimetri usata dalla "
+"macchina fotografica per scattare la foto."
+
+#: exiflens.cpp:166
+msgid "Focal length in 35mm film (mm):"
+msgstr "Lunghezza focale in pellicole da 35mm (mm):"
+
+#: exiflens.cpp:170
+msgid ""
+"<p>Set here equivalent focal length assuming a 35mm film camera, in mm. A value "
+"of 0 means the focal length is unknown."
+msgstr ""
+"<p>Imposta qui la lunghezza focale equivalente supponendo di avere una macchina "
+"fotografica con pellicola a 35mm, in millimetri. Un valore pari a 0 indica che "
+"la lunghezza focale non è nota."
+
+#: exiflens.cpp:176
+msgid "Digital zoom ratio:"
+msgstr "Rapporto di zoom digitale:"
+
+#: exiflens.cpp:180
+msgid "<p>Set here the digital zoom ratio used by camera to take the picture."
+msgstr ""
+"<p>Seleziona qui il rapporto di zoom digitale usato dalla macchina fotografica "
+"per scattare la foto."
+
+#: exiflens.cpp:185
+msgid "Lens aperture (f-number):"
+msgstr "Apertura della lente (fattore f):"
+
+#: exiflens.cpp:190
+msgid "<p>Select here the lens aperture used by camera to take the picture."
+msgstr ""
+"<p>Seleziona qui l'apertura della lente usata dalla macchina fotografica per "
+"scattare la foto."
+
+#: exiflens.cpp:195
+msgid "Max. lens aperture (f-number):"
+msgstr "Apertura massima della lente (fattore f):"
+
+#: exiflens.cpp:200
+msgid ""
+"<p>Select here the smallest aperture of the lens used by camera to take the "
+"picture."
+msgstr ""
+"<p>Seleziona qui la minima apertura della lente usata dalla macchina "
+"fotografica per scattare la foto."
+
+#: exiflight.cpp:85
+msgid "No flash"
+msgstr "Senza flash"
+
+#: exiflight.cpp:86
+msgid "Fired"
+msgstr "Con flash"
+
+#: exiflight.cpp:87
+msgid "Fired, no strobe return light"
+msgstr "Con flash, senza luce di ritorno"
+
+#: exiflight.cpp:88
+msgid "Fired, strobe return light"
+msgstr "Con flash, luce di ritorno"
+
+#: exiflight.cpp:89
+msgid "Yes, compulsory"
+msgstr "Sì, obbligatorio"
+
+#: exiflight.cpp:90
+msgid "Yes, compulsory, no return light"
+msgstr "Sì, obbligatorio, senza luce di ritorno"
+
+#: exiflight.cpp:91
+msgid "Yes, compulsory, return light"
+msgstr "Sì, obbligatorio, luce di ritorno"
+
+#: exiflight.cpp:92
+msgid "No, compulsory"
+msgstr "No, obbligatorio"
+
+#: exiflight.cpp:93
+msgid "No, auto"
+msgstr "No, automatico"
+
+#: exiflight.cpp:94
+msgid "Yes, auto"
+msgstr "Sì, automatico"
+
+#: exiflight.cpp:95
+msgid "Yes, auto, no return light"
+msgstr "Sì, automatico, senza luce di ritorno"
+
+#: exiflight.cpp:96
+msgid "Yes, auto, return light"
+msgstr "Sì, automatico, luce di ritorno"
+
+#: exiflight.cpp:97
+msgid "No flash function"
+msgstr "Senza funzione di flash"
+
+#: exiflight.cpp:98
+msgid "Yes, red-eye"
+msgstr "Sì, occhi rossi"
+
+#: exiflight.cpp:99
+msgid "Yes, red-eye, no return light"
+msgstr "Sì, occhi rossi, senza luce di ritorno"
+
+#: exiflight.cpp:100
+msgid "Yes, red-eye, return light"
+msgstr "Sì, occhi rossi, luce di ritorno"
+
+#: exiflight.cpp:101
+msgid "Yes, compulsory, red-eye"
+msgstr "Sì, obbligatorio, occhi rossi"
+
+#: exiflight.cpp:102
+msgid "Yes, compulsory, red-eye, no return light"
+msgstr "Sì, obbligatorio, occhi rossi, senza luce di ritorno"
+
+#: exiflight.cpp:103
+msgid "Yes, compulsory, red-eye, return light"
+msgstr "Sì, obbligatorio, occhi rossi, luce di ritorno"
+
+#: exiflight.cpp:104
+msgid "Yes, auto, red-eye"
+msgstr "Sì, automatico, occhi rossi"
+
+#: exiflight.cpp:105
+msgid "Yes, auto, red-eye, no return light"
+msgstr "Sì, automatico, occhi rossi, senza luce di ritorno"
+
+#: exiflight.cpp:106
+msgid "Yes, auto, red-eye, return light"
+msgstr "Sì, automatico, occhi rossi, luce di ritorno"
+
+#: exiflight.cpp:135
+msgid "Light source:"
+msgstr "Fonte della luce:"
+
+#: exiflight.cpp:138
+msgid "Daylight"
+msgstr "Luce diurna"
+
+#: exiflight.cpp:139
+msgid "Fluorescent"
+msgstr "Fluorescenza"
+
+#: exiflight.cpp:140
+msgid "Tungsten (incandescent light)"
+msgstr "Tungsteno (luce incandescente)"
+
+#: exiflight.cpp:141
+msgid "Flash"
+msgstr "Flash"
+
+#: exiflight.cpp:142
+msgid "Fine weather"
+msgstr "Bel tempo"
+
+#: exiflight.cpp:143
+msgid "Cloudy weather"
+msgstr "Tempo nuvoloso"
+
+#: exiflight.cpp:144
+msgid "Shade"
+msgstr "Ombra"
+
+#: exiflight.cpp:145
+msgid "Daylight fluorescent (D 5700 - 7100K)"
+msgstr "Fluorescente diurna (D 5700 - 7100K)"
+
+#: exiflight.cpp:146
+msgid "Day white fluorescent (N 4600 - 5400K)"
+msgstr "Fluorescente bianca diurna (N 4600 - 5400K)"
+
+#: exiflight.cpp:147
+msgid "Cool white fluorescent (W 3900 - 4500K)"
+msgstr "Fluorescente bianca fredda (W 3900 - 4500K)"
+
+#: exiflight.cpp:148
+msgid "White fluorescent (WW 3200 - 3700K)"
+msgstr "Fluorescente bianca (WW 3200 - 3700K)"
+
+#: exiflight.cpp:149
+msgid "Standard light A"
+msgstr "Luce standard A"
+
+#: exiflight.cpp:150
+msgid "Standard light B"
+msgstr "Luce standard B"
+
+#: exiflight.cpp:151
+msgid "Standard light C"
+msgstr "Luce standard C"
+
+#: exiflight.cpp:152
+msgid "D55"
+msgstr "D55"
+
+#: exiflight.cpp:153
+msgid "D65"
+msgstr "D65"
+
+#: exiflight.cpp:154
+msgid "D75"
+msgstr "D75"
+
+#: exiflight.cpp:155
+msgid "D50"
+msgstr "D50"
+
+#: exiflight.cpp:156
+msgid "ISO studio tungsten"
+msgstr "Tungsteno ISO studio"
+
+#: exiflight.cpp:157
+msgid "Other light source"
+msgstr "Altra fonte di luce"
+
+#: exiflight.cpp:160
+msgid "<p>Select here the kind of light source used to take the picture."
+msgstr ""
+"<p>Seleziona qui il tipo di sorgente di luce usata per scattare la foto."
+
+#: exiflight.cpp:165
+msgid "Flash mode:"
+msgstr "Modalità del flash:"
+
+#: exiflight.cpp:174
+msgid ""
+"<p>Select here the flash program mode used by camera to take the picture."
+msgstr ""
+"<p>Seleziona qui il programma del flash usato dalla macchina fotografica per "
+"scattare la foto."
+
+#: exiflight.cpp:179
+msgid "Flash energy (BCPS):"
+msgstr "Energia del flash (BCPS):"
+
+#: exiflight.cpp:183
+msgid ""
+"<p>Set here the flash energy used to take the picture in BCPS unit. Beam Candle "
+"Power Seconds is the measure of effective intensity of a light source when it "
+"is focused into a beam by a reflector or lens. This value is the effective "
+"intensity for a period of one second."
+msgstr ""
+"<p>Imposta qui l'energia del flash usata per scattare la foto in unità BCPS. Le "
+"candele di intensità di luce emessa al secondo sono la misura dell'effettiva "
+"intensità di una sorgente di luce quando viene focalizzata in un raggio da un "
+"riflettore o una lente. Questo valore è l'intensità effettiva per un periodo di "
+"un secondo."
+
+#: exiflight.cpp:191
+msgid "White balance:"
+msgstr "Bilanciamento del bianco:"
+
+#: exiflight.cpp:197
+msgid ""
+"<p>Select here the white balance mode set by camera when the picture have been "
+"shot."
+msgstr ""
+"<p>Seleziona qui la modalità di bilanciamento del bianco impostata dalla "
+"macchina fotografica quando è stata scattata la foto."
+
+#: iptccaption.cpp:105
+#, c-format
+msgid "Sync caption entered through %1"
+msgstr "Sincronizza la didascalie inserita con %1"
+
+#: iptccaption.cpp:119
+msgid ""
+"<p>Enter the content description. This field is limited to 2000 ASCII "
+"characters."
+msgstr ""
+"<p>Inserisci la descrizione dei contenuti. Questo campo è limitato a 2000 "
+"caratteri ASCII."
+
+#: iptccaption.cpp:124
+msgid "Caption Writer:"
+msgstr "Autore della didascalia:"
+
+#: iptccaption.cpp:130
+msgid ""
+"<p>Enter the name of the caption author. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Inserisci il nome dell'autore della didascalia. Questo campo è limitato a 32 "
+"caratteri ASCII."
+
+#: iptccaption.cpp:135
+msgid "Headline:"
+msgstr "Riassunto:"
+
+#: iptccaption.cpp:141
+msgid ""
+"<p>Enter here the content synopsis. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Inserisci qui un riassunto del contenuto. Questo campo è limitato a 256 "
+"caratteri ASCII."
+
+#: iptccaption.cpp:146
+msgid "Special Instructions:"
+msgstr "Istruzioni particolari:"
+
+#: iptccaption.cpp:152
+msgid ""
+"<p>Enter the editorial usage instructions. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Inserisci le istruzioni per l'uso editoriale. Questo campo è limitato a 256 "
+"caratteri ASCII."
+
+#: iptccaption.cpp:157 iptccategories.cpp:129 iptccredits.cpp:165
+#: iptckeywords.cpp:116 iptcorigin.cpp:437 iptcstatus.cpp:207
+#: iptcsubjects.cpp:116
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"text tags only support the printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"characters set and limit strings size. Use contextual help for details.</b>"
+msgstr ""
+"<b>Nota: i tag di testo <b><a href=\"http://en.wikipedia.org/wiki/IPTC\">"
+"IPTC</a></b> supportano solo i caratteri <b><a "
+"href=\"http://it.wikipedia.org/wiki/ASCII\">ASCII</a></b> "
+"stampabili e dimensioni limitate delle stringhe. Usa l'aiuto contestuale per i "
+"dettagli.</b>"
+
+#: iptccategories.cpp:95
+msgid "Identify subject of content (3 chars max):"
+msgstr "Identifica l'oggetto del contenuto (massimo 3 caratteri):"
+
+#: iptccategories.cpp:99
+msgid ""
+"<p>Set here the category of content. This field is limited to 3 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta qui la categoria del contenuto. Questo campo è limitato a 3 "
+"caratteri ASCII."
+
+#: iptccategories.cpp:102
+msgid "Supplemental categories:"
+msgstr "Categorie supplementari:"
+
+#: iptccategories.cpp:107
+msgid ""
+"<p>Enter here a new supplemental category of content. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Inserisci qui una nuova categoria supplementare di contenuto. Questo campo è "
+"limitato a 32 caratteri ASCII."
+
+#: iptccategories.cpp:113 iptckeywords.cpp:102 iptcsubjects.cpp:102
+msgid "&Add"
+msgstr "&Aggiungi"
+
+#: iptccredits.cpp:99
+msgid "Copyright:"
+msgstr "Diritto d'autore:"
+
+#: iptccredits.cpp:105
+msgid ""
+"<p>Set here the necessary copyright notice. This field is limited to 128 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta qui la notifica del diritto d'autore. Questo campo è limitato a 128 "
+"caratteri ASCII."
+
+#: iptccredits.cpp:110
+msgid "Byline:"
+msgstr "Autore:"
+
+#: iptccredits.cpp:116
+msgid ""
+"<p>Set here the name of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta qui il nome del creatore del contenuto. Questo campo è limitato a 32 "
+"caratteri ASCII."
+
+#: iptccredits.cpp:121
+msgid "Byline Title:"
+msgstr "Titolo dell'autore:"
+
+#: iptccredits.cpp:127
+msgid ""
+"<p>Set here the title of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta qui il titolo del creatore del contenuto. Questo campo è limitato a "
+"32 caratteri ASCII."
+
+#: iptccredits.cpp:132
+msgid "Credit:"
+msgstr "Riconoscimenti:"
+
+#: iptccredits.cpp:138
+msgid ""
+"<p>Set here the content provider. This field is limited to 32 ASCII characters."
+msgstr ""
+"<p>Imposta il fornitore del contenuto. Questo campo è limitato a 32 caratteri "
+"ASCII."
+
+#: iptccredits.cpp:143
+msgid "Source:"
+msgstr "Fonte:"
+
+#: iptccredits.cpp:149
+msgid ""
+"<p>Set here the original owner of content. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta il proprietario originale del contenuto. Questo campo è limitato a "
+"32 caratteri ASCII."
+
+#: iptccredits.cpp:154
+msgid "Contact:"
+msgstr "Contatto:"
+
+#: iptccredits.cpp:160
+msgid ""
+"<p>Set here the person or organisation to contact. This field is limited to 128 "
+"ASCII characters."
+msgstr ""
+"<p>Imposta la persona od organizzazione da contattare. Questo campo è limitato "
+"a 128 caratteri ASCII."
+
+#: iptcdatetime.cpp:112
+msgid "Creation date"
+msgstr "Data di creazione"
+
+#: iptcdatetime.cpp:113
+msgid "Creation time"
+msgstr "Ora di creazione"
+
+#: iptcdatetime.cpp:119
+msgid "Sync EXIF creation date"
+msgstr "Sincronizza la data di creazione EXIF"
+
+#: iptcdatetime.cpp:130
+msgid "<p>Set here the creation date of intellectual content."
+msgstr "<p>Imposta la data di creazione del contenuto intellettuale."
+
+#: iptcdatetime.cpp:132
+msgid "<p>Set here the creation time of intellectual content."
+msgstr "<p>Imposta l'ora di creazione del contenuto intellettuale."
+
+#: iptcdatetime.cpp:137
+msgid "Release date"
+msgstr "Data di rilascio"
+
+#: iptcdatetime.cpp:138
+msgid "Release time"
+msgstr "Ora di rilascio"
+
+#: iptcdatetime.cpp:147
+msgid "<p>Set here the earliest intended usable date of intellectual content."
+msgstr ""
+"<p>Imposta qui la data da cui è utilizzabile il contenuto intellettuale."
+
+#: iptcdatetime.cpp:149
+msgid "<p>Set here the earliest intended usable time of intellectual content."
+msgstr "<p>Imposta qui l'ora da cui è utilizzabile il contenuto intellettuale."
+
+#: iptcdatetime.cpp:154
+msgid "Expiration date"
+msgstr "Data di scadenza"
+
+#: iptcdatetime.cpp:155
+msgid "Expiration time"
+msgstr "Ora di scadenza"
+
+#: iptcdatetime.cpp:164
+msgid "<p>Set here the latest intended usable date of intellectual content."
+msgstr ""
+"<p>Imposta qui la data fino a quando è utilizzabile il contenuto intellettuale."
+
+#: iptcdatetime.cpp:166
+msgid "<p>Set here the latest intended usable time of intellectual content."
+msgstr ""
+"<p>Imposta qui l'ora fino a quando è utilizzabile il contenuto intellettuale."
+
+#: iptcdatetime.cpp:171
+msgid "Digitization date"
+msgstr "Data di digitalizzazione"
+
+#: iptcdatetime.cpp:172
+msgid "Digitization time"
+msgstr "Ora di digitalizzazione"
+
+#: iptcdatetime.cpp:181
+msgid "<p>Set here the creation date of digital representation."
+msgstr "<p>Imposta qui la data di creazione della rappresentazione digitale."
+
+#: iptcdatetime.cpp:183
+msgid "<p>Set here the creation time of digital representation."
+msgstr "<p>Imposta qui l'ora di creazione della rappresentazione digitale."
+
+#: iptceditdialog.cpp:150
+msgid "Date and Time Information"
+msgstr "Informazioni sulla data e sull'ora"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects"
+msgstr "Oggetti"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects Information"
+msgstr "Informazioni sugli oggetti"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords"
+msgstr "Parole chiave"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords Information"
+msgstr "Informazioni sulle parole chiave"
+
+#: iptceditdialog.cpp:162
+msgid "Categories"
+msgstr "Categorie"
+
+#: iptceditdialog.cpp:162
+msgid "Categories Information"
+msgstr "Informazioni sulle categorie"
+
+#: iptceditdialog.cpp:166
+msgid "Credits"
+msgstr "Riconoscimenti"
+
+#: iptceditdialog.cpp:166
+msgid "Credits Information"
+msgstr "Informazioni sui riconoscimenti"
+
+#: iptceditdialog.cpp:170
+msgid "Status"
+msgstr "Stato"
+
+#: iptceditdialog.cpp:170
+msgid "Status Information"
+msgstr "Informazioni sullo stato"
+
+#: iptceditdialog.cpp:174
+msgid "Origin"
+msgstr "Origine"
+
+#: iptceditdialog.cpp:174
+msgid "Origin Information"
+msgstr "Informazioni sull'origine"
+
+#: iptceditdialog.cpp:184
+msgid "A Plugin to edit image metadata"
+msgstr "Un plugin per modificare i dati aggiuntivi delle immagini"
+
+#: iptceditdialog.cpp:309
+msgid "Edit IPTC Metadata"
+msgstr "Modifica i dati aggiuntivi IPTC"
+
+#: iptckeywords.cpp:91
+msgid "Use information retrieval words:"
+msgstr "Usa le parole di ricerca delle informazioni:"
+
+#: iptckeywords.cpp:96
+msgid ""
+"<p>Enter here a new keyword. This field is limited to 64 ASCII characters."
+msgstr ""
+"<p>Imposta qui una nuova parola chiave. Questo campo è limitato a 64 caratteri "
+"ASCII."
+
+#: iptcorigin.cpp:76
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: iptcorigin.cpp:77
+msgid "Albania"
+msgstr "Albania"
+
+#: iptcorigin.cpp:78
+msgid "Algeria"
+msgstr "Algeria"
+
+#: iptcorigin.cpp:79
+msgid "American Samoa"
+msgstr "Samoa Americane"
+
+#: iptcorigin.cpp:80
+msgid "Andorra"
+msgstr "Andorra"
+
+#: iptcorigin.cpp:81 iptcorigin.cpp:83
+msgid "Angola"
+msgstr "Angola"
+
+#: iptcorigin.cpp:82
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: iptcorigin.cpp:84
+msgid "Antarctica"
+msgstr "Antartico"
+
+#: iptcorigin.cpp:85
+msgid "Antigua and Barbuda"
+msgstr "Antigua e Barbuda"
+
+#: iptcorigin.cpp:86
+msgid "Argentina"
+msgstr "Argentina"
+
+#: iptcorigin.cpp:87
+msgid "Armenia"
+msgstr "Armenia"
+
+#: iptcorigin.cpp:88
+msgid "Aruba"
+msgstr "Aruba"
+
+#: iptcorigin.cpp:89
+msgid "Australia"
+msgstr "Australia"
+
+#: iptcorigin.cpp:90
+msgid "Austria"
+msgstr "Austria"
+
+#: iptcorigin.cpp:91
+msgid "Azerbaijan"
+msgstr "Azerbaigian"
+
+#: iptcorigin.cpp:92
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: iptcorigin.cpp:93
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: iptcorigin.cpp:94
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: iptcorigin.cpp:95
+msgid "Barbados"
+msgstr "Barbados"
+
+#: iptcorigin.cpp:96
+msgid "Belarus"
+msgstr "Bielorussia"
+
+#: iptcorigin.cpp:97
+msgid "Belgium"
+msgstr "Belgio"
+
+#: iptcorigin.cpp:98
+msgid "Belize"
+msgstr "Belize"
+
+#: iptcorigin.cpp:99
+msgid "Benin"
+msgstr "Benin"
+
+#: iptcorigin.cpp:100
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: iptcorigin.cpp:101
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: iptcorigin.cpp:102
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: iptcorigin.cpp:103
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia e Erzegovina"
+
+#: iptcorigin.cpp:104
+msgid "Botswana"
+msgstr "Botswana"
+
+#: iptcorigin.cpp:105
+msgid "Bouvet Island"
+msgstr "Isola di Bouvet"
+
+#: iptcorigin.cpp:106
+msgid "Brazil"
+msgstr "Brasile"
+
+#: iptcorigin.cpp:107
+msgid "British Indian Ocean Territory"
+msgstr "Territorio oceanico indiano britannico"
+
+#: iptcorigin.cpp:108
+msgid "British Virgin Islands"
+msgstr "Isole Vergini Britanniche"
+
+#: iptcorigin.cpp:109
+msgid "Brunei Darussalam"
+msgstr "Brunei"
+
+#: iptcorigin.cpp:110
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: iptcorigin.cpp:111
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: iptcorigin.cpp:112
+msgid "Burundi"
+msgstr "Burundi"
+
+#: iptcorigin.cpp:113
+msgid "Cambodia"
+msgstr "Cambogia"
+
+#: iptcorigin.cpp:114
+msgid "Cameroon"
+msgstr "Camerun"
+
+#: iptcorigin.cpp:115
+msgid "Canada"
+msgstr "Canada"
+
+#: iptcorigin.cpp:116
+msgid "Cape Verde"
+msgstr "Capo Verde"
+
+#: iptcorigin.cpp:117
+msgid "Cayman Islands"
+msgstr "Isole Cayman"
+
+#: iptcorigin.cpp:118
+msgid "Central African Republic"
+msgstr "Repubblica Centrafricana"
+
+#: iptcorigin.cpp:119
+msgid "Chad"
+msgstr "Ciad"
+
+#: iptcorigin.cpp:120
+msgid "Chile"
+msgstr "Cile"
+
+#: iptcorigin.cpp:121
+msgid "China"
+msgstr "Cina"
+
+#: iptcorigin.cpp:122
+msgid "Christmas Island "
+msgstr "Isola Christmas"
+
+#: iptcorigin.cpp:123
+msgid "Cocos Islands"
+msgstr "Isole Cocos"
+
+#: iptcorigin.cpp:124
+msgid "Colombia"
+msgstr "Colombia"
+
+#: iptcorigin.cpp:125
+msgid "Comoros"
+msgstr "Comore"
+
+#: iptcorigin.cpp:126
+msgid "Zaire"
+msgstr "Zaire"
+
+#: iptcorigin.cpp:127
+msgid "Congo"
+msgstr "Congo"
+
+#: iptcorigin.cpp:128
+msgid "Cook Islands"
+msgstr "Isole Cook"
+
+#: iptcorigin.cpp:129
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: iptcorigin.cpp:130
+msgid "Ivory Coast"
+msgstr "Costa d'Avorio"
+
+#: iptcorigin.cpp:131
+msgid "Cuba"
+msgstr "Cuba"
+
+#: iptcorigin.cpp:132
+msgid "Cyprus"
+msgstr "Cipro"
+
+#: iptcorigin.cpp:133
+msgid "Czech Republic"
+msgstr "Repubblica Ceca"
+
+#: iptcorigin.cpp:134
+msgid "Denmark"
+msgstr "Danimarca"
+
+#: iptcorigin.cpp:135
+msgid "Djibouti"
+msgstr "Gibuti"
+
+#: iptcorigin.cpp:136
+msgid "Dominica"
+msgstr "Dominica"
+
+#: iptcorigin.cpp:137
+msgid "Dominican Republic"
+msgstr "Repubblica Dominicana"
+
+#: iptcorigin.cpp:138
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: iptcorigin.cpp:139
+msgid "Egypt"
+msgstr "Egitto"
+
+#: iptcorigin.cpp:140
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: iptcorigin.cpp:141
+msgid "Equatorial Guinea"
+msgstr "Guinea Equatoriale"
+
+#: iptcorigin.cpp:142
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: iptcorigin.cpp:143
+msgid "Estonia"
+msgstr "Estonia"
+
+#: iptcorigin.cpp:144
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: iptcorigin.cpp:145
+msgid "Faeroe Islands"
+msgstr "Isole Fær Øer"
+
+#: iptcorigin.cpp:146
+msgid "Falkland Islands"
+msgstr "Isole Falkland"
+
+#: iptcorigin.cpp:147
+msgid "Fiji Islands"
+msgstr "Isole Figi"
+
+#: iptcorigin.cpp:148
+msgid "Finland"
+msgstr "Finlandia"
+
+#: iptcorigin.cpp:149
+msgid "France"
+msgstr "Francia"
+
+#: iptcorigin.cpp:150
+msgid "French Guiana"
+msgstr "Guiana Francese"
+
+#: iptcorigin.cpp:151
+msgid "French Polynesia"
+msgstr "Polinesia Francese"
+
+#: iptcorigin.cpp:152
+msgid "French Southern Territories"
+msgstr "Territori australi francesi"
+
+#: iptcorigin.cpp:153
+msgid "Gabon"
+msgstr "Gabon"
+
+#: iptcorigin.cpp:154
+msgid "Gambia"
+msgstr "Gambia"
+
+#: iptcorigin.cpp:155
+msgid "Georgia"
+msgstr "Georgia"
+
+#: iptcorigin.cpp:156
+msgid "Germany"
+msgstr "Germania"
+
+#: iptcorigin.cpp:157
+msgid "Ghana"
+msgstr "Ghana"
+
+#: iptcorigin.cpp:158
+msgid "Gibraltar"
+msgstr "Gibilterra"
+
+#: iptcorigin.cpp:159
+msgid "Greece"
+msgstr "Grecia"
+
+#: iptcorigin.cpp:160
+msgid "Greenland"
+msgstr "Groenlandia"
+
+#: iptcorigin.cpp:161
+msgid "Grenada"
+msgstr "Granada"
+
+#: iptcorigin.cpp:162
+msgid "Guadaloupe"
+msgstr "Guadalupa"
+
+#: iptcorigin.cpp:163
+msgid "Guam"
+msgstr "Guam"
+
+#: iptcorigin.cpp:164
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: iptcorigin.cpp:165
+msgid "Guinea"
+msgstr "Guinea"
+
+#: iptcorigin.cpp:166
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: iptcorigin.cpp:167
+msgid "Guyana"
+msgstr "Guyana"
+
+#: iptcorigin.cpp:168
+msgid "Haiti"
+msgstr "Haiti"
+
+#: iptcorigin.cpp:169
+msgid "Heard and McDonald Islands"
+msgstr "Isole Heard e McDonald"
+
+#: iptcorigin.cpp:170
+msgid "Vatican"
+msgstr "Vaticano"
+
+#: iptcorigin.cpp:171
+msgid "Honduras"
+msgstr "Honduras"
+
+#: iptcorigin.cpp:172
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: iptcorigin.cpp:173
+msgid "Croatia"
+msgstr "Croazia"
+
+#: iptcorigin.cpp:174
+msgid "Hungary"
+msgstr "Ungheria"
+
+#: iptcorigin.cpp:175
+msgid "Iceland"
+msgstr "Islanda"
+
+#: iptcorigin.cpp:176
+msgid "India"
+msgstr "India"
+
+#: iptcorigin.cpp:177
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: iptcorigin.cpp:178
+msgid "Iran"
+msgstr "Iran"
+
+#: iptcorigin.cpp:179
+msgid "Iraq"
+msgstr "Iraq"
+
+#: iptcorigin.cpp:180
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: iptcorigin.cpp:181
+msgid "Israel"
+msgstr "Israele"
+
+#: iptcorigin.cpp:182
+msgid "Italy"
+msgstr "Italia"
+
+#: iptcorigin.cpp:183
+msgid "Jamaica"
+msgstr "Giamaica"
+
+#: iptcorigin.cpp:184
+msgid "Japan"
+msgstr "Giappone"
+
+#: iptcorigin.cpp:185
+msgid "Jordan"
+msgstr "Giordania"
+
+#: iptcorigin.cpp:186
+msgid "Kazakhstan"
+msgstr "Kazakistan"
+
+#: iptcorigin.cpp:187
+msgid "Kenya"
+msgstr "Kenya"
+
+#: iptcorigin.cpp:188
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: iptcorigin.cpp:189 iptcorigin.cpp:190
+msgid "Korea"
+msgstr "Corea"
+
+#: iptcorigin.cpp:191
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: iptcorigin.cpp:192
+msgid "Kyrgyz Republic"
+msgstr "Repubblica Kirghiza"
+
+#: iptcorigin.cpp:193
+msgid "Lao"
+msgstr "Laos"
+
+#: iptcorigin.cpp:194
+msgid "Latvia"
+msgstr "Lettonia"
+
+#: iptcorigin.cpp:195
+msgid "Lebanon"
+msgstr "Libano"
+
+#: iptcorigin.cpp:196
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: iptcorigin.cpp:197
+msgid "Liberia"
+msgstr "Liberia"
+
+#: iptcorigin.cpp:198
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libia"
+
+#: iptcorigin.cpp:199
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: iptcorigin.cpp:200
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: iptcorigin.cpp:201
+msgid "Luxembourg"
+msgstr "Lussemburgo"
+
+#: iptcorigin.cpp:202
+msgid "Macao"
+msgstr "Macao"
+
+#: iptcorigin.cpp:203
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: iptcorigin.cpp:204
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: iptcorigin.cpp:205
+msgid "Malawi"
+msgstr "Malawi"
+
+#: iptcorigin.cpp:206
+msgid "Malaysia"
+msgstr "Malaysia"
+
+#: iptcorigin.cpp:207
+msgid "Maldives"
+msgstr "Maldive"
+
+#: iptcorigin.cpp:208
+msgid "Mali"
+msgstr "Mali"
+
+#: iptcorigin.cpp:209
+msgid "Malta"
+msgstr "Malta"
+
+#: iptcorigin.cpp:210
+msgid "Marshall Islands"
+msgstr "Isole Marshall"
+
+#: iptcorigin.cpp:211
+msgid "Martinique"
+msgstr "Martinica"
+
+#: iptcorigin.cpp:212
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: iptcorigin.cpp:213
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: iptcorigin.cpp:214
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: iptcorigin.cpp:215
+msgid "Mexico"
+msgstr "Messico"
+
+#: iptcorigin.cpp:216
+msgid "Micronesia"
+msgstr "Micronesia"
+
+#: iptcorigin.cpp:217
+msgid "Moldova"
+msgstr "Moldavia"
+
+#: iptcorigin.cpp:218
+msgid "Monaco"
+msgstr "Monaco"
+
+#: iptcorigin.cpp:219
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: iptcorigin.cpp:220
+msgid "Montserrat"
+msgstr "Monserrat"
+
+#: iptcorigin.cpp:221
+msgid "Morocco"
+msgstr "Marocco"
+
+#: iptcorigin.cpp:222
+msgid "Mozambique"
+msgstr "Mozambico"
+
+#: iptcorigin.cpp:223
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: iptcorigin.cpp:224
+msgid "Namibia"
+msgstr "Namibia"
+
+#: iptcorigin.cpp:225
+msgid "Nauru"
+msgstr "Nauru"
+
+#: iptcorigin.cpp:226
+msgid "Nepal"
+msgstr "Nepal"
+
+#: iptcorigin.cpp:227
+msgid "Netherlands Antilles"
+msgstr "Antille Olandesi"
+
+#: iptcorigin.cpp:228
+msgid "Netherlands"
+msgstr "Paesi Bassi"
+
+#: iptcorigin.cpp:229
+msgid "New Caledonia"
+msgstr "Nuova Caledonia"
+
+#: iptcorigin.cpp:230
+msgid "New Zealand"
+msgstr "Nuova Zelanda"
+
+#: iptcorigin.cpp:231
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: iptcorigin.cpp:232
+msgid "Niger"
+msgstr "Niger"
+
+#: iptcorigin.cpp:233
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: iptcorigin.cpp:234
+msgid "Niue"
+msgstr "Niue"
+
+#: iptcorigin.cpp:235
+msgid "Norfolk Island"
+msgstr "Isola Norfolk"
+
+#: iptcorigin.cpp:236
+msgid "Northern Mariana Islands"
+msgstr "Isole Marianne settentrionali"
+
+#: iptcorigin.cpp:237
+msgid "Norway"
+msgstr "Norvegia"
+
+#: iptcorigin.cpp:238
+msgid "Oman"
+msgstr "Oman"
+
+#: iptcorigin.cpp:239
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: iptcorigin.cpp:240
+msgid "Palau"
+msgstr "Palau"
+
+#: iptcorigin.cpp:241
+msgid "Palestinian Territory"
+msgstr "Palestina"
+
+#: iptcorigin.cpp:242
+msgid "Panama"
+msgstr "Panama"
+
+#: iptcorigin.cpp:243
+msgid "Papua New Guinea"
+msgstr "Papua Nuova Guinea"
+
+#: iptcorigin.cpp:244
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: iptcorigin.cpp:245
+msgid "Peru"
+msgstr "Perù"
+
+#: iptcorigin.cpp:246
+msgid "Philippines"
+msgstr "Filippine"
+
+#: iptcorigin.cpp:247
+msgid "Pitcairn Island"
+msgstr "Isola Pitcairn"
+
+#: iptcorigin.cpp:248
+msgid "Poland"
+msgstr "Polonia"
+
+#: iptcorigin.cpp:249
+msgid "Portugal"
+msgstr "Portogallo"
+
+#: iptcorigin.cpp:250
+msgid "Puerto Rico"
+msgstr "Portorico"
+
+#: iptcorigin.cpp:251
+msgid "Qatar"
+msgstr "Qatar"
+
+#: iptcorigin.cpp:252
+msgid "Reunion"
+msgstr "Reunion"
+
+#: iptcorigin.cpp:253
+msgid "Romania"
+msgstr "Romania"
+
+#: iptcorigin.cpp:254
+msgid "Russian Federation"
+msgstr "Russia"
+
+#: iptcorigin.cpp:255
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: iptcorigin.cpp:256
+msgid "St. Helena"
+msgstr "Sant'Elena"
+
+#: iptcorigin.cpp:257
+msgid "St. Kitts and Nevis"
+msgstr "Saint Kitts e Nevis"
+
+#: iptcorigin.cpp:258
+msgid "St. Lucia"
+msgstr "Santa Lucia"
+
+#: iptcorigin.cpp:259
+msgid "St. Pierre and Miquelon"
+msgstr "Saint Pierre e Miquelon"
+
+#: iptcorigin.cpp:260
+msgid "St. Vincent and the Grenadines"
+msgstr "Saint Vincent e Grenadines"
+
+#: iptcorigin.cpp:261
+msgid "Samoa"
+msgstr "Samoa"
+
+#: iptcorigin.cpp:262
+msgid "San Marino"
+msgstr "San Marino"
+
+#: iptcorigin.cpp:263
+msgid "Sao Tome and Principe"
+msgstr "São Tomé e Príncipe"
+
+#: iptcorigin.cpp:264
+msgid "Saudi Arabia"
+msgstr "Arabia Saudita"
+
+#: iptcorigin.cpp:265
+msgid "Senegal"
+msgstr "Senegal"
+
+#: iptcorigin.cpp:266
+msgid "Serbia and Montenegro"
+msgstr "Serbia e Montenegro"
+
+#: iptcorigin.cpp:267
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: iptcorigin.cpp:268
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: iptcorigin.cpp:269
+msgid "Singapore"
+msgstr "Singapore"
+
+#: iptcorigin.cpp:270
+msgid "Slovakia"
+msgstr "Slovacchia"
+
+#: iptcorigin.cpp:271
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#: iptcorigin.cpp:272
+msgid "Solomon Islands"
+msgstr "Isole Salomone"
+
+#: iptcorigin.cpp:273
+msgid "Somalia"
+msgstr "Somalia"
+
+#: iptcorigin.cpp:274
+msgid "South Africa"
+msgstr "Sud Africa"
+
+#: iptcorigin.cpp:275
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Georgia del Sud e isole Sandwich meridionali"
+
+#: iptcorigin.cpp:276
+msgid "Spain"
+msgstr "Spagna"
+
+#: iptcorigin.cpp:277
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: iptcorigin.cpp:278
+msgid "Sudan"
+msgstr "Sudan"
+
+#: iptcorigin.cpp:279
+msgid "Suriname"
+msgstr "Suriname"
+
+#: iptcorigin.cpp:280
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "Isole Svalbard e Jan Mayen"
+
+#: iptcorigin.cpp:281
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: iptcorigin.cpp:282
+msgid "Sweden"
+msgstr "Svezia"
+
+#: iptcorigin.cpp:283
+msgid "Switzerland"
+msgstr "Svizzera"
+
+#: iptcorigin.cpp:284
+msgid "Syrian Arab Republic"
+msgstr "Siria"
+
+#: iptcorigin.cpp:285
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: iptcorigin.cpp:286
+msgid "Tajikistan"
+msgstr "Tagikistan"
+
+#: iptcorigin.cpp:287
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: iptcorigin.cpp:288
+msgid "Thailand"
+msgstr "Tailandia"
+
+#: iptcorigin.cpp:289
+msgid "Timor-Leste"
+msgstr "Timor Est"
+
+#: iptcorigin.cpp:290
+msgid "Togo"
+msgstr "Togo"
+
+#: iptcorigin.cpp:291
+msgid "Tokelau Islands"
+msgstr "Isole Tokelau"
+
+#: iptcorigin.cpp:292
+msgid "Tonga"
+msgstr "Tonga"
+
+#: iptcorigin.cpp:293
+msgid "Trinidad and Tobago"
+msgstr "Trinidad e Tobago"
+
+#: iptcorigin.cpp:294
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: iptcorigin.cpp:295
+msgid "Turkey"
+msgstr "Turchia"
+
+#: iptcorigin.cpp:296
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: iptcorigin.cpp:297
+msgid "Turks and Caicos Islands"
+msgstr "Isole Turks e Caicos"
+
+#: iptcorigin.cpp:298
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: iptcorigin.cpp:299
+msgid "US Virgin Islands"
+msgstr "Isole Vergini Americane"
+
+#: iptcorigin.cpp:300
+msgid "Uganda"
+msgstr "Uganda"
+
+#: iptcorigin.cpp:301
+msgid "Ukraine"
+msgstr "Ucraina"
+
+#: iptcorigin.cpp:302
+msgid "United Arab Emirates"
+msgstr "Emirati Arabi Uniti"
+
+#: iptcorigin.cpp:303
+msgid "United Kingdom"
+msgstr "Regno Unito"
+
+#: iptcorigin.cpp:304
+msgid "United States Minor Outlying Islands"
+msgstr "Isole remote minori degli Stati Uniti"
+
+#: iptcorigin.cpp:305
+msgid "United States of America"
+msgstr "Stati Uniti d'America"
+
+#: iptcorigin.cpp:306
+msgid "Uruguay, Eastern Republic of"
+msgstr "Uruguay"
+
+#: iptcorigin.cpp:307
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: iptcorigin.cpp:308
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: iptcorigin.cpp:309
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: iptcorigin.cpp:310
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: iptcorigin.cpp:311
+msgid "Wallis and Futuna Islands "
+msgstr "Isole Wallis e Futuna"
+
+#: iptcorigin.cpp:312
+msgid "Western Sahara"
+msgstr "Sahara Occidentale"
+
+#: iptcorigin.cpp:313
+msgid "Yemen"
+msgstr "Yemen"
+
+#: iptcorigin.cpp:314
+msgid "Zambia"
+msgstr "Zambia"
+
+#: iptcorigin.cpp:315
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: iptcorigin.cpp:319
+msgid "United Nations"
+msgstr "Nazioni Unite"
+
+#: iptcorigin.cpp:320
+msgid "European Union"
+msgstr "Unione Europea"
+
+#: iptcorigin.cpp:321
+msgid "Space"
+msgstr "Spazio"
+
+#: iptcorigin.cpp:322
+msgid "At Sea"
+msgstr "Mare"
+
+#: iptcorigin.cpp:323
+msgid "In Flight"
+msgstr "Volo"
+
+#: iptcorigin.cpp:324
+msgid "England"
+msgstr "Inghilterra"
+
+#: iptcorigin.cpp:325
+msgid "Scotland"
+msgstr "Scozia"
+
+#: iptcorigin.cpp:326
+msgid "Northern Ireland"
+msgstr "Irlanda del Nord"
+
+#: iptcorigin.cpp:327
+msgid "Wales"
+msgstr "Galles"
+
+#: iptcorigin.cpp:328
+msgid "Palestine"
+msgstr "Palestina"
+
+#: iptcorigin.cpp:329
+msgid "Gaza"
+msgstr "Gaza"
+
+#: iptcorigin.cpp:330
+msgid "Jericho"
+msgstr "Gerico"
+
+#: iptcorigin.cpp:369
+msgid "Object name:"
+msgstr "Nome dell'oggetto:"
+
+#: iptcorigin.cpp:373
+msgid ""
+"<p>Set here the shorthand reference of content. This field is limited to 64 "
+"ASCII characters."
+msgstr ""
+"<p>Imposta qui il riferimento breve del contenuto. Questo campo è limitato a 64 "
+"caratteri ASCII."
+
+#: iptcorigin.cpp:378
+msgid "Location:"
+msgstr "Luogo:"
+
+#: iptcorigin.cpp:382
+msgid ""
+"<p>Set here the full country name referenced by the content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Imposta qui il nome completo del paese cui si fa riferimento nei contenuti. "
+"Questo campo è limitato a 64 caratteri ASCII."
+
+#: iptcorigin.cpp:388
+msgid "City:"
+msgstr "Città:"
+
+#: iptcorigin.cpp:392
+msgid ""
+"<p>Set here the city of content origin. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta qui la città di origine del contenuto. Questo campo è limitato a 32 "
+"caratteri ASCII."
+
+#: iptcorigin.cpp:397
+msgid "Sublocation:"
+msgstr "Sotto-luogo:"
+
+#: iptcorigin.cpp:401
+msgid ""
+"<p>Set here the content location within city. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Imposta qui il luogo nella città del contenuto. Questo campo è limitato a 32 "
+"caratteri ASCII."
+
+#: iptcorigin.cpp:406
+msgid "State/Province:"
+msgstr "Stato o provincia:"
+
+#: iptcorigin.cpp:410
+msgid ""
+"<p>Set here the Province or State of content origin. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Imposta qui lo stato o provincia di origine del contenuto. Questo campo è "
+"limitato a 32 caratteri ASCII."
+
+#: iptcorigin.cpp:415
+msgid "Country:"
+msgstr "Paese:"
+
+#: iptcorigin.cpp:424
+msgid "<p>Select here country name of content origin."
+msgstr "<p>Seleziona qui il nome del paese di origine del contenuto."
+
+#: iptcorigin.cpp:428
+msgid "Original transmission reference:"
+msgstr "Riferimento alla trasmissione originale:"
+
+#: iptcorigin.cpp:432
+msgid ""
+"<p>Set here the location of original content transmission. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Imposta qui il luogo di trasmissione del contenuto originale. Questo campo è "
+"limitato a 32 caratteri ASCII."
+
+#: iptcstatus.cpp:104
+msgid "Edit Status:"
+msgstr "Stato di modifica:"
+
+#: iptcstatus.cpp:110
+msgid ""
+"<p>Set here the content status. This field is limited to 64 ASCII characters."
+msgstr ""
+"<p>Imposta qui il lo stato dei contenuti. Questo campo è limitato a 64 "
+"caratteri ASCII."
+
+#: iptcstatus.cpp:115
+msgid "Priority:"
+msgstr "Priorità:"
+
+#: iptcstatus.cpp:117
+msgid "0: None"
+msgstr "0: Nessuna"
+
+#: iptcstatus.cpp:118
+msgid "1: High"
+msgstr "1: Alta"
+
+#: iptcstatus.cpp:122
+msgid "5: Normal"
+msgstr "5: Normale"
+
+#: iptcstatus.cpp:125
+msgid "8: Low"
+msgstr "8: Bassa"
+
+#: iptcstatus.cpp:128
+msgid "<p>Select here the editorial urgency of content."
+msgstr "<p>Seleziona qui l'urgenza editoriale del contenuto."
+
+#: iptcstatus.cpp:132
+msgid "Object Cycle:"
+msgstr "Ciclo dell'oggetto:"
+
+#: iptcstatus.cpp:134
+msgid "Morning"
+msgstr "Mattina"
+
+#: iptcstatus.cpp:135
+msgid "Afternoon"
+msgstr "Pomeriggio"
+
+#: iptcstatus.cpp:136
+msgid "Evening"
+msgstr "Sera"
+
+#: iptcstatus.cpp:139
+msgid "<p>Select here the editorial cycle of content."
+msgstr "<p>Seleziona qui il ciclo editoriale del contenuto."
+
+#: iptcstatus.cpp:143
+msgid "Object Type:"
+msgstr "Tipo dell'oggetto:"
+
+#: iptcstatus.cpp:148
+msgid "News"
+msgstr "Notizie"
+
+#: iptcstatus.cpp:149
+msgid "Data"
+msgstr "Dati"
+
+#: iptcstatus.cpp:150
+msgid "Advisory"
+msgstr "Avvertimenti"
+
+#: iptcstatus.cpp:154
+msgid "<p>Select here the editorial type of content."
+msgstr "<p>Seleziona qui il tipo editoriale del contenuto."
+
+#: iptcstatus.cpp:155
+msgid ""
+"<p>Set here the editorial type description of content. This field is limited to "
+"64 ASCII characters."
+msgstr ""
+"<p>Imposta qui la descrizione del tipo editoriale del contenuto. Questo campo è "
+"limitato a 64 caratteri ASCII."
+
+#: iptcstatus.cpp:160
+msgid "Object Attribute:"
+msgstr "Attributo dell'oggetto:"
+
+#: iptcstatus.cpp:165
+msgid "Current"
+msgstr "Attuale"
+
+#: iptcstatus.cpp:166
+msgid "Analysis"
+msgstr "Analisi"
+
+#: iptcstatus.cpp:167
+msgid "Archive material"
+msgstr "Materiale d'archivio"
+
+#: iptcstatus.cpp:168
+msgid "Background"
+msgstr "Sfondo"
+
+#: iptcstatus.cpp:169
+msgid "Feature"
+msgstr "Funzionalità"
+
+#: iptcstatus.cpp:170
+msgid "Forecast"
+msgstr "Previsione"
+
+#: iptcstatus.cpp:171
+msgid "History"
+msgstr "Storia"
+
+#: iptcstatus.cpp:172
+msgid "Obituary"
+msgstr "Obituario"
+
+#: iptcstatus.cpp:173
+msgid "Opinion"
+msgstr "Opinione"
+
+#: iptcstatus.cpp:174
+msgid "Polls & Surveys"
+msgstr "Sondaggi"
+
+#: iptcstatus.cpp:175
+msgid "Profile"
+msgstr "Profilo"
+
+#: iptcstatus.cpp:176
+msgid "Results Listings & Table"
+msgstr "Elenchi e tabelle di risultati"
+
+#: iptcstatus.cpp:177
+msgid "Side bar & Supporting information"
+msgstr "Barra laterale e informazioni di supporto"
+
+#: iptcstatus.cpp:178
+msgid "Summary"
+msgstr "Riassunto"
+
+#: iptcstatus.cpp:179
+msgid "Transcript & Verbatim"
+msgstr "Minuta"
+
+#: iptcstatus.cpp:180
+msgid "Interview"
+msgstr "Intervista"
+
+#: iptcstatus.cpp:181
+msgid "From the Scene"
+msgstr "Dal posto"
+
+#: iptcstatus.cpp:182
+msgid "Retrospective"
+msgstr "Retrospettiva"
+
+#: iptcstatus.cpp:183
+msgid "Statistics"
+msgstr "Statistica"
+
+#: iptcstatus.cpp:184
+msgid "Update"
+msgstr "Aggiornamenti"
+
+#: iptcstatus.cpp:185
+msgid "Wrap-up"
+msgstr "Conclusione"
+
+#: iptcstatus.cpp:186
+msgid "Press Release"
+msgstr "Comunicato stampa"
+
+#: iptcstatus.cpp:190
+msgid "<p>Select here the editorial attribute of content."
+msgstr "<p>Seleziona qui l'attributo editoriale del contenuto."
+
+#: iptcstatus.cpp:191
+msgid ""
+"<p>Set here the editorial attribute description of content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Imposta qui la descrizione dell'attributo editoriale del contenuto. Questo "
+"campo è limitato a 64 caratteri ASCII."
+
+#: iptcstatus.cpp:196
+msgid "Job Identification:"
+msgstr "Identificazione del lavoro:"
+
+#: iptcstatus.cpp:202
+msgid ""
+"<p>Set here the string that identifies content that recurs. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Imposta qui la stringa identificativa del contenuto ricorrente. Questo campo "
+"è limitato a 32 caratteri ASCII."
+
+#: iptcsubjects.cpp:91
+msgid "Use structured definition of the subject matter:"
+msgstr "Usa definizione strutturata dell'oggetto:"
+
+#: iptcsubjects.cpp:96
+msgid ""
+"<p>Enter here a new subject. This field is limited to 236 ASCII characters."
+msgstr ""
+"<p>Imposta qui un nuovo oggetto. Questo campo è limitato a 236 caratteri ASCII."
+
+#: plugin_metadataedit.cpp:68
+msgid "Metadata"
+msgstr "Dati aggiuntivi"
+
+#: plugin_metadataedit.cpp:73
+msgid "Edit EXIF..."
+msgstr "Modifica EXIF..."
+
+#: plugin_metadataedit.cpp:81
+msgid "Remove EXIF..."
+msgstr "Rimuovi EXIF..."
+
+#: plugin_metadataedit.cpp:89
+msgid "Import EXIF..."
+msgstr "Importa EXIF..."
+
+#: plugin_metadataedit.cpp:99
+msgid "Edit IPTC..."
+msgstr "Modifica IPTC..."
+
+#: plugin_metadataedit.cpp:107
+msgid "Remove IPTC..."
+msgstr "Rimuovi IPTC..."
+
+#: plugin_metadataedit.cpp:115
+msgid "Import IPTC..."
+msgstr "Importa IPTC..."
+
+#: plugin_metadataedit.cpp:125
+msgid "Edit Captions..."
+msgstr "Modifica le didascalie..."
+
+#: plugin_metadataedit.cpp:133
+msgid "Remove Captions..."
+msgstr "Rimuovi le didascalie..."
+
+#: plugin_metadataedit.cpp:179
+msgid ""
+"EXIF metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"I dati aggiuntivi EXIF saranno definitivamente rimossi da tutte le immagini "
+"attualmente selezionate.\n"
+"Vuoi continuare?"
+
+#: plugin_metadataedit.cpp:181 plugin_metadataedit.cpp:220
+msgid "Remove EXIF Metadata"
+msgstr "Rimuovi i dati aggiuntivi EXIF"
+
+#: plugin_metadataedit.cpp:218
+msgid "Unable to remove EXIF metadata from:"
+msgstr "Impossibile rimuovere i dati aggiuntivi EXIF da:"
+
+#: plugin_metadataedit.cpp:233
+msgid "Select File to Import EXIF metadata"
+msgstr "Seleziona file per importare dati aggiuntivi EXIF"
+
+#: plugin_metadataedit.cpp:241 plugin_metadataedit.cpp:387
+msgid "Cannot load metadata from \"%1\""
+msgstr "Impossibile caricare dati aggiuntivi da «%1»"
+
+#: plugin_metadataedit.cpp:242 plugin_metadataedit.cpp:251
+#: plugin_metadataedit.cpp:260 plugin_metadataedit.cpp:300
+msgid "Import EXIF Metadata"
+msgstr "Importa dati aggiuntivi EXIF"
+
+#: plugin_metadataedit.cpp:250
+msgid "\"%1\" do not have EXIF metadata"
+msgstr "«%1» non ha dati aggiuntivi EXIF"
+
+#: plugin_metadataedit.cpp:257
+msgid ""
+"EXIF metadata from current selected pictures will be permanently replaced by "
+"the EXIF content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"I dati aggiuntivi EXIF delle immagini attualmente selezionate saranno "
+"definitivamente sostituiti dal contenuto EXIF di «%1».\n"
+"Vuoi continuare?"
+
+#: plugin_metadataedit.cpp:298
+msgid "Unable to set EXIF metadata from:"
+msgstr "Impossibile impostare i dati aggiuntivi EXIF da:"
+
+#: plugin_metadataedit.cpp:325
+msgid ""
+"IPTC metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"I dati aggiuntivi IPTC saranno definitivamente rimossi da tutte le immagini "
+"attualmente selezionate.\n"
+"Vuoi continuare?"
+
+#: plugin_metadataedit.cpp:327 plugin_metadataedit.cpp:366
+msgid "Remove IPTC Metadata"
+msgstr "Rimuovi i dati aggiuntivi IPTC"
+
+#: plugin_metadataedit.cpp:364
+msgid "Unable to remove IPTC metadata from:"
+msgstr "Impossibile rimuovere i dati aggiuntivi IPTC da:"
+
+#: plugin_metadataedit.cpp:379
+msgid "Select File to Import IPTC metadata"
+msgstr "Seleziona file per importare dati aggiuntivi IPTC"
+
+#: plugin_metadataedit.cpp:388 plugin_metadataedit.cpp:397
+#: plugin_metadataedit.cpp:406 plugin_metadataedit.cpp:446
+msgid "Import IPTC Metadata"
+msgstr "Importa dati aggiuntivi IPTC"
+
+#: plugin_metadataedit.cpp:396
+msgid "\"%1\" do not have IPTC metadata"
+msgstr "«%1» non ha dati aggiuntivi IPTC"
+
+#: plugin_metadataedit.cpp:403
+msgid ""
+"IPTC metadata from current selected pictures will be permanently replaced by "
+"the IPTC content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"I dati aggiuntivi IPTC delle immagini attualmente selezionate saranno "
+"definitivamente sostituiti dal contenuto di «%1».\n"
+"Vuoi continuare?"
+
+#: plugin_metadataedit.cpp:444
+msgid "Unable to set IPTC metadata from:"
+msgstr "Impossibile impostare i dati aggiuntivi IPTC da:"
+
+#: plugin_metadataedit.cpp:508
+msgid "Unable to set captions as image metadata from:"
+msgstr ""
+"Impossibile impostare le didascalie uguali ai dati aggiuntivi dell'immagine da:"
+
+#: plugin_metadataedit.cpp:575
+msgid "Unable to remove caption as image metadata from:"
+msgstr ""
+"Impossibile rimuovere la didascalia come nei dati aggiuntivi dell'immagine da:"
+
+#: plugin_metadataedit.cpp:577
+msgid "Remove Image Caption"
+msgstr "Rimuovi la didascalia dell'immagine"
+
+#~ msgid "Edit Metadata Handbook"
+#~ msgstr "Manuale di modifica dei dati aggiuntivi"
+
+#~ msgid "Sync EXIF image caption"
+#~ msgstr "Sincronizza la didascalia EXIF dell'immagine"
+
+#~ msgid "Remove EXIF caption"
+#~ msgstr "Rimuovi la didascalia EXIF"
+
+#~ msgid "Sync JFIF captions"
+#~ msgstr "Sincronizza le didascalie JFIF"
+
+#~ msgid "Sync IPTC caption (warning: ASCII limited)"
+#~ msgstr "Sincronizza la didascalia IPTC (attenzione: limitata a codifica ASCII)"
+
+#~ msgid "Sync creation date hosted by %1"
+#~ msgstr "Sincronizza la data di creazione ospitata da %1"
+
+#~ msgid "Sync JFIF caption"
+#~ msgstr "Sincronizza la didascalie JFIF"
+
+#~ msgid "Sync EXIF caption"
+#~ msgstr "Sincronizza la didascalia EXIF"
+
+#~ msgid "<b>Note: EXIF text tags annoted by (*) only support printable ASCII characters set.</b>"
+#~ msgstr "<b>Nota: i tag EXIF segnati con (*) supportano solo l'insieme di caratteri stampabili ASCII.</b>"
+
+#~ msgid "<b>Note: IPTC text tags support printable ASCII character sets only.</b>"
+#~ msgstr "<b>Nota: i tag di testo IPTC supportano solo l'insieme di caratteri ASCII stampabili.</b>"
+
+#~ msgid "<b>Note: IPTC text tags only support printable ASCII characters set.</b>"
+#~ msgstr "<b>Nota: i tag di testo IPTC supportano solo l'insieme di caratteri ASCII stampabili.</b>"
+
+#~ msgid "Edit Pictures Comments"
+#~ msgstr "Modifica i commenti delle immagini"
+
+#~ msgid "Sync EXIF user comment"
+#~ msgstr "Sincronizza i commenti EXIF dell'utente"
+
+#~ msgid "Remove Pictures Comments"
+#~ msgstr "Rimuovi i commenti delle immagini"
+
+#~ msgid "<p>Set here the name of the person who created the picture. This field is limited to ASCII characters."
+#~ msgstr "<p>Imposta qui il nome della persona che ha creato l'immagine. Questo campo è limitato a caratteri ASCII."
+
+#~ msgid "User comments:"
+#~ msgstr "Commenti dell'utente:"
+
+#~ msgid "Sync comment hosted by %1"
+#~ msgstr "Sincronizza i commenti ospitati da %1"
+
+#~ msgid "<p>Set here the person responsible for caption. This field is limited to 32 ASCII characters."
+#~ msgstr "<p>Imposta qui l'autore della legenda. Questo campo è limitato a 32 caratteri ASCII."
+
+#~ msgid "Unable to remove Comments like picture metadata from:"
+#~ msgstr "Impossibile rimuovere i commenti uguali ai dati aggiuntivi dell'immagine da:"
+
+#~ msgid "Sync host application comment"
+#~ msgstr "Sincronizza il commento dell'applicazione madre"
+
+#~ msgid "Unable to set Comments from:"
+#~ msgstr "Impossibile impostare i commenti da:"
+
+#~ msgid "%1 (%2/%3) - Edit EXIF Metadata%4"
+#~ msgstr "%1 (%2/%3)- Modifica i dati aggiuntivi EXIF%4"
+
+#~ msgid "%1 (%2/%3) - Edit IPTC Metadata%4"
+#~ msgstr "%1 (%2/%3) - Modifica i dati aggiuntivi IPTC%4"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Miniatura"
+
+#~ msgid "File Name"
+#~ msgstr "Nome del file"
+
+#~ msgid "EXIF"
+#~ msgstr "EXIF"
+
+#~ msgid "IPTC"
+#~ msgstr "IPTC"
+
+#~ msgid "EXIF Actions"
+#~ msgstr "Azioni EXIF"
+
+#~ msgid "Edit..."
+#~ msgstr "Modifica..."
+
+#~ msgid "Load..."
+#~ msgstr "Carica..."
+
+#~ msgid "<p>Edit EXIF data of selected pictures from the list."
+#~ msgstr "<p>Modifica i dati EXIF delle immagini selezionate nell'elenco."
+
+#~ msgid "<p>Load EXIF data from a picture and set it to selected pictures from the list."
+#~ msgstr "<p>Carica i dati EXIF da un'immagine e impostali per le immagini selezionate nell'elenco."
+
+#~ msgid "<p>Remove EXIF data of selected pictures from the list."
+#~ msgstr "<p>Rimuovi i dati EXIF delle immagini selezionate nell'elenco."
+
+#~ msgid "<p>Edit IPTC data of selected pictures from the list."
+#~ msgstr "<p>Modifica i dati IPTC delle immagini selezionate nell'elenco."
+
+#~ msgid "<p>Load IPTC data from a picture and set it to selected pictures from the list."
+#~ msgstr "<p>Carica i dati IPTC da un'immagine e impostali per le immagini selezionate nell'elenco."
+
+#~ msgid "<p>Remove IPTC data of selected pictures from the list."
+#~ msgstr "<p>Rimuovi i dati IPTC delle immagini selezionate nell'elenco."
+
+#~ msgid ""
+#~ "_n: 1 picture from the list isn't updated.\n"
+#~ "%n pictures from the list isn't updated."
+#~ msgstr ""
+#~ "Un'immagine dell'elenco non è aggiornata.\n"
+#~ "%n immagini dell'elenco non sono aggiornate."
+
+#~ msgid ""
+#~ "<p>%1\n"
+#~ "Do you want really to close this window without applying changes?</p>"
+#~ msgstr ""
+#~ "<p>%1\n"
+#~ "Vuoi veramente chiudere questa finestra senza applicare le modifiche?</p>"
+
+#~ msgid "Please, select at least one picture from the list to edit IPTC metadata manually."
+#~ msgstr "Seleziona almeno un'immagine dall'elenco per modificarne manualmente i dati aggiuntivi IPTC."
+
+#~ msgid "Please, select at least one picture from the list to apply EXIF metadata from a specific picture."
+#~ msgstr "Seleziona almeno un'immagine dall'elenco per applicare i dati aggiuntivi EXIF da un'immagine specifica."
+
+#~ msgid "Please, select at least one picture from the list to apply IPTC metadata from a specific picture."
+#~ msgstr "Seleziona almeno un'immagine dall'elenco per applicare i dati aggiuntivi IPTC da un'immagine specifica."
+
+#~ msgid "Please, select at least one picture from the list to remove EXIF metadata."
+#~ msgstr "Seleziona almeno un'immagine dall'elenco per rimuoverne i dati aggiuntivi EXIF."
+
+#~ msgid "Please, select at least one picture from the list to remove IPTC metadata."
+#~ msgstr "Seleziona almeno un'immagine dall'elenco per rimuoverne i dati aggiuntivi IPTC."
+
+#~ msgid "Metadata Edit"
+#~ msgstr "Modifica i dati aggiuntivi"
+
+#~ msgid "Available (read only)"
+#~ msgstr "Disponibile (sola lettura)"
+
+#~ msgid "Not available (read only)"
+#~ msgstr "Non disponibile (sola lettura)"
+
+#~ msgid "Changed or added"
+#~ msgstr "Modificato o aggiunto"
+
+#~ msgid "Available"
+#~ msgstr "Disponibile"
+
+#~ msgid "Not available"
+#~ msgstr "Non disponibile"
+
+#~ msgid "To be removed!"
+#~ msgstr "Da rimuovere"
+
+#~ msgid "Removed"
+#~ msgstr "Rimosso"
+
+#~ msgid "Failed to remove"
+#~ msgstr "Rimozione non riuscita"
+
+#~ msgid "Failed to change/add"
+#~ msgstr "Modifica o aggiunta non riuscita"
+
+#~ msgid "Please, select at least one picture from the list to edit EXIF metadata manually."
+#~ msgstr "Seleziona almeno un'immagine dall'elenco per modificarne manualmente i dati aggiuntivi EXIF."
+
+#~ msgid "Edit Metadata..."
+#~ msgstr "Modifica i dati aggiuntivi..."
+
+#~ msgid "<p>Set here the structured definition of the subject. This field is limited to 236 ASCII characters."
+#~ msgstr "<p>Imposta qui la definizione strutturata dell'oggetto. Questo campo è limitato a 236 caratteri ASCII."
+
+#~ msgid "Make (*):"
+#~ msgstr "Marca (*):"
+
+#~ msgid "Exposure"
+#~ msgstr "Esposizione"
+
+#~ msgid "Exposure Informations"
+#~ msgstr "Informazioni sull'esposizione"
+
+#~ msgid "Photo"
+#~ msgstr "Foto"
+
+#~ msgid "Pictures-Taking Conditions"
+#~ msgstr "Condizioni di scatto"
+
+#~ msgid "Dirty!"
+#~ msgstr "Sporco."
+
+#~ msgid "EXIF Caption Informations"
+#~ msgstr "Informazioni sulla legenda EXIF"
+
+#~ msgid "EXIF Date and Time Informations"
+#~ msgstr "Informazioni sulla data e ora EXIF"
+
+#~ msgid "ISO Speed Rating:"
+#~ msgstr "Velocità ISO:"
+
+#~ msgid "Date created"
+#~ msgstr "Data di creazione"
+
+#~ msgid "Time created"
+#~ msgstr "Ora di creazione"
+
+#~ msgid "Location code:"
+#~ msgstr "Codice del luogo:"
+
+#~ msgid "<p>Set here the ISO country code referenced by the content. This field is limited to 3 ASCII characters."
+#~ msgstr "<p>Imposta qui il codice ISO del paese cui si fa riferimento nei contenuti. Questo campo è limitato a 3 caratteri ASCII."
+
+#~ msgid "<p>Set here the full country name of content origin. This field is limited to 64 ASCII characters."
+#~ msgstr "<p>Imposta qui il nome completo del paese di origine dei contenuti. Questo campo è limitato a 64 caratteri ASCII."
+
+#~ msgid "Country code:"
+#~ msgstr "Codice del paese:"
+
+#~ msgid "<p>Set here the ISO country code of content origin. This field is limited to 3 ASCII characters."
+#~ msgstr "<p>Imposta qui il codice ISO del paese di origine dei contenuti. Questo campo è limitato a 3 caratteri ASCII."
+
+#~ msgid "Job ID:"
+#~ msgstr "Identificativo del lavoro:"
+
+#~ msgid "<p>Set here the content creation program name. This field is limited to 32 ASCII characters."
+#~ msgstr "<p>Imposta qui il nome del programma che ha creato il contenuto. Questo campo è limitato a 32 caratteri ASCII."
+
+#~ msgid "Program Version:"
+#~ msgstr "Versione del programma:"
+
+#~ msgid "<p>Set here the content creation program version. This field is limited to 10 ASCII characters."
+#~ msgstr "<p>Imposta qui la versione del nome del programma che ha creato il contenuto. Questo campo è limitato a 10 caratteri ASCII."

@@ -1,0 +1,118 @@
+<chapter id="mpegencoder">
+<chapterinfo>
+
+<title
+>MPEG Kodierer</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>        
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI MPEG Kodierer Modul ist ein Werkzeug, um eine Reihe von Bildern in ein MPEG Video in Form einer Diaschau zu konvertieren. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Das Modul "MPEG Kodierer" kann dazu benutzt werden, um ausgewählte Bilder in ein MPEG-Video, mit einer definierten Länge, zu konvertieren. Dieses Modul benutzt dazu die Pakete "MjpegTools" und "ImageMagick". Zwischen den einzelnen Bildern können Sie eine Basisbildübergang einfügen. Sie können ebenfalls eine Audiodatei im MP2 oder WAV der Diaschau hinzufügen. </para>
+
+<para
+>Alle Bilder werden automatisch auf die korrekte Größe für das gewählte Videoformat skaliert. Zusätzlich können Sie eine Hintergrundfarbe für die Diaschau auswählen. Mit diesem Modul ist es möglich die Formate DVD/XVCD/SVCD/VCD für Ihren DVD Spieler zu erstellen. Zum brennen des Mediums können Sie anschliesslich das K3b Programm benutzen. </para>
+
+<sect1 id="using-plugin-mpeg_encode">
+<title
+>Das Plugin benutzen</title>
+
+<para
+>Sie müssen zuerst die Bilder die in die MPEG Diaschau gepackt werden sollen auswählen. Danach können Sie über <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>MPEG Diaschau erstellen</guimenuitem
+></menuchoice
+> das Modul starten. </para>
+
+<para
+>Die von Ihnen ausgewählten Bilder sind dann unter <guilabel
+>Bilddateien im Portfolio</guilabel
+> aufgezählt. Dort können Sie auch Sortierung der Bilder bzw. den Inhalt der Liste ändern. </para>
+
+<para
+>Nachdem Sie mit Ihrer Liste zufrieden sind, sollten Sie die anderen Einstellungen anpassen. Das Videoformat kann aus verschiedenen Formaten, DVD, XVCD, SVCD und VCD gewählt werden. Falls Sie planen die Datei auf einem Fernseher wiederzugeben, müssen Sie den entsprechenden TV Standard PAL, SECAM oder NTSC auswählen. PAL ist voreingestellt und höchstwahrscheinlich die richtige Wahl für Europa. </para>
+
+<para
+>Im nächsten Schritt sollten Sie die Zeit in Sekunden die ein Bild angezeigt wird angeben. Die Geschwindigkeit des Bildübergangs wird darunter festgelegt. Ein niedriger Wert erzeugt sehr plötzliche, ein hoher dagegen sehr glatte Bildwechsel. </para>
+
+<para
+>Die Hintergrundfarbe kann als nächstes eingestellt werden. Im Zweifel sollte Sie sie schwarz lassen. Den Namen und den Pfad der erzeugten Datei können Sie unter "Name der MPEG Ausgabedatei" festlegen. Behalten Sie  dabei möglichst die Endung mpg bei. </para>
+
+<para
+>Falls Sie eine Audiodatei unter "Name der Audio-Quelldatei angeben", so wird diese in die den Film integriert. Nachdem Sie alle Einstellungen Ihren Wünschen angepasst haben, können Sie mit dem Knopf <guilabel
+>Kodieren</guilabel
+> die Erzeugung des Films starten. Abhängig von der Geschwindigkeit  Ihres Rechners können Sie nun schnell oder in aller Ruhe einen Kaffee trinken gehen und die Diaschau geniessen, wenn Sie wieder zurück sind. </para>
+
+<note>
+<para
+>Falls ein Hinweis erscheint, dass Kodierer oder Werkzeuge fehlen, so können Sie die Pfade zu den Programmen der "MjpegTools" und "ImageMagick" Pakete über den Knopf <guilabel
+>Einstellungen</guilabel
+> rechts unten anpassen. </para>
+</note>
+
+<figure>
+    <title
+>Die Vorschau des MPEG Kodierers</title>
+    <graphic srccredit="The MPEG Encoder Dialog Preview" fileref="mpeg_encode_dialog.png"/>
+</figure>
+
+<para
+>Sie können einige Beispiele für Filme die mit diesem Modul erzeugt wurden <ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/"
+>hier</ulink
+> betrachten. </para>
+
+</sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,8 @@
+dnl The obex push server is not supposed to be called by users,
+dnl so we install it in the kde_libdir
+dnl AC_OUTPUT(kdebluetooth/kbtobexsrv/kbtobexsrv.desktop)
+dnl AC_OUTPUT(kdebluetooth/kbtobexsrv/kbluetooth_kbtobexsrv.desktop)
+
+KBTOBEXSRV_BINDIR=${libdir}/kdebluetooth/servers
+KDE_EXPAND_MAKEVAR(KBTOBEXSRV_BINDIR, KBTOBEXSRV_BINDIR)
+AC_SUBST(KBTOBEXSRV_BINDIR)

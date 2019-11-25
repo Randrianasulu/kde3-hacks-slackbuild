@@ -1,0 +1,59 @@
+From 65627278ad561133809e332b0fc89a7cc4883409 Mon Sep 17 00:00:00 2001
+From: tpearson <tpearson@283d02a7-25f6-0310-bc7c-ecb5cbfe19da>
+Date: Sat, 11 Sep 2010 02:07:33 +0000
+Subject: Autodetect old fribidi header file
+
+git-svn-id: svn://anonsvn.kde.org/home/kde/branches/trinity/kdegraphics@1173991 283d02a7-25f6-0310-bc7c-ecb5cbfe19da
+---
+diff --git a/ksvg/impl/libs/libtext2path/configure.in.in b/ksvg/impl/libs/libtext2path/configure.in.in
+index 2198ab5..3d50159 100644
+--- a/ksvg/impl/libs/libtext2path/configure.in.in
++++ b/ksvg/impl/libs/libtext2path/configure.in.in
+@@ -39,3 +39,21 @@ dnl Check for fontconfig
+ # PKG_CHECK_MODULES(DEPS, fontconfig >= 2.2.0)
+ #AC_SUBST(DEPS_CFLAGS)
+ #AC_SUBST(DEPS_LIBS)
++
++dnl Check fribidi include location
++AC_LANG_SAVE
++AC_LANG_CPLUSPLUS
++cxx_flags_safe="$CXXFLAGS"
++cflags_safe="$CFLAGS"
++CXXFLAGS="$CXXFLAGS -I$ac_cv_sword_incdir"
++CFLAGS="$CFLAGS -I$ac_cv_sword_incdir"
++AC_MSG_CHECKING([for old fribidi header file])
++AC_TRY_COMPILE([#include <fribidi/fribidi_types.h>
++],[return 0;],
++AC_MSG_RESULT(yes),
++[AC_MSG_RESULT(no)
++AC_DEFINE(FRIBIDI_NEW_FILENAME,1,[no])])
++CXXFLAGS="$cxx_flags_safe"
++CFLAGS="$cflags_safe"
++AC_LANG_RESTORE
++
+diff --git a/ksvg/impl/libs/libtext2path/src/Converter.cpp b/ksvg/impl/libs/libtext2path/src/Converter.cpp
+index 30ce440..59ab8e5 100644
+--- a/ksvg/impl/libs/libtext2path/src/Converter.cpp
++++ b/ksvg/impl/libs/libtext2path/src/Converter.cpp
+@@ -18,12 +18,19 @@
+     Boston, MA 02110-1301, USA.
+ */
+ 
++#include "config.h"
++
+ #include <math.h>
+ 
+ #include "myboost/shared_ptr.hpp"
+ #include <fontconfig/fontconfig.h>
+ #include <fribidi/fribidi.h>
++
++#ifdef FRIBIDI_NEW_FILENAME
+ #include <fribidi/fribidi-types.h>
++#else
++#include <fribidi/fribidi_types.h>
++#endif
+ 
+ #include "Font.h"
+ #include "Glyph.h"
+--
+cgit v0.9.0.2-52-g1de3

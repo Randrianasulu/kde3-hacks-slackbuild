@@ -1,0 +1,155 @@
+/****************************************************************************
+** Digikam::ToolBar meta object code from reading C++ file 'toolbar.h'
+**
+** Created: Wed Jun 14 03:54:06 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "toolbar.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ToolBar::className() const
+{
+    return "Digikam::ToolBar";
+}
+
+QMetaObject *Digikam::ToolBar::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ToolBar( "Digikam::ToolBar", &Digikam::ToolBar::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ToolBar::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ToolBar", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ToolBar::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ToolBar", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ToolBar::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"slotPlayBtnToggled", 0, 0 };
+    static const QUMethod slot_1 = {"slotNexPrevClicked", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotPlayBtnToggled()", &slot_0, QMetaData::Private },
+	{ "slotNexPrevClicked()", &slot_1, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalNext", 0, 0 };
+    static const QUMethod signal_1 = {"signalPrev", 0, 0 };
+    static const QUMethod signal_2 = {"signalClose", 0, 0 };
+    static const QUMethod signal_3 = {"signalPlay", 0, 0 };
+    static const QUMethod signal_4 = {"signalPause", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalNext()", &signal_0, QMetaData::Protected },
+	{ "signalPrev()", &signal_1, QMetaData::Protected },
+	{ "signalClose()", &signal_2, QMetaData::Protected },
+	{ "signalPlay()", &signal_3, QMetaData::Protected },
+	{ "signalPause()", &signal_4, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ToolBar", parentObject,
+	slot_tbl, 2,
+	signal_tbl, 5,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ToolBar.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ToolBar::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ToolBar" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+// SIGNAL signalNext
+void Digikam::ToolBar::signalNext()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL signalPrev
+void Digikam::ToolBar::signalPrev()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+// SIGNAL signalClose
+void Digikam::ToolBar::signalClose()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2 );
+}
+
+// SIGNAL signalPlay
+void Digikam::ToolBar::signalPlay()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+// SIGNAL signalPause
+void Digikam::ToolBar::signalPause()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 4 );
+}
+
+bool Digikam::ToolBar::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotPlayBtnToggled(); break;
+    case 1: slotNexPrevClicked(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::ToolBar::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalNext(); break;
+    case 1: signalPrev(); break;
+    case 2: signalClose(); break;
+    case 3: signalPlay(); break;
+    case 4: signalPause(); break;
+    default:
+	return QWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ToolBar::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Digikam::ToolBar::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

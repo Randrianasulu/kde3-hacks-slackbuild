@@ -1,0 +1,145 @@
+<chapter id="faq">
+<title
+>Вопросы и ответы</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para
+>Моего вопроса нет в FAQ. Где ещё я могу найти ответ?</para>
+</question>
+<answer>
+<para
+>Существует <ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth"
+>рассылка</ulink
+>, куда вы можете посылать ваши вопросы и замечания. Пожалуйста, сперва прочитайте архив, но не стесняйтесь спросить нас, если не нашли там ничего полезного.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Ничего не работает, даже консольная программа типа <command
+>hcitool inq</command
+> ничего не находит.</para>
+</question>
+<answer>
+<para
+>kdebluetooth зависит от рабочих настроек bluetooth. Если ваша проблема в этом, вы можете задать вопрос в нашей рассылке,но более правильное место для вопросов об BlueZ это <ulink url="http://www.bluez.org"
+>BlueZ</ulink
+>. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>kdebluetooth умер? Больше нет изменений в CVS на Sourceforge.</para>
+</question>
+<answer>
+<para
+>kdebluetooth переместился на <ulink url="http://webcvs.kde.org/cgi-bin/cvsweb.cgi/kdeextragear-3/"
+>kdeextragear-3</ulink
+> (<ulink url="http://extragear.kde.org"
+>сайт extragear</ulink
+>).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Мои телефоны просят набрать PIN, но я не знаю, где его надо вводить в компьютере.</para>
+</question>
+<answer>
+<para
+>BlueZ должен открыть диалог для PIN автоматически, когда вы используете <programlisting
+>security user;</programlisting
+> в <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Иногда стандартная утилита <command
+>bluepin</command
+> из BlueZ не работает, тогда вы можете использовать подмену KDE Style <command
+>kbluepin</command
+>. Поместите <programlisting
+>pin_helper /usr/lib/kdebluetooth/kbluepin;</programlisting
+> в <filename
+>hcid.conf</filename
+> и перезапустите<command
+>hcid</command
+> </para>
+<para
+>Это проблема BlueZ и она не относится к среде KDE Bluetooth до тех пор, пока вы не используете kbluepin. Я хотел поместить ссылку на документацию BlueZ по поводу работы с PIN, но сейчас не могу нигде ее найти. Ваши советы приветствуются. </para>
+<para
+>Если у вас постоянные проблемы с kbluepin, посмотрите в файлы журналов ( <filename
+>/var/log/syslog</filename
+> и т.п.). </para>
+<para
+>Если вы не знакомы с bluetooth, обратитесь к разделу <link linkend="concepts.pairing"
+>Парные устройства bluetooth</link
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Когда я пытаюсь соединить  мой компьютер с телефоном, KBluetoothD отвечает "Соединение не допустимо".  </para>
+</question>
+<answer>
+<para
+>Если pin-помощник для hcid установлен правильно, должен появится диалог, запрашивающий pin-код, который вы также ввели в ваш телефон. Если вы нажмёте "Отмена" или если программа pin-помощника не может быть найдена или не запускается по каким-то причинам, kbluetoothd выдаст предупреждение. Проверьте журналы вашей системы, чтобы найти, почему hcid не смог запустить програму pin-помощника. </para
+></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Я хочу использовать службы, предоставляемые kdebluetooth, но моё клиенское устройство хочет использовать другой канал, вместо того который используется в kdebluetooth. </para>
+</question>
+<answer>
+<para
+>Обычно службы bluetooth не используют фиксированные номера каналов, а вместо этого используют SDP-базу данных чтобы найти верный канал. Однако, если вам деййствительно нужно, вы можете скопировать соответствующий файл из <filename
+>$PREFIX/share/services</filename
+> в <filename
+>$HOME/.kde/share/services</filename
+> и отредактировать номер канала. Это позволит обойти глобальные установки после перезапуска KDE.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Я использую разные защитные заглушки на одном компьютере. Как я могу выбрать какой из них использовать? </para>
+</question>
+<answer>
+<para
+>Некоторые из наших приложений используют параметры командной строки для изменения устройства bluetooth по умолчанию ( --hcidevice hcil например). Как альтернативу, вы также можете использовать переменную среды HCI_DEVICE. Последнее может также работать для тех програм которые не используют параметры командной строки. Заметьте, что kbluetoothd cам по себе не очень хорошо работает с некоторыми адапторами в данный момент. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>./configure не находит мои kdelibs/qt/...</para>
+</question>
+<answer>
+<para
+>Убедитесь, что вы также установили devel-пакеты для соответствующих библиотек.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Я получаю сообщение об ошибке: "File generated with too recent version of Qt Designer (3.2 vs. 3.1.x)"</para>
+</question>
+<answer>
+<para
+>Qt Designer сохраняет номер своей версии в файлах ui где бы вы их не создали. Это вызывает ошибки, если вы хотите собрать kdebluetooth с более старой версией Qt. It seems, однако безопасно сменить версию с 3.2 на 3.1. Вы можете это легко сделать, запустив скрипт downgrade_ui если мы случайно внесем какие-либо изменения без сброса номера версии.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>

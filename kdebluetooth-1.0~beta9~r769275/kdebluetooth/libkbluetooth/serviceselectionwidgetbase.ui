@@ -1,0 +1,79 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>ServiceSelectionWidgetBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ServiceSelectionWidgetBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>302</width>
+            <height>209</height>
+        </rect>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="KListBox">
+            <property name="name">
+                <cstring>serviceListBox</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>3</hsizetype>
+                    <vsizetype>3</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>300</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>searchButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Search</string>
+                    </property>
+                </widget>
+                <widget class="KSqueezedTextLabel">
+                    <property name="name">
+                        <cstring>statusLabel</cstring>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>clearButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Clear</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    
+    
+</includehints>
+</UI>

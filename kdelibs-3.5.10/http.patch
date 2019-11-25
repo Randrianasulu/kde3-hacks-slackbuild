@@ -1,0 +1,11 @@
+--- branches/KDE/4.1/kdelibs/kioslave/http/http.cpp	2008/09/12 00:47:17	860100
++++ branches/KDE/4.1/kdelibs/kioslave/http/http.cpp	2008/09/12 00:47:36	860101
+@@ -2753,7 +2753,7 @@
+     // calling application later
+     m_responseHeaders << QString::fromLatin1(buf);
+ 
+-    if ((strncasecmp(buf, "HTTP", 4) == 0) ||
++    if ((strncasecmp(buf, "HTTP/", 5) == 0) ||
+         (strncasecmp(buf, "ICY ", 4) == 0)) // Shoutcast support
+     {
+       if (strncasecmp(buf, "ICY ", 4) == 0)

@@ -1,0 +1,127 @@
+/****************************************************************************
+** BackupDlg meta object code from reading C++ file 'BackupDlg.h'
+**
+** Created: Sun Feb 1 00:52:57 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "BackupDlg.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *BackupDlg::className() const
+{
+    return "BackupDlg";
+}
+
+QMetaObject *BackupDlg::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_BackupDlg( "BackupDlg", &BackupDlg::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString BackupDlg::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BackupDlg", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString BackupDlg::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BackupDlg", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* BackupDlg::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QDialog::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "proc", &static_QUType_ptr, "KProcess", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotProcessExited", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "proc", &static_QUType_ptr, "KProcess", QUParameter::In },
+	{ "buf", &static_QUType_charstar, 0, QUParameter::In },
+	{ "len", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotStdout", 3, param_slot_1 };
+    static const QUMethod slot_2 = {"slotOK", 0, 0 };
+    static const QUMethod slot_3 = {"slotAbort", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ "name", &static_QUType_QString, 0, QUParameter::In },
+	{ "size", &static_QUType_int, 0, QUParameter::In },
+	{ "mtime", &static_QUType_int, 0, QUParameter::In },
+	{ "record", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotEntry", 4, param_slot_4 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotProcessExited(KProcess*)", &slot_0, QMetaData::Private },
+	{ "slotStdout(KProcess*,char*,int)", &slot_1, QMetaData::Private },
+	{ "slotOK()", &slot_2, QMetaData::Private },
+	{ "slotAbort()", &slot_3, QMetaData::Private },
+	{ "slotEntry(const QString&,int,int,int)", &slot_4, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"BackupDlg", parentObject,
+	slot_tbl, 5,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_BackupDlg.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* BackupDlg::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "BackupDlg" ) )
+	return this;
+    return QDialog::qt_cast( clname );
+}
+
+bool BackupDlg::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotProcessExited((KProcess*)static_QUType_ptr.get(_o+1)); break;
+    case 1: slotStdout((KProcess*)static_QUType_ptr.get(_o+1),(char*)static_QUType_charstar.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
+    case 2: slotOK(); break;
+    case 3: slotAbort(); break;
+    case 4: slotEntry((const QString&)static_QUType_QString.get(_o+1),(int)static_QUType_int.get(_o+2),(int)static_QUType_int.get(_o+3),(int)static_QUType_int.get(_o+4)); break;
+    default:
+	return QDialog::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool BackupDlg::qt_emit( int _id, QUObject* _o )
+{
+    return QDialog::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool BackupDlg::qt_property( int id, int f, QVariant* v)
+{
+    return QDialog::qt_property( id, f, v);
+}
+
+bool BackupDlg::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

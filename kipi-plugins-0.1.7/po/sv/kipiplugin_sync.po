@@ -1,0 +1,228 @@
+# translation of kipiplugin_sync.po to Swedish
+#
+# Stefan Asserhäll <stefan.asserhall@comhem.se>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sync\n"
+"POT-Creation-Date: 2008-07-08 22:16+0200\n"
+"PO-Revision-Date: 2007-02-15 01:19+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Stefan Asserhäll"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "stefan.asserhall@comhem.se"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Namn:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "Webbadress:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Användarnamn:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Använd &galleri 2"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:136
+msgid "Albums"
+msgstr "Album"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Överskrid förvalda alternativ"
+
+#: gallerywidget.cpp:109
+msgid "Resize photos before uploading"
+msgstr "Ändra storlek på foton innan uppladdning"
+
+#: gallerywidget.cpp:117
+msgid "Maximum dimension:"
+msgstr "Maximal storlek:"
+
+#: gallerywidget.cpp:135
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Galleriexport</h2>"
+
+#: gallerywidget.cpp:137
+msgid "&New Album"
+msgstr "&Nytt album"
+
+#: gallerywidget.cpp:138
+msgid "&Add Photos"
+msgstr "&Lägg till foton"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Galleriexport"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"Ett KIPI-insticksprogram för att exportera bildsamlingen till en galleriserver."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Upphovsman"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Utvecklare"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Handbok för insticksprogrammet"
+
+#: gallerywindow.cpp:228
+msgid "Failed to login into remote gallery. "
+msgstr "Misslyckades logga in på fjärrgalleri"
+
+#: gallerywindow.cpp:230
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Vill du försöka igen?"
+
+#: gallerywindow.cpp:516
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Tyvärr är följande tecken inte tillåtna i albumnamn: %1"
+
+#: gallerywindow.cpp:586
+msgid "Uploading file %1 "
+msgstr "Laddar upp filen %1 "
+
+#: gallerywindow.cpp:603
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Misslyckades ladda upp foto till fjärrgalleri. "
+
+#: gallerywindow.cpp:606
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Vill du fortsätta?"
+
+#: plugin_sync.cpp:77
+msgid "Synchronize..."
+msgstr "Synkronisera..."
+
+#: plugin_sync.cpp:86
+msgid "Configure Synchronization..."
+msgstr "Anpassa synkronisering..."
+
+#: plugin_sync.cpp:95 plugin_sync.cpp:104
+msgid "Synchronization Settings..."
+msgstr "Synkroniseringsinställningar..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "Mindialogruta"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Skriv in nytt albumnamn</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Titel (valfri):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Namn (valfritt):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Rubrik (valfri):"
+
+#. i18n: file sinklistbase.ui line 16
+#: rc.cpp:24
+#, no-c-format
+msgid "Sinks"
+msgstr "Mottagare"
+
+#. i18n: file sinklistbase.ui line 97
+#: rc.cpp:30
+#, no-c-format
+msgid "&Find"
+msgstr "&Sök"
+
+#. i18n: file sinklistbase.ui line 100
+#: rc.cpp:33
+#, no-c-format
+msgid "Alt+F"
+msgstr "Alt+F"
+
+#. i18n: file sinklistbase.ui line 128
+#: rc.cpp:42
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file sinklistbase.ui line 142
+#: rc.cpp:48
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#: sinklist.cpp:46
+msgid "Name"
+msgstr "Namn"
+
+#: sinklist.cpp:47
+msgid "Type"
+msgstr "Typ"
+
+#: sinklist.cpp:121 sinklist.cpp:144
+msgid "No sink selected!"
+msgstr "Ingen mottagare vald."
+
+#: sinklist.cpp:150
+msgid ""
+"Are you sure you want to remove this sink? All synchronisaton settings will be "
+"lost. You cannot undo this action."
+msgstr ""
+"Är du säker på att du vill ta bort mottagaren? Alla "
+"synkroniseringsinställningar kommer att gå förlorade. Du kan inte ångra "
+"åtgärden."
+
+#: sinklist.cpp:153
+msgid "Remove Sink?"
+msgstr "Ta bort mottagare?"
+
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Handbok Galleriexport"

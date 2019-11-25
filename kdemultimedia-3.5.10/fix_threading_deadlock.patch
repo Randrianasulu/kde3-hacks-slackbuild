@@ -1,0 +1,106 @@
+From 697d333afb6138647db665ab65f17c823d205b7c Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Wed, 01 Oct 2014 04:10:49 +0000
+Subject: Fix threading deadlock between Xine and our X11 event processor
+
+This relates to Bug 1905
+---
+diff --git a/xine_artsplugin/xinePlayObject_impl.cpp b/xine_artsplugin/xinePlayObject_impl.cpp
+index d4681d5..4cb83e6 100644
+--- a/xine_artsplugin/xinePlayObject_impl.cpp
++++ b/xine_artsplugin/xinePlayObject_impl.cpp
+@@ -683,47 +683,54 @@ void xinePlayObject_impl::resizeNotify()
+     XFlush( display );
+ }
+ 
++// FIXME
++// Due to somewhat recent changes in XLib threading this had to be changed to a polling routine
++// Specifically XNextEvent acquires a global XLib lock, preventing any other XLib methods (including those used in the Xine library) from executing
++// Seems this is a known problem in other projects as well, with the only real option being a rewrite to use xcb natively (not sure if that is even possible here):
++// http://mail-archives.apache.org/mod_mbox/harmony-dev/200905.mbox/%3C200905181317.n4IDHtGQ002008@d06av03.portsmouth.uk.ibm.com%3E
+ void xinePlayObject_impl::eventLoop()
+ {
+-    XEvent event;
+-
+-    do
+-    {
+-	XNextEvent( display, &event );
+-
+-	if (event.type == Expose && event.xexpose.count == 0 &&
+-	    event.xexpose.window == visual.d)
+-	{
+-	    pthread_mutex_lock( &mutex );
+-
+-	    if (stream != 0)
+-	    {
+-		xine_port_send_gui_data( vo_port,
+-				       XINE_GUI_SEND_EXPOSE_EVENT,
+-				       &event );
+-	    }
+-	    else
+-	    {
+-		clearWindow();
+-	    }
+-	    pthread_mutex_unlock( &mutex );
++	XEvent event;
++	bool eventReceived = false;
++	
++	do {
++		if (XPending( display )) {
++			XNextEvent( display, &event );
++			eventReceived = true;
++
++			if (event.type == Expose && event.xexpose.count == 0 && event.xexpose.window == visual.d) {
++				pthread_mutex_lock( &mutex );
++			
++				if (stream != 0) {
++					xine_port_send_gui_data( vo_port,
++							XINE_GUI_SEND_EXPOSE_EVENT,
++							&event );
++				}
++				else {
++					clearWindow();
++				}
++				pthread_mutex_unlock( &mutex );
++			}
++			else if (event.type == shmCompletionType) {
++				pthread_mutex_lock( &mutex );
++			
++				if (stream != 0) {
++					xine_port_send_gui_data( vo_port,
++							XINE_GUI_SEND_COMPLETION_EVENT,
++							&event );
++				}
++				pthread_mutex_unlock( &mutex );
++			}
++		}
++		else {
++			usleep(10000);
++			eventReceived = false;
++		}
+ 	}
+-	else if (event.type == shmCompletionType)
+-	{
+-	    pthread_mutex_lock( &mutex );
+-
+-	    if (stream != 0)
+-	    {
+-		xine_port_send_gui_data( vo_port,
+-				       XINE_GUI_SEND_COMPLETION_EVENT,
+-				       &event );
+-	    }
+-	    pthread_mutex_unlock( &mutex );
+-	}
+-    }
+-    while (event.type != ClientMessage ||
+-	   event.xclient.message_type != xcomAtomQuit ||
+-	   event.xclient.window != xcomWindow);
++	while (!eventReceived ||
++		event.type != ClientMessage ||
++		event.xclient.message_type != xcomAtomQuit ||
++		event.xclient.window != xcomWindow);
+ }
+ 
+ void xineVideoPlayObject_impl::x11WindowId( long window )
+--
+cgit v0.9.0.2-52-g1de3

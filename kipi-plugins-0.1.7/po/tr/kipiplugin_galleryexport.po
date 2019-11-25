@@ -1,0 +1,267 @@
+# translation of kipiplugin_galleryexport.po to
+# translation of kipiplugin_galleryexport.po to Türkçe
+# Görkem Çetin <gorkem@kde.org>, 2004.
+# İsmail Şimşek <simsek@kde.org.tr>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2005-04-21 21:01+0300\n"
+"Last-Translator: İsmail Şimşek <simsek@kde.org.tr>\n"
+"Language-Team:  <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: galleries.cpp:237
+#, fuzzy
+msgid "Gallery Name"
+msgstr "Galeri Aktar"
+
+#: galleries.cpp:238
+#, fuzzy
+msgid "URL"
+msgstr "Adres:"
+
+#: galleries.cpp:239
+#, fuzzy
+msgid "User"
+msgstr "Kullanıcı adı:"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr ""
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "Adres:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Kullanıcı adı:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Şifre:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr ""
+
+#: gallerylist.cpp:50
+#, fuzzy
+msgid "Remote Galleries"
+msgstr "Uzak galeriye giriş yap"
+
+#: gallerylist.cpp:142
+#, fuzzy
+msgid "New Remote Gallery"
+msgstr "Uzak galeriye giriş yap"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr ""
+
+#: gallerylist.cpp:167
+#, fuzzy
+msgid "Edit Remote Gallery"
+msgstr "Uzak galeriye giriş yap"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+
+#: gallerylist.cpp:192
+#, fuzzy
+msgid "Remove Remote Gallery"
+msgstr "Uzak galeriye giriş yap"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "Galeri adresi muhtemelen yanlış"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Yanlış kullanıcı adı veya şifre"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Uzak Galeriden geçersiz yanıt alındı"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Albümleri listeleme başarısız"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Fotoğrafları listeleme başarısız"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Yeni albüm oluşturma başarısız"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Resim yükleme başarısız"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Albümler"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Öntanımlı Seçenekleri Yoksay"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr ""
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr ""
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Resimleri yüklemeden önce boyutlandır"
+
+#: gallerywidget.cpp:124
+#, fuzzy
+msgid "Maximum dimension:"
+msgstr "En büyük boyut"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Galeri Aktar</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Yeni Albüm"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "&Resim Ekle"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Galeri Aktar"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr ""
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr ""
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Uzak galeriye giriş başarısız. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Yeniden denemek ister misiniz?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Üzgünüm, albüm adında bu karakterler kullanılamaz: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "%1 dosyası yükleniyor"
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Uzak galeriye resim yükleme başarısız. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Devam etmek istiyor musunuz?"
+
+#: plugin_galleryexport.cpp:77
+#, fuzzy
+msgid "Remote Gallery Sync..."
+msgstr "Uzak galeriye giriş yap"
+
+#: plugin_galleryexport.cpp:86
+#, fuzzy
+msgid "Remote Galleries..."
+msgstr "Uzak galeriye giriş yap"
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MyDialog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Yeni Albüm Adı Giriniz</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Ünvan (isteğe bağlı):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "İsim (isteğe bağlı):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Başlık (isteğe bağlı):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Galeri Aktar"
+
+#, fuzzy
+#~ msgid "Login Into Remote Gallery"
+#~ msgstr "Uzak galeriye giriş yap"
+
+#~ msgid "Export to Remote Gallery..."
+#~ msgstr "Uzak Galeriye Aktar..."

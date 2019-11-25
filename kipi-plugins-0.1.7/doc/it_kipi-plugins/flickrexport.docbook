@@ -1,0 +1,180 @@
+<chapter id="flickrexport">
+<chapterinfo>
+
+<title
+>Esportazione a Flickr</title>
+
+<authorgroup>
+    <author
+><firstname
+>Vardhman</firstname
+><surname
+>Jain</surname
+> <affiliation
+><address
+><email
+>vardhman@students.iiit.net</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+  <para
+>Il plugin di esportazione a Flickr permette all'utente di caricare foto al servizio Web <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+  <para
+>Flickr è un'applicazione di gestione delle fotografie su Internet. Flickr è un modo di far avere le tue foto alla gente che ti sta a cuore. Con Flickr puoi mostrare le tue foto preferite a tutto il mondo, fare un blog con le foto che fai con un telefono cellulare, e mostrare privatamente delle foto ai tuoi amici e alla tua famiglia in tutto il mondo. </para>
+  
+  <para
+>Il plugin di esportazione a Flickr può essere usato per caricare la tua raccolta di immagini dalla tua applicazione ospite al server remoto di Flickr usando Internet. </para>
+
+<sect1 id="using-plugin-flickrexport"
+> 
+  <title
+>Inizializzazione del plugin al primo accesso</title>
+  
+  <para
+>Quando usa il plugin per la prima volta, l'utente viene accompagnato attraverso il processo di identificazione. Apparirà la finestra seguente e una finestra di del browser sarà avviata per iscriversi a <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+  
+  <figure>
+      <title
+>L'anteprima della finestra di prima iscrizione</title>
+      <graphic srccredit="The First Sign Up Dialog Preview" fileref="flickrexportsignup.png"/>
+  </figure>
+  
+  <para
+>Dopo che sarà riuscita l'iscrizione, l'esportazione sul sito Web di Flickr sarà possibile. L'utente vedrà questa immagine dopo la riuscita dell'iscrizione. </para>
+  
+  <figure>
+      <title
+>La pagina di iscrizione riuscita a Flickr</title>
+      <graphic srccredit="The Successfull Signup Flickr page" fileref="flickrexportauthenticated.png"/>
+  </figure>
+  
+  <para
+>A questo punto basta che chiudi le finestre del browser e torni alla finestra dell'applicazione ospite. Facendo clic su <guilabel
+>Sì</guilabel
+>, l'utente vedrà l'interfaccia per caricare le foto su Flickr, descritta nella sezione seguente. </para>
+
+</sect1>
+
+<sect1 id="uploading-using-plugin-flickrexport"
+> 
+<title
+>L'uso normale del plugin</title>
+
+  
+  <para
+>Quando il plugin di esportazione a Flickr viene chiamato per la seconda volta e per tutte le successive, l'utente incontrerà la finestra seguente, che mostra i permessi che il plugin di esportazione ha attualmente. Il processo di caricamento richiede i permessi in "scrittura". Al momento il plugin non permette nessun altro permesso. Sarà chiesto all'utente se vuole procedere con i permessi attuali. </para>
+     <figure>
+      <title
+>Anteprima della finestra dei permetti attuali</title>
+      <graphic srccredit="The " fileref="flickrexportcontinue.png"/>
+  </figure>
+
+      <para
+>Facendo clic su <guilabel
+>Sì</guilabel
+>, l'utente vedrà l'interfaccia per caricare le foto su Flickr. </para>
+   <para
+>Facendo clic su <guilabel
+>No</guilabel
+>, verrà ripetuto il processo di identificazione. </para>
+  
+      <para
+>La finestra finestra di caricamento principale è mostrata sotto. </para>
+  
+  	
+  <figure>
+      <title
+>Anteprima della finestra di caricamento principale</title>
+      <graphic srccredit="The Main Uploading Dialog Preview" fileref="flickrexportuploaddialog.png"/>
+  </figure>
+  
+  <para
+>Il pulsante <guilabel
+>Aggiungi foto</guilabel
+> dovrebbe essere premuto una volta che l'utente ha impostato le opzioni nella finestra. Facendo clic su questo pulsante si apre una finestra di selezione delle immagini, nella quale l'utente può selezionare le foto che vuole caricare e premere Ok. Quando si clicca Ok, comincia il caricamento delle immagini. </para>
+  
+
+  <para
+>Il campo <guilabel
+>Parole chiave</guilabel
+> può essere riempito con una serie di parole (separate da virgole) che saranno assegnate alle immagini caricate. </para>
+  
+  <para
+>Le caselle <guilabel
+>Pubblico</guilabel
+>, <guilabel
+>Amici</guilabel
+> e <guilabel
+>Famiglia</guilabel
+> possono essere segnate per dare i permessi d'accesso giusti alle immagini che carichi. Come impostazione predefinita le immagini sono caricate privatamente. </para>
+  
+  <para
+>Se l'opzione <guilabel
+>Ridimensiona le foto prima di inviarle</guilabel
+> è selezionata, le foto saranno ridimensionate prima di essere caricate. I valori saranno presi dalla casella combinata <guilabel
+>Dimensione massima</guilabel
+>. </para>
+  
+  <para
+>La casella combinata <guilabel
+>Dimensione massima</guilabel
+> può essere usata per regolare l'altezza massima a cui le foto saranno ridimensionate prima di essere caricate. Il calcolo della larghezza sarà fatto in maniera tale da mantenere le proporzioni. </para>
+  
+ <figure>
+      <title
+>L'anteprima della finestra dell'avanzamento del caricamento</title>
+      <graphic srccredit="The Uploading Progress Dialog Preview" fileref="flickrexportuploading.png"/>
+  </figure>
+  <para
+>Puoi fare clic sul pulsante <guilabel
+>Annulla</guilabel
+> per interrompere il caricamento delle foto. </para>
+
+<para
+>Infine, l'utente può vedere le foto caricate visitando il sito di <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: ts
+End:
+-->

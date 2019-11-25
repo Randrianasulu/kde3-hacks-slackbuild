@@ -1,0 +1,77 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Ändra bildstorlek</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Ändra bildstorlek är ett verktyg för att ändra storlek på eller anpassa dimensioner för bilder. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Det här insticksprogrammet kan användas för storleksändring av bilder i ett album i bakgrunden. Det använder programmet "convert" från paketet "ImageMagick". Du kan ändra bildens storlek till mindre eller större. Tre typer av storleksändring har implementerats: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Proportionell (en dimension)</emphasis
+>: Vanlig automatisk storleksändring med en dimension. Bildernas bredd eller höjd väljes automatiskt beroende på bildernas orientering. Bildernas proportioner bevaras.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proportionell (två dimensioner)</emphasis
+>: Automatisk storleksändring med två dimensioner. Bildernas proportioner bevaras. Du kan till exempel använda den för att anpassa bildstorlekarna till skärmstorleken. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>Inte proportionell</emphasis
+>: Storleksändring som inte är proportionell med användning av två dimensioner. Bildernas proportioner bevaras inte.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Förbered utskrift</emphasis
+>: Förbered bilden för en fotografisk utskrift. Användaren kan ställa in utskriftens upplösning och det fotografiska papprets storlek. Resultatbilden anpassas till rätt dimensioner (inklusive bakgrundsstorleken, marginalstorleken och bakgrundsfärgen).</para
+></listitem>
+</itemizedlist>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

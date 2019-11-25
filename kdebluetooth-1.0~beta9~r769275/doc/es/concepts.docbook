@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Conceptos</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Seguridad bluetooth: Emparejar dispositivos</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>¿Qué es «emparejar»?</title>
+<para
+>Con frecuencia se precisa la autentificación para un dispositivo si se desea acceder a un servicio. En este caso los dos dispositivos necesitan <phrase
+>emparejarse</phrase
+>. Cuando dos dispositivos están emparejados, deben asegurarse de la identidad de la otra parte. Sin el emparejamiento, debería confiar en la dirección o el nombre del otro dispositivo, que puede falsificarse fácilmente. </para>
+<para
+>El emparejamiento suele producirse una vez entre los dos dispositivos. Después del emparejamiento, la conexión entre los dos dispositivos se <phrase
+>autentificará</phrase
+> automáticamente. </para>
+<para
+>Normalmente <emphasis
+>el proceso de emparejamiento se iniciará automáticamente cuando sea necesario</emphasis
+>. No debe preocuparse de un dispositivo si no se ha emparejado para acceder a estos servicios. Si intenta autentificarse pero falla, el proceso de emparejamiento se iniciará automáticamente. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>¿Cómo funciona?</title>
+
+<para
+>Los dispositivos se emparejan para asegurarse de la identidad de la otra parte. Pero el primer paso no puede ser automático. <emphasis
+>Usted</emphasis
+> debe asegurarse de que sabe quién se empareja con su dispositivo. Esto se hace introduciendo un «PIN» en ambos dispositivos. La noción de «PIN» es ampliamente usada, aunque errónea. No es el tipo de PIN que introduce para obtener dinero de un cajero automático. No necesita recordarla. Y después (!) de que el emparejado se haya echo no necesita guardarla en secreto. Solo debe asegurarse de que nadie más conoce el número hasta que usted (o ustedes dos) introduzcan este número en cada dispositivo. </para>
+<para
+>Para mantener la unidad a salvo, solo debe mantener el PIN en secreto durante el proceso de emparejamiento, pero debería utilizar un número aleatorio, que no se deduzca fácilmente. KDE Bluetooth le ayudará creando un número aleatorio de 8 dígitos si es posible. También puede utilizar caracteres para un pin, pero puede tener problemas para introducirlo en el diálogo del pin de un teléfono móvil. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>El ayudante del PIN</title>
+<para
+>Pero ¿dónde debería introducir el pin? Como se indicó anteriormente, el dispositivo le pedirá el PIN cuando lo necesite. Para BlueZ, las cosas son un poco más complicadas. Existen varias formas para que BlueZ obtenga el número PIN del usuario. </para>
+<para
+>La forma habitual es configurar el hcid de BlueZ para utilizar una «aplicación ayudante del PIN» y configurar la «seguridad del usuario» en <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Este ayudante es un pequeño programa que lo único que hace es pedir al usuario un número y la salida del número por la salida estándar. Bluez incluye su propio ayudante para obtener el pin llamado «bluepin», que parece ser causa de numerosos problemas. También existe un ayudante para generar el pin llamado «bluez-pin» y la última pero no por ello menos importante es el ayudante para generar pin, propio de kdebluetooth «kbluepin». Por favor, las <link linkend="installation.setup"
+>instrucciones de configuración</link
+> para saber cómo configurar el ayudante para obtener el pin y qué hacer sino funciona. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Administrar dispositivos emparejados</title>
+<para
+>Después de que haya emparejado muchos dispositivos se preguntará que dispositivos están emparejados y cuáles no. También puede querer eliminar un emparejamiento. Las respuestas suelen ser malas noticias. </para>
+<para
+>En primer lugar, ningún dispositivo puede saber seguro con qué dispositivos están emparejados. Cuando dos dispositivos estén emparejados, comparten una <phrase
+>clave de enlace</phrase
+> secreta, que se creó durante el proceso de emparejamiento basado en el número pin y algunos otros ingredientes. Debido a que la otra parte puede decidir borrar una clave de enlace sin notificación, el tener una clave de enlace para un determinado dispositivo no garantiza que la clave de enlace exista en el otro. Si se elimina una clave de enlace, el emparejamiento desaparece. Por supuesto, puede asegurarse de que <emphasis
+>no</emphasis
+> está emparejado con un dispositivo si no tiene una clave de enlace para él. </para>
+<para
+>Entonces, ¿cómo puedo eliminar las claves de enlace? Esto depende del dispositivo. La mayor parte de los teléfonos y PDAs tienen una lista de «emparejamiento» o de dispositivos «de confianza», donde puede eliminar elementos. En la versión actual de las utilidades Bluez (2.6), las claves de enlace suelen estar en el archivo <filename
+>/etc/bluetooth/link_key</filename
+>. Como las claves de enlace deben permanecer en secreto, este archivo solo estará accesible para el root. Puede borrar este archivo sin problemas, pero entonces se perderán todos los emparejamientos. Y como el archivo es un archivo binario, no podrá editarlo de forma sencilla sin una herramienta especial. Por el momento, kdebluetooth no contiene una herramienta para leer o escribir este archivo, ya que el manejo de las claves de enlace de Bluez cambiará pronto (o tarde). </para>
+<para
+>Es especialmente molesto, cuando cambia frecuentemente entre diferentes sistemas operativos y ambos utilizan bluetooth (Linux&lt;->Windows normalmente): Cuando empareja su teléfono bajo Linux y reinicia Windows, Windows no sabrá nada sobre las claves de enlace administradas por Bluez. Por ello, parecerá que el ordenador ha anulado la clave de enlace y deberá emparejarse otra vez. Dependiendo de su dispositivo es posible que no pueda hacer el emparejamiento sin eliminar antes la clave de enlace «antigüa» en el teléfono. Puede encontrarse con el mismo problema con Bluez si selecciona «emparejamiento sencillo» en <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Por el momento ha de ser consciente del problema, no utilice Bluetooth con dos sistemas operativos o utilice un adaptador Bluetooth diferente para cada uno de ellos. También sería posible mover las claves de enlace entre windows y linux, pero no conozco ninguna herramienta que pueda hacer esto. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

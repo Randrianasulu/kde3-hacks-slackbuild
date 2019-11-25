@@ -1,0 +1,6 @@
+The error
+'size_t' does not name a type
+wont't be fixed by -fpermissive. To fix it, you need to add a
+#include <cstddef>
+to your GSmartPointer.h include. It is the same kind of error that the
+one with Qt3.

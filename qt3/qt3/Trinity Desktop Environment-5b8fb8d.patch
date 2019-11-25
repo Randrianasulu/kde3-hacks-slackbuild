@@ -1,0 +1,101 @@
+From 5b8fb8d16e8ccc768f14b4dba66ae9813cfd4e14 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Sat, 6 Aug 2011 13:21:04 -0500
+Subject: [PATCH] Fix another Qt3/TQt4 FTBFS related to the QSplitter commit
+
+---
+ .../tqtinterface/qt4/src/widgets/tqsplitter.cpp    |   10 ++++++++++
+ .../tqtinterface/qt4/src/widgets/tqsplitter.h      |   11 -----------
+ main/dependencies/qt3/src/widgets/qsplitter.cpp    |   10 ++++++++++
+ main/dependencies/qt3/src/widgets/qsplitter.h      |   11 -----------
+ 4 files changed, 20 insertions(+), 22 deletions(-)
+
+diff --git a/experimental/tqtinterface/qt4/src/widgets/tqsplitter.cpp b/experimental/tqtinterface/qt4/src/widgets/tqsplitter.cpp
+index 5abfc71..50a4a13 100644
+--- a/experimental/tqtinterface/qt4/src/widgets/tqsplitter.cpp
++++ b/experimental/tqtinterface/qt4/src/widgets/tqsplitter.cpp
+@@ -148,6 +148,16 @@ void TQSplitterHandle::paintEvent( TQPaintEvent * )
+ 					    TQStyle::Style_Horizontal : 0) );
+ }
+ 
++TQCOORD TQSplitterLayoutStruct::getSizer( Qt::Orientation orient )
++{
++    if ( sizer == -1 ) {
++	TQSize s = wid->tqsizeHint();
++	if ( !s.isValid() || wid->testWState(WState_Resized) )
++	    s = wid->size();
++	sizer = ( orient == Qt::Horizontal ) ? s.width() : s.height();
++    }
++    return sizer;
++}
+ 
+ /*!
+     \class TQSplitter
+diff --git a/experimental/tqtinterface/qt4/src/widgets/tqsplitter.h b/experimental/tqtinterface/qt4/src/widgets/tqsplitter.h
+index 1ad7693..306e144 100644
+--- a/experimental/tqtinterface/qt4/src/widgets/tqsplitter.h
++++ b/experimental/tqtinterface/qt4/src/widgets/tqsplitter.h
+@@ -83,17 +83,6 @@ public:
+     TQCOORD getSizer( Qt::Orientation orient );
+ };
+ 
+-TQCOORD TQSplitterLayoutStruct::getSizer( Qt::Orientation orient )
+-{
+-    if ( sizer == -1 ) {
+-	TQSize s = wid->tqsizeHint();
+-	if ( !s.isValid() || wid->testWState(WState_Resized) )
+-	    s = wid->size();
+-	sizer = ( orient == Qt::Horizontal ) ? s.width() : s.height();
+-    }
+-    return sizer;
+-}
+-
+ class TQ_EXPORT TQSplitter : public TQFrame
+ {
+     Q_OBJECT
+diff --git a/main/dependencies/qt3/src/widgets/qsplitter.cpp b/main/dependencies/qt3/src/widgets/qsplitter.cpp
+index add3ade..407441f 100644
+--- a/main/dependencies/qt3/src/widgets/qsplitter.cpp
++++ b/main/dependencies/qt3/src/widgets/qsplitter.cpp
+@@ -148,6 +148,16 @@ void QSplitterHandle::paintEvent( QPaintEvent * )
+ 					    QStyle::Style_Horizontal : 0) );
+ }
+ 
++QCOORD QSplitterLayoutStruct::getSizer( Orientation orient )
++{
++    if ( sizer == -1 ) {
++	QSize s = wid->sizeHint();
++	if ( !s.isValid() || wid->testWState(WState_Resized) )
++	    s = wid->size();
++	sizer = ( orient == Horizontal ) ? s.width() : s.height();
++    }
++    return sizer;
++}
+ 
+ /*!
+     \class QSplitter
+diff --git a/main/dependencies/qt3/src/widgets/qsplitter.h b/main/dependencies/qt3/src/widgets/qsplitter.h
+index b5012f6..fea0af3 100644
+--- a/main/dependencies/qt3/src/widgets/qsplitter.h
++++ b/main/dependencies/qt3/src/widgets/qsplitter.h
+@@ -83,17 +83,6 @@ public:
+     QCOORD getSizer( Orientation orient );
+ };
+ 
+-QCOORD QSplitterLayoutStruct::getSizer( Orientation orient )
+-{
+-    if ( sizer == -1 ) {
+-	QSize s = wid->sizeHint();
+-	if ( !s.isValid() || wid->testWState(WState_Resized) )
+-	    s = wid->size();
+-	sizer = ( orient == Horizontal ) ? s.width() : s.height();
+-    }
+-    return sizer;
+-}
+-
+ class Q_EXPORT QSplitter : public QFrame
+ {
+     Q_OBJECT
+-- 
+1.7.9.5
+

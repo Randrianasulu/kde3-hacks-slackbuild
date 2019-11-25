@@ -1,0 +1,11 @@
+--- kpowersave-0.7.3/src/hardware_cpu.h	2007-09-17 21:39:45.000000000 +0400
++++ kpowersave-0.7.3.orig/src/hardware_cpu.h	2015-08-27 03:36:58.000000000 +0300
+@@ -38,6 +38,8 @@
+ #include <config.h>
+ #endif
+ 
++#include <unistd.h>
++
+ // QT Headers
+ #include <qstring.h>
+ #include <qobject.h>

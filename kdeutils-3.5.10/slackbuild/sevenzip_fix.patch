@@ -1,0 +1,41 @@
+--- ark/sevenzip.cpp.orig	2007-01-15 14:25:37.000000000 +0300
++++ ark/sevenzip.cpp	2015-09-13 12:38:50.821528560 +0300
+@@ -40,6 +40,8 @@
+ #include "arkutils.h"
+ #include "filelistview.h"
+ 
++#include <qtextcodec.h>
++
+ SevenZipArch::SevenZipArch( ArkWidget *gui, const QString &filename )
+   : Arch( gui, filename ), m_nameColumnPos( -1 )
+ {
+@@ -241,14 +243,17 @@
+   }
+ }
+ 
+-bool SevenZipArch::processLine( const QCString& _line )
++bool SevenZipArch::processLine( const QCString &_line )
+ {
+-  QCString line( _line );
++  QString line;
+   QString columns[ 11 ];
+   unsigned int pos = 0;
+   int strpos, len;
+ 
+-  columns[ 0 ] = line.right( line.length() - m_nameColumnPos +1);
++  QTextCodec *codec = QTextCodec::codecForLocale();
++  line = codec->toUnicode( _line );
++
++  columns[ 0 ] = line.right( line.length() - m_nameColumnPos);
+   line.truncate( m_nameColumnPos );
+ 
+   // Go through our columns, try to pick out data, return silently on failure
+@@ -275,6 +280,8 @@
+     columns[ curCol->colRef ] = line.mid( strpos, len );
+   }
+ 
++  // Separated directories pass
++  if(columns[4].length() && columns[4][0] == 'D') return true;
+ 
+   if ( m_dateCol >= 0 )
+   {

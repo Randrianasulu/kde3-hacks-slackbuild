@@ -1,0 +1,20 @@
+--- configure.in.in.orig	2017-11-25 21:47:59.819044091 +0300
++++ configure.in.in	2017-11-25 21:48:36.551044541 +0300
+@@ -39,7 +39,7 @@
+ 		as_major=`echo $as_ver |cut -d. -f1`
+ 		if test $as_major -gt 2
+ 		then
+-			MMX_SUPPORT="yes"
++			MMX_SUPPORT="no"
+ 		else
+ 			if test $as_major -lt 2
+ 			then
+@@ -48,7 +48,7 @@
+ 				as_minor=`echo $as_ver |cut -d. -f2`
+ 				if test $as_minor -ge 10
+ 				then
+-					MMX_SUPPORT="yes"
++					MMX_SUPPORT="no"
+ 				else
+ 					MMX_SUPPORT="no"
+ 				fi

@@ -1,0 +1,77 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Piltide suuruse muutmine</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi piltide suuruse muutmise pluginaga saab muuta või kohendada piltide mõõtmeid. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>Selle pluginaga saab albumi piltide suurust kas või korraga muuta. Plugin kasutab tarkvarapaketi "ImageMagick" programmi "convert". Pilte saab nii suurendada kui vähendada. Praegu on kasutatavad kolm suuruse muutmise viisi: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Proportsionaalne (ühemõõtmeline)</emphasis
+>: standardne automaatne suuruse muutmine ühe mõõtme põhjal. Sõltuvalt pildi orientatsioonist valitakse automaatselt pildi laius või kõrgus. Pildi proportsioon säilitatakse.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proportsionaalne (kahemõõtmeline)</emphasis
+>: automaatne suuruse muutmine kahe mõõtme põhjal. Pildi proportsioon säilitatakse. Seda saab näiteks kasutada piltide suuruse kohandamiseks arvutiekraani suurusele. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>Mitteproportsionaalne</emphasis
+>: mitteproportsionaalne suuruse muutmine kahe mõõtme põhjal. Pildi proportsiooni ei säilitada.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Ettevalmistus trükkimiseks</emphasis
+>: pildi ettevalmistamine fototrükiks. Võimalik on määrata trükkimise lahutus ja fotopaberi suurus. Sihtpildile antakse sobivad mõõtmed (sealhulgas tausta suurus, veeriste suurus ja taustavärv).</para
+></listitem>
+</itemizedlist>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

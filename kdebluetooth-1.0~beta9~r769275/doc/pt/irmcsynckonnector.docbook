@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>Konnector de IrMCSync para o Kitchensync</title>
+<para
+>Este programa é um conector para o kitchensync, que lhe permite sincronizar o seu dispositivo que suporte o IrMCSync com o seu Calendário e/ou Livro de Endereços local. </para>
+<para
+>Por agora são suportados a Agenda e o Livro de Endereços! </para>
+<para
+>SUGERE-SE QUE FAÇA UMA CÓPIA DO SEU CALENDÁRIO E LIVRO DE ENDEREÇOS ANTES DE TENTAR QUALQUER SINCRONIZAÇÃO. O autor não é responsável se os seus dados forem corrompidos ou destruídos. </para>
+
+
+<sect2>
+<title
+>Necessitamos de resultados de depuração!</title>
+<para
+>POR FAVOR corra o 'kitchensync' a partir de uma linha de comandos ou redireccione o 'stdout' e o 'stderr' para um ficheiro para que, se tiver problemas, você possa enviar ao autor o resultado do conector. Para activar as funcionalidades de depuração pode lançar o "kdebugdialog" e definir as opções relacionadas com o 'kitchensync' (a partir de 5200) e a opção genérica. </para>
+</sect2>
+
+<sect2>
+<title
+>Compilação.</title>
+<para
+>O 'kitchensync' actualmente no SVN do 'kdepim' tem mais funcionalidades e funciona melhor do que a versão do kdepim 3.3.0. Sugere-se que use esta versão. Você terá de instalar pelo menos o 'kitchensync' (e todos os seus sub-projectos) do SVN. </para>
+<para
+>Existe também uma versão do kdepim-3.3.0 que poderá encontrar na ramificação irmcsync_kdepim_3_3_branch, mas já não é mais mantida. O trabalho concentrar-se-á na versão do SVN. Esta versão depende do kdepim-3.3.0 e das versões mais antigas ou mais recentes, por isso terá de a obter e instalar. Se quiser obter a versão em irmcsync_kdepim_3_3_branch, terá de ir para a pasta kdebluetooth/irmcsync/irmcsynckonnector e escrever: svn update -r irmcsync_kdepim_3_3_branch </para
+>	
+
+<para
+>Para activar a compilação do conector tem que adicionar a directoria "irmcsync" à variável SUBDIR de kdebluetooth/Makefile.am </para>
+</sect2>
+
+<sect2>
+<title
+>Utilizar o KitchenSync.</title>
+<para
+>Hoje em dia (25/03/2004) o KitchenSync é bastante experimental pode isso pode ter vários problemas. </para>
+<para
+>Depois de o ter iniciado, deve escolher os conectores a utilizar. Necessita pelos menos 2 conectores para fazer um sincronização, mas pode utilizar apenas um para testes. </para>
+<para
+>Para adicionar um conector vá a <guimenuitem
+>Configuração->Configurar o Kitchensync</guimenuitem
+> </para>
+<para
+>Se obtiver alguns erros e a janela não for actualizada convenientemente, tente redimensionar a janela de configuração. Depois na lista de Recursos, você poderá obter várias opções, SENDO TODAS ELAS INÚTEIS E DESACTIVADAS, sendo apenas a "konnector" a correcta. </para>
+<para
+>Por exemplo, pode adicionar o Conector IrMCSync e um Conector Local. </para>
+<para
+>No Conector do IrMCSync seleccione o seu dispositivo assinale a opção Sincronizar o Calendário ou o Livro de Endereços (por agora, não poderá sincronizar ambos ao mesmo tempo). No Conector Local seleccione um ficheiro de Calendário e um ficheiro do KAddressBook (você terá de seleccionar ambos e com os nomes correctos, caso contrário não irá funcionar). Sugere-se que crie uma directoria temporária onde irá colocar uma cópia do livro de endereços e do calendário para que possa fazer alguns testes. </para>
+<para
+>Pode encontrá-los normalmente nestas pastas: </para>
+<para
+>CALENDÁRIO: <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>LIVRO DE ENDEREÇOS: <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>Depois, terá de criar um perfil na opção <guimenuitem
+>Configuração->Configurar os Perfis</guimenuitem
+> e, para cada perfil, você poderá adicionar várias partes, fazendo cada uma delas uma dada função.: </para>
+<itemizedlist>
+<listitem>
+<para
+>Parte de Sincronização : Fazer a VERDADEIRA Sincronização. </para>
+</listitem>
+<listitem>
+<para
+>Depuração do Conector: Permite-lhe Depurar um Conector. </para>
+</listitem>
+<listitem>
+<para
+>Salvaguarda do Conector : Fazer uma salvaguarda dos dados. </para>
+</listitem>
+<listitem>
+<para
+>Parte Introdutória : Como o nome indica. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Se deseja sincronizar, tem que escolher pelo menos a "Parte de Sincronização". </para>
+<para
+>Então, para efectuar a sincronização, carregue no botão do topo esquerdo. </para>
+<para
+>Você poderá verificar o conector, criando um perfil com a Parte de Depuração do Conector e carregando em Ligar ao Dispositivo, e depois no Ler os Sincronizados. </para>
+</sect2>
+</sect1>
+

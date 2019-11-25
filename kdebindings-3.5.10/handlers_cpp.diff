@@ -1,0 +1,165 @@
+--- /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/handlers.cpp.old	2007-01-15 12:19:09.000000000 +0100
++++ /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/handlers.cpp	2010-10-23 22:10:24.000000000 +0200
+@@ -755,7 +755,7 @@
+             break;
+         }
+ 	
+-        int len = RSTRING(rv)->len;
++        int len = RSTRING_LEN(rv);
+         char* mem = (char*) malloc(len+1);
+         memcpy(mem, StringValuePtr(rv), len);
+         mem[len] ='\0';
+@@ -788,7 +788,7 @@
+             m->item().s_voidp = 0;
+             break;
+         }
+-        int len = RSTRING(rv)->len;
++        int len = RSTRING_LEN(rv);
+         char* mem = (char*) malloc(len+1);
+         memcpy(mem, StringValuePtr(rv), len);
+         mem[len] ='\0';
+@@ -824,7 +824,7 @@
+ 	
+ 	QString *	s;
+ 	if (qstrcmp(KCODE, "UTF8") == 0)
+-		s = new QString(QString::fromUtf8(StringValuePtr(rstring), RSTRING(rstring)->len));
++		s = new QString(QString::fromUtf8(StringValuePtr(rstring), RSTRING_LEN(rstring)));
+ 	else if (qstrcmp(KCODE, "EUC") == 0)
+ 		s = new QString(codec->toUnicode(StringValuePtr(rstring)));
+ 	else if (qstrcmp(KCODE, "SJIS") == 0)
+@@ -832,7 +832,7 @@
+ 	else if(qstrcmp(KCODE, "NONE") == 0)
+ 		s = new QString(QString::fromLatin1(StringValuePtr(rstring)));
+ 	else
+-		s = new QString(QString::fromLocal8Bit(StringValuePtr(rstring), RSTRING(rstring)->len));
++		s = new QString(QString::fromLocal8Bit(StringValuePtr(rstring), RSTRING_LEN(rstring)));
+ 	return s;
+ }
+ 
+@@ -944,7 +944,7 @@
+ 		s = new QCString(); 
+         } else {
+ 		// Add 1 to the ruby string length to allow for a QCString '\0' terminator
+-		s = new QCString(StringValuePtr(*(m->var())), RSTRING(*(m->var()))->len + 1); 
++		s = new QCString(StringValuePtr(*(m->var())), RSTRING_LEN(*(m->var())) + 1); 
+ 		}
+ 	    m->item().s_voidp = s;
+ 	    
+@@ -1007,7 +1007,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(av)->len;
++	    int count = RARRAY_LEN(av);
+ 	    QCOORD *coord = new QCOORD[count + 2];
+ 	    for(long i = 0; i < count; i++) {
+ 		VALUE svp = rb_ary_entry(av, i);
+@@ -1167,15 +1167,15 @@
+ 	    VALUE arglist = *(m->var());
+ 	    if (arglist == Qnil
+ 	    || TYPE(arglist) != T_ARRAY
+-	    || RARRAY(arglist)->len == 0 )
++	    || RARRAY_LEN(arglist) == 0 )
+ 	    {
+                 m->item().s_voidp = 0;
+                 break;
+ 	    }
+ 
+-	    char **argv = new char *[RARRAY(arglist)->len + 1];
++	    char **argv = new char *[RARRAY_LEN(arglist) + 1];
+ 	    long i;
+-	    for(i = 0; i < RARRAY(arglist)->len; i++) {
++	    for(i = 0; i < RARRAY_LEN(arglist); i++) {
+                 VALUE item = rb_ary_entry(arglist, i);
+                 char *s = StringValuePtr(item);
+                 argv[i] = new char[strlen(s) + 1];
+@@ -1207,7 +1207,7 @@
+ 		break;
+ 	    }
+ 
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    QStringList *stringlist = new QStringList;
+ 
+ 	    for(long i = 0; i < count; i++) {
+@@ -1269,7 +1269,7 @@
+ 		break;
+ 	    }
+ 
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    QStrList *stringlist = new QStrList;
+ 
+ 	    for(long i = 0; i < count; i++) {
+@@ -1278,7 +1278,7 @@
+ 		    stringlist->append(QString());
+ 		    continue;
+ 		}
+-		stringlist->append(QString::fromUtf8(StringValuePtr(item), RSTRING(item)->len));
++		stringlist->append(QString::fromUtf8(StringValuePtr(item), RSTRING_LEN(item)));
+ 	    }
+ 
+ 	    m->item().s_voidp = stringlist;
+@@ -1331,7 +1331,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    ItemList *cpplist = new ItemList;
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {
+@@ -1421,7 +1421,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    QValueList<int> *valuelist = new QValueList<int>;
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {
+@@ -1513,7 +1513,7 @@
+ 		// Convert the ruby hash to an array of key/value arrays
+ 		VALUE temp = rb_funcall(hash, rb_intern("to_a"), 0);
+ 
+-		for (long i = 0; i < RARRAY(temp)->len; i++) {
++		for (long i = 0; i < RARRAY_LEN(temp); i++) {
+ 			VALUE key = rb_ary_entry(rb_ary_entry(temp, i), 0);
+ 			VALUE value = rb_ary_entry(rb_ary_entry(temp, i), 1);
+ 			(*map)[QString(StringValuePtr(key))] = QString(StringValuePtr(value));
+@@ -1569,7 +1569,7 @@
+ 		// Convert the ruby hash to an array of key/value arrays
+ 		VALUE temp = rb_funcall(hash, rb_intern("to_a"), 0);
+ 
+-		for (long i = 0; i < RARRAY(temp)->len; i++) {
++		for (long i = 0; i < RARRAY_LEN(temp); i++) {
+ 			VALUE key = rb_ary_entry(rb_ary_entry(temp, i), 0);
+ 			VALUE value = rb_ary_entry(rb_ary_entry(temp, i), 1);
+ 			
+@@ -1673,7 +1673,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    QRgb *rgb = new QRgb[count + 2];
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {
+@@ -1702,7 +1702,7 @@
+       case Marshall::FromVALUE:
+ 	{
+ 	    VALUE list = *(m->var());
+-	    if (TYPE(list) != T_ARRAY || RARRAY(list)->len != 2) {
++	    if (TYPE(list) != T_ARRAY || RARRAY_LEN(list) != 2) {
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+@@ -1770,7 +1770,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    ItemList *cpplist = new ItemList;
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {

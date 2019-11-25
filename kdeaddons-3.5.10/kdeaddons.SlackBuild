@@ -1,0 +1,65 @@
+#!/bin/sh
+CWD=`pwd`
+TMP=/tmp
+PKG=$TMP/package-kdeaddons
+ARCH="i486"
+TARGET=$ARCH
+CPUOPTS="-O2 -march=i486 -mtune=i686"
+VERSION="3.5.10"
+BUILD="ra2"
+
+# Set the config option variables if they are not already set:
+if [ -r ../KDE.options ]; then
+  . ../KDE.options
+fi
+
+# The global options may be overridden here (if needed):
+if [ -r ./local.options ]; then
+  . ./local.options
+fi
+
+rm -rf $PKG
+mkdir -p $PKG/usr
+
+# Avoid a version number in .la files:
+if [ -d /usr/lib${LIBDIRSUFFIX}/qt3 ]; then
+  QTDIR=/usr/lib${LIBDIRSUFFIX}/qt3
+fi
+cd $TMP
+echo "Building kdeaddons-$VERSION.tar.bz2..."
+tar xjvf $CWD/kdeaddons-$VERSION.tar.bz2 || exit 1
+cd kdeaddons-$VERSION || exit 1
+
+if [ -r $CWD/apply-patches.sh ]; then
+  . $CWD/apply-patches.sh
+fi
+
+chown -R root:root .
+CFLAGS=$CPUOPT \
+CXXFLAGS=$CPUOPT \
+./configure \
+  --prefix=/usr \
+  --sysconfdir=/etc \
+  --with-xinerama \
+  --disable-debug \
+  --program-prefix="" \
+  --program-suffix="" \
+  --build=$TARGET-slackware-linux
+make $NUMJOBS || exit 1
+make install DESTDIR=$PKG
+mkdir -p $PKG/usr/doc/kdeaddons-$VERSION
+cp -a README $PKG/usr/doc/kdeaddons-$VERSION
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+
+( cd $PKG
+  find . | xargs file | grep "executable" | grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
+  find . | xargs file | grep "shared object" | grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
+)
+if [ -d $PKG/usr/man ]; then
+  gzip -9 $PKG/usr/man/man?/*
+fi
+
+cd $PKG
+makepkg -l y -c n ../kdeaddons-$VERSION-$ARCH-$BUILD.txz
+

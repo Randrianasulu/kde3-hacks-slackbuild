@@ -1,0 +1,131 @@
+/****************************************************************************
+** Digikam::RawImport meta object code from reading C++ file 'rawimport.h'
+**
+** Created: Tue Jun 13 22:44:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "rawimport.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::RawImport::className() const
+{
+    return "Digikam::RawImport";
+}
+
+QMetaObject *Digikam::RawImport::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__RawImport( "Digikam::RawImport", &Digikam::RawImport::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::RawImport::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::RawImport", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::RawImport::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::RawImport", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::RawImport::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = EditorToolThreaded::staticMetaObject();
+    static const QUMethod slot_0 = {"slotInit", 0, 0 };
+    static const QUMethod slot_1 = {"slotLoadingStarted", 0, 0 };
+    static const QUMethod slot_2 = {"slotDemosaicedImage", 0, 0 };
+    static const QUMethod slot_3 = {"slotLoadingFailed", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotLoadingProgress", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"slotUpdatePreview", 0, 0 };
+    static const QUMethod slot_6 = {"slotAbort", 0, 0 };
+    static const QUMethod slot_7 = {"slotDemosaicingChanged", 0, 0 };
+    static const QUMethod slot_8 = {"slotOk", 0, 0 };
+    static const QUMethod slot_9 = {"slotCancel", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotInit()", &slot_0, QMetaData::Private },
+	{ "slotLoadingStarted()", &slot_1, QMetaData::Private },
+	{ "slotDemosaicedImage()", &slot_2, QMetaData::Private },
+	{ "slotLoadingFailed()", &slot_3, QMetaData::Private },
+	{ "slotLoadingProgress(float)", &slot_4, QMetaData::Private },
+	{ "slotUpdatePreview()", &slot_5, QMetaData::Private },
+	{ "slotAbort()", &slot_6, QMetaData::Private },
+	{ "slotDemosaicingChanged()", &slot_7, QMetaData::Private },
+	{ "slotOk()", &slot_8, QMetaData::Private },
+	{ "slotCancel()", &slot_9, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::RawImport", parentObject,
+	slot_tbl, 10,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__RawImport.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::RawImport::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::RawImport" ) )
+	return this;
+    return EditorToolThreaded::qt_cast( clname );
+}
+
+bool Digikam::RawImport::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotInit(); break;
+    case 1: slotLoadingStarted(); break;
+    case 2: slotDemosaicedImage(); break;
+    case 3: slotLoadingFailed(); break;
+    case 4: slotLoadingProgress((float)(*((float*)static_QUType_ptr.get(_o+1)))); break;
+    case 5: slotUpdatePreview(); break;
+    case 6: slotAbort(); break;
+    case 7: slotDemosaicingChanged(); break;
+    case 8: slotOk(); break;
+    case 9: slotCancel(); break;
+    default:
+	return EditorToolThreaded::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::RawImport::qt_emit( int _id, QUObject* _o )
+{
+    return EditorToolThreaded::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::RawImport::qt_property( int id, int f, QVariant* v)
+{
+    return EditorToolThreaded::qt_property( id, f, v);
+}
+
+bool Digikam::RawImport::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

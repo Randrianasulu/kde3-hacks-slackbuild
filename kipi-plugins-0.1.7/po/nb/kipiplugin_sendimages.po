@@ -1,0 +1,475 @@
+# translation of kipiplugin_sendimages.po to Norwegian Bokmaal
+# translation of kipiplugin_sendimages.po to Norsk Bokmål
+# Nils Kristian Tomren <project@nilsk.net>, 2005, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sendimages\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2006-02-25 23:11+0100\n"
+"Last-Translator: Nils Kristian Tomren <project@nilsk.net>\n"
+"Language-Team: Norwegian Bokmaal <i18n-no@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Nils Kristian Tomren"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "project@nilsk.net"
+
+#: listimageserrordialog.cpp:67
+msgid "Image File Name"
+msgstr "Bildefilnavn"
+
+#: listimageserrordialog.cpp:68
+msgid "From Album"
+msgstr "Fra album"
+
+#: plugin_sendimages.cpp:76
+msgid "Email Images..."
+msgstr "Send bilder med e-post …"
+
+#: plugin_sendimages.cpp:148
+msgid "Preparing images to send"
+msgstr "Forbereder bilder til sending med e-post"
+
+#: plugin_sendimages.cpp:170
+#, c-format
+msgid ""
+"_n: Preparing 1 image to send....\n"
+"Preparing %n images to send...."
+msgstr ""
+"Forbereder 1 bilde til sending....\n"
+"Forbereder %n bilder til sending …"
+
+#: plugin_sendimages.cpp:176
+msgid "Resizing '%1' from Album '%2'..."
+msgstr "Endrer størrelse på '%1' fra album '%2' …"
+
+#: plugin_sendimages.cpp:183
+msgid "Using '%1' from Album '%2' without resizing..."
+msgstr "Bruker '%1' fra album '%2' uten å endre størrelse …"
+
+#: plugin_sendimages.cpp:206
+msgid "Failed to resize '%1' from Album '%2'"
+msgstr "Kunne ikke endre størrelse på '%1' fra album '%2'"
+
+#: plugin_sendimages.cpp:225
+msgid "Resizing '%1' from Album '%2' completed."
+msgstr "Endre størrelse på '%1' fra album '%2' er utført."
+
+#: plugin_sendimages.cpp:232
+msgid "All preparatory operations completed."
+msgstr "Alle forberedende handlinger er utført."
+
+#: plugin_sendimages.cpp:270
+msgid "Creating comments file if necessary..."
+msgstr "Oppretter kommentarer om nødvendig …"
+
+#: plugin_sendimages.cpp:275
+msgid "Starting mailer agent..."
+msgstr "Starter e-postprogram"
+
+#: sendimages.cpp:335
+#, fuzzy
+msgid "no caption"
+msgstr "ingen kommentarer"
+
+#: sendimages.cpp:339
+#, fuzzy
+msgid ""
+"Caption for image \"%1\": %2\n"
+msgstr ""
+"Kommentarer til bilde \"%1\": %2\n"
+"\n"
+
+#: sendimages.cpp:348
+msgid ""
+"Tags: %2\n"
+msgstr ""
+
+#: sendimages.cpp:359 sendimages.cpp:365
+msgid "comments.txt"
+msgstr "kommentarer.txt"
+
+#: sendimages.cpp:376
+msgid "Error during resize images process."
+msgstr "Feil under endring av størrelse."
+
+#: sendimages.cpp:377
+msgid "Cannot resize the following image files:"
+msgstr "Kan ikke endre størrelsen på følgende bilder:"
+
+#: sendimages.cpp:378
+msgid "Do you want them to be added as attachments (without resizing)?"
+msgstr "Vil du legge til bildene som vedlegg (uten å endre størrelse)?"
+
+#: sendimages.cpp:488 sendimages.cpp:517 sendimages.cpp:539 sendimages.cpp:565
+#: sendimages.cpp:628 sendimages.cpp:885
+msgid ""
+"Cannot start '%1' program;\n"
+"please check your installation."
+msgstr ""
+"Kan ikke starte '%1' programmet.\n"
+"Undersøk din installasjon."
+
+#: sendimages.cpp:645
+#, c-format
+msgid "Cannot remove temporary folder %1."
+msgstr "Kan ikke fjerne midlertidig mappe %1."
+
+#: sendimagesdialog.cpp:140
+msgid "Email Images Options"
+msgstr "Innstillinger for Sending av bilder med e-post"
+
+#: sendimagesdialog.cpp:158
+msgid "Send Images"
+msgstr "Send bilder"
+
+#: sendimagesdialog.cpp:161
+msgid "A Kipi plugin for emailing images"
+msgstr "Et KIPI tillegg for å sende bilder med e-post"
+
+#: sendimagesdialog.cpp:164
+msgid "Author and maintainer"
+msgstr "Forfatter og vedlikeholder"
+
+#: sendimagesdialog.cpp:167 sendimagesdialog.cpp:170
+msgid "Developer"
+msgstr ""
+
+#: sendimagesdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr ""
+
+#: sendimagesdialog.cpp:251
+msgid "Images"
+msgstr "Bilder"
+
+#: sendimagesdialog.cpp:252
+#, fuzzy
+msgid "Images to EMail"
+msgstr "Bildeliste til e-post sending"
+
+#: sendimagesdialog.cpp:264
+msgid ""
+"<p>This is the list of images  to email. If you want to add some images click "
+"on the 'Add Images...' button or use the drag-and-drop."
+msgstr ""
+"<p>Dette er lista over bilder som skal sendes med e-post. Vil du legge til "
+"flere bilder kan du klikke på 'Legg til bilder…'-knappen eller bruke dra og "
+"slipp."
+
+#: sendimagesdialog.cpp:270
+#, fuzzy
+msgid "&Add ..."
+msgstr "&Legg til bilder …"
+
+#: sendimagesdialog.cpp:271
+msgid "<p>Add images to the list."
+msgstr "<p>Legg bilder til listen."
+
+#: sendimagesdialog.cpp:273
+msgid "<p>Remove selected images from the list."
+msgstr "<p>Fjern de merkede bildene på listen."
+
+#: sendimagesdialog.cpp:281
+msgid "<p>Preview of the currently selected image on the list."
+msgstr "<p>Forhåndsvisning av det markerte bilde i listen."
+
+#: sendimagesdialog.cpp:288
+msgid "Image Description"
+msgstr "Bildebeskrivelse"
+
+#: sendimagesdialog.cpp:292
+msgid "<p>The description of the currently selected image on the list."
+msgstr "<p>Beskrivelse av det markerte bilde i listen."
+
+#: sendimagesdialog.cpp:364
+msgid "Mail"
+msgstr "E-post"
+
+#: sendimagesdialog.cpp:365
+msgid "Mail Options"
+msgstr "E-post innstillinger"
+
+#: sendimagesdialog.cpp:375
+msgid "Mail agent:"
+msgstr "E-post klient:"
+
+#: sendimagesdialog.cpp:390
+#, fuzzy
+msgid ""
+"<p>Select here your preferred external mail agent program.These mail agent "
+"versions are supported:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+msgstr ""
+"<p>Velg din foretrukne e-post klient. Følgende klienter er støttet:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Evolution</b>: >= 1.4 "
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>Kmail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9 "
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+
+#: sendimagesdialog.cpp:412
+msgid "&Thunderbird binary path:"
+msgstr "&Thunderbird kjørbar sti:"
+
+#: sendimagesdialog.cpp:422
+msgid "<p>The path name to the Thunderbird binary program."
+msgstr "<p>Stien til det kjørbare Thunderbird programmet."
+
+#: sendimagesdialog.cpp:426
+msgid "Attach a file with caption and tags"
+msgstr ""
+
+#: sendimagesdialog.cpp:427
+#, fuzzy
+msgid ""
+"<p>If you enable this option, all image captions and tags will be added as an "
+"attached file."
+msgstr ""
+"<p>Hvis du skrur på denne innstillingen, blir alle album- og bildekommentarer "
+"lagt til som et vedlegg."
+
+#: sendimagesdialog.cpp:430
+msgid "Generate new filenames from image captions (if available)"
+msgstr ""
+
+#: sendimagesdialog.cpp:435
+#, fuzzy
+msgid "Image Properties"
+msgstr "Bildeegenskaper"
+
+#: sendimagesdialog.cpp:439
+msgid "<p>The properties of images to send."
+msgstr "<p>Egenskaper for bildene som skal sendes."
+
+#: sendimagesdialog.cpp:444
+#, fuzzy
+msgid "Adjust image properties"
+msgstr "Bildeegenskaper"
+
+#: sendimagesdialog.cpp:445
+msgid ""
+"<p>If you enable this option, all images to send can be resized and "
+"recompressed."
+msgstr ""
+"<p>Denne innstillinga gjør det mulig, å endre størrelse og komprimeringsnivå på "
+"bildene som skal sendes."
+
+#: sendimagesdialog.cpp:454
+msgid "Very Small (320 pixels)"
+msgstr "Veldig liten (320 billedpunkter)"
+
+#: sendimagesdialog.cpp:455
+msgid "Small (640 pixels)"
+msgstr "Liten (640 billedpunkter)"
+
+#: sendimagesdialog.cpp:456 sendimagesdialog.cpp:460
+msgid "Medium (800 pixels)"
+msgstr "Mellom (800 billedpunkter)"
+
+#: sendimagesdialog.cpp:457
+msgid "Big (1024 pixels)"
+msgstr "Stor (1024 billedpunkter)"
+
+#: sendimagesdialog.cpp:458
+msgid "Very Big (1280 pixels)"
+msgstr "Veldig stor (1280 billedpunkter)"
+
+#: sendimagesdialog.cpp:459
+#, fuzzy
+msgid "Huge - for printing (1600 pixels)"
+msgstr "Veldig stor (1280 billedpunkter)"
+
+#: sendimagesdialog.cpp:461
+#, fuzzy
+msgid ""
+"<p>Select here the images size to send:"
+"<p><b>%1</b>: use this if you have a very slow internet connection or if the "
+"target mailbox size is very limited."
+"<p><b>%2</b>: use this if you have a slow internet connection and if the target "
+"mailbox size is limited."
+"<p><b>%3</b>: this is the default value for a medium internet connection and a "
+"target mailbox size."
+"<p><b>%4</b>: use this if you have a high-speed internet connection and if the "
+"target mailbox size is not limited."
+"<p><b>%5</b>: use this if you have no size or speed restrictions."
+"<p><b>%6</b>: use this only for printing purpose."
+"<p>"
+msgstr ""
+"<p>Velg bilder til e-post sending:"
+"<p><b>%1</b>: benyttes hvis internettforbindelsen er treg og postkassen "
+"begrenset størrelse."
+"<p><b>%2</b>: benyttes hvis internettforbindelsen er treg og postkassen har "
+"begrenset størrelse."
+"<p><b>%3</b>: dette er standardindstillinga til en gjennomsnitts-forbindelse og "
+"-postkassestørrelse."
+"<p><b>%4</b>: benyttes hvis det er en høyhastighetforbindelse og hvis "
+"postkassen ikke har begrenset størrelse."
+"<p><b>%5</b>: benyttes hvis det ikke er noen begrensning er på hastighet og "
+"postkassestørrelse."
+"<p>"
+
+#: sendimagesdialog.cpp:472
+msgid "very small (320 pixels)"
+msgstr "veldig liten (320 billedpunkter)"
+
+#: sendimagesdialog.cpp:473
+msgid "small (640 pixels)"
+msgstr "liten (640 billedpunkter)"
+
+#: sendimagesdialog.cpp:474
+msgid "medium (800 pixels)"
+msgstr "mellom (800 billedpunkter)"
+
+#: sendimagesdialog.cpp:475
+msgid "big (1024 pixels)"
+msgstr "stor (1024 billedpunkter)"
+
+#: sendimagesdialog.cpp:476
+msgid "very big (1280 pixels)"
+msgstr "veldig stor (1280 billedpunkter)"
+
+#: sendimagesdialog.cpp:477
+#, fuzzy
+msgid "huge - for printing (1600 pixels)"
+msgstr "Veldig stor (1280 billedpunkter)"
+
+#: sendimagesdialog.cpp:480
+#, fuzzy
+msgid "Sent image size:"
+msgstr "Bildestørrelse:"
+
+#: sendimagesdialog.cpp:490
+msgid "Sent image quality level:"
+msgstr ""
+
+#: sendimagesdialog.cpp:492
+msgid "<p>The new compression value of images to send:<p>"
+msgstr "<p>Velg bildekomprimeringsnivå:<p>"
+
+#: sendimagesdialog.cpp:493
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: veldig høy komprimering"
+"<p><b>25</b>: høy komprimering"
+"<p><b>50</b>: mellom komprimering"
+"<p><b>75</b>: lav komprimering (standard)"
+"<p><b>100</b>: ingen komprimering"
+
+#: sendimagesdialog.cpp:510
+msgid "<p>Select here the images files format to send.<p>"
+msgstr "<p>Velg bildeformat.<p>"
+
+#: sendimagesdialog.cpp:511
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Joint Photographic Experts Group filformatet er velegnet til bruk "
+"på internett, men benytter en komprimeringsmetode hvor det mistes "
+"bildeinformasjon. "
+"<p><b>PNG</b>: Portable Networks Graphics filformatet er et utvidbart format "
+"til tapsfritt, portabelt, komprimert lagring av rasterbilder. PNG tilbyr en "
+"patentfri erstatning for GIF og kan også erstatte bruken av TIFF i visse "
+"situasjoner. PNG er designet til å fungere godt i visningsprogrammer på nettet, "
+"for eksempel til World Wide Web, derfor er formatet mulig å streame og med "
+"mulighet for fremskrittsvisning. PNG kan også lagre gamma og fargeinformasjon "
+"til forbedret fargeoverensstemmelse på forskjellige plattformer."
+
+#: sendimagesdialog.cpp:521
+#, fuzzy
+msgid "Image file format:"
+msgstr "Filformat:"
+
+#: sendimagesdialog.cpp:532
+msgid "Maximum Email size limit:"
+msgstr ""
+
+#: sendimagesdialog.cpp:533
+msgid "MB"
+msgstr ""
+
+#: sendimagesdialog.cpp:623
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Kommentarer %1"
+
+#: sendimagesdialog.cpp:624
+#, c-format
+msgid "Album: %1"
+msgstr "Album %1"
+
+#: sendimagesdialog.cpp:654
+msgid "You must add some images to send."
+msgstr "Du må legge til noen bilder til sending med e-post."
+
+#: sendimagesdialog.cpp:664
+msgid "Thunderbird binary path is not valid. Please check it."
+msgstr "Thunderbirds kjørbare sti er ugyldig. Sjekk den."
+
+#: sendimagesdialog.cpp:683
+msgid "Image List"
+msgstr "Bildeliste"
+
+#: sendimagesdialog.cpp:685
+#, c-format
+msgid ""
+"_n: Image List (1 item)\n"
+"Image List (%n items)"
+msgstr ""
+"Bildeliste (1 bilde)\n"
+"Bildeliste (%n bilder)"
+
+#~ msgid "Send Image Handbook"
+#~ msgstr "Håndbok for Sending av bilder med e-post"
+
+#~ msgid "&Remove Images"
+#~ msgstr "&Fjern bilder"
+
+#~ msgid "Change properties of images"
+#~ msgstr "Endre bildegenskaper"
+
+#~ msgid "New images compression:"
+#~ msgstr "Komprimeringsnivåer:"
+
+#~ msgid "Add comments in attached file"
+#~ msgstr "Legg til kommentarer i vedlagt fil"

@@ -1,0 +1,230 @@
+# translation of kipiplugin_sync.po to Greek
+#
+# Spiros Georgaras <sng@hellug.gr>, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sync\n"
+"POT-Creation-Date: 2008-07-08 22:16+0200\n"
+"PO-Revision-Date: 2007-02-06 23:57+0200\n"
+"Last-Translator: Toussis Manolis <manolis@koppermind.homelinux.org>\n"
+"Language-Team: Greek <i18ngr@lists.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Σπύρος Γεωργαράς, Τούσης Μανώλης"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Όνομα χρήστη:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Κωδικός πρόσβασης:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Χρήση της &Συλλογής 2"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:136
+msgid "Albums"
+msgstr "Άλμπουμ"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Παράκαμψη προκαθορισμένων επιλογών"
+
+#: gallerywidget.cpp:109
+msgid "Resize photos before uploading"
+msgstr "Αλλαγή μεγέθους φωτογραφιών πριν την αποστολή"
+
+#: gallerywidget.cpp:117
+msgid "Maximum dimension:"
+msgstr "Μέγιστη διάσταση:"
+
+#: gallerywidget.cpp:135
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Εξαγωγή συλλογής</h2>"
+
+#: gallerywidget.cpp:137
+msgid "&New Album"
+msgstr "&Νέο άλμπουμ"
+
+#: gallerywidget.cpp:138
+msgid "&Add Photos"
+msgstr "&Προσθήκη φωτογραφιών"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Εξαγωγή συλλογής"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"Ένα πρόσθετο του Kipi για την εξαγωγή συλλογής εικόνων σε έναν απομακρυσμένο "
+"εξυπηρετητή συλλογών."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Συγγραφέας"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Συντηρητής"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gallerywindow.cpp:228
+msgid "Failed to login into remote gallery. "
+msgstr "Η σύνδεση με την απομακρυσμένη συλλογή απέτυχε. "
+
+#: gallerywindow.cpp:230
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Θέλετε να προσπαθήσετε ξανά;"
+
+#: gallerywindow.cpp:516
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr ""
+"Λυπάμαι, αυτοί οι χαρακτήρες δεν επιτρέπονται στο όνομα του άλμπουμ: %1"
+
+#: gallerywindow.cpp:586
+msgid "Uploading file %1 "
+msgstr "Αποστολή του αρχείου %1 "
+
+#: gallerywindow.cpp:603
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Η αποστολή της φωτογραφίας στην απομακρυσμένη συλλογή απέτυχε. "
+
+#: gallerywindow.cpp:606
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Θέλετε να συνεχίσετε;"
+
+#: plugin_sync.cpp:77
+msgid "Synchronize..."
+msgstr "Συγχρονισμός..."
+
+#: plugin_sync.cpp:86
+msgid "Configure Synchronization..."
+msgstr "Ρύθμιση συγχρονισμού..."
+
+#: plugin_sync.cpp:95 plugin_sync.cpp:104
+msgid "Synchronization Settings..."
+msgstr "Ρυθμίσεις συγχρονισμού..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "ΟΔιάλογόςΜου"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Δώστε το Νέο όνομα του Άλμπουμ</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Τίτλος (προαιρετικός):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Όνομα (προαιρετικό):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Ετικέτα (προαιρετική):"
+
+#. i18n: file sinklistbase.ui line 16
+#: rc.cpp:24
+#, no-c-format
+msgid "Sinks"
+msgstr "Έξοδοι"
+
+#. i18n: file sinklistbase.ui line 97
+#: rc.cpp:30
+#, no-c-format
+msgid "&Find"
+msgstr "&Αναζήτηση"
+
+#. i18n: file sinklistbase.ui line 100
+#: rc.cpp:33
+#, no-c-format
+msgid "Alt+F"
+msgstr "Alt+Α"
+
+#. i18n: file sinklistbase.ui line 128
+#: rc.cpp:42
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file sinklistbase.ui line 142
+#: rc.cpp:48
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#: sinklist.cpp:46
+msgid "Name"
+msgstr "Όνομα"
+
+#: sinklist.cpp:47
+msgid "Type"
+msgstr "Τύπος"
+
+#: sinklist.cpp:121 sinklist.cpp:144
+msgid "No sink selected!"
+msgstr "Δεν επιλέχθηκε έξοδος!"
+
+#: sinklist.cpp:150
+msgid ""
+"Are you sure you want to remove this sink? All synchronisaton settings will be "
+"lost. You cannot undo this action."
+msgstr ""
+"Επιθυμείτε την αφαίρεση αυτής της εξόδου; Όλες οι ρυθμίσεις συγχρονισμού θα "
+"χαθούν. Δεν μπορείτε να αναιρέσετε την ενέργεια αυτή."
+
+#: sinklist.cpp:153
+msgid "Remove Sink?"
+msgstr "Αφαίρεση εξόδου;"
+
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Εγχειρίδιο εξαγωγής συλλογής"

@@ -1,0 +1,192 @@
+/****************************************************************************
+** Digikam::RawPreview meta object code from reading C++ file 'rawpreview.h'
+**
+** Created: Tue Jun 13 22:44:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "rawpreview.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::RawPreview::className() const
+{
+    return "Digikam::RawPreview";
+}
+
+QMetaObject *Digikam::RawPreview::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__RawPreview( "Digikam::RawPreview", &Digikam::RawPreview::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::RawPreview::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::RawPreview", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::RawPreview::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::RawPreview", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::RawPreview::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = PreviewWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "description", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotLoadingProgress", 2, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "description", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "image", &static_QUType_ptr, "DImg", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotImageLoaded", 2, param_slot_1 };
+    static const QUMethod slot_2 = {"slotThemeChanged", 0, 0 };
+    static const QUMethod slot_3 = {"slotCornerButtonPressed", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_varptr, "\x08", QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotPanIconSelectionMoved", 2, param_slot_4 };
+    static const QUMethod slot_5 = {"slotPanIconHiden", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotLoadingProgress(const LoadingDescription&,float)", &slot_0, QMetaData::Private },
+	{ "slotImageLoaded(const LoadingDescription&,const DImg&)", &slot_1, QMetaData::Private },
+	{ "slotThemeChanged()", &slot_2, QMetaData::Private },
+	{ "slotCornerButtonPressed()", &slot_3, QMetaData::Private },
+	{ "slotPanIconSelectionMoved(const QRect&,bool)", &slot_4, QMetaData::Private },
+	{ "slotPanIconHiden()", &slot_5, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalLoadingStarted", 0, 0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalLoadingProgress", 1, param_signal_1 };
+    static const QUMethod signal_2 = {"signalLoadingFailed", 0, 0 };
+    static const QUMethod signal_3 = {"signalDemosaicedImage", 0, 0 };
+    static const QUMethod signal_4 = {"signalPostProcessedImage", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalLoadingStarted()", &signal_0, QMetaData::Public },
+	{ "signalLoadingProgress(float)", &signal_1, QMetaData::Public },
+	{ "signalLoadingFailed()", &signal_2, QMetaData::Public },
+	{ "signalDemosaicedImage()", &signal_3, QMetaData::Public },
+	{ "signalPostProcessedImage()", &signal_4, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::RawPreview", parentObject,
+	slot_tbl, 6,
+	signal_tbl, 5,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__RawPreview.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::RawPreview::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::RawPreview" ) )
+	return this;
+    return PreviewWidget::qt_cast( clname );
+}
+
+// SIGNAL signalLoadingStarted
+void Digikam::RawPreview::signalLoadingStarted()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalLoadingProgress
+void Digikam::RawPreview::signalLoadingProgress( float t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalLoadingFailed
+void Digikam::RawPreview::signalLoadingFailed()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2 );
+}
+
+// SIGNAL signalDemosaicedImage
+void Digikam::RawPreview::signalDemosaicedImage()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+// SIGNAL signalPostProcessedImage
+void Digikam::RawPreview::signalPostProcessedImage()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 4 );
+}
+
+bool Digikam::RawPreview::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotLoadingProgress((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 1: slotImageLoaded((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(const DImg&)*((const DImg*)static_QUType_ptr.get(_o+2))); break;
+    case 2: slotThemeChanged(); break;
+    case 3: slotCornerButtonPressed(); break;
+    case 4: slotPanIconSelectionMoved((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1)),(bool)static_QUType_bool.get(_o+2)); break;
+    case 5: slotPanIconHiden(); break;
+    default:
+	return PreviewWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::RawPreview::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalLoadingStarted(); break;
+    case 1: signalLoadingProgress((float)(*((float*)static_QUType_ptr.get(_o+1)))); break;
+    case 2: signalLoadingFailed(); break;
+    case 3: signalDemosaicedImage(); break;
+    case 4: signalPostProcessedImage(); break;
+    default:
+	return PreviewWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::RawPreview::qt_property( int id, int f, QVariant* v)
+{
+    return PreviewWidget::qt_property( id, f, v);
+}
+
+bool Digikam::RawPreview::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

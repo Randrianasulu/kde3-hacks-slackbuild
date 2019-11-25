@@ -1,0 +1,124 @@
+/****************************************************************************
+** VerifyDlg meta object code from reading C++ file 'VerifyDlg.h'
+**
+** Created: Sun Feb 1 00:53:00 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "VerifyDlg.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *VerifyDlg::className() const
+{
+    return "VerifyDlg";
+}
+
+QMetaObject *VerifyDlg::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_VerifyDlg( "VerifyDlg", &VerifyDlg::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString VerifyDlg::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "VerifyDlg", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString VerifyDlg::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "VerifyDlg", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* VerifyDlg::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QDialog::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "proc", &static_QUType_ptr, "KProcess", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotProcessExited", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "proc", &static_QUType_ptr, "KProcess", QUParameter::In },
+	{ "buf", &static_QUType_charstar, 0, QUParameter::In },
+	{ "len", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotStdout", 3, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "proc", &static_QUType_ptr, "KProcess", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotWroteStdin", 1, param_slot_2 };
+    static const QUMethod slot_3 = {"slotOK", 0, 0 };
+    static const QUMethod slot_4 = {"slotAbort", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotProcessExited(KProcess*)", &slot_0, QMetaData::Private },
+	{ "slotStdout(KProcess*,char*,int)", &slot_1, QMetaData::Private },
+	{ "slotWroteStdin(KProcess*)", &slot_2, QMetaData::Private },
+	{ "slotOK()", &slot_3, QMetaData::Private },
+	{ "slotAbort()", &slot_4, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"VerifyDlg", parentObject,
+	slot_tbl, 5,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_VerifyDlg.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* VerifyDlg::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "VerifyDlg" ) )
+	return this;
+    return QDialog::qt_cast( clname );
+}
+
+bool VerifyDlg::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotProcessExited((KProcess*)static_QUType_ptr.get(_o+1)); break;
+    case 1: slotStdout((KProcess*)static_QUType_ptr.get(_o+1),(char*)static_QUType_charstar.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
+    case 2: slotWroteStdin((KProcess*)static_QUType_ptr.get(_o+1)); break;
+    case 3: slotOK(); break;
+    case 4: slotAbort(); break;
+    default:
+	return QDialog::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool VerifyDlg::qt_emit( int _id, QUObject* _o )
+{
+    return QDialog::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool VerifyDlg::qt_property( int id, int f, QVariant* v)
+{
+    return QDialog::qt_property( id, f, v);
+}
+
+bool VerifyDlg::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

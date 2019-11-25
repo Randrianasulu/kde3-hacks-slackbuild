@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Información de desarrollo</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Esta sección describe cómo utilizar kbluetoothd para su propia aplicación o acceder a él a través de un script para recuperar los nombres de dispositivo de memoria o similares. </para>
+
+<sect2>
+<title
+>La memoria de nombres</title>
+<para
+>La memoria de nombre guarda todas las peticiones de nombre y guarda los resultados. Con ella, tanto kbluetooth como otras aplicaciones pueden recuperar el nombre de otro dispositivo bluetoothd desde su dirección de dispositivo único bluetooth, incluso aunque el dispositivo no esté accesible en ese momento. Se suele utilizar para hacer una interfaz de usuario más agradable, ya que una dirección como 00:60:AB:13:83:3D es un poco más difícil de recordar. </para>
+<para
+>Posiblemente quedará obsoleto tan pronto como BlueZ incorpore su propia memoria de nombres persistente. </para>
+<para
+>Puede acceder a la memoria de nombres a través de dcop. Para ver una dirección en la memoria de nombres desde la línea de órdenes, teclee <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;dirección&gt;</command
+>. Para averiguar qué dispositivo fue el último que utilizó un nombre proporcionado, puede teclear <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;nombre&gt;</command
+>. Esta orden es sensible a mayúsculas y minúsculas. También sería posible que varios dispositivos se configurasen para utilizar el mismo nombre. </para>
+</sect2>
+
+<sect2>
+<title
+>El meta servidor</title>
+<para
+>Si desea implementar una aplicación servidora para un nuevo protocolo bluetooth, podrá integrarlo fácilmente con kbluetoothd, de forma que su servidor se inicie automáticamente. </para>
+<para
+>Deberá proporcionar una archivo XML describiendo el registro SDP y el correspondiente archivo de escritorio. kbluetoothd configurará automáticamente un registro SDP, asignando un canal rfcomm e iniciando la escucha en el canal seleccionado. Cuando alguien se conecte a su servicio, kbluetoothd se iniciará y pasará una conexión a la ya aceptada. El número del manejador se pasa como un argumento de línea de órdenes. </para>
+<para
+>El paquete kdebluetooth contiene <command
+>kbtserialchat</command
+>, que es (además de su empleo para la depuración y quizá para charlar...) un programa de muestra bastante simple sobre cómo integrar una aplicación en la estructura de kdebluetooth. Como kbtserialchat es a la vez cliente y servidor, no necesitará tener en cuenta todos los argumentos de la línea de órdenes, especialmente urls y sdp. </para>
+<para
+>El formato de los archivos SDP-XML debería ser autodescriptivo, si conoce la estructura de los registros SDP. Un punto importante es determinar como llega el parámetro a los canales rfcomm seleccionados a través del registro SDP del servidor. Como el canal lo selecciona kbluetoothd automáticamente, no podrá codificarlo directamente en el archivo de registro SDP. En su lugar utilice &lt;uint valref='rfcommchannel' size='8'/&gt;. Los canales rfcomm que se probarán están definidos en el archivo de escritorio correspondiente. <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> es el primero de los canales que se probará y <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> proporcionará el número de los siguientes canales que se probarán en orden ascendente si un canal ya lo está utilizando otro servicio. </para>
+<para
+>kbluetoothd solo soporta rfcomm por el momento, pero cuando se necesite se proporcionará soporte para l2cap o similar. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>El servicio de búsqueda de dispositivos</title>
+<para
+>kbluetoothd puede buscar activamente otros dispositivos y ejecutar órdenes tan pronto como se detecte un dispositivo o desaparezca. Puede configurar este servicio en el módulo del centro de control kbluetoothd en la pestaña «Encontrar dispositivos». </para>
+<para
+>La lista de trabajos de búsqueda <emphasis
+>activos</emphasis
+> tal y como se muestra en el módulo del centro de control no es más que una lista de ejecutables que se encuentran en el directorio <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. También puede añadir un nuevo script al directorio de la plantilla global en <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Los scripts de este directorio que terminen en «.template» se mostrarán cuando el usuario pulse sobre «Añadir nuevo trabajo...» y simplemente se copiarán al directorio de trabajo activo en el directorio personal del usuario. </para>
+<para
+>Los scripts incluídos se dividen en dos para hacer más sencilla su actualización sin tener que reinstalarlos. La parte «.template» contiene la configuración modificable por el usuario que se copiará al directorio personal. Este script llamará a continuación a la parte «.real» que se encuentra en el directorio de plantillas. </para>
+<para
+>Para comenzar a escribir su propio trabajo de búsqueda, pulse sobre «Añadir nuevo trabajo...» y seleccione <phrase
+>Trabajo personalizado</phrase
+>. Esto copiará <filename
+>Custom_Job.template</filename
+> a su directorio de trabajo. ahora pulse sobre «Configurar...» para cambiar el script. Este script lista todas las posibles opciones de la línea de órdenes y variables de entorno a las que tendrá acceso. </para>
+<para
+>Dese cuenta de que cuando edite este script personalizado, todos los cambios se perderán si lo elimina de la lista de trabajos activos. Si desea distribuirlo, le recomendamos que lo divida en una parte «template» para las configuraciones y en otra parte «real» que haga el trabajo actual. </para>
+
+<para
+>Para poder subir, bajar o borrar archivos en el lugar que encontró el trabajo, puede utilizar <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Si escribe algún script interesante para el servicio de búsqueda de dispositivos que pueda ser práctico para otros, estaremos encantados de incluirlo en la distribución :)= </para>
+</sect2>
+
+</sect1>
+</chapter>
+

@@ -1,0 +1,10 @@
+--- khtml/rendering/bidi.cpp	2009/04/08 23:39:12	951342
++++ khtml/rendering/bidi.cpp	2009/04/08 23:48:02	951343
+@@ -297,6 +297,7 @@
+                 && next->isInlineFlow()))
+             break;
+         current = next;
++        next    = 0;
+     }
+     return next;
+ }

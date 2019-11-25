@@ -1,0 +1,114 @@
+<chapter id="filterimages">
+<chapterinfo>
+
+<title
+>Filtros de imágenes</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento de filtrado de imágenes es una herramienta para aplicar un filtro digital a las imágenes. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Este complemento se puede utilizar para aplicar filtros al conjunto de imágenes de un álbum. Utiliza el programa «convert» del paquete «ImageMagick». Está disponible un vista previa (total o parcial) del efecto. Se han implementado 9 tipos de filtros: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Añadir ruido</emphasis
+>: añade ruido a una imagen.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Antialias</emphasis
+>: elimina el efecto de hoja de sierra.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Desenfocar</emphasis
+>: emborrona la imagen con un operador gausiano.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Desparasitar</emphasis
+>: Aplica el efecto de desenfoque en todas partes de la imagen exceptuando las orillas de los cambios de color, de este modo los detalles no se pierden.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Realzar</emphasis
+>: aplica un filtro para realzar una imagen con ruido.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Mediana</emphasis
+>: aplica el filtro mediana a una imagen. Remplaza el centro del punto por un valor de brillo medio.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Reducción de ruido</emphasis
+>: reduce el ruido en una imagen.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Enfocar</emphasis
+>: enfoca la imagen con un operador gausiano.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Máscara de desenfoque</emphasis
+>: enfoca la imagen con un operador de máscara de desenfoque.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Puede ver algunas muestras creadas con este complemento en esta <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/FilterImages/index.html"
+> <citetitle
+>dirección.</citetitle
+> </ulink
+></para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

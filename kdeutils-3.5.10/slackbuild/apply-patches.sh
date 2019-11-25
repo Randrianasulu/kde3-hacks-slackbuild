@@ -1,0 +1,9 @@
+cat $CWD/ark-3.5.1-encode-filenames.patch | patch -p1 --verbose || exit 1
+#cat $CWD/ark-3.5.7-alt-fix-ark-zip-rar.diff | patch -p1 --verbose || exit 1
+cat $CWD/kdeutils-3.5.8-alt-7zip-toc.patch || patch -p1 --verbose || exit 1
+cat $CWD/kdeutils-3.5.8-alt-ark-rar-password.patch || patch -p1 --verbose || exit 1
+cat $CWD/sevenzip_fix.patch | patch -p0 --verbose || exit 1
+#cat $CWD/kdeutils-3.5.8-alt-create-password-zip-rar-7zip.patch | patch -p1 --verbose || exit 1
+cat $CWD/kdeutils_svn.diff | patch -p4 --verbose || exit 1
+cat $CWD/kdeutils_ark_xz_lmza_support.diff | patch -p4 --verbose || exit 1
+cat $CWD/python_and_automake.patch | patch -p0 --verbose || exit 1

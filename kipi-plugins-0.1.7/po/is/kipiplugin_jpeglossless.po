@@ -1,0 +1,181 @@
+# translation of kipiplugin_jpeglossless.po to
+# Sveinn í Felli <sveinki@nett.is>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_jpeglossless\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-10-08 21:42+0000\n"
+"Last-Translator: Sveinn í Felli\n"
+"Language-Team:  <is@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: convert2grayscale.cpp:86 convert2grayscale.cpp:162 imageflip.cpp:86
+#: imagerotate.cpp:87 jpegtransform.cpp:162 jpegtransform.cpp:284
+msgid "Error in opening input file"
+msgstr "Get ekki opnað inntaksskrá"
+
+#: convert2grayscale.cpp:92 imageflip.cpp:92 imagerotate.cpp:93
+msgid "Error in opening temporary file"
+msgstr "Get ekki opnað bráðabirgðaskrá"
+
+#: convert2grayscale.cpp:100
+msgid "Cannot convert to gray scale RAW file"
+msgstr "Get ekki breytt RAW skrá í gráskala"
+
+#: convert2grayscale.cpp:124 imageflip.cpp:124 imagerotate.cpp:127
+msgid "Cannot update source image"
+msgstr "Get ekki uppfært upprunalega mynd"
+
+#: convert2grayscale.cpp:171 jpegtransform.cpp:171 jpegtransform.cpp:227
+#: jpegtransform.cpp:293
+msgid "Error in opening output file"
+msgstr "Get ekki opnað úttaksskrá"
+
+#: convert2grayscale.cpp:261
+#, c-format
+msgid "Cannot convert to gray scale: %1"
+msgstr "Get ekki umbreytt í gráskala: %1"
+
+#: imageflip.cpp:100 imagerotate.cpp:101
+msgid "Cannot rotate RAW file"
+msgstr "Get ekki RAW skrám"
+
+#: imageflip.cpp:150 imageflip.cpp:180
+msgid "Nonstandard flip action"
+msgstr "Óhefðbundin speglunaraðgerð"
+
+#: imageflip.cpp:216
+#, c-format
+msgid "Cannot flip: %1"
+msgstr "Get ekki speglað: %1"
+
+#: imagerotate.cpp:163 imagerotate.cpp:204
+msgid "Nonstandard rotation angle"
+msgstr "Óhefðbundið snúningshorn"
+
+#: imagerotate.cpp:240
+#, c-format
+msgid "Cannot rotate: %1"
+msgstr "Get ekki snúið: %1"
+
+#: plugin_jpeglossless.cpp:82
+msgid "Auto Rotate/Flip Using Exif Information"
+msgstr "Snúa/spegla sjálfkrafa miðað við EXIF-upplýsingar"
+
+#: plugin_jpeglossless.cpp:89
+msgid "Rotate"
+msgstr "Snúa"
+
+#: plugin_jpeglossless.cpp:109
+msgid "Flip"
+msgstr "Spegla"
+
+#: plugin_jpeglossless.cpp:114
+msgid "Horizontally"
+msgstr "Lárétt"
+
+#: plugin_jpeglossless.cpp:122
+msgid "Vertically"
+msgstr "Lóðrétt"
+
+#: plugin_jpeglossless.cpp:130
+msgid "Convert to Black && White"
+msgstr "Breyta í svart&/hvítt"
+
+#: plugin_jpeglossless.cpp:189
+msgid "horizontaly"
+msgstr "lárétt"
+
+#: plugin_jpeglossless.cpp:195
+msgid "vertically"
+msgstr "lóðrétt"
+
+#: plugin_jpeglossless.cpp:216
+#, c-format
+msgid "Flip images %1"
+msgstr "Spegla myndum %1"
+
+#: plugin_jpeglossless.cpp:239
+msgid "right (clockwise)"
+msgstr "hægri (réttsælis)"
+
+#: plugin_jpeglossless.cpp:245
+msgid "left (counterclockwise)"
+msgstr "vinstri (rangsælis)"
+
+#: plugin_jpeglossless.cpp:251
+msgid "using Exif orientation tag"
+msgstr "nota EXIF stefnu"
+
+#: plugin_jpeglossless.cpp:272
+#, c-format
+msgid "Rotate images %1"
+msgstr "Snúa myndum %1"
+
+#: plugin_jpeglossless.cpp:288
+msgid ""
+"<p>Are you sure you wish to convert the selected image(s) to black and white? "
+"This operation <b>cannot</b> be undone.</p>"
+msgstr ""
+"<p>Ertu viss um að þú viljir breyta völdum myndum í svarthvítar? Þessa aðgerð "
+"<b>er ekki hægt</b> að afturkalla.</p>"
+
+#: plugin_jpeglossless.cpp:305
+msgid "Convert images to black & white"
+msgstr "Breyti myndum í svart/hvítar"
+
+#: plugin_jpeglossless.cpp:347
+msgid "Rotating Image \"%1\""
+msgstr "Sný mynd \"%1\""
+
+#: plugin_jpeglossless.cpp:352
+msgid "Flipping Image \"%1\""
+msgstr "Spegla mynd \"%1\""
+
+#: plugin_jpeglossless.cpp:357
+msgid "Converting to Black & White \"%1\""
+msgstr "Beyti \"%1\" í svart/hvítt"
+
+#: plugin_jpeglossless.cpp:378
+msgid "Failed to Rotate image"
+msgstr "Tókst ekki að snúa mynd"
+
+#: plugin_jpeglossless.cpp:383
+msgid "Failed to Flip image"
+msgstr "Tókst ekki að spegla mynd"
+
+#: plugin_jpeglossless.cpp:388
+msgid "Failed to convert image to Black & White"
+msgstr "Tókst ekki að breyta mynd í svart/hvíta"
+
+#: plugin_jpeglossless.cpp:408
+msgid "Rotate image complete"
+msgstr "Snúningi á mynd lokið"
+
+#: plugin_jpeglossless.cpp:413
+msgid "Flip image complete"
+msgstr "Speglun á mynd lokið"
+
+#: plugin_jpeglossless.cpp:418
+msgid "Convert to Black & White complete"
+msgstr "Breytingu á myndum í svart/hvítar er lokið"
+
+#: utils.cpp:90
+msgid "unable to open source file"
+msgstr "get ekki opnað upphafsskrá"
+
+#: utils.cpp:117
+msgid "unable to open temp file"
+msgstr "get ekki opnað bráðabirgðaskrá"
+
+#: utils.cpp:129
+msgid "Cannot rotate: unable to open temp file"
+msgstr "Get ekki snúið: get ekki opnað bráðabirgðaskrá"
+
+#: utils.cpp:178
+#, c-format
+msgid "Cannot update metadata: %1"
+msgstr "Get ekki uppfært metaupplýsingar: %1"

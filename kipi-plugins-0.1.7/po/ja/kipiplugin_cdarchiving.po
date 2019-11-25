@@ -1,0 +1,575 @@
+# translation of kipiplugin_cdarchiving.pot to japanese
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_cdarchiving\n"
+"POT-Creation-Date: 2008-06-10 23:47+0200\n"
+"PO-Revision-Date: 2007-09-29 20:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko Bando"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: cdarchiving.cpp:157 cdarchivingdialog.cpp:160 cdarchivingdialog.cpp:164
+#: cdarchivingdialog.cpp:598
+msgid "CD (650Mb)"
+msgstr "CD (650Mb)"
+
+#: cdarchiving.cpp:163
+msgid "KIPI Albums Archiving"
+msgstr "Kipi アルバムアーカイブ"
+
+#: cdarchiving.cpp:179
+msgid "CD Albums"
+msgstr "CD アルバム"
+
+#: cdarchiving.cpp:180
+msgid "KIPI Album CD archiving"
+msgstr "Kipi アルバム CD アーカイブ"
+
+#: cdarchiving.cpp:181 cdarchivingdialog.cpp:453
+msgid "LINUX"
+msgstr "LINUX"
+
+#: cdarchiving.cpp:182 cdarchivingdialog.cpp:465
+msgid "K3b CD-DVD Burning application"
+msgstr "K3b CD/DVD ライター"
+
+#: cdarchiving.cpp:184
+msgid "KIPI CD-Archiving plugin"
+msgstr "Kipi CD アーカイブプラグイン"
+
+#: cdarchiving.cpp:418
+msgid "Cannot start K3b program : fork failed."
+msgstr "K3bを開始できません : フォーク失敗"
+
+#: cdarchiving.cpp:457
+msgid "K3b is done; removing temporary folder...."
+msgstr "K3b 完了。一時ファイルを削除中..."
+
+#: cdarchiving.cpp:467
+msgid "Cannot remove temporary folder '%1'."
+msgstr "一時フォルダ '%1' を削除できません。"
+
+#: cdarchiving.cpp:497 cdarchiving.cpp:589
+msgid "Cannot remove folder '%1'."
+msgstr "フォルダ '%1' を削除できません。"
+
+#: cdarchiving.cpp:510 cdarchiving.cpp:559
+msgid "Could not create folder '%1'."
+msgstr "フォルダ '%1' を作成できませんでした。"
+
+#: cdarchiving.cpp:626 cdarchiving.cpp:1056
+msgid "Could not open file '%1'."
+msgstr "ファイル '%1' を開けませんでした。"
+
+#: cdarchiving.cpp:651
+msgid "Could not create folder '%1' in '%2'."
+msgstr "フォルダ '%1' を '%2' に作成できませんでした。"
+
+#: cdarchiving.cpp:744 cdarchiving.cpp:1197
+msgid "Album list"
+msgstr "アルバムリスト"
+
+#: cdarchiving.cpp:749
+msgid "Album "
+msgstr "アルバム"
+
+#: cdarchiving.cpp:759
+msgid "<i>Caption:</i>"
+msgstr "キャプション:"
+
+#: cdarchiving.cpp:762
+msgid "<i>Collection:</i>"
+msgstr "コレクション:"
+
+#: cdarchiving.cpp:765
+msgid "<i>Date:</i>"
+msgstr "日付:"
+
+#: cdarchiving.cpp:767
+msgid "<i>Images:</i>"
+msgstr "画像数:"
+
+#: cdarchiving.cpp:850 cdarchiving.cpp:933 cdarchiving.cpp:1235
+msgid "KB"
+msgstr "KB"
+
+#: cdarchiving.cpp:895 cdarchiving.cpp:898
+msgid " images"
+msgstr " 画像"
+
+#: cdarchiving.cpp:959 cdarchiving.cpp:999 cdarchiving.cpp:1241
+msgid "Valid HTML 4.01."
+msgstr "Valid HTML 4.01"
+
+#: cdarchiving.cpp:963 cdarchiving.cpp:1003
+msgid "Album archive created with <a href=\"%1\">%2</a> on %3"
+msgstr "Album archive created with <a href=\"%1\">%2</a> on %3"
+
+#: cdarchiving.cpp:982
+msgid "<i>Album list:</i>"
+msgstr "アルバムリスト:"
+
+#: cdarchiving.cpp:1190
+msgid "Previous"
+msgstr "戻る"
+
+#: cdarchiving.cpp:1195
+msgid "Album index"
+msgstr "アルバムインデックス"
+
+#: cdarchiving.cpp:1202
+msgid "Next"
+msgstr "進む"
+
+#: cdarchiving.cpp:1247
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "Image gallery created with <a href=\"%1\">%2</a> on %3"
+
+#: cdarchiving.cpp:1410
+msgid "Creating project header..."
+msgstr "プロジェクトのヘッダを作成中..."
+
+#: cdarchiving.cpp:1425 cdarchiving.cpp:1463 cdarchiving.cpp:1593
+#: cdarchivingdialog.cpp:163 cdarchivingdialog.cpp:607
+msgid "DVD (4,7Gb)"
+msgstr "DVD (4.7Gb)"
+
+#: cdarchiving.cpp:1583
+msgid "Adding Album '%1' into project..."
+msgstr "アルバム '%1' をプロジェクトに追加中..."
+
+#: cdarchivingdialog.cpp:88
+msgid "Configure Archive to CD"
+msgstr "CD アーカイブを設定"
+
+#: cdarchivingdialog.cpp:91
+msgid "Create CD/DVD Archive"
+msgstr "CD/DVD アーカイブを作成"
+
+#: cdarchivingdialog.cpp:101
+msgid "CD/DVD Archiving"
+msgstr "CD/DVD アーカイブ"
+
+#: cdarchivingdialog.cpp:104
+msgid ""
+"An Album CD/DVD Archiving Kipi plugin.\n"
+"This plugin use K3b CD/DVD burning software available at\n"
+"http://www.k3b.org"
+msgstr ""
+"Kipi アルバム CD/DVD アーカイブプラグイン\n"
+"このプラグインは K3b CD/DVD ライターを使用します。\n"
+"http://www.k3b.org"
+
+#: cdarchivingdialog.cpp:109
+msgid "Author"
+msgstr "作者"
+
+#: cdarchivingdialog.cpp:112
+msgid "Contributor"
+msgstr "貢献者"
+
+#: cdarchivingdialog.cpp:115
+msgid "Image navigation mode patches"
+msgstr "画像ナビゲーションモードのパッチ"
+
+#: cdarchivingdialog.cpp:118
+msgid "Bugfix"
+msgstr "バグフィックス"
+
+#: cdarchivingdialog.cpp:124
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: cdarchivingdialog.cpp:140
+msgid "Selection"
+msgstr "選択"
+
+#: cdarchivingdialog.cpp:140
+msgid "Album Selection"
+msgstr "アルバムの選択"
+
+#: cdarchivingdialog.cpp:150
+msgid "Target Media Information"
+msgstr "ターゲットメディアの情報"
+
+#: cdarchivingdialog.cpp:154
+msgid "<p>Information about the backup medium."
+msgstr "<p>バックアップメディアについての情報です。"
+
+#: cdarchivingdialog.cpp:161 cdarchivingdialog.cpp:601
+msgid "CD (700Mb)"
+msgstr "CD (700Mb)"
+
+#: cdarchivingdialog.cpp:162 cdarchivingdialog.cpp:604
+msgid "CD (880Mb)"
+msgstr "CD (880Mb)"
+
+#: cdarchivingdialog.cpp:166
+msgid "<p>Select here the backup media format."
+msgstr "<p>バックアップメディアの種類を選択します。"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface"
+msgstr "HTML インターフェース"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface Look"
+msgstr "HTML インターフェースの外観"
+
+#: cdarchivingdialog.cpp:189
+msgid "Build CD HTML interface"
+msgstr "CD HTML インターフェースを作成"
+
+#: cdarchivingdialog.cpp:193
+msgid "<p>This option adds a HTML interface to browse the CD's contents."
+msgstr "<p>CD の内容を閲覧するための HTML インターフェースを追加します。"
+
+#: cdarchivingdialog.cpp:197
+msgid "Add \"autorun\" functionality"
+msgstr "「自動実行」機能を追加"
+
+#: cdarchivingdialog.cpp:201
+msgid "<p>This option adds MS Windows(tm) autorunning capability to the CD."
+msgstr "<p>CD に MS Windows(tm) の自動実行機能を追加します。"
+
+#: cdarchivingdialog.cpp:205
+msgid "Archive title:"
+msgstr "アーカイブのタイトル:"
+
+#: cdarchivingdialog.cpp:208
+msgid "Album Archiving"
+msgstr "アルバムアーカイブ"
+
+#: cdarchivingdialog.cpp:211
+msgid "<p>Enter here the title of the CD archive."
+msgstr "<p>CD アーカイブのタイトルを入力してください。"
+
+#: cdarchivingdialog.cpp:217
+msgid "I&mages per row:"
+msgstr "横一列あたりの画像数(&M):"
+
+#: cdarchivingdialog.cpp:218
+msgid ""
+"<p>Enter here the number of images per row on the album page. A good value is "
+"'4'."
+msgstr "<p>ページの横一列に表示する画像数を指定してください。妥当な値は'4'です。"
+
+#: cdarchivingdialog.cpp:229
+msgid "Thumbnail size:"
+msgstr "サムネイルのサイズ:"
+
+#: cdarchivingdialog.cpp:231
+msgid "<p>The new size of thumbnails in pixels"
+msgstr "<p>サムネイルのサイズをピクセルで指定してください。"
+
+#: cdarchivingdialog.cpp:241
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>サムネイルの画像ファイル形式を選択します。<p>"
+
+#: cdarchivingdialog.cpp:242
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+
+#: cdarchivingdialog.cpp:253
+msgid "Thumbnail file format:"
+msgstr "サムネイルのファイル形式:"
+
+#: cdarchivingdialog.cpp:269
+msgid "<p>Select here the font name used for the pages."
+msgstr "<p>ページに使用するフォント名を選択します。"
+
+#: cdarchivingdialog.cpp:271
+msgid "Fon&t name:"
+msgstr "フォント名(&T):"
+
+#: cdarchivingdialog.cpp:284
+msgid "<p>Select here the font size used for the pages."
+msgstr "<p>ページに使用するフォントサイズを選択します。"
+
+#: cdarchivingdialog.cpp:286
+msgid "Font si&ze:"
+msgstr "フォントサイズ(&Z):"
+
+#: cdarchivingdialog.cpp:299
+msgid "<p>Select here the foreground color used for the pages."
+msgstr "<p>ページに使用する前景色を選択します。"
+
+#: cdarchivingdialog.cpp:301
+msgid "&Foreground color:"
+msgstr "前景色(&F):"
+
+#: cdarchivingdialog.cpp:314
+msgid "<p>Select here the background color used for the pages."
+msgstr "<p>ページに使用する背景色を選択します。"
+
+#: cdarchivingdialog.cpp:316
+msgid "&Background color:"
+msgstr "背景色(&B):"
+
+#: cdarchivingdialog.cpp:329
+msgid "<p>Select here the image border's size in pixels."
+msgstr "<p>画像の縁取りのサイズをピクセルで指定してください。"
+
+#: cdarchivingdialog.cpp:331
+msgid "Image border s&ize:"
+msgstr "画像の縁取りのサイズ(&I):"
+
+#: cdarchivingdialog.cpp:344
+msgid "<p>Select here the color used for the image borders."
+msgstr "<p>画像の縁取りに使用する色を選択します。"
+
+#: cdarchivingdialog.cpp:347
+msgid "Image bo&rder color:"
+msgstr "画像の縁取りの色(&R):"
+
+#: cdarchivingdialog.cpp:418
+msgid "Volume Descriptor"
+msgstr "ボリューム記述子"
+
+#: cdarchivingdialog.cpp:418
+msgid "Media Volume Descriptor"
+msgstr "メディアボリューム記述子"
+
+#: cdarchivingdialog.cpp:427
+msgid "Volume name:"
+msgstr "ボリューム名:"
+
+#: cdarchivingdialog.cpp:430
+msgid "CD Album"
+msgstr "CD アルバム"
+
+#: cdarchivingdialog.cpp:434
+msgid "<p>Enter here the media volume name (32 characters max.)"
+msgstr "<p>メディアのボリューム名を 32 文字以内で入力してください。"
+
+#: cdarchivingdialog.cpp:438
+msgid "Volume set name:"
+msgstr "ボリュームセット名:"
+
+#: cdarchivingdialog.cpp:441
+msgid "Album CD archive"
+msgstr "アルバム CD アーカイブ"
+
+#: cdarchivingdialog.cpp:446
+msgid "<p>Enter here the media volume global name (128 characters max.)"
+msgstr "<p>メディアボリュームの全体的な名前を 128 文字以内で入力してください。"
+
+#: cdarchivingdialog.cpp:450
+msgid "System:"
+msgstr "システム:"
+
+#: cdarchivingdialog.cpp:458
+msgid "<p>Enter here the media burning system name (32 characters max.)"
+msgstr "<p>メディアへの書き込みを行うシステムの名前を 32 文字以内で入力してください。"
+
+#: cdarchivingdialog.cpp:462
+msgid "Application:"
+msgstr "アプリケーション:"
+
+#: cdarchivingdialog.cpp:470
+msgid "<p>Enter here the media burning application name (128 characters max.)."
+msgstr "<p>メディアへの書き込みに使用するアプリケーションの名前を 128 文字以内で入力してください。"
+
+#: cdarchivingdialog.cpp:475
+msgid "Publisher:"
+msgstr "編集者:"
+
+#: cdarchivingdialog.cpp:478
+msgid "KIPI [KDE Images Program Interface]"
+msgstr "Kipi [KDE 画像プログラムインターフェース]"
+
+#: cdarchivingdialog.cpp:483
+msgid "<p>Enter here the media publisher name (128 characters max.)."
+msgstr "<p>メディアの編集者の名前を 128 文字以内で入力してください。"
+
+#: cdarchivingdialog.cpp:487
+msgid "Preparer:"
+msgstr "作成者:"
+
+#: cdarchivingdialog.cpp:490
+msgid "KIPI CD Archiving plugin"
+msgstr "Kipi CD アーカイブプラグイン"
+
+#: cdarchivingdialog.cpp:494
+msgid "<p>Enter here the media preparer name (128 characters max.)."
+msgstr "<p>メディアの作成者の名前を 128 文字以内で入力してください。"
+
+#: cdarchivingdialog.cpp:501
+msgid "Media Burning"
+msgstr "メディアへの書き込み"
+
+#: cdarchivingdialog.cpp:502
+msgid "CD/DVD Burning Setup"
+msgstr "CD/DVD 書き込みの設定"
+
+#: cdarchivingdialog.cpp:511
+msgid "&K3b binary path:"
+msgstr "&K3b バイナリのパス:"
+
+#: cdarchivingdialog.cpp:521
+msgid "<p>The path name to the K3b binary program."
+msgstr "<p>K3b バイナリのパスを指定してください。"
+
+#: cdarchivingdialog.cpp:525
+msgid "Application parameters:"
+msgstr "アプリケーションのパラメータ:"
+
+#: cdarchivingdialog.cpp:533
+msgid ""
+"<p>Enter parameters which will be used when starting the burning application. "
+"Newer versions of K3b might need --nofork, older versions might not need it. "
+"(128 characters max.)."
+msgstr ""
+"<p>書き込みアプリケーションを開始するときに使用するパラメータを 128 文字以内で入力してください。K3b の新しいバージョンには '--nofork' "
+"が必要かもしれません。古いバージョンには必要ありません。"
+
+#: cdarchivingdialog.cpp:540
+msgid "Advanced Burning Options"
+msgstr "上級オプション"
+
+#: cdarchivingdialog.cpp:548
+msgid "Media burning On-The-Fly"
+msgstr "オンザフライでメディアに書き込む"
+
+#: cdarchivingdialog.cpp:550
+msgid ""
+"<p>This option uses the \"On-The-Fly\" media burning capability; this does not "
+"use a media image."
+msgstr "<p>「オンザフライ」機能を使ってメディアに書き込みます。この方法はメディアイメージを使用しません。"
+
+#: cdarchivingdialog.cpp:554
+msgid "Check media"
+msgstr "メディアをチェック"
+
+#: cdarchivingdialog.cpp:556
+msgid ""
+"<p>This option verifies the media after the burning process. You must use K3b "
+"release >= 0.10.0"
+msgstr "<p>書き込み終了後にメディアをチェックします。K3b >=0.10.0 が必要です。"
+
+#: cdarchivingdialog.cpp:560
+msgid "Start burning process automatically"
+msgstr "自動的に書き込みを開始する"
+
+#: cdarchivingdialog.cpp:563
+msgid ""
+"<p>This option start automatically the burning process when K3b is loaded."
+msgstr "<p>K3b がロードされると自動的に書き込みを開始します。"
+
+#: cdarchivingdialog.cpp:623
+msgid "Total size: "
+msgstr "合計サイズ:"
+
+#: cdarchivingdialog.cpp:624
+msgid "<b>%1</b></font> / <b>%2</b>"
+msgstr "<b>%1</b></font> / <b>%2</b>"
+
+#: cdarchivingdialog.cpp:634
+msgid "You must selected at least one Album to archive."
+msgstr "アーカイブを作成するには最低アルバムを一つ選んでください。"
+
+#: cdarchivingdialog.cpp:642
+msgid "K3b binary path is not valid. Please check it."
+msgstr "K3b バイナリのパスが不正です。確認してください。"
+
+#: cdarchivingdialog.cpp:648
+msgid "Target media size is too big. Please change your album selection."
+msgstr "ターゲットメディアのサイズが大きすぎます。アルバムの選択を変更してください。"
+
+#: plugin_cdarchiving.cpp:61
+msgid "Archive to CD/DVD..."
+msgstr "CD/DVD アーカイブ..."
+
+#: plugin_cdarchiving.cpp:126
+msgid "Archive to CD/DVD"
+msgstr "CD/DVD アーカイブ"
+
+#: plugin_cdarchiving.cpp:147
+msgid "Initialising..."
+msgstr "初期化..."
+
+#: plugin_cdarchiving.cpp:154
+msgid "Making main HTML interface..."
+msgstr "メイン HTML インターフェースを作成中..."
+
+#: plugin_cdarchiving.cpp:160
+msgid "Making HTML pages for Album '%1'..."
+msgstr "アルバム '%1' の HTML ページを作成中..."
+
+#: plugin_cdarchiving.cpp:166
+msgid "Making AutoRun interface..."
+msgstr "自動実行インターフェースを作成中..."
+
+#: plugin_cdarchiving.cpp:172
+msgid "Creating thumbnail for '%1'..."
+msgstr "'%1' のサムネイルを作成中..."
+
+#: plugin_cdarchiving.cpp:178
+msgid "Making K3b project..."
+msgstr "K3bプロジェクトを作成中..."
+
+#: plugin_cdarchiving.cpp:207
+msgid "Main HTML interface creation completed."
+msgstr "メイン HTML インターフェースの作成が完了しました。"
+
+#: plugin_cdarchiving.cpp:214
+msgid "HTML page creation for Album '%1' completed."
+msgstr "アルバム '%1' の HTML ページの作成が完了しました。"
+
+#: plugin_cdarchiving.cpp:221
+msgid "Creating thumbnail for '%1' done."
+msgstr "'%1' のサムネイルの作成が完了しました。"
+
+#: plugin_cdarchiving.cpp:228
+msgid "AutoRun interface creation completed."
+msgstr "自動実行インターフェースの作成が完了しました。"
+
+#: plugin_cdarchiving.cpp:235
+msgid "K3b project creation completed."
+msgstr "K3b プロジェクトの作成が完了しました。"
+
+#: plugin_cdarchiving.cpp:253
+msgid "Failed to create thumbnail for '%1'"
+msgstr "'%1' のサムネイルの作成に失敗"
+
+#: plugin_cdarchiving.cpp:262
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "HTML インターフェースの作成に失敗: %1"
+
+#: plugin_cdarchiving.cpp:273
+msgid "Failed to create HTML pages for Album '%1'"
+msgstr "アルバム '%1' の HTML ページの作成に失敗"
+
+#: plugin_cdarchiving.cpp:285
+msgid "Failed to create K3b project."
+msgstr "K3b プロジェクトの作成に失敗しました。"
+
+#: plugin_cdarchiving.cpp:327
+msgid "Starting K3b program..."
+msgstr "K3b プログラムを開始..."

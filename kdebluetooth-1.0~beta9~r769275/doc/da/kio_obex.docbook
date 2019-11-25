@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>OBEX-kioslave: Gennemsøg mapper over Bluetooth</title>
+
+  <sect2>
+    <title
+>Generelt</title>
+    <para
+>OBEX-protokollen er designet til brug med mobile enheder. Hvis du allerede har &quot;sendt&quot; et vcard fra en mobil enhed til en anden mobil enhed, har du brugt OBEX. Men der er også andre anvendelser af OBEX-protokollen. Mest bemærkelsesværdig filsystemets søgeprotokol. Hvis den mobile enhed forstår denne protokol, kan du søge, hente og overføre filer til dine mobile filsystemers opbevaring ved brug af denne klients implementationer. Også synkroniseringsprotokoller såsom IrMCSync eller SyncML har OBEX-bindinger og kan kommes til ved brug af denne klient, selv om der ingen brug er af synkronisering i konqueror.</para>
+    <para
+>OBEX-protokoller kan bruge mange forskellige transporter. Den oprindelige transport var IrDA, men der findes også transportbindinger for Bluetooth, serielle linjer og tcp/ip-forbindelser.</para>
+    <para
+>OBEX understøtter 2-vejsgodkendelse. Den første, mest kendte vej, er godkendelser af klienten udført af serveren. Så serverens implementering kan verificere klientens identitet. Men klienten kan også verificere serverens identitet. En MD5 tjeksum-udfordring bruges til godkendelse. Dette sikrer at almindelige kodeord aldrig sendes over transport-mediet.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>URL-format</title>
+    <para
+>OBEX-ressourcer har adgang ved brug af URL'er. Protokoldelen er ren obex: Stikomponenten holder stien på serveren. Værtsdelen er en smule mere kompleks.</para>
+    <para
+>For servere der er adgang til over tcp/ip er værtsdelen som sædvanlig. Du kan bruge værtsnavnet eller ip-adressen på serverens vært til kontakt. Hvis serveren kører på en port der ikke er standard (standardporten er 650) kan du tilføje portnummeret som sædvanligt. Eksempel: <userinput
+>OBEX://hostname:port/path</userinput
+></para>
+    <para
+>For IrDA eller Bluetooth overførsler kan du bruge hardware-adressen i standardnotationen med oktetter adskilt af dobbelte koloner. Godt nok, men lidt svært at huske hardware-adressen på din Bluetooth-enhed. Eksempel: <userinput
+>obex://[ef:01:23:45]/sti</userinput
+> eller <userinput
+>obex://[12:34:ef:01:23:45]/sti</userinput
+></para>
+    <para
+>Derfor er det muligt at definere værtsaliasser til brug med OBEX-protokollen. Disse aliasser defineres i OBEX's KControl-modul. Du kan indstille et læseligt navn, opdage enheder og endelig tilknytte  en hardware-adresse til dette navn. Der er også adgang til enheder for serielle transporter via disse aliasser. For IrDA og Bluetooth er der praktiske prædefinerede aliasser der hedder irda eller bluetooth. Begge udfører opdagelse af enheder og prøver at forbinde til den første enhed de finder.</para>
+    <para
+>Held og lykke med at gennemsøge din nabos mobiltelefon :))</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Tips &amp; Tricks</title>
+    <para
+>Som enhver anden kioslave, kan du direkte åbne og gemme filer til bluetooth-enheder med kio_obex. Så hvis du for eksempel skriver en indkøbsliste, kan du blot skrive den ind med kedit og gemme den til din telefon. </para>
+    <para
+>Du kan få denne procedure til at være meget hurtigere ved at tilføje bogmærket til bogmærkelisten i dialogen til at gemme filer. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Begrænsninger</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX og KDE</title>
+      <para
+>Da en kioclient ikke kan kontrollere antallet af slaver som har adgang til det samme mål, er det ofte tilfældet at der er flere slaver der kører. Men OBEX-transporter, undtagen tcp/ip-transporten, understøtter kun en overførselsforbindelse til enheden. Dette fører til kioslaves som ikke kan forbinde med "Enhed eller ressource optaget". OBEX har en delvis løsning for det problem. Hvis serveren understøtter det, kan man transmittere pakker for flere forbindelser på én transportforbindelse. Men jeg har aldrig set en enhed der har denne funktion. Og det ville kræve er separat transport-dæmon for hvert mål. Så hvis du ser enheder der er i stand til dette vil jeg give mig til at implementere denne dæmon.</para>
+      <para
+>Der er ikke nogen speciel metode til at omdøbe eller flytte en fil på enheden. Så dette gøres ved at kopiere data til og fra enheden. Dette er langsomt og vil starte to kioslaver som vil få problemet beskrevet ovenfor.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Enhedskompatibilitet</title>
+      <para
+>Da denne klient implementerer en åben standard, er der et ægte håb om at der er mange enheder derude der vil virke godt. Men der er altid undtagelser.</para>
+      <para
+>Klienten er udviklet med en SIEMENS S45i ved brug af IrDA eller den SIEMENS-specifikke BFB-protokol på den serielle linje. Som du måske kan forestille dig virker dette.</para>
+      <para
+>NOKIA 3650 mobiltelefonen har en fejl i firmware i nogle versioner. Mobiltelefoner med denne fejl returnere ugyldige XML-filer for mappelistninger. Dette fører til tomme mapper. Denne fejl er rapporteret at være der i det mindste i firmware version 2.50. Firmware version 3.16 rettede denne fejl. Tak til Fred Schaettgen &lt;Sch@ttgen.net&gt; for at teste.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

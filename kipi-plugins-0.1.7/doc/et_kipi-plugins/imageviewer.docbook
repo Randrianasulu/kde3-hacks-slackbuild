@@ -1,0 +1,268 @@
+<chapter id="imageviewer">
+<chapterinfo>
+
+<title
+>OpenGL pildinäitaja</title>
+
+<authorgroup>
+    <author
+><firstname
+>Markus</firstname
+><surname
+>Leuthold</surname
+> <affiliation
+><address
+><email
+>kusi _AT forum dot titlis _dot org</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi pildinäitaja on väga kiire ja paindlik piltide vaatamise tööriist, mis töötab OpenGL baasil </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>Kipi pildinäitaja võimaldab lasta kuvada valikut pilte ning võtta nendega ette teatud lihtsamaid operatsioone, näiteks pööramine, suurendamine või liigutamine. Näitajat saab kasutada ainult klaviatuuri ja hiirega. Näitaja juures on rõhk asetatud kuvamise kiirusele ning funktsioonide võimalikult kiirele kasutamisele. </para>
+
+
+<variablelist
+><title
+>Pildi kasutamine</title>
+<varlistentry
+><term
+>Järgmine pilt</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Hiireratas alla</para
+></listitem>
+<listitem
+><para
+>Nool alla/paremale</para
+></listitem>
+<listitem
+><para
+>Tühikuklahv</para
+></listitem>
+<listitem
+><para
+>Klahv N</para
+></listitem>
+<listitem
+><para
+>PageDown</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Eelmine pilt</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Hiireratas üles</para
+></listitem>
+<listitem
+><para
+>Nool üles/vasakule</para
+></listitem>
+<listitem
+><para
+>Klahv P</para
+></listitem>
+<listitem
+><para
+>PageUp</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+>Välju</term>
+<listitem>
+<para>
+<itemizedlist>
+<listitem
+><para
+>Esc</para
+></listitem>
+</itemizedlist>
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+<variablelist>
+	<title
+>Kuvamine</title>
+	<varlistentry>
+		<term
+>Täisekraani/normaalse vaate lülitamine</term>
+		<listitem>
+			<para
+>Käivitamisel kuvatakse pilti vaikimisi täisekraanirežiimis. Selle võib muuta aknavaateks </para>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>Klahv F</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term
+>Hiireratta toimingu lülitamine</term>
+		<listitem>
+			<para
+>Võimaldab hiirerattaga kas liikuda järgmisele pildile või pilti suurendada </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Klahv C</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Pööramine</term>
+		<listitem>
+			<para
+>Pööramine on ajutine, seda ei salvestata faili </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Klahv R</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+	
+	
+	<varlistentry>
+		<term
+>Vaate lähtestamine</term>
+		<listitem>
+			<para>
+				<itemizedlist>
+					<listitem>
+						<para
+>topeltklõps</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry>
+	
+
+	<varlistentry>
+		<term
+>Originaalsuurus</term>
+		<listitem>
+			<para
+>Iga pildi piksel vastab ekraani pikslile </para>
+			<para>
+			<itemizedlist>
+				<listitem>
+					<para
+>Klahv O</para>
+				</listitem>
+			</itemizedlist>
+			</para>
+		</listitem>
+	</varlistentry
+>	
+</variablelist>
+
+<variablelist>
+	<title
+>Suurendamine</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>hiire liigutamine üles/alla hiire paremat nuppu all hoides</para>
+				</listitem>
+				<listitem>
+					<para
+>hiireratas (kui hiireratta toiming on vastavalt lülitatud)</para>
+				</listitem>
+				<listitem>
+					<para
+>pluss/miinus</para>
+				</listitem>
+				<listitem>
+					<para
+>Ctrl + hiireratas</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+
+<variablelist>
+	<title
+>Liigutamine</title>
+	<varlistentry>
+		<term
+></term>
+		<listitem>
+			<itemizedlist>
+				<listitem>
+					<para
+>hiire liigutamine hiire vasakut nuppu all hoides</para>
+				</listitem>
+			</itemizedlist>
+		</listitem
+>	
+	</varlistentry>
+</variablelist
+>	
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

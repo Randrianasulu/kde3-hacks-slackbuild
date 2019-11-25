@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>kioslave OBEX: Navegar per les carpetes amb Bluetooth</title>
+
+  <sect2>
+    <title
+>General</title>
+    <para
+>El protocol OBEX està dissenyat per a ser usat amb dispositius mòbils. Si ja heu &quot;emès&quot; una vcard des d'un dispositiu mòbil a un altra dispositiu mòbil, haureu usat OBEX. Però també hi ha altres aplicacions per al protocol OBEX. El més notable és el protocol de navegació del sistema de fitxers. Si el dispositiu mòbil entén aquest protocol, podreu navegar, pujar i descarregar fitxers en el sistema de fitxers de desat del vostre mòbil usant les implementacions d'aquest client. Els protocols de sincronització com IrMCSync o SyncML també estan relacionats amb OBEX i s'hi pot accedir usant aquest client, fins i tot si no s'usa per a la sincronització en konqueror.</para>
+    <para
+>Els protocols OBEX poden usar diferents mitjans de transport. El transport original fou IrDA, però també hi ha mitjans de transport relacionats amb Bluetooth, línies sèrie i connexions tcp/ip.</para>
+    <para
+>OBEX suporta 2 modes d'autenticació. El primera, i més conegut, és l'autenticació del client per part del servidor. D'aquesta manera la implementació del servidor pot verificar la identitat dels clients, i també el client pot verificar la identitat dels servidors. Per a l'autenticació s'usa la suma de comprovació MD5. Aquesta assegura que no s'envien mai les contrasenyes en text pla al mitjà de transporte.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>Format URL</title>
+    <para
+>Els recursos OBEX són accessibles usant les URL. La part del protocol òbviament és obex: El component de la ruta manté la ruta en el servidor. La part del servidor és una mica més complexa.</para>
+    <para
+>Per als servidors es sol usar l'accés sobre tcp/ip. Podeu usar el nom de servidor o adreces ip del servidor per a contactar. També si el servidor s'executa sobre un port no estàndard (el port estàndard és el 650) podreu afegir aquest número de port de la manera habitual. Exemple: <userinput
+>OBEX://nom_servidor:port/ruta</userinput
+>.</para>
+    <para
+>Per al transport IrDA o Bluetooth podeu usar l'adreça del maquinari usant la notació estàndard amb octets separats per dos punts. Tot i que l'adreça de maquinari del vostre dispositiu Bluetooth és una mica més difícil de recordar. Exemple: <userinput
+>obex://[ef:01:23:45]/ruta</userinput
+> o <userinput
+>obex://[12:34:ef:01:23:45]/ruta</userinput
+>.</para>
+    <para
+>De tota manera, és possible definir àlies de servidor per a usar-los amb el protocol OBEX. Aquests àlies s'estableixen en el mòdul OBEX de KControl. Podeu establir un nom llegible per a una persona, trobar dispositius i finalment assignar una adreça de maquinari a aquest nom. També es pot accedir als dispositius de transport sèrie mitjançant aquests àlies. Per a IrDA i Bluetooth hi ha àlies pràctics predefinits anomenats irda o bluetooth. Ambdós descobriran el dispositiu i intentaran connectar-hi la primera vegada el trobin.</para>
+    <para
+>Bona sort navegant en el mòbil del vostre veí :))</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Consells i trucs</title>
+    <para
+>Com qualsevol altra kioslave, podeu obrir i desar fitxers directament als dispositius Bluetooth amb kio_obex. De manera que si escriviu, per exemple, la llista de la compra la podeu escriure amb kedit i desar-la al vostre telèfon mòbil. </para>
+    <para
+>Podeu fer aquest procediment molt més ràpid afegint un punt a la llista de punts del diàleg de desat de fitxers. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Limitacions</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX i KDE</title>
+      <para
+>Com un client kio no pot controlar el nombre d'esclaus que accedeixen al mateix destí és freqüent que s'estiguin executant múltiples esclaus. Però els transports OBEX, excepte el transport tcp/ip, tan sols suporten una connexió de transport cap al dispositiu. Això farà que falli la connexió als kioslaves amb la indicació de "Dispositiu o recurs ocupat". OBEX te una solució parcial per a aquest problema. Si el servidor el suporta, és possible transmetre paquets per a múltiples connexions en una connexió de transport. Però, no he vist cap dispositiu anunciant aquesta característica. I això pot requerir un dimoni de transport a part per a cada destinació. De manera que, si veig dispositius que proveeixen aquesta característica, començaré a implementar aquest dimoni.</para>
+      <para
+>No hi ha un mètode especial per a renomenar o moure un fitxer en el dispositiu. Això es realitza copiant les dades d'un dispositiu a l'altra. És lent i necessita iniciar dos kioslaves que poden sofrir el problema descrit anteriorment.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Compatibilitat entre dispositius</title>
+      <para
+>Com aquest client implementa un estàndard obert hi ha una esperança real de que molts dispositius funcionin perfectament. No obstant, hi ha algunes excepcions.</para>
+      <para
+>El client és desenvolupat amb un SIEMENS S45i usant IrDA o el protocol BFB específic de SIEMENS sobre la línia sèrie. Com podeu imaginar, funciona.</para>
+      <para
+>El mòbil NOKIA 3650 te un error de firmware en algunes versions. Els mòbils amb aquest error retornen fitxers XML no vàlids per a llistar carpetes. El resultat seran directoris buits. S'ha informat que aquest error continuava existint almenys fins la versió 2.50 del firmware. La versió 3.16 corregeix aquesta error. Gràcies a Fred Schaettgen &lt;Sch@ttgen.net&gt; per la comprovació.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

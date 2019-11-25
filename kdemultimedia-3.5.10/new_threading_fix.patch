@@ -1,0 +1,74 @@
+--- kdemultimedia-3.5.10/xine_artsplugin/xinePlayObject_impl.cpp.orig	2017-12-05 11:44:47.783662069 +0300
++++ kdemultimedia-3.5.10/xine_artsplugin/xinePlayObject_impl.cpp	2017-12-05 11:53:47.191668666 +0300
+@@ -683,9 +683,15 @@
+     XFlush( display );
+ }
+ 
++// FIXME
++// Due to somewhat recent changes in XLib threading this had to be changed to a polling routine
++// Specifically XNextEvent acquires a global XLib lock, preventing any other XLib methods (including those used in the Xine library) from executing
++// Seems this is a known problem in other projects as well, with the only real option being a rewrite to use xcb natively (not sure if that is even possible here):
++// http://mail-archives.apache.org/mod_mbox/harmony-dev/200905.mbox/%3C200905181317.n4IDHtGQ002008@d06av03.portsmouth.uk.ibm.com%3E
++
+ void xinePlayObject_impl::eventLoop()
+ {
+-    XEvent event;
++/*    XEvent event;
+ 
+     do
+     {
+@@ -720,10 +726,50 @@
+ 	    }
+ 	    pthread_mutex_unlock( &mutex );
+ 	}
+-    }
+-    while (event.type != ClientMessage ||
+-	   event.xclient.message_type != xcomAtomQuit ||
+-	   event.xclient.window != xcomWindow);
++    } */
++    
++	XEvent event;
++	bool eventReceived = false;
++	
++	do {
++		if (XPending( display )) {
++			XNextEvent( display, &event );
++			eventReceived = true;
++
++			if (event.type == Expose && event.xexpose.count == 0 && event.xexpose.window == visual.d) {
++				pthread_mutex_lock( &mutex );
++			
++				if (stream != 0) {
++					xine_port_send_gui_data( vo_port,
++							XINE_GUI_SEND_EXPOSE_EVENT,
++							&event );
++				}
++				else {
++					clearWindow();
++				}
++				pthread_mutex_unlock( &mutex );
++			}
++			else if (event.type == shmCompletionType) {
++				pthread_mutex_lock( &mutex );
++			
++				if (stream != 0) {
++					xine_port_send_gui_data( vo_port,
++							XINE_GUI_SEND_COMPLETION_EVENT,
++							&event );
++				}
++				pthread_mutex_unlock( &mutex );
++			}
++		}
++		else {
++			usleep(50000);
++			eventReceived = false;
++		}
++	}
++	while (!eventReceived ||
++		event.type != ClientMessage ||
++		event.xclient.message_type != xcomAtomQuit ||
++		event.xclient.window != xcomWindow);
++
+ }
+ 
+ void xineVideoPlayObject_impl::x11WindowId( long window )

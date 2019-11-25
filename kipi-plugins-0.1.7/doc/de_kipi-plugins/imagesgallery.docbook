@@ -1,0 +1,185 @@
+<chapter id="imagesgallery">
+<chapterinfo>
+
+<title
+>Bildergalerie</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul "Bildergalerie" ist ein Werkzeug, um einen Satz von Alben als HTML Seiten zu exportieren. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Dieses Modul kann Ihre Alben in eine Bildergalerie aus HTML Seiten konform zur Version 4.01 exportieren. Sie können die Alben die als HTML Seiten exportiert werden sollen auswählen und die Parameter für die HTML Seiten angeben. Der Zeichensatz wird UTF-8 kodiert, um eine bestmögliche Internationalisierung zu ermöglichen. </para>
+
+<para
+>Sie können einige Beispiel für dieses Modul <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/index.htm"
+> <citetitle
+>hier</citetitle
+> </ulink
+> betrachten. </para>
+
+<sect1 id="using-plugin-imagesgallerycollectionselection">
+<title
+>Dialog "Albenauswahl"</title>
+
+<para
+>Das Modul hat vier Reiter in denen die Einstellungen angepasst werden können. Der Reiter <guilabel
+>Auswahl</guilabel
+> erlaubt es alle Alben auszuwählen die nach HTML exportiert werden sollen. Sie brauchen diese Alben nur anwählen. Die Alben werden nicht hierarchisch angezeigt. Mit den drei Knöpfen auf der rechten Seite können Sie schnell eine große Anzahl von Alben auswählen. Im Bereich darunter wird die Albenvorschau und der Text der im Kopf der HTML Seite erscheinen wird angezeigt. </para>
+
+<figure>
+    <title
+>Der Dialog "Albenauswahl"</title>
+    <graphic srccredit="The Collections Selection Dialog" fileref="imagegallery_collectionselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerylooksettings">
+<title
+>Dialog "Erscheinungsbild"</title>
+
+<para
+>Der Reiter <guilabel
+>Erscheinungsbild</guilabel
+> definiert das allgemeine Aussehen und Layout für jede Seite. Dieser Reiter ist weitgehend selbst erklärend. Die Option <guilabel
+>Für jedes Bild eine Seite erstellen</guilabel
+> erstellt eine Galerie in der jedes Bild auch eine eigene Seite bekommt. Wenn Sie dann auf ein Bild klicken wird eine neue Seite geöffnet in der das Bild angezeigt wird. Andernfalls wird das Bild direkt mit Ihrem Standardbildbetrachter, z:B. Kuickshow, angezeigt </para>
+
+<figure>
+    <title
+>Der Dialog "Erscheinungsbild"</title>
+    <graphic srccredit="The Look Settings Dialog" fileref="imagegallery_looksettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryalbumsettings">
+<title
+>Dialog "Album"</title>
+
+<para
+>Der Reiter <guilabel
+>Album</guilabel
+>  definiert die Einstellungen wo und wie die Galerie mit all Ihren zugehörigen Bildern gespeichert werden soll. Wählen Sie hierfür einen Ordner aus auf dem Sie Schreibberechtigung haben. Ein Unterordner mit dem Namen KIPIHTMLExport, der alles enthält, wird dort erstellt werden. </para>
+
+<para
+>Wenn Sie <guilabel
+>Bildgröße der Zielbilder anpassen</guilabel
+> auswählen können Sie die maximale Größe in Pixel der Bilder mit dem Schieber darunter einstellen. Größere Bilder werden dann entsprechend verkleinert, kleiner Bilder werden nicht verändert. Die nächsten beiden Einstellungen erlauben es Ihnen die Kompression der Bilder vorzugeben. Falls Sie Probleme mit dem Plattenplatz haben sollten Sie die Kommpression einschalten und den Wert verringern. Darüber hinaus können Sie auch zwischen den beiden Dateiformaten JPEG und PNG auswählen. Hierbei erzeugt JPEG die kleinsten Dateien, aber verlustbehaftet und PNG größere Dateien in einem verlustfreien Format. </para>
+
+<note
+><para
+>Falls Sie das JPEG Dateiformat ausgewählt haben werden die EXIF Informationen Ihrer Originalbilder auch in den neuen Bildern gespeichert werden. </para
+></note>
+
+<para
+>Mit <guilabel
+>Andere Farbtiefe setzen</guilabel
+> können Sie die Standardfarbtiefe ändern. Die beeinflusst natürlich auch die Dateigröße. Alle weiteren Einstellungen sind selbst erklärend. </para>
+
+<figure>
+    <title
+>Der Dialog "Album"</title>
+    <graphic srccredit="The Album Settings Dialog" fileref="imagegallery_albumsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerythumbsettings">
+<title
+>Dialog "Vorschaubilder"</title>
+
+<para
+>Der Reiter <guilabel
+>Vorschaubilder</guilabel
+> erlaubt es Ihnen einige der Einstellungen aus dem <guilabel
+>Album</guilabel
+> Reiter für die Vorschaubilder, das sind kleine Bilder die in der Galerie angezeigt werden, anzupassen. </para>
+
+<figure>
+    <title
+>Der Dialog "Vorschaubilder"</title>
+    <graphic srccredit="The Thumbnails Settings Dialog" fileref="imagegallery_thumbsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryinaction">
+<title
+>Bildergalerie in Aktion</title>
+
+<para
+>Ein Fortschrittsfenster zeigt dem Benutzer an wie weit die Aktion ist. Drücken Sie <guilabel
+>Abbrechen</guilabel
+> um den Prozess abzubrechen. </para>
+
+<figure>
+    <title
+>Das Bildergaleriemodul in Aktion</title>
+    <graphic srccredit="The Images Gallery Plugin in Action" fileref="imagegallery_progress.png"/>
+</figure>
+
+<para
+>Wenn das Modul die Seiten erzeugt hat wird das Fenster nicht automatisch geschlossen. Sie können daher die Programmmeldungen lesen, um festzustellen, ob Fehler während der Erzeugung aufgetreten sind. Der Webbrowser wird automatisch am Ende gestartet, um die Vorschau der Galerie anzuzeigen. Drücken Sie <guilabel
+>Schliessen</guilabel
+> um das Modul zu schliessen. </para>
+
+<figure>
+    <title
+>Die Bildergalerievorschau im Konqueror</title>
+    <graphic srccredit="The Images Gallery Preview in Konqueror" fileref="imagegallery_preview.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

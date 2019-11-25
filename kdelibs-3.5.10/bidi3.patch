@@ -1,0 +1,16 @@
+--- branches/KDE/4.0/kdelibs/khtml/rendering/bidi.cpp	2008/04/22 14:13:26	799843
++++ branches/KDE/4.0/kdelibs/khtml/rendering/bidi.cpp	2008/04/22 14:14:07	799844
+@@ -1847,11 +1847,11 @@
+       bool nssx, nssy;
+       bool isInlineType = o->style()->isOriginalDisplayInlineType();
+       nssx = o->hasStaticX();
+-      if (nssx && !isInlineType && o->isBox()) {
++      if (nssx && o->isBox()) {
+           static_cast<RenderBox*>(o)->setStaticX(o->parent()->style()->direction() == LTR ?
+                                   p->borderLeft()+p->paddingLeft() :
+                                   p->borderRight()+p->paddingRight());
+-          nssx = false;
++          nssx = isInlineType;
+       }
+ 
+       // If our original display was an INLINE type, then we can

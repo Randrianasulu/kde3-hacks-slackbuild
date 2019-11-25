@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+include /usr/share/cdbs/1/class/kde.mk
+
+DEB_BUILD_OPTIONS += nostrip
+
+install/kdebluetooth::
+	dh_installdirs usr/share/autostart usr/bin
+	install -m755 debian/kblueplugd debian/kdebluetooth/usr/bin/
+	install -m644 debian/kblueplugd.desktop debian/kdebluetooth/usr/share/autostart/

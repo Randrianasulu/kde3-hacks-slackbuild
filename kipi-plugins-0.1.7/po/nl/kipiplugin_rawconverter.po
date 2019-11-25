@@ -1,0 +1,267 @@
+# translation of kipiplugin_rawconverter.po to Dutch
+# translation of kipiplugin_rawconverter.po to
+# vertaling van digikamplugin_rawconverter.po naar Nederlands
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Jasper van der Marel <jasper.van.der.marel@wanadoo.nl>, 2004.
+# Sander Devrieze <s.devrieze@pandora.be>, 2004.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2004.
+# Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2006, 2007, 2008.
+# Rinse de Vries <RinseDeVries@home.nl>, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-03-02 23:20+0100\n"
+"Last-Translator: Rinse de Vries <rinsedevries@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Jasper van der Marel,Sander Devrieze,Wilbert Berendsen,Rinse de Vries"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ",s.devrieze@pandora.be,wbsoft@xs4all.nl,rinsedevries@kde.nl"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Type RAW-formaat is niet herkend"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Fabrikant: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Model: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Aangemaakt: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Diafragma:  f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Brandpuntsafstand: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Sluitertijd: 1/%1 s\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Lichtgevoeligheid: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "KIPI-plugin voor het converteren van raw-afbeeldingen"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Con&verteren"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Afbreken"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Miniatuur"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Raw-bestand"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Doelbestand"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Camera"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+msgid "Save settings"
+msgstr "Instellingen opslaan"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "Raw-afbeelding-conversie"
+
+#: batchdialog.cpp:139
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Een Kipi-plugin voor het converteren van RAW-afbeeldingen"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Oorspronkelijke auteur"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Onderhouder"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr "Plugin-handboek"
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr ""
+"<p>Conversie van de raw-afbeeldingen met de huidige instellingen starten"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Breek de huidige handeling af"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Raw-conversie afsluiten"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Er is geen raw-bestand om te verwerken in de lijst aanwezig."
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Geconverteerde raw-afbeelding van '%1' opslaan als"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "De afbeelding %1 kon niet worden opgeslagen"
+
+#: plugin_rawconverter.cpp:84
+msgid "Raw Image Converter..."
+msgstr "Raw-afbeeldingen converteren..."
+
+#: plugin_rawconverter.cpp:92
+msgid "Batch Raw Converter..."
+msgstr "Serie raw-afbeeldingen converteren..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" is geen raw-bestand."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "De afbeelding kon na de conversie niet worden geladen"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Formaat van uitvoerbestand:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Stel hier het te gebruiken uitvoerformaat in: "
+"<p><b>JPEG</b>: Dit formaat geeft kleinere bestanden. Er zal tijdens de "
+"RAW-conversie gebruik worden gemaakt van een minimale JPEG-compressie. "
+"<p><b>Waarschuwing! JPEG is een verliesgevend kwaliteitsformaat. Tijdens de "
+"compressie zal er enige kwaliteit verloren gaan.</b> "
+"<p><b>TIFF</b>: Dit formaat geeft grote bestanden, zonder kwaliteitverlies. Er "
+"zal tijdens de conversie gebruik worden gemaakt van Adobe Deflate-compressie. "
+"<p><b>PPM</b>: Dit genereert de grootste bestanden in PPM-formaat. Hierbij gaat "
+"geen kwaliteit verloren. "
+"<p><b>PNG</b>: Dit genereert grote bestanden zonder kwaliteitsverlies. Tijdens "
+"de conversie zal de maximale PNG-compressie worden gebruikt."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Als doelbestand al bestaat:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Automatisch overschrijven"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Dialoog voor bestandshernoeming openen"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Raw-afbeelding-conversie"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Voorbeeld"
+
+#: singledialog.cpp:119
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Een Kipi-plugin voor het converteren van een RAW-afbeelding"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Genereert een voorbeeld aan de hand van de huidige instellingen. Maakt "
+"gebruik van een eenvoudige bilineaire interpolatie voor snelle resultaten."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>De raw-afbeelding converteren aan de hand van de huidige instellingen. "
+"Hiervoor wordt een adaptief algoritme van hoge kwaliteit gebruikt."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Conversie van RAW-bestanden afbreken"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Het voorbeeld kon niet worden aangemaakt"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "De raw-afbeelding kon niet worden geconverteerd"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Voorbeeld wordt aangemaakt..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Raw-afbeelding wordt geconverteerd..."

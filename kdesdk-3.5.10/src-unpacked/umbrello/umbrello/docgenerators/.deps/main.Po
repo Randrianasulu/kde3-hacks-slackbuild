@@ -1,0 +1,445 @@
+main.o: main.cpp /usr/include/stdc-predef.h /usr/include/unistd.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/libxml2/libxml/xmlmemory.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/byteswap-16.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /usr/include/libxml2/libxml/debugXML.h \
+ /usr/include/libxml2/libxml/xpath.h \
+ /usr/include/libxml2/libxml/HTMLtree.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/DOCBparser.h \
+ /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/chvalid.h \
+ /usr/include/libxml2/libxml/xinclude.h \
+ /usr/include/libxml2/libxml/catalog.h /usr/include/libxslt/xslt.h \
+ /usr/include/libxslt/xsltexports.h /usr/include/libxslt/xsltInternals.h \
+ /usr/include/libxslt/xsltlocale.h \
+ /usr/include/libxslt/numbersInternals.h /usr/include/libxslt/transform.h \
+ /usr/include/libxslt/xsltutils.h /usr/include/libxslt/xsltconfig.h \
+ /usr/include/libxslt/xsltInternals.h /usr/include/kaboutdata.h \
+ /usr/lib/qt3/include/qvaluelist.h /usr/lib/qt3/include/qtl.h \
+ /usr/lib/qt3/include/qglobal.h /usr/lib/qt3/include/qconfig.h \
+ /usr/lib/qt3/include/qmodules.h /usr/lib/qt3/include/qfeatures.h \
+ /usr/lib/qt3/include/qtextstream.h /usr/lib/qt3/include/qiodevice.h \
+ /usr/lib/qt3/include/qcstring.h /usr/lib/qt3/include/qmemarray.h \
+ /usr/lib/qt3/include/qgarray.h /usr/lib/qt3/include/qshared.h \
+ /usr/lib/qt3/include/qwinexport.h /usr/include/string.h \
+ /usr/lib/qt3/include/qstring.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/lib/qt3/include/qdatastream.h /usr/lib/qt3/include/qstring.h \
+ /usr/lib/qt3/include/qimage.h /usr/lib/qt3/include/qpixmap.h \
+ /usr/lib/qt3/include/qpaintdevice.h /usr/lib/qt3/include/qwindowdefs.h \
+ /usr/lib/qt3/include/qobjectdefs.h /usr/lib/qt3/include/qnamespace.h \
+ /usr/lib/qt3/include/qrect.h /usr/lib/qt3/include/qsize.h \
+ /usr/lib/qt3/include/qpoint.h /usr/lib/qt3/include/qcolor.h \
+ /usr/lib/qt3/include/qstringlist.h /usr/lib/qt3/include/qvaluelist.h \
+ /usr/lib/qt3/include/qstrlist.h /usr/lib/qt3/include/qptrlist.h \
+ /usr/lib/qt3/include/qglist.h /usr/lib/qt3/include/qptrcollection.h \
+ /usr/include/klocale.h /usr/include/kdelibs_export.h \
+ /usr/include/kdemacros.h /usr/lib/qt3/include/qglobal.h \
+ /usr/include/kapplication.h /usr/include/kdeversion.h \
+ /usr/include/kdelibs_export.h /usr/lib/qt3/include/qapplication.h \
+ /usr/lib/qt3/include/qdesktopwidget.h /usr/lib/qt3/include/qwidget.h \
+ /usr/lib/qt3/include/qobject.h /usr/lib/qt3/include/qevent.h \
+ /usr/lib/qt3/include/qregion.h /usr/lib/qt3/include/qmime.h \
+ /usr/lib/qt3/include/qmap.h /usr/lib/qt3/include/qpair.h \
+ /usr/lib/qt3/include/qpalette.h /usr/lib/qt3/include/qbrush.h \
+ /usr/lib/qt3/include/qfont.h /usr/lib/qt3/include/qfontmetrics.h \
+ /usr/lib/qt3/include/qfontinfo.h /usr/lib/qt3/include/qsizepolicy.h \
+ /usr/lib/qt3/include/qasciidict.h /usr/lib/qt3/include/qgdict.h \
+ /usr/lib/qt3/include/qtranslator.h /usr/lib/qt3/include/qpixmap.h \
+ /usr/include/kinstance.h /usr/include/kcmdlineargs.h /usr/include/kurl.h \
+ /usr/lib/qt3/include/qptrlist.h /usr/include/kconfig.h \
+ /usr/include/kconfigbase.h /usr/lib/qt3/include/qobject.h \
+ /usr/lib/qt3/include/qcolor.h /usr/lib/qt3/include/qfont.h \
+ /usr/lib/qt3/include/qdatetime.h /usr/lib/qt3/include/qstrlist.h \
+ /usr/lib/qt3/include/qstringlist.h /usr/lib/qt3/include/qvariant.h \
+ /usr/lib/qt3/include/qmap.h /usr/include/kconfigdata.h \
+ /usr/include/klockfile.h /usr/include/ksharedptr.h /usr/include/ktip.h \
+ /usr/include/kdialog.h /usr/lib/qt3/include/qdialog.h \
+ /usr/include/kdebug.h /usr/include/kwin.h \
+ /usr/lib/qt3/include/qwindowdefs.h /usr/include/netwm_def.h version.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/unistd.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+/usr/include/libxml2/libxml/debugXML.h:
+
+/usr/include/libxml2/libxml/xpath.h:
+
+/usr/include/libxml2/libxml/HTMLtree.h:
+
+/usr/include/libxml2/libxml/HTMLparser.h:
+
+/usr/include/libxml2/libxml/DOCBparser.h:
+
+/usr/include/libxml2/libxml/parserInternals.h:
+
+/usr/include/libxml2/libxml/chvalid.h:
+
+/usr/include/libxml2/libxml/xinclude.h:
+
+/usr/include/libxml2/libxml/catalog.h:
+
+/usr/include/libxslt/xslt.h:
+
+/usr/include/libxslt/xsltexports.h:
+
+/usr/include/libxslt/xsltInternals.h:
+
+/usr/include/libxslt/xsltlocale.h:
+
+/usr/include/libxslt/numbersInternals.h:
+
+/usr/include/libxslt/transform.h:
+
+/usr/include/libxslt/xsltutils.h:
+
+/usr/include/libxslt/xsltconfig.h:
+
+/usr/include/libxslt/xsltInternals.h:
+
+/usr/include/kaboutdata.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qtl.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qconfig.h:
+
+/usr/lib/qt3/include/qmodules.h:
+
+/usr/lib/qt3/include/qfeatures.h:
+
+/usr/lib/qt3/include/qtextstream.h:
+
+/usr/lib/qt3/include/qiodevice.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qmemarray.h:
+
+/usr/lib/qt3/include/qgarray.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+/usr/lib/qt3/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/qt3/include/qdatastream.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qimage.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/lib/qt3/include/qpaintdevice.h:
+
+/usr/lib/qt3/include/qwindowdefs.h:
+
+/usr/lib/qt3/include/qobjectdefs.h:
+
+/usr/lib/qt3/include/qnamespace.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/lib/qt3/include/qglist.h:
+
+/usr/lib/qt3/include/qptrcollection.h:
+
+/usr/include/klocale.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/kdemacros.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/include/kapplication.h:
+
+/usr/include/kdeversion.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/lib/qt3/include/qapplication.h:
+
+/usr/lib/qt3/include/qdesktopwidget.h:
+
+/usr/lib/qt3/include/qwidget.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qevent.h:
+
+/usr/lib/qt3/include/qregion.h:
+
+/usr/lib/qt3/include/qmime.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qpair.h:
+
+/usr/lib/qt3/include/qpalette.h:
+
+/usr/lib/qt3/include/qbrush.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+/usr/lib/qt3/include/qfontmetrics.h:
+
+/usr/lib/qt3/include/qfontinfo.h:
+
+/usr/lib/qt3/include/qsizepolicy.h:
+
+/usr/lib/qt3/include/qasciidict.h:
+
+/usr/lib/qt3/include/qgdict.h:
+
+/usr/lib/qt3/include/qtranslator.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/include/kinstance.h:
+
+/usr/include/kcmdlineargs.h:
+
+/usr/include/kurl.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/include/kconfig.h:
+
+/usr/include/kconfigbase.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qvariant.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/include/kconfigdata.h:
+
+/usr/include/klockfile.h:
+
+/usr/include/ksharedptr.h:
+
+/usr/include/ktip.h:
+
+/usr/include/kdialog.h:
+
+/usr/lib/qt3/include/qdialog.h:
+
+/usr/include/kdebug.h:
+
+/usr/include/kwin.h:
+
+/usr/lib/qt3/include/qwindowdefs.h:
+
+/usr/include/netwm_def.h:
+
+version.h:

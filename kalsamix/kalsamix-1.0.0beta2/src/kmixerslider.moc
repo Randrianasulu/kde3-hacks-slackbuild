@@ -1,0 +1,198 @@
+/****************************************************************************
+** KMixerSlider meta object code from reading C++ file 'kmixerslider.h'
+**
+** Created: Wed Dec 20 17:19:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kmixerslider.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KMixerSlider::className() const
+{
+    return "KMixerSlider";
+}
+
+QMetaObject *KMixerSlider::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KMixerSlider( "KMixerSlider", &KMixerSlider::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KMixerSlider::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KMixerSlider", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KMixerSlider::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KMixerSlider", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KMixerSlider::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "sli", &static_QUType_ptr, "KSliderEx", QUParameter::In },
+	{ "val", &static_QUType_int, 0, QUParameter::In },
+	{ "shift", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"sliderChanged", 3, param_slot_0 };
+    static const QUMethod slot_1 = {"balanceChanged", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_ptr, "KMuteWidget", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"muteChanged", 1, param_slot_2 };
+    static const QUMethod slot_3 = {"muteChangedAll", 0, 0 };
+    static const QUMethod slot_4 = {"enumChanged", 0, 0 };
+    static const QUParameter param_slot_5[] = {
+	{ 0, &static_QUType_ptr, "KMixerItem", QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"itemChanged", 1, param_slot_5 };
+    static const QUMethod slot_6 = {"hideItem", 0, 0 };
+    static const QUMethod slot_7 = {"showMenu", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "sliderChanged(KSliderEx*,int,int)", &slot_0, QMetaData::Public },
+	{ "balanceChanged()", &slot_1, QMetaData::Public },
+	{ "muteChanged(KMuteWidget*)", &slot_2, QMetaData::Public },
+	{ "muteChangedAll()", &slot_3, QMetaData::Public },
+	{ "enumChanged()", &slot_4, QMetaData::Public },
+	{ "itemChanged(KMixerItem*)", &slot_5, QMetaData::Public },
+	{ "hideItem()", &slot_6, QMetaData::Public },
+	{ "showMenu()", &slot_7, QMetaData::Public }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "chan", &static_QUType_ptr, "unsigned int", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"muteClicked", 2, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_ptr, "KMixConst::Sense", QUParameter::In },
+	{ "val", &static_QUType_ptr, "long", QUParameter::In },
+	{ "chan", &static_QUType_ptr, "unsigned int", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"volumeChanged", 3, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"valueChanged", 1, param_signal_2 };
+    static const QMetaData signal_tbl[] = {
+	{ "muteClicked(KMixConst::Sense,unsigned int)", &signal_0, QMetaData::Protected },
+	{ "volumeChanged(KMixConst::Sense,long,unsigned int)", &signal_1, QMetaData::Protected },
+	{ "valueChanged(int)", &signal_2, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KMixerSlider", parentObject,
+	slot_tbl, 8,
+	signal_tbl, 3,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KMixerSlider.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KMixerSlider::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KMixerSlider" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL muteClicked
+void KMixerSlider::muteClicked( KMixConst::Sense t0, unsigned int t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_ptr.set(o+1,&t0);
+    static_QUType_ptr.set(o+2,&t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL volumeChanged
+void KMixerSlider::volumeChanged( KMixConst::Sense t0, long t1, unsigned int t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_ptr.set(o+1,&t0);
+    static_QUType_ptr.set(o+2,&t1);
+    static_QUType_ptr.set(o+3,&t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL valueChanged
+void KMixerSlider::valueChanged( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2, t0 );
+}
+
+bool KMixerSlider::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: sliderChanged((KSliderEx*)static_QUType_ptr.get(_o+1),(int)static_QUType_int.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
+    case 1: balanceChanged(); break;
+    case 2: muteChanged((KMuteWidget*)static_QUType_ptr.get(_o+1)); break;
+    case 3: muteChangedAll(); break;
+    case 4: enumChanged(); break;
+    case 5: itemChanged((KMixerItem*)static_QUType_ptr.get(_o+1)); break;
+    case 6: hideItem(); break;
+    case 7: showMenu(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KMixerSlider::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: muteClicked((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(unsigned int)(*((unsigned int*)static_QUType_ptr.get(_o+2)))); break;
+    case 1: volumeChanged((KMixConst::Sense)(*((KMixConst::Sense*)static_QUType_ptr.get(_o+1))),(long)(*((long*)static_QUType_ptr.get(_o+2))),(unsigned int)(*((unsigned int*)static_QUType_ptr.get(_o+3)))); break;
+    case 2: valueChanged((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KMixerSlider::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool KMixerSlider::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

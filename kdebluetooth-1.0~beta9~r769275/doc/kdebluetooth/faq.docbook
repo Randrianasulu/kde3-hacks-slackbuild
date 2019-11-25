@@ -1,0 +1,162 @@
+<chapter id="faq">
+<title>Questions and Answers</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para>My problem isn't listed in this FAQ. Where else can I get help?</para>
+</question>
+<answer>
+<para>We have a
+<ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth">mailinglist</ulink>
+where you can post your questions and comments.
+Please look in the archive first before posting, but don't hesitate to ask
+us if you didn't find anything helpful.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>Nothing works, even a command line tool like 
+<command>hcitool inq</command> isn't finding anything.</para>
+</question>
+<answer>
+<para>kdebluetooth depends on a working bluetooth setup.
+If this is your problem, you may ask for help on our mailinglist,
+but the correct and best place to ask questions about BlueZ are
+the <ulink url="http://www.bluez.org">BlueZ</ulink> mailinglists of course.
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>Is kdebluetooth dead? There are no changes to the Sourceforge CVS
+anymore.</para>
+</question>
+<answer>
+<para>kdebluetooth moved to <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/">KDE Extragear</ulink> (<ulink url="http://extragear.kde.org">extragear home</ulink>).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>My phones asks me for a PIN, but I don't know where to enter it in my computer.</para>
+</question>
+<answer>
+<para>BlueZ should pop up a PIN dialog automatically, when you use 
+<programlisting>security user;</programlisting> in
+the <filename>/etc/bluetooth/hcid.conf</filename>. Sometimes the standard 
+<command>bluepin</command> utility of BlueZ is not working; you may try to use
+our KDE-Style replacement <command>kbluepin</command> instead. Put something like
+<programlisting>pin_helper /usr/lib/kdebluetooth/kbluepin;</programlisting> in 
+<filename>hcid.conf</filename> and restart BlueZ's <command>hcid</command>.
+</para>
+<para>
+This is acutally a BlueZ issue and has nothing to do with the KDE Bluetooth
+Framework as long as you're not using kbluepin. I would like to put
+a link to the respective documentation of BlueZ for the pin handling stuff here, 
+but I can't find it anywhere at the moment. Hints are welcome :)
+</para>
+<para>
+When you are having constant trouble with kbluepin (or bluepin or any
+other pin helper), you should take a look into your logfiles (
+<filename>/var/log/syslog</filename> or similar).
+</para>
+<para>
+If you are new to bluetooth please read the <link linkend="concepts.pairing">basics about pairing</link>.
+</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para>
+When I try pair my computer with my phone, KBluetoothD says "Pairing not allowed".
+</para>
+</question>
+<answer>
+<para>
+If the pin helper for hcid is set up correctly, then a dialog box should pop up,
+asking you for the PIN code which you also entered in your phone. 
+If you click "Cancel" or if the pin helper program can't be found or started for
+some reason, kbluetoothd will pop up a warning. Check your system logs to see
+why hcid couldn't launch the pin helper program.
+</para></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para>I want to use a service offered by kdebluetooth, but my client device 
+wants to connect to different channel than the one that is
+used by kbluetoothd.
+</para>
+</question>
+<answer>
+<para>Normally bluetooth services shouldn't use fixed channel numbers, but
+use the SDP database to find the correct channel instead. 
+But if you really need to, you can copy the respective desktop file from 
+<filename>$PREFIX/share/services</filename>
+to <filename>$HOME/.kde/share/services</filename> and edit the channel number. This will
+override the global settings after a restart of KDE.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>
+I'm using several dongles on the same PC. How can I select which one to use?
+</para>
+</question>
+<answer>
+<para>
+Some of our applications have a command line option to change the default
+bluetooth device ('--hcidevice hci1' for instance). As an alternative 
+you can also use the environment variable HCI_DEVICE. The latter
+might even work for our tools that don't have a command line option.
+Note that kbluetoothd iself doesn't work very well with several adaptors
+at the moment. 
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>./configure can't find my kdelibs/qt/...</para>
+</question>
+<answer>
+<para>Make sure you have also installed the development-packages
+for the respective library.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>I'm getting error message like: "File generated with too recent version of Qt Designer (3.2 vs. 3.1.x)"</para>
+</question>
+<answer>
+<para>Qt Designer saves it's version number in the ui files whenever you
+touch one. This causes errors when you want to compile kdebluetooth
+with an older version of Qt. It seems to be safe to change the
+version from 3.2 to 3.1 though. You can do this very easyly by running
+the downgrade_ui script if we accidentally committed some changes without
+resetting the version numbers.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>I can start kbluetoothd, but the correct icon (K-Bluetooth-Logo) is missing
+and a generic document icon is shown instead</para>
+</question>
+<answer>
+<para>This usually means that you have installed kdebluetooth to a location 
+where KDE doesn't search for resources. It's not enough to have kbluetoothd in the
+$PATH. You must also make sure that you use a --prefix for configure which
+KDE knows about. You can get the configured KDE icon directories with the kde-config tool: kde-config --path icon. The prefixes used by KDE can be configure with the KDEDIRS environment variable.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>

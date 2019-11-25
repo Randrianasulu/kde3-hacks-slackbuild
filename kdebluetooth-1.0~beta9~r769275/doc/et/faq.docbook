@@ -1,0 +1,156 @@
+<chapter id="faq">
+<title
+>Küsimused ja vastused</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para
+>See KKK küll väga abiks ei ole. Kust siiski abi saada?</para>
+</question>
+<answer>
+<para
+>Meil on <ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth"
+>meililist</ulink
+>, kus saab esitada oma küsimusi ja kommentaare. Vaata siiski enne läbi listi arhiiv, aga kui seal midagi asjakohast ei paista, on küsimused igal juhul teretulnud.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Mitte miski ei tööta, isegi käsureavahendid, näiteks <command
+>hcitool inq</command
+> ei leia midagi.</para>
+</question>
+<answer>
+<para
+>Kdebluetooth sõltub toimivast Bluetoothi konfiguratsioonist. Kui asi on selles, võid otsida abi ka meie meililistis, aga õige ja parim koht BlueZi kohta küsimuste esitamiseks on mõistagi <ulink url="http://www.bluez.org"
+>BlueZi</ulink
+> meililist. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Kas kdebluetooth on välja surnud? Sourceforge'i CVS-is pole enam näha ühtki muutust.</para>
+</question>
+<answer>
+<para
+>Kdebluetooth on nüüd <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE Extrageari</ulink
+> osa (<ulink url="http://extragear.kde.org"
+>Extrageari kodulehekülg</ulink
+>).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Minu telefon küsib PIN-koodi, aga ma ei oska seda arvutis kuskil sisestada.</para>
+</question>
+<answer>
+<para
+>BlueZ peaks avama PIN-koodi sisestamise dialoogi automaatselt, kui failis <filename
+>/etc/bluetooth/hcid.conf</filename
+> on antud <programlisting
+>security user;</programlisting
+>. Vahel ei taha BlueZi standardne utiliit <command
+>bluepin</command
+> tööle hakata, sellisel juhul võiks proovida meie KDE stiilis asendajat <command
+>kbluepin</command
+>. Kirjuta faili <filename
+>hcid.conf</filename
+> midagi sellist, nagu <programlisting
+>pin_helper /usr/lib/kdebluetooth/kbluepin;</programlisting
+>, ning käivita uuesti BlueZi <command
+>hcid</command
+>. </para>
+<para
+>See on tegelikult BlueZi probleem, millel pole midagi pistmist KDE Bluetoothi raamistikuga vähemalt juhul, kui sa ei kasuta kbluepin-i. Ma tahaksin hea meelega panna siia viida BlueZi PIN-koodi käsitlemisest kõnelevale dokumentatsioonile, kuid ma pole suutnud seda leida. Kui sina tead seda, võiksid ka meile teada anda. </para>
+<para
+>Kui kbluepin (või bluepin või mõni muu PIN-utiliit) valmistab järjekindlalt peavalu, võiksid uurida oma logifaile (<filename
+>/var/log/syslog</filename
+> või midagi sellist). </para>
+<para
+>Kui sa Bluetoothist väga palju ei tea, loe palun <link linkend="concepts.pairing"
+>põhiinfot registreerimise kohta</link
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kui ma püüan arvutit ja telefoni suhtlema panna, teatab KBluetoothD, et "Registreerimine ei ole lubatud". </para>
+</question>
+<answer>
+<para
+>Kui hcid 'pin helper' on korrektselt seadistatud, peaks ilmuma hüpikdialoog, mis pärib sinu käest PIN-koodi. Kui klõpsad nupule "Loobu" või kui PIN-i abilist ei leita või ei suudeta mingil põhjusel käivitada, näitab kbluetoothd hoiatust. Et jõuda selgusele, miks hcid ei suutnud PIN-i abilist tööle panna, kontrolli süsteemi logi. </para
+></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Ma tahaksin kasutada kdebluetoothi pakutavat teenust, aga minu seade soovib ühenduda muu kanaliga kui see, mida kasutab kbluetoothd. </para>
+</question>
+<answer>
+<para
+>Tavaliselt ei peaks Bluetoothi teenused kasutama fikseeritud kanalinumbrit, vaid kasutama hoopis SDP andmebaasi korrektse kanali leidmiseks. Aga kui sul seda siiski vaja läheb, võid kopeerida vajaliku töölauafaili (<filename
+>$PREFIX/share/services</filename
+> -> <filename
+>$HOME/.kde/share/services</filename
+>) ning redigeerida kanalinumbrit. Kodukataloogis olevas failis olevatel seadistustel on kõrgem prioriteet ning need rakenduvad pärast KDE taaskäivitamist.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Ma kasutan mitut seadet ühel PC-l. Kuidas ma saan nende seast just ühe välja valida? </para>
+</question>
+<answer>
+<para
+>Mõnel meie rakendusel on käsureavõti, mis lubab muuta vaikimisi Bluetoothi seadet (näiteks '--hcidevice hci1'). Alternatiivina võib kasutada ka keskkonnamuutujat HCI_DEVICE. See võib toimida isegi selliste meie vahendite korral, millel nimetatud käsureavõtit kasutada ei saa. Kuid arvesta, et kbluetoothd ei tule veel väga hästi toime korraga mitme seadmega. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>./configure ei suuda leida minu kdelibs/qt/...</para>
+</question>
+<answer>
+<para
+>Kontrolli, et oleksid paigaldatud ka vastava teegi arenduspaketid (devel).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Ma saan selliseid veateateid: "File generated with too recent version of Qt Designer (3.2 vs. 3.1.x)"</para>
+</question>
+<answer>
+<para
+>Qt Disainer salvestab oma versiooninumbri ui-faili, kui sa neid peaksid puudutama. See põhjustab vigu, kui soovid kompileerida kdebluetoothi Qt vanema versiooniga. Siiski tundub versiooni muutmine 3.2->3.1 olevat ohutu. Seda saab hõlpsasti teha skriptiga downgrade_ui, kui me oleme kogemata tekitanud mingeid muutusi ilma versiooninumbreid muutmata.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Ma saan küll KBluetoothD tööle panna, aga õige ikoon (K-Bluetooth-Logo) on puudu ja selle asemel näidatakse üldist dokumendiikooni?</para>
+</question>
+<answer>
+<para
+>See tähendab enamasti, et Kdebluetooth on paigaldatud kuhugi, kust KDE ressursse ei otsi. Tegelikult ei piisa ainult sellest, et KBluetoothD asub otsinguteel ($PATH). See tuleks ka konfigureerida sellise prefiksiga (võti --prefix), mida KDE ka tunneb. KDE ikoonide kataloogid leiab utiliidiga kde-config: kde-config --path icon. KDE kasutatavaid prefikseid saab määrata keskkonnamuutujaga KDEDIRS.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>

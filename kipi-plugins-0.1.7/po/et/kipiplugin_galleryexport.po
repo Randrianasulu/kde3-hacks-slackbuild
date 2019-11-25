@@ -1,0 +1,246 @@
+# translation of kipiplugin_galleryexport.po to Estonian
+# Marek Laane <bald@starman.ee>, 2005-2006,2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-23 21:17+0200\n"
+"Last-Translator: Marek Laane <bald@starman.ee>\n"
+"Language-Team: Estonian <kde-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Marek Laane"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "bald@starman.ee"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Galerii nimi"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "URL"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Kasutaja"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Nimi:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Kasutajanimi:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Parool:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "&Galerii 2 kasutamine"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Võrgugaleriid"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Uus võrgugalerii"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Galeriid pole valitud!"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Võrgugalerii muutmine"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Kas tõesti see galerii eemaldada? Kõik sünkroniseerimisseadistused lähevad "
+"kaotsi. Seda toimingut ei saa tagasi võtta."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Võrgugalerii eemaldamine"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "Galerii URL ei ole ilmselt õige"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Anti vigane kasutajanimi või parool"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Võrgugaleriilt saadi vigane vastus"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Albumite nimekirja hankimine ebaõnnestus"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Fotode nimekirja hankimine ebaõnnestus"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Uue albumi loomine ebaõnnestus"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Foto üleslaadimine ebaõnnestus"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Albumid"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Vaikevalikute tühistamine"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "Kommentaar määrab pealkirja"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "Kommentaar määrab kirjelduse"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Fotode suuruse muutmine enne üleslaadimist"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Maksimummõõtmed:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Galerii eksport</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Uus album"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "Lis&a fotod"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Galerii eksport"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "Kipi plugin pildikogu eksportimiseks võrgugaleriiserverisse."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Autor"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Hooldaja"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Plugina käsiraamat"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Sisselogimine võrgugaleriisse ebaõnnestus. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Kas proovida uuesti?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Vabandust, sellised märgid ei ole albumi nimes lubatud: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Faili %1 üleslaadimine "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Foto üleslaadimine võrgugaleriisse ebaõnnestus. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Kas jätkata?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Võrgugalerii sünkroniseerimine..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Võrgugaleriid..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MinuDialoog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Uue albumi nimi:</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Pealkiri (pole kohustuslik):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Nimi (pole kohustuslik):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Allkiri (pole kohustuslik):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Uus galerii"

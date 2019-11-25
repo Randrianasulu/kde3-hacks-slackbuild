@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>OBEX-i KIO moodul: kataloogide lehitsemine Bluetoothiga</title>
+
+  <sect2>
+    <title
+>Üldist</title>
+    <para
+>Protokoll OBEX on töötatud välja spetsiaalselt mobiilsete seadmete tarbeks. Kui sa oled näiteks &quot;kiiranud&quot; VCardi ühelt mobiililt teisele, oled sa OBEX-it juba kasutanud. Kuid sellele protokollile on ka muid rakendusi. Kõige enam väärib vahest tähelepanu failisüsteemi lehitsemise protokoll. Kui mobiilne seade seda mõistab, võid antud kliendi teostust kasutades lehitseda oma mobiilse seadme faile ning neid alla või üles laadida. Ka sünkroniseerimisprotokollidel (näiteks IrMCSync või SyncML) on OBEX-i toetus ning neid saab kasutada antud kliendi vahendusel, kuigi näiteks Konqueroriga sünkroniseerimine ei ole võimalik.</para>
+    <para
+>OBEX-i protokollid kasutavad mitmeid transpordimeetodeid. Algselt oli selleks IrDA, kuid neid on ka teisi: Bluetoothi jaoks, jadaliinidele ning TCP/IP ühendustele.</para>
+    <para
+>OBEX toetab kaht autentimisviisi. Esimene ja tuntuim on kliendi autentimine serveril. Kuid ka klient võib serveri identiteeti kontrollida. Autentimiseks kasutatakse MD5 kontrollsummat. See tagab, et kunagi ei transporditaks klaartekstis paroole.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>URL vorming</title>
+    <para
+>OBEX-i ressursse saab kasutada URL-ide abil. Protokolli poolelt on tegemist puhta OBEX-iga: asukohakomponent sisaldab asukohta serveril. Masina poole pealt on asi veidi keerulisem.</para>
+    <para
+>Serverite korral, millele pääseb ligi TCP/IP kaudu, on masina komponent tavapärane. Kontakteerumiseks saab kasutada serveri masinanime või IP aadressi. Ka siis, kui server töötab mittestandardses pordis (standardne port on 650), võib pordinumbri tavapäraselt lisada. Näide: <userinput
+>OBEX://masinanimi:port/asukoht</userinput
+></para>
+    <para
+>IrDA või Bluetooth transpordimeetodi korral saab kasutada tarkvara-aadressi standardsel topeltkoolonitega eraldatud oktettide kujul. Ainus halb asi selle puhul on see, et Bluetoothi seadme tarkvara-aadressi ei ole enamasti eriti lihtne meelde jätta. Näide: <userinput
+>obex://[ef:01:23:45]/asukoht</userinput
+> või <userinput
+>obex://[12:34:ef:01:23:45]/asukoht</userinput
+></para>
+    <para
+>Seepärast pakume võimalust määrata masina aliased, mida protokolliga OBEX kasutada. Aliaseid saab määrata KDE juhtimiskeskuse OBEX-i moodulis. Seal võib anda mõne hõlpsasti meeldejääva nime, lasta seade tuvastada ja siis siduda tarkvara-aadress määratud nimega. Aliaste kaudu võib kasutada ka jadatransporti tarvitavaid seadmeid. IrDA ja Bluetoothi korral on olemas eelnevalt määratud aliased irda ja bluetooth. Mõlemad tuvastavad seadme ning püüavad saada ühendust esimese leitud seadmega.</para>
+    <para
+>Edukat kiikamist naabri mobiili :))</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Nipid ja trikid</title>
+    <para
+>Nagu iga KIO mooduli puhul, saab kio_obexi abil vahetult avada Bluetoothi seadmetel olevaid faile ja neid sinna salvestada. Kui soovid näiteks kirja panna ostunimekirja, võid selle valmis kirjutada KEditis ja salvestada otse telefonile. </para>
+    <para
+>Selle tegevuse saab muuta veelgi kiiremaks, kui lisada faili salvestamise dialoogis järjehoidjate ribale vastav järjehoidja. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Piirangud</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX ja KDE</title>
+      <para
+>KIO klient ei suuda kontrollida mooduli numbrit, mis mingi sihtkohaga püüab ühendust saada. Seepärast võib sageli juhtuda, et töötab mitu moodulit. OBEX-i transpordimeetodid (välja arvatud TCP/IP) toetavad aga ainult üht transpordiühendust seadmega. See võib tekitada mooduleid, mis ühendust ei saa ja teatavad, et "seade või ressurss on hõivatud". OBEX pakub sellele osalist lahendust: kui server seda toetab, saab mitmele ühendusele mõeldud paketid edastada ühe transpordiühenduse kaudu. Siiski ei ole ma näinud seadet, mis sellist võimalust toetaks. Pealegi nõuab see igale sihtmärgile eraldi transpordideemonit. Niisiis: kui sa kohtad sellist võimalust toetavaid seadmeid, anna sellest teada ja ma lisan sellise deemoni toetuse.</para>
+      <para
+>Mingit spetsiaalset meetodit failide ümbernimetamiseks või liigutamiseks seadmel ei ole vaja, seda tehakse lihtsalt andmeid seadmele või seadmelt kopeerides. See on küll aeglane ja käivitab kaks KIO moodulit, mis võib tuua kaasa äsjakirjeldatud probleemi.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Seadmete ühilduvus</title>
+      <para
+>Kuna käesolev klient kasutab avatud standardit, võib loota, et päris paljud seadmed töötavad sellega väga ja väga edukalt. Kuid muidugi võib esineda ka erandeid.</para>
+      <para
+>Klient töötati välja SIEMENS S45i peal, kasutades IrDA-t või SIEMENS-i spetsiifilist jadaühendusele mõeldud BFB protokolli. Loomulikult töötab klient siis ka antud telefoniga.</para>
+      <para
+>Mobiiltelefoni Nokia 3650 teatud versioonides esineb püsivaraviga, mille puhul tagastatakse kaustade hankimisel vigased XML-failid. Sellisel juhul näeb, nagu oleks kaustad tühjad. Viga esineb kindlasti püsivara versioonis 2.50. Versioonis 3.16 on viga ära parandatud. Testimise eest tuleb tänada Fred Schättgenit &lt;Sch@ttgen.net&gt;.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

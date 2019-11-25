@@ -1,0 +1,617 @@
+From 5ce28931440fdff9ca7b9d389c15dd3c595db8b9 Mon Sep 17 00:00:00 2001
+From: tpearson <tpearson@283d02a7-25f6-0310-bc7c-ecb5cbfe19da>
+Date: Sun, 12 Jun 2011 07:40:52 +0000
+Subject: Fix kdesdk Qt3 FTBFS
+
+git-svn-id: svn://anonsvn.kde.org/home/kde/branches/trinity/kdesdk@1236291 283d02a7-25f6-0310-bc7c-ecb5cbfe19da
+---
+diff --git a/kbabel/commonui/roughtransdlg.cpp b/kbabel/commonui/roughtransdlg.cpp
+index 5c8f76a..3928e42 100644
+--- a/kbabel/commonui/roughtransdlg.cpp
++++ b/kbabel/commonui/roughtransdlg.cpp
+@@ -77,7 +77,7 @@ RoughTransDlg::RoughTransDlg(KBabelDictBox *dict, Catalog *cat
+         ,partTransCounter(0)
+         ,totalTried(0)
+ {
+-    setButtonBoxQt::OrientationQt::Vertical);
++    setButtonBoxOrientation(Qt::Vertical);
+     setButtonText(User1,i18n("&Start"));
+     setButtonText(User2,i18n("S&top"));
+     setButtonText(User3,i18n("C&ancel"));
+diff --git a/kompare/komparepart/kompare_qsplitter.h b/kompare/komparepart/kompare_qsplitter.h
+index 3c9345c..5200924 100644
+--- a/kompare/komparepart/kompare_qsplitter.h
++++ b/kompare/komparepart/kompare_qsplitter.h
+@@ -1,7 +1,7 @@
+ /****************************************************************************
+ **
+ **
+-** Definition of QSplitter class
++** Definition of KQSplitter class
+ **
+ **  Created : 980105
+ **
+@@ -21,35 +21,33 @@
+ **
+ **********************************************************************/
+ 
+-#ifndef KOMPARE_TQSPLITTER_H
+-#define KOMPARE_TQSPLITTER_H
++#ifndef KQSPLITTER_H
++#define KQSPLITTER_H
+ 
+-#ifndef TQT_H
+ #include "tqframe.h"
+ #include "tqvaluelist.h"
+-#endif // TQT_H
+ 
+ #ifndef TQT_NO_SPLITTER
+ 
+-//class QSplitterHandle;
+-class QSplitterLayoutStruct;
++//class KQSplitterHandle;
++class KQSplitterLayoutStruct;
+ class TQTextStream;
+ 
+-class QSplitterPrivate
++class KQSplitterPrivate
+ {
+ public:
+-    QSplitterPrivate()
++    KQSplitterPrivate()
+ 	: opaque( FALSE ), firstShow( TRUE ), tqchildrenCollapsible( TRUE ),
+ 	  handleWidth( 0 ) { }
+ 
+-    TQPtrList<QSplitterLayoutStruct> list;
++    TQPtrList<KQSplitterLayoutStruct> list;
+     bool opaque : 8;
+     bool firstShow : 8;
+     bool tqchildrenCollapsible : 8;
+     int handleWidth;
+ };
+ 
+-class TQ_EXPORT QSplitter : public TQFrame
++class TQ_EXPORT KQSplitter : public TQFrame
+ {
+     Q_OBJECT
+   TQ_OBJECT
+@@ -62,9 +60,9 @@ public:
+     // ### TQt 4.0: remove Auto from public API
+     enum ResizeMode { Stretch, KeepSize, FollowSizeHint, Auto };
+ 
+-    QSplitter( TQWidget* tqparent = 0, const char* name = 0 );
+-    QSplitter( Qt::Orientation, TQWidget* tqparent = 0, const char* name = 0 );
+-    ~QSplitter();
++    KQSplitter( TQWidget* tqparent = 0, const char* name = 0 );
++    KQSplitter( Qt::Orientation, TQWidget* tqparent = 0, const char* name = 0 );
++    ~KQSplitter();
+ 
+     virtual void setOrientation( Qt::Orientation );
+     Qt::Orientation orientation() const { return orient; }
+@@ -118,10 +116,10 @@ public: // private (:
+     void getRange( int id, int *, int *, int *, int * );
+     void addContribution( int, int *, int *, bool );
+     int adjustPos( int, int, int *, int *, int *, int * );
+-    bool collapsible( QSplitterLayoutStruct * );
++    bool collapsible( KQSplitterLayoutStruct * );
+     void processChildEvents();
+-    QSplitterLayoutStruct *findWidget( TQWidget * );
+-    QSplitterLayoutStruct *addWidget( TQWidget *, bool prepend = FALSE );
++    KQSplitterLayoutStruct *findWidget( TQWidget * );
++    KQSplitterLayoutStruct *addWidget( TQWidget *, bool prepend = FALSE );
+     void recalcId();
+     void doMove( bool backwards, int pos, int id, int delta, bool upLeft,
+ 		 bool mayCollapse );
+@@ -139,36 +137,36 @@ public: // private (:
+     inline TQCOORD trans( const TQSize &s ) const
+     { return orient ==Qt::Vertical ? s.width() : s.height(); }
+ 
+-    QSplitterPrivate *d;
++    KQSplitterPrivate *d;
+ 
+     Qt::Orientation orient;
+-    friend class QSplitterHandle;
++    friend class KQSplitterHandle;
+ 
+ #ifndef TQT_NO_TEXTSTREAM
+ // tqmoc doesn't like these.
+-//    friend TQ_EXPORT TQTextStream& operator<<( TQTextStream&, const QSplitter& );
+-//    friend TQ_EXPORT TQTextStream& operator>>( TQTextStream&, QSplitter& );
++//    friend TQ_EXPORT TQTextStream& operator<<( TQTextStream&, const KQSplitter& );
++//    friend TQ_EXPORT TQTextStream& operator>>( TQTextStream&, KQSplitter& );
+ #endif
+ 
+ public:
+ #if defined(TQ_DISABLE_COPY)
+-    QSplitter( const QSplitter & );
+-    QSplitter& operator=( const QSplitter & );
++    KQSplitter( const KQSplitter & );
++    KQSplitter& operator=( const KQSplitter & );
+ #endif
+ };
+ 
+ #ifndef TQT_NO_TEXTSTREAM
+-TQ_EXPORT TQTextStream& operator<<( TQTextStream&, const QSplitter& );
+-TQ_EXPORT TQTextStream& operator>>( TQTextStream&, QSplitter& );
++TQ_EXPORT TQTextStream& operator<<( TQTextStream&, const KQSplitter& );
++TQ_EXPORT TQTextStream& operator>>( TQTextStream&, KQSplitter& );
+ #endif
+ 
+-class QSplitterHandle : public TQWidget
++class KQSplitterHandle : public TQWidget
+ {
+     Q_OBJECT
+   TQ_OBJECT
+ public:
+-    QSplitterHandle( Qt::Orientation o,
+-		     QSplitter *tqparent, const char* name=0 );
++    KQSplitterHandle( Qt::Orientation o,
++		     KQSplitter *tqparent, const char* name=0 );
+     void setOrientation( Qt::Orientation o );
+     Qt::Orientation orientation() const { return orient; }
+ 
+@@ -190,12 +188,12 @@ public: // private (:
+     bool opaq;
+     int myId;
+ 
+-    QSplitter *s;
++    KQSplitter *s;
+ };
+ 
+ const uint Default = 2;
+ 
+-class QSplitterLayoutStruct : public TQt
++class KQSplitterLayoutStruct : public TQt
+ {
+ public:
+     TQCOORD sizer;
+@@ -204,11 +202,11 @@ public:
+     uint resizeMode : 2;
+     TQWidget *wid;
+ 
+-    QSplitterLayoutStruct()
++    KQSplitterLayoutStruct()
+ 	: sizer( -1 ), collapsible( Default ) { }
+     TQCOORD getSizer( Qt::Orientation orient );
+ };
+ 
+ #endif // TQT_NO_SPLITTER
+ 
+-#endif // KOMPARE_TQSPLITTER_H
++#endif // KQSPLITTER_H
+diff --git a/kompare/komparepart/kompareconnectwidget.cpp b/kompare/komparepart/kompareconnectwidget.cpp
+index b0f4ab7..6b70ff4 100644
+--- a/kompare/komparepart/kompareconnectwidget.cpp
++++ b/kompare/komparepart/kompareconnectwidget.cpp
+@@ -41,7 +41,7 @@ KompareConnectWidgetFrame::KompareConnectWidgetFrame( KompareListView* left,
+                                                       ViewSettings* settings,
+                                                       KompareSplitter* tqparent,
+                                                       const char* name ) :
+-	QSplitterHandle(Qt::Horizontal, (QSplitter *)tqparent, name),
++	KQSplitterHandle(Qt::Horizontal, (KQSplitter *)tqparent, name),
+ 	m_wid ( left, right, settings, this, name ),
+ 	m_label ( "", this ),
+ 	m_layout ( this )
+@@ -88,7 +88,7 @@ void KompareConnectWidgetFrame::mousePressEvent( TQMouseEvent *e )
+ {
+ 	if ( e->button() == Qt::LeftButton )
+ 		kMouseOffset = s->pick( e->pos() );
+-	QSplitterHandle::mousePressEvent(e);
++	KQSplitterHandle::mousePressEvent(e);
+ }
+ 
+ void KompareConnectWidgetFrame::mouseReleaseEvent( TQMouseEvent *e )
+diff --git a/kompare/komparepart/kompareconnectwidget.h b/kompare/komparepart/kompareconnectwidget.h
+index 8282463..1c96d75 100644
+--- a/kompare/komparepart/kompareconnectwidget.h
++++ b/kompare/komparepart/kompareconnectwidget.h
+@@ -67,7 +67,7 @@ private:
+ 	const Diff2::Difference*  m_selectedDifference;
+ };
+ 
+-class KompareConnectWidgetFrame : public QSplitterHandle
++class KompareConnectWidgetFrame : public KQSplitterHandle
+ {
+ 	Q_OBJECT
+   TQ_OBJECT
+@@ -81,7 +81,7 @@ public:
+ 	KompareConnectWidget*     wid() { return &m_wid; }
+ 
+ protected:
+-	// stop the tqparent QSplitterHandle painting
++	// stop the tqparent KQSplitterHandle painting
+ 	void paintEvent( TQPaintEvent* /* e */ ) { }
+ 
+ 	void mouseMoveEvent( TQMouseEvent * );
+diff --git a/kompare/komparepart/komparesplitter.cpp b/kompare/komparepart/komparesplitter.cpp
+index e962730..99a96fc 100644
+--- a/kompare/komparepart/komparesplitter.cpp
++++ b/kompare/komparepart/komparesplitter.cpp
+@@ -36,7 +36,7 @@ using namespace Diff2;
+ 
+ KompareSplitter::KompareSplitter( ViewSettings *settings, TQWidget * tqparent,
+                                   const char *name) :
+-	QSplitter(Qt::Horizontal, tqparent, name ),
++	KQSplitter(Qt::Horizontal, tqparent, name ),
+ 	m_settings( settings )
+ {
+ 	TQFrame *scrollFrame = new TQFrame( tqparent, "scrollFrame" );
+@@ -99,17 +99,17 @@ KompareSplitter::~KompareSplitter(){}
+     \a prepend is TRUE, then recalcId() is very probably needed.)
+ */
+ 
+-QSplitterLayoutStruct *KompareSplitter::addWidget( KompareListViewFrame *w, bool prepend )
++KQSplitterLayoutStruct *KompareSplitter::addWidget( KompareListViewFrame *w, bool prepend )
+ {
+ 	/* This function is *not* a good place to make connections to and from
+ 	 * the KompareListView. Make them in the KompareListViewFrame constructor
+ 	 * instad - that way the connections get made upon creation, not upon the
+ 	 * next processing of the event queue. */
+ 
+-	QSplitterLayoutStruct *s;
++	KQSplitterLayoutStruct *s;
+ 	KompareConnectWidgetFrame *newHandle = 0;
+ 	if ( d->list.count() > 0 ) {
+-		s = new QSplitterLayoutStruct;
++		s = new KQSplitterLayoutStruct;
+ 		s->resizeMode = KeepSize;
+ 		TQString tmp = "qt_splithandle_";
+ 		tmp += w->name();
+@@ -127,7 +127,7 @@ QSplitterLayoutStruct *KompareSplitter::addWidget( KompareListViewFrame *w, bool
+ 		else
+ 		    d->list.append( s );
+ 	}
+-	s = new QSplitterLayoutStruct;
++	s = new KQSplitterLayoutStruct;
+ 	s->resizeMode = DefaultResizeMode;
+ 	s->wid = w;
+ 	s->isHandle = FALSE;
+@@ -153,7 +153,7 @@ void KompareSplitter::childEvent( TQChildEvent *c )
+ 		if ( ((TQWidget*)c->child())->testWFlags( WType_TopLevel ) )
+ 			return;
+ 
+-		QSplitterLayoutStruct *s = d->list.first();
++		KQSplitterLayoutStruct *s = d->list.first();
+ 		while ( s ) {
+ 			if ( s->wid == c->child() )
+ 				return;
+@@ -162,10 +162,10 @@ void KompareSplitter::childEvent( TQChildEvent *c )
+ 		addWidget( (KompareListViewFrame*)c->child() );
+ 		recalc( isVisible() );
+     } else if ( c->type() == TQEvent::ChildRemoved ) {
+-		QSplitterLayoutStruct *prev = 0;
++		KQSplitterLayoutStruct *prev = 0;
+ 		if ( d->list.count() > 1 )
+ 			prev = d->list.at( 1 );  // yes, this is correct
+-		QSplitterLayoutStruct *curr = d->list.first();
++		KQSplitterLayoutStruct *curr = d->list.first();
+ 		while ( curr ) {
+ 			if ( curr->wid == c->child() ) {
+ 			d->list.removeRef( curr );
+@@ -218,7 +218,7 @@ static TQPoint bottomRight( TQWidget *w )
+ 
+ void KompareSplitter::moveSplitter( TQCOORD p, int id )
+ {
+-	QSplitterLayoutStruct *s = d->list.at( id );
++	KQSplitterLayoutStruct *s = d->list.at( id );
+ 	int farMin;
+ 	int min;
+ 	int max;
+@@ -259,7 +259,7 @@ void KompareSplitter::moveSplitter( TQCOORD p, int id )
+ void KompareSplitter::doMove( bool backwards, int pos, int id, int delta,
+                         bool mayCollapse, int* positions, int* widths )
+ {
+-	QSplitterLayoutStruct *s;
++	KQSplitterLayoutStruct *s;
+ 	TQWidget *w;
+ 	for ( ; id >= 0 && id < (int)d->list.count();
+ 			id = backwards ? id - delta : id + delta ) {
+@@ -294,7 +294,7 @@ void KompareSplitter::doMove( bool backwards, int pos, int id, int delta,
+ 
+ void KompareSplitter::slotSetSelection( const DiffModel* model, const Difference* diff )
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 	{
+ 		if ( curr->isHandle )
+@@ -314,7 +314,7 @@ void KompareSplitter::slotSetSelection( const DiffModel* model, const Difference
+ 
+ void KompareSplitter::slotSetSelection( const Difference* diff )
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( curr->isHandle )
+ 			((KompareConnectWidgetFrame*)
+@@ -328,7 +328,7 @@ void KompareSplitter::slotSetSelection( const Difference* diff )
+ 
+ void KompareSplitter::slotApplyDifference( bool apply )
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( !curr->isHandle )
+ 			((KompareListViewFrame*)
+@@ -338,7 +338,7 @@ void KompareSplitter::slotApplyDifference( bool apply )
+ 
+ void KompareSplitter::slotApplyAllDifferences( bool apply )
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( !curr->isHandle )
+ 			((KompareListViewFrame*)
+@@ -349,7 +349,7 @@ void KompareSplitter::slotApplyAllDifferences( bool apply )
+ 
+ void KompareSplitter::slotApplyDifference( const Difference* diff, bool apply )
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( !curr->isHandle )
+ 			((KompareListViewFrame*)
+@@ -359,7 +359,7 @@ void KompareSplitter::slotApplyDifference( const Difference* diff, bool apply )
+ 
+ void KompareSplitter::slotDifferenceClicked( const Difference* diff )
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( !curr->isHandle )
+ 			((KompareListViewFrame*)
+@@ -369,7 +369,7 @@ void KompareSplitter::slotDifferenceClicked( const Difference* diff )
+ 
+ void KompareSplitter::slotConfigChanged()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() ) {
+ 		if ( !curr->isHandle )
+ 		{
+@@ -385,7 +385,7 @@ void KompareSplitter::slotConfigChanged()
+ 
+ void KompareSplitter::slotDelayedRepaintHandles()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		 if ( curr->isHandle )
+ 			((KompareConnectWidgetFrame*)curr->wid)->wid()->slotDelayedRepaint();
+@@ -393,7 +393,7 @@ void KompareSplitter::slotDelayedRepaintHandles()
+ 
+ void KompareSplitter::tqrepaintHandles()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( curr->isHandle )
+ 			((KompareConnectWidgetFrame*)curr->wid)->wid()->tqrepaint();
+@@ -557,7 +557,7 @@ void KompareSplitter::slotUpdateVScrollValue()
+  
+ int KompareSplitter::scrollId()
+ {
+-	QSplitterLayoutStruct *curr = d->list.first();
++	KQSplitterLayoutStruct *curr = d->list.first();
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( !curr->isHandle )
+ 			return ((KompareListViewFrame*) curr->wid)->view()->scrollId();
+@@ -566,7 +566,7 @@ int KompareSplitter::scrollId()
+ 
+ int KompareSplitter::lineSpacing()
+ {
+-	QSplitterLayoutStruct *curr = d->list.first();
++	KQSplitterLayoutStruct *curr = d->list.first();
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 		if ( !curr->isHandle )
+ 			return ((KompareListViewFrame*)
+@@ -576,7 +576,7 @@ int KompareSplitter::lineSpacing()
+ 
+ int KompareSplitter::pageSize()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 	{
+ 		if ( !curr->isHandle )
+@@ -590,7 +590,7 @@ int KompareSplitter::pageSize()
+ 
+ bool KompareSplitter::needVScrollBar()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	int pagesize = pageSize();
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 	{
+@@ -607,7 +607,7 @@ bool KompareSplitter::needVScrollBar()
+ int KompareSplitter::minVScrollId()
+ {
+ 
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	int min = -1;
+ 	int mSId;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+@@ -623,7 +623,7 @@ int KompareSplitter::minVScrollId()
+ 
+ int KompareSplitter::maxVScrollId()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	int max = 0;
+ 	int mSId;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+@@ -640,7 +640,7 @@ int KompareSplitter::maxVScrollId()
+ 
+ bool KompareSplitter::needHScrollBar()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+ 	{
+ 		if( !curr->isHandle )
+@@ -655,7 +655,7 @@ bool KompareSplitter::needHScrollBar()
+ 
+ int KompareSplitter::maxHScrollId()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	int max = 0;
+ 	int mHSId;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+@@ -673,7 +673,7 @@ int KompareSplitter::maxHScrollId()
+ 
+ int KompareSplitter::maxContentsX()
+ {
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	int max = 0;
+ 	int mCX;
+ 	for ( curr = d->list.first(); curr; curr = d->list.next() )
+@@ -695,7 +695,7 @@ int KompareSplitter::minVisibleWidth()
+ 	// despite the fact that *noone* has a pgright and pgleft key :P
+ 	// But we do have mousewheels with horizontal scrolling functionality,
+ 	// pressing shift and scrolling then goes left and right one page at the time
+-	QSplitterLayoutStruct *curr;
++	KQSplitterLayoutStruct *curr;
+ 	int min = -1;
+ 	int vW;
+ 	for( curr = d->list.first(); curr; curr = d->list.next() )
+diff --git a/kompare/komparepart/komparesplitter.h b/kompare/komparepart/komparesplitter.h
+index e6dd8ae..d572554 100644
+--- a/kompare/komparepart/komparesplitter.h
++++ b/kompare/komparepart/komparesplitter.h
+@@ -25,9 +25,9 @@
+ #include "komparelistview.h"
+ #include "komparemodellist.h"
+ 
+-class QSplitterLayoutStruct;
++class KQSplitterLayoutStruct;
+ class TQTextStream;
+-class QSplitterHandle;
++class KQSplitterHandle;
+ 
+ namespace Diff2 {
+ class DiffModel;
+@@ -35,7 +35,7 @@ class Difference;
+ }
+ class ViewSettings;
+ 
+-class KompareSplitter : public QSplitter
++class KompareSplitter : public KQSplitter
+ {
+ 	Q_OBJECT
+ 	TQ_OBJECT
+@@ -83,7 +83,7 @@ private slots:
+ 	void timerTimeout();
+ 
+ private:
+-	QSplitterLayoutStruct *addWidget(KompareListViewFrame *w,
++	KQSplitterLayoutStruct *addWidget(KompareListViewFrame *w,
+ 		bool prepend = FALSE );
+ 
+ 	void doMove( bool backwards, int pos, int id, int delta,
+diff --git a/umbrello/umbrello/codegenerators/codegenfactory.cpp b/umbrello/umbrello/codegenerators/codegenfactory.cpp
+index 471d8f4..0040165 100644
+--- a/umbrello/umbrello/codegenerators/codegenfactory.cpp
++++ b/umbrello/umbrello/codegenerators/codegenfactory.cpp
+@@ -161,7 +161,7 @@ CodeGenerator* createObject(Uml::Programming_Language pl)  {
+                 obj = new RubyWriter();
+             break;
+         case Uml::pl_SQL:
+-            obj = new STQLWriter();
++            obj = new SQLWriter();
+             break;
+         case Uml::pl_Tcl:
+             obj = new TclWriter();
+diff --git a/umbrello/umbrello/codegenerators/sqlwriter.cpp b/umbrello/umbrello/codegenerators/sqlwriter.cpp
+index d08ea1f..214af4a 100644
+--- a/umbrello/umbrello/codegenerators/sqlwriter.cpp
++++ b/umbrello/umbrello/codegenerators/sqlwriter.cpp
+@@ -30,12 +30,12 @@
+ #include "../association.h"
+ #include "../attribute.h"
+ 
+-STQLWriter::STQLWriter() {
++SQLWriter::SQLWriter() {
+ }
+ 
+-STQLWriter::~STQLWriter() {}
++SQLWriter::~SQLWriter() {}
+ 
+-void STQLWriter::writeClass(UMLClassifier *c) {
++void SQLWriter::writeClass(UMLClassifier *c) {
+ 
+     if(!c) {
+         kDebug()<<"Cannot write class of NULL concept!" << endl;
+@@ -113,7 +113,7 @@ void STQLWriter::writeClass(UMLClassifier *c) {
+ }
+ 
+ 
+-void STQLWriter::writeAttributes(UMLClassifier *c, TQTextStream &sql) {
++void SQLWriter::writeAttributes(UMLClassifier *c, TQTextStream &sql) {
+     UMLAttributeList atpub, atprot, atpriv, atimp;
+     atpub.setAutoDelete(false);
+     atprot.setAutoDelete(false);
+@@ -171,7 +171,7 @@ void STQLWriter::writeAttributes(UMLClassifier *c, TQTextStream &sql) {
+     return;
+ }
+ 
+-void STQLWriter::printAttributes(TQTextStream& sql, UMLAttributeList attributeList, bool first) {
++void SQLWriter::printAttributes(TQTextStream& sql, UMLAttributeList attributeList, bool first) {
+     TQString attrDoc = "";
+     UMLAttribute* at;
+ 
+@@ -211,11 +211,11 @@ void STQLWriter::printAttributes(TQTextStream& sql, UMLAttributeList attributeLi
+     return;
+ }
+ 
+-Uml::Programming_Language STQLWriter::getLanguage() {
++Uml::Programming_Language SQLWriter::getLanguage() {
+     return Uml::pl_SQL;
+ }
+ 
+-TQStringList STQLWriter::defaultDatatypes() {
++TQStringList SQLWriter::defaultDatatypes() {
+     TQStringList l;
+     l.append("varchar");
+     l.append("tinyint");
+@@ -244,7 +244,7 @@ TQStringList STQLWriter::defaultDatatypes() {
+     return l;
+ }
+ 
+-const TQStringList STQLWriter::reservedKeywords() const {
++const TQStringList SQLWriter::reservedKeywords() const {
+ 
+     static TQStringList keywords;
+ 
+diff --git a/umbrello/umbrello/codegenerators/sqlwriter.h b/umbrello/umbrello/codegenerators/sqlwriter.h
+index e4df5e2..1e16f18 100644
+--- a/umbrello/umbrello/codegenerators/sqlwriter.h
++++ b/umbrello/umbrello/codegenerators/sqlwriter.h
+@@ -22,18 +22,18 @@
+ #include "../umlattributelist.h"
+ 
+ /**
+-  * class STQLWriter is a code generator for UMLClassifier objects.
++  * class SQLWriter is a code generator for UMLClassifier objects.
+   * Create an instance of this class, and feed it a UMLClassifier when
+   * calling writeClass and it will generate a sql source file for
+   * that concept
+   */
+-class STQLWriter : public SimpleCodeGenerator {
++class SQLWriter : public SimpleCodeGenerator {
+     Q_OBJECT
+-  TQ_OBJECT
++    TQ_OBJECT
+ public:
+ 
+-    STQLWriter();
+-    virtual ~STQLWriter();
++    SQLWriter();
++    virtual ~SQLWriter();
+ 
+     /**
+      * call this method to generate sql code for a UMLClassifier
+--
+cgit v0.9.0.2-52-g1de3

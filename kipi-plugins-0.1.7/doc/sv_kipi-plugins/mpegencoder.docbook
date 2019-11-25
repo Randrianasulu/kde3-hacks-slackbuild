@@ -1,0 +1,118 @@
+<chapter id="mpegencoder">
+<chapterinfo>
+
+<title
+>MPEG-kodning</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard snabela kulzer.net</email
+></address
+></affiliation>
+    </author
+>        
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet MPEG-kodning är ett verktyg för att konvertera en bildserie till en bildspelsliknande MPEG-fil. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Insticksprogrammet för MPEG-kodning kan användas för att konvertera markerade bilder till en MPEG-sekvens med en angiven längd och sammanfoga alla bilder i en enda MPEG-fil. Insticksprogrammet använder paketen "MjpegTools" och "ImageMagick". Du kan infoga en enkel övergång mellan bilderna. Du kan också lägga till ett ljudspår i bildsekvensen med en MP2- eller WAV-fil. </para>
+
+<para
+>Alla bilder skalas automatiskt till en bra storlek för videoformatet. En specifik bakgrundsfärg kan också användas. Du kan använda insticksprogrammet för att bygga bildmappar med dvd, xvcd, svcd eller vcd för din dvd-spelare. Använd programmet K3b för att skapa media. </para>
+
+<sect1 id="using-plugin-mpeg_encode">
+<title
+>Använda insticksprogrammet</title>
+
+<para
+>Först måste du välja bilderna som ska packas i MPEG från värdprogrammets bildbläddrare. Välj därefter <menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Skapa MPEG-bildspel</guimenuitem
+></menuchoice
+> i menyn i värdprogrammets fönster. </para>
+
+<para
+>De tidigare valda bilderna visas i listrutan <guilabel
+>Bildfiler i mappen</guilabel
+>. Använd rutan för att ordna dina filer eller ändra innehållet i listan. </para>
+
+<para
+>När du är nöjd med innehållet gå då vidare till övriga inställningar. Videoformatet kan väljas bland fyra olika format (DVD, XVCD, SVCD och VCD). Om MPEG-filen ska visas på en tv, välj tv-standard bland PAL, SECAM och NTSC. PAL är förvalt värde och det lämpligaste valet i norra Europa. </para>
+
+<para
+>Därefter kan du välja visningsläng per bild, som skalas i sekunder. Listrutan nedanför gör det möjligt att välja övergångsbeteende mellan bilderna. Ett lågt värde ger en ganska snabb ändring, medan ett högre värde skapar en mjuk övergång. </para>
+
+<para
+>Nästa val låter dig fritt välja bakgrundsfärg som du föredrar. Om du är osäker, lämna den svart. Rutan Filnamn för MPEG-utdata anger utdatafilnamnet och dess sökväg (plats). Lämna filändelsen mpg, men ändra sökväg och filnamn som du önskar. </para>
+
+<para
+>Om du pekar ut en ljudfil i 'Filnamn för ljudindata', infogas den i MPEG-filen. När du är klar med inställningarna, klicka på knappen <guilabel
+>Koda</guilabel
+> för att starta konverteringen. Beroende på datorns hastighet, ta en kort eller lång fikapaus och njut av bildspelet när det är klart. </para>
+
+<note>
+<para
+>Om insticksprogrammet klagar på att kodare eller verktyg saknas, kan du ställa in sökvägen till programmen "Mjpegtools" och "ImageMagick" med knappen <guilabel
+>Inställningar</guilabel
+> längst ner till höger. </para>
+</note>
+
+<figure>
+    <title
+>Förhandsgranskning av dialogrutan för MPEG-kodning</title>
+    <graphic srccredit="The MPEG Encoder Dialog Preview" fileref="mpeg_encode_dialog.png"/>
+</figure>
+
+<para
+>Du kan se några exempel byggda med insticksprogrammet på följande <ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/"
+>webbadress</ulink
+>. </para>
+
+</sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

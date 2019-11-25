@@ -1,0 +1,87 @@
+<sect1 id="components.handsfree">
+<title
+>kbthandsfree : Passez un coup de téléphone en utilisant votre ordinateur</title>
+<para
+>Le client handsfree est une implémentation du profil handsfree Bluetooth. Ce protocole est identique au profil headset, mais propose plus de fonctions que le précédent profil headset. A l'origine, le profil handsfree fut écrit pour être utilisé pour les périphériques handsfree pour voitures, mais de plus en plus de Bluetooth communs supportant headset, supportent aujourd'hui handsfree. </para>
+<para
+>Avec kbthandsfree vous pouvez utiliser votre ordinateur en tant que périphérique handsfree. Vous pouvez téléphoner avec (depuis <link linkend="handsfree.kaddressbook"
+>kaddressbook</link
+>) </para>
+
+<sect2>
+<title
+>Conditions requises</title>
+<sect3>
+<title
+>Support de SCO par le noyau</title>
+<para
+>Pour une transmission vocale via bluetooth, le profil handsfree a besoin de créer une connexion SCO. C'est un type de connexion particulier pour bluetooth optimisé pour les données vocales. Malheureusement, le support de SCO n'était pas présent pour les anciennes version des noyaux 2.4. Pour les noyaux pré2.4.24, cela pourrait vous aider d'appliquer les correctifs fournis par Marcel Holtmann sur <ulink url="http://www.bluez.org
+>"
+> www.bluez.org</ulink
+>. Ce qui est encore plus malheureux est que le support de SCO ne semble toujours pas prévu dans la série 2.6 du noyau de Linux, et qu'il n'existe actuellement pas de patch pour fixer le problème (veuillez me corriger si je me trompe). La seule manière d'utiliser kbthandsfree comme un handsfree réel est donc d'utiliser une version récente du noyau 2.4. Sans le support SCO, vous pouvez utiliser kbthandsfree seulement pour appeler des numéros. </para>
+</sect3>
+
+<sect3>
+<title
+>Support de SCO par le périphérique</title>
+<para
+>Tous les périphériques bluetooth ne supportent pas actuellement SCO. Les anciennes clés électroniques de Mitsumi semblent poser des problèmes par exemple, même si le module affirme supporter SCO. Je ne connais pas d'autres solutions de vérifier le foncitonnement à par l'essayer. Les derniers modules basés sur le chipset CSR semblent fonctionner. </para>
+</sect3>
+
+<sect3>
+<title
+>Mode vocal</title>
+<para
+>Votre périphérique bluetooth doit être configuré au mode vocal correct pour faire fonctionner la transmission de la voix. Actuellement, seul le mode 0x0060 est supporté par kbthandsfree. C'est l'option par défaut de la version actuelle de bluez, mais vous pouvez la changer via la commande <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Classe de périphérique</title>
+<para
+>Si vous voulez établir la connexion vers kbthandsfree en utilisant votre téléphone à la place d'appeler kbthandsfree sur votre ordinateur, vous devez vous assurer que votre ordinateur est reconnu comme un périphérique handsfree. Quand vous aurez activé le mode handsfree dans l'onglet services locaux de la configuration de kdebluetooth, l'interface mettra automatiquement en place un système SDP qui dira au téléphone que votre ordinateur offre un service handsfree. </para>
+<para
+>Néanmoins certains téléphones comme le T68i dépendent d'une classe de périphérique qui lui est propre, cela fait qu'il s'identifie comme un handsfree, non comme un ordinateur. Vous pouvez changer cela en modifiant la classe 0xXXXXXX dans le fichier hcid.conf vers la classe 0x700408 (A FAIRE : est-ce compatible avec les données dont obex a besoin ?) ou avec <command
+>khciconfig</command
+>. Comme un périphérique bluetooth ne peut avoir qu'une seule classe de périphérique à la fois, votre ordinateur peut être affiché en tant que périphérique audio/handsfree quand vous le recherchez avec d'autres périphériques bluetooth. Mais nous ne connaissons pas les effets causés par cela. </para>
+<para
+>Habituellement, il est plus simple de se connecter depuis un ordinateur vers un handsfree que l'inverse. Mais la configuration de la classe de périphérique est aussi nécessaire si vous voulez que votre téléphone se connecte à votre ordinateur automatiquement quand vous recevez un appel. Tous les téléphones ne peuvent pas le faire. La plupart des Nokia par exemple, tandis que le S/E T68i peut le faire. Notez que le périphérique handsfree doit être le premier dans la liste des périphériques jumelés pour faire que le T68i s'y connecte automatiquement. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Trucs et Astuces</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Depuis KDE 3.2, vous pouvez configurer le carnet d'adresse pour que les applications externes puissent téléphoner. Pour utiliser kbthandsfree avec, lancez<command
+>kaddressbook</command
+>, puis allez dans <command
+>Configuration</command
+>, <command
+>Configurer kaddressbook...</command
+>, <command
+>Carnet d'adresse</command
+>, Onglet <command
+>Général</command
+> et utilisez <command
+>kbthandsfree --phonenumber %N</command
+> comme script de téléphone. Pour plus d'informations sur les options de la ligne des commandes, faites<command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>Vous pouvez obtenir un meilleur aperçu des conversations enregistrées dans Konqueror si vous sélectionnez "Afficher la Liste d'Information". Cela affichera les tags des fichiers ogg/vorbis, vous pouvez donc facilement voir qui appelait et combien de temps vous avez parlé. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

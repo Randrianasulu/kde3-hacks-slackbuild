@@ -1,0 +1,101 @@
+/****************************************************************************
+** ImagePlugin_AdjustLevels meta object code from reading C++ file 'imageplugin_adjustlevels.h'
+**
+** Created: Wed Jun 14 10:09:08 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imageplugin_adjustlevels.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *ImagePlugin_AdjustLevels::className() const
+{
+    return "ImagePlugin_AdjustLevels";
+}
+
+QMetaObject *ImagePlugin_AdjustLevels::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ImagePlugin_AdjustLevels( "ImagePlugin_AdjustLevels", &ImagePlugin_AdjustLevels::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ImagePlugin_AdjustLevels::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ImagePlugin_AdjustLevels", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ImagePlugin_AdjustLevels::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ImagePlugin_AdjustLevels", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ImagePlugin_AdjustLevels::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = Digikam::ImagePlugin::staticMetaObject();
+    static const QUMethod slot_0 = {"slotLevelsAdjust", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotLevelsAdjust()", &slot_0, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"ImagePlugin_AdjustLevels", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ImagePlugin_AdjustLevels.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ImagePlugin_AdjustLevels::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ImagePlugin_AdjustLevels" ) )
+	return this;
+    return ImagePlugin::qt_cast( clname );
+}
+
+bool ImagePlugin_AdjustLevels::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotLevelsAdjust(); break;
+    default:
+	return ImagePlugin::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool ImagePlugin_AdjustLevels::qt_emit( int _id, QUObject* _o )
+{
+    return ImagePlugin::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ImagePlugin_AdjustLevels::qt_property( int id, int f, QVariant* v)
+{
+    return ImagePlugin::qt_property( id, f, v);
+}
+
+bool ImagePlugin_AdjustLevels::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,1629 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kbluetoothd\n"
+"POT-Creation-Date: 2007-09-13 08:28+0200\n"
+"PO-Revision-Date: 2007-09-08 11:39+0100\n"
+"Last-Translator: Pedro Morais <morais@kde.org>\n"
+"Language-Team: pt <kde-i18n-pt@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: LMP cap sdp Kbluetoothd rfcomm PDU ACL bluez QoS\n"
+"X-POFile-SpellExtra: kbluetoothd KBluetooth HCI khciconfig SDP PIN hcitool\n"
+"X-POFile-SpellExtra: kbluepin bind register BlueZ sdpd KBluetoothD proc\n"
+"X-POFile-SpellExtra: Rfcomm record btpaired sdprecordregister setsockopt\n"
+"X-POFile-SpellExtra: kernels stdout image put home cp kbtobexsrv kiosdp\n"
+"X-POFile-SpellExtra: KBlueMon mkdir KBlueLock ls Widcomm Novell rm rmdir\n"
+"X-POFile-SpellExtra: stat kio Push Return kinputwizard BtPaired kioslave\n"
+"X-POFile-SpellExtra: AdapterDialog cat MAC mv SO PinDefaultDialog\n"
+"X-POFile-SpellExtra: KInputWizard Inc kbluetooth MyDialog RFCOMM\n"
+"X-POFile-IgnoreConsistency: Desktop\n"
+"X-POFile-IgnoreConsistency: Revision:\n"
+"X-POFile-IgnoreConsistency: Alt+O\n"
+"X-POFile-IgnoreConsistency: Alt+D\n"
+"X-POFile-IgnoreConsistency: Alt+S\n"
+"X-POFile-SpellExtra: KBtobexclient HCIDEVICE hciX DBus dbus\n"
+
+#: kbtserialchat/main.cpp:23
+msgid "A KDE KPart Application"
+msgstr "Uma Aplicação KPart do KDE"
+
+#: kbtobexsrv/main.cpp:28 kbtobexsrv/main.cpp:29 kbtobexsrv/main.cpp:30
+#: kbtserialchat/main.cpp:29 kbtserialchat/main.cpp:30
+#: kbtserialchat/main.cpp:31
+msgid "Used by kbluetoothd"
+msgstr "Usado pelo kbluetoothd"
+
+#: kbtobexclient/main.cpp:37 kbtserialchat/main.cpp:32
+msgid "Used by kio_sdp"
+msgstr "Utilizado pelo kio_sdp"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 16
+#: kbtserialchat/main.cpp:41 rc.cpp:3
+#, no-c-format
+msgid "Bluetooth Serial Chat"
+msgstr "Conversa Série por Bluetooth"
+
+#: libkbluetooth/namerequest.cpp:52
+msgid "Device is not available."
+msgstr "O dispositivo está indisponível."
+
+#: libkbluetooth/namerequest.cpp:59
+msgid "HCI device open failed."
+msgstr "A abertura do dispositivo HCI falhou."
+
+#: libkbluetooth/namerequest.cpp:73
+msgid "HCI name request failed."
+msgstr "O pedido do nome HCI falhou."
+
+#: libkbluetooth/hcisocket.cpp:60
+msgid "Error creating socket"
+msgstr "Erro ao criar o 'socket'"
+
+#: libkbluetooth/hcisocket.cpp:72
+msgid "Error binding to socket"
+msgstr "Erro ao associar-se ao 'socket'"
+
+#: libkbluetooth/hcisocket.cpp:84
+msgid "HCI filter setup failed"
+msgstr "A configuração do filtro do HCI falhou"
+
+#: libkbluetooth/hcisocket.cpp:118
+#, c-format
+msgid "HCI socket error: 0x%1."
+msgstr "Erro no 'socket' de HCI: 0x%1."
+
+#: libkbluetooth/hcidefault.cpp:82
+msgid "Use bluetooth device hciX (alternative: $HCI_DEVICE)"
+msgstr "Usar o dispositivo Bluetooth 'hciX' (alternativa: $HCI_DEVICE)"
+
+#: libkbluetooth/inquiry.cpp:154
+msgid "Timeout while waiting for end of inquiry."
+msgstr "Expirou o tempo-limite à espera do fim da análise."
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 128
+#: libkbluetooth/serviceselectionwidget.cpp:104 rc.cpp:167 rc.cpp:239
+#, no-c-format
+msgid "Searching..."
+msgstr "A procurar..."
+
+#: libkbluetooth/serviceselectionwidget.cpp:200
+msgid "Bluetooth Service Selection"
+msgstr "Selecção do Serviço Bluetooth"
+
+#: libkbluetooth/serviceselectionwidget.cpp:309
+msgid "Clear the device cache?"
+msgstr "Deseja limpar a 'cache' do dispositivo?"
+
+#: kioclient/main.cpp:22
+msgid "KIO command line client"
+msgstr "Cliente KIO de linha de comando"
+
+#: kioclient/main.cpp:31
+msgid "List date"
+msgstr "Listar data"
+
+#: kioclient/main.cpp:32
+msgid "List user"
+msgstr "Listar o utilizador"
+
+#: kioclient/main.cpp:33
+msgid "List icon name"
+msgstr "Listar o nome do ícone"
+
+#: kioclient/main.cpp:34
+msgid "List group"
+msgstr "Listar grupo"
+
+#: kioclient/main.cpp:35
+msgid "List extra"
+msgstr "Listar extra"
+
+#: kioclient/main.cpp:36
+msgid "Do not list name"
+msgstr "Não listar nome"
+
+#: kioclient/main.cpp:37
+msgid "List access permissions"
+msgstr "Listar permissões de acesso"
+
+#: kioclient/main.cpp:38
+msgid "List modification time"
+msgstr "Listar data de modificação"
+
+#: kioclient/main.cpp:39
+msgid "List access time"
+msgstr "Listar data de acesso"
+
+#: kioclient/main.cpp:40
+msgid "List creation time"
+msgstr "Listar data de criação"
+
+#: kioclient/main.cpp:41
+msgid "List file type"
+msgstr "Listar tipo de ficheiro"
+
+#: kioclient/main.cpp:42
+msgid "List link destination"
+msgstr "Listar destino da ligação"
+
+#: kioclient/main.cpp:43
+msgid "List URL"
+msgstr "Listar URL"
+
+#: kioclient/main.cpp:44
+msgid "List mime type"
+msgstr "Listar tipo MIME"
+
+#: kioclient/main.cpp:45
+msgid "List guessed mime type"
+msgstr "Listar tipo MIME adivinhado"
+
+#: kioclient/main.cpp:46
+msgid "List XML properties"
+msgstr "Listar propriedades XML"
+
+#: kioclient/main.cpp:47
+msgid "List size"
+msgstr "Listar tamanho"
+
+#: kioclient/main.cpp:48
+msgid "Output file. Defaults to stdout"
+msgstr "Ficheiro de resultado. Por omissão, stdout."
+
+#: kioclient/main.cpp:49
+msgid "Input file. Defaults to stdin"
+msgstr "Ficheiro de entrada. Por omissão, stdin."
+
+#: kioclient/main.cpp:50
+msgid "Show a progress window"
+msgstr "Mostrar uma janela de evolução"
+
+#: kioclient/main.cpp:51
+msgid "Ask (graphically) before overwriting files"
+msgstr "Perguntar (graficamente) antes de sobrepor ficheiros"
+
+#: kioclient/main.cpp:52
+msgid "Show messages from the kioslave"
+msgstr "Mostrar mensagens do kioslave"
+
+#: kioclient/main.cpp:53
+msgid "Command (ls, cat, put, cp, rm, mv, mkdir, rmdir)"
+msgstr "Comando (ls, cat, put, cp, rm, mv, mkdir, rmdir)"
+
+#: kioclient/main.cpp:60
+msgid "kio client"
+msgstr "Cliente de kio"
+
+#: kioclient/commandhandler.cpp:25
+msgid "Arguments missing."
+msgstr "Faltam argumentos."
+
+#: kioclient/commandhandler.cpp:94
+#, c-format
+msgid "unknown command: %1"
+msgstr "comando desconhecido: %1"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "José Nuno Pires,Pedro Morais"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "jncp@netcabo.pt,morais@kde.org"
+
+#. i18n: file ./kbluemon/mondialog.ui line 30
+#: kbluemon/main.cpp:38 kbluemon/main.cpp:49 rc.cpp:21
+#, no-c-format
+msgid "KBlueMon"
+msgstr "KBlueMon"
+
+#: kbluelock/main.cpp:54 kbluemon/main.cpp:53 kbluetooth/main.cpp:36
+#: kinputwizard/main.cpp:52
+msgid "Author"
+msgstr "Autor"
+
+#: kbluemon/main.cpp:61
+msgid ""
+"KBlueMon is already running.\n"
+msgstr ""
+"O KBlueMon já está a correr.\n"
+
+#: kbluemon/monitor.cpp:57 kbluemon/monitor.cpp:331 kbluemon/monitor.cpp:424
+msgid "Scanning..."
+msgstr "A pesquisar..."
+
+#: kbluemon/monitor.cpp:150
+msgid "Service Discovery disabled"
+msgstr "A Descoberta de Serviços está desactivada"
+
+#: kbluemon/monitor.cpp:151 kbluemon/monitor.cpp:200 kbluemon/monitor.cpp:203
+#: kbluemon/monitor.cpp:206 kbluemon/monitor.cpp:222 kbluemon/monitor.cpp:253
+msgid "<i>not available</i>"
+msgstr "<i>indisponível</i>"
+
+#: kbluemon/monitor.cpp:221 kbluemon/monitor.cpp:248
+msgid "no Services discovered"
+msgstr "Não foram descobertos serviços"
+
+#. i18n: file ./kbluemon/mondialog.ui line 529
+#: kbluemon/monitor.cpp:338 kbluemon/monitor.cpp:423 rc.cpp:72
+#, no-c-format
+msgid "St&op Scan"
+msgstr "&Parar a Pesquisa"
+
+#: kbluemon/monitor.cpp:344 kbluemon/monitor.cpp:445
+msgid "St&art Scan"
+msgstr "Inici&ar a Pesquisa"
+
+#: kbluemon/monitor.cpp:414
+msgid "Periodic Discovery started"
+msgstr "A Descoberta Periódica foi iniciada"
+
+#: kbluemon/monitor.cpp:416
+msgid "Failed to start Periodic Discovery! ("
+msgstr "Não foi possível iniciar a Descoberta Periódica!"
+
+#: kbluelock/kbluelock.cpp:363 kbluemon/monitor.cpp:501
+#: kinputwizard/inputwizard.cpp:554
+msgid "Device Discovery started"
+msgstr "A Descoberta de Serviços foi iniciada"
+
+#: kioslave/sdp/btsdp.cpp:43
+msgid "No working Bluetooth adapter found."
+msgstr "Não foi encontrado nenhum adaptador Bluetooth em funcionamento."
+
+#: kioslave/bluetooth/kiobluetooth.cpp:87 kioslave/sdp/btsdp.cpp:131
+msgid "Bluetooth neighborhood"
+msgstr "Vizinhança Bluetooth"
+
+#: kioslave/sdp/btsdp.cpp:139
+msgid "More services"
+msgstr "Mais serviços"
+
+#: kioslave/sdp/btsdp.cpp:145
+msgid "Could not stat %1. Unknown device"
+msgstr ""
+"Não foi possível executar o 'stat' sobre o %1. O dispositivo é desconhecido"
+
+#: kioslave/sdp/btsdp.cpp:201
+#, c-format
+msgid "Retrieving services for %1."
+msgstr "A obter os serviços de %1."
+
+#: kioslave/obex/kio_obex2/kio_obexprotocol.cpp:252
+msgid "Disconnecting"
+msgstr "A desligar"
+
+#: kioslave/obex/kio_obex2/kio_obexprotocol.cpp:254
+msgid "Disconnected"
+msgstr "Desligado"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:41
+msgid "Protocol name"
+msgstr "Nome do protocolo"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:42
+#: kioslave/bluetooth/kiobluetooth.cpp:43
+msgid "Socket name"
+msgstr "Nome do 'socket'"
+
+#: kioslave/bluetooth/kiobluetooth.cpp:93
+#, c-format
+msgid "Could not stat %1."
+msgstr "Não foi possível executar o 'stat' em %1."
+
+#: kbtobexclient/fileview.cpp:72
+msgid "Location: "
+msgstr "Localização: "
+
+#: kbtobexclient/fileview.cpp:94
+msgid ""
+"<qt>Click this button to enter the parent folder."
+"<p>For instance, if the current location is file:/home/%1 clicking this button "
+"will take you to file:/home.</qt>"
+msgstr ""
+"<qt>Carregue neste botão para entrar na pasta superior."
+"<p>Por exemplo, se a localização actual for a file:/home/%1, ao carregar neste "
+"botão irá passar para a file:/home.</qt>"
+
+#: kbtobexclient/fileview.cpp:98
+msgid "Click this button to move backwards one step in the browsing history."
+msgstr "Carregue neste botão para recuar um passo no histórico de navegação."
+
+#: kbtobexclient/fileview.cpp:100
+msgid "Click this button to move forward one step in the browsing history."
+msgstr "Carregue neste botão para avançar um passo no histórico de navegação."
+
+#: kbtobexclient/fileview.cpp:102
+msgid "Click this button to reload the contents of the current location."
+msgstr "Carregue neste botão para reler o conteúdo da localização actual."
+
+#: kbtobexclient/fileview.cpp:105
+msgid "Click this button to create a new folder."
+msgstr "Carregue neste botão para criar uma nova pasta."
+
+#: kbtobexclient/fileview.cpp:109
+msgid ""
+"<qt>This is the configuration menu for the file dialog. Various options can be "
+"accessed from this menu including: "
+"<ul>"
+"<li>how files are sorted in the list</li>"
+"<li>types of view, including icon and list</li>"
+"<li>showing of hidden files</li>"
+"<li>the Quick Access navigation panel</li>"
+"<li>file previews</li>"
+"<li>separating folders from files</li></ul></qt>"
+msgstr ""
+"<qt>Este é o menu de configuração para a janela de ficheiros. As várias opções "
+"podem ser acedidas a partir deste menu e incluem:"
+"<ul>"
+"<li>a forma como os ficheiros são ordenados na lista</li>"
+"<li>os tipos de vista, incluindo em ícones ou como lista</li>"
+"<li>a visualização dos ficheiros escondidos</li>"
+"<li>o painel de Navegação Rápida</li>"
+"<li>as antevisões dos ficheiros</li>"
+"<li>a separação das pastas dos ficheiros</li></ul></qt>"
+
+#: kbtobexclient/fileview.cpp:136
+msgid "Filter:"
+msgstr "Filtro:"
+
+#: kbtobexclient/fileview.cpp:142
+msgid "*|All Files"
+msgstr "*|Todos os Ficheiros"
+
+#: kbtobexclient/fileview.cpp:143
+msgid "image/jpeg |JPEG Image Files"
+msgstr "image/jpeg |Ficheiro de Imagem JPEG"
+
+#: kbtobexclient/main.cpp:31
+msgid "A KDE Bluetooth Framework Application"
+msgstr "Uma Infra-estrutura de Bluetooth para o KDE"
+
+#: kbtobexclient/main.cpp:46
+msgid "Bluetooth OBEX Object Push client"
+msgstr "Cliente de Envio de Objectos OBEX por Bluetooth"
+
+#: kbtobexclient/main.cpp:52
+msgid "Author, Maintainer"
+msgstr "Autor, Manutenção"
+
+#: kbtobexclient/diroperator.cpp:75
+msgid "Short View"
+msgstr "Vista Abreviada"
+
+#: kbtobexclient/fileiconview.cpp:58
+msgid "&Cancel Selected Files"
+msgstr "&Cancelar os Ficheiro Seleccionados"
+
+#: kbtobexclient/fileiconview.cpp:63
+msgid "&New Project"
+msgstr "&Novo Projecto"
+
+#: kbtobexclient/mainwindow.cpp:125 kbtobexclient/mainwindow.cpp:148
+#: kbtobexclient/mainwindow.cpp:156
+msgid "Project View"
+msgstr "Janela do Projecto"
+
+#: kbtobexclient/mainwindow.cpp:139
+msgid "File to send:"
+msgstr "Ficheiro a enviar:"
+
+#: kbtobexclient/mainwindow.cpp:145
+msgid "Send"
+msgstr "Enviar"
+
+#: kbtobexclient/mainwindow.cpp:148
+msgid "Files View"
+msgstr "Vista de Ficheiros"
+
+#: kbtobexclient/mainwindow.cpp:156
+msgid "Devices View"
+msgstr "Vista de Dispositivos"
+
+#: kbtobexclient/mainwindow.cpp:161
+msgid "Device selector:"
+msgstr "Escolha de dispositivo:"
+
+#: kbtobexclient/mainwindow.cpp:192
+msgid "Show Device Selector"
+msgstr "Mostrar a Escolha de Dispositivo"
+
+#: kbtobexclient/mainwindow.cpp:194
+msgid "Show File Selector"
+msgstr "Mostrar a Escolha de Ficheiro"
+
+#: kbtobexclient/mainwindow.cpp:196
+msgid "Show File Browser"
+msgstr "Mostrar o Navegador de Ficheiros"
+
+#: kbtobexclient/mainwindow.cpp:274
+msgid ""
+"\n"
+" Continue with the remaining files?"
+msgstr ""
+"\n"
+" Deseja continuar com os restantes ficheiros?"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 27
+#: rc.cpp:6
+#, no-c-format
+msgid "<font color=\"#0000ff\" size=\"+2\">Bluetooth Serial Chat</font>"
+msgstr "<font color=\"#0000ff\" size=\"+2\">Conversa Série Bluetooth</font>"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 54
+#: rc.cpp:9
+#, no-c-format
+msgid "&Send"
+msgstr "&Enviar"
+
+#. i18n: file ./kbtserialchat/maindialogbase.ui line 57
+#: rc.cpp:12
+#, no-c-format
+msgid "Alt+S, Return"
+msgstr "Alt+S, Return"
+
+#. i18n: file ./libkbluetooth/serviceselectionwidgetbase.ui line 54
+#: rc.cpp:15
+#, no-c-format
+msgid "&Search"
+msgstr "&Procurar"
+
+#. i18n: file ./libkbluetooth/serviceselectionwidgetbase.ui line 67
+#: rc.cpp:18
+#, no-c-format
+msgid "&Clear"
+msgstr "&Limpar"
+
+#. i18n: file ./kbluemon/mondialog.ui line 46
+#: rc.cpp:24 rc.cpp:152 rc.cpp:221
+#, no-c-format
+msgid "Name"
+msgstr "Nome"
+
+#. i18n: file ./kbluemon/mondialog.ui line 57
+#: rc.cpp:27
+#, no-c-format
+msgid "Signal"
+msgstr "Sinal"
+
+#. i18n: file ./kbluemon/mondialog.ui line 68
+#: rc.cpp:30
+#, no-c-format
+msgid "Class"
+msgstr "Classe"
+
+#. i18n: file ./kbluemon/mondialog.ui line 79
+#: rc.cpp:33 rc.cpp:155 rc.cpp:224
+#, no-c-format
+msgid "Address"
+msgstr "Endereço"
+
+#. i18n: file ./kbluemon/mondialog.ui line 90
+#: rc.cpp:36
+#, no-c-format
+msgid "Icon"
+msgstr "Ícone"
+
+#. i18n: file ./kbluemon/mondialog.ui line 164
+#: rc.cpp:39
+#, no-c-format
+msgid "Address:"
+msgstr "Endereço:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 212
+#: rc.cpp:42
+#, no-c-format
+msgid "Name:"
+msgstr "Nome:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 241
+#: rc.cpp:46
+#, no-c-format
+msgid "Typ:"
+msgstr "Tipo:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 270
+#: rc.cpp:50
+#, no-c-format
+msgid "Signal:"
+msgstr "Sinal:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 301
+#: rc.cpp:53
+#, no-c-format
+msgid "Version:"
+msgstr "Versão:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 330
+#: rc.cpp:57
+#, no-c-format
+msgid "Revision:"
+msgstr "Revisão:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 359
+#: rc.cpp:61
+#, no-c-format
+msgid "Manufacturer:"
+msgstr "Fabricante:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 388
+#: rc.cpp:65
+#, no-c-format
+msgid "Category:"
+msgstr "Categoria:"
+
+#. i18n: file ./kbluemon/mondialog.ui line 462
+#: rc.cpp:69
+#, no-c-format
+msgid "Services"
+msgstr "Serviços"
+
+#. i18n: file ./kbluemon/mondialog.ui line 532
+#: rc.cpp:75 rc.cpp:81 rc.cpp:191 rc.cpp:230
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+L"
+
+#. i18n: file ./kbluemon/mondialog.ui line 564
+#: rc.cpp:84
+#, no-c-format
+msgid "Periodic Scan"
+msgstr "Pesquisa Periódica"
+
+#. i18n: file ./kbluemon/mondialog.ui line 572
+#: rc.cpp:87
+#, no-c-format
+msgid "Discover Remote Services"
+msgstr "Descobrir os Serviços Remotos"
+
+#. i18n: file ./kbluemon/mondialog.ui line 575
+#: rc.cpp:90
+#, no-c-format
+msgid ""
+"Discovering the available Services of the Remote Device takes quiet longer."
+msgstr ""
+"A descoberta dos serviços disponíveis para o Dispositivo Remoto leva mais "
+"tempo."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 16
+#: kcm_btpaired/kcm_btpaired.cpp:51 rc.cpp:94
+#, no-c-format
+msgid "Paired/Trusted Devices"
+msgstr "Dispositivos Emparelhados/Fiáveis"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 27
+#: rc.cpp:97
+#, no-c-format
+msgid ""
+"Currently connected Bluetooth devices with proven identity (<i>"
+"paired devices</i>):"
+msgstr ""
+"Dispositivos ligados de momento com identidade provada (<i>emparelhados</i>):"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 33
+#: rc.cpp:100
+#, no-c-format
+msgid "Device"
+msgstr "Dispositivo"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 74
+#: rc.cpp:103
+#, no-c-format
+msgid "&Remove Pairing..."
+msgstr "&Remover o Emparelhamento..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 77
+#: rc.cpp:106
+#, no-c-format
+msgid "Alt+R"
+msgstr "Alt+R"
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 85
+#: rc.cpp:109
+#, no-c-format
+msgid "Remove Trust..."
+msgstr "Remover a Confiança..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 115
+#: rc.cpp:113
+#, no-c-format
+msgid ""
+"<b>Note:</b> The pairing procedure to add new devices will be started "
+"automatically if you access a service which requests a secure connection."
+msgstr ""
+"<b>Nota:</b> O procedimento de emparelhamento para adicionar dispositivos novos "
+"será iniciado automaticamente, se aceder a um serviço que peça uma ligação "
+"segura."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 154
+#: rc.cpp:116
+#, no-c-format
+msgid "Export..."
+msgstr "Exportar..."
+
+#. i18n: file ./kcm_btpaired/pairedtabbase.ui line 157
+#: rc.cpp:119
+#, no-c-format
+msgid "Let's you "
+msgstr "Deixá-lo "
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 16
+#: rc.cpp:122
+#, no-c-format
+msgid "Export Link Keys"
+msgstr "Exportar as Chaves da Ligação"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 35
+#: rc.cpp:125
+#, no-c-format
+msgid ""
+"Pairing a device in a dual boot setup breaks an alreay established pairing in "
+"the other operating system, because the link keys stored by each OS are not "
+"identical. Here you can export BlueZ's keys for use with Windows, so that you "
+"don't have to pair devices again each time you switch the OS."
+msgstr ""
+"Se emparelhar um dispositivo numa configuração de arranque duplo quebra um "
+"emparelhamento já estabelecido no outro sistema operativo, porque as chaves de "
+"ligação guardadas por cada SO não são idênticas. Aqui poderá exportar as chaves "
+"do BlueZ para usar no Windows, para que não tenha de emparelhar os dispositivos "
+"de novo, de cada vez que mudar de SO."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 46
+#: rc.cpp:128
+#, no-c-format
+msgid "Read more about dual boot setups..."
+msgstr "Ler mais sobre as configurações de arranque duplo..."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 71
+#: rc.cpp:131
+#, no-c-format
+msgid "Bluetooth Stacks Used Besides BlueZ"
+msgstr "Infra-Estruturas de Bluetooth Usadas Além do BlueZ"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 82
+#: rc.cpp:134
+#, no-c-format
+msgid "Widcomm Bluetooth stack"
+msgstr "Infra-estrutura de Bluetooth da Widcomm"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 90
+#: rc.cpp:137
+#, no-c-format
+msgid "Microsoft Bluetooth stack"
+msgstr "Infra-estrutura de Bluetooth da Microsoft"
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 142
+#: rc.cpp:140
+#, no-c-format
+msgid "Save to File..."
+msgstr "Gravar num Ficheiro..."
+
+#. i18n: file ./kcm_btpaired/exportdialog.ui line 150
+#: rc.cpp:143
+#, no-c-format
+msgid "Send via OBEX Push..."
+msgstr "Enviar via OBEX Push..."
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 16
+#: rc.cpp:146
+#, no-c-format
+msgid "New Device"
+msgstr "Novo Dispositivo"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 52
+#: rc.cpp:149
+#, no-c-format
+msgid "<b>New Input Device:</b>"
+msgstr "<b>Novo Dispositivo de Entrada:</b>"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 80
+#: rc.cpp:158 rc.cpp:184
+#, no-c-format
+msgid "3"
+msgstr "3"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 114
+#: rc.cpp:161
+#, no-c-format
+msgid "&Setup"
+msgstr "&Configuração"
+
+#. i18n: file ./kinputwizard/inputdialog_ext.ui line 117
+#: rc.cpp:164
+#, no-c-format
+msgid "Alt+S"
+msgstr "Alt+C"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 16
+#: rc.cpp:172
+#, no-c-format
+msgid "Input Devices"
+msgstr "Dispositivos de Entrada"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 34
+#: rc.cpp:175
+#, no-c-format
+msgid "<font size=\"+1\">Configured Input Devices:</font>"
+msgstr "<font size=\"+1\">Dispositivos de Entrada Configurados:</font>"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 48
+#: rc.cpp:178
+#, no-c-format
+msgid "1"
+msgstr "1"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 59
+#: rc.cpp:181
+#, no-c-format
+msgid "2"
+msgstr "2"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 216
+#: rc.cpp:188
+#, no-c-format
+msgid "C&onnect"
+msgstr "L&igar"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 236
+#: rc.cpp:197
+#, no-c-format
+msgid "Alt+D"
+msgstr "Alt+R"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 261
+#: rc.cpp:200
+#, no-c-format
+msgid "&Add New Devices >>"
+msgstr "&Adicionar Dispositivos Novos >>"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 264
+#: rc.cpp:203
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file ./kinputwizard/inputdialog.ui line 278
+#: rc.cpp:209 rc.cpp:236
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 16
+#: kbluelock/main.cpp:38 kbluelock/main.cpp:50 rc.cpp:212
+#, no-c-format
+msgid "KBlueLock"
+msgstr "KBlueLock"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 27
+#: rc.cpp:215
+#, no-c-format
+msgid "Lock the screen if the selected device disappears"
+msgstr "Bloquear o ecrã se o dispositivos seleccionado desaparecer"
+
+#. i18n: file ./kbluelock/lockdialog.ui line 38
+#: rc.cpp:218
+#, no-c-format
+msgid "Unlock the screen if the selected device appears again"
+msgstr "Desbloquear o ecrã se o dispositivos seleccionado aparecer de novo"
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 16
+#: kbluetooth/sdprecord.cpp:362 kbluetooth/sdprecord.cpp:374 rc.cpp:242
+#, no-c-format
+msgid "KDE Bluetooth Framework"
+msgstr "Infra-estrutura Bluetooth KDE"
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 37
+#: rc.cpp:245
+#, no-c-format
+msgid ""
+"<p><font size=\"+2\">Incoming File Transfer</font></p>\n"
+"<b>%1</b> wants to send you some files."
+"<br/>\n"
+"Press <i>Save</i> to accept all files or drag them to another application or "
+"folder."
+msgstr ""
+"<p><font size=\"+2\">Transferência de Ficheiros Recebida</font></p>\n"
+"<b>%1</b> deseja enviar-lhe alguns ficheiros."
+"<br/>\n"
+"Carregue em <i>Gravar</i> para aceitar todos os ficheiros ou arraste-os para "
+"outra aplicação ou pasta."
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 78
+#: rc.cpp:250
+#, no-c-format
+msgid "Waiting..."
+msgstr "À espera..."
+
+#. i18n: file ./kbtobexsrv/maindlgbase.ui line 101
+#: rc.cpp:253
+#, no-c-format
+msgid "Open destination folder:"
+msgstr "Abrir a pasta de destino:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 30
+#: rc.cpp:262
+#, no-c-format
+msgid "AdapterDialog"
+msgstr "AdapterDialog"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 59
+#: rc.cpp:265
+#, no-c-format
+msgid "Device Settings"
+msgstr "Configuração do Dispositivo"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 98
+#: rc.cpp:268
+#, no-c-format
+msgid "Adapter Name:"
+msgstr "Nome do Adaptador:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 129
+#: rc.cpp:271
+#, no-c-format
+msgid "Mode:"
+msgstr "Modo:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 163
+#: rc.cpp:274
+#, no-c-format
+msgid "Discoverable Timeout:"
+msgstr "Tempo-Limite de Descoberta:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 213
+#: rc.cpp:278
+#, no-c-format
+msgid "Timeout after the adapter gets invisible"
+msgstr "Tempo-limite após a invisibilidade do adaptador"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 235
+#: rc.cpp:281
+#, no-c-format
+msgid "Class of Device:"
+msgstr "Classe do Dispositivo:"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 241
+#: rc.cpp:284
+#, no-c-format
+msgid "Unspecified"
+msgstr "Não indicado"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 246
+#: rc.cpp:287
+#, no-c-format
+msgid "Desktop"
+msgstr "Computador"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 251
+#: rc.cpp:290
+#, no-c-format
+msgid "Laptop"
+msgstr "Portátil"
+
+#. i18n: file ./kbluetooth/adapterdialog.ui line 291
+#: rc.cpp:293
+#, no-c-format
+msgid "Device Information"
+msgstr "Informação do Dispositivo"
+
+#. i18n: file ./kbluetooth/authdialog.ui line 16
+#: rc.cpp:298
+#, no-c-format
+msgid "PinDefaultDialog"
+msgstr "PinDefaultDialog"
+
+#. i18n: file ./kbluetooth/authdialog.ui line 32
+#: rc.cpp:301
+#, no-c-format
+msgid ""
+"<font size=\"+2\">Bluetooth Authorization Request</font>\n"
+"<p><b>%1</b> (device address <b>%2</b>) %3.</p>\n"
+"\n"
+"<p>\n"
+"If you aren't sure about the identity of the other party, then reject \n"
+"this authorization request.</p>"
+msgstr ""
+"<font size=\"+2\">Pedido de Autorização do Bluetooth</font>\n"
+"<p>O <b>%1</b> (endereço do dispositivo <b>%2</b>) %3.</p>\n"
+"\n"
+"<p>\n"
+"Se não tem a certeza da identidade do dispositivo, então rejeite\n"
+"este pedido de autorização.</p>"
+
+#. i18n: file ./kbluetooth/pindefdialog.ui line 29
+#: rc.cpp:309
+#, no-c-format
+msgid ""
+"<font size=\"+2\">Bluetooth Pairing Request</font>\n"
+"<p><b>%1</b> (device address <b>%2</b>) wants to pair with your\n"
+"Bluetooth device, which is needed for authenticated and secure connections.\n"
+"</p>"
+"<p>\n"
+"If you are sure about the identity of the other party, then please enter\n"
+"the same PIN below as was used by the other device.</p>"
+msgstr ""
+"<font size=\"+2\">Pedido de Emparelhamento Bluetooth</font>\n"
+"<p>O <b>%1</b> (endereço do dispositivo <b>%2</b>) quer emparelhar com o seu\n"
+"dispositivo Bluetooth, o que é necessário para ligações seguras e "
+"autenticadas.\n"
+"</p>"
+"<p>\n"
+"Se tem a certeza da identidade do dispositivo, então indique o mesmo\n"
+"código em baixo que foi utilizado pelo outro dispositivo.</p>"
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 16
+#: rc.cpp:317
+#, no-c-format
+msgid "MyDialog1"
+msgstr "Janela1"
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 103
+#: rc.cpp:320
+#, no-c-format
+msgid ""
+"<p>The Bluetooth device \"<b>%1</b>\" wants to use the service <b>%2</b>.</p>\n"
+"<p>Do you want to allow this access? </p>"
+msgstr ""
+"<p>O dispositivo Bluetooth \"<b>%1</b>\" deseja usar o serviço <b>%2</b>.</p>\n"
+"<p>Deseja permitir este acesso? </p>"
+
+#. i18n: file ./kbluetooth/confirmationdlgbase.ui line 121
+#: rc.cpp:324
+#, no-c-format
+msgid "Future policy for this device and service:"
+msgstr "Política futura para este dispositivo e serviço:"
+
+#: kcm_btpaired/pairedtab.cpp:288
+msgid "- trusted "
+msgstr "- de confiança"
+
+#: kcm_btpaired/pairedtab.cpp:288
+msgid " device"
+msgstr " dispositivo"
+
+#: kcm_btpaired/pairedtab.cpp:302
+msgid "%1 (%2) %3"
+msgstr "%1 (%2) %3"
+
+#: kcm_btpaired/pairedtab.cpp:313
+#, c-format
+msgid "Last Seen: %1"
+msgstr "Última Ocorrência: %1"
+
+#: kcm_btpaired/pairedtab.cpp:321
+#, c-format
+msgid "Last Used: %1"
+msgstr "Última Utilização: %1"
+
+#: kcm_btpaired/kcm_btpaired.cpp:76
+msgid ""
+"<h1>BtPaired</h1>With this module you can manage the list of paired Bluetooth "
+"Devices."
+msgstr ""
+"<h1>BtPaired</h1>Com este módulo, poderá gerir a lista de dispositivos "
+"Bluetooth emparelhados."
+
+#: kinputwizard/main.cpp:36 kinputwizard/main.cpp:48
+msgid "KInputWizard"
+msgstr "KInputWizard"
+
+#: kbluelock/main.cpp:39 kinputwizard/main.cpp:37
+msgid "Copyright (C) 2007 Novell, Inc."
+msgstr "Copyright (C) 2007 Novell, Inc."
+
+#: kinputwizard/main.cpp:57
+msgid ""
+"KInputWizard is already running.\n"
+msgstr ""
+"O KInputWizard já está a correr.\n"
+
+#: kinputwizard/inputwizard.cpp:244 kinputwizard/inputwizard.cpp:489
+#: kinputwizard/inputwizard.cpp:505
+msgid "&Disconnect"
+msgstr "&Desligar"
+
+#: kinputwizard/inputwizard.cpp:246 kinputwizard/inputwizard.cpp:494
+#: kinputwizard/inputwizard.cpp:502
+msgid "&Connect"
+msgstr "&Ligar"
+
+#: kinputwizard/inputwizard.cpp:273
+msgid "&Add New Device <<"
+msgstr "&Adicionar um Dispositivo Novo <<"
+
+#: kinputwizard/inputwizard.cpp:287
+msgid "&Add New Device >>"
+msgstr "&Adicionar um Dispositivo Novo >>"
+
+#: kinputwizard/inputwizard.cpp:391
+msgid "Creating Input Device"
+msgstr "A Criar um Dispositivo de Entrada"
+
+#: kinputwizard/inputwizard.cpp:391
+msgid "You have to select a remote Device to setup!"
+msgstr "Tem de seleccionar um dispositivo remoto para o configurar!"
+
+#: kinputwizard/inputwizard.cpp:415
+msgid "Creating Input Device failed"
+msgstr "A criação do dispositivo de entrada falhou"
+
+#: kinputwizard/inputwizard.cpp:415
+msgid "Failed to create the input device for %1!"
+msgstr "Não foi possível criado o dispositivo de entrada para o %1!"
+
+#: kinputwizard/inputwizard.cpp:458
+msgid "Connect now?"
+msgstr "Ligar agora?"
+
+#: kinputwizard/inputwizard.cpp:459
+msgid "Would you like to connect to %1 now?"
+msgstr "Deseja ligar-se a %1 agora?"
+
+#: kinputwizard/inputwizard.cpp:488
+msgid "Connection succesfull"
+msgstr "Ligação com sucesso"
+
+#: kinputwizard/inputwizard.cpp:488
+msgid "Connection to %1 successful established!"
+msgstr "A ligação a %1 foi estabelecida com sucesso!"
+
+#: kinputwizard/inputwizard.cpp:493
+msgid "Connection failed"
+msgstr "Ligação mal-sucedida"
+
+#: kinputwizard/inputwizard.cpp:493
+msgid "Could not connect to "
+msgstr "Não foi possível ligar a "
+
+#: kinputwizard/inputwizard.cpp:493
+msgid ""
+"\n"
+" Check if the device is available and bluetooth enabled."
+msgstr ""
+"\n"
+" Verifique se o dispositivo está disponível e tem o Bluetooth activo."
+
+#: kinputwizard/inputwizard.cpp:501
+msgid "Disconnect succesfull"
+msgstr "Desligado com sucesso"
+
+#: kinputwizard/inputwizard.cpp:501 kinputwizard/inputwizard.cpp:504
+msgid "Connection to "
+msgstr "A ligação a "
+
+#: kinputwizard/inputwizard.cpp:501
+msgid " successful disconnected!"
+msgstr " desligou-se com sucesso!"
+
+#: kinputwizard/inputwizard.cpp:504
+msgid "Disconnect failed"
+msgstr "O encerramento foi mal-sucedido"
+
+#: kinputwizard/inputwizard.cpp:504
+msgid " could not be disconnected!"
+msgstr "não pôde ser desligada!"
+
+#: libkobex/kobexclient.cpp:139 libkobex/kobexserver.cpp:177
+msgid "Connecting..."
+msgstr "A ligar..."
+
+#: libkobex/kobexclient.cpp:175 libkobex/kobexserver.cpp:220
+msgid "Disconnecting..."
+msgstr "A desligar..."
+
+#: libkobex/kobexclient.cpp:79
+msgid ""
+"Error connecting to phone\n"
+"Response message: "
+msgstr ""
+"Erro ao ligar ao telefone\n"
+"Mensagem de resposta: "
+
+#: libkobex/kobexclient.cpp:93
+msgid ""
+"Error sending file %1 to phone\n"
+"Response message: "
+msgstr ""
+"Erro ao enviar o ficheiro %1 para o telefone\n"
+"Mensagem de resposta: "
+
+#: libkobex/kobexclient.cpp:105
+msgid ""
+"Error getting data from phone\n"
+"Response message: "
+msgstr ""
+"Erro ao receber os dados do telefone\n"
+"Mensagem de resposta: "
+
+#: libkobex/kobexclient.cpp:120
+msgid "Done"
+msgstr "Concluído"
+
+#: libkobex/kobexclient.cpp:164
+msgid "Error connecting transport"
+msgstr "Erro ao ligar ao transporte"
+
+#: libkobex/kobexclient.cpp:208
+msgid "Sending "
+msgstr "A enviar."
+
+#: libkobex/kobexclient.cpp:208
+msgid ""
+" to phone\n"
+"\n"
+msgstr ""
+" para o telefone\n"
+"\n"
+
+#: libkobex/kobexclient.cpp:217
+msgid "Requesting stream start..."
+msgstr "A pedir o início da transmissão..."
+
+#: libkobex/kobexclient.cpp:254
+msgid "Streaming data..."
+msgstr "A transmitir os dados..."
+
+#: kbluelock/main.cpp:61
+msgid ""
+"KBlueLock is already running.\n"
+msgstr ""
+"O KBlueLock já está a correr.\n"
+
+#: kbluelock/kbluelock.cpp:215 kbluelock/kbluelock.cpp:308
+msgid ""
+"<p align='center'>KBlueLock <b>ON</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+msgstr ""
+"<p align='center'>KBlueLock <b>LIGADO</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+
+#: kbluelock/kbluelock.cpp:227
+msgid "KBlueLock - No Device selectetd"
+msgstr "KBlueLock - Não está seleccionado nenhum dispositivo"
+
+#: kbluelock/kbluelock.cpp:227
+msgid "To enable KBlueLock you have to choose a Device."
+msgstr "Para activar o KBlueLock, terá de escolher um dispositivo."
+
+#: kbluelock/kbluelock.cpp:289
+msgid ""
+"<p align='center'>KBlueLock <b>OFF</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+msgstr ""
+"<p align='center'>KBlueLock <b>DESLIGADO</b></p>\n"
+"<p align='center'><i>%1</i></p>"
+
+#: kbluelock/kbluelock.cpp:344
+msgid "&Disable"
+msgstr "&Desactivar"
+
+#: kbluelock/kbluelock.cpp:350
+msgid "&Enable"
+msgstr "&Activar"
+
+#: kbtobexsrv/main.cpp:24
+msgid "KDE OBEX Push Server for Bluetooth"
+msgstr "Servidor de OBEX Push do KDE para Bluetooth"
+
+#: kbtobexsrv/main.cpp:63
+msgid ""
+"kbtobexsrv will be called automatically by kbluetoothd when another device "
+"tries to send you some files. You don't have to run it manually."
+msgstr ""
+"O 'kbtobexsrv' será invocado automaticamente pelo 'kbluetoothd' quando outro "
+"dispositivo lhe tentar enviar ficheiros. Não terá de o executar manualmente."
+
+#: kbtobexsrv/maindlg.cpp:158
+#, c-format
+msgid "Receiving %1"
+msgstr "A receber o %1"
+
+#: kbtobexsrv/maindlg.cpp:208
+msgid "Disconnected."
+msgstr "Desligado."
+
+#: kbtobexsrv/maindlg.cpp:217
+msgid ""
+"The selected folder does not exist.                            Please select "
+"another folder."
+msgstr ""
+"A pasta seleccionada não existe.                        Seleccione por favor "
+"outra pasta."
+
+#: kbtobexsrv/maindlg.cpp:218
+msgid "Obex Server"
+msgstr "Servidor de OBEX"
+
+#: kbtobexsrv/maindlg.cpp:254
+msgid "%1 already exists. Do you want to use %2 as filename instead?"
+msgstr "O %1 já existe. Deseja usar '%2' como nome alternativo?"
+
+#: kbtobexsrv/maindlg.cpp:255
+msgid "Rename"
+msgstr "Mudar o Nome"
+
+#: kbtobexsrv/maindlg.cpp:255
+msgid "Overwrite"
+msgstr "Sobrepor"
+
+#: kbtobexsrv/maindlg.cpp:271
+#, c-format
+msgid "Error writing file %1."
+msgstr "Erro ao gravar o ficheiro %1."
+
+#: kbtobexsrv/maindlg.cpp:285
+msgid ""
+"The following files already existed in the target folder and were not saved "
+"again with a different name:"
+msgstr ""
+"Já existem os seguintes ficheiros na pasta de destino e não foram gravados de "
+"novo com outro nome:"
+
+#: kbluetooth/rfcommportlistener.cpp:105
+#, c-format
+msgid "Could not create a socket for service %1."
+msgstr "Não foi possível criar um 'socket' para o serviço %1."
+
+#: kbluetooth/rfcommportlistener.cpp:106
+msgid ""
+"<p>KBluetooth was unable to create a socket for the service %1. The error "
+"message was <i>%2</i> (Error code %3)."
+"<p>Make sure that BlueZ is installed correctly and all modules are loaded "
+"(bluez, l2cap, rfcomm..)."
+msgstr ""
+"<p>O KBluetooth não conseguiu criar um 'socket' para o serviço %1. A mensagem "
+"de erro foi <i>%2</i> (Código de erro %3)."
+"<p>Certifique-se que o BlueZ está instalado correctamente e que todos os "
+"módulos estão carregados (bluez, l2cap, rfcomm..)."
+
+#: kbluetooth/rfcommportlistener.cpp:136
+msgid ""
+"<p>Could not enable security features for <b>%1</b>.The service will not be "
+"started.</p>"
+msgstr ""
+"<p>Não foi possível activar as funcionalidades de segurança de <b>%1</b>"
+". O serviço não será iniciado.</p>"
+
+#: kbluetooth/rfcommportlistener.cpp:139
+msgid ""
+"<p>KBluetoothD was unable to enable authentication and/or encryption for the "
+"service %1, so this service will not be started.</p>"
+"<p> The error code returned by setsockopt() was %3 (<i>%2</i>)</p>"
+"<p>To use encryption/authentication for selected services, you need a Linux "
+"kernel >= 2.6.10-mh3. For older kernels you have to disable encryption and "
+"authentication for this service."
+"<br/> <i>Be careful with allowing unconfirmed connections in that case, since "
+"the peer address could be faked.</i></p>"
+msgstr ""
+"<p>O KBluetoothD não conseguiu activar a autenticação e/ou a encriptação do "
+"serviço %1; como tal, este serviço não será iniciado.</p>"
+"<p> O código de erro devolvido pelo 'setsockopt()' foi %3 (<i>%2</i>)</p>"
+"<p>Para usar a encriptação/autenticação para os serviços seleccionados, precisa "
+"de um 'kernel' do Linux >= 2.6.10-mh3. Para os 'kernels' anteriores, terá de "
+"desactivar a encriptação e autenticação deste serviço."
+"<br/> <i>Tenha cuidado ao permitir as ligações sem confirmação nesse caso, dado "
+"que o endereço do outro dispositivo poderá ser falsificado.</i></p>"
+
+#: kbluetooth/rfcommportlistener.cpp:174
+#, c-format
+msgid "Could not listen to a socket for service %1."
+msgstr "Não foi possível atender num 'socket' para o serviço %1."
+
+#: kbluetooth/rfcommportlistener.cpp:175
+msgid ""
+"<p>KBluetoothD was unable to listen to a socket for the service %1. The error "
+"message was <i>%2</i> (Error code %3)."
+"<p>Make sure that BlueZ is installed correctly and all modules are loaded "
+"(bluez, l2cap, rfcomm..)."
+msgstr ""
+"<p>O KBluetoothD não conseguiu atender pedidos num 'socket' para o serviço %1. "
+"A mensagem de erro foi <i>%2</i> (Código de erro %3)."
+"<p>Certifique-se que o BlueZ está instalado correctamente e que todos os "
+"módulos estão carregados (bluez, l2cap, rfcomm..)."
+
+#: kbluetooth/rfcommportlistener.cpp:199
+#, c-format
+msgid "Could not bind to a socket for service %1."
+msgstr "Não foi possível associar a um 'socket' para o serviço %1."
+
+#: kbluetooth/rfcommportlistener.cpp:200
+msgid ""
+"<p>KBluetoothD was unable to bind to a socket for the service %1 on channel %2. "
+"The error message was <i>%3</i> (Error code %4)."
+"<p>Make sure that BlueZ is installed correctly."
+msgstr ""
+"<p>O KBluetoothD não conseguiu associar-se a um 'socket' para o serviço %1 no "
+"canal %2. A mensagem de erro foi <i>%3</i> (Código de erro %4)."
+"<p>Certifique-se que o BlueZ está instalado correctamente."
+
+#: kbluetooth/rfcommportlistener.cpp:215
+#, c-format
+msgid "Could not assign a channel to service %1."
+msgstr "Não foi possível atribuir um canal ao serviço %1."
+
+#: kbluetooth/rfcommportlistener.cpp:216
+msgid ""
+"<p>KBluetoothD was unable to find an unused Rfcomm channel for the service %1, "
+"so other devices will not be able to access that service.</p>"
+"<p>Possible reasons:"
+"<br/> "
+"<ul> "
+"<li>Several services are configured to use the same channel.</li> "
+"<li>Other Bluetooth services are blocking the ports. </li> </ul> Checklist: "
+"<ul> "
+"<li>%2 will try to use channels form %3 to %4 - are they all used by other "
+"services?"
+"<li>Does <i>/proc/bluetooth/rfcomm</i> show more listening sockets than the "
+"Bluetooth services tab in the Control Center? </ul> </p>"
+msgstr ""
+"<p>O KBluetoothD não conseguiu encontrar um canal RFCOMM livre para o serviço "
+"%1; por isso, os outros dispositivos não serão capazes de aceder a esse "
+"serviço.</p>"
+"<p>Razões possíveis:"
+"<br/> "
+"<ul> "
+"<li>Existem diversos serviços configurados para usar o mesmo canal.</li> "
+"<li>Existem outros serviços Bluetooth a bloquear os portos.</li> </ul> "
+"Lista de verificações: "
+"<ul> "
+"<li>O %2 irá tentar usar os canais de %3 a %4 - estão todos em uso por outros "
+"serviços?"
+"<li>Será que o <i>/proc/bluetooth/rfcomm</i> mostra mais 'sockets' em espera "
+"que a página de serviços Bluetooth do Centro de Controlo? </ul> </p>"
+
+#: kbluetooth/rfcommportlistener.cpp:478
+msgid "Connection from <b>%1</b><br/>to channel %3 (<b>%2</b>)"
+msgstr "Ligação de <b>%1</b><br/>ao canal %3 (<b>%2</b>)"
+
+#: kbluetooth/rfcommportlistener.cpp:530
+msgid "Call \"%1\" failed"
+msgstr "A chamada \"%1\" falhou"
+
+#: kbluetooth/confirmation.cpp:52
+msgid "Kbluetoothd: access to %1 from %2: ALLOW"
+msgstr "Kbluetoothd: acesso a %1 de %2: PERMITIR"
+
+#: kbluetooth/confirmation.cpp:57
+msgid "Kbluetoothd: access to %1 from %2: DENY"
+msgstr "Kbluetoothd: acesso a %1 de %2: PROIBIR"
+
+#: kbluetooth/confirmation.cpp:62
+msgid "Kbluetoothd: access to %1 from %2: ASK"
+msgstr "Kbluetoothd: acesso a %1 de %2: PERGUNTAR"
+
+#: kbluetooth/confirmation.cpp:74
+msgid "Unchanged"
+msgstr "Inalterado"
+
+#: kbluetooth/authorize.cpp:30 kbluetooth/confirmation.cpp:90
+msgid "Accept"
+msgstr "Aceitar"
+
+#: kbluetooth/authorize.cpp:30
+msgid "Reject"
+msgstr "Rejeitar"
+
+#: kbluetooth/authorize.cpp:30
+msgid "Always Accept"
+msgstr "Aceitar Sempre"
+
+#: kbluetooth/authorize.cpp:39
+msgid "wants to act as Input Device"
+msgstr "deseja actuar como Dispositivo de Entrada"
+
+#: kbluetooth/main.cpp:20 kbluetooth/main.cpp:32 kbluetooth/trayicon.cpp:378
+#: kbluetooth/trayicon.cpp:400 kbluetooth/trayicon.cpp:414
+#: kbluetooth/trayicon.cpp:427 kbluetooth/trayicon.cpp:441
+msgid "KBluetooth"
+msgstr "KBluetooth"
+
+#: kbluetooth/main.cpp:24
+msgid "Show the tray icon if it was disabled before."
+msgstr "Mostrar o ícone na bandeja se foi desactivado antes."
+
+#: kbluetooth/main.cpp:44
+msgid ""
+"KBluetooth is already running.\n"
+msgstr ""
+"O KBluetooth já está a correr.\n"
+
+#: kbluetooth/main.cpp:58
+msgid ""
+"Can't connect to DBus!\n"
+"Unable to start kbluetooth. \n"
+"\n"
+" \t\t\t\t\t\t\t\t\tRestart dbus and the bluetooth service"
+msgstr ""
+"Não é possível ligar ao DBus!\n"
+"Não se consegue assim lançar o kbluetooth. \n"
+"\n"
+" \t\t\t\t\t\t\t\t\tReinicie o 'dbus' e o serviço de Bluetooth"
+
+#: kbluetooth/trayicon.cpp:42
+msgid "KBlue&Mon"
+msgstr "KBlue&Mon"
+
+#: kbluetooth/trayicon.cpp:48
+msgid "KBlue&Lock"
+msgstr "KBlue&Lock"
+
+#: kbluetooth/trayicon.cpp:54
+msgid "&Send File..."
+msgstr "&Enviar um Ficheiro..."
+
+#: kbluetooth/trayicon.cpp:60
+msgid "&Configuration"
+msgstr "&Configuração"
+
+#: kbluetooth/trayicon.cpp:76
+msgid "&Input Devices..."
+msgstr "D&ispositivos de Entrada..."
+
+#: kbluetooth/trayicon.cpp:82
+msgid "&Devices..."
+msgstr "&Dispositivos..."
+
+#: kbluetooth/trayicon.cpp:88
+msgid "&Paired/Trusted Devices..."
+msgstr "Dispositivos Em&parelhados/Fiáveis..."
+
+#: kbluetooth/trayicon.cpp:97
+msgid "&Obex Server"
+msgstr "Servidor de &OBEX"
+
+#: kbluetooth/trayicon.cpp:242
+msgid ""
+"KBluetooth will run in hidden mode now and only show up when there is a "
+"connection. To enable the permanent tray icon start KBluetooth again."
+msgstr ""
+"O KBluetooth vai correr agora em modo escondido e só vai aparecer quando à uma "
+"ligação. Para activar o ícone de bandeja permanente inicie novamente o "
+"KBluetooth."
+
+#: kbluetooth/trayicon.cpp:244
+msgid "Hidden Mode"
+msgstr "Modo Escondido"
+
+#: kbluetooth/trayicon.cpp:254
+msgid "Not connected"
+msgstr "Desligado"
+
+#: kbluetooth/trayicon.cpp:284
+msgid ""
+"Adapter: %1\n"
+"Address: %2\n"
+"Mode: %3\n"
+"Connected to: "
+msgstr ""
+"Adaptador: %1\n"
+"Endereço: %2\n"
+"Modo: %3\n"
+"Ligado a: "
+
+#: kbluetooth/trayicon.cpp:377
+msgid "Could not execute the btpaired Control Center module."
+msgstr "Não foi possível executar o módulo de centro de controlo btpaired."
+
+#: kbluetooth/trayicon.cpp:399
+msgid "Could not execute kinputwizard."
+msgstr "Não foi possível executar o 'kinputwizard'."
+
+#: kbluetooth/trayicon.cpp:413
+msgid "Could not execute KBlueMon."
+msgstr "Não foi possível executar o KBlueMon."
+
+#: kbluetooth/trayicon.cpp:426
+msgid "Could not execute KBlueLock."
+msgstr "Não foi possível executar o KBlueLock."
+
+#: kbluetooth/trayicon.cpp:440
+msgid "Could not execute KBtobexclient."
+msgstr "Não foi possível executar o KBtobexclient."
+
+#: kbluetooth/trayicon.cpp:470
+msgid "Should KBluetooth still be restarted when you login?"
+msgstr "O KBluetooth deve ser reiniciado quando se ligar?"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Automatically Start KBluetooth?"
+msgstr "Iniciar o KBluetooth Automaticamente?"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Start"
+msgstr "Iniciar"
+
+#: kbluetooth/trayicon.cpp:471
+msgid "Do Not Start"
+msgstr "Não Iniciar"
+
+#: kbluetooth/trayicon.cpp:516
+msgid "Connected to <b>%1</b><br/>(<b>%2</b>)"
+msgstr "Ligado a <b>%1</b><br/>(<b>%2</b>)"
+
+#: kbluetooth/trayicon.cpp:575
+msgid "<i>Bluetooth Monitor</i><br/> Problem connecting with <b>%1</b>:"
+msgstr "<i>Monitor Bluetooth</i><br/>Problema ao ligar a <b>%1</b>:"
+
+#: kbluetooth/sdprecord.cpp:357
+msgid "Failed to register an SDP record."
+msgstr "Não foi possível guardar um registo de SDP."
+
+#: kbluetooth/sdprecord.cpp:358
+#, c-format
+msgid ""
+"Please make sure that sdpd is running; \n"
+"without it, other devices will not be able to find out \n"
+"which services your computer offers. \n"
+"The error code returned by sdp_record_register() was %1"
+msgstr ""
+"Certifique-se por favor que o 'sdpd' está em execução;\n"
+"sem este, os outros dispositivos não serão capazes de descobrir\n"
+"os serviços que o seu computador oferece.\n"
+"O código de erro devolvido pelo 'sdp_record_register()' foi %1"
+
+#: kbluetooth/sdprecord.cpp:370
+msgid "Failed to connect to the SDP server."
+msgstr "Não foi possível ligar ao servidor de SDP."
+
+#: kbluetooth/sdprecord.cpp:371
+msgid ""
+"Please make sure that sdpd is running; \n"
+"without it, other devices will not be able to find out \n"
+"which services your computer offers."
+msgstr ""
+"Certifique-se por favor que o 'sdpd' está em execução;\n"
+"sem este, os outros dispositivos não serão capazes de descobrir\n"
+"os serviços que o seu computador oferece."
+
+#: kbluetooth/adapterconfig.cpp:49
+msgid "off"
+msgstr "desligado"
+
+#: kbluetooth/adapterconfig.cpp:50
+msgid "connectable"
+msgstr "disponível"
+
+#: kbluetooth/adapterconfig.cpp:51
+msgid "discoverable"
+msgstr "público"
+
+#: kbluetooth/adapterconfig.cpp:107
+msgid "MAC Address: <b>%1</b>"
+msgstr "Endereço MAC: <b>%1</b>"
+
+#: kbluetooth/adapterconfig.cpp:110
+msgid "Version: <b>%1</b>"
+msgstr "Versão: <b>%1</b>"
+
+#: kbluetooth/adapterconfig.cpp:128
+msgid "none"
+msgstr "nenhuma"
+
+#: kbluetooth/adapterconfig.cpp:132
+msgid " minutes"
+msgstr " minutos"
+
+#: kbluetooth/deviceconfig.cpp:45 kbluetooth/deviceconfig.cpp:124
+msgid "No Bluetooth device found!"
+msgstr "Não foi encontrado nenhum dispositivo Bluetooth!"
+
+#: kbluetooth/deviceconfig.cpp:46 kbluetooth/deviceconfig.cpp:125
+msgid "no device"
+msgstr "sem dispositivo"
+
+#~ msgid ""
+#~ "No Bluetooth Adapter found!\n"
+#~ "Unable to start kbluetooth.\n"
+#~ "\n"
+#~ " \t\t\t\t\t\t\t\t\tPlug in a Bluetooth Adapter or restart the bluetooth service"
+#~ msgstr ""
+#~ "Não foi encontrado nenhum Adaptador Bluetooth!\n"
+#~ "Não é possível iniciar o 'kbluetooth'.\n"
+#~ "\n"
+#~ "Ligue um Adaptador Bluetooth ou reinicie o serviço de Bluetooth"

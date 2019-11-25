@@ -1,0 +1,736 @@
+# translation of kipiplugin_gpssync.po to german
+# translation of kipiplugin_gpssync.po to
+#
+# Oliver Dörr <kde@doerr-privat.de>, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_gpssync\n"
+"POT-Creation-Date: 2008-11-18 08:53+0100\n"
+"PO-Revision-Date: 2008-03-01 16:37+0100\n"
+"Last-Translator: Oliver Dörr <kde@doerr-privat.de>\n"
+"Language-Team: german <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de"
+
+#: gpseditdialog.cpp:88
+msgid "%1 - Edit Geographical Coordinates"
+msgstr "%1 - Geographische Koordinaten bearbeiten"
+
+#: gpseditdialog.cpp:98
+msgid ""
+"<p>Use the map on the right to select the location where the picture have been "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates."
+"<p>"
+msgstr ""
+"<p>Benutzen Sie die Karte auf der rechten Seite, um den Ort auszuwählen an dem "
+"das Bild gemacht wurde. Klicken Sie dazu mit der linken Maustaste oder "
+"verschieben Sie die Markierung, um die GPS-Koordinaten zu erhalten."
+"<p>"
+
+#: gpseditdialog.cpp:102
+msgid "Altitude:"
+msgstr "Höhe:"
+
+#: gpseditdialog.cpp:103
+msgid "Latitude:"
+msgstr "Breitengrad:"
+
+#: gpseditdialog.cpp:104
+msgid "Longitude:"
+msgstr "Längengrad:"
+
+#: gpseditdialog.cpp:118
+msgid "Goto Location"
+msgstr "Zum Ort gehen"
+
+#: gpseditdialog.cpp:144 gpssyncdialog.cpp:248 gpssyncdialog.cpp:313
+#: gpssyncdialog.cpp:321 gpssyncdialog.cpp:443 gpssyncdialog.cpp:453
+#: gpssyncdialog.cpp:462 gpssyncdialog.cpp:494
+msgid "GPS Sync"
+msgstr "GPS-Abgleich"
+
+#: gpseditdialog.cpp:147
+msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgstr "Ein Modul zum Abgleichen der Bildmetadaten mit einem GPS-Gerät"
+
+#: gpseditdialog.cpp:150 gpssyncdialog.cpp:254
+msgid "Author and Maintainer"
+msgstr "Autor und Betreuer"
+
+#: gpseditdialog.cpp:155 gpssyncdialog.cpp:259 kmlexportconfig.cpp:292
+msgid "Plugin Handbook"
+msgstr "Modul-Handbuch"
+
+#: gpseditdialog.cpp:306
+msgid "Altitude value is not correct!"
+msgstr "Der Höhenwert ist nicht korrekt."
+
+#: gpseditdialog.cpp:307 gpseditdialog.cpp:315 gpseditdialog.cpp:323
+#: plugin_gpssync.cpp:251
+msgid "Edit Geographical Coordinates"
+msgstr "Geographische Koordinaten bearbeiten"
+
+#: gpseditdialog.cpp:314
+msgid "Latitude value is not correct!"
+msgstr "Der Breitengrad ist nicht korrekt."
+
+#: gpseditdialog.cpp:322
+msgid "Longitude value is not correct!"
+msgstr "Der Längengrad ist nicht korrekt."
+
+#: gpslistviewitem.cpp:108
+msgid "Interpolated"
+msgstr "Interpoliert"
+
+#: gpslistviewitem.cpp:112
+msgid "Added"
+msgstr "Hinzugefügt"
+
+#: gpslistviewitem.cpp:114
+msgid "Found"
+msgstr "Gefunden"
+
+#: gpslistviewitem.cpp:132
+msgid "Deleted!"
+msgstr "Gelöscht"
+
+#: gpslistviewitem.cpp:145
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: gpssyncdialog.cpp:107 plugin_gpssync.cpp:73
+msgid "Geolocation"
+msgstr "Geo-Lokalisierung"
+
+#: gpssyncdialog.cpp:114
+msgid "Correlate"
+msgstr "Korreliert"
+
+#: gpssyncdialog.cpp:115
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: gpssyncdialog.cpp:118
+msgid ""
+"Correlate in time and interpolate distance of data from GPX file with all "
+"images on the list."
+msgstr ""
+"Zeitlich korrelieren und die Distanz der Daten aus der GPX-Datei von allen "
+"Bildern aus der Liste interpolieren."
+
+#: gpssyncdialog.cpp:119
+msgid "Manually edit GPS coordinates of selected images from the list."
+msgstr ""
+"Manuell die GPS-Koordinaten der ausgewählten Bilder aus der Liste  bearbeiten."
+
+#: gpssyncdialog.cpp:120
+msgid "Remove GPS coordinates of selected images from the list."
+msgstr "GPS-Koordinaten der ausgewählten Bilder aus der Liste löschen."
+
+#: gpssyncdialog.cpp:131
+msgid "Thumbnail"
+msgstr "Vorschau"
+
+#: gpssyncdialog.cpp:132
+msgid "File Name"
+msgstr "Dateiname"
+
+#: gpssyncdialog.cpp:133
+msgid "Camera time stamp"
+msgstr "Kamerazeitstempel"
+
+#: gpssyncdialog.cpp:134
+msgid "Latitude"
+msgstr "Breitengrad"
+
+#: gpssyncdialog.cpp:135
+msgid "Longitude"
+msgstr "Längengrad"
+
+#: gpssyncdialog.cpp:136
+msgid "Altitude"
+msgstr "Höhe"
+
+#: gpssyncdialog.cpp:137
+msgid "Status"
+msgstr "Status"
+
+#: gpssyncdialog.cpp:147
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: gpssyncdialog.cpp:151
+msgid "Load GPX File..."
+msgstr "GPX-Datei laden ..."
+
+#: gpssyncdialog.cpp:153
+msgid "Current GPX file:"
+msgstr "Aktuelle GPX-Datei:"
+
+#: gpssyncdialog.cpp:154
+msgid "No GPX file"
+msgstr "Keine GPX-Datei"
+
+#: gpssyncdialog.cpp:158
+msgid "Max. time gap (sec.):"
+msgstr "Max. Zeitlücke (Sek.):"
+
+#: gpssyncdialog.cpp:160
+msgid ""
+"<p>Sets the maximum difference in seconds from a GPS track point to the image "
+"time to be matched. If the time difference exceeds this setting, no match will "
+"be attempted."
+msgstr ""
+"<p>Setzt die maximale Differenz in Sekunden von einem GPS-Messpunkt zu einer "
+"Bildzeit, damit diese einander zugeordnet werden. Wenn der Zeitunterschied "
+"größer wird, werden die Daten einander nicht zugeordnet."
+
+#: gpssyncdialog.cpp:164
+msgid "Time zone:"
+msgstr "Zeitzone:"
+
+#: gpssyncdialog.cpp:210
+msgid ""
+"<p>Sets the time zone the camera was set to during photo shooting, so that the "
+"time stamps of the images can be converted to GMT to match the GPS time "
+"reference.\n"
+"Note: positive offsets count eastwards from zero longitude (GMT), they are "
+"'ahead of time'."
+msgstr ""
+"<p>Legen Sie hier die Zeitzone fest, in der die Bilder gemacht wurden. Dadurch "
+"können die Zeiten der Bilder in GMT-Zeit umgerechnet und den GPS-Daten "
+"zugeordnet werden.\n"
+"Achtung: Positive Werte liegen östlich vom Null-Längengrad. Sie liegen also "
+"\"In der Zukunft\". "
+
+#: gpssyncdialog.cpp:216
+msgid "Interpolate"
+msgstr "Interpolieren"
+
+#: gpssyncdialog.cpp:217
+msgid ""
+"<p>Set this option to interpolate GPS track points which are not closely "
+"matched to the GPX data file."
+msgstr ""
+"<p>Aktivieren Sie diese Einstellung, um GPS-Punkte, die nicht exakt zu der "
+"GPX-Datendatei passen, zu interpolieren."
+
+#: gpssyncdialog.cpp:220
+msgid "Difference in min.:"
+msgstr "Differenz in Minuten:"
+
+#: gpssyncdialog.cpp:222
+msgid ""
+"<p>Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
+"file points to image time data."
+msgstr ""
+"<p>Setzen Sie hier den maximalen Abstand in Minuten (max. 240) von einem "
+"GPS-Punkt zu dem ein Bild interpoliert wird."
+
+#: gpssyncdialog.cpp:251
+msgid "A plugin to synchronize images' metadata with a GPS device"
+msgstr "Ein Modul zum Abgleichen der Bildmetadaten mit einem GPS-Gerät"
+
+#: gpssyncdialog.cpp:302 kmlexportconfig.cpp:193
+msgid "%1|GPS Exchange Format"
+msgstr "%1|GPS-Austauschformat"
+
+#: gpssyncdialog.cpp:303 kmlexportconfig.cpp:194
+msgid "Select GPX File to Load"
+msgstr "GPX-Datei zum Laden auswählen"
+
+#: gpssyncdialog.cpp:312 kmlexport.cpp:350
+msgid "Cannot parse %1 GPX file!"
+msgstr "Die GPX-Datei %1 kann nicht verarbeitet werden."
+
+#: gpssyncdialog.cpp:320 kmlexport.cpp:356
+msgid "The %1 GPX file do not have a date-time track to use!"
+msgstr "Die GPX-Datei %1 hat keine Datum/Zeit-Spur für die Benutzung."
+
+#: gpssyncdialog.cpp:327
+#, c-format
+msgid "Points parsed: %1"
+msgstr "Verarbeitete Punkte: %1"
+
+#: gpssyncdialog.cpp:371
+#, c-format
+msgid ""
+"_n: 1 image from the list is not updated.\n"
+"%n images from the list are not updated."
+msgstr ""
+"1 Bild aus der Liste wurde nicht aktualisiert.\n"
+"%n Bilder aus der Liste wurden nicht aktualisiert."
+
+#: gpssyncdialog.cpp:374
+msgid ""
+"<p>%1\n"
+"Do you really want to close this window without applying changes?</p>"
+msgstr ""
+"<p>%1\n"
+"Möchten Sie dieses Fenster wirklich schließen ohne die Änderungen "
+"anzuwenden?</p> "
+
+#: gpssyncdialog.cpp:442
+msgid "Cannot find pictures to correlate with GPX file data."
+msgstr ""
+"Es konnten keine Bilder gefunden werden, die mit den Daten aus der GPX-Datei "
+"korrelieren."
+
+#: gpssyncdialog.cpp:448
+#, c-format
+msgid ""
+"_n: GPS data of 1 image have been updated on the list using the GPX data file.\n"
+"GPS data of %n images have been updated on the list using the GPX data file."
+msgstr ""
+"Die GPS-Daten eines Bildes aus der Liste wurden anhand der GPX-Datendatei "
+"aktualisiert.\n"
+"Die GPS-Daten von %n Bildern aus der Liste wurden anhand der GPX-Datendatei "
+"aktualisiert."
+
+#: gpssyncdialog.cpp:451
+msgid "Press Apply button to update images metadata."
+msgstr ""
+"Benutzen Sie den Knopf Anwenden, um die Metadaten der Bilder zu aktualisieren."
+
+#: gpssyncdialog.cpp:461
+msgid ""
+"Please, select at least one image from the list to edit GPS coordinates "
+"manually."
+msgstr ""
+"Bitte wählen Sie mindestens ein Bild aus der Liste, um die GPS-Koordinaten "
+"manuell zu bearbeiten."
+
+#: gpssyncdialog.cpp:493
+msgid ""
+"Please, select at least one image from the list to remove GPS coordinates."
+msgstr ""
+"Bitte wählen Sie mindestens ein Bild aus der Liste, um die GPS-Koordinaten zu "
+"löschen."
+
+#: kmlexport.cpp:63
+msgid "Generating KML file..."
+msgstr "Erzeuge KML-Datei ..."
+
+#: kmlexport.cpp:83
+#, c-format
+msgid "Could not create '%1"
+msgstr "'%1 kann nicht erstellt werden."
+
+#: kmlexport.cpp:167
+msgid "Could not read image '%1'"
+msgstr "Das Bild '%1' kann nicht gelesen werden."
+
+#: kmlexport.cpp:174
+msgid "Format of image '%1' is unknown"
+msgstr "Das Format des Bildes '%1' ist unbekannt."
+
+#: kmlexport.cpp:184
+msgid "Error loading image '%1'"
+msgstr "Ein Fehler trat beim Laden des Bildes '%1' auf."
+
+#: kmlexport.cpp:224
+msgid "Could not save image '%1' to '%2'"
+msgstr "Das Bild '%1' lässt sich nicht unter '%2' speichern."
+
+#: kmlexport.cpp:304
+msgid "Creation of placemark '%1'"
+msgstr "Die Ortsmarkierung \"%1\" wird erstellt."
+
+#: kmlexport.cpp:311
+msgid "Could not save icon for image '%1' to '%2'"
+msgstr "Das Symbol für das Bild '%1' kann nicht in '%2' gespeichert werden."
+
+#: kmlexport.cpp:341
+msgid "No GPX file Chosen!"
+msgstr "Es wurde keine GPX-Datei ausgewählt."
+
+#: kmlexport.cpp:363
+msgid "Tracks"
+msgstr "Spuren"
+
+#: kmlexport.cpp:443
+msgid "No position data for '%1'"
+msgstr "Keine Positionsdaten für: \"%1\""
+
+#: kmlexport.cpp:455
+#, c-format
+msgid ""
+"_n: No position data for 1 picture\n"
+"No position data for %n pictures"
+msgstr ""
+"Keine Posistionsdaten für 1 Bild\n"
+"Keine Posistionsdaten für %n Bilder"
+
+#: kmlexport.cpp:469
+msgid "Move to final directory"
+msgstr "Verschiebe in den endgültigen Ordner"
+
+#: kmlexportconfig.cpp:66 kmlexportconfig.cpp:281
+msgid "KML Export"
+msgstr "KML-Export"
+
+#: kmlexportconfig.cpp:77
+msgid "Target Preferences"
+msgstr "Ziel-Präferenzen"
+
+#: kmlexportconfig.cpp:82
+msgid "Target Type"
+msgstr "Zieltyp"
+
+#: kmlexportconfig.cpp:86
+msgid "&Local or web target used by GoogleEarth"
+msgstr "&Lokales oder Webziel von GoogleEarth"
+
+#: kmlexportconfig.cpp:91
+msgid "Web target used by GoogleMap"
+msgstr "Webziel von GoogleMap"
+
+#: kmlexportconfig.cpp:95
+msgid ""
+"When using GoogleMap, all image must have complete URL, icons are squared and "
+"when drawing a track, only linetrack is exported"
+msgstr ""
+"Wenn Sie Google-Maps benutzen, dann müssen alle Bilder eine vollständige "
+"Adresse haben und die Symbole sind rechteckig, wenn die Spur gezeichnet wird. "
+"Nur die Inline-Spur wird untestützt."
+
+#: kmlexportconfig.cpp:101
+msgid "Picture altitude"
+msgstr "Höhe der Bilder"
+
+#: kmlexportconfig.cpp:105 kmlexportconfig.cpp:256
+msgid "clamp to ground"
+msgstr "Befestigt am Boden"
+
+#: kmlexportconfig.cpp:106 kmlexportconfig.cpp:257
+msgid "relative to ground"
+msgstr "Relativ zum Boden"
+
+#: kmlexportconfig.cpp:107 kmlexportconfig.cpp:258
+msgid "absolute"
+msgstr "Absolut"
+
+#: kmlexportconfig.cpp:108
+msgid ""
+"<p>Specifies how pictures are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+"<p>Gibt an wie Bilder angezeigt werden sollen.<dl><dt>"
+"Befestigt am Boden (Standard)</dt><dd>Ignoriert die angegebene Höhe</dd><dt>"
+"Relativ zum Boden</dt><dd>Setzt die Höhe des Elements relativ zur aktuellen "
+"Höhe des gewünschten Ortes.</dd><dt>Absolut</dt><dd>"
+"Setzt die Höhe der Koordinaten relativ zum Meeresspiegel. Dies geschieht "
+"unabhängig von der Bodenhöhe des Gebietes um das Element.</dd></dl>"
+
+#: kmlexportconfig.cpp:119
+msgid "Destination directory"
+msgstr "Zielordner"
+
+#: kmlexportconfig.cpp:125
+msgid "Select a directory to save the kml file and pictures"
+msgstr ""
+"Wählen Sie einen Ordner indem die kml-Dateien und Bilder gespeichert werden."
+
+#: kmlexportconfig.cpp:129
+msgid "Destination URL"
+msgstr "Ziel-URL"
+
+#: kmlexportconfig.cpp:136
+msgid "File name"
+msgstr "Dateiname"
+
+#: kmlexportconfig.cpp:147
+msgid "Sizes"
+msgstr "Größen"
+
+#: kmlexportconfig.cpp:152
+msgid "Icon size"
+msgstr "Symbolgröße"
+
+#: kmlexportconfig.cpp:163
+msgid "Image size"
+msgstr "Bildgröße"
+
+#: kmlexportconfig.cpp:178
+msgid "GPX Tracks"
+msgstr "GPX-Spuren"
+
+#: kmlexportconfig.cpp:184
+msgid "Draw GPX track"
+msgstr "GPX-Spuren einzeichnen"
+
+#: kmlexportconfig.cpp:188
+msgid "GPX file"
+msgstr "GPX-Datei"
+
+#: kmlexportconfig.cpp:197
+msgid "Time zone"
+msgstr "Zeitzone"
+
+#: kmlexportconfig.cpp:200
+msgid "GMT-12:00"
+msgstr "WEZ-12:00"
+
+#: kmlexportconfig.cpp:201
+msgid "GMT-11:00"
+msgstr "WEZ-11:00"
+
+#: kmlexportconfig.cpp:202
+msgid "GMT-10:00"
+msgstr "WEZ-10:00"
+
+#: kmlexportconfig.cpp:203
+msgid "GMT-09:00"
+msgstr "WEZ-09:00"
+
+#: kmlexportconfig.cpp:204
+msgid "GMT-08:00"
+msgstr "WEZ-08:00"
+
+#: kmlexportconfig.cpp:205
+msgid "GMT-07:00"
+msgstr "WEZ-07:00"
+
+#: kmlexportconfig.cpp:206
+msgid "GMT-06:00"
+msgstr "WEZ-06:00"
+
+#: kmlexportconfig.cpp:207
+msgid "GMT-05:00"
+msgstr "WEZ-05:00"
+
+#: kmlexportconfig.cpp:208
+msgid "GMT-04:00"
+msgstr "WEZ-04:00"
+
+#: kmlexportconfig.cpp:209
+msgid "GMT-03:00"
+msgstr "WEZ-03:00"
+
+#: kmlexportconfig.cpp:210
+msgid "GMT-02:00"
+msgstr "WEZ-02:00"
+
+#: kmlexportconfig.cpp:211
+msgid "GMT-01:00"
+msgstr "WEZ-01:00"
+
+#: kmlexportconfig.cpp:212
+msgid "GMT"
+msgstr "WEZ"
+
+#: kmlexportconfig.cpp:213
+msgid "GMT+01:00"
+msgstr "WEZ+01:00"
+
+#: kmlexportconfig.cpp:214
+msgid "GMT+02:00"
+msgstr "WEZ+02:00"
+
+#: kmlexportconfig.cpp:215
+msgid "GMT+03:00"
+msgstr "WEZ+03:00"
+
+#: kmlexportconfig.cpp:216
+msgid "GMT+04:00"
+msgstr "WEZ+04:00"
+
+#: kmlexportconfig.cpp:217
+msgid "GMT+05:00"
+msgstr "WEZ+05:00"
+
+#: kmlexportconfig.cpp:218
+msgid "GMT+06:00"
+msgstr "WEZ+06:00"
+
+#: kmlexportconfig.cpp:219
+msgid "GMT+07:00"
+msgstr "WEZ+07:00"
+
+#: kmlexportconfig.cpp:220
+msgid "GMT+08:00"
+msgstr "WEZ+08:00"
+
+#: kmlexportconfig.cpp:221
+msgid "GMT+09:00"
+msgstr "WEZ+09:00"
+
+#: kmlexportconfig.cpp:222
+msgid "GMT+10:00"
+msgstr "WEZ+10:00"
+
+#: kmlexportconfig.cpp:223
+msgid "GMT+11:00"
+msgstr "WEZ+11:00"
+
+#: kmlexportconfig.cpp:224
+msgid "GMT+12:00"
+msgstr "WEZ+12:00"
+
+#: kmlexportconfig.cpp:225
+msgid "GMT+13:00"
+msgstr "WEZ+13:00"
+
+#: kmlexportconfig.cpp:226
+msgid "GMT+14:00"
+msgstr "WEZ+14:00"
+
+#: kmlexportconfig.cpp:227
+msgid ""
+"<p>Sets the time zone of the camera during picture shooting, so that the time "
+"stamps of the GPS can be converted to match the local time"
+msgstr ""
+"<p>Legen Sie hier die Zeitzone fest, in der die Bilder gemacht wurden. Dadurch "
+"können die Zeiten der Bilder in GMT-Zeit umgerechnet werden."
+
+#: kmlexportconfig.cpp:232
+msgid "Track width"
+msgstr "Spurbreite"
+
+#: kmlexportconfig.cpp:239
+msgid "Track color"
+msgstr "Spurfarbe"
+
+#: kmlexportconfig.cpp:248
+msgid "Opacity:"
+msgstr "Deckfähigkeit:"
+
+#: kmlexportconfig.cpp:252
+msgid "Track altitude"
+msgstr "Spurhöhe"
+
+#: kmlexportconfig.cpp:259
+msgid ""
+"<p>Specifies how the points are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+"<p>Gibt an wie Punkte angezeigt werden sollen.<dl><dt>"
+"Befestigt am Boden (Standard)</dt><dd>Ignoriert die angegebene Höhe</dd><dt>"
+"Relativ zum Boden</dt><dd>Setzt die Höhe des Elements relativ zur aktuellen "
+"Höhe des gewünschten Ortes.</dd><dt>Absolut</dt><dd>"
+"Setzt die Höhe der Koordinaten relativ zum Meeresspiegel. Dies geschieht "
+"unabhängig von der Bodenhöhe des Gebietes um das Element.</dd></dl>"
+
+#: kmlexportconfig.cpp:284
+msgid "A Kipi plugin for kml exporting"
+msgstr "Ein KIPI-Modul zum Export von kml-Dateien"
+
+#: kmlexportconfig.cpp:287
+msgid "Author"
+msgstr "Autor"
+
+#: kmlgpsdataparser.cpp:66
+msgid "Track"
+msgstr "Spur"
+
+#: kmlgpsdataparser.cpp:95
+msgid "Points"
+msgstr "Punkte"
+
+#: kmlgpsdataparser.cpp:105
+msgid "Point"
+msgstr "Punkt"
+
+#: plugin_gpssync.cpp:78
+msgid "Correlator..."
+msgstr "Korrelator ..."
+
+#: plugin_gpssync.cpp:86
+msgid "Edit Coordinates..."
+msgstr "Koordinaten bearbeiten ..."
+
+#: plugin_gpssync.cpp:94
+msgid "Remove Coordinates..."
+msgstr "Koordinaten entfernen ..."
+
+#: plugin_gpssync.cpp:105
+msgid "KML Export..."
+msgstr "KML-Export ..."
+
+#: plugin_gpssync.cpp:139
+msgid ""
+"<qt>"
+"<p>Unable to find the gpsbabel executable:"
+"<br> This program is required by this plugin to support GPS data file decoding. "
+"Please install gpsbabel as a package from your distributor or <a href=\"%1\">"
+"download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %2 is required by this plugin.</p></qt>"
+msgstr ""
+"<qt>"
+"<p>Das Programm gpsbabel kann nicht gefunden werden:"
+"<br>Dieses Programm wird von diesem Modul benötigt, um die Dekodierung von "
+"GPS-Datendateien zu unterstützen. Bitte installieren Sie gpsbabel als Paket von "
+"Ihrem Distributor oder <a href=\"%1\">laden Sie die Quellen herunter</a>.</p>"
+"<p>Achtung: Sie benötigen mindestens gpsbabel Version %2 für dieses Modul.</p>"
+"</qt>"
+
+#: plugin_gpssync.cpp:156
+msgid ""
+"<qt>"
+"<p>gpsbabel executable is not up to date:"
+"<br> The version %1 of gpsbabel have been found on your computer. This version "
+"is too old to run properly with this plugin. Please update gpsbabel as a "
+"package from your distributor or <a href=\"%2\">download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %3 is required by this plugin</p></qt>"
+msgstr ""
+"<qt>"
+"<p>Das Programm gpsbabel ist nicht aktuell genug:"
+"<br>Die Version %1 von gpsbabel wurde auf Ihrem Rechner gefunden. Diese Version "
+"ist zu alt, um ordnungsgemäß mit diesem Modul zu arbeiten. Bitte aktualisieren "
+"Sie gpsbabel als Paket von Ihrem Distributor oder<a href=\"%2\">"
+"laden Sie die Quellen herunter</a>.</p>"
+"<p>Achtung: Sie benötigen mindestens gpsbabel Version %3 für dieses Modul.</p>"
+"</qt>"
+
+#: plugin_gpssync.cpp:249
+msgid "Unable to save geographical coordinates into:"
+msgstr "Die geographische Koordinaten konnten nicht gespeichert werden nach:"
+
+#: plugin_gpssync.cpp:265
+msgid ""
+"Geographical coordinates will be definitively removed from all selected "
+"images.\n"
+"Do you want to continue ?"
+msgstr ""
+"Die geographischen Koordinaten werden nun alle von den ausgewählten Bildern "
+"gelöscht.\n"
+"Möchten Sie fortfahren?"
+
+#: plugin_gpssync.cpp:267 plugin_gpssync.cpp:302
+msgid "Remove Geographical Coordinates"
+msgstr "Geographische Koordinaten entfernen"
+
+#: plugin_gpssync.cpp:300
+msgid "Unable to remove geographical coordinates from:"
+msgstr "Die geographische Koordinaten konnten nicht entfernt werden von:"
+
+#: plugin_gpssync.cpp:317
+msgid "KMLExport"
+msgstr "KMLExport"
+
+#~ msgid "Read only"
+#~ msgstr "Nur lesen"

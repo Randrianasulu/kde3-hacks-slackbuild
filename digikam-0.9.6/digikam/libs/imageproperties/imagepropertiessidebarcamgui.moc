@@ -1,0 +1,149 @@
+/****************************************************************************
+** Digikam::ImagePropertiesSideBarCamGui meta object code from reading C++ file 'imagepropertiessidebarcamgui.h'
+**
+** Created: Wed Jun 14 03:28:06 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imagepropertiessidebarcamgui.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ImagePropertiesSideBarCamGui::className() const
+{
+    return "Digikam::ImagePropertiesSideBarCamGui";
+}
+
+QMetaObject *Digikam::ImagePropertiesSideBarCamGui::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ImagePropertiesSideBarCamGui( "Digikam::ImagePropertiesSideBarCamGui", &Digikam::ImagePropertiesSideBarCamGui::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ImagePropertiesSideBarCamGui::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesSideBarCamGui", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ImagePropertiesSideBarCamGui::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesSideBarCamGui", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ImagePropertiesSideBarCamGui::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = Sidebar::staticMetaObject();
+    static const QUMethod slot_0 = {"slotNoCurrentItem", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ "tab", &static_QUType_ptr, "QWidget", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotChangedTab", 1, param_slot_1 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotNoCurrentItem()", &slot_0, QMetaData::Public },
+	{ "slotChangedTab(QWidget*)", &slot_1, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalFirstItem", 0, 0 };
+    static const QUMethod signal_1 = {"signalPrevItem", 0, 0 };
+    static const QUMethod signal_2 = {"signalNextItem", 0, 0 };
+    static const QUMethod signal_3 = {"signalLastItem", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalFirstItem()", &signal_0, QMetaData::Public },
+	{ "signalPrevItem()", &signal_1, QMetaData::Public },
+	{ "signalNextItem()", &signal_2, QMetaData::Public },
+	{ "signalLastItem()", &signal_3, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ImagePropertiesSideBarCamGui", parentObject,
+	slot_tbl, 2,
+	signal_tbl, 4,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ImagePropertiesSideBarCamGui.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ImagePropertiesSideBarCamGui::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ImagePropertiesSideBarCamGui" ) )
+	return this;
+    return Sidebar::qt_cast( clname );
+}
+
+// SIGNAL signalFirstItem
+void Digikam::ImagePropertiesSideBarCamGui::signalFirstItem()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL signalPrevItem
+void Digikam::ImagePropertiesSideBarCamGui::signalPrevItem()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+// SIGNAL signalNextItem
+void Digikam::ImagePropertiesSideBarCamGui::signalNextItem()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2 );
+}
+
+// SIGNAL signalLastItem
+void Digikam::ImagePropertiesSideBarCamGui::signalLastItem()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+bool Digikam::ImagePropertiesSideBarCamGui::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotNoCurrentItem(); break;
+    case 1: slotChangedTab((QWidget*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return Sidebar::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::ImagePropertiesSideBarCamGui::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalFirstItem(); break;
+    case 1: signalPrevItem(); break;
+    case 2: signalNextItem(); break;
+    case 3: signalLastItem(); break;
+    default:
+	return Sidebar::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ImagePropertiesSideBarCamGui::qt_property( int id, int f, QVariant* v)
+{
+    return Sidebar::qt_property( id, f, v);
+}
+
+bool Digikam::ImagePropertiesSideBarCamGui::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

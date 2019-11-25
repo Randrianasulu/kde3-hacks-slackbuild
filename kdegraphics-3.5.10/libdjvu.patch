@@ -1,0 +1,10 @@
+--- kdegraphics-3.5.10/kviewshell/plugins/djvu/libdjvu/GSmartPointer..h.orig	2015-09-11 16:04:53.288000000 +0300
++++ kdegraphics-3.5.10/kviewshell/plugins/djvu/libdjvu/GSmartPointer.h	2015-09-11 16:05:34.692000000 +0300
+@@ -98,6 +98,7 @@
+ #endif
+ 
+ #include "DjVuGlobal.h"
++#include <cstddef>
+ 
+ #ifdef HAVE_NAMESPACES
+ namespace DJVU {

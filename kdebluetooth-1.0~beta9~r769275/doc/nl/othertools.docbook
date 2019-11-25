@@ -1,0 +1,131 @@
+<sect1 id="components.othertools">
+<title
+>Aanvullende integratie- en commandopromptprogramma's</title>
+<para
+>Deze sectie beschrijft alle andere kleine hulpprogramma's en scripts die met kdebluetooth worden meegeleverd. De meesten bevatten een beperkt aantal functies en dienen te worden aangeroepen vanuit scripts of andere programma's. </para>
+
+<sect2 id="components.othertools.kioclient">
+<title
+>kioclient: scripttoegang tot het KIO-framework</title>
+<para
+>Dit is een klein hulpmiddel waarmee u vanaf de commandoprompt toegang kunt krijgen tot kioslaves. <command
+>kioclient</command
+> is dus in feite een kleine hulpmiddel voor algemeen gebruikt. Maar omdat het nog niet bestond moest ik het zelf schrijven. </para>
+<para
+>Met <command
+>kioclient</command
+> kunt u elk bestand of elke map die bereikbaar is via het KIO-framework van KDE bekijken, kopiëren en/of verwijderen. U kunt een bestand rechtstreeks van een FTP-server naar WebDAV-server kopiëren of de inhoud van een map bekijken via SSH met behulp van kio_fish. Of, en nu wordt het interessant voor ons - u kunt toegang krijgen tot bestanden op uw mobiele telefoon via kio_obex. kioclient wordt gebruikt door een voorbeeldscript dat wordt meegeleverd met Kbluetoothd: het script <command
+>copy_images</command
+>. </para>
+<para
+>U kunt een opsomming van alle mogelijke argumenten bekijken via <command
+>kioclient -- help</command
+>. Hier zijn enkele voorbeelden om u alvast een indruk te geven: <screen
+>$ kioclient cat http://www.kde.org | head -1
+&lt;?xml version="1.0" encoding="UTF-8"?>
+$ kioclient ls -s ftp://ftp.kde.org | head -4
+     4096 .
+     4096 ..
+     4096 bin
+     4096 dev
+$ kioclient ls bluetooth:/
+local system
+Fred's 6230
+Fred's 3650
+$ kioclient ls "sdp://Fred's 6230/"
+OBEX Object Push
+OBEX File Transfer
+Dial-up networking
+Nokia PC Suite
+COM 1
+Voice Gateway
+Audio Gateway
+SIM ACCESS
+.More Services
+$
+</screen>
+</para>
+<para
+>Houd er rekening mee dat kioclient - ook al is het een commandopromptprogramma - nog steeds vanuit KDE dient te worden aangeroepen, u kunt het dus niet gebruiken in bijv. cronjobs. Van deze beperking hebt u verder geen last als u het gebruikt voor waarneemscripts in kbluetoothd. </para>
+
+</sect2>
+
+<sect2>
+<title
+>kbtsearch: vanuit scripts zoeken naar apparaten</title>
+<para
+>Net zoals <command
+>kioclient</command
+> of KDE's <command
+>kdialog</command
+> is dit een commandopromptprogramma voor gebruik in scripts. Het levert een commandoregelinterface naar de twee algemene zoekdialogen van kdebluetooth - de dialoog voor het zoeken van apparaten en de dialoog voor het zoeken naar diensten. </para>
+<para
+>U kunt het gebruiken als u wilt dat de gebruiker een Bluetooth-apparaat kan selecteren of om te zoeken naar een specifieke dienst op een van de waarneembare apparaten. De dienstselectiedialoog onthoud de eerder gevonden apparaten zet deze onmiddellijk in de lijst. De momenteel beschikbare diensten worden naar een paar seconden aan de lijst toegevoegd. </para>
+<para
+>Om naar een apparaat te zoeken, typ <command
+>kbtsearch --device</command
+>. Als de gebruiker een apparaat heeft geselecteerd, of een adres heeft ingevoerd en op <guibutton
+>OK</guibutton
+> heeft geklikt, begint kbtsearch met het afdrukken van het adres van het apparaat naar stdout en geeft de status 0. als de gebruiker op <guibutton
+>Annuleren</guibutton
+> klikt wordt er niets afgedrukt en wordt de statuscode 1 gegeven: <screen
+>$ if ADDR=$(kbtsearch --device) ;
+
+> then echo "Selected address: $ADDR.";
+
+> else echo "No address selected."; fi
+Selected address: 00:60:57:5C:E6:BD.
+$
+</screen>
+</para>
+<para
+>U kunt ook zoeken naar een apparaat dat een opgegeven Bluetooth-profiel implementeert met <command
+>kbtsearch --uuid &lt;dienst-UUID
+></command
+>. Voor een complete lijst met mogelijke UUIDS voor standaard Bluetooth-profielen, zie de webpagina <ulink url="https://www.bluetooth.org/foundry/assignnumb/document/service_discovery"
+>Bluetooth Assigned Numbers (SDP)</ulink
+>. kbtsearch definieert tevens enkele aliassen voor veelgebruikte profielen. Draai <command
+>kbtsearch --aliases</command
+> om een lijst met mogelijke aliassen te openen. </para>
+<para
+>Als de gebruiker een dienst selecteert en op <guibutton
+>OK</guibutton
+> klikt geeft kbtsearch een 0 en drukt een regel in de opmaak [adres] [Rfcomm-kanaal] af. Het is duidelijk dat dit alleen bruikbaar is voor diensten die daadwerkelijk een Rfcomm-kanaal definiëren. Momenteel is er geen manier om een bijvoorbeeld een L2CAP PSM op te halen. Vertel het ons als u dit nodig hebt. <screen>
+$ if RET=( $(kbtsearch --uuid=FAX) ) ; 
+
+> then ADDRESS=${RET[0]}; CHANNEL=${RET[1]}; 
+
+> echo "Selected addr=$ADDRESS, channel=$CHANNEL."; 
+
+> else echo "No service selected."; 
+
+> fi
+Selected addr=00:60:57:5C:E6:BD, channel=1.
+$
+</screen
+> Voor aanvullende opties, refereer naar <command
+>kbtsearch --help</command
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>kbtfax: faxberichten versturen vanuit KDE-programma's</title>
+<para
+>Dit is een helperscript om het faxen vanuit elk KDE-programma eenvoudiger te maken. Het is afhankelijk van <command
+>efax</command
+> (extern programma), <command
+>kdeprintfax</command
+>, <command
+>kdesu</command
+> (beide onderdeel van kdebase) en het programma <command
+>rfcomm</command
+> (onderdeel van bluez-utils). </para>
+<para
+>Als u probeert een fax te verzenden met <command
+>kdeprintfax</command
+>, dan kunt u het te gebruiken systeem selecteren. Een van de opties is "Efax", een andere is "Other". Selecteer "Other" en zoek het kbtfax-script in uw kdebluetooth-installatie. Voer de commandoregel in zoals in het script staat vermeld. Dat is alles. Er kan overigens van alles mis gaan, pas het script naar believen aan en stuur ons eventuele patches :) </para>
+</sect2>
+
+</sect1>
+

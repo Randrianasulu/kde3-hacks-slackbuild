@@ -1,0 +1,10 @@
+#define KDE_USE_FINAL 1
+#include "loadsavethread.cpp"
+#include "managedloadsavethread.cpp"
+#include "sharedloadsavethread.cpp"
+#include "previewloadthread.cpp"
+#include "loadingdescription.cpp"
+#include "loadsavetask.cpp"
+#include "previewtask.cpp"
+#include "loadingcache.cpp"
+#include "loadingcacheinterface.cpp"

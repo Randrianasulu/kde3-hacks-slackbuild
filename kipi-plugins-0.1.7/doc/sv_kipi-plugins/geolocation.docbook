@@ -1,0 +1,226 @@
+<chapter id="geolocation">
+<chapterinfo>
+
+<title
+>Geografisk lokaliseringseditor</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard snabela kulzer punkt net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Lokalisera geografiskt gör det möjligt att lägga till och redigera GPS-koordinater i metadata i bilder. Geografisk data lagras i bilden (med EXIF-taggar) och platsen kan visas på en karta i en extern webbläsare. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Kipi-insticksprogrammet <quote
+>Lokalisera geografiskt</quote
+> tillhandahåller verktyg för att lokalisera bilder geografiskt med det vanliga sfäriska koordinatsystemet (som används av GPS och Galileo). Höjd, latitud och longitud används. </para>
+<note
+><para
+>Insticksprogrammet fungerar bara med bildformat som har stöd för EXIF av <ulink url="http://www.exiv2.org"
+>libkexiv2</ulink
+>. </para
+></note>
+
+<sect1 id="geolocation-title"
+>  <title
+>Lokalisera geografiskt</title>
+<para
+>Insticksprogrammet har två sätt att markera bilder med koordinater: </para>
+<itemizedlist>
+    <listitem>
+        <para
+>Korrelation i bakgrunden av GPS-spårdata med en serie bilder. </para>
+    </listitem>
+    <listitem>
+        <para
+>Halvautomatisk tilldelning av koordinater för enstaka bilder. </para>
+    </listitem>
+</itemizedlist>
+
+<sect2 id="geolocation-correlator"
+>       <title
+>Korrelera</title>
+        <para
+>För att kunna korrelera bilder med geografisk data måste GPS-spårdata vara tillgängligt som en XML-fil med GPX-format (<ulink url="http://www.gpsbabel.org"
+>gpsbabel</ulink
+> och <ulink url="http://www.ncc.up.pt/gpsman/"
+>gpsman</ulink
+> kan ladda ner och konvertera spårdata från en GPS-enhet åt dig). </para>
+        <para
+><menuchoice
+><guimenu
+>Bild</guimenu
+> <guimenuitem
+>Lokalisera geografiskt</guimenuitem
+> <guimenuitem
+>Korrelera</guimenuitem
+></menuchoice
+>. Gränssnittet kan korrelera ett antal redan markerade bilder med inspelade GPS-spårdata. </para>
+            <example>
+               <title
+>Dialogrutan för geografisk korrelation baserat på EXIF datum/tid och spårdata (GPX-format)</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocationcorrelate.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Markera bilderna du vill korrelera i programmets huvudvy, och använd därefter menyanropet. Dialogrutan ovan visas. För att ange möjlig korrelation mellan tid och plats måste du ladda en spårfil med <guilabel
+>Ladda GPX-fil</guilabel
+>, som förstås ska innehålla GPS-data från samma tid och plats som bilderna togs med kameran. </para>
+           <para
+>När filen har laddats, utförs en automatisk korrelation som visar tilldelade koordinater med rött. GPS-spårdata lagras utan undantag med GMT, så du måste anpassa kamerans tid till GMT, vilket kan göras med <guilabel
+>Tidszon</guilabel
+>. Välj <emphasis
+>kamerans tidszon</emphasis
+> här. </para>
+           <para
+>Inställningen <guilabel
+>Maximalt tidsgap</guilabel
+> anger gränsen för att tiden från GPS och kamerans tid ska anses höra ihop. Det maximala värdet är 2000 sekunder. </para>
+           <tip
+><para
+>Om du inte har någon spårdata för bilder som togs på samma plats, kan du bara redigera en GPX-fil för hand och använda den för dessa bilder. Tidsgapet på 2000 sekunder korrelerar då alla bilder som är tagna inom två tredjedels timma. </para
+></tip>
+
+           <para
+>Alternativen <guilabel
+>Interpolera</guilabel
+> och <guilabel
+>Skillnad i minuter</guilabel
+> kan användas om data inte passar ihop. Om du vet att det verkligen finns en motsvarighet i plats trots ett stort tidsgap mellan kameran och GPS-mottagaren, kan du ställa in gränsen här och klicka på knappen <guilabel
+>Korrelera</guilabel
+> för att utföra interpolationen. </para>
+            <example>
+               <title
+>Korrelera</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocationcorrelate1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Den största tidsskillnad som kan läggas till här är 240 minuter. </para>
+
+</sect2
+> 
+
+<sect2 id="geolocation-edit-coordinates"
+>       <title
+>Redigera koordinater</title>
+            <example>
+               <title
+>Halvautomatisk tilldelning av koordinater via interaktion på karta</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocationeditcoords.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Koordinaterna kan ställas in manuellt med dialogrutan. Det är bekvämt om en serie foton har tagits på samma plats. Eftersom dialogrutan kommer ihåg koordinaterna från ett anrop till nästa, är det så enkelt som att klicka på <guilabel
+>Ok</guilabel
+> att använda tidigare data för det nuvarande fotot. </para>
+           <para
+>Annars kan platsen hittas och anges iterativt med kartan som visas. Klicka på det intressanta området, zooma in, justera platsen genom att klicka igen, och så vidare, ända till tillräcklig noggrannhet uppnås. Höjden måste alltid skrivas in för hand. Kartan kan ändras mellan kartläge, satellitbild eller blandat läge. </para>
+</sect2>
+
+<sect2 id="geolocation-manual"
+> <title
+>Taggning via kommandoraden</title>
+  <para
+>Det finns sätt att lägga till GPS information i bilder helt utanför KIPI-insticksprogrammets omgivning. Här visas ett litet skript som använder verktyget exiftool för att uppdatera en uppsättning bilder. </para>
+
+
+<blockquote
+><screen
+>#!/bin/sh
+# exiftool wrapper script for easy commandline use. It treats regex files or whole directories.
+#
+#                        FMT                  Output
+#                "%d deg %d' %.2f"\"    54 deg 59' 22.80"
+#                "%d deg %.4f min"      54 deg 59.3800 min
+#                "%.6f degrees"         54.989667 degrees
+
+if [ -z $1 ]; then 
+   echo "Usage: exiftool-gps-wrapper lat long [alt] file || dir (use signed floating coordinates)"
+else
+
+   if  [ -z "$4" ]; then  foo="$3"; alt=0
+   else                          foo="$4"; alt=$3
+   fi
+
+   echo $foo
+   if [ -e "$foo" ] ; then
+        latR=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
+        lonR=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+        lat=$(echo "$1" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+        lon=$(echo "$2" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+        # use the following syntax for easy googlian paste of ll=-1.23456,53.345345
+        #lonR=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
+        echo $lat, $latR, $lon, $lonR, $3, $4, $foo
+        
+        function setgpsinfo ()
+        {
+            exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$5 \
+            -GPSLongitudeRef=$4 -GPSLongitude=$3 -GPSLatitudeRef=$2 -GPSLatitude=$1 "$6"
+            exiftool -GPS:ALL "$6"
+        }
+
+        if [ -d "$foo" ] ; then
+
+            for i in "$foo" ; do    # the selection of files treated depend on the passed regex
+                echo "i= "$i
+                setgpsinfo $lat $latR $lon $lonR $alt "$i"
+            done
+        else
+            setgpsinfo $lat $latR $lon $lonR $alt "$foo"
+        fi
+   else        echo "file or folder is wrong"
+   fi
+fi                 
+</screen
+></blockquote>
+</sect2>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

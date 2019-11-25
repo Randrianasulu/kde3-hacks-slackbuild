@@ -1,0 +1,237 @@
+From c0913ce69ba56f01e0b197f6c7a4776080da35a0 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Thu, 09 Oct 2014 18:29:39 +0000
+Subject: Fix artsd exiting on Xine-generated Xorg errors
+
+This relates to Bug 2150
+Fix Kaboodle not playing newly loaded videos
+This relates to Bug 1905
+---
+diff --git a/kaboodle/engine.cpp b/kaboodle/engine.cpp
+index a53989d..9008dab 100644
+--- a/kaboodle/engine.cpp
++++ b/kaboodle/engine.cpp
+@@ -109,20 +109,18 @@ bool Kaboodle::Engine::reload(void)
+ 
+ void Kaboodle::Engine::play()
+ {
+-	if(d->playobj)
+-	{
+-		switch(d->playobj->state())
+-		{
+-		case Arts::posIdle:
+-			if(needReload)
+-				reload();
+-			d->playobj->play();
+-			break;
+-		case Arts::posPaused:
+-			d->playobj->play();
+-			break;
+-		default:
+-			break;
++	if(d->playobj) {
++		switch(d->playobj->state()) {
++			case Arts::posIdle:
++				if(needReload)
++					reload();
++				d->playobj->play();
++				break;
++			case Arts::posPaused:
++				d->playobj->play();
++				break;
++			default:
++				break;
+ 		}
+ 	}
+ }
+diff --git a/kaboodle/player.cpp b/kaboodle/player.cpp
+index af53a91..4ec345c 100644
+--- a/kaboodle/player.cpp
++++ b/kaboodle/player.cpp
+@@ -88,15 +88,17 @@ KMediaPlayer::View *Kaboodle::Player::view(void)
+ // notice how this is just an expanded stop() ? weird.
+ bool Kaboodle::Player::openURL(const KURL &f)
+ {
+-	if(!current.isEmpty())
++	bool previousLoad = !current.isEmpty();
++	if (previousLoad)
+ 	{
+ 		uncompleted = false;
+ 		engine->stop();
++		current = f;
+ 	}
+ 
+ 	emit started(0);
+ 	current = f;
+-	if(!engine->load(current))
++	if (!engine->load(current))
+ 	{
+ 		current = KURL();
+ 		setState(Empty);
+@@ -104,12 +106,18 @@ bool Kaboodle::Player::openURL(const KURL &f)
+ 		return false;
+ 	}
+ 
++	if (previousLoad)
++	{
++		QTimer::singleShot( 0, this, SLOT(play()) );
++		return true;
++	}
++
+ 	stopAction->setEnabled(false);
+ 	playAction->setEnabled(true);
+ 	pauseAction->setEnabled(false);
+ 	setState(Empty); // so stateChanged() is emitted and autoPlay works
+ 	setState(Stop);
+-        
++
+ 	tickerTimeout();
+ 	return true;
+ }
+diff --git a/xine_artsplugin/xinePlayObject_impl.cpp b/xine_artsplugin/xinePlayObject_impl.cpp
+index 6fd108d..076a4dc 100644
+--- a/xine_artsplugin/xinePlayObject_impl.cpp
++++ b/xine_artsplugin/xinePlayObject_impl.cpp
+@@ -140,63 +140,91 @@ int ao_fifo_arts_delay()
+     return (int)(1000 * Arts::AudioSubSystem::the()->outputDelay());
+ }
+ 
+-xinePlayObject_impl::xinePlayObject_impl(bool audioOnly)
+-    : mrl( "" ), xine( 0 ), stream( 0 ), queue( 0 ), ao_port( 0 ), vo_port( 0 ), audioOnly(audioOnly)
+-{
++static int xine_play_object_x_errhandler( Display *dpy, XErrorEvent *err ) {
++	if ( err->error_code == BadWindow ) {
++		return 0;
++	}
++	else if ( err->error_code == BadMatch &&
++		err->request_code == 42 /* X_SetInputFocus */ ) {
++		return 0;
++	}
+ 
+-    if (!audioOnly)
+-    {
+-        XInitThreads();
++	char errstr[256];
++	XGetErrorText( dpy, err->error_code, errstr, 256 );
++	arts_warning( "X Error: %s %d\n"
++		"  Major opcode:  %d\n"
++		"  Minor opcode:  %d\n"
++		"  Resource id:  0x%lx",
++		errstr, err->error_code,
++		err->request_code,
++		err->minor_code,
++		err->resourceid );
++	
++	return 0;
++}
+ 
+-        if (!(display = XOpenDisplay( NULL )))
+-  	{
+-			arts_fatal( "could not open X11 display" );
+-	}
+ 
+-    	XFlush( display );
++static int xine_play_object_xio_errhandler( Display * ) {
++	arts_fatal( "Fatal IO error: client killed" );
++	return 0;
++}
+ 
+-	    // Create a special window for uninterrupted X11 communication
+-    	xcomWindow = XCreateSimpleWindow( display, DefaultRootWindow( display ),
+-					  0, 0, 1, 1, 0, 0, 0 );
++xinePlayObject_impl::xinePlayObject_impl(bool audioOnly)
++    : mrl( "" ), xine( 0 ), stream( 0 ), queue( 0 ), ao_port( 0 ), vo_port( 0 ), audioOnly(audioOnly)
++{
++	if (!audioOnly) {
++		XInitThreads();
++		
++		if (!(display = XOpenDisplay( NULL ))) {
++			arts_fatal( "could not open X11 display" );
++		}
+ 
+-	XSelectInput( display, xcomWindow, ExposureMask );
+-    }
+-    pthread_mutex_init( &mutex, 0 );
++		// Install default error handlers
++		XSetErrorHandler( xine_play_object_x_errhandler );
++		XSetIOErrorHandler( xine_play_object_xio_errhandler );
+ 
+-    if (!audioOnly)
+-    {
+-    	// Initialize X11 properties
+-    	xcomAtomQuit	   = XInternAtom( display, "VPO_INTERNAL_EVENT", False );
+-	xcomAtomResize	   = XInternAtom( display, "VPO_RESIZE_NOTIFY", False );
+-	screen		   = DefaultScreen( display );
+-	shmCompletionType	   = (XShmQueryExtension( display ) == True)
+-				   ?  XShmGetEventBase( display ) + ShmCompletion : -1;
+-
+-        width		   = 0;
+-        height		   = 0;
+-        dscbTimeOut		   = 0;
+-
+-    	// Initialize xine visual structure
+-        visual.display	   = display;
+-        visual.screen	   = screen;
+-        visual.d		   = xcomWindow;
+-        visual.dest_size_cb	   = &dest_size_cb;
+-        visual.frame_output_cb = &frame_output_cb;
+-        visual.user_data	   = this;
+-    }
++		XFlush( display );
+ 
+-    // Initialize audio and video details
+-    Arts::SoundServerV2 server = Arts::Reference( "global:Arts_SoundServerV2" );
+-    audio.sample_rate	   = 0;
+-    audio.num_channels	   = 0;
+-    audio.bits_per_sample  = 0;
++		// Create a special window for uninterrupted X11 communication
++		xcomWindow = XCreateSimpleWindow( display, DefaultRootWindow( display ), 0, 0, 1, 1, 0, 0, 0 );
+ 
+-    flpos		   = 0.0;
+-    if (!audioOnly)
+-        if (pthread_create( &thread, 0, pthread_start_routine, this ))
+-    	{
+-	    arts_fatal( "could not create thread" );
+-        }
++		XSelectInput( display, xcomWindow, ExposureMask );
++	}
++	pthread_mutex_init( &mutex, 0 );
++	
++	if (!audioOnly) {
++		// Initialize X11 properties
++		xcomAtomQuit	   = XInternAtom( display, "VPO_INTERNAL_EVENT", False );
++		xcomAtomResize	   = XInternAtom( display, "VPO_RESIZE_NOTIFY", False );
++		screen		   = DefaultScreen( display );
++		shmCompletionType	   = (XShmQueryExtension( display ) == True)
++						?  XShmGetEventBase( display ) + ShmCompletion : -1;
++
++		width		   = 0;
++		height		   = 0;
++		dscbTimeOut		   = 0;
++
++		// Initialize xine visual structure
++		visual.display	   = display;
++		visual.screen	   = screen;
++		visual.d		   = xcomWindow;
++		visual.dest_size_cb	   = &dest_size_cb;
++		visual.frame_output_cb = &frame_output_cb;
++		visual.user_data	   = this;
++	}
++	
++	// Initialize audio and video details
++	Arts::SoundServerV2 server = Arts::Reference( "global:Arts_SoundServerV2" );
++	audio.sample_rate	   = 0;
++	audio.num_channels	   = 0;
++	audio.bits_per_sample  = 0;
++
++	flpos		   = 0.0;
++	if (!audioOnly) {
++		if (pthread_create( &thread, 0, pthread_start_routine, this )) {
++			arts_fatal( "could not create thread" );
++		}
++	}
+ }
+ 
+ xinePlayObject_impl::~xinePlayObject_impl()
+--
+cgit v0.9.0.2-52-g1de3

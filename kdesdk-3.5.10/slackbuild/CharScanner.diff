@@ -1,0 +1,10 @@
+--- branches/KDE/3.5/kdesdk-3.5.10/poxml/antlr/antlr/CharScanner.hpp	2005/07/26 18:54:59	438982
++++ branches/KDE/3.5/kdesdk-3.5.10/poxml/antlr/antlr/CharScanner.hpp	2009/04/28 08:23:28	960293
+@@ -42,6 +42,7 @@
+ #include "antlr/BitSet.hpp"
+ #include "antlr/LexerSharedInputState.hpp"
+ #include <map>
++#include <cstdio>
+ 
+ ANTLR_BEGIN_NAMESPACE(antlr)
+ 

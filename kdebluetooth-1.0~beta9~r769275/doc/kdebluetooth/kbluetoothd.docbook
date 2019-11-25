@@ -1,0 +1,263 @@
+<sect1 id="components.kbluetoothd">
+<title>kbluetoothd: The Core of the KDE Bluetooth Framework</title>
+<para>
+KBluetoothD is a central piece of the KDE Bluetooth framework. It runs all the time in the system tray usually and starts other services like the OBEX Server or
+bemused on demand. Its system tray icon tells you about ongoing bluetooth connections and
+also gives you quick access to the service configuration, recently used 
+services, devices in range and more.
+</para>
+<para>
+Programmers who want to integrate their program with kdebluetooth, 
+should take a look at the <link linkend="developers.kbluetoothd">developers section</link> for more information.
+</para>
+
+<sect2>
+<title>Starting kbluetoothd</title>
+<para>
+You can start KBluetoothD by typing <command>kbluetoothd</command> on 
+the command line or by starting it from the K-Menu (usually System/kbluetoothd).
+</para><para>
+KBluetoothD displays and icon in the system tray, but if you don't like it
+you can disable "Always visible" in the context menu of the tray icon.
+Then kbluetoothd will run without any visible user interface, even after
+it's restarted. To re-enable the icon, simply start kbluetoothd again.
+If the icon was disabled, it will still appear for the duration of a
+bluetooth connection.
+</para>
+<para>When kbluetoothd is running until the system is shut down, it will be started again automatically next time you log in. To keep kbluetooth from starting up automatically, just close it and tell it not to start when you log in the next time.</para>
+<para>
+</para>
+</sect2>
+
+<sect2>
+<title>What kbluetoothd does</title>
+<para>
+The most important feature of kbluetoothd is its Bluetooth meta server. Since kbluetoothd is running all the time anyway, it also monitors your Bluetooth adaptor, tells you when there are connections and caches name requests. The idea is that kbluetoothd is the only bluetooth related program that needs to run all the time while still having access to all activated services.
+</para>
+<sect3>
+<title>The meta server</title>
+<para>
+If you know what the inetd is doing in a Linux system, then you already
+have an idea what the meta server of kbluetoothd is good for: It waits
+for incoming connections on behalf of the real service handlers and starts
+them when necessary. So you don't need to have an obex server running all
+the time, but when someone sends you a file via OBEX, then the 
+OBEX-server will be started automatically.
+</para>
+
+<para>There are several reasons for using such an indirection: </para>
+
+<itemizedlist>
+<listitem>
+<para>
+It reduces the memory requirements when you use several services. 
+The KDE Bluetooth Framework currently comes with four server programs: 
+the obex server, the handsfree client, 
+the bemused client and the serial chat tool. While you may need some of these
+services only rarely, you can still leave them enabled at no cost.
+</para>
+</listitem>
+
+<listitem>
+<para>
+Your system tray won't be cluttered with lots of rarely used icons.
+</para>
+</listitem>
+
+<listitem>
+<para>
+It improves security and makes access control easier to manage. 
+KBluetoothD will by default pop up a dialog asking for permission if 
+there is an incoming connection. The user can override this dialog
+and permanently allow or disallow connections for each service and device.
+This gives every application managed by kbluetoothd access control 
+for free.
+</para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para>-->
+</listitem>
+
+<listitem>
+<para>
+It has the potential to make bluetooth services more reliable.
+Each server is started for every new connection, so if a server
+crashes, you can try again without having to restart it.
+</para>
+<para>
+For a webserver it may be a bottleneck to be managed by inted, but in the case of Bluetooth, connection setup takes several seconds anyway and every action is usually user initiated, which makes using a metaserver uncritical.
+</para>
+</listitem>
+
+<listitem>
+<para>
+Service registration with the SDP server is very simple. Please
+see the <link linkend="developers.kbluetoothd">developer section</link>
+for how kbluetoothd-managed application register with the SDP server.
+</para>
+</listitem>
+
+<listitem>
+<para>
+Simple server programs - even scripts - can be used to implement a bluetooth server
+without using Bluetooth-related functions at all. 
+</para>
+</listitem>
+</itemizedlist>
+<para>
+You can enable/disable services used by kbluetoothd with it control center module
+under the "Local services" tab. There you can also configure service specific options
+by selecting a service and clicking on the "Configure..."-Button.
+</para>
+<para>
+Under the "Confirmation" tab you can customize how kbluetoothd will react on
+incoming connections. 
+</para>
+</sect3>
+
+
+<sect3>
+<title>The Device Discovery Service</title>
+<para>
+For many applications it is important to know, if a given device is currently in reach or not, or even be notified if a device comes in reach or leaves. Unlike USB, where the hotplug framework notifies you about new devices, there is no such service for bluetooth. </para>
+
+<para>kbluetoothd fills this gap with the Device Discovery Service. It will periodically search for nearby devices and keep a list of those which are currently in reach. To access a dicovered device, right click the kbluetoothd tray icon and take a look at the "Open recent"-menu. This menu consists of one section for recently accessed services (like "obex ftp on MyPhone") and - if there actually are already discovered devices - a second section above with a list of devices. Clicking one of them will show the services of that device in konqueror.
+</para>
+<para>
+In the control center module of kbluetoothd you can configure if and how often kbluetoothd searches for devices ("Periodially update neighbor list"). I recommend not to use intervals smaller than one minute here, otherwise other applications might have occacional problems searching for devices. That is because most devices don't expect other applications to use bluetooth at the same time. 
+</para>
+<para>
+Many devices are <phrase>non-discoverable</phrase> by default for privacy/security reasons. In that case the device won't be detected when searching for devices. Instead, kbluetoothd has to try to access each of these devices individually. You can add a device to the list of non-discoverable devices by clicking on "Additional search options for non-discoverable devices". Please note that either you have to set your device to be discoverable temporarly or you have to know its hardware address to be able to add it to the list.
+</para>
+<para>
+This will prevent other programs from searching for devices or even setting up a connection to another device for about 30 seconds <emphasis>per device</emphasis> if the device is not reachable currently. Therefore you should use rather long interval here. 10 minutes seems to be a reasonable value. Just try yourself and find out how small the interval can be until it start bothering you.
+</para>
+
+<para>
+Having just a list of currently reachable devices isn't that useful. Instead you can use the device discovery service to execute <phrase>Discovery Jobs</phrase> when a device comes in reach or disappears. These discovery jobs are simple scripts. You can easily write your own script - see the developer section about <link linkend="developers.kbluetoothd.discovery">discovery scripts</link>. But kbluetoothd already comes with some scripts, including:
+</para>
+
+<variablelist>
+<varlistentry>
+<term>Discovery protocol</term>
+<listitem><para>This script will create a html page with some technical information for every device when it is discovered for the first time. You can use this script if you are curious to see who else is using bluetooth near your. Having this script activated all the time doesn't hurt much, since it will only try to access the device when it is disocvered for the first time or after you deleted the corresponding html page.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Kopete_AutoAway</term>
+<listitem><para>This will set the availability status of kopete depending on if you (together with your phone) are in reach or not.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Photo_Copy</term>
+<listitem><para>This script will check a folder on your phone via kio_obex for new files and copy them over to a local directory. It also renames them with the date of the file as the file name. I wrote this script for my Nokia 6230. If you want to use it for your own phone, you will most likely have to change the script in many places.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Screensaver</term>
+<listitem><para>Starts or kills the screensaver/screen locker every time one of the monitored devices come in reach or disappear.
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+<para>Most scripts must be configured first to work correctly. Clicking "configure" will usually just pop up kedit with the settings part of the script. Also be aware that <emphasis>you may have to limit the devices reported to each job</emphasis>, if you don't want the script to be executed when someone else passes by with a Bluetooth phone turned on.
+</para>
+
+</sect3>
+
+<sect3>
+<title>The "most recently used services" list</title>
+<para>
+You can quickly access services you've used before by finding
+them in the "Recently used"-submenu of kbluetoothd's tray icon.
+If you already sent some files to you mobile with the name "My phone" via
+kbtobexclient, then you will find a menu entry with the name
+"Obex push client - My phone", which will start kbtobexclient and
+immediately connect to your phone without a time consuming inquiry
+process.
+</para>
+<para>
+Please note that kbluetoothd shows all recently used services, no
+matter if the respective device is currently in range or not.
+</para>
+<para>
+This feature must be supported by the respective application.
+</para>
+</sect3>
+
+<sect3>
+<title>Connection monitor</title>
+<para>You can see if there is currently a bluetooth connection by
+looking at the tray icon of kbluetoothd. It will bling if a 
+connection is being established and turn blue once the connection
+is set up.
+</para>
+<para>
+You can get more information about the current connection by right-clicking
+on the tray icon and selecting "Connection details...".
+</para>
+<para>
+What kbluetoothd displays here are ACL-links, not Rfcomm-connection. 
+If you are connected to a single device with several programs (handsfree 
+and bemused for instance), this will still be displayed as one connection,
+since there can only be one ACL link to a single device at a given time.
+</para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title>Configuring kbluetoothd</title>
+<para>
+Usually, kbluetoothd and the servers managed by it should work out
+of the box. But there are still some options you can change.
+To configure kbluetoothd, you can either use the KDE control center
+and go to <guimenuitem>Internet &amp; Network -> Bluetooth services</guimenuitem>,
+or right-click the kbluetoothd tray icon and select 
+<guimenuitem>Configuration -> Services...</guimenuitem>
+</para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title>Confirmation of incoming connections</title>
+<para>
+In this tab you can change the confirmation settings for incoming connections.
+By default, kbluetoothd will pop up a confirmation dialog before
+the actual server program (like the OBEX Push Server) is started.
+Here you can disable this confirmation dialog for some devices/services
+or tell kbluetoothd to silently reject incoming connections.
+</para>
+<para>
+New device entries will be added when you select the "Always accept"-checkbox
+of a confirmation popup.
+</para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title>Local Services</title>
+<para>
+In this tab you can enable or disable single Bluetooth services
+which are managed by kbluetoothd. Some services also provide some
+configuration options, like the bemused server for instance.
+In that case, the <guibutton>Configure...</guibutton> will be enabled
+when you select the respective service.
+</para>
+<para>
+Since kbluetoothd automatically assigns rfcomm channels to the services,
+the channel used for one service might change when you are using other 
+bluetooth servers. If you need to know, which channel was assigned to 
+some service, this dialog will tell you.
+</para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

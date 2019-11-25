@@ -1,0 +1,30 @@
+From 70ee85a0b24bf57b7fafe399a57eee50dc1a0bc9 Mon Sep 17 00:00:00 2001
+From: Serghei Amelian <serghei.amelian@gmail.com>
+Date: Mon, 13 Feb 2012 08:53:38 +0000
+Subject: [qt3/qsplitter.h] fixed bug #854
+
+---
+diff --git a/src/widgets/qsplitter.h b/src/widgets/qsplitter.h
+index 4a192fc..720c776 100644
+--- a/src/widgets/qsplitter.h
++++ b/src/widgets/qsplitter.h
+@@ -69,7 +69,7 @@ public:
+     int handleWidth;
+ };
+ 
+-class QSplitterLayoutStruct : public Qt
++class Q_EXPORT QSplitterLayoutStruct : public Qt
+ {
+ public:
+     QCOORD sizer;
+@@ -190,7 +190,7 @@ Q_EXPORT QTextStream& operator<<( QTextStream&, const QSplitter& );
+ Q_EXPORT QTextStream& operator>>( QTextStream&, QSplitter& );
+ #endif
+ 
+-class QSplitterHandle : public QWidget
++class Q_EXPORT QSplitterHandle : public QWidget
+ {
+     Q_OBJECT
+ public:
+--
+cgit v0.9.0.2-52-g1de3

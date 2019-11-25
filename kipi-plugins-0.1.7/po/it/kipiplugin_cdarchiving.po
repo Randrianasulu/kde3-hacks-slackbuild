@@ -1,0 +1,747 @@
+# translation of kipiplugin_cdarchiving.po to Italian
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+#
+# Stefano Rivoir <s.rivoir@gts.it>, 2003, 2004.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2004, 2005, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_cdarchiving\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-10 23:47+0200\n"
+"PO-Revision-Date: 2008-02-29 08:42+0100\n"
+"Last-Translator: Federico Zenith <federico.zenith@member.fsf.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Federico Zenith"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "federico.zenith@member.fsf.org"
+
+#: cdarchiving.cpp:157 cdarchivingdialog.cpp:160 cdarchivingdialog.cpp:164
+#: cdarchivingdialog.cpp:598
+msgid "CD (650Mb)"
+msgstr "CD (650Mb)"
+
+#: cdarchiving.cpp:163
+msgid "KIPI Albums Archiving"
+msgstr "Archiviazione album di KIPI"
+
+#: cdarchiving.cpp:179
+msgid "CD Albums"
+msgstr "Album CD"
+
+#: cdarchiving.cpp:180
+msgid "KIPI Album CD archiving"
+msgstr "Archiviazione CD di album di KIPI"
+
+#: cdarchiving.cpp:181 cdarchivingdialog.cpp:453
+msgid "LINUX"
+msgstr "LINUX"
+
+#: cdarchiving.cpp:182 cdarchivingdialog.cpp:465
+msgid "K3b CD-DVD Burning application"
+msgstr "Programma K3b per la masterizzazione di CD e DVD"
+
+#: cdarchiving.cpp:184
+msgid "KIPI CD-Archiving plugin"
+msgstr "Plugin di archiviazione CD KIPI"
+
+#: cdarchiving.cpp:418
+msgid "Cannot start K3b program : fork failed."
+msgstr "Impossibile avviare il programma K3b: fork non riuscito."
+
+#: cdarchiving.cpp:457
+msgid "K3b is done; removing temporary folder...."
+msgstr "K3b ha finito; rimozione della cartella temporanea..."
+
+#: cdarchiving.cpp:467
+msgid "Cannot remove temporary folder '%1'."
+msgstr "Impossibile rimuovere la cartella temporanea «%1»."
+
+#: cdarchiving.cpp:497 cdarchiving.cpp:589
+msgid "Cannot remove folder '%1'."
+msgstr "Impossibile rimuovere la cartella «%1»."
+
+#: cdarchiving.cpp:510 cdarchiving.cpp:559
+msgid "Could not create folder '%1'."
+msgstr "Impossibile creare la cartella «%1»."
+
+#: cdarchiving.cpp:626 cdarchiving.cpp:1056
+msgid "Could not open file '%1'."
+msgstr "Impossibile aprire il file «%1»."
+
+#: cdarchiving.cpp:651
+msgid "Could not create folder '%1' in '%2'."
+msgstr "Impossibile creare la cartella «%1» in «%2»."
+
+#: cdarchiving.cpp:744 cdarchiving.cpp:1197
+msgid "Album list"
+msgstr "Elenco album"
+
+#: cdarchiving.cpp:749
+msgid "Album "
+msgstr "Album "
+
+#: cdarchiving.cpp:759
+msgid "<i>Caption:</i>"
+msgstr "<i>Didascalia:</i>"
+
+#: cdarchiving.cpp:762
+msgid "<i>Collection:</i>"
+msgstr "<i>Raccolta:</i>"
+
+#: cdarchiving.cpp:765
+msgid "<i>Date:</i>"
+msgstr "<i>Data:</i>"
+
+#: cdarchiving.cpp:767
+msgid "<i>Images:</i>"
+msgstr "<i>Immagini:</i>"
+
+#: cdarchiving.cpp:850 cdarchiving.cpp:933 cdarchiving.cpp:1235
+msgid "KB"
+msgstr "kB"
+
+#: cdarchiving.cpp:895 cdarchiving.cpp:898
+msgid " images"
+msgstr " immagini"
+
+#: cdarchiving.cpp:959 cdarchiving.cpp:999 cdarchiving.cpp:1241
+msgid "Valid HTML 4.01."
+msgstr "HTML 4.01 valido."
+
+#: cdarchiving.cpp:963 cdarchiving.cpp:1003
+msgid "Album archive created with <a href=\"%1\">%2</a> on %3"
+msgstr "Archivio di album creato con <a href=\"%1\">%2</a> il %3"
+
+#: cdarchiving.cpp:982
+msgid "<i>Album list:</i>"
+msgstr "<i>Elenco album:</i>"
+
+#: cdarchiving.cpp:1190
+msgid "Previous"
+msgstr "Precedente"
+
+#: cdarchiving.cpp:1195
+msgid "Album index"
+msgstr "Indice degli album"
+
+#: cdarchiving.cpp:1202
+msgid "Next"
+msgstr "Successivo"
+
+#: cdarchiving.cpp:1247
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "Galleria di immagini creata con <a href=\"%1\">%2</a> il %3"
+
+#: cdarchiving.cpp:1410
+msgid "Creating project header..."
+msgstr "Creazione dell'intestazione del progetto..."
+
+#: cdarchiving.cpp:1425 cdarchiving.cpp:1463 cdarchiving.cpp:1593
+#: cdarchivingdialog.cpp:163 cdarchivingdialog.cpp:607
+msgid "DVD (4,7Gb)"
+msgstr "DVD (4.7Gb)"
+
+#: cdarchiving.cpp:1583
+msgid "Adding Album '%1' into project..."
+msgstr "Aggiunta dell'album «%1» nel progetto..."
+
+#: cdarchivingdialog.cpp:88
+msgid "Configure Archive to CD"
+msgstr "Configura Archivia su CD"
+
+#: cdarchivingdialog.cpp:91
+msgid "Create CD/DVD Archive"
+msgstr "Crea archivio CD/DVD"
+
+#: cdarchivingdialog.cpp:101
+msgid "CD/DVD Archiving"
+msgstr "Archiviazione CD/DVD"
+
+#: cdarchivingdialog.cpp:104
+msgid ""
+"An Album CD/DVD Archiving Kipi plugin.\n"
+"This plugin use K3b CD/DVD burning software available at\n"
+"http://www.k3b.org"
+msgstr ""
+"Un plugin di Kipi per l'archiviazione su CD/DVD degli album.\n"
+"Questo plugin usa il software K3b per la masterizzazione di CD e DVD "
+"disponibile a\n"
+"http://www.k3b.org"
+
+#: cdarchivingdialog.cpp:109
+msgid "Author"
+msgstr "Autore"
+
+#: cdarchivingdialog.cpp:112
+msgid "Contributor"
+msgstr "Ha contribuito"
+
+#: cdarchivingdialog.cpp:115
+msgid "Image navigation mode patches"
+msgstr "Correzioni per la modalità di navigazione delle immagini"
+
+#: cdarchivingdialog.cpp:118
+msgid "Bugfix"
+msgstr "Correzione di errori"
+
+#: cdarchivingdialog.cpp:124
+msgid "Plugin Handbook"
+msgstr "Manuale del plugin"
+
+#: cdarchivingdialog.cpp:140
+msgid "Selection"
+msgstr "Selezione"
+
+#: cdarchivingdialog.cpp:140
+msgid "Album Selection"
+msgstr "Selezione degli album"
+
+#: cdarchivingdialog.cpp:150
+msgid "Target Media Information"
+msgstr "Informazioni sul supporto di destinazione"
+
+#: cdarchivingdialog.cpp:154
+msgid "<p>Information about the backup medium."
+msgstr "<p>Informazioni sul supporto per la copia di sicurezza."
+
+#: cdarchivingdialog.cpp:161 cdarchivingdialog.cpp:601
+msgid "CD (700Mb)"
+msgstr "CD (700Mb)"
+
+#: cdarchivingdialog.cpp:162 cdarchivingdialog.cpp:604
+msgid "CD (880Mb)"
+msgstr "CD (880Mb)"
+
+#: cdarchivingdialog.cpp:166
+msgid "<p>Select here the backup media format."
+msgstr "<p>Seleziona il tipo di supporto per la copia di sicurezza."
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface"
+msgstr "Interfaccia HTML"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface Look"
+msgstr "Aspetto dell'interfaccia HTML"
+
+#: cdarchivingdialog.cpp:189
+msgid "Build CD HTML interface"
+msgstr "Crea l'interfaccia HTML per il CD"
+
+#: cdarchivingdialog.cpp:193
+msgid "<p>This option adds a HTML interface to browse the CD's contents."
+msgstr ""
+"<p>Questa opzione aggiunge un'interfaccia HTML per sfogliare il contenuto del "
+"CD."
+
+#: cdarchivingdialog.cpp:197
+msgid "Add \"autorun\" functionality"
+msgstr "Aggiungi la funzionalità «autorun»"
+
+#: cdarchivingdialog.cpp:201
+msgid "<p>This option adds MS Windows(tm) autorunning capability to the CD."
+msgstr ""
+"<p>Questa opzione aggiunge la funzionalità autorun di MS Windows(tm) nel CD."
+
+#: cdarchivingdialog.cpp:205
+msgid "Archive title:"
+msgstr "Titolo dell'archivio:"
+
+#: cdarchivingdialog.cpp:208
+msgid "Album Archiving"
+msgstr "Archiviazione album"
+
+#: cdarchivingdialog.cpp:211
+msgid "<p>Enter here the title of the CD archive."
+msgstr "<p>Inserisci qui il titolo dell'archivio CD."
+
+#: cdarchivingdialog.cpp:217
+msgid "I&mages per row:"
+msgstr "I&mmagini per riga:"
+
+#: cdarchivingdialog.cpp:218
+msgid ""
+"<p>Enter here the number of images per row on the album page. A good value is "
+"'4'."
+msgstr ""
+"<p>Inserire qui il numero di immagini per riga nella pagina dell'album. Un buon "
+"valore è 4."
+
+#: cdarchivingdialog.cpp:229
+msgid "Thumbnail size:"
+msgstr "Dimensione delle miniature:"
+
+#: cdarchivingdialog.cpp:231
+msgid "<p>The new size of thumbnails in pixels"
+msgstr "<p>La nuova dimensione delle miniature in pixel"
+
+#: cdarchivingdialog.cpp:241
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>Seleziona qui il formato dei file delle miniature.<p>"
+
+#: cdarchivingdialog.cpp:242
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Il formato file Joint Photographic Expert Group è un buon formato "
+"file per il Web ma una una compressione con perdita di dati."
+"<p><b>PNG</b>: il Portable Network Graphics è un formato per la memorizzazione "
+"senza perdite di dati, portabile, ben compressa di immagini. PNG è un sostituto "
+"libero da brevetti di GIF e può anche sostituire molti usi comuni di TIFF. PNG "
+"è pensato per lavorare bene con applicazioni online, come il World Wide Web, e "
+"si può utilizzare per visualizzazioni progressive. In più, PNG può memorizzare "
+"informazioni su gamma e colori per una resa migliore su piattaforme diverse."
+
+#: cdarchivingdialog.cpp:253
+msgid "Thumbnail file format:"
+msgstr "Formato file delle miniature:"
+
+#: cdarchivingdialog.cpp:269
+msgid "<p>Select here the font name used for the pages."
+msgstr "<p>Seleziona qui il nome del carattere da utilizzare nelle pagine."
+
+#: cdarchivingdialog.cpp:271
+msgid "Fon&t name:"
+msgstr "Nome cara&ttere:"
+
+#: cdarchivingdialog.cpp:284
+msgid "<p>Select here the font size used for the pages."
+msgstr "<p>Seleziona qui la dimensione del carattere da usare nelle pagine."
+
+#: cdarchivingdialog.cpp:286
+msgid "Font si&ze:"
+msgstr "&Dimensione del carattere:"
+
+#: cdarchivingdialog.cpp:299
+msgid "<p>Select here the foreground color used for the pages."
+msgstr "<p>Seleziona qui il colore in primo piano da usare nelle pagine."
+
+#: cdarchivingdialog.cpp:301
+msgid "&Foreground color:"
+msgstr "Colore del primo &piano:"
+
+#: cdarchivingdialog.cpp:314
+msgid "<p>Select here the background color used for the pages."
+msgstr "<p>Seleziona qui il colore di sfondo per le pagine."
+
+#: cdarchivingdialog.cpp:316
+msgid "&Background color:"
+msgstr "Colore dello &sfondo:"
+
+#: cdarchivingdialog.cpp:329
+msgid "<p>Select here the image border's size in pixels."
+msgstr "<p>Seleziona qui le dimensioni in pixel del bordo per le immagini."
+
+#: cdarchivingdialog.cpp:331
+msgid "Image border s&ize:"
+msgstr "D&imensione del bordo immagini:"
+
+#: cdarchivingdialog.cpp:344
+msgid "<p>Select here the color used for the image borders."
+msgstr "<p>Seleziona qui il colore dei bordi."
+
+#: cdarchivingdialog.cpp:347
+msgid "Image bo&rder color:"
+msgstr "Colore del bo&rdo dell'immagine:"
+
+#: cdarchivingdialog.cpp:418
+msgid "Volume Descriptor"
+msgstr "Descrittore del volume"
+
+#: cdarchivingdialog.cpp:418
+msgid "Media Volume Descriptor"
+msgstr "Descrittore del volume del supporto"
+
+#: cdarchivingdialog.cpp:427
+msgid "Volume name:"
+msgstr "Nome del volume:"
+
+#: cdarchivingdialog.cpp:430
+msgid "CD Album"
+msgstr "Album CD"
+
+#: cdarchivingdialog.cpp:434
+msgid "<p>Enter here the media volume name (32 characters max.)"
+msgstr "<p>Inserisci qui il nome volume del supporto (massimo 32 caratteri)."
+
+#: cdarchivingdialog.cpp:438
+msgid "Volume set name:"
+msgstr "Nome dell'insieme di volumi:"
+
+#: cdarchivingdialog.cpp:441
+msgid "Album CD archive"
+msgstr "Archiviazione su CD degli album"
+
+#: cdarchivingdialog.cpp:446
+msgid "<p>Enter here the media volume global name (128 characters max.)"
+msgstr "<p>Inserisci il nome globale del volume (massimo 128 caratteri)"
+
+#: cdarchivingdialog.cpp:450
+msgid "System:"
+msgstr "Sistema:"
+
+#: cdarchivingdialog.cpp:458
+msgid "<p>Enter here the media burning system name (32 characters max.)"
+msgstr ""
+"<p>Inserisci il nome del sistema di masterizzazione (massimo 32 caratteri)"
+
+#: cdarchivingdialog.cpp:462
+msgid "Application:"
+msgstr "Applicazione:"
+
+#: cdarchivingdialog.cpp:470
+msgid "<p>Enter here the media burning application name (128 characters max.)."
+msgstr ""
+"<p>Inserisci il nome dell'applicazione di masterizzazione (massimo 128 "
+"caratteri)."
+
+#: cdarchivingdialog.cpp:475
+msgid "Publisher:"
+msgstr "Editore:"
+
+#: cdarchivingdialog.cpp:478
+msgid "KIPI [KDE Images Program Interface]"
+msgstr "KIPI [Interfaccia programmi di immagini di KDE]"
+
+#: cdarchivingdialog.cpp:483
+msgid "<p>Enter here the media publisher name (128 characters max.)."
+msgstr "<p>Inserisci il nome dell'editore (massimo 128 caratteri)."
+
+#: cdarchivingdialog.cpp:487
+msgid "Preparer:"
+msgstr "Preparatore:"
+
+#: cdarchivingdialog.cpp:490
+msgid "KIPI CD Archiving plugin"
+msgstr "Plugin di archiviazione CD KIPI"
+
+#: cdarchivingdialog.cpp:494
+msgid "<p>Enter here the media preparer name (128 characters max.)."
+msgstr "<p>Inserisci il nome del preparatore (massimo 128 caratteri)."
+
+#: cdarchivingdialog.cpp:501
+msgid "Media Burning"
+msgstr "Masterizzazione del supporto"
+
+#: cdarchivingdialog.cpp:502
+msgid "CD/DVD Burning Setup"
+msgstr "Impostazioni di masterizzazione CD/DVD"
+
+#: cdarchivingdialog.cpp:511
+msgid "&K3b binary path:"
+msgstr "Percorso dell'eseguibile di &K3b:"
+
+#: cdarchivingdialog.cpp:521
+msgid "<p>The path name to the K3b binary program."
+msgstr "<p>Il percorso al programma binario K3b."
+
+#: cdarchivingdialog.cpp:525
+msgid "Application parameters:"
+msgstr "Parametri dell'applicazione:"
+
+#: cdarchivingdialog.cpp:533
+msgid ""
+"<p>Enter parameters which will be used when starting the burning application. "
+"Newer versions of K3b might need --nofork, older versions might not need it. "
+"(128 characters max.)."
+msgstr ""
+"<p>Inserisci i parametri da usare all'avvio dell'applicazione di "
+"masterizzazione. Le ultime versioni di K3b potrebbero avere bisogno di "
+"<userinput>--nofork</userinput>, le versioni più vecchie potrebbero poterne "
+"fare a meno. Il massimo è 128 caratteri."
+
+#: cdarchivingdialog.cpp:540
+msgid "Advanced Burning Options"
+msgstr "Impostazioni avanzate di masterizzazione"
+
+#: cdarchivingdialog.cpp:548
+msgid "Media burning On-The-Fly"
+msgstr "Masterizzazione al volo"
+
+#: cdarchivingdialog.cpp:550
+msgid ""
+"<p>This option uses the \"On-The-Fly\" media burning capability; this does not "
+"use a media image."
+msgstr ""
+"<p>Questa opzione usa la funzione di masterizzazione «Al volo»; questa modalità "
+"non usa un'immagine."
+
+#: cdarchivingdialog.cpp:554
+msgid "Check media"
+msgstr "Controlla supporto"
+
+#: cdarchivingdialog.cpp:556
+msgid ""
+"<p>This option verifies the media after the burning process. You must use K3b "
+"release >= 0.10.0"
+msgstr ""
+"<p>Questa opzione controlla il supporto dopo la masterizzazione. Bisogna usare "
+"K3b 0.10.0 o superiore."
+
+#: cdarchivingdialog.cpp:560
+msgid "Start burning process automatically"
+msgstr "Avvia automaticamente il processo di masterizzazione"
+
+#: cdarchivingdialog.cpp:563
+msgid ""
+"<p>This option start automatically the burning process when K3b is loaded."
+msgstr ""
+"<p>Questa opzione attiva automaticamente la masterizzazione all'avvio di K3b."
+
+#: cdarchivingdialog.cpp:623
+msgid "Total size: "
+msgstr "Dimensione totale: "
+
+#: cdarchivingdialog.cpp:624
+msgid "<b>%1</b></font> / <b>%2</b>"
+msgstr "<b>%1</b></font> / <b>%2</b>"
+
+#: cdarchivingdialog.cpp:634
+msgid "You must selected at least one Album to archive."
+msgstr "Devi selezionare almeno un'album da archiviare."
+
+#: cdarchivingdialog.cpp:642
+msgid "K3b binary path is not valid. Please check it."
+msgstr ""
+"Il percorso dell'eseguibile di K3b non è valido. Per piacere controllalo."
+
+#: cdarchivingdialog.cpp:648
+msgid "Target media size is too big. Please change your album selection."
+msgstr ""
+"La dimensione del supporto di destinazione è troppo grande. Per piacere "
+"modifica la selezione degli album."
+
+#: plugin_cdarchiving.cpp:61
+msgid "Archive to CD/DVD..."
+msgstr "Archivia su CD/DVD..."
+
+#: plugin_cdarchiving.cpp:126
+msgid "Archive to CD/DVD"
+msgstr "Archivia su CD/DVD"
+
+#: plugin_cdarchiving.cpp:147
+msgid "Initialising..."
+msgstr "Inizializzazione..."
+
+#: plugin_cdarchiving.cpp:154
+msgid "Making main HTML interface..."
+msgstr "Creazione dell'interfaccia HTML principale..."
+
+#: plugin_cdarchiving.cpp:160
+msgid "Making HTML pages for Album '%1'..."
+msgstr "Creazione delle pagine HTML per l'album «%1»..."
+
+#: plugin_cdarchiving.cpp:166
+msgid "Making AutoRun interface..."
+msgstr "Creazione dell'interfaccia AutoRun..."
+
+#: plugin_cdarchiving.cpp:172
+msgid "Creating thumbnail for '%1'..."
+msgstr "Creazione della miniatura per «%1»..."
+
+#: plugin_cdarchiving.cpp:178
+msgid "Making K3b project..."
+msgstr "Creazione der progetto K3b..."
+
+#: plugin_cdarchiving.cpp:207
+msgid "Main HTML interface creation completed."
+msgstr "Creazione dell'interfaccia HTML principale conclusa."
+
+#: plugin_cdarchiving.cpp:214
+msgid "HTML page creation for Album '%1' completed."
+msgstr "Creazione delle pagine HTML per l'album «%1» conclusa."
+
+#: plugin_cdarchiving.cpp:221
+msgid "Creating thumbnail for '%1' done."
+msgstr "Creazione della miniatura di «%1» completata."
+
+#: plugin_cdarchiving.cpp:228
+msgid "AutoRun interface creation completed."
+msgstr "Creazione dell'interfaccia AutoRun conclusa."
+
+#: plugin_cdarchiving.cpp:235
+msgid "K3b project creation completed."
+msgstr "Creazione del progetto K3b conclusa."
+
+#: plugin_cdarchiving.cpp:253
+msgid "Failed to create thumbnail for '%1'"
+msgstr "Creazione delle miniature per «%1» non riuscita"
+
+#: plugin_cdarchiving.cpp:262
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "Creazione dell'interfaccia HTML non riuscita: %1"
+
+#: plugin_cdarchiving.cpp:273
+msgid "Failed to create HTML pages for Album '%1'"
+msgstr "Impossibile creare le pagine HTML per l'album «%1»"
+
+#: plugin_cdarchiving.cpp:285
+msgid "Failed to create K3b project."
+msgstr "Creazione del progetto K3b non riuscita."
+
+#: plugin_cdarchiving.cpp:327
+msgid "Starting K3b program..."
+msgstr "Avvio del programma K3b..."
+
+#~ msgid "CD/DVD Archiving Handbook"
+#~ msgstr "Manuale di Archiviazione su CD/DVD"
+
+#~ msgid "<i>Comment:</i>"
+#~ msgstr "<i>Commento:</i>"
+
+#~ msgid "Author and maintainer"
+#~ msgstr "Autore e responsabile"
+
+#~ msgid "Archiving for Album "
+#~ msgstr "Archiviazione per album "
+
+#~ msgid "<i>Subdirectories:</i>"
+#~ msgstr "<i>Sottocartelle:</i>"
+
+#~ msgid "Album CD Archiving"
+#~ msgstr "Archiviazione dei CD album"
+
+#~ msgid "Preparing Archive to CD"
+#~ msgstr "Preparazione dell'archiviazione su CD"
+
+#~ msgid "Select Albums to Archive"
+#~ msgstr "Seleziona gli album da archiviare"
+
+#~ msgid "<p>Selected here the Albums to archive to CD."
+#~ msgstr "<p>Seleziona qui gli album da archiviare nel CD."
+
+#~ msgid "&Select All"
+#~ msgstr "&Seleziona tutto"
+
+#~ msgid "<p>Select all Albums on the list."
+#~ msgstr "<p>Seleziona tutti gli album dell'elenco."
+
+#~ msgid "&Invert Selection"
+#~ msgstr "&Inverti la selezione"
+
+#~ msgid "<p>Invert the Album selection on the list."
+#~ msgstr "<p>Inverte la selezione degli album nell'elenco."
+
+#~ msgid "Select &None"
+#~ msgstr "Deselezio&na tutto"
+
+#~ msgid "<p>Deselect all Albums on the list."
+#~ msgstr "<p>Deseleziona tutti gli album nell'elenco."
+
+#~ msgid "Preview of the first image in the currently selected album."
+#~ msgstr "Anteprima della prima immagine dell'album attualmente selezionato."
+
+#~ msgid "Album Description"
+#~ msgstr "Descrizione dell'album"
+
+#~ msgid "<p>The description of the current Album in the selection list."
+#~ msgstr "<p>La descrizione dell'album attuale nell'elenco di selezione."
+
+#~ msgid "Parsing Albums. Please wait..."
+#~ msgstr "Analisi album. Per piacere attendi..."
+
+#~ msgid "Comment: %1"
+#~ msgstr "Commento: %1"
+
+#~ msgid "Collection: %1"
+#~ msgstr "Raccolta: %1"
+
+#~ msgid "Date: %1"
+#~ msgstr "Data: %1"
+
+#~ msgid "Items: %1"
+#~ msgstr "Immagini: %1"
+
+#~ msgid "Size: %1"
+#~ msgstr "Dimensione: %1"
+
+#~ msgid "About KIPI Album CD Archiving"
+#~ msgstr "Informazioni sull'archiviazione CD di KIPI degli album"
+
+#~ msgid ""
+#~ "A KIPI plugin for Album CD archives\n"
+#~ "\n"
+#~ "Author: Gilles Caulier\n"
+#~ "\n"
+#~ "Email: caulier dot gilles at free.fr\n"
+#~ "\n"
+#~ "Thanks to Gregory Kokanosky <gregory dot kokanosky at free.fr> for image navigation mode patches\n"
+#~ "\n"
+#~ "This plugin use K3b CD/DVD burning software available at this URL:\n"
+#~ "\n"
+#~ "http://www.k3b.org."
+#~ msgstr ""
+#~ "Plugin per l'archiviazione di KIPI su CD degli album\n"
+#~ "\n"
+#~ "Autore: Gilles Caulier\n"
+#~ "\n"
+#~ "Email: caulier dot gilles at free.fr\n"
+#~ "\n"
+#~ "Grazie a Gregory Kokanosky <gregory dot kokanosky at free.fr> per le correzioni sulla modalità di navigazione immagini\n"
+#~ "\n"
+#~ "Questo plugin usa il software di masterizzazione CD/DVD K3b, disponibile a questo indirizzo:\n"
+#~ "\n"
+#~ "http://www.k3b.org."
+
+#~ msgid "<p>This is the current tasks list released."
+#~ msgstr "<p>Questo è l'elenco di compiti correnti completati."
+
+#~ msgid "<p>This is the list current percent task released."
+#~ msgstr "<p>Questa è la percentuale attuale di completamento dell'elenco dei compiti."
+
+#~ msgid "Current actions"
+#~ msgstr "Azioni attuali"
+
+#~ msgid ""
+#~ "Cannot build HTML interface for this CD.\n"
+#~ "This option will be disabled!"
+#~ msgstr ""
+#~ "Impossibile creare l'interfaccia HTML per questo CD.\n"
+#~ "Questa opzione verrà disabilitata!"
+
+#~ msgid "Cannot build K3b project file. CD archiving process canceled!"
+#~ msgstr "Impossibile creare il progetto K3b. Processo di archiviazione CD annullato!"
+
+#~ msgid "Album \"%1\""
+#~ msgstr "Album \"%1\""
+
+#~ msgid "KIPI [digikam.sourceforge.net]"
+#~ msgstr "KIPI [digikam.sourceforge.net]"
+
+#~ msgid "Albums archiving created with <a href=\"http://digikam.sourceforge.net\">KIPI</a> on %1"
+#~ msgstr "Archiviazione album creata con <a href=\"http://digikam.sourceforge.net\">KIPI</a> su %1"
+
+#~ msgid "Digikam Albums Archiving"
+#~ msgstr "Archiviazione album di Digikam"
+
+#~ msgid "Digikam Albums CD archiving"
+#~ msgstr "Archiviazione Album CD di Digikam"
+
+#~ msgid "Digikam [digikam.sourceforge.net]"
+#~ msgstr "Digikam [digikam.sourceforge.net]"
+
+#~ msgid "Digikam CD Archiving plugin"
+#~ msgstr "Plugin di archiviazione CD Digikam"

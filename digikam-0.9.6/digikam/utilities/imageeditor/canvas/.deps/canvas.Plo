@@ -1,0 +1,472 @@
+canvas.lo: canvas.cpp /usr/include/stdc-predef.h \
+ /usr/include/c++/4.8.4/cstdio \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/c++config.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/cpu_defines.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/c++/4.8.4/cmath \
+ /usr/include/c++/4.8.4/bits/cpp_type_traits.h \
+ /usr/include/c++/4.8.4/ext/type_traits.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/lib/qt3/include/qtooltip.h /usr/lib/qt3/include/qwidget.h \
+ /usr/lib/qt3/include/qwindowdefs.h /usr/lib/qt3/include/qobjectdefs.h \
+ /usr/lib/qt3/include/qglobal.h /usr/lib/qt3/include/qconfig.h \
+ /usr/lib/qt3/include/qmodules.h /usr/lib/qt3/include/qfeatures.h \
+ /usr/lib/qt3/include/qstring.h /usr/lib/qt3/include/qcstring.h \
+ /usr/lib/qt3/include/qmemarray.h /usr/lib/qt3/include/qgarray.h \
+ /usr/lib/qt3/include/qshared.h /usr/lib/qt3/include/qwinexport.h \
+ /usr/include/string.h /usr/include/xlocale.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/lib/qt3/include/qnamespace.h /usr/lib/qt3/include/qobject.h \
+ /usr/lib/qt3/include/qevent.h /usr/lib/qt3/include/qregion.h \
+ /usr/lib/qt3/include/qrect.h /usr/lib/qt3/include/qsize.h \
+ /usr/lib/qt3/include/qpoint.h /usr/lib/qt3/include/qmime.h \
+ /usr/lib/qt3/include/qmap.h /usr/lib/qt3/include/qdatastream.h \
+ /usr/lib/qt3/include/qiodevice.h /usr/lib/qt3/include/qpair.h \
+ /usr/lib/qt3/include/qvaluelist.h /usr/lib/qt3/include/qtl.h \
+ /usr/lib/qt3/include/qtextstream.h /usr/lib/qt3/include/qpaintdevice.h \
+ /usr/lib/qt3/include/qpalette.h /usr/lib/qt3/include/qcolor.h \
+ /usr/lib/qt3/include/qstringlist.h /usr/lib/qt3/include/qstrlist.h \
+ /usr/lib/qt3/include/qptrlist.h /usr/lib/qt3/include/qglist.h \
+ /usr/lib/qt3/include/qptrcollection.h /usr/lib/qt3/include/qbrush.h \
+ /usr/lib/qt3/include/qfont.h /usr/lib/qt3/include/qfontmetrics.h \
+ /usr/lib/qt3/include/qfontinfo.h /usr/lib/qt3/include/qsizepolicy.h \
+ /usr/lib/qt3/include/qfile.h /usr/lib/qt3/include/qstring.h \
+ /usr/lib/qt3/include/qevent.h /usr/lib/qt3/include/qpoint.h \
+ /usr/lib/qt3/include/qpainter.h /usr/lib/qt3/include/qpen.h \
+ /usr/lib/qt3/include/qpointarray.h /usr/lib/qt3/include/qwmatrix.h \
+ /usr/lib/qt3/include/qpen.h /usr/lib/qt3/include/qpixmap.h \
+ /usr/lib/qt3/include/qstyle.h /usr/lib/qt3/include/qapplication.h \
+ /usr/lib/qt3/include/qdesktopwidget.h /usr/lib/qt3/include/qasciidict.h \
+ /usr/lib/qt3/include/qgdict.h /usr/lib/qt3/include/qtranslator.h \
+ /usr/lib/qt3/include/qcursor.h /usr/lib/qt3/include/qimage.h \
+ /usr/lib/qt3/include/qpixmap.h /usr/lib/qt3/include/qregion.h \
+ /usr/lib/qt3/include/qtimer.h /usr/lib/qt3/include/qcache.h \
+ /usr/lib/qt3/include/qgcache.h /usr/lib/qt3/include/qcolor.h \
+ /usr/lib/qt3/include/qdragobject.h /usr/lib/qt3/include/qimage.h \
+ /usr/lib/qt3/include/qclipboard.h /usr/lib/qt3/include/qtoolbutton.h \
+ /usr/lib/qt3/include/qbutton.h /usr/lib/qt3/include/qkeysequence.h \
+ /usr/lib/qt3/include/qiconset.h /usr/include/kcursor.h \
+ /usr/include/kdelibs_export.h /usr/include/kdemacros.h \
+ /usr/lib/qt3/include/qglobal.h /usr/include/klocale.h \
+ /usr/include/kiconloader.h /usr/lib/qt3/include/qiconset.h \
+ /usr/lib/qt3/include/qmovie.h /usr/include/kglobal.h \
+ /usr/include/kdelibs_export.h /usr/include/kinstance.h \
+ /usr/include/kicontheme.h /usr/lib/qt3/include/qstringlist.h \
+ /usr/lib/qt3/include/qptrlist.h /usr/include/kdatetbl.h \
+ /usr/lib/qt3/include/qvalidator.h /usr/lib/qt3/include/qregexp.h \
+ /usr/lib/qt3/include/qgridview.h /usr/lib/qt3/include/qscrollview.h \
+ /usr/lib/qt3/include/qframe.h /usr/lib/qt3/include/qscrollbar.h \
+ /usr/lib/qt3/include/qrangecontrol.h /usr/lib/qt3/include/qlineedit.h \
+ /usr/lib/qt3/include/qdatetime.h /usr/include/kglobalsettings.h \
+ /usr/lib/qt3/include/qfont.h ../../../../digikam/libs/dimg/ddebug.h \
+ /usr/include/kdebug.h ../../../../digikam/digikam/digikam_export.h \
+ ../../../../config.h ../../../../digikam/libs/histogram/imagehistogram.h \
+ /usr/lib/qt3/include/qthread.h \
+ ../../../../digikam/libs/widgets/imageplugins/imagepaniconwidget.h \
+ /usr/lib/qt3/include/qpointarray.h \
+ ../../../../digikam/libs/widgets/common/paniconwidget.h \
+ /usr/lib/qt3/include/qwidget.h /usr/lib/qt3/include/qrect.h \
+ ../../../../digikam/libs/dimg/dimg.h /usr/lib/qt3/include/qcstring.h \
+ /usr/lib/qt3/include/qsize.h /usr/lib/qt3/include/qvariant.h \
+ ../../../../digikam/libs/dimg/drawdecoding.h \
+ /usr/lib/qt3/include/qvaluelist.h \
+ /usr/include/libkdcraw/rawdecodingsettings.h \
+ /usr/include/libkdcraw/libkdcraw_export.h \
+ ../../../../digikam/libs/dimg/dcolor.h \
+ ../../../../digikam/libs/dimg/dcolorpixelaccess.h \
+ ../../../../digikam/libs/dimg/dcolorblend.h \
+ ../../../../digikam/libs/dimg/dcolorcomposer.h dimginterface.h \
+ /usr/lib/qt3/include/qobject.h iccsettingscontainer.h \
+ ../../../../digikam/libs/dimg/exposurecontainer.h \
+ iofilesettingscontainer.h ../../../../digikam/libs/dimg/drawdecoding.h \
+ ../../../../digikam/libs/threadimageio/loadingcacheinterface.h canvas.h \
+ /usr/lib/qt3/include/qscrollview.h canvas.moc \
+ /usr/lib/qt3/include/qmetaobject.h /usr/lib/qt3/include/qconnection.h \
+ /usr/lib/qt3/include/private/qucomextra_p.h \
+ /usr/lib/qt3/include/private/qucom_p.h /usr/lib/qt3/include/quuid.h \
+ /usr/lib/qt3/include/qobjectdefs.h /usr/lib/qt3/include/qsignalslotimp.h \
+ /usr/lib/qt3/include/qptrvector.h /usr/lib/qt3/include/qgvector.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/4.8.4/cstdio:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/c++config.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/cpu_defines.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/4.8.4/cmath:
+
+/usr/include/c++/4.8.4/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.8.4/ext/type_traits.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/lib/qt3/include/qtooltip.h:
+
+/usr/lib/qt3/include/qwidget.h:
+
+/usr/lib/qt3/include/qwindowdefs.h:
+
+/usr/lib/qt3/include/qobjectdefs.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qconfig.h:
+
+/usr/lib/qt3/include/qmodules.h:
+
+/usr/lib/qt3/include/qfeatures.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qmemarray.h:
+
+/usr/lib/qt3/include/qgarray.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+/usr/lib/qt3/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/qt3/include/qnamespace.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+/usr/lib/qt3/include/qevent.h:
+
+/usr/lib/qt3/include/qregion.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qmime.h:
+
+/usr/lib/qt3/include/qmap.h:
+
+/usr/lib/qt3/include/qdatastream.h:
+
+/usr/lib/qt3/include/qiodevice.h:
+
+/usr/lib/qt3/include/qpair.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/lib/qt3/include/qtl.h:
+
+/usr/lib/qt3/include/qtextstream.h:
+
+/usr/lib/qt3/include/qpaintdevice.h:
+
+/usr/lib/qt3/include/qpalette.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qstrlist.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/lib/qt3/include/qglist.h:
+
+/usr/lib/qt3/include/qptrcollection.h:
+
+/usr/lib/qt3/include/qbrush.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+/usr/lib/qt3/include/qfontmetrics.h:
+
+/usr/lib/qt3/include/qfontinfo.h:
+
+/usr/lib/qt3/include/qsizepolicy.h:
+
+/usr/lib/qt3/include/qfile.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qevent.h:
+
+/usr/lib/qt3/include/qpoint.h:
+
+/usr/lib/qt3/include/qpainter.h:
+
+/usr/lib/qt3/include/qpen.h:
+
+/usr/lib/qt3/include/qpointarray.h:
+
+/usr/lib/qt3/include/qwmatrix.h:
+
+/usr/lib/qt3/include/qpen.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/lib/qt3/include/qstyle.h:
+
+/usr/lib/qt3/include/qapplication.h:
+
+/usr/lib/qt3/include/qdesktopwidget.h:
+
+/usr/lib/qt3/include/qasciidict.h:
+
+/usr/lib/qt3/include/qgdict.h:
+
+/usr/lib/qt3/include/qtranslator.h:
+
+/usr/lib/qt3/include/qcursor.h:
+
+/usr/lib/qt3/include/qimage.h:
+
+/usr/lib/qt3/include/qpixmap.h:
+
+/usr/lib/qt3/include/qregion.h:
+
+/usr/lib/qt3/include/qtimer.h:
+
+/usr/lib/qt3/include/qcache.h:
+
+/usr/lib/qt3/include/qgcache.h:
+
+/usr/lib/qt3/include/qcolor.h:
+
+/usr/lib/qt3/include/qdragobject.h:
+
+/usr/lib/qt3/include/qimage.h:
+
+/usr/lib/qt3/include/qclipboard.h:
+
+/usr/lib/qt3/include/qtoolbutton.h:
+
+/usr/lib/qt3/include/qbutton.h:
+
+/usr/lib/qt3/include/qkeysequence.h:
+
+/usr/lib/qt3/include/qiconset.h:
+
+/usr/include/kcursor.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/kdemacros.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/include/klocale.h:
+
+/usr/include/kiconloader.h:
+
+/usr/lib/qt3/include/qiconset.h:
+
+/usr/lib/qt3/include/qmovie.h:
+
+/usr/include/kglobal.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/kinstance.h:
+
+/usr/include/kicontheme.h:
+
+/usr/lib/qt3/include/qstringlist.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/include/kdatetbl.h:
+
+/usr/lib/qt3/include/qvalidator.h:
+
+/usr/lib/qt3/include/qregexp.h:
+
+/usr/lib/qt3/include/qgridview.h:
+
+/usr/lib/qt3/include/qscrollview.h:
+
+/usr/lib/qt3/include/qframe.h:
+
+/usr/lib/qt3/include/qscrollbar.h:
+
+/usr/lib/qt3/include/qrangecontrol.h:
+
+/usr/lib/qt3/include/qlineedit.h:
+
+/usr/lib/qt3/include/qdatetime.h:
+
+/usr/include/kglobalsettings.h:
+
+/usr/lib/qt3/include/qfont.h:
+
+../../../../digikam/libs/dimg/ddebug.h:
+
+/usr/include/kdebug.h:
+
+../../../../digikam/digikam/digikam_export.h:
+
+../../../../config.h:
+
+../../../../digikam/libs/histogram/imagehistogram.h:
+
+/usr/lib/qt3/include/qthread.h:
+
+../../../../digikam/libs/widgets/imageplugins/imagepaniconwidget.h:
+
+/usr/lib/qt3/include/qpointarray.h:
+
+../../../../digikam/libs/widgets/common/paniconwidget.h:
+
+/usr/lib/qt3/include/qwidget.h:
+
+/usr/lib/qt3/include/qrect.h:
+
+../../../../digikam/libs/dimg/dimg.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qsize.h:
+
+/usr/lib/qt3/include/qvariant.h:
+
+../../../../digikam/libs/dimg/drawdecoding.h:
+
+/usr/lib/qt3/include/qvaluelist.h:
+
+/usr/include/libkdcraw/rawdecodingsettings.h:
+
+/usr/include/libkdcraw/libkdcraw_export.h:
+
+../../../../digikam/libs/dimg/dcolor.h:
+
+../../../../digikam/libs/dimg/dcolorpixelaccess.h:
+
+../../../../digikam/libs/dimg/dcolorblend.h:
+
+../../../../digikam/libs/dimg/dcolorcomposer.h:
+
+dimginterface.h:
+
+/usr/lib/qt3/include/qobject.h:
+
+iccsettingscontainer.h:
+
+../../../../digikam/libs/dimg/exposurecontainer.h:
+
+iofilesettingscontainer.h:
+
+../../../../digikam/libs/dimg/drawdecoding.h:
+
+../../../../digikam/libs/threadimageio/loadingcacheinterface.h:
+
+canvas.h:
+
+/usr/lib/qt3/include/qscrollview.h:
+
+canvas.moc:
+
+/usr/lib/qt3/include/qmetaobject.h:
+
+/usr/lib/qt3/include/qconnection.h:
+
+/usr/lib/qt3/include/private/qucomextra_p.h:
+
+/usr/lib/qt3/include/private/qucom_p.h:
+
+/usr/lib/qt3/include/quuid.h:
+
+/usr/lib/qt3/include/qobjectdefs.h:
+
+/usr/lib/qt3/include/qsignalslotimp.h:
+
+/usr/lib/qt3/include/qptrvector.h:
+
+/usr/lib/qt3/include/qgvector.h:

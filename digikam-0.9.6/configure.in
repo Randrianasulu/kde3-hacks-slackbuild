@@ -1,0 +1,786 @@
+dnl =======================================================
+dnl FILE: ./admin/configure.in.min
+dnl =======================================================
+
+dnl    This file is part of the KDE libraries/packages
+dnl    Copyright (C) 2001 Stephan Kulow (coolo@kde.org)
+ 
+dnl    This file is free software; you can redistribute it and/or
+dnl    modify it under the terms of the GNU Library General Public
+dnl    License as published by the Free Software Foundation; either
+dnl    version 2 of the License, or (at your option) any later version.
+ 
+dnl    This library is distributed in the hope that it will be useful,
+dnl    but WITHOUT ANY WARRANTY; without even the implied warranty of
+dnl    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+dnl    Library General Public License for more details.
+ 
+dnl    You should have received a copy of the GNU Library General Public License
+dnl    along with this library; see the file COPYING.LIB.  If not, write to
+dnl    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+dnl    Boston, MA 02110-1301, USA.
+
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+dnl This ksh/zsh feature conflicts with `cd blah ; pwd`
+unset CDPATH
+
+dnl Checking host/target/build systems, for make, install etc.
+AC_CANONICAL_SYSTEM 
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(digikam-0.9.6, "3.5.10") dnl searches for some needed programs
+
+KDE_SET_PREFIX
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+AC_ENABLE_SHARED(yes)
+AC_ENABLE_STATIC(no)
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+KDE_USE_QT(3.2)
+AC_PATH_KDE
+dnl =======================================================
+dnl FILE: configure.in.in
+dnl =======================================================
+
+#MIN_CONFIG(3.2)
+CXXFLAGS="$CXXFLAGS $KDE_DEFAULT_CXXFLAGS"
+
+if test "$build_arts" = "yes"; then
+    AC_DEFINE(USE_ARTS, 1, [If we use arts volume])
+    LIB_ARTS="-lartskde"
+    AC_SUBST(LIB_ARTS)
+fi
+
+KDE_INIT_DOXYGEN([KEG Graphics API Reference], [Version $VERSION])
+
+dnl =======================================================
+dnl FILE: ./digikam/configure.in.in
+dnl =======================================================
+
+#MIN_CONFIG(3)
+
+dnl PACKAGE set before
+
+# -----------------------------------------------------------------
+#
+# enable hidden visibility only if kde >= 3.3.2 and kdelibs has
+# been compiled with visibility enabled
+#
+# -----------------------------------------------------------------
+
+AC_LANG_PUSH(C++)
+digikam_save_cppflags=$CPPFLAGS
+CPPFLAGS="$CPPFLAGS $all_includes"  
+AC_MSG_CHECKING([if hidden visibility should be enabled])
+AC_COMPILE_IFELSE(
+ [
+   #include <kdeversion.h>
+   #include <kdemacros.h>
+   int other_func( void )
+   { 
+      #if KDE_IS_VERSION(3,3,2)
+      #else
+        iam dying;
+      #endif
+      #ifdef __KDE_HAVE_GCC_VISIBILITY
+      #else
+        no, iam really dead;
+      #endif      
+      return 0;
+   }
+ ], 
+ [ AC_MSG_RESULT([yes])
+   digikam_enable_hidden_visibility="yes" ],
+ [ AC_MSG_RESULT([no]) ] 
+)
+CPPFLAGS=$digikam_save_cppflags
+AC_LANG_POP(C++)
+
+if test "x$digikam_enable_hidden_visibility" = "xyes"; then
+   KDE_ENABLE_HIDDEN_VISIBILITY 
+fi
+
+# -----------------------------------------------------------------
+#
+# pkg config check
+#
+# -----------------------------------------------------------------
+
+AC_ARG_VAR(PKGCONFIGFOUND, [Path to pkg-config])
+AC_CHECK_PROG(PKGCONFIGFOUND, pkg-config,[yes])
+
+# -----------------------------------------------------------------
+#
+# sqlite2 type check
+#
+# -----------------------------------------------------------------
+
+KDE_CHECK_TYPES
+
+# -------------------------------------------------------
+#
+# Check endianness
+#
+# -------------------------------------------------------
+
+AC_LANG_SAVE
+AC_LANG_C
+AC_C_BIGENDIAN
+AC_LANG_RESTORE
+
+# -----------------------------------------------------------------
+#
+# Check for liblcms
+#
+# -----------------------------------------------------------------
+
+have_lcms_header='no'
+KDE_CHECK_HEADER(lcms/lcms.h,have_lcms_header='yes',,)
+if test "$have_lcms_header" = 'yes'
+then
+    AC_DEFINE(LCMS_HEADER, <lcms/lcms.h>, [The correct header])
+else
+    # Alternative! Debian does it this way...
+    KDE_CHECK_HEADER(lcms.h,have_lcms_header='yes',,)
+    if test "$have_lcms_header" = 'yes'
+    then
+        AC_DEFINE(LCMS_HEADER, <lcms.h>, [The correct header])
+    fi
+fi
+
+LCMS_LIBS=''
+have_lcms='no'
+if test "$have_lcms_header" = 'yes'
+then
+    saved_cflags="$CFLAGS"
+    saved_ldflags="$LDFLAGS"
+    saved_libs=$LIBS
+    LIBS="$LIBS -llcms"
+    CFLAGS="$CFLAGS $all_includes"
+    LDFLAGS="$LDFLAGS $all_libraries"
+    AC_TRY_LINK([
+#define inline __inline /* gcc is in ansi mode */
+#include LCMS_HEADER
+#if LCMS_VERSION < 112
+choke!
+#endif
+], [
+cmsOpenProfileFromFile("foo", "r");
+],
+        [LCMS_LIBS='-llcms'; have_lcms='yes'])
+    LIBS=$saved_libs
+    CFLAGS=$saved_cflags
+    LDFLAGS=$saved_ldflags
+fi
+
+if test -z "$LCMS_LIBS"; then
+    DO_NOT_COMPILE="$DO_NOT_COMPILE digikam"
+fi
+
+AC_SUBST(LCMS_LIBS)
+
+#------------------------------------------------------------------
+#
+# Check for libgphoto2
+#
+#------------------------------------------------------------------
+
+AC_PATH_PROG(GPHOTO_CONFIG,gphoto2-config)
+AC_PATH_PROG(GPHOTO_PORT_CONFIG,gphoto2-port-config)
+if test -n "${GPHOTO_CONFIG}"; then
+  GPHOTO_CFLAGS="`$GPHOTO_CONFIG --cflags`"
+  AC_SUBST(GPHOTO_CFLAGS)
+  LIB_GPHOTO="`$GPHOTO_CONFIG --libs` `$GPHOTO_PORT_CONFIG --libs`"
+  AC_SUBST(LIB_GPHOTO)
+else
+  AC_MSG_WARN([gPhoto2 not found.])
+  DO_NOT_COMPILE="digikam $DO_NOT_COMPILE"
+fi
+
+CXXFLAGS="$CXXFLAGS -DQT_CLEAN_NAMESPACE"
+
+#------------------------------------------------------------------
+#
+# Check for libkipi 
+#
+#------------------------------------------------------------------
+
+if test "$PKGCONFIGFOUND" = "yes" ; then
+   have_libkipi=no
+
+   KDE_PKG_CHECK_MODULES(LIBKIPI, libkipi >= 0.1.5,
+	 	         have_libkipi=yes, have_libkipi=no)
+
+   if test "x$have_libkipi" = "xno"; then
+	LIBKIPI_CFLAGS=""
+	LIBKIPI_LIBS=""
+        AC_MSG_RESULT([not found])
+   else
+	AC_MSG_RESULT([found])
+   fi
+else
+   LIBKIPI_CFLAGS=""
+   LIBKIPI_LIBS=""
+   AC_MSG_RESULT([not found])
+fi 
+AC_SUBST(LIBKIPI_CFLAGS)
+AC_SUBST(LIBKIPI_LIBS)
+
+if test "x$have_libkipi" != "xyes"; then
+     DO_NOT_COMPILE="$DO_NOT_COMPILE digikam"
+fi
+
+# --------------------------------------------------------------------
+#
+# Check for libkexiv2
+#
+# --------------------------------------------------------------------
+
+if test "$PKGCONFIGFOUND" = "yes" ; then
+   have_libkexiv2=no
+
+   KDE_PKG_CHECK_MODULES(LIBKEXIV2, libkexiv2 >= 0.1.6,
+                         have_libkexiv2=yes, have_libkexiv2=no)
+
+   if test "x$have_libkexiv2" = "xno"; then
+       LIBKEXIV2_CFLAGS=""
+       LIBKEXIV2_LIBS=""
+       AC_MSG_RESULT([not found])
+   else
+       AC_MSG_RESULT([found])
+   fi
+else
+   LIBKEXIV2_CFLAGS=""
+   LIBKEXIV2_LIBS=""
+   AC_MSG_RESULT([not found])
+fi 
+AC_SUBST(LIBKEXIV2_CFLAGS)
+AC_SUBST(LIBKEXIV2_LIBS)
+
+if test "x$have_libkexiv2" != "xyes"; then
+   DO_NOT_COMPILE="$DO_NOT_COMPILE digikam"
+fi
+
+# --------------------------------------------------------------------
+#
+# Check for libkdcraw
+#
+# --------------------------------------------------------------------
+
+if test "$PKGCONFIGFOUND" = "yes" ; then
+   have_libkdcraw=no
+
+   KDE_PKG_CHECK_MODULES(LIBKDCRAW, libkdcraw >= 0.1.5,
+                         have_libkdcraw=yes, have_libkdcraw=no)
+
+   if test "x$have_libkdcraw" = "xno"; then
+       LIBKDCRAW_CFLAGS=""
+       LIBKDCRAW_LIBS=""
+       AC_MSG_RESULT([not found])
+   else
+       AC_MSG_RESULT([found])
+   fi
+else
+   LIBKDCRAW_CFLAGS=""
+   LIBKDCRAW_LIBS=""
+   AC_MSG_RESULT([not found])
+fi 
+AC_SUBST(LIBKDCRAW_CFLAGS)
+AC_SUBST(LIBKDCRAW_LIBS)
+
+if test "x$have_libkdcraw" != "xyes"; then
+   DO_NOT_COMPILE="$DO_NOT_COMPILE digikam"
+fi
+
+#------------------------------------------------------------------
+#
+# Check for libtiff
+#
+#------------------------------------------------------------------
+
+have_tiff=no
+KDE_CHECK_LIB(tiff, TIFFWriteScanline,
+  have_tiff=yes,
+  AC_MSG_WARN([TIFF library not found]), 
+  -ljpeg -lz -lm)
+
+if test "x$have_tiff" = "xyes"; then
+  KDE_CHECK_HEADER(tiffio.h, have_tiff=yes, have_tiff=no)
+fi
+
+if test "x$have_tiff" != "xyes"; then
+  AC_WARN([TIFF library not found, digiKam will not be compiled.])
+  DO_NOT_COMPILE="digikam $DO_NOT_COMPILE"
+else
+  LIB_TIFF="-ltiff"
+  AC_SUBST(LIB_TIFF)
+fi
+
+#------------------------------------------------------------------
+#
+# Check for libpng (with png_set_add_alpha() function)
+#
+#------------------------------------------------------------------
+
+have_png=no
+KDE_CHECK_LIB(png, png_set_add_alpha,
+        have_png=yes,
+        AC_MSG_WARN([digiKam requires libpng >= 1.2.7]),
+        -lpng -lz -lm)
+
+if test "x$have_png" != "xyes"; then
+  AC_WARN([digiKam requires libpng >= 1.2.7; digiKam will not be compiled.])
+  DO_NOT_COMPILE="digikam $DO_NOT_COMPILE"
+else
+  LIB_PNG="-lpng"
+  AC_SUBST(LIB_PNG)
+fi
+
+#------------------------------------------------------------------
+#
+# Check for libjasper (JPEG2000)
+#
+#------------------------------------------------------------------
+
+have_jasper=no
+KDE_CHECK_LIB(jasper, jas_init,
+              have_jasper=yes,
+              AC_MSG_WARN([digiKam requires libjasper >= 1.7.0]),
+              -ljasper)
+
+if test "x$have_jasper" != "xyes"; then
+  AC_WARN([digiKam requires libjasper >= 1.7.0; digiKam will not be compiled.])
+  DO_NOT_COMPILE="digikam $DO_NOT_COMPILE"
+else
+  LIB_JASPER="-ljasper"
+  AC_SUBST(LIB_JASPER)
+fi
+
+#------------------------------------------------------------------
+#
+# Check for local/shared sqlite3
+#
+#------------------------------------------------------------------
+
+LIB_SQLITE3=""
+
+AC_ARG_WITH(included-sqlite3,
+    AC_HELP_STRING([--without-included-sqlite3],[build digiKam using system sqlite3 library]),
+    [included_sqlite3=$withval],
+    [included_sqlite3=yes]
+)
+
+if test x$included_sqlite3 = xno; then
+    if test x$PKGCONFIGFOUND = xyes; then
+        PKG_CHECK_MODULES(SQLITE, sqlite3 >= 3.5, have_sqlite3=yes,have_sqlite3=no)
+
+        if test x$have_sqlite3 = xyes; then
+            ## AC_DEFINE(HAVE_SQLITE3, 1, [have SQLite3 database library])
+            LIB_SQLITE3=`pkg-config --libs sqlite3`
+        else
+            # We don't support not having sqlite3 anymore
+            DO_NOT_COMPILE="digikam $DO_NOT_COMPILE"
+        fi
+    fi
+fi
+
+AC_SUBST(LIB_SQLITE3)
+AM_CONDITIONAL(with_included_sqlite3, [test x$included_sqlite3 = xyes])
+
+###############################################################################
+# END SQLITE CHECK
+###############################################################################
+
+
+#------------------------------------------------------------------
+#
+# NFS is Evil (sqlite makes use of file locking for allowing 
+# multiple processes to access the database. but on many 
+# nfs implementations, this file locking is horribly broken and
+# can end up locking the app or not allowing access to the app. 
+# since we use kioslaves which access the db too)
+#
+#------------------------------------------------------------------
+
+AC_ARG_ENABLE(nfs-hack,
+	AC_HELP_STRING([--enable-nfs-hack],
+[Enable a hack for album libraries on a nfs mount, 
+ which causes the database to be saved in 
+ $HOMEDIR/.kde/share/apps/digikam/directoryname.db [default=disable]]),
+ [enable_nfs_hack=$enableval],
+ [enable_nfs_hack=no]
+)
+
+if test "x$enable_nfs_hack" = "xyes"; then
+   AC_DEFINE(NFS_HACK, 1, [NFS hack enabled])
+   AC_MSG_NOTICE([NFS hack enabled. Make sure you know what you are doing])
+fi
+
+#------------------------------------------------------------------
+#
+# get the gcc version
+#
+# CImg.h version 1.2.8 do not compile fine with gcc 4.3.x
+# See B.K.O #163118: digikam-0.9.4_beta5 compilation hangs with gcc 4.3
+# Using -fno-tree-pre is work around this problem.
+#
+#------------------------------------------------------------------
+
+KDE_CHECK_COMPILER_FLAG(fno-tree-pre,[CXXFLAGS="-fno-tree-pre $CXXFLAGS"])
+
+dnl =======================================================
+dnl FILE: ./digikam/utilities/hotplug/configure.in.in
+dnl =======================================================
+
+KDE_EXPAND_MAKEVAR(digikamhelper_dir, kde_datadir/digikam/utils)
+AC_SUBST(digikamhelper_dir)
+
+AC_OUTPUT(digikam/utilities/hotplug/digikam-download.desktop)
+AC_OUTPUT(digikam/utilities/hotplug/digikam-gphoto2-camera.desktop)
+AC_OUTPUT(digikam/utilities/hotplug/digikam-mount-and-download.desktop)
+
+KDE_CREATE_SUBDIRSLIST
+AM_CONDITIONAL(digikam_SUBDIR_included, test "x$digikam_SUBDIR_included" = xyes)
+AM_CONDITIONAL(doc_SUBDIR_included, test "x$doc_SUBDIR_included" = xyes)
+AM_CONDITIONAL(po_SUBDIR_included, test "x$po_SUBDIR_included" = xyes)
+AC_CONFIG_FILES([ Makefile ])
+AC_CONFIG_FILES([ digikam/Makefile ])
+AC_CONFIG_FILES([ digikam/data/Makefile ])
+AC_CONFIG_FILES([ digikam/data/about/Makefile ])
+AC_CONFIG_FILES([ digikam/data/icons/Makefile ])
+AC_CONFIG_FILES([ digikam/data/pics/Makefile ])
+AC_CONFIG_FILES([ digikam/data/profiles/Makefile ])
+AC_CONFIG_FILES([ digikam/data/themes/Makefile ])
+AC_CONFIG_FILES([ digikam/digikam/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/adjustcurves/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/adjustlevels/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/antivignetting/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/blurfx/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/border/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/border/patterns/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/channelmixer/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/charcoal/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/colorfx/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/coreplugin/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/coreplugin/hsl/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/coreplugin/ratiocrop/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/coreplugin/sharpnesseditor/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/coreplugin/sharpnesseditor/clapack/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/distortionfx/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/emboss/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/filmgrain/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/freerotation/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/hotpixels/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/infrared/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/inpainting/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/inserttext/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/lensdistortion/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/noisereduction/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/oilpaint/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/perspective/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/raindrop/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/restoration/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/sheartool/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/superimpose/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/texture/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/texture/patterns/Makefile ])
+AC_CONFIG_FILES([ digikam/imageplugins/whitebalance/Makefile ])
+AC_CONFIG_FILES([ digikam/kioslave/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/curves/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/dialogs/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/dimg/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/dimg/filters/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/dimg/loaders/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/dmetadata/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/greycstoration/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/histogram/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/imageproperties/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/jpegutils/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/levels/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/lprof/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/sqlite2/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/sqlite3/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/themeengine/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/threadimageio/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/thumbbar/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/whitebalance/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/widgets/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/widgets/common/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/widgets/iccprofiles/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/widgets/imageplugins/Makefile ])
+AC_CONFIG_FILES([ digikam/libs/widgets/metadata/Makefile ])
+AC_CONFIG_FILES([ digikam/showfoto/Makefile ])
+AC_CONFIG_FILES([ digikam/showfoto/icons/Makefile ])
+AC_CONFIG_FILES([ digikam/showfoto/pics/Makefile ])
+AC_CONFIG_FILES([ digikam/showfoto/setup/Makefile ])
+AC_CONFIG_FILES([ digikam/themedesigner/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/batch/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/cameragui/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/hotplug/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/imageeditor/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/imageeditor/canvas/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/imageeditor/editor/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/imageeditor/rawimport/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/imageeditor/tools/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/lighttable/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/scripts/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/setup/Makefile ])
+AC_CONFIG_FILES([ digikam/utilities/slideshow/Makefile ])
+AC_CONFIG_FILES([ doc/Makefile ])
+AC_CONFIG_FILES([ po/Makefile ])
+AC_CONFIG_FILES([ po/ar/Makefile ])
+AC_CONFIG_FILES([ po/bg/Makefile ])
+AC_CONFIG_FILES([ po/br/Makefile ])
+AC_CONFIG_FILES([ po/ca/Makefile ])
+AC_CONFIG_FILES([ po/cs/Makefile ])
+AC_CONFIG_FILES([ po/cy/Makefile ])
+AC_CONFIG_FILES([ po/da/Makefile ])
+AC_CONFIG_FILES([ po/de/Makefile ])
+AC_CONFIG_FILES([ po/el/Makefile ])
+AC_CONFIG_FILES([ po/en_GB/Makefile ])
+AC_CONFIG_FILES([ po/es/Makefile ])
+AC_CONFIG_FILES([ po/et/Makefile ])
+AC_CONFIG_FILES([ po/fa/Makefile ])
+AC_CONFIG_FILES([ po/fi/Makefile ])
+AC_CONFIG_FILES([ po/fr/Makefile ])
+AC_CONFIG_FILES([ po/gl/Makefile ])
+AC_CONFIG_FILES([ po/he/Makefile ])
+AC_CONFIG_FILES([ po/hu/Makefile ])
+AC_CONFIG_FILES([ po/is/Makefile ])
+AC_CONFIG_FILES([ po/it/Makefile ])
+AC_CONFIG_FILES([ po/ja/Makefile ])
+AC_CONFIG_FILES([ po/ka/Makefile ])
+AC_CONFIG_FILES([ po/lt/Makefile ])
+AC_CONFIG_FILES([ po/mk/Makefile ])
+AC_CONFIG_FILES([ po/ms/Makefile ])
+AC_CONFIG_FILES([ po/mt/Makefile ])
+AC_CONFIG_FILES([ po/nb/Makefile ])
+AC_CONFIG_FILES([ po/nds/Makefile ])
+AC_CONFIG_FILES([ po/nl/Makefile ])
+AC_CONFIG_FILES([ po/nn/Makefile ])
+AC_CONFIG_FILES([ po/pa/Makefile ])
+AC_CONFIG_FILES([ po/pl/Makefile ])
+AC_CONFIG_FILES([ po/pt/Makefile ])
+AC_CONFIG_FILES([ po/pt_BR/Makefile ])
+AC_CONFIG_FILES([ po/ro/Makefile ])
+AC_CONFIG_FILES([ po/ru/Makefile ])
+AC_CONFIG_FILES([ po/rw/Makefile ])
+AC_CONFIG_FILES([ po/sk/Makefile ])
+AC_CONFIG_FILES([ po/sl/Makefile ])
+AC_CONFIG_FILES([ po/sr/Makefile ])
+AC_CONFIG_FILES([ po/sr@Latn/Makefile ])
+AC_CONFIG_FILES([ po/sv/Makefile ])
+AC_CONFIG_FILES([ po/ta/Makefile ])
+AC_CONFIG_FILES([ po/th/Makefile ])
+AC_CONFIG_FILES([ po/tr/Makefile ])
+AC_CONFIG_FILES([ po/uk/Makefile ])
+AC_CONFIG_FILES([ po/vi/Makefile ])
+AC_CONFIG_FILES([ po/zh_CN/Makefile ])
+AC_CONFIG_FILES([ po/zh_TW/Makefile ])
+AC_OUTPUT
+dnl Put here things to be done at the very end - telling users
+dnl about additional packages to install.
+
+echo ""
+echo "-- digiKam configure results -------------------"
+
+if test "x$included_sqlite3" = "xno"; then
+    if test "x$have_sqlite3" != "xyes"; then
+        echo "-- using internal libsqlite3...... NO"
+        echo "-- libsqlite3 library found....... NO"
+        echo ""
+        echo "digiKam have been set to be compiled using shared libsqlite3 library."
+        echo "digiKam needs libsqlite3 library development package."
+        echo "You need to install the right version first."
+        echo "Look depencies description from README for details."
+        echo "libsqlite3 website is http://www.sqlite.org"
+        echo ""
+        all_tests=bad
+    else
+        echo "-- using internal libsqlite3...... NO"
+        echo "-- libsqlite3 library found....... YES"
+    fi
+else
+    echo "-- using internal libsqlite3...... YES"
+fi
+
+if test -z "$GPHOTO_CONFIG" ; then
+  echo "-- libgphoto2 library found....... NO"
+  echo ""
+  echo "digiKam needs libgphoto2 library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libgphoto2 website is http://www.gphoto.org"
+  echo ""
+  all_tests=bad
+else
+  echo "-- libgphoto2 library found....... YES"
+fi
+
+if test "x$have_tiff" != "xyes"; then
+  echo "-- libtiff library found.......... NO"
+  echo ""
+  echo "digiKam needs libtiff library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libtiff website is http://www.remotesensing.org/libtiff"
+  echo ""
+  all_tests=bad
+else
+  echo "-- libtiff library found..... .... YES"
+fi
+
+if test "x$have_png" != "xyes"; then
+  echo "-- libpng library found........... NO"
+  echo ""
+  echo "digiKam needs libpng library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libpng website is http://www.libpng.org/pub/png/libpng.html"
+  echo ""
+  all_tests=bad
+else
+  echo "-- libpng library found........... YES"
+fi
+
+if test "x$have_jasper" != "xyes"; then
+  echo "-- libjasper library found........ NO"
+  echo ""
+  echo "digiKam needs libjasper library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libjasper website is http://www.ece.uvic.ca/~mdadams/jasper"
+  echo "Important note: libjasper has to be configured with --enable-shared=yes"
+  echo "as otherwise the required dynamic libraries are not created."
+  echo ""
+  all_tests=bad
+else
+  echo "-- libjasper library found........ YES"
+fi
+
+if test "x$have_lcms" != "xyes"; then
+  echo "-- liblcms library found.......... NO"
+  echo ""
+  echo "digiKam needs liblcms library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "liblcms website is http://www.littlecms.com"
+  echo ""
+  all_tests=bad
+else
+  echo "-- liblcms library found.......... YES"
+fi
+
+if test "x$have_libkipi" != "xyes"; then
+  echo "-- libkipi library found.......... NO"
+  echo ""
+  echo "digiKam needs libkipi library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libkipi website is http://www.kipi-plugins.org"
+  echo ""
+  all_tests=bad
+else
+  echo "-- libkipi library found.......... YES"
+fi
+
+if test "x$have_libkexiv2" != "xyes"; then
+  echo "-- libkexiv2 library found........ NO"
+  echo ""
+  echo "digiKam needs libkexiv2 library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libkexiv2 website is http://www.kipi-plugins.org"
+  echo ""
+  all_tests=bad
+else
+  echo "-- libkexiv2 library found........ YES"
+fi
+
+if test "x$have_libkdcraw" != "xyes"; then
+  echo "-- libkdcraw library found........ NO"
+  echo ""
+  echo "digiKam needs libkdcraw library development package."
+  echo "You need to install the right version first."
+  echo "Look depencies description from README for details."
+  echo "libkdcraw website is at http://www.kipi-plugins.org"
+  echo ""
+  all_tests=bad
+else
+  echo "-- libkdcraw library found........ YES"
+fi
+
+echo "------------------------------------------------"
+dnl Put here things to be done at the very end - telling users
+dnl about additional packages to install. Better yet is giving
+dnl each project / subdr its own configure.in.bot.
+
+# Check if KDE_SET_PREFIX was called, and --prefix was passed to configure
+if test -n "$kde_libs_prefix" -a -n "$given_prefix"; then
+  # And if so, warn when they don't match
+  if test "$kde_libs_prefix" != "$given_prefix"; then
+    # And if kde doesn't know about the prefix yet
+    echo ":"`kde-config --path exe`":" | grep ":$given_prefix/bin/:" 2>&1 >/dev/null
+    if test $? -ne 0; then
+      echo ""
+      echo "Warning: you chose to install this package in $given_prefix,"
+      echo "but KDE was found in $kde_libs_prefix."
+      echo "For this to work, you will need to tell KDE about the new prefix, by ensuring"
+      echo "that KDEDIRS contains it, e.g. export KDEDIRS=$given_prefix:$kde_libs_prefix"
+      echo "Then restart KDE."
+      echo ""
+    fi
+  fi
+fi
+
+if test x$GXX = "xyes" -a x$kde_have_gcc_visibility = "xyes" -a x$kde_cv_val_qt_gcc_visibility_patched = "xno"; then
+  echo ""
+  echo "Your GCC supports symbol visibility, but the patch for Qt supporting visibility"
+  echo "was not included. Therefore, GCC symbol visibility support remains disabled."
+  echo ""
+  echo "For better performance, consider including the Qt visibility supporting patch"
+  echo "located at:"
+  echo ""
+  echo "http://bugs.kde.org/show_bug.cgi?id=109386"
+  echo ""
+  echo "and recompile all of Qt and KDE. Note, this is entirely optional and"
+  echo "everything will continue to work just fine without it."
+  echo ""
+fi
+
+if test "$all_tests" = "bad"; then
+  if test ! "$cache_file" = "/dev/null"; then
+    echo ""
+    echo "Please remove the file $cache_file after changing your setup"
+    echo "so that configure will find the changes next time."
+    echo ""
+  fi
+else
+  echo ""
+  echo "Good - your configure finished. Start make now"
+  echo ""
+fi

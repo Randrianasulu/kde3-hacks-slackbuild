@@ -1,0 +1,224 @@
+# Danish translation of kipiplugin_calendar
+# Copyright (C)
+#
+# Rune Rønde Laursen <runerl@skjoldhoej.dk>, 2004.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_calendar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2007-06-28 19:10-0400\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Rune Rønde Laursen,Erik Kjær Pedersen"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "runerl@skjoldhoej.dk,erik@binghamton.edu"
+
+#: calevents.cpp:56
+msgid "Select 'Official Holidays' calendar file"
+msgstr "Vælg kalenderfilen 'Officielle  helligdage'"
+
+#: calevents.cpp:70
+msgid "Select 'Family Holidays' calendar file"
+msgstr "Vælg kalenderfilen 'Familiens fridage'"
+
+#: calselect.cpp:69 calwizard.cpp:165
+msgid "Create Calendar"
+msgstr "Opret kalender"
+
+#: calselect.cpp:70
+msgid "Select Year"
+msgstr "Vælg år"
+
+#: calselect.cpp:87
+msgid "Select Images"
+msgstr "Vælg billeder"
+
+#: calselect.cpp:119
+msgid ""
+"Left click on Months to Select Images. Right click to Clear Month.\n"
+"You can also drag and drop images onto the Months"
+msgstr ""
+"Venstreklik på måneder for at vælge billeder. Højreklik for at\n"
+"rydde en måned. Du kan også trække og slippe billeder hen på månederne"
+
+#: caltemplate.cpp:66
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+#: caltemplate.cpp:78
+msgid "Settings"
+msgstr "Opsætning"
+
+#: caltemplate.cpp:87
+msgid "Paper size:"
+msgstr "Papirstørrelse:"
+
+#: caltemplate.cpp:103
+msgid "Image Position"
+msgstr "Billedposition"
+
+#: caltemplate.cpp:125
+msgid "Draw lines in calendar"
+msgstr "Tegn linjer i kalender"
+
+#: caltemplate.cpp:136
+msgid "Image to text ratio:"
+msgstr "Billede til tekst-forhold:"
+
+#: caltemplate.cpp:150
+msgid "Font:"
+msgstr "Skrifttype:"
+
+#: calwizard.cpp:80
+msgid "Create Template for Calendar"
+msgstr "Opret skabelon til kalender"
+
+#: calwizard.cpp:86
+msgid "Choose the events to show on the Calendar"
+msgstr "Vælg begivenheder at vise i kalenderen"
+
+#: calwizard.cpp:92
+msgid "Select Year & Images"
+msgstr "Vælg år og billeder"
+
+#: calwizard.cpp:117
+msgid "Current Page"
+msgstr "Nuværende side"
+
+#: calwizard.cpp:123
+msgid "Total Pages"
+msgstr "Alle sider"
+
+#: calwizard.cpp:130
+msgid "Printing"
+msgstr "Udskriver"
+
+#: calwizard.cpp:137
+msgid "Calendar"
+msgstr "Kalender"
+
+#: calwizard.cpp:140
+msgid "A Kipi plugin to create a calendar"
+msgstr "En KIPI plugin til kalenderfremstilling"
+
+#: calwizard.cpp:143
+msgid "Author and maintainer"
+msgstr "Forfatter og vedligeholder"
+
+#: calwizard.cpp:146
+msgid "Former Author and maintainer"
+msgstr "Tidligere forfatter og vedligeholder"
+
+#: calwizard.cpp:152
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Kalenderhåndbog"
+
+#: calwizard.cpp:221
+msgid ""
+"Please note that you are making a calendar for"
+"<br>the current year or a year in the past."
+msgstr ""
+"Bemærk at du er ved at lave en kalender for"
+"<br>dette år eller et år i fortiden."
+
+#: calwizard.cpp:226
+msgid ""
+"<br>"
+"<br>You can see KJobViewer is already started. After the plugin has prepared "
+"the calendar, it is passed to the PDF printer. In the KJobViewer you can see "
+"the progress of that part of the generation of the calendar."
+msgstr ""
+"<br>"
+"<br>Du kan se at KJobViewer allerede er startet. Efter pluginnet har forberedt "
+"kalendern sendes den til PDF-printeren. I KJobViewer kan du se fremgangen af "
+"den del af at generere kalenderen udføres."
+
+#: calwizard.cpp:231
+msgid ""
+"Click Next to start Printing"
+"<br>"
+"<br>Following months will be printed for year %1:"
+msgstr ""
+"Klik på næste for at udskrive "
+"<br>"
+"<br>Følgende måneder vil blive udskrevet for året %1:"
+
+#: calwizard.cpp:240
+msgid "No valid images selected for months<br>Click Back to select images"
+msgstr ""
+"Ingen gyldige billeder er valgt til månederne"
+"<br>Klik på tilbage for at vælge billeder"
+
+#: calwizard.cpp:293
+msgid "Printing Cancelled"
+msgstr "Udskrivning annulleret"
+
+#: calwizard.cpp:310
+msgid "Printing Complete"
+msgstr "Udskrivning fuldført"
+
+#: calwizard.cpp:322 calwizard.cpp:326
+msgid "Printing Calendar Page for %1 of %2"
+msgstr "Udskriver kalenderside for %1 af %2"
+
+#: plugin_calendar.cpp:60
+msgid "Create Calendar..."
+msgstr "Opret kalender..."
+
+#. i18n: file caleventsbase.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "CalEventBaseWidget"
+msgstr "CalEventBaseWidget"
+
+#. i18n: file caleventsbase.ui line 32
+#: rc.cpp:6
+#, no-c-format
+msgid "Select an optional calendar file with the official holidays"
+msgstr "Vælg en valgfri kalenderfil med generelle helligdage"
+
+#. i18n: file caleventsbase.ui line 78
+#: rc.cpp:9
+#, no-c-format
+msgid ""
+"You can download a calendar for your country from http://www.icalshare.com/ or "
+"other sites.\n"
+"This is fully optional. All the events from this calendar will be printed red."
+msgstr ""
+"Du kan downloade en kalender for dit land fra http://www.icalshare.com/ eller "
+"andre steder.\n"
+"Den er helt valgfri. Alle begivenheder fra kalenderen vises med rødt."
+
+#. i18n: file caleventsbase.ui line 108
+#: rc.cpp:13
+#, no-c-format
+msgid "Select an optional calendar file with your \"family holidays\""
+msgstr "Vælg en valgfri kalenderfil med \"familiens frigdage\""
+
+#. i18n: file caleventsbase.ui line 162
+#: rc.cpp:16
+#, no-c-format
+msgid ""
+"You can create such a calendar using KOrganizer or any other calendar program.\n"
+"This is fully optional. All the events from this calendar will be printed "
+"green."
+msgstr ""
+"Du kan oprette en sådan kalender med Korganizer eller et hvilket som helst "
+"andet kalenderprogram.\n"
+"Den er helt valgfri. Alle begivenheder fra kalenderen vises med grønt."

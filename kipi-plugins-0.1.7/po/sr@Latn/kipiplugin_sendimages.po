@@ -1,0 +1,458 @@
+# translation of kipiplugin_sendimages.po to Serbian
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sendimages\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-07-23 10:18+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: listimageserrordialog.cpp:67
+msgid "Image File Name"
+msgstr "Ime fajla slike"
+
+#: listimageserrordialog.cpp:68
+msgid "From Album"
+msgstr "Iz albuma"
+
+#: plugin_sendimages.cpp:76
+msgid "Email Images..."
+msgstr "Pošalji slike e-poštom..."
+
+#: plugin_sendimages.cpp:148
+msgid "Preparing images to send"
+msgstr "Spremam slike za slanje"
+
+#: plugin_sendimages.cpp:170
+#, c-format
+msgid ""
+"_n: Preparing 1 image to send....\n"
+"Preparing %n images to send...."
+msgstr ""
+"Spremam %n sliku za slanje...\n"
+"Spremam %n slike za slanje...\n"
+"Spremam %n slika za slanje..."
+
+#: plugin_sendimages.cpp:176
+msgid "Resizing '%1' from Album '%2'..."
+msgstr "Menjam veličinu „%1“ iz albuma „%2“..."
+
+#: plugin_sendimages.cpp:183
+msgid "Using '%1' from Album '%2' without resizing..."
+msgstr "Koristim „%1“ iz albuma „%2“ bez promene veličine..."
+
+#: plugin_sendimages.cpp:206
+msgid "Failed to resize '%1' from Album '%2'"
+msgstr "Nisam uspeo da promenim veličinu „%1“ iz albuma „%2“"
+
+#: plugin_sendimages.cpp:225
+msgid "Resizing '%1' from Album '%2' completed."
+msgstr "Promena veličine „%1“ iz albuma „%2“ je završena."
+
+#: plugin_sendimages.cpp:232
+msgid "All preparatory operations completed."
+msgstr "Sve pripremne operacije su završene."
+
+#: plugin_sendimages.cpp:270
+msgid "Creating comments file if necessary..."
+msgstr "Pravim fajl sa komentarima ako je potrebno..."
+
+#: plugin_sendimages.cpp:275
+msgid "Starting mailer agent..."
+msgstr "Pokrećem poštanski agent..."
+
+#: sendimages.cpp:335
+#, fuzzy
+msgid "no caption"
+msgstr "bez komentara"
+
+#: sendimages.cpp:339
+#, fuzzy
+msgid ""
+"Caption for image \"%1\": %2\n"
+msgstr ""
+"Komentari za sliku „%1“: %2\n"
+
+#: sendimages.cpp:348
+msgid ""
+"Tags: %2\n"
+msgstr ""
+"Oznake: %2\n"
+
+#: sendimages.cpp:359 sendimages.cpp:365
+msgid "comments.txt"
+msgstr "komentari.txt"
+
+#: sendimages.cpp:376
+msgid "Error during resize images process."
+msgstr "Greška tokom promene veličine slika."
+
+#: sendimages.cpp:377
+msgid "Cannot resize the following image files:"
+msgstr "Ne mogu da promenim veličinu sledećih slika:"
+
+#: sendimages.cpp:378
+msgid "Do you want them to be added as attachments (without resizing)?"
+msgstr "Želite li da ih dodate kao priloge (bez promene veličine)?"
+
+#: sendimages.cpp:488 sendimages.cpp:517 sendimages.cpp:539 sendimages.cpp:565
+#: sendimages.cpp:628 sendimages.cpp:885
+msgid ""
+"Cannot start '%1' program;\n"
+"please check your installation."
+msgstr ""
+"Ne mogu da pokrenem naredbu „%1“.\n"
+"Proverite svoju instalaciju."
+
+#: sendimages.cpp:645
+#, c-format
+msgid "Cannot remove temporary folder %1."
+msgstr "Ne mogu da uklonim privremenu fasciklu %1."
+
+#: sendimagesdialog.cpp:140
+msgid "Email Images Options"
+msgstr "Opcije slanja slika e-poštom"
+
+#: sendimagesdialog.cpp:158
+msgid "Send Images"
+msgstr "Pošalji slike"
+
+#: sendimagesdialog.cpp:161
+msgid "A Kipi plugin for emailing images"
+msgstr "Kipi-jev priključak za slanje slika e-poštom"
+
+#: sendimagesdialog.cpp:164
+msgid "Author and maintainer"
+msgstr "Autor i održavalac"
+
+#: sendimagesdialog.cpp:167 sendimagesdialog.cpp:170
+msgid "Developer"
+msgstr ""
+
+#: sendimagesdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr ""
+
+#: sendimagesdialog.cpp:251
+msgid "Images"
+msgstr "Slike"
+
+#: sendimagesdialog.cpp:252
+msgid "Images to EMail"
+msgstr "Slike za E-poštu"
+
+#: sendimagesdialog.cpp:264
+msgid ""
+"<p>This is the list of images  to email. If you want to add some images click "
+"on the 'Add Images...' button or use the drag-and-drop."
+msgstr ""
+"<p>Ovo je lista slika koje treba poslati. Ako želite da dodate slike, kliknite "
+"na dugme „Dodaj slike...“ ili upotrebite prevlačenje i ispuštanje."
+
+#: sendimagesdialog.cpp:270
+msgid "&Add ..."
+msgstr "&Dodaj..."
+
+#: sendimagesdialog.cpp:271
+msgid "<p>Add images to the list."
+msgstr "<p>Dodaj slike u listu."
+
+#: sendimagesdialog.cpp:273
+msgid "<p>Remove selected images from the list."
+msgstr "<p>Ukloni izabrane slike iz liste."
+
+#: sendimagesdialog.cpp:281
+msgid "<p>Preview of the currently selected image on the list."
+msgstr "<p>Pregled trenutno izabrane slike u listi."
+
+#: sendimagesdialog.cpp:288
+msgid "Image Description"
+msgstr "Opis slike"
+
+#: sendimagesdialog.cpp:292
+msgid "<p>The description of the currently selected image on the list."
+msgstr "<p>Opis trenutno izabrane slike u listi."
+
+#: sendimagesdialog.cpp:364
+msgid "Mail"
+msgstr "Pošta"
+
+#: sendimagesdialog.cpp:365
+msgid "Mail Options"
+msgstr "Opcije pošte"
+
+#: sendimagesdialog.cpp:375
+msgid "Mail agent:"
+msgstr "Poštanski agent:"
+
+#: sendimagesdialog.cpp:390
+msgid ""
+"<p>Select here your preferred external mail agent program.These mail agent "
+"versions are supported:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+msgstr ""
+"<p>Izaberite ovde željeni spoljašnji poštanski program. Podržani su sledeći "
+"programi, sa datim verzijama:"
+"<p><b>Balsa</b>: >= 2.x"
+"<p><b>Claws Mail</b>: >= 2.6.1"
+"<p><b>Evolution</b>: >= 1.4"
+"<p><b>GmailAgent</b>: >= 0.2"
+"<p><b>KMail</b>: >= 1.3"
+"<p><b>Mozilla</b>: >= 1.4"
+"<p><b>Netscape</b>: >= 7.x"
+"<p><b>Sylpheed</b>: >= 0.9"
+"<p><b>Sylpheed-Claws</b>: >= 0.9"
+"<p><b>Thunderbird</b>: >= 0.4"
+"<p>"
+
+#: sendimagesdialog.cpp:412
+msgid "&Thunderbird binary path:"
+msgstr "Pu&tanja do izvršnog fajla Thunderbird-a:"
+
+#: sendimagesdialog.cpp:422
+msgid "<p>The path name to the Thunderbird binary program."
+msgstr "<p>Putanja do izvršnog programskog fajla Thunderbird-a."
+
+#: sendimagesdialog.cpp:426
+#, fuzzy
+msgid "Attach a file with caption and tags"
+msgstr "Priloži fajl zajedno sa komentarima i oznakama"
+
+#: sendimagesdialog.cpp:427
+#, fuzzy
+msgid ""
+"<p>If you enable this option, all image captions and tags will be added as an "
+"attached file."
+msgstr ""
+"<p>Ako uključite ovu opciju, svi komentari i oznake slika biće dodati kao "
+"priloženi fajl."
+
+#: sendimagesdialog.cpp:430
+#, fuzzy
+msgid "Generate new filenames from image captions (if available)"
+msgstr ""
+"Napravi nova imena fajlova iz komentara slike (ako je komentar dostupan)"
+
+#: sendimagesdialog.cpp:435
+msgid "Image Properties"
+msgstr "Svojstva slike"
+
+#: sendimagesdialog.cpp:439
+msgid "<p>The properties of images to send."
+msgstr "<p>Svojstva slika za slanje."
+
+#: sendimagesdialog.cpp:444
+msgid "Adjust image properties"
+msgstr "Podesi svojstva slike"
+
+#: sendimagesdialog.cpp:445
+msgid ""
+"<p>If you enable this option, all images to send can be resized and "
+"recompressed."
+msgstr ""
+"<p>Ako uključite ovu opciju, sve slike koje se šalju mogu biti rekompresovane "
+"ili promenjene veličine."
+
+#: sendimagesdialog.cpp:454
+msgid "Very Small (320 pixels)"
+msgstr "Vrlo male (320 piksela)"
+
+#: sendimagesdialog.cpp:455
+msgid "Small (640 pixels)"
+msgstr "Male (640 piksela)"
+
+#: sendimagesdialog.cpp:456 sendimagesdialog.cpp:460
+msgid "Medium (800 pixels)"
+msgstr "Srednje (800 piksela)"
+
+#: sendimagesdialog.cpp:457
+msgid "Big (1024 pixels)"
+msgstr "Velike (1024 piksela)"
+
+#: sendimagesdialog.cpp:458
+msgid "Very Big (1280 pixels)"
+msgstr "Vrlo velike (1280 piksela)"
+
+#: sendimagesdialog.cpp:459
+msgid "Huge - for printing (1600 pixels)"
+msgstr "Ogromne - za štampu (1600 piksela)"
+
+#: sendimagesdialog.cpp:461
+msgid ""
+"<p>Select here the images size to send:"
+"<p><b>%1</b>: use this if you have a very slow internet connection or if the "
+"target mailbox size is very limited."
+"<p><b>%2</b>: use this if you have a slow internet connection and if the target "
+"mailbox size is limited."
+"<p><b>%3</b>: this is the default value for a medium internet connection and a "
+"target mailbox size."
+"<p><b>%4</b>: use this if you have a high-speed internet connection and if the "
+"target mailbox size is not limited."
+"<p><b>%5</b>: use this if you have no size or speed restrictions."
+"<p><b>%6</b>: use this only for printing purpose."
+"<p>"
+msgstr ""
+"<p>Izaberite ovde veličinu slika koje se šalju: "
+"<p><b>%1</b>: Koristite ovo ako imate vrlo sporu internet vezu ili ako je "
+"ciljno poštansko sanduče vrlo malo."
+"<p><b>%2</b>: Koristite ovo ako imate sporu internet vezu ili ako je ciljno "
+"poštansko sanduče malo. "
+"<p><b>%3</b>: Ovo je podrazumevana vrednost za srednju brzinu internet veze i "
+"veličinu ciljnog poštanskog sandučeta. "
+"<p><b>%4</b>: Koristite ovo ako imate brzu internet vezu i veličina ciljnog "
+"poštanskog sandučeta nije ograničenje. "
+"<p><b>%5</b>: Koristite ovo kada nema ograničenja veze ili veličine sandučeta."
+"<p><b>%6</b>: Koristite ovo samo u svrhu štampanja."
+"<p>"
+
+#: sendimagesdialog.cpp:472
+msgid "very small (320 pixels)"
+msgstr "vrlo male (320 piksela)"
+
+#: sendimagesdialog.cpp:473
+msgid "small (640 pixels)"
+msgstr "male (640 piksela)"
+
+#: sendimagesdialog.cpp:474
+msgid "medium (800 pixels)"
+msgstr "srednje (800 piksela)"
+
+#: sendimagesdialog.cpp:475
+msgid "big (1024 pixels)"
+msgstr "velike (1024 piksela)"
+
+#: sendimagesdialog.cpp:476
+msgid "very big (1280 pixels)"
+msgstr "vrlo velike (1280 piksela)"
+
+#: sendimagesdialog.cpp:477
+msgid "huge - for printing (1600 pixels)"
+msgstr "ogromne - za štampu (1600 piksela)"
+
+#: sendimagesdialog.cpp:480
+msgid "Sent image size:"
+msgstr "Veličina slika za slanje:"
+
+#: sendimagesdialog.cpp:490
+msgid "Sent image quality level:"
+msgstr "Nivo kvaliteta slika za slanje:"
+
+#: sendimagesdialog.cpp:492
+msgid "<p>The new compression value of images to send:<p>"
+msgstr "<p>Vrednost nove kompresije slika za slanje:<p>"
+
+#: sendimagesdialog.cpp:493
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: vrlo visoka kompresija"
+"<p><b>25</b>: visoka kompresija"
+"<p><b>50</b>: srednja kompresija"
+"<p><b>75</b>: niska kompresija (podrazumevano)"
+"<p><b>100</b>: bez kompresije"
+
+#: sendimagesdialog.cpp:510
+msgid "<p>Select here the images files format to send.<p>"
+msgstr "<p>Izaberite ovde format fajlova slika za slanje.<p>"
+
+#: sendimagesdialog.cpp:511
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Dobar format fajlova za Veb, ali koristi kompresiju sa gubicima."
+"<p><b>PNG</b>: Proširiv format fajlova za dobru kompresiju rasterskih slika, "
+"bez gubitaka. PNG je slobodna od patenata zamena za GIF, a može da zameni i "
+"TIFF u mnogim uobičajenim primenama. PNG je projektovan da radi dobro u "
+"primenama za pregledanje na vezi, kao što je Veb (World Wide Web), tako da je "
+"potpuno serijski sa opcijom progresivnog prikaza. Takođe, PNG može da skladišti "
+"podatke o gami i hromatičnosti radi poboljšanog poklapanja boja na raznovrsnim "
+"platformama."
+
+#: sendimagesdialog.cpp:521
+msgid "Image file format:"
+msgstr "Format fajlova slika:"
+
+#: sendimagesdialog.cpp:532
+msgid "Maximum Email size limit:"
+msgstr "Najveća moguća veličina e-poruke:"
+
+#: sendimagesdialog.cpp:533
+msgid "MB"
+msgstr "MB"
+
+#: sendimagesdialog.cpp:623
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Komentari: %1"
+
+#: sendimagesdialog.cpp:624
+#, c-format
+msgid "Album: %1"
+msgstr "Album: %1"
+
+#: sendimagesdialog.cpp:654
+msgid "You must add some images to send."
+msgstr "Morate dodati neke slike za slanje."
+
+#: sendimagesdialog.cpp:664
+msgid "Thunderbird binary path is not valid. Please check it."
+msgstr "Putanja do izvršnog fajla Thunderbird-a nije ispravna. Proverite je."
+
+#: sendimagesdialog.cpp:683
+msgid "Image List"
+msgstr "Lista slika"
+
+#: sendimagesdialog.cpp:685
+#, c-format
+msgid ""
+"_n: Image List (1 item)\n"
+"Image List (%n items)"
+msgstr ""
+"Lista slika (%n stavka)\n"
+"Lista slika (%n stavke)\n"
+"Lista slika (%n stavki)"
+
+#~ msgid "Send Image Handbook"
+#~ msgstr "Priručnik za slanje slika"

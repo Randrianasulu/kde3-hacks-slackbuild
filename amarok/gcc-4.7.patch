@@ -1,0 +1,95 @@
+From 97e01d2455005789586efcad40b01bf4884c8e91 Mon Sep 17 00:00:00 2001
+From: Slávek Banko <slavek.banko@axis.cz>
+Date: Tue, 12 Jun 2012 01:42:00 +0000
+Subject: Fix FTBFS due to missing includes
+
+Thanks to Francois Andriot for the patch!
+---
+diff --git a/amarok/src/engine/helix/helix-engine.cpp b/amarok/src/engine/helix/helix-engine.cpp
+index fb4dc69..02b187b 100644
+--- a/amarok/src/engine/helix/helix-engine.cpp
++++ b/amarok/src/engine/helix/helix-engine.cpp
+@@ -15,6 +15,7 @@
+ #include <climits>
+ #include <cmath>
+ #include <stdarg.h>
++#include <cstring>
+ 
+ #include <config.h>
+ 
+diff --git a/amarok/src/engine/helix/helix-sp/helix-sp.h b/amarok/src/engine/helix/helix-sp/helix-sp.h
+index 1b758b5..ec3e8a1 100644
+--- a/amarok/src/engine/helix/helix-sp/helix-sp.h
++++ b/amarok/src/engine/helix/helix-sp/helix-sp.h
+@@ -23,6 +23,7 @@ class HelixSimplePlayerAudioStreamInfoResponse;
+ #include <limits.h>
+ #include <sys/param.h>
+ #include <pthread.h>
++#include <cstring>
+ #include <vector>
+ #include <config.h>
+ #include <iostream>
+diff --git a/amarok/src/engine/helix/hxplayercontrol.cpp b/amarok/src/engine/helix/hxplayercontrol.cpp
+index 8cb2693..10b2d22 100644
+--- a/amarok/src/engine/helix/hxplayercontrol.cpp
++++ b/amarok/src/engine/helix/hxplayercontrol.cpp
+@@ -15,6 +15,8 @@
+  the alsa guys
+  ***************************************************************************/
+ 
++#include <cstdlib>
++#include <cstring>
+ #include <sys/time.h>
+ #include <sys/types.h>
+ #include <sys/wait.h>
+diff --git a/amarok/src/metadata/mp4/mp4file.cpp b/amarok/src/metadata/mp4/mp4file.cpp
+index ec8feb0..8664a20 100644
+--- a/amarok/src/metadata/mp4/mp4file.cpp
++++ b/amarok/src/metadata/mp4/mp4file.cpp
+@@ -30,6 +30,7 @@ email                : aumuell@reserv.at
+ #include <audioproperties.h>
+ 
+ #include <stdint.h>
++#include <cstdlib>
+ 
+ #define MP4V2_HAS_WRITE_BUG 1
+ 
+diff --git a/amarok/src/metadata/mp4/mp4properties.cpp b/amarok/src/metadata/mp4/mp4properties.cpp
+index 978dfc5..b1d8e8e 100644
+--- a/amarok/src/metadata/mp4/mp4properties.cpp
++++ b/amarok/src/metadata/mp4/mp4properties.cpp
+@@ -30,6 +30,7 @@ email                : andrew.leadbetter@gmail.com
+ #endif
+ 
+ #include <stdint.h>
++#include <cstring>
+ 
+ #ifndef UINT64_TO_DOUBLE
+ #define UINT64_TO_DOUBLE(a) ((double)((int64_t)(a)))
+diff --git a/amarok/src/metadata/mp4/mp4tag.cpp b/amarok/src/metadata/mp4/mp4tag.cpp
+index 611aaa0..b493da4 100644
+--- a/amarok/src/metadata/mp4/mp4tag.cpp
++++ b/amarok/src/metadata/mp4/mp4tag.cpp
+@@ -24,6 +24,8 @@ email                : andrew.leadbetter@gmail.com
+ 
+ #include <tag.h>
+ #include <stdint.h>
++#include <cstdlib>
++#include <cstring>
+ 
+ using namespace TagLib;
+ 
+diff --git a/amarok/src/metadata/mp4/taglib_mp4filetyperesolver.cpp b/amarok/src/metadata/mp4/taglib_mp4filetyperesolver.cpp
+index af41fa1..43edd19 100644
+--- a/amarok/src/metadata/mp4/taglib_mp4filetyperesolver.cpp
++++ b/amarok/src/metadata/mp4/taglib_mp4filetyperesolver.cpp
+@@ -24,6 +24,7 @@
+ 
+ #include "taglib_mp4filetyperesolver.h"
+ #include "mp4file.h"
++#include <cstring>
+ 
+ TagLib::File *MP4FileTypeResolver::createFile(const char *fileName,
+         bool readProperties,
+--
+cgit v0.9.0.2-52-g1de3

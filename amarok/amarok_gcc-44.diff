@@ -1,0 +1,83 @@
+--- amarok/src/metadata/wav/wavproperties.cpp~	2008-11-08 06:33:15.000000000 +0000
++++ amarok/src/metadata/wav/wavproperties.cpp	2008-11-08 06:33:22.000000000 +0000
+@@ -30,6 +30,7 @@
+ #include "wavfile.h"
+ 
+ #include <netinet/in.h> // ntohl
++#include <stdio.h>
+ 
+ using namespace TagLib;
+ 
+--- amarok/src/metadata/wav/wavfile.cpp~	2008-11-08 06:35:37.000000000 +0000
++++ amarok/src/metadata/wav/wavfile.cpp	2008-11-08 06:35:44.000000000 +0000
+@@ -29,6 +29,8 @@
+ #include <taglib/audioproperties.h>
+ #include <taglib/tag.h>
+ 
++#include <cstdio>
++
+ namespace TagLib {
+ ////////////////////////////////////////////////////////////////////////////////
+ // public members
+--- amarok/src/metadata/wav/wavfiletyperesolver.cpp~	2008-11-08 06:35:54.000000000 +0000
++++ amarok/src/metadata/wav/wavfiletyperesolver.cpp	2008-11-08 06:35:59.000000000 +0000
+@@ -22,6 +22,7 @@
+ #include "wavfiletyperesolver.h"
+ #include "wavfile.h"
+ 
++#include <cstdio>
+ #include <string.h>
+ 
+ TagLib::File *WavFileTypeResolver::createFile(const char *fileName,
+--- amarok/src/metadata/audible/audibleproperties.cpp~	2008-11-08 06:28:46.000000000 +0000
++++ amarok/src/metadata/audible/audibleproperties.cpp	2008-11-08 06:29:40.000000000 +0000
+@@ -30,6 +30,7 @@
+ #include "taglib_audiblefile.h"
+ 
+ #include <netinet/in.h> // ntohl
++#include <stdio.h>
+ 
+ using namespace TagLib;
+ 
+--- amarok/src/metadata/audible/audibletag.cpp~	2008-11-08 06:29:16.000000000 +0000
++++ amarok/src/metadata/audible/audibletag.cpp	2008-11-08 06:29:24.000000000 +0000
+@@ -28,6 +28,7 @@
+ #include <taglib/tag.h>
+ 
+ #include <netinet/in.h> // ntohl
++#include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+ 
+--- amarok/src/metadata/audible/taglib_audiblefile.cpp~	2008-11-08 06:29:58.000000000 +0000
++++ amarok/src/metadata/audible/taglib_audiblefile.cpp	2008-11-08 06:30:06.000000000 +0000
+@@ -28,6 +28,7 @@
+ #include "audibletag.h"
+ #include <taglib/tfile.h>
+ #include <taglib/audioproperties.h>
++#include <stdio.h>
+ 
+ namespace TagLib {
+ ////////////////////////////////////////////////////////////////////////////////
+--- amarok/src/metadata/audible/taglib_audiblefiletyperesolver.cpp~	2008-11-08 06:30:18.000000000 +0000
++++ amarok/src/metadata/audible/taglib_audiblefiletyperesolver.cpp	2008-11-08 06:30:27.000000000 +0000
+@@ -22,6 +22,7 @@
+ #include "taglib_audiblefiletyperesolver.h"
+ #include "taglib_audiblefile.h"
+ 
++#include <stdio.h>
+ #include <string.h>
+ 
+ TagLib::File *AudibleFileTypeResolver::createFile(const char *fileName,
+--- amarok/src/metabundlesaver.cpp~	2008-11-08 06:47:06.000000000 +0000
++++ amarok/src/metabundlesaver.cpp	2008-11-08 06:47:17.000000000 +0000
+@@ -6,7 +6,7 @@
+ 
+ #include <stdlib.h>
+ #include <unistd.h>
+-#include <stdio.h>
++#include <cstdio>
+ #include <time.h>
+ #include <sys/time.h>
+ #include <sys/types.h>
+

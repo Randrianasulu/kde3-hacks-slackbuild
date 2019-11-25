@@ -1,0 +1,122 @@
+<chapter id="download">
+<title
+>KDE Bluetoothi raamistiku hankimine</title>
+<sect1 id="download.tarballs">
+<title
+>Allikad</title>
+<para
+>KDE Bluetoothi raamistik kuulub praegu <ulink url="http://extragear.kde.org"
+>kdeextragear-3</ulink
+> koosseisu. Kui sa ei soovi just lähtetekstiga ise vaeva näha ega kavatse meile parandusi saata, soovitame me siiski kasutada just sinu distributsioonile mõeldud valmispaketti. Selle pruukimine vähendab ajakulu ja säästab hallidest juustest, mis võivad kergesti tekkida lähtetekstist omal käel paigaldamisel. </para>
+
+<para
+>Tõmba endale mõni <ulink url="http://sourceforge.net/project/showfiles.php?group_id=89888"
+>kdebluetoothi väljalase</ulink
+>. </para>
+
+<para
+>Või proovi testimata <ulink url="http://fred.hexbox.de/debian/"
+>hetktõmmiseid</ulink
+>. </para>
+
+</sect1>
+
+<sect1 id="download.packages">
+<title
+>Paketid</title>
+<para>
+<variablelist>
+<title
+>Momendil toetatud distributsioonid</title>
+<varlistentry>
+
+<term
+>Debian Sid</term>
+<listitem
+><para
+>Mõttekas oleks lisada järgmised read faili <filename
+>/etc/apt/sources.list</filename
+>: <screen
+># KDE-Bluetooth
+deb http://fred.hexbox.de/debian ./
+</screen>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Gentoo Linux</term>
+<listitem>
+<para
+>Viimane ebuild on juba gentoo pordipuus. Samuti võib kontrollida aadressi http://bugs.gentoo.org, kus võib leida veel sisse kandmata ebuilde</para>
+<para
+>Kdebluetoothi CVS versiooni ebuildi saab tõmmata <ulink url="http://members.xoom.virgilio.it/motaboy/ebuilds"
+>siit</ulink
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>SuSe</term>
+
+<listitem
+><para
+>RPM-paketi SuSe 8.2 jaoks saab alla tõmmata <ulink url="http://sra.itc.it/people/merzi/kdebluetooth-0.0.cvs.20040210.i686.rpm"
+>siit</ulink
+> (täname Filippo Biondit), SuSe 9.0 jaoks <ulink url="http://www.hilzinger.hu/ch/linux.html"
+>siit</ulink
+> (täname Marcel Hilzingeri) või RPM -spec-faili SuSe 9.0 jaoks <ulink url="http://sra.itc.it/people/merzi/kdebluetooth.spec"
+>siit</ulink
+> (täname Michael Sabielnyt).</para>
+
+<para
+>1) Tõmba kde-bluethoothi viimane SVN-versioon. 2) Paki see bzip'iga: <filename
+>tar cvjf kdebluetooth.tar.bz2 kdebluetooth</filename
+> 3) Kopeeri pakitud fail kataloogi <filename
+>/usr/src/packages/SOURCES</filename
+> 4) Kopeeri spetsifikatsioon kataloogi <filename
+>/usr/src/packages/SPECS</filename
+> 5) Kontrolli, et paigaldatud oleks kogu vajalik lisatarkvara: <filename
+>kdelibs3 kdelibs3-devel qt3 qt3-devel openobex arts</filename
+> <filename
+>bluez-sdp bluez-libs bluez-utils xmms xmms-devel</filename
+> 6) Ehita pakett <filename
+>cd /usr/src/packages</filename
+> <filename
+>rpmbuild -ba SPECS/kdebluetooth.spec</filename
+> </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="download.cvs">
+<title
+>Anonüümne SVN</title>
+<para
+>KDE Bluetoothi raamistiku arendamine käib praegu <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+> KDE Extrageari</ulink
+> moodulis. CVS-i aadressil kde-bluetooth.sf.net ei kasutata enam. </para>
+<para
+>Kdebluetoothi viimase arendusversiooni hankimiseks talita järgmiselt: <screen>
+svn checkout -N svn://svn.kde.org/home/kde/trunk/extragear/pim
+cd pim
+svn checkout svn://anonsvn.kde.org/home/kde/trunk/KDE/kde-common/admin
+svn update kdebluetooth
+make -f Makefile.cvs
+./configure --prefix=$(kde-config --prefix)
+cd kdebluetooth
+make
+make install
+</screen
+> Sõltuvalt distributsioonist võib osutuda vajalikuks muuta mõningaid konfigureerimisskripti võtmeid. Kui sul pole just põhjust teisiti talitada, võiks ./configure jaoks kasutada oma KDE prefiksit. selle saad teada käsuga <command
+>kde-config --prefix</command
+>, võimalikke võtmeid aga saad vaadata käsuga <command
+>./configure --help</command
+>. </para>
+</sect1>
+</chapter>

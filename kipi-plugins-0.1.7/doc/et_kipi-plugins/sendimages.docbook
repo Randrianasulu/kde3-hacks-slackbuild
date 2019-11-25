@@ -1,0 +1,188 @@
+<chapter id="sendimages">
+<chapterinfo>
+
+<title
+>Piltide saatmine</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi <quote
+>piltide saatmise</quote
+> pluginaga saab pilte e-postiga saata. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>Selle Kipi pluginaga saab saata valitud pildid teele oma lemmikust e-posti rakendusega. Võimalik on muuta piltide suurust. Pilte saab saadetavate elementide nimekirja ka lohistada. </para>
+
+<sect1 id="using-plugin-mailselectiondialog">
+<title
+>Pildivaliku dialoog</title>
+
+<para
+>Plugina avamisel põhirakendusest ilmub aken <emphasis
+>Pildid</emphasis
+>, kus on juba ette ära valitud piltide nimekiri, mida e-postiga saata. Klõpsuga nupule <guilabel
+>Lisa pildid</guilabel
+> avaneb failisirvija, kus saad valida faile, mida soovid saata. Nimekirjas hiirekursori all olevat pilti näeb samas akna parempoolses osas. </para>
+
+<tip
+><para
+>Uusi pilte võib saadetavate piltide nimekirja ka põhirakendusest lihtsalt lohistada. </para
+></tip>
+
+<para
+>Nupule <guilabel
+>Eemalda pildid</guilabel
+> klõpsates eemaldatakse saadetavate piltide nimekirjast valitud elemendid (need, mis on parajasti esile tõstetud). </para>
+
+<para
+>Kui oled pildid valinud, klõpsa nupule <guilabel
+>OK</guilabel
+>, mis avab sinu eelistatud e-posti kliendi 'uue kirja' dialoogi. Seal tuleb kirjutada ainult saajate aadressid ja teema, valitud pildid on juba kirjale kaasatud failidena lisatud. </para>
+
+<warning
+><para
+>Kontrolli siiski, et sa ei ületaks enda või saajate e-posti limiite: enamik teenusepakkujaid piirab kirjade suurust teatud megabaitidega. Kui soovid palju pilte saata, tee seda mitme kirjaga. </para
+></warning>
+
+<figure>
+    <title
+>Pildivaliku dialoog</title>
+    <graphic srccredit="The Image Selection Dialog" fileref="sendimages_imageselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-mailsettingsdialog">
+<title
+>E-posti dialoog</title>
+
+<para
+>E-posti dialoogis saab muuta saadetavate piltide seadistusi. Need jäetakse ka plugina sulgemisel meelde ning kasutatakse uuesti, kuni sa neid taas muudad. </para>
+
+<para
+>Vali rippmenüüst meelepärane e-posti klient (kui kasutad <application
+>Thunderbird</application
+>i, ilmub alla väli, kus saad määrata rakenduse korrektse asukoha oma süsteemis). </para>
+
+<note
+><para
+>Kui soovid kasutada GMaili teenust, tuleb arvutisse paigaldada <application
+>GMailAgent</application
+>, mille leiab <ulink url="http://gmailagent.sourceforge.net"
+>sellelt aadressilt</ulink
+>. </para
+></note>
+
+<para
+>Kui valid võimaluse <guilabel
+>Kommentaarid lisatakse kaasatud failina</guilabel
+>, liidetakse piltide kommentaarid tekstifaili ja see lisatakse kaasatud failina kirjale. </para>
+
+<para
+>Järgmise kolme võimalusega saab määrata saadetavate piltide kvaliteedi. <guilabel
+>Piltide uus tihendus</guilabel
+> on võimalik määrata nii liuguriga kui ka väärtust kasti kirjutades. 75% on standardne tihendus <guilabel
+>JPEG</guilabel
+>-failide korral. Väärtuse 100% määramine annab tulemuseks kadudeta tihenduse, kuid failid muutuvad märksa suuremaks. Failisuuruse vahe võib isegi 90% ja 100% korral olla märkimisväärne, samas kvaliteet ei pruugi peaaegu erinedagi. Väga hea kvaliteedi annab juba 85%-line tihendus. </para>
+
+<para
+>Rippmenüüst <guilabel
+>Piltide uus vorming</guilabel
+> saab valida saadetavate piltide vormingu. <guilabel
+>PNG</guilabel
+> ei sobi just kõige paremini piltide failisuuruse vähendamise mõttes, aga samas on see parim võimalus kadudeta piltide, näiteks TIFF-vormingu korral. <guilabel
+>PNG</guilabel
+> kasutamine on mõttekas ennekõike siis, kui sinu päralt on kiire internetiühendus ja sa soovid säilitada fotode kvaliteeti. Muidu on soovitatav vorming <guilabel
+>JPEG</guilabel
+>. </para>
+
+<note
+><para
+>Kui valid <guilabel
+>piltide failivorming</guilabel
+>uks <guilabel
+>JPEG</guilabel
+> ning ka esialgsed pildid olid <guilabel
+>JPEG</guilabel
+> vormingus, säilib pilides nende esialgne EXIF-info. </para
+></note>
+
+<figure>
+    <title
+>E-posti dialoog</title>
+    <graphic srccredit="The Mail Dialog" fileref="sendimages_mail.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-emailimagesinaction">
+<title
+>Piltide e-postiga saatmine</title>
+
+<para
+>Edenemisdialoog näitab, kuidas saatmine kulgeb. Kui sa mingil põhjusel tahad saatmise peatada, klõpsa nupule <guilabel
+>Loobu</guilabel
+>. </para>
+
+<para
+>Kui saatmine on tehtud, ei sulgu aken siiski automaatselt, vaid sul on võimalik uurida edenemisteateid, et näha, kas esines mingeid vigu. E-posti rakendus käivitatakse seejärel aga automaatselt. Kui soovid dialoogi sulgeda, klõpsa nupule <guilabel
+>Sulge</guilabel
+>. </para>
+
+<figure>
+    <title
+>Piltide e-postiga saatmise plugin</title>
+    <graphic srccredit="The E-mail Images Plugin in Action" fileref="sendimages_progress.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

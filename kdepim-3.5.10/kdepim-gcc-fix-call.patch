@@ -1,0 +1,85 @@
+diff -wruN kdepim-3.5.10.orig/konsolekalendar/main.cpp kdepim-3.5.10/konsolekalendar/main.cpp
+--- kdepim-3.5.10.orig/konsolekalendar/main.cpp	2008-02-13 12:39:54.000000000 +0300
++++ kdepim-3.5.10/konsolekalendar/main.cpp	2011-12-01 11:47:35.425640484 +0400
+@@ -799,13 +799,13 @@
+   if ( !args->isSet( "time" )     && !args->isSet( "epoch-start" ) &&
+        !args->isSet( "end-time" ) && !args->isSet( "epoch-end" ) ) {
+     // set default start date/time
+-    startdatetime = QDateTime::QDateTime( startdate, starttime );
++    startdatetime = QDateTime( startdate, starttime );
+     kdDebug() << "main | datetimestamp | "
+               << "setting startdatetime from "
+               << "default startdate (today) and starttime"
+               << endl;
+     // set default end date/time
+-    enddatetime = QDateTime::QDateTime( enddate, endtime );
++    enddatetime = QDateTime( enddate, endtime );
+     kdDebug() << "main | datetimestamp | "
+               << "setting enddatetime from "
+               << "default enddate (today) and endtime"
+@@ -814,13 +814,13 @@
+ 
+   // Set startdatetime, enddatetime if still necessary
+   if ( startdatetime.isNull() ) {
+-    startdatetime = QDateTime::QDateTime( startdate, starttime );
++    startdatetime = QDateTime( startdate, starttime );
+     kdDebug() << "main | datetimestamp | "
+               << "setting startdatetime from startdate and starttime"
+               << endl;
+   }
+   if ( enddatetime.isNull() ) {
+-    enddatetime = QDateTime::QDateTime( enddate, endtime );
++    enddatetime = QDateTime( enddate, endtime );
+     kdDebug() << "main | datetimestamp | "
+               << "setting enddatetime from enddate and endtime"
+               << endl;
+diff -wruN kdepim-3.5.10.orig/kontact/plugins/korganizer/summarywidget.cpp kdepim-3.5.10/kontact/plugins/korganizer/summarywidget.cpp
+--- kdepim-3.5.10.orig/kontact/plugins/korganizer/summarywidget.cpp	2008-02-13 12:39:52.000000000 +0300
++++ kdepim-3.5.10/kontact/plugins/korganizer/summarywidget.cpp	2011-12-01 12:56:20.748463914 +0400
+@@ -167,7 +167,7 @@
+       QString datestr;
+ 
+       // Modify event date for printing
+-      QDate sD = QDate::QDate( dt.year(), dt.month(), dt.day() );
++      QDate sD = QDate( dt.year(), dt.month(), dt.day() );
+       if ( ( sD.month() == currentDate.month() ) &&
+            ( sD.day()   == currentDate.day() ) ) {
+         datestr = i18n( "Today" );
+@@ -227,10 +227,10 @@
+         QTime sET = ev->dtEnd().time();
+         if ( ev->isMultiDay() ) {
+           if ( ev->dtStart().date() < dt ) {
+-            sST = QTime::QTime( 0, 0 );
++            sST = QTime( 0, 0 );
+           }
+           if ( ev->dtEnd().date() > dt ) {
+-            sET = QTime::QTime( 23, 59 );
++            sET = QTime( 23, 59 );
+           }
+         }
+         datestr = i18n( "Time from - to", "%1 - %2" )
+diff -wruN kdepim-3.5.10.orig/kontact/plugins/specialdates/sdsummarywidget.cpp kdepim-3.5.10/kontact/plugins/specialdates/sdsummarywidget.cpp
+--- kdepim-3.5.10.orig/kontact/plugins/specialdates/sdsummarywidget.cpp	2006-10-01 21:30:38.000000000 +0400
++++ kdepim-3.5.10/kontact/plugins/specialdates/sdsummarywidget.cpp	2011-12-01 13:56:04.764590871 +0400
+@@ -438,7 +438,7 @@
+ 
+       //Muck with the year -- change to the year 'daysTo' days away
+       int year = currentDate.addDays( (*addrIt).daysTo ).year();
+-      QDate sD = QDate::QDate( year,
++      QDate sD = QDate( year,
+                            (*addrIt).date.month(), (*addrIt).date.day() );
+ 
+       if ( (*addrIt).daysTo == 0 ) {
+diff -wruN kdepim-3.5.10.orig/kontact/plugins/specialdates/sdsummarywidget.h kdepim-3.5.10/kontact/plugins/specialdates/sdsummarywidget.h
+--- kdepim-3.5.10.orig/kontact/plugins/specialdates/sdsummarywidget.h	2006-01-19 19:56:12.000000000 +0300
++++ kdepim-3.5.10/kontact/plugins/specialdates/sdsummarywidget.h	2011-12-01 13:56:36.671354360 +0400
+@@ -78,7 +78,7 @@
+     bool mShowHolidays;
+     bool mShowSpecialsFromCal;
+ 
+-    KHolidays::KHolidays *mHolidays;
++    KHolidays *mHolidays;
+ };
+ 
+ #endif
+ 

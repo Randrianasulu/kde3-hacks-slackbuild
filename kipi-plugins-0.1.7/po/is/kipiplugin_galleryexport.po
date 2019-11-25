@@ -1,0 +1,248 @@
+# translation of kipiplugin_galleryexport.po to Icelandic
+# translation of kipiplugin_galleryexport.po to
+#
+# Sveinn í Felli <sveinki@nett.is>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-04-01 11:40+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Sveinn í Felli"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sveinki@nett.is"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Nafn myndasafns"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "Slóð "
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Notandi"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Nafn:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "Slóð:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Notandanafn:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Lykilorð:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Nota &myndasafn 2"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Fjarlæg myndasöfn"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Nýtt fjarlægt myndasafn"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Ekkert myndasafn valið!"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Breyta fjarlægu myndasafni"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Ertu viss um að þú viljir eyða þessu myndasafni? Allar samræmingarstillingar "
+"munu tapast. Þú getur ekki afturkallað þessa breytingu."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Eyða fjarlægu myndasafni"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "Slóðin á myndasafnið er líklegast ekki rétt"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Rangt notendanafn eða lykilorð"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Ógild svörun fékkst frá myndasafnsþjóni"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Mistókst að gera albúmalista"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Mistókst að gera myndalista"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Mistókst að búa til nýtt albúm"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Mistókst að senda ljósmynd"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Albúm"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Fara framhjá sjálfgefnum stillingum"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "Athugasemd verði að titli"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "Athugasemd verði að lýsingu"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Breyta stærð myndar fyrir útflutning"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Hámarksstærð:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Flytja út myndasöfn</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Nýtt albúm"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "Bæt&a við myndum"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Flytja út myndasöfn"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"KIPI íforrit til útflutnings á myndasöfnum yfir á fjarlægan Gallery þjón."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Höfundur"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Viðhaldsforritari"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Handbók íforrits"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Tókst ekki að skrá inn í útvistað myndasafn. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Viltu reyna aftur?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Humm, þessir stafir eru ekki leyfilegir í nafni albúms: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Sendi skrá %1 "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Tókst ekki að senda mynd í útvistað safn. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Viltu halda áfram?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Samstilling við fjarlægt myndasöfn..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Fjarlæg myndasöfn..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MittSpjall"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Settu inn nafn á nýju albúmi</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Titill (valkvætt):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Heiti (valkvætt):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Skýringartexti (valkvætt):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Nýtt myndasafn"

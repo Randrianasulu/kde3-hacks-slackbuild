@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Informació de desenvolupament</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Aquesta secció descriu com usar kbluetoothd per a la vostra pròpia aplicació o accedir-hi des d'scripts per a rebre els noms de dispositiu al cau o similars. </para>
+
+<sect2>
+<title
+>El cau de noms</title>
+<para
+>El cau de noms rastreja totes les peticions de nom i desa els resultats. Amb aquest, tant kbluetoothd com les altres aplicacions poden rebre el nom d'un altra dispositiu Bluetoothd des de la vostra adreça de dispositiu Bluetooth únic, fins i tot encara que el dispositiu no estigui accessible en aquest moment. Es sol usar per a crear una interfície d'usuari més agradable, atès que una adreça com 00:60:AB:13:83:3D és una mica més difícil de recordar. </para>
+<para
+>Possiblement quedarà obsolet tan aviat com BlueZ incorpori el seu propi cau de noms persistent. </para>
+<para
+>Podeu accedir al cau de noms a través de dcop. Per a veure una adreça en el cau de noms des de la línia de comandaments, escriviu <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;adreça&gt;</command
+>. Per esbrinar quin dispositiu ha estat l'últim que ha usat un nom donat, podeu escriure <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;nom&gt;</command
+>. Aquest comandament és sensible a majúscules i minúscules. També seria possible que diversos dispositius es configurin per a usar el mateix nom. </para>
+</sect2>
+
+<sect2>
+<title
+>El meta servidor</title>
+<para
+>Si voleu implementar una aplicació de servidor per a un nou protocol Bluetooth, la podreu integrar amb facilitat amb kbluetoothd, de manera que el vostre servidor s'iniciï automàticament. </para>
+<para
+>Haureu de proveir un fitxer XML descrivint el registre SDP i el corresponent fitxer .desktop. kbluetoothd establirà automàticament un registre SDP, assignant un canal rfcomm i iniciant l'escolta en el canal seleccionat. Quan algú es connecti al vostre servei, kbluetoothd serà iniciat i passarà un socket per a la connexió ja acceptada. El número del manejador es passa com a un argument de línia de comandaments. </para>
+<para
+>El paquet kdebluetooth conté <command
+>kbtserialchat</command
+>, el qual és (a més del seu us per a depurar i potser per a xat...) un programa de mostra força simple sobre com integrar una aplicació en l'estructura de kdebluetooth. Atès que kbtserialchat és a la vegada client i servidor, no necessitareu considerar tots els arguments de la línia de comandaments, especialment les url sdp. </para>
+<para
+>El format dels fitxers XML de SDP haurà de ser auto-descriptiu, si coneixeu la estructura dels registres SDP. Un punt important és determinar com el paràmetre troba els canals rfcomm seleccionats a través del seu registre SDP del servidor. Com el canal és seleccionat automàticament per kbluetoothd, no el podreu codificar directament en el fitxer de registre SDP. En el seu lloc useu &lt;uint valref='rfcommchannel' size='8'/&gt;. Els canals rfcomm que es provaran estan definits en el corresponent fitxer desktop. <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> és el primer dels canals ha provar i <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> dona el número dels canals següents ha provar en ordre ascendent si un canal ja l'està usant un altra servei. </para>
+<para
+>De moment kbluetoothd tan sols suporta rfcomm, però quan sigui necessari, proveirà suport per a l2cap o similar. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>El servei Descobriment de dispositius</title>
+<para
+>kbluetoothd pot cercar activament altres dispositius i executar comandaments tan aviat com detecti un dispositiu o aquest desaparegui. Podeu configurar aquest servei en el mòdul del centro de control kbluetoothd sota la pestanya "Descobriment de dispositius". </para>
+<para
+>La llista de treballs de descobriment <emphasis
+>actius</emphasis
+> tal i com es mostra en el mòdul del centre de control no és més que una llista d'executables que es troben en el directori <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. També podeu afegir un nou script al directori de la plantilla global en <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Els scripts d'aquest directori que acaben en ".template" es mostraran quan l'usuari faci clic sobre "Afegeix un nou treball..." i simplement es copiaran al directori de treball actiu en el directori personal de l'usuari. </para>
+<para
+>Els scripts inclosos es divideixen en dos per a fer més fàcil la seva actualització sense haver-los de reinstal·lar. La part ".template" conté la configuració modificable per l'usuari que es copiarà al directori personal. Aquest script cridarà a la part ".real" que es troba en el directori de plantilles. </para>
+<para
+>Per a començar a escriure el vostre propi treball de descobriment, feu clic sobre "Afegeix un nou treball..." i seleccioneu <phrase
+>Custom_Job</phrase
+>. Això copiarà <filename
+>Custom_Job.template</filename
+> al vostre directori de treball. Ara feu clic sobre "Configura..." per a canviar l'script. Aquest script llista totes les possibles opcions de la línia de comandaments i variables d'entorn a les que tindreu accés. </para>
+<para
+>Aneu amb compte que quan editeu aquest script personalitzat, tots els canvis que feu es perdran si l'elimineu de la llista de treballs actius. Si el voleu distribuir, us recomanem que el dividiu en una part plantilla per a les configuracions i en altra banda real que faci el treball actual. </para>
+
+<para
+>Per a poder pujar, baixar o esborrar fitxers des d'el lloc descobert per un treball, podeu usar <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Si escriviu algun script interessant per al servei de descobriment de dispositius que pugui ser útil per altra gent, estarem encantats d'incloure'l en aquesta distribució :)= </para>
+</sect2>
+
+</sect1>
+</chapter>
+

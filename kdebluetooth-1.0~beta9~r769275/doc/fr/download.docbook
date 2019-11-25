@@ -1,0 +1,114 @@
+<chapter id="download">
+<title
+>Obtenir &the.framework;</title>
+<sect1 id="download.packages">
+<title
+>Paquetages</title>
+<para
+>&The.framework; est actuellement développé en tant que logiciel de kdeextragear-3 (lien). Vous pouvez en obtenir une copie via un CVS anonyme, mais si vous ne voulez pas jouer avec les sources vous même ou nous envoyer des correctifs, nous vous recommandons d'utiliser le paquetage approprié à votre distribution. En utilisant des paquetages vous économisez beaucoup de temps et de matière grise quand les dépendances changent ou quand les fichiers sont déplacés. </para>
+
+<para>
+<variablelist>
+<title
+>Distributions actuellement supportées</title>
+<varlistentry>
+
+<term
+>Debian Sid</term>
+<listitem
+><para
+>Vous pouvez utiliser les lignes suivantes dans votre <filename
+>/etc/apt/sources.list</filename
+>: <screen
+># KDE-Bluetooth
+deb http://www.stud.uni-karlsruhe.de/~uddw/debian ./
+</screen>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Gentoo Linux</term>
+<listitem>
+<para
+>La dernière ebuild est déjà dans l'arbre de portage de gentoo, vous pouvez aussi vérifier sur http://bugs.gentoo.org pour connaître les ebuilds n'ayant toujours pas été commitées.</para>
+<para
+>Vous pouvez télécharger un ebuild CVS pour kdebluetooth depuis <ulink url="http://members.xoom.virgilio.it/motaboy/ebuilds"
+>ici</ulink
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>SuSe</term>
+
+<listitem
+><para
+>Vous pouvez télécharger les RPM pour SuSe 8.2 <ulink url="http://sra.itc.it/people/merzi/kdebluetooth-0.0.cvs.20040210.i686.rpm"
+>ici</ulink
+> (Merci à Filippo Biondi) pour SuSe 9.0 <ulink url="http://www.hilzinger.hu/ch/linux.html"
+>ici</ulink
+> (Merci à Marcel Hilzinger) ou le fichier RPM .spec pour SuSe 9.0 <ulink url="http://sra.itc.it/people/merzi/kdebluetooth.spec"
+>ici</ulink
+> (Merci à Michael Sabielny).</para>
+
+<para
+>1) Obtenez la dernière version CVS de kde-bluetooth. 2) Créez une archive bzipée de celle-ci : <filename
+>tar cvjf kdebluetooth.tar.bz2 kdebluetooth</filename
+> 3) Copiez la tarball vers <filename
+>/usr/src/packages/SOURCES</filename
+> 4) Copiez le fichier spec vers <filename
+>/usr/src/packages/SPECS</filename
+> 5) Assurez vous que tous les logiciels additionnels nécessaires sont installés : <filename
+>kdelibs3 kdelibs3-devel qt3 qt3-devel openobex arts</filename
+> <filename
+>bluez-sdp bluez-libs bluez-utils xmms xmms-devel</filename
+> 6) Compilez le paquetage avec <filename
+>cd /usr/src/packages</filename
+> <filename
+>rpmbuild -ba SPECS/kdebluetooth.spec</filename
+> </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="download.tarballs">
+<title
+>Tarballs</title>
+<para
+>Si votre distribution n'est pas supportée et que vous ne voulez pas installer kdebluetooth depuis le cvs vous pouvez utiliser les <ulink url="http://www.stud.uni-karlsruhe.de/~uddw/kdebluetooth/"
+> tarballs non testées</ulink
+>. Tout commentaire sera le bienvenu. </para>
+</sect1>
+
+<sect1 id="download.cvs">
+<title
+>CVS Anonyme</title>
+<para
+>L'interface KDE Bluetooth est développée dans <ulink url="http://webcvs.kde.org/cgi-bin/cvsweb.cgi/kdeextragear-3/kdebluetooth"
+> kdeextragear-3</ulink
+>. Le CVS de kde-bluetooth.sf.net n'est plus utilisé. </para>
+<para
+>Pour télécharger la version de développement actuelle de kdebluetooth, effectuez ce qui suit : <screen>
+export CVSROOT=:pserver:anonymous@anoncvs.kde.org:/home/kde
+cvs checkout kdeextragear-3/kdebluetooth
+cvs checkout -l kdeextragear-3
+cvs checkout kde-common
+cd kdeextragear-3
+ln -s ../kde-common/admin
+make -f Makefile.cvs
+./configure --prefix=... ..
+cd kdebluetooth
+make
+make install
+</screen
+> En fonction de votre distribution vous pouvez avoir besoin de changer quelques options du script de configuration. Regardez <command
+>./configure --help</command
+> pour connaître les options disponibles. </para>
+</sect1>
+</chapter>

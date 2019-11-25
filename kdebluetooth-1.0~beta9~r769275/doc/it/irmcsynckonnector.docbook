@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>Konnector IrMCSync per Kitchensynk</title>
+<para
+>Questo programma è un plugin di Konnector per kitchensync; ti permette di sincronizzare un tuo dispositivo che supporti IrMCSync con il tuo calendario ovvero rubrica locale. </para>
+<para
+>Adesso il Calendario e la Rubrica indirizzi sono supportati! </para>
+<para
+>TI SUGGERISCO DI FARE UNA COPIA DEI TUOI CALENDARIO E RUBRICA INDIRIZZI PRIMA DI PROVARE QUALSIASI SINCRONIZZAZIONE. Non sono responsabile se tutti i tuoi dati verranno rovinati o distrutti. </para>
+
+
+<sect2>
+<title
+>Ci servono informazioni di debug!</title>
+<para
+>PER PIACERE esegui kitchensync da una shell o ridirigi stdout e stderr in un file, in modo che se hai problemi puoi mandarmi l'output di Konnector. Per attivare le funzionalità di debug puoi avviare "kdebudialog", e impostare solo le opzioni relative a kitchensync (da 5200) e le opzioni generiche. </para>
+</sect2>
+
+<sect2>
+<title
+>Compilazione.</title>
+<para
+>Il kitchensync attuale dall'SVN di kdepim ha più funzionalità e funziona meglio che la versione 3.3.0 di kdepim. Suggerirei di usare questa versione. Devi installare almeno kitchensync (e tutti i suoi sottoprogetti) da SVN. </para>
+<para
+>C'è anche una versione kdepim-3.3.0 che puoi trovare nella diramazione irmcsync_kdepim_3_3_branch, ma non è più mantenuta. Concentrerò il mio lavoro sulla versione di SVN. Questa versione dipende da kdepim-3.3.0 e le versioni più vecchie o più recenti, quindi devi scaricarlo e installarlo. Se vuoi scaricare irmcsync_kdepim_3_3_branch devi andare a kdebluetooth/irmcsync/irmcsynckonnector e digitare: cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch </para
+>	
+
+<para
+>Per attivare la compilazione di Konnector devi aggiungere la cartella "irmcsync" nella variabile SUBDIR di kdebluetooth/Makefile.am </para>
+</sect2>
+
+<sect2>
+<title
+>Uso di KitchenSync.</title>
+<para
+>In questo periodo (25/03/2004) KitchenSync è molto sperimentale, quindi potresti avere diversi problemi. </para>
+<para
+>Dopo averlo avviato, devi scegliere i Konnector da usare. Hai bisogno di almeno 2 Konnector per fare una sincronizzazione, ma puoi usarne uno solo per fare dei test. </para>
+<para
+>Per aggiungere un Konnector vai a <guimenuitem
+>Impostazioni->Configura Kitchensync</guimenuitem
+> </para>
+<para
+>Se ottieni degli errori e l'oggetto non è ben disegnato prova a ridimensionare la finestra di configurazione. Nella casella combinata Risorse avrai varie scelte, SONO TUTTE INUTILI E DISATTIVATE, sono "konnector" è quella giusta. </para>
+<para
+>Per esempio puoi aggiungere il Konnector IrMCSync e un Konnector locale. </para>
+<para
+>Nel Konnector IrMCSync seleziona il tuo dispositivo, e segna la casella Sincronizza calendario o Rubrica indirizzi (per ora non puoi sincronizzare entrambi allo stesso tempo). Nel Konnector locale seleziona un file calendario E un file KAddressBook (devi sceglierli entrambi e con i giusti nomi file, o non funzionerà). Ti suggerisco di creare una cartella temporanea nella quale metterai una copia dei tuoi Calendario e Rubrica, così da poter fare dei test. </para>
+<para
+>Normalmente li puoi trovare in queste cartelle: </para>
+<para
+>CALENDARIO: <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>RUBRICA INDIRIZZI: <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>Quindi devi creare un profilo in <guimenuitem
+>Impostazioni->Configura profili</guimenuitem
+>, per ogni profilo puoi aggiungere varie parti, ognuna facente una funzione diversa: </para>
+<itemizedlist>
+<listitem>
+<para
+>Parte di sincronizzazione: fai la sincronizzazione vera e propria. </para>
+</listitem>
+<listitem>
+<para
+>Debugger di Konnector: ti permette di fare il debug di un Konnector. </para>
+</listitem>
+<listitem>
+<para
+>Copia di sicurezza di Konnector: fai una copia di sicurezza dei dati. </para>
+</listitem>
+<listitem>
+<para
+>Parte panoramica: come dice il nome. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Se vuoi sincronizzare, devi scegliere almeno la "Parte di sincronizzazione". </para>
+<para
+>Quindi, per fare la sincronizzazione, fai clic sul pulsante in alto a sinistra. </para>
+<para
+>Puoi testare il Konnector creando un profilo con la parte Debugger di Konnector e premendo Connetti dispositivo, e quindi il pulsante Leggi sincronizzati. </para>
+</sect2>
+</sect1>
+

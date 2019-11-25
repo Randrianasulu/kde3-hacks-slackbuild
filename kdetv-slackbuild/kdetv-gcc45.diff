@@ -1,0 +1,67 @@
+--- kdetv/libkdetv/kdetv.cpp~	2006-07-09 20:30:48.000000000 +0200
++++ kdetv/libkdetv/kdetv.cpp	2010-07-30 16:50:41.265958012 +0200
+@@ -242,7 +242,7 @@ void Kdetv::saveControls()
+         for(Control::ControlList::ConstIterator it = controls.constBegin();
+             it != controls.constEnd();
+             ++it) {
+-            const Control::Control* c = static_cast<Control*>(*it);
++            const Control* c = static_cast<Control*>(*it);
+             _chan->setControl(_srcm->device(), c->internalName, c->valueAsQVariant());
+         }
+     } else {
+@@ -253,7 +253,7 @@ void Kdetv::saveControls()
+         for(Control::ControlList::ConstIterator it = controls.begin();
+             it != controls.end();
+             ++it) {
+-            const Control::Control* c = static_cast<Control*>(*it);
++            const Control* c = static_cast<Control*>(*it);
+             l[c->internalName] = c->valueAsQVariant();
+         }
+     }
+@@ -266,7 +266,7 @@ void Kdetv::applyControls()
+         for(Control::ControlList::ConstIterator it = controls.constBegin();
+             it != controls.constEnd();
+             ++it) {
+-            Control::Control* c = static_cast<Control*>(*it);
++            Control* c = static_cast<Control*>(*it);
+             const QVariant& val = _chan->control(_srcm->device(), c->internalName);
+             if(val.isValid()) {
+                 c->setValue(val);
+@@ -279,7 +279,7 @@ void Kdetv::applyControls()
+         for(Control::ControlList::ConstIterator it = controls.begin();
+             it != controls.end();
+             ++it) {
+-            Control::Control* c = static_cast<Control*>(*it);
++            Control* c = static_cast<Control*>(*it);
+             const QVariant& val = l[c->internalName];
+             if(val.isValid()) {
+                 c->setValue(val);
+--- kdetv/libkdetv/controlwidgetimpl.cpp~	2006-07-09 20:30:48.000000000 +0200
++++ kdetv/libkdetv/controlwidgetimpl.cpp	2010-07-30 16:56:24.917481517 +0200
+@@ -62,7 +62,7 @@ ControlWidgetImpl::ControlWidgetImpl(con
+     for(Control::ControlList::ConstIterator it = controls.constBegin();
+         it != controls.constEnd();
+         ++it) {
+-        const Control::Control* c = static_cast<Control*>(*it);
++        const Control* c = static_cast<Control*>(*it);
+         QWidget* w;
+         QGridLayout* l;
+         int* row;
+@@ -156,7 +156,7 @@ void ControlWidgetImpl::defaults()
+     for(Control::ControlList::Iterator it = _controlList.begin();
+         it != _controlList.end();
+         ++it) {
+-        Control::Control* c = static_cast<Control*>(*it);
++        Control* c = static_cast<Control*>(*it);
+         c->setDefault();
+     }
+     _currentChannel->setChecked(false);
+@@ -174,7 +174,7 @@ void ControlWidgetImpl::cancel()
+     for(Control::ControlList::Iterator it = _controlList.begin();
+         it != _controlList.end();
+         ++it) {
+-        Control::Control* c = static_cast<Control*>(*it);
++        Control* c = static_cast<Control*>(*it);
+         c->setValue(_previousValues[c->internalName]);
+     }
+ }

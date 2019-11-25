@@ -1,0 +1,77 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Afbeeldinggrootte wijzigen</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>De Kipi-plugin "Afbeeldinggrootte wijzigen" is een hulpmiddel waarmee u de grootte van de afbeeldingen veranderen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inleiding</title>
+
+<para
+>Deze plugin kan worden gebruikt om de grootte van een serie afbeeldingen in een album te wijzigen. De plugin maakt hiervoor gebruik van het programma "convert" uit het pakket "ImageMagick". U kunt de afbeeldingen vergroten of verkleinen. Er zijn 3 manieren beschikbaar: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Proportioneel (1 dim.)</emphasis
+>: standaardmanier van grootte wijzigen, gebruik makend van 1 dimensie. De breedte of de hoogte van de afbeeldingen zal automatisch worden geselecteerd, afhankelijk van de afbeeldingoriëntatie. De beeldverhouding van de afbeeldingen blijft behouden.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proportioneel (2 dim.)</emphasis
+>: de grootte wordt gewijzigd met behulp van 2 dimensies. De beeldverhouding van de afbeeldingen blijft behouden. U kunt bijvoorbeeld deze manier gebruiken om de afbeeldinggrootte automatisch aan te passen aan uw beeldschermgrootte. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>Non-proportioneel</emphasis
+>: de grootte wordt niet-proportioneel gewijzigde met behulp van 2 dimensies. De beeldverhouding wordt niet behouden.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Voorbereiden om af te drukken</emphasis
+>: de afbeelding wordt voorbereid voor een fotoafdruk. De gebruiker kan de afdrukresolutie en de grootte van het fotopapier opgeven. De doelafbeelding zal worden aangepast op de juiste dimensies (inclusief achtergrondformaat, margeformaat en achtergrondkleur).</para
+></listitem>
+</itemizedlist>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

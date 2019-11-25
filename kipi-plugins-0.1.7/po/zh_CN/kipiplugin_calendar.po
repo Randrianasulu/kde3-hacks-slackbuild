@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Funda Wang <fundawang@linux.net.cn>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_calendar\n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2005-05-07 22:18+0800\n"
+"Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
+"Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "开源软件国际化之 KDE 简体中文组"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "i18n-translation@lists.linux.net.cn"
+
+#: calevents.cpp:56
+msgid "Select 'Official Holidays' calendar file"
+msgstr "选择“国家假日”日历文件"
+
+#: calevents.cpp:70
+msgid "Select 'Family Holidays' calendar file"
+msgstr "选择“家庭假日”日历文件"
+
+#: calselect.cpp:69 calwizard.cpp:165
+msgid "Create Calendar"
+msgstr "创建日历"
+
+#: calselect.cpp:70
+msgid "Select Year"
+msgstr "选择年份"
+
+#: calselect.cpp:87
+msgid "Select Images"
+msgstr "选择图像"
+
+#: calselect.cpp:119
+msgid ""
+"Left click on Months to Select Images. Right click to Clear Month.\n"
+"You can also drag and drop images onto the Months"
+msgstr ""
+"左键单击月份可选择图像。右键单击可清除月份。\n"
+"您还可以将图像拖放到月份上"
+
+#: caltemplate.cpp:66
+msgid "Preview"
+msgstr "预览"
+
+#: caltemplate.cpp:78
+msgid "Settings"
+msgstr "设置"
+
+#: caltemplate.cpp:87
+msgid "Paper size:"
+msgstr "纸张大小："
+
+#: caltemplate.cpp:103
+msgid "Image Position"
+msgstr "图像位置"
+
+#: caltemplate.cpp:125
+msgid "Draw lines in calendar"
+msgstr "在日历中绘制分割线"
+
+#: caltemplate.cpp:136
+msgid "Image to text ratio:"
+msgstr "图像到文本的比例："
+
+#: caltemplate.cpp:150
+msgid "Font:"
+msgstr "字体："
+
+#: calwizard.cpp:80
+msgid "Create Template for Calendar"
+msgstr "创建日历的模板"
+
+#: calwizard.cpp:86
+msgid "Choose the events to show on the Calendar"
+msgstr "选择要在日历中显示的事件"
+
+#: calwizard.cpp:92
+msgid "Select Year & Images"
+msgstr "选择年份和图像"
+
+#: calwizard.cpp:117
+msgid "Current Page"
+msgstr "当前页"
+
+#: calwizard.cpp:123
+msgid "Total Pages"
+msgstr "总页数"
+
+#: calwizard.cpp:130
+msgid "Printing"
+msgstr "打印"
+
+#: calwizard.cpp:137
+msgid "Calendar"
+msgstr "日历"
+
+#: calwizard.cpp:140
+msgid "A Kipi plugin to create a calendar"
+msgstr "创建日历的 Kipi 插件"
+
+#: calwizard.cpp:143
+msgid "Author and maintainer"
+msgstr "作者和维护者"
+
+#: calwizard.cpp:146
+msgid "Former Author and maintainer"
+msgstr "先前的作者和维护者"
+
+#: calwizard.cpp:152
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "日历手册"
+
+#: calwizard.cpp:221
+msgid ""
+"Please note that you are making a calendar for"
+"<br>the current year or a year in the past."
+msgstr "请注意，您所制作的日历是今年或去年的。"
+
+#: calwizard.cpp:226
+msgid ""
+"<br>"
+"<br>You can see KJobViewer is already started. After the plugin has prepared "
+"the calendar, it is passed to the PDF printer. In the KJobViewer you can see "
+"the progress of that part of the generation of the calendar."
+msgstr ""
+"<br>"
+"<br>您可以看到 KJobViewer 已经启动。在插件准备完日历之后，将把日历传送给 PDF 打印机。您可以在 KJobViewer "
+"中查看日历的生成进度。"
+
+#: calwizard.cpp:231
+msgid ""
+"Click Next to start Printing"
+"<br>"
+"<br>Following months will be printed for year %1:"
+msgstr "单击下一步可开始打印<br><br>即将打印 %1 年的下列月份："
+
+#: calwizard.cpp:240
+msgid "No valid images selected for months<br>Click Back to select images"
+msgstr "未为月份选择有效的图像<br>请单击上一步选择图像"
+
+#: calwizard.cpp:293
+msgid "Printing Cancelled"
+msgstr "打印已取消"
+
+#: calwizard.cpp:310
+msgid "Printing Complete"
+msgstr "打印完成"
+
+#: calwizard.cpp:322 calwizard.cpp:326
+msgid "Printing Calendar Page for %1 of %2"
+msgstr "正打印共%2页中的第%1页"
+
+#: plugin_calendar.cpp:60
+msgid "Create Calendar..."
+msgstr "创建日历..."
+
+#. i18n: file caleventsbase.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "CalEventBaseWidget"
+msgstr "CalEventBaseWidget"
+
+#. i18n: file caleventsbase.ui line 32
+#: rc.cpp:6
+#, no-c-format
+msgid "Select an optional calendar file with the official holidays"
+msgstr "为国家假日选择可选的日历文件"
+
+#. i18n: file caleventsbase.ui line 78
+#: rc.cpp:9
+#, no-c-format
+msgid ""
+"You can download a calendar for your country from http://www.icalshare.com/ or "
+"other sites.\n"
+"This is fully optional. All the events from this calendar will be printed red."
+msgstr ""
+"您可以从 http://www.icalshare.com 或其它网站中下载您所在国家适用的日历。。\n"
+"此选项是可选的。此日历中的全部事件都将用红色打印。"
+
+#. i18n: file caleventsbase.ui line 108
+#: rc.cpp:13
+#, no-c-format
+msgid "Select an optional calendar file with your \"family holidays\""
+msgstr "为您的“家庭假日”选择可选的日历文件"
+
+#. i18n: file caleventsbase.ui line 162
+#: rc.cpp:16
+#, no-c-format
+msgid ""
+"You can create such a calendar using KOrganizer or any other calendar program.\n"
+"This is fully optional. All the events from this calendar will be printed "
+"green."
+msgstr ""
+"您可以使用 KOrganizer 或任何其它日历程序创建这样的日历。\n"
+"此选项是可选的。此日历中的全部事件都将用绿色打印。"

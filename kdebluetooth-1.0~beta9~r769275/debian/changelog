@@ -1,0 +1,380 @@
+kdebluetooth (1.0~beta9~r769275-0ubuntu1) hardy; urgency=low
+
+  * New upstream release.
+  * Fixed kblueplugd, using QcoreApplication instead of
+    QApplication
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 01 Feb 2008 01:21:58 +0100
+
+kdebluetooth (1.0~beta9~r734866-0ubuntu6) hardy; urgency=low
+
+  * Fixed kubuntu_08_load_kdebluetooth_catalogue.patch so that
+    the KCM module loads the good Catalogue too. 
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 16 Nov 2007 18:28:38 +0100
+
+kdebluetooth (1.0~beta9~r734866-0ubuntu5) hardy; urgency=low
+
+  * Added kubuntu_08_load_kdebluetooth_catalogue.patch:
+    - Some components are loading libkbluetooth catalogue, which
+      doesn't exist
+  * Added kubuntu_09_french_i18n.patch
+    - French translation 
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 16 Nov 2007 16:01:59 +0100
+
+kdebluetooth (1.0~beta9~r734866-0ubuntu4) hardy; urgency=low
+
+  * Fixed kubuntu_02_desktop_files.patch, no need for entry in the Kmenu
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 16 Nov 2007 11:09:35 +0100
+
+kdebluetooth (1.0~beta9~r734866-0ubuntu3) hardy; urgency=low
+
+  * Fixed packaging, libkbluetooth0.install installs kbtobexsrv.
+    Closes LP: #146145, #157746, #155417
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 16 Nov 2007 10:30:57 +0100
+
+kdebluetooth (1.0~beta9~r734866-0ubuntu2) hardy; urgency=low
+
+    * Reuploaded as the buildd seems to be fixed
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Mon, 12 Nov 2007 14:10:49 +0100
+
+kdebluetooth (1.0~beta9~r734866-0ubuntu1) hardy; urgency=low
+
+  * New svn snapshot
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Sat, 10 Nov 2007 10:26:52 +0100
+
+kdebluetooth (1.0~beta8-0ubuntu7) hardy; urgency=low
+
+  * New svn snapshot
+  * Removed debian/patches/kubuntu_08_rename_devices.patch, merged
+    upstream
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 26 Oct 2007 16:20:33 +0200
+
+kdebluetooth (1.0~beta8-0ubuntu5) gutsy; urgency=low
+
+  * Fixed kblueplugd, previous upload contained 'testing' code that
+    shouldn't be there...
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Wed, 03 Oct 2007 12:01:02 +0200
+
+kdebluetooth (1.0~beta8-0ubuntu4) gutsy; urgency=low
+
+  * Added conflicts/replaces qobex, qobex-dev on libkbluetooth. (LP: #146377)
+
+ -- Sarah Hobbs <hobbsee@ubuntu.com>  Sat, 29 Sep 2007 18:28:39 +1000
+
+kdebluetooth (1.0~beta8-0ubuntu3) gutsy; urgency=low
+
+  * Fixed kblueplugd, quits correctly when connection to dbus is
+    impossible. Avoids kblueplugd to crash when bluetooth services
+    are not started. Fixes LP: #136307
+
+ -- Anthony Mercatante <tonio@kubuntu>  Tue, 25 Sep 2007 22:24:16 +0200
+
+kdebluetooth (1.0~beta8-0ubuntu2) gutsy; urgency=low
+
+  * Fixed debian/control, kdebluetooth depends on python-qt4
+    Fixes LP: #135893
+
+ -- Anthony Mercatante <tonio@kubuntu>  Mon, 24 Sep 2007 16:36:37 +0200
+
+kdebluetooth (1.0~beta8-0ubuntu1) gutsy; urgency=low
+
+  * New upstream release
+
+ -- Stefan Skotte <sfs@enhance-it.dk>  Mon, 24 Sep 2007 11:34:40 +0200
+
+kdebluetooth (1.0~beta7-0ubuntu1) gutsy; urgency=low
+
+  * New upstream release
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Sat, 15 Sep 2007 13:04:30 +0200
+
+kdebluetooth (1.0~beta6~r709825-0ubuntu2) gutsy; urgency=low
+
+  * Fixed kblueplugd, no session restore
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Tue, 11 Sep 2007 13:39:08 +0200
+
+kdebluetooth (1.0~beta6~r709825-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Sat, 08 Sep 2007 12:44:11 +0200
+
+kdebluetooth (1.0~beta6~r709359-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 07 Sep 2007 12:34:41 +0200
+
+kdebluetooth (1.0~beta6~r707240-0ubuntu1) gutsy; urgency=low
+
+  * Update kblueplugd with PyQt 4 version, and change kdebluetooth
+    depends to python-qt4-dbus
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 01 Sep 2007 23:22:27 +0100
+
+kdebluetooth (1.0~beta6~r707240) gutsy; urgency=low
+
+  * New SVN snapshot
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Sat, 01 Sep 2007 13:05:05 +0200
+
+kdebluetooth (1.0~beta6~r706975-0ubuntu2) gutsy; urgency=low
+
+  * Added python-dbus dep because of kblueplug
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Sat, 01 Sep 2007 00:06:49 +0200
+
+kdebluetooth (1.0~beta6~r706975-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+  * Added kubuntu_07_fix_header_include.patch, fixes build issue due
+    to missing header
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 31 Aug 2007 13:23:01 +0200
+
+kdebluetooth (1.0~beta6~r706807-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+  * Fixed kubuntu_06_no_autostart.patch, don't just don't install autostart
+    file, but let the yes/no question on quit
+  * Removed kubuntu_07_disable_icon_management.desktop, no in svn
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 31 Aug 2007 12:03:41 +0200
+
+kdebluetooth (1.0~beta6~r706303-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+  * Added debian/kbluetoothd and debian/kbluetoothd.desktop script from
+    Achim Bonner, starts kbluetooth automatically when a bluetooth
+    device is plugged and, and stops it when no bluetooth device is
+    available.
+  * added kubuntu_06_no_autostart.patch, to let kbluetoothd deal with
+    bluetooth autostart
+  * added kubuntu_07_disable_icon_management.patch, removed option to
+    hide the icon, as it is buggy and the icon now only appears when a
+    device is available
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Wed, 29 Aug 2007 16:50:43 +0200
+
+kdebluetooth (1.0~beta6~r706091-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Wed, 29 Aug 2007 14:06:53 +0200
+
+kdebluetooth (1.0~beta6~r705625-0ubuntu2) gutsy; urgency=low
+
+  * Added back patch to fix segault for the input devices tool
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Wed, 29 Aug 2007 14:02:19 +0200
+
+kdebluetooth (1.0~beta6~r705625-0ubuntu1) gutsy; urgency=low
+
+  * New SVN snapshot
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Tue, 28 Aug 2007 09:49:58 +0200
+
+kdebluetooth (1.0~beta6~r702320-0ubuntu1) gutsy; urgency=low
+
+  * Sync with svn
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Mon, 20 Aug 2007 13:55:39 +0200
+
+kdebluetooth (1.0~beta6~r698638-0ubuntu1) gutsy; urgency=low
+
+  * New upstream release
+  * Modify Maintainer value to match the DebianMaintainerField
+    specification.
+
+ -- Richard A. Johnson <nixternal@ubuntu.com>  Mon, 13 Aug 2007 10:06:51 -0500
+
+kdebluetooth (1.0~beta5~r695881-0ubuntu1) gutsy; urgency=low
+
+  * Added kubuntu_01_kdepot.patch:
+    - extract strings to rosetta
+  * Added kubuntu_02_desktop_files.patch:
+    - no need for several entries in K menu
+  * Added kubuntu_03_obex2_push.patch:
+    - fixes object push uploads, allows more than 16kB
+      Patch by Stefan Skotte <sfs@enhance-it.dk>
+  * Added kubuntu_04_obex2_make_up_work.diff:
+    - fixes "UP" button usage when browsing via obex protocol
+      Patch by Frode M. Døving <frode@lnix.net>
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Fri, 03 Aug 2007 09:26:22 +0100
+
+kdebluetooth (0.99+1.0beta2-7) unstable; urgency=low
+
+  * Only create link in postinst if bluetooth device was found and
+    overwrite link that is not working, closes: #426458
+
+ -- Michael Meskes <meskes@debian.org>  Tue, 29 May 2007 11:59:09 +0200
+
+kdebluetooth (0.99+1.0beta2-6) unstable; urgency=low
+
+  * Changed build dependency to libbluetooth-dev.
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 28 May 2007 19:13:13 +0200
+
+kdebluetooth (0.99+1.0beta2-5) unstable; urgency=low
+
+  * Made package built twice in a row, closes: #424451
+  * Changed source to compile with GCC 4.3, closes: #417272
+  * Added compatibility link for paired devices, closes: #416465
+  * Removed irmcsync building because kdepim moved to opensync.
+
+ -- Michael Meskes <meskes@debian.org>  Wed, 23 May 2007 00:50:21 +0200
+
+kdebluetooth (0.99+1.0beta2-4) unstable; urgency=low
+
+  * Use correct init.d script name, closes: #416053
+
+ -- Michael Meskes <meskes@debian.org>  Sat, 24 Mar 2007 14:07:27 +0100
+
+kdebluetooth (0.99+1.0beta2-3) unstable; urgency=low
+
+  * Added dependancy to bluez-utils, closes: #409631
+
+ -- Michael Meskes <meskes@debian.org>  Mon,  5 Feb 2007 11:48:43 +0100
+
+kdebluetooth (0.99+1.0beta2-2) unstable; urgency=low
+
+  * Added AM_MAINTAINER_MODE again to fix the time-stamp skew problems, closes: #397621
+
+ -- Michael Meskes <meskes@debian.org>  Thu,  9 Nov 2006 15:37:01 +0100
+
+kdebluetooth (0.99+1.0beta2-1) unstable; urgency=low
+
+  * New upstream version that fixes kbluepin.
+  * Added missing docs from beta1.
+  * Added patched passkey-agent and a wrapper around kbluetoothd that starts
+    passkey-agent, closes: #383877
+
+ -- Michael Meskes <meskes@debian.org>  Tue,  7 Nov 2006 16:19:58 +0100
+
+kdebluetooth (0.99+1.0beta1-13) unstable; urgency=low
+
+  * Fixed segfault on click in kbtobexsrv window, closes: #392265
+  * Made kdebluetooth compile with libbluetooth2 >= 3.7-1
+  * Change Build-Depends to list libbluetooth2-dev (>= 3.7-1)
+  * Removed old libsdp2-dev from Build-Depends.
+
+ -- Michael Meskes <meskes@debian.org>  Wed, 11 Oct 2006 19:55:31 +0200
+
+kdebluetooth (0.99+1.0beta1-12) unstable; urgency=low
+
+  * Recompiled for libbluetooth transition, closes: #376884, #376975
+      
+ -- Michael Meskes <meskes@debian.org>  Sat,  8 Jul 2006 12:05:24 +0200
+ 
+kdebluetooth (0.99+1.0beta1-11) unstable; urgency=low
+
+  * Patched qserialdevice.cpp to compile correctly with GCC 4.1
+      
+ -- Michael Meskes <meskes@debian.org>  Tue, 20 Jun 2006 11:24:09 +0200
+
+
+kdebluetooth (0.99+1.0beta1-10) unstable; urgency=low
+
+  * Added AM_MAINTAINER_MODE to fix the time-stamp skew problems, closes: #365113
+      
+ -- Michael Meskes <meskes@debian.org>  Fri, 28 Apr 2006 14:19:39 +0200
+
+
+kdebluetooth (0.99+1.0beta1-9) unstable; urgency=low
+
+  * Remade all configure et al. files which hopefully closes: #364658
+      
+ -- Michael Meskes <meskes@debian.org>  Wed, 26 Apr 2006 14:04:21 +0200
+ 
+kdebluetooth (0.99+1.0beta1-8) unstable; urgency=low
+
+  * Recompiled for openobex transition, closes: #358275
+  * Added patch from KDE bugtracking to fix browsing, closes: #359153
+      
+ -- Michael Meskes <meskes@debian.org>  Sun, 16 Apr 2006 11:51:00 +0200
+
+kdebluetooth (0.99+1.0beta1-7) unstable; urgency=low
+
+  * Fixed source to compile with G++ 4.1, closes: #356155
+      
+ -- Michael Meskes <meskes@debian.org>  Thu, 16 Mar 2006 09:30:55 +0100
+
+kdebluetooth (0.99+1.0beta1-6) unstable; urgency=low
+
+  * Package qobex now provides "flexmem"
+      
+ -- Michael Meskes <meskes@debian.org>  Tue, 22 Nov 2005 22:03:02 +0100
+
+kdebluetooth (0.99+1.0beta1-5) unstable; urgency=low
+
+  * Moved qobex back to section "net", repairing the accidental move from -4
+      
+ -- Michael Meskes <meskes@debian.org>  Mon, 12 Sep 2005 14:46:15 +0200
+
+kdebluetooth (0.99+1.0beta1-4) unstable; urgency=low
+
+  * Moved to section "kde"
+  * Changed description of qobex to give a more information
+      
+ -- Michael Meskes <meskes@debian.org>  Thu,  8 Sep 2005 14:30:16 +0200
+
+kdebluetooth (0.99+1.0beta1-3) unstable; urgency=low
+
+  * Recompiled against KDE 3.4.2, closes: #326787
+  * Uploaded to unstable
+  * Disabled support for xmms, closes: #326218
+      
+ -- Michael Meskes <meskes@debian.org>  Tue,  6 Sep 2005 13:09:10 +0200
+
+kdebluetooth (0.99+1.0beta1-2) experimental; urgency=low
+
+  * Put irmcsync into its own package as done in the (K)Ubuntu package by Simone
+    Gotti <simone.gotti@email.it>
+
+ -- Michael Meskes <meskes@debian.org>  Thu, 30 Jun 2005 15:16:38 +0200
+
+kdebluetooth (0.99+1.0beta1-1) experimental; urgency=low
+
+  * Initial Debian Release, closes: #308319, #293450
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 13 Jun 2005 15:43:49 +0200
+
+kdebluetooth (0.0.cvs.1-1.040203) unstable; urgency=low
+
+  * control: make lintean
+  * rules: use --enable-final again after fixing am files
+  * rules: add CVS_BUILD hack to enable/disalbe full debug build
+    (argl, blow up the deb size by ~ factor of 10 to 7 GB)
+
+ -- Achim Bohnet <ach@mpe.mpg.de>  Wed,  4 Feb 2004 01:54:39 +0100
+
+kdebluetooth (0.0.cvs.1-0.woody.ach.040122) unstable; urgency=low
+
+  * add kdelibs4-dev to build-deps (much not to add here...)
+  * build 0.0.cvs.1.orig.tar file from cvs co + make -f Makefile.cvs
+  * remove empty NEWS from docs
+  * remove unused usr/sbin from dirs
+  * added TODO for pkging
+  * use same email in README as in control
+  * clean up config-stamp
+  * use debiandir settings for configure
+  * use --disabled-final for now
+
+ -- Achim Bohnet <ach@mpe.mpg.de>  Thu, 29 Jan 2004 01:39:21 +0100
+
+kdebluetooth (0.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Fred Schaettgen <kdebluetooth@0xF.de>  Fri, 19 Sep 2003 18:47:31 +0200
+

@@ -1,0 +1,1 @@
+SUBDIRS=bluetooth sdp obex

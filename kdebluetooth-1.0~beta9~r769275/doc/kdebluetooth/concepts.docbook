@@ -1,0 +1,86 @@
+<chapter id="concepts">
+<title>Concepts</title>
+
+<sect1 id="concepts.pairing">
+<title>Bluetooth security: Pairing devices</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title>What is "Pairing"?</title>
+<para>
+Very often it is required for a device to authenticate iself when it 
+wants to access a service. In that case the two devices needs to be 
+<phrase>paired</phrase>.
+When two devices are paired, they can be sure about the identity of the other
+party. Without pairing, you would have to rely on the address or name of 
+the other device, which can be faked easily.
+</para>
+<para>
+Pairing usually happens one time between two devices. After pairing, connections
+between the two devices will be <phrase>authenticated</phrase> automatically.
+</para>
+<para>
+Usually <emphasis>the pairing process will be started automatically when it is needed</emphasis>. You do not have to worry about a device not being paired
+if you want to access its services. If they try to authenticate, but fail, the pairing process will be started automatically.
+</para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title>How does it work?</title>
+
+<para>
+Devices are paired to be sure about the identity of the other side. But the 
+first step can't be done automatically. <emphasis>You</emphasis> have to make
+sure that you know who wants to pair with your device. This is done by entering
+a "PIN" number in both devices. The notion "PIN" is widely used, but misleading.
+It is not the type of PIN you have to enter to get money from a cash machine.
+You don't have to to remember it. And after (!) the pairing is done you don't have to
+keep it secret. You only have to make sure that nobody else knows that number
+until you (or you two) entered this number in each device. 
+</para>
+<para>
+To be on the safe side, you should not only keep the PIN secret during the pairing
+process, but you should also use a random number, which can't be guessed easily.
+KDE Bluetooth assists you here by creating a 8-digit random number itself if possible.
+You can also use characters for a pin, but then you might have problems entering
+it into the pin dialog on a mobile phone.
+</para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title>The PIN helper</title>
+<para>
+But where should the pin be entered? As it was noted before, the devices will simply ask you for the PIN when is is needed. For BlueZ, things are a bit more complicated.
+There are several ways for BlueZ to get the PIN number from the user.
+</para>
+<para>
+The usual way is to configure BlueZ's hcid to use a "PIN helper application"
+and set "security user;" in <filename>/etc/bluetooth/hcid.conf</filename>. This helper
+is a small program that doesn nothing more than to ask the user for an number and
+output that number to stdout. Bluez comes with its own pin helper called "bluepin",
+which seemed to cause lots of problems. Then there is a nicer PIN helper called
+"bluez-pin" and last but not least there is kdebluetooth's own PIN helper "kbluepin".
+Please see the <link linkend="installation.setup">setup instructions</link> on how to set up the pin helper and what to do if it doesn't work. 
+</para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title>Managing paried devices</title>
+<para>
+After you have paired many devices you might ask yourself which devices are paired and which one not. You also may want to remove a pairing. The answers are mostly bad news.
+</para>
+<para>
+First, no device can ever know for sure with which devices it is paired. When two devices are paired, they share a secret <phrase>link key</phrase>, which was created during the paring process based on the pin number and some other ingredients. Because the other side may decide to delete a link key without notice, haveing a link key for a given device doesn't guarantee that the link key on the other side still exists. If one link key is gone, the pairing is no more. Of course you can be sure that you are <emphasis>not</emphasis> paired with a device if you don't have a link key for it.
+</para>
+<para>
+So how can link keys be removed? That depends on the device. Most phones or PDAs have a list of "paired" or "trusted" devices, where you can remove single item from somehow. 
+For the current version of Bluez utils (2.6), the link keys reside usually in the file <filename>/etc/bluetooth/link_key</filename>. Since the link keys must be kept secret, this file is only accessible by root. You can safely delete this file, but then all your pairings will be gone. And since the file is a binary file, you can't easily edit it without a special tool. At the moment, kdebluetooth doesn't contain a tool to read or write this file, because the handling of link keys by Bluez will change soon (or later).
+</para>
+<para>
+There is as special annoyance involved, when you frequently switch between different operating system which both use bluetooth (Linux&lt;->Windows usually): When you pair your phone under Linux and then boot Windows, Windows will know nothing about the link keys managed by Bluez. So it appears as if the computer has dropped the link key and you will have to pair again. Depending on your device it might not even be possible to pair again without removing the "old" link key on the phone before. You can run into the same problem with Bluez itself if you select "paring single;" in <filename>/etc/bluetooth/hcid.conf</filename>. So for the moment be aware of this problem, don't use Bluetooth under both OSes or use a different Bluetooth adaptor for each OS. It might also be possible to move link keys between windows and linux, but I don't know of any tool which can do that.
+</para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

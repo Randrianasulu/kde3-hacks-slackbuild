@@ -1,0 +1,38 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>AuthDialog</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>AuthDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>425</width>
+            <height>214</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>PinDefaultDialog</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>messageLabel</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;font size="+2"&gt;Bluetooth Authorization Request&lt;/font&gt;
+&lt;p&gt;&lt;b&gt;%1&lt;/b&gt; (device address &lt;b&gt;%2&lt;/b&gt;) %3.&lt;/p&gt;
+
+&lt;p&gt;
+If you aren't sure about the identity of the other party, then reject 
+this authorization request.&lt;/p&gt;</string>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

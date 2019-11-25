@@ -1,0 +1,2309 @@
+# translation of kipiplugin_batchprocessimages to Kinyarwanda.
+# Copyright (C) 
+# This file is distributed under the same license as the kipiplugin_batchprocessimages package.
+# Steve Murphy <murf@e-tools.com>, 2005.
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005.
+# Antoine Bigirimana <antoine@e-tools.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_batchprocessimages 3.4\n"
+"POT-Creation-Date: 2008-12-11 09:37+0100\n"
+"PO-Revision-Date: 2005-05-25 18:44-0600\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+"Viateur MUGENZI, JEAN BAPTISTE NGENDAHAYO, Augustin KIBERWA, Donatien "
+"NSENGIYUMVA"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+"muvia1@yahoo.fr, ngenda_denis@yahoo.co.uk, akiberwa@yahoo.co.uk, "
+"ndonatienuk@yahoo.co.uk"
+
+#: batchprocessimagesdialog.cpp:136
+#, fuzzy
+msgid "<p>You can choose here the options to use for the current process."
+msgstr "<p> Hitamo... i Amahitamo Kuri Koresha ya:  i KIGEZWEHO . "
+
+#: batchprocessimagesdialog.cpp:140
+#, fuzzy
+msgid "Small preview"
+msgstr "Ibibanjirije "
+
+#: batchprocessimagesdialog.cpp:141
+#, fuzzy
+msgid ""
+"<p>If you enable this option, all preview effects will be calculated on a small "
+"zone of the image (300x300 pixels in the top left corner). Enable this option "
+"if you have a slow computer."
+msgstr ""
+"<p> Gushoboza iyi Ihitamo , Byose Ibibanjirije Ingaruka ku A Gitoya Bya i "
+"Ishusho ( pigiseli in i Hejuru: Ibumoso: Inguni ) . iyi Ihitamo NIBA A Buhoro . "
+
+#: batchprocessimagesdialog.cpp:149
+msgid "&Preview"
+msgstr "Imigaragarire"
+
+#: batchprocessimagesdialog.cpp:150
+#, fuzzy
+msgid ""
+"<p>This button builds a process preview for the currently selected image on the "
+"list."
+msgstr "<p> Akabuto A Ibibanjirije ya:  i Byahiswemo Ishusho ku i Urutonde . "
+
+#: batchprocessimagesdialog.cpp:158
+#, fuzzy
+msgid "File Operations"
+msgstr "Idosiye "
+
+#: batchprocessimagesdialog.cpp:160
+#, fuzzy
+msgid "Overwrite mode:"
+msgstr "Uburyo Gusimbuza"
+
+#: batchprocessimagesdialog.cpp:162 batchprocessimagesdialog.cpp:1001
+msgid "Ask"
+msgstr "Kubaza"
+
+#: batchprocessimagesdialog.cpp:163 batchprocessimagesdialog.cpp:1010
+#, fuzzy
+msgid "Always Overwrite"
+msgstr "Gusimbuza "
+
+#: batchprocessimagesdialog.cpp:164 batchprocessimagesdialog.cpp:166
+#: batchprocessimagesdialog.cpp:1004
+msgid "Rename"
+msgstr "Guhindura izina"
+
+#: batchprocessimagesdialog.cpp:165 batchprocessimagesdialog.cpp:1007
+msgid "Skip"
+msgstr "Gusimbuka"
+
+#: batchprocessimagesdialog.cpp:167
+#, fuzzy
+msgid ""
+"<p>Select here the overwrite mode used if your target's image files already "
+"exist."
+msgstr "<p> i Guhindura Ubwoko Byakoreshejwe NIBA Ishusho Idosiye . "
+
+#: batchprocessimagesdialog.cpp:170
+#, fuzzy
+msgid "Remove original"
+msgstr "~Umwimerere "
+
+#: batchprocessimagesdialog.cpp:171
+#, fuzzy
+msgid ""
+"<p>If you enable this option, all original image files will be removed after "
+"processing."
+msgstr ""
+"<p> Gushoboza iyi Ihitamo , Byose ~Umwimerere Ishusho Idosiye Cyavanyweho Nyuma "
+"Inonosora . "
+
+#: batchprocessimagesdialog.cpp:179
+#, fuzzy
+msgid "Target Folder"
+msgstr "Ububiko Mubyeyi"
+
+#: batchprocessimagesdialog.cpp:197
+#, fuzzy
+msgid ""
+"<p>Here you can select the target folder which will used by the process."
+msgstr "<p> Guhitamo i Intego: Ububiko... Byakoreshejwe ku i . "
+
+#: batchprocessimagesdialog.cpp:213
+msgid "&Add..."
+msgstr "Ongeraho"
+
+#: batchprocessimagesdialog.cpp:215
+#, fuzzy
+msgid "<p>Add images to the list."
+msgstr "<p> Ishusho Kuri i Urutonde . "
+
+#: batchprocessimagesdialog.cpp:219
+#, fuzzy
+msgid "<p>Remove selected image from the list."
+msgstr "<p> Byahiswemo Ishusho Kuva: i Urutonde . "
+
+#: batchprocessimagesdialog.cpp:226
+#, fuzzy
+msgid "<p>The preview of the selected image on the list."
+msgstr "<p> Ibibanjirije Bya i Byahiswemo Ishusho ku i Urutonde . "
+
+#: batchprocessimagesdialog.cpp:236
+#, fuzzy
+msgid "<p>This is the current percentage of the task completed."
+msgstr "<p> ni i KIGEZWEHO Ijanisha Bya i Igikorwa Byarangiye . "
+
+#: batchprocessimagesdialog.cpp:307
+#, fuzzy
+msgid "Image Files List"
+msgstr "Amadosiye y'Ishusho"
+
+#: batchprocessimagesdialog.cpp:309 batchprocessimagesdialog.cpp:923
+#, fuzzy, c-format
+msgid ""
+"_n: Image File List (1 item)\n"
+"Image File List (%n items)"
+msgstr ""
+"Idosiye ( 1 Ikintu ) \n"
+"Idosiye ( %n Ibigize ) "
+
+#: batchprocessimagesdialog.cpp:403
+#, fuzzy
+msgid ""
+"All original image files will be removed from the source Album.\n"
+"Do you want to continue?"
+msgstr "Urifuzagukomeza."
+
+#: batchprocessimagesdialog.cpp:404
+#, fuzzy
+msgid "Delete Original Image Files"
+msgstr "Ntibyashobotse Gusiba Idosiye Mwimerere"
+
+#: batchprocessimagesdialog.cpp:412 batchprocessimagesdialog.cpp:799
+msgid "&Stop"
+msgstr "Guhagarara"
+
+#: batchprocessimagesdialog.cpp:448
+msgid "You must specify a writable path for your output file."
+msgstr ""
+
+#: batchprocessimagesdialog.cpp:489
+#, fuzzy
+msgid ""
+"The destination file \"%1\" already exists;\n"
+"do you want overwrite it?"
+msgstr ""
+"Ishyika: Idosiye \" %1 \" ; \n"
+"Guhindura ? "
+
+#: batchprocessimagesdialog.cpp:491
+#, fuzzy
+msgid "Overwrite Destination Image File"
+msgstr "Gusimbuza Idosiye "
+
+#: batchprocessimagesdialog.cpp:495 batchprocessimagesdialog.cpp:560
+#: recompressimagesdialog.cpp:264 resizeimagesdialog.cpp:537
+#, fuzzy
+msgid "Skipped."
+msgstr "Byoherejwe ku"
+
+#: batchprocessimagesdialog.cpp:496
+#, fuzzy
+msgid "destination image file already exists (skipped by user)."
+msgstr "Ishyika: Ishusho Idosiye ( ku Umukoresha ) . "
+
+#: batchprocessimagesdialog.cpp:532 batchprocessimagesdialog.cpp:647
+#: batchprocessimagesdialog.cpp:702 batchprocessimagesdialog.cpp:738
+#, fuzzy
+msgid "Failed."
+msgstr "Byanze"
+
+#: batchprocessimagesdialog.cpp:533
+#, fuzzy
+msgid "destination image file already exists and cannot be renamed."
+msgstr "Ishyika: Ishusho Idosiye na . "
+
+#: batchprocessimagesdialog.cpp:561
+#, fuzzy
+msgid "destination image file already exists (skipped automatically)."
+msgstr "Ishyika: Ishusho Idosiye ( mu buryo bwikora: ) . "
+
+#: batchprocessimagesdialog.cpp:610 batchprocessimagesdialog.cpp:824
+#: imagepreview.cpp:282
+#, fuzzy
+msgid ""
+"Cannot start 'convert' program from 'ImageMagick' package;\n"
+"please check your installation."
+msgstr ""
+"Tangira &vendorShortName; ' Porogaramu Kuva: ' Porogaramu ; \n"
+"Kugenzura iyinjizaporogaramu . "
+
+#: batchprocessimagesdialog.cpp:638
+#, fuzzy
+msgid ""
+"The 'convert' program from 'ImageMagick' package has been stopped abnormally"
+msgstr ""
+"Tangira &vendorShortName; ' Porogaramu Kuva: ' Porogaramu ; \n"
+"Kugenzura iyinjizaporogaramu . "
+
+#: batchprocessimagesdialog.cpp:639
+msgid "Error running 'convert'"
+msgstr ""
+
+#: batchprocessimagesdialog.cpp:648
+#, fuzzy
+msgid ""
+"'convert' program from 'ImageMagick' package has been stopped abnormally."
+msgstr ""
+"Tangira &vendorShortName; ' Porogaramu Kuva: ' Porogaramu ; \n"
+"Kugenzura iyinjizaporogaramu . "
+
+#: batchprocessimagesdialog.cpp:669
+#, fuzzy
+msgid "no processing error"
+msgstr "Oya Inonosora Ikosa "
+
+#: batchprocessimagesdialog.cpp:692
+#, fuzzy
+msgid ""
+"<qt>Error adding image to application; error message was: <b>%1</b></qt>"
+msgstr ""
+"<qt> Ikosa Wongera Ishusho Kuri Porogaramu ; Ikosa &Ubutumwa : <b> %1 </b> </qt> "
+
+#: batchprocessimagesdialog.cpp:694
+#, fuzzy
+msgid "Error Adding Image to Application"
+msgstr "Ikosa Kuri "
+
+#: batchprocessimagesdialog.cpp:723
+msgid "Warning:"
+msgstr "Iburira:"
+
+#: batchprocessimagesdialog.cpp:724
+#, fuzzy
+msgid "cannot remove original image file."
+msgstr "Gukuraho ~Umwimerere Ishusho Idosiye . "
+
+#: batchprocessimagesdialog.cpp:739
+#, fuzzy
+msgid "cannot process original image file."
+msgstr "~Umwimerere Ishusho Idosiye . "
+
+#: batchprocessimagesdialog.cpp:761
+#, fuzzy
+msgid "Image processing error"
+msgstr "Inonosora Ikosa "
+
+#: batchprocessimagesdialog.cpp:763
+#, fuzzy
+msgid ""
+"Image \"%1\": %2\n"
+"\n"
+"The output messages are:\n"
+msgstr ""
+"\" %1 \" : %2 \n"
+"\n"
+"Ibisohoka Ubutumwa : \n"
+
+#: batchprocessimagesdialog.cpp:776
+#, fuzzy
+msgid "You must select an item from the list to calculate the preview."
+msgstr "Guhitamo Ikintu Kuva: i Urutonde Kuri Kubara i Ibibanjirije . "
+
+#: batchprocessimagesdialog.cpp:840
+#, fuzzy
+msgid "Cannot run properly 'convert' program from 'ImageMagick' package."
+msgstr ""
+"Tangira &vendorShortName; ' Porogaramu Kuva: ' Porogaramu ; \n"
+"Kugenzura iyinjizaporogaramu . "
+
+#: batchprocessimagesdialog.cpp:855
+#, fuzzy
+msgid " - small preview"
+msgstr "- Gitoya Ibibanjirije "
+
+#: batchprocessimagesdialog.cpp:879
+#, fuzzy
+msgid "Preview processing error"
+msgstr "Inonosora Ikosa "
+
+#: batchprocessimagesdialog.cpp:881
+#, fuzzy
+msgid ""
+"Cannot process preview for image \"%1\".\n"
+"The output messages are:\n"
+msgstr ""
+"Ibibanjirije ya:  Ishusho \" %1 \" . \n"
+"Ibisohoka Ubutumwa : \n"
+
+#: batchprocessimagesdialog.cpp:921
+#, fuzzy
+msgid "Image File List"
+msgstr "Idosiye "
+
+#: batchprocessimagesdialog.cpp:1023
+msgid "Aborted."
+msgstr "Byahagaritswe."
+
+#: batchprocessimagesdialog.cpp:1024
+#, fuzzy
+msgid "process aborted by user"
+msgstr "Byahagaritswe ku Umukoresha "
+
+#: batchprocessimageslist.cpp:49
+#, fuzzy
+msgid "Source Album"
+msgstr "Idosiye nkomoko"
+
+#. i18n: file renameimagesbase.ui line 208
+#: batchprocessimageslist.cpp:50 rc.cpp:36
+#, fuzzy, no-c-format
+msgid "Source Image"
+msgstr "Ishusho y'Ifishi"
+
+#. i18n: file renameimagesbase.ui line 219
+#: batchprocessimageslist.cpp:51 rc.cpp:39
+#, fuzzy, no-c-format
+msgid "Target Image"
+msgstr "Ikadiri Irangamiwe"
+
+#. i18n: file renameimagesbase.ui line 230
+#: batchprocessimageslist.cpp:52 rc.cpp:42
+#, no-c-format
+msgid "Result"
+msgstr "Igisubizo"
+
+#: batchprocessimageslist.cpp:58
+#, fuzzy
+msgid ""
+"<p>You can see here the operations' results during the process. Double-click on "
+"an item for more information once the process has ended. "
+"<p>You can use the \"Add\" button or drag-and-drop to add some new items to the "
+"list. "
+"<p>If the items are taken from different Albums the process' results will be "
+"merged to the target Album."
+msgstr ""
+"<p> i ibisubizo i . - Kanda ku Ikintu ya:  Birenzeho Ibisobanuro: Rimwe i . "
+"<p> Koresha i \" \" Akabuto Cyangwa Kurura - na - Kuri &Ongera Gishya Ibigize "
+"Kuri i Urutonde . "
+"<p> i Ibigize Kuva: i ibisubizo Kuri i Intego: . "
+
+#: borderimagesdialog.cpp:59
+msgid "Batch-Bordering Images"
+msgstr ""
+
+#: borderimagesdialog.cpp:63
+#, fuzzy
+msgid "Batch Image-bordering"
+msgstr "Urubibi rwo hasi rw'ipaje"
+
+#: borderimagesdialog.cpp:66
+#, fuzzy
+msgid ""
+"A Kipi plugin for batch bordering images\n"
+"This plugin use the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: ya:  Gucomeka: Koresha i \" GUHINDURA \" Porogaramu Kuva: \" \" "
+"Porogaramu . "
+
+#: borderimagesdialog.cpp:70 colorimagesdialog.cpp:69
+#: convertimagesdialog.cpp:75 effectimagesdialog.cpp:69
+#: filterimagesdialog.cpp:69 imagepreview.cpp:97 outputdialog.cpp:64
+#: recompressimagesdialog.cpp:68 renameimagesdialog.cpp:62
+#: resizeimagesdialog.cpp:70
+#, fuzzy
+msgid "Author and maintainer"
+msgstr "na Umurinzi "
+
+#: borderimagesdialog.cpp:76 colorimagesdialog.cpp:75
+#: convertimagesdialog.cpp:81 effectimagesdialog.cpp:75
+#: filterimagesdialog.cpp:75 recompressimagesdialog.cpp:74
+#: renameimagesdialog.cpp:68 resizeimagesdialog.cpp:76
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "&Agatabo k'Amacomeka"
+
+#: borderimagesdialog.cpp:85
+#, fuzzy
+msgid "Images Bordering Options"
+msgstr "Amahitamo y'Ishusho"
+
+#: borderimagesdialog.cpp:87
+#, fuzzy
+msgid "Border:"
+msgstr "Impera:"
+
+#: borderimagesdialog.cpp:89
+msgid "Solid"
+msgstr "Gikomeye"
+
+#: borderimagesdialog.cpp:94
+msgid "Raise"
+msgstr "Kuzamura"
+
+#: borderimagesdialog.cpp:95
+msgid "Frame"
+msgstr "Ikadiri"
+
+#: borderimagesdialog.cpp:96
+#, fuzzy
+msgid "Niepce"
+msgstr "Biboneye"
+
+#: borderimagesdialog.cpp:97
+#, fuzzy
+msgid ""
+"<p>Select here the border type for your images:"
+"<p><b>Solid</b>: just surround the images with a line."
+"<p><b>Niepce</b>: surround the images with a fine line and a large border "
+"(ideal for black and white pictures)."
+"<p><b>Raise</b>: creating a 3D effect around the images."
+"<p><b>Frame</b>: surround the images with an ornamental border."
+"<p>"
+msgstr ""
+"<p> i Impera: Ubwoko: ya:  Ishusho : "
+"<p> <b> </b> : i Ishusho Na: A Umurongo: . "
+"<p> <b> </b> : i Ishusho Na: A Umurongo: na A Kinini Impera: ( ya:  umukara na "
+"Umweru Amashusho ) . "
+"<p> <b> </b> : Kurema A INGARUKA i Ishusho . "
+"<p> <b> </b> : i Ishusho Na: Impera: . "
+"<p> "
+
+#: borderoptionsdialog.cpp:52
+#, fuzzy
+msgid "Border Options"
+msgstr "Amahitamo yo Gushakisha"
+
+#: borderoptionsdialog.cpp:61 borderoptionsdialog.cpp:94
+#: borderoptionsdialog.cpp:112 borderoptionsdialog.cpp:123
+#, fuzzy
+msgid "Border width:"
+msgstr "Ubugari: : "
+
+#: borderoptionsdialog.cpp:65 borderoptionsdialog.cpp:98
+#: borderoptionsdialog.cpp:116 borderoptionsdialog.cpp:127
+#, fuzzy
+msgid "<p>Select here the border width in pixels."
+msgstr "<p> i Impera: Ubugari: in pigiseli . "
+
+#: borderoptionsdialog.cpp:69 borderoptionsdialog.cpp:102
+#: borderoptionsdialog.cpp:140
+#, fuzzy
+msgid "Border color:"
+msgstr "Ibara ry'urubibi"
+
+#: borderoptionsdialog.cpp:73 borderoptionsdialog.cpp:106
+#: borderoptionsdialog.cpp:144
+#, fuzzy
+msgid "<p>You can select here the border color."
+msgstr "<p> Guhitamo i Impera: Ibara: . "
+
+#: borderoptionsdialog.cpp:79
+#, fuzzy
+msgid "Line border width:"
+msgstr "Impera: Ubugari: : "
+
+#: borderoptionsdialog.cpp:83
+#, fuzzy
+msgid "<p>Select here the line border width in pixels."
+msgstr "<p> i Umurongo: Impera: Ubugari: in pigiseli . "
+
+#: borderoptionsdialog.cpp:87
+#, fuzzy
+msgid "Line border color:"
+msgstr "Impera: Ibara: : "
+
+#: borderoptionsdialog.cpp:91
+#, fuzzy
+msgid "<p>You can select here the line border color."
+msgstr "<p> Guhitamo i Umurongo: Impera: Ibara: . "
+
+#: borderoptionsdialog.cpp:131
+#, fuzzy
+msgid "Bevel width:"
+msgstr "Ubugari: : "
+
+#: borderoptionsdialog.cpp:135
+#, fuzzy
+msgid ""
+"<p>Select here the bevel width in pixels. This value must be <= Border width / "
+"2"
+msgstr "<p> i Ubugari: in pigiseli . Agaciro: < = Ubugari: /2 "
+
+#: colorimagesdialog.cpp:58
+#, fuzzy
+msgid "Batch Image-Color Processing"
+msgstr ": Inonosora ry'Ibyatanzwe"
+
+#: colorimagesdialog.cpp:62
+#, fuzzy
+msgid "Batch image-color enhancement"
+msgstr "Ishusho - Ibara: Inoza "
+
+#: colorimagesdialog.cpp:65
+#, fuzzy
+msgid ""
+"A Kipi plugin for batch image-color enhancement\n"
+"This plugin use the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: ya:  Ishusho - Ibara: Gucomeka: Koresha i \" GUHINDURA \" "
+"Porogaramu Kuva: \" \" Porogaramu . "
+
+#: colorimagesdialog.cpp:84
+#, fuzzy
+msgid "Image Coloring Options"
+msgstr "Amahitamo y'Ishusho"
+
+#: colorimagesdialog.cpp:86 filterimagesdialog.cpp:86
+msgid "Filter:"
+msgstr "Muyunguruzi:"
+
+#: colorimagesdialog.cpp:88
+#, fuzzy
+msgid "Decrease Contrast"
+msgstr "Kibona biciriritse"
+
+#: colorimagesdialog.cpp:89
+msgid "Depth"
+msgstr "Ubujyakuzimu"
+
+#: colorimagesdialog.cpp:90
+#, fuzzy
+msgid "Equalize"
+msgstr "Bingana"
+
+#: colorimagesdialog.cpp:91
+#, fuzzy
+msgid "Fuzz"
+msgstr "&Kidatunganye"
+
+#: colorimagesdialog.cpp:92
+#, fuzzy
+msgid "Gray Scales"
+msgstr "Igipimo cy'Ikijuju"
+
+#: colorimagesdialog.cpp:93
+#, fuzzy
+msgid "Increase Contrast"
+msgstr "Kongera imyandikire"
+
+#: colorimagesdialog.cpp:94
+msgid "Monochrome"
+msgstr "bararimwe"
+
+#: colorimagesdialog.cpp:95
+#, fuzzy
+msgid "Negate"
+msgstr "Munsi ya Zero"
+
+#: colorimagesdialog.cpp:96 colorimagesdialog.cpp:99
+msgid "Normalize"
+msgstr "Kuringanyiza"
+
+#: colorimagesdialog.cpp:97
+#, fuzzy
+msgid "Segment"
+msgstr "Ingeri"
+
+#: colorimagesdialog.cpp:98
+#, fuzzy
+msgid "Trim"
+msgstr "IGIHEMBWE"
+
+#: colorimagesdialog.cpp:100
+#, fuzzy
+msgid ""
+"<p>Select here the color enhancement type for your images:"
+"<p><b>Decrease contrast</b>: reduce the image contrast. The algorithm reduces "
+"the intensity difference between the lighter and darker elements of the image."
+"<p><b>Depth</b>: change the color depth of the image."
+"<p><b>Equalize</b>: perform histogram equalization to the image."
+"<p><b>Fuzz</b>: merging colors within a distance, i.e. consider them to be "
+"equal."
+"<p><b>Gray scales</b>: convert color images to grayscale images."
+"<p><b>Increase contrast</b>: enhance the image contrast. The algorithm enhances "
+"the intensity differences between the lighter and darker elements of the image."
+"<p><b>Monochrome</b>: transform the image to black and white."
+"<p><b>Negate</b>: replace every pixel with its complementary color. The red, "
+"green, and blue intensities of an image are negated. White becomes black, "
+"yellow becomes blue, etc."
+"<p><b>Normalize</b>: transform image to span the full range of color values. "
+"This is a contrast enhancement technique. The algorithm enhances the contrast "
+"of a colored image by adjusting the pixels color to span the entire range of "
+"colors available."
+"<p><b>Segment</b>: segment an image by analyzing the histograms of the color "
+"components and identifying units that are homogeneous with the fuzzy c-means "
+"technique."
+"<p><b>Trim</b>: trim an image (fuzz reverse technic). The algorithm remove "
+"edges that are the background color from the image."
+"<p>"
+msgstr "<p>e."
+
+#: coloroptionsdialog.cpp:52
+#, fuzzy
+msgid "Color Options"
+msgstr "Amahitamo y'ishungura"
+
+#: coloroptionsdialog.cpp:61
+#, fuzzy
+msgid "Depth value:"
+msgstr "Agaciro: : "
+
+#: coloroptionsdialog.cpp:67
+#, fuzzy
+msgid "<p>Select here the image depth in bits."
+msgstr "<p> i Ishusho Ubujyakuzimu in . "
+
+#: coloroptionsdialog.cpp:74
+msgid "Distance:"
+msgstr "Intera:"
+
+#: coloroptionsdialog.cpp:78
+#, fuzzy
+msgid "<p>Select here the fuzz distance in absolute intensity units."
+msgstr "<p> i Intera in Imbaraga . "
+
+#: coloroptionsdialog.cpp:86
+#, fuzzy
+msgid "Cluster threshold:"
+msgstr "Urubibi rwa Mweretsi:"
+
+#: coloroptionsdialog.cpp:90
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the minimum number of pixels "
+"contained in a hexahedra before it can be considered valid."
+msgstr "<p> i Agaciro: i Gito Umubare Bya pigiseli in A Mbere Byemewe . "
+
+#: coloroptionsdialog.cpp:96
+#, fuzzy
+msgid "Smooth threshold:"
+msgstr "Urubibi rwa Mweretsi:"
+
+#: coloroptionsdialog.cpp:100
+#, fuzzy
+msgid ""
+"<p>Select here the value which eliminates noise in the second derivative of the "
+"histogram. As the value is increased, you can expect a smoother second "
+"derivative."
+msgstr "<p> i Agaciro: in i ISEGONDA Bya i . i Agaciro: ni , A ISEGONDA . "
+
+#: convertimagesdialog.cpp:64
+#, fuzzy
+msgid "Batch Convert Images"
+msgstr "Amashusho y'Icyakabiri cy'Ubwirangire"
+
+#: convertimagesdialog.cpp:68
+#, fuzzy
+msgid "Batch convert images"
+msgstr "GUHINDURA Ishusho "
+
+#: convertimagesdialog.cpp:71
+#, fuzzy
+msgid ""
+"A Kipi plugin for batch converting images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: ya:  Guhindura.... Gucomeka: i \" GUHINDURA \" Porogaramu Kuva: \" "
+"\" Porogaramu . "
+
+#: convertimagesdialog.cpp:86
+#, fuzzy
+msgid "Image Conversion Options"
+msgstr "Amahitamo y'Ishusho"
+
+#: convertimagesdialog.cpp:88
+msgid "Format:"
+msgstr "Imiterere:"
+
+#: convertimagesdialog.cpp:98
+#, fuzzy
+msgid "<p>Select here the target image file format.<p>"
+msgstr "<p> i Intego: Ishusho Idosiye Imiterere . <p> "
+
+#: convertimagesdialog.cpp:99
+#, fuzzy
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b> </b> : Idosiye Imiterere ni A Idosiye Imiterere Ibyatanzwe igabanyangano . "
+"<p> <b> </b> : i Imiterere ni Idosiye Imiterere ya:  i , , - Byegeranijwe Bya "
+"AGAPANDE Ishusho . A - Kigenga ya:  na Gusimbuza Bya . ni Kuri Akazi in kiri "
+"kuri interineti Porogaramu , Nka i , ni Na: A Kugaragaza: Ihitamo . , Gama na "
+"Ibyatanzwe ya:  Ibara: ku . "
+
+#: convertimagesdialog.cpp:108
+#, fuzzy
+msgid ""
+"<p><b>TIFF</b>: the Tag Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and "
+"virtually all prepress software on the market."
+msgstr ""
+"<p> <b> </b> : i Idosiye ni A ki/bishaje Bisanzwe ni Uyumunsi . ni A na - "
+"Imiterere ni ku Ishusho Inonosora Porogaramu na Byose ku i . "
+
+#: convertimagesdialog.cpp:112
+#, fuzzy
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generate the "
+"largest-sized text files to encode images without losing quality"
+msgstr ""
+"<p> <b> </b> : i Idosiye Imiterere ni Byakoreshejwe Nka Imiterere ya:  Ibara: "
+"Bitimapu Ibisobanuro: . Idosiye Gicurasi Nyabibiri Cyangwa na Uduciro Hejuru "
+"Kuri 24 in Ingano: . Imiterere i Kinini - Umwandiko Idosiye Kuri Ishusho Ubwiza "
+
+#: convertimagesdialog.cpp:117
+#, fuzzy
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p> <b> </b> : i Idosiye Imiterere ni A Ishusho Imiterere Kuva: . Cyangwa "
+"Ibishushanyo Ibyatanzwe Na: pigiseli 1 - , 4 - , 8 - , Cyangwa 24 - in Ingano: "
+". Gicurasi Cyangwa Byegeranijwe ikoresha A 4 - Cyangwa 8 - Ibyatanzwe "
+"igabanyangano . ni ya:  A Byoroheje Bitimapu Imiterere A Urutonde Bya Ishusho "
+"Ibyatanzwe . "
+
+#: convertimagesdialog.cpp:123
+#, fuzzy
+msgid ""
+"<p><b>TGA</b>: the TarGA image file format is one of the most widely used "
+"bitmap file formats for storage of 24 and 32 bits truecolor images.  TGA "
+"supports colormaps, alpha channel, gamma value, postage stamp image, textual "
+"information, and developer-definable data."
+msgstr ""
+"<p> <b> </b> : i Ishusho Idosiye Imiterere ni Rimwe Bya i Byakoreshejwe "
+"Bitimapu Idosiye Imiterere ya:  Bya 24 na 32 Ishusho . , Alufa , Gama Agaciro: "
+", Ishusho , Ibisobanuro: , na Mukoraporogaramu - Ibyatanzwe . "
+
+#: convertimagesdialog.cpp:127
+#, fuzzy
+msgid ""
+"<p><b>EPS</b>: the  Adobe Encapsulated PostScript image file format is a "
+"PostScript language program describing the appearance of a single page. "
+"Usually, the purpose of the EPS file is to be embedded inside another "
+"PostScript language page description."
+msgstr ""
+"<p> <b> </b> : i Ishusho Idosiye Imiterere ni A Ururimi: Porogaramu i "
+"Imigaragarire Bya A UMWE Ipaji: . , i Intego Bya i Idosiye ni Kuri Gitsindiye "
+"Mo Imbere Ururimi: Ipaji: Umwirondoro: . "
+
+#: convertimagesdialog.cpp:213 convertimagesdialog.cpp:214
+#: convertimagesdialog.cpp:282 convertimagesdialog.cpp:296
+#: convertoptionsdialog.cpp:92 convertoptionsdialog.cpp:104
+#: recompressimagesdialog.cpp:143 recompressimagesdialog.cpp:144
+#: recompressimagesdialog.cpp:215 recompressimagesdialog.cpp:229
+#: recompressoptionsdialog.cpp:110 recompressoptionsdialog.cpp:123
+msgid "None"
+msgstr "Nta na kimwe"
+
+#: convertoptionsdialog.cpp:50
+#, fuzzy
+msgid "Image File Format Options"
+msgstr "Idosiye "
+
+#: convertoptionsdialog.cpp:59 recompressoptionsdialog.cpp:61
+#: recompressoptionsdialog.cpp:87
+#, fuzzy
+msgid "Image compression level:"
+msgstr "igabanyangano urwego : "
+
+#: convertoptionsdialog.cpp:63
+#, fuzzy
+msgid "<p>The compression value for the target images:<p>"
+msgstr "<p> igabanyangano Agaciro: ya:  i Intego: Ishusho : <p> "
+
+#: convertoptionsdialog.cpp:64 recompressoptionsdialog.cpp:65
+#: recompressoptionsdialog.cpp:91
+#, fuzzy
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b> 1 </b> : ejuru igabanyangano "
+"<p> <b> 25% </b> : ejuru igabanyangano "
+"<p> <b> 50% </b> : hagati igabanyangano "
+"<p> <b> 75 </b> : hasi igabanyangano ( Mburabuzi Agaciro: ) "
+"<p> <b> 100 </b> : Oya igabanyangano "
+
+#: convertoptionsdialog.cpp:76 recompressoptionsdialog.cpp:74
+#, fuzzy
+msgid "Use lossless compression"
+msgstr "igabanyangano "
+
+#: convertoptionsdialog.cpp:77
+#, fuzzy
+msgid ""
+"<p>If this option is enabled, all JPEG operations will use a lossless "
+"compression."
+msgstr "<p> iyi Ihitamo ni Bikora , Byose Ibikorwa: Koresha A igabanyangano . "
+
+#: convertoptionsdialog.cpp:87 convertoptionsdialog.cpp:100
+#: recompressoptionsdialog.cpp:106 recompressoptionsdialog.cpp:120
+#, fuzzy
+msgid "Image compression algorithm:"
+msgstr "igabanyangano : "
+
+#: convertoptionsdialog.cpp:93 convertoptionsdialog.cpp:105
+#, fuzzy
+msgid "<p>Select here the compression algorithm."
+msgstr "<p> i igabanyangano . "
+
+#: effectimagesdialog.cpp:58
+#, fuzzy
+msgid "Batch Image Effects"
+msgstr "ingaruka z'ishusho"
+
+#: effectimagesdialog.cpp:62
+#, fuzzy
+msgid "Batch image effects"
+msgstr "Ishusho Ingaruka "
+
+#: effectimagesdialog.cpp:65
+#, fuzzy
+msgid ""
+"A Kipi plugin for batch image-effect transformations\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: ya:  Ishusho - INGARUKA Gucomeka: i \" GUHINDURA \" Porogaramu "
+"Kuva: \" \" Porogaramu "
+
+#: effectimagesdialog.cpp:84
+#, fuzzy
+msgid "Image Effect Options"
+msgstr "Amahitamo y'Imiterere"
+
+#: effectimagesdialog.cpp:86
+#, fuzzy
+msgid "Effect:"
+msgstr "Imyitwarire:"
+
+#: effectimagesdialog.cpp:88
+#, fuzzy
+msgid "Adaptive Threshold"
+msgstr "Biti 1 ntarengwa"
+
+#: effectimagesdialog.cpp:89
+#, fuzzy
+msgid "Charcoal"
+msgstr "Amabara y'igishushanyo"
+
+#: effectimagesdialog.cpp:90
+#, fuzzy
+msgid "Detect Edges"
+msgstr "Kigenzura"
+
+#: effectimagesdialog.cpp:91 effectimagesdialog.cpp:99
+#, fuzzy
+msgid "Emboss"
+msgstr "Bibyimbijwe"
+
+#: effectimagesdialog.cpp:92
+#, fuzzy
+msgid "Implode"
+msgstr "Uburyo"
+
+#: effectimagesdialog.cpp:93
+#, fuzzy
+msgid "Paint"
+msgstr "Gushyira ku rupapuro"
+
+#: effectimagesdialog.cpp:94
+#, fuzzy
+msgid "Shade Light"
+msgstr "Kwijima Iburyo"
+
+#: effectimagesdialog.cpp:95
+#, fuzzy
+msgid "Solarize"
+msgstr "Kuga Ibara"
+
+#: effectimagesdialog.cpp:96
+#, fuzzy
+msgid "Spread"
+msgstr "Umuvuduko"
+
+#: effectimagesdialog.cpp:97
+#, fuzzy
+msgid "Swirl"
+msgstr "Nyamwihinahine"
+
+#: effectimagesdialog.cpp:98
+msgid "Wave"
+msgstr "Umuvumba"
+
+#: effectimagesdialog.cpp:100
+#, fuzzy
+msgid ""
+"<p>Select here the effect type for your images:"
+"<p><b>Adaptive threshold</b>: perform local adaptive thresholding. The "
+"algorithm selects an individual threshold for each pixel based on the range of "
+"intensity values in its local neighborhood. This allows for thresholding of an "
+"image whose global intensity histogram does not contain distinctive peaks."
+"<p><b>Charcoal</b>: simulate a charcoal drawing."
+"<p><b>Detect edges</b>: detect edges within an image."
+"<p><b>Emboss</b>: returns a grayscale image with a three-dimensional effect. "
+"The algorithm convolves the image with a Gaussian operator of the given radius "
+"and standard deviation."
+"<p><b>Implode</b>: implode image pixels about the center."
+"<p><b>Paint</b>: applies a special effect filter that simulates an oil "
+"painting."
+"<p><b>Shade light</b>: shines a distant light on an image to create a "
+"three-dimensional effect."
+"<p><b>Solarize</b>: negate all pixels above the threshold level. This algorithm "
+"produces a solarization effect seen when exposing a photographic film to light "
+"during the development process."
+"<p><b>Spread</b>: this is a special-effect method that randomly displaces each "
+"pixel in a block defined by the radius parameter."
+"<p><b>Swirl</b>: swirls the pixels about the center of the image. "
+"<p><b>Wave</b>: creates a \"ripple\" effect in the image by shifting the pixels "
+"vertically along a sine wave."
+"<p>"
+msgstr ""
+"<p> i INGARUKA Ubwoko: ya:  Ishusho : "
+"<p> <b> </b> : Bya hafi . ya:  ku i Urutonde Bya Imbaraga Uduciro in Bya hafi . "
+"ya:  Bya Ishusho &Rusange Imbaraga OYA . "
+"<p> <b> </b> : A Igishushanyo . "
+"<p> <b> </b> : &Gutahura muri Ishusho . "
+"<p> <b> </b> : A GrayScale Ishusho Na: A - INGARUKA . i Ishusho Na: A Mukoresha "
+"Bya i Akarambararo na Bisanzwe . "
+"<p> <b> </b> : Ishusho pigiseli Bigyanye i Hagati . "
+"<p> <b> </b> : A Bidasanzwe INGARUKA Akayunguruzo: . "
+"<p> <b> kimurika </b> : A kimurika ku Ishusho Kuri Kurema A - INGARUKA . "
+"<p> <b> </b> : Byose pigiseli hejuru i urwego . A Ishyiramo rumuri INGARUKA "
+"Ryari: A Kuri kimurika i . "
+"<p> <b> </b> : iyi ni A Bidasanzwe - INGARUKA Uburyo in A Funga ku i "
+"Akarambararo Ikintu . "
+"<p> <b> </b> : i pigiseli Bigyanye i Hagati Bya i Ishusho . "
+"<p> <b> </b> : A \" \" INGARUKA in i Ishusho ku i pigiseli Mu buryo buhagaze A "
+"Sinisi UMUVUMBA . "
+"<p> "
+
+#: effectoptionsdialog.cpp:51
+msgid "Effect Options"
+msgstr "Amahitamo y'Imiterere"
+
+#: effectoptionsdialog.cpp:60
+msgid "Width:"
+msgstr "Ubugari:"
+
+#: effectoptionsdialog.cpp:64
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the width of the local neighborhood."
+msgstr "<p> i Agaciro: i Ubugari: Bya i Bya hafi . "
+
+#: effectoptionsdialog.cpp:69
+msgid "Height:"
+msgstr "Ubuhagarike:"
+
+#: effectoptionsdialog.cpp:73
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the height of the local neighborhood."
+msgstr "<p> i Agaciro: i Ubuhagarike: Bya i Bya hafi . "
+
+#: effectoptionsdialog.cpp:78
+#, fuzzy
+msgid "Offset:"
+msgstr "Nta- boneza"
+
+#: effectoptionsdialog.cpp:82
+#, fuzzy
+msgid "<p>Select here the value which represents the mean offset."
+msgstr "<p> i Agaciro: i Impuzandengo -  Nta-boneza $(N) . "
+
+#: effectoptionsdialog.cpp:89 effectoptionsdialog.cpp:110
+#: effectoptionsdialog.cpp:124 effectoptionsdialog.cpp:159
+#: effectoptionsdialog.cpp:208 filteroptionsdialog.cpp:77
+#: filteroptionsdialog.cpp:100 filteroptionsdialog.cpp:115
+#: filteroptionsdialog.cpp:131 filteroptionsdialog.cpp:155
+#, fuzzy
+msgid "Radius:"
+msgstr "Akarambararo"
+
+#: effectoptionsdialog.cpp:93
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the radius of the pixel neighborhood."
+msgstr "<p> i Agaciro: i Akarambararo Bya i . "
+
+#: effectoptionsdialog.cpp:98 effectoptionsdialog.cpp:135
+#: filteroptionsdialog.cpp:88 filteroptionsdialog.cpp:143
+#: filteroptionsdialog.cpp:168
+#, fuzzy
+msgid "Deviation:"
+msgstr "Aho bijya"
+
+#: effectoptionsdialog.cpp:102 effectoptionsdialog.cpp:139
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the standard deviation of the "
+"Gaussian, in pixels."
+msgstr "<p> i Agaciro: i Bisanzwe Bya i , in pigiseli . "
+
+#: effectoptionsdialog.cpp:114
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the radius of the pixel neighborhood. "
+"Radius defines the radius of the convolution filter. If you use a radius of 0 "
+"the algorithm selects a suitable radius."
+msgstr ""
+"<p> i Agaciro: i Akarambararo Bya i . i Akarambararo Bya i Akayunguruzo: . "
+"Koresha A Akarambararo Bya 0 %S i A Akarambararo . "
+
+#: effectoptionsdialog.cpp:128
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the radius of the pixel neighborhood. "
+"For reasonable results, radius should be larger than deviation. If you use a "
+"radius of 0 the algorithm selects a suitable radius."
+msgstr ""
+"<p> i Agaciro: i Akarambararo Bya i . ibisubizo , Akarambararo Kinini . Koresha "
+"A Akarambararo Bya 0 %S i A Akarambararo . "
+
+#: effectoptionsdialog.cpp:147 effectoptionsdialog.cpp:196
+#, fuzzy
+msgid "Factor:"
+msgstr "Umubarwa"
+
+#: effectoptionsdialog.cpp:151
+#, fuzzy
+msgid "<p>Select here the value which represents the extent of the implosion."
+msgstr "<p> i Agaciro: i Kwagura Bya i . "
+
+#: effectoptionsdialog.cpp:163
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the radius of the circular "
+"neighborhood. Each pixel is replaced by the most frequent color occurring in a "
+"circular region defined by the radius."
+msgstr ""
+"<p> i Agaciro: i Akarambararo Bya i Cy'uruziga . ni ku i Byisubiramo Ibara: in "
+"A Cy'uruziga Akarere ku i Akarambararo . "
+
+#: effectoptionsdialog.cpp:173
+#, fuzzy
+msgid "Azimuth:"
+msgstr "Umwanditsi:"
+
+#: effectoptionsdialog.cpp:177
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the azimuth of the light source "
+"direction. The azimuth is measured in degrees above the x axis."
+msgstr ""
+"<p> i Agaciro: i Bya i kimurika Inkomoko Icyerekezo . ni in Dogere hejuru i x "
+"Umurongo fatizo "
+
+#: effectoptionsdialog.cpp:183
+#, fuzzy
+msgid "Elevation:"
+msgstr "Isano:"
+
+#: effectoptionsdialog.cpp:187
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the elevation of the light source "
+"direction. The elevation is measured in pixels above the Z axis."
+msgstr ""
+"<p> i Agaciro: i Bya i kimurika Inkomoko Icyerekezo . ni in pigiseli hejuru i "
+"Umurongo fatizo "
+
+#: effectoptionsdialog.cpp:200
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the percent-threshold of the solarize "
+"intensity."
+msgstr "<p> i Agaciro: i ku ijana - Bya i Imbaraga . "
+
+#: effectoptionsdialog.cpp:212
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the random pixel in a neighborhood of "
+"this extent."
+msgstr "<p> i Agaciro: i Bitunguranye in A Bya iyi Kwagura . "
+
+#: effectoptionsdialog.cpp:220
+#, fuzzy
+msgid "Degrees:"
+msgstr "Dogere"
+
+#: effectoptionsdialog.cpp:224
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the tightness of the swirling effect. "
+"You get a more dramatic effect as the degrees move from 1 to 360."
+msgstr ""
+"<p> i Agaciro: i Bya i INGARUKA . Kubona A Birenzeho INGARUKA Nka i Dogere "
+"Himura Kuva: 1 Kuri . "
+
+#: effectoptionsdialog.cpp:233
+#, fuzzy
+msgid "Amplitude:"
+msgstr "Inyandikorugero"
+
+#: effectoptionsdialog.cpp:237
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the amplitude of the sine wave."
+msgstr "<p> i Agaciro: i Bya i Sinisi UMUVUMBA . "
+
+#: effectoptionsdialog.cpp:242
+msgid "Length:"
+msgstr "Uburebure:"
+
+#: effectoptionsdialog.cpp:246
+#, fuzzy
+msgid ""
+"<p>Select here the value which represents the wave length of the sine wave."
+msgstr "<p> i Agaciro: i UMUVUMBA Uburebure Bya i Sinisi UMUVUMBA . "
+
+#: filterimagesdialog.cpp:58
+#, fuzzy
+msgid "Batch Image Filtering"
+msgstr "Hitamo Idosiye y'Ishusho"
+
+#: filterimagesdialog.cpp:62
+#, fuzzy
+msgid "Batch image filtering"
+msgstr "Ishusho Iyungurura "
+
+#: filterimagesdialog.cpp:65
+#, fuzzy
+msgid ""
+"A Kipi plugin to batch filter images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: Kuri Akayunguruzo: Gucomeka: i \" GUHINDURA \" Porogaramu Kuva: \" "
+"\" Porogaramu . "
+
+#: filterimagesdialog.cpp:84
+#, fuzzy
+msgid "Image Filtering Options"
+msgstr "Amahitamo ya muyunguruzi"
+
+#: filterimagesdialog.cpp:88
+#, fuzzy
+msgid "Add Noise"
+msgstr "Kongeraho Igishya"
+
+#: filterimagesdialog.cpp:89
+#, fuzzy
+msgid "Antialias"
+msgstr "Birwanyibihimbano:"
+
+#: filterimagesdialog.cpp:90
+#, fuzzy
+msgid "Blur"
+msgstr "Ubururu"
+
+#: filterimagesdialog.cpp:91
+#, fuzzy
+msgid "Despeckle"
+msgstr "Kudatoranya"
+
+#: filterimagesdialog.cpp:92
+#, fuzzy
+msgid "Enhance"
+msgstr "Biteye imbere"
+
+#: filterimagesdialog.cpp:93
+#, fuzzy
+msgid "Median"
+msgstr "IMPUZAMPEMBE"
+
+#: filterimagesdialog.cpp:94
+#, fuzzy
+msgid "Noise Reduction"
+msgstr "Igabanya ry'akadomo"
+
+#: filterimagesdialog.cpp:95 filterimagesdialog.cpp:97
+msgid "Sharpen"
+msgstr "Kugaragaza cyane"
+
+#: filterimagesdialog.cpp:96
+#, fuzzy
+msgid "Unsharp"
+msgstr "Gukuraho Ubwijime"
+
+#: filterimagesdialog.cpp:98
+#, fuzzy
+msgid ""
+"<p>Select here the filter type for your images:"
+"<p><b>Add noise</b>: add artificial noise to an image."
+"<p><b>Antialias</b>: remove pixel aliasing."
+"<p><b>Blur</b>: blur the image with a Gaussian operator."
+"<p><b>Despeckle</b>: reduces the speckle noise in an image while perserving the "
+"edges of the original image."
+"<p><b>Enhance</b>: apply a digital filter to enhance a noisy image."
+"<p><b>Median</b>: apply a median filter to an image."
+"<p><b>Noise reduction</b>: reduce noise in an image. "
+"<p><b>Sharpen</b>: sharpen the image with a Gaussian operator."
+"<p><b>Unsharp</b>: sharpen the image with an unsharp mask operator."
+"<p>"
+msgstr ""
+"<p> i Akayunguruzo: Ubwoko: ya:  Ishusho : "
+"<p> <b> </b> : &Ongera Kuri Ishusho . "
+"<p> <b> </b> : Gukuraho . "
+"<p> <b> </b> : i Ishusho Na: A Mukoresha . "
+"<p> <b> </b> : i in Ishusho i Bya i ~Umwimerere Ishusho . "
+"<p> <b> </b> : Gushyiraho A &Y'imibare Akayunguruzo: Kuri A Ishusho . "
+"<p> <b> </b> : Gushyiraho A IMPUZAMPEMBE Akayunguruzo: Kuri Ishusho . "
+"<p> <b> </b> : in Ishusho . "
+"<p> <b> </b> : Kugaragaza cyane i Ishusho Na: A Mukoresha . "
+"<p> <b> </b> : Kugaragaza cyane i Ishusho Na: Mukoresha . "
+"<p> "
+
+#: filterimagesdialog.cpp:216 filterimagesdialog.cpp:287
+#: filteroptionsdialog.cpp:64
+#, fuzzy
+msgid "Gaussian"
+msgstr "Ikirusi"
+
+#: filterimagesdialog.cpp:286 filteroptionsdialog.cpp:63
+msgid "Uniform"
+msgstr "Bisa"
+
+#: filterimagesdialog.cpp:288 filteroptionsdialog.cpp:65
+#, fuzzy
+msgid "Multiplicative"
+msgstr "Gukuba (x)"
+
+#: filterimagesdialog.cpp:289 filteroptionsdialog.cpp:66
+#, fuzzy
+msgid "Impulse"
+msgstr "Byoroheje"
+
+#: filterimagesdialog.cpp:290 filteroptionsdialog.cpp:67
+#, fuzzy
+msgid "Laplacian"
+msgstr "Ikigalisiya"
+
+#: filterimagesdialog.cpp:291 filteroptionsdialog.cpp:68
+#, fuzzy
+msgid "Poisson"
+msgstr "POISSON"
+
+#: filteroptionsdialog.cpp:51
+msgid "Filter Options"
+msgstr "Amahitamo ya muyunguruzi"
+
+#: filteroptionsdialog.cpp:60
+#, fuzzy
+msgid "Noise algorithm:"
+msgstr "Ifunguzo y'imenyekanisha:"
+
+#: filteroptionsdialog.cpp:69
+#, fuzzy
+msgid ""
+"<p>Select here the algorithm method which will used to add random noise to the "
+"images."
+msgstr "<p> i Uburyo Byakoreshejwe Kuri &Ongera Bitunguranye Kuri i Ishusho . "
+
+#: filteroptionsdialog.cpp:81
+#, fuzzy
+msgid ""
+"<p>Select here the blur radius of the Gaussian, in pixels, not counting the "
+"center pixel. For reasonable results, the radius should be larger than "
+"deviation. If you use a radius of 0 the blur operations selects a suitable "
+"radius."
+msgstr ""
+"<p> i Akarambararo Bya i , in pigiseli , OYA Kubara i Hagati . ibisubizo , i "
+"Akarambararo Kinini . Koresha A Akarambararo Bya 0 %S i Ibikorwa: A "
+"Akarambararo . "
+
+#: filteroptionsdialog.cpp:92
+#, fuzzy
+msgid "<p>Select here the standard deviation of the blur Gaussian, in pixels."
+msgstr "<p> i Bisanzwe Bya i , in pigiseli . "
+
+#: filteroptionsdialog.cpp:104
+#, fuzzy
+msgid ""
+"<p>Select here the median radius of the pixel neighborhood. The algorithm "
+"applies a digital filter that improves the quality of noisy images. Each pixel "
+"is replaced by the median in a set of neighboring pixels as defined by the "
+"radius."
+msgstr ""
+"<p> i IMPUZAMPEMBE Akarambararo Bya i . A &Y'imibare Akayunguruzo: i Ubwiza Bya "
+"Ishusho . ni ku i IMPUZAMPEMBE in A Gushyiraho Bya pigiseli Nka ku i "
+"Akarambararo . "
+
+#: filteroptionsdialog.cpp:119
+#, fuzzy
+msgid ""
+"<p>Select here the noise reduction radius value, in pixels. The algorithm "
+"smooths the contours of an image while still preserving edge information. The "
+"algorithm works by replacing each pixel with its neighbor closest in value. A "
+"neighbor is defined by the radius. If you use a radius of 0 the algorithm "
+"selects a suitable radius."
+msgstr ""
+"<p> i Akarambararo Agaciro: , in pigiseli . i Bya Ishusho Ibisobanuro: . ku "
+"Guhindura: %s Na: in Agaciro: . A ni ku i Akarambararo . Koresha A Akarambararo "
+"Bya 0 %S i A Akarambararo . "
+
+#: filteroptionsdialog.cpp:135
+#, fuzzy
+msgid ""
+"<p>Select here the radius of the sharpen Gaussian, in pixels, not counting the "
+"center pixel. For reasonable results, the radius should be larger than "
+"deviation. if you use a radius of 0 the sharpen operation selects a suitable "
+"radius."
+msgstr ""
+"<p> i Akarambararo Bya i Kugaragaza cyane , in pigiseli , OYA Kubara i Hagati . "
+"ibisubizo , i Akarambararo Kinini . NIBA Koresha A Akarambararo Bya 0 %S i "
+"Kugaragaza cyane Igikorwa A Akarambararo . "
+
+#: filteroptionsdialog.cpp:147
+#, fuzzy
+msgid "<p>Select here the sharpen deviation value of the Laplacian in pixels."
+msgstr "<p> i Kugaragaza cyane Agaciro: Bya i in pigiseli . "
+
+#: filteroptionsdialog.cpp:159
+#, fuzzy
+msgid ""
+"<p>Select here the radius of the unsharpen Gaussian, in pixels, not counting "
+"the center pixel. The algorithm convolve the image with a Gaussian operator of "
+"the given radius and standard deviation. For reasonable results, radius should "
+"be larger than sigma. If you use a radius of 0 the algorithm selects a suitable "
+"radius."
+msgstr ""
+"<p> i Akarambararo Bya i , in pigiseli , OYA Kubara i Hagati . i Ishusho Na: A "
+"Mukoresha Bya i Akarambararo na Bisanzwe . ibisubizo , Akarambararo Kinini "
+"sigima . Koresha A Akarambararo Bya 0 %S i A Akarambararo . "
+
+#: filteroptionsdialog.cpp:172
+#, fuzzy
+msgid ""
+"<p>Select here the unsharpen deviation value of the Gaussian, in pixels."
+msgstr "<p> i Agaciro: Bya i , in pigiseli . "
+
+#: filteroptionsdialog.cpp:177
+#, fuzzy
+msgid "Percent:"
+msgstr "ku ijana"
+
+#: filteroptionsdialog.cpp:181
+#, fuzzy
+msgid ""
+"<p>Select here the percentage difference between original and blurred image "
+"which should be added to original."
+msgstr ""
+"<p> i Ijanisha Ikinyuranyo/Itandukaniro hagati ~Umwimerere na Ishusho Kyongewe "
+"Kuri ~Umwimerere . "
+
+#: filteroptionsdialog.cpp:186
+#, fuzzy
+msgid "Threshold:"
+msgstr "Agaciro ntarengwa"
+
+#: filteroptionsdialog.cpp:190
+#, fuzzy
+msgid ""
+"<p>Select here the unsharpen threshold value, in pixels, needed to apply the "
+"diffence amount."
+msgstr "<p> i Agaciro: , in pigiseli , Kuri Gushyiraho i Igiteranyo  . "
+
+#: imagepreview.cpp:83
+msgid "Batch Process Preview (%1 - %2)"
+msgstr ""
+
+#: imagepreview.cpp:88
+#, fuzzy
+msgid "Batch process images"
+msgstr "Ishusho "
+
+#: imagepreview.cpp:91
+#, fuzzy
+msgid ""
+"An interface to preview the \"Batch Process Images\" Kipi plugin.\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Imigaragarire Kuri Ibibanjirije i \" \" Gucomeka: . \n"
+"Gucomeka: i \" GUHINDURA \" Porogaramu Kuva: \" \" Porogaramu . "
+
+#: imagepreview.cpp:103 outputdialog.cpp:70
+#, fuzzy
+msgid "Plugin Handbooks"
+msgstr "&Agatabo k'Amacomeka"
+
+#: imagepreview.cpp:126
+#, fuzzy
+msgid "Zoom Factor"
+msgstr "Igikubisho cy'ihindurangano"
+
+#: imagepreview.cpp:130
+#, fuzzy
+msgid "<p>The zoom factor value, as a percentage."
+msgstr "<p> Ihindurangano Umubarwa Agaciro: , Nka A Ijanisha . "
+
+#: imagepreview.cpp:136
+#, fuzzy
+msgid "<p>Moving this slider changes the zoom factor value."
+msgstr "<p> iyi Amahinduka i Ihindurangano Umubarwa Agaciro: . "
+
+#: imagepreview.cpp:140
+#, fuzzy
+msgid "Original Image"
+msgstr "Uduciro mwimerere"
+
+#: imagepreview.cpp:142
+#, fuzzy
+msgid ""
+"<p>This is the original image preview. You can use the mouse wheel to change "
+"the zoom factor. Click in and use the mouse to move the image."
+msgstr ""
+"<p> ni i ~Umwimerere Ishusho Ibibanjirije . Koresha i Imbeba Ipine Kuri "
+"Guhindura... i Ihindurangano Umubarwa . in na Koresha i Imbeba Kuri Himura i "
+"Ishusho . "
+
+#: imagepreview.cpp:147
+#, fuzzy
+msgid "Destination Image"
+msgstr "Amerekezo-Nyandiko"
+
+#: imagepreview.cpp:149
+#, fuzzy
+msgid ""
+"<p>This is the destination image preview. You can use the mouse wheel to change "
+"the zoom factor. Click in and use the mouse to move the image."
+msgstr ""
+"<p> ni i Ishyika: Ishusho Ibibanjirije . Koresha i Imbeba Ipine Kuri "
+"Guhindura... i Ihindurangano Umubarwa . in na Koresha i Imbeba Kuri Himura i "
+"Ishusho . "
+
+#: imagepreview.cpp:252
+msgid ""
+"Preview\n"
+"image\n"
+"processing\n"
+"in\n"
+"progress..."
+msgstr ""
+
+#: imagepreview.cpp:325
+msgid ""
+"Cannot\n"
+"process\n"
+"preview\n"
+"image."
+msgstr ""
+
+#: outputdialog.cpp:51
+#, fuzzy
+msgid "Copy to Clip&board"
+msgstr "Gukoporora mu Bubikokoporora"
+
+#: outputdialog.cpp:55
+#, fuzzy
+msgid "Batch processes images"
+msgstr "Ishusho "
+
+#: outputdialog.cpp:58
+#, fuzzy
+msgid ""
+"An interface to show the output of the \"Batch Process Images\" Kipi plugin.\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Imigaragarire Kuri Herekana %S i Ibisohoka Bya i \" \" Gucomeka: . \n"
+"Gucomeka: i \" GUHINDURA \" Porogaramu Kuva: \" \" Porogaramu . "
+
+#: plugin_batchprocessimages.cpp:83
+#, fuzzy
+msgid "Border Images..."
+msgstr "Ishusho y'Ifishi..."
+
+#: plugin_batchprocessimages.cpp:91
+#, fuzzy
+msgid "Color Images..."
+msgstr "Ishusho y'Ifishi..."
+
+#: plugin_batchprocessimages.cpp:99
+#, fuzzy
+msgid "Convert Images..."
+msgstr "Ishusho y'Ifishi..."
+
+#: plugin_batchprocessimages.cpp:107
+#, fuzzy
+msgid "Image Effects..."
+msgstr "ingaruka z'ishusho"
+
+#: plugin_batchprocessimages.cpp:115
+#, fuzzy
+msgid "Filter Images..."
+msgstr "Ishusho y'Ifishi..."
+
+#: plugin_batchprocessimages.cpp:123
+#, fuzzy
+msgid "Rename Images..."
+msgstr "Kohereza Ishusho..."
+
+#: plugin_batchprocessimages.cpp:131
+#, fuzzy
+msgid "Recompress Images..."
+msgstr "Ishusho y'Ifishi..."
+
+#: plugin_batchprocessimages.cpp:139
+#, fuzzy
+msgid "Resize Images..."
+msgstr "Kohereza Ishusho..."
+
+#: plugin_batchprocessimages.cpp:229
+#, fuzzy
+msgid "Please select an album or a selection of images."
+msgstr "Guhitamo Cyangwa A Ihitamo Bya Ishusho . "
+
+#. i18n: file renameimagesbase.ui line 16
+#: rc.cpp:3
+#, fuzzy, no-c-format
+msgid "RenameImagesBase"
+msgstr "Kohereza Ishusho..."
+
+#. i18n: file renameimagesbase.ui line 30
+#: rc.cpp:6
+#, fuzzy, no-c-format
+msgid "Template for renaming files"
+msgstr "ya:  Guhindura izina Idosiye "
+
+#. i18n: file renameimagesbase.ui line 41
+#: rc.cpp:9
+#, fuzzy, no-c-format
+msgid "Sequence number start value:"
+msgstr "Umubare Tangira &vendorShortName; Agaciro: : "
+
+#. i18n: file renameimagesbase.ui line 54
+#: rc.cpp:12
+#, fuzzy, no-c-format
+msgid "Prefix string:"
+msgstr "Ikurikiranyanyuguti : "
+
+#. i18n: file renameimagesbase.ui line 62
+#: rc.cpp:15
+#, fuzzy, no-c-format
+msgid "Add original file name"
+msgstr "~Umwimerere Idosiye Izina: "
+
+#. i18n: file renameimagesbase.ui line 70
+#: rc.cpp:18
+#, fuzzy, no-c-format
+msgid "Add file date"
+msgstr "Idosiye Itariki: "
+
+#. i18n: file renameimagesbase.ui line 78
+#: rc.cpp:21
+#, no-c-format
+msgid "Use extra [X*] symbols in date format field"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 116
+#: rc.cpp:24
+#, fuzzy, no-c-format
+msgid "Date format:"
+msgstr "Imiterere:"
+
+#. i18n: file renameimagesbase.ui line 197
+#: rc.cpp:33
+#, fuzzy, no-c-format
+msgid "Album"
+msgstr "Umutwe wa Kasete"
+
+#. i18n: file renameimagesbase.ui line 274
+#: rc.cpp:45
+#, fuzzy, no-c-format
+msgid "Reverse List"
+msgstr "Gusimburanya inshingano"
+
+#. i18n: file renameimagesbase.ui line 299
+#: rc.cpp:48
+#, fuzzy, no-c-format
+msgid "Sort List"
+msgstr "ubugari mwimerere"
+
+#. i18n: file renameimagesbase.ui line 307
+#: rc.cpp:51
+#, no-c-format
+msgid "Move &Down"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 315
+#: rc.cpp:54
+#, no-c-format
+msgid "Move &Up"
+msgstr ""
+
+#: recompressimagesdialog.cpp:57
+#, fuzzy
+msgid "Batch Recompress Images"
+msgstr "Shakisha ubutumwa"
+
+#: recompressimagesdialog.cpp:61
+#, fuzzy
+msgid "Batch recompress images"
+msgstr "Ishusho "
+
+#: recompressimagesdialog.cpp:64
+#, fuzzy
+msgid ""
+"A Kipi plugin to batch recompress images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: Kuri Gucomeka: i \" GUHINDURA \" Porogaramu Kuva: \" \" Porogaramu "
+". "
+
+#: recompressimagesdialog.cpp:83
+#, fuzzy
+msgid "Image Recompression Options"
+msgstr "Amahitamo y'Ishusho"
+
+#: recompressimagesdialog.cpp:265 resizeimagesdialog.cpp:538
+#, fuzzy
+msgid "image file format unsupported."
+msgstr "Ishusho Idosiye Imiterere . "
+
+#: recompressoptionsdialog.cpp:50
+#, fuzzy
+msgid "Recompression Options"
+msgstr "Amahitamo y'Iyerekana"
+
+#: recompressoptionsdialog.cpp:59
+#, fuzzy
+msgid "JPEG File Format"
+msgstr "Idosiye "
+
+#: recompressoptionsdialog.cpp:64
+#, fuzzy
+msgid "<p>The compression value for JPEG target images:<p>"
+msgstr "<p> igabanyangano Agaciro: ya:  Intego: Ishusho : <p> "
+
+#: recompressoptionsdialog.cpp:75
+#, fuzzy
+msgid ""
+"<p>If this option is enabled, all JPEG operations will use lossless "
+"compression."
+msgstr "<p> iyi Ihitamo ni Bikora , Byose Ibikorwa: Koresha igabanyangano . "
+
+#: recompressoptionsdialog.cpp:85
+#, fuzzy
+msgid "PNG File Format"
+msgstr "Idosiye "
+
+#: recompressoptionsdialog.cpp:90
+#, fuzzy
+msgid "<p>The compression value for PNG target images:<p>"
+msgstr "<p> igabanyangano Agaciro: ya:  Intego: Ishusho : <p> "
+
+#: recompressoptionsdialog.cpp:104
+#, fuzzy
+msgid "TIFF File Format"
+msgstr "Idosiye "
+
+#: recompressoptionsdialog.cpp:111
+#, fuzzy
+msgid "<p>Select here the TIFF compression algorithm."
+msgstr "<p> i igabanyangano . "
+
+#: recompressoptionsdialog.cpp:118
+#, fuzzy
+msgid "TGA File Format"
+msgstr "Idosiye "
+
+#: recompressoptionsdialog.cpp:124
+#, fuzzy
+msgid "<p>Select here the TGA compression algorithm."
+msgstr "<p> i igabanyangano . "
+
+#: renameimagesdialog.cpp:56
+#, fuzzy
+msgid "Batch-rename images"
+msgstr "- Guhindura izina Ishusho "
+
+#: renameimagesdialog.cpp:59
+#, fuzzy
+msgid "A Kipi plugin to batch-rename images"
+msgstr "A Gucomeka: Kuri - Guhindura izina Ishusho "
+
+#: renameimageswidget.cpp:98
+msgid "Sort by Name"
+msgstr ""
+
+#: renameimageswidget.cpp:99
+#, fuzzy
+msgid "Sort by Size"
+msgstr "Kuga Ibara"
+
+#: renameimageswidget.cpp:100
+msgid "Sort by Date"
+msgstr ""
+
+#: renameimageswidget.cpp:536
+#, fuzzy
+msgid "Rename File"
+msgstr "Idosiye "
+
+#: renameimageswidget.cpp:583
+#, fuzzy
+msgid "Skipped"
+msgstr "Byoherejwe ku"
+
+#: renameimageswidget.cpp:599
+msgid "Failed"
+msgstr "Byanze"
+
+#: resizeimagesdialog.cpp:59
+#, fuzzy
+msgid "Batch Resize Images"
+msgstr "Amasimbuka Yiha Ingano"
+
+#: resizeimagesdialog.cpp:63
+#, fuzzy
+msgid "Batch resize images"
+msgstr "Ihindurangero %O Ishusho "
+
+#: resizeimagesdialog.cpp:66
+#, fuzzy
+msgid ""
+"A Kipi plugin to batch-resize images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"A Gucomeka: Kuri - Ihindurangero %O Gucomeka: i \" GUHINDURA \" Porogaramu "
+"Kuva: \" \" Porogaramu "
+
+#: resizeimagesdialog.cpp:85
+#, fuzzy
+msgid "Image Resizing Options"
+msgstr "Amahitamo y'Ishusho"
+
+#: resizeimagesdialog.cpp:87
+msgid "Type:"
+msgstr "Ubwoko:"
+
+#: resizeimagesdialog.cpp:89 resizeimagesdialog.cpp:93
+#, fuzzy
+msgid "Proportional (1 dim.)"
+msgstr "( 1 Byijimye . ) "
+
+#: resizeimagesdialog.cpp:90
+#, fuzzy
+msgid "Proportional (2 dim.)"
+msgstr "( 2 Byijimye . ) "
+
+#: resizeimagesdialog.cpp:91
+#, fuzzy
+msgid "Non-Proportional"
+msgstr "Biringaniye"
+
+#: resizeimagesdialog.cpp:92
+#, fuzzy
+msgid "Prepare to Print"
+msgstr "Kuri "
+
+#: resizeimagesdialog.cpp:94
+#, fuzzy
+msgid "<p>Select here the image-resize type."
+msgstr "<p> i Ishusho - Ihindurangero %O Ubwoko: . "
+
+#: resizeimagesdialog.cpp:95
+#, fuzzy
+msgid ""
+"<p><b>Proportional (1 dim.)</b>: standard auto-resizing using one dimension. "
+"The width or the height of the images will be automatically selected, depending "
+"on the images' orientations. The images' aspect ratios are preserved."
+msgstr ""
+"<p> <b> ( 1 Byijimye . ) </b> : Bisanzwe Ikiyega - ikoresha Rimwe . Ubugari: "
+"Cyangwa i Ubuhagarike: Bya i Ishusho mu buryo bwikora: Byahiswemo , ku i . . "
+
+#: resizeimagesdialog.cpp:99
+#, fuzzy
+msgid ""
+"<p><b>Proportional (2 dim.)</b>: auto-resizing using two dimensions. The "
+"images' aspect ratio are preserved. You can use this, for example, to adapt "
+"your images' sizes to your screen size."
+msgstr ""
+"<p> <b> ( 2 Byijimye . ) </b> : Ikiyega - ikoresha Kabiri Ingero . . Koresha "
+"iyi , ya:  Urugero: , Kuri Guhuza Ingano Kuri Mugaragaza Ingano: . "
+
+#: resizeimagesdialog.cpp:102
+#, fuzzy
+msgid ""
+"<p><b>Non proportional</b>: non-proportional resizing using two dimensions. The "
+"images' aspect ratios are not preserved."
+msgstr ""
+"<p> <b> Irenganiye: </b> : - Irenganiye: ikoresha Kabiri Ingero . OYA . "
+
+#: resizeimagesdialog.cpp:104
+#, fuzzy
+msgid ""
+"<p><b>Prepare to print</b>: prepare the image for photographic printing. The "
+"user can set the print resolution and the photographic paper size. The target "
+"images will be adapted to the specified dimensions (included the background "
+"size, margin size, and background color)."
+msgstr ""
+"<p> <b> Kuri &Shyira ku rupapuro... </b> : i Ishusho ya:  Icapa . Umukoresha "
+"Gushyiraho i &Shyira ku rupapuro... Imikemurire na i urupapuro Ingano: . "
+"Intego: Ishusho Kuri i Ingero ( i Mbuganyuma Ingano: , Marije Ingano: , na "
+"Mbuganyuma Ibara: ) . "
+
+#: resizeoptionsdialog.cpp:53
+#, fuzzy
+msgid "Image-Resize Options"
+msgstr "Amahitamo y'Ishusho"
+
+#: resizeoptionsdialog.cpp:63 resizeoptionsdialog.cpp:176
+#, fuzzy
+msgid "Resize Options"
+msgstr "Amahitamo y'Igaragaza"
+
+#: resizeoptionsdialog.cpp:67
+#, fuzzy
+msgid "New size (pixels):"
+msgstr "Ingano: ( pigiseli ) : "
+
+#: resizeoptionsdialog.cpp:68
+#, fuzzy
+msgid "<p>The new images' size in pixels."
+msgstr "<p> Gishya Ingano: in pigiseli . "
+
+#: resizeoptionsdialog.cpp:72 resizeoptionsdialog.cpp:125
+#: resizeoptionsdialog.cpp:190 resizeoptionsdialog.cpp:321
+#, fuzzy
+msgid "Image quality (percent):"
+msgstr "Ubwiza ( ku ijana ) : "
+
+#: resizeoptionsdialog.cpp:73 resizeoptionsdialog.cpp:128
+#: resizeoptionsdialog.cpp:191 resizeoptionsdialog.cpp:324
+#, fuzzy
+msgid "<p>Quality for JPEG images."
+msgstr "<p> ya:  Ishusho . "
+
+#: resizeoptionsdialog.cpp:75 resizeoptionsdialog.cpp:142
+#: resizeoptionsdialog.cpp:193 resizeoptionsdialog.cpp:292
+#, fuzzy
+msgid "Filter name:"
+msgstr "Izina ry'akayunguruzo:"
+
+#: resizeoptionsdialog.cpp:78 resizeoptionsdialog.cpp:144
+#: resizeoptionsdialog.cpp:196 resizeoptionsdialog.cpp:294
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Bessel"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:79 resizeoptionsdialog.cpp:145
+#: resizeoptionsdialog.cpp:197 resizeoptionsdialog.cpp:295
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Blackman"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:80 resizeoptionsdialog.cpp:146
+#: resizeoptionsdialog.cpp:198 resizeoptionsdialog.cpp:296
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Box"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:81 resizeoptionsdialog.cpp:147
+#: resizeoptionsdialog.cpp:199 resizeoptionsdialog.cpp:297
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Catrom"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:82 resizeoptionsdialog.cpp:148
+#: resizeoptionsdialog.cpp:200 resizeoptionsdialog.cpp:298
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Cubic"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:83 resizeoptionsdialog.cpp:149
+#: resizeoptionsdialog.cpp:201 resizeoptionsdialog.cpp:299
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Gaussian"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:84 resizeoptionsdialog.cpp:150
+#: resizeoptionsdialog.cpp:202 resizeoptionsdialog.cpp:300
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Hermite"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:85 resizeoptionsdialog.cpp:151
+#: resizeoptionsdialog.cpp:203 resizeoptionsdialog.cpp:301
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Hanning"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:86 resizeoptionsdialog.cpp:152
+#: resizeoptionsdialog.cpp:204 resizeoptionsdialog.cpp:302
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Hamming"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:87 resizeoptionsdialog.cpp:153
+#: resizeoptionsdialog.cpp:205 resizeoptionsdialog.cpp:303
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Lanczos"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:88 resizeoptionsdialog.cpp:154
+#: resizeoptionsdialog.cpp:206 resizeoptionsdialog.cpp:304
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Mitchell"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:89 resizeoptionsdialog.cpp:155
+#: resizeoptionsdialog.cpp:207 resizeoptionsdialog.cpp:305
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Point"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:90 resizeoptionsdialog.cpp:156
+#: resizeoptionsdialog.cpp:208 resizeoptionsdialog.cpp:306
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Quadratic"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:91 resizeoptionsdialog.cpp:157
+#: resizeoptionsdialog.cpp:209 resizeoptionsdialog.cpp:307
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Sinc"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:92 resizeoptionsdialog.cpp:158
+#: resizeoptionsdialog.cpp:210 resizeoptionsdialog.cpp:308
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Triangle"
+msgstr "Izina ry'akayunguruzo"
+
+#: resizeoptionsdialog.cpp:93 resizeoptionsdialog.cpp:159
+#: resizeoptionsdialog.cpp:211 resizeoptionsdialog.cpp:309
+#, fuzzy
+msgid ""
+"<p>Select here the filter name for the resize-image process. This filter will "
+"be used like a kernel convolution process during the increased image size "
+"rendering. The default filter is 'Lanczos'."
+msgstr ""
+"<p> i Akayunguruzo: Izina: ya:  i Ihindurangero %O - Ishusho . Akayunguruzo: "
+"Byakoreshejwe nka A Intima i Ishusho Ingano: Isubizwa . Mburabuzi Akayunguruzo: "
+"ni ' . "
+
+#: resizeoptionsdialog.cpp:101
+#, fuzzy
+msgid ""
+"Note: the images will be resized to\n"
+"this size. The width or the height of the\n"
+"images will be automatically\n"
+"selected in depending of the images orientation.\n"
+"The images' aspect ratios are preserved."
+msgstr ""
+"icyitonderwa : i Ishusho Ingano: . Ubugari: Cyangwa i Ubuhagarike: Bya in Bya i "
+"Ishusho Icyerekezo: . \n"
+". "
+
+#: resizeoptionsdialog.cpp:111
+#, fuzzy
+msgid "Size Settings"
+msgstr "Igenamiterere ry'idosiye"
+
+#: resizeoptionsdialog.cpp:113
+#, fuzzy
+msgid "Width (pixels):"
+msgstr "( pigiseli ) : "
+
+#: resizeoptionsdialog.cpp:116 resizeoptionsdialog.cpp:181
+#, fuzzy
+msgid "<p>The new images' width in pixels."
+msgstr "<p> Gishya Ubugari: in pigiseli . "
+
+#: resizeoptionsdialog.cpp:119
+#, fuzzy
+msgid "Height (pixels):"
+msgstr "( pigiseli ) : "
+
+#: resizeoptionsdialog.cpp:122 resizeoptionsdialog.cpp:186
+#, fuzzy
+msgid "<p>The new images' height in pixels."
+msgstr "<p> Gishya Ubuhagarike: in pigiseli . "
+
+#: resizeoptionsdialog.cpp:133 resizeoptionsdialog.cpp:283
+#, fuzzy
+msgid "Rendering Settings"
+msgstr "Igenamiterere rusange"
+
+#: resizeoptionsdialog.cpp:135 resizeoptionsdialog.cpp:285
+msgid "Background color:"
+msgstr "Ibara ry'imbuganyuma:"
+
+#: resizeoptionsdialog.cpp:138 resizeoptionsdialog.cpp:288
+#, fuzzy
+msgid ""
+"<p>You can select here the background color to be used when adapting the "
+"images' sizes."
+msgstr "<p> Guhitamo i Mbuganyuma Ibara: Kuri Byakoreshejwe Ryari: i Ingano . "
+
+#: resizeoptionsdialog.cpp:165
+#, fuzzy
+msgid "Border size (pixels):"
+msgstr "Ingano: ( pigiseli ) : "
+
+#: resizeoptionsdialog.cpp:168
+#, fuzzy
+msgid "<p>The border size around the images in pixels."
+msgstr "<p> Impera: Ingano: i Ishusho in pigiseli . "
+
+#: resizeoptionsdialog.cpp:180
+#, fuzzy
+msgid "New width (pixels):"
+msgstr "Ubugari: ( pigiseli ) : "
+
+#: resizeoptionsdialog.cpp:185
+#, fuzzy
+msgid "New height (pixels):"
+msgstr "Ubuhagarike: ( pigiseli ) : "
+
+#: resizeoptionsdialog.cpp:222
+#, fuzzy
+msgid "Use custom settings"
+msgstr "Guhanga Igenamiterere "
+
+#: resizeoptionsdialog.cpp:223
+#, fuzzy
+msgid "<p>If this option is enabled, all printing settings can be customized."
+msgstr "<p> iyi Ihitamo ni Bikora , Byose Icapa Igenamiterere Kunozwa . "
+
+#: resizeoptionsdialog.cpp:227
+#, fuzzy
+msgid "Printing Standard Settings"
+msgstr "Standard "
+
+#: resizeoptionsdialog.cpp:229
+#, fuzzy
+msgid "Paper size (cm):"
+msgstr "Ingano: ( cm ) : "
+
+#: resizeoptionsdialog.cpp:242
+#, fuzzy
+msgid "<p>The standard photographic paper sizes in centimeters."
+msgstr "<p> Bisanzwe urupapuro Ingano in Santimetero . "
+
+#: resizeoptionsdialog.cpp:245 resizeoptionsdialog.cpp:275
+#, fuzzy
+msgid "Print resolution (dpi):"
+msgstr "Imikemurire ( dpi ) : "
+
+#: resizeoptionsdialog.cpp:254
+#, fuzzy
+msgid "<p>The standard print resolutions in dots per inch."
+msgstr "<p> Bisanzwe &Shyira ku rupapuro... in Utudomo Inci . "
+
+#: resizeoptionsdialog.cpp:259
+#, fuzzy
+msgid "Printing Custom Settings"
+msgstr "Kunozaidosiyeya "
+
+#: resizeoptionsdialog.cpp:261
+#, fuzzy
+msgid "Paper width (cm):"
+msgstr "Ubugari: ( cm ) : "
+
+#: resizeoptionsdialog.cpp:264
+#, fuzzy
+msgid "<p>The customized width of the photographic paper size in centimeters."
+msgstr "<p> Kunozwa Ubugari: Bya i urupapuro Ingano: in Santimetero . "
+
+#: resizeoptionsdialog.cpp:268
+#, fuzzy
+msgid "Paper height (cm):"
+msgstr "Ubuhagarike: ( cm ) : "
+
+#: resizeoptionsdialog.cpp:271
+#, fuzzy
+msgid "<p>The customized height of the photographic paper size in centimeters."
+msgstr "<p> Kunozwa Ubuhagarike: Bya i urupapuro Ingano: in Santimetero . "
+
+#: resizeoptionsdialog.cpp:278
+#, fuzzy
+msgid "<p>The customized print resolution in dots per inch."
+msgstr "<p> Kunozwa &Shyira ku rupapuro... Imikemurire in Utudomo Inci . "
+
+#: resizeoptionsdialog.cpp:315
+#, fuzzy
+msgid "Margin size (mm):"
+msgstr "Ingano: ( mm ) : "
+
+#: resizeoptionsdialog.cpp:318
+#, fuzzy
+msgid "<p>The margin around the images in millimeters."
+msgstr "<p> Marije i Ishusho in Milimetero . "
+
+#: resizeoptionsdialog.cpp:363
+#, fuzzy
+msgid ""
+"You must enter a custom height greater than the custom width: the photographic "
+"paper must be vertically orientated."
+msgstr ""
+"Injiza A Guhanga Ubuhagarike: Biruta i Guhanga Ubugari: : i urupapuro Mu buryo "
+"buhagaze . "
+
+#, fuzzy
+#~ msgid "Batch Image-Color Enhancement Handbook"
+#~ msgstr "Inozamashusho"
+
+#, fuzzy
+#~ msgid "Batch Image Effects Handbook"
+#~ msgstr "ingaruka z'ishusho"
+
+#, fuzzy
+#~ msgid "Cannot run properly 'convert' program from 'ImageMagick' package"
+#~ msgstr ""
+#~ "Tangira &vendorShortName; ' Porogaramu Kuva: ' Porogaramu ; \n"
+#~ "Kugenzura iyinjizaporogaramu . "
+
+#~ msgid "&New..."
+#~ msgstr "Gishya..."
+
+#, fuzzy
+#~ msgid "<p>With this button, you can create a new folder."
+#~ msgstr "<p> iyi Akabuto , Kurema A Gishya Ububiko... . "
+
+#, fuzzy
+#~ msgid "Format datetime string"
+#~ msgstr "Itariki&Igihe Ikurikiranyanyuguti "
+
+#, fuzzy
+#~ msgid "File List Order"
+#~ msgstr "Idosiye "
+
+#, fuzzy
+#~ msgid "By File Name"
+#~ msgstr "Idosiye "
+
+#, fuzzy
+#~ msgid "By File Size"
+#~ msgstr "Idosiye "
+
+#, fuzzy
+#~ msgid "By File Date"
+#~ msgstr "Idosiye "
+
+#, fuzzy
+#~ msgid "Rename Image File Options"
+#~ msgstr "Idosiye "
+
+#, fuzzy
+#~ msgid "Template to Use for Renaming Images"
+#~ msgstr "Kuri ya:  "
+
+#, fuzzy
+#~ msgid "<p>Enter here the prefix numeric enumerator string."
+#~ msgstr "<p> i Imbanziriza Bikurikije umubare Ikurikiranyanyuguti . "
+
+#, fuzzy
+#~ msgid "Numeric enumerator start value:"
+#~ msgstr "Tangira &vendorShortName; Agaciro: : "
+
+#, fuzzy
+#~ msgid "<p>Enter here the first numeric enumerator value (1 to 100000)."
+#~ msgstr "<p> i Itangira Bikurikije umubare Agaciro: ( 1 Kuri ) . "
+
+#, fuzzy
+#~ msgid "<p>If you enable this option, the original file name will added in the new file name."
+#~ msgstr "<p> Gushoboza iyi Ihitamo , i ~Umwimerere Idosiye Izina: Kyongewe in i Gishya Idosiye Izina: "
+
+#, fuzzy
+#~ msgid "<p>If you enable this option, the last modified image file date will added in the new file name (format: DDMMYYYY)."
+#~ msgstr "<p> Gushoboza iyi Ihitamo , i Iheruka Byahinduwe: Ishusho Idosiye Itariki: Kyongewe in i Gishya Idosiye Izina: ( Imiterere : ) . "
+
+#, fuzzy
+#~ msgid "Add file size"
+#~ msgstr "Idosiye Ingano: "
+
+#, fuzzy
+#~ msgid "<p>If you enable this option, the image file size will added in the new file name."
+#~ msgstr "<p> Gushoboza iyi Ihitamo , i Ishusho Idosiye Ingano: Kyongewe in i Gishya Idosiye Izina: . "
+
+#, fuzzy
+#~ msgid "Sort original list:"
+#~ msgstr "~Umwimerere Urutonde : "
+
+#, fuzzy
+#~ msgid "By Modification Date"
+#~ msgstr "itariki y'ihindura"
+
+#, fuzzy
+#~ msgid "<p>Select here the original file list sorting method."
+#~ msgstr "<p> i ~Umwimerere Idosiye Urutonde Ishungura Uburyo . "
+
+#, fuzzy
+#~ msgid "Reverse order"
+#~ msgstr "Itondekanya "
+
+#, fuzzy
+#~ msgid "<p>If you enable this option, the order of images files in the list will be reversed."
+#~ msgstr "<p> Gushoboza iyi Ihitamo , i Itondekanya Bya Ishusho Idosiye in i Urutonde Bicuritswe . "
+
+#, fuzzy
+#~ msgid "Files' Dates"
+#~ msgstr "Amoko y'idosiye"
+
+#, fuzzy
+#~ msgid "Change date of image files"
+#~ msgstr "Itariki: Bya Ishusho Idosiye "
+
+#, fuzzy
+#~ msgid "<p>If you enable this option, the image files' dates can be changed."
+#~ msgstr "<p> Gushoboza iyi Ihitamo , i Ishusho Amatariki Byahinduwe . "
+
+#, fuzzy
+#~ msgid "<p>You can set here the time stamp of the image files."
+#~ msgstr "<p> Gushyiraho i Igihe Bya i Ishusho Idosiye . "
+
+#, fuzzy
+#~ msgid "Always OverWrite"
+#~ msgstr "Buri gihe bigaragare"

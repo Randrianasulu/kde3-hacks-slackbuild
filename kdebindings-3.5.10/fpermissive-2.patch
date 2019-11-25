@@ -1,0 +1,13 @@
+--- kdebindings-3.5.10/python/pykde/configure.py.orig	2015-09-25 07:54:24.448852640 +0300
++++ kdebindings-3.5.10/python/pykde/configure.py	2015-09-25 07:58:03.248852640 +0300
+@@ -77,6 +77,10 @@
+ opt_libdir        = "lib"
+ opt_dist_name     = ""
+ 
++extra_cflags  = "-fpermissive"
++extra_cxxflags  = "-fpermissive"
++
++
+ pykde_modules     = ["dcop", "kdecore", "kdefx", "kdeui", "kio", "kresources", "kabc", "kutils", "kfile", "kparts",\
+                      "khtml", "kspell", "kdeprint", "kmdi"] #, "kspell2"]
+ 

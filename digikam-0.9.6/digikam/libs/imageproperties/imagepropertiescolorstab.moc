@@ -1,0 +1,170 @@
+/****************************************************************************
+** Digikam::ImagePropertiesColorsTab meta object code from reading C++ file 'imagepropertiescolorstab.h'
+**
+** Created: Wed Jun 14 03:24:28 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imagepropertiescolorstab.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ImagePropertiesColorsTab::className() const
+{
+    return "Digikam::ImagePropertiesColorsTab";
+}
+
+QMetaObject *Digikam::ImagePropertiesColorsTab::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ImagePropertiesColorsTab( "Digikam::ImagePropertiesColorsTab", &Digikam::ImagePropertiesColorsTab::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ImagePropertiesColorsTab::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesColorsTab", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ImagePropertiesColorsTab::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesColorsTab", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ImagePropertiesColorsTab::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = NavigateBarTab::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "sixteenBit", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotRefreshOptions", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"slotHistogramComputationFailed", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ "channel", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotChannelChanged", 1, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ "scale", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotScaleChanged", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ "color", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotColorsChanged", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "rendering", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotRenderingChanged", 1, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotMinValueChanged", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"slotMaxValueChanged", 1, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ "min", &static_QUType_int, 0, QUParameter::In },
+	{ "max", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"slotUpdateInterval", 2, param_slot_8 };
+    static const QUParameter param_slot_9[] = {
+	{ "range", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"slotUpdateIntervRange", 1, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ "loadingDescription", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "img", &static_QUType_ptr, "DImg", QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotLoadImageFromUrlComplete", 2, param_slot_10 };
+    static const QUParameter param_slot_11[] = {
+	{ "oldLoadingDescription", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "newLoadingDescription", &static_QUType_ptr, "LoadingDescription", QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotMoreCompleteLoadingAvailable", 2, param_slot_11 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotRefreshOptions(bool)", &slot_0, QMetaData::Private },
+	{ "slotHistogramComputationFailed()", &slot_1, QMetaData::Private },
+	{ "slotChannelChanged(int)", &slot_2, QMetaData::Private },
+	{ "slotScaleChanged(int)", &slot_3, QMetaData::Private },
+	{ "slotColorsChanged(int)", &slot_4, QMetaData::Private },
+	{ "slotRenderingChanged(int)", &slot_5, QMetaData::Private },
+	{ "slotMinValueChanged(int)", &slot_6, QMetaData::Private },
+	{ "slotMaxValueChanged(int)", &slot_7, QMetaData::Private },
+	{ "slotUpdateInterval(int,int)", &slot_8, QMetaData::Private },
+	{ "slotUpdateIntervRange(int)", &slot_9, QMetaData::Private },
+	{ "slotLoadImageFromUrlComplete(const LoadingDescription&,const DImg&)", &slot_10, QMetaData::Private },
+	{ "slotMoreCompleteLoadingAvailable(const LoadingDescription&,const LoadingDescription&)", &slot_11, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ImagePropertiesColorsTab", parentObject,
+	slot_tbl, 12,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ImagePropertiesColorsTab.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ImagePropertiesColorsTab::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ImagePropertiesColorsTab" ) )
+	return this;
+    return NavigateBarTab::qt_cast( clname );
+}
+
+bool Digikam::ImagePropertiesColorsTab::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotRefreshOptions((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: slotHistogramComputationFailed(); break;
+    case 2: slotChannelChanged((int)static_QUType_int.get(_o+1)); break;
+    case 3: slotScaleChanged((int)static_QUType_int.get(_o+1)); break;
+    case 4: slotColorsChanged((int)static_QUType_int.get(_o+1)); break;
+    case 5: slotRenderingChanged((int)static_QUType_int.get(_o+1)); break;
+    case 6: slotMinValueChanged((int)static_QUType_int.get(_o+1)); break;
+    case 7: slotMaxValueChanged((int)static_QUType_int.get(_o+1)); break;
+    case 8: slotUpdateInterval((int)static_QUType_int.get(_o+1),(int)static_QUType_int.get(_o+2)); break;
+    case 9: slotUpdateIntervRange((int)static_QUType_int.get(_o+1)); break;
+    case 10: slotLoadImageFromUrlComplete((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(const DImg&)*((const DImg*)static_QUType_ptr.get(_o+2))); break;
+    case 11: slotMoreCompleteLoadingAvailable((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+2))); break;
+    default:
+	return NavigateBarTab::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::ImagePropertiesColorsTab::qt_emit( int _id, QUObject* _o )
+{
+    return NavigateBarTab::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ImagePropertiesColorsTab::qt_property( int id, int f, QVariant* v)
+{
+    return NavigateBarTab::qt_property( id, f, v);
+}
+
+bool Digikam::ImagePropertiesColorsTab::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

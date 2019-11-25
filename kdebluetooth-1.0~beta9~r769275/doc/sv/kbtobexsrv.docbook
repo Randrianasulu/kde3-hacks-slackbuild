@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>OBEX-utsändningsserver: Ta emot filer</title>
+<para
+>De flesta mobiltelefoner eller handdatorer med Blåtand låter dig skicka filer från enheten till datorn. Även om det kan vara bekvämare att använda <link linkend="components.kio_obex"
+>OBEX FTP I/O-slav</link
+> för att hämta filer från enheten till datorn, stöder inte alla enheter det. Å andra sidan stöds OBEX-utsändningsserver av de flesta Blåtandsenheter. </para>
+
+<sect2>
+<title
+>Använda OBEX-utsändningsservern</title>
+<para
+>OBEX-utsändningsserver hanteras av Kbluetoothd och startas automatiskt om den är aktiverad och någon försöker skicka några filer till dig. Se dokumentationen av Kbluetoothd om hur man <link linkend="components.kbluetoothd.serviceconfig"
+>aktiverar eller inaktiverar tjänster</link
+> (OBEX-utsändningsserver listas som <command
+>kbtobexsrv</command
+>). </para>
+<para
+>När du skickar en fil från mobilen till datorn, blir ikonen för Kbluetoothd i systembrickan blå och visar en liten dialog. Normalt (beroende på <link linkend="components.kbluetoothd.confirmation"
+>inställningen för inkommande anslutningar</link
+>) måste du först acceptera anslutningen, och därefter ska huvudfönstret för OBEX-utsändning dyka upp och börja ta emot filerna. </para>
+<para
+>Inkommande filer sparas i <filename
+>/tmp</filename
+> och tas bort efter OBEX-utsändningsservern stängs. Det finns två möjligheter för att spara filerna: </para>
+<itemizedlist>
+<listitem>
+<para
+>Klicka på <guibutton
+>Ok</guibutton
+> för att spara alla mottagna filer på en förutbestämd plats.</para>
+</listitem>
+<listitem>
+<para
+>Dra en eller flera filer till en annan plats. Det är särskilt användbart om du vill skicka filer med e-post, eftersom du kan dra filerna direkt till Kmail utan att först spara dem på en tillfällig plats. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

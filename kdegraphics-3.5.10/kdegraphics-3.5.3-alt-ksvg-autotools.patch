@@ -1,0 +1,364 @@
+diff -urN kdegraphics-3.5.3.orig/acinclude.m4 kdegraphics-3.5.3/acinclude.m4
+--- kdegraphics-3.5.3.orig/acinclude.m4	2006-05-24 03:35:37 +0700
++++ kdegraphics-3.5.3/acinclude.m4	2006-06-12 08:50:51 +0700
+@@ -11919,4 +11919,76 @@
+   fi
+ ])
+ 
++dnl An internal macro to compare program versions. 
++dnl Fixme: get rid of awk. Really?
++AC_DEFUN([_PKG_COMPARE_VERSIONS], [
++  AC_PROG_AWK
++  if test -n "$AWK"; then
++    AC_MSG_CHECKING([for version great or equal than $1])
++    if test `echo $1 | $AWK 'BEGIN { FS = "."; } { printf "%d", ([$]1 * 1000 + [$]2) * 1000 + [$]3;}'` -le `echo $2 | $AWK 'BEGIN { FS = "."; } { printf "%d", ([$]1 * 1000 + [$]2) * 1000 + [$]3;}'`; then
++      AC_MSG_RESULT([yes])
++    else
++      pkg_failed=yes
++      AC_MSG_RESULT([no])
++    fi
++  else
++    pkg_failed=yes
++  fi
++  ])
++ 
++dnl PKG_CHECK_MODULE_LEGACY(VARIABLE-PREFIX, MODULE, [MIN-VERSION],
++dnl [LEGACY_CONFIG], [PATH], [ACTION-IF-FOUND], [ACTION-IF-NOT-FOUND])
++dnl
++dnl This is a variant of PKG_CHECK_MODULES which differs in three aspects:
++dnl 1. it takes a single module to check per invocation
++dnl 2. if the corresponding pkg-config module was not found, the macro
++dnl    tries to locate it's legacy pre-pkgconfig configuration script
++dnl    (usually <MODULE>-config, maybe overridden in LEGACY_CONFIG)
++dnl    and receive module configuration data from that script.
++dnl 3. it defines <MODULE>_VERSION variable if the module is found
++dnl MIN-VERSION, LEGACY_CONFIG and PATH are optional.
++dnl Internally PKG_CHECK_MODULES is used to check for the pkg-config
++dnl module, AC_PATH_PROG is used to detect the location of the legacy
++dnl config script
++
++AC_DEFUN([PKG_CHECK_MODULE_LEGACY], [
++  PKG_CHECK_MODULES([$1], [m4_ifval([$3], [$2 >= $3], [$2])], [
++    $1[]_VERSION=`$PKG_CONFIG --modversion $2`
++    m4_ifval([$6], [$6], [:])
++    ], [
++    AC_MSG_RESULT([no])
++    AC_PATH_PROG([$1_CONFIG], [m4_ifval([$4], [$4], [$2[]-config])],
++                 [], [$5])
++    if test -n "$[$1_CONFIG]"; then
++      pkg_failed=no
++      # first receive the version
++      $1[]_VERSION=`$[$1_CONFIG] --version` || pkg_failed=yes
++      m4_ifval([$3], [
++        if test $pkg_failed = no; then
++	  _PKG_COMPARE_VERSIONS([$3], [$]$1[]_VERSION)
++        fi
++        ])
++      test $pkg_failed = no && $1[]_LIBS=`$[$1_CONFIG] --libs` || pkg_failed=yes
++      test $pkg_failed = no && $1[]_CFLAGS=`$[$1_CONFIG] --cflags` || pkg_failed=yes
++    else
++      pkg_failed=yes
++    fi
++    if test $pkg_failed = no; then
++      m4_ifval([$6], [$6], [:])
++      m4_ifvaln([$7],[else
++        $7])dnl
++    fi
++    ])
++  ])
+ 
++AC_DEFUN([KDE_FORM_PACKAGE_RPATH], [
++  $1[]_RPATH=
++  for _kde_args in $1[]_LIBS; do
++    case [$]_kde_args in
++      -L*)
++        $1[]_RPATH="[$]$1[]_RPATH [$]_kde_args"
++	;;
++    esac
++  done
++  $1[]_RPATH=`echo [$]$1[]_RPATH | sed -e "s/-L/-R/g"`
++  ])
+diff -urN kdegraphics-3.5.3.orig/admin/acinclude.m4.in kdegraphics-3.5.3/admin/acinclude.m4.in
+--- kdegraphics-3.5.3.orig/admin/acinclude.m4.in	2006-05-23 19:55:45 +0700
++++ kdegraphics-3.5.3/admin/acinclude.m4.in	2006-06-12 08:50:47 +0700
+@@ -5972,3 +5972,78 @@
+     KDE_USE_PIE="-pie"
+   fi
+ ])
++
++dnl An internal macro to compare program versions. 
++dnl Fixme: get rid of awk. Really?
++AC_DEFUN([_PKG_COMPARE_VERSIONS], [
++  AC_PROG_AWK
++  if test -n "$AWK"; then
++    AC_MSG_CHECKING([for version great or equal than $1])
++    if test `echo $1 | $AWK 'BEGIN { FS = "."; } { printf "%d", ([$]1 * 1000 + [$]2) * 1000 + [$]3;}'` -le `echo $2 | $AWK 'BEGIN { FS = "."; } { printf "%d", ([$]1 * 1000 + [$]2) * 1000 + [$]3;}'`; then
++      AC_MSG_RESULT([yes])
++    else
++      pkg_failed=yes
++      AC_MSG_RESULT([no])
++    fi
++  else
++    pkg_failed=yes
++  fi
++  ])
++ 
++dnl PKG_CHECK_MODULE_LEGACY(VARIABLE-PREFIX, MODULE, [MIN-VERSION],
++dnl [LEGACY_CONFIG], [PATH], [ACTION-IF-FOUND], [ACTION-IF-NOT-FOUND])
++dnl
++dnl This is a variant of PKG_CHECK_MODULES which differs in three aspects:
++dnl 1. it takes a single module to check per invocation
++dnl 2. if the corresponding pkg-config module was not found, the macro
++dnl    tries to locate it's legacy pre-pkgconfig configuration script
++dnl    (usually <MODULE>-config, maybe overridden in LEGACY_CONFIG)
++dnl    and receive module configuration data from that script.
++dnl 3. it defines <MODULE>_VERSION variable if the module is found
++dnl MIN-VERSION, LEGACY_CONFIG and PATH are optional.
++dnl Internally PKG_CHECK_MODULES is used to check for the pkg-config
++dnl module, AC_PATH_PROG is used to detect the location of the legacy
++dnl config script
++
++AC_DEFUN([PKG_CHECK_MODULE_LEGACY], [
++  PKG_CHECK_MODULES([$1], [m4_ifval([$3], [$2 >= $3], [$2])], [
++    $1[]_VERSION=`$PKG_CONFIG --modversion $2`
++    m4_ifval([$6], [$6], [:])
++    ], [
++    AC_MSG_RESULT([no])
++    AC_PATH_PROG([$1_CONFIG], [m4_ifval([$4], [$4], [$2[]-config])],
++                 [], [$5])
++    if test -n "$[$1_CONFIG]"; then
++      pkg_failed=no
++      # first receive the version
++      $1[]_VERSION=`$[$1_CONFIG] --version` || pkg_failed=yes
++      m4_ifval([$3], [
++        if test $pkg_failed = no; then
++	  _PKG_COMPARE_VERSIONS([$3], [$]$1[]_VERSION)
++        fi
++        ])
++      test $pkg_failed = no && $1[]_LIBS=`$[$1_CONFIG] --libs` || pkg_failed=yes
++      test $pkg_failed = no && $1[]_CFLAGS=`$[$1_CONFIG] --cflags` || pkg_failed=yes
++    else
++      pkg_failed=yes
++    fi
++    if test $pkg_failed = no; then
++      m4_ifval([$6], [$6], [:])
++      m4_ifvaln([$7],[else
++        $7])dnl
++    fi
++    ])
++  ])
++
++AC_DEFUN([KDE_FORM_PACKAGE_RPATH], [
++  $1[]_RPATH=
++  for _kde_args in $1[]_LIBS; do
++    case [$]_kde_args in
++      -L*)
++        $1[]_RPATH="[$]$1[]_RPATH [$]_kde_args"
++	;;
++    esac
++  done
++  $1[]_RPATH=`echo [$]$1[]_RPATH | sed -e "s/-L/-R/g"`
++  ])
++
+diff -urN kdegraphics-3.5.3.orig/ksvg/configure.in.in kdegraphics-3.5.3/ksvg/configure.in.in
+--- kdegraphics-3.5.3.orig/ksvg/configure.in.in	2006-05-23 01:05:39 +0700
++++ kdegraphics-3.5.3/ksvg/configure.in.in	2006-06-12 09:22:25 +0700
+@@ -1,116 +1,50 @@
+ # Check for libart
+-KDE_FIND_PATH(libart2-config, LIBART_CONFIG, [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin],)
+-
+-if test -n "$LIBART_CONFIG"; then
+-  vers=`$LIBART_CONFIG --version 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}'`
+-  if test -n "$vers" && test "$vers" -ge 2003008
+-  then
+-     LIBART_LIBS="`$LIBART_CONFIG --libs`"
+-     LIBART_RPATH=
+-     for args in $LIBART_LIBS; do
+-	  case $args in
+-	    -L*)
+-  	       LIBART_RPATH="$LIBART_RPATH $args"
+- 	       ;;
+-          esac
+-     done
+-     LIBART_RPATH=`echo $LIBART_RPATH | sed -e "s/-L/-R/g"`
+-     LIBART_CFLAGS="`$LIBART_CONFIG --cflags`"
+-
+-     AC_DEFINE_UNQUOTED(HAVE_LIBART, 1, [Defines if your system has the libart library])
+-  fi
+-fi
+-
++PKG_CHECK_MODULE_LEGACY(LIBART, libart2, [2.3.8], [], 
++                        [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin],[
++  KDE_FORM_PACKAGE_RPATH(LIBART)
++  AC_DEFINE_UNQUOTED(HAVE_LIBART, 1, [Defines if your system has the libart library])
++  ], [
++	AC_MSG_RESULT([Do not compile ksvg due to missing or inappropriate libart libs])
++	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
++  ])
++  
+ AC_SUBST(LIBART_LIBS)
+ AC_SUBST(LIBART_CFLAGS)
+ AC_SUBST(LIBART_RPATH)
+ 
+-if test -z "$LIBART_LIBS"; then
+-	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
+-fi
+-
+ # Check for fontconfig
+-KDE_FIND_PATH(fontconfig-config, FONTCONFIG_CONFIG, [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin], [
+-  KDE_FIND_PATH( pkg-config, PKG_CONFIG, [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin /usr/bin],)
+-  if test -n "$PKG_CONFIG"; then
+-	if ! $PKG_CONFIG --exists fontconfig; then
+-		unset PKG_CONFIG
+-	fi
+-  fi
+-])
+-if test -n "$FONTCONFIG_CONFIG" -o -n "$PKG_CONFIG"; then
+-	if test -n "$FONTCONFIG_CONFIG"; then
+-		fontconfigvers="`$FONTCONFIG_CONFIG --version 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}'`"
+-		fontconfiglibs="`$FONTCONFIG_CONFIG --libs`"
+-		fontconfigcflags="`$FONTCONFIG_CONFIG --cflags`"
+-	else
+-		fontconfigvers=`$PKG_CONFIG --modversion fontconfig 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3; }'`
+-		fontconfiglibs=`$PKG_CONFIG --libs fontconfig`
+-		fontconfigcflags="`$PKG_CONFIG --cflags fontconfig`"
+-	fi
+-	if test -n "$vers" && test "$vers" -ge 2002000
+-	then
+-		FONTCONFIG_LIBS=$fontconfiglibs
+-		FONTCONFIG_RPATH=
+-			for args in $FONTCONFIG_LIBS; do
+-				case $args in
+-					-L*)
+-						FONTCONFIG_RPATH="$FONTCONFIG_RPATH $args"
+-						;;
+-				esac
+-			done
+-		FONTCONFIG_RPATH=`echo $FONTCONFIG_RPATH | sed -e "s/-L/-R/g"`
+-		FONTCONFIG_CFLAGS=$fontconfigcflags
+-
+-		AC_DEFINE_UNQUOTED(HAVE_FONTCONFIG, 1, [Defines if your system has the fontconfig library])
+-	fi
+-fi
+-
++PKG_CHECK_MODULE_LEGACY(FONTCONFIG, fontconfig, [2.2], [],
++                        [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin], [
++  KDE_FORM_PACKAGE_RPATH(FONTCONFIG)
++  AC_DEFINE_UNQUOTED(HAVE_FONTCONFIG, 1, [Defines if your system has the fontconfig library])
++  ], [
++	AC_MSG_RESULT([Do not compile ksvg due to missing or inappropriate fontconfig libs])
++	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
++  ])
++  
+ AC_SUBST(FONTCONFIG_LIBS)
+ AC_SUBST(FONTCONFIG_CFLAGS)
+ AC_SUBST(FONTCONFIG_RPATH)
+ 
+-if test -z "$FONTCONFIG_LIBS"; then
+-	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
+-fi
+-
+-# Check for freetype2
+-KDE_FIND_PATH(freetype-config, FREETYPE_CONFIG, [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin],)
+-
+-if test -n "$FREETYPE_CONFIG"; then
+-  vers=`$FREETYPE_CONFIG --version 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}'`
+-  if test -n "$vers" && test "$vers" -ge 8000002
++PKG_CHECK_MODULE_LEGACY(FREETYPE, freetype, [8.0.2], [], 
++                        [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin], [
++  KDE_FORM_PACKAGE_RPATH(FREETYPE)
++  AC_DEFINE_UNQUOTED(HAVE_FREETYPE, 1, [Defines if your system has the freetype library])
++  # FIXME/WARNING: FREETYPE_CONFIG is set as side-effect of PKG_CHECK_MODULE_LEGACY
++  ftvers=`$FREETYPE_CONFIG --ftversion 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}'`
++  if test -n "$ftvers" && test "$ftvers" -ge 2002000
+   then
+-     FREETYPE_LIBS="`$FREETYPE_CONFIG --libs`"
+-     FREETYPE_RPATH=
+-     for args in $FREETYPE_LIBS; do
+-	  case $args in
+-	    -L*)
+-  	       FREETYPE_RPATH="$FREETYPE_RPATH $args"
+- 	       ;;
+-          esac
+-     done
+-     FREETYPE_RPATH=`echo $FREETYPE_RPATH | sed -e "s/-L/-R/g"`
+-     FREETYPE_CFLAGS="`$FREETYPE_CONFIG --cflags`"
+-
+-     AC_DEFINE_UNQUOTED(HAVE_FREETYPE, 1, [Defines if your system has the freetype library])
+-
+-     ftvers=`$FREETYPE_CONFIG --ftversion 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}'`
+-     if test -n "$ftvers" && test "$ftvers" -ge 2002000
+-     then
+-        AC_DEFINE_UNQUOTED(HAVE_FREETYPE_2_2_x, 1, [Defines if your system has the 2.2.x freetype library])
+-     fi
++     AC_DEFINE_UNQUOTED(HAVE_FREETYPE_2_2_x, 1, [Defines if your system has the 2.2.x freetype library])
+   fi
+-fi
++  ], [
++	AC_MSG_RESULT([Do not compile ksvg due to missing or inappropriate freetype libs])
++	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
++  ])
+ 
+ AC_SUBST(FREETYPE_LIBS)
+ AC_SUBST(FREETYPE_CFLAGS)
+ AC_SUBST(FREETYPE_RPATH)
+ 
+-if test -z "$FREETYPE_LIBS"; then
+-	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
+-fi
+-
+ # Check for lcms
+ have_lcms_header='no'
+ KDE_CHECK_HEADER(lcms/lcms.h,have_lcms_header='yes',,)
+@@ -161,42 +95,26 @@
+ fi
+ 
+ if test -z "$LCMS_LIBS"; then
++	AC_MSG_RESULT([Do not compile ksvg due to missing or inappropriate liblcms libs])
+ 	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
+ fi
+ 
+ AC_SUBST(LCMS_LIBS)
+ 
+ # Check for fribidi
+-KDE_FIND_PATH(fribidi-config, FRIBIDI_CONFIG, [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin],)
+-
+-if test -n "$FRIBIDI_CONFIG"; then
+-  vers=`$FRIBIDI_CONFIG --version 2>/dev/null | awk 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}'`
+-  if test -n "$vers" && test "$vers" -ge 10004
+-  then
+-     FRIBIDI_LIBS="`$FRIBIDI_CONFIG --libs`"
+-     FRIBIDI_RPATH=
+-     for args in $FIBIDI_LIBS; do
+-	  case $args in
+-	    -L*)
+-  	       FRIBIDI_RPATH="$FRIBIDI_CONFIG $args"
+- 	       ;;
+-          esac
+-     done
+-     FRIBIDI_RPATH=`echo $FRIBIDI_RPATH | sed -e "s/-L/-R/g"`
+-     FRIBIDI_CFLAGS="`$FRIBIDI_CONFIG --cflags`"
+-
+-     AC_DEFINE_UNQUOTED(HAVE_FRIBIDI, 1, [Defines if your system has the fribidi library])
+-  fi
+-fi
++PKG_CHECK_MODULE_LEGACY(FRIBIDI, fribidi, [0.10.4], [], 
++                        [${prefix}/bin ${exec_prefix}/bin /usr/local/bin /opt/local/bin],[
++  KDE_FORM_PACKAGE_RPATH(FRIBIDI)
++  AC_DEFINE_UNQUOTED(HAVE_FRIBIDI, 1, [Defines if your system has the fribidi library])
++  ], [
++	AC_MSG_RESULT([Do not compile ksvg due to missing or inappropriate fribidi libs])
++	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
++  ])
+ 
+ AC_SUBST(FRIBIDI_LIBS)
+ AC_SUBST(FRIBIDI_CFLAGS)
+ AC_SUBST(FRIBIDI_RPATH)
+ 
+-if test -z "$FRIBIDI_LIBS"; then
+-	DO_NOT_COMPILE="$DO_NOT_COMPILE ksvg"
+-fi
+-
+ AC_LANG_SAVE
+ AC_LANG_CPLUSPLUS
+ AC_CHECK_HEADERS(sstream)

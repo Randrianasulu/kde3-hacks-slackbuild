@@ -1,0 +1,86 @@
+<sect1 id="components.handsfree">
+<title
+>Kbthandsfree: Ring upp och tala med användning av datorn</title>
+<para
+>Handsfree-klienten är en implementering av Blåtandsprofilen för handsfree. Protokollet liknar hörlursprofilen, men tillhandahåller mer funktioner än den äldre hörlursprofilen. Ursprungligen konstruerades handsfree-profilen för att använda med handsfree-enheter i bil, men fler och fler vanliga hörlurar stöder handsfree-profilen idag. </para>
+<para
+>Du kan använda din dator som en handsfree-enhet med Kbthandsfree. Du kan slå nummer (till och med från <link linkend="handsfree.kaddressbook"
+>adressboken</link
+>). </para>
+
+<sect2>
+<title
+>Krav</title>
+<sect3>
+<title
+>SCO-stöd i kärnan</title>
+<para
+>För röstöverföring via Blåtand, måste handsfree-profilen skapa en SCO-anslutning. Det är en särskild sorts anslutningstyp i Blåtand som är optimerad för röstdata. Tyvärr var stöd för SCO felaktigt i äldre 2.4-versioner av kärnan. Det kan hjälpa att införa programfixarna som tillhandahålls av Marcel Holtmann på <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+> för kärnor tidigare än 2.4.24. Vad som är ännu tråkigare är att SCO-stöd fortfarande verkar vara felaktigt i Linux 2.6-serie, och det finns för närvarande ingen programfix för problemet. Det enda sättet att använda Kbthandsfree som en riktig handsfree är att använda en aktuell 2.4-kärna. Utan SCO-stöd kan du bara använda Kbthandsfree för att slå nummer eller liknande. </para>
+</sect3>
+
+<sect3>
+<title
+>SCO-stöd i enheten</title>
+<para
+>Alla Blåtandsenheter stöder inte SCO på ett riktigt sätt. Äldre Mitsumi-enheter verkar till exempel orsaka problem, även om enheten påstås stödja SCO. Jag känner inte till något sätt att ta reda på om det fungerar utom att försöka. Nyare enheter baserade på den (mycket vanliga) CSR-kretsuppsättningen fungerar troligen. </para>
+</sect3>
+
+<sect3>
+<title
+>Röstläge</title>
+<para
+>Blåtandsenheten måste vara inställd med riktigt röstläge för att röstöverföring ska fungera. För närvarande stöds bara läget 0x0060 av Kbthandsfree. Det är normalvärdet i nuvarande version av BlueZ, och du kan ändra det med kommandot <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Enhetsklass</title>
+<para
+>Om du vill upprätta en förbindelse till Kbthandsfree med din telefon istället för att anropa Kbthandsfree på datorn, måste du försäkra dig om att datorn känns igen som en handsfree-enhet. När du har aktiverat handsfree i Kdebluetooths inställningsflik för lokala tjänster, ställer ramverket automatiskt in en riktig SDP-post som talar om för telefonen att datorn erbjuder handsfree-tjänsten. </para>
+<para
+>Vissa telefoner, som T68i, beror på en riktigt inställd enhetsklass (en inställning på lägre nivå, som kontrolleras innan SDP-posten) som identifierar enheten som en handsfree istället för en dator. Du kan åstadkomma detta genom att ändra klassraden 0xXXXXXX i hcid.conf till klassen 0x700408 (ATT GÖRA: fungerar det här tillsammans med flaggorna som behövs för OBEX ... ?) eller med kommandot <command
+>khciconfig</command
+>. Eftersom en blåtandsenhet bara kan ha en enhetsklass åt gången, kan din dator visas som en ljud- eller handsfree-enhet när du söker efter den med andra Blåtandsenheter. Vi känner dock inte till några allvarliga sidoeffekter som orsakas av det. </para>
+<para
+>Oftast är det enklare att ansluta från datorn till handsfree-enheten än tvärtom, men inställningen av enhetsklass behövs också om du vill att din telefon ska ansluta automatiskt till datorn vid ett inkommande samtal. Alla telefoner kan inte göra det. De flesta Nokia-telefoner kan det till exempel inte, medan S/E T68i kan det. Observera att handsfree-enheten måste vara den första i listan med enhetspar för att T68i ska ansluta till den automatiskt. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Tips och trick</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Från KDE 3.2 kan man anpassa adressboken för att använda ett externt program för att ringa nummer. För att använda Kbthandsfree för det, kör <command
+>kaddressbook</command
+>, gå sedan till <command
+>Inställningar</command
+> <command
+>Anpassa Kadressbok...</command
+>, <command
+>Adressbok</command
+> under fliken <command
+>Allmänt</command
+>, och använd <command
+>kbthandsfree --phonenumber %N</command
+> som skriptinkopplingen för telefon. För ytterligare kommandoradsväljare använd <command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>Du kan få en bättre överblick över inspelade samtal i Konqueror om du väljer visningsläget "Info-listvy". Då visas taggarna i Ogg/Vorbis-filer, så att du enkelt kan se vem som ringde och hur länge ni pratade. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

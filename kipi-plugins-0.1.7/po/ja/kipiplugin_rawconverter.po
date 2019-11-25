@@ -1,0 +1,249 @@
+# translation of kipiplugin_rawconverter.pot to japanese
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-10-04 20:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko BANDO"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "RAW 画像を識別できません"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"メーカー: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"モデル: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"作成日: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"絞り: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"焦点距離: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"露出: 1/%1 秒\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "感度: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "RAW 画像一括コンバータ"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "変換(&V)"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "中止(&A)"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "サムネイル"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "RAW ファイル"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "変換後のファイル"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "カメラ"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+msgid "Save settings"
+msgstr "保存の設定"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "RAW 画像コンバータ"
+
+#: batchdialog.cpp:139
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "RAW 画像を一括変換する Kipi プラグイン"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "オリジナルの作者"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "メンテナ"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>現在の設定で RAW 画像の変換を開始します。"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>現在の RAW ファイル変換を中止します。"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>RAW コンバータを終了します。"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "リストに処理する RAW ファイルがありません。"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "'%1' から変換した RAW 画像に名前を付けて保存"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "画像 '%1' の保存に失敗"
+
+#: plugin_rawconverter.cpp:84
+msgid "Raw Image Converter..."
+msgstr "RAW 画像コンバータ..."
+
+#: plugin_rawconverter.cpp:92
+msgid "Batch Raw Converter..."
+msgstr "RAW 画像一括コンバータ..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" は RAW ファイルではありません。"
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "変換後の画像を読み込めません。"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "出力ファイルの形式:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>出力ファイルに使用する形式を選択します:"
+"<p><b>JPEG</b>: 処理した画像を JPEG 形式に出力します。この形式を使うとファイルサイズが小さくなります。RAW 変換には最小の JPEG "
+"圧縮レベルを使用します。"
+"<p><b>注意!!! JPEG はその破壊的な圧縮アルゴリズムのために画質が劣化します (非可逆圧縮)。</b>"
+"<p><b>TIFF</b>: 処理した画像を TIFF 形式に出力します。劣化はしませんが、ファイルサイズは大きくなります。変換には Adobe "
+"Deflate 圧縮を使用します。"
+"<p><b>PPM</b>: 処理した画像を PPM 形式に出力します。劣化はしませんが、ファイルサイズは最も大きくなります。"
+"<p><b>PNG</b>: 処理した画像を PNG 形式に出力します。劣化はしませんが、ファイルサイズは大きくなります。変換には最大の PNG "
+"圧縮を使用します。"
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "同名のファイルが存在する場合:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "自動的に上書き"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "ファイルの名前変更ダイアログを開く"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "RAW 画像コンバータ"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "プレビュー(&P)"
+
+#: singledialog.cpp:119
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "RAW 画像を変換する Kipi プラグイン"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr "<p>現在の設定でプレビューを生成します。速く結果を出すためにシンプルな双線型補間を使用します。"
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr "<p>現在の設定で RAW 画像を変換します。高品質の適応アルゴリズムを使用します。"
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>現在の RAW ファイル変換を中止します。"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "プレビューの生成に失敗しました"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "RAW 画像の変換に失敗しました"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "プレビューを生成中..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "RAW 画像を変換中..."

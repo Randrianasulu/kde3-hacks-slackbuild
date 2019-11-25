@@ -1,0 +1,156 @@
+<chapter id="acquireimages">
+<chapterinfo>
+
+<title
+>Bilder einlesen</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>    
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul "Bilder einlesen" stellt Werkzeuge zur Verfügung, um neue Bilder einzulesen und diese abzuspeichern. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Dieses Modul kann dazu benutzt werden, um neue Bilder einzulesen von externen Quellen einzulesen und abzuspeichern. Zurzeit können zwei Quellen genutzt werden: </para>
+
+<itemizedlist>
+
+<listitem>
+    <para
+><guilabel
+>Bilder scannen</guilabel
+>: benutzt die Kooka Schnittstelle zum Einlesen von Bildern von einem Scanner der durch das Sane Projekt unterstützt oder einer anderen Quelle wie z.B. Video Streams. Damit dies funktioniert müssen Sie Kooka und Sane installiert haben. </para>
+</listitem>
+
+<listitem>
+    <para
+><guilabel
+>Bildschirmfoto</guilabel
+>: erstellt Bilder von Ihrem Bildschirm. </para>
+</listitem>
+
+</itemizedlist>
+
+<sect1 id="using-plugin-acquirescan">
+<title
+>Dialog "Bild scannen"</title>
+
+<para
+>Wenn Sie das den Menüeintrag <guilabel
+>Bilder scannen</guilabel
+>  öffnen erscheint ein Dialog, der Sie zwischen allen verfügbaren Quellen auf Ihrem Rechner auswählen lässt. Wählen Sie hier die Quelle von der Sie das Bild holen wollen. Sie können auch die Standardquelle für das nächste mal setzen. </para>
+
+<para
+>Danach erscheint das Kooka Fenster indem Sie die vorgegebenen Standardwerte ducrhe eigene ersetzen könne, um Ihr Bild entsprechend auszuwählen. Sehen Sie sich die Vorschau an und passen Sie den Bereich Ihren Bedürfnissen an, bevor Sie mit dem Knopf "Scannen" das Bild einlesen. Die geschätzte Dateigröße wird Ihnen in der rechten, unteren Ecke angezeigt. Im <ulink url="help:/kooka/index.html"
+>Kooka Handbuch</ulink
+> finden Sie weitere Informationen. </para>
+
+<note
+><para
+>Achten Sie darauf, dass das Fenster komplett angezeigt wird, da einige Einstellungen sonst evtl. nicht angezeigt werden. </para
+></note>
+
+<para
+>Nachdem Sie den den Knopf "Scannen" gedrückt haben müssen Sie warten bis der Scan abgeschlossen ist und das Fenster zum Festlegen der <guilabel
+>Optionen des Zielbildes</guilabel
+> erscheint. Hier können Sie die Kompression und den Typ der Bilddatei angeben. Denken Sie bitte dabei daran, dass der Typ BMP nicht komprimiert und daher sehr große Dateien erzeugt. Sie müssen außerdem den Ordner auswählen oder erstellen indem das Bild gespeichert werden soll. </para>
+
+<figure>
+    <title
+>Der Dialog "Bild speichern" in Aktion</title>
+    <graphic srccredit="The Save Target Dialog in Action" fileref="acquire-savetargetpreview.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-acquirescreenshot">
+<title
+>Dialog "Bildschirmfoto"</title>
+
+<para
+><guilabel
+>Bildschirmfotos</guilabel
+> können Sie erzeugen nachdem Sie im Menü Importieren->Bildschirmfoto... ausgewählt haben. Ein Fenster erscheint in dem Sie die verschiedene Bildschirmfotomodi einstellen können: </para>
+
+<itemizedlist>
+<listitem>
+   <para
+>Wählen Sie <guilabel
+>Die komplette Arbeitsfläche einlesen</guilabel
+> ab, um ein einzelnes Fenster unter der Maus einzulesen. </para>
+</listitem>
+<listitem>
+   <para
+>Wenn <guilabel
+>Alle eigenen Programmfenster verstecken</guilabel
+> ausgewählt ist, wird das aufrufende Programm verschwinden, damit Sie andere Bildschirme und Fenster sehen können. Andernfalls werden Sie, nach einer kurzen Verzögerung, den aktuell sichtbaren Arbeitsplatz einlesen. Falls Sie <guilabel
+>Die komplette Arbeitsfläche einlesen</guilabel
+> abgewählt haben wird nur das Fenster unter der Maus eingelesen. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Die Verzögerung bestimmt wie lange Bildschirmfoto warten wird, bevor es startet. Falls Sie auf andere Arbeitsflächen umschalten müssen sollten Sie diese Verzögerung hoch genug auswählen, um die Zeit zu haben, dorthin zu navigieren. </para>
+
+<figure>
+    <title
+>Der Dialog "Bildschirmfoto" in Aktion</title>
+    <graphic srccredit="The Screenshot Dialog in Action" fileref="acquire-screenshotpreview.png"/>
+</figure>
+
+<para
+>Nachdem das Bildschirmfoto angefertigt wurde erscheint der Dialog  <guilabel
+>Optionen des Zielbildes</guilabel
+> mit den schon oben beschriebenen Optionen. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

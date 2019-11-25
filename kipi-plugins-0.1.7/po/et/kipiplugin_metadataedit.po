@@ -1,0 +1,2678 @@
+# translation of kipiplugin_metadataedit.po to Estonian
+#
+# Marek Laane <bald@starman.ee>, 2006-2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_metadataedit\n"
+"POT-Creation-Date: 2008-12-02 09:44+0100\n"
+"PO-Revision-Date: 2008-03-23 21:41+0200\n"
+"Last-Translator: Marek Laane <bald@starman.ee>\n"
+"Language-Team: Estonian <kde-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Marek Laane"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "bald@starman.ee"
+
+#: commenteditdialog.cpp:77 plugin_metadataedit.cpp:510
+msgid "Edit Image Caption"
+msgstr "Pildi pealdise muutmine"
+
+#: commenteditdialog.cpp:86 commentremovedialog.cpp:84 exifeditdialog.cpp:165
+#: iptceditdialog.cpp:181
+msgid "Edit Metadata"
+msgstr "Metaandmete redigeerimine"
+
+#: commenteditdialog.cpp:89
+msgid "A Plugin to edit images' metadata"
+msgstr "Plugin piltide metaandmete redigeerimiseks"
+
+#: commenteditdialog.cpp:92 commentremovedialog.cpp:90 exifeditdialog.cpp:171
+#: iptceditdialog.cpp:187
+msgid "Author and Maintainer"
+msgstr "Autor ja hooldaja"
+
+#: commenteditdialog.cpp:97 commentremovedialog.cpp:95 exifeditdialog.cpp:176
+#: iptceditdialog.cpp:192
+msgid "Plugin Handbook"
+msgstr "Plugina käsiraamat"
+
+#: commenteditdialog.cpp:105
+msgid ""
+"<p>Enter the image caption hosted by <b>%1</b>. This field is not limited "
+"(excepted with IPTC). UTF-8 encoding will be used to save text."
+msgstr ""
+"<p>Siin saab määrata pildi pealdise, mida kasutab <b>%1</b>"
+". Kasutada võib kõiki märke. Teksti salvestamisel kasutatakse kodeeringut "
+"UTF-8."
+
+#: commenteditdialog.cpp:113 exifcaption.cpp:156 iptccaption.cpp:104
+msgid "Sync JFIF Comment section"
+msgstr "JFIF kommentaaride sektsiooni sünkroniseerimine"
+
+#: commenteditdialog.cpp:114 iptccaption.cpp:108
+msgid "Sync EXIF Comment"
+msgstr "EXIF-i kommentaari sünkroniseerimine"
+
+#: commenteditdialog.cpp:115 exifcaption.cpp:157
+msgid ""
+"Sync IPTC caption (warning: limited to 2000 printable Ascii characters set)"
+msgstr "IPTC pealdise sünkroniseerimine (hoiatus: piiratud ASCII märkidega)"
+
+#: commenteditdialog.cpp:118
+msgid ""
+"<b>Note: captions from currently selected images will be permanently "
+"replaced.</b>"
+msgstr ""
+"<b>Märkus: parajasti valitud piltide pealdised asendatakse jäädavalt.</b>"
+
+#: commentremovedialog.cpp:75
+msgid "Remove Image Captions"
+msgstr "IPTC pealdiste eemaldamine"
+
+#: commentremovedialog.cpp:87 exifeditdialog.cpp:168
+msgid "A Plugin to edit pictures metadata"
+msgstr "Plugin pildi metaandmete redigeerimiseks"
+
+#: commentremovedialog.cpp:103
+#, c-format
+msgid "Remove caption created by %1"
+msgstr "Pealdise eemaldamine, mida pakub %1"
+
+#: commentremovedialog.cpp:106
+msgid "Remove JFIF Comment section"
+msgstr "JFIF kommentaaride sektsiooni eemaldamine"
+
+#: commentremovedialog.cpp:107
+msgid "Remove EXIF Comment"
+msgstr "EXIF-i kommentaari eemaldamine"
+
+#: commentremovedialog.cpp:108
+msgid "Remove IPTC caption"
+msgstr "IPTC pealdise eemaldamine"
+
+#: commentremovedialog.cpp:110
+msgid ""
+"<b>Note: Captions from currently selected images will be permanently "
+"removed.</b>"
+msgstr ""
+"<b>Märkus: parajasti valitud piltide pealdised eemaldatakse jäädavalt.</b>"
+
+#: exifadjust.cpp:99
+msgid "Brightness (APEX):"
+msgstr "Heledus (APEX):"
+
+#: exifadjust.cpp:103
+msgid ""
+"<p>Set here the brightness adjustment value in APEX unit used by camera to take "
+"the picture."
+msgstr ""
+"<p>Siin saab kohandada heleduse väärtust APEX-i ühikutes, mida kaamera on "
+"kasutanud pildi tegemisel."
+
+#: exifadjust.cpp:108
+msgid "Gain Control:"
+msgstr "Signaali kohandamine:"
+
+#: exifadjust.cpp:110
+msgid "None"
+msgstr "Puudub"
+
+#: exifadjust.cpp:111
+msgid "Low gain up"
+msgstr "Väike signaali tugevdamine"
+
+#: exifadjust.cpp:112
+msgid "High gain up"
+msgstr "Suur signaali tugevdamine"
+
+#: exifadjust.cpp:113
+msgid "Low gain down"
+msgstr "Väike signaali nõrgendamine"
+
+#: exifadjust.cpp:114
+msgid "High gain down"
+msgstr "Suur signaali nõrgendamine"
+
+#: exifadjust.cpp:117
+msgid ""
+"<p>Set here the degree of overall image gain adjustment used by camera to take "
+"the picture."
+msgstr ""
+"<p>Siin saab kohendada pildi üldist signaali (müra), mida kaamera on kasutanud "
+"pildi tegemisel."
+
+#: exifadjust.cpp:122
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: exifadjust.cpp:124 exifadjust.cpp:136 exifadjust.cpp:148
+msgid "Normal"
+msgstr "Normaalne"
+
+#: exifadjust.cpp:125 exifadjust.cpp:149
+msgid "Soft"
+msgstr "Nõrk"
+
+#: exifadjust.cpp:126 exifadjust.cpp:150
+msgid "Hard"
+msgstr "Tugev"
+
+#: exifadjust.cpp:129
+msgid ""
+"<p>Set here the direction of contrast processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Siin saab kohandada kontrasti, mida kaamera on kasutanud pildi tegemisel."
+
+#: exifadjust.cpp:134
+msgid "Saturation:"
+msgstr "Küllastus:"
+
+#: exifadjust.cpp:137
+msgid "Low"
+msgstr "Väike"
+
+#: exifadjust.cpp:138
+msgid "High"
+msgstr "Suur"
+
+#: exifadjust.cpp:141
+msgid ""
+"<p>Set here the direction of saturation processing applied by the camera to "
+"take the picture."
+msgstr ""
+"<p>Siin saab kohandada küllastust, mida kaamera on kasutanud pildi tegemisel."
+
+#: exifadjust.cpp:146
+msgid "Sharpness:"
+msgstr "Teravus:"
+
+#: exifadjust.cpp:153
+msgid ""
+"<p>Set here the direction of sharpness processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Siin saab kohandada teravust, mida kaamera on kasutanud pildi tegemisel."
+
+#: exifadjust.cpp:158
+msgid "Custom rendered:"
+msgstr "Kohandatud renderdamine:"
+
+#: exifadjust.cpp:160
+msgid "Normal process"
+msgstr "Normaalne töötlus"
+
+#: exifadjust.cpp:161
+msgid "Custom process"
+msgstr "Kohandatud töötlus"
+
+#: exifadjust.cpp:164
+msgid ""
+"<p>Set here the use of special processing on image data, such as rendering "
+"geared to output."
+msgstr ""
+"<p>Siin saab määrata pildiandmete eritöötluse kasutamise, näiteks renderdamine "
+"väljundi jaoks."
+
+#: exifcaption.cpp:106
+msgid "Document name (*):"
+msgstr "Dokumendi nimi (*):"
+
+#: exifcaption.cpp:111
+msgid ""
+"<p>Enter the name of the document from which this image was been scanned. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Siin saab määrata dokumendi nime, millest pilt on skaneeritud. Kasutada võib "
+"ainult ASCII märke."
+
+#: exifcaption.cpp:117
+msgid "Image description (*):"
+msgstr "Pildi kirjeldus (*):"
+
+#: exifcaption.cpp:122
+msgid "<p>Enter the image title. This field is limited to ASCII characters."
+msgstr ""
+"<p>Siin saab määrata pilti pealkirja. Kasutada võib ainult ASCII märke."
+
+#: exifcaption.cpp:127
+msgid "Artist (*):"
+msgstr "Looja (*):"
+
+#: exifcaption.cpp:132
+msgid ""
+"<p>Enter the image author's name. This field is limited to ASCII characters."
+msgstr ""
+"<p>Siin saab määrata pildi autori nime. Kasutada võib ainult ASCII märke."
+
+#: exifcaption.cpp:137
+msgid "Copyright (*):"
+msgstr "Autoriõigus (*):"
+
+#: exifcaption.cpp:142
+msgid ""
+"<p>Enter the copyright owner of the image. This field is limited to ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata pildi autoriõiguse. Kasutada võib ainult ASCII märke."
+
+#: exifcaption.cpp:147 iptccaption.cpp:102
+msgid "Caption:"
+msgstr "Pealdis:"
+
+#: exifcaption.cpp:149
+msgid ""
+"<p>Enter the image's caption. This field is not limited. UTF8 encoding will be "
+"used to save the text."
+msgstr ""
+"<p>Siin saab määrata pildi pealdise. Kasutada võib kõiki märke. Teksti "
+"salvestamisel kasutatakse kodeeringut UTF-8."
+
+#: exifcaption.cpp:153
+#, c-format
+msgid "Sync captions entered through %1"
+msgstr "Pealdiste sünkroniseerimine, mida pakub %1"
+
+#: exifcaption.cpp:168 exifdevice.cpp:338
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/EXIF'>EXIF</a></b> "
+"text tags marked by (*) only support printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> characters set.</b>"
+msgstr ""
+"<b>Märkus: <b><a href='http://en.wikipedia.org/wiki/EXIF'>EXIF-i</a></b> "
+"tekstisildid märkega (*) toetavad ainult <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> märke.</b>"
+
+#: exifdatetime.cpp:103
+msgid "Creation date and time"
+msgstr "Loomise kuupäev ja kellaaeg"
+
+#: exifdatetime.cpp:104
+msgid "Creation sub-second"
+msgstr "Loomisaja sekundi murdosa"
+
+#: exifdatetime.cpp:108 iptcdatetime.cpp:116
+#, c-format
+msgid "Sync creation date entered through %1"
+msgstr "Loomiskuupäeva sünkroniseerimine, mida pakub %1"
+
+#: exifdatetime.cpp:111
+msgid "Sync IPTC creation date"
+msgstr "IPTC loomiskuupäeva sünkroniseerimine"
+
+#: exifdatetime.cpp:122
+msgid ""
+"<p>Set here the date and time of image creation. In this standard it is the "
+"date and time the file was changed."
+msgstr ""
+"<p>Siin saab määrata pildi loomise kuupäeva ja kellaaja. Antud standardi korral "
+"on tegemist kuupäeva ja kellaajaga, millal faili muudeti."
+
+#: exifdatetime.cpp:124
+msgid ""
+"<p>Set here the fractions of seconds for the date and time of image creation."
+msgstr ""
+"<p>Siin saab määrata pildi loomise kuupäeva ja kellaaja sekundite murdosa."
+
+#: exifdatetime.cpp:129
+msgid "Original date and time"
+msgstr "Originaali kuupäev ja kellaaeg"
+
+#: exifdatetime.cpp:130
+msgid "Original sub-second"
+msgstr "Originaali sekundi murdosa"
+
+#: exifdatetime.cpp:138
+msgid ""
+"<p>Set here the date and time when the original image data was generated. For a "
+"digital still camera the date and time the picture was taken are recorded."
+msgstr ""
+"<p>Siin saab määrata originaalpildi loomise kuupäeva ja kellaaja. Digikaamera "
+"puhul on selleks pildi tegemise kuupäev ja kellaaeg."
+
+#: exifdatetime.cpp:141
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the original "
+"image data was generated."
+msgstr ""
+"<p>Siin saab määrata originaalpildi loomise kuupäeva ja kellaaja sekundite "
+"murdosa."
+
+#: exifdatetime.cpp:146
+msgid "Digitization date and time"
+msgstr "Digiteerimise kuupäev ja kellaaeg"
+
+#: exifdatetime.cpp:147
+msgid "Digitization sub-second"
+msgstr "Digiteerimise sekundi murdosa"
+
+#: exifdatetime.cpp:155
+msgid ""
+"<p>Set here the date and time when the image was stored as digital data. If, "
+"for example, an image was captured by a digital still camera and at the same "
+"time the file was recorded, then Original and Digitization date and time will "
+"have the same contents."
+msgstr ""
+"<p>Siin saab määrata kuupäeva ja kellaaja, millal pilt digitaalselt salvestati. "
+"Kui näiteks pilt tehti digikaameraga ja fail salvestati samal ajal, on "
+"originaali ja digiteerimise kuupäev ja kellaaeg samad."
+
+#: exifdatetime.cpp:160
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the image was "
+"stored as digital data."
+msgstr ""
+"<p>Siin saab määrata kuupäeva ja kellaaja sekundite murdosa, millal pilt "
+"digitaalselt salvestati."
+
+#: exifdevice.cpp:134
+msgid "Device manufacturer (*):"
+msgstr "Seadme tootja (*):"
+
+#: exifdevice.cpp:139
+msgid ""
+"<p>Set here the manufacturer of image input equipment used to take the picture. "
+"This field is limited to ASCII characters."
+msgstr ""
+"<p>Siin saab määrata pildi tegemiseks kasutatud seadme tootja. Kasutada võib "
+"ainult ASCII märke."
+
+#: exifdevice.cpp:144
+msgid "Device model (*):"
+msgstr "Seadme mudel (*):"
+
+#: exifdevice.cpp:149
+msgid ""
+"<p>Set here the model of image input equipment used to take the picture. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Siin saab määrata pildi tegemiseks kasutatud seadme mudeli. Kasutada võib "
+"ainult ASCII märke."
+
+#: exifdevice.cpp:154
+msgid "Device type:"
+msgstr "Seadme tüüp:"
+
+#: exifdevice.cpp:156
+msgid "Film scanner"
+msgstr "Filmiskänner"
+
+#: exifdevice.cpp:157
+msgid "Reflection print scanner"
+msgstr "Tavaline skänner"
+
+#: exifdevice.cpp:158
+msgid "Digital still camera"
+msgstr "Digikaamera"
+
+#: exifdevice.cpp:161
+msgid "<p>Select here the image input equipment type used to take the picture."
+msgstr "<p>Vali siin pildi tegemiseks kasutatud seadme tüüp."
+
+#: exifdevice.cpp:164
+#, fuzzy
+msgid ""
+"<b>Warning: EXIF <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data"
+"'>Makernotes</a></b> can be unreadable if you set wrong device "
+"manufacturer/model description.</b>"
+msgstr ""
+"<b>Hoiatus: EXIF-i <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_Info"
+"rmation'>tootjamärge</a></b> võib osutuda loetamatuks, kui määrad vale tootja "
+"või mudeli.</b>"
+
+#: exifdevice.cpp:175
+msgid "Exposure time (seconds):"
+msgstr "Säriaeg (sek):"
+
+#: exifdevice.cpp:184
+msgid ""
+"<p>Set on this option to set the exposure time of picture, given in seconds."
+msgstr "<p>Siin saab määrata pildi tegemise säriaja sekundites."
+
+#: exifdevice.cpp:189
+msgid "Exposure program:"
+msgstr "Säriprogramm:"
+
+#: exifdevice.cpp:191 exifdevice.cpp:298
+msgid "Not defined"
+msgstr "Määramata"
+
+#: exifdevice.cpp:192 exifdevice.cpp:210 exiflight.cpp:194
+msgid "Manual"
+msgstr "Käsitsi"
+
+#: exifdevice.cpp:193 exifdevice.cpp:209 exiflight.cpp:193
+msgid "Auto"
+msgstr "Automaatne"
+
+#: exifdevice.cpp:194
+msgid "Aperture priority"
+msgstr "Ava läbimõõdu prioriteet"
+
+#: exifdevice.cpp:195
+msgid "Shutter priority"
+msgstr "Säritusaja prioriteet"
+
+#: exifdevice.cpp:196
+msgid "Creative program"
+msgstr "Loomisprogramm"
+
+#: exifdevice.cpp:197
+msgid "Action program"
+msgstr "Toiminguprogramm"
+
+#: exifdevice.cpp:198
+msgid "Portrait mode"
+msgstr "Püstpaigutus"
+
+#: exifdevice.cpp:199
+msgid "Landscape mode"
+msgstr "Rõhtpaigutus"
+
+#: exifdevice.cpp:202
+msgid ""
+"<p>Select here the program used by the camera to set exposure when the picture "
+"have been taken."
+msgstr ""
+"<p>Vali siin programm, mida kaamera kasutas pildi tegemisel särituse "
+"määramiseks."
+
+#: exifdevice.cpp:207
+msgid "Exposure mode:"
+msgstr "Särirežiim:"
+
+#: exifdevice.cpp:211
+msgid "Auto bracket"
+msgstr "Automaatne kahveldamine"
+
+#: exifdevice.cpp:214
+msgid ""
+"<p>Select here the mode used by the camera to set exposure when the picture "
+"have been shot. In auto-bracketing mode, the camera shoots a series of frames "
+"of the same scene at different exposure settings."
+msgstr ""
+"<p>Vali siin režiim, mida kaamera kasutas pildi tegemisel särrituse "
+"määramiseks. Automaatse kahveldamise režiimis pildistab kaamera mitu ühesugust "
+"kaadrit erineva säritusega."
+
+#: exifdevice.cpp:222
+msgid "Exposure bias (APEX):"
+msgstr "Särinihe (APEX):"
+
+#: exifdevice.cpp:226
+msgid ""
+"<p>Set here the exposure bias value in APEX unit used by camera to take the "
+"picture."
+msgstr ""
+"<p>Siin saab määrata särinihke APEX-i ühikutes, mida kaamera kasutas pildi "
+"tegemisel."
+
+#: exifdevice.cpp:234
+msgid "Metering mode:"
+msgstr "Mõõterežiim:"
+
+#: exifdevice.cpp:236 exiflight.cpp:137
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: exifdevice.cpp:237
+msgid "Average"
+msgstr "Keskmine"
+
+#: exifdevice.cpp:238
+msgid "Center weighted average"
+msgstr "Kaalutud keskmine"
+
+#: exifdevice.cpp:239
+msgid "Spot"
+msgstr "Koht"
+
+#: exifdevice.cpp:240
+msgid "Multi-spot"
+msgstr "Mitmikkoht"
+
+#: exifdevice.cpp:241
+msgid "Multi-segment"
+msgstr "Mitmiklõik"
+
+#: exifdevice.cpp:242
+msgid "Partial"
+msgstr "Osaline"
+
+#: exifdevice.cpp:243
+msgid "Other"
+msgstr "Muu"
+
+#: exifdevice.cpp:246
+msgid ""
+"<p>Select here the metering mode used by the camera to set exposure when the "
+"picture have been shot."
+msgstr ""
+"<p>Vali siin mõõterežiim, mida kaamera kasutas pildi tegemisel särituse "
+"määramiseks."
+
+#: exifdevice.cpp:251
+msgid "Sensitivity (ISO):"
+msgstr "Tundlikkus (ISO):"
+
+#: exifdevice.cpp:291
+msgid ""
+"<p>Select here the ISO Speed of the camera witch have taken the picture."
+msgstr "<p>Vali siin kaamera ISO-tundlikkus pildi tegemisel."
+
+#: exifdevice.cpp:296
+msgid "Sensing method:"
+msgstr "Sensori tüüp:"
+
+#: exifdevice.cpp:299
+msgid "One-chip color area"
+msgstr "Ühekiibi-värviala"
+
+#: exifdevice.cpp:300
+msgid "Two-chip color area"
+msgstr "Kahekiibi-värviala"
+
+#: exifdevice.cpp:301
+msgid "Three-chip color area"
+msgstr "Kolmekiibi-värviala"
+
+#: exifdevice.cpp:302
+msgid "Color sequential area"
+msgstr "Värvijadaala"
+
+#: exifdevice.cpp:303
+msgid "Trilinear sensor"
+msgstr "Trilineaarsensor"
+
+#: exifdevice.cpp:304
+msgid "Color sequential linear"
+msgstr "Värvijadalineaar"
+
+#: exifdevice.cpp:307
+msgid ""
+"<p>Select here the image sensor type used by the camera to take the picture."
+msgstr "<p>Vali siin kaamera pildi tegemisel kasutatud pildisensori tüüp."
+
+#: exifdevice.cpp:312
+msgid "Scene capture type:"
+msgstr "Võtte tüüp:"
+
+#: exifdevice.cpp:314
+msgid "Standard"
+msgstr "Standardne"
+
+#: exifdevice.cpp:317
+msgid "Night scene"
+msgstr "Öine võte"
+
+#: exifdevice.cpp:320
+msgid ""
+"<p>Select here the type of scene used by the camera to take the picture."
+msgstr "<p>Vali siin kaamera pildi tegemisel kasutatud võtte tüüp."
+
+#: exifdevice.cpp:325
+msgid "Subject distance type:"
+msgstr "Objekti kauguse tüüp:"
+
+#: exifdevice.cpp:327
+msgid "Unknow"
+msgstr "Tundmatu"
+
+#: exifdevice.cpp:328
+msgid "Macro"
+msgstr "Makro"
+
+#: exifdevice.cpp:329
+msgid "Close view"
+msgstr "Lähivaade"
+
+#: exifdevice.cpp:330
+msgid "Distant view"
+msgstr "Kaugvaade"
+
+#: exifdevice.cpp:333
+msgid ""
+"<p>Select here the type of distance between the subject and the image input "
+"equipment."
+msgstr "<p>Vali siin vahemaa tüüp objekti ja pildi tegemise seadme vahel."
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption"
+msgstr "Pealdis"
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption Information"
+msgstr "Pealdise info"
+
+#: exifeditdialog.cpp:142 iptceditdialog.cpp:150
+msgid "Date & Time"
+msgstr "Kuupäev ja kellaaeg"
+
+#: exifeditdialog.cpp:142
+msgid "Date and Time"
+msgstr "Kuupäev ja kellaaeg"
+
+#: exifeditdialog.cpp:146
+msgid "Lens"
+msgstr "Objektiiv"
+
+#: exifeditdialog.cpp:146
+msgid "Lens Settings"
+msgstr "Objektiivi seadistused"
+
+#: exifeditdialog.cpp:150
+msgid "Device"
+msgstr "Seade"
+
+#: exifeditdialog.cpp:150
+msgid "Capture Device Settings"
+msgstr "Pildiseadme seadistused"
+
+#: exifeditdialog.cpp:154
+msgid "Light"
+msgstr "Valgus"
+
+#: exifeditdialog.cpp:154
+msgid "Light Source Information"
+msgstr "Valgusallika info"
+
+#: exifeditdialog.cpp:158
+msgid "Adjustments"
+msgstr "Kohandamine"
+
+#: exifeditdialog.cpp:158
+msgid "Pictures Adjustments"
+msgstr "Pildi kohandamise info"
+
+#: exifeditdialog.cpp:283
+msgid "Edit EXIF Metadata"
+msgstr "EXIF-i metaandmete muutmine"
+
+#: exifeditdialog.cpp:284 iptceditdialog.cpp:310
+msgid "(read only)"
+msgstr "(kirjutuskaitstud)"
+
+#: exiflens.cpp:157
+msgid "Focal length (mm):"
+msgstr "Fookuskaugus (mm):"
+
+#: exiflens.cpp:161
+msgid ""
+"<p>Set here the lens focal length in milimeters used by camera to take the "
+"picture."
+msgstr ""
+"<p>Siin saab määrata fookuskauguse millimeetrites, mida kaamera kasutas pildi "
+"tegemisel."
+
+#: exiflens.cpp:166
+msgid "Focal length in 35mm film (mm):"
+msgstr "Fookuskaugus 35 mm korral (mm):"
+
+#: exiflens.cpp:170
+msgid ""
+"<p>Set here equivalent focal length assuming a 35mm film camera, in mm. A value "
+"of 0 means the focal length is unknown."
+msgstr ""
+"<p>Siin saab määrata fookuskauguse millimeetrites ekvivalendina, nagu oleks "
+"tegemist 35 mm kaameraga. Väärtus 0 tähendab seda, et fookuskaugus on tundmatu."
+
+#: exiflens.cpp:176
+msgid "Digital zoom ratio:"
+msgstr "Digisuurendus:"
+
+#: exiflens.cpp:180
+msgid "<p>Set here the digital zoom ratio used by camera to take the picture."
+msgstr ""
+"<p>Siin saab määrata digisuurenduse taseme, mida kaamera kasutas pildi "
+"tegemisel."
+
+#: exiflens.cpp:185
+msgid "Lens aperture (f-number):"
+msgstr "Objektiivi ava (F-arv):"
+
+#: exiflens.cpp:190
+msgid "<p>Select here the lens aperture used by camera to take the picture."
+msgstr "<p>Vali siin objektiivi ava, mida kaamera kasutas pildi tegemisel."
+
+#: exiflens.cpp:195
+msgid "Max. lens aperture (f-number):"
+msgstr "Maks. objektiivi ava (F-arv):"
+
+#: exiflens.cpp:200
+msgid ""
+"<p>Select here the smallest aperture of the lens used by camera to take the "
+"picture."
+msgstr ""
+"<p>Vali siin väikseim objektiivi ava, mida kaamera kasutas pildi tegemisel."
+
+#: exiflight.cpp:85
+msgid "No flash"
+msgstr "Välku ei kasutatud"
+
+#: exiflight.cpp:86
+msgid "Fired"
+msgstr "Välku kasutati"
+
+#: exiflight.cpp:87
+msgid "Fired, no strobe return light"
+msgstr "Välku kasutati, strobopeegelduseta"
+
+#: exiflight.cpp:88
+msgid "Fired, strobe return light"
+msgstr "Välku kasutati, strobopeegeldusega"
+
+#: exiflight.cpp:89
+msgid "Yes, compulsory"
+msgstr "Jah, kohustuslik"
+
+#: exiflight.cpp:90
+msgid "Yes, compulsory, no return light"
+msgstr "Jah, kohustuslik, peegelduseta"
+
+#: exiflight.cpp:91
+msgid "Yes, compulsory, return light"
+msgstr "Jah, kohustuslik, peegeldusega"
+
+#: exiflight.cpp:92
+msgid "No, compulsory"
+msgstr "Ei, kohustuslik"
+
+#: exiflight.cpp:93
+msgid "No, auto"
+msgstr "Ei, automaatne"
+
+#: exiflight.cpp:94
+msgid "Yes, auto"
+msgstr "Jah, automaatne"
+
+#: exiflight.cpp:95
+msgid "Yes, auto, no return light"
+msgstr "Jah, automaatne, peegelduseta"
+
+#: exiflight.cpp:96
+msgid "Yes, auto, return light"
+msgstr "Jah, automaatne, peegeldusega"
+
+#: exiflight.cpp:97
+msgid "No flash function"
+msgstr "Välgu funktsioon puudub"
+
+#: exiflight.cpp:98
+msgid "Yes, red-eye"
+msgstr "Jah, punasilmsus"
+
+#: exiflight.cpp:99
+msgid "Yes, red-eye, no return light"
+msgstr "Jah, punasilmsus, peegelduseta"
+
+#: exiflight.cpp:100
+msgid "Yes, red-eye, return light"
+msgstr "Jah, punasilmsus, peegeldusega"
+
+#: exiflight.cpp:101
+msgid "Yes, compulsory, red-eye"
+msgstr "Jah, kohustuslik, punasilmsus"
+
+#: exiflight.cpp:102
+msgid "Yes, compulsory, red-eye, no return light"
+msgstr "Jah, kohustuslik, punasilmsus, peegelduseta"
+
+#: exiflight.cpp:103
+msgid "Yes, compulsory, red-eye, return light"
+msgstr "Jah, kohustuslik, punasilmsus, peegeldusega"
+
+#: exiflight.cpp:104
+msgid "Yes, auto, red-eye"
+msgstr "Jah, automaatne, punasilmsus"
+
+#: exiflight.cpp:105
+msgid "Yes, auto, red-eye, no return light"
+msgstr "Jah, automaatne, punasilmsus, peegelduseta"
+
+#: exiflight.cpp:106
+msgid "Yes, auto, red-eye, return light"
+msgstr "Jah, automaatne, punasilmsus, peegeldusega"
+
+#: exiflight.cpp:135
+msgid "Light source:"
+msgstr "Valgusallikas:"
+
+#: exiflight.cpp:138
+msgid "Daylight"
+msgstr "Päevavalgus"
+
+#: exiflight.cpp:139
+msgid "Fluorescent"
+msgstr "Päevavalguslamp"
+
+#: exiflight.cpp:140
+msgid "Tungsten (incandescent light)"
+msgstr "Hõõglamp"
+
+#: exiflight.cpp:141
+msgid "Flash"
+msgstr "Välklamp"
+
+#: exiflight.cpp:142
+msgid "Fine weather"
+msgstr "Selge ilm"
+
+#: exiflight.cpp:143
+msgid "Cloudy weather"
+msgstr "Pilvine ilm"
+
+#: exiflight.cpp:144
+msgid "Shade"
+msgstr "Vari"
+
+#: exiflight.cpp:145
+msgid "Daylight fluorescent (D 5700 - 7100K)"
+msgstr "Daylight-päevavalguslamp (D 5700 - 7100K)"
+
+#: exiflight.cpp:146
+msgid "Day white fluorescent (N 4600 - 5400K)"
+msgstr "'Day white'-päevavalguslamp (N 4600 - 5400K)"
+
+#: exiflight.cpp:147
+msgid "Cool white fluorescent (W 3900 - 4500K)"
+msgstr "'Cool white'-päevavalguslamp (W 3900 - 4500K)"
+
+#: exiflight.cpp:148
+msgid "White fluorescent (WW 3200 - 3700K)"
+msgstr "White-päevavalguslamp (WW 3200 - 3700K)"
+
+#: exiflight.cpp:149
+msgid "Standard light A"
+msgstr "Standardvalgus A"
+
+#: exiflight.cpp:150
+msgid "Standard light B"
+msgstr "Standardvalgus B"
+
+#: exiflight.cpp:151
+msgid "Standard light C"
+msgstr "Standardvalgus C"
+
+#: exiflight.cpp:152
+msgid "D55"
+msgstr "D55"
+
+#: exiflight.cpp:153
+msgid "D65"
+msgstr "D65"
+
+#: exiflight.cpp:154
+msgid "D75"
+msgstr "D75"
+
+#: exiflight.cpp:155
+msgid "D50"
+msgstr "D50"
+
+#: exiflight.cpp:156
+msgid "ISO studio tungsten"
+msgstr "ISO-stuudiohõõglamp"
+
+#: exiflight.cpp:157
+msgid "Other light source"
+msgstr "Muu valgusallikas"
+
+#: exiflight.cpp:160
+msgid "<p>Select here the kind of light source used to take the picture."
+msgstr "<p>Vali siin valgusallikas, mida kasutati pildi tegemisel."
+
+#: exiflight.cpp:165
+msgid "Flash mode:"
+msgstr "Välgurežiim:"
+
+#: exiflight.cpp:174
+msgid ""
+"<p>Select here the flash program mode used by camera to take the picture."
+msgstr "<p>Vali siin kaamera pildi tegemisel kasutatud välgurežiim."
+
+#: exiflight.cpp:179
+msgid "Flash energy (BCPS):"
+msgstr "Välguenergia (BCPS):"
+
+#: exiflight.cpp:183
+msgid ""
+"<p>Set here the flash energy used to take the picture in BCPS unit. Beam Candle "
+"Power Seconds is the measure of effective intensity of a light source when it "
+"is focused into a beam by a reflector or lens. This value is the effective "
+"intensity for a period of one second."
+msgstr ""
+"<p>Siin saab määrata pildi tegemisel kasutatud välguenergia BCPS ühikutes. BCPS "
+"(Beam Candle Power Seconds ehk kiire valgustugevus sekundis) mõõdab "
+"valgusallika tugevust, kui see on reflektori või objektiiviga kiireks "
+"fokuseeritud. Väärtus näitab valgustugevust ühes sekundis."
+
+#: exiflight.cpp:191
+msgid "White balance:"
+msgstr "Värvustasakaal:"
+
+#: exiflight.cpp:197
+msgid ""
+"<p>Select here the white balance mode set by camera when the picture have been "
+"shot."
+msgstr "<p>Vali siin kaamera määratud värvustasakaal pildi tegemisel."
+
+#: iptccaption.cpp:105
+#, c-format
+msgid "Sync caption entered through %1"
+msgstr "Pealdise sünkroniseerimine, mida pakub %1"
+
+#: iptccaption.cpp:119
+msgid ""
+"<p>Enter the content description. This field is limited to 2000 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu kirjelduse. Kasutada võib kuni 2000 ASCII märki."
+
+#: iptccaption.cpp:124
+msgid "Caption Writer:"
+msgstr "Pealdise kirjutaja:"
+
+#: iptccaption.cpp:130
+msgid ""
+"<p>Enter the name of the caption author. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata pealdise autori nime. Kasutada võib kuni 32 ASCII märki."
+
+#: iptccaption.cpp:135
+msgid "Headline:"
+msgstr "Pealkiri:"
+
+#: iptccaption.cpp:141
+msgid ""
+"<p>Enter here the content synopsis. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu kokkuvõtte. Kasutada võib kuni 256 ASCII märki."
+
+#: iptccaption.cpp:146
+msgid "Special Instructions:"
+msgstr "Spetsiaalsed juhised:"
+
+#: iptccaption.cpp:152
+msgid ""
+"<p>Enter the editorial usage instructions. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata kasutamisjuhised. Kasutada võib kuni 256 ASCII märki."
+
+#: iptccaption.cpp:157 iptccategories.cpp:129 iptccredits.cpp:165
+#: iptckeywords.cpp:116 iptcorigin.cpp:437 iptcstatus.cpp:207
+#: iptcsubjects.cpp:116
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"text tags only support the printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"characters set and limit strings size. Use contextual help for details.</b>"
+msgstr ""
+"<b>Märkus: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"tekstisildid toetavad ainult <b><a href='http://en.wikipedia.org/wiki/Ascii'>"
+"ASCII</a></b> märke ja piiratud stringide pikkust. Vaata täpsemalt "
+"kontekstiabi.</b>"
+
+#: iptccategories.cpp:95
+msgid "Identify subject of content (3 chars max):"
+msgstr "Sisu identifikaator (maks. 3 märki):"
+
+#: iptccategories.cpp:99
+msgid ""
+"<p>Set here the category of content. This field is limited to 3 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu kategooria. Kasutada võib kuni 3 ASCII märki."
+
+#: iptccategories.cpp:102
+msgid "Supplemental categories:"
+msgstr "Lisakategooriad:"
+
+#: iptccategories.cpp:107
+msgid ""
+"<p>Enter here a new supplemental category of content. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Siin saab määrata sisu täiendava kategooria. Kasutada võib kuni 32 ASCII "
+"märki."
+
+#: iptccategories.cpp:113 iptckeywords.cpp:102 iptcsubjects.cpp:102
+msgid "&Add"
+msgstr "&Lisa"
+
+#: iptccredits.cpp:99
+msgid "Copyright:"
+msgstr "Autoriõigus:"
+
+#: iptccredits.cpp:105
+msgid ""
+"<p>Set here the necessary copyright notice. This field is limited to 128 ASCII "
+"characters."
+msgstr "<p>Siin saab määrata autoriõiguse. Kasutada võib kuni 128 ASCII märki."
+
+#: iptccredits.cpp:110
+msgid "Byline:"
+msgstr "Autor:"
+
+#: iptccredits.cpp:116
+msgid ""
+"<p>Set here the name of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu looja nime. Kasutada võib kuni 32 ASCII märki."
+
+#: iptccredits.cpp:121
+msgid "Byline Title:"
+msgstr "Autori tiitel:"
+
+#: iptccredits.cpp:127
+msgid ""
+"<p>Set here the title of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu looja tiitli. Kasutada võib kuni 32 ASCII märki."
+
+#: iptccredits.cpp:132
+msgid "Credit:"
+msgstr "Autorsus:"
+
+#: iptccredits.cpp:138
+msgid ""
+"<p>Set here the content provider. This field is limited to 32 ASCII characters."
+msgstr "<p>Siin saab määrata sisu pakkuja. Kasutada võib kuni 32 ASCII märki."
+
+#: iptccredits.cpp:143
+msgid "Source:"
+msgstr "Allikas:"
+
+#: iptccredits.cpp:149
+msgid ""
+"<p>Set here the original owner of content. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu algse omaniku. Kasutada võib kuni 32 ASCII märki."
+
+#: iptccredits.cpp:154
+msgid "Contact:"
+msgstr "Kontakt:"
+
+#: iptccredits.cpp:160
+msgid ""
+"<p>Set here the person or organisation to contact. This field is limited to 128 "
+"ASCII characters."
+msgstr ""
+"<p>Siin saab määrata isiku või organisatsiooni, kellega kontakti võtta. "
+"Kasutada võib kuni 128 ASCII märki."
+
+#: iptcdatetime.cpp:112
+msgid "Creation date"
+msgstr "Loomise kuupäev"
+
+#: iptcdatetime.cpp:113
+msgid "Creation time"
+msgstr "Loomise kellaaeg"
+
+#: iptcdatetime.cpp:119
+msgid "Sync EXIF creation date"
+msgstr "EXIF-i loomise kuupäeva sünkroniseerimine"
+
+#: iptcdatetime.cpp:130
+msgid "<p>Set here the creation date of intellectual content."
+msgstr "<p>Siin saab määrata intellektuaalse sisu loomise kuupäeva."
+
+#: iptcdatetime.cpp:132
+msgid "<p>Set here the creation time of intellectual content."
+msgstr "<p>Siin saab määrata intellektuaalse sisu loomise kellaaja."
+
+#: iptcdatetime.cpp:137
+msgid "Release date"
+msgstr "Avaldamise kuupäev"
+
+#: iptcdatetime.cpp:138
+msgid "Release time"
+msgstr "Avaldamise kellaaeg"
+
+#: iptcdatetime.cpp:147
+msgid "<p>Set here the earliest intended usable date of intellectual content."
+msgstr "<p>Siin saab määrata intellektuaalse sisu varaseima kasutamiskuupäeva."
+
+#: iptcdatetime.cpp:149
+msgid "<p>Set here the earliest intended usable time of intellectual content."
+msgstr "<p>Siin saab määrata intellektuaalse sisu varaseima kasutamiskellaaja."
+
+#: iptcdatetime.cpp:154
+msgid "Expiration date"
+msgstr "Aegumiskuupäev"
+
+#: iptcdatetime.cpp:155
+msgid "Expiration time"
+msgstr "Aegumiskellaaeg"
+
+#: iptcdatetime.cpp:164
+msgid "<p>Set here the latest intended usable date of intellectual content."
+msgstr "<p>Siin saab määrata intellektuaalse sisu hiliseima kasutamiskuupäeva."
+
+#: iptcdatetime.cpp:166
+msgid "<p>Set here the latest intended usable time of intellectual content."
+msgstr "<p>Siin saab määrata intellektuaalse sisu hiliseima kasutamiskellaaja."
+
+#: iptcdatetime.cpp:171
+msgid "Digitization date"
+msgstr "Digiteerimise kuupäev"
+
+#: iptcdatetime.cpp:172
+msgid "Digitization time"
+msgstr "Digiteerimise kellaaeg"
+
+#: iptcdatetime.cpp:181
+msgid "<p>Set here the creation date of digital representation."
+msgstr "<p>Siin saab määrata digivariandi loomise kuupäeva."
+
+#: iptcdatetime.cpp:183
+msgid "<p>Set here the creation time of digital representation."
+msgstr "<p>Siin saab määrata digivariandi loomise kellaaja."
+
+#: iptceditdialog.cpp:150
+msgid "Date and Time Information"
+msgstr "Kuupäeva ja kellaaja info"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects"
+msgstr "Teemad"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects Information"
+msgstr "Teema info"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords"
+msgstr "Võtmesõnad"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords Information"
+msgstr "Võtmesõnade info"
+
+#: iptceditdialog.cpp:162
+msgid "Categories"
+msgstr "Kategooriad"
+
+#: iptceditdialog.cpp:162
+msgid "Categories Information"
+msgstr "Kategooriate info"
+
+#: iptceditdialog.cpp:166
+msgid "Credits"
+msgstr "Autorsus"
+
+#: iptceditdialog.cpp:166
+msgid "Credits Information"
+msgstr "Autorsuse info"
+
+#: iptceditdialog.cpp:170
+msgid "Status"
+msgstr "Olek"
+
+#: iptceditdialog.cpp:170
+msgid "Status Information"
+msgstr "Olekuinfo"
+
+#: iptceditdialog.cpp:174
+msgid "Origin"
+msgstr "Päritolu"
+
+#: iptceditdialog.cpp:174
+msgid "Origin Information"
+msgstr "Päritolu info"
+
+#: iptceditdialog.cpp:184
+msgid "A Plugin to edit image metadata"
+msgstr "Plugin pildi metaandmete redigeerimiseks"
+
+#: iptceditdialog.cpp:309
+msgid "Edit IPTC Metadata"
+msgstr "IPTC metaandmete muutmine"
+
+#: iptckeywords.cpp:91
+msgid "Use information retrieval words:"
+msgstr "Info hankimiseks kasutatakse sõnu:"
+
+#: iptckeywords.cpp:96
+msgid ""
+"<p>Enter here a new keyword. This field is limited to 64 ASCII characters."
+msgstr "<p>Siin saab määrata uue võtmesõna. Kasutada võib kuni 64 ASCII märki."
+
+#: iptcorigin.cpp:76
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: iptcorigin.cpp:77
+msgid "Albania"
+msgstr "Albaania"
+
+#: iptcorigin.cpp:78
+msgid "Algeria"
+msgstr "Alžeeria"
+
+#: iptcorigin.cpp:79
+msgid "American Samoa"
+msgstr "Ameerika Samoa"
+
+#: iptcorigin.cpp:80
+msgid "Andorra"
+msgstr "Andorra"
+
+#: iptcorigin.cpp:81 iptcorigin.cpp:83
+msgid "Angola"
+msgstr "Angola"
+
+#: iptcorigin.cpp:82
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: iptcorigin.cpp:84
+msgid "Antarctica"
+msgstr "Antarktika"
+
+#: iptcorigin.cpp:85
+msgid "Antigua and Barbuda"
+msgstr "Antigua ja Barbuda"
+
+#: iptcorigin.cpp:86
+msgid "Argentina"
+msgstr "Argentiina"
+
+#: iptcorigin.cpp:87
+msgid "Armenia"
+msgstr "Armeenia"
+
+#: iptcorigin.cpp:88
+msgid "Aruba"
+msgstr "Aruba"
+
+#: iptcorigin.cpp:89
+msgid "Australia"
+msgstr "Austraalia"
+
+#: iptcorigin.cpp:90
+msgid "Austria"
+msgstr "Austria"
+
+#: iptcorigin.cpp:91
+msgid "Azerbaijan"
+msgstr "Aserbaidžaan"
+
+#: iptcorigin.cpp:92
+msgid "Bahamas"
+msgstr "Bahama"
+
+#: iptcorigin.cpp:93
+msgid "Bahrain"
+msgstr "Bahrein"
+
+#: iptcorigin.cpp:94
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: iptcorigin.cpp:95
+msgid "Barbados"
+msgstr "Barbados"
+
+#: iptcorigin.cpp:96
+msgid "Belarus"
+msgstr "Valgevene"
+
+#: iptcorigin.cpp:97
+msgid "Belgium"
+msgstr "Belgia"
+
+#: iptcorigin.cpp:98
+msgid "Belize"
+msgstr "Belize"
+
+#: iptcorigin.cpp:99
+msgid "Benin"
+msgstr "Benin"
+
+#: iptcorigin.cpp:100
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: iptcorigin.cpp:101
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: iptcorigin.cpp:102
+msgid "Bolivia"
+msgstr "Boliivia"
+
+#: iptcorigin.cpp:103
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia ja Hertsegoviina"
+
+#: iptcorigin.cpp:104
+msgid "Botswana"
+msgstr "Botswana"
+
+#: iptcorigin.cpp:105
+msgid "Bouvet Island"
+msgstr "Bouvet' saar"
+
+#: iptcorigin.cpp:106
+msgid "Brazil"
+msgstr "Brasiilia"
+
+#: iptcorigin.cpp:107
+msgid "British Indian Ocean Territory"
+msgstr "Briti India ookeani ala"
+
+#: iptcorigin.cpp:108
+msgid "British Virgin Islands"
+msgstr "Briti Neitsisaared"
+
+#: iptcorigin.cpp:109
+msgid "Brunei Darussalam"
+msgstr "Brunei"
+
+#: iptcorigin.cpp:110
+msgid "Bulgaria"
+msgstr "Bulgaaria"
+
+#: iptcorigin.cpp:111
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: iptcorigin.cpp:112
+msgid "Burundi"
+msgstr "Burundi"
+
+#: iptcorigin.cpp:113
+msgid "Cambodia"
+msgstr "Kambodža"
+
+#: iptcorigin.cpp:114
+msgid "Cameroon"
+msgstr "Kamerun"
+
+#: iptcorigin.cpp:115
+msgid "Canada"
+msgstr "Kanada"
+
+#: iptcorigin.cpp:116
+msgid "Cape Verde"
+msgstr "Roheneemesaared"
+
+#: iptcorigin.cpp:117
+msgid "Cayman Islands"
+msgstr "Kaimanisaared"
+
+#: iptcorigin.cpp:118
+msgid "Central African Republic"
+msgstr "Kesk-Aafrika Vabariik"
+
+#: iptcorigin.cpp:119
+msgid "Chad"
+msgstr "Tšaad"
+
+#: iptcorigin.cpp:120
+msgid "Chile"
+msgstr "Tšiili"
+
+#: iptcorigin.cpp:121
+msgid "China"
+msgstr "Hiina"
+
+#: iptcorigin.cpp:122
+msgid "Christmas Island "
+msgstr "Jõulusaar"
+
+#: iptcorigin.cpp:123
+msgid "Cocos Islands"
+msgstr "Kookosesaared"
+
+#: iptcorigin.cpp:124
+msgid "Colombia"
+msgstr "Colombia"
+
+#: iptcorigin.cpp:125
+msgid "Comoros"
+msgstr "Komoorid"
+
+#: iptcorigin.cpp:126
+msgid "Zaire"
+msgstr "Sair"
+
+#: iptcorigin.cpp:127
+msgid "Congo"
+msgstr "Kongo"
+
+#: iptcorigin.cpp:128
+msgid "Cook Islands"
+msgstr "Cooki saared"
+
+#: iptcorigin.cpp:129
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: iptcorigin.cpp:130
+msgid "Ivory Coast"
+msgstr "Elevandiluurannik"
+
+#: iptcorigin.cpp:131
+msgid "Cuba"
+msgstr "Kuuba"
+
+#: iptcorigin.cpp:132
+msgid "Cyprus"
+msgstr "Küpros"
+
+#: iptcorigin.cpp:133
+msgid "Czech Republic"
+msgstr "Tšehhi"
+
+#: iptcorigin.cpp:134
+msgid "Denmark"
+msgstr "Taani"
+
+#: iptcorigin.cpp:135
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: iptcorigin.cpp:136
+msgid "Dominica"
+msgstr "Dominica"
+
+#: iptcorigin.cpp:137
+msgid "Dominican Republic"
+msgstr "Dominikaani Vabariik"
+
+#: iptcorigin.cpp:138
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: iptcorigin.cpp:139
+msgid "Egypt"
+msgstr "Egiptus"
+
+#: iptcorigin.cpp:140
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: iptcorigin.cpp:141
+msgid "Equatorial Guinea"
+msgstr "Ekvatoriaal-Guinea"
+
+#: iptcorigin.cpp:142
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: iptcorigin.cpp:143
+msgid "Estonia"
+msgstr "Eesti"
+
+#: iptcorigin.cpp:144
+msgid "Ethiopia"
+msgstr "Etioopia"
+
+#: iptcorigin.cpp:145
+msgid "Faeroe Islands"
+msgstr "Fääri saared"
+
+#: iptcorigin.cpp:146
+msgid "Falkland Islands"
+msgstr "Falklandi saared"
+
+#: iptcorigin.cpp:147
+msgid "Fiji Islands"
+msgstr "Fidži"
+
+#: iptcorigin.cpp:148
+msgid "Finland"
+msgstr "Soome"
+
+#: iptcorigin.cpp:149
+msgid "France"
+msgstr "Prantsusmaa"
+
+#: iptcorigin.cpp:150
+msgid "French Guiana"
+msgstr "Prantsuse Guajaana"
+
+#: iptcorigin.cpp:151
+msgid "French Polynesia"
+msgstr "Prantsuse Polüneesia"
+
+#: iptcorigin.cpp:152
+msgid "French Southern Territories"
+msgstr "Prantsuse Lõunaalad"
+
+#: iptcorigin.cpp:153
+msgid "Gabon"
+msgstr "Gabon"
+
+#: iptcorigin.cpp:154
+msgid "Gambia"
+msgstr "Gambia"
+
+#: iptcorigin.cpp:155
+msgid "Georgia"
+msgstr "Gruusia"
+
+#: iptcorigin.cpp:156
+msgid "Germany"
+msgstr "Saksamaa"
+
+#: iptcorigin.cpp:157
+msgid "Ghana"
+msgstr "Ghana"
+
+#: iptcorigin.cpp:158
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: iptcorigin.cpp:159
+msgid "Greece"
+msgstr "Kreeka"
+
+#: iptcorigin.cpp:160
+msgid "Greenland"
+msgstr "Gröönimaa"
+
+#: iptcorigin.cpp:161
+msgid "Grenada"
+msgstr "Grenada"
+
+#: iptcorigin.cpp:162
+msgid "Guadaloupe"
+msgstr "Guadaloupe"
+
+#: iptcorigin.cpp:163
+msgid "Guam"
+msgstr "Guam"
+
+#: iptcorigin.cpp:164
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: iptcorigin.cpp:165
+msgid "Guinea"
+msgstr "Guinea"
+
+#: iptcorigin.cpp:166
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: iptcorigin.cpp:167
+msgid "Guyana"
+msgstr "Guyana"
+
+#: iptcorigin.cpp:168
+msgid "Haiti"
+msgstr "Haiti"
+
+#: iptcorigin.cpp:169
+msgid "Heard and McDonald Islands"
+msgstr "Heard ja McDonald"
+
+#: iptcorigin.cpp:170
+msgid "Vatican"
+msgstr "Vatikan"
+
+#: iptcorigin.cpp:171
+msgid "Honduras"
+msgstr "Honduras"
+
+#: iptcorigin.cpp:172
+msgid "Hong Kong"
+msgstr "Hongkong"
+
+#: iptcorigin.cpp:173
+msgid "Croatia"
+msgstr "Horvaatia"
+
+#: iptcorigin.cpp:174
+msgid "Hungary"
+msgstr "Ungari"
+
+#: iptcorigin.cpp:175
+msgid "Iceland"
+msgstr "Island"
+
+#: iptcorigin.cpp:176
+msgid "India"
+msgstr "India"
+
+#: iptcorigin.cpp:177
+msgid "Indonesia"
+msgstr "Indoneesia"
+
+#: iptcorigin.cpp:178
+msgid "Iran"
+msgstr "Iraan"
+
+#: iptcorigin.cpp:179
+msgid "Iraq"
+msgstr "Iraak"
+
+#: iptcorigin.cpp:180
+msgid "Ireland"
+msgstr "Iirimaa"
+
+#: iptcorigin.cpp:181
+msgid "Israel"
+msgstr "Iisrael"
+
+#: iptcorigin.cpp:182
+msgid "Italy"
+msgstr "Itaalia"
+
+#: iptcorigin.cpp:183
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: iptcorigin.cpp:184
+msgid "Japan"
+msgstr "Jaapan"
+
+#: iptcorigin.cpp:185
+msgid "Jordan"
+msgstr "Jordaania"
+
+#: iptcorigin.cpp:186
+msgid "Kazakhstan"
+msgstr "Kasahstan"
+
+#: iptcorigin.cpp:187
+msgid "Kenya"
+msgstr "Kenya"
+
+#: iptcorigin.cpp:188
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: iptcorigin.cpp:189 iptcorigin.cpp:190
+msgid "Korea"
+msgstr "Korea"
+
+#: iptcorigin.cpp:191
+msgid "Kuwait"
+msgstr "Kuveit"
+
+#: iptcorigin.cpp:192
+msgid "Kyrgyz Republic"
+msgstr "Kõrgõzstan"
+
+#: iptcorigin.cpp:193
+msgid "Lao"
+msgstr "Laos"
+
+#: iptcorigin.cpp:194
+msgid "Latvia"
+msgstr "Läti"
+
+#: iptcorigin.cpp:195
+msgid "Lebanon"
+msgstr "Liibanon"
+
+#: iptcorigin.cpp:196
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: iptcorigin.cpp:197
+msgid "Liberia"
+msgstr "Libeeria"
+
+#: iptcorigin.cpp:198
+msgid "Libyan Arab Jamahiriya"
+msgstr "Liibüa"
+
+#: iptcorigin.cpp:199
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: iptcorigin.cpp:200
+msgid "Lithuania"
+msgstr "Leedu"
+
+#: iptcorigin.cpp:201
+msgid "Luxembourg"
+msgstr "Luksemburg"
+
+#: iptcorigin.cpp:202
+msgid "Macao"
+msgstr "Macao"
+
+#: iptcorigin.cpp:203
+msgid "Macedonia"
+msgstr "Makedoonia"
+
+#: iptcorigin.cpp:204
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: iptcorigin.cpp:205
+msgid "Malawi"
+msgstr "Malawi"
+
+#: iptcorigin.cpp:206
+msgid "Malaysia"
+msgstr "Malaisia"
+
+#: iptcorigin.cpp:207
+msgid "Maldives"
+msgstr "Maldiivid"
+
+#: iptcorigin.cpp:208
+msgid "Mali"
+msgstr "Mali"
+
+#: iptcorigin.cpp:209
+msgid "Malta"
+msgstr "Malta"
+
+#: iptcorigin.cpp:210
+msgid "Marshall Islands"
+msgstr "Marshalli saared"
+
+#: iptcorigin.cpp:211
+msgid "Martinique"
+msgstr "Martinique"
+
+#: iptcorigin.cpp:212
+msgid "Mauritania"
+msgstr "Mauritaania"
+
+#: iptcorigin.cpp:213
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: iptcorigin.cpp:214
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: iptcorigin.cpp:215
+msgid "Mexico"
+msgstr "Mehhiko"
+
+#: iptcorigin.cpp:216
+msgid "Micronesia"
+msgstr "Mikroneesia"
+
+#: iptcorigin.cpp:217
+msgid "Moldova"
+msgstr "Moldova"
+
+#: iptcorigin.cpp:218
+msgid "Monaco"
+msgstr "Monaco"
+
+#: iptcorigin.cpp:219
+msgid "Mongolia"
+msgstr "Mongoolia"
+
+#: iptcorigin.cpp:220
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: iptcorigin.cpp:221
+msgid "Morocco"
+msgstr "Maroko"
+
+#: iptcorigin.cpp:222
+msgid "Mozambique"
+msgstr "Mosambiik"
+
+#: iptcorigin.cpp:223
+msgid "Myanmar"
+msgstr "Birma"
+
+#: iptcorigin.cpp:224
+msgid "Namibia"
+msgstr "Namiibia"
+
+#: iptcorigin.cpp:225
+msgid "Nauru"
+msgstr "Nauru"
+
+#: iptcorigin.cpp:226
+msgid "Nepal"
+msgstr "Nepal"
+
+#: iptcorigin.cpp:227
+msgid "Netherlands Antilles"
+msgstr "Hollandi Antillid"
+
+#: iptcorigin.cpp:228
+msgid "Netherlands"
+msgstr "Holland"
+
+#: iptcorigin.cpp:229
+msgid "New Caledonia"
+msgstr "Uus-Kaledoonia"
+
+#: iptcorigin.cpp:230
+msgid "New Zealand"
+msgstr "Uus-Meremaa"
+
+#: iptcorigin.cpp:231
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: iptcorigin.cpp:232
+msgid "Niger"
+msgstr "Niger"
+
+#: iptcorigin.cpp:233
+msgid "Nigeria"
+msgstr "Nigeeria"
+
+#: iptcorigin.cpp:234
+msgid "Niue"
+msgstr "Niue"
+
+#: iptcorigin.cpp:235
+msgid "Norfolk Island"
+msgstr "Norfolki saar"
+
+#: iptcorigin.cpp:236
+msgid "Northern Mariana Islands"
+msgstr "Põhja-Mariaani saared"
+
+#: iptcorigin.cpp:237
+msgid "Norway"
+msgstr "Norra"
+
+#: iptcorigin.cpp:238
+msgid "Oman"
+msgstr "Omaan"
+
+#: iptcorigin.cpp:239
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: iptcorigin.cpp:240
+msgid "Palau"
+msgstr "Belau"
+
+#: iptcorigin.cpp:241
+msgid "Palestinian Territory"
+msgstr "Palestiina"
+
+#: iptcorigin.cpp:242
+msgid "Panama"
+msgstr "Panama"
+
+#: iptcorigin.cpp:243
+msgid "Papua New Guinea"
+msgstr "Paapua Uus-Guinea"
+
+#: iptcorigin.cpp:244
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: iptcorigin.cpp:245
+msgid "Peru"
+msgstr "Peruu"
+
+#: iptcorigin.cpp:246
+msgid "Philippines"
+msgstr "Filipiinid"
+
+#: iptcorigin.cpp:247
+msgid "Pitcairn Island"
+msgstr "Pitcairn"
+
+#: iptcorigin.cpp:248
+msgid "Poland"
+msgstr "Poola"
+
+#: iptcorigin.cpp:249
+msgid "Portugal"
+msgstr "Portugal"
+
+#: iptcorigin.cpp:250
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: iptcorigin.cpp:251
+msgid "Qatar"
+msgstr "Katar"
+
+#: iptcorigin.cpp:252
+msgid "Reunion"
+msgstr "Réunion"
+
+#: iptcorigin.cpp:253
+msgid "Romania"
+msgstr "Rumeenia"
+
+#: iptcorigin.cpp:254
+msgid "Russian Federation"
+msgstr "Venemaa"
+
+#: iptcorigin.cpp:255
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: iptcorigin.cpp:256
+msgid "St. Helena"
+msgstr "St. Helena"
+
+#: iptcorigin.cpp:257
+msgid "St. Kitts and Nevis"
+msgstr "St. Kitts ja Nevis"
+
+#: iptcorigin.cpp:258
+msgid "St. Lucia"
+msgstr "St. Lucia"
+
+#: iptcorigin.cpp:259
+msgid "St. Pierre and Miquelon"
+msgstr "St. Pierre ja Miquelon"
+
+#: iptcorigin.cpp:260
+msgid "St. Vincent and the Grenadines"
+msgstr "St. Vincent ja Grenadiinid"
+
+#: iptcorigin.cpp:261
+msgid "Samoa"
+msgstr "Samoa"
+
+#: iptcorigin.cpp:262
+msgid "San Marino"
+msgstr "San Marino"
+
+#: iptcorigin.cpp:263
+msgid "Sao Tome and Principe"
+msgstr "Sao Tome ja Principe"
+
+#: iptcorigin.cpp:264
+msgid "Saudi Arabia"
+msgstr "Saudi Araabia"
+
+#: iptcorigin.cpp:265
+msgid "Senegal"
+msgstr "Senegal"
+
+#: iptcorigin.cpp:266
+msgid "Serbia and Montenegro"
+msgstr "Serbia ja Montenegro"
+
+#: iptcorigin.cpp:267
+msgid "Seychelles"
+msgstr "Seišellid"
+
+#: iptcorigin.cpp:268
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: iptcorigin.cpp:269
+msgid "Singapore"
+msgstr "Singapur"
+
+#: iptcorigin.cpp:270
+msgid "Slovakia"
+msgstr "Slovakkia"
+
+#: iptcorigin.cpp:271
+msgid "Slovenia"
+msgstr "Sloveenia"
+
+#: iptcorigin.cpp:272
+msgid "Solomon Islands"
+msgstr "Saalomoni saared"
+
+#: iptcorigin.cpp:273
+msgid "Somalia"
+msgstr "Somaalia"
+
+#: iptcorigin.cpp:274
+msgid "South Africa"
+msgstr "Lõuna-Aafrika Vabariik"
+
+#: iptcorigin.cpp:275
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Lõuna-Georgia ja Lõuna-Sandwichi saared"
+
+#: iptcorigin.cpp:276
+msgid "Spain"
+msgstr "Hispaania"
+
+#: iptcorigin.cpp:277
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: iptcorigin.cpp:278
+msgid "Sudan"
+msgstr "Sudaan"
+
+#: iptcorigin.cpp:279
+msgid "Suriname"
+msgstr "Suriname"
+
+#: iptcorigin.cpp:280
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "Svalbard ja Jan Mayen"
+
+#: iptcorigin.cpp:281
+msgid "Swaziland"
+msgstr "Svaasimaa"
+
+#: iptcorigin.cpp:282
+msgid "Sweden"
+msgstr "Rootsi"
+
+#: iptcorigin.cpp:283
+msgid "Switzerland"
+msgstr "Šveits"
+
+#: iptcorigin.cpp:284
+msgid "Syrian Arab Republic"
+msgstr "Süüria"
+
+#: iptcorigin.cpp:285
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: iptcorigin.cpp:286
+msgid "Tajikistan"
+msgstr "Tadžikistan"
+
+#: iptcorigin.cpp:287
+msgid "Tanzania"
+msgstr "Tansaania"
+
+#: iptcorigin.cpp:288
+msgid "Thailand"
+msgstr "Tai"
+
+#: iptcorigin.cpp:289
+msgid "Timor-Leste"
+msgstr "Ida-Timor"
+
+#: iptcorigin.cpp:290
+msgid "Togo"
+msgstr "Togo"
+
+#: iptcorigin.cpp:291
+msgid "Tokelau Islands"
+msgstr "Tokelau"
+
+#: iptcorigin.cpp:292
+msgid "Tonga"
+msgstr "Tonga"
+
+#: iptcorigin.cpp:293
+msgid "Trinidad and Tobago"
+msgstr "Trinidad ja Tobago"
+
+#: iptcorigin.cpp:294
+msgid "Tunisia"
+msgstr "Tuneesia"
+
+#: iptcorigin.cpp:295
+msgid "Turkey"
+msgstr "Türgi"
+
+#: iptcorigin.cpp:296
+msgid "Turkmenistan"
+msgstr "Türkmenistan"
+
+#: iptcorigin.cpp:297
+msgid "Turks and Caicos Islands"
+msgstr "Turks ja Caicose saared"
+
+#: iptcorigin.cpp:298
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: iptcorigin.cpp:299
+msgid "US Virgin Islands"
+msgstr "USA Neitsisaared"
+
+#: iptcorigin.cpp:300
+msgid "Uganda"
+msgstr "Uganda"
+
+#: iptcorigin.cpp:301
+msgid "Ukraine"
+msgstr "Ukraina"
+
+#: iptcorigin.cpp:302
+msgid "United Arab Emirates"
+msgstr "Araabia Ühendemiraadid"
+
+#: iptcorigin.cpp:303
+msgid "United Kingdom"
+msgstr "Suurbritannia"
+
+#: iptcorigin.cpp:304
+msgid "United States Minor Outlying Islands"
+msgstr "Ühendriikide hajasaared"
+
+#: iptcorigin.cpp:305
+msgid "United States of America"
+msgstr "Ameerika Ühendriigid"
+
+#: iptcorigin.cpp:306
+msgid "Uruguay, Eastern Republic of"
+msgstr "Uruguai"
+
+#: iptcorigin.cpp:307
+msgid "Uzbekistan"
+msgstr "Usbekistan"
+
+#: iptcorigin.cpp:308
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: iptcorigin.cpp:309
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: iptcorigin.cpp:310
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: iptcorigin.cpp:311
+msgid "Wallis and Futuna Islands "
+msgstr "Wallis ja Futuna"
+
+#: iptcorigin.cpp:312
+msgid "Western Sahara"
+msgstr "Lääne-Sahara"
+
+#: iptcorigin.cpp:313
+msgid "Yemen"
+msgstr "Jeemen"
+
+#: iptcorigin.cpp:314
+msgid "Zambia"
+msgstr "Sambia"
+
+#: iptcorigin.cpp:315
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: iptcorigin.cpp:319
+msgid "United Nations"
+msgstr "ÜRO"
+
+#: iptcorigin.cpp:320
+msgid "European Union"
+msgstr "Euroopa Liit"
+
+#: iptcorigin.cpp:321
+msgid "Space"
+msgstr "Kosmos"
+
+#: iptcorigin.cpp:322
+msgid "At Sea"
+msgstr "Merel"
+
+#: iptcorigin.cpp:323
+msgid "In Flight"
+msgstr "Õhus"
+
+#: iptcorigin.cpp:324
+msgid "England"
+msgstr "Inglismaa"
+
+#: iptcorigin.cpp:325
+msgid "Scotland"
+msgstr "Šotimaa"
+
+#: iptcorigin.cpp:326
+msgid "Northern Ireland"
+msgstr "Põhja-Iirimaa"
+
+#: iptcorigin.cpp:327
+msgid "Wales"
+msgstr "Wales"
+
+#: iptcorigin.cpp:328
+msgid "Palestine"
+msgstr "Palestiina"
+
+#: iptcorigin.cpp:329
+msgid "Gaza"
+msgstr "Gaza"
+
+#: iptcorigin.cpp:330
+msgid "Jericho"
+msgstr "Jeeriko"
+
+#: iptcorigin.cpp:369
+msgid "Object name:"
+msgstr "Objekti nimi:"
+
+#: iptcorigin.cpp:373
+msgid ""
+"<p>Set here the shorthand reference of content. This field is limited to 64 "
+"ASCII characters."
+msgstr "<p>Siin saab määrata lühidalt sisu. Kasutada võib kuni 64 ASCII märki."
+
+#: iptcorigin.cpp:378
+msgid "Location:"
+msgstr "Asukoht:"
+
+#: iptcorigin.cpp:382
+msgid ""
+"<p>Set here the full country name referenced by the content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Siin saab määrata sisule vastava riigi täisnime. Kasutada võib kuni 64 ASCII "
+"märki."
+
+#: iptcorigin.cpp:388
+msgid "City:"
+msgstr "Linn:"
+
+#: iptcorigin.cpp:392
+msgid ""
+"<p>Set here the city of content origin. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu päritolulinna. Kasutada võib kuni 32 ASCII märki."
+
+#: iptcorigin.cpp:397
+msgid "Sublocation:"
+msgstr "Täpsem asukoht:"
+
+#: iptcorigin.cpp:401
+msgid ""
+"<p>Set here the content location within city. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Siin saab määrata sisu täpsema asukoha linnas. Kasutada võib kuni 32 ASCII "
+"märki."
+
+#: iptcorigin.cpp:406
+msgid "State/Province:"
+msgstr "Maakond/Provints:"
+
+#: iptcorigin.cpp:410
+msgid ""
+"<p>Set here the Province or State of content origin. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Siin saab määrata sisu päritolumaakonna või -provintsi. Kasutada võib kuni "
+"32 ASCII märki."
+
+#: iptcorigin.cpp:415
+msgid "Country:"
+msgstr "Riik:"
+
+#: iptcorigin.cpp:424
+msgid "<p>Select here country name of content origin."
+msgstr "<p>Vali siin sisu päritoluriik."
+
+#: iptcorigin.cpp:428
+msgid "Original transmission reference:"
+msgstr "Originaali edastamise viide:"
+
+#: iptcorigin.cpp:432
+msgid ""
+"<p>Set here the location of original content transmission. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Siin saab määrata originaalsisu edastamise asukohta. Kasutada võib kuni 32 "
+"ASCII märki."
+
+#: iptcstatus.cpp:104
+msgid "Edit Status:"
+msgstr "Oleku muutmine:"
+
+#: iptcstatus.cpp:110
+msgid ""
+"<p>Set here the content status. This field is limited to 64 ASCII characters."
+msgstr "<p>Siin saab määrata sisu oleku. Kasutada võib kuni 64 ASCII märki."
+
+#: iptcstatus.cpp:115
+msgid "Priority:"
+msgstr "Prioriteet:"
+
+#: iptcstatus.cpp:117
+msgid "0: None"
+msgstr "0: puudub"
+
+#: iptcstatus.cpp:118
+msgid "1: High"
+msgstr "1: suur"
+
+#: iptcstatus.cpp:122
+msgid "5: Normal"
+msgstr "5: normaalne"
+
+#: iptcstatus.cpp:125
+msgid "8: Low"
+msgstr "8: väike"
+
+#: iptcstatus.cpp:128
+msgid "<p>Select here the editorial urgency of content."
+msgstr "<p>Vali siin sisu olulisus."
+
+#: iptcstatus.cpp:132
+msgid "Object Cycle:"
+msgstr "Objekti kasutamisaeg:"
+
+#: iptcstatus.cpp:134
+msgid "Morning"
+msgstr "Hommik"
+
+#: iptcstatus.cpp:135
+msgid "Afternoon"
+msgstr "Pärastlõuna"
+
+#: iptcstatus.cpp:136
+msgid "Evening"
+msgstr "Õhtu"
+
+#: iptcstatus.cpp:139
+msgid "<p>Select here the editorial cycle of content."
+msgstr "<p>Vali siin sisu kasutamisaeg."
+
+#: iptcstatus.cpp:143
+msgid "Object Type:"
+msgstr "Objekti tüüp:"
+
+#: iptcstatus.cpp:148
+msgid "News"
+msgstr "Uudised"
+
+#: iptcstatus.cpp:149
+msgid "Data"
+msgstr "Andmed"
+
+#: iptcstatus.cpp:150
+msgid "Advisory"
+msgstr "Ametlik teade"
+
+#: iptcstatus.cpp:154
+msgid "<p>Select here the editorial type of content."
+msgstr "<p>Vali siin sisu tüüp."
+
+#: iptcstatus.cpp:155
+msgid ""
+"<p>Set here the editorial type description of content. This field is limited to "
+"64 ASCII characters."
+msgstr ""
+"<p>Siin saab määrata sisu tüübi kirjelduse. Kasutada võib kuni 64 ASCII märki."
+
+#: iptcstatus.cpp:160
+msgid "Object Attribute:"
+msgstr "Objekti atribuut:"
+
+#: iptcstatus.cpp:165
+msgid "Current"
+msgstr "Päevakajaline"
+
+#: iptcstatus.cpp:166
+msgid "Analysis"
+msgstr "Analüütiline"
+
+#: iptcstatus.cpp:167
+msgid "Archive material"
+msgstr "Arhiivimaterjal"
+
+#: iptcstatus.cpp:168
+msgid "Background"
+msgstr "Taust"
+
+#: iptcstatus.cpp:169
+msgid "Feature"
+msgstr "Olemuslugu"
+
+#: iptcstatus.cpp:170
+msgid "Forecast"
+msgstr "Ennustus"
+
+#: iptcstatus.cpp:171
+msgid "History"
+msgstr "Ajalugu"
+
+#: iptcstatus.cpp:172
+msgid "Obituary"
+msgstr "Nekroloog"
+
+#: iptcstatus.cpp:173
+msgid "Opinion"
+msgstr "Arvamus"
+
+#: iptcstatus.cpp:174
+msgid "Polls & Surveys"
+msgstr "Uuringud"
+
+#: iptcstatus.cpp:175
+msgid "Profile"
+msgstr "Profiil"
+
+#: iptcstatus.cpp:176
+msgid "Results Listings & Table"
+msgstr "Tulemused ja tabelid"
+
+#: iptcstatus.cpp:177
+msgid "Side bar & Supporting information"
+msgstr "Külgriba ja lisainfo"
+
+#: iptcstatus.cpp:178
+msgid "Summary"
+msgstr "Ülevaade"
+
+#: iptcstatus.cpp:179
+msgid "Transcript & Verbatim"
+msgstr "Transkript ja tsitaat"
+
+#: iptcstatus.cpp:180
+msgid "Interview"
+msgstr "Intervjuu"
+
+#: iptcstatus.cpp:181
+msgid "From the Scene"
+msgstr "Sündmuskoht"
+
+#: iptcstatus.cpp:182
+msgid "Retrospective"
+msgstr "Retrospektiiv"
+
+#: iptcstatus.cpp:183
+msgid "Statistics"
+msgstr "Statistika"
+
+#: iptcstatus.cpp:184
+msgid "Update"
+msgstr "Uuendus"
+
+#: iptcstatus.cpp:185
+msgid "Wrap-up"
+msgstr "Kokkuvõte"
+
+#: iptcstatus.cpp:186
+msgid "Press Release"
+msgstr "Pressiteade"
+
+#: iptcstatus.cpp:190
+msgid "<p>Select here the editorial attribute of content."
+msgstr "<p>Vali siin sisu atribuut."
+
+#: iptcstatus.cpp:191
+msgid ""
+"<p>Set here the editorial attribute description of content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Siin saab määrata sisu atribuudi kirjelduse. Kasutada võib kuni 64 ASCII "
+"märki."
+
+#: iptcstatus.cpp:196
+msgid "Job Identification:"
+msgstr "Töö identifikaator:"
+
+#: iptcstatus.cpp:202
+msgid ""
+"<p>Set here the string that identifies content that recurs. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Siin saab sisestada sisu tuvastava stringi. Kasutada võib kuni 32 ASCII "
+"märki."
+
+#: iptcsubjects.cpp:91
+msgid "Use structured definition of the subject matter:"
+msgstr "Teema struktureeritud definitsioon:"
+
+#: iptcsubjects.cpp:96
+msgid ""
+"<p>Enter here a new subject. This field is limited to 236 ASCII characters."
+msgstr "<p>Siin saab sisestada uue teema. Kasutada võib kuni 236 ASCII märki."
+
+#: plugin_metadataedit.cpp:68
+msgid "Metadata"
+msgstr "Metaandmed"
+
+#: plugin_metadataedit.cpp:73
+msgid "Edit EXIF..."
+msgstr "Muuda EXIF-it..."
+
+#: plugin_metadataedit.cpp:81
+msgid "Remove EXIF..."
+msgstr "Eemalda EXIF..."
+
+#: plugin_metadataedit.cpp:89
+msgid "Import EXIF..."
+msgstr "Impordi EXIF..."
+
+#: plugin_metadataedit.cpp:99
+msgid "Edit IPTC..."
+msgstr "Muuda IPTC-d..."
+
+#: plugin_metadataedit.cpp:107
+msgid "Remove IPTC..."
+msgstr "Eemalda IPTC..."
+
+#: plugin_metadataedit.cpp:115
+msgid "Import IPTC..."
+msgstr "Impordi IPTC..."
+
+#: plugin_metadataedit.cpp:125
+msgid "Edit Captions..."
+msgstr "Muuda pealdisi..."
+
+#: plugin_metadataedit.cpp:133
+msgid "Remove Captions..."
+msgstr "Eemalda pealdised..."
+
+#: plugin_metadataedit.cpp:179
+msgid ""
+"EXIF metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"EXIF-i metaandmed eemaldatakse kõigilt valitud piltidelt jäädavalt.\n"
+"Kas soovid jätkata?"
+
+#: plugin_metadataedit.cpp:181 plugin_metadataedit.cpp:220
+msgid "Remove EXIF Metadata"
+msgstr "EXIF-i metaandmete eemaldamine"
+
+#: plugin_metadataedit.cpp:218
+msgid "Unable to remove EXIF metadata from:"
+msgstr "Ei õnnestunud eemaldada EXIF-i metaandmeid failist:"
+
+#: plugin_metadataedit.cpp:233
+msgid "Select File to Import EXIF metadata"
+msgstr "Faili valik EXIF-i metaandmete importimiseks"
+
+#: plugin_metadataedit.cpp:241 plugin_metadataedit.cpp:387
+msgid "Cannot load metadata from \"%1\""
+msgstr "Metaandmete laadimine failist \"%1\" ebaõnnestus"
+
+#: plugin_metadataedit.cpp:242 plugin_metadataedit.cpp:251
+#: plugin_metadataedit.cpp:260 plugin_metadataedit.cpp:300
+msgid "Import EXIF Metadata"
+msgstr "EXIF-i metaandmete import"
+
+#: plugin_metadataedit.cpp:250
+msgid "\"%1\" do not have EXIF metadata"
+msgstr "\"%1\" ei sisalda EXIF-i metaandmeid"
+
+#: plugin_metadataedit.cpp:257
+msgid ""
+"EXIF metadata from current selected pictures will be permanently replaced by "
+"the EXIF content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"Valitud piltide EXIF-i metaandmed asendatakse jäädavalt faili \"%1\" EXIF-i "
+"sisuga.\n"
+"Kas soovid jätkata?"
+
+#: plugin_metadataedit.cpp:298
+msgid "Unable to set EXIF metadata from:"
+msgstr "Ei õnnestunud määrata EXIF-i metaandmeid failist:"
+
+#: plugin_metadataedit.cpp:325
+msgid ""
+"IPTC metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"IPTC metaandmed eemaldatakse kõigilt valitud piltidelt jäädavalt.\n"
+"Kas soovid jätkata?"
+
+#: plugin_metadataedit.cpp:327 plugin_metadataedit.cpp:366
+msgid "Remove IPTC Metadata"
+msgstr "IPTC metaandmete eemaldamine"
+
+#: plugin_metadataedit.cpp:364
+msgid "Unable to remove IPTC metadata from:"
+msgstr "Ei õnnestunud eemaldada IPTC metaandmeid failist:"
+
+#: plugin_metadataedit.cpp:379
+msgid "Select File to Import IPTC metadata"
+msgstr "Faili valik IPTC metaandmete importimiseks"
+
+#: plugin_metadataedit.cpp:388 plugin_metadataedit.cpp:397
+#: plugin_metadataedit.cpp:406 plugin_metadataedit.cpp:446
+msgid "Import IPTC Metadata"
+msgstr "IPTC metaandmete import"
+
+#: plugin_metadataedit.cpp:396
+msgid "\"%1\" do not have IPTC metadata"
+msgstr "\"%1\" ei sisalda IPTC metaandmeid"
+
+#: plugin_metadataedit.cpp:403
+msgid ""
+"IPTC metadata from current selected pictures will be permanently replaced by "
+"the IPTC content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"Valitud piltide IPTC metaandmed asendatakse jäädavalt faili \"%1\" IPTC "
+"sisuga.\n"
+"Kas soovid jätkata?"
+
+#: plugin_metadataedit.cpp:444
+msgid "Unable to set IPTC metadata from:"
+msgstr "Ei õnnestunud määrata IPTC metaandmeid failist:"
+
+#: plugin_metadataedit.cpp:508
+msgid "Unable to set captions as image metadata from:"
+msgstr "Ei õnnestunud määrata pealdistest pildi metaandmeid failist:"
+
+#: plugin_metadataedit.cpp:575
+msgid "Unable to remove caption as image metadata from:"
+msgstr "Ei õnnestunud eemaldada pealdistest pildi metaandmeid failist:"
+
+#: plugin_metadataedit.cpp:577
+msgid "Remove Image Caption"
+msgstr "Pildi pealdise eemaldamine"

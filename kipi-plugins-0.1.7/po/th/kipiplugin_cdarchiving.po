@@ -1,0 +1,611 @@
+# translation of kipiplugin_cdarchiving.po to Thai
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_cdarchiving\n"
+"POT-Creation-Date: 2008-06-10 23:47+0200\n"
+"PO-Revision-Date: 2007-02-25 17:12+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <l10n@opentle.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: cdarchiving.cpp:157 cdarchivingdialog.cpp:160 cdarchivingdialog.cpp:164
+#: cdarchivingdialog.cpp:598
+msgid "CD (650Mb)"
+msgstr "แผ่น CD (650 เมกะไบต์)"
+
+#: cdarchiving.cpp:163
+msgid "KIPI Albums Archiving"
+msgstr "ข้อมูลอัลบั้มภาพ KIPI"
+
+#: cdarchiving.cpp:179
+msgid "CD Albums"
+msgstr "แผ่น CD อัลบั้มภาพ"
+
+#: cdarchiving.cpp:180
+msgid "KIPI Album CD archiving"
+msgstr "แผ่น CD อัลบั้มภาพ KIPI"
+
+#: cdarchiving.cpp:181 cdarchivingdialog.cpp:453
+msgid "LINUX"
+msgstr "ลินุกซ์"
+
+#: cdarchiving.cpp:182 cdarchivingdialog.cpp:465
+msgid "K3b CD-DVD Burning application"
+msgstr "โปรแกรมเขียนแผ่น CD-DVD - K3b"
+
+#: cdarchiving.cpp:184
+msgid "KIPI CD-Archiving plugin"
+msgstr "ปลั๊กอิน KIPI สำหรับสร้างแผ่น CD อัลบั้มภาพ"
+
+#: cdarchiving.cpp:418
+msgid "Cannot start K3b program : fork failed."
+msgstr "ไม่สามารถเริ่มการทำงานโปรแกรม K3b ได้ : การ fork โปรแกรมล้มเหลว"
+
+#: cdarchiving.cpp:457
+msgid "K3b is done; removing temporary folder...."
+msgstr "โปรแกรม K3b ทำงานเสร็จแล้ว กำลังทำการลบโฟลเดอร์ชั่วคราว...."
+
+#: cdarchiving.cpp:467
+msgid "Cannot remove temporary folder '%1'."
+msgstr "ไม่สามารถลบโฟลเดอร์ชั่วคราว '%1' ได้"
+
+#: cdarchiving.cpp:497 cdarchiving.cpp:589
+msgid "Cannot remove folder '%1'."
+msgstr "ไม่สามารถลบโฟลเดอร์ '%1' ได้"
+
+#: cdarchiving.cpp:510 cdarchiving.cpp:559
+msgid "Could not create folder '%1'."
+msgstr "ไม่สามารถสร้างโฟลเดอร์ '%1' ได้"
+
+#: cdarchiving.cpp:626 cdarchiving.cpp:1056
+msgid "Could not open file '%1'."
+msgstr "ไม่สามารถเปิดแฟ้ม '%1' ได้"
+
+#: cdarchiving.cpp:651
+msgid "Could not create folder '%1' in '%2'."
+msgstr "ไม่สามารถสร้างโฟลเดอร์ '%1' ใน '%2' ได้"
+
+#: cdarchiving.cpp:744 cdarchiving.cpp:1197
+msgid "Album list"
+msgstr "รายการอัลบั้ม"
+
+#: cdarchiving.cpp:749
+msgid "Album "
+msgstr "อัลบั้ม "
+
+#: cdarchiving.cpp:759
+#, fuzzy
+msgid "<i>Caption:</i>"
+msgstr "<i>หมวดหมู่:</i>"
+
+#: cdarchiving.cpp:762
+msgid "<i>Collection:</i>"
+msgstr "<i>หมวดหมู่:</i>"
+
+#: cdarchiving.cpp:765
+msgid "<i>Date:</i>"
+msgstr "<i>วันที่:</i>"
+
+#: cdarchiving.cpp:767
+msgid "<i>Images:</i>"
+msgstr "<i>จำนวนภาพ:</i>"
+
+#: cdarchiving.cpp:850 cdarchiving.cpp:933 cdarchiving.cpp:1235
+msgid "KB"
+msgstr "กิโลไบต์"
+
+#: cdarchiving.cpp:895 cdarchiving.cpp:898
+msgid " images"
+msgstr " ภาพ"
+
+#: cdarchiving.cpp:959 cdarchiving.cpp:999 cdarchiving.cpp:1241
+msgid "Valid HTML 4.01."
+msgstr "ตรงตามมาตรฐาน HTML 4.01"
+
+#: cdarchiving.cpp:963 cdarchiving.cpp:1003
+msgid "Album archive created with <a href=\"%1\">%2</a> on %3"
+msgstr "สร้างชุดข้อมูลอัลบั้มโดย <a href=\"%1\">%2</a> เมื่อ %3"
+
+#: cdarchiving.cpp:982
+msgid "<i>Album list:</i>"
+msgstr "<i>รายการอัลบั้ม:</i>"
+
+#: cdarchiving.cpp:1190
+msgid "Previous"
+msgstr "ย้อนกลับ"
+
+#: cdarchiving.cpp:1195
+msgid "Album index"
+msgstr "ดัชนีอัลบั้ม"
+
+#: cdarchiving.cpp:1202
+msgid "Next"
+msgstr "ถัดไป"
+
+#: cdarchiving.cpp:1247
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "สร้างแกลเลอรีภาพโดย <a href=\"%1\">%2</a> เมื่อ %3"
+
+#: cdarchiving.cpp:1410
+msgid "Creating project header..."
+msgstr "กำลังสร้างส่วนหัวโครงการ..."
+
+#: cdarchiving.cpp:1425 cdarchiving.cpp:1463 cdarchiving.cpp:1593
+#: cdarchivingdialog.cpp:163 cdarchivingdialog.cpp:607
+msgid "DVD (4,7Gb)"
+msgstr "แผ่น DVD (4.7 กิกะไบต์)"
+
+#: cdarchiving.cpp:1583
+msgid "Adding Album '%1' into project..."
+msgstr "กำลังเพิ่มอัลบั้ม '%1' ไปยังโครงการ..."
+
+#: cdarchivingdialog.cpp:88
+msgid "Configure Archive to CD"
+msgstr "ปรับแต่งการทำข้อมูลไปยังแผ่น CD"
+
+#: cdarchivingdialog.cpp:91
+msgid "Create CD/DVD Archive"
+msgstr "สร้างแผ่นข้อมูล CD/DVD"
+
+#: cdarchivingdialog.cpp:101
+msgid "CD/DVD Archiving"
+msgstr "แผ่นข้อมูล CD/DVD"
+
+#: cdarchivingdialog.cpp:104
+msgid ""
+"An Album CD/DVD Archiving Kipi plugin.\n"
+"This plugin use K3b CD/DVD burning software available at\n"
+"http://www.k3b.org"
+msgstr ""
+"ปลั๊กอินของ Kipi สำหรับสร้างสื่อข้อมูล CD/DVD สำหรับอัลบั้มภาพ\n"
+"ปลั๊กอินนี้มีการเรียกใช้โปรแกรมเขียนแผ่น CD/DVD - K3b "
+"โดยแวะเยี่ยมโครงการได้ที่\n"
+"http://www.k3b.org"
+
+#: cdarchivingdialog.cpp:109
+msgid "Author"
+msgstr "ผู้เขียน"
+
+#: cdarchivingdialog.cpp:112
+msgid "Contributor"
+msgstr "ผู้มีส่วนช่วยเหลือ"
+
+#: cdarchivingdialog.cpp:115
+msgid "Image navigation mode patches"
+msgstr "แพตช์โหมดการปรับเลื่อนเพื่อดูภาพ"
+
+#: cdarchivingdialog.cpp:118
+msgid "Bugfix"
+msgstr "แก้ไขบัก"
+
+#: cdarchivingdialog.cpp:124
+msgid "Plugin Handbook"
+msgstr ""
+
+#: cdarchivingdialog.cpp:140
+msgid "Selection"
+msgstr "การเลือก"
+
+#: cdarchivingdialog.cpp:140
+msgid "Album Selection"
+msgstr "เลือกอัลบั้มภาพ"
+
+#: cdarchivingdialog.cpp:150
+msgid "Target Media Information"
+msgstr "ข้อมูลรายละเอียดของสื่อเป้าหมาย"
+
+#: cdarchivingdialog.cpp:154
+msgid "<p>Information about the backup medium."
+msgstr "<p>ข้อมูลรายละเอียดของสื่อสำรองข้อมูล"
+
+#: cdarchivingdialog.cpp:161 cdarchivingdialog.cpp:601
+msgid "CD (700Mb)"
+msgstr "แผ่น CD (700 เมกะไบต์)"
+
+#: cdarchivingdialog.cpp:162 cdarchivingdialog.cpp:604
+msgid "CD (880Mb)"
+msgstr "แผ่น CD (880 เมกะไบต์)"
+
+#: cdarchivingdialog.cpp:166
+msgid "<p>Select here the backup media format."
+msgstr "<p>เลือกรูปแบบของสื่อสำรองข้อมูลได้ที่นี่"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface"
+msgstr "ส่วนติดต่อผู้ใช้แบบ HTML"
+
+#: cdarchivingdialog.cpp:182
+msgid "HTML Interface Look"
+msgstr "คู่มือส่วนติดต่อผู้ใช้แบบ HTML"
+
+#: cdarchivingdialog.cpp:189
+msgid "Build CD HTML interface"
+msgstr "สร้างส่วนติดต่อผู้ใช้แบบ HTML"
+
+#: cdarchivingdialog.cpp:193
+msgid "<p>This option adds a HTML interface to browse the CD's contents."
+msgstr ""
+"<p>ตัวเลือกนี้จะมีการใช้ส่วนติดต่อผู้ใช้แบบ HTML สำหรับดูเนื้อหาภายในแผ่น CD"
+
+#: cdarchivingdialog.cpp:197
+msgid "Add \"autorun\" functionality"
+msgstr "เพิ่มการรองรับฟังก์ชัน \"autorun\""
+
+#: cdarchivingdialog.cpp:201
+msgid "<p>This option adds MS Windows(tm) autorunning capability to the CD."
+msgstr ""
+"<p>ตัวเลือกนี้จะเพิ่มการรองรับฟังก์ชัน \"autorun\" สำหรับใช้กับระบบ MS "
+"Windows(tm)"
+
+#: cdarchivingdialog.cpp:205
+msgid "Archive title:"
+msgstr "ชื่อข้อมูล"
+
+#: cdarchivingdialog.cpp:208
+msgid "Album Archiving"
+msgstr "สื่อข้อมูลอัลบั้ม"
+
+#: cdarchivingdialog.cpp:211
+msgid "<p>Enter here the title of the CD archive."
+msgstr "<p>ใส่ชื่อของข้อมูลแผ่น CD ได้ที่นี่"
+
+#: cdarchivingdialog.cpp:217
+msgid "I&mages per row:"
+msgstr "จำนวนภาพต่อหนึ่งแถว:"
+
+#: cdarchivingdialog.cpp:218
+msgid ""
+"<p>Enter here the number of images per row on the album page. A good value is "
+"'4'."
+msgstr ""
+"<p>ตั้งค่าจำนวนภาพที่จะให้แสดงต่อหนึ่งแถวบนหน้าอัลบั้มได้ที่นี่ "
+"โดยค่าที่เหมาะสมคือ '4'"
+
+#: cdarchivingdialog.cpp:229
+msgid "Thumbnail size:"
+msgstr "ขนาดมิติของภาพตัวอย่าง:"
+
+#: cdarchivingdialog.cpp:231
+msgid "<p>The new size of thumbnails in pixels"
+msgstr "<p>ขนาดมิติภาพของภาพตัวอย่าง"
+
+#: cdarchivingdialog.cpp:241
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>เลือกรูปแบบแฟ้มภาพสำหรับใช้กับภาพตัวอย่างได้ที่นี่<p>"
+
+#: cdarchivingdialog.cpp:242
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: รูปแบบแฟ้มของ The Joint Photographic Experts Group "
+"เหมาะสำหรับใช้กับเวบ แต่จะมีการบีบข้อมูลที่ทำให้ภาพเสียรายละเอียด"
+"<p><b>PNG</b>: รูปแบบแฟ้ม Portable Network Graphics "
+"เป็นแฟ้มที่ภาพเสียรายละเอียดน้อยมาก มีขนาดที่เหมาะสม และเหมาะกับการใช้ แฟ้มแบบ "
+"PNG นั้นไม่มีปัญหาเรื่องสิทธิบัตรต่างจากแฟ้มแบบ GIF และยังสามารถใช้ทดแทนแฟ้มแบบ "
+"TIFF ได้ดีอีกด้วย แฟ้มแบบ PNG ถูกออกแบบมาให้ทำงานได้ดีกับการแสดงผลแบบออนไลน์ "
+"เช่น เวบ "
+"ดังนั้นมันจึงสามารถเลือกทำการแสดงผลแบบโพรเกรสซีฟในระหว่างการรับสายข้อมูลได้และเช"
+"่นกัน แฟ้มแบบ PNG ยังสามารถเก็บค่าแกมม่าและค่าข้อมูลโครม่า "
+"สำหรับปรับปรุงใช้งานระบบกับอุปกรณ์ที่แตกต่างกันได้ง่าย"
+
+#: cdarchivingdialog.cpp:253
+msgid "Thumbnail file format:"
+msgstr "รูปแบบของแฟ้มภาพตัวอย่าง:"
+
+#: cdarchivingdialog.cpp:269
+msgid "<p>Select here the font name used for the pages."
+msgstr "<p>เลือกชื่อของแบบอักษรที่ต้องการใช้บนเอกสารเวบได้ที่นี่"
+
+#: cdarchivingdialog.cpp:271
+msgid "Fon&t name:"
+msgstr "ชื่อแบบอักษร:"
+
+#: cdarchivingdialog.cpp:284
+msgid "<p>Select here the font size used for the pages."
+msgstr "<p>เลือกขนาดตัวอักษรที่ต้องการใช้บนเอกสารเวบได้ที่นี่"
+
+#: cdarchivingdialog.cpp:286
+msgid "Font si&ze:"
+msgstr "ขนาดตัวอักษร:"
+
+#: cdarchivingdialog.cpp:299
+msgid "<p>Select here the foreground color used for the pages."
+msgstr "<p>เลือกสีพื้นหน้าที่ต้องการใช้บนเอกสารเวบได้ที่นี่"
+
+#: cdarchivingdialog.cpp:301
+msgid "&Foreground color:"
+msgstr "สีพื้นหน้า:"
+
+#: cdarchivingdialog.cpp:314
+msgid "<p>Select here the background color used for the pages."
+msgstr "<p>เลือกสีพื้นหลังที่ต้องการบนเอกสารเวบได้ที่นี่"
+
+#: cdarchivingdialog.cpp:316
+msgid "&Background color:"
+msgstr "สีพื้นหลัง:"
+
+#: cdarchivingdialog.cpp:329
+msgid "<p>Select here the image border's size in pixels."
+msgstr "<p>เลือกขนาดกรอบภาพได้ที่นี่ โดยมีหน่วยเป็นพิกเซล"
+
+#: cdarchivingdialog.cpp:331
+msgid "Image border s&ize:"
+msgstr "ขนาดของกรอบภาพ:"
+
+#: cdarchivingdialog.cpp:344
+msgid "<p>Select here the color used for the image borders."
+msgstr "<p>เลือกสีของกรอบภาพที่ต้องการใช้ได้ที่นี่"
+
+#: cdarchivingdialog.cpp:347
+msgid "Image bo&rder color:"
+msgstr "สีของกรอบภาพ:"
+
+#: cdarchivingdialog.cpp:418
+msgid "Volume Descriptor"
+msgstr "ข้อมูลของแผ่นสื่อ"
+
+#: cdarchivingdialog.cpp:418
+msgid "Media Volume Descriptor"
+msgstr "ข้อมูลรายละเอียดเกี่ยวกับแผ่นสื่อข้อมูล"
+
+#: cdarchivingdialog.cpp:427
+msgid "Volume name:"
+msgstr "ชื่อสื่อข้อมูล:"
+
+#: cdarchivingdialog.cpp:430
+msgid "CD Album"
+msgstr "อัลบั้ม CD"
+
+#: cdarchivingdialog.cpp:434
+msgid "<p>Enter here the media volume name (32 characters max.)"
+msgstr "<p>ใส่ชื่อสื่อข้อมูลได้ที่นี่ (ความยาวสูงสุด 32 ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:438
+msgid "Volume set name:"
+msgstr "ชื่อชุดของสื่อข้อมูล:"
+
+#: cdarchivingdialog.cpp:441
+msgid "Album CD archive"
+msgstr "แผ่นข้อมูล CD อัลบั้ม"
+
+#: cdarchivingdialog.cpp:446
+msgid "<p>Enter here the media volume global name (128 characters max.)"
+msgstr "<p>ใส่ชื่อทั่วไปของชุดสื่อข้อมูลได้ที่นี่ (ความยาวสูงสุด 128 ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:450
+msgid "System:"
+msgstr "ระบบ:"
+
+#: cdarchivingdialog.cpp:458
+msgid "<p>Enter here the media burning system name (32 characters max.)"
+msgstr ""
+"<p>ใส่ชื่อของระบบที่ใช้สร้างแผ่นสื่อข้อมูลได้ที่นี่ (ความยาวสูงสุด 32 ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:462
+msgid "Application:"
+msgstr "แอพพลิเคชัน:"
+
+#: cdarchivingdialog.cpp:470
+msgid "<p>Enter here the media burning application name (128 characters max.)."
+msgstr ""
+"<p>ใส่ชื่อของแอพพลิเคชันที่ใช้สร้างแผ่นสื่อข้อมูลได้ที่นี่ (ความยาวสูงสุด 128 "
+"ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:475
+msgid "Publisher:"
+msgstr "ผู้สร้าง:"
+
+#: cdarchivingdialog.cpp:478
+msgid "KIPI [KDE Images Program Interface]"
+msgstr "ปลั๊กอิน KIPI [KDE Images Program Interface]"
+
+#: cdarchivingdialog.cpp:483
+msgid "<p>Enter here the media publisher name (128 characters max.)."
+msgstr ""
+"<p>ใส่ชื่อของผู้สร้างแผ่นสื่อข้อมูลได้ที่นี่ (ความยาวสูงสุด 128 ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:487
+msgid "Preparer:"
+msgstr "จัดเตรียมโดย:"
+
+#: cdarchivingdialog.cpp:490
+msgid "KIPI CD Archiving plugin"
+msgstr "ปลั๊กอินของ KIPI สำหรับสร้างสื่อข้อมูล CD"
+
+#: cdarchivingdialog.cpp:494
+msgid "<p>Enter here the media preparer name (128 characters max.)."
+msgstr ""
+"<p>ใส่ชื่อของผู้จัดเตรียมสื่อข้อมูลได้ที่นี่ (ความยาวสูงสุด 128 ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:501
+msgid "Media Burning"
+msgstr "การสร้างสื่อข้อมูล"
+
+#: cdarchivingdialog.cpp:502
+msgid "CD/DVD Burning Setup"
+msgstr "ตั้งค่าการเขียนแผ่น CD/DVD"
+
+#: cdarchivingdialog.cpp:511
+msgid "&K3b binary path:"
+msgstr "เส้นทางไปยังโปรแกรม &K3b:"
+
+#: cdarchivingdialog.cpp:521
+msgid "<p>The path name to the K3b binary program."
+msgstr "<p>ชื่อเส้นทางที่ชี้ไปยังโปรแกรม K3b"
+
+#: cdarchivingdialog.cpp:525
+msgid "Application parameters:"
+msgstr "พารามิเตอร์ที่จะส่งไปให้โปรแกรม:"
+
+#: cdarchivingdialog.cpp:533
+msgid ""
+"<p>Enter parameters which will be used when starting the burning application. "
+"Newer versions of K3b might need --nofork, older versions might not need it. "
+"(128 characters max.)."
+msgstr ""
+"<p>ใส่พารามิเตอร์ที่ต้องการส่งไปในการเรียกการทำงานของโปรแกรมสร้างแผ่นสื่อข้อมูล "
+"โดยโปรแกรม K3b รุ่นใหม่ ๆ นั้น จะต้องการพารามิเตอร์ --nofork "
+"ในขณะที่โปรแกรมรุ่นเก่าจะไม่ต้องการใช้ (ความยาวสูงสุด 128 ตัวอักษร)"
+
+#: cdarchivingdialog.cpp:540
+msgid "Advanced Burning Options"
+msgstr "ตัวเลือกการเขียนแผ่นขั้นสูง"
+
+#: cdarchivingdialog.cpp:548
+msgid "Media burning On-The-Fly"
+msgstr "เขียนแผ่นโดยไม่ต้องสร้างแฟ้มอิมเมจของแผ่น"
+
+#: cdarchivingdialog.cpp:550
+msgid ""
+"<p>This option uses the \"On-The-Fly\" media burning capability; this does not "
+"use a media image."
+msgstr ""
+"<p>ตัวเลือกนี้จะใช้ความสามารถ \"เขียนแผ่นโดยไม่ต้องสร้างแฟ้มอิมเมจของแผ่น\""
+
+#: cdarchivingdialog.cpp:554
+msgid "Check media"
+msgstr "ตรวจสอบสื่อ"
+
+#: cdarchivingdialog.cpp:556
+msgid ""
+"<p>This option verifies the media after the burning process. You must use K3b "
+"release >= 0.10.0"
+msgstr ""
+"<p>ตัวเลือกนี้จะทำให้มีการตรวจสอบสื่อหลังจากเสร็จการเขียนแผ่นเรียบร้อยแล้ว "
+"โดยคุณจะต้องใช้โปรแกรม K3b รุ่น >= 0.10.0"
+
+#: cdarchivingdialog.cpp:560
+msgid "Start burning process automatically"
+msgstr "เริ่มกระบวนการเขียนแผ่นอัตโนมัติ"
+
+#: cdarchivingdialog.cpp:563
+msgid ""
+"<p>This option start automatically the burning process when K3b is loaded."
+msgstr ""
+"<p>ตัวเลือกนี้จะทำให้มีการเริ่มกระบวนการเขียนแผ่นอัตโนมัติเมื่อทำการโหลดโปรแกรม "
+"K3b เรียบร้อยแล้ว"
+
+#: cdarchivingdialog.cpp:623
+msgid "Total size: "
+msgstr "ขนาดรวม: "
+
+#: cdarchivingdialog.cpp:624
+msgid "<b>%1</b></font> / <b>%2</b>"
+msgstr "<b>%1</b></font> / <b>%2</b>"
+
+#: cdarchivingdialog.cpp:634
+msgid "You must selected at least one Album to archive."
+msgstr "คุณต้องเลือกอัลบั้มอย่างน้อยหนึ่งอัลบั้มเพื่อใช้สร้างสื่อข้อมูล"
+
+#: cdarchivingdialog.cpp:642
+msgid "K3b binary path is not valid. Please check it."
+msgstr "เส้นทางไปยังโปรแกรม K3b ไม่ถูกต้อง โปรดตรวจสอบ"
+
+#: cdarchivingdialog.cpp:648
+msgid "Target media size is too big. Please change your album selection."
+msgstr ""
+"ขนาดของสื่อเป้าหมายใหญ่เกินไป โปรดปรับลดขนาดโดยการเปลี่ยนการเลือกอัลบั้มของคุร"
+
+#: plugin_cdarchiving.cpp:61
+msgid "Archive to CD/DVD..."
+msgstr "สร้างแผ่น CD/DVD ภาพถ่าย..."
+
+#: plugin_cdarchiving.cpp:126
+msgid "Archive to CD/DVD"
+msgstr "สร้างแผ่น CD/DVD ภาพถ่าย"
+
+#: plugin_cdarchiving.cpp:147
+msgid "Initialising..."
+msgstr "กำลังเริ่มการทำงาน..."
+
+#: plugin_cdarchiving.cpp:154
+msgid "Making main HTML interface..."
+msgstr "กำลังสร้างส่วนติดต่อแบบ HTML..."
+
+#: plugin_cdarchiving.cpp:160
+msgid "Making HTML pages for Album '%1'..."
+msgstr "กำลังสร้างเอกสารเวบแบบ HTML สำหรับอัลบั้ม '%1'..."
+
+#: plugin_cdarchiving.cpp:166
+msgid "Making AutoRun interface..."
+msgstr "กำลังสร้างส่วนรองรับฟังก์ชัน AutoRun..."
+
+#: plugin_cdarchiving.cpp:172
+msgid "Creating thumbnail for '%1'..."
+msgstr "กำลังสร้างภาพตัวอย่างสำหรับ '%1'..."
+
+#: plugin_cdarchiving.cpp:178
+msgid "Making K3b project..."
+msgstr "กำลังสร้างโครงการของ K3b..."
+
+#: plugin_cdarchiving.cpp:207
+msgid "Main HTML interface creation completed."
+msgstr "ทำการสร้างส่วนติดต่อผู้ใช้แบบ HTML เรียบร้อยแล้ว"
+
+#: plugin_cdarchiving.cpp:214
+msgid "HTML page creation for Album '%1' completed."
+msgstr "ทำการสร้างหน้าเอกสารเวบแบบ HTML สำหรับอัลบั้ม '%1' เรียบร้อยแล้ว"
+
+#: plugin_cdarchiving.cpp:221
+msgid "Creating thumbnail for '%1' done."
+msgstr "ทำการสร้างภาพตัวอย่างสำหรับ '%1' เรียบร้อยแล้ว"
+
+#: plugin_cdarchiving.cpp:228
+msgid "AutoRun interface creation completed."
+msgstr "ทำการสร้างส่วนรองรับฟังก์ชัน AutoRun เรียบร้อยแล้ว"
+
+#: plugin_cdarchiving.cpp:235
+msgid "K3b project creation completed."
+msgstr "ทำการสร้างโครงการของ K3b เรียบร้อยแล้ว"
+
+#: plugin_cdarchiving.cpp:253
+msgid "Failed to create thumbnail for '%1'"
+msgstr "ล้มเหลวในการสร้างภาพตัวอย่างสำหรับ '%1'"
+
+#: plugin_cdarchiving.cpp:262
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "ล้มเหลวในการสร้างส่วนติดต่อผู้ใช้แบบ HTML: %1"
+
+#: plugin_cdarchiving.cpp:273
+msgid "Failed to create HTML pages for Album '%1'"
+msgstr "ล้มเหลวในการสร้างเอกสารเวบแบบ HTML สำหรับอัลบั้ม '%1'"
+
+#: plugin_cdarchiving.cpp:285
+msgid "Failed to create K3b project."
+msgstr "ล้มเหลวในการสร้างโครงการสำหรับ K3b"
+
+#: plugin_cdarchiving.cpp:327
+msgid "Starting K3b program..."
+msgstr "กำลังเริ่มการทำงานโปรแกรม K3b..."
+
+#~ msgid "CD/DVD Archiving Handbook"
+#~ msgstr "คู่มือการใช้ปลั๊กอินสร้างแผ่นข้อมูล CD/DVD"
+
+#~ msgid "<i>Comment:</i>"
+#~ msgstr "<i>หมายเหตุ:</i>"

@@ -1,0 +1,15 @@
+This is supposed to be a demonstration program on
+how to integrate a program in kio_sdp.
+kbtserialchat handles the serial port profile.
+It registeres a mimetype for this profile and associates
+this mimetype with some uuid that can be found in
+a supported sdp record.
+This way, kbtserialchat is called, if the user browses
+the bluetooth neighborhood with kio_sdp and and
+clicks on the serial port service icon of some device.
+
+The program will be call with an URL as parameter, which
+has the selected bluetooth device as hostname and
+various other parameteres encoded as url-parameters.
+In a KDE program, this parameters can be easily accessed
+with KURL.

@@ -1,0 +1,10 @@
+--- branches/KDE/3.5/kdebase/kicker/taskbar/taskbar.cpp	2008/08/28 23:10:18854164
++++ branches/KDE/3.5/kdebase/kicker/taskbar/taskbar.cpp	2008/11/19 00:45:13886334
+@@ -304,6 +304,7 @@
+ 
+     Panner::resizeEvent(e);
+     reLayoutEventually();
++    setViewportBackground();
+ }
+ 
+ void TaskBar::add(Task::Ptr task)

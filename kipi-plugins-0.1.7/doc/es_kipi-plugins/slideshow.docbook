@@ -1,0 +1,136 @@
+<chapter id="slideshow">
+<chapterinfo>
+
+<title
+>Presentación de imágenes</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard@kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento «presentación de imágenes» crea presentaciones a pantalla completa de sus imágenes. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Con este complemento de Kipi podrá crear presentaciones con 3 pulsaciones de ratón. </para>
+
+<sect1 id="using-plugin-slideshowsettings">
+<title
+>El diálogo preferencias</title>
+
+<para
+>Una vez abierta el complemento desde la aplicación servidora aparecerá la ventana <emphasis
+>Mostrar presentación</emphasis
+> que le preguntará sobre cómo desea que se realice la presentación. Puede seleccionar una serie de imágenes o el álbum completo. </para>
+
+<para
+>La casilla <guilabel
+>Utilizar transiciones OpenGL en las presentaciones</guilabel
+> crea pequeñas transiciones utilizando el modo OpenGL. Asegúrese de tener activado OpenGL en su tarjeta gráfica, sino la presentación se ralentizará. </para>
+
+<para
+>La casilla <guilabel
+>Imprimir nombre de archivo</guilabel
+> activa el nombre de archivo de la imagen para que se muestre en la esquina inferior izquierda. </para>
+
+<para
+>Activar la casilla <guilabel
+>Repetir </guilabel
+> ejecutará la presentación completa de forma continua (hasta que lo detenga manualmente con <keycombo
+><keycap
+>Esc</keycap
+></keycombo
+>). </para>
+
+<para
+>La casilla <guilabel
+>Barajar imágenes</guilabel
+> activa la presentación aleatoria de imágenes (no utiliza el orden de la colección de imágenes). </para>
+
+<para
+>La <guilabel
+>Espera entre las imágenes</guilabel
+> puede configurarse en milisegundos. 1.500 milisegundos se corresponde con 1,5 segundos y es el valor predeterminado. El mejor retardo dependerá un poco de la potencia de su ordenador y del efecto de transición. Pruebe a mostrárselo a sus amigos. </para>
+
+<para
+>Existe más de una docena de <guilabel
+>Efectos de transición</guilabel
+> disponibles. La selección <emphasis
+>Aleatoria</emphasis
+> cambiará el efecto de transición para cada imagen. </para>
+
+<figure>
+    <title
+>El diálogo de presentación</title>
+    <graphic srccredit="The Slideshow Dialog" fileref="slideshow_dialog.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-slideshowinaction">
+<title
+>Mostrar presentación en acción</title>
+
+<para
+>Durante la presentación, el usuario puede acceder a una barra de herramientas en la esquina superior izquierda de la pantalla. Mueva el cursor del ratón a dicha parte para activarla. </para>
+
+<para
+>Con esta barra de herramientas, el usuario puede dirigir la presentación, para parar/continuar la presentación, ir a la imagen anterior, ir a la siguiente imagen y detener la presentación. </para>
+
+<para
+>En la esquina inferior izquierda puede ver el nombre del archivo de la imagen actual, el identificador de la imagen en la presentación y el número total de imágenes incluídas. </para>
+
+<figure>
+    <title
+>El complemento de presentación avanzada en acción</title>
+    <graphic srccredit="The Slideshow Plugin in Action" fileref="slideshow.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

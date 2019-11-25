@@ -1,0 +1,14 @@
+--- hald/linux/addons/addon-storage.c.orig	2015-08-24 00:15:44.000000000 +0000
++++ hald/linux/addons/addon-storage.c	2015-08-24 00:24:43.932501773 +0000
+@@ -32,10 +32,10 @@
+ #include <linux/cdrom.h>
+ #include <linux/fs.h>
+ #include <mntent.h>
++#include <stdlib.h>
+ #include <scsi/sg.h>
+ #include <stdint.h>
+ #include <stdio.h>
+-#include <stdlib.h>
+ #include <string.h>
+ #include <sys/ioctl.h>
+ #include <unistd.h>

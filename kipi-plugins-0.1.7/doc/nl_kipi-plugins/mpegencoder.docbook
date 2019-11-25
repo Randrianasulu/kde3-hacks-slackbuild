@@ -1,0 +1,118 @@
+<chapter id="mpegencoder">
+<chapterinfo>
+
+<title
+>MPEG-encoder</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>        
+</authorgroup>
+
+<abstract>
+<para
+>De Kipi-plugin "MPEG-encoder" is een hulpmiddel voor het converteren van een serie afbeeldingen naar een diavoorstelling in de vorm van een MPEG-film. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inleiding</title>
+
+<para
+>De MPEG-encoder-plugin kan worden gebruikt om een selectie afbeeldingen te converteren naar een diavoorstelling van een bepaalde tijdsduur. Hierbij worden alle afbeeldingen samengevoegd tot 1 MPEG-filmbestand. Deze plugin maakt gebruik van programma's uit de pakketten "MjpegTools" en "ImageMagick". Voor de overgang tussen afbeeldingen kunt u kiezen uit verschillende animaties. U kunt ook geluid toevoegen aan de film met behulp van een MP2- of WAV-bestand. </para>
+
+<para
+>Alle afbeeldingen worden automatisch naar het juiste formaat voor de video geschaald. Verder kunt u een eigen achtergrondkleur instellen. U kunt deze plugin gebruiken om een DVD/XVCD/SVCD/VCD-diavoorstelling te maken die op een DVD home-cinema-set kan worden afgespeeld. Het programma K3b wordt gebruikt om de schijf aan te maken. </para>
+
+<sect1 id="using-plugin-mpeg_encode">
+<title
+>De plugin gebruiken</title>
+
+<para
+>Als eerste selecteert u de afbeeldingen die u in de diavoorstelling wilt gebruiken in het hoofdprogramma. Daarna gaat u naar menuoptie <menuchoice
+><guimenu
+>Hulpmiddelen</guimenu
+><guimenuitem
+>MPEG-diavoorstelling aanmaken</guimenuitem
+></menuchoice
+> in het hoofdprogramma. </para>
+
+<para
+>De eerder geselecteerde afbeeldingen verschijnen in het lijstveld <guilabel
+>Afbeeldingsbestanden in portfolio</guilabel
+>. In dit veld kunt u de bestanden ordenen of de lijstinhoud wijzigen. </para>
+
+<para
+>Als u tevreden bent over de inhoud, pas dan de andere instellingen aan. Het videoformaat kan worden gekozen uit vier verschillende formaten: DVD, XVCD, SVCD of VCD. Als de diavoorstelling op een televisie zal worden getoond, selecteer dan de te gebruiken TV-standaard: PAL, SECAM of NTSC. PAL is de standaardwaarde, welke in centraal Europa, inclusief Nederland en België, wordt gebruikt. </para>
+
+<para
+>Vervolgens kunt u de weergaveduur per afbeelding in seconden kiezen. In de lijst eronder kunt u het overgangsgedrag tussen de afbeeldingen instellen. Een lage waarde geeft een plotselinge overgang, terwijl een hoge waarde een zachte overgang geeft. </para>
+
+<para
+>Bij de volgende selectie kunt u de te gebruiken achtergrond kiezen. Als u twijfelt, laat deze dan zwart. Het vak Bestandsnaam MPEG-uitvoer' geeft aan waar het MPEG-bestand zal worden opgeslagen, en onder welke naam. Verander naar wens de bestandsnaam en -locatie, waarbij u de extensie .mpg behoudt. </para>
+
+<para
+>Als u 'Bestandsnaam audio-invoer' naar een geluidsbestand laat verwijzen, dan zal deze worden geïntegreerd in het MPEG-bestand. Als u klaar bent met het instellen klikt u op de knop <guilabel
+>Coderen</guilabel
+> om de conversie te starten. Afhankelijk van de snelheid van uw computer kunt u ondertussen één of meer kopjes koffie drinken terwijl de plugin het mpeg-bestand genereert. Geniet van uw diavoorstelling als deze klaar is. </para>
+
+<note>
+<para
+>Als de plugins bepaalde encoders of hulpprogramma's niet kan vinden, dan kunt u de paden naar programma's als "MjpegTools" en "Imagemagick" opgeven met de knop <guilabel
+>Instellingen</guilabel
+> rechtsonder. </para>
+</note>
+
+<figure>
+    <title
+>De dialoog MPEG-codering</title>
+    <graphic srccredit="The MPEG Encoder Dialog Preview" fileref="mpeg_encode_dialog.png"/>
+</figure>
+
+<para
+>U kunt enkele voorbeelden die met deze plugin zijn gemaakt vinden op <ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/"
+>deze website</ulink
+>. </para>
+
+</sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

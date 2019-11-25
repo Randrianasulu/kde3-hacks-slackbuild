@@ -1,0 +1,223 @@
+# translation of kipiplugin_sync.po to Estonian
+#
+# Marek Laane <bald@starman.ee>, 2007-2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sync\n"
+"POT-Creation-Date: 2008-07-08 22:16+0200\n"
+"PO-Revision-Date: 2008-03-23 21:56+0300\n"
+"Last-Translator: Marek Laane <bald@starman.ee>\n"
+"Language-Team: Estonian <kde-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Marek Laane"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "bald@starman.ee"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Nimi:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Kasutajanimi:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Parool:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "&Galerii 2 kasutamine"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:136
+msgid "Albums"
+msgstr "Albumid"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Vaikevalikute tähistamine"
+
+#: gallerywidget.cpp:109
+msgid "Resize photos before uploading"
+msgstr "Fotode suuruse muutmine enne üleslaadimist"
+
+#: gallerywidget.cpp:117
+msgid "Maximum dimension:"
+msgstr "Maks. mõõtmed:"
+
+#: gallerywidget.cpp:135
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Galerii eksport</h2>"
+
+#: gallerywidget.cpp:137
+msgid "&New Album"
+msgstr "&Uus Album"
+
+#: gallerywidget.cpp:138
+msgid "&Add Photos"
+msgstr "Lis&a fotosid"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Galerii eksport"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "KIPI plugin pildikogu eksportimiseks võrgugalerii serverisse."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Autor"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Hooldaja"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Plugina käsiraamat"
+
+#: gallerywindow.cpp:228
+msgid "Failed to login into remote gallery. "
+msgstr "Võrgugaleriisse sisselogimine nurjus."
+
+#: gallerywindow.cpp:230
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Kas proovida uuesti?"
+
+#: gallerywindow.cpp:516
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Vabandust, albumi nimes ei ole järgmised sümbolid lubatud: %1"
+
+#: gallerywindow.cpp:586
+msgid "Uploading file %1 "
+msgstr "Faili %1 üleslaadimine "
+
+#: gallerywindow.cpp:603
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Foto üleslaadimine võrgugaleriisse nurjus. "
+
+#: gallerywindow.cpp:606
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Kas jätkata?"
+
+#: plugin_sync.cpp:77
+msgid "Synchronize..."
+msgstr "Sünkroniseeri..."
+
+#: plugin_sync.cpp:86
+msgid "Configure Synchronization..."
+msgstr "Seadista sünkroniseerimist..."
+
+#: plugin_sync.cpp:95 plugin_sync.cpp:104
+msgid "Synchronization Settings..."
+msgstr "Sünkroniseerimise seadistused..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "Minu dialoog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Uue albumi nimi</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Pealkiri (pole kohustuslik):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Nimi (pole kohustuslik):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Allkiri (pole kohustuslik):"
+
+#. i18n: file sinklistbase.ui line 16
+#: rc.cpp:24
+#, no-c-format
+msgid "Sinks"
+msgstr "Sihtkohad"
+
+#. i18n: file sinklistbase.ui line 97
+#: rc.cpp:30
+#, no-c-format
+msgid "&Find"
+msgstr "&Otsi"
+
+#. i18n: file sinklistbase.ui line 100
+#: rc.cpp:33
+#, no-c-format
+msgid "Alt+F"
+msgstr "Alt+F"
+
+#. i18n: file sinklistbase.ui line 128
+#: rc.cpp:42
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file sinklistbase.ui line 142
+#: rc.cpp:48
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#: sinklist.cpp:46
+msgid "Name"
+msgstr "Nimi"
+
+#: sinklist.cpp:47
+msgid "Type"
+msgstr "Tüüp"
+
+#: sinklist.cpp:121 sinklist.cpp:144
+msgid "No sink selected!"
+msgstr "Ühtki sihtkohta pole valitud!"
+
+#: sinklist.cpp:150
+msgid ""
+"Are you sure you want to remove this sink? All synchronisaton settings will be "
+"lost. You cannot undo this action."
+msgstr ""
+"Kas tõesti eemaldada see sihtkoht? Kõik sünkroniseemisseadistused lähevad "
+"kaotsi. Seda toimingut ei saa tagasi võtta."
+
+#: sinklist.cpp:153
+msgid "Remove Sink?"
+msgstr "Kas eemaldada sihtkoht?"

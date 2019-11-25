@@ -1,0 +1,70 @@
+#!/bin/sh
+#/***************************************************************************
+#                          dunhandler  -  a script for kio_sdp
+#                             -------------------
+#    begin                : Mon March 29 2004
+#    copyright            : (C) 2004 by Simone Gotti
+#    email                : simone.gotti@email.it
+# ***************************************************************************/
+#
+#/***************************************************************************
+# *                                                                         *
+# *   This program is free software; you can redistribute it and/or modify  *
+# *   it under the terms of the GNU General Public License as published by  *
+# *   the Free Software Foundation; either version 2 of the License, or     *
+# *   (at your option) any later version.                                   *
+# *                                                                         *
+# ***************************************************************************/
+
+
+
+# get the btaddress and the rfcomm channel from the command line
+BTADDR=$(echo $1 | cut -d'/' -f3 | cut -d'[' -f2 | cut -d']' -f1)
+PARAMS=$(echo $1 | cut -d'?' -f2 ) 
+
+OLDIFS=$IFS
+IFS='&'
+for i in $PARAMS; do
+	if test $(echo $i | cut -d'=' -f1) = "rfcommchannel"; then
+	RFCOMM_CHANNEL=$(echo $i | cut -d'=' -f2)
+	fi
+done;
+IFS=$OLDIFS
+
+RFCOMM_SHOW_OUT=$(rfcomm show)
+
+# Check if the channel is already binded
+BINDED_CHANNEL=$(echo $RFCOMM_SHOW_OUT | grep -i $BTADDR | grep -i " "$RFCOMM_CHANNEL" " | cut -d' ' -f1 | cut -d':' -f1)
+
+if test "x"$BINDED_CHANNEL != "x"; then
+	MESSAGE1="A bind between the bluetooth device (using the dial-up-networking profile) and /dev/rfcomm$DEV_NUMBER already exists. You can use any connection program (kppp, pppd script etc...) using /dev/rfcomm$DEV_NUMBER like the modem device"
+
+	kdialog --msgbox "$MESSAGE1"
+else
+
+# Find the first unbinded /dev/rfcommX
+DEV_NUMBER=0
+while test "x"$(echo $RFCOMM_SHOW_OUT | grep "rfcomm"$DEV_NUMBER":"| cut -d' ' -f1 ) != "x"; do
+	DEV_NUMBER=$[$DEV_NUMBER+1]
+	if test $DEV_NUMBER -gt 255; then break; fi;
+done;
+
+
+# do the bind
+echo "doing: rfcomm bind $DEV_NUMBER $BTADDR $RFCOMM_CHANNEL"
+
+if test -e /def/rfcomm$DEV_NUMBER; then
+EXIT_CODE=$(kdesu -f/dev/rfcomm$DEV_NUMBER -c "rfcomm bind $DEV_NUMBER $BTADDR $RFCOMM_CHANNEL")
+else 
+EXIT_CODE=$(kdesu -c "rfcomm bind $DEV_NUMBER $BTADDR $RFCOMM_CHANNEL")
+fi
+
+echo $EXIT_CODE
+
+MESSAGE1="Created a bind between the bluetooth device (using the dial-up-networking profile) and /dev/rfcomm$DEV_NUMBER. You can use any connection program (kppp, pppd script etc...) using /dev/rfcomm$DEV_NUMBER like the modem device"
+
+kdialog --msgbox "$MESSAGE1"
+
+fi;
+
+

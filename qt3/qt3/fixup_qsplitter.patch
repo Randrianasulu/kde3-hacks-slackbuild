@@ -1,0 +1,54 @@
+--- /src/widgets/qsplitter_h	2015-09-10 15:01:17.000000000 +0000
++++ /src/widgets/qsplitter.h	2015-09-10 15:03:41.033071200 +0000
+@@ -48,51 +48,11 @@
+ 
+ #ifndef QT_NO_SPLITTER
+ 
+-#define QT_QSPLITTER_DEFAULT 2
+-
+ class QSplitterHandle;
+ class QSplitterPrivate;
+ class QSplitterLayoutStruct;
+ class QTextStream;
+ 
+-class QSplitterPrivate
+-{
+-public:
+-    QSplitterPrivate()
+-	: opaque( FALSE ), firstShow( TRUE ), childrenCollapsible( TRUE ),
+-	  handleWidth( 0 ) { }
+-
+-    QPtrList<QSplitterLayoutStruct> list;
+-    bool opaque;
+-    bool firstShow;
+-    bool childrenCollapsible;
+-    int handleWidth;
+-};
+-
+-class QSplitterLayoutStruct : public Qt
+-{
+-public:
+-    QCOORD sizer;
+-    uint isHandle;
+-    uint collapsible;
+-    uint resizeMode;
+-    QWidget *wid;
+-
+-    QSplitterLayoutStruct()
+-	: sizer( -1 ), collapsible( QT_QSPLITTER_DEFAULT ) { }
+-    QCOORD getSizer( Orientation orient );
+-};
+-
+-QCOORD QSplitterLayoutStruct::getSizer( Orientation orient )
+-{
+-    if ( sizer == -1 ) {
+-	QSize s = wid->sizeHint();
+-	if ( !s.isValid() || wid->testWState(WState_Resized) )
+-	    s = wid->size();
+-	sizer = ( orient == Horizontal ) ? s.width() : s.height();
+-    }
+-    return sizer;
+-}
+ 
+ class Q_EXPORT QSplitter : public QFrame
+ {

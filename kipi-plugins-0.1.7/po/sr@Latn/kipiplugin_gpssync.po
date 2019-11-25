@@ -1,0 +1,701 @@
+# translation of kipiplugin_gpssync.po to Serbian
+#
+# Slobodan Simic <simicsl@verat.net>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_gpssync\n"
+"POT-Creation-Date: 2008-11-18 08:53+0100\n"
+"PO-Revision-Date: 2007-07-18 13:48+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: gpseditdialog.cpp:88
+msgid "%1 - Edit Geographical Coordinates"
+msgstr "%1 - Uređivanje geografskih koordinata"
+
+#: gpseditdialog.cpp:98
+msgid ""
+"<p>Use the map on the right to select the location where the picture have been "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates."
+"<p>"
+msgstr ""
+
+#: gpseditdialog.cpp:102
+msgid "Altitude:"
+msgstr "Visina:"
+
+#: gpseditdialog.cpp:103
+msgid "Latitude:"
+msgstr "Geo.širina:"
+
+#: gpseditdialog.cpp:104
+msgid "Longitude:"
+msgstr "Geo.dužina:"
+
+#: gpseditdialog.cpp:118
+#, fuzzy
+msgid "Goto Location"
+msgstr "Geo-lokalizacija"
+
+#: gpseditdialog.cpp:144 gpssyncdialog.cpp:248 gpssyncdialog.cpp:313
+#: gpssyncdialog.cpp:321 gpssyncdialog.cpp:443 gpssyncdialog.cpp:453
+#: gpssyncdialog.cpp:462 gpssyncdialog.cpp:494
+msgid "GPS Sync"
+msgstr "GPS Sinhronizacija"
+
+#: gpseditdialog.cpp:147
+msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgstr "Priključak za sinhronizaciju metapodataka slika sa GPS uređajem"
+
+#: gpseditdialog.cpp:150 gpssyncdialog.cpp:254
+msgid "Author and Maintainer"
+msgstr "Autor i održavalac"
+
+#: gpseditdialog.cpp:155 gpssyncdialog.cpp:259 kmlexportconfig.cpp:292
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Priručnik GPS sinhronizacije"
+
+#: gpseditdialog.cpp:306
+msgid "Altitude value is not correct!"
+msgstr "Vrednost visine je neispravna!"
+
+#: gpseditdialog.cpp:307 gpseditdialog.cpp:315 gpseditdialog.cpp:323
+#: plugin_gpssync.cpp:251
+msgid "Edit Geographical Coordinates"
+msgstr "Uredi geografske koordinate"
+
+#: gpseditdialog.cpp:314
+msgid "Latitude value is not correct!"
+msgstr "Vrednost geografske širine je neispravna!"
+
+#: gpseditdialog.cpp:322
+msgid "Longitude value is not correct!"
+msgstr "Vrednost geografske dužine je neispravna!"
+
+#: gpslistviewitem.cpp:108
+msgid "Interpolated"
+msgstr "Interpolirano"
+
+#: gpslistviewitem.cpp:112
+msgid "Added"
+msgstr "Dodato"
+
+#: gpslistviewitem.cpp:114
+msgid "Found"
+msgstr "Nađeno"
+
+#: gpslistviewitem.cpp:132
+msgid "Deleted!"
+msgstr "Obrisano!"
+
+#: gpslistviewitem.cpp:145
+msgid "Not available"
+msgstr "Nije dostupno"
+
+#: gpssyncdialog.cpp:107 plugin_gpssync.cpp:73
+#, fuzzy
+msgid "Geolocation"
+msgstr "Geo-lokalizacija"
+
+#: gpssyncdialog.cpp:114
+msgid "Correlate"
+msgstr "Poveži"
+
+#: gpssyncdialog.cpp:115
+msgid "Edit..."
+msgstr "Uredi..."
+
+#: gpssyncdialog.cpp:118
+msgid ""
+"Correlate in time and interpolate distance of data from GPX file with all "
+"images on the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:119
+#, fuzzy
+msgid "Manually edit GPS coordinates of selected images from the list."
+msgstr "Ručno uredi GPS koordinate za izabrane slike sa liste."
+
+#: gpssyncdialog.cpp:120
+#, fuzzy
+msgid "Remove GPS coordinates of selected images from the list."
+msgstr "Ukloni GPS koordinate za izabrane slike sa liste."
+
+#: gpssyncdialog.cpp:131
+msgid "Thumbnail"
+msgstr "Sličica"
+
+#: gpssyncdialog.cpp:132
+msgid "File Name"
+msgstr "Ime fajla"
+
+#: gpssyncdialog.cpp:133
+msgid "Camera time stamp"
+msgstr ""
+
+#: gpssyncdialog.cpp:134
+msgid "Latitude"
+msgstr "Geografska širina"
+
+#: gpssyncdialog.cpp:135
+msgid "Longitude"
+msgstr "Geografska dužina"
+
+#: gpssyncdialog.cpp:136
+msgid "Altitude"
+msgstr "Visina"
+
+#: gpssyncdialog.cpp:137
+msgid "Status"
+msgstr "Status"
+
+#: gpssyncdialog.cpp:147
+msgid "Settings"
+msgstr "Postavke"
+
+#: gpssyncdialog.cpp:151
+msgid "Load GPX File..."
+msgstr "Učitaj GPX fajl..."
+
+#: gpssyncdialog.cpp:153
+msgid "Current GPX file:"
+msgstr "Tekući GPX fajl:"
+
+#: gpssyncdialog.cpp:154
+msgid "No GPX file"
+msgstr "Nema GPX fajla"
+
+#: gpssyncdialog.cpp:158
+#, fuzzy
+msgid "Max. time gap (sec.):"
+msgstr "Maks. vremenski razmak:"
+
+#: gpssyncdialog.cpp:160
+msgid ""
+"<p>Sets the maximum difference in seconds from a GPS track point to the image "
+"time to be matched. If the time difference exceeds this setting, no match will "
+"be attempted."
+msgstr ""
+
+#: gpssyncdialog.cpp:164
+msgid "Time zone:"
+msgstr "Vremenska zona:"
+
+#: gpssyncdialog.cpp:210
+msgid ""
+"<p>Sets the time zone the camera was set to during photo shooting, so that the "
+"time stamps of the images can be converted to GMT to match the GPS time "
+"reference.\n"
+"Note: positive offsets count eastwards from zero longitude (GMT), they are "
+"'ahead of time'."
+msgstr ""
+
+#: gpssyncdialog.cpp:216
+msgid "Interpolate"
+msgstr "Interpolacija"
+
+#: gpssyncdialog.cpp:217
+msgid ""
+"<p>Set this option to interpolate GPS track points which are not closely "
+"matched to the GPX data file."
+msgstr ""
+
+#: gpssyncdialog.cpp:220
+msgid "Difference in min.:"
+msgstr "Razlika u min.:"
+
+#: gpssyncdialog.cpp:222
+msgid ""
+"<p>Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
+"file points to image time data."
+msgstr ""
+
+#: gpssyncdialog.cpp:251
+#, fuzzy
+msgid "A plugin to synchronize images' metadata with a GPS device"
+msgstr "Priključak za sinhronizaciju metapodataka slika sa GPS uređajem"
+
+#: gpssyncdialog.cpp:302 kmlexportconfig.cpp:193
+msgid "%1|GPS Exchange Format"
+msgstr "%1|GPS format razmene"
+
+#: gpssyncdialog.cpp:303 kmlexportconfig.cpp:194
+msgid "Select GPX File to Load"
+msgstr "Izaberite GPX fajl za učitavanje"
+
+#: gpssyncdialog.cpp:312 kmlexport.cpp:350
+msgid "Cannot parse %1 GPX file!"
+msgstr "Ne mogu da raščlanim %1 GPX fajl!"
+
+#: gpssyncdialog.cpp:320 kmlexport.cpp:356
+msgid "The %1 GPX file do not have a date-time track to use!"
+msgstr "%1 GPX fajl nema stazu datum-vreme koja bi se koristila!"
+
+#: gpssyncdialog.cpp:327
+#, c-format
+msgid "Points parsed: %1"
+msgstr "Raščlanjenih tačaka: %1"
+
+#: gpssyncdialog.cpp:371
+#, fuzzy, c-format
+msgid ""
+"_n: 1 image from the list is not updated.\n"
+"%n images from the list are not updated."
+msgstr ""
+"%n slika sa liste nije ažurirana.\n"
+"%n slike sa liste nisu ažurirane.\n"
+"%n slika sa liste nije ažurirano."
+
+#: gpssyncdialog.cpp:374
+#, fuzzy
+msgid ""
+"<p>%1\n"
+"Do you really want to close this window without applying changes?</p>"
+msgstr ""
+"<p>%1\n"
+"Želite li zaista da zatvorite ovaj prozor bez primene izmena?</p>"
+
+#: gpssyncdialog.cpp:442
+msgid "Cannot find pictures to correlate with GPX file data."
+msgstr "Ne mogu da nađem slike koje su i vezi sa GPX fajlom podataka."
+
+#: gpssyncdialog.cpp:448
+#, fuzzy, c-format
+msgid ""
+"_n: GPS data of 1 image have been updated on the list using the GPX data file.\n"
+"GPS data of %n images have been updated on the list using the GPX data file."
+msgstr ""
+"GPS podaci od %n slike su ažurirani pomoću GPX fajla podataka.\n"
+"GPS podaci od %n slike su ažurirani pomoću GPX fajla podataka.\n"
+"GPS podaci od %n slika su ažurirani pomoću GPX fajla podataka."
+
+#: gpssyncdialog.cpp:451
+#, fuzzy
+msgid "Press Apply button to update images metadata."
+msgstr "Pritisnite dugme „Primeni“ da bi ažurirali metapodatke slika"
+
+#: gpssyncdialog.cpp:461
+#, fuzzy
+msgid ""
+"Please, select at least one image from the list to edit GPS coordinates "
+"manually."
+msgstr ""
+"Izaberite bar jednu sliku sa liste da bi ste ručno uredili GPS koordinate."
+
+#: gpssyncdialog.cpp:493
+#, fuzzy
+msgid ""
+"Please, select at least one image from the list to remove GPS coordinates."
+msgstr "Izaberite bar jednu sliku sa liste da bi ste uklonili GPS koordinate."
+
+#: kmlexport.cpp:63
+msgid "Generating KML file..."
+msgstr "Pravim KML fajl..."
+
+#: kmlexport.cpp:83
+#, c-format
+msgid "Could not create '%1"
+msgstr "Ne mogu da napravim %1"
+
+#: kmlexport.cpp:167
+msgid "Could not read image '%1'"
+msgstr "Ne mogu da čitam sliku „%1“"
+
+#: kmlexport.cpp:174
+msgid "Format of image '%1' is unknown"
+msgstr "Format slike „%1“ je nepoznat"
+
+#: kmlexport.cpp:184
+msgid "Error loading image '%1'"
+msgstr "Greška pri učitavanju slike „%1“"
+
+#: kmlexport.cpp:224
+msgid "Could not save image '%1' to '%2'"
+msgstr "Ne mogu da sačuvam sliku „%1“ u „%2“"
+
+#: kmlexport.cpp:304
+msgid "Creation of placemark '%1'"
+msgstr "Pravljenje markera „%1“"
+
+#: kmlexport.cpp:311
+msgid "Could not save icon for image '%1' to '%2'"
+msgstr "Nisam mogao da sačuvam ikonu za sliku „%1“ u „%2“"
+
+#: kmlexport.cpp:341
+msgid "No GPX file Chosen!"
+msgstr "Nema izabranog GPX fajla!"
+
+#: kmlexport.cpp:363
+msgid "Tracks"
+msgstr "Staze"
+
+#: kmlexport.cpp:443
+msgid "No position data for '%1'"
+msgstr "Nema podataka o poziciji za „%1“"
+
+#: kmlexport.cpp:455
+#, c-format
+msgid ""
+"_n: No position data for 1 picture\n"
+"No position data for %n pictures"
+msgstr ""
+"Nema podataka o poziciji za %n sliku\n"
+"Nema podataka o poziciji za %n slike\n"
+"Nema podataka o poziciji za %n slika"
+
+#: kmlexport.cpp:469
+msgid "Move to final directory"
+msgstr "Pomeri u krajnji direktorijum"
+
+#: kmlexportconfig.cpp:66 kmlexportconfig.cpp:281
+msgid "KML Export"
+msgstr "KML izvoz"
+
+#: kmlexportconfig.cpp:77
+msgid "Target Preferences"
+msgstr "Podešavanja cilja"
+
+#: kmlexportconfig.cpp:82
+msgid "Target Type"
+msgstr "Vrsta cilja"
+
+#: kmlexportconfig.cpp:86
+msgid "&Local or web target used by GoogleEarth"
+msgstr "&Lokalni ili veb cilj koji koristi GoogleEarth"
+
+#: kmlexportconfig.cpp:91
+msgid "Web target used by GoogleMap"
+msgstr "Veb cilj koji koristi GoogleMap"
+
+#: kmlexportconfig.cpp:95
+msgid ""
+"When using GoogleMap, all image must have complete URL, icons are squared and "
+"when drawing a track, only linetrack is exported"
+msgstr ""
+
+#: kmlexportconfig.cpp:101
+msgid "Picture altitude"
+msgstr "Visina slike"
+
+#: kmlexportconfig.cpp:105 kmlexportconfig.cpp:256
+msgid "clamp to ground"
+msgstr ""
+
+#: kmlexportconfig.cpp:106 kmlexportconfig.cpp:257
+msgid "relative to ground"
+msgstr "u odnosu na tlo"
+
+#: kmlexportconfig.cpp:107 kmlexportconfig.cpp:258
+msgid "absolute"
+msgstr "apsolutno"
+
+#: kmlexportconfig.cpp:108
+msgid ""
+"<p>Specifies how pictures are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+
+#: kmlexportconfig.cpp:119
+msgid "Destination directory"
+msgstr "Odredišni direktorijum"
+
+#: kmlexportconfig.cpp:125
+msgid "Select a directory to save the kml file and pictures"
+msgstr "Izaberite direktorijum gde će se snimati KML fajlovi i slike"
+
+#: kmlexportconfig.cpp:129
+msgid "Destination URL"
+msgstr "Odredišni URL"
+
+#: kmlexportconfig.cpp:136
+msgid "File name"
+msgstr "Ime fajla"
+
+#: kmlexportconfig.cpp:147
+msgid "Sizes"
+msgstr "Veličine"
+
+#: kmlexportconfig.cpp:152
+msgid "Icon size"
+msgstr "Veličina ikona"
+
+#: kmlexportconfig.cpp:163
+msgid "Image size"
+msgstr "Veličina slike"
+
+#: kmlexportconfig.cpp:178
+msgid "GPX Tracks"
+msgstr "GPX staze"
+
+#: kmlexportconfig.cpp:184
+msgid "Draw GPX track"
+msgstr "Iscrtaj GPX staze"
+
+#: kmlexportconfig.cpp:188
+msgid "GPX file"
+msgstr "GPX fajl"
+
+#: kmlexportconfig.cpp:197
+msgid "Time zone"
+msgstr "Vremenska zona"
+
+#: kmlexportconfig.cpp:200
+msgid "GMT-12:00"
+msgstr "GMT-12:00"
+
+#: kmlexportconfig.cpp:201
+msgid "GMT-11:00"
+msgstr "GMT-11:00"
+
+#: kmlexportconfig.cpp:202
+msgid "GMT-10:00"
+msgstr "GMT-10:00"
+
+#: kmlexportconfig.cpp:203
+msgid "GMT-09:00"
+msgstr "GMT-09:00"
+
+#: kmlexportconfig.cpp:204
+msgid "GMT-08:00"
+msgstr "GMT-08:00"
+
+#: kmlexportconfig.cpp:205
+msgid "GMT-07:00"
+msgstr "GMT-07:00"
+
+#: kmlexportconfig.cpp:206
+msgid "GMT-06:00"
+msgstr "GMT-06:00"
+
+#: kmlexportconfig.cpp:207
+msgid "GMT-05:00"
+msgstr "GMT-05:00"
+
+#: kmlexportconfig.cpp:208
+msgid "GMT-04:00"
+msgstr "GMT-04:00"
+
+#: kmlexportconfig.cpp:209
+msgid "GMT-03:00"
+msgstr "GMT-03:00"
+
+#: kmlexportconfig.cpp:210
+msgid "GMT-02:00"
+msgstr "GMT-02:00"
+
+#: kmlexportconfig.cpp:211
+msgid "GMT-01:00"
+msgstr "GMT-01:00"
+
+#: kmlexportconfig.cpp:212
+msgid "GMT"
+msgstr "GMT"
+
+#: kmlexportconfig.cpp:213
+msgid "GMT+01:00"
+msgstr "GMT+01:00"
+
+#: kmlexportconfig.cpp:214
+msgid "GMT+02:00"
+msgstr "GMT+02:00"
+
+#: kmlexportconfig.cpp:215
+msgid "GMT+03:00"
+msgstr "GMT+03:00"
+
+#: kmlexportconfig.cpp:216
+msgid "GMT+04:00"
+msgstr "GMT+04:00"
+
+#: kmlexportconfig.cpp:217
+msgid "GMT+05:00"
+msgstr "GMT+05:00"
+
+#: kmlexportconfig.cpp:218
+msgid "GMT+06:00"
+msgstr "GMT+06:00"
+
+#: kmlexportconfig.cpp:219
+msgid "GMT+07:00"
+msgstr "GMT+07:00"
+
+#: kmlexportconfig.cpp:220
+msgid "GMT+08:00"
+msgstr "GMT+08:00"
+
+#: kmlexportconfig.cpp:221
+msgid "GMT+09:00"
+msgstr "GMT+09:00"
+
+#: kmlexportconfig.cpp:222
+msgid "GMT+10:00"
+msgstr "GMT+10:00"
+
+#: kmlexportconfig.cpp:223
+msgid "GMT+11:00"
+msgstr "GMT+11:00"
+
+#: kmlexportconfig.cpp:224
+msgid "GMT+12:00"
+msgstr "GMT+12:00"
+
+#: kmlexportconfig.cpp:225
+msgid "GMT+13:00"
+msgstr "GMT+13:00"
+
+#: kmlexportconfig.cpp:226
+msgid "GMT+14:00"
+msgstr "GMT+14:00"
+
+#: kmlexportconfig.cpp:227
+msgid ""
+"<p>Sets the time zone of the camera during picture shooting, so that the time "
+"stamps of the GPS can be converted to match the local time"
+msgstr ""
+
+#: kmlexportconfig.cpp:232
+msgid "Track width"
+msgstr "Širina staze"
+
+#: kmlexportconfig.cpp:239
+msgid "Track color"
+msgstr "Boja staze"
+
+#: kmlexportconfig.cpp:248
+msgid "Opacity:"
+msgstr "Neprozirnost:"
+
+#: kmlexportconfig.cpp:252
+msgid "Track altitude"
+msgstr "Visina staze"
+
+#: kmlexportconfig.cpp:259
+msgid ""
+"<p>Specifies how the points are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+
+#: kmlexportconfig.cpp:284
+msgid "A Kipi plugin for kml exporting"
+msgstr "Kipi priključak za KML izvoz"
+
+#: kmlexportconfig.cpp:287
+msgid "Author"
+msgstr "Autor"
+
+#: kmlgpsdataparser.cpp:66
+msgid "Track"
+msgstr "Staza"
+
+#: kmlgpsdataparser.cpp:95
+msgid "Points"
+msgstr "Tačke"
+
+#: kmlgpsdataparser.cpp:105
+msgid "Point"
+msgstr "Tačka"
+
+#: plugin_gpssync.cpp:78
+msgid "Correlator..."
+msgstr "Veza..."
+
+#: plugin_gpssync.cpp:86
+msgid "Edit Coordinates..."
+msgstr "Uredi koordinate..."
+
+#: plugin_gpssync.cpp:94
+msgid "Remove Coordinates..."
+msgstr "Ukloni koordinate..."
+
+#: plugin_gpssync.cpp:105
+msgid "KML Export..."
+msgstr "KML izvoz..."
+
+#: plugin_gpssync.cpp:139
+msgid ""
+"<qt>"
+"<p>Unable to find the gpsbabel executable:"
+"<br> This program is required by this plugin to support GPS data file decoding. "
+"Please install gpsbabel as a package from your distributor or <a href=\"%1\">"
+"download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %2 is required by this plugin.</p></qt>"
+msgstr ""
+
+#: plugin_gpssync.cpp:156
+msgid ""
+"<qt>"
+"<p>gpsbabel executable is not up to date:"
+"<br> The version %1 of gpsbabel have been found on your computer. This version "
+"is too old to run properly with this plugin. Please update gpsbabel as a "
+"package from your distributor or <a href=\"%2\">download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %3 is required by this plugin</p></qt>"
+msgstr ""
+
+#: plugin_gpssync.cpp:249
+msgid "Unable to save geographical coordinates into:"
+msgstr "Nisam mogao da sačuvam geografske koordinate u:"
+
+#: plugin_gpssync.cpp:265
+#, fuzzy
+msgid ""
+"Geographical coordinates will be definitively removed from all selected "
+"images.\n"
+"Do you want to continue ?"
+msgstr ""
+"Geografske koordinate će zauvek biti uklonjene iz svih izabranih slika.\n"
+"Želite li da nastavite ?"
+
+#: plugin_gpssync.cpp:267 plugin_gpssync.cpp:302
+msgid "Remove Geographical Coordinates"
+msgstr "Ukloni geografske koordinate"
+
+#: plugin_gpssync.cpp:300
+msgid "Unable to remove geographical coordinates from:"
+msgstr "Nisam mogao da uklonim geografske koordinate iz:"
+
+#: plugin_gpssync.cpp:317
+msgid "KMLExport"
+msgstr "KML izvoz"
+
+#~ msgid "Read only"
+#~ msgstr "Samo za čitanje"
+
+#~ msgid "KMLExport Handbook"
+#~ msgstr "Priručnik za KML izvoz"
+
+#~ msgid "Date Taken"
+#~ msgstr "Datum snimanja"
+
+#~ msgid "Correlate GPX file data with all pictures from the list."
+#~ msgstr "Povezuje GPX fajl podataka sa svim slikama sa liste."
+
+#~ msgid "Pictures Geolocalization"
+#~ msgstr "Geo-lokalizacija slika"

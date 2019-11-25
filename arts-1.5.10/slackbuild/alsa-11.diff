@@ -1,0 +1,11 @@
+--- configure.in.orig	2008-08-19 23:50:50.000000000 +0400
++++ configure.in	2019-06-23 13:44:41.553360710 +0300
+@@ -635,7 +635,7 @@
+       #include <alsa/asoundlib.h>
+       #endif
+     ],[
+-      #if (SND_LIB_MAJOR == 1) && (SND_LIB_MINOR == 0)
++      #if (SND_LIB_MAJOR == 1) && (SND_LIB_MINOR == 1)
+         /* we have ALSA 1.x */
+       #else
+         #error not ALSA 1.x

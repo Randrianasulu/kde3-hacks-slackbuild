@@ -1,0 +1,27 @@
+--- branches/KDE/4.2/kdelibs/khtml/misc/loader.cpp	2009/04/30 00:15:19	961359
++++ branches/KDE/4.2/kdelibs/khtml/misc/loader.cpp	2009/04/30 00:15:25	961360
+@@ -277,7 +277,7 @@
+     buffer.close();
+     setSize(buffer.buffer().size());
+ 
+-//     QString charset = checkCharset( buffer.buffer() );
++    m_charset = checkCharset( buffer.buffer() );
+     QTextCodec* c = 0;
+     if (!m_charset.isEmpty()) {
+         c = KGlobal::charsets()->codecForName(m_charset);
+@@ -317,7 +317,6 @@
+         it.next().value()->error( m_err, m_errText );
+ }
+ 
+-#if 0
+ QString CachedCSSStyleSheet::checkCharset(const QByteArray& buffer ) const
+ {
+     int s = buffer.size();
+@@ -337,7 +336,6 @@
+     }
+     return m_charset;
+ }
+-#endif
+ 
+ // -------------------------------------------------------------------------------------------
+ 

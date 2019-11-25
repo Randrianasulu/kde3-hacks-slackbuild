@@ -1,0 +1,459 @@
+# translation of digikamplugin_acquireimages.po to hungarian
+# translation of digikamplugin_scanimages.po to hungarian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Janos Tamasi <janusz@ubk.hu>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: digikamplugin_acquireimages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2004-03-30 21:17+0200\n"
+"Last-Translator: Janos Tamasi <janusz@ubk.hu>\n"
+"Language-Team: hungarian <janusz@ubk.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: acquireimagedialog.cpp:105
+#, fuzzy
+msgid "Save Target Image Options"
+msgstr "Kép mentésének beállításai"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+#, fuzzy
+msgid "Acquire images"
+msgstr "&Képek külső forrásból"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+#, fuzzy
+msgid "A Kipi plugin to acquire images"
+msgstr "&Képek külső forrásból"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr ""
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr ""
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "kép"
+
+#: acquireimagedialog.cpp:180
+#, fuzzy
+msgid "Target Image"
+msgstr "Kép:"
+
+#: acquireimagedialog.cpp:181
+#, fuzzy
+msgid "Target Image Options"
+msgstr "Kép beállításai"
+
+#: acquireimagedialog.cpp:190
+#, fuzzy
+msgid "File Name && Caption"
+msgstr "Fájlnév és megjegyzések"
+
+#: acquireimagedialog.cpp:191
+#, fuzzy
+msgid "<p>The target image preview with the file name and caption."
+msgstr "<p>Aktuális kép a leírással együtt."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Fájlnév (kiterjesztés nélkül):"
+
+#: acquireimagedialog.cpp:197
+#, fuzzy
+msgid "acquired_image"
+msgstr "beolvasott_kep"
+
+#: acquireimagedialog.cpp:198
+#, fuzzy
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Ide kell beírni a fájl nevét kiterjesztés nélkül. A kiterjesztés "
+"automatikusan hozzá lesz fűzve a fájltípus alapján."
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr ""
+
+#: acquireimagedialog.cpp:209
+#, fuzzy
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Itt lehet megadni a képhez tartozó megjegyzéseket."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Előnézeti kép."
+
+#: acquireimagedialog.cpp:228
+#, fuzzy
+msgid "Saving Options"
+msgstr "Kép mentésének beállításai"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>A kép mentésének beállításai."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Kép tömörítése:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>A kép tömörítésének mértéke JPEG és PNG formátumokhoz:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: nagyon jó tömörítési arány"
+"<p><b>25</b>: jó tömörítés arány"
+"<p><b>50</b>: közepes tömörítési arány"
+"<p><b>75</b>: rossz tömörítési (alapértelmezett)"
+"<p><b>100</b>: nincs tömörítés"
+
+#: acquireimagedialog.cpp:260
+#, fuzzy
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Itt lehet kiválasztani a kép formátumát.<p>"
+
+#: acquireimagedialog.cpp:261
+#, fuzzy
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: A Joint Photographic Experts Group fájlformátum, egy jó formátum, "
+"de a tömörítés veszteséggel jár."
+"<p><b>PNG</b>: a Portable Network Graphics formátum egy sokrétű fájlformátum, a "
+"veszteségmentes, jól tömörített, hordozható tároláshoz. A PNG egy ingyenes "
+"helyettesítése a GIF-nek és a gyakran használt TIFF-nek. A PNG úgy lett "
+"tervezve, hogy jól működjön online alkalmazásokban, mint például a World Wide "
+"Web."
+
+#: acquireimagedialog.cpp:269
+#, fuzzy
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: a Tag Image File Format egy elég régi formátum, ami a mai napig "
+"népszerű. Ez egy rugalmas és platform független formátum, amit számtalan "
+"képszerkesztő program támogat."
+
+#: acquireimagedialog.cpp:273
+#, fuzzy
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: a Portable Pixel Map egy fejlettebb képformátum színes képek "
+"tárolásához. A PPM fájlok egyaránt tartalmazhatnak bináris vagy ASCII adatokat, "
+"és legfeljebb 24 biten ábrázolnak egy képpontot.Ez a formátum nagyon nagy "
+"fájlméretet eredményez de nem jár minőség romlással."
+
+#: acquireimagedialog.cpp:277
+#, fuzzy
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: a BitMaP egy népszerű formátum win32 környezetben. Minden "
+"képpontot 1, 4, 8, 16 vagy 24 biten árázol. Az adatokat tömörítetlenül, vagy "
+"tömörítve tárolja 4 vagy 8 bites RLE algoritmussal."
+
+#: acquireimagedialog.cpp:284
+#, fuzzy
+msgid "Image file format:"
+msgstr "Kép formátuma:"
+
+#: acquireimagedialog.cpp:303
+#, fuzzy
+msgid "Selection"
+msgstr "Gyűjtemény: %1"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Album:"
+
+#: acquireimagedialog.cpp:311
+#, fuzzy
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Meg kell adni azt az albumot, ahova a kép jerülni fog"
+
+#: acquireimagedialog.cpp:320
+#, fuzzy
+msgid "&Add New Folder"
+msgstr "&Album hozzáadása"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr ""
+
+#: acquireimagedialog.cpp:328
+#, fuzzy
+msgid "Album Description"
+msgstr "Album leírása:"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p>Az aktuális album a leírása."
+
+#: acquireimagedialog.cpp:393
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Gyűjtemény: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Gyűjtemény: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Dátum: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Képek: %1"
+
+#: acquireimagedialog.cpp:409
+#, fuzzy
+msgid "You must select a target album for this image."
+msgstr "Ki kell jelölni egy albumot a képnek!"
+
+#: acquireimagedialog.cpp:415
+#, fuzzy
+msgid "You must provide a file name for this image."
+msgstr "Adj meg egy nevet a képnek!"
+
+#: acquireimagedialog.cpp:474
+#, fuzzy
+msgid "Cannot write image file \"%1\"."
+msgstr "\"%1\" fájl létrehozása nem sikerült!"
+
+#: acquireimagedialog.cpp:483
+#, fuzzy
+msgid "Could not upload image to \"%1\"."
+msgstr "\"%1\" fájl létrehozása nem sikerült!"
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Kép beolvasása..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Képernyőkép..."
+
+#: plugin_acquireimages.cpp:114
+#, fuzzy
+msgid "No KDE scan-service available; check your system."
+msgstr "KDE lapolvasó szolgáltatás nem elérhető."
+
+#: plugin_acquireimages.cpp:115
+#, fuzzy
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "Digikam Képolvasó Plugin"
+
+#: screenshotdialog.cpp:71
+#, fuzzy
+msgid "Screenshot"
+msgstr "Képernyőkép..."
+
+#: screenshotdialog.cpp:72
+#, fuzzy
+msgid "&New Snapshot"
+msgstr "&Új képernyőkép"
+
+#: screenshotdialog.cpp:82
+#, fuzzy
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"Ez a program lehetővé teszi hogy képernyőképet készítsünk\n"
+"a teljes képernyőről, vagy egy alkalmazás ablakáról.\n"
+"Ha csak egy ablakról szeretnénk képet készíteni, akkor\n"
+"az egérkurzor egy célkeresztre változik, és azzal kell kijelölni\n"
+"a kívánt ablakot."
+
+#: screenshotdialog.cpp:90
+#, fuzzy
+msgid "Grab the entire desktop"
+msgstr "Teljes képernyő."
+
+#: screenshotdialog.cpp:91
+#, fuzzy
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p>Ha ez az opció be van kapcsolva, akkor a teljes képernyő lesz lementve, "
+"egyébként pedig csak az aktív ablak."
+
+#: screenshotdialog.cpp:97
+#, fuzzy
+msgid "Hide all host application windows"
+msgstr "Digikam ablakok elrejtése."
+
+#: screenshotdialog.cpp:98
+#, fuzzy
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr ""
+"<p>Ha ez az opció be van kapcsolva, akkor a lementett képen nem fognak "
+"megjelenni a Digikam ablakok."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Késleltetés:"
+
+#: screenshotdialog.cpp:107
+#, fuzzy
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr "<p>Ennyi időt várakozik a program mielőtt elkészíti a képernyőképet."
+
+#: screenshotdialog.cpp:261
+#, fuzzy
+msgid "Unable to take snapshot."
+msgstr "Nem sikerült képernyőképet készíteni!"
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Képernyőkép hiba"
+
+#, fuzzy
+#~ msgid "Acquire Images Handbook"
+#~ msgstr "&Képek külső forrásból"
+
+#~ msgid "Comments:"
+#~ msgstr "Megjegyzés:"
+
+#~ msgid "Comment: %1"
+#~ msgstr "Megjegyzés: %1"
+
+#, fuzzy
+#~ msgid "KIPI's 'Screenshot Images' Plugin"
+#~ msgstr "Digikam Képolvasó Plugin"
+
+#, fuzzy
+#~ msgid "About KIPI's 'Acquire Images' plugin"
+#~ msgstr "Digikam Képbeolvasó névjegye"
+
+#, fuzzy
+#~ msgid ""
+#~ "A KIPI plugin to acquire images\n"
+#~ "\n"
+#~ "Author: Gilles Caulier\n"
+#~ "\n"
+#~ "Email: caulier dot gilles at free.fr\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Digikam kép beolvasó plugin\n"
+#~ "\n"
+#~ "Készítette: Gilles Caulier\n"
+#~ "\n"
+#~ "Email: caulier.gilles@free.fr\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "A KIPI plugin to grab images from screen\n"
+#~ "\n"
+#~ "Author: Gilles Caulier\n"
+#~ "\n"
+#~ "Email: caulier dot gilles at free.fr\n"
+#~ "\n"
+#~ "Based on Ksnapshot implementation from KDE project"
+#~ msgstr ""
+#~ "Digikam Képernyőkép plugin\n"
+#~ "\n"
+#~ "Készítette: Gilles Caulier\n"
+#~ "\n"
+#~ "Email: caulier.gilles@free.fr\n"
+#~ "\n"
+#~ "A program a Ksnapshot programon alapul"
+
+#, fuzzy
+#~ msgid "About KIPI's 'Screenshot' plugin"
+#~ msgstr "Digikam Képernyőkép névjegye"
+
+#~ msgid "<p>Preview of the first image in the current selected Album."
+#~ msgstr "<p>Az Album első képének előnézeti képe."
+
+#~ msgid ""
+#~ "The target image \n"
+#~ "\"%1\"\n"
+#~ "already exist.\n"
+#~ "Do you want overwrite it?"
+#~ msgstr ""
+#~ "A \"%1\" kép\n"
+#~ "már létezik. Felül akarja írni?"
+
+#~ msgid "<p>Add a new Album in the Digikam Albums library."
+#~ msgstr "<p>Új album hozzáadása a Digikam albumokhoz."
+
+#~ msgid ""
+#~ "Album Library has not been set correctly\n"
+#~ "Please run Setup"
+#~ msgstr ""
+#~ "Az albumok helye nincs megfelelően megadva\n"
+#~ "Kérem állítsa be"
+
+#~ msgid "Enter New Album Name: "
+#~ msgstr "Új album neve: "
+
+#~ msgid "<p>This is the Digikam Albums list. Select one target Album for the target image."
+#~ msgstr "<p>Ez a Digikam albumlistája. Válasszon egy albumot a beolvasott képeknek."

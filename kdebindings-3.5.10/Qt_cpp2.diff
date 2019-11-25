@@ -1,0 +1,92 @@
+--- /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/Qt.cpp.old	2010-10-23 16:55:14.000000000 +0200
++++ /tmp/kdebindings-3.5.10/qtruby/rubylib/qtruby/Qt.cpp	2010-10-23 20:08:20.000000000 +0200
+@@ -1177,7 +1177,7 @@
+ 	// Start with #<Qt::HBoxLayout:0x30139030> from the original inspect() call
+ 	// Drop the closing '>'
+ 	VALUE inspect_str = rb_call_super(0, 0);	
+-	rb_str_resize(inspect_str, RSTRING(inspect_str)->len - 1);
++	rb_str_resize(inspect_str, RSTRING_LEN(inspect_str) - 1);
+ 	
+ 	smokeruby_object * o = 0;
+     Data_Get_Struct(self, smokeruby_object, o);	
+@@ -1220,7 +1220,7 @@
+ 	// Start with #<Qt::HBoxLayout:0x30139030>
+ 	// Drop the closing '>'
+ 	VALUE inspect_str = rb_funcall(self, rb_intern("to_s"), 0, 0);	
+-	rb_str_resize(inspect_str, RSTRING(inspect_str)->len - 1);
++	rb_str_resize(inspect_str, RSTRING_LEN(inspect_str) - 1);
+ 	rb_funcall(pp, rb_intern("text"), 1, inspect_str);
+ 	rb_funcall(pp, rb_intern("breakable"), 0);
+ 	
+@@ -1236,7 +1236,7 @@
+ 		VALUE obj = getPointerObject(qobject->parent());
+ 		if (obj != Qnil) {
+ 			VALUE parent_inspect_str = rb_funcall(obj, rb_intern("to_s"), 0, 0);	
+-			rb_str_resize(parent_inspect_str, RSTRING(parent_inspect_str)->len - 1);
++			rb_str_resize(parent_inspect_str, RSTRING_LEN(parent_inspect_str) - 1);
+ 			parentInspectString = StringValuePtr(parent_inspect_str);
+ 		} else {
+ 			parentInspectString.sprintf("#<%s:0x0", qobject->parent()->className());
+@@ -1382,7 +1382,7 @@
+     	return *(c.var());
+ 	} else if (	argc == 1 
+ 				&& TYPE(argv[0]) == T_ARRAY
+-				&& RARRAY(argv[0])->len > 0
++				&& RARRAY_LEN(argv[0]) > 0
+ 				&& TYPE(rb_ary_entry(argv[0], 0)) != T_STRING )
+ 	{
+ 		_current_method = new_qvariant_qlist;
+@@ -1741,7 +1741,7 @@
+ 		VALUE * local_argv = (VALUE *) calloc(argc + 1, sizeof(VALUE));
+ 		VALUE temp = rb_ary_dup(argv[0]);
+ 		rb_ary_unshift(temp, rb_gv_get("$0"));
+-		local_argv[0] = INT2NUM(RARRAY(temp)->len);
++		local_argv[0] = INT2NUM(RARRAY_LEN(temp));
+ 		local_argv[1] = temp;
+ 		result = new_qt(2, local_argv, klass);
+ 		free(local_argv);
+@@ -2009,7 +2009,7 @@
+ 		return Qnil;
+ 	}
+ 	QByteArray * dataArray = (QByteArray*) o->ptr;
+-	dataArray->setRawData(StringValuePtr(data), RSTRING(data)->len);
++	dataArray->setRawData(StringValuePtr(data), RSTRING_LEN(data));
+ 	return self;
+ }
+ 
+@@ -2195,7 +2195,7 @@
+     m->name = new char[strlen(name) + 1];	// this too
+     strcpy((char*)m->name, name);
+     m->parameters = 0;
+-    m->count = RARRAY(params)->len;
++    m->count = RARRAY_LEN(params);
+ 
+     if (m->count > 0) {
+ 	m->parameters = new QUParameter[m->count];
+@@ -2213,7 +2213,7 @@
+ static VALUE
+ make_QMetaData_tbl(VALUE /*self*/, VALUE list)
+ {
+-    long count = RARRAY(list)->len;
++    long count = RARRAY_LEN(list);
+     QMetaData *m = new QMetaData[count];
+ 
+     for (long i = 0; i < count; i++) {
+@@ -2281,7 +2281,7 @@
+ static VALUE
+ add_signal_methods(VALUE self, VALUE klass, VALUE signalNames)
+ {
+-	for (long index = 0; index < RARRAY(signalNames)->len; index++) {
++	for (long index = 0; index < RARRAY_LEN(signalNames); index++) {
+ 		VALUE signal = rb_ary_entry(signalNames, index);
+ 		rb_define_method(klass, StringValuePtr(signal), (VALUE (*) (...)) qt_signal, -1);
+ 	}
+@@ -2597,7 +2597,7 @@
+ {
+     VALUE errmsg = rb_str_new2("");
+     if(rmeths != Qnil) {
+-	int count = RARRAY(rmeths)->len;
++	int count = RARRAY_LEN(rmeths);
+         for(int i = 0; i < count; i++) {
+ 	    rb_str_catf_1(errmsg, "\t");
+ 	    int id = NUM2INT(rb_ary_entry(rmeths, i));

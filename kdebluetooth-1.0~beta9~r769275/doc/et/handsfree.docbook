@@ -1,0 +1,86 @@
+<sect1 id="components.handsfree">
+<title
+>kbthandsfree: numbri valimine ja rääkimine arvuti abil</title>
+<para
+>Handsfree klient kujutab endast Bluetoothi handsfree profiili teostust. See protokoll sarnaneb peakomplekti profiilile, kuid pakub enam võimalusi kui vanem peakomplekti profiil. Algselt oli handsfree profiil mõeldud ennekõike autode handsfree seadmetele, kuid tänapäeval on üha levinum ka Bluetoothi peakomplekti toetus handsfree profiilile. </para>
+<para
+>Kbthandsfree võimaldab kasutada arvutit handsfree seadmena, mis lubab ka numbreid valida (isegi <link linkend="handsfree.kaddressbook"
+>KDE aadressiraamatust</link
+>). </para>
+
+<sect2>
+<title
+>Nõuded</title>
+<sect3>
+<title
+>Kerneli SCO toetus</title>
+<para
+>Kõne edastamiseks Bluetoothi vahendusel peab handsfree profiil looma niinimetatud SCO-ühenduse. See on spetsiaalne kõneside jaoks optimeeritud Blutoothi ühendusetüüp. Paraku on SCO toetus vanemates 2.4 kernelites vigane. Kui sul on varasem kernel kui 2.4.24, võib abiks olla Marcel Holtmanni paik, mille leiab aadressilt <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+>. Veelgi hullem on aga see, et SCO toetus paistab olevat vigane ka Linuxi 2.6 seeria kernelites - ja selle vastu ei ole praegu ka mingit paika (parandage mind, kui see peaks olemas olema). Nii võimaldab kbthandsfree tegelikku handsfree kasutamist ainult uusimate 2.4 kernelitega. Ilma SCO toetuseta võimaldab kbthandsfree ainult numbrite valimist jms. </para>
+</sect3>
+
+<sect3>
+<title
+>Adapteri SCO toetus</title>
+<para
+>Mitte kõik Bluetoothi adapterid ei toeta korralikult SCO-d. Näiteks esineb probleeme vanematel Mitsumi variantidel, kuigi nad võivad väita, nagu oleks neil SCO toetus olemas. Ma ei tea ühtki muud meetodit selle kontrollimiseks kui lihtne järeleproovimine. Uuemad moodulid, mis baseeruvad väga levinud CSR kiibistikul, peaksid siiski korralikult töötama. </para>
+</sect3>
+
+<sect3>
+<title
+>Kõnerežiim</title>
+<para
+>Et kõne võimalik oleks, peab Bluetoothi adapter olema seatud korrektsele kõnerežiimile. Praegu toetab kbthandsfree ainult režiimi 0x0060. See on vaikeväärtus praeguses bluezi versioonis, kuid seda saab vajadusel sisse lülitada käsuga <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Seadmeklass</title>
+<para
+>Kui soovid luua ühenduse kbthandsfree'ga oma telefoni abil, mitte aga kutsuda välja kbthandsfree arvutis, kontrolli, et PC tuntaks ära handsfree seadmena. Kui oled kdebluetoothi seadistustedialoogi kohalike teenuste kaardil handsfree sisse lülitanud, loob raamistik automaatselt vajaliku SDP kirje, mis teatab telefonile, et arvuti pakub handsfree teenust. </para>
+<para
+>Mõned telefonid aga, näiteks T68i, sõltuvad sobivalt seatud seadmeklassist (madalama taseme seadistus, mida kontrollitakse enne SDP kirjet), mis tuvastab selle mitte arvutina, vaid handsfree'na. Seda saad teha muutes failis hcid.conf klassi näitav rida 0xXXXXXX asemel kujule 0x700408 (TEGEMATA: kas see ühildub obexile vajalike lippudega?), või anda käsk <command
+>khciconfig</command
+>. Et Bluetooth seade saab kuuluda korraga olla ainult ühte seadmeklassi, võivad teised Bluetooth seadmed sinu arvutit otsides näidata seda audio/handsfree-seadmena. Me ei tea siiski, et sellel oleks mingeid märkimisväärseid kõrvalmõjusid. </para>
+<para
+>Tavaliselt on hõlpsam luua ühendus arvutist handsfree'sse kui vastupidi. Seadmeklassi määratlus on vajalik aga ka sel juhul, kui soovid, et sinu telefon siseneva kõne korral looks automaatselt ühenduse arvutiga. Mitte kõik telefonid ei tule sellega toime: näiteks enamik Nokiaid seda ei oska, samas SonyEricssoni T68i jaoks pole siin midagi rasket. Palun arvesta, et handsfree seade peab olema registreeritud seadmete nimekirjas esimene, et T68i looks sellega automaatselt ühenduse. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Vihjed ja nipid</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Alates KDE versioonist 3.2 saab aadressiraamatu seadistada kasutama numbri valimiseks välist rakendust. Kbthandsfree tarvitamiseks käivita <command
+>kaddressbook</command
+>, siis vali <command
+>Seadistused</command
+> -> <command
+>KDE aadressiraamatu seadistamine...</command
+> -> <command
+>Aadressiraamat</command
+> -> kaart <command
+>Üldine</command
+> ja määra skriptiks <command
+>kbthandsfree --phonenumber %N</command
+>. Kui soovid teada, milliseid lisavõtmeid saab anda, anna käsk <command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>Parema ülevaate salvestatud kõnedest saab Konqueroris siis, kui valida vaaterežiimiks "Infonimekiri". See näitab ogg/vorbis-failide silte, mis võimaldab kohe näha, kes helistas ja kui kaua kõne kestis. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

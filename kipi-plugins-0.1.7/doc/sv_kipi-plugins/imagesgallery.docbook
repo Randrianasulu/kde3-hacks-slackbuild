@@ -1,0 +1,185 @@
+<chapter id="imagesgallery">
+<chapterinfo>
+
+<title
+>Bildgalleri</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard snabela kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Bildgalleri är ett verktyg för att exportera en albumlista till en HTML-sida. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Det här kraftfulla insticksprogrammet kan exportera album till en HTML-sida som följer version 4.01 för publicering på Internet. Du kan enkelt välja album att exportera till HTML-sidan. Du kan ställa in en stor parameterlista för uppritning med HTML. Kodningen UTF-8 används för bästa internationalisering. </para>
+
+<para
+>Du kan se några exempel byggda med insticksprogrammet på följande <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/index.htm"
+><citetitle
+>webbadress</citetitle
+></ulink
+>. </para>
+
+<sect1 id="using-plugin-imagesgallerycollectionselection">
+<title
+>Dialogrutan för albumval</title>
+
+<para
+>Insticksprogrammet har fyra sidor för att anpassa inställningarna. Sidan <guilabel
+>Markering</guilabel
+> låter dig välja alla album du vill exportera till HTML. Markera bara respektive album (de visas utan hierarkiska nivåer). De tre knapparna till höger hjälper till att snabbt välja en stor mängd album. Området nedanför visar albumets identifikationsbild med texten som kommer att visas längst upp som sidhuvud på HTML-sidan. </para>
+
+<figure>
+    <title
+>Dialogrutan för albumval</title>
+    <graphic srccredit="The Collections Selection Dialog" fileref="imagegallery_collectionselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerylooksettings">
+<title
+>Dialogrutan för inställning av utseende</title>
+
+<para
+>Sidan <guilabel
+>Utseende</guilabel
+> definierar det allmänna utseendet och layouten för varje sida. Sidan är i stort självförklarande. Kryssrutan <guilabel
+>Skapa sidor för varje bild</guilabel
+> skapar ett galleri med en HTML-sida per bild, dvs. om du klickar på en bild visas en ny sida som visar bilden inne i webbläsaren. Om du inte markerar rutan, öppnas bilderna direkt med förvald bildvisare, t.ex. Kuickshow, när de klickas. </para>
+
+<figure>
+    <title
+>Dialogrutan för inställning av utseende</title>
+    <graphic srccredit="The Look Settings Dialog" fileref="imagegallery_looksettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryalbumsettings">
+<title
+>Dialogrutan för inställning av album</title>
+
+<para
+>Sidan <guilabel
+>Album</guilabel
+> definierar inställningar för var och hur galleriet med alla tillhörande bilder ska lagras. Välj en katalog med skrivrättighet där du vill att galleriet ska skrivas. En underkatalog som heter KIPIHTMLExport skapas som innehåller allting. </para>
+
+<para
+>När du markerar rutan <guilabel
+>Ändra storlek på resultatbilder</guilabel
+> kan du ange maximal bildstorlek (i bildpunkter) med skjutkontrollen under den. Bilder större än värdet skalas ner till det, medan mindre bilder inte ändras. Följande två kryssrutor låter dig ange specifika inställningar av bildkomprimering och minska komprimeringsnivån från värdprogrammets förinställda värde. Därefter kan du välja mellan formaten JPEG (minst filstorlek, men med förlust) och PNG (utan förlust och med fri licens). </para>
+
+<note
+><para
+>Om filformatet JPEG väljes för storleksändrade resultatbilder, bevaras all EXIF-information från JPEG originalfiler. </para
+></note>
+
+<para
+>Du kan ändra förvalt färgdjup med kryssrutan <guilabel
+>Ange annat färgdjup</guilabel
+>. Det påverkar förstås filstorleken. Resten av inställningarna är ganska självförklarande. </para>
+
+<figure>
+    <title
+>Dialogrutan för inställning av album</title>
+    <graphic srccredit="The Album Settings Dialog" fileref="imagegallery_albumsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerythumbsettings">
+<title
+>Dialogrutan för inställning av miniatyrbilder</title>
+
+<para
+>Sidan <guilabel
+>Miniatyrbilder</guilabel
+> gör det möjligt att ange några av inställningarna från sidan <guilabel
+>Album</guilabel
+> för miniatyrbilderna (som är de små bilderna som visas i galleriet). </para>
+
+<figure>
+    <title
+>Dialogrutan för inställning av miniatyrbilder</title>
+    <graphic srccredit="The Thumbnails Settings Dialog" fileref="imagegallery_thumbsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryinaction">
+<title
+>Bildgalleri under arbete</title>
+
+<para
+>En förloppsdialogruta ger information till användaren. Tryck på knappen <guilabel
+>Avbryt</guilabel
+> under det är steget om du vill avbryta processen. </para>
+
+<figure>
+    <title
+>Insticksprogrammet Bildgalleri under arbete</title>
+    <graphic srccredit="The Images Gallery Plugin in Action" fileref="imagegallery_progress.png"/>
+</figure>
+
+<para
+>När alla jobb är klara, stängs inte dialogrutan automatiskt och användaren kan titta i förloppsmeddelanden om något fel har uppstått under steget. Webbläsaren startas automatiskt i slutet för att visa en förhandsgranskning av galleriet. Tryck på knappen <guilabel
+>Stäng</guilabel
+> för att stänga dialogrutan. </para>
+
+<figure>
+    <title
+>Förhandsgranskning av bildgalleri i Konqueror</title>
+    <graphic srccredit="The Images Gallery Preview in Konqueror" fileref="imagegallery_preview.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

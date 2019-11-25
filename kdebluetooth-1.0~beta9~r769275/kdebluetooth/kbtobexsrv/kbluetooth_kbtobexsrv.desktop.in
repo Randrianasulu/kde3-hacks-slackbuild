@@ -1,0 +1,25 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Service
+
+ServiceTypes=KBluetoothDModule
+Exec=@KBTOBEXSRV_BINDIR@/kbtobexsrv
+X-KDE-FactoryName=kbtobexsrv
+X-KDE-KBLUETOOTHD-protocol=rfcomm
+X-KDE-KBLUETOOTHD-id=kbtobexsrv
+
+X-KDE-KBLUETOOTHD-port=3
+X-KDE-KBLUETOOTHD-sdpRecord=kbluetooth_kbtobexsrv.sdp.xml
+X-KDE-KBLUETOOTHD-autoPortRange=100
+X-KDE-KBLUETOOTHD-enabled=true
+X-KDE-KBLUETOOTHD-authentication=false
+X-KDE-KBLUETOOTHD-encryption=false
+X-KDE-KBLUETOOTHD-argument=--rfcommconnection
+X-KDE-KBLUETOOTHD-arg-addr=--peeraddr
+X-KDE-KBLUETOOTHD-arg-name=--peername
+X-KDE-KBLUETOOTHD-suggestedClassMask=1048576
+X-KDE-KBLUETOOTHD-suggestedClass=1048576
+DocPath=kdebluetooth/components.kbtobexsrv.html
+
+Name=OBEX Push
+Comment=Receive files from other devices via OBEX Object Push.

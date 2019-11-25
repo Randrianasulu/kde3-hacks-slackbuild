@@ -1,0 +1,92 @@
+/****************************************************************************
+** KItemsGroup meta object code from reading C++ file 'kitemsgroup.h'
+**
+** Created: Wed Dec 20 17:19:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kitemsgroup.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KItemsGroup::className() const
+{
+    return "KItemsGroup";
+}
+
+QMetaObject *KItemsGroup::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KItemsGroup( "KItemsGroup", &KItemsGroup::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KItemsGroup::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KItemsGroup", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KItemsGroup::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KItemsGroup", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KItemsGroup::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"KItemsGroup", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KItemsGroup.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KItemsGroup::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KItemsGroup" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+bool KItemsGroup::qt_invoke( int _id, QUObject* _o )
+{
+    return QObject::qt_invoke(_id,_o);
+}
+
+bool KItemsGroup::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KItemsGroup::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool KItemsGroup::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,47 @@
+<sect1 id="components.kio_sdp">
+<title
+>Bluetooth/kioslaves SDP: Cercar dispositius i serveis</title>
+<para
+>El Bluetooth i els kioslaves sdp us permeten cercar altres dispositius Bluetooth, llistar-los i usar els seus serveis amb konqueror (o amb qualsevol altre gestor de fitxers que usi l'estructura de E/S de fitxers de KDE). </para>
+<sect2>
+<title
+>Usar el Bluetooth/kioslaves SDP</title>
+<para
+>Per a cercar dispositius, simplement introduïu <ulink url="bluetooth:/"
+>bluetooth:/</ulink
+> en konqueror. Immediatament veureu una entrada per al vostre propi sistema, i després d'uns segons apareixeran els demés dispositius descoberts. </para>
+<para
+>També podeu fer clic a la icona Bluetooth en la barra lateral de konqueror en la pestanya "Serveis", al costat de Navegador de CD-Audio i Navegador de xarxa. Si no podeu veure la icona us pot ajudar reiniciar la barra lateral amb el menú emergent del clic dret: <guimenuitem
+>Configura el plafó de navegació -> Afegeix nou -> Torna a l'omissió del sistema</guimenuitem
+>. </para>
+<para
+>Per a que els dispositius apareguin, no tan sols hauran d'estar connectats, si no que també hauran d'estar en mode Troba'm. D'altra manera us hi podreu connectar quan conegueu la seva adreça, però no respondran a una petició. </para>
+<para
+>Quan seleccioneu un dispositiu obtindreu una llista dels serveis publicats pel dispositiu. Si el servei està suportat per kdebluetooth, podreu iniciar l'aplicació apropiada. A menys que el deshabiliteu, konqueror obrirà el diàleg comú d'obrir fitxers. En el cas que es desconegui el servei, obtindreu un diàleg obre amb. </para>
+</sect2>
+
+<sect2>
+<title
+>Temes avançats </title>
+<para
+>Si sabeu el que esteu fent, també es pot obrir un servei indicat (kbthandsfree per exemple) amb una aplicació Bluetooth que no estigui dissenyada per a aquest perfil específic fent clic amb el botó dret en la icona del servei i seleccionant obre amb. Cada servei, que treballi amb comandaments AT sobre rfcomm es pot obrir amb <command
+>kbtserialchat</command
+>, per exemple. </para>
+<para
+>També podeu canviar l'associació entre aplicacions i perfils (coneguts) de la mateixa manera que seleccioneu quina aplicació haurà d'obrir les pel·lícules mpeg o els fitxers pdf: kio_obex assigna els tipus mime a cadascun dels perfils llistats i cada aplicació client de kdebluetooth es associada amb el perfil que suporta. El suport per als perfils que encara no estiguin reconeguts es poden afegir amb fitxers desktop especials en <filename
+>$PREFIX/share/services</filename
+>, com per exemple <filename
+>mimesdp-port-sèrie-perfil.desktop</filename
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>Limitacions actuals</title>
+<para
+>Actualment, kio_sdp no suporta grups de navegadors aniuats. No és difícil afegir-lo, però de moment no ha estat necessari.</para>
+<para
+>No us podreu connectar als serveis del vostre propi sistema simplement fent clic a la "localhost". Tan sols s'hi ha afegit com a una manera fàcil per a veure quins serveis són públics en el vostre sistema. </para>
+</sect2>
+
+</sect1>

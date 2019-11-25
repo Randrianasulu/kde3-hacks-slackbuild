@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Conceitos</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Segurança Blueetooth: Emparelhamento de dispositivos</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>O que é o "Emparelhamento"?</title>
+<para
+>Muitas das vezes é necessário que um dispositivo se autentique a ele próprio quando deseja aceder a um serviço. Nesse caso, os dois dispositivos necessitam de estar <phrase
+>emparelhados</phrase
+>. Quando dois dispositivos estão emparelhados, eles podem estar certos da identidade um do outro. Sem o emparelhamento, você teria de confiar no endereço ou no nome do outro dispositivo, o que poderia ser falsificado facilmente. </para>
+<para
+>O emparelhamento normalmente acontece apenas uma vez entre dois dispositivos. Após o emparelhamento, as ligações entre os dois dispositivos serão <phrase
+>autenticadas</phrase
+> automaticamente. </para>
+<para
+>Normalmente <emphasis
+>o processo de emparelhamento será iniciado automaticamente quando for necessário</emphasis
+>. Você não terá de se preocupar com o não-emparelhamento de um dispositivo se quiser aceder aos seus serviços. Se eles tentarem autenticar-se, mas não conseguirem, o processo de emparelhamento será iniciado automaticamente. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Como é que funciona?</title>
+
+<para
+>Os dispositivos são emparelhados para se certificarem da identidade do outro lado. Mas o primeiro passo não pode ser feito automaticamente. <emphasis
+>Você</emphasis
+> tem de se certificar que sabe quem deseja emparelhar-se com o seu dispositivo. Isto é feito ao introduzir um código ou número de "PIN" em ambos os dispositivos. A noção do "PIN" é bastante usada, mas é enganadora. Não é o tipo de PIN que você tem de indicar para obter dinheiro de uma caixa Multibanco. Você não tem de se lembrar dele. E depois (!) do emparelhamento ser feito, não terá de o manter em segredo. Você só terá de se certificar que mais ninguém sabe esse número até que você (ou os dois) tenham introduzido esse número em cada um dos dispositivos. </para>
+<para
+>Para estar seguro, você não deverá não só manter o PIN em segredo durante o processo de emparelhamento, mas também deverá usar um número aleatório que não possa ser adivinhado com facilidade. O Bluetooth do KDE ajuda-o nisto, criando ele próprio um número aleatório de 8 algarismos, se possível. Você poderá também usar caracteres para um PIN, mas você aí poderá ter problemas a introduzi-los na janela do PIN num telemóvel. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>O ajudante de códigos</title>
+<para
+>Mas onde é que o código deverá ser introduzido? Como foi dito anteriormente, os dispositivos simplesmente pedir-lhe-ão o código quando ele for necessário. Para o BlueZ, as coisas são um pouco mais complicadas. Existem várias formas para o BlueZ obter o número do PIN do utilizador. </para>
+<para
+>A forma normal é configurar o 'hcid' do BlueZ para usar uma "aplicação auxiliar do PIN" e definir o "utilizador de segurança" no <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Este auxiliar é um pequeno programa que não faz mais nada do que pedir ao utilizador um número e mostrar esse número no 'stdout'. O Bluez vem com o seu próprio auxiliar chamado "bluepin", que parecia causar vários problemas. Existe então agora um auxiliar de PIN melhor chamado "bluez-pin" e, por último, existe o próprio auxiliar de PIN do 'kdebluetooth' "kbluepin". Por favor, veja as <link linkend="installation.setup"
+>instruções de configuração</link
+> para saber como configurar o auxiliar do código e o que fazer se não funcionar. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Gerir dispositivos emparelhados</title>
+<para
+>Depois de ter emparelhado muitos dispositivos pode começar a perguntar-se quais dispositivos estão emparelhados e quais não estão. Pode também querer remover um emparelhamento. As respostas são quase só más notícias. </para>
+<para
+>Em primeiro lugar, nenhum dispositivo poderá saber ao certo a que dispositivos está emparelhado. Quando dois dispositivos estão emparelhados, eles partilham uma <phrase
+>chave de ligação</phrase
+> secreta, que foi criada durante o processo de emparelhamento, com base no número de código e em mais alguns dados. Como o outro lado pode optar por remover uma chave de ligação sem avisar, ter uma chave de ligação para um dado dispositivo não garante que a chave de ligação do outro lado ainda existe. Se uma das chaves de ligação desaparecer, acabou o emparelhamento. Claro que você poderá saber que <emphasis
+>não</emphasis
+> está emparelhado com um dispositivo se não tiver uma chave de ligação para ele. </para>
+<para
+>Então como é que as chaves de ligação poderão ser removidas? Isso depende do dispositivo. A maioria dos telefones ou PDAs têm uma lista de dispositivos "emparelhados" ou "de confiança", onde você poderá remover um item de alguma forma. Para a versão actual dos utilitários do Bluez (a 2.6), as chaves de ligação estão normalmente no ficheiro <filename
+>/etc/bluetooth/link_key</filename
+>. Dado que as chaves de ligação têm de se manter privadas, este ficheiro só é acessível pelo 'root'. Você poderá remover sem problemas este ficheiro, mas então aí todos os seus emparelhamentos desaparecerão. E, dado que o ficheiro é binário, não o poderá editar facilmente sem uma ferramenta especial. De momento, o 'kdebluetooth' não contém nenhuma ferramenta para ler ou gravar este ficheiro, dado que o tratamento das chaves de ligação pelo Bluez irá mudar em breve. </para>
+<para
+>Existe um incómodo especial envolvido, quando você muda frequentemente de sistema operativos que usem ambos o Bluetooth (Linux&lt;->Windows normalmente): Quando você emparelhar o seu telefone no Linux e depois arrancar o Windows, este não irá saber nada sobre as chaves de ligação geridas pelo Bluez. Como tal, irá parecer que o computador eliminou a chave de ligação e você terá de emparelhar de novo. Dependendo do seu dispositivo, até poderá não ser possível emparelhar de novo, sem remover a chave de ligação "antiga" do telefone antes. Você poderá ter o mesmo problema com o próprio Bluez se seleccionar o "paring single;" no <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Por isso, de momento tenha atenção a este problema, não use o Bluetooth em ambos os SOs ou use um adaptador Bluetooth diferente para cada SO. Também poderá ser possível mover as chaves de ligação entre o Windows e o Linux, mas não se sabe de nenhuma ferramenta que o faça. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

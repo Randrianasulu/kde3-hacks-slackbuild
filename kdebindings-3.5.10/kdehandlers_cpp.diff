@@ -1,0 +1,111 @@
+--- /tmp/kdebindings-3.5.10/korundum/rubylib/korundum/kdehandlers.cpp.old	2008-08-19 20:11:29.000000000 +0200
++++ /tmp/kdebindings-3.5.10/korundum/rubylib/korundum/kdehandlers.cpp	2010-10-23 23:41:06.000000000 +0200
+@@ -122,7 +122,7 @@
+ 		break;
+ 	    }
+ 
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    QCStringList *stringlist = new QCStringList;
+ 
+ 	    for(long i = 0; i < count; i++) {
+@@ -131,7 +131,7 @@
+ 		    stringlist->append(QCString());
+ 		    continue;
+ 		}
+-		stringlist->append(QCString(StringValuePtr(item), RSTRING(item)->len + 1));
++		stringlist->append(QCString(StringValuePtr(item), RSTRING_LEN(item) + 1));
+ 	    }
+ 
+ 	    m->item().s_voidp = stringlist;
+@@ -184,19 +184,19 @@
+ 			VALUE optionslist = *(m->var());
+ 			if (optionslist == Qnil
+ 			|| TYPE(optionslist) != T_ARRAY
+-			|| RARRAY(optionslist)->len == 0 )
++			|| RARRAY_LEN(optionslist) == 0 )
+ 			{
+ 					m->item().s_voidp = 0;
+ 					break;
+ 			}
+ 
+ 			// Allocate 'length + 1' entries, to include an all NULLs last entry
+-			KCmdLineOptions *cmdLineOptions = (KCmdLineOptions *) calloc(	RARRAY(optionslist)->len + 1, 
++			KCmdLineOptions *cmdLineOptions = (KCmdLineOptions *) calloc(	RARRAY_LEN(optionslist) + 1, 
+ 																			sizeof(struct KCmdLineOptions) );
+ 			
+ 			VALUE options;
+ 			long i;
+-			for(i = 0; i < RARRAY(optionslist)->len; i++) {
++			for(i = 0; i < RARRAY_LEN(optionslist); i++) {
+ 				options = rb_ary_entry(optionslist, i);
+ 				VALUE temp = rb_ary_entry(options, 0);
+ 				cmdLineOptions[i].name = StringValuePtr(temp);
+@@ -244,7 +244,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    QValueList<WId> *valuelist = new QValueList<WId>;
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {
+@@ -815,7 +815,7 @@
+ 				m->item().s_voidp = 0;
+ 				break;
+ 			}
+-			int count = RARRAY(list)->len;
++			int count = RARRAY_LEN(list);
+ 			KURL::List *kurllist = new KURL::List;
+ 			long i;
+ 			for(i = 0; i < count; i++) {
+@@ -916,11 +916,11 @@
+ 		
+ 		KIO::UDSEntryList *cpplist = new KIO::UDSEntryList;
+ 		
+-		for(long i = 0; i < RARRAY(list)->len; i++) {
++		for(long i = 0; i < RARRAY_LEN(list); i++) {
+ 			VALUE item = rb_ary_entry(list, i);
+ 			KIO::UDSEntry *cppsublist = new KIO::UDSEntry;
+ 			
+-			for (int j = 0; j < RARRAY(item)->len; j++) {
++			for (int j = 0; j < RARRAY_LEN(item); j++) {
+ 				VALUE subitem = rb_ary_entry(item, j);
+ 				smokeruby_object *o = value_obj_info(subitem);
+ 				if(!o || !o->ptr)
+@@ -998,7 +998,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    ItemList *cpplist = new ItemList;
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {
+@@ -1103,7 +1103,7 @@
+ 		m->item().s_voidp = 0;
+ 		break;
+ 	    }
+-	    int count = RARRAY(list)->len;
++	    int count = RARRAY_LEN(list);
+ 	    ItemList *cpplist = new ItemList;
+ 	    long i;
+ 	    for(i = 0; i < count; i++) {
+@@ -1211,7 +1211,7 @@
+ 		// Convert the ruby hash to an array of key/value arrays
+ 		VALUE temp = rb_funcall(hash, rb_intern("to_a"), 0);
+ 
+-		for (long i = 0; i < RARRAY(temp)->len; i++) {
++		for (long i = 0; i < RARRAY_LEN(temp); i++) {
+ 			VALUE key = rb_ary_entry(rb_ary_entry(temp, i), 0);
+ 			VALUE value = rb_ary_entry(rb_ary_entry(temp, i), 1);
+ 			
+@@ -1316,7 +1316,7 @@
+ 		// Convert the ruby hash to an array of key/value arrays
+ 		VALUE temp = rb_funcall(hash, rb_intern("to_a"), 0);
+ 
+-		for (long i = 0; i < RARRAY(temp)->len; i++) {
++		for (long i = 0; i < RARRAY_LEN(temp); i++) {
+ 			VALUE key = rb_ary_entry(rb_ary_entry(temp, i), 0);
+ 			VALUE value = rb_ary_entry(rb_ary_entry(temp, i), 1);
+ 			

@@ -1,0 +1,92 @@
+/****************************************************************************
+** DigikamImagesPluginCore::HSPreviewWidget meta object code from reading C++ file 'hspreviewwidget.h'
+**
+** Created: Wed Jun 14 10:02:27 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "hspreviewwidget.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *DigikamImagesPluginCore::HSPreviewWidget::className() const
+{
+    return "DigikamImagesPluginCore::HSPreviewWidget";
+}
+
+QMetaObject *DigikamImagesPluginCore::HSPreviewWidget::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_DigikamImagesPluginCore__HSPreviewWidget( "DigikamImagesPluginCore::HSPreviewWidget", &DigikamImagesPluginCore::HSPreviewWidget::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString DigikamImagesPluginCore::HSPreviewWidget::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::HSPreviewWidget", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString DigikamImagesPluginCore::HSPreviewWidget::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::HSPreviewWidget", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* DigikamImagesPluginCore::HSPreviewWidget::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"DigikamImagesPluginCore::HSPreviewWidget", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_DigikamImagesPluginCore__HSPreviewWidget.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* DigikamImagesPluginCore::HSPreviewWidget::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "DigikamImagesPluginCore::HSPreviewWidget" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool DigikamImagesPluginCore::HSPreviewWidget::qt_invoke( int _id, QUObject* _o )
+{
+    return QWidget::qt_invoke(_id,_o);
+}
+
+bool DigikamImagesPluginCore::HSPreviewWidget::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool DigikamImagesPluginCore::HSPreviewWidget::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool DigikamImagesPluginCore::HSPreviewWidget::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

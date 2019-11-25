@@ -1,0 +1,113 @@
+/****************************************************************************
+** Digikam::ImagePropertiesSideBar meta object code from reading C++ file 'imagepropertiessidebar.h'
+**
+** Created: Wed Jun 14 03:22:32 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imagepropertiessidebar.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ImagePropertiesSideBar::className() const
+{
+    return "Digikam::ImagePropertiesSideBar";
+}
+
+QMetaObject *Digikam::ImagePropertiesSideBar::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ImagePropertiesSideBar( "Digikam::ImagePropertiesSideBar", &Digikam::ImagePropertiesSideBar::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ImagePropertiesSideBar::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesSideBar", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ImagePropertiesSideBar::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesSideBar", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ImagePropertiesSideBar::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = Sidebar::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "rect", &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotImageSelectionChanged", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"slotNoCurrentItem", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ "tab", &static_QUType_ptr, "QWidget", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotChangedTab", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotImageSelectionChanged(const QRect&)", &slot_0, QMetaData::Public },
+	{ "slotNoCurrentItem()", &slot_1, QMetaData::Public },
+	{ "slotChangedTab(QWidget*)", &slot_2, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ImagePropertiesSideBar", parentObject,
+	slot_tbl, 3,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ImagePropertiesSideBar.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ImagePropertiesSideBar::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ImagePropertiesSideBar" ) )
+	return this;
+    return Sidebar::qt_cast( clname );
+}
+
+bool Digikam::ImagePropertiesSideBar::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotImageSelectionChanged((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1))); break;
+    case 1: slotNoCurrentItem(); break;
+    case 2: slotChangedTab((QWidget*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return Sidebar::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::ImagePropertiesSideBar::qt_emit( int _id, QUObject* _o )
+{
+    return Sidebar::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ImagePropertiesSideBar::qt_property( int id, int f, QVariant* v)
+{
+    return Sidebar::qt_property( id, f, v);
+}
+
+bool Digikam::ImagePropertiesSideBar::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

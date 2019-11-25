@@ -1,0 +1,238 @@
+diff -Naur kdebase-3.5.6-orig/kioslave/media/mediamanager/halbackend.cpp kdebase-3.5.6/kioslave/media/mediamanager/halbackend.cpp
+--- kdebase-3.5.6-orig/kioslave/media/mediamanager/halbackend.cpp	2007-01-15 14:31:32.000000000 +0300
++++ kdebase-3.5.6/kioslave/media/mediamanager/halbackend.cpp	2007-02-07 16:46:38.000000000 +0300
+@@ -24,6 +24,7 @@
+ #include <kapplication.h>
+ #include <qeventloop.h>
+ #include <qfile.h>
++#include <qtextcodec.h>
+ #include <klocale.h>
+ #include <kurl.h>
+ #include <kdebug.h>
+@@ -54,6 +55,44 @@
+     return _ppt_QString;
+ }
+ 
++// !!!
++QString libhal_device_policy_get_mount_options(LibHalContext *apCtx, const char* apUdi) {
++    LibHalDrive *vpDrive;
++
++    vpDrive = libhal_drive_from_udi(apCtx, apUdi);
++    if(!vpDrive) {
++        char *vpUdiStorageDevice;
++        DBusError vError;
++
++        /* try block.storage_device */
++        dbus_error_init(&vError);
++        vpUdiStorageDevice = libhal_device_get_property_string(apCtx, apUdi, "block.storage_device",&vError);
++        if(vpUdiStorageDevice) {
++            vpDrive = libhal_drive_from_udi(apCtx,vpUdiStorageDevice);
++            libhal_free_string(vpUdiStorageDevice);
++        }
++    }
++
++    if(!vpDrive) return QString::null;
++
++    LibHalVolume *vpVolume;
++    const char *vpOptions = NULL;
++
++    vpVolume = libhal_volume_from_udi(apCtx,apUdi);
++    if(vpVolume) {
++        vpOptions = libhal_volume_policy_get_mount_options(vpDrive,vpVolume,NULL);
++        libhal_volume_free(vpVolume);
++    }
++    else {
++        vpOptions = libhal_drive_policy_get_mount_options(vpDrive, NULL);
++    }
++    libhal_drive_free(vpDrive);
++
++    QCString vCResult(vpOptions ? vpOptions : "");
++    return QString::fromLatin1(vCResult);
++}
++// !!!
++
+ /* Constructor */
+ HALBackend::HALBackend(MediaList &list, QObject* parent)
+     : QObject()
+@@ -812,7 +851,7 @@
+                      || libhal_device_get_property_bool(m_halContext, drive_udi.latin1(), "storage.hotpluggable", NULL);
+ 
+     config.setGroup(drive_udi);
+-    bool value = config.readBoolEntry("automount", false);
++    bool value = config.readBoolEntry("automount", true);
+     config.setGroup(name);
+ 
+     if (libhal_device_get_property_bool(m_halContext, name.latin1(), "volume.disc.is_blank", NULL)
+@@ -824,6 +863,21 @@
+ 
+     result << QString("automount=%1").arg(value ? "true" : "false");
+ 
++    // !!!
++    QString vMountOptions;
++    vMountOptions = libhal_device_policy_get_mount_options(m_halContext,name.latin1());
++
++    if(vMountOptions.isEmpty()) {
++        vMountOptions = libhal_device_get_property_QString(m_halContext, name.latin1(), "volume.policy.default.mount_options");
++    }
++
++    vMountOptions = config.readEntry("custom", vMountOptions);
++
++    if(!vMountOptions.isEmpty()) {
++        result << QString::fromLatin1("custom=%1").arg(vMountOptions);
++    }
++    // !!!
++
+     if (valids.contains("ro"))
+     {
+         value = config.readBoolEntry("ro", false);
+@@ -856,9 +910,20 @@
+ 
+     if (valids.contains("utf8"))
+     {
++        // !!!
++        QTextCodec *vpCodec = QTextCodec::codecForLocale();
++        if(vpCodec && vpCodec->mibEnum()!=106 /*UTF-8*/) {
++            // We hawe not UTF-8 locale !!!
++            result << QString::fromLatin1("utf8=false"); 
++        }
++        else {
++        // !!!
+         value = config.readBoolEntry("utf8", true);
+         tmp = QString("utf8=%1").arg(value ? "true" : "false");
+         result << tmp;
++        // !!!
++        }
++        // !!!
+     }
+ 
+     if (valids.contains("shortname"))
+@@ -894,6 +959,32 @@
+     if (mount_point.isEmpty())
+         mount_point = libhal_device_get_property_QString(m_halContext, name.latin1(), "volume.policy.desired_mount_point");
+ 
++    // !!!
++    if(mount_point.isEmpty()) {
++        QString vMountPoint = libhal_device_get_property_QString(m_halContext, name.latin1(), "volume.policy.default.mount_point");
++        if(vMountPoint.isEmpty()) {
++            QString vStorageBus = libhal_device_get_property_QString(m_halContext, drive_udi.latin1(), "storage.bus");
++            QString vDriveType  = libhal_device_get_property_QString(m_halContext, drive_udi.latin1(), "storage.drive_type");
++
++            vMountPoint = vStorageBus + vDriveType;
++            if(vDriveType == QString::fromLatin1("cdrom")) {
++                vMountPoint = vDriveType;
++            }
++            else if(vDriveType != QString::fromLatin1("floppy")) {
++                if(vStorageBus == QString::fromLatin1("platform")) {
++                    vMountPoint = vDriveType;
++                }
++            }
++        }
++
++        //if(!vMountPoint.startsWith(QString::fromLatin1("/"))) {
++        //    vMountPoint = QString::fromLatin1("/media/") + vMountPoint;
++        //}
++
++        mount_point = vMountPoint;
++    }
++    // !!!
++
+     mount_point = config.readEntry("mountpoint", mount_point);
+ 
+     if (!mount_point.startsWith("/"))
+@@ -947,6 +1038,12 @@
+         config.writeEntry("automount", valids["automount"]);
+     }
+ 
++    // !!!
++    if(valids.contains("custom")) {
++        config.writeEntry("custom", valids["custom"]);
++    }
++    // !!!
++
+     return true;
+ }
+ 
+@@ -1140,6 +1237,17 @@
+     if (valids["flush"] == "true")
+         soptions << "flush";
+ 
++    // !!!
++    if(valids.contains("custom") && !valids["custom"].isEmpty()) {
++        QStringList::ConstIterator vIt;
++        QStringList vMountOptionList = QStringList::split(QString::fromLatin1(","),valids["custom"]);
++
++        for(vIt = vMountOptionList.begin(); vIt != vMountOptionList.end(); ++vIt) {
++            soptions.append(*vIt);
++        }
++    }
++    // !!!
++
+     if (valids["uid"] == "true")
+     {
+         soptions << QString("uid=%1").arg(getuid());
+diff -Naur kdebase-3.5.6-orig/kioslave/media/propsdlgplugin/propertiespage.cpp kdebase-3.5.6/kioslave/media/propsdlgplugin/propertiespage.cpp
+--- kdebase-3.5.6-orig/kioslave/media/propsdlgplugin/propertiespage.cpp	2006-07-22 12:15:43.000000000 +0400
++++ kdebase-3.5.6/kioslave/media/propsdlgplugin/propertiespage.cpp	2007-02-07 16:46:38.000000000 +0300
+@@ -137,6 +137,10 @@
+     label_filesystem->setText(i18n("Filesystem: %1").arg(options["filesystem"]));
+     option_mountpoint->setText(options["mountpoint"]);
+     connect( option_mountpoint, SIGNAL( textChanged( const QString &) ), SIGNAL( changed() ) );
++    // !!!
++    option_custom->setText(options["custom"]);
++    connect( option_custom, SIGNAL( textChanged( const QString &) ), SIGNAL( changed() ) );
++    // !!!
+     option_automount->setChecked(options["automount"] == "true");
+     connect( option_automount, SIGNAL( stateChanged(int) ), SIGNAL( changed() ) );
+ 
+@@ -190,6 +194,12 @@
+   if (options.contains("journaling")) 
+     result << QString("journaling=%1").arg(journales[option_journaling->currentItem()]);
+ 
++    // !!!
++    if (options.contains("custom")) {
++        result << QString::fromLatin1("custom=%1").arg(option_custom->text());
++    }
++    // !!!
++
+   QString mp = option_mountpoint->text();
+   if (!mp.startsWith("/media/"))
+     {
+diff -Naur kdebase-3.5.6-orig/kioslave/media/propsdlgplugin/propertiespagegui.ui kdebase-3.5.6/kioslave/media/propsdlgplugin/propertiespagegui.ui
+--- kdebase-3.5.6-orig/kioslave/media/propsdlgplugin/propertiespagegui.ui	2006-07-22 12:15:43.000000000 +0400
++++ kdebase-3.5.6/kioslave/media/propsdlgplugin/propertiespagegui.ui	2007-02-07 16:46:38.000000000 +0300
+@@ -122,6 +122,35 @@
+                                         </widget>
+                                     </hbox>
+                                 </widget>
++                                <widget class="QLayoutWidget">
++                                  <property name="name">
++                                    <cstring>layout16</cstring>
++                                  </property>
++                                  <hbox>
++                                    <widget class="QLabel">
++                                      <property name="name">
++                                        <cstring>textLabel4</cstring>
++                                      </property>
++                                      <property name="text">
++                                        <string>Custom options:</string>
++                                      </property>
++                                      <property name="buddy" stdset="0">
++                                        <cstring>option_custom</cstring>
++                                      </property>
++                                      <property name="whatsThis" stdset="0">
++                                        <string>Custom mount options.</string>
++                                      </property>
++                                    </widget>
++                                    <widget class="QLineEdit">
++                                      <property name="name">
++                                        <cstring>option_custom</cstring>
++                                      </property>
++                                      <property name="text">
++                                        <string></string>
++                                      </property>
++                                    </widget>
++                                  </hbox>
++                                </widget>
+                                 <widget class="QCheckBox">
+                                     <property name="name">
+                                         <cstring>option_automount</cstring>

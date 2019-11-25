@@ -1,0 +1,91 @@
+
+OBEX kio slave.
+---------------
+
+At the moment it is mostly working with ober IP, IrDA and the Siemens BFB
+transport protocol. The slave ues url's of the form
+
+obex://hostname:port/path
+
+for IP connections. It will use the standard OBEX port 650 if the port
+argument is omitted. The IP transport also queries for the nss/netdb entry
+
+obex                  650/tcp
+
+if registered in the services database. (see getent(1) or nsswitch.conf(5))
+The IP transport also tries the port 29650. This one is used in case of
+a server running without root privileges.
+
+The IrDA Transport is accessed via the url format
+
+obex://irda/path
+
+In this case device discovery is done and the first device offering
+the OBEX hint bit is connected.
+
+The Bluetooth Transport is accessed via the url format
+
+obex://bluetooth/path
+
+In this case device discovery is done and the first device offering
+the filesystem browsing profile is connected.
+
+There exist serial transports for Siemens mobiles. It is currently untested.
+In theory it should work.
+
+A serial transport for the ericcson mobiles is also in the works. It should be
+easy to do. It is also difficult to test because I don't know anyone with an
+ericsson phone ...
+
+I have removed the old url format using '!' to separate transport options.
+There is now a kcontrol module for configuration. Using this module one can
+define 'OBEX hosts' which can be used for hostnames in OBEX url's. Since there
+are many configuration options i think this is the best method to access
+specific devices. If you know the hardware addresses of your bluetooth or
+irda device you can use url's of the form:
+
+obex://[ef:01:23:45]/
+
+if your irda device has the address ef:01:23:45 or
+
+obex://[ab:cd:ef:01:23:45]/
+
+if your bluetooth device has the hardware address ab:cd:ef:01:23:45.
+For bluetooth you can also include the rfcomm channel of the folderbrowsing
+profile in the usual port field.
+
+OBEX authentication is currently supported in url's.
+More complete authentication configutation will come.
+
+DEVICE COMPATIBILITY
+
+The NOKIA 3650 mobile has a firmware bug in some versions.
+Mobiles with this bug return invalid XML files for folder listings. This
+leads to empty directories. Thie bug is reported to be in at least firmware
+version 2.50. The firmware version 3.16 fixed this bug.
+Thanks to Fred Schaettgen <Sch@ttgen.net> for testing.
+
+My Siemens S45i works well with this implementation.
+
+Connections from and to openobex driven clients or servers will be refused,
+since openobex uses a wrong protocol version value in connect
+requests/responses.
+
+DOCUMENTATION
+
+Hmm, can someone tell me how to write kdehelp documentation?
+
+DEMO SERVER
+
+There is an example folderbowsing server in the subfolder
+libqobex/qobexfbssrv/. This server and the server api is currently under
+heavy development. It listens by default on localhost. You can change the
+transport where it listens with -t <whatever>. It is also password protected 
+by the password 'fbsserver' For more information think of the wisdom of
+the yedi:
+
+Use the source Luke
+
+:)
+
+Have fun!

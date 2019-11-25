@@ -1,0 +1,269 @@
+/****************************************************************************
+** Digikam::LightTableBar meta object code from reading C++ file 'lighttablebar.h'
+**
+** Created: Wed Jun 14 03:55:01 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "lighttablebar.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::LightTableBar::className() const
+{
+    return "Digikam::LightTableBar";
+}
+
+QMetaObject *Digikam::LightTableBar::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__LightTableBar( "Digikam::LightTableBar", &Digikam::LightTableBar::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::LightTableBar::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::LightTableBar", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::LightTableBar::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::LightTableBar", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::LightTableBar::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = ThumbBarView::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_varptr, "\x21", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotImageRatingChanged", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ 0, &static_QUType_ptr, "ThumbBarItem", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotItemSelected", 1, param_slot_1 };
+    static const QUMethod slot_2 = {"slotAssignRatingNoStar", 0, 0 };
+    static const QUMethod slot_3 = {"slotAssignRatingOneStar", 0, 0 };
+    static const QUMethod slot_4 = {"slotAssignRatingTwoStar", 0, 0 };
+    static const QUMethod slot_5 = {"slotAssignRatingThreeStar", 0, 0 };
+    static const QUMethod slot_6 = {"slotAssignRatingFourStar", 0, 0 };
+    static const QUMethod slot_7 = {"slotAssignRatingFiveStar", 0, 0 };
+    static const QUParameter param_slot_8[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"slotAssignRating", 1, param_slot_8 };
+    static const QUMethod slot_9 = {"slotThemeChanged", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotImageRatingChanged(Q_LLONG)", &slot_0, QMetaData::Private },
+	{ "slotItemSelected(ThumbBarItem*)", &slot_1, QMetaData::Private },
+	{ "slotAssignRatingNoStar()", &slot_2, QMetaData::Private },
+	{ "slotAssignRatingOneStar()", &slot_3, QMetaData::Private },
+	{ "slotAssignRatingTwoStar()", &slot_4, QMetaData::Private },
+	{ "slotAssignRatingThreeStar()", &slot_5, QMetaData::Private },
+	{ "slotAssignRatingFourStar()", &slot_6, QMetaData::Private },
+	{ "slotAssignRatingFiveStar()", &slot_7, QMetaData::Private },
+	{ "slotAssignRating(int)", &slot_8, QMetaData::Private },
+	{ "slotThemeChanged()", &slot_9, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalLightTableBarItemSelected", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalSetItemOnLeftPanel", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalSetItemOnRightPanel", 1, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"signalEditItem", 1, param_signal_3 };
+    static const QUParameter param_signal_4[] = {
+	{ 0, &static_QUType_ptr, "ImageInfo", QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"signalRemoveItem", 1, param_signal_4 };
+    static const QUMethod signal_5 = {"signalClearAll", 0, 0 };
+    static const QUParameter param_signal_6[] = {
+	{ 0, &static_QUType_ptr, "ImageInfoList", QUParameter::In }
+    };
+    static const QUMethod signal_6 = {"signalDroppedItems", 1, param_signal_6 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalLightTableBarItemSelected(ImageInfo*)", &signal_0, QMetaData::Public },
+	{ "signalSetItemOnLeftPanel(ImageInfo*)", &signal_1, QMetaData::Public },
+	{ "signalSetItemOnRightPanel(ImageInfo*)", &signal_2, QMetaData::Public },
+	{ "signalEditItem(ImageInfo*)", &signal_3, QMetaData::Public },
+	{ "signalRemoveItem(ImageInfo*)", &signal_4, QMetaData::Public },
+	{ "signalClearAll()", &signal_5, QMetaData::Public },
+	{ "signalDroppedItems(const ImageInfoList&)", &signal_6, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::LightTableBar", parentObject,
+	slot_tbl, 10,
+	signal_tbl, 7,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__LightTableBar.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::LightTableBar::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::LightTableBar" ) )
+	return this;
+    return ThumbBarView::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalLightTableBarItemSelected
+void Digikam::LightTableBar::signalLightTableBarItemSelected( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSetItemOnLeftPanel
+void Digikam::LightTableBar::signalSetItemOnLeftPanel( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSetItemOnRightPanel
+void Digikam::LightTableBar::signalSetItemOnRightPanel( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalEditItem
+void Digikam::LightTableBar::signalEditItem( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 3 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalRemoveItem
+void Digikam::LightTableBar::signalRemoveItem( ImageInfo* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 4 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalClearAll
+void Digikam::LightTableBar::signalClearAll()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 5 );
+}
+
+// SIGNAL signalDroppedItems
+void Digikam::LightTableBar::signalDroppedItems( const ImageInfoList& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 6 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+bool Digikam::LightTableBar::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotImageRatingChanged((Q_LLONG)(*((Q_LLONG*)static_QUType_ptr.get(_o+1)))); break;
+    case 1: slotItemSelected((ThumbBarItem*)static_QUType_ptr.get(_o+1)); break;
+    case 2: slotAssignRatingNoStar(); break;
+    case 3: slotAssignRatingOneStar(); break;
+    case 4: slotAssignRatingTwoStar(); break;
+    case 5: slotAssignRatingThreeStar(); break;
+    case 6: slotAssignRatingFourStar(); break;
+    case 7: slotAssignRatingFiveStar(); break;
+    case 8: slotAssignRating((int)static_QUType_int.get(_o+1)); break;
+    case 9: slotThemeChanged(); break;
+    default:
+	return ThumbBarView::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::LightTableBar::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalLightTableBarItemSelected((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 1: signalSetItemOnLeftPanel((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 2: signalSetItemOnRightPanel((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 3: signalEditItem((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 4: signalRemoveItem((ImageInfo*)static_QUType_ptr.get(_o+1)); break;
+    case 5: signalClearAll(); break;
+    case 6: signalDroppedItems((const ImageInfoList&)*((const ImageInfoList*)static_QUType_ptr.get(_o+1))); break;
+    default:
+	return ThumbBarView::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::LightTableBar::qt_property( int id, int f, QVariant* v)
+{
+    return ThumbBarView::qt_property( id, f, v);
+}
+
+bool Digikam::LightTableBar::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

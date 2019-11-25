@@ -1,0 +1,9 @@
+cat $CWD/gwaccount_cpp.diff | patch -p4 --verbose || exit 1
+cat $CWD/getdetailstask_cpp.diff | patch -p4 --verbose || exit 1
+cat $CWD/kopete_groupwise.diff | patch -p1 --verbose || exit 1
+cat $CWD/kopete_liboscar.diff | patch -p3 --verbose || exit 1
+cat $CWD/kdenetwork-3.5.10-gcc45.patch | patch -p1 --verbose || exit 1
+cat $CWD/v4l1.patch | patch -p1 --verbose || exit 1
+cat $CWD/yahoo-fixes.patch | patch -p1 --verbose || exit 1
+cat $CWD/python_and_automake.patch | patch -p0 --verbose || exit 1
+cat $CWD/smb4.patch | patch  -p0 --verbose || exit 1

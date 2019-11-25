@@ -1,0 +1,110 @@
+/****************************************************************************
+** Digikam::SetupMime meta object code from reading C++ file 'setupmime.h'
+**
+** Created: Wed Jun 14 03:42:43 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "setupmime.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::SetupMime::className() const
+{
+    return "Digikam::SetupMime";
+}
+
+QMetaObject *Digikam::SetupMime::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__SetupMime( "Digikam::SetupMime", &Digikam::SetupMime::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::SetupMime::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupMime", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::SetupMime::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupMime", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::SetupMime::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"slotRevertImageFileFilter", 0, 0 };
+    static const QUMethod slot_1 = {"slotRevertMovieFileFilter", 0, 0 };
+    static const QUMethod slot_2 = {"slotRevertAudioFileFilter", 0, 0 };
+    static const QUMethod slot_3 = {"slotRevertRawFileFilter", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotRevertImageFileFilter()", &slot_0, QMetaData::Private },
+	{ "slotRevertMovieFileFilter()", &slot_1, QMetaData::Private },
+	{ "slotRevertAudioFileFilter()", &slot_2, QMetaData::Private },
+	{ "slotRevertRawFileFilter()", &slot_3, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::SetupMime", parentObject,
+	slot_tbl, 4,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__SetupMime.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::SetupMime::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::SetupMime" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Digikam::SetupMime::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotRevertImageFileFilter(); break;
+    case 1: slotRevertMovieFileFilter(); break;
+    case 2: slotRevertAudioFileFilter(); break;
+    case 3: slotRevertRawFileFilter(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::SetupMime::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::SetupMime::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Digikam::SetupMime::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

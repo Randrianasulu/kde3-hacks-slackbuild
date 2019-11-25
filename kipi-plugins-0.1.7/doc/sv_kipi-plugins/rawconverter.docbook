@@ -1,0 +1,169 @@
+<chapter id="rawconverter">
+<chapterinfo>
+
+<title
+>Konvertering av obehandlade bilder</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_punkt_gilles_snabela_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_snabela_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>KIPI-insticksprogrammet <quote
+>Konvertering av obehandlade bilder</quote
+> är ett konverteringsverktyg för bilder med obehandlat format. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Med det här KIPI-insticksprogrammet kan du importera eller konvertera dina bilder som lagrats med <emphasis
+>obehandlat</emphasis
+> format till tre format du väljer (<guilabel
+>JPEG</guilabel
+>, <guilabel
+>TIFF</guilabel
+>, <guilabel
+>PPM</guilabel
+>). </para>
+
+<para
+>Några synpunkter innan du konverterar, och redan innan du tar bilder med obehandlat format. De obehandlade bildfilformaten behåller originalinformationen från exponeringen antagligen utan förlust (om de är komprimerade, använder de omvändbara förlustfria komprimeringsalgoritmer). Många fotografer föredrar att ta bilder med obehandlat format eftersom kamerans inbyggda konverteringsprogram ofta är sämre än vad som kan uppnås med digital bildbehandling. Digitalkamerans vitbalans registreras men påverkar inte bilden. Vissa CMOS CCD:er skapar filterdata med fyra färger, RGBG, röd, grön, blå och en annan grön mask för kontrastförbättringar. Insticksprogrammet kan ta hänsyn till detta. </para>
+
+<para
+>Konverteringen är i själva verket baserad på Dave Coffins kommandoradsverktyg <emphasis
+>dcraw</emphasis
+> (Dave: "Förvänta dig inte att dcraw skapar samma bilder som programvara kameratillverkaren tillhandahåller. Ibland ger dcraw bättre resultat!"). </para>
+
+<sect1 id="using-plugin-rawconversiondialog">
+<title
+>Dialogrutan för konvertering av en enstaka bild</title>
+
+<para
+>Välj den obehandlade bilden att konvertera, och öppna insticksprogrammet från värdprogrammet. Fönstret <emphasis
+>Konvertering av obehandlade bilder</emphasis
+> för en enstaka bild visas. Klicka på <guilabel
+>Förhandsgranska</guilabel
+> för att låta effekten av dina inställningar ta form. </para>
+
+<para
+>Nu kan du justera tillgängliga kryssrutor och indatarutor för att optimera konverteringsprocessen. Den första kryssrutan anger att kamerans inställningar för vitbalans ska användas. De viktiga parametrarna som ljushet och multiplikationsfaktorn för rött och blått kan justeras. Vara inte orolig om resultatet inte är riktigt optimalt, det är alltid möjligt att finjustera bilden senare. </para>
+
+<para
+>Konvertering med <guilabel
+>Fyra färgers RGBG</guilabel
+> kan väljas för att använda kontrastinformation. (Om kameran använder RGB-läge har inställning av RGBG ingen effekt). </para>
+
+<para
+>Om du är nöjd med förhandsgranskningen, välj ett av tre utdataformat för att spara konverteringsresultatet. Filnamnet förblir likadant, bara filändelsen ändras. <guilabel
+>JPEG</guilabel
+> använder en algoritm med förlust, och skapar minst filstorlek för resultatet. </para>
+
+<para
+>Taggbildformatet (<guilabel
+>TIFF</guilabel
+>) bevarar all information i bilden genom att använda förlustfri LZW-komprimering. </para>
+
+<para
+>Det flyttbara punktavbildningsformatet (<guilabel
+>PPM</guilabel
+>) skapar störst resultatfil och innehåller mest data. </para>
+
+<tip
+><para
+>Om du avser att arbeta mycket med dina bilder, eller om det är troligt att du måste återanvända den senare, använd då inte <guilabel
+>JPEG</guilabel
+>-format, eftersom det bara tillåter ett begränsat antal operationer innan bilden försämras synbart. <guilabel
+>TIFF</guilabel
+> och <guilabel
+>PPM</guilabel
+> är bättre lämpade att behålla originaldata. </para
+></tip>
+
+<note
+><para
+>Om du väljer <guilabel
+>JPEG</guilabel
+> som <guilabel
+>Spara format</guilabel
+> läggs metadata från den obehandlade filen till i <guilabel
+>JPEG</guilabel
+>-filen som EXIF-information. </para
+></note>
+
+<para
+>När du är klar, klicka på knappen <guilabel
+>Behandla</guilabel
+> för att starta konverteringen. Om du vill avbryta konvertering av bilder, tryck på knappen <guilabel
+>Avbryt</guilabel
+>. </para>
+
+<figure>
+    <title
+>Dialogrutan för konvertering av obehandlade bilder för en enstaka bild</title>
+    <graphic srccredit="The RAW Converter Dialog in Single Mode" fileref="raw_converter_single.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-rawbatchdialog">
+<title
+>Dialogrutan för konvertering i bakgrunden</title>
+
+<para
+>Konvertering i bakgrunden låter dig konvertera flera bilder på en gång. Använd det när du är säker på de bästa inställningarna, dvs. prova det först i med konvertering av en enstaka bild. </para>
+
+<para
+>Tillgängliga inställningar är i stort sett identiska med dialogrutan för en enstaka bild. Här har du ett ytterligare alternativ att skriva över befintliga filer (som du kan ha skapat vid ett tidigare försök). Förhandsgranskningsalternativet är inte tillgängligt här. En förloppsrad anger konverteringsstatus medan den utförs. </para>
+
+<figure>
+    <title
+>Dialogrutan för konvertering av obehandlade bilder i bakgrunden</title>
+    <graphic srccredit="The Batch RAW Converter Dialog" fileref="raw_converter_batch.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

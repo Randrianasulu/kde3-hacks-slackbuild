@@ -1,0 +1,2816 @@
+# translation of kipiplugin_metadataedit.po to Greek
+#
+# Spiros Georgaras <sng@hellug.gr>, 2006, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_metadataedit\n"
+"POT-Creation-Date: 2008-12-02 09:44+0100\n"
+"PO-Revision-Date: 2007-06-25 12:34+0300\n"
+"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"Language-Team: Greek <i18ngr@lists.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Σπύρος Γεωργαράς, Τούσης Μανώλης"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org"
+
+#: commenteditdialog.cpp:77 plugin_metadataedit.cpp:510
+msgid "Edit Image Caption"
+msgstr ""
+
+#: commenteditdialog.cpp:86 commentremovedialog.cpp:84 exifeditdialog.cpp:165
+#: iptceditdialog.cpp:181
+msgid "Edit Metadata"
+msgstr "Επεξεργασία μεταδεδομένων"
+
+#: commenteditdialog.cpp:89
+#, fuzzy
+msgid "A Plugin to edit images' metadata"
+msgstr "Ένα πρόσθετο για την επεξεργασία μεταδεδομένων των φωτογραφιών"
+
+#: commenteditdialog.cpp:92 commentremovedialog.cpp:90 exifeditdialog.cpp:171
+#: iptceditdialog.cpp:187
+msgid "Author and Maintainer"
+msgstr "Συγγραφέας και συντηρητής"
+
+#: commenteditdialog.cpp:97 commentremovedialog.cpp:95 exifeditdialog.cpp:176
+#: iptceditdialog.cpp:192
+msgid "Plugin Handbook"
+msgstr ""
+
+#: commenteditdialog.cpp:105
+#, fuzzy
+msgid ""
+"<p>Enter the image caption hosted by <b>%1</b>. This field is not limited "
+"(excepted with IPTC). UTF-8 encoding will be used to save text."
+msgstr ""
+"<p>Ορίστε εδώ τα σχόλια χρήστη που φιλοξενούνται από το <b>%1</b>"
+". Το πεδίο αυτό δεν έχει περιορισμό. Χρησιμοποιείται κωδικοποίηση UTF8 για την "
+"αποθήκευσή του."
+
+#: commenteditdialog.cpp:113 exifcaption.cpp:156 iptccaption.cpp:104
+#, fuzzy
+msgid "Sync JFIF Comment section"
+msgstr "Συγχρονισμός του τμήματος σχολίων JFIF"
+
+#: commenteditdialog.cpp:114 iptccaption.cpp:108
+#, fuzzy
+msgid "Sync EXIF Comment"
+msgstr "Συγχρονισμός σχολίου EXIF"
+
+#: commenteditdialog.cpp:115 exifcaption.cpp:157
+#, fuzzy
+msgid ""
+"Sync IPTC caption (warning: limited to 2000 printable Ascii characters set)"
+msgstr "Συγχρονισμός της λεζάντας IPTC(προσοχή: μόνο ASCII)"
+
+#: commenteditdialog.cpp:118
+#, fuzzy
+msgid ""
+"<b>Note: captions from currently selected images will be permanently "
+"replaced.</b>"
+msgstr ""
+"<b>Σημείωση: Τα σχόλια των επιλεγμένων εικόνων θα αντικατασταθούν οριστικά.</b>"
+
+#: commentremovedialog.cpp:75
+#, fuzzy
+msgid "Remove Image Captions"
+msgstr "Αφαίρεση της λεζάντας IPTC"
+
+#: commentremovedialog.cpp:87 exifeditdialog.cpp:168
+msgid "A Plugin to edit pictures metadata"
+msgstr "Ένα πρόσθετο για την επεξεργασία μεταδεδομένων των φωτογραφιών"
+
+#: commentremovedialog.cpp:103
+#, fuzzy, c-format
+msgid "Remove caption created by %1"
+msgstr "Αφαίρεση σχολίου που φιλοξενείται στο %1"
+
+#: commentremovedialog.cpp:106
+#, fuzzy
+msgid "Remove JFIF Comment section"
+msgstr "Αφαίρεση του τμήματος σχολίων JFIF"
+
+#: commentremovedialog.cpp:107
+#, fuzzy
+msgid "Remove EXIF Comment"
+msgstr "Αφαίρεση του σχολίου χρήστη EXIF"
+
+#: commentremovedialog.cpp:108
+msgid "Remove IPTC caption"
+msgstr "Αφαίρεση της λεζάντας IPTC"
+
+#: commentremovedialog.cpp:110
+#, fuzzy
+msgid ""
+"<b>Note: Captions from currently selected images will be permanently "
+"removed.</b>"
+msgstr ""
+"<b>Σημείωση: Τα σχόλια των επιλεγμένων εικόνων θα αφαιρεθούν οριστικά.</b>"
+
+#: exifadjust.cpp:99
+msgid "Brightness (APEX):"
+msgstr "Φωτεινότητα (APEX):"
+
+#: exifadjust.cpp:103
+msgid ""
+"<p>Set here the brightness adjustment value in APEX unit used by camera to take "
+"the picture."
+msgstr ""
+"<p>Ορίστε εδώ τη ρύθμιση φωτεινότητας της μονάδας APEX που χρησιμοποιείται από "
+"τη φωτογραφική μηχανή για τη σύλληψη της φωτογραφίας."
+
+#: exifadjust.cpp:108
+msgid "Gain Control:"
+msgstr "Έλεγχος ενίσχυσης:"
+
+#: exifadjust.cpp:110
+msgid "None"
+msgstr "Καθόλου"
+
+#: exifadjust.cpp:111
+msgid "Low gain up"
+msgstr "Χαμηλή ενίσχυση επάνω"
+
+#: exifadjust.cpp:112
+msgid "High gain up"
+msgstr "Υψηλή ενίσχυση κάτω"
+
+#: exifadjust.cpp:113
+msgid "Low gain down"
+msgstr "Χαμηλή ενίσχυση κάτω"
+
+#: exifadjust.cpp:114
+msgid "High gain down"
+msgstr "Υψηλή ενίσχυση κάτω"
+
+#: exifadjust.cpp:117
+msgid ""
+"<p>Set here the degree of overall image gain adjustment used by camera to take "
+"the picture."
+msgstr ""
+"<p>Ορίστε εδώ το βαθμό της συνολικής ενίσχυσης της φωτογραφίας που "
+"χρησιμοποιείται από τη φωτογραφική μηχανή για τη σύλληψη της φωτογραφίας."
+
+#: exifadjust.cpp:122
+msgid "Contrast:"
+msgstr "Αντίθεση:"
+
+#: exifadjust.cpp:124 exifadjust.cpp:136 exifadjust.cpp:148
+msgid "Normal"
+msgstr "Κανονική"
+
+#: exifadjust.cpp:125 exifadjust.cpp:149
+msgid "Soft"
+msgstr "Ομαλή"
+
+#: exifadjust.cpp:126 exifadjust.cpp:150
+msgid "Hard"
+msgstr "Έντονη"
+
+#: exifadjust.cpp:129
+msgid ""
+"<p>Set here the direction of contrast processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Ορίστε εδώ την αντίθεση που εφαρμόστηκε στη φωτογραφία από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη."
+
+#: exifadjust.cpp:134
+msgid "Saturation:"
+msgstr "Κορεσμός:"
+
+#: exifadjust.cpp:137
+msgid "Low"
+msgstr "Χαμηλός"
+
+#: exifadjust.cpp:138
+msgid "High"
+msgstr "Υψηλός"
+
+#: exifadjust.cpp:141
+msgid ""
+"<p>Set here the direction of saturation processing applied by the camera to "
+"take the picture."
+msgstr ""
+"<p>Ορίστε εδώ τον κορεσμό που εφαρμόστηκε στη φωτογραφία από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη."
+
+#: exifadjust.cpp:146
+msgid "Sharpness:"
+msgstr "Οξύτητα:"
+
+#: exifadjust.cpp:153
+msgid ""
+"<p>Set here the direction of sharpness processing applied by the camera to take "
+"the picture."
+msgstr ""
+"<p>Ορίστε εδώ την οξύτητα που εφαρμόστηκε στη φωτογραφία από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη."
+
+#: exifadjust.cpp:158
+msgid "Custom rendered:"
+msgstr "Προσαρμοσμένη αποτύπωση:"
+
+#: exifadjust.cpp:160
+msgid "Normal process"
+msgstr "Κανονική επεξεργασία"
+
+#: exifadjust.cpp:161
+msgid "Custom process"
+msgstr "Προσαρμοσμένη επεξεργασία"
+
+#: exifadjust.cpp:164
+msgid ""
+"<p>Set here the use of special processing on image data, such as rendering "
+"geared to output."
+msgstr ""
+"<p>Ορίστε εδώ την ειδική επεξεργασία στη φωτογραφία, όπως είναι η αποτύπωση με "
+"προορισμό την έξοδο."
+
+#: exifcaption.cpp:106
+msgid "Document name (*):"
+msgstr "Όνομα εγγράφου (*):"
+
+#: exifcaption.cpp:111
+#, fuzzy
+msgid ""
+"<p>Enter the name of the document from which this image was been scanned. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ το όνομα του εγγράφου από το οποίο σαρώθηκε η φωτογραφία. Το "
+"πεδίο αποτελείται μόνο από χαρακτήρες ASCII."
+
+#: exifcaption.cpp:117
+msgid "Image description (*):"
+msgstr "Περιγραφή φωτογραφίας (*):"
+
+#: exifcaption.cpp:122
+#, fuzzy
+msgid "<p>Enter the image title. This field is limited to ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ τον τίτλο της φωτογραφίας. Το πεδίο αποτελείται μόνο από "
+"χαρακτήρες ASCII."
+
+#: exifcaption.cpp:127
+msgid "Artist (*):"
+msgstr "Καλλιτέχνης (*):"
+
+#: exifcaption.cpp:132
+#, fuzzy
+msgid ""
+"<p>Enter the image author's name. This field is limited to ASCII characters."
+msgstr ""
+"<p>Εισάγετε εδώ μια νέα λέξη κλειδί. Το πεδίο περιορίζεται σε 64 χαρακτήρες "
+"ASCII."
+
+#: exifcaption.cpp:137
+msgid "Copyright (*):"
+msgstr "Πνευματικά δικαιώματα (*):"
+
+#: exifcaption.cpp:142
+#, fuzzy
+msgid ""
+"<p>Enter the copyright owner of the image. This field is limited to ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ τον ιδιοκτήτη των πνευματικών δικαιωμάτων της φωτογραφίας. Το "
+"πεδίο αποτελείται μόνο από χαρακτήρες ASCII."
+
+#: exifcaption.cpp:147 iptccaption.cpp:102
+msgid "Caption:"
+msgstr "Λεζάντα:"
+
+#: exifcaption.cpp:149
+#, fuzzy
+msgid ""
+"<p>Enter the image's caption. This field is not limited. UTF8 encoding will be "
+"used to save the text."
+msgstr ""
+"<p>Ορίστε εδώ τα σχόλια χρήστη της φωτογραφίας. Το πεδίο αποτελείται μόνο από "
+"χαρακτήρες ASCII."
+
+#: exifcaption.cpp:153
+#, fuzzy, c-format
+msgid "Sync captions entered through %1"
+msgstr "Συγχρονισμός ημερομηνίας δημιουργίας που φιλοξενείται στο %1"
+
+#: exifcaption.cpp:168 exifdevice.cpp:338
+#, fuzzy
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/EXIF'>EXIF</a></b> "
+"text tags marked by (*) only support printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> characters set.</b>"
+msgstr ""
+"<b>Σημείωση: Οι ετικέτες κειμένου EXIF που σημειώνονται με (*) υποστηρίζουν "
+"μόνο εκτυπώσιμους χαρακτήρες ASCII.</b>"
+
+#: exifdatetime.cpp:103
+msgid "Creation date and time"
+msgstr "Ημερομηνία και ώρα δημιουργίας"
+
+#: exifdatetime.cpp:104
+msgid "Creation sub-second"
+msgstr "Δέκατα δημιουργίας"
+
+#: exifdatetime.cpp:108 iptcdatetime.cpp:116
+#, fuzzy, c-format
+msgid "Sync creation date entered through %1"
+msgstr "Συγχρονισμός ημερομηνίας δημιουργίας που φιλοξενείται στο %1"
+
+#: exifdatetime.cpp:111
+msgid "Sync IPTC creation date"
+msgstr "Συγχρονισμός της ημερομηνία δημιουργίας IPTC"
+
+#: exifdatetime.cpp:122
+msgid ""
+"<p>Set here the date and time of image creation. In this standard it is the "
+"date and time the file was changed."
+msgstr ""
+"<p>Ορίστε εδώ την ημερομηνία και ώρα δημιουργίας της εικόνας. Σε αυτό το "
+"πρότυπο αναφέρεται στην ημερομηνία και ώρα τροποποίησης του αρχείου."
+
+#: exifdatetime.cpp:124
+msgid ""
+"<p>Set here the fractions of seconds for the date and time of image creation."
+msgstr ""
+"<p>Ορίστε εδώ τα κλάσματα του δευτερολέπτου της στιγμής δημιουργίας της "
+"εικόνας."
+
+#: exifdatetime.cpp:129
+msgid "Original date and time"
+msgstr "Αρχική ημερομηνία και ώρα"
+
+#: exifdatetime.cpp:130
+msgid "Original sub-second"
+msgstr "Αρχικό κλάσμα του δευτερολέπτου"
+
+#: exifdatetime.cpp:138
+msgid ""
+"<p>Set here the date and time when the original image data was generated. For a "
+"digital still camera the date and time the picture was taken are recorded."
+msgstr ""
+"<p>Ορίστε εδώ την ημερομηνία και ώρα που δημιουργήθηκε η αρχική φωτογραφία. Για "
+"μια φωτογραφική μηχανή καταγράφεται η ημερομηνία και ώρα σύλληψης της "
+"φωτογραφίας."
+
+#: exifdatetime.cpp:141
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the original "
+"image data was generated."
+msgstr ""
+"<p>Ορίστε εδώ τα κλάσματα του δευτερολέπτου της στιγμής δημιουργίας των αρχικών "
+"δεδομένων της εικόνας."
+
+#: exifdatetime.cpp:146
+msgid "Digitization date and time"
+msgstr "Ημερομηνία και ώρα ψηφιοποίησης"
+
+#: exifdatetime.cpp:147
+msgid "Digitization sub-second"
+msgstr "Κλάσμα δευτερολέπτου ψηφιοποίησης"
+
+#: exifdatetime.cpp:155
+msgid ""
+"<p>Set here the date and time when the image was stored as digital data. If, "
+"for example, an image was captured by a digital still camera and at the same "
+"time the file was recorded, then Original and Digitization date and time will "
+"have the same contents."
+msgstr ""
+"<p>Ορίστε εδώ την ημερομηνία και ώρα αποθήκευσης της εικόνας με τη μορφή "
+"ψηφιακών δεδομένων. Αν έχει γίνει σύλληψη μιας φωτογραφίας με ψηφιακή μηχανή "
+"και την ίδια στιγμή καταγράφηκε το αρχείου της φωτογραφίας, οι ημερομηνίες και "
+"ώρες σύλληψης και ψηφιοποίησης θα συμπίπτουν."
+
+#: exifdatetime.cpp:160
+msgid ""
+"<p>Set here the fractions of seconds for the date and time when the image was "
+"stored as digital data."
+msgstr ""
+"<p>Ορίστε εδώ τα κλάσματα του δευτερολέπτου της στιγμής αποθήκευσης της εικόνας "
+"με τη μορφή ψηφιακών δεδομένων."
+
+#: exifdevice.cpp:134
+msgid "Device manufacturer (*):"
+msgstr "Κατασκευαστής της συσκευής (*):"
+
+#: exifdevice.cpp:139
+msgid ""
+"<p>Set here the manufacturer of image input equipment used to take the picture. "
+"This field is limited to ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ τον κατασκευαστή του εξοπλισμού που χρησιμοποιήθηκε για τη λήψη "
+"της φωτογραφίας. Το πεδίο αποτελείται μόνο από χαρακτήρες ASCII."
+
+#: exifdevice.cpp:144
+msgid "Device model (*):"
+msgstr "Μοντέλο της συσκευής (*):"
+
+#: exifdevice.cpp:149
+msgid ""
+"<p>Set here the model of image input equipment used to take the picture. This "
+"field is limited to ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ το μοντέλο του εξοπλισμού που χρησιμοποιήθηκε για τη λήψη της "
+"φωτογραφίας. Το πεδίο αποτελείται μόνο από χαρακτήρες ASCII."
+
+#: exifdevice.cpp:154
+msgid "Device type:"
+msgstr "Τύπος της συσκευής:"
+
+#: exifdevice.cpp:156
+msgid "Film scanner"
+msgstr "Σαρωτής φιλμ"
+
+#: exifdevice.cpp:157
+msgid "Reflection print scanner"
+msgstr "Σαρωτής αντανάκλασης"
+
+#: exifdevice.cpp:158
+msgid "Digital still camera"
+msgstr "Ψηφιακή φωτογραφική μηχανή"
+
+#: exifdevice.cpp:161
+msgid "<p>Select here the image input equipment type used to take the picture."
+msgstr ""
+"<p>Ορίστε εδώ τον τύπο αισθητήρα εικόνας που χρησιμοποιήθηκε από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη της φωτογραφίας."
+
+#: exifdevice.cpp:164
+#, fuzzy
+msgid ""
+"<b>Warning: EXIF <b><a "
+"href='http://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data"
+"'>Makernotes</a></b> can be unreadable if you set wrong device "
+"manufacturer/model description.</b>"
+msgstr ""
+"<b>Προειδοποίηση: Οι σημειώσεις δημιουργού EXIF μπορεί να μην είναι αναγνώσιμες "
+"αν ορίσετε λανθασμένη συσκευή στην περιγραφή κατασκευαστή/μοντέλου.</b>"
+
+#: exifdevice.cpp:175
+msgid "Exposure time (seconds):"
+msgstr "Χρόνος έκθεσης (δευτερόλεπτα):"
+
+#: exifdevice.cpp:184
+msgid ""
+"<p>Set on this option to set the exposure time of picture, given in seconds."
+msgstr ""
+"<p>Ορίστε σε αυτή την επιλογή το χρόνο έκθεσης της φωτογραφίας, δοσμένο σε "
+"δευτερόλεπτα."
+
+#: exifdevice.cpp:189
+msgid "Exposure program:"
+msgstr "Πρόγραμμα έκθεσης:"
+
+#: exifdevice.cpp:191 exifdevice.cpp:298
+msgid "Not defined"
+msgstr "Μη καθορισμένο"
+
+#: exifdevice.cpp:192 exifdevice.cpp:210 exiflight.cpp:194
+msgid "Manual"
+msgstr "Χειροκίνητο"
+
+#: exifdevice.cpp:193 exifdevice.cpp:209 exiflight.cpp:193
+msgid "Auto"
+msgstr "Αυτόματο"
+
+#: exifdevice.cpp:194
+msgid "Aperture priority"
+msgstr "Προτεραιότητα διαφράγματος"
+
+#: exifdevice.cpp:195
+msgid "Shutter priority"
+msgstr "Προτεραιότητα φωτοφράκτη"
+
+#: exifdevice.cpp:196
+msgid "Creative program"
+msgstr "Δημιουργικό πρόγραμμα"
+
+#: exifdevice.cpp:197
+msgid "Action program"
+msgstr "Πρόγραμμα δράσης"
+
+#: exifdevice.cpp:198
+msgid "Portrait mode"
+msgstr "Λειτουργία πορτραίτου"
+
+#: exifdevice.cpp:199
+msgid "Landscape mode"
+msgstr "Λειτουργία τοπίου"
+
+#: exifdevice.cpp:202
+msgid ""
+"<p>Select here the program used by the camera to set exposure when the picture "
+"have been taken."
+msgstr ""
+"<p>Ορίστε εδώ το πρόγραμμα που χρησιμοποιήθηκε από τη φωτογραφική μηχανή για "
+"τον ορισμό της έκθεσης κατά τη σύλληψη της φωτογραφίας."
+
+#: exifdevice.cpp:207
+msgid "Exposure mode:"
+msgstr "Λειτουργία έκθεσης:"
+
+#: exifdevice.cpp:211
+msgid "Auto bracket"
+msgstr "Αυτόματος εγκιβωτισμός"
+
+#: exifdevice.cpp:214
+msgid ""
+"<p>Select here the mode used by the camera to set exposure when the picture "
+"have been shot. In auto-bracketing mode, the camera shoots a series of frames "
+"of the same scene at different exposure settings."
+msgstr ""
+"<p>Επιλέξτε εδώ τη λειτουργία που χρησιμοποιήθηκε από τη φωτογραφική μηχανή για "
+"να ορίσει την έκθεση κατά τη σύλληψη της φωτογραφίας. Στη λειτουργία αυτόματου "
+"εγκιβωτισμού, η φωτογραφική μηχανή συλλαμβάνει μια σειρά καρέ της ίδιας σκηνής "
+"με διαφορετικές ρυθμίσεις έκθεσης."
+
+#: exifdevice.cpp:222
+msgid "Exposure bias (APEX):"
+msgstr "Πόλωση έκθεσης (APEX):"
+
+#: exifdevice.cpp:226
+msgid ""
+"<p>Set here the exposure bias value in APEX unit used by camera to take the "
+"picture."
+msgstr ""
+"<p>Ορίστε εδώ την τιμή της πόλωσης της έκθεσης στη μονάδα APEX που "
+"χρησιμοποιήθηκε από τη φωτογραφική μηχανή κατά τη σύλληψη της φωτογραφίας."
+
+#: exifdevice.cpp:234
+msgid "Metering mode:"
+msgstr "Λειτουργία μέτρησης:"
+
+#: exifdevice.cpp:236 exiflight.cpp:137
+msgid "Unknown"
+msgstr "Άγνωστο"
+
+#: exifdevice.cpp:237
+msgid "Average"
+msgstr "Μέσος όρος"
+
+#: exifdevice.cpp:238
+msgid "Center weighted average"
+msgstr "Κεντρικός σταθμικός μέσος"
+
+#: exifdevice.cpp:239
+msgid "Spot"
+msgstr "Σημείο"
+
+#: exifdevice.cpp:240
+msgid "Multi-spot"
+msgstr "Πολλαπλών σημείων"
+
+#: exifdevice.cpp:241
+msgid "Multi-segment"
+msgstr "Πολλαπλών τμημάτων"
+
+#: exifdevice.cpp:242
+msgid "Partial"
+msgstr "Μερικό"
+
+#: exifdevice.cpp:243
+msgid "Other"
+msgstr "Άλλο"
+
+#: exifdevice.cpp:246
+msgid ""
+"<p>Select here the metering mode used by the camera to set exposure when the "
+"picture have been shot."
+msgstr ""
+"<p>Ορίστε εδώ τη λειτουργία μέτρησης που χρησιμοποιήθηκε από τη φωτογραφική "
+"μηχανή για τον ορισμό της έκθεσης κατά τη σύλληψη της φωτογραφίας."
+
+#: exifdevice.cpp:251
+msgid "Sensitivity (ISO):"
+msgstr "Ευαισθησία (ISO):"
+
+#: exifdevice.cpp:291
+msgid ""
+"<p>Select here the ISO Speed of the camera witch have taken the picture."
+msgstr ""
+"<p>Ορίστε εδώ τη ταχύτητα ISO της φωτογραφικής μηχανής που συνέλαβε τη "
+"φωτογραφία."
+
+#: exifdevice.cpp:296
+msgid "Sensing method:"
+msgstr "Μέθοδος αισθητήρα:"
+
+#: exifdevice.cpp:299
+msgid "One-chip color area"
+msgstr "Χρωματική περιοχή ενός τσιπ"
+
+#: exifdevice.cpp:300
+msgid "Two-chip color area"
+msgstr "Χρωματική περιοχή δύο τσιπ"
+
+#: exifdevice.cpp:301
+msgid "Three-chip color area"
+msgstr "Χρωματική περιοχή τριών τσιπ"
+
+#: exifdevice.cpp:302
+msgid "Color sequential area"
+msgstr "Περιοχή συνεχούς χρώματος"
+
+#: exifdevice.cpp:303
+msgid "Trilinear sensor"
+msgstr "Αισθητήρας τριγραμμικός"
+
+#: exifdevice.cpp:304
+msgid "Color sequential linear"
+msgstr "Γραμμικό συνεχές χρώμα"
+
+#: exifdevice.cpp:307
+msgid ""
+"<p>Select here the image sensor type used by the camera to take the picture."
+msgstr ""
+"<p>Ορίστε εδώ τον τύπο αισθητήρα εικόνας που χρησιμοποιήθηκε από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη της φωτογραφίας."
+
+#: exifdevice.cpp:312
+msgid "Scene capture type:"
+msgstr "Τύπος σύλληψης σκηνής:"
+
+#: exifdevice.cpp:314
+msgid "Standard"
+msgstr "Τυπικός"
+
+#: exifdevice.cpp:317
+msgid "Night scene"
+msgstr "Νυχτερινός"
+
+#: exifdevice.cpp:320
+msgid ""
+"<p>Select here the type of scene used by the camera to take the picture."
+msgstr ""
+"<p>Ορίστε εδώ τον τύπο σκηνής που χρησιμοποιήθηκε από τη φωτογραφική μηχανή "
+"κατά τη σύλληψη της φωτογραφίας."
+
+#: exifdevice.cpp:325
+msgid "Subject distance type:"
+msgstr "Τύπος απόστασης θέματος:"
+
+#: exifdevice.cpp:327
+msgid "Unknow"
+msgstr "Άγνωστη"
+
+#: exifdevice.cpp:328
+msgid "Macro"
+msgstr "Μακροσκοπική"
+
+#: exifdevice.cpp:329
+msgid "Close view"
+msgstr "Κοντινή"
+
+#: exifdevice.cpp:330
+msgid "Distant view"
+msgstr "Μακρινή"
+
+#: exifdevice.cpp:333
+msgid ""
+"<p>Select here the type of distance between the subject and the image input "
+"equipment."
+msgstr ""
+"<p>Επιλέξτε εδώ τον τύπο απόστασης μεταξύ του θέματος και της συσκευής εισόδου "
+"εικόνας."
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption"
+msgstr "Λεζάντα"
+
+#: exifeditdialog.cpp:138 iptceditdialog.cpp:146
+msgid "Caption Information"
+msgstr "Πληροφορίες λεζάντας"
+
+#: exifeditdialog.cpp:142 iptceditdialog.cpp:150
+msgid "Date & Time"
+msgstr "Ημερομηνία & ώρα"
+
+#: exifeditdialog.cpp:142
+msgid "Date and Time"
+msgstr "Ημερομηνία και ώρα"
+
+#: exifeditdialog.cpp:146
+msgid "Lens"
+msgstr "Φακοί"
+
+#: exifeditdialog.cpp:146
+msgid "Lens Settings"
+msgstr "Ρυθμίσεις φακού"
+
+#: exifeditdialog.cpp:150
+msgid "Device"
+msgstr "Συσκευή"
+
+#: exifeditdialog.cpp:150
+msgid "Capture Device Settings"
+msgstr "Ρυθμίσεις συσκευής σύλληψης"
+
+#: exifeditdialog.cpp:154
+msgid "Light"
+msgstr "Φως"
+
+#: exifeditdialog.cpp:154
+msgid "Light Source Information"
+msgstr "Πληροφορίες πηγής φωτός"
+
+#: exifeditdialog.cpp:158
+msgid "Adjustments"
+msgstr "Διορθώσεις"
+
+#: exifeditdialog.cpp:158
+msgid "Pictures Adjustments"
+msgstr "Ρυθμίσεις εικόνων"
+
+#: exifeditdialog.cpp:283
+msgid "Edit EXIF Metadata"
+msgstr "Επεξεργασία μεταδεδομένων EXIF"
+
+#: exifeditdialog.cpp:284 iptceditdialog.cpp:310
+msgid "(read only)"
+msgstr "(μόνο για ανάγνωση)"
+
+#: exiflens.cpp:157
+msgid "Focal length (mm):"
+msgstr "Εστιακή απόσταση (χιλστα):"
+
+#: exiflens.cpp:161
+msgid ""
+"<p>Set here the lens focal length in milimeters used by camera to take the "
+"picture."
+msgstr ""
+"<p>Ορίστε εδώ σε χιλιοστά την εστιακή απόσταση που χρησιμοποιήθηκε από τη "
+"φωτογραφική μηχανή για τη σύλληψη της φωτογραφίας."
+
+#: exiflens.cpp:166
+msgid "Focal length in 35mm film (mm):"
+msgstr "Εστιακή απόσταση σε 35χιλστα φιλμ (χιλστα):"
+
+#: exiflens.cpp:170
+msgid ""
+"<p>Set here equivalent focal length assuming a 35mm film camera, in mm. A value "
+"of 0 means the focal length is unknown."
+msgstr ""
+"<p>Ορίστε εδώ την ισοδύναμη εστιακή απόσταση θεωρώντας φιλμ 35 χιλιοστών στη "
+"φωτογραφική μηχανή. Η τιμή 0 σημαίνει ότι η εστιακή απόσταση είναι άγνωστη."
+
+#: exiflens.cpp:176
+msgid "Digital zoom ratio:"
+msgstr "Βαθμός ψηφιακής εστίασης:"
+
+#: exiflens.cpp:180
+msgid "<p>Set here the digital zoom ratio used by camera to take the picture."
+msgstr ""
+"<p>Ορίστε εδώ το βαθμό της ψηφιακής εστίασης που χρησιμοποιήθηκε από τη "
+"φωτογραφική μηχανή κατά τη σύλληψη της φωτογραφίας."
+
+#: exiflens.cpp:185
+msgid "Lens aperture (f-number):"
+msgstr "Διάφραγμα φακών (αριθμός f):"
+
+#: exiflens.cpp:190
+msgid "<p>Select here the lens aperture used by camera to take the picture."
+msgstr ""
+"<p>Επιλέξτε εδώ το διάφραγμα φακών που χρησιμοποιήθηκε από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη της φωτογραφίας."
+
+#: exiflens.cpp:195
+msgid "Max. lens aperture (f-number):"
+msgstr "Μέγ. διάφραγμα φακών (αριθμός f):"
+
+#: exiflens.cpp:200
+msgid ""
+"<p>Select here the smallest aperture of the lens used by camera to take the "
+"picture."
+msgstr ""
+"<p>Ορίστε εδώ το μικρότερο διάφραγμα φακών που χρησιμοποιήθηκε από τη "
+"φωτογραφική μηχανή για τη σύλληψη της φωτογραφίας."
+
+#: exiflight.cpp:85
+msgid "No flash"
+msgstr "Χωρίς φλας"
+
+#: exiflight.cpp:86
+msgid "Fired"
+msgstr "Με φλας"
+
+#: exiflight.cpp:87
+msgid "Fired, no strobe return light"
+msgstr "Με φλας, χωρίς φως επιστροφής"
+
+#: exiflight.cpp:88
+msgid "Fired, strobe return light"
+msgstr "Με φλας, φως επιστροφής"
+
+#: exiflight.cpp:89
+msgid "Yes, compulsory"
+msgstr "Ναι, υποχρεωτικό"
+
+#: exiflight.cpp:90
+msgid "Yes, compulsory, no return light"
+msgstr "Ναι, υποχρεωτικό, χωρίς φως επιστροφής"
+
+#: exiflight.cpp:91
+msgid "Yes, compulsory, return light"
+msgstr "Ναι, υποχρεωτικό, φως επιστροφής"
+
+#: exiflight.cpp:92
+msgid "No, compulsory"
+msgstr "Όχι, υποχρεωτικό"
+
+#: exiflight.cpp:93
+msgid "No, auto"
+msgstr "Όχι, αυτόματο"
+
+#: exiflight.cpp:94
+msgid "Yes, auto"
+msgstr "Ναι, αυτόματο"
+
+#: exiflight.cpp:95
+msgid "Yes, auto, no return light"
+msgstr "Ναι, αυτόματο, χωρίς φως επιστροφής"
+
+#: exiflight.cpp:96
+msgid "Yes, auto, return light"
+msgstr "Ναι, αυτόματο, φως επιστροφής"
+
+#: exiflight.cpp:97
+msgid "No flash function"
+msgstr "Χωρίς λειτουργία φλας"
+
+#: exiflight.cpp:98
+msgid "Yes, red-eye"
+msgstr "Ναι, κόκκινων ματιών"
+
+#: exiflight.cpp:99
+msgid "Yes, red-eye, no return light"
+msgstr "Ναι, κόκκινων ματιών, χωρίς φως επιστροφής"
+
+#: exiflight.cpp:100
+msgid "Yes, red-eye, return light"
+msgstr "Ναι, κόκκινων ματιών, φως επιστροφής"
+
+#: exiflight.cpp:101
+msgid "Yes, compulsory, red-eye"
+msgstr "Ναι, υποχρεωτικό, κόκκινων ματιών"
+
+#: exiflight.cpp:102
+msgid "Yes, compulsory, red-eye, no return light"
+msgstr "Ναι, υποχρεωτικό, κόκκινων ματιών, χωρίς φως επιστροφής"
+
+#: exiflight.cpp:103
+msgid "Yes, compulsory, red-eye, return light"
+msgstr "Ναι, υποχρεωτικό, κόκκινων ματιών, φως επιστροφής"
+
+#: exiflight.cpp:104
+msgid "Yes, auto, red-eye"
+msgstr "Ναι, αυτόματο, κόκκινων ματιών"
+
+#: exiflight.cpp:105
+msgid "Yes, auto, red-eye, no return light"
+msgstr "Ναι, αυτόματο, κόκκινων ματιών, χωρίς φως επιστροφής"
+
+#: exiflight.cpp:106
+msgid "Yes, auto, red-eye, return light"
+msgstr "Ναι, αυτόματο, κόκκινων ματιών, φως επιστροφής"
+
+#: exiflight.cpp:135
+msgid "Light source:"
+msgstr "Πηγή φωτός:"
+
+#: exiflight.cpp:138
+msgid "Daylight"
+msgstr "Φως ημέρας"
+
+#: exiflight.cpp:139
+msgid "Fluorescent"
+msgstr "Φθορίζον"
+
+#: exiflight.cpp:140
+msgid "Tungsten (incandescent light)"
+msgstr "Βολφραμίου (φως πυρακτώσεως)"
+
+#: exiflight.cpp:141
+msgid "Flash"
+msgstr "Φλας"
+
+#: exiflight.cpp:142
+msgid "Fine weather"
+msgstr "Καλοκαιρία"
+
+#: exiflight.cpp:143
+msgid "Cloudy weather"
+msgstr "Συννεφιά"
+
+#: exiflight.cpp:144
+msgid "Shade"
+msgstr "Σκιά"
+
+#: exiflight.cpp:145
+msgid "Daylight fluorescent (D 5700 - 7100K)"
+msgstr "Φθορίζον φως ημέρας (D 5700 - 7100K)"
+
+#: exiflight.cpp:146
+msgid "Day white fluorescent (N 4600 - 5400K)"
+msgstr "Φθορίζον λευκό ημέρας (N 4600 - 5400K)"
+
+#: exiflight.cpp:147
+msgid "Cool white fluorescent (W 3900 - 4500K)"
+msgstr "Φθορίζον λευκό ψύχους (W 3900 - 4500K)"
+
+#: exiflight.cpp:148
+msgid "White fluorescent (WW 3200 - 3700K)"
+msgstr "Λευκό φθορίζον (WW 3200 - 3700K)"
+
+#: exiflight.cpp:149
+msgid "Standard light A"
+msgstr "Τυπικό φως A"
+
+#: exiflight.cpp:150
+msgid "Standard light B"
+msgstr "Τυπικό φως B"
+
+#: exiflight.cpp:151
+msgid "Standard light C"
+msgstr "Τυπικό φως Γ"
+
+#: exiflight.cpp:152
+msgid "D55"
+msgstr "D55"
+
+#: exiflight.cpp:153
+msgid "D65"
+msgstr "D65"
+
+#: exiflight.cpp:154
+msgid "D75"
+msgstr "D75"
+
+#: exiflight.cpp:155
+msgid "D50"
+msgstr "D50"
+
+#: exiflight.cpp:156
+msgid "ISO studio tungsten"
+msgstr "Βολφραμίου ISO θαλάμου"
+
+#: exiflight.cpp:157
+msgid "Other light source"
+msgstr "Άλλη πηγή φωτός"
+
+#: exiflight.cpp:160
+msgid "<p>Select here the kind of light source used to take the picture."
+msgstr ""
+"<p>Επιλέξτε εδώ τον τύπο της πηγής φωτός που χρησιμοποιήθηκε για τη σύλληψη της "
+"φωτογραφίας."
+
+#: exiflight.cpp:165
+msgid "Flash mode:"
+msgstr "Λειτουργία φλας:"
+
+#: exiflight.cpp:174
+msgid ""
+"<p>Select here the flash program mode used by camera to take the picture."
+msgstr ""
+"<p>Επιλέξτε εδώ το πρόγραμμα φλας που χρησιμοποιήθηκε από τη φωτογραφική μηχανή "
+"για τη σύλληψη της φωτογραφίας."
+
+#: exiflight.cpp:179
+msgid "Flash energy (BCPS):"
+msgstr "Ενέργεια φλας (BCPS):"
+
+#: exiflight.cpp:183
+msgid ""
+"<p>Set here the flash energy used to take the picture in BCPS unit. Beam Candle "
+"Power Seconds is the measure of effective intensity of a light source when it "
+"is focused into a beam by a reflector or lens. This value is the effective "
+"intensity for a period of one second."
+msgstr ""
+"<p>Ορίστε εδώ την ενέργεια φλας που χρησιμοποιήθηκε για τη σύλληψή της "
+"φωτογραφίας σε μονάδες BCPS. Το Beam Candle Power Seconds είναι μονάδα της "
+"δρώσας έντασης μιας πηγής φωτός όταν αυτό εστιαστεί σε μια ακτίνα μέσω ενός "
+"ανακλαστήρα ή άλλων φακών. Η τιμή αυτή είναι η δρώσα ένταση ανά δευτερόλεπτο."
+
+#: exiflight.cpp:191
+msgid "White balance:"
+msgstr "Ισορροπία λευκού:"
+
+#: exiflight.cpp:197
+msgid ""
+"<p>Select here the white balance mode set by camera when the picture have been "
+"shot."
+msgstr ""
+"<p>Επιλέξτε εδώ τη λειτουργία ισορροπίας λευκού που ορίστηκε από τη φωτογραφική "
+"μηχανή κατά τη σύλληψη της φωτογραφίας."
+
+#: iptccaption.cpp:105
+#, fuzzy, c-format
+msgid "Sync caption entered through %1"
+msgstr "Συγχρονισμός ημερομηνίας δημιουργίας που φιλοξενείται στο %1"
+
+#: iptccaption.cpp:119
+#, fuzzy
+msgid ""
+"<p>Enter the content description. This field is limited to 2000 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ την περιγραφή του περιεχομένου της φωτογραφίας. Το πεδίο έχει "
+"περιορισμό τους 2000 χαρακτήρες ASCII."
+
+#: iptccaption.cpp:124
+msgid "Caption Writer:"
+msgstr "Συγγραφέας λεζάντας:"
+
+#: iptccaption.cpp:130
+#, fuzzy
+msgid ""
+"<p>Enter the name of the caption author. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ το όνομα του συντάκτη αυτού του περιεχομένου. Το πεδίο αυτό έχει "
+"περιορισμό τους 32 χαρακτήρες ASCII."
+
+#: iptccaption.cpp:135
+msgid "Headline:"
+msgstr "Επικεφαλίδα:"
+
+#: iptccaption.cpp:141
+#, fuzzy
+msgid ""
+"<p>Enter here the content synopsis. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ τη σύνοψη του περιεχομένου. Το πεδίο έχει περιορισμό τους 256 "
+"χαρακτήρες ASCII."
+
+#: iptccaption.cpp:146
+msgid "Special Instructions:"
+msgstr "Ειδικές οδηγίες:"
+
+#: iptccaption.cpp:152
+#, fuzzy
+msgid ""
+"<p>Enter the editorial usage instructions. This field is limited to 256 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ τυχόν ειδικές οδηγίες προς τη σύνταξη. Το πεδίο έχει περιορισμό "
+"256 χαρακτήρες ASCII."
+
+#: iptccaption.cpp:157 iptccategories.cpp:129 iptccredits.cpp:165
+#: iptckeywords.cpp:116 iptcorigin.cpp:437 iptcstatus.cpp:207
+#: iptcsubjects.cpp:116
+msgid ""
+"<b>Note: <b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></b> "
+"text tags only support the printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> "
+"characters set and limit strings size. Use contextual help for details.</b>"
+msgstr ""
+
+#: iptccategories.cpp:95
+msgid "Identify subject of content (3 chars max):"
+msgstr "Θέμα του περιεχομένου (μεγ. 3 χαρακτήρες):"
+
+#: iptccategories.cpp:99
+msgid ""
+"<p>Set here the category of content. This field is limited to 3 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ την κατηγορία του περιεχομένου. Αυτό το πεδίο περιορίζεται σε 3 "
+"χαρακτήρες ASCII."
+
+#: iptccategories.cpp:102
+msgid "Supplemental categories:"
+msgstr "Πρόσθετες κατηγορίες:"
+
+#: iptccategories.cpp:107
+msgid ""
+"<p>Enter here a new supplemental category of content. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Εισάγετε εδώ μια πρόσθετη κατηγορία περιεχομένου. Το πεδίο περιορίζεται σε "
+"32 χαρακτήρες ASCII."
+
+#: iptccategories.cpp:113 iptckeywords.cpp:102 iptcsubjects.cpp:102
+msgid "&Add"
+msgstr "&Προσθήκη"
+
+#: iptccredits.cpp:99
+msgid "Copyright:"
+msgstr "Πνευματικά δικαιώματα:"
+
+#: iptccredits.cpp:105
+msgid ""
+"<p>Set here the necessary copyright notice. This field is limited to 128 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ την απαιτούμενη σημείωση πνευματικών δικαιωμάτων. Το πεδίο έχει "
+"περιορισμό τους 128 χαρακτήρες ASCII."
+
+#: iptccredits.cpp:110
+msgid "Byline:"
+msgstr "Συντάκτης:"
+
+#: iptccredits.cpp:116
+msgid ""
+"<p>Set here the name of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ το όνομα του συντάκτη αυτού του περιεχομένου. Το πεδίο αυτό έχει "
+"περιορισμό τους 32 χαρακτήρες ASCII."
+
+#: iptccredits.cpp:121
+msgid "Byline Title:"
+msgstr "Τίτλος συντάκτη:"
+
+#: iptccredits.cpp:127
+msgid ""
+"<p>Set here the title of content creator. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ τον τίτλο του συντάκτη αυτού του περιεχομένου. Το πεδίο έχει "
+"περιορισμό τους 32 χαρακτήρες ASCII."
+
+#: iptccredits.cpp:132
+msgid "Credit:"
+msgstr "Αναγνώριση:"
+
+#: iptccredits.cpp:138
+msgid ""
+"<p>Set here the content provider. This field is limited to 32 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ τον πάροχο του περιεχομένου. Το πεδίο έχει περιορισμό τους 32 "
+"χαρακτήρες ASCII."
+
+#: iptccredits.cpp:143
+msgid "Source:"
+msgstr "Πηγή:"
+
+#: iptccredits.cpp:149
+msgid ""
+"<p>Set here the original owner of content. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ τον αρχικό ιδιοκτήτη του περιεχομένου. Το πεδίο έχει περιορισμό "
+"τους 32 χαρακτήρες ASCII."
+
+#: iptccredits.cpp:154
+msgid "Contact:"
+msgstr "Επαφή:"
+
+#: iptccredits.cpp:160
+msgid ""
+"<p>Set here the person or organisation to contact. This field is limited to 128 "
+"ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ το άτομο ή οργανισμό επαφής. Το πεδίο έχει περιορισμό τους 128 "
+"χαρακτήρες ASCII."
+
+#: iptcdatetime.cpp:112
+msgid "Creation date"
+msgstr "Ημερομηνία δημιουργίας"
+
+#: iptcdatetime.cpp:113
+msgid "Creation time"
+msgstr "Ώρα δημιουργίας"
+
+#: iptcdatetime.cpp:119
+msgid "Sync EXIF creation date"
+msgstr "Συγχρονισμός ημερομηνία δημιουργίας EXIF"
+
+#: iptcdatetime.cpp:130
+msgid "<p>Set here the creation date of intellectual content."
+msgstr "<p>Ορίστε εδώ την ημερομηνία δημιουργίας του πνευματικού περιεχόμενου."
+
+#: iptcdatetime.cpp:132
+msgid "<p>Set here the creation time of intellectual content."
+msgstr "<p>Ορίστε εδώ την ώρα δημιουργίας του πνευματικού περιεχόμενου."
+
+#: iptcdatetime.cpp:137
+msgid "Release date"
+msgstr "Ημερομηνία έκδοσης"
+
+#: iptcdatetime.cpp:138
+msgid "Release time"
+msgstr "Ώρα έκδοσης"
+
+#: iptcdatetime.cpp:147
+msgid "<p>Set here the earliest intended usable date of intellectual content."
+msgstr ""
+"<p>Ορίστε εδώ τη νωρίτερη χρήσιμη ημερομηνία του πνευματικού περιεχόμενου."
+
+#: iptcdatetime.cpp:149
+msgid "<p>Set here the earliest intended usable time of intellectual content."
+msgstr "<p>Ορίστε εδώ τη νωρίτερη χρήσιμη ώρα του πνευματικού περιεχόμενου."
+
+#: iptcdatetime.cpp:154
+msgid "Expiration date"
+msgstr "Ημερομηνία λήξης"
+
+#: iptcdatetime.cpp:155
+msgid "Expiration time"
+msgstr "Ώρα λήξης"
+
+#: iptcdatetime.cpp:164
+msgid "<p>Set here the latest intended usable date of intellectual content."
+msgstr ""
+"<p>Ορίστε εδώ την αργότερη χρήσιμη ημερομηνία του πνευματικού περιεχομένου."
+
+#: iptcdatetime.cpp:166
+msgid "<p>Set here the latest intended usable time of intellectual content."
+msgstr "<p>Ορίστε εδώ την αργότερη χρήσιμη ώρα του πνευματικού περιεχομένου."
+
+#: iptcdatetime.cpp:171
+msgid "Digitization date"
+msgstr "Ημερομηνία ψηφιοποίησης"
+
+#: iptcdatetime.cpp:172
+msgid "Digitization time"
+msgstr "Ώρα ψηφιοποίησης"
+
+#: iptcdatetime.cpp:181
+msgid "<p>Set here the creation date of digital representation."
+msgstr "<p>Ορίστε εδώ την ημερομηνία δημιουργίας της ψηφιακής αναπαράστασης."
+
+#: iptcdatetime.cpp:183
+msgid "<p>Set here the creation time of digital representation."
+msgstr "<p>Ορίστε εδώ την ώρα δημιουργίας της ψηφιακής αναπαράστασης."
+
+#: iptceditdialog.cpp:150
+msgid "Date and Time Information"
+msgstr "Πληροφορίες ημερομηνίας και ώρας"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects"
+msgstr "Θέματα"
+
+#: iptceditdialog.cpp:154
+msgid "Subjects Information"
+msgstr "Πληροφορίες θεμάτων"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords"
+msgstr "Λέξεις κλειδιά"
+
+#: iptceditdialog.cpp:158
+msgid "Keywords Information"
+msgstr "Πληροφορίες λέξεων κλειδιών"
+
+#: iptceditdialog.cpp:162
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: iptceditdialog.cpp:162
+msgid "Categories Information"
+msgstr "Πληροφορίες κατηγοριών"
+
+#: iptceditdialog.cpp:166
+msgid "Credits"
+msgstr "Αναγνώριση"
+
+#: iptceditdialog.cpp:166
+msgid "Credits Information"
+msgstr "Πληροφορίες αναγνώρισης"
+
+#: iptceditdialog.cpp:170
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: iptceditdialog.cpp:170
+msgid "Status Information"
+msgstr "Πληροφορίες κατάστασης"
+
+#: iptceditdialog.cpp:174
+msgid "Origin"
+msgstr "Προέλευση"
+
+#: iptceditdialog.cpp:174
+msgid "Origin Information"
+msgstr "Πληροφορίες προέλευσης"
+
+#: iptceditdialog.cpp:184
+#, fuzzy
+msgid "A Plugin to edit image metadata"
+msgstr "Ένα πρόσθετο για την επεξεργασία μεταδεδομένων των φωτογραφιών"
+
+#: iptceditdialog.cpp:309
+msgid "Edit IPTC Metadata"
+msgstr "Επεξεργασία μεταδεδομένων IPTC"
+
+#: iptckeywords.cpp:91
+msgid "Use information retrieval words:"
+msgstr "Χρήση λέξεων ανάκτησης πληροφορίας:"
+
+#: iptckeywords.cpp:96
+msgid ""
+"<p>Enter here a new keyword. This field is limited to 64 ASCII characters."
+msgstr ""
+"<p>Εισάγετε εδώ μια νέα λέξη κλειδί. Το πεδίο περιορίζεται σε 64 χαρακτήρες "
+"ASCII."
+
+#: iptcorigin.cpp:76
+msgid "Afghanistan"
+msgstr "Αφγανιστάν"
+
+#: iptcorigin.cpp:77
+msgid "Albania"
+msgstr "Αλβανία"
+
+#: iptcorigin.cpp:78
+msgid "Algeria"
+msgstr "Αλγερία"
+
+#: iptcorigin.cpp:79
+msgid "American Samoa"
+msgstr "Αμερικανική Σαμόα"
+
+#: iptcorigin.cpp:80
+msgid "Andorra"
+msgstr "Ανδόρα"
+
+#: iptcorigin.cpp:81 iptcorigin.cpp:83
+msgid "Angola"
+msgstr "Αγκόλα"
+
+#: iptcorigin.cpp:82
+msgid "Anguilla"
+msgstr "Ανγκουίλα"
+
+#: iptcorigin.cpp:84
+msgid "Antarctica"
+msgstr "Ανταρκτική"
+
+#: iptcorigin.cpp:85
+msgid "Antigua and Barbuda"
+msgstr "Αντίγκουα και Μπαρμπούντα"
+
+#: iptcorigin.cpp:86
+msgid "Argentina"
+msgstr "Αργεντινή"
+
+#: iptcorigin.cpp:87
+msgid "Armenia"
+msgstr "Αρμενία"
+
+#: iptcorigin.cpp:88
+msgid "Aruba"
+msgstr "Αρούμπα"
+
+#: iptcorigin.cpp:89
+msgid "Australia"
+msgstr "Αυστραλία"
+
+#: iptcorigin.cpp:90
+msgid "Austria"
+msgstr "Αυστρία"
+
+#: iptcorigin.cpp:91
+msgid "Azerbaijan"
+msgstr "Αζερμπαϊτζάν"
+
+#: iptcorigin.cpp:92
+msgid "Bahamas"
+msgstr "Μπαχάμες"
+
+#: iptcorigin.cpp:93
+msgid "Bahrain"
+msgstr "Μπαχρέιν"
+
+#: iptcorigin.cpp:94
+msgid "Bangladesh"
+msgstr "Μπανγκλαντές"
+
+#: iptcorigin.cpp:95
+msgid "Barbados"
+msgstr "Μπαρμπάντος"
+
+#: iptcorigin.cpp:96
+msgid "Belarus"
+msgstr "Λευκορωσία"
+
+#: iptcorigin.cpp:97
+msgid "Belgium"
+msgstr "Βέλγιο"
+
+#: iptcorigin.cpp:98
+msgid "Belize"
+msgstr "Μπελίζε"
+
+#: iptcorigin.cpp:99
+msgid "Benin"
+msgstr "Μπενίν"
+
+#: iptcorigin.cpp:100
+msgid "Bermuda"
+msgstr "Βερμούδες"
+
+#: iptcorigin.cpp:101
+msgid "Bhutan"
+msgstr "Μπουτάν"
+
+#: iptcorigin.cpp:102
+msgid "Bolivia"
+msgstr "Βολιβία"
+
+#: iptcorigin.cpp:103
+msgid "Bosnia and Herzegovina"
+msgstr "Βοσνία και Ερζεγοβίνη"
+
+#: iptcorigin.cpp:104
+msgid "Botswana"
+msgstr "Μποτσουάνα"
+
+#: iptcorigin.cpp:105
+msgid "Bouvet Island"
+msgstr "Νήσος Μπουβέ"
+
+#: iptcorigin.cpp:106
+msgid "Brazil"
+msgstr "Βραζιλία"
+
+#: iptcorigin.cpp:107
+msgid "British Indian Ocean Territory"
+msgstr "Βρετανικό έδαφος του Ινδικού ωκεανού"
+
+#: iptcorigin.cpp:108
+msgid "British Virgin Islands"
+msgstr "Βρετανικοί Παρθένοι Νήσοι"
+
+#: iptcorigin.cpp:109
+msgid "Brunei Darussalam"
+msgstr "Μπρουνέι Νταρουσαλάμ"
+
+#: iptcorigin.cpp:110
+msgid "Bulgaria"
+msgstr "Βουλγαρία"
+
+#: iptcorigin.cpp:111
+msgid "Burkina Faso"
+msgstr "Μπουρκίνα Φάσο"
+
+#: iptcorigin.cpp:112
+msgid "Burundi"
+msgstr "Μπουρούντι"
+
+#: iptcorigin.cpp:113
+msgid "Cambodia"
+msgstr "Καμπότζη"
+
+#: iptcorigin.cpp:114
+msgid "Cameroon"
+msgstr "Καμερούν"
+
+#: iptcorigin.cpp:115
+msgid "Canada"
+msgstr "Καναδάς"
+
+#: iptcorigin.cpp:116
+msgid "Cape Verde"
+msgstr "Πράσινο Ακρωτήριο"
+
+#: iptcorigin.cpp:117
+msgid "Cayman Islands"
+msgstr "Νησιά Κάυμαν"
+
+#: iptcorigin.cpp:118
+msgid "Central African Republic"
+msgstr "Κεντροαφρικανική Δημοκρατία"
+
+#: iptcorigin.cpp:119
+msgid "Chad"
+msgstr "Τσαντ"
+
+#: iptcorigin.cpp:120
+msgid "Chile"
+msgstr "Χιλή"
+
+#: iptcorigin.cpp:121
+msgid "China"
+msgstr "Κίνα"
+
+#: iptcorigin.cpp:122
+msgid "Christmas Island "
+msgstr "Νήσος Χριστουγέννων"
+
+#: iptcorigin.cpp:123
+msgid "Cocos Islands"
+msgstr "Νήσοι Κόκος"
+
+#: iptcorigin.cpp:124
+msgid "Colombia"
+msgstr "Κολομβία"
+
+#: iptcorigin.cpp:125
+msgid "Comoros"
+msgstr "Κομόρες"
+
+#: iptcorigin.cpp:126
+msgid "Zaire"
+msgstr "Ζαΐρ"
+
+#: iptcorigin.cpp:127
+msgid "Congo"
+msgstr "Κονγκό"
+
+#: iptcorigin.cpp:128
+msgid "Cook Islands"
+msgstr "Νήσοι Κουκ"
+
+#: iptcorigin.cpp:129
+msgid "Costa Rica"
+msgstr "Κόστα Ρίκα"
+
+#: iptcorigin.cpp:130
+msgid "Ivory Coast"
+msgstr "Ακτή Ελεφαντοστού"
+
+#: iptcorigin.cpp:131
+msgid "Cuba"
+msgstr "Κούβα"
+
+#: iptcorigin.cpp:132
+msgid "Cyprus"
+msgstr "Κύπρος"
+
+#: iptcorigin.cpp:133
+msgid "Czech Republic"
+msgstr "Δημοκρατία της Τσεχίας"
+
+#: iptcorigin.cpp:134
+msgid "Denmark"
+msgstr "Δανία"
+
+#: iptcorigin.cpp:135
+msgid "Djibouti"
+msgstr "Τζιμπουτί"
+
+#: iptcorigin.cpp:136
+msgid "Dominica"
+msgstr "Ντομίνικα"
+
+#: iptcorigin.cpp:137
+msgid "Dominican Republic"
+msgstr "Δομινικανή Δημοκρατία"
+
+#: iptcorigin.cpp:138
+msgid "Ecuador"
+msgstr "Ισημερινός"
+
+#: iptcorigin.cpp:139
+msgid "Egypt"
+msgstr "Αίγυπτος"
+
+#: iptcorigin.cpp:140
+msgid "El Salvador"
+msgstr "Ελ Σαλβαδόρ"
+
+#: iptcorigin.cpp:141
+msgid "Equatorial Guinea"
+msgstr "Ισημερινή Γουινέα"
+
+#: iptcorigin.cpp:142
+msgid "Eritrea"
+msgstr "Ερυθραία"
+
+#: iptcorigin.cpp:143
+msgid "Estonia"
+msgstr "Εσθονία"
+
+#: iptcorigin.cpp:144
+msgid "Ethiopia"
+msgstr "Αιθιοπία"
+
+#: iptcorigin.cpp:145
+msgid "Faeroe Islands"
+msgstr "Νήσοι Φερόες"
+
+#: iptcorigin.cpp:146
+msgid "Falkland Islands"
+msgstr "Νήσοι Φώκλαντ"
+
+#: iptcorigin.cpp:147
+msgid "Fiji Islands"
+msgstr "Νήσοι Φίτζι"
+
+#: iptcorigin.cpp:148
+msgid "Finland"
+msgstr "Φινλανδία"
+
+#: iptcorigin.cpp:149
+msgid "France"
+msgstr "Γαλλία"
+
+#: iptcorigin.cpp:150
+msgid "French Guiana"
+msgstr "Γαλλική Γουιάνα"
+
+#: iptcorigin.cpp:151
+msgid "French Polynesia"
+msgstr "Γαλλική Πολυνησία"
+
+#: iptcorigin.cpp:152
+msgid "French Southern Territories"
+msgstr "Νότιες Γαλλικές Επικράτειες"
+
+#: iptcorigin.cpp:153
+msgid "Gabon"
+msgstr "Γκαμπόν"
+
+#: iptcorigin.cpp:154
+msgid "Gambia"
+msgstr "Γκάμπια"
+
+#: iptcorigin.cpp:155
+msgid "Georgia"
+msgstr "Γεωργία"
+
+#: iptcorigin.cpp:156
+msgid "Germany"
+msgstr "Γερμανία"
+
+#: iptcorigin.cpp:157
+msgid "Ghana"
+msgstr "Γκάνα"
+
+#: iptcorigin.cpp:158
+msgid "Gibraltar"
+msgstr "Γιβραλτάρ"
+
+#: iptcorigin.cpp:159
+msgid "Greece"
+msgstr "Ελλάδα"
+
+#: iptcorigin.cpp:160
+msgid "Greenland"
+msgstr "Γροιλανδία"
+
+#: iptcorigin.cpp:161
+msgid "Grenada"
+msgstr "Γρενάδα"
+
+#: iptcorigin.cpp:162
+msgid "Guadaloupe"
+msgstr "Γουαδελούπη"
+
+#: iptcorigin.cpp:163
+msgid "Guam"
+msgstr "Γκουάμ"
+
+#: iptcorigin.cpp:164
+msgid "Guatemala"
+msgstr "Γουατεμάλα"
+
+#: iptcorigin.cpp:165
+msgid "Guinea"
+msgstr "Γουινέα"
+
+#: iptcorigin.cpp:166
+msgid "Guinea-Bissau"
+msgstr "Γουινέα-Μπισάου"
+
+#: iptcorigin.cpp:167
+msgid "Guyana"
+msgstr "Γουιάνα"
+
+#: iptcorigin.cpp:168
+msgid "Haiti"
+msgstr "Αϊτή"
+
+#: iptcorigin.cpp:169
+msgid "Heard and McDonald Islands"
+msgstr "Νήσοι Χερντ και ΜακΝτόναλτ"
+
+#: iptcorigin.cpp:170
+msgid "Vatican"
+msgstr "Βατικανό"
+
+#: iptcorigin.cpp:171
+msgid "Honduras"
+msgstr "Ονδούρα"
+
+#: iptcorigin.cpp:172
+msgid "Hong Kong"
+msgstr "Χονγκ Κονγκ"
+
+#: iptcorigin.cpp:173
+msgid "Croatia"
+msgstr "Κροατία"
+
+#: iptcorigin.cpp:174
+msgid "Hungary"
+msgstr "Ουγγαρία"
+
+#: iptcorigin.cpp:175
+msgid "Iceland"
+msgstr "Ισλανδία"
+
+#: iptcorigin.cpp:176
+msgid "India"
+msgstr "Ινδία"
+
+#: iptcorigin.cpp:177
+msgid "Indonesia"
+msgstr "Ινδονησία"
+
+#: iptcorigin.cpp:178
+msgid "Iran"
+msgstr "Ιράν"
+
+#: iptcorigin.cpp:179
+msgid "Iraq"
+msgstr "Ιράκ"
+
+#: iptcorigin.cpp:180
+msgid "Ireland"
+msgstr "Ιρλανδία"
+
+#: iptcorigin.cpp:181
+msgid "Israel"
+msgstr "Ισραήλ"
+
+#: iptcorigin.cpp:182
+msgid "Italy"
+msgstr "Ιταλία"
+
+#: iptcorigin.cpp:183
+msgid "Jamaica"
+msgstr "Τζαμάικα"
+
+#: iptcorigin.cpp:184
+msgid "Japan"
+msgstr "Ιαπωνία"
+
+#: iptcorigin.cpp:185
+msgid "Jordan"
+msgstr "Ιορδανία"
+
+#: iptcorigin.cpp:186
+msgid "Kazakhstan"
+msgstr "Καζακστάν"
+
+#: iptcorigin.cpp:187
+msgid "Kenya"
+msgstr "Κένυα"
+
+#: iptcorigin.cpp:188
+msgid "Kiribati"
+msgstr "Κιριμπάτι"
+
+#: iptcorigin.cpp:189 iptcorigin.cpp:190
+msgid "Korea"
+msgstr "Κορέα"
+
+#: iptcorigin.cpp:191
+msgid "Kuwait"
+msgstr "Κουβέιτ"
+
+#: iptcorigin.cpp:192
+msgid "Kyrgyz Republic"
+msgstr "Κυργκιζιστάν"
+
+#: iptcorigin.cpp:193
+msgid "Lao"
+msgstr "Λάος"
+
+#: iptcorigin.cpp:194
+msgid "Latvia"
+msgstr "Λιθουανία"
+
+#: iptcorigin.cpp:195
+msgid "Lebanon"
+msgstr "Λίβανος"
+
+#: iptcorigin.cpp:196
+msgid "Lesotho"
+msgstr "Λεσότο"
+
+#: iptcorigin.cpp:197
+msgid "Liberia"
+msgstr "Λιβερία"
+
+#: iptcorigin.cpp:198
+msgid "Libyan Arab Jamahiriya"
+msgstr "Λιβύη, Αραβική Τζαμαχιρία"
+
+#: iptcorigin.cpp:199
+msgid "Liechtenstein"
+msgstr "Λίχτενσταϊν"
+
+#: iptcorigin.cpp:200
+msgid "Lithuania"
+msgstr "Λιθουανία"
+
+#: iptcorigin.cpp:201
+msgid "Luxembourg"
+msgstr "Λουξεμβούργο"
+
+#: iptcorigin.cpp:202
+msgid "Macao"
+msgstr "Μακάο"
+
+#: iptcorigin.cpp:203
+msgid "Macedonia"
+msgstr "FYROM"
+
+#: iptcorigin.cpp:204
+msgid "Madagascar"
+msgstr "Μαδαγασκάρη"
+
+#: iptcorigin.cpp:205
+msgid "Malawi"
+msgstr "Μαλάουι"
+
+#: iptcorigin.cpp:206
+msgid "Malaysia"
+msgstr "Μαλαισία"
+
+#: iptcorigin.cpp:207
+msgid "Maldives"
+msgstr "Μαλδίβες"
+
+#: iptcorigin.cpp:208
+msgid "Mali"
+msgstr "Μαλί"
+
+#: iptcorigin.cpp:209
+msgid "Malta"
+msgstr "Μάλτα"
+
+#: iptcorigin.cpp:210
+msgid "Marshall Islands"
+msgstr "Νησιά Μάρσαλ"
+
+#: iptcorigin.cpp:211
+msgid "Martinique"
+msgstr "Μαρτινίκα"
+
+#: iptcorigin.cpp:212
+msgid "Mauritania"
+msgstr "Μαυριτανία"
+
+#: iptcorigin.cpp:213
+msgid "Mauritius"
+msgstr "Μαυρίκιος"
+
+#: iptcorigin.cpp:214
+msgid "Mayotte"
+msgstr "Μαγιότ"
+
+#: iptcorigin.cpp:215
+msgid "Mexico"
+msgstr "Μεξικό"
+
+#: iptcorigin.cpp:216
+msgid "Micronesia"
+msgstr "Μικρονησία"
+
+#: iptcorigin.cpp:217
+msgid "Moldova"
+msgstr "Μολδαβία"
+
+#: iptcorigin.cpp:218
+msgid "Monaco"
+msgstr "Μονακό"
+
+#: iptcorigin.cpp:219
+msgid "Mongolia"
+msgstr "Μογγολία"
+
+#: iptcorigin.cpp:220
+msgid "Montserrat"
+msgstr "Μοντσεράτ"
+
+#: iptcorigin.cpp:221
+msgid "Morocco"
+msgstr "Μαρόκο"
+
+#: iptcorigin.cpp:222
+msgid "Mozambique"
+msgstr "Μοζαμβίκη"
+
+#: iptcorigin.cpp:223
+msgid "Myanmar"
+msgstr "Μιανμάρ"
+
+#: iptcorigin.cpp:224
+msgid "Namibia"
+msgstr "Ναμίμπια"
+
+#: iptcorigin.cpp:225
+msgid "Nauru"
+msgstr "Ναουρού"
+
+#: iptcorigin.cpp:226
+msgid "Nepal"
+msgstr "Νεπάλ"
+
+#: iptcorigin.cpp:227
+msgid "Netherlands Antilles"
+msgstr "Ολλανδικές Αντίλλες"
+
+#: iptcorigin.cpp:228
+msgid "Netherlands"
+msgstr "Ολλανδία"
+
+#: iptcorigin.cpp:229
+msgid "New Caledonia"
+msgstr "Νέα Καληδονία"
+
+#: iptcorigin.cpp:230
+msgid "New Zealand"
+msgstr "Νέα Ζηλανδία"
+
+#: iptcorigin.cpp:231
+msgid "Nicaragua"
+msgstr "Νικαράγουα"
+
+#: iptcorigin.cpp:232
+msgid "Niger"
+msgstr "Νίγηρας"
+
+#: iptcorigin.cpp:233
+msgid "Nigeria"
+msgstr "Νιγηρία"
+
+#: iptcorigin.cpp:234
+msgid "Niue"
+msgstr "Νιούε"
+
+#: iptcorigin.cpp:235
+msgid "Norfolk Island"
+msgstr "Νήσος Νόρφοκ"
+
+#: iptcorigin.cpp:236
+msgid "Northern Mariana Islands"
+msgstr "Νήσοι Northern Mariana"
+
+#: iptcorigin.cpp:237
+msgid "Norway"
+msgstr "Νορβηγία"
+
+#: iptcorigin.cpp:238
+msgid "Oman"
+msgstr "Ομάν"
+
+#: iptcorigin.cpp:239
+msgid "Pakistan"
+msgstr "Πακιστάν"
+
+#: iptcorigin.cpp:240
+msgid "Palau"
+msgstr "Παλάου"
+
+#: iptcorigin.cpp:241
+msgid "Palestinian Territory"
+msgstr "Παλαιστίνη"
+
+#: iptcorigin.cpp:242
+msgid "Panama"
+msgstr "Παναμάς"
+
+#: iptcorigin.cpp:243
+msgid "Papua New Guinea"
+msgstr "Παπούα - Νέα Γουινέα"
+
+#: iptcorigin.cpp:244
+msgid "Paraguay"
+msgstr "Παραγουάη"
+
+#: iptcorigin.cpp:245
+msgid "Peru"
+msgstr "Περού"
+
+#: iptcorigin.cpp:246
+msgid "Philippines"
+msgstr "Φιλιππίνες"
+
+#: iptcorigin.cpp:247
+msgid "Pitcairn Island"
+msgstr "Νήσος Πίτκαιρν"
+
+#: iptcorigin.cpp:248
+msgid "Poland"
+msgstr "Πολωνία"
+
+#: iptcorigin.cpp:249
+msgid "Portugal"
+msgstr "Πορτογαλία"
+
+#: iptcorigin.cpp:250
+msgid "Puerto Rico"
+msgstr "Πουέρτο Ρίκο"
+
+#: iptcorigin.cpp:251
+msgid "Qatar"
+msgstr "Κατάρ"
+
+#: iptcorigin.cpp:252
+msgid "Reunion"
+msgstr "Νήσος Επανένωσης"
+
+#: iptcorigin.cpp:253
+msgid "Romania"
+msgstr "Ρουμανία"
+
+#: iptcorigin.cpp:254
+msgid "Russian Federation"
+msgstr "Ρωσική Ομοσπονδία"
+
+#: iptcorigin.cpp:255
+msgid "Rwanda"
+msgstr "Ρουάντα"
+
+#: iptcorigin.cpp:256
+msgid "St. Helena"
+msgstr "Αγία Ελένη"
+
+#: iptcorigin.cpp:257
+msgid "St. Kitts and Nevis"
+msgstr "Άγιος Χριστόφορος (Σαιντ Κιτς) και Νέβις"
+
+#: iptcorigin.cpp:258
+msgid "St. Lucia"
+msgstr "Σάντα Λουτσία"
+
+#: iptcorigin.cpp:259
+msgid "St. Pierre and Miquelon"
+msgstr "Σαιν Πιέρ και Μικελόν"
+
+#: iptcorigin.cpp:260
+msgid "St. Vincent and the Grenadines"
+msgstr "Άγιος Βικέντιος και Γρεναδίνες"
+
+#: iptcorigin.cpp:261
+msgid "Samoa"
+msgstr "Σαμόα"
+
+#: iptcorigin.cpp:262
+msgid "San Marino"
+msgstr "Άγιος Μαρίνος"
+
+#: iptcorigin.cpp:263
+msgid "Sao Tome and Principe"
+msgstr "Σάο Τομέ και Πρίνσιπε"
+
+#: iptcorigin.cpp:264
+msgid "Saudi Arabia"
+msgstr "Σαουδική Αραβία"
+
+#: iptcorigin.cpp:265
+msgid "Senegal"
+msgstr "Σενεγάλη"
+
+#: iptcorigin.cpp:266
+msgid "Serbia and Montenegro"
+msgstr "Σερβία Μαυροβούνι"
+
+#: iptcorigin.cpp:267
+msgid "Seychelles"
+msgstr "Σεϊχέλες"
+
+#: iptcorigin.cpp:268
+msgid "Sierra Leone"
+msgstr "Σιέρα Λεόνε"
+
+#: iptcorigin.cpp:269
+msgid "Singapore"
+msgstr "Σιγκαπούρη"
+
+#: iptcorigin.cpp:270
+msgid "Slovakia"
+msgstr "Σλοβακία"
+
+#: iptcorigin.cpp:271
+msgid "Slovenia"
+msgstr "Σλοβενία"
+
+#: iptcorigin.cpp:272
+msgid "Solomon Islands"
+msgstr "Νησιά του Σολομώντα"
+
+#: iptcorigin.cpp:273
+msgid "Somalia"
+msgstr "Σομαλία"
+
+#: iptcorigin.cpp:274
+msgid "South Africa"
+msgstr "Νότια Αφρική"
+
+#: iptcorigin.cpp:275
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Νότια Τζόρτζια και Νότιοι νήσοι Σάντουιτς"
+
+#: iptcorigin.cpp:276
+msgid "Spain"
+msgstr "Ισπανία"
+
+#: iptcorigin.cpp:277
+msgid "Sri Lanka"
+msgstr "Σρι Λάνκα"
+
+#: iptcorigin.cpp:278
+msgid "Sudan"
+msgstr "Σουδάν"
+
+#: iptcorigin.cpp:279
+msgid "Suriname"
+msgstr "Σουρινάμ"
+
+#: iptcorigin.cpp:280
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "Νήσοι Σφάλμπαρ και Γιαν Μαϋέν"
+
+#: iptcorigin.cpp:281
+msgid "Swaziland"
+msgstr "Σουαζιλάνδη"
+
+#: iptcorigin.cpp:282
+msgid "Sweden"
+msgstr "Σουηδία"
+
+#: iptcorigin.cpp:283
+msgid "Switzerland"
+msgstr "Ελβετία"
+
+#: iptcorigin.cpp:284
+msgid "Syrian Arab Republic"
+msgstr "Αραβική Δημοκρατία της Συρίας"
+
+#: iptcorigin.cpp:285
+msgid "Taiwan"
+msgstr "Ταϊβάν"
+
+#: iptcorigin.cpp:286
+msgid "Tajikistan"
+msgstr "Τατζικιστάν"
+
+#: iptcorigin.cpp:287
+msgid "Tanzania"
+msgstr "Τανζανία"
+
+#: iptcorigin.cpp:288
+msgid "Thailand"
+msgstr "Ταϊλάνδη"
+
+#: iptcorigin.cpp:289
+msgid "Timor-Leste"
+msgstr "Τιμόρ-Λέστε"
+
+#: iptcorigin.cpp:290
+msgid "Togo"
+msgstr "Τόγκο"
+
+#: iptcorigin.cpp:291
+msgid "Tokelau Islands"
+msgstr "Νήσοι Τοκελάου"
+
+#: iptcorigin.cpp:292
+msgid "Tonga"
+msgstr "Τόνγκα"
+
+#: iptcorigin.cpp:293
+msgid "Trinidad and Tobago"
+msgstr "Τρίνινταντ και Τομπάγκο"
+
+#: iptcorigin.cpp:294
+msgid "Tunisia"
+msgstr "Τυνησία"
+
+#: iptcorigin.cpp:295
+msgid "Turkey"
+msgstr "Τουρκία"
+
+#: iptcorigin.cpp:296
+msgid "Turkmenistan"
+msgstr "Τουρκμενιστάν"
+
+#: iptcorigin.cpp:297
+msgid "Turks and Caicos Islands"
+msgstr "Νήσοι Τερκς και Κάικος"
+
+#: iptcorigin.cpp:298
+msgid "Tuvalu"
+msgstr "Τουβάλου"
+
+#: iptcorigin.cpp:299
+msgid "US Virgin Islands"
+msgstr "Παρθένοι Νήσοι ΗΠΑ"
+
+#: iptcorigin.cpp:300
+msgid "Uganda"
+msgstr "Ουγκάντα"
+
+#: iptcorigin.cpp:301
+msgid "Ukraine"
+msgstr "Ουκρανία"
+
+#: iptcorigin.cpp:302
+msgid "United Arab Emirates"
+msgstr "Ηνωμένα Αραβικά Εμιράτα"
+
+#: iptcorigin.cpp:303
+msgid "United Kingdom"
+msgstr "Ηνωμένου Βασιλείου"
+
+#: iptcorigin.cpp:304
+msgid "United States Minor Outlying Islands"
+msgstr "Εξώτεροι Νήσοι Ηνωμένων Πολιτειών"
+
+#: iptcorigin.cpp:305
+msgid "United States of America"
+msgstr "Ηνωμένες Πολιτείες της Αμερικής"
+
+#: iptcorigin.cpp:306
+msgid "Uruguay, Eastern Republic of"
+msgstr "Ουρουγουάη, Ανατολική Δημοκρατία"
+
+#: iptcorigin.cpp:307
+msgid "Uzbekistan"
+msgstr "Ουζμπεκιστάν"
+
+#: iptcorigin.cpp:308
+msgid "Vanuatu"
+msgstr "Βανουάτου"
+
+#: iptcorigin.cpp:309
+msgid "Venezuela"
+msgstr "Βενεζουέλα"
+
+#: iptcorigin.cpp:310
+msgid "Viet Nam"
+msgstr "Βιετνάμ"
+
+#: iptcorigin.cpp:311
+msgid "Wallis and Futuna Islands "
+msgstr "Νήσοι Βαλίς και Φουτούνα "
+
+#: iptcorigin.cpp:312
+msgid "Western Sahara"
+msgstr "Δυτική Σαχάρα"
+
+#: iptcorigin.cpp:313
+msgid "Yemen"
+msgstr "Υεμένη"
+
+#: iptcorigin.cpp:314
+msgid "Zambia"
+msgstr "Ζάμπια"
+
+#: iptcorigin.cpp:315
+msgid "Zimbabwe"
+msgstr "Ζιμπάμπουε"
+
+#: iptcorigin.cpp:319
+msgid "United Nations"
+msgstr "Ηνωμένα Έθνη"
+
+#: iptcorigin.cpp:320
+msgid "European Union"
+msgstr "Ευρωπαϊκή Ένωση"
+
+#: iptcorigin.cpp:321
+msgid "Space"
+msgstr "Διάστημα"
+
+#: iptcorigin.cpp:322
+msgid "At Sea"
+msgstr "στη Θάλασσα"
+
+#: iptcorigin.cpp:323
+msgid "In Flight"
+msgstr "σε Πτήση"
+
+#: iptcorigin.cpp:324
+msgid "England"
+msgstr "Αγγλία"
+
+#: iptcorigin.cpp:325
+msgid "Scotland"
+msgstr "Σκωτία"
+
+#: iptcorigin.cpp:326
+msgid "Northern Ireland"
+msgstr "Βόρεια Ιρλανδία"
+
+#: iptcorigin.cpp:327
+msgid "Wales"
+msgstr "Ουαλία"
+
+#: iptcorigin.cpp:328
+msgid "Palestine"
+msgstr "Παλαιστίνη"
+
+#: iptcorigin.cpp:329
+msgid "Gaza"
+msgstr "Γάζα"
+
+#: iptcorigin.cpp:330
+msgid "Jericho"
+msgstr "Ιεριχώ"
+
+#: iptcorigin.cpp:369
+msgid "Object name:"
+msgstr "Όνομα αντικειμένου:"
+
+#: iptcorigin.cpp:373
+msgid ""
+"<p>Set here the shorthand reference of content. This field is limited to 64 "
+"ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ τη συντομογραφία του περιεχομένου. Το πεδίο έχει περιορισμό τους "
+"64 χαρακτήρες ASCII."
+
+#: iptcorigin.cpp:378
+msgid "Location:"
+msgstr "Τοποθεσία:"
+
+#: iptcorigin.cpp:382
+msgid ""
+"<p>Set here the full country name referenced by the content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ το πλήρες όνομα της χώρας του περιεχομένου. Το πεδίο έχει "
+"περιορισμό τους 64 χαρακτήρες ASCII."
+
+#: iptcorigin.cpp:388
+msgid "City:"
+msgstr "Πόλη:"
+
+#: iptcorigin.cpp:392
+msgid ""
+"<p>Set here the city of content origin. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ την πόλη του περιεχόμενου. Το πεδίο έχει περιορισμό τους 32 "
+"χαρακτήρες ASCII."
+
+#: iptcorigin.cpp:397
+msgid "Sublocation:"
+msgstr "Υποτοποθεσία:"
+
+#: iptcorigin.cpp:401
+msgid ""
+"<p>Set here the content location within city. This field is limited to 32 ASCII "
+"characters."
+msgstr ""
+"<p>Ορίστε εδώ την τοποθεσία του περιεχόμενου στην κλίμακα της πόλης που "
+"βρίσκεται. Το πεδίο έχει περιορισμό τους 32 χαρακτήρες ASCII."
+
+#: iptcorigin.cpp:406
+msgid "State/Province:"
+msgstr "Πολιτεία/επαρχία:"
+
+#: iptcorigin.cpp:410
+msgid ""
+"<p>Set here the Province or State of content origin. This field is limited to "
+"32 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ την επαρχεία ή την πολιτεία του περιεχομένου. Το πεδίο έχει "
+"περιορισμό τους 32 χαρακτήρες ASCII."
+
+#: iptcorigin.cpp:415
+msgid "Country:"
+msgstr "Χώρα:"
+
+#: iptcorigin.cpp:424
+msgid "<p>Select here country name of content origin."
+msgstr "<p>Επιλέξτε εδώ το όνομα της χώρας του περιεχομένου."
+
+#: iptcorigin.cpp:428
+msgid "Original transmission reference:"
+msgstr "Αρχική αναφορά περιεχομένου:"
+
+#: iptcorigin.cpp:432
+msgid ""
+"<p>Set here the location of original content transmission. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ την τοποθεσία της αρχικής μετάδοσης του περιεχομένου. Το πεδίο "
+"έχει περιορισμό τους 32 χαρακτήρες ASCII."
+
+#: iptcstatus.cpp:104
+msgid "Edit Status:"
+msgstr "Επεξεργασία κατάστασης:"
+
+#: iptcstatus.cpp:110
+msgid ""
+"<p>Set here the content status. This field is limited to 64 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ την κατάσταση του περιεχόμενου. Το πεδίο έχει περιορισμό τους 64 "
+"χαρακτήρες ASCII."
+
+#: iptcstatus.cpp:115
+msgid "Priority:"
+msgstr "Προτεραιότητα:"
+
+#: iptcstatus.cpp:117
+msgid "0: None"
+msgstr "0: Καμία"
+
+#: iptcstatus.cpp:118
+msgid "1: High"
+msgstr "1: Υψηλή"
+
+#: iptcstatus.cpp:122
+msgid "5: Normal"
+msgstr "5: Κανονική"
+
+#: iptcstatus.cpp:125
+msgid "8: Low"
+msgstr "8: Χαμηλή"
+
+#: iptcstatus.cpp:128
+msgid "<p>Select here the editorial urgency of content."
+msgstr ""
+"<p>Επιλέξτε εδώ την επείγουσα ή μη προτεραιότητα σύνταξης του περιεχομένου."
+
+#: iptcstatus.cpp:132
+msgid "Object Cycle:"
+msgstr "Κύκλος αντικείμενου:"
+
+#: iptcstatus.cpp:134
+msgid "Morning"
+msgstr "Πρωί"
+
+#: iptcstatus.cpp:135
+msgid "Afternoon"
+msgstr "Απόγευμα"
+
+#: iptcstatus.cpp:136
+msgid "Evening"
+msgstr "Βράδυ"
+
+#: iptcstatus.cpp:139
+msgid "<p>Select here the editorial cycle of content."
+msgstr "<p>Επιλέξτε εδώ τον κύκλο σύνταξης του περιεχομένου."
+
+#: iptcstatus.cpp:143
+msgid "Object Type:"
+msgstr "Τύπος αντικειμένου:"
+
+#: iptcstatus.cpp:148
+msgid "News"
+msgstr "Ειδήσεις"
+
+#: iptcstatus.cpp:149
+msgid "Data"
+msgstr "Δεδομένα"
+
+#: iptcstatus.cpp:150
+msgid "Advisory"
+msgstr "Συμβουλή"
+
+#: iptcstatus.cpp:154
+msgid "<p>Select here the editorial type of content."
+msgstr "<p>Επιλέξτε εδώ τον τύπο σύνταξης του περιεχομένου."
+
+#: iptcstatus.cpp:155
+msgid ""
+"<p>Set here the editorial type description of content. This field is limited to "
+"64 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ τον τύπο σύνταξης του περιεχομένου. Το πεδίο έχει περιορισμό τους "
+"64 χαρακτήρες ASCII."
+
+#: iptcstatus.cpp:160
+msgid "Object Attribute:"
+msgstr "Ιδιότητα αντικειμένου:"
+
+#: iptcstatus.cpp:165
+msgid "Current"
+msgstr "Τρέχον"
+
+#: iptcstatus.cpp:166
+msgid "Analysis"
+msgstr "Ανάλυση"
+
+#: iptcstatus.cpp:167
+msgid "Archive material"
+msgstr "Υλικό αρχείου"
+
+#: iptcstatus.cpp:168
+msgid "Background"
+msgstr "Φόντο"
+
+#: iptcstatus.cpp:169
+msgid "Feature"
+msgstr "Χαρακτηριστικό"
+
+#: iptcstatus.cpp:170
+msgid "Forecast"
+msgstr "Πρόβλεψη"
+
+#: iptcstatus.cpp:171
+msgid "History"
+msgstr "Ιστορικό"
+
+#: iptcstatus.cpp:172
+msgid "Obituary"
+msgstr "Αναγγελία θανάτου"
+
+#: iptcstatus.cpp:173
+msgid "Opinion"
+msgstr "Άποψη"
+
+#: iptcstatus.cpp:174
+msgid "Polls & Surveys"
+msgstr "Δημοσκόπηση & έρευνα"
+
+#: iptcstatus.cpp:175
+msgid "Profile"
+msgstr "Προφίλ"
+
+#: iptcstatus.cpp:176
+msgid "Results Listings & Table"
+msgstr "Εμφάνιση αποτελεσμάτων & πίνακας"
+
+#: iptcstatus.cpp:177
+msgid "Side bar & Supporting information"
+msgstr "Πλευρική στήλη & Πληροφορίες υποστήριξης"
+
+#: iptcstatus.cpp:178
+msgid "Summary"
+msgstr "Περίληψη"
+
+#: iptcstatus.cpp:179
+msgid "Transcript & Verbatim"
+msgstr "Απομαγνητοφώνηση & πρακτικά"
+
+#: iptcstatus.cpp:180
+msgid "Interview"
+msgstr "Συνέντευξη"
+
+#: iptcstatus.cpp:181
+msgid "From the Scene"
+msgstr "Από τη σκηνή"
+
+#: iptcstatus.cpp:182
+msgid "Retrospective"
+msgstr "Ανασκόπηση"
+
+#: iptcstatus.cpp:183
+msgid "Statistics"
+msgstr "Στατιστική"
+
+#: iptcstatus.cpp:184
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: iptcstatus.cpp:185
+msgid "Wrap-up"
+msgstr "Ολοκλήρωση"
+
+#: iptcstatus.cpp:186
+msgid "Press Release"
+msgstr "Έντυπη έκδοση"
+
+#: iptcstatus.cpp:190
+msgid "<p>Select here the editorial attribute of content."
+msgstr "<p>Επιλέξτε εδώ την ιδιότητα σύνταξης του περιεχομένου."
+
+#: iptcstatus.cpp:191
+msgid ""
+"<p>Set here the editorial attribute description of content. This field is "
+"limited to 64 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ την περιγραφή της ιδιότητας σύνταξης του περιεχομένου. Το πεδίο "
+"έχει περιορισμό 64 χαρακτήρες ASCII."
+
+#: iptcstatus.cpp:196
+msgid "Job Identification:"
+msgstr "Αναγνωριστικό εργασίας:"
+
+#: iptcstatus.cpp:202
+msgid ""
+"<p>Set here the string that identifies content that recurs. This field is "
+"limited to 32 ASCII characters."
+msgstr ""
+"<p>Ορίστε εδώ τη συμβολοσειρά που υποδεικνύει περιεχόμενο που επαναλαμβάνεται. "
+"Το πεδίο περιορίζεται σε 32 χαρακτήρες ASCII."
+
+#: iptcsubjects.cpp:91
+msgid "Use structured definition of the subject matter:"
+msgstr "Χρήση δομημένου ορισμού του θέματος:"
+
+#: iptcsubjects.cpp:96
+msgid ""
+"<p>Enter here a new subject. This field is limited to 236 ASCII characters."
+msgstr ""
+"<p>Εισάγετε εδώ ένα νέο θέμα. Το πεδίο περιορίζεται σε 236 χαρακτήρες ASCII."
+
+#: plugin_metadataedit.cpp:68
+msgid "Metadata"
+msgstr "Μεταδεδομένα"
+
+#: plugin_metadataedit.cpp:73
+msgid "Edit EXIF..."
+msgstr "Επεξεργασία EXIF..."
+
+#: plugin_metadataedit.cpp:81
+msgid "Remove EXIF..."
+msgstr "Αφαίρεση EXIF..."
+
+#: plugin_metadataedit.cpp:89
+msgid "Import EXIF..."
+msgstr "Εισαγωγή EXIF..."
+
+#: plugin_metadataedit.cpp:99
+msgid "Edit IPTC..."
+msgstr "Επεξεργασία IPTC..."
+
+#: plugin_metadataedit.cpp:107
+msgid "Remove IPTC..."
+msgstr "Αφαίρεση IPTC..."
+
+#: plugin_metadataedit.cpp:115
+msgid "Import IPTC..."
+msgstr "Εισαγωγή IPTC..."
+
+#: plugin_metadataedit.cpp:125
+#, fuzzy
+msgid "Edit Captions..."
+msgstr "Επεξεργασία σχολίων..."
+
+#: plugin_metadataedit.cpp:133
+#, fuzzy
+msgid "Remove Captions..."
+msgstr "Αφαίρεση σχολίων..."
+
+#: plugin_metadataedit.cpp:179
+msgid ""
+"EXIF metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"Τα μεταδεδομένα EXIF θα αφαιρεθούν από όλες τις επιλεγμένες εικόνες.\n"
+"Θέλετε να συνεχίσετε;"
+
+#: plugin_metadataedit.cpp:181 plugin_metadataedit.cpp:220
+msgid "Remove EXIF Metadata"
+msgstr "Αφαίρεση μεταδεδομένων EXIF"
+
+#: plugin_metadataedit.cpp:218
+msgid "Unable to remove EXIF metadata from:"
+msgstr "Αδύνατη η αφαίρεση των μεταδεδομένων EXIF από το:"
+
+#: plugin_metadataedit.cpp:233
+msgid "Select File to Import EXIF metadata"
+msgstr "Επιλογή αρχείου για την εισαγωγή δεδομένων EXIF"
+
+#: plugin_metadataedit.cpp:241 plugin_metadataedit.cpp:387
+msgid "Cannot load metadata from \"%1\""
+msgstr "Αδυναμία φόρτωσης μεταδεδομένων από το \"%1\""
+
+#: plugin_metadataedit.cpp:242 plugin_metadataedit.cpp:251
+#: plugin_metadataedit.cpp:260 plugin_metadataedit.cpp:300
+msgid "Import EXIF Metadata"
+msgstr "Εισαγωγή μεταδεδομένων EXIF"
+
+#: plugin_metadataedit.cpp:250
+msgid "\"%1\" do not have EXIF metadata"
+msgstr "Το \"%1\" δεν περιέχει μεταδεδομένα EXIF"
+
+#: plugin_metadataedit.cpp:257
+msgid ""
+"EXIF metadata from current selected pictures will be permanently replaced by "
+"the EXIF content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"Τα μεταδεδομένα EXIF των επιλεγμένων εικόνων θα αντικατασταθούν από τα "
+"μεταδεδομένα EXIF του\"%1\".\n"
+"Θέλετε να συνεχίσετε;"
+
+#: plugin_metadataedit.cpp:298
+msgid "Unable to set EXIF metadata from:"
+msgstr "Αδυναμία χρήσης των μεταδεδομένων EXIF από το:"
+
+#: plugin_metadataedit.cpp:325
+msgid ""
+"IPTC metadata will be permanently removed from all current selected pictures.\n"
+"Do you want to continue ?"
+msgstr ""
+"Τα μεταδεδομένα IPTC θα αφαιρεθούν από όλες τις επιλεγμένες εικόνες.\n"
+"Θέλετε να συνεχίσετε;"
+
+#: plugin_metadataedit.cpp:327 plugin_metadataedit.cpp:366
+msgid "Remove IPTC Metadata"
+msgstr "Αφαίρεση μεταδεδομένων IPTC"
+
+#: plugin_metadataedit.cpp:364
+msgid "Unable to remove IPTC metadata from:"
+msgstr "Αδύνατη η αφαίρεση των μεταδεδομένων IPTC από το:"
+
+#: plugin_metadataedit.cpp:379
+msgid "Select File to Import IPTC metadata"
+msgstr "Επιλογή αρχείου για την εισαγωγή δεδομένων IPTC"
+
+#: plugin_metadataedit.cpp:388 plugin_metadataedit.cpp:397
+#: plugin_metadataedit.cpp:406 plugin_metadataedit.cpp:446
+msgid "Import IPTC Metadata"
+msgstr "Εισαγωγή μεταδεδομένων IPTC"
+
+#: plugin_metadataedit.cpp:396
+msgid "\"%1\" do not have IPTC metadata"
+msgstr "Το \"%1\" δεν περιέχει μεταδεδομένα IPTC"
+
+#: plugin_metadataedit.cpp:403
+msgid ""
+"IPTC metadata from current selected pictures will be permanently replaced by "
+"the IPTC content of \"%1\".\n"
+"Do you want to continue ?"
+msgstr ""
+"Τα μεταδεδομένα IPTC των επιλεγμένων εικόνων θα αντικατασταθούν από τα "
+"μεταδεδομένα IPTC του\"%1\".\n"
+"Θέλετε να συνεχίσετε;"
+
+#: plugin_metadataedit.cpp:444
+msgid "Unable to set IPTC metadata from:"
+msgstr "Αδυναμία χρήσης των μεταδεδομένων IPTC από το:"
+
+#: plugin_metadataedit.cpp:508
+#, fuzzy
+msgid "Unable to set captions as image metadata from:"
+msgstr "Αδυναμία ορισμού των σχολίων ως μεταδεδομένα εικόνας από:"
+
+#: plugin_metadataedit.cpp:575
+#, fuzzy
+msgid "Unable to remove caption as image metadata from:"
+msgstr "Αδύνατη η αφαίρεση των μεταδεδομένων IPTC από το:"
+
+#: plugin_metadataedit.cpp:577
+#, fuzzy
+msgid "Remove Image Caption"
+msgstr "Αφαίρεση της λεζάντας IPTC"
+
+#~ msgid "Edit Metadata Handbook"
+#~ msgstr "Εγχειρίδιο επεξεργασίας μεταδεδομένων"
+
+#, fuzzy
+#~ msgid "Sync EXIF image caption"
+#~ msgstr "Συγχρονισμός ημερομηνία δημιουργίας EXIF"
+
+#, fuzzy
+#~ msgid "Remove EXIF caption"
+#~ msgstr "Αφαίρεση της λεζάντας IPTC"
+
+#, fuzzy
+#~ msgid "Sync JFIF captions"
+#~ msgstr "Συγχρονισμός του τμήματος σχολίων JFIF"
+
+#~ msgid "Sync IPTC caption (warning: ASCII limited)"
+#~ msgstr "Συγχρονισμός της λεζάντας IPTC(προσοχή: μόνο ASCII)"
+
+#~ msgid "Sync creation date hosted by %1"
+#~ msgstr "Συγχρονισμός ημερομηνίας δημιουργίας που φιλοξενείται στο %1"
+
+#, fuzzy
+#~ msgid "Sync JFIF caption"
+#~ msgstr "Συγχρονισμός του τμήματος σχολίων JFIF"
+
+#, fuzzy
+#~ msgid "Sync EXIF caption"
+#~ msgstr "Συγχρονισμός ημερομηνία δημιουργίας EXIF"
+
+#~ msgid "<b>Note: EXIF text tags annoted by (*) only support printable ASCII characters set.</b>"
+#~ msgstr "<b>Σημείωση: Οι ετικέτες κειμένου EXIF που σημειώνονται με (*) υποστηρίζουν μόνο εκτυπώσιμους χαρακτήρες ASCII.</b>"
+
+#, fuzzy
+#~ msgid "<b>Note: IPTC text tags support printable ASCII character sets only.</b>"
+#~ msgstr "<b>Σημείωση: Οι ετικέτες κειμένου IPTC υποστηρίζουν μόνο εκτυπώσιμους χαρακτήρες ASCII.</b>"
+
+#~ msgid "<b>Note: IPTC text tags only support printable ASCII characters set.</b>"
+#~ msgstr "<b>Σημείωση: Οι ετικέτες κειμένου IPTC υποστηρίζουν μόνο εκτυπώσιμους χαρακτήρες ASCII.</b>"
+
+#~ msgid "Edit Pictures Comments"
+#~ msgstr "Επεξεργασία σχολίων εικόνων"
+
+#~ msgid "Sync EXIF user comment"
+#~ msgstr "Συγχρονισμός του σχολίου χρήστη"
+
+#~ msgid "Remove Pictures Comments"
+#~ msgstr "Αφαίρεση σχολίων εικόνων"
+
+#~ msgid "<p>Set here the name of the person who created the picture. This field is limited to ASCII characters."
+#~ msgstr "<p>Ορίστε εδώ το όνομα του δημιουργού της φωτογραφίας. Το πεδίο αποτελείται μόνο από χαρακτήρες ASCII."
+
+#~ msgid "User comments:"
+#~ msgstr "Σχόλια χρήστη:"
+
+#~ msgid "Sync comment hosted by %1"
+#~ msgstr "Συγχρονισμός σχολίου που φιλοξενείται στο %1"
+
+#~ msgid "<p>Set here the person responsible for caption. This field is limited to 32 ASCII characters."
+#~ msgstr "<p>Ορίστε εδώ το συγγραφέα της λεζάντας. Το πεδίο έχει περιορισμό τους 32 χαρακτήρες ASCII."
+
+#~ msgid "Unable to remove Comments like picture metadata from:"
+#~ msgstr "Αδυναμία αφαίρεσης σχολίων ως μεταδεδομένα εικόνας από:"

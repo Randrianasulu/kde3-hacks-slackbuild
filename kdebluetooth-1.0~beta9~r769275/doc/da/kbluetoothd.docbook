@@ -1,0 +1,218 @@
+<sect1 id="components.kbluetoothd">
+<title
+>Kbluetoothd: Kernen i KDE's bluetooth-skelet</title>
+<para
+>KBluetoothD er en central del af KDE's Blueto7oth skelet. Den kører hele tiden i statusfeltet og starter andre tjenester såsom OBEX-server,  eller bemused efter behov. Dens statusikon fortæller dig om bluetooth-forbindelser og giver dig også hurtig adgang til tjenestens indstilling, nyligt brugte tjenester og mere. </para>
+<para
+>Programmører der ønsker at integrere deres program med kdebluetooth, skulle kigge i <link linkend="developers.kbluetoothd"
+>udviklerafsnittet</link
+> for mere information. </para>
+
+<sect2>
+<title
+>Start af kbluetoothd</title>
+<para
+>Du kan starte KBluetoothD ved at skrive <command
+>kbluetoothd</command
+> på kommandolinjen eller ved at starte den fra K-Menuen (sædvanligvis System/kbluetoothd). </para
+><para
+>KBluetoothD viser en ikon i statusfeltet, men hvis du ikke kan lide det kan du deaktivere "Altid synlig" i sammenhængsmenuen for statusikonen. Så vil kbluetoothd køre uden nogen synlig brugergrænseflade, selv efter den er genstartet. For at aktivere ikonen igen, startes kbluetoothd blot igen. Hvis ikonen blev deaktiveret, vil den stadig være til syne for varigheden af en bluetooth-forbindelse. </para>
+<para
+>Når Kbluetoothd kører indtil systemet lukkes ned, genstartes det automatisk næste gang du logger på. For at forhindre Kbluetoothd i at starte automatisk igen, skal du blot afslutte det og bede det om ikke at startes igen når du logger på næste gang.</para>
+ 
+</sect2>
+
+<sect2>
+<title
+>Hvad kbluetoothd gør</title>
+<para
+>Den vigtigste funktion i kbluetoothd er dens Bluetooth metaserver. Da kbluetoothd kører hele tiden alligevel, overvåger den også din  Bluetooth adaptor, fortæller dig om der er forbindelser og cacher navneforspørgsler. Idéen er at kbluetoothd er det eneste bluetooth-relaterede program det behøver at køre hele tiden, og stadig have adgang til alle aktiverede tjenester. </para>
+<sect3>
+<title
+>Metaserveren</title>
+<para
+>Hvis du ved hvad inetd gør i et Linux-system, så har du allerede en idé om hvad metaserveren for kbluetoothd er nyttig til: Den venter på indkommende forbindelser på de rigtige tjenesters vegne og starter dem når det er nødvendigt. Så du behøver altså ikke at have en obex-server kørende hele tiden, men når nogen sender dig en fil via OBEX, så vil OBEX-serveren blive startet automatisk. </para>
+
+<para
+>Der er adskillige grunde til at bruge en sådan omdirigering: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Det reducerer hukommelseskravet når du bruger adskillige tjenester. KDE's Bluetooth skelet kommer for øjeblikket med fire serverprogrammer: obex-serveren, handsfree-klienten, bemused-klienten og det serielle chat-værktøj. Mens du måske kun sjældent har brug for nogle af disse tjenester, kan du stadig lade dem være slået til uden omkostning. </para>
+</listitem>
+
+<listitem>
+<para
+>Dit statusfelt vil ikke blive rodet til med masser af sjældent brugte ikoner. </para>
+</listitem>
+
+<listitem>
+<para
+>Det forbedrer sikkerheden og gør adgangskontrol nemmere at håndtere. KBluetoothD vil som standard få en dialog frem der beder om tilladelse hvis der er en indkommende forbindelse. Brugeren kan sætte denne dialog ud af kraft og permanent tillade eller forbyde forbindelser for hver tjeneste og enhed. Dette giver hvert program der håndteres af kbluetoothd gratis adgangskontrol. </para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para
+>-->
+</listitem>
+
+<listitem>
+<para
+>Det har potentialet at gøre bluetooth-tjenester mere stabile. Hver server startes for hver ny forbindelse, så hvis en server bryder sammen, kan du prøve igen uden at skulle genstarte den. </para>
+<para
+>Det kan være en flaskehals for en webserver at håndteres af inetd, men i tilfældet Bluetooth tager det alligevel flere sekunder at oprette en forbindelse og hver handling initieres oftest af brugeren, hvilket gør det ukritisk at bruge en metaserver. </para>
+</listitem>
+
+<listitem>
+<para
+>Tjeneste-registrering med SDP-serveren er meget enkelt. Se venligst <link linkend="developers.kbluetoothd"
+>udviklerafsnittet</link
+> for hvordan kbluetoothd-managed programmet registrerer med SDP-serveren. </para>
+</listitem>
+
+<listitem>
+<para
+>Simple serverprogrammer - selv scripter - kan bruges til at implementere en bluetooth-server uden at bruge Bluetooth-relaterede funktioner overhovedet. </para>
+</listitem>
+</itemizedlist>
+<para
+>Du kan aktivere/deaktivere tjenester brugt af kbluetoothd i kontrolcenter-modulet i fanebladet "Lokale tjenester". Der kan du også indstille tjenestespecifikke tilvalg ved at vælge en tjeneste og klikke på "Indstil..."-knappen. </para>
+<para
+>I fanebladet "Bekræftelse" kan du tilpasse hvordan kbluetoothd vil reagere på indkommende forbindelser. </para>
+</sect3>
+
+
+<sect3>
+<title
+>Enhedsopdagelsestjenesten</title>
+<para
+>Det er vigtigt for mange programmer at vide om en given enhed for øjeblikket er indenfor rækkevidde eller ej, eller til og med at få styr på om en enhed kommer indenfor rækkevidde eller forsvinder. I modsætning til USB, hvor hotplug-skelette underretter dig om nye enheder, er der ingen sådan tjeneste for Blåtand. </para>
+
+<para
+>Kbluetoothd udfylder i dette hul med tjenesten til at opdage enheder. Den søger periodisk efter enheder i nærheden og holder en liste med dem som for øjeblikket er indenfor rækkevidde. For at få adgang til en enhed der er opdaget, højreklikkes på Kbluetoothds ikon i statusfeltet og kig i menuen "Åbn seneste". Menuen består af en del med tjenester som for nylig er blevet brugt (såsom "OBEX FTP på min telefon") og, hvis der virkelig er enheder som allerede er opdaget, en anden del ovenfor med en liste over enheder. Ved at klikke på en af dem vises enhedens tjenester i Konqueror. </para>
+<para
+>I Kbluetoothds modul i kontrolcentret kan du indstille om og hvor ofte Kbluetoothd søger efter enheder ("Opdatér naboliste periodisk"). Jeg anbefaler ikke at bruge et interval kortere end en minut her, ellers kan andre programmer sommetider få problemer med at søge efter enheder. Dette skyldes at de fleste enheder ikke forventer sig at andre program skal bruge Bluetooth samtidigt. </para>
+<para
+>Mange enheder <phrase
+>kan ikke opdages</phrase
+> normalt af integritets- og sikkerhedsgrunde. I dette tilfælde opdages enheden ikke ved søgning efter enheder. I stedet skal Kbluetoothd forsøge at få adgang til  hver af enhederne individuelt. Du kan tilføje en enhed i listen med enheder som ikke kan opdages ved at klikke på "Yderligere søgetilvalg for enheder som ikke kan opdages". Bemærk at du enten midlertidigt skal indstille enheden så at den kan opdages, eller kende dens hardware-adresse for at kunne tilføje den i listen. </para>
+<para
+>Dette forhindrer at andre programmer søger efter enheder eller til og med opretter en forbindelse med en anden enhed i cirka 30 sekunder <emphasis
+>for hver enhed</emphasis
+> hvis enheden ikke kan nås for øjeblikket. Derfor bør du bruge et ganske langt interval her. Ti minutter synes at være en rimelig værdi. Forsøg selv og finde ud af hvor kort intervallet kan være inden det begynder at blive til besvær. </para>
+
+<para
+>Kun at have en liste over enheder som for øjeblikket kan nås er ikke særlig nyttigt. Du kan i stedet bruge opdagelsestjenesten til at køre <phrase
+>opdagelsesjob</phrase
+> når en enhed kommer indenfor rækkevidde eller forsvinder. Du kan enkelt skrive egne scripter, se afsnittet for udviklere om <link linkend="developers.kbluetoothd.discovery"
+>opdagelses-scripter</link
+>. Kbluetoothd levereres dog allerede med nogle scripter, blandt andre: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Opdagelsesprotokol</term>
+<listitem
+><para
+>Dette script laver en HTML-side med noget teknisk information for hver enhed når den opdages første gangen. Du kan bruge det hvis du er nysgerrig efter hvilke andre der bruger Bluetooth i nærheden. At have scriptet i gang hele tiden skader ikke nævneværdigt, eftersom det kun forsøger at få adgang til enheden når den opdages første gang eller efter du slettet  tilsvarende HTML-side. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kopete_AutoAway</term>
+<listitem
+><para
+>Dette indstiller tilgængelighedsstatus i Kopete, afhængig af om du (sammen med din telefon) er indenfor rækkevidde eller ej. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Photo_Copy</term>
+<listitem
+><para
+>Dette script kontrollerer en mappe i din telefon via OBEX I/O-slaven for om der er nye filer, og kopierer dem til en lokal mappe. Det ændrer også navn på dem med filens dato som filnavn. Jag skrev dette script for min Nokia 6230. Hvis du vil bruge det til din egen telefon, skal du formodentlig ændre scriptet på mange steder. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Screensaver</term>
+<listitem
+><para
+>Starter eller afslutter pauseskærmen eller skærmlåsningen hver gang nogen af de overvågede enheder kommer indenfor rækkevidde eller forsvinder. </para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>De fleste scripter skal først tilrettes for at virke rigtigt. Klik på "configure" gør oftest kun at en editor dukker op med scriptets indstillingsdel. Var også klar over at <emphasis
+> du kan behøve at begrænse enhederne som rapporteres til hvert job</emphasis
+>, hvis du ikke ønsker at scriptet skal køres når en anden går forbi med en tændt Bluetooth-telefon. </para>
+
+</sect3>
+
+<sect3>
+<title
+>List af "de nyligst brugte tjenester"</title>
+<para
+>Du kan få hurtig adgang til tjenester du har brugt tidligere ved at finde dem i undermenuen "Nyligt brugte" i kbluetoothd's statusikon. Hvis du allerede sendte nogle filer til din mobiltelefon der hedder "Min telefon" via kbtobexclient, så vil du finde et menupunkt med navnet "Obex push-klient - Min telefon", hvilket vil starte kbtobexclient og øjeblikkeligt forbinde til din telefon uden en tidskrævende forespørgselsproces. </para>
+<para
+>Bemærk venligst at kbluetoothd viser alle nyligt brugte tjenester, uanset om de respektive enheder er indefor rækkevidde eller ej. </para>
+<para
+>Denne funktion skal være understøttet af de respektive programmer. </para>
+</sect3>
+
+<sect3>
+<title
+>Forbindelseovervågning</title>
+<para
+>Du kan se om der er en bluetooth-forbindelse for øjeblikket ved at kigge på kbluetoothd's statusikon. Den vil blinke hvis en forbindelse er ved at  blive etableret og blive blå når forbindelsen er sat op. </para>
+<para
+>Du kan få mere information om den øjeblikkelige forbindelse ved at højre-klikke på statusikonen og vælge "Forbindelsesdetaljer...". </para>
+<para
+>Det kbluetoothd viser her er ACL-link, ikke Rfcomm-forbindelser. Hvis du er forbundet til en enkelt enhed med adskillige programmer (handsfree og bemused for eksempel), vil dette stadig blive vist som én forbindelse, da der kun kan være et ACL-link til en enkelt enhed af gangen. </para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title
+>Indstilling af kbluetoothd</title>
+<para
+>Sædvanligvis vil kbluetoothd og de servere der håndteres af den virke uden videre. Men der er stadig nogle muligheder du kan ændre. For at indstille kbluetooth, kan du enten bruge KDE's kontrolcenter og gå til <guimenuitem
+>Internet &amp; Netværk -> Bluetooth-tjenester</guimenuitem
+>, eller højreklikke på kbluetoothd's statusikon og vælge <guimenuitem
+>Indstilling -> Tjenester...</guimenuitem
+> </para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title
+>Bekræftelse af indkommende forbindelser</title>
+<para
+>I dette faneblad kan du ændre bekræftelsesopsætningen for indkommede forbindelser. Som standard vil kbluetoothd få en bekræftelsesdialog frem før det egentlige serverprogram (såsom OBEX's push-server) bliver startet. Her kan du deaktivere denne bekræftelsesdialog for nogle enheder/tjenester eller bede kbluetoothd om stille at afslå indkommende forbindelser. </para>
+<para
+>Nye enhedsindgange vil blive tilføjet når du vælger afkrydsningsfeltet "Acceptér  altid" i en bekræftelsesdialog der kommer frem. </para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title
+>Lokale tjenester</title>
+<para
+>I dette faneblad kan du aktivere eller deaktivere enkelte Bluetooth-tjenester som håndteres af kbluetoothd. Nogle tjenester sørger også for andre indstillingsmuligheder, såsom for eksempel bemused-server. I dette tilfælde vil <guibutton
+>Indstil...</guibutton
+> blive aktiveret når du vælger de respektive tjenester. </para>
+<para
+>Da kbluetoothd automatisk tilknytter rfcomm-kanaler til tjenesterne, kan kanalen der bruges til en tjeneste blive ændret når du bruger andre bluetooth-servere. Hvis du har brug for at vide hvilken kanal der blev knyttet til en tjeneste, vil denne dialog fortælle dig det. </para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

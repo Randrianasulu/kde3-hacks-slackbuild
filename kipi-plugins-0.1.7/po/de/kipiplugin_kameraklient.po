@@ -1,0 +1,363 @@
+# translation of kipiplugin_kameraklient.po to german
+#
+# Oliver Dörr <kde@doerr-privat.de>, 2005, 2008.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_kameraklient\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-01 16:38+0100\n"
+"Last-Translator: Oliver Dörr <kde@doerr-privat.de>\n"
+"Language-Team: german <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de"
+
+#: camerafolderview.cpp:33
+msgid "Camera Folders"
+msgstr "Kameraordner"
+
+#: cameraselection.cpp:55
+msgid "Camera Selection"
+msgstr "Kameraauswahl"
+
+#: cameraselection.cpp:60 cameraui.cpp:147 setupcamera.cpp:65
+msgid "KameraKlient"
+msgstr "KameraKlient"
+
+#: cameraselection.cpp:63 cameraui.cpp:150
+msgid "A Digital camera interface Kipi plugin"
+msgstr "Ein KIPI-Modul zum Zugriff auf Digitalkameras"
+
+#: cameraselection.cpp:67 cameraui.cpp:154 setupcamera.cpp:72
+msgid "Original author from Digikam project"
+msgstr "Ursprünglicher Autor aus dem digiKam-Projekt"
+
+#: cameraselection.cpp:70 cameraui.cpp:157 setupcamera.cpp:75
+msgid "Porting the Digikam GPhoto2 interface to Kipi. Maintainer"
+msgstr "Portierung der digiKam-GPhoto2-Schnittstelle nach KIPI. Betreuer."
+
+#: cameraselection.cpp:76 cameraui.cpp:162 setupcamera.cpp:81
+msgid "Plugin Handbook"
+msgstr "Modul-Handbuch"
+
+#: cameraselection.cpp:87
+msgid "Camera Configuration"
+msgstr "Kamera-Einrichtung"
+
+#: cameraselection.cpp:95
+msgid "Cameras"
+msgstr "Kameras"
+
+#: cameraselection.cpp:100
+msgid "Camera Port Type"
+msgstr "Anschlusstyp der Kamera"
+
+#: cameraselection.cpp:106
+msgid "USB"
+msgstr "USB"
+
+#: cameraselection.cpp:109
+msgid "Serial"
+msgstr "Seriell"
+
+#: cameraselection.cpp:114
+msgid "Camera Port Path"
+msgstr "Pfad des Kameraports"
+
+#: cameraselection.cpp:122
+msgid ""
+"only for serial port\n"
+"cameras"
+msgstr ""
+"nur für serielle\n"
+"Kameras"
+
+#: cameraui.cpp:120
+msgid "Setup"
+msgstr "Einrichtung"
+
+#: cameraui.cpp:126
+msgid "Download"
+msgstr "Herunterladen"
+
+#: cameraui.cpp:129
+msgid "Upload"
+msgstr "Hochladen"
+
+#: cameraui.cpp:169 cameraui.cpp:289
+msgid "Connect"
+msgstr "Verbinden"
+
+#: cameraui.cpp:180
+msgid "Download to: "
+msgstr "Herunterladen nach: "
+
+#: cameraui.cpp:186
+msgid "&Change"
+msgstr "Ä&ndern"
+
+#: cameraui.cpp:207
+msgid "Ready"
+msgstr "Fertig"
+
+#: cameraui.cpp:245
+msgid "Select all the images from the camera."
+msgstr "Alle Bilder der Kamera auswählen."
+
+#: cameraui.cpp:247
+msgid "Select None"
+msgstr "Nichts auswählen."
+
+#: cameraui.cpp:248
+msgid "Deselect all the images from the camera."
+msgstr "Alle Bilder der Kamera abwählen."
+
+#: cameraui.cpp:250
+msgid "Invert Selection"
+msgstr "Auswahl umkehren"
+
+#: cameraui.cpp:251
+msgid "Invert the selection."
+msgstr "Kehrt die Auswahl um."
+
+#: cameraui.cpp:253
+msgid "Select New Items"
+msgstr "Neue Bilder auswählen"
+
+#: cameraui.cpp:254
+msgid "Select all the that were not previously downloaded."
+msgstr "Wählt alle Bilder aus, die nicht zuvor heruntergeladen worden sind."
+
+#: cameraui.cpp:285
+msgid "Connected"
+msgstr "Verbunden"
+
+#: cameraui.cpp:286
+msgid "Disconnect"
+msgstr "Trennen"
+
+#: cameraui.cpp:288
+msgid "Disconnected"
+msgstr "Getrennt"
+
+#: cameraui.cpp:413
+msgid "There is no configured camera!"
+msgstr "Es ist keine Kamera eingerichtet."
+
+#: cameraui.cpp:438
+msgid "'%1' directory does not exist."
+msgstr "Ordner '%1' existiert nicht."
+
+#: cameraui.cpp:481
+msgid ""
+"About to delete these Image(s)\n"
+"Are you sure?"
+msgstr ""
+"Diese Bilder sollen gelöscht werden.\n"
+"Sind Sie sicher?"
+
+#: cameraui.cpp:513
+msgid ""
+"Camera Folder '%1' contains item '%2'\n"
+" Please, enter New Name"
+msgstr ""
+"Der Kameraordner '%1' enthält '%2'.\n"
+"Bitte geben Sie einen neuen Namen ein"
+
+#: cameraui.cpp:618
+msgid "Camera Not Initialized"
+msgstr "Kamera nicht initialisiert"
+
+#: cameraui.cpp:626
+msgid "Please Select a Folder on Camera to Upload"
+msgstr "Bitte wählen Sie einen Ordner auf der Kamera zum Hochladen aus"
+
+#: cameraui.cpp:636
+msgid "Sorry! The directory is not writable!"
+msgstr "Der Ordner ist nicht beschreibbar."
+
+#: dmessagebox.cpp:92
+msgid "More errors occurred and are shown below:"
+msgstr "Die folgenden weiteren Fehler sind aufgetreten:"
+
+#: gpcontroller.cpp:229
+msgid ""
+"Camera Model or Port not specified correctly.\n"
+"Please run Setup"
+msgstr ""
+"Kamera oder Port nicht korrekt angegeben.\n"
+"Bitte starten Sie die Einrichtung."
+
+#: gpcontroller.cpp:232
+msgid ""
+"Failed to initialize camera.\n"
+"Please ensure camera is connected properly and turned on"
+msgstr ""
+"Initialisierung der Kamera fehlgeschlagen.\n"
+"Bitte stellen Sie sicher, dass die Kamera angeschlossen und eingeschaltet ist."
+
+#: gpcontroller.cpp:257
+msgid ""
+"Failed to get subfolder names from '%1'\n"
+msgstr ""
+"Die Namen der Unterordner von '%1' lassen sich nicht auslesen.\n"
+
+#: gpcontroller.cpp:278
+msgid ""
+"Failed to get images information from '%1'\n"
+msgstr ""
+"Die Bildinformationen von '%1' lassen sich nicht einlesen.\n"
+
+#: gpcontroller.cpp:301
+msgid "Failed to get preview for '%1/%2'"
+msgstr "Es lässt sich keine Vorschau für '%1/%2' holen."
+
+#: gpcontroller.cpp:310
+msgid "Failed to download '%1' from '%2'"
+msgstr "'%1' von '%2' lässt sich nicht herunterladen."
+
+#: gpcontroller.cpp:322 gpcontroller.cpp:334
+msgid "Failed to open '%1'"
+msgstr "'%1' lässt sich nicht öffnen."
+
+#: gpcontroller.cpp:346
+msgid "Failed to delete '%1'"
+msgstr "'%1' lässt sich nicht löschen."
+
+#: gpcontroller.cpp:358
+msgid "Failed to upload '%1'"
+msgstr "'%1' lässt sich nicht hochladen."
+
+#: gpfileiteminfodlg.cpp:90
+msgid "MimeType:"
+msgstr "Mime-Typ:"
+
+#: gpfileiteminfodlg.cpp:92 gpfileiteminfodlg.cpp:98 gpfileiteminfodlg.cpp:104
+#: gpfileiteminfodlg.cpp:111 gpfileiteminfodlg.cpp:118
+#: gpfileiteminfodlg.cpp:129 gpfileiteminfodlg.cpp:140
+#: gpfileiteminfodlg.cpp:151
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: gpfileiteminfodlg.cpp:96
+msgid "Date:"
+msgstr "Datum:"
+
+#: gpfileiteminfodlg.cpp:102
+msgid "Size:"
+msgstr "Größe:"
+
+#: gpfileiteminfodlg.cpp:105
+msgid " bytes"
+msgstr " Bytes"
+
+#: gpfileiteminfodlg.cpp:109
+msgid "Width:"
+msgstr "Breite:"
+
+#: gpfileiteminfodlg.cpp:116
+msgid "Height:"
+msgstr "Höhe:"
+
+#: gpfileiteminfodlg.cpp:122
+msgid "Read permissions:"
+msgstr "Leseberechtigungen:"
+
+#: gpfileiteminfodlg.cpp:133
+msgid "Write permissions:"
+msgstr "Schreibberechtigungen:"
+
+#: gpfileiteminfodlg.cpp:144
+msgid "Downloaded:"
+msgstr "Heruntergeladen:"
+
+#: kameraklient.cpp:52
+msgid "Digital Camera"
+msgstr "Digitalkamera"
+
+#: savefiledialog.cpp:36
+msgid "File Already Exists"
+msgstr "Datei existiert bereits"
+
+#: savefiledialog.cpp:37
+msgid "The file '%1' already exists!"
+msgstr "Die Datei '%1' existiert bereits."
+
+#: savefiledialog.cpp:42
+msgid "Rename"
+msgstr "Umbenennen"
+
+#: savefiledialog.cpp:44
+msgid "Skip"
+msgstr "Überspringen"
+
+#: savefiledialog.cpp:45
+msgid "Skip All"
+msgstr "Alle überspringen"
+
+#: savefiledialog.cpp:46
+msgid "Overwrite"
+msgstr "Überschreiben"
+
+#: savefiledialog.cpp:47
+msgid "Overwrite All"
+msgstr "Alle überschreiben"
+
+#: setupcamera.cpp:60
+msgid "Setup Cameras"
+msgstr "Kamera einrichten"
+
+#: setupcamera.cpp:68
+msgid "An Digital camera interface Kipi plugin"
+msgstr "Ein KIPI-Modul zum Zugriff auf Digitalkameras."
+
+#: setupcamera.cpp:99
+msgid "Model"
+msgstr "Modell"
+
+#: setupcamera.cpp:100
+msgid "Port"
+msgstr "Port"
+
+#: setupcamera.cpp:111
+msgid "Add..."
+msgstr "Hinzufügen ..."
+
+#: setupcamera.cpp:113
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: setupcamera.cpp:114
+msgid "Auto-Detect"
+msgstr "Automatische Erkennung"
+
+#: setupcamera.cpp:194
+msgid ""
+"Failed to auto-detect camera!\n"
+"Please retry or try setting manually."
+msgstr ""
+"Die Kamera kann nicht automatisch erkannt werden.\n"
+"Bitte versuchen Sie es noch einmal oder richten Sie die Kamera manuell ein."
+
+#: setupcamera.cpp:205
+msgid "Already added camera: "
+msgstr "Kamera bereits hinzugefügt: "
+
+#: setupcamera.cpp:207
+msgid "Found camera: "
+msgstr "Kamera gefunden: "

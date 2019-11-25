@@ -1,0 +1,131 @@
+<sect1 id="components.othertools">
+<title
+>Ytterligare integrations- och kommandoradsverktyg</title>
+<para
+>Detta avsnitt innehåller en lista över andra mindre verktyg och skript som levereras med Kdebluetooth. De flesta har begränsad användbarhet ensamma, men är avsedda att anropas inifrån skript eller av andra program. </para>
+
+<sect2 id="components.othertools.kioclient">
+<title
+>kioclient: Åtkomst av I/O-slavramverket från skript</title>
+<para
+>Det här är ett litet verktyg för att komma åt I/O-slavar från kommandoraden. Alltså är <command
+>kioclient</command
+> ett generellt verktyg, men eftersom det inte verkade som om det redan fanns, var jag tvungen att skriva det själv. </para>
+<para
+>Med <command
+>kioclient</command
+> kan du kopiera, lista, eller ta bort vilken fil eller katalog som helst som kan kommas åt av KDE:s I/O-ramverk. Du kan kopiera en fil från en FTP-server direkt till en annan server med WevDAV eller lista en katalog via SSH med fish I/O-slaven. Eller, och det är här det blir intressant för oss, du kan komma åt filer på din mobiltelefon via OBEX I/O-slaven. Verktyget kioclient används av ett exempelskript som levereras med Kbluetoothd: Skriptet <command
+>copy_images</command
+>. </para>
+<para
+>Du kan visa möjliga kommandoradsväljare med <command
+>kioclient --help</command
+>, så det här är bara några få exempel för att få ett första intryck. <screen
+>$ kioclient cat http://www.kde.org | head -1
+&lt;?xml version="1.0" encoding="UTF-8"?>
+$ kioclient ls -s ftp://ftp.kde.org | head -4
+     4096 .
+     4096 ..
+     4096 bin
+     4096 dev
+$ kioclient ls bluetooth:/
+local system
+Fred's 6230
+Fred's 3650
+$ kioclient ls "sdp://Fred's 6230/"
+OBEX Object Push
+OBEX File Transfer
+Dial-up networking
+Nokia PC Suite
+COM 1
+Voice Gateway
+Audio Gateway
+SIM ACCESS
+.More Services
+$
+</screen>
+</para>
+<para
+>Observera att kioclient, även om det är ett kommandoradsprogram, ändå måste köras inne i KDE, så du kan till exempel inte använda det i jobb som startas av cron. Den här begränsningen spelar dock ingen roll när du använder det för upptäcktsskript i Kbluetoothd. </para>
+
+</sect2>
+
+<sect2>
+<title
+>kbtsearch: Sökning efter enheter inne i skript</title>
+<para
+>Det här är ett kommandoradsverktyg som är avsett att användas i skript, som <command
+>kioclient</command
+> eller KDE:s <command
+>kdialog</command
+>. Det tillhandahåller ett kommandoradsgränssnitt till de två vanliga sökdialogrutorna i Kdebluetooth: sökdialogrutorna för enheter och tjänster. </para>
+<para
+>Du kan använda det när du vill att användaren ska välja en Blåtandsenhet eller hitta en särskild tjänst bland enheterna inom räckhåll. Som överallt, kommer dialogrutan för att välja tjänst ihåg enheterna som hittats och fyller omedelbart i tjänstlistan med tidigare hittade poster. Tjänsterna som för närvarande är tillgängliga läggs till i listan efter några sekunder. </para>
+<para
+>För att söka efter en enhet, skriv helt enkelt <command
+>kbtsearch --device</command
+>. När användaren har valt en enhet eller skrivit in en adress och klickat på <guibutton
+>Ok</guibutton
+>, skriver kbtsearch ut enhetens adress på standardutmatningen och returnerar med status 0. Om användaren klickar på <guibutton
+>Avbryt</guibutton
+>, skrivs ingenting ut, och status som returneras är 1: <screen
+>$ if ADDR=$(kbtsearch --device) ;
+
+> then echo "Vald adress: $ADDR.";
+
+> else echo "Ingen adress vald."; fi
+Vald adress: 00:60:57:5C:E6:BD.
+$
+</screen>
+</para>
+<para
+>Du kan också söka efter en enhet som implementerar en given Blåtandsprofil med <command
+>kbtsearch --uuid &lt;tjänst-UUID
+></command
+>. Se <ulink url="https://www.bluetooth.org/foundry/assignnumb/document/service_discovery"
+>Bluetooth Assigned Numbers (SDP)</ulink
+> för en fullständig lista över möjliga UUID:er för standardprofiler. Några alias definieras också av kbtsearch för vanligt använda profiler. Kör <command
+>kbtsearch --aliases</command
+> för att få en lista med tillgängliga alias. </para>
+<para
+>När användaren väljer en tjänst och klickar på <guibutton
+>Ok</guibutton
+>, returnerar kbtsearch 0 och skriver ut en rad på formen '[adress] [rfcomm-kanal]'. Det är klart att det bara är vettigt för tjänster som verkligen definierar en rfcomm-kanal. För närvarande finns det inget sätt att till exempel hämta en L2CAP PSM. Tala bara om för mig när du behöver det. <screen>
+$ if RET=( $(kbtsearch --uuid=FAX) ) ; 
+
+> then ADDRESS=${RET[0]}; CHANNEL=${RET[1]}; 
+
+> echo "Vald adress = $ADDRESS, kanal = $CHANNEL."; 
+
+> else echo "Ingen tjänst vald."; 
+
+> fi
+Vald adress = 00:60:57:5C:E6:BD, kanal = 1.
+$
+</screen
+> För ytterligare väljare, se <command
+>kbtsearch --help</command
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>kbtfax: Skicka telefaxmeddelanden med KDE-program</title>
+<para
+>Det här är ett hjälpskript för att göra det enklare att skicka telefax från vilket KDE-program som helst. Det beror på <command
+>efax</command
+> (tredje part), <command
+>kdeprintfax</command
+> och <command
+>kdesu</command
+> (båda ingår i kdebase) och verktyget <command
+>rfcomm</command
+> (en del av verktygen i BlueZ). </para>
+<para
+>När du försöker skicka ett telefax med <command
+>kdeprintfax</command
+> kan du välja telefaxgränssnittet som ska användas. Ett alternativ är "EFax", ett annat är "Other". Välj "Other", och leta därefter rätt på skriptet kbtfax i installationen av Kdebluetooth. Skriv in kommandoraden som anges i själva skriptet. Det är allt. Det finns dock mycket som kan gå fel. Känn dig fri att förbättra skriptet och skicka in programfixar. </para>
+</sect2>
+
+</sect1>
+

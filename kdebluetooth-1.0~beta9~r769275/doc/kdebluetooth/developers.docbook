@@ -1,0 +1,111 @@
+<chapter id="developers">
+<title>Developer Information</title>
+
+<sect1 id="developers.kbluetoothd">
+<title>KBluetoothD</title>
+<para>This section describes how to utilize kbluetoothd for your own application or access it from scripts to retrieve cached device names or similar.
+</para>
+
+<sect2>
+<title>The name cache</title>
+<para>
+The name cache tracks all name requests that and saves the results.
+With it, other applications and kbluetoothd itself can retrieve the name
+of another bluetoothd device from its unique bluetoothd device address,
+even if the device is not in range currently. This is mostly used to
+make the user interface more pleasant, because bluetooth addresses like
+00:60:AB:13:83:3D are a bit hard to remember.
+</para>
+<para>
+It will possibly be obsoleted as soon as BlueZ comes with
+it's own persistant name cache. 
+</para>
+<para>
+You can access the name cache via dcop. To look up an address in the name cache
+from the command line, type 
+<command>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;address&gt;</command>.
+To find out which device was last using a given name, you can do
+<command>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;name&gt;</command>.
+This command is case-insensitive. Also be aware that several devices might be
+configured to use the same name.
+</para>
+</sect2>
+
+<sect2>
+<title>The meta server</title>
+<para>
+If you want to implement a server application for a new bluetooth
+protocol, you can easily integrate it with kbluetoothd, so your
+server gets started automatically. 
+</para>
+<para>You have to supply a XML-file
+describing the SDP-record and an corresponding desktop file.
+kbluetoothd will then automatically set up a SDP-record, assign
+an rfcomm-channel and start listening on the selected channel.
+When someone connects to your service, kbluetoothd will start it
+and pass a socket for the already accepted connection to it. 
+The number of the handle is passed as a command line argument. 
+</para>
+<para>
+The kdebluetooth package contains <command>kbtserialchat</command>,
+which is (besides its use for debugging and maybe even chats..)
+meant as a rather simple sample program for how to integrate an application
+into the kdebluetooth framework. Since kbtserialchat is a client 
+and a server at the same time, you won't need to consider all command 
+line arguments like kbtserialchat does, especially not sdp-urls.
+</para>
+<para>
+The format of the SDP-XML-files should be rather self-descriptive, if
+you know how SDP-records are structured. One important point is
+how the parameter for the selected rfcomm-channels finds its way
+into the SDP-record for the server. Since the channel is selected
+by kbluetoothd automatically, you can't hardcode it into the SDP registration file.
+Instead you use &lt;uint valref='rfcommchannel' size='8'/&gt; as a placeholder.
+The rfcomm channels which are tried are defined in the corresponding
+desktop-file. <varname>X-KDE-KBLUETOOTHD-port</varname> is the first
+channels that is tried and <varname>X-KDE-KBLUETOOTHD-autoPortRange</varname>
+gives the number of following channels which are tried in ascending order
+if a channel is in use by another service already.
+</para>
+<para>
+kbluetoothd only supports rfcomm at the moment, but when there
+is need for it, we will also provide support for l2cap or similar.
+</para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title>The Device Discovery Service</title>
+<para>
+kbluetoothd can actively search for other devices and execute commands
+as soon as a device was detected or disappeared. You can configure this
+service in kbluetoothd's control center module under the "Device Discovery"-tab.
+</para>
+<para>
+The list of <emphasis>active</emphasis> discovery jobs as shown in the control center module is just a list of executables found in the directory <filename>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename>. You can also add new script to the global template directory in <filename>$PREFIX/share/apps/kdebluetooth/job-templates/</filename>. The scripts in this directory which end on ".template" will be displayed when the user clicks "Add new job..." and will simply be copied to the active job directory in the user's home directory.
+</para>
+<para>
+The included scripts are split in two to make it easier to update them without having to reinstall the scripts. The ".template"-part contains just the user-modifiable settings which are copied to the home directory. This script then calls the ".real"-part which stays in the template directory.
+</para>
+<para>
+To start writing your own discovery job, click "Add new job..." and select <phrase>Custom_Job</phrase>. This will copy the <filename>Custom_Job.template</filename>
+to your job directory. Now click "Configure..." to change the script. 
+This script lists all the possible command line options and environment variables which you have access to.
+</para>
+<para>
+Be aware that when you edit this custom script, all changes are gone if you remove it from the list of active jobs. If you want to distribute it, we recommend that you also split it into a template-part for the settings and a real-part which does the actual work.
+</para>
+
+<para>
+To be able to upload, download or delete files from within such a 
+discovery job, you can use <link linkend="components.othertools.kioclient">kioclient</link>.
+</para>
+<para>
+If you wrote some cool script for the device discovery service that
+might be useful for others, we will be happy to include it in 
+the distribution :)=
+</para>
+</sect2>
+
+</sect1>
+</chapter>
+

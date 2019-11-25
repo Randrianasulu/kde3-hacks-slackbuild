@@ -1,0 +1,23 @@
+From dd6b7af24d93632da43f15fd3d2322b513fee091 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Sat, 06 Aug 2011 08:24:05 +0000
+Subject: Fix FTBFS from prior commit
+
+---
+(limited to 'src/widgets/qsplitter.cpp')
+
+diff --git a/src/widgets/qsplitter.cpp b/src/widgets/qsplitter.cpp
+index efbe870..add3ade 100644
+--- a/src/widgets/qsplitter.cpp
++++ b/src/widgets/qsplitter.cpp
+@@ -52,8 +52,6 @@
+ #include "qptrlist.h"
+ #include "qstyle.h"
+ 
+-#include "qsplitter.moc"
+-
+ const uint Default = QT_QSPLITTER_DEFAULT;
+ 
+ static int mouseOffset;
+--
+cgit v0.9.0.2-52-g1de3

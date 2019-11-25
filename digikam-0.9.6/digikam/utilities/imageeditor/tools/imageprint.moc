@@ -1,0 +1,137 @@
+/****************************************************************************
+** Digikam::ImageEditorPrintDialogPage meta object code from reading C++ file 'imageprint.h'
+**
+** Created: Tue Jun 13 22:44:32 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imageprint.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ImageEditorPrintDialogPage::className() const
+{
+    return "Digikam::ImageEditorPrintDialogPage";
+}
+
+QMetaObject *Digikam::ImageEditorPrintDialogPage::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ImageEditorPrintDialogPage( "Digikam::ImageEditorPrintDialogPage", &Digikam::ImageEditorPrintDialogPage::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ImageEditorPrintDialogPage::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImageEditorPrintDialogPage", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ImageEditorPrintDialogPage::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImageEditorPrintDialogPage", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ImageEditorPrintDialogPage::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KPrintDialogPage::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "enable", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"toggleScaling", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "enable", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"toggleRatio", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "string", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotUnitChanged", 1, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ "value", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotHeightChanged", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ "value", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotWidthChanged", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"slotSetupDlg", 0, 0 };
+    static const QUParameter param_slot_6[] = {
+	{ "t", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotAlertSettings", 1, param_slot_6 };
+    static const QMetaData slot_tbl[] = {
+	{ "toggleScaling(bool)", &slot_0, QMetaData::Private },
+	{ "toggleRatio(bool)", &slot_1, QMetaData::Private },
+	{ "slotUnitChanged(const QString&)", &slot_2, QMetaData::Private },
+	{ "slotHeightChanged(double)", &slot_3, QMetaData::Private },
+	{ "slotWidthChanged(double)", &slot_4, QMetaData::Private },
+	{ "slotSetupDlg()", &slot_5, QMetaData::Private },
+	{ "slotAlertSettings(bool)", &slot_6, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ImageEditorPrintDialogPage", parentObject,
+	slot_tbl, 7,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ImageEditorPrintDialogPage.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ImageEditorPrintDialogPage::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ImageEditorPrintDialogPage" ) )
+	return this;
+    return KPrintDialogPage::qt_cast( clname );
+}
+
+bool Digikam::ImageEditorPrintDialogPage::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: toggleScaling((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: toggleRatio((bool)static_QUType_bool.get(_o+1)); break;
+    case 2: slotUnitChanged((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 3: slotHeightChanged((double)static_QUType_double.get(_o+1)); break;
+    case 4: slotWidthChanged((double)static_QUType_double.get(_o+1)); break;
+    case 5: slotSetupDlg(); break;
+    case 6: slotAlertSettings((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return KPrintDialogPage::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::ImageEditorPrintDialogPage::qt_emit( int _id, QUObject* _o )
+{
+    return KPrintDialogPage::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ImageEditorPrintDialogPage::qt_property( int id, int f, QVariant* v)
+{
+    return KPrintDialogPage::qt_property( id, f, v);
+}
+
+bool Digikam::ImageEditorPrintDialogPage::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

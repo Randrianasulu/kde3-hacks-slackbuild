@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Information för utvecklare</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>Kbluetoothd</title>
+<para
+>Detta avsnitt beskriver hur man utnyttjar Kbluetoothd i egna program, eller kommer åt det från skript för att hämta enhetsnamn i cachen eller liknande. </para>
+
+<sect2>
+<title
+>Namncachen</title>
+<para
+>Namncachen spårar varje begäran om namn och sparar resultaten. Andra program och Kbluetoothd själv kan använda den för att hämta namnet på en annan Blåtandsenhet från dess unika enhetsadress, även om enheten  för närvarande inte är inom räckhåll. Detta används oftast för att göra användargränssnittet behagligare, eftersom Blåtandsadresser som 00:60:AB:13:83:3D är något svåra att komma ihåg. </para>
+<para
+>Den blir möjligen föråldrad så fort BlueZ levereras med sin egen bestående namncache. </para>
+<para
+>Du kan komma åt namncachen via DCOP. För att slå upp en adress i namncachen från kommandoraden, skriv <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;adress&gt;</command
+>. För att ta reda på vilken enhet som senast använde ett givet namn, kan du skriva <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;namn&gt;</command
+>. Kommandot är inte skiftlägeskänsligt. Var också medveten om att flera enheter kan vara inställda att använda samma namn. </para>
+</sect2>
+
+<sect2>
+<title
+>Metaservern</title>
+<para
+>Om du vill implementera ett serverprogram för ett nytt Blåtandsprotokoll, kan du enkelt integrera det med Kbluetoothd så att din server startas automatiskt. </para>
+<para
+>Du måste tillhandahålla en XML-fil som beskriver SDP-posten och en motsvarande skrivbordsfil. Då skapar Kbluetoothd automatiskt en SDP-post, tilldelar en rfcomm-kanal och börjar lyssna på vald kanal. När någon ansluter till din tjänst, startar Kbluetoothd den och skickar med ett uttag för den redan accepterade anslutningen till den. Handtagsnumret skickas som en kommandoradsväljare. </para>
+<para
+>Kdebluetooth-paketet innehåller <command
+>kbtserialchat</command
+> som (förutom dess användning för felsökning och kanske till och med chatt) är avsett som ett ganska enkelt exempelprogram för att visa hur ett program integreras i Kdebluetooth-ramverket. Eftersom kbtserialchat är en klient och server samtidigt, behöver du inte ta hänsyn till alla kommandoradsväljare som kbtserialchat gör, särskilt inte SDP-webbadresser. </para>
+<para
+>Formatet på SDP XML-filerna bör vara ganska självförklarande, om du känner till hur SDP-poster är strukturerade. En viktig sak är hur parametrarna för de valda rfcomm-kanalerna tar sig fram till serverns SDP-post. Eftersom kanalerna väljes automatiskt av Kbluetoothd, kan man inte direktkoda dem i SDP-registreringsfilen. Istället använder man &lt;uint valref='rfcommchannel' size='8'/&gt; som platsmarkör. De rfcomm-kanaler som kopplas definieras i motsvarande skrivbordsfil. Den första kanalen som provas är <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> och <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> anger antalet efterföljande kanaler som provas i stigande ordning om en kanal redan används av en annan tjänst. </para>
+<para
+>Kbluetoothd stöder för närvarande bara rfcomm, men när det finns behov kommer vi också att tillhandahålla stöd för l2cap eller liknande. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>Tjänsten för att upptäcka enheter</title>
+<para
+>Kbluetoothd kan aktivt söka efter andra enheter och köra kommandon så fort en enhet detekteras eller försvinner. Du kan ställa in tjänsten i Kbluetoothds modul i Inställningscentralen under fliken "Upptäcka enheter". </para>
+<para
+>Listan med <emphasis
+>aktiva</emphasis
+> upptäcktsjobb som visas i Inställningscentralens modul är bara en lista över körbara filer som finns i katalogen <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. Du kan också lägga till nya skript i den globala mallkatalogen <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Skripten i den här katalogen som slutar med ".template" visas när användaren klickar på "Lägg till nytt jobb..." och kopieras helt enkelt till katalogen med aktiva jobb i användarens hemkatalog. </para>
+<para
+>Skripten som ingår är uppdelade i två för att göra det enklare att uppdatera dem utan att behöva installera om dem. Malldelen ".template" innehåller bara inställningarna som kan ändras av användaren, och kopieras till hemkatalogen. Skriptet anropar sedan den riktiga delen ".real" som finns kvar i mallkatalogen. </para>
+<para
+>För att börja skriva ett eget upptäcktsjobb, klicka på "Lägg till nytt jobb..." och välj <phrase
+>Custom_Job</phrase
+>. Då kopieras <filename
+>Custom_Job.template</filename
+> till din jobbkatalog. Klicka nu på "Anpassa..." för att ändra skriptet. Skriptet listar alla möjliga kommandoradsväljare och miljövariabler som du har tillgång till. </para>
+<para
+>Var medveten om att när du redigerar det egna skriptet, försvinner alla ändringar om du tar bort det från listan över aktiva jobb. Om du vill sprida det, rekommenderar vi att du också delar det i en malldel för inställningarna och en riktig del som gör själva arbetet. </para>
+
+<para
+>För att kunna ladda upp, ladda ner eller ta bort filer inne i ett sådant upptäcktsjobb, kan du använda <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Om du skrivit något häftigt skript till tjänsten för att upptäcka enheter, som kan vara användbart för andra, inkluderar vi det med glädje i distributionen. </para>
+</sect2>
+
+</sect1>
+</chapter>
+

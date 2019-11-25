@@ -1,0 +1,86 @@
+<sect1 id="components.handsfree">
+<title
+>kbthandsfree: Chiama e parla usando il tuo computer</title>
+<para
+>Il client viva voce è un'implementazione del profilo viva voce di KBluetooth. Questo protocollo è simile al protocollo cuffie, ma fornisce più funzioni che il più vecchio protocollo cuffie. Originariamente, il profilo viva voce era stato progettato per essere usato nei dispositivi viva voce delle auto, ma oggi cuffie Bluetooth sempre più comuni supportano il profilo viva voce. </para>
+<para
+>Con kbthandsfree puoi usare il tuo computer come un dispositivo viva voce. Puoi digitare numeri (anche da <link linkend="handsfree.kaddressbook"
+>kaddressbook</link
+>) </para>
+
+<sect2>
+<title
+>Requisiti</title>
+<sect3>
+<title
+>Supporto SCO del kernel</title>
+<para
+>Per la trasmissione di voce su Bluetooth, il profilo viva voce ha bisogno di creare una connessione 'SCO'. Questo è un tipo speciale di connessione di Bluetooth ottimizzato per dati vocali. Sfortunatamente, il supporto per SCO era difettoso nelle vecchie versioni dei kernel 2.4. Per i kernel precedenti al 2.4.24, potrebbe servire applicare le correzioni fornite da Marcel Holtmann su <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+>. Ciò che è ancora peggio è che il supporto SCO sembra essere ancora difettoso nella serie 2.6 di Linux, e attualmente non ci sono correzioni per sistemare il problema (per piacere correggetemi se sbaglio). Quindi l'unico modo di usare kbthandsfree come un vero viva voce è usare un kernel 2.4 recente. Senza supporto SCO, puoi usare kbthandsfree solo per comporre numeri e cose simili. </para>
+</sect3>
+
+<sect3>
+<title
+>Supporto SCO degli adattatori</title>
+<para
+>Non tutti gli adattatori Bluetooth supportano SCO correttamente. Per esempio, pare che le antenne Mitsumi più vecchie causassero problemi, anche se il modulo sostiene di supportare SCO. Non conosco altri modi di sapere se funziona oltre a provare. Però, i moduli più recenti basati sul comunissimo chipset CRS molto probabilmente funzioneranno. </para>
+</sect3>
+
+<sect3>
+<title
+>Modalità voce</title>
+<para
+>Il tuo adattatore Bluetooth deve essere impostato nel modo voce corretto per far funzionare la trasmissione vocale. Attualmente solo il modo 0x0060 è supportato da kbthandsfree. Questo è il valore predefinito nella versione attuale di bluez, ma puoi cambiarlo con il comando <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Classe di dispositivo</title>
+<para
+>Se vuoi stabilire la connessione a kbthandsfree usando il tuo telefono invece di chiamare kbthandsfree sul tuo PC, devi assicurarti che il tuo PC sia riconosciuto come un dispositivo viva voce. Quando hai attivato il viva voce nella scheda servizi locali della configurazione di KBluetooth, l'infrastruttura configurerà automaticamente una voce SDP corretta che dirà al telefono che il tuo computer offre il servizio viva voce. </para>
+<para
+>Però, alcuni telefoni come il T68i dipendono da una classe di dispositivi adeguatamente impostata (un'impostazione di livello inferiore che viene controllata prima della voce SDP) che lo identifichi come un viva voce invece che un computer. Puoi farlo cambiando la riga della classe 0xXXXXXX in hcid.conf alla classe 0x700408 (DA FARE: questo è compatibile con i flag necessari per obex...?) o con il comando <command
+>khciconfig</command
+>. Siccome un dispositivo Bluetooth può avere una sola classe di dispositivo alla volta, il tuo computer potrebbe essere indicato come dispositivo audio/viva voce ricercandolo con altri dispositivi Bluetooth. Però non conosciamo nessun serio effetto collaterale causato da ciò. </para>
+<para
+>Normalmente è più facile connettersi dal computer al viva voce che il contrario. Però l'impostazione della classe di dispositivo è necessaria anche se vuoi che il tuo telefono si colleghi automaticamente quando c'è una chiamata in arrivo. Non tutti i telefoni possono farlo. La maggior parte dei Nokia non può, per esempio, mentri il S/E T68i può. Per piacere nota come il dispositivo viva voce debba essere il primo nell'elenco di dispositivi accoppiati per fargli connettere automaticamente il T68i. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Suggerimenti e trucchi</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Da KDE 3.2 puoi configurare la rubrica per usare applicazioni esterne per comporre numeri. Per usare kbdthandsfree, avvia <command
+>kaddressbook</command
+>, quindi vai a <command
+>Impostazioni</command
+>, <command
+>Configura KAddressbook...</command
+>, <command
+>Rubrica indirizzi</command
+>, Scheda <command
+>Generale</command
+> e usa <command
+>kbthandsfree --phonenumber %N</command
+> come script d'aggancio per il telefono. Per ulteriori opzioni da riga di comando guarda <command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>Puoi ottenere una panoramica migliore delle conversazioni registrate in konqueror se selezioni "Vista informazioni" come modalità di visualizzazione. Ciò mostrerà le tag dei file ogg vorbis, così potrai vedere facilmente chi ha chiamato e quanto a lungo avete parlato. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

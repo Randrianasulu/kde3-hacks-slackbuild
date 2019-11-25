@@ -1,0 +1,138 @@
+<chapter id="slideshow">
+<chapterinfo>
+
+<title
+>Die Fortgeschrittene Diaschau</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul<quote
+>Fortgeschrittene Diaschau</quote
+> erstellt ein konfigurierbare Diaschau Ihrer Bilder. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Mit diesem KIPI-Modul können Sie perfekte Diaschauen mit drei Mausklicks erstellen. </para>
+
+<sect1 id="using-plugin-slideshowsettings">
+<title
+>Einstellungen</title>
+
+<para
+>Nach dem Starten des Moduls <emphasis
+>Fortgeschrittene Diaschau</emphasis
+> erscheint ein Fenster mit Fragen wie Sie Ihre Diaschau dargestellt haben wollen. Sie können hier zwischen den von Ihnen ausgewählten und allen Bildern des Albums wählen. </para>
+
+<para
+>Die Option <guilabel
+>OpenGL-Übergänge in der Präsentation verwenden</guilabel
+> aktiviert sehr elegante Bildübergänge mittels OpenGL. Sie müssen dazu allerdings eine entsprechende Graphikkarte besitzen, da sonst die Diaschau sehr langsam sein wird. </para>
+
+<para
+>Die Option <guilabel
+>Dateinamen anzeigen</guilabel
+> sorgt dafür, dass der Dateiname der Bilder in der linken unteren Ecke während der Präsentation angezeigt wird. </para>
+
+<para
+>Die Option <guilabel
+>Schleife</guilabel
+> sorgt dafür das die Präsentation in einer Endlosschleife angezeigt wird. Sie können Sie danach manuell mit <keycombo
+><keycap
+>Esc</keycap
+></keycombo
+> abbrechen. </para>
+
+<para
+>Die Option <guilabel
+>Bilder zufällig wählen</guilabel
+> sorgt dafür, dass die Bilder in einer zufälligen Reihenfolge angezeigt wird. Es wird also nicht die Reihenfolge der Bilder in dem Album genutzt. </para>
+
+<para
+>Unter <guilabel
+>Verzögerung zwischen den Bildern</guilabel
+> kann der zeitliche Abstand zwischen den einzelnen Bildern gesetzt werden. 1500 Millisekunden entsprechen 1,5 Sekunden und sind ein guter Standardwert. Der beste Abstand hängt allerdings von Ihrem Rechner und dem gewählten Übergangseffekt ab. Sie sollten dies also austesten bevor Sie die Präsentation Ihren Freunden zeigen! </para>
+
+<para
+>Es gibt mehr als ein Dutzend <guilabel
+>Übergangseffekte</guilabel
+> zwischen denen Sie auswählen können. <emphasis
+>Zufällig</emphasis
+> wählt bei jedem Übergang zwischen den Bildern einen anderen Effekt aus. </para>
+
+<figure>
+    <title
+>Der Diaschau Dialog</title>
+    <graphic srccredit="The Slideshow Dialog" fileref="slideshow_dialog.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-slideshowinaction">
+<title
+>Diaschau in Aktion</title>
+
+<para
+>Während der Diaschau können Sie auf eine Werkzeugleiste am oberen linken Bildschirmrand zugreifen. Bewegen Sie die Maus in diese Ecke um Sie einzuschalten. </para>
+
+<para
+>Mit dieser Werkzeugleiste können Sie Die Präsentation pausieren/anstarten, zu dem vorhergehenden und dem nächsten Bild springen und die Diaschau stoppen. </para>
+
+<para
+>Am linken unteren Bildschirmrand können Sie den aktuellen Dateinamen, die Position des aktuellen Bildes und die gesamte Anzahl der Bilder in Ihrer Präsentation sehen. </para>
+
+<figure>
+    <title
+>Das Modul "Fortgeschrittene Diaschau" in Aktion</title>
+    <graphic srccredit="The Slideshow Plugin in Action" fileref="slideshow.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

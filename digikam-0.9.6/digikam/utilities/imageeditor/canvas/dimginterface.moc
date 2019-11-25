@@ -1,0 +1,269 @@
+/****************************************************************************
+** Digikam::DImgInterface meta object code from reading C++ file 'dimginterface.h'
+**
+** Created: Tue Jun 13 22:44:29 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "dimginterface.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::DImgInterface::className() const
+{
+    return "Digikam::DImgInterface";
+}
+
+QMetaObject *Digikam::DImgInterface::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__DImgInterface( "Digikam::DImgInterface", &Digikam::DImgInterface::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::DImgInterface::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::DImgInterface", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::DImgInterface::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::DImgInterface", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::DImgInterface::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "loadingDescription", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "img", &static_QUType_ptr, "DImg", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotImageLoaded", 2, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotImageSaved", 2, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "loadingDescription", &static_QUType_ptr, "LoadingDescription", QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotLoadingProgress", 2, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotSavingProgress", 2, param_slot_3 };
+    static const QUMethod slot_4 = {"slotUseRawImportSettings", 0, 0 };
+    static const QUMethod slot_5 = {"slotUseDefaultSettings", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotImageLoaded(const LoadingDescription&,const DImg&)", &slot_0, QMetaData::Protected },
+	{ "slotImageSaved(const QString&,bool)", &slot_1, QMetaData::Protected },
+	{ "slotLoadingProgress(const LoadingDescription&,float)", &slot_2, QMetaData::Protected },
+	{ "slotSavingProgress(const QString&,float)", &slot_3, QMetaData::Protected },
+	{ "slotUseRawImportSettings()", &slot_4, QMetaData::Private },
+	{ "slotUseDefaultSettings()", &slot_5, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalModified", 0, 0 };
+    static const QUParameter param_signal_1[] = {
+	{ "moreUndo", &static_QUType_bool, 0, QUParameter::In },
+	{ "moreRedo", &static_QUType_bool, 0, QUParameter::In },
+	{ "canSave", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalUndoStateChanged", 3, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalLoadingStarted", 1, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"signalLoadingProgress", 2, param_signal_3 };
+    static const QUParameter param_signal_4[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"signalImageLoaded", 2, param_signal_4 };
+    static const QUParameter param_signal_5[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod signal_5 = {"signalSavingProgress", 2, param_signal_5 };
+    static const QUParameter param_signal_6[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_6 = {"signalImageSaved", 2, param_signal_6 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalModified()", &signal_0, QMetaData::Protected },
+	{ "signalUndoStateChanged(bool,bool,bool)", &signal_1, QMetaData::Protected },
+	{ "signalLoadingStarted(const QString&)", &signal_2, QMetaData::Protected },
+	{ "signalLoadingProgress(const QString&,float)", &signal_3, QMetaData::Protected },
+	{ "signalImageLoaded(const QString&,bool)", &signal_4, QMetaData::Protected },
+	{ "signalSavingProgress(const QString&,float)", &signal_5, QMetaData::Protected },
+	{ "signalImageSaved(const QString&,bool)", &signal_6, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::DImgInterface", parentObject,
+	slot_tbl, 6,
+	signal_tbl, 7,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__DImgInterface.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::DImgInterface::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::DImgInterface" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+// SIGNAL signalModified
+void Digikam::DImgInterface::signalModified()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalUndoStateChanged
+void Digikam::DImgInterface::signalUndoStateChanged( bool t0, bool t1, bool t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_bool.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    static_QUType_bool.set(o+3,t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalLoadingStarted
+void Digikam::DImgInterface::signalLoadingStarted( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2, t0 );
+}
+
+// SIGNAL signalLoadingProgress
+void Digikam::DImgInterface::signalLoadingProgress( const QString& t0, float t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 3 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_ptr.set(o+2,&t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalImageLoaded
+void Digikam::DImgInterface::signalImageLoaded( const QString& t0, bool t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 4 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSavingProgress
+void Digikam::DImgInterface::signalSavingProgress( const QString& t0, float t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 5 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_ptr.set(o+2,&t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalImageSaved
+void Digikam::DImgInterface::signalImageSaved( const QString& t0, bool t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 6 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+bool Digikam::DImgInterface::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotImageLoaded((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(const DImg&)*((const DImg*)static_QUType_ptr.get(_o+2))); break;
+    case 1: slotImageSaved((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 2: slotLoadingProgress((const LoadingDescription&)*((const LoadingDescription*)static_QUType_ptr.get(_o+1)),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 3: slotSavingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 4: slotUseRawImportSettings(); break;
+    case 5: slotUseDefaultSettings(); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::DImgInterface::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalModified(); break;
+    case 1: signalUndoStateChanged((bool)static_QUType_bool.get(_o+1),(bool)static_QUType_bool.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 2: signalLoadingStarted((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 3: signalLoadingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 4: signalImageLoaded((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 5: signalSavingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 6: signalImageSaved((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    default:
+	return QObject::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::DImgInterface::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool Digikam::DImgInterface::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,126 @@
+<chapter id="colorimages">
+<chapterinfo>
+
+<title
+>Bilderfarbverarbeitung</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul "Bilderfarbverarbeitung" ist ein Werkzeug, um die Farben eines Bildes zu ändern oder zu verbessern. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Dieses Modul kann dazu genutzt werden um die Farben von Bilder eines Albums zu verbessern. Es benutzt das Programm "convert" aus dem "ImageMagick" Paket. Eine Vorschau des Effektes ist verfügbar. Die folgenden Farbfilter können genutzt werden: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Kontrast verringern</emphasis
+>: reduziert den Bildkontrast.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Farbtiefe</emphasis
+>: ändert die Farbtiefe eines Bildes.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Abgleichen</emphasis
+>: führt einen Histogrammabgleich für das Bild durch.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Verzerren</emphasis
+>: führt Farben innerhalb eines Abstands zusammen.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Graustufen</emphasis
+>: konvertiert das Bild in ein Graustufenbild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Kontrast erhöhen</emphasis
+>: erhöht den Bildkontrast.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Monochrom</emphasis
+>: verändert das Bild in ein Schwarz/Weiß-Bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Invertieren</emphasis
+>: ersetzt jeden Pixel durch seine Komplementärfarbe.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Normalisieren</emphasis
+>: verändert das Bild damit es den vollen Farbbereich benutzt.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Segmentieren</emphasis
+>: segmentiert das Bild durch Analyse des Histogramms der Farbkomponenten.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Trimmen</emphasis
+>: trimmt ein Bild mit der umgekehrten Verzerrtechnik.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Sie können <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/ColorImages/index.html"
+> <citetitle
+>hier </citetitle
+> </ulink
+> einige Beispiele für dieses Modul sehen.</para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

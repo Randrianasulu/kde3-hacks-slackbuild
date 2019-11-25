@@ -1,0 +1,286 @@
+From 561d1d6802dd50ddc9f441442cc2c351dd2759d6 Mon Sep 17 00:00:00 2001
+From: Darrell Anderson <humanreadable@yahoo.com>
+Date: Wed, 22 Aug 2012 18:05:27 +0000
+Subject: Fix a potential resize bug and apply xpdf 3.02pl4 and 3.02pl5 security patches.
+
+This partially resolves bug report 1175.
+---
+diff --git a/kpdf/xpdf/fofi/FoFiType1.cc b/kpdf/xpdf/fofi/FoFiType1.cc
+index efad5ee..88b35ec 100644
+--- a/kpdf/xpdf/fofi/FoFiType1.cc
++++ b/kpdf/xpdf/fofi/FoFiType1.cc
+@@ -224,7 +224,7 @@ void FoFiType1::parse() {
+ 		code = code * 8 + (*p2 - '0');
+ 	      }
+ 	    }
+-	    if (code < 256) {
++	    if (code >= 0 && code < 256) {
+ 	      for (p = p2; *p == ' ' || *p == '\t'; ++p) ;
+ 	      if (*p == '/') {
+ 		++p;
+@@ -235,9 +235,14 @@ void FoFiType1::parse() {
+ 	    }
+ 	  }
+ 	} else {
+-	  if (strtok(buf, " \t") &&
+-	      (p = strtok(NULL, " \t\n\r")) && !strcmp(p, "def")) {
+-	    break;
++	  p = strtok(buf, " \t\n\r");
++	  if (p)
++	  {
++	    if (!strcmp(p, "def")) break;
++	    if (!strcmp(p, "readonly")) break;
++	    // the spec does not says this but i'm mantaining old xpdf behaviour that accepts "foo def" as end of the encoding array
++	    p = strtok(buf, " \t\n\r");
++	    if (p && !strcmp(p, "def")) break;
+ 	  }
+ 	}
+       }
+diff --git a/kpdf/xpdf/splash/Splash.cc b/kpdf/xpdf/splash/Splash.cc
+index 30179fd..2b91e4e 100644
+--- a/kpdf/xpdf/splash/Splash.cc
++++ b/kpdf/xpdf/splash/Splash.cc
+@@ -12,6 +12,7 @@
+ 
+ #include <stdlib.h>
+ #include <string.h>
++#include <limits.h>
+ #include "gmem.h"
+ #include "SplashErrorCodes.h"
+ #include "SplashMath.h"
+@@ -1501,6 +1502,11 @@ SplashError Splash::fillWithPattern(SplashPath *path, GBool eo,
+     xPath->aaScale();
+   }
+   xPath->sort();
++  if (!&xPath->segs[0])
++  {
++    delete xPath;
++    return splashErrEmptyPath;
++  }
+   scanner = new SplashXPathScanner(xPath, eo);
+ 
+   // get the min and max x and y values
+@@ -1937,7 +1943,10 @@ SplashError Splash::fillImageMask(SplashImageMaskSource src, void *srcData,
+   xq = w % scaledWidth;
+ 
+   // allocate pixel buffer
+-  pixBuf = (SplashColorPtr)gmalloc((yp + 1) * w);
++  if (yp < 0 || yp > INT_MAX - 1) {
++    return splashErrBadArg;
++  }
++  pixBuf = (SplashColorPtr)gmallocn(yp + 1, w);
+ 
+   // initialize the pixel pipe
+   pipeInit(&pipe, 0, 0, state->fillPattern, NULL, state->fillAlpha,
+@@ -2233,9 +2242,12 @@ SplashError Splash::drawImage(SplashImageSource src, void *srcData,
+   xq = w % scaledWidth;
+ 
+   // allocate pixel buffers
+-  colorBuf = (SplashColorPtr)gmalloc((yp + 1) * w * nComps);
++  if (yp < 0 || yp > INT_MAX - 1 || w > INT_MAX / nComps) {
++    return splashErrBadArg;
++  }
++  colorBuf = (SplashColorPtr)gmallocn(yp + 1, w * nComps);
+   if (srcAlpha) {
+-    alphaBuf = (Guchar *)gmalloc((yp + 1) * w);
++    alphaBuf = (Guchar *)gmallocn(yp + 1, w);
+   } else {
+     alphaBuf = NULL;
+   }
+diff --git a/kpdf/xpdf/splash/SplashBitmap.cc b/kpdf/xpdf/splash/SplashBitmap.cc
+index 0cb1a75..62bbd8e 100644
+--- a/kpdf/xpdf/splash/SplashBitmap.cc
++++ b/kpdf/xpdf/splash/SplashBitmap.cc
+@@ -11,6 +11,7 @@
+ #endif
+ 
+ #include <stdio.h>
++#include <limits.h>
+ #include "gmem.h"
+ #include "SplashErrorCodes.h"
+ #include "SplashBitmap.h"
+@@ -27,30 +28,48 @@ SplashBitmap::SplashBitmap(int widthA, int heightA, int rowPad,
+   mode = modeA;
+   switch (mode) {
+   case splashModeMono1:
+-    rowSize = (width + 7) >> 3;
++    if (width > 0) {
++      rowSize = (width + 7) >> 3;
++    } else {
++      rowSize = -1;
++    }
+     break;
+   case splashModeMono8:
+-    rowSize = width;
++    if (width > 0) {
++      rowSize = width;
++    } else {
++      rowSize = -1;
++    }
+     break;
+   case splashModeRGB8:
+   case splashModeBGR8:
+-    rowSize = width * 3;
++    if (width > 0 && width <= INT_MAX / 3) {
++      rowSize = width * 3;
++    } else {
++      rowSize = -1;
++    }
+     break;
+ #if SPLASH_CMYK
+   case splashModeCMYK8:
+-    rowSize = width * 4;
++    if (width > 0 && width <= INT_MAX / 4) {
++      rowSize = width * 4;
++    } else {
++      rowSize = -1;
++    }
+     break;
+ #endif
+   }
+-  rowSize += rowPad - 1;
+-  rowSize -= rowSize % rowPad;
+-  data = (SplashColorPtr)gmalloc(rowSize * height);
++  if (rowSize > 0) {
++    rowSize += rowPad - 1;
++    rowSize -= rowSize % rowPad;
++  }
++  data = (SplashColorPtr)gmallocn(height, rowSize);
+   if (!topDown) {
+     data += (height - 1) * rowSize;
+     rowSize = -rowSize;
+   }
+   if (alphaA) {
+-    alpha = (Guchar *)gmalloc(width * height);
++    alpha = (Guchar *)gmallocn(width, height);
+   } else {
+     alpha = NULL;
+   }
+diff --git a/kpdf/xpdf/splash/SplashErrorCodes.h b/kpdf/xpdf/splash/SplashErrorCodes.h
+index e7f1f0b..711271c 100644
+--- a/kpdf/xpdf/splash/SplashErrorCodes.h
++++ b/kpdf/xpdf/splash/SplashErrorCodes.h
+@@ -31,4 +31,6 @@
+ 
+ #define splashErrZeroImage       9      // image of 0x0
+ 
++#define splashErrBadArg          9	// bad argument
++
+ #endif
+diff --git a/kpdf/xpdf/xpdf/Gfx.cc b/kpdf/xpdf/xpdf/Gfx.cc
+index b37dcb5..e3df838 100644
+--- a/kpdf/xpdf/xpdf/Gfx.cc
++++ b/kpdf/xpdf/xpdf/Gfx.cc
+@@ -461,6 +461,7 @@ Gfx::Gfx(XRef *xrefA, OutputDev *outA, int pageNum, Dict *resDict,
+     baseMatrix[i] = state->getCTM()[i];
+   }
+   formDepth = 0;
++  parser = NULL;
+   abortCheckCbk = abortCheckCbkA;
+   abortCheckCbkData = abortCheckCbkDataA;
+ 
+@@ -500,6 +501,7 @@ Gfx::Gfx(XRef *xrefA, OutputDev *outA, Dict *resDict,
+     baseMatrix[i] = state->getCTM()[i];
+   }
+   formDepth = 0;
++  parser = NULL;
+   abortCheckCbk = abortCheckCbkA;
+   abortCheckCbkData = abortCheckCbkDataA;
+ 
+diff --git a/kpdf/xpdf/xpdf/PSOutputDev.cc b/kpdf/xpdf/xpdf/PSOutputDev.cc
+index d35739a..4fb2cbf 100644
+--- a/kpdf/xpdf/xpdf/PSOutputDev.cc
++++ b/kpdf/xpdf/xpdf/PSOutputDev.cc
+@@ -4386,7 +4386,7 @@ void PSOutputDev::doImageL1Sep(GfxImageColorMap *colorMap,
+ 	     width, -height, height);
+ 
+   // allocate a line buffer
+-  lineBuf = (Guchar *)gmalloc(4 * width);
++  lineBuf = (Guchar *)gmallocn(width, 4);
+ 
+   // set up to process the data stream
+   imgStr = new ImageStream(str, width, colorMap->getNumPixelComps(),
+diff --git a/kpdf/xpdf/xpdf/Stream.cc b/kpdf/xpdf/xpdf/Stream.cc
+index 2021952..2c1db5b 100644
+--- a/kpdf/xpdf/xpdf/Stream.cc
++++ b/kpdf/xpdf/xpdf/Stream.cc
+@@ -323,6 +323,10 @@ ImageStream::ImageStream(Stream *strA, int widthA, int nCompsA, int nBitsA) {
+   } else {
+     imgLineSize = nVals;
+   }
++  if (width > INT_MAX / nComps) {
++    // force a call to gmallocn(-1,...), which will throw an exception
++    imgLineSize = -1;
++  }
+   imgLine = (Guchar *)gmallocn(imgLineSize, sizeof(Guchar));
+   imgIdx = nVals;
+ }
+diff --git a/kpdf/xpdf/xpdf/XRef.cc b/kpdf/xpdf/xpdf/XRef.cc
+index d12d812..2e0d1ce 100644
+--- a/kpdf/xpdf/xpdf/XRef.cc
++++ b/kpdf/xpdf/xpdf/XRef.cc
+@@ -52,6 +52,8 @@ public:
+   // generation 0.
+   ObjectStream(XRef *xref, int objStrNumA);
+ 
++  GBool isOk() { return ok; }
++
+   ~ObjectStream();
+ 
+   // Return the object number of this object stream.
+@@ -67,6 +69,7 @@ private:
+   int nObjects;			// number of objects in the stream
+   Object *objs;			// the objects (length = nObjects)
+   int *objNums;			// the object numbers (length = nObjects)
++  GBool ok;
+ };
+ 
+ ObjectStream::ObjectStream(XRef *xref, int objStrNumA) {
+@@ -80,6 +83,7 @@ ObjectStream::ObjectStream(XRef *xref, int objStrNumA) {
+   nObjects = 0;
+   objs = NULL;
+   objNums = NULL;
++  ok = gFalse;
+ 
+   if (!xref->fetch(objStrNum, 0, &objStr)->isStream()) {
+     goto err1;
+@@ -105,6 +109,13 @@ ObjectStream::ObjectStream(XRef *xref, int objStrNumA) {
+     goto err1;
+   }
+ 
++  // this is an arbitrary limit to avoid integer overflow problems
++  // in the 'new Object[nObjects]' call (Acrobat apparently limits
++  // object streams to 100-200 objects)
++  if (nObjects > 1000000) {
++    error(-1, "Too many objects in an object stream");
++    goto err1;
++  }
+   objs = new Object[nObjects];
+   objNums = (int *)gmallocn(nObjects, sizeof(int));
+   offsets = (int *)gmallocn(nObjects, sizeof(int));
+@@ -161,10 +172,10 @@ ObjectStream::ObjectStream(XRef *xref, int objStrNumA) {
+   }
+ 
+   gfree(offsets);
++  ok = gTrue;
+ 
+  err1:
+   objStr.free();
+-  return;
+ }
+ 
+ ObjectStream::~ObjectStream() {
+@@ -837,6 +848,11 @@ Object *XRef::fetch(int num, int gen, Object *obj) {
+ 	delete objStr;
+       }
+       objStr = new ObjectStream(this, e->offset);
++      if (!objStr->isOk()) {
++	delete objStr;
++	objStr = NULL;
++	goto err;
++      }
+     }
+     objStr->getObject(e->gen, num, obj);
+     break;
+--
+cgit v0.9.0.2-52-g1de3

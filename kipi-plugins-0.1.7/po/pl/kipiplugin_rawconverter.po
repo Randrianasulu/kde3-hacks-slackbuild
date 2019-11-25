@@ -1,0 +1,293 @@
+# translation of kipiplugin_rawconverter.po to Polish
+# translation of kipiplugin_rawconverter.po to
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Anna Sawicka <ania@kajak.org.pl>, 2004.
+# Igor Klimer <kigro@op.pl>, 2004.
+# Igor Klimer <kigro@vp.pl>, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-09-08 09:25+0200\n"
+"Last-Translator: Igor Klimer <kigro@vp.pl>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Igor Klimer"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kigro@vp.pl"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Nie można rozpoznać pliku RAW"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Producent: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Model: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Utworzono: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Jasność obiektywu: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Ogniskowa: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Migawka: 1/%1 s\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Czułość: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Grupowy konwerter zdjęć w formacie RAW"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Kon&wertuj"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Przerwij"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Plik RAW"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Plik wyjściowy"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Aparat"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Zapisz ustawienia"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "Konwerter zdjęć RAW"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr ""
+"Wtyczka Kipi do konwersji zdjęć RAW\n"
+"Korzysta z biblioteki KDcraw"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Oryginalny autor"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Opiekun"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr ""
+"<p>Rozpocznij konwersję zdjęć w formacie RAW, korzystając z aktualnych ustawień"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Przerwij aktualną operację konwersji plików RAW"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Zakończ konwerter RAW"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Brak plików RAW na liście do przetworzenia"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Zapisz zdjęcie RAW skonwertowane z '%1' jako"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Nie powiódł się zapis zdjęcia %1"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "Konwerter zdjęć RAW"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "<p>Zakończ konwerter RAW"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" nie jest plikiem RAW."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Nie można wczytać zdjęcia po przetworzeniu"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Format pliku wyjściowego:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Wybierz tutaj format pliku wyjściowego:"
+"<p><b>JPEG</b>: przetworzone zdjęcie będzie w formacie JPEG. Pliki uzyskane "
+"korzystając z tego formatu będą małe. Podczas konwersji RAW zostanie użyta "
+"minimalna kompresja JPEG."
+"<p><b>Uwaga!!! Z powodu destrukcyjnego algorytmu kompresji, JPEG jest stratnym "
+"formatem kompresji.</b>"
+"<p><b>TIFF</b>:przetworzone zdjęcie będzie w formacie TIFF. Pliki uzyskane "
+"korzystając z tego formatu będą duże, jednak bez straty na jakości. Podczas "
+"konwersji RAW zostanie użyta kompresja Adobe Deflate."
+"<p><b>PPM</b>: przetworzone zdjęcie będzie w formacie PPM. Pliki uzyskane "
+"korzystając z tego formatu będą największe, jednak bez straty na jakości."
+"<p><b>PNG</b>: przetworzone zdjęcie będzie w formacie PNG. Pliki uzyskane "
+"korzystając z tego formatu będą duże, jednak bez straty na jakości. Podczas "
+"konwersji RAW zostanie użyta maksymalna kompresja PNG."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Jeśli plik wyjściowy istnieje:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Nadpisz automatycznie"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Otwórz okno zmiany nazwy pliku"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Konwerter zdjęć RAW"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Podgląd"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr ""
+"Wtyczka Kipi do konwersji zdjęć RAW\n"
+"Korzysta z biblioteki KDcraw"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Generuj podgląd dla aktualnych ustawień. Korzysta z prostej dwuliniowej "
+"interpolacji, aby szybko zaprezentować wynik."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Przekształć zdjęcie RAW korzystając z aktualnych ustawień. Korzysta z "
+"algorytmu zapewniającego wysoką jakość."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Przerwij aktualną operację konwersji plików RAW"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Nie można wygenerować podglądu"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Konwertowanie zdjęcia RAW nie powiodło się"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Generowanie podglądu..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Konwertowanie zdjęcia RAW..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Podręcznik wtyczki Konwerter RAW"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Podręcznik wtyczki Konwerter RAW"
+
+#~ msgid "RAW Decoding Settings"
+#~ msgstr "Ustawienia dekodowania plików RAW"
+
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "Grupowy konwerter zdjęć w formacie RAW"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "Konwerter zdjęć RAW (pojedynczo)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "Konwerter zdjęć RAW (grupowo)..."

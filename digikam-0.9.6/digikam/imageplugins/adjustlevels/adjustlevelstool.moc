@@ -1,0 +1,188 @@
+/****************************************************************************
+** DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool meta object code from reading C++ file 'adjustlevelstool.h'
+**
+** Created: Wed Jun 14 10:09:26 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "adjustlevelstool.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::className() const
+{
+    return "DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool";
+}
+
+QMetaObject *DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_DigikamAdjustLevelsImagesPlugin__AdjustLevelsTool( "DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool", &DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = Digikam::EditorTool::staticMetaObject();
+    static const QUMethod slot_0 = {"slotLoadSettings", 0, 0 };
+    static const QUMethod slot_1 = {"slotSaveAsSettings", 0, 0 };
+    static const QUMethod slot_2 = {"slotEffect", 0, 0 };
+    static const QUMethod slot_3 = {"slotResetSettings", 0, 0 };
+    static const QUMethod slot_4 = {"slotResetCurrentChannel", 0, 0 };
+    static const QUMethod slot_5 = {"slotAutoLevels", 0, 0 };
+    static const QUParameter param_slot_6[] = {
+	{ "channel", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotChannelChanged", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ "scale", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"slotScaleChanged", 1, param_slot_7 };
+    static const QUMethod slot_8 = {"slotAdjustSliders", 0, 0 };
+    static const QUParameter param_slot_9[] = {
+	{ "val", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"slotGammaInputchanged", 1, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ "val", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotAdjustMinInputSpinBox", 1, param_slot_10 };
+    static const QUParameter param_slot_11[] = {
+	{ "val", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotAdjustMaxInputSpinBox", 1, param_slot_11 };
+    static const QUParameter param_slot_12[] = {
+	{ "val", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_12 = {"slotAdjustMinOutputSpinBox", 1, param_slot_12 };
+    static const QUParameter param_slot_13[] = {
+	{ "val", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_13 = {"slotAdjustMaxOutputSpinBox", 1, param_slot_13 };
+    static const QUParameter param_slot_14[] = {
+	{ "color", &static_QUType_ptr, "Digikam::DColor", QUParameter::In }
+    };
+    static const QUMethod slot_14 = {"slotSpotColorChanged", 1, param_slot_14 };
+    static const QUParameter param_slot_15[] = {
+	{ "color", &static_QUType_ptr, "Digikam::DColor", QUParameter::In }
+    };
+    static const QUMethod slot_15 = {"slotColorSelectedFromTarget", 1, param_slot_15 };
+    static const QUMethod slot_16 = {"slotPickerColorButtonActived", 0, 0 };
+    static const QUParameter param_slot_17[] = {
+	{ "v", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_17 = {"slotShowInputHistogramGuide", 1, param_slot_17 };
+    static const QUParameter param_slot_18[] = {
+	{ "v", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_18 = {"slotShowOutputHistogramGuide", 1, param_slot_18 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotLoadSettings()", &slot_0, QMetaData::Private },
+	{ "slotSaveAsSettings()", &slot_1, QMetaData::Private },
+	{ "slotEffect()", &slot_2, QMetaData::Private },
+	{ "slotResetSettings()", &slot_3, QMetaData::Private },
+	{ "slotResetCurrentChannel()", &slot_4, QMetaData::Private },
+	{ "slotAutoLevels()", &slot_5, QMetaData::Private },
+	{ "slotChannelChanged(int)", &slot_6, QMetaData::Private },
+	{ "slotScaleChanged(int)", &slot_7, QMetaData::Private },
+	{ "slotAdjustSliders()", &slot_8, QMetaData::Private },
+	{ "slotGammaInputchanged(double)", &slot_9, QMetaData::Private },
+	{ "slotAdjustMinInputSpinBox(int)", &slot_10, QMetaData::Private },
+	{ "slotAdjustMaxInputSpinBox(int)", &slot_11, QMetaData::Private },
+	{ "slotAdjustMinOutputSpinBox(int)", &slot_12, QMetaData::Private },
+	{ "slotAdjustMaxOutputSpinBox(int)", &slot_13, QMetaData::Private },
+	{ "slotSpotColorChanged(const Digikam::DColor&)", &slot_14, QMetaData::Private },
+	{ "slotColorSelectedFromTarget(const Digikam::DColor&)", &slot_15, QMetaData::Private },
+	{ "slotPickerColorButtonActived()", &slot_16, QMetaData::Private },
+	{ "slotShowInputHistogramGuide(int)", &slot_17, QMetaData::Private },
+	{ "slotShowOutputHistogramGuide(int)", &slot_18, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool", parentObject,
+	slot_tbl, 19,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_DigikamAdjustLevelsImagesPlugin__AdjustLevelsTool.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool" ) )
+	return this;
+    return EditorTool::qt_cast( clname );
+}
+
+bool DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotLoadSettings(); break;
+    case 1: slotSaveAsSettings(); break;
+    case 2: slotEffect(); break;
+    case 3: slotResetSettings(); break;
+    case 4: slotResetCurrentChannel(); break;
+    case 5: slotAutoLevels(); break;
+    case 6: slotChannelChanged((int)static_QUType_int.get(_o+1)); break;
+    case 7: slotScaleChanged((int)static_QUType_int.get(_o+1)); break;
+    case 8: slotAdjustSliders(); break;
+    case 9: slotGammaInputchanged((double)static_QUType_double.get(_o+1)); break;
+    case 10: slotAdjustMinInputSpinBox((int)static_QUType_int.get(_o+1)); break;
+    case 11: slotAdjustMaxInputSpinBox((int)static_QUType_int.get(_o+1)); break;
+    case 12: slotAdjustMinOutputSpinBox((int)static_QUType_int.get(_o+1)); break;
+    case 13: slotAdjustMaxOutputSpinBox((int)static_QUType_int.get(_o+1)); break;
+    case 14: slotSpotColorChanged((const Digikam::DColor&)*((const Digikam::DColor*)static_QUType_ptr.get(_o+1))); break;
+    case 15: slotColorSelectedFromTarget((const Digikam::DColor&)*((const Digikam::DColor*)static_QUType_ptr.get(_o+1))); break;
+    case 16: slotPickerColorButtonActived(); break;
+    case 17: slotShowInputHistogramGuide((int)static_QUType_int.get(_o+1)); break;
+    case 18: slotShowOutputHistogramGuide((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return EditorTool::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::qt_emit( int _id, QUObject* _o )
+{
+    return EditorTool::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::qt_property( int id, int f, QVariant* v)
+{
+    return EditorTool::qt_property( id, f, v);
+}
+
+bool DigikamAdjustLevelsImagesPlugin::AdjustLevelsTool::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+  <!ENTITY The.framework "<application
+>The KDE Bluetooth framework</application
+>">
+  <!ENTITY the.framework "<application
+>the KDE Bluetooth framework</application
+>">
+  <!ENTITY kde "<acronym
+>KDE</acronym
+>">
+  <!ENTITY kappname "&The.framework;">
+  <!ENTITY package "kdeextragear-3">
+  <!ENTITY Fred.Schaettgen "<firstname
+>Fred</firstname
+><surname
+>Sch&auml;ttgen</surname
+>">
+  <!ENTITY Fred.Schaettgen.mail "<email
+>kdebluetooth@0xF.de</email
+>">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE">
+  
+  
+  <!ENTITY faq SYSTEM "faq.docbook">
+  <!ENTITY download SYSTEM "download.docbook">
+  <!ENTITY installation SYSTEM "installation.docbook">
+  <!ENTITY introduction SYSTEM "introduction.docbook">
+  <!ENTITY concepts SYSTEM "concepts.docbook">
+  <!ENTITY credits SYSTEM "credits.docbook">
+  <!ENTITY links SYSTEM "links.docbook">
+  <!ENTITY news SYSTEM "news.docbook">
+  <!ENTITY components SYSTEM "components.docbook">
+  <!ENTITY developers SYSTEM "developers.docbook">
+  
+  <!ENTITY components.handsfree SYSTEM "handsfree.docbook">
+  <!ENTITY components.kbluetoothd SYSTEM "kbluetoothd.docbook">
+  <!ENTITY components.kio_obex SYSTEM "kio_obex.docbook">
+  <!ENTITY components.kbtobexsrv SYSTEM "kbtobexsrv.docbook">
+  <!ENTITY components.kbtserialchat SYSTEM "kbtserialchat.docbook">
+  <!ENTITY components.kio_sdp SYSTEM "kio_sdp.docbook">
+  <!ENTITY components.bemused SYSTEM "bemused.docbook">
+  <!ENTITY components.khciconfig SYSTEM "khciconfig.docbook">
+  <!ENTITY components.kbtobexclient SYSTEM "kbtobexclient.docbook">
+  <!--<!ENTITY components.kbluelock SYSTEM "kbluelock.docbook"
+>-->
+  <!ENTITY components.irmcsynckonnector SYSTEM "irmcsynckonnector.docbook">
+  <!ENTITY components.othertools SYSTEM "othertools.docbook">
+  
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and $LANG/user.entities. -->
+]>
+<!-- kdoctemplate v0.9 January 10 2003
+     Changes to comments to clarify entity usage January 10 2003
+     Minor update to "Credits and Licenses" section on August 24, 2000
+     Removed "Revision history" section on 22 January 2001
+     Changed to Installation/Help menu entities 18 October 2001
+     Other minor cleanup and changes 18 October 2001
+     FPI change and minor changes November 2002 -->
+
+<book lang="&language;">
+
+<!-- This header contains all of the meta-information for the document such
+as Authors, publish date, the abstract, and Keywords -->
+
+<bookinfo>
+<title
+>Руководство &The.framework;</title>
+
+<authorgroup>
+
+<author
+>&Fred.Schaettgen; <affiliation
+> <address
+><email
+>kde.sch@ttgen.net</email
+></address>
+</affiliation>
+</author>
+
+</authorgroup>
+
+<othercredit role="translator"
+><firstname
+>Наталья</firstname
+> <surname
+>Евдокимова</surname
+> <affiliation
+><address
+> <email
+>e_natalia@mail.ru</email
+></address
+></affiliation
+> <contrib
+>Перевод на русский</contrib
+></othercredit
+> 
+
+<copyright>
+<year
+>2004</year>
+<holder
+>&Fred.Schaettgen;</holder>
+</copyright>
+<!-- Translators: put here the copyright notice of the translation -->
+<!-- Put here the FDL notice.  Read the explanation in fdl-notice.docbook
+     and in the FDL itself on how to use it. -->
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date and version information of the documentation
+Don't forget to include this last date and this last revision number, we
+need them for translation coordination !
+Please respect the format of the date (YYYY-MM-DD) and of the version
+(V.MM.LL), it could be used by automation scripts.
+Do NOT change these in the translation. -->
+
+<date
+>2004-02-20</date>
+<releaseinfo
+>0.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>Здесь приводится описание набора программ по поддержке Bluetooth в KDE. KDE Bluetooth Framework - интегрированный в графическую среду KDE набор программ для обмена данными с мобильными телефонами или КПК. KDE Bluetooth Framework является надстройкой для BlueZ, пакета поддержки Bluetooth в Linux. </para>
+</abstract>
+
+<!-- This is a set of Keywords for indexing by search engines.
+Please at least include KDE, the KDE package it is in, the name
+ of your application, and a few relevant keywords. -->
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdenetwork</keyword>
+<keyword
+>демон kbluetoothd</keyword>
+<keyword
+>Bluetooth</keyword>
+<keyword
+>Rfcomm</keyword>
+<keyword
+>HCI</keyword>
+<keyword
+>BlueZ</keyword>
+<keyword
+>OBEX</keyword>
+<keyword
+>Навигация по папкам</keyword>
+<keyword
+>FBS</keyword>
+<keyword
+>Синхронизация</keyword>
+</keywordset>
+
+</bookinfo>
+
+<!-- The contents of the documentation begin here.  Label
+each chapter so with the id attribute. This is necessary for two reasons: it
+allows you to easily reference the chapter from other chapters of your
+document, and if there is no ID, the name of the generated HTML files will vary
+from time to time making it hard to manage for maintainers and for the CVS
+system. Any chapter labelled (OPTIONAL) may be left out at the author's
+discretion. Other chapters should not be left out in order to maintain a
+consistent documentation style across all KDE apps. -->
+
+&introduction;
+
+&news;
+
+&download;
+
+&installation;
+
+&components;
+
+&concepts;
+
+&faq;
+
+&developers;
+
+&links;
+
+&credits;
+
+&documentation.index;
+
+</book>
+

@@ -1,0 +1,156 @@
+<chapter id="faq">
+<title
+>Preguntes i respostes</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para
+>El meu problema no està llistat en aquesta &PMF;. Com puc obtenir ajuda?</para>
+</question>
+<answer>
+<para
+>Tenim una <ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth"
+>llista de correu</ulink
+> a on podeu exposar les vostres preguntes i comentaris. Si us plau, feu-hi un cop d'ull a l'arxiu abans d'escriure-hi, però no dubteu en preguntar si no trobeu qualsevol cosa útil.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>No funciona res, fins i tot una eina de línia de comandaments com <command
+>hcitool inq</command
+> no troba res.</para>
+</question>
+<answer>
+<para
+>kdebluetooth dependrà de la configuració Bluetooth per a funcionar. Si aquest és el vostre problema, demaneu ajuda en la nostra llista de correu, però el millor lloc i el correcte per a plantejar preguntes sobre BlueZ és la llista de correu de <ulink url="http://www.bluez.org"
+>BlueZ</ulink
+>, per descomptat. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Està mort kdebluetooth? No hi ha canvis al CVS de Sourceforge.</para>
+</question>
+<answer>
+<para
+>kdebluetooth moved to <ulink url="http://webcvs.kde.org/cgi-bin/cvsweb.cgi/kdeextragear-3/"
+>kdeextragear-3</ulink
+> (<ulink url="http://extragear.kde.org"
+>extragear home</ulink
+>).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>El meu telèfon em demana un PIN, però no conec on introduir-lo en el meu ordinador.</para>
+</question>
+<answer>
+<para
+>BlueZ hauria de mostrar un diàleg de PIN automàticament, quan useu <programlisting
+>security user;</programlisting
+> en el <filename
+>/etc/bluetooth/hcid.conf</filename
+>. A vegades la utilitat estàndard <command
+>bluepin</command
+> de BlueZ no funciona; en el seu lloc podeu usar el nostre substitut <command
+>kbluepin</command
+>. Escriviu quelcom com <programlisting
+>pin_helper /usr/lib/kdebluetooth/kbluepin;</programlisting
+> en <filename
+>hcid.conf</filename
+> i reinicieu el <command
+>hcid</command
+> de BlueZ. </para>
+<para
+>Actualment aquesta és una qüestió de BlueZ i no te res que veure amb l'estructura Bluetooth per a KDE mentre no useu kbluepin. M'agradaria col·locar un enllaç a la corresponent documentació de BlueZ per a incloure'l aquí, però encara no l'he trobat. Les indicacions són benvingudes :) </para>
+<para
+>Quan tingueu problemes constants amb kbluepin (o amb bluepin o amb qualsevol altra ajudant), hauríeu de fer una ullada als vostres fitxers de registre (<filename
+>/var/log/syslog</filename
+> o similar). </para>
+<para
+>Si sou novell amb Bluetooth, si us plau, llegiu el <link linkend="concepts.pairing"
+>base sobre emparellar</link
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Quan intento emparellar el meu ordinador amb el meu telèfon, KBluetoothD diu "No es permet emparellar". </para>
+</question>
+<answer>
+<para
+>Si l'ajudant de PIN per a hcid s'ha configurat correctament, apareixerà una caixa de diàleg que us demanarà el codi PIN que haureu d'haver introduït també en el vostre telèfon. Si feu clic a "Cancel·la" o si el programa d'ajuda no es pot trobar o iniciar per algun motiu, kbluetoothd mostrarà un avís. Comproveu el registre del sistema per a veure perquè hcid no ha pogut iniciar el programa ajudant. </para
+></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Desitjo usar un servei ofert per kdebluetooth, però el meu dispositiu client es vol connectar a un canal diferent a l'usat per kbluetoothd. </para>
+</question>
+<answer>
+<para
+>Normalment els serveis de bluetooth no haurien d'usar números fixes de canal, si no que usen la base de dades SDP per a trobar el canal correcte. Però si realment ho necessiteu, podeu copiar el corresponent fitxer desktop des de <filename
+>$PREFIX/share/services</filename
+> a <filename
+>$HOME/.kde/share/services</filename
+> i editar el número de canal. Això solaparà les configuracions globals després de reiniciar KDE.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Estic usant diversos dispositius de port paral·lel en el mateix PC. Com puc seleccionar quin usar? </para>
+</question>
+<answer>
+<para
+>Algunes de les nostres aplicacions tenen una opció en la línia de comandaments per a canviar el dispositiu Bluetooth per omissió ('--hcidevice hci1' per exemple). Com a alternativa podeu usar la variable d'entorn HCI_DEVICE. Podria funcionar en les nostres eines que no tinguin línia de comandaments. Tingueu present que de moment el kbluetoothd mateix no funciona gaire bé amb alguns adaptadors. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>./configure no pot trobar el meu kdelibs/qt/...</para>
+</question>
+<answer>
+<para
+>Assegureu-vos que també teniu instal·lats els paquets de desenvolupament per a les respectives biblioteques.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>He obtingut un missatge d'error com: "Fitxer generat amb una versió massa recent de Qt Designer (3.2 front a 3.1.x)"</para>
+</question>
+<answer>
+<para
+>El Qt Designer desa el seu número de versió en els fitxers ui quan els modifica. Això provoca errors quan es vol compilar kdebluetooth amb una versió anterior de Qt. Es pot evitar canviant la versió 3.2 a la 3.1. Ho podeu fer fàcilment executant l'script downgrade_ui si accidentalment realitzem algun canvi sense tornar a establir els números de versió.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Puc iniciar kbluetoothd, però falta la icona correcte (logo de K-Bluetooth) i en el seu lloc es mostra una icona de document genèric.</para>
+</question>
+<answer>
+<para
+>Això sol significar que teniu instal·lat kdebluetooth a una localització en la que KDE no pot trobar els recursos. No n'hi ha prou amb tenir kbluetoothd en la $PATH. Us haureu d'assegurar que també s'usa --prefix amb el configure per a que saber del KDE . Podeu obtenir els directoris configurats per a les icones KDE amb l'eina kde-config: kde-config --path icon. Els prefixos usats per a KDE es poden configurar amb la variable d'entorn KDEDIRS.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>

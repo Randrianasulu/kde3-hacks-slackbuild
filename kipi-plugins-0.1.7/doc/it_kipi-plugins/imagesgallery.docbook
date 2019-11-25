@@ -1,0 +1,185 @@
+<chapter id="imagesgallery">
+<chapterinfo>
+
+<title
+>Galleria di immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin di Kipi per le gallerie di immagini è uno strumento per esportare un insieme di album in una pagina HTML. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Questo potente plugin può esportare gli album in una pagina HTML conforme alla versione 4.01 per la pubblicazione sul Web sotto forma di galleria di immagini. Puoi selezionare facilmente gli album da esportare in una pagina HTML. Puoi impostare un grande elenco di parametri per la resa HTML. La codifica UTF-8 è usata per una migliore internazionalizzazione. </para>
+
+<para
+>Puoi vedere degli esempi costruiti con questo plugin a questo <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/index.htm"
+><citetitle
+>URL</citetitle
+></ulink
+>. </para>
+
+<sect1 id="using-plugin-imagesgallerycollectionselection">
+<title
+>Finestra di selezione delle raccolte</title>
+
+<para
+>Il plugin ha quattro schede per le impostazioni. La scheda <guilabel
+>Selezione</guilabel
+> ti permette di selezionare tutti gli album che vuoi esportare in HTML. Seleziona gli album (sono visualizzati senza annidamento gerarchico). I tre pulsanti a destra ti aiutano a selezionare rapidamente grandi quantità di album. Il riquadro sotto mostra l'immagine identificativa dell'album con il testo che apparirà come intestazione della pagina HTML. </para>
+
+<figure>
+    <title
+>La finestra di selezione delle raccolte</title>
+    <graphic srccredit="The Collections Selection Dialog" fileref="imagegallery_collectionselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerylooksettings">
+<title
+>Finestra delle impostazioni dell'aspetto</title>
+
+<para
+>La scheda <guilabel
+>Aspetto</guilabel
+> definisce l'aspetto e lo schema generale di ogni pagina. Questa scheda per lo più si spiega da sé. La casella <guilabel
+>Crea una pagina per ogni immagine</guilabel
+> creerà una galleria con una pagina HTML per immagine, cioè, se fai clic su un'immagine apparirà una nuova pagina che mostrerà l'immagine nel browser Web. Se lasci questa casella deselezionata, fare clic sulle immagini le aprirà direttamente con li visualizzatore di immagini predefinito, per esempio Kuickshow. </para>
+
+<figure>
+    <title
+>La finestra delle impostazioni dell'aspetto</title>
+    <graphic srccredit="The Look Settings Dialog" fileref="imagegallery_looksettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryalbumsettings">
+<title
+>Finestra delle impostazioni degli album</title>
+
+<para
+>La scheda <guilabel
+>Album</guilabel
+> definisce le impostazioni di dove e come salvare la galleria con tutte le sue immagini associate. Seleziona una cartella con accesso in scrittura dove vuoi che sia salvata la galleria. Sarà creata una sottocartella contenente tutto, chiamata KIPIHTMLExport. </para>
+
+<para
+>Quando selezioni la casella <guilabel
+>Ridimensiona le immagini</guilabel
+> puoi adattare la dimensione massima (in pixel) delle immagini di destinazione con il cursore sotto di essa. Le immagini più grandi di questo valore saranno riscalate, le immagini più piccole non saranno modificate. Le prossime due caselle ti permettono di impostare delle funzionalità specifiche di compressione delle immagini. Se lo spazio su disco è importante, controlla la compressione dell'immagine di destinazione e abbassa il livello di compressione dall'applicazione ospite al valore predefinito. Quindi puoi scegliere tra i formati JPEG (dimensione minima, ma con perdita) e PNG (senza perdita e con licenza libera). </para>
+
+<note
+><para
+>Se è selezionato il formato di file JPEG per il ridimensionamento delle immagini di destinazione, saranno mantenute tutte le informazioni EXIF dei file JPEG originali. </para
+></note>
+
+<para
+>Con la casella <guilabel
+>Imposta una diversa profondità di colore</guilabel
+> puoi cambiare la profondità predefinita del colore. Ciò ovviamente influenzerà le dimensioni del file. Il resto delle impostazioni si spiegano da sé. </para>
+
+<figure>
+    <title
+>La finestra delle impostazioni degli album</title>
+    <graphic srccredit="The Album Settings Dialog" fileref="imagegallery_albumsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgallerythumbsettings">
+<title
+>Finestra delle impostazioni delle miniature</title>
+
+<para
+>La scheda <guilabel
+>Miniature</guilabel
+> ti permette di impostare alcune delle impostazioni della scheda <guilabel
+>Album</guilabel
+> per le miniature (che sono le immagini piccole mostrate nella galleria). </para>
+
+<figure>
+    <title
+>La finestra delle impostazioni delle miniature</title>
+    <graphic srccredit="The Thumbnails Settings Dialog" fileref="imagegallery_thumbsettings.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-imagesgalleryinaction">
+<title
+>Galleria di immagini in azione</title>
+
+<para
+>Una finestra di avanzamento che indica il progresso all'utente. Premi il pulsante <guilabel
+>Annulla</guilabel
+> se vuoi interrompere il processo. </para>
+
+<figure>
+    <title
+>Il plugin Galleria di immagini in azione</title>
+    <graphic srccredit="The Images Gallery Plugin in Action" fileref="imagegallery_progress.png"/>
+</figure>
+
+<para
+>Quando sono completati tutti i compiti, questa finestra non sarà chiusa automaticamente, e l'utente potrà consultare i messaggi di avanzamento nel caso si siano verificati degli errori a questo stadio. Il browser Web sarà avviato automaticamente alla fine per visualizzare un'anteprima della galleria. Premi il pulsante <guilabel
+>Chiudi</guilabel
+> per chiudere la finestra. </para>
+
+<figure>
+    <title
+>L'anteprima della galleria di immagini in Konqueror</title>
+    <graphic srccredit="The Images Gallery Preview in Konqueror" fileref="imagegallery_preview.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,86 @@
+<sect1 id="components.handsfree">
+<title
+>kbthandsfree: Marcar y hablar utilizando su ordenador</title>
+<para
+>El cliente de manos libres es una implementación del perfil manos libres de Bluetooth. Este protocolo es similar al perfil auriculares, pero proporciona más funciones que el antiguo perfil auriculares. Originalmente, el perfil manos libres fue diseñado para utilizar dispositivos manos libres en los vehículos, pero como Bluetooth se ha hecho cada vez más habitual, hoy el perfil auriculares soporta manos libres. </para>
+<para
+>Con kbthadsfree puede utilizar su ordenador como un dispositivo manos libres. Puede marcar números (incluso desde <link linkend="handsfree.kaddressbook"
+>kaddressbook</link
+>). </para>
+
+<sect2>
+<title
+>Requerimientos</title>
+<sect3>
+<title
+>Soporte del núcleo SCO</title>
+<para
+>Para la transmisión de voz sobre bluetooth, el perfil manos libres necesitará crear una conexión 'SCO'. Éste es un tipo de conexión expecial de bluetooth que está optimizada para los datos de voz. Desafortunadamente, el soporte para SCO no funciona en núcleos con versiones anteriores a la 2.4. Para los núcleos anteriores a 2.4.24, puede ayudar la aplicación de los parches proporcionados por Marcel Holtmann en <ulink url="http://www.bluez.org
+>www.bluez.org</ulink
+>. Lo peor es que desafortunadamente el soporte SCO parece no funcionar en las series 2.6 de Linux, y no existe parche para solucionar el problema en estos momentos (por favor, corríjanme si me equivoco). Por ello, la única forma de utilizar kbthadsfree como un manos libres real es utilizar uno de los últimos núcleos 2.4. Sin soporte SCO, puede usar kbthandsfree solo para marcar números y similar. </para>
+</sect3>
+
+<sect3>
+<title
+>Adaptador de soporte SCO</title>
+<para
+>No todos los adaptadores Bluetooth soportan SCO correctamente. Los antiguos dispositivos de seguridad para software de Mitsumi parece que causan problemas, incluso aunque el módulo pida el soporte SCO. Se que no hay forma de saber si funciona excepto probándolo. Los módulos más nuevos basados en el (muy común) chipset CSR probablemente funcionan. </para>
+</sect3>
+
+<sect3>
+<title
+>Modo de voz</title>
+<para
+>Su adaptador bluetooth debe configurar el modo de voz correcto para que funcione la transmisión de voz. Actualmente kbthadsfree solo soporta el modo 0x0060. Este es el valor predeterminado en la versión actual de bluez, pero puede cambiarlo con la orden <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Clase de dispositivo</title>
+<para
+>Si desea establecer la conexión con kbthadsfree utilizando su teléfono en lugar de llamar a kbthandsfree en el PC, debe asegurarse de que su PC es reconocido como un dispositivo manos libres. Cuando active el manos libres en la pestaña de servicios locales de la configuración de kdebluetooth, la estructura configurará automáticamente el registro SDP adecuado que le indica a su teléfono que su ordenador ofrece el servicio de manos libres. </para>
+<para
+>Pero algunos teléfonos como el T68i depende de una clase de configuración de dispositivo (una configuración a más bajo nivel que está marcado antes del registro SDP) que le identifica como un manos libres en lugar de como un ordenador. Puede hacer esto cambiando la línea de la clase 0xXXXXXX en hcid.conf a la clase 0x700408 (pendiente: ¿es compatible con los indicadores necesarios para obex...?) o con <command
+>khciconfig</command
+>. Como un dispositivo bluetooth solo puede tener una clase de dispositivo a la vez, su ordenador puede mostrar un dispositivo de audio/manos libres cuando busque otros dispositivos bluetooth. Pero no conocemos ningún efecto secundario serio causado por esto. </para>
+<para
+>Normalmente es sencillo conectarse desde un ordenador a un manos libres que tenga al lado. Pero la configuración de la clase de dispositivo también se necesita si desea que su teléfono se conecte al ordenador automáticamente cuando tenga una llamada entrante. No todos los teléfonos pueden hacerlo. La mayor parte de los Nokias, por ejemplo, no pueden, mientras que el S/E T68i si puede. Por favor, tenga en cuenta que el dispositivo manos libres debería ser el primero en la lista de dispositivos emparejados para hacer que el T68i se conecte automáticamente. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Consejos y trucos</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Desde KDE 3.2 puede configurar su libreta de direcciones para utilizar aplicaciones externas que marquen números. Para utilizar kbthandsfree para realizar esto, inicie <command
+>kaddressbook</command
+>, vaya a <command
+>Preferencias</command
+>, <command
+>Configurar kaddressbook...</command
+>, <command
+>Libreta de direcciones</command
+>, Pestaña <command
+>General</command
+> y utilice <command
+>kbthandsfree --phonenumber %N</command
+> para descolgar el teléfono. Para ver opciones adicionales de la línea de órdenes compruebe <command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>Puede mejorar la vista general sobre las conversaciones registradas en konqueror si selecciona «Vista de lista de información» como modo de vista. Ésto mostrará las etiquetas de los archivos ogg/vorbis, de forma que podrá ver con facilidad quién llamó y cuanto estuvo hablando. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

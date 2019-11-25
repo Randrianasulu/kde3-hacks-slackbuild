@@ -1,0 +1,850 @@
+# translation of kipiplugin_mpegencoder to Kinyarwanda.
+# Copyright (C) 
+# This file is distributed under the same license as the kipiplugin_mpegencoder package.
+# Steve Murphy <murf@e-tools.com>, 2005.
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005.
+# Antoine Bigirimana <antoine@e-tools.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_mpegencoder 3.4\n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2005-05-25 18:45-0600\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+"Viateur MUGENZI, JEAN BAPTISTE NGENDAHAYO, Augustin KIBERWA, Donatien "
+"NSENGIYUMVA"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+"muvia1@yahoo.fr, ngenda_denis@yahoo.co.uk, akiberwa@yahoo.co.uk, "
+"ndonatienuk@yahoo.co.uk"
+
+#: checkbinprog.cpp:71
+#, fuzzy
+msgid ""
+"Your 'ImageMagick' binary program path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"' Nyabibiri Porogaramu Inzira: ni ubusa . \n"
+"Kuri Mburabuzi Agaciro: . Igenamiterere . "
+
+#: checkbinprog.cpp:77
+#, fuzzy
+msgid ""
+"Your 'MjpegTools' binary programs path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"' Nyabibiri Porogaramu Inzira: ni ubusa . \n"
+"Kuri Mburabuzi Agaciro: . Igenamiterere . "
+
+#: checkbinprog.cpp:86
+#, fuzzy
+msgid ""
+"Cannot find 'montage' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:89
+#, fuzzy
+msgid ""
+"Cannot find 'composite' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:92
+#, fuzzy
+msgid ""
+"Cannot find 'convert' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:95
+#, fuzzy
+msgid ""
+"Cannot find 'identify' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:100
+#, fuzzy
+msgid ""
+"Cannot find 'ppmtoy4m' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:103
+#, fuzzy
+msgid ""
+"Cannot find 'yuvscaler' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:106
+#, fuzzy
+msgid ""
+"Cannot find 'mpeg2enc' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:109
+#, fuzzy
+msgid ""
+"Cannot find 'mplex' binary program from MjpegTools package. Please install it."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . "
+
+#: checkbinprog.cpp:113
+#, fuzzy
+msgid ""
+"Cannot find 'mp2enc' binary program from MjpegTools package. Please install "
+"it.\n"
+"Audio capabilities will be disabled."
+msgstr ""
+"Gushaka ' Nyabibiri Porogaramu Kuva: Porogaramu . Kwinjiza porogaramu . \n"
+"Yahagaritswe . "
+
+#: checkbinprog.cpp:120
+#, fuzzy
+msgid ""
+"\n"
+"Check your installation and this plugin's options settings.\n"
+"\n"
+"Visit these URLs for more information:\n"
+"ImageMagick package: http://www.imagemagick.org/\n"
+"MjpegTools package: http://mjpeg.sourceforge.net/"
+msgstr ""
+"\n"
+"iyinjizaporogaramu na iyi Amahitamo Igenamiterere . \n"
+"\n"
+"ya:  Birenzeho Ibisobanuro: : \n"
+"Porogaramu : HTTP : //www . . org /\n"
+"Porogaramu : HTTP : //. . net /"
+
+#. i18n: file kimg2mpgbase.ui line 437
+#: kimg2mpg.cpp:192 rc.cpp:82
+#, no-c-format
+msgid "none"
+msgstr "ntacyo"
+
+#: kimg2mpg.cpp:246
+#, fuzzy
+msgid "MPEG Slideshow"
+msgstr "&Kwerekana Igice:"
+
+#: kimg2mpg.cpp:249
+#, fuzzy
+msgid "A Kipi plugin for encoding images to an MPEG file."
+msgstr "A Gucomeka: ya:  Imisobekere: Ishusho Kuri Idosiye . "
+
+#: kimg2mpg.cpp:252
+msgid "Author"
+msgstr ""
+
+#: kimg2mpg.cpp:255 kimg2mpg.cpp:258
+msgid "Maintainer"
+msgstr ""
+
+#: kimg2mpg.cpp:263
+msgid "Plugin Handbook"
+msgstr ""
+
+#: kimg2mpg.cpp:312
+#, fuzzy
+msgid "Select MPEG Output File"
+msgstr "Idosiye "
+
+#: kimg2mpg.cpp:329
+#, fuzzy
+msgid "Select Audio Input File"
+msgstr "Idosiye "
+
+#: kimg2mpg.cpp:383
+#, fuzzy
+msgid "You can only move up one image file at once."
+msgstr "Himura Hejuru Rimwe Ishusho Idosiye Ku Rimwe . "
+
+#: kimg2mpg.cpp:436
+#, fuzzy, c-format
+msgid "Image no. %1"
+msgstr "Oya . %1 "
+
+#: kimg2mpg.cpp:472
+#, fuzzy
+msgid "You can only move down one image file at once."
+msgstr "Himura Hasi Rimwe Ishusho Idosiye Ku Rimwe . "
+
+#: kimg2mpg.cpp:517
+#, fuzzy
+msgid ""
+"Do you really abort this encoding process ?\n"
+"\n"
+"Warning: all work so-far will be lost."
+msgstr ""
+"Kureka iyi Imisobekere: ? \n"
+"\n"
+": Byose Akazi - Far . "
+
+#: kimg2mpg.cpp:530
+msgid ""
+"Default chroma mode option works only with Mjpegtools version < 1.6.3\n"
+msgstr ""
+
+#: kimg2mpg.cpp:531
+msgid "Check your Mjpegtools version"
+msgstr ""
+
+#: kimg2mpg.cpp:533
+msgid "KIPImpegencoderChromaWarning"
+msgstr ""
+
+#: kimg2mpg.cpp:553
+#, fuzzy
+msgid "You must specify an existing audio file."
+msgstr "Kugaragaza Ibisohoka Idosiye Izina: . "
+
+#: kimg2mpg.cpp:561
+#, fuzzy
+msgid "You must specify an MPEG output file name."
+msgstr "Kugaragaza Ibisohoka Idosiye Izina: . "
+
+#: kimg2mpg.cpp:568
+#, fuzzy
+msgid "You must specify a writable path for your output file."
+msgstr "Kugaragaza Ibisohoka Idosiye Izina: . "
+
+#: kimg2mpg.cpp:574
+#, fuzzy
+msgid "You must specify some input images files in the portfolio."
+msgstr "Kugaragaza Iyinjiza Ishusho Idosiye in i . "
+
+#: kimg2mpg.cpp:580
+#, fuzzy
+msgid ""
+"The output MPEG file '%1' already exists.\n"
+"Do you want overwrite this file?"
+msgstr ""
+"Ibisohoka Idosiye ' %1 ' . \n"
+"Guhindura iyi Idosiye ? "
+
+#: kimg2mpg.cpp:587
+#, fuzzy
+msgid "A&bort"
+msgstr "Kureka"
+
+#: kimg2mpg.cpp:588
+#, fuzzy
+msgid ""
+"Abort the portfolio MPEG encoding. Warning: all work so-far will be lost...."
+msgstr "i Imisobekere: . : Byose Akazi - Far ... . "
+
+#: kimg2mpg.cpp:622
+msgid ""
+"THE COMMAND LINE IS :\n"
+"\n"
+msgstr ""
+
+#: kimg2mpg.cpp:691
+msgid "Cannot access to file %1, please check the path is right."
+msgstr ""
+
+#: kimg2mpg.cpp:711
+#, fuzzy
+msgid "Cannot start 'images2mpg' bash script : fork failed."
+msgstr "Tangira &vendorShortName; ' IYANDIKA : Byanze . "
+
+#: kimg2mpg.cpp:804
+#, fuzzy
+msgid "%1 image [%2]"
+msgstr "%1Ishusho"
+
+#: kimg2mpg.cpp:806
+#, fuzzy
+msgid "%1 images [%2]"
+msgstr "%1Amashusho %1 %1"
+
+#: kimg2mpg.cpp:842
+#, fuzzy
+msgid "Encoding image file [%1/%2]..."
+msgstr "Ishusho Idosiye [ %1 /%2] ... "
+
+#: kimg2mpg.cpp:857
+#, fuzzy
+msgid "Initialising..."
+msgstr "Gutangiza..."
+
+#: kimg2mpg.cpp:861
+msgid "Merging MPEG flux..."
+msgstr ""
+
+#: kimg2mpg.cpp:867
+#, fuzzy
+msgid "Encoding audio file..."
+msgstr "Inyumvo Idosiye ... "
+
+#: kimg2mpg.cpp:882
+#, fuzzy
+msgid ""
+"The 'images2mpg' script has returned an error during the MPEG encoding;\n"
+"the process has been aborted.\n"
+"\n"
+"Send a mail to the author..."
+msgstr ""
+"' IYANDIKA Ikosa i Imisobekere: ; \n"
+"i Byahagaritswe . \n"
+"\n"
+"A Ibaruwa Kuri i Umwanditsi: ... "
+
+#: kimg2mpg.cpp:885
+msgid "'images2mpg' Script-Execution Problem"
+msgstr ""
+
+#: kimg2mpg.cpp:887
+#, fuzzy
+msgid "Show Debugging Output"
+msgstr "Kwongera kugenza ikemuramakosa"
+
+#: kimg2mpg.cpp:891
+#, fuzzy
+msgid ""
+"\n"
+"EXIT STATUS : error during encoding process."
+msgstr ""
+"\n"
+": Ikosa Imisobekere: . "
+
+#: kimg2mpg.cpp:912
+#, fuzzy
+msgid "Encoding terminated..."
+msgstr "Isobeka kohereza"
+
+#: kimg2mpg.cpp:914
+#, fuzzy, c-format
+msgid ""
+"The encoding process has terminated...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Imisobekere: ... \n"
+"\n"
+"Igihe-ngombwa : %1 "
+
+#: kimg2mpg.cpp:916
+msgid "'images2mpg' Script Execution Terminated"
+msgstr ""
+
+#: kimg2mpg.cpp:918 kimg2mpg.cpp:936
+#, fuzzy
+msgid "Show Process Messages"
+msgstr "Erekana ubutumwa"
+
+#: kimg2mpg.cpp:923
+#, fuzzy
+msgid ""
+"\n"
+"EXIT STATUS : encoding process finished successfully."
+msgstr ""
+"\n"
+": Imisobekere: Byarangiye . "
+
+#: kimg2mpg.cpp:930
+#, fuzzy
+msgid "Encoding aborted..."
+msgstr "Byahagaritswe ... "
+
+#: kimg2mpg.cpp:932
+#, fuzzy, c-format
+msgid ""
+"The encoding process has been aborted...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Imisobekere: Byahagaritswe ... \n"
+"\n"
+"Igihe-ngombwa : %1 "
+
+#: kimg2mpg.cpp:934
+msgid "'images2mpg' Script Execution Aborted"
+msgstr ""
+
+#: kimg2mpg.cpp:941
+#, fuzzy
+msgid ""
+"\n"
+"EXIT STATUS : encoding process aborted by user."
+msgstr ""
+"\n"
+": Imisobekere: Byahagaritswe ku Umukoresha . "
+
+#: kimg2mpg.cpp:967
+#, fuzzy
+msgid ""
+"An encoding process is active;\n"
+"abort this process and exit ?"
+msgstr ""
+"Imisobekere: ni Gikora ; \n"
+"Kureka iyi na &Kuvamo ? "
+
+#: kimg2mpg.cpp:991
+#, fuzzy
+msgid "Create MPEG Slideshow"
+msgstr "Kurema ibice"
+
+#. i18n: file kimg2mpgbase.ui line 1157
+#: kimg2mpg.cpp:1013 rc.cpp:189
+#, fuzzy, no-c-format
+msgid "&Encode"
+msgstr "inyandikoporogaramu imwe"
+
+#: kimg2mpg.cpp:1133
+#, fuzzy
+msgid "Cannot remove temporary folder %1!"
+msgstr "Gukuraho By'igihe gito Ububiko... %1! "
+
+#: kshowdebuggingoutput.cpp:35
+msgid "Debugging Output"
+msgstr ""
+
+#: kshowdebuggingoutput.cpp:38
+#, fuzzy
+msgid "Copy to Clip&board"
+msgstr "Gukoporora mu Bubikokoporora"
+
+#: optionsdialog.cpp:52
+#, fuzzy
+msgid "MPEG Encoder Plugin Settings"
+msgstr "Igenamiterere rusange"
+
+#: optionsdialog.cpp:66
+msgid "ImageMagick Binary Programs Path"
+msgstr ""
+
+#: optionsdialog.cpp:76
+msgid "MjpegTools Binary Programs Path"
+msgstr ""
+
+#: optionsdialog.cpp:109
+#, fuzzy
+msgid "Select path to ImageMagick binary programs..."
+msgstr "Inzira: Kuri Nyabibiri Porogaramu ... "
+
+#: optionsdialog.cpp:124
+#, fuzzy
+msgid "Select path to MjpegTools binary programs..."
+msgstr "Inzira: Kuri Nyabibiri Porogaramu ... "
+
+#: plugin_mpegencoder.cpp:62
+#, fuzzy
+msgid "Create MPEG Slide Show..."
+msgstr "Kugena imiterere y'Iyerekana ry'Igice..."
+
+#. i18n: file kimg2mpgbase.ui line 45
+#: rc.cpp:3
+#, no-c-format
+msgid "Kimg2mpgBase"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 75
+#: rc.cpp:6
+#, fuzzy, no-c-format
+msgid "Encoder Settings"
+msgstr "Igenamiterere rusange"
+
+#. i18n: file kimg2mpgbase.ui line 119
+#: rc.cpp:9
+#, no-c-format
+msgid "Video Format"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 128
+#: rc.cpp:12
+#, no-c-format
+msgid "XVCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 133
+#: rc.cpp:15
+#, no-c-format
+msgid "SVCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 138
+#: rc.cpp:18
+#, no-c-format
+msgid "VCD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 143
+#: rc.cpp:21
+#, no-c-format
+msgid "DVD"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 160
+#: rc.cpp:24
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the video format for your MPEG file.\n"
+"For a high photographic resolution on a TV screen, select  'XVCD' (it is the "
+"same DVD resolution) although some old DVD players cannot read this format. "
+"'VCD'/'SVCD' are more compatible with DVD players, but they are only medium "
+"resolution. \n"
+"DVD is an experimental option."
+msgstr ""
+"Ihitamo i inyerekanamashusho Imiterere ya:  Idosiye . A ejuru Imikemurire ku A "
+"Mugaragaza , Guhitamo ' ( ni i Imikemurire ) ; ki/bishaje Soma iyi Imiterere . "
+"' /' Birenzeho Na: , hagati Imikemurire . ni Ifite uburambe Ihitamo . "
+
+#. i18n: file kimg2mpgbase.ui line 186
+#: rc.cpp:29
+#, no-c-format
+msgid "Video Type"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 195
+#: rc.cpp:32
+#, no-c-format
+msgid "PAL"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 200
+#: rc.cpp:35
+#, no-c-format
+msgid "NTSC"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 205
+#: rc.cpp:38
+#, no-c-format
+msgid "SECAM"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 221
+#: rc.cpp:41
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the video type for your MPEG file.\n"
+"NTSC is an American TV standard; PAL/SECAM is European."
+msgstr ""
+"Ihitamo i inyerekanamashusho Ubwoko: ya:  Idosiye . ni Bisanzwe ; /ni . "
+
+#. i18n: file kimg2mpgbase.ui line 247
+#: rc.cpp:45
+#, no-c-format
+msgid "Chroma Mode"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 261
+#: rc.cpp:51
+#, no-c-format
+msgid "444"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 266
+#: rc.cpp:54
+#, no-c-format
+msgid "420jpeg"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 271
+#: rc.cpp:57
+#, no-c-format
+msgid "420mpeg2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 287
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"This option specifies the chroma subsampling mode.\n"
+"Change it if you have problems with the default value."
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 326
+#: rc.cpp:64
+#, no-c-format
+msgid "Image Settings"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 370
+#: rc.cpp:67
+#, fuzzy, no-c-format
+msgid "Image duration"
+msgstr "Igihe-ngombwa ( amasogonda ) : "
+
+#. i18n: file kimg2mpgbase.ui line 400
+#: rc.cpp:70
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the duration for each image in your MPEG file.\n"
+"10 seconds is a good value for an image portfolio.\n"
+"\n"
+"<b>Warning</b>: you may have some problems with your DVD player if the total "
+"MPEG duration is under 3 seconds."
+msgstr ""
+"Ihitamo i Igihe-ngombwa ya:  Ishusho in Idosiye . 10 amasogonda ni A Agaciro: "
+"ya:  Ishusho . : Gicurasi Na: NIBA i Igiteranyo: %S Igihe-ngombwa ni 3 "
+"amasogonda . "
+
+#. i18n: file kimg2mpgbase.ui line 408
+#: rc.cpp:76
+#, no-c-format
+msgid "sec."
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 428
+#: rc.cpp:79
+#, fuzzy, no-c-format
+msgid "Transition speed"
+msgstr "Umuvuduko hagati Ishusho : "
+
+#. i18n: file kimg2mpgbase.ui line 442
+#: rc.cpp:85
+#, no-c-format
+msgid "1"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 447
+#: rc.cpp:88
+#, no-c-format
+msgid "2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 452
+#: rc.cpp:91
+#, no-c-format
+msgid "4"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 457
+#: rc.cpp:94
+#, no-c-format
+msgid "5"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 462
+#: rc.cpp:97
+#, no-c-format
+msgid "10"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 467
+#: rc.cpp:100
+#, no-c-format
+msgid "20"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 484
+#: rc.cpp:103
+#, fuzzy, no-c-format
+msgid ""
+"This option specifies the transition speed between images in your MPEG file.\n"
+"'1' is a slow transition and '20' is a very fast transition.\n"
+"'2' is a good value for an image portfolio."
+msgstr ""
+"Ihitamo i Inyuranamo Umuvuduko hagati Ishusho in Idosiye . ' ni A Buhoro "
+"Inyuranamo na ' ni A Byihuta Inyuranamo . ' ni A Agaciro: ya:  Ishusho . "
+
+#. i18n: file kimg2mpgbase.ui line 502
+#: rc.cpp:108
+#, fuzzy, no-c-format
+msgid "Background color"
+msgstr "Ibara ry'imbuganyuma:"
+
+#. i18n: file kimg2mpgbase.ui line 526
+#: rc.cpp:111
+#, fuzzy, no-c-format
+msgid ""
+"You can select here the background color for your portfolio.\n"
+"This color is used to pad the image size to fit the TV screen size.\n"
+"Black is a good value for this."
+msgstr ""
+"Guhitamo i Mbuganyuma Ibara: ya:  . Ibara: ni Byakoreshejwe Kuri i Ishusho "
+"Ingano: Kuri i Mugaragaza Ingano: . ni A Agaciro: ya:  iyi . "
+
+#. i18n: file kimg2mpgbase.ui line 559
+#: rc.cpp:116
+#, fuzzy, no-c-format
+msgid "Image Files in Portfolio"
+msgstr "in "
+
+#. i18n: file kimg2mpgbase.ui line 562
+#: rc.cpp:119 rc.cpp:157
+#, fuzzy, no-c-format
+msgid "Preview the currently selected image."
+msgstr "i Byahiswemo Ishusho . "
+
+#. i18n: file kimg2mpgbase.ui line 591
+#: rc.cpp:122
+#, fuzzy, no-c-format
+msgid ""
+"This is the list of the image files for your portfolio.\n"
+"The portfolio's first image is on the top; the last image is on the bottom.\n"
+"If you want to add some images, click on the 'Add' button or use the "
+"drag-and-drop."
+msgstr ""
+"ni i Urutonde Bya i Ishusho Idosiye ya:  . Itangira Ishusho ni ku i Hejuru: ; i "
+"Iheruka Ishusho ni ku i Hasi: . Kuri &Ongera Ishusho , Kanda ku i ' Akabuto "
+"Cyangwa Koresha i Kurura - na - . "
+
+#. i18n: file kimg2mpgbase.ui line 607
+#: rc.cpp:127
+#, no-c-format
+msgid "textLabel1"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 610
+#: rc.cpp:130
+#, fuzzy, no-c-format
+msgid "Total number of images in the portfolio and sequence duration."
+msgstr "Umubare Bya Ishusho in i na Igihe-ngombwa . "
+
+#. i18n: file kimg2mpgbase.ui line 659
+#: rc.cpp:133
+#, no-c-format
+msgid "&Add..."
+msgstr "Ongeraho"
+
+#. i18n: file kimg2mpgbase.ui line 662
+#: rc.cpp:136
+#, fuzzy, no-c-format
+msgid "Add some image files to the portfolio list."
+msgstr "Ishusho Idosiye Kuri i Urutonde . "
+
+#. i18n: file kimg2mpgbase.ui line 687
+#: rc.cpp:142
+#, fuzzy, no-c-format
+msgid "Remove some image files from the portfolio list."
+msgstr "Ishusho Idosiye Kuva: i Urutonde . "
+
+#. i18n: file kimg2mpgbase.ui line 709
+#: rc.cpp:145
+#, fuzzy, no-c-format
+msgid "Image &Up"
+msgstr "Ikarita y'ishusho"
+
+#. i18n: file kimg2mpgbase.ui line 712
+#: rc.cpp:148
+#, fuzzy, no-c-format
+msgid "Moving the current image up on the portfolio list."
+msgstr "i KIGEZWEHO Ishusho Hejuru ku i Urutonde . "
+
+#. i18n: file kimg2mpgbase.ui line 734
+#: rc.cpp:151
+#, fuzzy, no-c-format
+msgid "Image D&own"
+msgstr "Ipaji yo Hasi"
+
+#. i18n: file kimg2mpgbase.ui line 737
+#: rc.cpp:154
+#, fuzzy, no-c-format
+msgid "Moving the current image down on the portfolio list."
+msgstr "i KIGEZWEHO Ishusho Hasi ku i Urutonde . "
+
+#. i18n: file kimg2mpgbase.ui line 811
+#: rc.cpp:160
+#, no-c-format
+msgid "textLabel2"
+msgstr ""
+
+#. i18n: file kimg2mpgbase.ui line 814
+#: rc.cpp:163
+#, fuzzy, no-c-format
+msgid "Currently selected image in the portfolio list."
+msgstr "Byahiswemo Ishusho in i Urutonde . "
+
+#. i18n: file kimg2mpgbase.ui line 862
+#: rc.cpp:166
+#, fuzzy, no-c-format
+msgid "MPEG Output Filename"
+msgstr "Idosiye y'Ibisohoka"
+
+#. i18n: file kimg2mpgbase.ui line 883
+#: rc.cpp:169
+#, fuzzy, no-c-format
+msgid ""
+"You can specify here the output MPEG filename.\n"
+"\n"
+"<b>Warning </b>: MPEG files are very big (if you have many images in your "
+"portfolio). Select a folder with a sufficient free disk space."
+msgstr ""
+"Kugaragaza i Ibisohoka Izina ry'idosiye: . : Idosiye ( NIBA Ishusho in ) . A "
+"Ububiko... Na: A Kigenga Disiki%1 Umwanya . "
+
+#. i18n: file kimg2mpgbase.ui line 969
+#: rc.cpp:174
+#, fuzzy, no-c-format
+msgid "Audio Input Filename"
+msgstr "Imiterere y'Idosiye y'Ihinduranya Nyumvo"
+
+#. i18n: file kimg2mpgbase.ui line 991
+#: rc.cpp:177
+#, fuzzy, no-c-format
+msgid ""
+"You can specify here the input audio file name.\n"
+"This audio file name will be multiplexed with the portfolio video. \n"
+" \n"
+"<b>Warning</b>: if the audio duration is too long, it will be truncated."
+msgstr ""
+"Kugaragaza i Iyinjiza Inyumvo Idosiye Izina: . Inyumvo Idosiye Izina: Na: i "
+"inyerekanamashusho . : NIBA i Inyumvo Igihe-ngombwa ni Birebire , . "
+
+#. i18n: file kimg2mpgbase.ui line 1086
+#: rc.cpp:183
+#, fuzzy, no-c-format
+msgid "Current encoding task."
+msgstr "Imisobekere: Igikorwa . "
+
+#. i18n: file kimg2mpgbase.ui line 1114
+#: rc.cpp:186
+#, fuzzy, no-c-format
+msgid "Encoding progress bar."
+msgstr "Aho bigeze: Umurongo . "
+
+#. i18n: file kimg2mpgbase.ui line 1161
+#: rc.cpp:192
+#, fuzzy, no-c-format
+msgid ""
+"Start the portfolio MPEG encoding. \n"
+"The program uses the 'images2mpg' bash script."
+msgstr "Gutangira i Imisobekere: . Porogaramu i ' IYANDIKA . "
+
+#. i18n: file kimg2mpgbase.ui line 1252
+#: rc.cpp:205
+#, fuzzy, no-c-format
+msgid "Abort the current encoding and exit."
+msgstr "i KIGEZWEHO Imisobekere: na &Kuvamo . "
+
+#, fuzzy
+#~ msgid "Video format, type and chroma mode:"
+#~ msgstr "Imiterere na Ubwoko: : "
+
+#, fuzzy
+#~ msgid "Author and maintainer"
+#~ msgstr "na Umurinzi "

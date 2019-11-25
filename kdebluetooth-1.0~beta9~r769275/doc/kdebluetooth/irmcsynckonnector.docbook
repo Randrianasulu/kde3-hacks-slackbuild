@@ -1,0 +1,109 @@
+<sect1 id="components.irmcsynckonnector">
+<title>IrMCSync Konnector for Kitchensync</title>
+<para>
+This program is a Konnector plugin for kitchensync, it let you sync your device supporting IrMCSync with your local Calendar and/or AddressBook.
+</para>
+<para>
+By now Calendar and AddressBook are supported!
+</para>
+<para>
+I SUGGEST YOU TO MAKE A COPY OF YOUR CALENDAR AND ADDRESSBOOK BEFORE TRYING ANY SYNC.
+I'm not responsible if your data will be corrupted or destroyed.
+</para>
+
+
+<sect2>
+<title>We need debug infos!</title>
+<para>
+PLEASE run kitchensync from a shell or redirect stdout and stderr to a file so if you have problems you can send me the konnector output.To enable the debug features you can launch "kdebugdialog" and set on the kitchensync related options (from 5200) and the generic option.
+</para>
+</sect2>
+
+<sect2>
+<title>Compilation.</title>
+<para>
+The actuall kitchensync from kdepim SVN has more features and work better than the kdepim 3.3.0 version.
+I'll suggest to use this version. You have to install at least kitchensync (and all his subprojects) from SVN.
+</para>
+<para>
+There's also a kdepim-3.3.0 version that you can find in the irmcsync_kdepim_3_3_branch but it's not mantained anymore. I'll concentrate my work on the SVN one.
+This version depends on kdepim-3.3.0 and the older or younger versions, so you have to get and install it.
+If you want to fetch the irmcsync_kdepim_3_3_branch you have to move to
+kdebluetooth/irmcsync/irmcsynckonnector and type:
+
+cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch
+</para>	
+
+<para>
+To enable the compilation of the konnector you have to add the "irmcsync" dir in the SUBDIR variabile of kdebluetooth/Makefile.am
+</para>
+</sect2>
+
+<sect2>
+<title>Using KitchenSync.</title>
+<para>
+In these days (25/03/2004) KitchenSync is very experimental so you can get various problems.
+</para>
+<para>
+After having launched it, you have to choose the konnectors to use.
+you need at least 2 konnector to make a sync, but you can use only one for tests pourpose.
+</para>
+<para>
+To add a konnector go in <guimenuitem>Settings->Configure Kitchensync</guimenuitem>
+</para>
+<para>
+If you get some errors and the widget is now well painted try resizing the configure window. Then in the Resources Combobox you'll get various chooses, ALL ARE UNUSEFUL AND DISABLED, only "konnector" is the right.
+</para>
+<para>
+For Example you can add the IrMCSync Konnector and a Local Konnector.
+</para>
+<para>
+In the IrMCSync Konnector select your device, and check the Sync Calendar CheckButton or the AddressBook (for now you can't sync both at the same time).	In the Local Konnector Select a Calendar File AND a KAddressBook file (you have to choose both and with right filenames or it will not work). I suggest you to create a temp directory in which you put a copy of you original AB and Calendar so you can make some tests. 
+</para>
+<para>	
+You can find them usually in these dirs:
+</para>
+<para>
+CALENDAR: <filename>$HOME/.kde/share/apps/korganizer/std.ics</filename>
+</para>
+<para>
+ADDRESSBOOK: <filename>$HOME/.kde/share/apps/kabc/std.vcf</filename>
+</para>	
+<para>	
+Then you have to create a profile in <guimenuitem>Settings->Configure Profiles</guimenuitem> and for every profile you can add various parts, every part do a different function:
+</para>
+<itemizedlist>
+<listitem>
+<para>	
+Synchronize Part : Make the REAL Sync.
+</para>
+</listitem>
+<listitem>
+<para>	
+Konnector Debugger: Let you Debug a Konnector.
+</para>
+</listitem>
+<listitem>
+<para>
+Konnector Backup : Make the backup of the data.
+</para>
+</listitem>
+<listitem>
+<para>
+Overview Part : Like the name says.
+</para>
+</listitem>
+</itemizedlist>
+
+<para>	
+If you want to sync, you have to choose at least the "Synchronize Part".
+</para>
+<para>	
+Then, to make the sync, click on the top-left button.
+</para>
+<para>
+You can check the konnector, creating a profile with the Konnector Debugger Part and pressing the Connect Device, then the ReadSyncees button.
+</para>
+</sect2>
+</sect1>
+

@@ -1,0 +1,810 @@
+# translation of kipiplugin_mpegencoder.po to Icelandic
+# Sveinn í Felli <sveinki@nett.is>, 2007, 2008.
+# translation of kipiplugin_mpegencoder.po to
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_mpegencoder\n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2008-04-01 11:42+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Sveinn í Felli"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sveinki@nett.is"
+
+#: checkbinprog.cpp:71
+msgid ""
+"Your 'ImageMagick' binary program path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"Slóðin á  'ImageMagick' tvíundarskrárnar er auð.\n"
+"Stillt er á sjáfgefið gildi. Athugaðu stillingarnar."
+
+#: checkbinprog.cpp:77
+msgid ""
+"Your 'MjpegTools' binary programs path is empty.\n"
+"Setting to default value. Check option's setting."
+msgstr ""
+"Slóðin á 'MjpegTools' tvíundarskrárnar er auð.\n"
+"Stillt er á sjáfgefið gildi. Athugaðu stillingarnar."
+
+#: checkbinprog.cpp:86
+msgid ""
+"Cannot find 'montage' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'montage' tvíundarskrárnar úr ImageMagick forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:89
+msgid ""
+"Cannot find 'composite' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'composite' tvíundarskrárnar úr ImageMagick forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:92
+msgid ""
+"Cannot find 'convert' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'convert' tvíundarskrárnar úr ImageMagick forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:95
+msgid ""
+"Cannot find 'identify' binary program from ImageMagick package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'identify' tvíundarskrárnar úr ImageMagick forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:100
+msgid ""
+"Cannot find 'ppmtoy4m' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'ppmtoy4m' tvíundarskrárnar úr MjpegTools forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:103
+msgid ""
+"Cannot find 'yuvscaler' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'yuvscaler' tvíundarskrárnar úr MjpegTools forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:106
+msgid ""
+"Cannot find 'mpeg2enc' binary program from MjpegTools package. Please install "
+"it."
+msgstr ""
+"Finn ekki 'mpeg2enc' tvíundarskrárnar úr MjpegTools forritinu.Vinsamlegast "
+"settu upp forritið."
+
+#: checkbinprog.cpp:109
+msgid ""
+"Cannot find 'mplex' binary program from MjpegTools package. Please install it."
+msgstr ""
+"Finn ekki 'mplex' tvíundarskrárnar úr MjpegTools forritinu.Vinsamlegast settu "
+"upp forritið."
+
+#: checkbinprog.cpp:113
+msgid ""
+"Cannot find 'mp2enc' binary program from MjpegTools package. Please install "
+"it.\n"
+"Audio capabilities will be disabled."
+msgstr ""
+"Finn ekki 'mp2enc' tvíundarskrárnar úr MjpegTools forritinu.Vinsamlegast settu "
+"upp forritið.\n"
+"Hljóðmeðhöndlun verður óvirk."
+
+#: checkbinprog.cpp:120
+msgid ""
+"\n"
+"Check your installation and this plugin's options settings.\n"
+"\n"
+"Visit these URLs for more information:\n"
+"ImageMagick package: http://www.imagemagick.org/\n"
+"MjpegTools package: http://mjpeg.sourceforge.net/"
+msgstr ""
+"\n"
+"Athugaðu uppsetninguna þína ásamt stillingum þessa íforrits.\n"
+"\n"
+"Skoðaðu þessar vefsíður fyrir meiri upplýsingar:\n"
+"ImageMagick forritið: http://www.imagemagick.org/\n"
+"MjpegTools forritið: http://mjpeg.sourceforge.net/"
+
+#. i18n: file kimg2mpgbase.ui line 437
+#: kimg2mpg.cpp:192 rc.cpp:82
+#, no-c-format
+msgid "none"
+msgstr "engin"
+
+#: kimg2mpg.cpp:246
+msgid "MPEG Slideshow"
+msgstr "MPEG myndasýning"
+
+#: kimg2mpg.cpp:249
+msgid "A Kipi plugin for encoding images to an MPEG file."
+msgstr "KIPI íforrit til kóðunar mynda yfir í MPEG-skrár."
+
+#: kimg2mpg.cpp:252
+msgid "Author"
+msgstr "Höfundur"
+
+#: kimg2mpg.cpp:255 kimg2mpg.cpp:258
+msgid "Maintainer"
+msgstr "Viðhaldsforritari"
+
+#: kimg2mpg.cpp:263
+msgid "Plugin Handbook"
+msgstr "Handbók íforrits"
+
+#: kimg2mpg.cpp:312
+msgid "Select MPEG Output File"
+msgstr "Velja MPEG-skrá til að vista"
+
+#: kimg2mpg.cpp:329
+msgid "Select Audio Input File"
+msgstr "Velja skrá með hljóðinntaki"
+
+#: kimg2mpg.cpp:383
+msgid "You can only move up one image file at once."
+msgstr "Þú getur aðeins fært upp eina myndskrá í einu."
+
+#: kimg2mpg.cpp:436
+#, c-format
+msgid "Image no. %1"
+msgstr "Mynd no. %1"
+
+#: kimg2mpg.cpp:472
+msgid "You can only move down one image file at once."
+msgstr "Þú getur aðeins fært niður eina myndskrá í einu."
+
+#: kimg2mpg.cpp:517
+msgid ""
+"Do you really abort this encoding process ?\n"
+"\n"
+"Warning: all work so-far will be lost."
+msgstr ""
+"Viltu í alvörunni hætta í þessari kóðunaraðgerð ?\n"
+"\n"
+"Aðvörun: öll vinna sem þegar er búin tapast."
+
+#: kimg2mpg.cpp:530
+msgid ""
+"Default chroma mode option works only with Mjpegtools version < 1.6.3\n"
+msgstr ""
+"Hamur með sjálfgefnum litgildum virkar aðeins með Mjpegtools útgáfum < 1.6.3\n"
+
+#: kimg2mpg.cpp:531
+msgid "Check your Mjpegtools version"
+msgstr "Athugaðu Mjpegtools útgáfuna þína"
+
+#: kimg2mpg.cpp:533
+msgid "KIPImpegencoderChromaWarning"
+msgstr "KIPImpegencoderChromaWarning"
+
+#: kimg2mpg.cpp:553
+msgid "You must specify an existing audio file."
+msgstr "Þú verður að tilgreina hljóðskrá sem þegar er til."
+
+#: kimg2mpg.cpp:561
+msgid "You must specify an MPEG output file name."
+msgstr "Þú verður að tilgreina MPEG úttaksskrá."
+
+#: kimg2mpg.cpp:568
+msgid "You must specify a writable path for your output file."
+msgstr "Þú verður að tilgreina skrifanlega slóð fyrir úttaksskrá."
+
+#: kimg2mpg.cpp:574
+msgid "You must specify some input images files in the portfolio."
+msgstr "Þú verður að tilgreina einhverjar myndskrár í möppunni."
+
+#: kimg2mpg.cpp:580
+msgid ""
+"The output MPEG file '%1' already exists.\n"
+"Do you want overwrite this file?"
+msgstr ""
+"MPEG úttaksskráin '%1' er þegar til.\n"
+"Viltu skrifa yfir þessa skrá?"
+
+#: kimg2mpg.cpp:587
+msgid "A&bort"
+msgstr "&Hætta við"
+
+#: kimg2mpg.cpp:588
+msgid ""
+"Abort the portfolio MPEG encoding. Warning: all work so-far will be lost...."
+msgstr ""
+"Hætta við MPEG-kóðun möppunnar. Aðvörun: öll vinna sem framkvæmd hefur verið "
+"til þessa mun tapast..."
+
+#: kimg2mpg.cpp:622
+msgid ""
+"THE COMMAND LINE IS :\n"
+"\n"
+msgstr ""
+"SKIPANALÍNAN ER :\n"
+"\n"
+
+#: kimg2mpg.cpp:691
+msgid "Cannot access to file %1, please check the path is right."
+msgstr "Get ekki náð í skrá %1, vinsamlegast athugaðu hvort slóðin sé rétt."
+
+#: kimg2mpg.cpp:711
+msgid "Cannot start 'images2mpg' bash script : fork failed."
+msgstr "Gat ekki ræst 'images2mpg' bash skriftunat : fork failed."
+
+#: kimg2mpg.cpp:804
+msgid "%1 image [%2]"
+msgstr "%1 mynd [%2]"
+
+#: kimg2mpg.cpp:806
+msgid "%1 images [%2]"
+msgstr "%1 myndir [%2]"
+
+#: kimg2mpg.cpp:842
+msgid "Encoding image file [%1/%2]..."
+msgstr "Kóða myndskrá [%1/%2]..."
+
+#: kimg2mpg.cpp:857
+msgid "Initialising..."
+msgstr "Ræsi upp..."
+
+#: kimg2mpg.cpp:861
+msgid "Merging MPEG flux..."
+msgstr "Sameina MPEG flæði..."
+
+#: kimg2mpg.cpp:867
+msgid "Encoding audio file..."
+msgstr "Kóða hljóðskrá..."
+
+#: kimg2mpg.cpp:882
+msgid ""
+"The 'images2mpg' script has returned an error during the MPEG encoding;\n"
+"the process has been aborted.\n"
+"\n"
+"Send a mail to the author..."
+msgstr ""
+"Skriftan 'images2mpg' meldaði villu við MPEG kóðunina;\n"
+"hætt hefur verið við aðgerðina.\n"
+"\n"
+"Senda tölvupóst til höfundarins..."
+
+#: kimg2mpg.cpp:885
+msgid "'images2mpg' Script-Execution Problem"
+msgstr "Vandamál við keyrslu 'images2mpg' skriftunnar"
+
+#: kimg2mpg.cpp:887
+msgid "Show Debugging Output"
+msgstr "Sýna aflúsunarúttak"
+
+#: kimg2mpg.cpp:891
+msgid ""
+"\n"
+"EXIT STATUS : error during encoding process."
+msgstr ""
+"\n"
+"STAÐA VIÐ LOKUN : villa við kóðunaraðgerðina."
+
+#: kimg2mpg.cpp:912
+msgid "Encoding terminated..."
+msgstr "Kóðun lokið..."
+
+#: kimg2mpg.cpp:914
+#, c-format
+msgid ""
+"The encoding process has terminated...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Kóðunaraðgerðinni er lokið...\n"
+"\n"
+"Tímalengd kóðunar: %1"
+
+#: kimg2mpg.cpp:916
+msgid "'images2mpg' Script Execution Terminated"
+msgstr "Keyrslu 'images2mpg' skriftunnar lokið"
+
+#: kimg2mpg.cpp:918 kimg2mpg.cpp:936
+msgid "Show Process Messages"
+msgstr "Sýna aðgerðaskilaboð"
+
+#: kimg2mpg.cpp:923
+msgid ""
+"\n"
+"EXIT STATUS : encoding process finished successfully."
+msgstr ""
+"\n"
+"STAÐA VIÐ LOKUN : kóðunaraðgerðinni lauk án vandamála."
+
+#: kimg2mpg.cpp:930
+msgid "Encoding aborted..."
+msgstr "Hætt við kóðun..."
+
+#: kimg2mpg.cpp:932
+#, c-format
+msgid ""
+"The encoding process has been aborted...\n"
+"\n"
+"Encoding duration: %1"
+msgstr ""
+"Hætt var við kóðunaraðgerðina...\n"
+"\n"
+"Tímalengd kóðunar: %1"
+
+#: kimg2mpg.cpp:934
+msgid "'images2mpg' Script Execution Aborted"
+msgstr "Hætt var við keyrslu 'images2mpg' skriftunnar"
+
+#: kimg2mpg.cpp:941
+msgid ""
+"\n"
+"EXIT STATUS : encoding process aborted by user."
+msgstr ""
+"\n"
+"STAÐA VIÐ LOKUN : notandi hætti við kóðunaraðgerðina."
+
+#: kimg2mpg.cpp:967
+msgid ""
+"An encoding process is active;\n"
+"abort this process and exit ?"
+msgstr ""
+"Ein kóðunaraðgerð er í gangi;\n"
+"á að hætta henni og loka ?"
+
+#: kimg2mpg.cpp:991
+msgid "Create MPEG Slideshow"
+msgstr "Búa til MPEG skyggnusýningu"
+
+#. i18n: file kimg2mpgbase.ui line 1157
+#: kimg2mpg.cpp:1013 rc.cpp:189
+#, no-c-format
+msgid "&Encode"
+msgstr "&Kóða"
+
+#: kimg2mpg.cpp:1133
+msgid "Cannot remove temporary folder %1!"
+msgstr "Get ekki fjarlægt bráðabirgðamöppuna %1!"
+
+#: kshowdebuggingoutput.cpp:35
+msgid "Debugging Output"
+msgstr "Aflúsunarúttak"
+
+#: kshowdebuggingoutput.cpp:38
+msgid "Copy to Clip&board"
+msgstr "Afrita á klippis&pjald"
+
+#: optionsdialog.cpp:52
+msgid "MPEG Encoder Plugin Settings"
+msgstr "Stillingar MPEG-kóðunar íforrits"
+
+#: optionsdialog.cpp:66
+msgid "ImageMagick Binary Programs Path"
+msgstr "Slóð á tvíundakerfisskrár ImageMagick forritsins"
+
+#: optionsdialog.cpp:76
+msgid "MjpegTools Binary Programs Path"
+msgstr "Slóð á tvíundakerfisskrár MjpegTools forritsins"
+
+#: optionsdialog.cpp:109
+msgid "Select path to ImageMagick binary programs..."
+msgstr "Velja slóðina til ImageMagick forritsins..."
+
+#: optionsdialog.cpp:124
+msgid "Select path to MjpegTools binary programs..."
+msgstr "Velja slóðina til MjpegTools forritsins..."
+
+#: plugin_mpegencoder.cpp:62
+msgid "Create MPEG Slide Show..."
+msgstr "Búa til MPEG-skyggnusýningu..."
+
+#. i18n: file kimg2mpgbase.ui line 45
+#: rc.cpp:3
+#, no-c-format
+msgid "Kimg2mpgBase"
+msgstr "Kimg2mpgBase"
+
+#. i18n: file kimg2mpgbase.ui line 75
+#: rc.cpp:6
+#, no-c-format
+msgid "Encoder Settings"
+msgstr "Stillingar kóðara"
+
+#. i18n: file kimg2mpgbase.ui line 119
+#: rc.cpp:9
+#, no-c-format
+msgid "Video Format"
+msgstr "Vídeósnið"
+
+#. i18n: file kimg2mpgbase.ui line 128
+#: rc.cpp:12
+#, no-c-format
+msgid "XVCD"
+msgstr "XVCD"
+
+#. i18n: file kimg2mpgbase.ui line 133
+#: rc.cpp:15
+#, no-c-format
+msgid "SVCD"
+msgstr "SVCD"
+
+#. i18n: file kimg2mpgbase.ui line 138
+#: rc.cpp:18
+#, no-c-format
+msgid "VCD"
+msgstr "VCD"
+
+#. i18n: file kimg2mpgbase.ui line 143
+#: rc.cpp:21
+#, no-c-format
+msgid "DVD"
+msgstr "DVD"
+
+#. i18n: file kimg2mpgbase.ui line 160
+#: rc.cpp:24
+#, no-c-format
+msgid ""
+"This option specifies the video format for your MPEG file.\n"
+"For a high photographic resolution on a TV screen, select  'XVCD' (it is the "
+"same DVD resolution) although some old DVD players cannot read this format. "
+"'VCD'/'SVCD' are more compatible with DVD players, but they are only medium "
+"resolution. \n"
+"DVD is an experimental option."
+msgstr ""
+"Þessi stilling tilgreinir vídeósniðið á MPEG skránni.\n"
+"Fyrir hágæða ljósmyndaupplausn á sjónvarpsskjá, veldu 'XVCD' (það sama og DVD "
+"upplausn) þrátt fyrir að einstaka eldri DVD-spilarar ráði ekki við að lesa "
+"þaðt. 'VCD'/'SVCD' er samhæfanlegt fleiri DVD-spilurum, en upplausnin þar er í "
+"meðallagi. \n"
+"DVD er möguleiki á tilraunastigi."
+
+#. i18n: file kimg2mpgbase.ui line 186
+#: rc.cpp:29
+#, no-c-format
+msgid "Video Type"
+msgstr "Vídeó tegund"
+
+#. i18n: file kimg2mpgbase.ui line 195
+#: rc.cpp:32
+#, no-c-format
+msgid "PAL"
+msgstr "PAL"
+
+#. i18n: file kimg2mpgbase.ui line 200
+#: rc.cpp:35
+#, no-c-format
+msgid "NTSC"
+msgstr "NTSC"
+
+#. i18n: file kimg2mpgbase.ui line 205
+#: rc.cpp:38
+#, no-c-format
+msgid "SECAM"
+msgstr "SECAM"
+
+#. i18n: file kimg2mpgbase.ui line 221
+#: rc.cpp:41
+#, no-c-format
+msgid ""
+"This option specifies the video type for your MPEG file.\n"
+"NTSC is an American TV standard; PAL/SECAM is European."
+msgstr ""
+"Þessi stilling tilgreinir vídeótegundina á MPEG skránni.\n"
+"NTSC er amerískur sjónvarpsstaðall; PAL/SECAM eru evrópskir."
+
+#. i18n: file kimg2mpgbase.ui line 247
+#: rc.cpp:45
+#, no-c-format
+msgid "Chroma Mode"
+msgstr "Litgildishamur"
+
+#. i18n: file kimg2mpgbase.ui line 261
+#: rc.cpp:51
+#, no-c-format
+msgid "444"
+msgstr "444"
+
+#. i18n: file kimg2mpgbase.ui line 266
+#: rc.cpp:54
+#, no-c-format
+msgid "420jpeg"
+msgstr "420jpeg"
+
+#. i18n: file kimg2mpgbase.ui line 271
+#: rc.cpp:57
+#, no-c-format
+msgid "420mpeg2"
+msgstr "420mpeg2"
+
+#. i18n: file kimg2mpgbase.ui line 287
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"This option specifies the chroma subsampling mode.\n"
+"Change it if you have problems with the default value."
+msgstr ""
+"Þetta skilgreinir gerð deiliúttaks fyrir litgildi.\n"
+"Breyttu því ef einhver vandkvæði verða með sjálfgefna gildið."
+
+#. i18n: file kimg2mpgbase.ui line 326
+#: rc.cpp:64
+#, no-c-format
+msgid "Image Settings"
+msgstr "Myndstillingar"
+
+#. i18n: file kimg2mpgbase.ui line 370
+#: rc.cpp:67
+#, no-c-format
+msgid "Image duration"
+msgstr "Tímalengd mynda"
+
+#. i18n: file kimg2mpgbase.ui line 400
+#: rc.cpp:70
+#, no-c-format
+msgid ""
+"This option specifies the duration for each image in your MPEG file.\n"
+"10 seconds is a good value for an image portfolio.\n"
+"\n"
+"<b>Warning</b>: you may have some problems with your DVD player if the total "
+"MPEG duration is under 3 seconds."
+msgstr ""
+"Þetta skilgreinir tímann sem hver mynd er sýnd í MPEG skránni.\n"
+"10 sekúndur er oft notað í slíkum sýningum.\n"
+"\n"
+"<b>Athugið</b>: það gætu verið vandamál við afspilun í DVD-spilurum ef "
+"heildarlengd MPEG-skráa er undir 3 sekúndum."
+
+#. i18n: file kimg2mpgbase.ui line 408
+#: rc.cpp:76
+#, no-c-format
+msgid "sec."
+msgstr "sek."
+
+#. i18n: file kimg2mpgbase.ui line 428
+#: rc.cpp:79
+#, no-c-format
+msgid "Transition speed"
+msgstr "Hraði tilfærslu"
+
+#. i18n: file kimg2mpgbase.ui line 442
+#: rc.cpp:85
+#, no-c-format
+msgid "1"
+msgstr "1"
+
+#. i18n: file kimg2mpgbase.ui line 447
+#: rc.cpp:88
+#, no-c-format
+msgid "2"
+msgstr "2"
+
+#. i18n: file kimg2mpgbase.ui line 452
+#: rc.cpp:91
+#, no-c-format
+msgid "4"
+msgstr "4"
+
+#. i18n: file kimg2mpgbase.ui line 457
+#: rc.cpp:94
+#, no-c-format
+msgid "5"
+msgstr "5"
+
+#. i18n: file kimg2mpgbase.ui line 462
+#: rc.cpp:97
+#, no-c-format
+msgid "10"
+msgstr "10"
+
+#. i18n: file kimg2mpgbase.ui line 467
+#: rc.cpp:100
+#, no-c-format
+msgid "20"
+msgstr "20"
+
+#. i18n: file kimg2mpgbase.ui line 484
+#: rc.cpp:103
+#, no-c-format
+msgid ""
+"This option specifies the transition speed between images in your MPEG file.\n"
+"'1' is a slow transition and '20' is a very fast transition.\n"
+"'2' is a good value for an image portfolio."
+msgstr ""
+"Þetta skilgreinir hraða millifærslu milli mynda í MPEG-skránni.\n"
+"'1' er hæg millifærsla '20' er mjög hröð millifærsla.\n"
+"'2' er hentugt gildi í slíkum sýningum."
+
+#. i18n: file kimg2mpgbase.ui line 502
+#: rc.cpp:108
+#, no-c-format
+msgid "Background color"
+msgstr "Bakgrunnslitur"
+
+#. i18n: file kimg2mpgbase.ui line 526
+#: rc.cpp:111
+#, no-c-format
+msgid ""
+"You can select here the background color for your portfolio.\n"
+"This color is used to pad the image size to fit the TV screen size.\n"
+"Black is a good value for this."
+msgstr ""
+"Hér geturðu valið bakgrunnslit fyrir sýninguna þína.\n"
+"Þessi litur er notaður til uppfyllingar meðfram myndum svo að þær passi á stærð "
+"sjónvarpsskjásins.\n"
+"Svartur er oft notaður í þessum tilgangi."
+
+#. i18n: file kimg2mpgbase.ui line 559
+#: rc.cpp:116
+#, no-c-format
+msgid "Image Files in Portfolio"
+msgstr "Myndskrár í sýningu"
+
+#. i18n: file kimg2mpgbase.ui line 562
+#: rc.cpp:119 rc.cpp:157
+#, no-c-format
+msgid "Preview the currently selected image."
+msgstr "Forsýna valda mynd."
+
+#. i18n: file kimg2mpgbase.ui line 591
+#: rc.cpp:122
+#, no-c-format
+msgid ""
+"This is the list of the image files for your portfolio.\n"
+"The portfolio's first image is on the top; the last image is on the bottom.\n"
+"If you want to add some images, click on the 'Add' button or use the "
+"drag-and-drop."
+msgstr ""
+"Þetta er listi yfir myndirnar í sýningunnni þinni.\n"
+"Fyrsta myndin í sýningunni er efst; sú seinasta er neðst.\n"
+"Ef þú vilt bæta við myndum, smelltu á 'Bæta við' hnappinn eða notaðu "
+"draga/sleppa."
+
+#. i18n: file kimg2mpgbase.ui line 607
+#: rc.cpp:127
+#, no-c-format
+msgid "textLabel1"
+msgstr "TextaMerki1"
+
+#. i18n: file kimg2mpgbase.ui line 610
+#: rc.cpp:130
+#, no-c-format
+msgid "Total number of images in the portfolio and sequence duration."
+msgstr "Heildarfjöldi mynda í sýningunni og lengd milli skiptinga."
+
+#. i18n: file kimg2mpgbase.ui line 659
+#: rc.cpp:133
+#, no-c-format
+msgid "&Add..."
+msgstr "Bæt&a við..."
+
+#. i18n: file kimg2mpgbase.ui line 662
+#: rc.cpp:136
+#, no-c-format
+msgid "Add some image files to the portfolio list."
+msgstr "Bæta myndum við sýningarlistann."
+
+#. i18n: file kimg2mpgbase.ui line 687
+#: rc.cpp:142
+#, no-c-format
+msgid "Remove some image files from the portfolio list."
+msgstr "Fjarlægja myndir af sýningarlistanum."
+
+#. i18n: file kimg2mpgbase.ui line 709
+#: rc.cpp:145
+#, no-c-format
+msgid "Image &Up"
+msgstr "Mynd &upp"
+
+#. i18n: file kimg2mpgbase.ui line 712
+#: rc.cpp:148
+#, no-c-format
+msgid "Moving the current image up on the portfolio list."
+msgstr "Færa valda mynd upp á sýningarlistanum."
+
+#. i18n: file kimg2mpgbase.ui line 734
+#: rc.cpp:151
+#, no-c-format
+msgid "Image D&own"
+msgstr "Mynd &niður"
+
+#. i18n: file kimg2mpgbase.ui line 737
+#: rc.cpp:154
+#, no-c-format
+msgid "Moving the current image down on the portfolio list."
+msgstr "Færa valda mynd niður á sýningarlistanum."
+
+#. i18n: file kimg2mpgbase.ui line 811
+#: rc.cpp:160
+#, no-c-format
+msgid "textLabel2"
+msgstr "TextaMerkil2"
+
+#. i18n: file kimg2mpgbase.ui line 814
+#: rc.cpp:163
+#, no-c-format
+msgid "Currently selected image in the portfolio list."
+msgstr "Núverandi valin mynd á sýningarlistanum."
+
+#. i18n: file kimg2mpgbase.ui line 862
+#: rc.cpp:166
+#, no-c-format
+msgid "MPEG Output Filename"
+msgstr "Heiti MPEG úttaksskráar"
+
+#. i18n: file kimg2mpgbase.ui line 883
+#: rc.cpp:169
+#, no-c-format
+msgid ""
+"You can specify here the output MPEG filename.\n"
+"\n"
+"<b>Warning </b>: MPEG files are very big (if you have many images in your "
+"portfolio). Select a folder with a sufficient free disk space."
+msgstr ""
+"Þú getur skilgreint hér heiti MPEG úttaksskráar\n"
+"<b> Aðvörun</b> MPEG skrár geta verið mjög stórar (ef þú ert með margar myndir "
+"í sýningunni). Veldu möppu á drifi með nægu diskplássi."
+
+#. i18n: file kimg2mpgbase.ui line 969
+#: rc.cpp:174
+#, no-c-format
+msgid "Audio Input Filename"
+msgstr "Heiti hljóðinntaksskráar"
+
+#. i18n: file kimg2mpgbase.ui line 991
+#: rc.cpp:177
+#, no-c-format
+msgid ""
+"You can specify here the input audio file name.\n"
+"This audio file name will be multiplexed with the portfolio video. \n"
+" \n"
+"<b>Warning</b>: if the audio duration is too long, it will be truncated."
+msgstr ""
+"Þú getur skilgreint hér heiti inntaksskráar fyrir hljóð.\n"
+"Þessari hljóðskrá verður blandað (multiplex) inn í vídeósýninguna. \n"
+"<b> Aðvörun</b> ef lengd hljóðskrár er of löng verður klippt á hana í endann."
+
+#. i18n: file kimg2mpgbase.ui line 1086
+#: rc.cpp:183
+#, no-c-format
+msgid "Current encoding task."
+msgstr "Núverandi kóðunarverkefni."
+
+#. i18n: file kimg2mpgbase.ui line 1114
+#: rc.cpp:186
+#, no-c-format
+msgid "Encoding progress bar."
+msgstr "Framvinduslá kóðunar."
+
+#. i18n: file kimg2mpgbase.ui line 1161
+#: rc.cpp:192
+#, no-c-format
+msgid ""
+"Start the portfolio MPEG encoding. \n"
+"The program uses the 'images2mpg' bash script."
+msgstr ""
+"Ræsa MPEG- kóðun sýningarinnar. \n"
+"Forritið notar 'images2mpg' skriftuna."
+
+#. i18n: file kimg2mpgbase.ui line 1252
+#: rc.cpp:205
+#, no-c-format
+msgid "Abort the current encoding and exit."
+msgstr "Hætta við núverandi kóðun og loka forriti."

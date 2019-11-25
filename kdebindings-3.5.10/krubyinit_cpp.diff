@@ -1,0 +1,11 @@
+--- /tmp/kdebindings-3.5.10/korundum/bin/krubyinit.cpp.old	2005-09-10 10:16:14.000000000 +0200
++++ /tmp/kdebindings-3.5.10/korundum/bin/krubyinit.cpp	2010-10-23 23:27:01.000000000 +0200
+@@ -24,6 +24,6 @@
+ int main(int argc, char **argv) {
+      ruby_init();
+      ruby_script((char*)script_name);
+-     ruby_options(argc, argv); 
+-     ruby_run();
++     void* node = ruby_options(argc, argv); 
++     ruby_run_node(node);
+ }

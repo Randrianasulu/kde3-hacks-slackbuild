@@ -1,0 +1,30 @@
+--- branches/KDE/3.5/kdebase/libkonq/konq_operations.cc	2007/05/14 10:09:27664555
++++ branches/KDE/3.5/kdebase/libkonq/konq_operations.cc	2010/10/15 20:04:221186318
+@@ -562,12 +562,26 @@
+             return;
+         }
+ 
++        bool enableLinking = true;                      // for now, but see below
++
++        // We don't want to offer "move" for temp files. They might come from
++        // kmail using a tempfile for attachments, or ark using a tempdir for
++        // extracting an archive -- in all cases, we can't implement a real move,
++        // it's just a copy of the tempfile [and the source app will delete it later].
++        // https://www.intevation.de/roundup/kolab/issue2026
++        if (url.isLocalFile() && url.path().startsWith(locateLocal("tmp", QString::null))) {
++            sMoving = false;
++            sDeleting = false;
++            enableLinking = false;
++        }
++
+         QPopupMenu popup;
+         if (!mlst.isEmpty() && (sMoving || (sReading && sDeleting)) && !linkOnly )
+             popup.insertItem(SmallIconSet("goto"), i18n( "&Move Here" ) + "\t" + KKey::modFlagLabel( KKey::SHIFT ), 2 );
+         if ( sReading && !linkOnly)
+             popup.insertItem(SmallIconSet("editcopy"), i18n( "&Copy Here" ) + "\t" + KKey::modFlagLabel( KKey::CTRL ), 1 );
+-        popup.insertItem(SmallIconSet("www"), i18n( "&Link Here" ) + "\t" + KKey::modFlagLabel( (KKey::ModFlag)( KKey::CTRL|KKey::SHIFT ) ), 3 );
++        if (enableLinking)
++            popup.insertItem(SmallIconSet("www"), i18n( "&Link Here" ) + "\t" + KKey::modFlagLabel( (KKey::ModFlag)( KKey::CTRL|KKey::SHIFT ) ), 3 );
+         if (bSetWallpaper)
+             popup.insertItem(SmallIconSet("background"), i18n( "Set as &Wallpaper" ), 4 );
+         popup.insertSeparator();

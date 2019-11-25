@@ -1,0 +1,263 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-10-04 10:07+0100\n"
+"Last-Translator: Pedro Morais <morais@kde.org>\n"
+"Language-Team: pt <kde-i18n-pt@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: dcraw RGBG RAW Dave KIPI Coffin bilinear Deflate VNG\n"
+"X-POFile-SpellExtra: Directed AHD Homogeneity Number CFA Fuji Gamute sRGB\n"
+"X-POFile-SpellExtra: of Variable CCD Gradients Con CIELab Adaptive Packard\n"
+"X-POFile-SpellExtra: Hewlett Kodak KDcraw mm\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Pedro Morais,José Nuno Pires"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "morais@kde.org,jncp@netcabo.pt"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Não é possível identificar a imagem RAW"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Marca: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Modelo: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Criado a: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Abertura: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Distância Focal: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Exposição: 1/%1 s\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Sensibilidade: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Conversor em Lote de Imagens em Bruto"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Con&verter"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Interromper"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Ficheiro em Bruto"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Ficheiro de Destino"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Câmara"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+msgid "Save settings"
+msgstr "Gravar a configuração"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "Conversor de Imagens RAW"
+
+#: batchdialog.cpp:139
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Um 'plugin' do KIPI para converter imagens RAW em lote"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Autor original"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Manutenção"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>Começar a converter as imagens RAW com a configuração actual"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Cancelar a conversão actual de ficheiros em bruto"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Sair do Conversor de Imagens em Bruto"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Não existe um ficheiro em bruto para processar na lista!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Gravar Imagem em Bruto convertida de '%1' como"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Erro ao gravar imagem %1"
+
+#: plugin_rawconverter.cpp:84
+msgid "Raw Image Converter..."
+msgstr "Conversor de Imagens em Lote..."
+
+#: plugin_rawconverter.cpp:92
+msgid "Batch Raw Converter..."
+msgstr "Conversor de Imagens RAW em Lote..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "O \"%1\" não é um ficheiro em bruto."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Não foi possível carregar a imagem após o processamento"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Formato de saída do ficheiro:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Defina aqui o formato de saída do ficheiro a usar:"
+"<p><b>JPEG</b>: o resultado da imagem processada vem no formato JPEG."
+"<p><b>Atenção!!! O JPEG é um formato com perdas, irá gerar ficheiros com "
+"tamanho pequeno. Será usada a compressão mínima do JPEG durante a conversão.</b>"
+"<p><b>TIFF</b>: o resultado da imagem processada vem no formato TIFF. Este gera "
+"ficheiros grandes, sem perder qualidade. Será usada a compressão Adobe Deflate "
+"durante a conversão."
+"<p><b>PPM</b>: devolve o resultado da imagem processada no formato PPM. Este "
+"gera os ficheiros maiores, sem perder a qualidade."
+"<p><b>PNG</b>: devolve a imagem processada no formato PNG. Este gera ficheiros "
+"grandes, sem perder qualidade. Será usada a compressão máxima do PNG na "
+"conversão."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Se o Ficheiro de Destino Existir:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Sobrepor automaticamente"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Abrir a janela de mudança de nome dos ficheiros"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Conversor de Imagens em Bruto"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "Ante&visão"
+
+#: singledialog.cpp:119
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Um 'plugin' do KIPI para converter uma imagem RAW"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Gerar uma Antevisão com a configuração actual. Utiliza uma interpolação "
+"bilinear simples para resultados rápidos."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Converter a Imagem em Bruto com a configuração actual. Utiliza um algoritmo "
+"adaptativo de alta qualidade."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Interromper a conversão actual de ficheiros RAW"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Não foi possível gerar a antevisão"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Não foi possível converter a imagem em bruto"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "A Gerar a Antevisão ..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "A Converter a Imagem em Bruto..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Manual do Conversor de Imagens em Bruto"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Manual do Conversor de Imagens em Bruto"

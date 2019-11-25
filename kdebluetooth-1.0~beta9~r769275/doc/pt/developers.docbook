@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Informações para Programadores</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Esta secção descreve como utilizar o kbluetoothd da sua própria aplicação ou como o aceder através de 'scripts' para obter nomes de dispositivos ou outras informações. </para>
+
+<sect2>
+<title
+>A 'cache' de nomes</title>
+<para
+>A 'cache' de nomes regista todos os pedidos de nomes e grava os resultados. Com ela, as outras aplicações e o próprio 'kbluetoothd' podem obter o nomes de outro dispositivo Bluetooth a partir do seu endereço de dispositivo único do 'bluetoothd', mesmo que este não esteja ao alcance de momento. Isto é usado em grande parte para tornar a interface para o utilizador mais agradável, dado que endereços de Bluetooth do tipo 00:60:AB:13:83:3D são um pouco complicados de recordar. </para>
+<para
+>É possível que seja tornado obsoleto assim que o BlueZ venha com a sua própria 'cache' persistente de nomes. </para>
+<para
+>Você poderá aceder à 'cache' de nomes através de DCOP. Para procurar um nome na 'cache' de nomes a partir da linha de comandos, escreva <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;endereço&gt;</command
+>. Para descobrir qual o dispositivo que estava a usar um nome pela última vez, você poderá executar <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;nome&gt;</command
+>. Este comando não distingue maiúsculas de minúsculas. Também é preciso ter cuidado, porque vários dispositivos poderão estar configurados para usar o mesmo nome. </para>
+</sect2>
+
+<sect2>
+<title
+>O meta-servidor</title>
+<para
+>Se desejar implementar uma aplicação servidor para um novo protocolo bluetooth pode integrá-la facilmente com o kbluetoothd, de modo a que o seu servidor seja iniciado automaticamente. </para>
+<para
+>Você terá de fornecer um ficheiro XML que descreva o registo do SDP e um ficheiro 'desktop' correspondente. O 'kbluetoothd' irá então configurar automaticamente um registo de SDP, atribuir um canal de RFCOMM e começar a atender pedidos no canal seleccionado. Quando alguém se ligar ao seu serviço, o 'kbluetoothd' irá iniciá-lo e passar um 'socket' para a ligação já aceite para ele. O número da referência é passado como um argumento da linha de comandos. </para>
+<para
+>O pacote 'kdebluetooth' contém o <command
+>kbtserialchat</command
+>, que pretende ser  (para além de se usado para depuração e até mesmo algumas conversas), um programa de exemplo simples para ensinar como integrar uma aplicação na plataforma do 'kdebluetooth'. Dado que o 'kbtserialchat' é um cliente e um servidor ao mesmo tempo, não precisa de ter em consideração todos os argumentos da linha de comandos como o 'kbtserialchat' faz, especialmente os URLs de SDP. </para>
+<para
+>O formato dos ficheiros XML do SDP deverão ser auto-explicativos, se souber como os registos de SDP são estruturados. Um ponto importante é como o parâmetro para os canais RFCOMM seleccionados descobre o caminho para o registo de SDP no servidor. Dado que o canal é seleccionado pelo 'kbluetoothd' automaticamente, você não o poderá colocar forçadamente no ficheiro de registo do SDP. Em vez disso, você usa o &lt;uint valref='rfcommchannel' size='8'/&gt; como substituto. Os canais de RFCOMM que serão experimentados estão definidos no ficheiro 'desktop' correspondente. O <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> é o primeiro canal, seguido do <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> dá o número dos canais seguintes que serão experimentados por ordem ascendente, se um canal já estiver em uso por outro serviço. </para>
+<para
+>O kbluetoothd apenas suporta de momento o rfcomm, mas quando for necessário também suportará l2cap ou semelhante. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>O Serviço de Descoberta de Dispositivos</title>
+<para
+>O kbluetoothd pode procurar activamente por outros dispositivos e executar comandos assim que um dispositivo for detectado ou desapareça. Pode configurar este serviço no módulo de centro de controlo do kbluetoothd na página "Descoberta de Dispositivos". </para>
+<para
+>A lista de trabalhos de descoberta <emphasis
+>activos</emphasis
+> tal como mostrada no módulo do centro de controlo é apenas a lista de executáveis encontrada na pasta <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. Também pode adicionar novos 'scripts' para a pasta global de modelos em <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Os 'scripts' nesta pasta que terminam em ".template" serão mostrados quando o utilizador carrega em "Adicionar novo trabalho..." e serão compilados para a pasta de trabalhos activos na pasta pessoal do utilizador. </para>
+<para
+>Os programas incluídos estão divididos em dois para ser mais fácil actualizá-los sem ter de reinstalar tudo. A parte ".template" contém apenas as configurações que podem ser alteradas pelo utilizador e que são copiadas para a pasta pessoal dele. Este programa chama então a parte ".real" que fica na directoria de modelos. </para>
+<para
+>Para começar a escrever o seu próprio trabalho de descoberta, carregue em "Adicionar novo trabalho..." e seleccione <phrase
+>Trabalho_Personalizado</phrase
+>. Isto copia o <filename
+>Trabalho_Personalizado.template</filename
+> para a sua pasta de trabalhos. Agora carregue em "Configurar..." para mudar o 'script'. Este 'script' lista toda as opções possíveis de linha de comando e variáveis de ambiente a que você tem acesso. </para>
+<para
+>Atenção: quando você edita este 'script' personalizado todas as alterações são perdidas se o remover da lista de trabalhos activo. Se o deseja distribuir, é recomendado que o separe numa parte modelo para as configurações e uma parte que faz o verdadeiro trabalho. </para>
+
+<para
+>Para transferir ou apagar ficheiros destes trabalhos de descoberta pode utilizar o <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Se escreveu algum 'script' porreiro para o serviço de descoberta de dispositivo que poderá ser útil a outras pessoas, ficaremos satisfeitos em o incluir na distribuição :)= </para>
+</sect2>
+
+</sect1>
+</chapter>
+

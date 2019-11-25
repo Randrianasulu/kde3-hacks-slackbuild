@@ -1,0 +1,192 @@
+/****************************************************************************
+** KTreeView meta object code from reading C++ file 'ktreeview.h'
+**
+** Created: Sun Feb 1 00:53:00 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "ktreeview.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KTreeView::className() const
+{
+    return "KTreeView";
+}
+
+QMetaObject *KTreeView::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KTreeView( "KTreeView", &KTreeView::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KTreeView::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KTreeView", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KTreeView::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KTreeView", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KTreeView::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QGridView::staticMetaObject();
+    static const QUParameter param_signal_0[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"collapsed", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"expanded", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ "item", &static_QUType_ptr, "KTreeViewItem", QUParameter::In },
+	{ "allow", &static_QUType_bool, 0, QUParameter::InOut }
+    };
+    static const QUMethod signal_2 = {"expanding", 2, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"highlighted", 1, param_signal_3 };
+    static const QUParameter param_signal_4[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"selected", 1, param_signal_4 };
+    static const QUParameter param_signal_5[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In },
+	{ 0, &static_QUType_varptr, "\x0e", QUParameter::In }
+    };
+    static const QUMethod signal_5 = {"popupMenu", 2, param_signal_5 };
+    static const QMetaData signal_tbl[] = {
+	{ "collapsed(int)", &signal_0, QMetaData::Public },
+	{ "expanded(int)", &signal_1, QMetaData::Public },
+	{ "expanding(KTreeViewItem*,bool&)", &signal_2, QMetaData::Public },
+	{ "highlighted(int)", &signal_3, QMetaData::Public },
+	{ "selected(int)", &signal_4, QMetaData::Public },
+	{ "popupMenu(int,const QPoint&)", &signal_5, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KTreeView", parentObject,
+	0, 0,
+	signal_tbl, 6,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KTreeView.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KTreeView::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KTreeView" ) )
+	return this;
+    return QGridView::qt_cast( clname );
+}
+
+// SIGNAL collapsed
+void KTreeView::collapsed( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+// SIGNAL expanded
+void KTreeView::expanded( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL expanding
+void KTreeView::expanding( KTreeViewItem* t0, bool& t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_ptr.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    activate_signal( clist, o );
+    t1 = static_QUType_bool.get(o+2);
+}
+
+// SIGNAL highlighted
+void KTreeView::highlighted( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3, t0 );
+}
+
+// SIGNAL selected
+void KTreeView::selected( int t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 4, t0 );
+}
+
+// SIGNAL popupMenu
+void KTreeView::popupMenu( int t0, const QPoint& t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 5 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_int.set(o+1,t0);
+    static_QUType_varptr.set(o+2,&t1);
+    activate_signal( clist, o );
+}
+
+bool KTreeView::qt_invoke( int _id, QUObject* _o )
+{
+    return QGridView::qt_invoke(_id,_o);
+}
+
+bool KTreeView::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: collapsed((int)static_QUType_int.get(_o+1)); break;
+    case 1: expanded((int)static_QUType_int.get(_o+1)); break;
+    case 2: expanding((KTreeViewItem*)static_QUType_ptr.get(_o+1),(bool&)static_QUType_bool.get(_o+2)); break;
+    case 3: highlighted((int)static_QUType_int.get(_o+1)); break;
+    case 4: selected((int)static_QUType_int.get(_o+1)); break;
+    case 5: popupMenu((int)static_QUType_int.get(_o+1),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+2))); break;
+    default:
+	return QGridView::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KTreeView::qt_property( int id, int f, QVariant* v)
+{
+    return QGridView::qt_property( id, f, v);
+}
+
+bool KTreeView::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

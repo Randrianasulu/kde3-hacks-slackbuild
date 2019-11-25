@@ -1,0 +1,271 @@
+# translation of kipiplugin_htmlexport.pot to Japanese.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_htmlexport\n"
+"POT-Creation-Date: 2008-07-08 22:18+0200\n"
+"PO-Revision-Date: 2007-06-22 23:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko Bando"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: generator.cpp:175
+msgid "Could not find theme in '%1'"
+msgstr "'%1' にテーマが見つかりませんでした"
+
+#: generator.cpp:182
+msgid "Copying theme"
+msgstr "テーマをコピー"
+
+#: generator.cpp:194
+msgid "Could not copy theme"
+msgstr "テーマをコピーできませんでした"
+
+#: generator.cpp:203
+msgid "Could not open file '%1' for writing"
+msgstr "ファイル '%1' を書き込みのために開けませんでした"
+
+#: generator.cpp:207
+msgid "Could not save image to file '%1'"
+msgstr "画像をファイル '%1' に保存できませんでした"
+
+#: generator.cpp:236
+msgid "Could not read image '%1'"
+msgstr "画像 '%1' を読めませんでした"
+
+#: generator.cpp:242
+msgid "Format of image '%1' is unknown"
+msgstr "画像 '%1' のファイル形式が不明です"
+
+#: generator.cpp:251
+msgid "Error loading image '%1'"
+msgstr "画像 '%1' の読み込みエラー"
+
+#: generator.cpp:287
+msgid "Could not save image '%1' to '%2'"
+msgstr "画像 '%1' を '%2' に保存できませんでした"
+
+#: generator.cpp:305
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "画像 '%1' のサムネイルを '%2' に保存できませんでした"
+
+#: generator.cpp:329
+msgid "Could not create gallery.xml"
+msgstr "gallery.xml を作成できませんでした"
+
+#: generator.cpp:340
+msgid "Generating files for \"%1\""
+msgstr "\"%1\" のファイルを作成"
+
+#: generator.cpp:372
+msgid "Previous"
+msgstr "戻る"
+
+#: generator.cpp:373
+msgid "Next"
+msgstr "進む"
+
+#: generator.cpp:374
+msgid "Collection List"
+msgstr "コレクションのリスト"
+
+#: generator.cpp:375
+msgid "Original Image"
+msgstr "オリジナルの画像"
+
+#: generator.cpp:376
+msgid "Go Up"
+msgstr "上へ"
+
+#: generator.cpp:403
+msgid "Generating HTML files"
+msgstr "HTML ファイルを生成"
+
+#: generator.cpp:409
+msgid "Could not load XSL file '%1'"
+msgstr "XSL ファイル '%1' を読み込めませんでした"
+
+#: generator.cpp:415
+msgid "Could not load XML file '%1'"
+msgstr "XML ファイル '%1' を読み込めませんでした"
+
+#: generator.cpp:447
+msgid "Error processing XML file"
+msgstr "XML ファイルの処理エラー"
+
+#: generator.cpp:454
+msgid "Could not open '%1' for writing"
+msgstr "'%1' を書き込みのために開けませんでした"
+
+#: generator.cpp:472
+msgid "Could not create folder '%1' in '%2'"
+msgstr "'%2' にフォルダ '%1' を作成できませんでした"
+
+#: plugin.cpp:67
+msgid "HTML Gallery..."
+msgstr "HTML ギャラリー..."
+
+#: plugin.cpp:85
+msgid "Generating gallery..."
+msgstr "ギャラリーを生成..."
+
+#. i18n: file imagesettingspage.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "ImageSettingsPage"
+msgstr "ImageSettingsPage"
+
+#. i18n: file imagesettingspage.ui line 35
+#: rc.cpp:6
+#, no-c-format
+msgid "Full Image"
+msgstr "完全な画像"
+
+#. i18n: file imagesettingspage.ui line 99
+#: rc.cpp:9
+#, no-c-format
+msgid "Thumbnail"
+msgstr "サムネイル"
+
+#. i18n: file imagesettingspage.ui line 158
+#: rc.cpp:12
+#, no-c-format
+msgid "Save image"
+msgstr "画像を保存"
+
+#. i18n: file imagesettingspage.ui line 186
+#: rc.cpp:15
+#, no-c-format
+msgid "Max size:"
+msgstr "最大サイズ:"
+
+#. i18n: file imagesettingspage.ui line 197
+#: rc.cpp:18 rc.cpp:39
+#, no-c-format
+msgid "Format:"
+msgstr "ファイル形式:"
+
+#. i18n: file imagesettingspage.ui line 214
+#: rc.cpp:21 rc.cpp:42
+#, no-c-format
+msgid "JPEG"
+msgstr "JPEG"
+
+#. i18n: file imagesettingspage.ui line 219
+#: rc.cpp:24 rc.cpp:45
+#, no-c-format
+msgid "PNG"
+msgstr "PNG"
+
+#. i18n: file imagesettingspage.ui line 231
+#: rc.cpp:27 rc.cpp:36
+#, no-c-format
+msgid "Quality:"
+msgstr "画質:"
+
+#. i18n: file imagesettingspage.ui line 273
+#: rc.cpp:30
+#, no-c-format
+msgid "Include full-size original images for download"
+msgstr "ダウンロードにフルサイズのオリジナル画像を含める"
+
+#. i18n: file imagesettingspage.ui line 320
+#: rc.cpp:33
+#, no-c-format
+msgid "Use original image"
+msgstr "オリジナルの画像を使う"
+
+#. i18n: file imagesettingspage.ui line 431
+#: rc.cpp:48
+#, no-c-format
+msgid "Size:"
+msgstr "サイズ:"
+
+#. i18n: file outputpage.ui line 35
+#: rc.cpp:51
+#, no-c-format
+msgid "Destination folder:"
+msgstr "行き先フォルダ:"
+
+#. i18n: file outputpage.ui line 53
+#: rc.cpp:54
+#, no-c-format
+msgid "Open in browser"
+msgstr "ブラウザで開く"
+
+#. i18n: file themeparameterspage.ui line 16
+#: rc.cpp:57
+#, no-c-format
+msgid "Form1"
+msgstr "Form1"
+
+#. i18n: file themeparameterspage.ui line 38
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr "このページでテーマのいくつかのパラメータを変更することができます。変更できるパラメータはテーマによって異なります。"
+
+#: wizard.cpp:139
+msgid ""
+"_: '%1' is a label for a theme parameter\n"
+"%1:"
+msgstr "%1:"
+
+#: wizard.cpp:175
+msgid "HTML Export"
+msgstr "HTML エクスポート"
+
+#: wizard.cpp:178
+msgid "A KIPI plugin to export image collections to HTML pages"
+msgstr "Kipi 画像コレクションを HTML ページにエクスポートするプラグイン"
+
+#: wizard.cpp:181
+msgid "Author and Maintainer"
+msgstr "作者およびメンテナ"
+
+#: wizard.cpp:187
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: wizard.cpp:191
+msgid "Collection Selection"
+msgstr "コレクションの選択"
+
+#: wizard.cpp:195
+msgid "Theme"
+msgstr "テーマ"
+
+#: wizard.cpp:200
+msgid "Theme Parameters"
+msgstr "テーマのパラメータ"
+
+#: wizard.cpp:203
+msgid "Image Settings"
+msgstr "画像の設定"
+
+#: wizard.cpp:207
+msgid "Output"
+msgstr "出力"
+
+#: wizard.cpp:250
+#, c-format
+msgid "Author: %1"
+msgstr "作者: %1"

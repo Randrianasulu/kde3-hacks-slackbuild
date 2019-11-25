@@ -1,0 +1,199 @@
+/****************************************************************************
+** KDatMainWindow meta object code from reading C++ file 'KDatMainWindow.h'
+**
+** Created: Sun Feb 1 00:52:57 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "KDatMainWindow.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KDatMainWindow::className() const
+{
+    return "KDatMainWindow";
+}
+
+QMetaObject *KDatMainWindow::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KDatMainWindow( "KDatMainWindow", &KDatMainWindow::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KDatMainWindow::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KDatMainWindow", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KDatMainWindow::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KDatMainWindow", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KDatMainWindow::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KMainWindow::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "item", &static_QUType_ptr, "KTreeViewItem", QUParameter::In },
+	{ "allow", &static_QUType_bool, 0, QUParameter::InOut }
+    };
+    static const QUMethod slot_0 = {"localExpanding", 2, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"localExpanded", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"localCollapsed", 1, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"localSelected", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"localHighlighted", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "index", &static_QUType_int, 0, QUParameter::In },
+	{ "p", &static_QUType_varptr, "\x0e", QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"localPopupMenu", 2, param_slot_5 };
+    static const QUMethod slot_6 = {"fileBackup", 0, 0 };
+    static const QUMethod slot_7 = {"fileRestore", 0, 0 };
+    static const QUMethod slot_8 = {"fileVerify", 0, 0 };
+    static const QUMethod slot_9 = {"fileMountTape", 0, 0 };
+    static const QUMethod slot_10 = {"fileIndexTape", 0, 0 };
+    static const QUMethod slot_11 = {"fileDeleteArchive", 0, 0 };
+    static const QUMethod slot_12 = {"fileDeleteIndex", 0, 0 };
+    static const QUMethod slot_13 = {"fileFormatTape", 0, 0 };
+    static const QUMethod slot_14 = {"fileNewBackupProfile", 0, 0 };
+    static const QUMethod slot_15 = {"fileDeleteBackupProfile", 0, 0 };
+    static const QUMethod slot_16 = {"fileQuit", 0, 0 };
+    static const QUMethod slot_17 = {"editPreferences", 0, 0 };
+    static const QUMethod slot_18 = {"help", 0, 0 };
+    static const QUMethod slot_19 = {"slotTapeDevice", 0, 0 };
+    static const QUMethod slot_20 = {"slotTapeMounted", 0, 0 };
+    static const QUMethod slot_21 = {"slotTapeUnmounted", 0, 0 };
+    static const QUMethod slot_22 = {"backupCancel", 0, 0 };
+    static const QUMethod slot_23 = {"backupContinue", 0, 0 };
+    static const QUParameter param_slot_24[] = {
+	{ "msg", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_24 = {"status", 1, param_slot_24 };
+    static const QUMethod slot_25 = {"show", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "localExpanding(KTreeViewItem*,bool&)", &slot_0, QMetaData::Private },
+	{ "localExpanded(int)", &slot_1, QMetaData::Private },
+	{ "localCollapsed(int)", &slot_2, QMetaData::Private },
+	{ "localSelected(int)", &slot_3, QMetaData::Private },
+	{ "localHighlighted(int)", &slot_4, QMetaData::Private },
+	{ "localPopupMenu(int,const QPoint&)", &slot_5, QMetaData::Private },
+	{ "fileBackup()", &slot_6, QMetaData::Private },
+	{ "fileRestore()", &slot_7, QMetaData::Private },
+	{ "fileVerify()", &slot_8, QMetaData::Private },
+	{ "fileMountTape()", &slot_9, QMetaData::Private },
+	{ "fileIndexTape()", &slot_10, QMetaData::Private },
+	{ "fileDeleteArchive()", &slot_11, QMetaData::Private },
+	{ "fileDeleteIndex()", &slot_12, QMetaData::Private },
+	{ "fileFormatTape()", &slot_13, QMetaData::Private },
+	{ "fileNewBackupProfile()", &slot_14, QMetaData::Private },
+	{ "fileDeleteBackupProfile()", &slot_15, QMetaData::Private },
+	{ "fileQuit()", &slot_16, QMetaData::Private },
+	{ "editPreferences()", &slot_17, QMetaData::Private },
+	{ "help()", &slot_18, QMetaData::Private },
+	{ "slotTapeDevice()", &slot_19, QMetaData::Private },
+	{ "slotTapeMounted()", &slot_20, QMetaData::Private },
+	{ "slotTapeUnmounted()", &slot_21, QMetaData::Private },
+	{ "backupCancel()", &slot_22, QMetaData::Private },
+	{ "backupContinue()", &slot_23, QMetaData::Private },
+	{ "status(const QString&)", &slot_24, QMetaData::Public },
+	{ "show()", &slot_25, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KDatMainWindow", parentObject,
+	slot_tbl, 26,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KDatMainWindow.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KDatMainWindow::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KDatMainWindow" ) )
+	return this;
+    return KMainWindow::qt_cast( clname );
+}
+
+bool KDatMainWindow::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: localExpanding((KTreeViewItem*)static_QUType_ptr.get(_o+1),(bool&)static_QUType_bool.get(_o+2)); break;
+    case 1: localExpanded((int)static_QUType_int.get(_o+1)); break;
+    case 2: localCollapsed((int)static_QUType_int.get(_o+1)); break;
+    case 3: localSelected((int)static_QUType_int.get(_o+1)); break;
+    case 4: localHighlighted((int)static_QUType_int.get(_o+1)); break;
+    case 5: localPopupMenu((int)static_QUType_int.get(_o+1),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+2))); break;
+    case 6: fileBackup(); break;
+    case 7: fileRestore(); break;
+    case 8: fileVerify(); break;
+    case 9: fileMountTape(); break;
+    case 10: fileIndexTape(); break;
+    case 11: fileDeleteArchive(); break;
+    case 12: fileDeleteIndex(); break;
+    case 13: fileFormatTape(); break;
+    case 14: fileNewBackupProfile(); break;
+    case 15: fileDeleteBackupProfile(); break;
+    case 16: fileQuit(); break;
+    case 17: editPreferences(); break;
+    case 18: help(); break;
+    case 19: slotTapeDevice(); break;
+    case 20: slotTapeMounted(); break;
+    case 21: slotTapeUnmounted(); break;
+    case 22: backupCancel(); break;
+    case 23: backupContinue(); break;
+    case 24: status((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 25: show(); break;
+    default:
+	return KMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KDatMainWindow::qt_emit( int _id, QUObject* _o )
+{
+    return KMainWindow::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KDatMainWindow::qt_property( int id, int f, QVariant* v)
+{
+    return KMainWindow::qt_property( id, f, v);
+}
+
+bool KDatMainWindow::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

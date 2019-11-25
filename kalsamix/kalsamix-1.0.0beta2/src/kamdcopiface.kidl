@@ -1,0 +1,31 @@
+<!DOCTYPE DCOP-IDL><DCOP-IDL>
+<SOURCE>./kamdcopiface.h</SOURCE>
+<INCLUDE>dcopobject.h</INCLUDE>
+<INCLUDE>kamdcopiface.skel</INCLUDE>
+<CLASS>
+    <NAME>KAMDCOPIface</NAME>
+    <SUPER>DCOPObject</SUPER>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>masterVolUp</NAME>
+        <ARG><TYPE>int</TYPE></ARG>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>masterVolDown</NAME>
+        <ARG><TYPE>int</TYPE></ARG>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>masterMute</NAME>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>masterShow</NAME>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>quitKAlsaMix</NAME>
+     </FUNC>
+</CLASS>
+</DCOP-IDL>

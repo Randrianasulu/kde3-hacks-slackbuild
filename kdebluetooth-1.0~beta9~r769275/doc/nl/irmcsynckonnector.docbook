@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>IrMCSync Konnector voor Kitchensync</title>
+<para
+>Dit programma is een Konnector-plugin voor kitchensync. U kunt het gebruiken voor het synchroniseren van bijvoorbeeld uw mobiele telefoon of PDA met de agenda en/of adresboek op uw computer. Hiervoor dient deze ondersteuning te bieden voor IrMCSync. </para>
+<para
+>Momenteel is er ondersteuning voor de agenda en adresboek! </para>
+<para
+>WIJ ADVISEREN U OM EERST EEN KOPIE TE MAKEN VAN UW AGENDA EN ADRESBOEK VOORDAT U EEN SYNCHRONISATIE UITPROBEERT. Wij zijn niet verantwoordelijk als uw gegevens worden beschadigd of vernietigd. </para>
+
+
+<sect2>
+<title
+>We hebben debug-informatie nodig!</title>
+<para
+>ALSTUBLIEFT, draai kitchensync vanaf de prompt of herleid stdout en stderr naar een bestand zodat u bij eventuele problemen ons de uitvoer van konnector kunt sturen. Om het debuggen te activeren kunt u "kdebugdialog" starten en de kitchensync-gerelateerde opties (van 5200) en de generieke optie aanzetten. </para>
+</sect2>
+
+<sect2>
+<title
+>Compilatie.</title>
+<para
+>De huidige kitchensync  van kdepim SVN heeft meer functionaliteit en werkt beter dan die van kdepim 3.3.0 Wij adviseren u om deze versie te gebruiken. U dient hiervoor tenminste kitchensync (en alle bijhorende subprojecten) vanuit SVN te installeren. </para>
+<para
+>Er is ook kdepim-3.3.0-versie in de branch "irmcsync_kdepim_3_3_branch", maar die wordt niet meer onderhouden. Wij concentreren ons werk op de SVN-versie. Deze versie is afhankelijk van kdepim-3.3.0 en de oudere of nieuwere versies, zodat u deze dient op te halen en installeren. Als u de irmcsync_kdepim_3_3_branch wilt ophalen, ga dan naar de map kdebluetooth/irmcsync/irmcsynckonnector en typ: cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch </para
+>	
+
+<para
+>Om het compileren van de konnector te activeren dient u de map "rimsync" toe te voegen aan de variabele SUBDIR van het bestand kdebluetooth/Makefile.am </para>
+</sect2>
+
+<sect2>
+<title
+>KitchenSync gebruiken.</title>
+<para
+>Op dit moment (25/03/2004) is KitchenSync nog experimenteel en kunt u tegen diverse problemen aanlopen. </para>
+<para
+>Nadat u het gestart hebt dient u de te gebruiken konnectors te kiezen. U hebt tenminste 2 konnectors nodig voor een synchronisatie. Voor tests hebt u aan 1 genoeg. </para>
+<para
+>Om een konnector toe te voegen, ga naar <guimenuitem
+>Instellingen->Kitchensync instellen</guimenuitem
+> </para>
+<para
+>Als u foutmeldingen krijgt en het venster niet goed wordt getekend, probeer dan met de venstergrootte te spelen. In het combinatieveld Gegevensbronnen ziet u diverse keuzes. DIE ZIJN ALLEMAAL ONBRUIKBAAR EN UITGESCHAKELD, alleen "konnector" werkt. </para>
+<para
+>U kunt bijvoorbeeld de IRMCSync-konnector en een lokale konnector toevoegen. </para>
+<para
+>In de Irmcsynckonnector selecteert u uw apparaat en zet u dan het keuzevakje Agenda synchroniseren of Adresboek synchroniseren aan (momenteel kunt u niet beide tegelijkertijd synchroniseren). In de lokale konnector selecteert u een agendabestand EN een agendabestand (u dient beide op te geven met de juiste bestandsnamen anders werkt het niet). Wij adviseren u om een tijdelijke map aan te maken waarin u een kopie van uw originele adresboek en agenda zet zodat u enkele tests kunt uitvoeren. </para>
+<para
+>U vindt ze gebruikelijk in deze mappen: </para>
+<para
+>AGENDA: <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>ADRESBOEK: <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>Daarna dient u een profiel aan te maken in <guimenuitem
+>Instellingen->Profielen instellen</guimenuitem
+>. Voor elk profiel kunt u diverse onderdelen toevoegen. Elk onderdeel heeft een andere functie: </para>
+<itemizedlist>
+<listitem>
+<para
+>Synchronisatie-part: maakt de ECHTE synchronisatie. </para>
+</listitem>
+<listitem>
+<para
+>Konnection-debugger: hiermee kunt u een konnector debuggen. </para>
+</listitem>
+<listitem>
+<para
+>Konnector backup: maakt een reservekopie van de data. </para>
+</listitem>
+<listitem>
+<para
+>Overzicht-part: de naam zegt het al. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Als u een synchronisatie wilt uitvoeren kies dan tenminste de "Synchronisatie-part". </para>
+<para
+>Dan, om de synchronisatie uit te voeren, klik op de knop linksboven. </para>
+<para
+>U kunt dan de konnector controleren, een profiel aanmaken met de Konnector Debugger-part en klikken op Apparaat verbinden, gevolgd door de knop Synchronisatie lezen (ReadSyncees). </para>
+</sect2>
+</sect1>
+

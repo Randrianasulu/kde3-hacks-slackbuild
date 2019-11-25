@@ -1,0 +1,226 @@
+<chapter id="geolocation">
+<chapterinfo>
+
+<title
+>Geolokatsiooni redaktor</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>KIPI geolokatsiooni plugin võimaldab lisada pildi metaandmetesse GPS-koordinaate ja neid redigeerida. Geoandmed salvestatakse pildi EXIF-siltidesse ning asukohta on võimalik lasta näidata välises brauseris avatud kaardil. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>KIPI plugin <quote
+>Geolokatsioon</quote
+> pakub tööriistu piltide geograafiliseks lokaliseerimiseks tavalises sfääriliste koordinaatide süsteemis (mida kasutab GPS/Galileo). Kasutatakse kõrgust, laius- ja pikkuskraadi. </para>
+<note
+><para
+>Plugin toimib ainult nende pildivormingute puhul, mille korral <ulink url="http://www.exiv2.org"
+>libkexiv2</ulink
+> pakub EXIF-i toetust. </para
+></note>
+
+<sect1 id="geolocation-title"
+>  <title
+>Geolokatsioon</title>
+<para
+>Plugin tähistab pilte koordinaatidega kahel viisil: </para>
+<itemizedlist>
+    <listitem>
+        <para
+>GPS-andmete hulgikorrelatsioon pildiseeriaga. </para>
+    </listitem>
+    <listitem>
+        <para
+>Koordinaatide poolautomaatne omistamine üksikutele piltidele. </para>
+    </listitem>
+</itemizedlist>
+
+<sect2 id="geolocation-correlator"
+>       <title
+>Korrelaator</title>
+        <para
+>Piltide korrileerimiseks geoandmetega peab olema saadaval GPS-i trajektoor XML-failina gpx-vormingus (<ulink url="http://www.gpsbabel.org"
+>gpsbabel</ulink
+> ja <ulink url="http://www.ncc.up.pt/gpsman/"
+>gpsman</ulink
+> võivad trajektooriandmed GPS-seadmest sinu eest alla laadida ja teisendada). </para>
+        <para
+><menuchoice
+><guimenu
+>Pilt</guimenu
+><guimenuitem
+>Geolokatsioon</guimenuitem
+><guimenuitem
+>Korrelaator</guimenuitem
+></menuchoice
+>. See liides võimaldab vastendada eelnevalt valitud pildiseeria saadaoleva GPS-trajektooriga. </para>
+            <example>
+               <title
+>Geokorrelatsiooni dialoog EXIF-i kuupäeva/kellaaja ning trajektoori andmete (gpx-vormingus) põhjal</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocationcorrelate.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Vali rakenduse peaaknas pildid, mida soovid korrileerida, seejärel menüükäsk. Ilmub ülaltoodud dialoog. Aja ja asukoha korrileerimiseks tuleb laadida käsuga <guilabel
+>Laadi GPX-fail</guilabel
+> trajektoorifail, mis sisaldab GPS-andmeid samast ajast ja kohast, mil tegid kaameraga pilte. </para>
+           <para
+>Faili laadimise järel toimub automaatne korrelatsioon, omistatud koordinaate kuvatakse punaselt. GPS-trajektoori andmed on alati salvestatud GMT-ajas, mistõttu tuleb kaamera aeg seada GMT-ajaga vastavusse. Selleks on mõeldud <guilabel
+>Ajavöönd</guilabel
+>. Vali seal <emphasis
+>kaamera ajavöönd</emphasis
+>! </para>
+           <para
+><guilabel
+>Maks. ajavahe</guilabel
+> määrab ajalise erinevuse, mille puhul GPS-i ja kaamera aega loetakse veel kokkulangevaks. Maksimaalne väärtus on 2000 sekundit. </para>
+           <tip
+><para
+>Kui sul pole trajektooriandmeid samas kohas tehtud piltidele, võid ka GPX-faili käsitsi redigeerida ja rakendada tulemuse piltidele. 2000-sekundiline ajavahe tähendab, et seda rakendatakse piltidele, mis on tehtud nii poole tunni sees. </para
+></tip>
+
+           <para
+>Valikuid <guilabel
+>Interpoleerimine</guilabel
+> ja <guilabel
+>Erinevus minutites</guilabel
+> saab kasutada juhul, kui sobivaid andmeid pole. Kui tead, et tegelikult on asukoht õige, ehkki kaamera ja GPS-i andmed erinevad, võid siin määrata vajalikud piirangud ja klõpsata andmete interpoleerimiseks nupule <guilabel
+>Vii korrelatsiooni</guilabel
+>. </para>
+            <example>
+               <title
+>Korrelatsioon</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocationcorrelate1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Kasutada saab maksimaalselt 240-minutilist erinevust. </para>
+
+</sect2
+> 
+
+<sect2 id="geolocation-edit-coordinates"
+>       <title
+>Koordinaatide muutmine</title>
+            <example>
+               <title
+>Koordinaatide poolautomaatne omistamine kaardil</title>
+                   <screenshot
+><mediaobject
+><imageobject
+><imagedata fileref="geolocationeditcoords.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+           <para
+>Dialoogis saab koordinaate ka käsitsi määrata. See on abiks juhul, kui sul on terve seeria ühes kohas tehtud pilte. Et dialoogid jätavad koordinaadid meelde, piisab varasemate andmete rakendamisest uuele fotole lihtsast klõpsust nupule <guilabel
+>OK</guilabel
+>. </para>
+           <para
+>Asukohta saab leida ja parandada ka kuvataval kaardil. Vali vajalik piirkond, suurenda, täpsusta asukohta uue klõpsuga, kuni oled lõpuks saavutanud piisava täpsuse. Kõrgus tuleb alati käsitsi sisestada. Kaardil võib kasutada nii kaardi, satelliidipildi kui ka segarežiimi. </para>
+</sect2>
+
+<sect2 id="geolocation-manual"
+> <title
+>Sildistamine käsureal</title>
+  <para
+>Kui korraks jätta täiesti kõrvale KIPI plugina võimalused, siis saab GPS-andmeid piltidele teisitigi lisada. Toome siin ära väikse skripti, mis kasutab programmi exiftool piltide hulgisildistamiseks. </para>
+
+
+<blockquote
+><screen
+>#!/bin/sh
+# exiftool wrapper script for easy commandline use. It treats regex files or whole directories.
+#
+#                        FMT                  Output
+#                "%d deg %d' %.2f"\"    54 deg 59' 22.80"
+#                "%d deg %.4f min"      54 deg 59.3800 min
+#                "%.6f degrees"         54.989667 degrees
+
+if [ -z $1 ]; then 
+   echo "Usage: exiftool-gps-wrapper lat long [alt] file || dir (use signed floating coordinates)"
+else
+
+   if  [ -z "$4" ]; then  foo="$3"; alt=0
+   else                          foo="$4"; alt=$3
+   fi
+
+   echo $foo
+   if [ -e "$foo" ] ; then
+        latR=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
+        lonR=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+        lat=$(echo "$1" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+        lon=$(echo "$2" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+        # use the following syntax for easy googlian paste of ll=-1.23456,53.345345
+        #lonR=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
+        echo $lat, $latR, $lon, $lonR, $3, $4, $foo
+        
+        function setgpsinfo ()
+        {
+            exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$5 \
+            -GPSLongitudeRef=$4 -GPSLongitude=$3 -GPSLatitudeRef=$2 -GPSLatitude=$1 "$6"
+            exiftool -GPS:ALL "$6"
+        }
+
+        if [ -d "$foo" ] ; then
+
+            for i in "$foo" ; do    # the selection of files treated depend on the passed regex
+                echo "i= "$i
+                setgpsinfo $lat $latR $lon $lonR $alt "$i"
+            done
+        else
+            setgpsinfo $lat $latR $lon $lonR $alt "$foo"
+        fi
+   else        echo "file or folder is wrong"
+   fi
+fi                 
+</screen
+></blockquote>
+</sect2>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

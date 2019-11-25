@@ -1,0 +1,355 @@
+# Danish translation of kipiplugin_acquireimages
+# Copyright (C)
+# Rune Laursen <runerl@skjoldhoej.dk>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_acquireimages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2004-10-11 13:34+0200\n"
+"Last-Translator: Rune Rønde Laursen <runerl@skjoldhoej.dk>\n"
+"Language-Team: dansk <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Rune Rønde Laursen"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "runerl@skjoldhoej.dk"
+
+#: acquireimagedialog.cpp:105
+msgid "Save Target Image Options"
+msgstr "Gem egenskaber for målbillede"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+msgid "Acquire images"
+msgstr "Hent billeder"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+msgid "A Kipi plugin to acquire images"
+msgstr "En KIPI plugin til at hente billeder"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr "Forfatter og vedligeholder"
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr ""
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "billede"
+
+#: acquireimagedialog.cpp:180
+msgid "Target Image"
+msgstr "Målbillede"
+
+#: acquireimagedialog.cpp:181
+msgid "Target Image Options"
+msgstr "Målbilledegenskaber"
+
+#: acquireimagedialog.cpp:190
+#, fuzzy
+msgid "File Name && Caption"
+msgstr "Filnavn && kommentarer"
+
+#: acquireimagedialog.cpp:191
+#, fuzzy
+msgid "<p>The target image preview with the file name and caption."
+msgstr "<p> Den aktuelle billedforhåndsvisning med filnavn og kommentarer."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Filnavn (uden endelser):"
+
+#: acquireimagedialog.cpp:197
+msgid "acquired_image"
+msgstr "hentet_billede"
+
+#: acquireimagedialog.cpp:198
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Her skrives filnavnet uden endelse (endelsen, som tilføjes til filen "
+"automatisk i henhold til filformatindstillingen.)"
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr ""
+
+#: acquireimagedialog.cpp:209
+#, fuzzy
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Her skrives kommentarer til billedet."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Forhåndsvisningen af billedet."
+
+#: acquireimagedialog.cpp:228
+msgid "Saving Options"
+msgstr "Gem-indstillinger"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>Gem-indstillingerne til billedet."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Billedkomprimering:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>Billedets komprimeringsværdi til JPEG og PNG-formaterne:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: meget høj komprimering"
+"<p><b>25</b>: høj komprimering"
+"<p><b>50</b>: mellem komprimering"
+"<p><b>75</b>: lav komprimering(standardværdi)"
+"<p><b>100</b>: ingen komprimering"
+
+#: acquireimagedialog.cpp:260
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Her angives billedets filformat.<p>"
+
+#: acquireimagedialog.cpp:261
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Joint Photographic Experts Group filformatet er velegnet til brug "
+"på WWW, men benytter en komprimeringsmetode hvorved der mistes "
+"billedinformation."
+"<p><b>PNG</b>: Portable Networks Graphics filformatet er et udvidbart format "
+"til tabsfrit, portabelt, komprimeret lagring af rasterbilleder. PNG tilbyder en "
+"patentfri erstatning for GIF og kan også erstatte brugen af TIFF i visse "
+"situationer PNG er designet til at fungere godt i visningsprogrammer på nettet, "
+"for eksempel til World Wide Web, derfor er formatet muligt at streame og med "
+"mulighed for fremskridtsvisning. PNG kan også gemme gamma og farveinformation "
+"til forbedret farveoverensstemmelse på forskellige platforme."
+
+#: acquireimagedialog.cpp:269
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: Tagged Image File Format er en temmelig gammel standard der "
+"stadig er populær idag. Det er et meget fleksibelt og platformuafhængigt "
+"format, der understøttes af mange billedbehandlingsprogrammer og næsten al "
+"prepress software på markedet."
+
+#: acquireimagedialog.cpp:273
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: Portable Pixel Map filformatet bliver brugt som et intermediært "
+"format til at lagre farvebitmapinformation. PPM-filer er enten binære eller "
+"ASCII og lagrer billedpunktsværdier op til 24bit-størrelse. Dette format "
+"genererer de største tekstfiler til tabsfri indkodning af billeder."
+
+#: acquireimagedialog.cpp:277
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>:BitMaP filformatet er et populært filformat fra win32-miljøet. "
+"Det lagrer effektivt mapped eller unmapped RGB-grafikdata med billedpunkter i "
+"størrelserne 1-, 4-, 8-, eller 24bit. Data kan lagres råt eller komprimeret ved "
+"at benytte en 4- eller 8bit RLE datakomprimeringsalgoritme. BMP er et godt valg "
+"til et simpelt bitmapformat som understøtter en bred vifte af RGB billeddata."
+
+#: acquireimagedialog.cpp:284
+msgid "Image file format:"
+msgstr "Billedfilformat:"
+
+#: acquireimagedialog.cpp:303
+msgid "Selection"
+msgstr "Markering"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Albummarkering"
+
+#: acquireimagedialog.cpp:311
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Vælg mappe at gemme målbilledet i"
+
+#: acquireimagedialog.cpp:320
+msgid "&Add New Folder"
+msgstr "&Tilføj ny mappe"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr "<p>Tilføjer en ny mappe."
+
+#: acquireimagedialog.cpp:328
+msgid "Album Description"
+msgstr "Albumbeskrivelse"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p> Beskrivelse af det aktuelle album i listen."
+
+#: acquireimagedialog.cpp:393
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Samling: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Samling: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Dato: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Billeder: %1"
+
+#: acquireimagedialog.cpp:409
+msgid "You must select a target album for this image."
+msgstr "Du skal vælge et album til dette billede."
+
+#: acquireimagedialog.cpp:415
+msgid "You must provide a file name for this image."
+msgstr "Du skal angive et filnavn til dette billede."
+
+#: acquireimagedialog.cpp:474
+msgid "Cannot write image file \"%1\"."
+msgstr "Kan ikke oprette billedfil \"%1\"."
+
+#: acquireimagedialog.cpp:483
+msgid "Could not upload image to \"%1\"."
+msgstr "Kunne ikke overføre billedfil til \"%1\"."
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+"<qt>Fejl ved informering om det nye billede til programmet. Fejlen var: %1</qt>"
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Skan billeder..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Skærmfoto..."
+
+#: plugin_acquireimages.cpp:114
+msgid "No KDE scan-service available; check your system."
+msgstr "Ingen KDE-skanservice til rådighed. Undersøg din installation."
+
+#: plugin_acquireimages.cpp:115
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "KIPI's Skan billeder plugin"
+
+#: screenshotdialog.cpp:71
+msgid "Screenshot"
+msgstr "Øjebliksbillede"
+
+#: screenshotdialog.cpp:72
+msgid "&New Snapshot"
+msgstr "&Nyt øjebliksbillede"
+
+#: screenshotdialog.cpp:82
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"Dette vil tage et billede af din desktop eller\n"
+"et enkelt applikationsvindue. Hvis du tager et billede af et\n"
+"enkelt vindue, ændrer din musepil sig til et kryds og du kan\n"
+"vælge vinduet med din mus."
+
+#: screenshotdialog.cpp:90
+msgid "Grab the entire desktop"
+msgstr "Tag billede af hele desktoppen."
+
+#: screenshotdialog.cpp:91
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p> Med denne indstilling bliver hele desktoppen fotograferet, ellers bliver "
+"kun de aktive vinduer."
+
+#: screenshotdialog.cpp:97
+msgid "Hide all host application windows"
+msgstr "Skjul alle værtsprogramvinduer."
+
+#: screenshotdialog.cpp:98
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr ""
+"<p>Med denne indstilling kan alle værtsprogrammets vinduer skjules, når der "
+"tages et øjelibksbillede."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Forsinkelse:"
+
+#: screenshotdialog.cpp:107
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr "<p>Forsinkelsen i sekunder før billedet tages."
+
+#: screenshotdialog.cpp:261
+msgid "Unable to take snapshot."
+msgstr "Kunne ikke tage øjebliksbillede."
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Fejl ved øjebliksbillede"
+
+#~ msgid "Acquire Images Handbook"
+#~ msgstr "Håndbog for hent billeder"
+
+#~ msgid "Comments:"
+#~ msgstr "Kommentarer:"
+
+#~ msgid "Comment: %1"
+#~ msgstr "Kommentar: %1"

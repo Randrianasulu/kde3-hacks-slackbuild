@@ -1,0 +1,184 @@
+tree_parser.lo: tree_parser.cpp /usr/include/stdc-predef.h tree_parser.h \
+ ast.h /usr/include/c++/4.8.4/memory \
+ /usr/include/c++/4.8.4/bits/stl_algobase.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/c++config.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/cpu_defines.h \
+ /usr/include/c++/4.8.4/bits/functexcept.h \
+ /usr/include/c++/4.8.4/bits/exception_defines.h \
+ /usr/include/c++/4.8.4/bits/cpp_type_traits.h \
+ /usr/include/c++/4.8.4/ext/type_traits.h \
+ /usr/include/c++/4.8.4/ext/numeric_traits.h \
+ /usr/include/c++/4.8.4/bits/stl_pair.h \
+ /usr/include/c++/4.8.4/bits/move.h \
+ /usr/include/c++/4.8.4/bits/concept_check.h \
+ /usr/include/c++/4.8.4/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.8.4/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.8.4/debug/debug.h \
+ /usr/include/c++/4.8.4/bits/stl_iterator.h \
+ /usr/include/c++/4.8.4/bits/allocator.h \
+ /usr/include/c++/4.8.4/i486-slackware-linux/bits/c++allocator.h \
+ /usr/include/c++/4.8.4/ext/new_allocator.h /usr/include/c++/4.8.4/new \
+ /usr/include/c++/4.8.4/exception \
+ /usr/include/c++/4.8.4/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/4.8.4/bits/memoryfwd.h \
+ /usr/include/c++/4.8.4/bits/stl_construct.h \
+ /usr/include/c++/4.8.4/ext/alloc_traits.h \
+ /usr/include/c++/4.8.4/bits/stl_uninitialized.h \
+ /usr/include/c++/4.8.4/bits/stl_tempbuf.h \
+ /usr/include/c++/4.8.4/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/4.8.4/backward/auto_ptr.h \
+ /usr/lib/qt3/include/qstring.h /usr/lib/qt3/include/qcstring.h \
+ /usr/lib/qt3/include/qmemarray.h /usr/lib/qt3/include/qgarray.h \
+ /usr/lib/qt3/include/qshared.h /usr/lib/qt3/include/qglobal.h \
+ /usr/lib/qt3/include/qconfig.h /usr/lib/qt3/include/qmodules.h \
+ /usr/lib/qt3/include/qfeatures.h /usr/lib/qt3/include/qwinexport.h \
+ /usr/include/string.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h \
+ /usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h /usr/lib/qt3/include/qptrlist.h \
+ /usr/lib/qt3/include/qglist.h /usr/lib/qt3/include/qptrcollection.h \
+ /usr/include/kdebug.h /usr/include/kdelibs_export.h \
+ /usr/include/kdemacros.h /usr/lib/qt3/include/qglobal.h
+
+/usr/include/stdc-predef.h:
+
+tree_parser.h:
+
+ast.h:
+
+/usr/include/c++/4.8.4/memory:
+
+/usr/include/c++/4.8.4/bits/stl_algobase.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/c++config.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/cpu_defines.h:
+
+/usr/include/c++/4.8.4/bits/functexcept.h:
+
+/usr/include/c++/4.8.4/bits/exception_defines.h:
+
+/usr/include/c++/4.8.4/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.8.4/ext/type_traits.h:
+
+/usr/include/c++/4.8.4/ext/numeric_traits.h:
+
+/usr/include/c++/4.8.4/bits/stl_pair.h:
+
+/usr/include/c++/4.8.4/bits/move.h:
+
+/usr/include/c++/4.8.4/bits/concept_check.h:
+
+/usr/include/c++/4.8.4/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.8.4/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.8.4/debug/debug.h:
+
+/usr/include/c++/4.8.4/bits/stl_iterator.h:
+
+/usr/include/c++/4.8.4/bits/allocator.h:
+
+/usr/include/c++/4.8.4/i486-slackware-linux/bits/c++allocator.h:
+
+/usr/include/c++/4.8.4/ext/new_allocator.h:
+
+/usr/include/c++/4.8.4/new:
+
+/usr/include/c++/4.8.4/exception:
+
+/usr/include/c++/4.8.4/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/4.8.4/bits/memoryfwd.h:
+
+/usr/include/c++/4.8.4/bits/stl_construct.h:
+
+/usr/include/c++/4.8.4/ext/alloc_traits.h:
+
+/usr/include/c++/4.8.4/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.8.4/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.8.4/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/4.8.4/backward/auto_ptr.h:
+
+/usr/lib/qt3/include/qstring.h:
+
+/usr/lib/qt3/include/qcstring.h:
+
+/usr/lib/qt3/include/qmemarray.h:
+
+/usr/lib/qt3/include/qgarray.h:
+
+/usr/lib/qt3/include/qshared.h:
+
+/usr/lib/qt3/include/qglobal.h:
+
+/usr/lib/qt3/include/qconfig.h:
+
+/usr/lib/qt3/include/qmodules.h:
+
+/usr/lib/qt3/include/qfeatures.h:
+
+/usr/lib/qt3/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-slackware-linux/4.8.4/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/qt3/include/qptrlist.h:
+
+/usr/lib/qt3/include/qglist.h:
+
+/usr/lib/qt3/include/qptrcollection.h:
+
+/usr/include/kdebug.h:
+
+/usr/include/kdelibs_export.h:
+
+/usr/include/kdemacros.h:
+
+/usr/lib/qt3/include/qglobal.h:

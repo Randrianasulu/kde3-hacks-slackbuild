@@ -1,0 +1,12 @@
+cat $CWD/kdepim_alt.diff | patch -p1 --verbose || exit 1
+cat $CWD/3_5_BRANCH.diff | patch -p0 --verbose || exit 1
+cat $CWD/r951202.diff | patch -p0 --verbose || exit 1
+cat $CWD/gcc-4.5_changes.diff | patch -p0 --verbose || exit 1
+cat $CWD/python_and_automake.patch | patch -p0 --verbose || exit 1
+cat $CWD/kdepim_kmail-composer-crash-fix.patch | patch -p1 --verbose || exit 1
+#cat $CWD/kdepim-gcc-fix-call.patch | patch -p1 --verbose || exit 1
+cat $CWD/kdepim-gentoo-kioslaves-3.5.10-kio_imap4_fix_infinite_loop.patch | patch -p1 --verbose || exit 1
+cat $CWD/kdepim-pardus-kmail-imapfetchmaxsize.patch | patch -p1 --verbose || exit 1
+cat $CWD/kdepim3-gcc47.patch | patch -p1 --verbose || exit 1
+cat $CWD/knode_threaded_crash.diff | patch -p0 --verbose || exit 1
+cat $CWD/kdelibs-perl-patch.patch | patch -p1 --verbose || exit 1

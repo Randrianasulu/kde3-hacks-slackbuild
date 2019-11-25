@@ -1,0 +1,77 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Größe ändern</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das KIPI Modul "Größe ändern" ist ein Werkzeug zum ändern oder adaptieren der Bilddimensionen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+<para
+>Dieses Modul kann benutzt werden um die Größe mehrerer Bilder einer Bildsammlung zu ändern. Es benutzt dazu das "convert" Programm aus dem "ImageMagick" Paket. Sie können das Bild verkleinern oder vergrößern. Dazu werden vier Arten der Bildänderung zur Verfügung gestellt: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Proportional (1 Dim.)</emphasis
+>: normale Größenänderung in einer Dimension. Die Breite oder die Höhe des Bildes wird automatisch, in Abhängigkeit der Bildorientierung, ausgewählt. Das Seitenverhältnis bleibt unverändert.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proportional (2 Dim.)</emphasis
+>: Größenänderung in zwei Dimensionen. Hierbei bleibt das Seitenverhältnis unverändert. Sie können diese Option z.B. dazu nutzen, um Ihr Bild dem Bildschirmformat anzupassen. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>Nicht Proportional</emphasis
+>: nicht proportionale Größenänderung in zwei Dimensionen. Das Seitenverhältnis wird bei dieser Option geändert.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Druckvorbereitung</emphasis
+>: bereitet das Bild für den Fotodruck vor. Der Benutzer kann die Druckauflösung und die Größe des Fotopapiers setzen. Das Zielbild, inklusive Hintergrundgröße, Randgröße und Hintergrundfarbe, wird entsprechend angepasst.</para
+></listitem>
+</itemizedlist>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

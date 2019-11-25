@@ -1,0 +1,226 @@
+# translation of kipiplugin_sync.po to Serbian
+#
+# Slobodan Simic <simicsl@verat.net>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sync\n"
+"POT-Creation-Date: 2008-07-08 22:16+0200\n"
+"PO-Revision-Date: 2007-07-23 13:49+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Ime:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Koristi &galeriju 2"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:136
+msgid "Albums"
+msgstr "Albumi"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Pregazi podrazumevane opcije"
+
+#: gallerywidget.cpp:109
+msgid "Resize photos before uploading"
+msgstr "Promeni veličinu slika pre slanja"
+
+#: gallerywidget.cpp:117
+msgid "Maximum dimension:"
+msgstr "Najveća veličina:"
+
+#: gallerywidget.cpp:135
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Izvoz galerije</h2>"
+
+#: gallerywidget.cpp:137
+msgid "&New Album"
+msgstr "&Novi album"
+
+#: gallerywidget.cpp:138
+msgid "&Add Photos"
+msgstr "Dod&aj slike"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Izvoz galerije"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "Kipi priključak za izvoz kolekcije slika na udaljeni server galerije."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Autor"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Održavalac"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gallerywindow.cpp:228
+msgid "Failed to login into remote gallery. "
+msgstr "Nisam uspeo da se prijavim u udaljenu galeriju"
+
+#: gallerywindow.cpp:230
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Želite li da pokušate ponovo?"
+
+#: gallerywindow.cpp:516
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Nažalost, ovi znakovi nisu dozvoljeni u imenu albuma: %1"
+
+#: gallerywindow.cpp:586
+msgid "Uploading file %1 "
+msgstr "Šaljem fajl %1 "
+
+#: gallerywindow.cpp:603
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Nisam uspeo da pošaljem sliku u udaljenu galeriju. "
+
+#: gallerywindow.cpp:606
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Želite li da nastavite?"
+
+#: plugin_sync.cpp:77
+msgid "Synchronize..."
+msgstr "Uskladi..."
+
+#: plugin_sync.cpp:86
+msgid "Configure Synchronization..."
+msgstr "Podesi usklađivanje..."
+
+#: plugin_sync.cpp:95 plugin_sync.cpp:104
+msgid "Synchronization Settings..."
+msgstr "Postavke usklađivanja..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "Moj dijalog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3> Unesite ime novog albuma</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Naslov (opciono):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Ime (opciono):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Natpis (opciono):"
+
+#. i18n: file sinklistbase.ui line 16
+#: rc.cpp:24
+#, no-c-format
+msgid "Sinks"
+msgstr ""
+
+#. i18n: file sinklistbase.ui line 97
+#: rc.cpp:30
+#, no-c-format
+msgid "&Find"
+msgstr "&Nađi"
+
+#. i18n: file sinklistbase.ui line 100
+#: rc.cpp:33
+#, no-c-format
+msgid "Alt+F"
+msgstr "Alt+N"
+
+#. i18n: file sinklistbase.ui line 128
+#: rc.cpp:42
+#, no-c-format
+msgid "Alt+O"
+msgstr ""
+
+#. i18n: file sinklistbase.ui line 142
+#: rc.cpp:48
+#, no-c-format
+msgid "Alt+C"
+msgstr ""
+
+#: sinklist.cpp:46
+msgid "Name"
+msgstr "Ime"
+
+#: sinklist.cpp:47
+msgid "Type"
+msgstr "Vrsta"
+
+#: sinklist.cpp:121 sinklist.cpp:144
+msgid "No sink selected!"
+msgstr ""
+
+#: sinklist.cpp:150
+msgid ""
+"Are you sure you want to remove this sink? All synchronisaton settings will be "
+"lost. You cannot undo this action."
+msgstr ""
+
+#: sinklist.cpp:153
+msgid "Remove Sink?"
+msgstr ""
+
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Priručnik za Izvoz galerije"

@@ -1,0 +1,188 @@
+<chapter id="sendimages">
+<chapterinfo>
+
+<title
+>Skicka bilder</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_punkt_gilles_snabela_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_snabela_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>KIPI-insticksprogrammet <quote
+>Skicka bilder</quote
+> är ett verktyg för att direkt e-posta bilder. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Med det här KIPI-insticksprogrammet kan du e-posta markerade bilder med ditt favoritprogram för e-post. Det är möjligt att utföra storleksändring av bilderna. Du kan använda drag och släpp för att lägga till fler bilder i listan med de som ska skickas. </para>
+
+<sect1 id="using-plugin-mailselectiondialog">
+<title
+>Bildvalsdialogrutan</title>
+
+<para
+>När insticksprogrammet öppnas från värdprogrammet visas fönstret <emphasis
+>Bilder</emphasis
+> med förvalda bilder redan i listan att skickas. Med knappen <guilabel
+>Lägg till bilder</guilabel
+> visas en filbläddrare för att lägga till fler bilder efter behov med det vanliga sättet att välja filer. Bilden under markören i listan visas till höger. </para>
+
+<tip
+><para
+>Du kan använda drag och släpp möjligheter mellan värdprogrammets fönster och bildlistan för att lägga till nya bilder att e-posta. </para
+></tip>
+
+<para
+>När du klickar på den andra knappen <guilabel
+>Ta bort bilder</guilabel
+> tas valda bilder (markerade i listan) bort från listan att e-posta. </para>
+
+<para
+>När du är klar med att välja filer, klicka på <guilabel
+>Ok</guilabel
+> för att öppna dialogfönstret 'Nytt brev' i ditt favoritprogram för e-post. Du behöver bara lägga till adressaten och rubriken. De valda bilderna finns redan där som bilagor. </para>
+
+<warning
+><para
+>Försäkra dig om att du inte överskrider din egen eller adressaternas gräns för brevöverföring. De flesta leverantörer begränsar brevstorleken till några Mibyte data. Använd flera brev om du vill skicka mycket data. </para
+></warning>
+
+<figure>
+    <title
+>Bildvalsdialogrutan</title>
+    <graphic srccredit="The Image Selection Dialog" fileref="sendimages_imageselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-mailsettingsdialog">
+<title
+>E-postdialogrutan</title>
+
+<para
+>E-postdialogrutan används för att ändra inställningar för bilderna som ska skickas. Inställningarna blir ihågkomna när du stänger insticksprogrammet, ända till du ändrar dem. </para>
+
+<para
+>Välj ditt favoritprogram för e-post i kombinationsrutan. (Om du använder <application
+>Thunderbird</application
+> blir fältet nedanför tillgängligt för att välja rätt sökväg enligt din installation). </para>
+
+<note
+><para
+>Om du vill använda Gmail-tjäsnten, måste du installera <application
+>GMailAgent</application
+> på datorn, tillgänglig på <ulink url="http://gmailagent.sourceforge.net"
+>denna webbadress</ulink
+>. </para
+></note>
+
+<para
+>Om du väljer <guilabel
+>Lägg till kommentarer i bifogad fil</guilabel
+>, sammanfogas kommentarerna som hör till bilderna i en textfil som bifogas till brevet. </para>
+
+<para
+>Följande tre alternativ låter dig ställa in kvaliteten på bilderna som ska skickas. Välj ett av dem. Graden av <guilabel
+>Ny bildkomprimering</guilabel
+> kan väljas med skjutkontrollen eller inmatningsrutan. En vanlig komprimeringsgrad för <guilabel
+>JPEG</guilabel
+>-filer är 75 %. Att ställa in komprimeringsgraden till 100 % ger en förlustfri komprimering, men ger största filstorleken. Skillnaden i filstorlek mellan 90 % och 100 % kan vara dramatisk, medan förbättringen i kvalitet är liten. Mycket bra kvalitet uppnås redan vid 85 % komprimering. </para>
+
+<para
+>Formatet <guilabel
+>PNG</guilabel
+> i kombinationsrutan <guilabel
+>Bildfilformat</guilabel
+> är inte bra anpassat att reducera storleken hos fotografiska bilder, men är bäst lämpat att komprimera förlustfria bilder exempelvis med TIFF-filformat. <guilabel
+>PNG</guilabel
+> måste användas om du använder en snabb Internetuppkoppling och om du vill bevara fotokvaliteten. Annars är <guilabel
+>JPEG</guilabel
+> det rekommenderade formatet. </para>
+
+<note
+><para
+>Om du väljer <guilabel
+>JPEG</guilabel
+> som <guilabel
+>Bildfilformat</guilabel
+> och om originalfilerna också hade <guilabel
+>JPEG</guilabel
+>-format, bevaras EXIF-data som ingår i originalen i de e-postade bilderna. </para
+></note>
+
+<figure>
+    <title
+>Brevdialogrutan</title>
+    <graphic srccredit="The Mail Dialog" fileref="sendimages_mail.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-emailimagesinaction">
+<title
+>E-posta bilder i användning</title>
+
+<para
+>En förloppsdialogruta som ger återmatning till användaren. Tryck på knappen <guilabel
+>Avbryt</guilabel
+> under denna fas om du vill avbryta processen. </para>
+
+<para
+>När alla jobb är färdiga, stängs inte dialogrutan automatiskt och användaren kan titta på meddelanden om några fel uppstått under fasen. E-postprogrammet startas automatiskt i slutet. Tryck på knappen <guilabel
+>Stäng</guilabel
+> för att stänga dialogrutan. </para>
+
+<figure>
+    <title
+>Insticksprogrammet E-posta bilder under arbete</title>
+    <graphic srccredit="The E-mail Images Plugin in Action" fileref="sendimages_progress.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

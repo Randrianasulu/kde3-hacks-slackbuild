@@ -1,0 +1,248 @@
+# translation of kipiplugin_galleryexport.po to Serbian
+#
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-04 14:56+0100\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Слободан Симић"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Име галерије"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "URL"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Корисник"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Име:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Корисничко име:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Лозинка:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Користи &галерију 2"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Удаљене галерије"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Нова удаљена галерија"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Нема изабране галерије!"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Уреди удаљену галерију"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Сигурни сте да желите да уредите ову удаљену галерију? Сва подешавања "
+"синхронизације биће изгубљена. Не можете повратити ову радњу."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Уклони удаљену галерију"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "URL галерије је вероватно неисправан"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Наведено је неисправно корисничко име или лозинка"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Неисправан одговор примљен од удаљене галерије"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Нисам успео да излистам албуме"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Нисам успео да излистам слике"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Нисам успео да направим нови албум"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Нисам успео да пошаљем слику"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Албуми"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Прегази подразумеване опције"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "Коментар поставља наслов"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "Коментар поставља опис"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Промени величину пре слања"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Највећа величина:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Извоз галерије</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Нови албум"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "Дод&ај слике"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Извоз галерије"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "Kipi прикључак за извоз колекције слика на удаљени сервер галерије."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Аутор"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Одржава"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Приручник прикључка"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Нисам успео да се пријавим у удаљену галерију"
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Желите ли да покушате поново?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Нажалост, ови знакови нису дозвољени у имену албума: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Шаљем фајл %1 "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Нисам успео да пошаљем слику у удаљену галерију. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Желите ли да наставите?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Синхронизација удаљене галерије..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Удаљене галерије..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "Мој дијалог"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3> Унесите име новог албума</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Наслов (опционо):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Име (опционо):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Натпис (опционо):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Нова галерија"

@@ -1,0 +1,182 @@
+# translation of kipiplugin_timeadjust.po to Italian
+# Federico Zenith <federico.zenith@member.fsf.org>, 2004, 2005, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_timeadjust\n"
+"POT-Creation-Date: 2008-03-17 12:48+0100\n"
+"PO-Revision-Date: 2008-02-29 08:42+0100\n"
+"Last-Translator: Federico Zenith <federico.zenith@member.fsf.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Federico Zenith"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "federico.zenith@member.fsf.org"
+
+#: plugin_timeadjust.cpp:61
+msgid "Adjust Time && Date..."
+msgstr "Regola data e ora..."
+
+#: timeadjustdialog.cpp:150 timeadjustdialog.cpp:509
+msgid "Adjust Time & Date"
+msgstr "Regola data e ora"
+
+#: timeadjustdialog.cpp:160
+msgid "Time Adjust"
+msgstr "Regolazione dell'ora"
+
+#: timeadjustdialog.cpp:163
+msgid "A Kipi plugin for adjusting time stamp of picture files"
+msgstr ""
+"Un plugin di Kipi per regolare le date e le ore dei file delle immagini"
+
+#: timeadjustdialog.cpp:167
+msgid "Author"
+msgstr "Autore"
+
+#: timeadjustdialog.cpp:170
+msgid "Developper and maintainer"
+msgstr "Sviluppatore e responsabile"
+
+#: timeadjustdialog.cpp:176
+msgid "Plugin Handbook"
+msgstr "Manuale del plugin"
+
+#: timeadjustdialog.cpp:181
+msgid "Adjustment Type"
+msgstr "Tipo di regolazione"
+
+#: timeadjustdialog.cpp:184
+msgid "Subtract"
+msgstr "Sottrai"
+
+#: timeadjustdialog.cpp:185
+msgid "Set file date to EXIF/IPTC creation date"
+msgstr "Imposta la data del file alla data di creazione EXIF/IPTC"
+
+#: timeadjustdialog.cpp:186
+msgid "Custom date"
+msgstr "Data personalizzata"
+
+#: timeadjustdialog.cpp:200
+msgid "Reset to current date"
+msgstr "Azzera alla data attuale"
+
+#: timeadjustdialog.cpp:203
+msgid "Update EXIF creation date"
+msgstr "Aggiorna la data di creazione EXIF"
+
+#: timeadjustdialog.cpp:204
+msgid "Update IPTC creation date"
+msgstr "Aggiorna la data di creazione IPTC"
+
+#: timeadjustdialog.cpp:210
+msgid "Adjustments"
+msgstr "Regolazioni"
+
+#: timeadjustdialog.cpp:218
+msgid "Hours:"
+msgstr "Ore:"
+
+#: timeadjustdialog.cpp:223
+msgid "Minutes:"
+msgstr "Minuti:"
+
+#: timeadjustdialog.cpp:228
+msgid "Seconds:"
+msgstr "Secondi:"
+
+#: timeadjustdialog.cpp:233
+msgid "Days:"
+msgstr "Giorni:"
+
+#: timeadjustdialog.cpp:238
+msgid "Months:"
+msgstr "Mesi:"
+
+#: timeadjustdialog.cpp:243
+msgid "Years:"
+msgstr "Anni:"
+
+#: timeadjustdialog.cpp:250
+msgid "Example"
+msgstr "Esempio"
+
+#: timeadjustdialog.cpp:380
+#, c-format
+msgid ""
+"_n: 1 image will be changed; \n"
+"%n images will be changed; "
+msgstr ""
+"1 immagine sarà cambiata; \n"
+"%n immagini saranno cambiate; "
+
+#: timeadjustdialog.cpp:383
+#, c-format
+msgid ""
+"_n: 1 image will be skipped due to an inexact date.\n"
+"%n images will be skipped due to inexact dates."
+msgstr ""
+"1 immagine sarà saltata a causa di una data inesatta.\n"
+"%n immagini saranno saltate a causa di date inesatte."
+
+#: timeadjustdialog.cpp:391
+#, c-format
+msgid ""
+"_n: 1 image will be changed\n"
+"%n images will be changed"
+msgstr ""
+"1 immagine sarà cambiata\n"
+"%n immagini saranno cambiate"
+
+#: timeadjustdialog.cpp:404
+msgid "<b>%1</b><br>would, for example, change into<br><b>%2</b>"
+msgstr "<b>%1</b><br>per esempio, cambierebbe in<br><b>%2</b>"
+
+#: timeadjustdialog.cpp:507
+msgid "Unable to set date and time like picture metadata from:"
+msgstr ""
+"Impossibile impostare la data e l'ora uguali ai dati aggiuntivi dell'immagine "
+"da:"
+
+#~ msgid "Time Adjust Handbook"
+#~ msgstr "Manuale di Regolazione dell'ora"
+
+#~ msgid "Adjust Time Stamp of Picture Files"
+#~ msgstr "Regola data e ora dei file delle immagini"
+
+#~ msgid "Developper"
+#~ msgstr "Sviluppatore"
+
+#~ msgid "Adjust Time & Dates"
+#~ msgstr "Regola data e ora"
+
+#~ msgid "Description"
+#~ msgstr "Descrizione"
+
+#~ msgid "<qt><p>Sometimes it happens that the time on your digital cameral is set incorrectly, and the dates of all your images are therefore incorrect.</p><p>Using this plugin you can adjust the time of several images at once, i.e. add or substract a certain amount of time (in minutes, hours, or days) to each image.</p></qt>"
+#~ msgstr "<qt><p>A volte capita che l'ora sulla tua fotocamera digitale sia impostata male, e le date di tutte le tue immagini sono quindi sbagliate.</p><p>Usando questo plugin puoi regolare l'ora di diverse immagini in una volta, cioè aggiungere o sottrarre una certa quantità di tempo (in minuti, ore, o giorni) a ogni immagine.</p></qt>"
+
+#~ msgid "About KIPI Plugin"
+#~ msgstr "Informazioni sul plugin KIPI"
+
+#~ msgid "<qt><p>A KIPI plugin for adjusting dates and times<br/>Author: Jesper K. Pedersen<br/>Email: blackie@kde.org</p></qt>"
+#~ msgstr "<qt><p>Un plugin KIPI per regolare date e ore<br/>Autore: Jesper K. Pedersen<br/>Email: blackie@kde.org</p></qt>"
+
+#~ msgid "Adjust time and date"
+#~ msgstr "Regola data e ora"
+
+#~ msgid "%1 images will be changed"
+#~ msgstr "%1 immagini saranno cambiate"

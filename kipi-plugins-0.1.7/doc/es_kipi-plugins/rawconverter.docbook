@@ -1,0 +1,167 @@
+<chapter id="rawconverter">
+<chapterinfo>
+
+<title
+>Conversión de imágenes en bruto</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard@kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento «conversión de imágenes en bruto» de Kipi es una herramienta para convertir imágenes en formato bruto. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Con este complemento de Kipi puede importar/convertir sus imágenes guardadas en <emphasis
+>formato bruto</emphasis
+> a tres formatos a su elección (<guilabel
+>JPEG</guilabel
+>, <guilabel
+>TIFF</guilabel
+>, <guilabel
+>PPM</guilabel
+>). </para>
+
+<para
+>Algunas consideraciones antes de la conversión, e incluso antes de conseguir el formato bruto. Los formatos de archivo bruto mantienen la información original de la exposición teórica sin pérdida (cuando se comprime utilizan algoritmos de compresión reversible). Algunos fotógrafos prefieren hacer sus fotos en modo bruto porque el modo de conversión de la cámara es peor que el conseguido con el procesado digital de la imagen. Algunos CMOS CCD crean cuatro datos de filtrado de color, RGBG, rojo, verde, azul y otra máscara verde para mejorar el contraste. El complemento hace esto por su cuenta. </para>
+
+<para
+>La conversión está basada en la herramienta de Dave Coffin de línea de órdenes, <emphasis
+>dcraw</emphasis
+> (Dave: «No espere que dcraw genere las mismas imágenes que el software proporcionado por el vendedor de la cámara. Algunas veces dcraw da mejores resultados»). </para>
+
+<sect1 id="using-plugin-rawconversiondialog">
+<title
+>Diálogo de conversión simple</title>
+
+<para
+>Seleccione el archivo bruto a convertir y abra el complemento desde la aplicación servidora. Aparecerá la ventana <emphasis
+>Convertir imagen en bruto</emphasis
+> en modo sencillo. Pulse en <guilabel
+>Previsualizar</guilabel
+> para ver el efecto de su configuración. </para>
+
+<para
+>Ahora podrá ajustar las diferentes opciones para optimizar el proceso de conversión. La primera casilla indica que se utilizará la configuración de la cámara para el balance de blancos. Los parámetros esenciales como brillo y amplificador de rojo/azul se pueden ajustar. Si el resultado no es el óptimo, no se preocupe, siempre es posible mejorar la imagen posteriormente. </para>
+
+<para
+>Puede seleccionarse una conversión a <guilabel
+>Cuatro colores RGBG</guilabel
+> para utilizar información de contraste (si su cámara funciona en modo RGB, la configuración RGBG no tendrá efecto). </para>
+
+<para
+>Si está conforme con la vista previa, seleccione uno de las tres formatos para guardar el resultado de la conversión. El nombre del archivo continuará siendo el mismo, solo cambiará el complemento. <guilabel
+>JPEG</guilabel
+> utiliza un algoritmo con pérdida y genera el tamaño de archivo de salida lo más pequeño posible. </para>
+
+<para
+>El formato de imagen de marcas (<guilabel
+>TIFF</guilabel
+>) preserva toda la información de su imagen utilizando el archivo de compresión sin pérdida LZW. </para>
+
+<para
+>El formato de mapa de puntos portable (<guilabel
+>PPM</guilabel
+>) genera un archivo de salida grande y contiene más datos. </para>
+
+<tip
+><para
+>Si trabaja con muchas de sus imágenes o si desea reutilizarlas más tarde, no utilice el formato <guilabel
+>JPEG</guilabel
+> puesto que permite un número reducido de operaciones sin deteriorar la visibilidad. <guilabel
+>TIFF</guilabel
+> y <guilabel
+>PPM</guilabel
+> son mejores para mantener los datos originales. </para
+></tip>
+
+<note
+><para
+>Si selecciona <guilabel
+>JPEG</guilabel
+> como <guilabel
+>Formato de guardado</guilabel
+> los metadatos incluídos en el archivo en bruto se incluirán en los <guilabel
+>JPEG</guilabel
+> como información Exif. </para
+></note>
+
+<para
+>Cuando termine pulse el botón <guilabel
+>Procesar</guilabel
+> para iniciar la conversión. Si desea detener la conversión de la imagen, pulse el botón <guilabel
+>Interrumpir</guilabel
+>. </para>
+
+<figure>
+    <title
+>El diálogo de conversión en bruto en modo simple</title>
+    <graphic srccredit="The RAW Converter Dialog in Single Mode" fileref="raw_converter_single.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-rawbatchdialog">
+<title
+>Diálogo de conversión en bloque</title>
+
+<para
+>El modo de conversión en bloque le permite convertir varias imágenes de una vez. Utilice este modo cuando esté seguro de tener la mejor configuración, es aconsejable intentarlo en modo simple primero. </para>
+
+<para
+>Las opciones de configuración son prácticamente idénticas al modo de diálogo simple. Aquí tendrá la opción adicional de sobreescribir los archivos existentes (que pudo haber creado en un intento anterior). La opción vista previa no está disponible aquí. Una barra de progreso indicará el estado de la conversión. </para>
+
+<figure>
+    <title
+>El diálogo de conversión en bruto en bloque</title>
+    <graphic srccredit="The Batch RAW Converter Dialog" fileref="raw_converter_batch.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,29 @@
+From 7be2f6784dcb70a494fc9eb98da68cf10f8a6edb Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Fran=C3=A7ois=20Andriot?= <francois.andriot@free.fr>
+Date: Sun, 6 Dec 2015 16:02:21 +0100
+Subject: Fix invalid perl syntax in kdocAstUtil.pm This resolves Bug 2543
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: François Andriot <francois.andriot@free.fr>
+---
+ dcop/dcopidlng/kdocAstUtil.pm | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/dcopidlng/kdocAstUtil.pm b/dcopidlng/kdocAstUtil.pm
+index ec67ace5..f31f2b36 100644
+--- a/dcopidlng/kdocAstUtil.pm
++++ b/dcopidlng/kdocAstUtil.pm
+@@ -439,7 +439,7 @@ sub dumpAst
+ 	}
+ 
+ 	print "\t" x $depth, "Documentation nodes:\n" if defined 
+-		@{ $node->{Doc}->{ "Text" }};
++		$node->{Doc}->{ "Text" };
+ 
+ 	foreach $kid ( @{ $node->{Doc}->{ "Text" }} ) {
+ 		dumpAst( $kid );
+-- 
+cgit v1.2.1-13-g441d
+

@@ -1,0 +1,77 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Ridimensionamento delle immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin per il ridimensionamento delle immagini è uno strumento per ridimensionare o adattare le dimensioni delle immagini. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Questo plugin può essere usato per ridimensionare in modalità non interattiva le immagini in una raccolta. Usa il programma "convert" del pacchetto "ImageMagick". Puoi ridimensionare ingrandendo o riducendo le immagini. Sono stati implementati tre tipi di ridimensionamento: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Proporzionale (1 dim.)</emphasis
+>: ridimensionamento automatico usando una dimensione. La larghezza o l'altezza delle immagini sarà selezionata automaticamente a seconda dell'orientazione dell'immagine. Le proporzioni dell'immagine sono mantenute.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proporzionale (2 dim.)</emphasis
+>: ridimensionamento automatico usando due dimensioni. Le proporzioni delle immagini sono mantenute. Per esempio, puoi usarlo per adattare le dimensioni dell'immagine a quelle del tuo schermo. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>Non proporzionale</emphasis
+>: ridimensionamento non proporzionale usando due dimensioni. Le proporzioni dell'immagine non sono mantenute.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Preparazione alla stampa</emphasis
+>: prepara l'immagine per una stampa fotografica. L'utente può impostare la risoluzione di stampa e la dimensione della carta fotografica. L'immagine di destinazione sarà adattata alle dimensioni giuste (inclusi dimensione e colore di sfondo).</para
+></listitem>
+</itemizedlist>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,43 @@
+# describes the servicetype that you need to implement for a bluetooth
+# sdp service handler.
+[Desktop Entry]
+Encoding=UTF-8
+Type=ServiceType
+X-KDE-ServiceType=SdpServiceHandler
+Name=SdpServiceHandler Module Type
+Name[bg]=Тип модул SdpServiceHandler
+Name[ca]=Tipus de mòdul SdpServiceHandler
+Name[da]=SdpServiceHandler modultype
+Name[de]=SdpServiceHandler Modultyp
+Name[el]=Τύπος αρθρώματος SdpServiceHandler
+Name[es]=Tipo de módulo SdpServiceHandler
+Name[et]=Sdp teenusekäsitleja mooduli tüüp
+Name[fr]=Type de Modules SdpServiceHandler
+Name[gl]=Tipo de Módulo SdpServiceHandler
+Name[it]=Tipo di modulo SdpServiceHandler
+Name[ja]=SdpServiceHandler モジュールタイプ
+Name[ka]=SdpServiceHandler მოდულის ტიპი
+Name[lt]=SdpServiceHandler modulio tipas
+Name[pa]=SdpServiceHandler ਮੈਡੀਊਲ ਕਿਸਮ
+Name[pl]=Typ modułu SdpServiceHandler
+Name[pt]=Tipo de Módulo SdpServiceHandler
+Name[pt_BR]=Tipo de Módulo SdpServiceHandler
+Name[sr]=SdpServiceHandler тип модула
+Name[sr@Latn]=SdpServiceHandler tip modula
+Name[sv]=Sdpservicehandler modultyp
+Name[ta]=Sdpசேவை கையாளர் பிறி வகை
+Name[tr]=SdpServiceHandler Modül Türü
+Name[xx]=xxSdpServiceHandler Module Typexx
+
+# This property defines which uuids a sdp record must
+# contain.
+# Example:
+# X-SDPSERVICEHANDLER-requiredUIDs=0x0003;0x1106
+# => rfcomm, obex file transfer (see Bluetooth assigned numbers)
+# 0x0000 is a UUID16, 0x00000000 is a UUID32...
+[PropertyDef::X-SDPSERVICEHANDLER-requiredUIDs]
+Type=QStringList
+
+# The mimetype to associate with with this service
+[PropertyDef::X-SDPSERVICEHANDLER-mimeType]
+Type=QString

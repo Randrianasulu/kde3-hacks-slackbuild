@@ -1,0 +1,132 @@
+<chapter id="download">
+<title
+>Obtener la estructura de Bluetooth para KDE</title>
+<sect1 id="download.tarballs">
+<title
+>Fuentes</title>
+<para
+>La estructura de Bluetooth para KDE se está desarrollando como parte de <ulink url="http://extragear.kde.org"
+>kdeextragear-3</ulink
+>. Puede descargar y compilar las fuentes, pero le recomendamos utilizar un paquete para su distribución. Utilizando los paquetes ahorrará mucho tiempo y dolores de cabeza cuando cambien las dependencias o se muevan los archivos. </para>
+
+<para
+>Descargue los archivos comprimidos de <ulink url="http://sourceforge.net/project/showfiles.php?group_id=89888"
+>las versiones de kdebluetooth</ulink
+>. </para>
+
+<para
+>O utilice estos <ulink url="http://fred.hexbox.de/debian/"
+>paquetes</ulink
+> que están sin comprobar. </para>
+
+</sect1>
+
+<sect1 id="download.packages">
+<title
+>Paquetes</title>
+<para>
+<variablelist>
+<title
+>Distribuciones actualmente soportadas</title>
+<varlistentry>
+
+<term
+>Debian Sid</term>
+<listitem
+><para
+>Puede utilizar las siguientes líneas en su <filename
+>/etc/apt/sources.list</filename
+>: <screen
+># KDE-Bluetooth
+deb http://fred.hexbox.de/debian ./
+</screen>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Gentoo Linux</term>
+<listitem>
+<para
+>El último ebuild ya está en el árbol de portage de gentoo, también puede comprobar http://bugs.gentoo.org para los ebuilds que estén pendientes de enviar.</para>
+<para
+>También puede descargar el ebuild del CVS para kdebluetooth desde <ulink url="http://members.xoom.virgilio.it/motaboy/ebuilds"
+>aquí</ulink
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>SuSE</term>
+
+<listitem
+><para
+>Puede descargar el RPM para SuSE 8.2 desde <ulink url="http://sra.itc.it/people/merzi/kdebluetooth-0.0.cvs.20040210.i686.rpm"
+>aquí</ulink
+> (gracias a Filippo Biondi), para SuSE 9.0 desde <ulink url="http://www.hilzinger.hu/ch/linux.html"
+>aquí</ulink
+> (gracias a Marcel Hilzinger) o el archivo RPM .spec para SuSE 9.0 desde <ulink url="http://sra.itc.it/people/merzi/kdebluetooth.spec"
+>aquí</ulink
+> (gracias a Michael Sabielny).</para>
+
+<para
+>1) Obtenga la última versión de kde-bluetooth.</para
+><para
+>2) Descomprímalo: <filename
+>tar cvjf kdebluetooth.tar.bz2 kdebluetooth</filename
+></para
+><para
+>3) Copie el archivo comprimido tar a <filename
+>/usr/src/packages/SOURCES</filename
+></para
+><para
+>4) Copie el archivo spec a <filename
+>/usr/src/packages/SPECS</filename
+></para
+><para
+>5) Asegúrese, de que estén instalados todos los paquetes adicionales: <filename
+>kdelibs3 kdelibs3-devel qt3 qt3-devel openobex arts</filename
+> <filename
+>bluez-sdp bluez-libs bluez-utils xmms xmms-devel</filename
+></para
+><para
+>6) Compile el paquete con <filename
+>cd /usr/src/packages</filename
+> <filename
+>rpmbuild -ba SPECS/kdebluetooth.spec</filename
+> </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="download.cvs">
+<title
+>SVN anónimo</title>
+<para
+>La estructura de KDE bluetooth se desarrolla en <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE extragear</ulink
+>. El CVS en kde-bluetooth.sf.net yo no se utiliza. </para>
+<para
+>Para ver descargar la versión en desarrollo de kdebluetooth, instale subversión y haga lo siguiente: <screen>
+svn checkout -N svn://svn.kde.org/home/kde/trunk/extragear/pim
+cd pim
+svn checkout svn://anonsvn.kde.org/home/kde/trunk/KDE/kde-common/admin
+svn update kdebluetooth
+make -f Makefile.cvs
+./configure --prefix=$(kde-config --prefix)
+cd kdebluetooth
+make
+make install
+</screen
+> Dependiendo de la configuración de su distribución puede que cambien algunas opciones en el script de configuración. Si tiene buenas razones para no hacerlo así debería utilizar la opción prefix de la instalación de KDE para ./configure. Vea <command
+>kde-config --prefix</command
+> para encontrar la opción prefix correcta y <command
+>./configure --help</command
+> para ver más opciones disponibles. </para>
+</sect1>
+</chapter>

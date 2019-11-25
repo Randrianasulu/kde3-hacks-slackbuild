@@ -1,0 +1,322 @@
+# translation of kipiplugin_rawconverter.po to
+# Adem Alp YILDIZ <ademalp@linux-sevenler.org>, 2004.
+# İsmail Şimşek <simsek@kde.org.tr>, 2005.
+# Engin Çağatay <engincagatay@yahoo.com>, 2006.
+# translation of kipiplugin_rawconverter.po to Türkçe
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2006-10-29 17:07+0200\n"
+"Last-Translator: Engin Çağatay <engincagatay@yahoo.com>\n"
+"Language-Team: Türkçe <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "İsmail Şimşek"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simsek@kde.org.tr"
+
+#: actionthread.cpp:168
+#, fuzzy
+msgid "Cannot identify Raw image"
+msgstr "Ham dosya tanınamadı"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr ""
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Ham Resim Dönüştürücü"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "D&önüştür"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "İ&ptal"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Küçük Resim"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Ham Dosya"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Hedef Dosya"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Fotoğraf Makinesi"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Kaydetme Ayarları"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+#, fuzzy
+msgid "RAW Image Converter"
+msgstr "Ham Resim Dönüştürücü"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Ham resim dönüştürülemedi"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Asıl yazar"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Sağlayıcı"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+#, fuzzy
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>Ham resim dönüştürme işlemine geçerli ayarlarla başla"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Mevcut Ham dosya dönüştürmesinden çık"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Ham Dönüştürücüden Çık"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Listede işleyecek bir Ham dosya yok!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "'%1' den dönüştürülen ham resmi farklı kaydet"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "%1 resmi kaydedilemedi"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "Ham Resim Dönüştürücü"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "<p>Ham Dönüştürücüden Çık"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" bir Ham dosya değil"
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "İşlemeden sonra resim yüklenemedi"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Çıktı dosyası biçimi:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Hedef Resim Varsa:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Otomaik olarak üzerine yaz"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Dosya-Yeniden İsimlendirme Penceresini Aç"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Ham Resim Dönüştürücü"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Önizleme"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Ham resim dönüştürülemedi"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Geçerli ayarlardan bir önizleme oluştur. Hızlı sonuçlar için basit bir iki "
+"çizgili dönüştürme kullanır."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Ham resmi geçerli ayarlardan dönüştür. Bu, yüksek kaliteye odaklı bir "
+"algoritma kullanır."
+
+#: singledialog.cpp:143
+#, fuzzy
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Mevcut Ham dosya dönüştürmesinden çık"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Önizleme Oluşturulamadı"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Ham resim dönüştürülemedi"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Önizleme Oluşturuluyor..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Ham Resim Dönüştürülüyor..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Ham Resim Dönüştürücü El Kitabı"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Ham Resim Dönüştürücü El Kitabı"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "Ham Resim Dönüştürücü (Tek)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "Ham Resim Dönüştürücü (Çoklu)..."
+
+#, fuzzy
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "Ham Resim Dönüştürücü"
+
+#, fuzzy
+#~ msgid "RAW Decoding Settings"
+#~ msgstr "RAW Çözme Ayarları (dcraw %1)"
+
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "<p>Geçerli işlemden çık"
+
+#~ msgid "Image Preview"
+#~ msgstr "Resim Önizleme"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Ham resim dönüştürmek için bir Kipi eklentisi\n"
+#~ "Bu eklenti Dave Coffin'in Ham resim çözücü programı \"dcraw\"'ı kullanır."
+
+#~ msgid "Cannot open RAW file"
+#~ msgstr "Ham dosya açılamadı"
+
+#~ msgid "Not a RAW file"
+#~ msgstr "Ham dosya değil"
+
+#~ msgid "Cannot start dcraw instance"
+#~ msgstr "dcraw başlatılamadı"
+
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr "<p><b>RGB'yi dört renge dönüştür.</b>Öntanımlı olarak bütün yeşil renk benekler aynıdır. Eğer tek satırlı yeşil benekler mor ötesi ışığa çift satırlılardan daha hassas ise, bu çıktı modelinde karmaşaya sebep olur. Bu seçeneği kullanırsanız sorunu en az detay kaybıyla çözebilirsiniz."
+
+#~ msgid "Use camera white balance"
+#~ msgstr "Fotoğraf makinesi beyaz dengesini kullan"
+
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr ""
+#~ "<p><b>Makinenin özel beyaz-siyah ayarlarını kullan.</b><p>Öntanımlı olarak sabit günışığı değerleri kullanılacaktır.\n"
+#~ "Bu değerler örnek resimlerden hesaplanmıştır."
+
+#~ msgid "Level:"
+#~ msgstr "Seviye:"
+
+#~ msgid "Brightness:"
+#~ msgstr "Parlaklık:"
+
+#~ msgid "<p><b>Brighness</b><p>Specify the brightness level of ouput image.The default value is 1.0.<p>"
+#~ msgstr "<p><b>Parlaklık</b><p>Çıktı resminin parlaklık seviyesini belirtin.Öntanımlı değer 1.0'dır.<p>"
+
+#~ msgid "Quality:"
+#~ msgstr "Kalite:"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Ham resim dönüştürmek için bir Kipi eklentisi\n"
+#~ "Bu eklenti Dave Coffin'in Ham resim çözücü programı \"dcraw\"'ı kullanır."

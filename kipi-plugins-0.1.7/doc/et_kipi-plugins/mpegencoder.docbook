@@ -1,0 +1,118 @@
+<chapter id="mpegencoder">
+<chapterinfo>
+
+<title
+>MPEG kodeerija</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>        
+</authorgroup>
+
+<abstract>
+<para
+>Kipi MPEG kodeerija pluginaga saab valiku pilte teisendada MPEG-failiks. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>MPEG kodeerija pluginaga saab valitud pildid teisendada määratud pikkusega MPEG-jadaks ning liita kõik pildid üheks MPEG-failiks. Plugin kasutab tarkvarapakette "ImageMagick" ja "MjpegTools". Piltide ehk kaadrite vahele võib lisada ülemineku. Samuti saab pildijadale lisada audioraja MP2- või WAV-faili kujul. </para>
+
+<para
+>Kõik pildid skaleeritakse automaatselt videovormingule sobilikku suurusse. Samuti on võimalik kasutada kindlat taustavärvi. Selle pluginaga saab luua näiteks koduse DVD mängija tarbeks vahvaid DVD/XVCD/SVCD/VCD pildikogusid. Vastava andmekandja saab luua rakendusega K3b. </para>
+
+<sect1 id="using-plugin-mpeg_encode">
+<title
+>Plugina kasutamine</title>
+
+<para
+>Kõigepealt tuleb rakenduses valida pildid, mida soovid MPEG-failis kasutada. Seejärel ava menüükäsuga <menuchoice
+><guimenu
+>Tööriistad</guimenu
+><guimenuitem
+>Loo MPEG slaidiseanss</guimenuitem
+></menuchoice
+> plugina dialoog. </para>
+
+<para
+>Valitud pilte näeb nimekirjas <guilabel
+>Kaadrifailide album</guilabel
+>. Seal saab ka failide järjekorda muuta või isegi faile kustutada või lisada. </para>
+
+<para
+>Kui nimekirjaga on kõik korras, vaata üle muud seadistused. Video võib olla neljas erinevas vormingus (DVD/XVCD/SVCD/VCD). Kui kavatsed MPEG-faili vaadata teleris, vali vastavalt vajadusele PAL, SECAM või NTSC. Vaikimisi on valitud PAL, mis peaks kindlasti sobima Kesk-Euroopa elanikele. </para>
+
+<para
+>Seejärel saab valida iga pildi/kaadri näitamise aja sekundites. Allolevas nimekirjakastis saab määrata kaadrite vahetamise tingimused. Väiksem väärtus tähendab suhteliselt järsku kaadrite vahetamist, suurem sujuvamat. </para>
+
+<para
+>Seejärel saab valida meelepärase taustavärvi. Kui sa ei ole kindel, jäta kehtima vaikevalik must. 'MPEG väljundi failinimi' võimaldab määrata väljundi failinime ja asukoha. Failinime lõppu peaks jääma laiend .mpg, aga kõike muud võid oma tahtmist mööda muuta. </para>
+
+<para
+>'Audiosisendi failinimi' võimaldab määrata audiofaili, mis liidetakse MPEG-faili. Kui oled seadistused üle vaadanud, klõpsa nupule <guilabel
+>Kodeeri</guilabel
+>, mis käivitab teisendamise. Sõltuvalt arvuti võimsusest võid vahepeal rüübata lonksu või ka õige mitu tassi kohvi ning seejärel asuda slaidiseanssi nautima. </para>
+
+<note>
+<para
+>Kui plugin kaebab kodeerija või tööriistade puudumise üle, saad programmide "MjpegTools" ja "ImageMagick" asukoha määrata all paremal asuva nupuga <guilabel
+>Seadistused</guilabel
+>. </para>
+</note>
+
+<figure>
+    <title
+>MPEG kodeerimise dialoogi eelvaatlus</title>
+    <graphic srccredit="The MPEG Encoder Dialog Preview" fileref="mpeg_encode_dialog.png"/>
+</figure>
+
+<para
+>Mõningaid näiteid plugina kasutamise võib näha aadressil <ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/"
+>url</ulink
+>. </para>
+
+</sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

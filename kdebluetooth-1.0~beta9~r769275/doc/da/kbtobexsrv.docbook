@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>OBEX Push-server: Modtag filer</title>
+<para
+>De fleste Bluetooth-mobiltelefoner eller PDA'er vil lade dig sende filer fra den mobile til din computer. Men det måske er mere komfortabelt at bruge <link linkend="components.kio_obex"
+>OBEX FTP kioslave</link
+> til at trække filerne fra din telefon til din computer, er det ikke alle enheder der understøtter dette. OBEX Object push på den anden side er understøttet af de fleste Bluetooth-enheder. </para>
+
+<sect2>
+<title
+>Brug af OBEX Push server</title>
+<para
+>OBEX Push server håndteres af kbluetoothd og vil automatisk blive startet hvis den er aktiveret og nogen prøver at sende dig nogen filer. Se venligst dokumentationen for kbluetoothd for hvordan du  <link linkend="components.kbluetoothd.serviceconfig"
+>aktiverer eller deaktiverer tjenester</link
+> (OBEX Push serveren er på listen som <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Når du sender en fil fra din mobiltelefon til din computer, vil kbluetoothd's statusikon blive blå og vise en lille popop. Som standard (afhængig af din <link linkend="components.kbluetoothd.confirmation"
+> opsætning for indkommende forbindelser</link
+>) vil du  skulle acceptere forbindelsen først, så skulle hovevinduet for OPEX Push dukke op og begynde at modtage filerne. </para>
+<para
+>Indkommende filer gemmes til <filename
+>/tmp</filename
+> og vil blive slettet efter du lukker OBEX Push serveren. For at gemme filerne, har du to valgmuligheder: </para>
+<itemizedlist>
+<listitem>
+<para
+>Klik på <guibutton
+>O.k.</guibutton
+> for at gemme alle modtagne filer på et prædefineret sted.</para>
+</listitem>
+<listitem>
+<para
+>Træk en eller flere filer til et andet sted. Dette er særlig nyttigt hvis du ønsker at sende filer som e-mail, da du kan trække filerne direkte ind i kmail uden at gemme dem til et midlertidigt sted først. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

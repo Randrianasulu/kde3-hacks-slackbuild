@@ -1,0 +1,29 @@
+<sect1 id="components.kbtserialchat">
+<title
+>kbtserialchat: Una sencilla herramienta de charla</title>
+<para
+>La herramienta kbtserialchat es un sencillo cliente y servidor de charla. Su primera finalidad es la depuración y el servir como ejemplo de cómo escribir un servidor bluetooth que sea administrado por kbluetoothd y de cómo escribir un cliente que pueda iniciarse con el <link linkend="components.kio_sdp"
+>kioslave SDP</link
+>. </para>
+
+<sect2>
+<title
+>Utilizar la herramienta de charla</title>
+<para
+>kbtserialchat implementa el protocolo de puerto serie, por ello si lo inicia, mostrará todos los dispositivos que proporcionan el perfil de puerto serie. Esto incluye otros ordenadores que tengan instalada la estructura Bluetooth para KDE, y también teléfonos que soporten este perfil. </para>
+<para
+>Cuando se conecta a otro servidor kbtserialchat, kbtserialchat también aparecerá en el otro sistema y podrá enviar tranquilamente texto a éste otro. También puede conectarse al puerto serie de los teléfonos Bluetooth y enviarles órdenes AT arbitrarias. Para marcar un número, por ejemplo, teclee <command
+>ATD&lt;número&gt;;</command
+>. </para>
+<para
+>Ya que no tiene mucho sentido conectar kbtserialchat a un puerto serie de un dispositivo que utilice intercambio de datos binarios, puede utilizar esta opción no solo para conectarse a los servicios de un puerto serie, sino también a cada servicio basado en Rfcomm, como el manos libres o el perfil de auriculares. Como estos servicios no aparecen listados en el diálogo al inicarse, puede utilizar el siguiente truco: Navegue por los servicios de un dispositivo con kio_sdp (utilizando la URL <ulink url="sdp:/"
+>sdp:/</ulink
+>). A continuación, en lugar de pulsar simplemente en un servicio, pulse sobre él con el botón derecho y seleccione <guimenuitem
+>Abrir con...</guimenuitem
+> Introduzca <command
+>kbtserialchat</command
+> en el diálogo, pulse entrar, y se conectará. </para>
+</sect2>
+
+</sect1>
+

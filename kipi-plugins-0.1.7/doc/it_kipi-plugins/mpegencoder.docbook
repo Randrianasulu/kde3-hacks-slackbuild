@@ -1,0 +1,118 @@
+<chapter id="mpegencoder">
+<chapterinfo>
+
+<title
+>Codifica MPEG</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer.net</email
+></address
+></affiliation>
+    </author
+>        
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin di Kipi per la codifica MPEG è uno strumento per convertire una serie di immagini in un file MPEG simile alle diapositive. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Il plugin per la codifica MPEG può essere usato per convertire le immagini selezionate in una sequenza MPEG con una durata specifica, e fondere tutte le immagini in un singolo file MPEG. Questo plugin usa i pacchetti "MjpegTools" e "ImageMagick". Tra le immagini puoi inserire una semplice transizione. Puoi anche aggiungere una traccia audio sulla sequenza delle immagini usando dei file MP2 o WAV. </para>
+
+<para
+>Tutte le immagini saranno automaticamente riscalate alla dimensione giusta per il formato video. Può essere usato un colore di sfondo. Puoi usare questo plugin per costruire gruppi di immagini DVD/XVCD/SVCD/VCD per il tuo lettore DVD di casa. Usa il programma K3b per creare il supporto. </para>
+
+<sect1 id="using-plugin-mpeg_encode">
+<title
+>Usare il plugin</title>
+
+<para
+>Per prima cosa devi selezionare le immagini da inserire nel file MPEG dal browser dell'applicazione ospite. Quindi richiama il menu <menuchoice
+> <guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Crea carrellata MPEG</guimenuitem
+></menuchoice
+> dalla finestra dell'applicazione ospite. </para>
+
+<para
+>Le immagini precedentemente selezionate appaiono nella casella <guilabel
+>File delle immagini della carrellata</guilabel
+>. Usa questa casella per riordinare i tuoi file o per modificare il contenuto dell'elenco. </para>
+
+<para
+>Quando sei soddisfatto del contenuto, vai avanti con le altre impostazioni. Il formato video può essere scelto tra quattro (DVD/XVCD/SVCD/VCD) diversi formati. Se il file MPEG deve essere riprodotto su un televisore, seleziona lo standard TV tra PAL, SECAM e NTSC. PAL è il valore predefinito e la scelta più comune in Europa. </para>
+
+<para
+>Poi puoi scegliere la durata di visualizzazione di ogni immagine, viene misurata in secondi. La casella sotto permette di selezionare il comportamento della transizione tra le immagini. Un valore basso causa un cambiamento piuttosto rapido, mentre un valore alto crea una transizione morbida. </para>
+
+<para
+>Il prossimo selettore ti permette di scegliere il colore di sfondo preferito. Nel dubbio lascia il nero. La casella del nome del file MPEG di output specifica il nome del file di output e il suo percorso (posizione). Lascia l'estensione mpg, ma cambia il percorso e il nome del file come preferisci. </para>
+
+<para
+>Se indichi un file audio nel Nome del file audio di input, esso sarà integrato nel file MPEG. Se hai finito con le impostazioni, fai clic sul pulsante <guilabel
+>Codifica</guilabel
+> pel avviare la conversione. A seconda della velocità del tuo computer vai a berti un caffè ristretto o lungo, e goditi la carrellata quando sarà finita. </para>
+
+<note>
+<para
+>Se il plugin si lamenta che mancano dei codificatori o degli strumenti puoi impostare il percorso ai programmi "MjpegTools" e "ImageMagick" con il pulsante in basso a destra delle <guilabel
+>Impostazioni</guilabel
+>. </para>
+</note>
+
+<figure>
+    <title
+>Anteprima della finestra di codifica MPEG</title>
+    <graphic srccredit="The MPEG Encoder Dialog Preview" fileref="mpeg_encode_dialog.png"/>
+</figure>
+
+<para
+>Puoi vedere alcuni esempi costruiti con questo plugin a questo <ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/"
+>url</ulink
+>. </para>
+
+</sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

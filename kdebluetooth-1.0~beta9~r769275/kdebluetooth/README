@@ -1,0 +1,32 @@
+kdebluetooth
+============
+Requires at least bluez-utils 3.11 and for some services it is 
+recommended to start the hcid with "-x" for experimental features
+of bluez-utils.
+
+
+libkbluetooth
+=============
+Full rewrite for BlueZ D-Bus API.
+Latest version of bluez-utils recommended/required!
+
+kbluetooth
+==========
+Tray icon application which acts as BlueZ
+Passkey Agent and Authorization Agent.
+Allows to configure bluetooth adapters.
+
+kcm_btpaired
+============
+Manage pairings/bondings of (active!) bluetooth adapters.
+(Adapted to D-Bus as well...)
+
+kio_bluetooth and kio_sdp
+=========================
+Rewrite for new libkbluetooth API
+
+Replacing kio_obex with kio_obex2
+==================================
+Requires openobex-devel and obexftp-devel
+USB support!
+

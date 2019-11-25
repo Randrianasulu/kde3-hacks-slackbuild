@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Information for udviklere</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Dette afsnit beskriver hvorledes man bruger kbluetoothd i dit program, eller tilgår det fra scripter så der kan hentes gemte enhedsnavne eller lignende. </para>
+
+<sect2>
+<title
+>Navne-cachen</title>
+<para
+>Navnecachen sporer alle navneforespørgsler og gemmer resultatet. Ved hjælp af det kan andre programmer og kbluetoothd selv, hente navnet på en anden bluetooth enhed fra sin unikke bluetoothd enhedsadresse, selv når enheden ikke aktuelt er til rådighed. Dette bruges mest for at gøre brugergrænseflade mere behagelig, fordi bluetooth-adresser som 00:60:AB:13:83:3D er lidt svære at huske. </para>
+<para
+>Det bliver muligvis overflødiggjort så snart BlueZ kommer med sin egen persistente navnecache. </para>
+<para
+>Du kan tilgå enheden via dcop. For at slå en adresse på i navnecachen fra kommandolinjen, skal du skrive:<command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;address&gt;</command
+>. For at finde ud af hvilke enheder der sidst brugte et givet navn kan du skrive: <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;name&gt;</command
+>. Denne kommando er ikke versalfølsom. Vær også opmærksom på at flere enheder kan være konfigureret så de bruger samme navn. </para>
+</sect2>
+
+<sect2>
+<title
+>Metaserveren</title>
+<para
+>Vil du implementere en server til en ny bluetooth-protokol, kan du let integrere den med kbluetoothd, så din server startes automatisk. </para>
+<para
+>Du skal stille en XML-fil, der beskriver SDP-optegnelsen og en tilsvarende desktop fil, til rådighed. kbluetoothd indstiller så automatisk SDP-optegnelsen, tildeler en rfcomm-kanal og begynder at lytte på den valgte kanal. Når nogen forbinder sig til din service, starter kbluetoothd den og afleverer en sokkel til den allerede accepterede forbindelse til den. Nummeret på håndtaget afleveres som et kommandolinjeargument. </para>
+<para
+>Kdebluetooth-pakken indeholder <command
+>kbtserialchat</command
+>, som er (udover til fejlretning og endda chat..) ment som et ret simpelt programeksempel, der viser hvordan man integrerer et program i kdebluetooth framework. Eftersom kbtserialchat er en klient og en server på samme tid, er det ikke nødvendigt at overveje alle kommandolinjeargumenter som kbtserialchat gør det, især ikke sdp-adresser. </para>
+<para
+>SDP-XML-filernes format er ret selvforklarende, hvis du kender til hvordan SDP-optegnelser er organiseret. Et vigtigt punkt er dog hvordan parameteren til de valgte rfcomm-kanaler finder vej ind i SDP-optegnelsen til serveren. Da kanalerne automatisk vælges af kbluetoothd kan du ikke lægge dem fast i SDP-registreringsfilen. Du skal istedet bruge &lt;uint valref='rfcommchannel' size='8'/&gt; som pladsholder. rfcomm kanalerne som prøves er defineret i den korresponderende desktop-fil. <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> er de første kanaler der prøves og <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> gives antallet af efterfølgende kanaler der prøves i stigende orden, hvis en kanal bruges af en anden service i forvejen. </para>
+<para
+>kbluetoothd understøtter kun rfcomm i øjeblikket, men når behovet opstår vil vi også understøtte l2cap eller lign. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>Enhedsopdagelsestjenesten</title>
+<para
+>kbluetooth kan aktivt søge efter enheder og udføre kommander så snart en enhed opdages eller forsvinder. Du kan indstille denne service i kbluetoothds kontrolcentermodul i "Opdag enhed"-fanebladet. </para>
+<para
+>Listen af <emphasis
+>aktive</emphasis
+> opdagelsesjob vist i kontrolcentermodulet er bare en liste af kørbare der findes i kataloget <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. Du kan også tilføje nye scripter til det globale skabelonkatalog i <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Scripterne i dette katalog som ender på  ".template" vises når brugeren klikker på "Tilføj nyt job..." og kopieres simpelthen til det aktive jobkatalog i brugerens hjemmemappe. </para>
+<para
+>De inkluderede scripter er opdelt i to for at gøre det lettere at opdatere dem uden at skulle geninstallere scripterne. ".template"-delen indeholder kun de indstillinger der kan brugerdefineres, som kopieres til hjemmemappen. Dette script kalder så den ".real" del som forbliver i skabelonkataloget (template). </para>
+<para
+>For at begynde at skrive dit eget job til opdagelse, klikker du på "Tilføj nyt job..." og vælger <phrase
+>Custom_Job</phrase
+>. Dette kopierer <filename
+>Custom_Job.template</filename
+> til dit job-katalog. Nu klikker du på "Indstil..." for at ændre scriptet. Dette script viser alle de mulige kommandolinjetilvalg og miljøvarible du har adgang til. </para>
+<para
+>Vær opmærksom på at når du redigerer dette brugerdefinerede script, forsvinder alle ændringer hvis du fjerner det fra listen af aktive job. Hvis du vil distribuere det, anbefaler vi at du også deler det op i en skabelon-del til indstillingerne og en reel del som udfører det egentlige arbejde. </para>
+
+<para
+>For at kunne lægge op, tage ned eller slette filer fra en kilde som ved opdagelse, kan du bruge <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Hvis du har skrevet et eller andet cool script til enhedsopdagelsesservice, kan det være nyttigt for andre. Vi vil med glæde inkludere det i distributionen :)= </para>
+</sect2>
+
+</sect1>
+</chapter>
+

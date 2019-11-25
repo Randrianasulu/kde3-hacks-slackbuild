@@ -1,0 +1,186 @@
+# translation of kipiplugin_jpeglossless.po to Serbian
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_jpeglossless\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-07-19 10:35+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: convert2grayscale.cpp:86 convert2grayscale.cpp:162 imageflip.cpp:86
+#: imagerotate.cpp:87 jpegtransform.cpp:162 jpegtransform.cpp:284
+msgid "Error in opening input file"
+msgstr "Greška pri otvaranju ulaznog fajla"
+
+#: convert2grayscale.cpp:92 imageflip.cpp:92 imagerotate.cpp:93
+#, fuzzy
+msgid "Error in opening temporary file"
+msgstr "Greška u otvaranju izlaznog fajla"
+
+#: convert2grayscale.cpp:100
+msgid "Cannot convert to gray scale RAW file"
+msgstr "Ne mogu da pretvorim u RAW fajl sivih nijansi"
+
+#: convert2grayscale.cpp:124 imageflip.cpp:124 imagerotate.cpp:127
+msgid "Cannot update source image"
+msgstr "Ne mogu da ažuriram izvornu sliku"
+
+#: convert2grayscale.cpp:171 jpegtransform.cpp:171 jpegtransform.cpp:227
+#: jpegtransform.cpp:293
+msgid "Error in opening output file"
+msgstr "Greška u otvaranju izlaznog fajla"
+
+#: convert2grayscale.cpp:261
+#, c-format
+msgid "Cannot convert to gray scale: %1"
+msgstr "Ne mogu da pretvorim u sive nijanse: %1"
+
+#: imageflip.cpp:100 imagerotate.cpp:101
+msgid "Cannot rotate RAW file"
+msgstr "Ne mogu da rotiram RAW fajl"
+
+#: imageflip.cpp:150 imageflip.cpp:180
+msgid "Nonstandard flip action"
+msgstr "Nestandardna akcija prevrtanja"
+
+#: imageflip.cpp:216
+#, c-format
+msgid "Cannot flip: %1"
+msgstr "Ne mogu da prevrnem: %1"
+
+#: imagerotate.cpp:163 imagerotate.cpp:204
+msgid "Nonstandard rotation angle"
+msgstr "Nestandardni ugao rotacije"
+
+#: imagerotate.cpp:240
+#, c-format
+msgid "Cannot rotate: %1"
+msgstr "Ne mogu da rotiram: %1"
+
+#: plugin_jpeglossless.cpp:82
+msgid "Auto Rotate/Flip Using Exif Information"
+msgstr "Automatski rotiraj/prevrni koristeći Exif informacije"
+
+#: plugin_jpeglossless.cpp:89
+msgid "Rotate"
+msgstr "Rotiraj"
+
+#: plugin_jpeglossless.cpp:109
+msgid "Flip"
+msgstr "Prevrni"
+
+#: plugin_jpeglossless.cpp:114
+msgid "Horizontally"
+msgstr "Vodoravno"
+
+#: plugin_jpeglossless.cpp:122
+msgid "Vertically"
+msgstr "Uspravno"
+
+#: plugin_jpeglossless.cpp:130
+msgid "Convert to Black && White"
+msgstr "Pretvori u crno-belo"
+
+#: plugin_jpeglossless.cpp:189
+msgid "horizontaly"
+msgstr "vodoravno"
+
+#: plugin_jpeglossless.cpp:195
+msgid "vertically"
+msgstr "uspravno"
+
+#: plugin_jpeglossless.cpp:216
+#, c-format
+msgid "Flip images %1"
+msgstr "Prevrni slike %1"
+
+#: plugin_jpeglossless.cpp:239
+msgid "right (clockwise)"
+msgstr "desno (u smeru sata)"
+
+#: plugin_jpeglossless.cpp:245
+msgid "left (counterclockwise)"
+msgstr "levo (suprotno od sata)"
+
+#: plugin_jpeglossless.cpp:251
+msgid "using Exif orientation tag"
+msgstr "pomoću Exif oznake usmerenja"
+
+#: plugin_jpeglossless.cpp:272
+#, c-format
+msgid "Rotate images %1"
+msgstr "Rotiraj slike %1"
+
+#: plugin_jpeglossless.cpp:288
+msgid ""
+"<p>Are you sure you wish to convert the selected image(s) to black and white? "
+"This operation <b>cannot</b> be undone.</p>"
+msgstr ""
+"<p>Želite li zaista da pretvorite izabrane slike u crno-bele? Ova operacija se "
+"<b>ne može</b> opozvati.</p>"
+
+#: plugin_jpeglossless.cpp:305
+msgid "Convert images to black & white"
+msgstr "Pretvaram slike u crno-belo"
+
+#: plugin_jpeglossless.cpp:347
+msgid "Rotating Image \"%1\""
+msgstr "Rotiram sliku „%1“"
+
+#: plugin_jpeglossless.cpp:352
+msgid "Flipping Image \"%1\""
+msgstr "Prevrćem sliku „%1“"
+
+#: plugin_jpeglossless.cpp:357
+msgid "Converting to Black & White \"%1\""
+msgstr "Pretvaram u crno-belo „%1“"
+
+#: plugin_jpeglossless.cpp:378
+msgid "Failed to Rotate image"
+msgstr "Neuspelo da rotiranje slike"
+
+#: plugin_jpeglossless.cpp:383
+msgid "Failed to Flip image"
+msgstr "Neuspelo prevrtanje slike"
+
+#: plugin_jpeglossless.cpp:388
+msgid "Failed to convert image to Black & White"
+msgstr "Nisam uspeo da pretvorim sliku u crno-belu"
+
+#: plugin_jpeglossless.cpp:408
+msgid "Rotate image complete"
+msgstr "Rotacija slike je završena"
+
+#: plugin_jpeglossless.cpp:413
+msgid "Flip image complete"
+msgstr "Prevrtanje slike je završeno"
+
+#: plugin_jpeglossless.cpp:418
+msgid "Convert to Black & White complete"
+msgstr "Pretvaranje u crno-belo je završeno"
+
+#: utils.cpp:90
+msgid "unable to open source file"
+msgstr ""
+
+#: utils.cpp:117
+msgid "unable to open temp file"
+msgstr ""
+
+#: utils.cpp:129
+#, fuzzy
+msgid "Cannot rotate: unable to open temp file"
+msgstr "Ne mogu da rotiram RAW fajl"
+
+#: utils.cpp:178
+#, fuzzy, c-format
+msgid "Cannot update metadata: %1"
+msgstr "Ne mogu da rotiram: %1"

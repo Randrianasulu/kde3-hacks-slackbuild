@@ -1,0 +1,110 @@
+diff -urN /dev/shm/kdeutils-3.5.10/ark/archiveformatinfo.cpp /dev/shm/kdeutils-3.5.10.new/ark/archiveformatinfo.cpp
+--- /dev/shm/kdeutils-3.5.10/ark/archiveformatinfo.cpp	2006-01-19 10:49:29.000000000 -0600
++++ /dev/shm/kdeutils-3.5.10.new/ark/archiveformatinfo.cpp	2010-08-22 14:10:55.337713018 -0500
+@@ -53,6 +53,9 @@
+   addFormatInfo( TAR_FORMAT, "application/x-tarz", ".tar.z" );
+   addFormatInfo( TAR_FORMAT, "application/x-tbz", ".tar.bz2" );
+   addFormatInfo( TAR_FORMAT, "application/x-tbz2", ".tar.bz2" );
++  addFormatInfo( TAR_FORMAT, "application/x-tlz", ".tar.lzma" );
++  addFormatInfo( TAR_FORMAT, "application/x-txz", ".tar.xz" );
++
+   // x-tar as the last one to get its comment for all the others, too
+   addFormatInfo( TAR_FORMAT, "application/x-tar", ".tar" );
+
+@@ -65,6 +68,8 @@
+   addFormatInfo( COMPRESSED_FORMAT, "application/x-gzip", ".gz" );
+   addFormatInfo( COMPRESSED_FORMAT, "application/x-bzip", ".bz" );
+   addFormatInfo( COMPRESSED_FORMAT, "application/x-bzip2", ".bz2" );
++  addFormatInfo( COMPRESSED_FORMAT, "application/x-lzma", ".lzma" );
++  addFormatInfo( COMPRESSED_FORMAT, "application/x-xz", ".xz" );
+   addFormatInfo( COMPRESSED_FORMAT, "application/x-lzop", ".lzo"  );
+   addFormatInfo( COMPRESSED_FORMAT, "application/x-compress", ".Z" );
+   find( COMPRESSED_FORMAT ).description = i18n( "Compressed File" );
+diff -urN /dev/shm/kdeutils-3.5.10/ark/ark.desktop /dev/shm/kdeutils-3.5.10.new/ark/ark.desktop
+--- /dev/shm/kdeutils-3.5.10/ark/ark.desktop	2008-08-19 13:14:23.000000000 -0500
++++ /dev/shm/kdeutils-3.5.10.new/ark/ark.desktop	2010-08-22 14:10:55.337713018 -0500
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-MimeType=application/x-gzip;application/x-lha;application/x-tar;application/x-tgz;application/x-tbz;application/x-tbz2;application/x-zip;application/zip;application/x-bzip;application/x-tzo;application/x-lzop;application/x-rar;application/x-zoo;application/x-tarz;application/x-archive;application/x-bzip2;application/x-jar;application/x-deb;application/x-ace;application/x-7z;application/x-arc;application/x-arj;application/x-compress;application/x-cpio;application/x-pak;application/x-zip-compressed
++MimeType=application/x-gzip;application/x-lha;application/x-tar;application/x-tgz;application/x-tbz;application/x-tbz2;application/x-zip;application/zip;application/x-bzip;application/x-tzo;application/x-lzop;application/x-rar;application/x-zoo;application/x-tarz;application/x-archive;application/x-bzip2;application/x-jar;application/x-deb;application/x-ace;application/x-7z;application/x-arc;application/x-arj;application/x-compress;application/x-cpio;application/x-pak;application/x-zip-compressed;application/x-lzma;application/x-xz;application/x-tlz;application/x-txz
+ GenericName=Archiving Tool
+ GenericName[af]=Argiveer Program
+ GenericName[ar]=أداة أرشفة
+diff -urN /dev/shm/kdeutils-3.5.10/ark/ark_part.desktop /dev/shm/kdeutils-3.5.10.new/ark/ark_part.desktop
+--- /dev/shm/kdeutils-3.5.10/ark/ark_part.desktop	2008-08-19 13:14:23.000000000 -0500
++++ /dev/shm/kdeutils-3.5.10.new/ark/ark_part.desktop	2010-08-22 14:10:55.338711972 -0500
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-MimeType=application/x-gzip;application/x-lha;application/x-tar;application/x-tgz;application/x-tbz;application/x-tbz2;application/x-zip;application/x-bzip;application/x-tzo;application/x-lzop;application/x-rar;application/x-zoo;application/x-tarz;application/x-archive;application/x-bzip2;application/x-jar;application/x-deb;application/x-ace;application/x-7z;application/x-arc;application/x-arj;application/x-compress;application/x-cpio;application/x-pak
++MimeType=application/x-gzip;application/x-lha;application/x-tar;application/x-tgz;application/x-tbz;application/x-tbz2;application/x-zip;application/x-bzip;application/x-tzo;application/x-lzop;application/x-rar;application/x-zoo;application/x-tarz;application/x-archive;application/x-bzip2;application/x-jar;application/x-deb;application/x-ace;application/x-7z;application/x-arc;application/x-arj;application/x-compress;application/x-cpio;application/x-pak;application/x-lzma;application/x-xz;application/x-tlz;application/x-txz
+ Comment=Archive Handling Tool
+ Comment[af]=Argief Handtering Program
+ Comment[ar]=أداة التعامل مع الملفات المضغوطة
+diff -urN /dev/shm/kdeutils-3.5.10/ark/compressedfile.cpp /dev/shm/kdeutils-3.5.10.new/ark/compressedfile.cpp
+--- /dev/shm/kdeutils-3.5.10/ark/compressedfile.cpp	2008-02-13 03:38:15.000000000 -0600
++++ /dev/shm/kdeutils-3.5.10.new/ark/compressedfile.cpp	2010-08-22 14:10:55.337713018 -0500
+@@ -124,6 +124,18 @@
+         m_archiver_program = "bzip2";
+         m_defaultExtensions << ".bz2" << ".bz";
+     }
++    if ( mimeType == "application/x-lzma" )
++    {
++        m_unarchiver_program = "unlzma";
++        m_archiver_program = "lzma";
++        m_defaultExtensions << ".lzma";
++    }
++    if ( mimeType == "application/x-xz" )
++    {
++        m_unarchiver_program = "unxz";
++        m_archiver_program = "xz";
++        m_defaultExtensions << ".xz";
++    }
+     if ( mimeType == "application/x-lzop" )
+     { m_unarchiver_program = "lzop";
+         m_archiver_program = "lzop";
+diff -urN /dev/shm/kdeutils-3.5.10/ark/tar.cpp /dev/shm/kdeutils-3.5.10.new/ark/tar.cpp
+--- /dev/shm/kdeutils-3.5.10/ark/tar.cpp	2006-05-22 13:08:38.000000000 -0500
++++ /dev/shm/kdeutils-3.5.10.new/ark/tar.cpp	2010-08-22 14:10:55.343710700 -0500
+@@ -208,6 +208,12 @@
+     if (  m_fileMimeType == "application/x-tbz" )
+         return QString( "bzip2" );
+
++    if (  m_fileMimeType == "application/x-tlz" )
++        return QString( "lzma" );
++
++    if (  m_fileMimeType == "application/x-txz" )
++        return QString( "xz" );
++
+     if( m_fileMimeType == "application/x-tzo" )
+         return QString( "lzop" );
+
+@@ -226,6 +232,12 @@
+     if (  m_fileMimeType == "application/x-tbz" )
+         return QString( "bunzip2" );
+
++    if (  m_fileMimeType == "application/x-tlz" )
++        return QString( "unlzma" );
++
++    if (  m_fileMimeType == "application/x-txz" )
++        return QString( "unxz" );
++
+     if( m_fileMimeType == "application/x-tzo" )
+         return QString( "lzop" );
+
+@@ -293,10 +305,14 @@
+             && ( m_fileMimeType != "application/x-tbz" ) )
+     {
+         disconnect( this, SIGNAL( createTempDone() ), this, SLOT( openFirstCreateTempDone() ) );
++        Q_ASSERT( !m_listingThread );
++        m_listingThread = new TarListingThread( this, tmpfile );
+     }
+
+-    Q_ASSERT( !m_listingThread );
+-    m_listingThread = new TarListingThread( this, m_filename );
++    else {
++        Q_ASSERT( !m_listingThread );
++        m_listingThread = new TarListingThread( this, m_filename );
++    }
+     m_listingThread->start();
+ }
+

@@ -1,0 +1,222 @@
+# translation of kipiplugin_sync.po to japanese
+# Yukiko BANDO <ybando@k6.dion.ne.jp>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_sync\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-07-08 22:16+0200\n"
+"PO-Revision-Date: 2007-01-22 23:00+0900\n"
+"Last-Translator: Yukiko BANDO <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko BANDO"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "名前:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "ユーザ名:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "パスワード:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "&Gallery 2 を使う"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:136
+msgid "Albums"
+msgstr "アルバム"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "カスタムオプション"
+
+#: gallerywidget.cpp:109
+msgid "Resize photos before uploading"
+msgstr "アップロード前に写真のサイズを変更"
+
+#: gallerywidget.cpp:117
+msgid "Maximum dimension:"
+msgstr "最大寸法:"
+
+#: gallerywidget.cpp:135
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>ギャラリーエクスポート</h2>"
+
+#: gallerywidget.cpp:137
+msgid "&New Album"
+msgstr "新規アルバム(&N)"
+
+#: gallerywidget.cpp:138
+msgid "&Add Photos"
+msgstr "写真を追加(&A)"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "ギャラリーエクスポート"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "Kipi プラグイン - 画像コレクションをリモートギャラリーにエクスポート"
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "作者"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "メンテナ"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: gallerywindow.cpp:228
+msgid "Failed to login into remote gallery. "
+msgstr "リモートギャラリーにログインできませんでした。"
+
+#: gallerywindow.cpp:230
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"もう一度試しますか？"
+
+#: gallerywindow.cpp:516
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "これらの文字はアルバム名には使用できません: %1"
+
+#: gallerywindow.cpp:586
+msgid "Uploading file %1 "
+msgstr "ファイル '%1' をアップロード"
+
+#: gallerywindow.cpp:603
+msgid "Failed to upload photo into remote gallery. "
+msgstr "リモートギャラリーに写真をアップロードできませんでした。"
+
+#: gallerywindow.cpp:606
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"続けますか？"
+
+#: plugin_sync.cpp:77
+msgid "Synchronize..."
+msgstr "同期..."
+
+#: plugin_sync.cpp:86
+msgid "Configure Synchronization..."
+msgstr "同期を設定..."
+
+#: plugin_sync.cpp:95 plugin_sync.cpp:104
+msgid "Synchronization Settings..."
+msgstr "同期の設定..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MyDialog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>新しいアルバム名を入力</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "タイトル (オプション):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "名前 (オプション):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "キャプション (オプション):"
+
+#. i18n: file sinklistbase.ui line 16
+#: rc.cpp:24
+#, no-c-format
+msgid "Sinks"
+msgstr "シンク (sink)"
+
+#. i18n: file sinklistbase.ui line 97
+#: rc.cpp:30
+#, no-c-format
+msgid "&Find"
+msgstr "検索(&F)"
+
+#. i18n: file sinklistbase.ui line 100
+#: rc.cpp:33
+#, no-c-format
+msgid "Alt+F"
+msgstr "Alt+F"
+
+#. i18n: file sinklistbase.ui line 128
+#: rc.cpp:42
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file sinklistbase.ui line 142
+#: rc.cpp:48
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#: sinklist.cpp:46
+msgid "Name"
+msgstr "名前"
+
+#: sinklist.cpp:47
+msgid "Type"
+msgstr "タイプ"
+
+#: sinklist.cpp:121 sinklist.cpp:144
+msgid "No sink selected!"
+msgstr "シンクが選択されていません"
+
+#: sinklist.cpp:150
+msgid ""
+"Are you sure you want to remove this sink? All synchronisaton settings will be "
+"lost. You cannot undo this action."
+msgstr "本当にこのシンクを削除しますか？すべての同期設定が失われます。この操作は元に戻せません。"
+
+#: sinklist.cpp:153
+msgid "Remove Sink?"
+msgstr "シンクを削除？"

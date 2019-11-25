@@ -1,0 +1,15 @@
+--- branches/KDE/4.0/kdelibs/khtml/html/htmlparser.cpp	2008/03/25 23:44:51	790155
++++ branches/KDE/4.0/kdelibs/khtml/html/htmlparser.cpp	2008/03/25 23:45:45	790156
+@@ -1714,6 +1714,12 @@
+         delete head;
+         head = 0;
+     }
++        
++    // If the body does not exist yet, then the <head> should be pushed as the current block.
++    if (head && !body) {
++        pushBlock(head->id(), tagPriority(head->id()));
++        setCurrent(head);
++    }
+ }
+ 
+ NodeImpl *KHTMLParser::handleIsindex( Token *t )

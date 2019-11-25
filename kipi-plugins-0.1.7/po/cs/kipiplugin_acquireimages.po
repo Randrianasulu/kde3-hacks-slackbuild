@@ -1,0 +1,355 @@
+# translation of kipiplugin_acquireimages.po to Czech
+# translation of kipiplugin_acquireimages.po to cs_CZ
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Klara Cihlarova <koty@seznam.cz>, 2005.
+# Jakub Friedl <jfriedl@suse.cz>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_acquireimages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2005-11-25 14:27+0100\n"
+"Last-Translator: Jakub Friedl <jfriedl@suse.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Klára Cihlářová,Jakub Friedl"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "koty@seznam.cz,jfriedl@suse.cz"
+
+#: acquireimagedialog.cpp:105
+msgid "Save Target Image Options"
+msgstr "Uložit volby obrázku"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+msgid "Acquire images"
+msgstr "Získat obrázky"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+msgid "A Kipi plugin to acquire images"
+msgstr "Kipi plugin pro získání obrázků"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr "Autor a správce"
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr ""
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "obrázek"
+
+#: acquireimagedialog.cpp:180
+msgid "Target Image"
+msgstr "Cílový obrázek"
+
+#: acquireimagedialog.cpp:181
+msgid "Target Image Options"
+msgstr "Volby obrázku"
+
+#: acquireimagedialog.cpp:190
+#, fuzzy
+msgid "File Name && Caption"
+msgstr "Jméno souboru && komentáře"
+
+#: acquireimagedialog.cpp:191
+#, fuzzy
+msgid "<p>The target image preview with the file name and caption."
+msgstr "<p>Náhled obrázku se jménem souboru a komentáři."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Jméno souboru (bez přípony):"
+
+#: acquireimagedialog.cpp:197
+msgid "acquired_image"
+msgstr "ziskany_obrazek"
+
+#: acquireimagedialog.cpp:198
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Zde zadejte jméno souboru bez přípony (přípona bude automaticky doplněna "
+"podle zvoleného formátu)."
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr ""
+
+#: acquireimagedialog.cpp:209
+#, fuzzy
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Zdajete komentáře obrázků."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Náhled obrázku."
+
+#: acquireimagedialog.cpp:228
+msgid "Saving Options"
+msgstr "Volby uložení"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>Volby uložení obrázku."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Komprese obrázku:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>Hodnota komprese obrázku pro formáty JPEG a PNG:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: velmi vysoká komprese"
+"<p><b>25</b>: vysoká komprese"
+"<p><b>50</b>: střední komprese"
+"<p><b>75</b>: malá komprese (výchozí)"
+"<p><b>100</b>: bez komprese"
+
+#: acquireimagedialog.cpp:260
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Zvolte formát souboru obrázku.<p>"
+
+#: acquireimagedialog.cpp:261
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: tento formát (zkratka z angl. Joint Photographic Experts Group) "
+"používající ztrátovou kompresi je vhodný pro webové obrázky."
+"<p><b>PNG</b>: rozšiřitelný souborový formát (zkratka z angl. Portable Network "
+"Graphics format) pro bezztrátové, přenositelné, dobře komprimované ukládání "
+"rastrové grafiky. Formát PNG je patenty nezatíženou náhradou formátu GIF a "
+"zároveň v mnoha ohledech nahrazuje formát TIFF. Formát PNG byl navržen pro "
+"bezproblémovou podporu online aplikací, např. webu, takže je plně "
+"streamovatelný a podporuje progresivní zobrazování. PNG umí uložit také hodnoty "
+"gamy a barevnosti, což vylepšuje barevnou shodu na různých platformách."
+
+#: acquireimagedialog.cpp:269
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: tento formát (Tagged Image File Format) je sice starší, ale "
+"stále oblíbený standard. Jde o vysoce flexibilní a na platformě nezávislý "
+"formát podporovanou celou řadou různých aplikací a naprostou většinou "
+"předtiskových programů."
+
+#: acquireimagedialog.cpp:273
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: tento formát (Portable Pixel Map file) je obvykle používán jako "
+"pokročilejší formát pro ukládání informací o barvách bitmapových obrázků. PPM "
+"soubory mohou být binární i ASCII a ukládají hodnoty barev až do 24 bitů. "
+"Textové soubory v tomto formátu bývají velké a při kódování obrázků nedochází k "
+"žádné ztrátě kvality."
+
+#: acquireimagedialog.cpp:277
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: BitMaPový formát je nejoblíbenějším formátem prostředí Win32. "
+"Obrázky dokáže ukládat v 1, 4, 8 nebo 24 bitové barevné hloubce. Data mohou být "
+"i komprimovaná pomocí 4 nebo 8 bitového RLE algoritmu. BMP je velmi dobrá "
+"volba, pokud hledáte bitmapový formát s podporou jednoduchých RGB obrázků."
+
+#: acquireimagedialog.cpp:284
+msgid "Image file format:"
+msgstr "Formát obrázku:"
+
+#: acquireimagedialog.cpp:303
+msgid "Selection"
+msgstr "Výběr"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Výběr alba"
+
+#: acquireimagedialog.cpp:311
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Zvolte složku, do které se obrázek uloží"
+
+#: acquireimagedialog.cpp:320
+msgid "&Add New Folder"
+msgstr "&Přidat novou složku"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr "<p>Přidání nové složky."
+
+#: acquireimagedialog.cpp:328
+msgid "Album Description"
+msgstr "Popis alba"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p>Popis zvoleného alba ze seznamu."
+
+#: acquireimagedialog.cpp:393
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Kolekce: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Kolekce: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Datum: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Položky: %1"
+
+#: acquireimagedialog.cpp:409
+msgid "You must select a target album for this image."
+msgstr "Musíte zvolit cílové album obrázku."
+
+#: acquireimagedialog.cpp:415
+msgid "You must provide a file name for this image."
+msgstr "Musíte zadat jméno obrázku."
+
+#: acquireimagedialog.cpp:474
+msgid "Cannot write image file \"%1\"."
+msgstr "Nelze zapsat soubor \"%1\"."
+
+#: acquireimagedialog.cpp:483
+msgid "Could not upload image to \"%1\"."
+msgstr "Nelze nahrát obrázek do \"%1\"."
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+"<qt> Chyba při předání informace o novém obrázku aplikaci. Chyba byla: %1</qt>"
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Skenovat obrázky..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Sejmutí snímku..."
+
+#: plugin_acquireimages.cpp:114
+msgid "No KDE scan-service available; check your system."
+msgstr "Službě skenování prostředí KDE není dostupná, překontrolujte systém."
+
+#: plugin_acquireimages.cpp:115
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "KIPI plugin skenování obrázků"
+
+#: screenshotdialog.cpp:71
+msgid "Screenshot"
+msgstr "Snímek obrazovky"
+
+#: screenshotdialog.cpp:72
+msgid "&New Snapshot"
+msgstr "&Nový snímek"
+
+#: screenshotdialog.cpp:82
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"V tomto dialogu můžete nastavit sejmutí celé pracovní plochy\n"
+"nebo okna aplikace. V případě sejmutí okna zvolte okno ke sejmutí\n"
+"až se kurzor změní na křížek."
+
+#: screenshotdialog.cpp:90
+msgid "Grab the entire desktop"
+msgstr "Sejmout celou pracovní plochu"
+
+#: screenshotdialog.cpp:91
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p> Pokud zvolíte tuto volbu, dojde k sejmutí celé pracovní plochy. V opačném "
+"případě se sejme jen aktivní okno."
+
+#: screenshotdialog.cpp:97
+msgid "Hide all host application windows"
+msgstr "Skrýt všechna okna aplikací"
+
+#: screenshotdialog.cpp:98
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr "<p>Pokud povolíte tuto volbu, budou během snímání všechna okna ukryta."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Prodleva:"
+
+#: screenshotdialog.cpp:107
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr "<p>Prodleva před sejmutím."
+
+#: screenshotdialog.cpp:261
+msgid "Unable to take snapshot."
+msgstr "Není možné sejmout snímek."
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Chyba sejmutí"
+
+#~ msgid "Acquire Images Handbook"
+#~ msgstr "Příručka získání obrázku"
+
+#~ msgid "Comments:"
+#~ msgstr "Komentáře:"
+
+#~ msgid "Comment: %1"
+#~ msgstr "Komentář: %1"

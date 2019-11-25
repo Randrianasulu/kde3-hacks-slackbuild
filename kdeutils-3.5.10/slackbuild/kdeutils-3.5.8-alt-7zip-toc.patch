@@ -1,0 +1,12 @@
+diff -u'Nrpk~' kdeutils-3.5.8~/ark/sevenzip.cpp kdeutils-3.5.8/ark/sevenzip.cpp
+--- kdeutils-3.5.8~/ark/sevenzip.cpp	2007-01-15 14:25:37 +0300
++++ kdeutils-3.5.8/ark/sevenzip.cpp	2007-11-01 19:56:44 +0300
+@@ -248,7 +274,7 @@ bool SevenZipArch::processLine( const QC
+   unsigned int pos = 0;
+   int strpos, len;
+ 
+-  columns[ 0 ] = line.right( line.length() - m_nameColumnPos +1);
++  columns[ 0 ] = line.right( line.length() - m_nameColumnPos);
+   line.truncate( m_nameColumnPos );
+ 
+   // Go through our columns, try to pick out data, return silently on failure

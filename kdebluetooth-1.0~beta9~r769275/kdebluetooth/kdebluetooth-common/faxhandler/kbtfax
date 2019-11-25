@@ -1,0 +1,105 @@
+#!/bin/bash
+
+# A wrapper for efax to be used together with a bluetooth mobile phone
+# and kdeprintfax to send faxes via bluetooth from any kde application.
+#
+# This script does basically the same as the "efax" command, which is
+# already configured in kdeprintfax.
+# The difference is that kbtfax will ask you which bluetooth device
+# you want to connect to and then sets up a virtual serial device
+# with the rfcomm utility. Then the fax command is started and 
+# finally the rfcomm binding is released.
+
+# Use the following fax command when printing (without the 'FAXCMDLINE=')
+FAXCMDLINE="kbtfax NAME=%user PAGE=%page FROM=%from send %res %number %files"
+# This is the same as for eFax, but without the DEV parameter
+
+# If your device does not support the fax profile
+# and works of the serial port profile instead,
+# you will have to change this script to use
+# SPP instead of FAX for the search UUID.
+# Default: SEARCH_UUID="FAX"
+SEARCH_UUID="FAX"
+
+# This will list all possibly relevant services, including fax,
+# dialup and serial port profile. It will also list many
+# unrelated services like obex push etc., but it should be
+# easy to see what's the right choice.
+#SEARCH_UUID="0x0003"
+
+# If you don't want to use the default rfcomm 
+# device (/dev/rfcomm1) you can specify another one here.
+# Default: RFCOMM_DEVICE=1
+RFCOMM_DEVICE=1
+
+# ----- End of options -----
+
+BIND_ERROR=10
+FAX_ERROR=11
+RELEASE_ERROR=12
+RFCOMM_PERM_ERROR=13
+DEV_ERROR=14
+
+if [ "x$1" == "x" ] ; then
+    
+    kdialog --inputbox "Use this command for \"Other fax system\" in kdeprintfax:" "$FAXCMDLINE"
+
+
+elif [ "x$KBTFAX_ROOTMODE" != "xYES" ] ; then
+
+# The script was not called with the special
+# argument RFCOMM, so the script was called 
+# by the user/kprintfax
+
+# We search for a service now
+    SEARCH_RESULT=( $(kbtsearch -u $SEARCH_UUID --title "Select fax service") )
+    SEARCH_STATUS=$?
+    echo "Status: $SEARCH_STATUS"
+
+    if [ $SEARCH_STATUS -eq 0 ] ; then
+
+# The user has selected a service
+	export ADDRESS=${SEARCH_RESULT[0]}
+	export CHANNEL=${SEARCH_RESULT[1]}
+	export KBTFAX_ROOTMODE="YES"
+	echo "Address=$ADDRESS Channel=$CHANNEL"
+	kdesu -t -- $0 "$@" 
+        RET=$?
+        if [ $RET == $BIND_ERROR ] ; then
+            kdialog --error "Error binding rfcomm device."
+        elif [ $RET == $FAX_ERROR ] ; then
+            kdialog --error "Failed to send the fax."
+        elif [ $RET == $RELEASE_ERROR ] ; then
+            kdialog --error "Could not release rfcomm device."
+        elif [ $ERT == 0 ] ; then
+            kdialog --msgbox "Fax sent."
+        elif [ $RET == $DEV_ERROR ] ; then
+            kdialog --error "The rfcomm device /dev/rfcomm$RFCOMM_DEVICE did \
+not exist or had wrong permissions. Please check if the rfcomm utility is wworking correctly."
+        else 
+            kdialog --error "Unknown error in kbtfax: Root mode returned with code $RET" 
+        fi
+        exit $RET
+    else
+
+# The search dialog was aborted
+        kdialog --msgbox "Sending fax was aborted."
+    fi
+else
+
+# Recursive call. We should be running as root
+# now, so we can set up rfcomm and call fax
+    echo "Binding /dev/rfcomm$RFCOMM_DEVICE to $ADDRESS, channel $CHANNEL"
+    rfcomm bind $RFCOMM_DEVICE $ADDRESS $CHANNEL || exit $BIND_ERROR
+# Rfcomm (or is it udev?) seems to need some time
+# to set up the device  
+    sleep 5
+    [ -w /dev/rfcomm$RFCOMM_DEVICE -a -r /dev/rfcomm$RFCOMM_DEVICE ] || exit $DEV_ERROR
+    fax "DEV=rfcomm$RFCOMM_DEVICE" "$@"
+    FAXRET=$?
+    echo -n "Releasing rfcomm device... "
+    rfcomm release $ADDRESS || exit $RELEASE_ERROR
+    [ $FAXRET -eq 0 ] || exit $FAX_ERROR
+    echo "done."
+    kdialog --msgbox "kbtfax script root mode done"
+fi

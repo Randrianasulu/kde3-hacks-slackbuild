@@ -1,0 +1,678 @@
+# translation of kipiplugin_imagesgallery.po to Czech
+# translation of kipiplugin_imagesgallery.po to cs_CZ
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Klara Cihlarova <koty@seznam.cz>, 2005.
+# Lukáš Tinkl <lukas@kde.org>, 2005.
+# Jakub Friedl <jfriedl@suse.cz>, 2005, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_imagesgallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2007-01-08 20:28+0100\n"
+"Last-Translator: Jakub Friedl <jfriedl@suse.cz>\n"
+"Language-Team: Czech <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Klára Cihlářová,Jakub Friedl"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "koty@seznam.cz,jfriedl@suse.cz"
+
+#: imagesgallery.cpp:187
+msgid "KIPI Album Image Gallery"
+msgstr "KIPI galerie obrázků"
+
+#: imagesgallery.cpp:273
+msgid ""
+"The target folder\n"
+"'%1'\n"
+"already exists; do you want overwrite it? (all data in this folder will be "
+"lost.)"
+msgstr ""
+"Cílový adresář\n"
+"'%1'\n"
+"již existuje. Chcete jej přepsat? (Všechna data budou ztracena.)"
+
+#: imagesgallery.cpp:278 imagesgallery.cpp:503
+msgid "Cannot remove folder '%1'."
+msgstr "Nelze odstranit složku '%1'."
+
+#: imagesgallery.cpp:371 imagesgallery.cpp:469
+msgid "Could not create folder '%1'"
+msgstr "Nelze vytvořit složku '%1'"
+
+#: imagesgallery.cpp:556 imagesgallery.cpp:1192
+msgid "Could not open file '%1'"
+msgstr "Není možné otevřít soubor '%1'"
+
+#: imagesgallery.cpp:592
+msgid "Could not create folder '%1' in '%2'"
+msgstr "Nelze vytvořit složku '%1' v '%2'"
+
+#: imagesgallery.cpp:714
+msgid "Album list"
+msgstr "Seznam alb"
+
+#: imagesgallery.cpp:718
+#, c-format
+msgid "Image Gallery for Album %1"
+msgstr "Galerie obrázku alba %1"
+
+#: imagesgallery.cpp:732
+msgid "<i>Comment:</i>"
+msgstr "<i>Komentář:</i>"
+
+#: imagesgallery.cpp:735
+msgid "<i>Collection:</i>"
+msgstr "<i>Kolekce:</i>"
+
+#: imagesgallery.cpp:738
+msgid "<i>Date:</i>"
+msgstr "<i>Datum:</i>"
+
+#: imagesgallery.cpp:741
+msgid "<i>Images:</i>"
+msgstr "<i>Obrázky:</i>"
+
+#: imagesgallery.cpp:766
+msgid "<i>Subdirectories:</i>"
+msgstr "<i>Podadresáře:</i>"
+
+#: imagesgallery.cpp:853 imagesgallery.cpp:933 imagesgallery.cpp:1410
+msgid "KB"
+msgstr "kB"
+
+#: imagesgallery.cpp:882 imagesgallery.cpp:886
+#, c-format
+msgid ""
+"_n: 1 image\n"
+"%n images"
+msgstr ""
+"1 obrázek\n"
+"%n obrázky\n"
+"%n obrázků"
+
+#: imagesgallery.cpp:1029 imagesgallery.cpp:1072 imagesgallery.cpp:1420
+msgid "Valid HTML 4.01"
+msgstr "Validní HTML 4.01"
+
+#: imagesgallery.cpp:1032 imagesgallery.cpp:1076 imagesgallery.cpp:1425
+msgid "Image gallery created with <a href=\"%1\">%2</a> on %3"
+msgstr "Galerie obrázků vytvořena <a href=\"%1\">%2</a> v %3"
+
+#: imagesgallery.cpp:1052
+msgid "<i>Album list:</i>"
+msgstr "<i>Seznam alb:</i>"
+
+#: imagesgallery.cpp:1123
+msgid "Could not create folder '%1' in '%2'."
+msgstr "Nelze vytvořit složku '%1' v '%2'."
+
+#: imagesgallery.cpp:1348 imagesgallery.cpp:1349
+msgid "Previous"
+msgstr "Předchozí"
+
+#: imagesgallery.cpp:1354
+msgid "Album index"
+msgstr "Rejstřík alba"
+
+#: imagesgallery.cpp:1359 imagesgallery.cpp:1360
+msgid "Albums list"
+msgstr "Seznam alb"
+
+#: imagesgallery.cpp:1366
+msgid "Next"
+msgstr "Následující"
+
+#: imagesgallery.cpp:1636
+msgid ""
+"Cannot start 'mozilla' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit prohlížeč 'mozilla'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1646
+msgid ""
+"Cannot start 'netscape' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit prohlížeč 'netscape'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1656
+msgid ""
+"Cannot start 'opera' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit prohlížeč 'opera'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1666
+msgid ""
+"Cannot start 'firefox' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit prohlížeč 'firefox'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1676
+msgid ""
+"Cannot start 'galeon' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit prohlížeč 'galeon'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1686
+msgid ""
+"Cannot start 'amaya' web browser.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit prohlížeč 'amaya'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1696
+msgid ""
+"Cannot start 'quanta' web editor.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit HTML editor 'quanta'.\n"
+"Překontrolujte instalaci."
+
+#: imagesgallery.cpp:1706
+msgid ""
+"Cannot start 'screem' web editor.\n"
+"Please check your installation."
+msgstr ""
+"Nelze spustit HTML editor 'screem'.\n"
+"Překontrolujte instalaci."
+
+#: imgallerydialog.cpp:94
+msgid "Create Image Galleries"
+msgstr "Vytvořit galerii obrázků"
+
+#: imgallerydialog.cpp:104
+msgid "Image Gallery"
+msgstr "Galerie obrázků"
+
+#: imgallerydialog.cpp:107
+msgid ""
+"A Kipi plugin for HTML album export.\n"
+"Based on KimgalleryPlugin implementation."
+msgstr ""
+"KIPI plugin pro export HTML alba.\n"
+"Založeno na implementaci KimgalleryPlugin."
+
+#: imgallerydialog.cpp:111
+msgid "Author and maintainer"
+msgstr "Autor a správce"
+
+#: imgallerydialog.cpp:114
+msgid "Image navigation mode patches"
+msgstr "Opravy režimu navigace obrázky"
+
+#: imgallerydialog.cpp:117
+msgid "HTML implementation patches"
+msgstr "Opravy HTML implementace"
+
+#: imgallerydialog.cpp:120 imgallerydialog.cpp:123
+msgid "Original HTML generator implementation"
+msgstr "Implementace původního HTML generátoru"
+
+#: imgallerydialog.cpp:129
+msgid "Plugin Handbook"
+msgstr ""
+
+#: imgallerydialog.cpp:152
+msgid "Selection"
+msgstr "Výběr"
+
+#: imgallerydialog.cpp:152
+msgid "Album Selection"
+msgstr "Výběr alba"
+
+#: imgallerydialog.cpp:165
+msgid "Look"
+msgstr "Vzhled"
+
+#: imgallerydialog.cpp:165
+msgid "Page Look"
+msgstr "Vzhled stránky"
+
+#: imgallerydialog.cpp:173
+msgid "Main &page title:"
+msgstr "Titul hlavní &stránky:"
+
+#: imgallerydialog.cpp:176
+msgid "Album Image Galleries"
+msgstr "Album galerie obrázků"
+
+#: imgallerydialog.cpp:179
+msgid ""
+"<p>Enter here the title of the main HTML page (multiple Album selection only)."
+msgstr "<p>Zde zadejte titul hlavní HTML stránky (pouze při výběru více alb)."
+
+#: imgallerydialog.cpp:186
+msgid "I&mages per row:"
+msgstr "uO&brázků na řádek:"
+
+#: imgallerydialog.cpp:187
+msgid ""
+"<p>Enter here the number of images per row in the album page. A good value is "
+"'4'."
+msgstr "<p>Zde zadejte počet obrázků na řádku. Dobrá hodnota je '4'."
+
+#: imgallerydialog.cpp:196
+msgid "Show image file &name"
+msgstr "Zobrazit &název souboru"
+
+#: imgallerydialog.cpp:197
+msgid ""
+"<p>If you enable this option, the image filenames will be added to the Album "
+"page."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, budou do stránky vložena také jména souborů "
+"obrázků."
+
+#: imgallerydialog.cpp:204
+msgid "Show image file &size"
+msgstr "Přidat velikost &souboru"
+
+#: imgallerydialog.cpp:205
+msgid ""
+"<p>If you enable this option, the image file sizes will be added to the Album "
+"page."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, bude do stránky vložena také velikost souboru s "
+"obrázkem."
+
+#: imgallerydialog.cpp:212
+msgid "Show image &dimensions"
+msgstr "Při&dat rozměry obrázku"
+
+#: imgallerydialog.cpp:213
+msgid ""
+"<p>If you enable this option, the image dimensions will be added to the Album "
+"page."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, bude do stránky vložena také velikost obrázku."
+
+#: imgallerydialog.cpp:220
+msgid "Show page creation date"
+msgstr "Zobrazit datum vytvoření stránky"
+
+#: imgallerydialog.cpp:221
+msgid ""
+"<p>If you enable this option, the creation date will be added to the Album "
+"page."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, bude do stránky vložen údaj o datu vytvoření."
+
+#: imgallerydialog.cpp:228
+msgid "Create pages for each image"
+msgstr "Vytvořit stránku pro každý obrázek"
+
+#: imgallerydialog.cpp:229
+msgid "<p>If you enable this option, a HTML page will be added for each photo."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, bude pro každý obrázek vložena HTML stránka."
+
+#: imgallerydialog.cpp:239
+msgid "Open image gallery in:"
+msgstr "Otevřít galerii obrázků v:"
+
+#: imgallerydialog.cpp:240
+msgid "<p>Select here the application to preview or edit the HTML pages."
+msgstr "<p>Zvolte program pro náhled nebo úpravu HTML stránek."
+
+#: imgallerydialog.cpp:266
+msgid "<p>Select here the font name to use for the pages."
+msgstr "<p>Zvolte písmo stránek."
+
+#: imgallerydialog.cpp:272
+msgid "Fon&t name:"
+msgstr "Náz&ev písma:"
+
+#: imgallerydialog.cpp:285
+msgid "<p>Select here the font size to use for the pages."
+msgstr "<p>Zvolte velikost písma."
+
+#: imgallerydialog.cpp:287
+msgid "Font si&ze:"
+msgstr "Velikost &písma:"
+
+#: imgallerydialog.cpp:300
+msgid "<p>Select here the foreground color to use for the pages."
+msgstr "<p>Zvolte barvu popředí."
+
+#: imgallerydialog.cpp:302
+msgid "&Foreground color:"
+msgstr "Ba&rva popředí:"
+
+#: imgallerydialog.cpp:315
+msgid "<p>Select here the background color to use for the pages."
+msgstr "<p>Zvolte barvu pozadí."
+
+#: imgallerydialog.cpp:317
+msgid "&Background color:"
+msgstr "&Barva pozadí:"
+
+#: imgallerydialog.cpp:330
+msgid "<p>Select here the image borders' size in pixels."
+msgstr "<p>Zvolte okraj obrázku v pixelech."
+
+#: imgallerydialog.cpp:332
+msgid "Images borders s&ize:"
+msgstr "&Velikost okraje obrázku:"
+
+#: imgallerydialog.cpp:345
+msgid "<p>Select here the color to use for the image borders."
+msgstr "<p>Zvolte barvu okraje."
+
+#: imgallerydialog.cpp:348
+msgid "Image bo&rder color:"
+msgstr "&Barva okraje obrázku:"
+
+#: imgallerydialog.cpp:368
+msgid "Album"
+msgstr "Album"
+
+#: imgallerydialog.cpp:368
+msgid "Photo Album"
+msgstr "Foto album"
+
+#: imgallerydialog.cpp:376
+msgid "&Save gallery to:"
+msgstr "&Uložit galerii do:"
+
+#: imgallerydialog.cpp:383
+msgid "<p>The folder name where the galleries will be saved."
+msgstr "<p>Jméno složky, do které bude galerie uložena."
+
+#: imgallerydialog.cpp:387
+msgid "Resize target images"
+msgstr "Změnit velikost obrázků"
+
+#: imgallerydialog.cpp:390
+msgid "<p>If you enable this option, all target images can be resized."
+msgstr "<p>Pokud tuto volbu povolíte, dojde ke změně velikosti všech obrázků."
+
+#: imgallerydialog.cpp:395
+msgid "Target images size:"
+msgstr "Nová velikost obrázků:"
+
+#: imgallerydialog.cpp:397
+msgid "<p>The new size of the target images in pixels"
+msgstr "<p>Nová velikost obrázků v pixelech."
+
+#: imgallerydialog.cpp:401
+msgid "Use a specific target image compression"
+msgstr "Použít zvláštní kompresní metodu"
+
+#: imgallerydialog.cpp:405
+msgid ""
+"<p>If you enable this option, all target images can be compressed with a "
+"specific compression value."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, budou všechny obrázky komprimovány podle zadané "
+"hodnoty."
+
+#: imgallerydialog.cpp:410
+msgid "Target images compression:"
+msgstr "Komprese obrázků:"
+
+#: imgallerydialog.cpp:412
+msgid "<p>The compression value of the target images :<p>"
+msgstr "<p>Hodnota komprese obrázků:<p>"
+
+#: imgallerydialog.cpp:413 imgallerydialog.cpp:558
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: velmi vysoká "
+"<p><b>25</b>: vysoká "
+"<p><b>50</b>: střední"
+"<p><b>75</b>: nízká (výchozí)"
+"<p><b>100</b>: bez komprese"
+
+#: imgallerydialog.cpp:430
+msgid "<p>Select here the image file format for the target images.<p>"
+msgstr "<P>Zde zvolte formát obrázků.<p>"
+
+#: imgallerydialog.cpp:431 imgallerydialog.cpp:574
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: tento formát (zkratka z angl. Joint Photographic Experts Group) "
+"používající ztrátovou kompresi je vhodný pro webové obrázky."
+"<p><b>PNG</b>: rozšiřitelný souborový formát (zkratka z angl. Portable Network "
+"Graphics format) pro bezztrátové, přenositelné, dobře komprimované ukládání "
+"rastrové grafiky. Formát PNG je patenty nezatíženou náhradou formátu GIF a "
+"zároveň v mnoha ohledech nahrazuje formát TIFF. Formát PNG byl navržen pro "
+"bezproblémovou podporu online aplikací, např. webu, takže je plně "
+"streamovatelný a podporuje progresivní zobrazování. PNG umí uložit také hodnoty "
+"gamy a barevnosti, což vylepšuje barevnou shodu na různých platformách."
+
+#: imgallerydialog.cpp:441
+msgid "Target images file format:"
+msgstr "Formát souboru obrázků:"
+
+#: imgallerydialog.cpp:451 imgallerydialog.cpp:596
+msgid "&Set different color depth:"
+msgstr "&Barevná hloubka:"
+
+#: imgallerydialog.cpp:453
+msgid "<p>Select here the color depth used for the target image rendering."
+msgstr "<p>Zde můžete zvolit barevnou hloubku obrázků."
+
+#: imgallerydialog.cpp:467
+#, fuzzy
+msgid "Use images album &captions"
+msgstr "Použít &komentáře z alba"
+
+#: imgallerydialog.cpp:471
+#, fuzzy
+msgid ""
+"<p>If you enable this option, the images Album captions will be used for "
+"generating subtitles for the images."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, použijí se pro popisky obrázků komentáře z alba."
+
+#: imgallerydialog.cpp:477
+#, fuzzy
+msgid "Show album cap&tion"
+msgstr "Zobrazit k&olekce alba"
+
+#: imgallerydialog.cpp:480
+#, fuzzy
+msgid ""
+"<p>If you enable this option, the Album caption will be shown in the gallery."
+msgstr "<p>Pokud tuto volbu povolíte, budou v galerii zobrazeny kolekce alba."
+
+#: imgallerydialog.cpp:485
+msgid "Show album &collection"
+msgstr "Zobrazit k&olekce alba"
+
+#: imgallerydialog.cpp:488
+msgid ""
+"<p>If you enable this option, the Album collection will be shown in the "
+"gallery."
+msgstr "<p>Pokud tuto volbu povolíte, budou v galerii zobrazeny kolekce alba."
+
+#: imgallerydialog.cpp:493
+msgid "Show album creation &date"
+msgstr "Zobrazit &datum vytvoření alba"
+
+#: imgallerydialog.cpp:496
+msgid ""
+"<p>If you enable this option, the Album creation date will be shown in the "
+"gallery."
+msgstr ""
+"<P>Pokud tuto volbu povolíte, zobrazí se v galerii datum vytvoření alba."
+
+#: imgallerydialog.cpp:501
+msgid "Show &number of images in album"
+msgstr "Zobrazit poč&et obrázků v albu"
+
+#: imgallerydialog.cpp:504
+msgid ""
+"<p>If you enable this option, the number of images in Album will be shown in "
+"the gallery."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, zobrazí se v galerii počet obrázků v albu."
+
+#: imgallerydialog.cpp:529
+msgid "Thumbnails"
+msgstr "Náhledy"
+
+#: imgallerydialog.cpp:529
+msgid "Image Thumbnails"
+msgstr "Náhledy obrázku"
+
+#: imgallerydialog.cpp:540
+msgid "Thumbnails size:"
+msgstr "Velikost náhledů:"
+
+#: imgallerydialog.cpp:542
+msgid "<p>The new size of the thumbnails in pixels"
+msgstr "<p>Nová velikost náhledů v pixelech"
+
+#: imgallerydialog.cpp:546
+msgid "Use a specific thumbnail compression"
+msgstr "Použít u náhledů kompresi"
+
+#: imgallerydialog.cpp:550
+msgid ""
+"<p>If you enable this option, all thumbnails can be compressed with a specific "
+"compression value."
+msgstr ""
+"<p>Pokud tuto volbu povolíte, budou všechny náhledy komprimovány podle zadané "
+"hodnoty."
+
+#: imgallerydialog.cpp:555
+msgid "Thumbnails compression:"
+msgstr "Komprese náhledů:"
+
+#: imgallerydialog.cpp:557
+msgid "<p>The compression value of thumbnails :<p>"
+msgstr "<p>Hodnota komprese náhledů:<p>"
+
+#: imgallerydialog.cpp:573
+msgid "<p>Select here the image file format for thumbnails.<p>"
+msgstr "<p>Zde zvolte formát souboru náhledů.<p>"
+
+#: imgallerydialog.cpp:584
+msgid "Thumbnails file format:"
+msgstr "Formát souboru náhledů:"
+
+#: imgallerydialog.cpp:598
+msgid "<p>Select here the color depth used for the thumbnail image rendering."
+msgstr "<p>Zde zvolte barevnou hloubku náhledů."
+
+#: imgallerydialog.cpp:640
+msgid "You must select at least one album."
+msgstr "Musíte zvolit alespoň jedno album."
+
+#: imgallerydialog.cpp:648
+msgid "Image gallery folder does not exist; please check it..."
+msgstr "Složka galerie obrázků neexistuje, překontrolujte..."
+
+#: plugin_imagesgallery.cpp:59
+msgid "Images Gallery..."
+msgstr "Galerie obrázků..."
+
+#: plugin_imagesgallery.cpp:123
+msgid "Album HTML Export"
+msgstr "HTML export alba"
+
+#: plugin_imagesgallery.cpp:144
+msgid "Initialising..."
+msgstr "Inicializuji..."
+
+#: plugin_imagesgallery.cpp:151
+msgid "Making main HTML interface..."
+msgstr "Vytvářím hlavní HTML rozhraní..."
+
+#: plugin_imagesgallery.cpp:157
+msgid "Making HTML pages for Album '%1'..."
+msgstr "vytvářím HTML stránky alba '%1'..."
+
+#: plugin_imagesgallery.cpp:163
+msgid "Making HTML page for image '%1'..."
+msgstr "Vytvářím HTML stránku obrázku '%1'..."
+
+#: plugin_imagesgallery.cpp:169
+msgid "Creating thumbnail for '%1'"
+msgstr "Vytvářím náhled '%1'"
+
+#: plugin_imagesgallery.cpp:197
+msgid "Main HTML interface creation completed."
+msgstr "Vytvoření HTML rozhraní dokončeno."
+
+#: plugin_imagesgallery.cpp:203
+msgid "HTML pages creation for Album '%1' completed."
+msgstr "Vytváření HTML stránek alba '%1' dokončeno."
+
+#: plugin_imagesgallery.cpp:209
+msgid "Creating thumbnail for '%1' completed."
+msgstr "Vytváření náhledu '%1' dokončeno."
+
+#: plugin_imagesgallery.cpp:229
+msgid "Failed to create thumbnail for '%1'"
+msgstr "Chyba při vytváření náhledu '%1'"
+
+#: plugin_imagesgallery.cpp:237
+#, c-format
+msgid "Failed to create HTML interface: %1"
+msgstr "Chyba při vytváření HTML rozhraní: %1"
+
+#: plugin_imagesgallery.cpp:248
+msgid "Failed to create HTML page for Album '%1'"
+msgstr "Chyba při vytvářené HTML stránky alba '%1'"
+
+#: plugin_imagesgallery.cpp:259
+msgid "Failed to create HTML page for image '%1'"
+msgstr "Chyba při vytváření HTML stránky obrázku '%1'"
+
+#: plugin_imagesgallery.cpp:302
+msgid "Starting browser program..."
+msgstr "Spouštím prohlížeč..."
+
+#~ msgid "Image Gallery Handbook"
+#~ msgstr "Příručka galerie obrázků"
+
+#~ msgid "Show album commen&ts"
+#~ msgstr "Zobrazit komen&táře alba"
+
+#~ msgid "<p>If you enable this option, the Album comments will be shown in the gallery."
+#~ msgstr "<p>Pokud tuto volbu povolíte, budou v galerii zobrazeny komentáře z alba."
+
+#~ msgid "Couldn't open file '%1'"
+#~ msgstr "Nelze otevřít soubor '%1'"

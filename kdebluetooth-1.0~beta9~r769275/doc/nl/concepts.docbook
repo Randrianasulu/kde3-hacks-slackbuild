@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Concepten</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Bluetooth-beveiliging: paarkoppelingen opbouwen</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Wat is een "paarkoppeling"?</title>
+<para
+>Het is meestal vereist dat een apparaat zichzelf authenticeert als het toegang wil tot een dienst. In dat geval dient er een <phrase
+>paarkoppeling</phrase
+> te worden opgebouwd tussen beide apparaten. Als de paarkoppeling tot stand is gekomen zijn beide apparaten zeker van de identiteit van de andere partij. Zonder een paarkoppeling dienen ze af te gaan op het adres of de naam van het andere apparaat, wat op eenvoudige wijze kan worden vervalst. </para>
+<para
+>Een paarkoppeling wordt normaliter eenmaal tussen twee apparaten opgebouwd. Daarna zullen verbindingen tussen beide apparaten automatisch worden <phrase
+>geauthenticeerd</phrase
+>. </para>
+<para
+>Normaliter <emphasis
+>start de paarkoppeling automatisch wanneer nodig</emphasis
+>. U hoeft zich niet druk te maken over een apparaat dat geen paarkoppeling krijgt als het toegang wil tot een dienst. Als ze proberen te authenticeren en dit niet lukt, dan wordt er automatisch een paarkoppeling opgebouwd. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>Hoe werkt dat?</title>
+
+<para
+>De apparaten worden gepaard om zeker te zijn van de identiteit van de ander. De eerste stap in dit proces kan niet automatisch worden gedaan. <emphasis
+>U</emphasis
+> dient zeker te zijn dat u degene die met uw apparaat een paarkoppeling wil opbouwen kent. Dit wordt geregeld door middel van een "PIN"-getal op beide apparaten. De term "PIN" wordt veel gebruikt, maar is misleidend. Het is geen PIN-code zoal u kent van uw pinpas. U hoeft het getal niet te onthouden. en nadat (!) de paarkoppeling tot stand is gekomen hoeft u het getal ook niet geheim te houden. U hoeft alleen er voor te zorgen dat niemand anders het getal kent totdat u (of u beiden) het getal hebt ingevoerd op beide apparaten. </para>
+<para
+>Voor de veiligheid dient u niet alleen de PIN geheim te houden gedurende het opbouwen van de paarkoppeling, maar ook een willekeurig getal te gebruiken dat niet eenvoudig kan worden geraden. KDE Bluetooth kan u hierbij helpen door, wanneer mogelijk, een 8-cijferig getal te genereren. U kunt ook letters gebruiken, maar dit levert problemen op bij het intypen ervan op een mobiele telefoon. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>De Pin-helper</title>
+<para
+>Maar waar dient u de PIN in te voeren? De apparaten zullen u om de PIN vragen wanneer deze nodig is. Sommige apparaten vragen overigens om een wachtwoord, wat hetzelfde is. Voor BlueZ is het iets ingewikkelder. Er zijn verschillende manieren voor BlueZ om een PIN-getal van de gebruiker te krijgen. </para>
+<para
+>De gebruikelijke manier is om het programma hcid van BlueZ in te stellen om een "pin_helper"-programma te gebruiken en de beveiliging op "security user;" te zetten. Beide instellingen staan in het bestand <filename
+>/etc/bluetooth/hcid.conf</filename
+>. De helper is een klein programmaatje dat niets anders doet dan de gebruiker te vragen om een getal en deze te sturen naar stdout. BlueZ heeft zijn eigen pin_helper genaamd "bluepin". Dit programma staat bekend om de vele problemen die het veroorzaakt. Er zijn twee alternatieven voorhanden voorhanden: "bluez-pin" en "kbluepin". Die laatste is van kdebluetooth. Zie de sectie <link linkend="installation.setup"
+>instellinginstructies</link
+> voor hoe u de pin_helper kunt opzetten en wat u kunt doen als die niet werkt. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Gepaarde apparaten beheren</title>
+<para
+>Nadat u meerder apparaten gepaard hebt kunt u zich afvragen welke apparaten nu gepaard zijn en welke niet. Mogelijk wilt u ook een paarkoppeling verwijderen. De antwoorden brengen meestal slecht nieuws. </para>
+<para
+>Eerst, geen enkel apparaat kan met zekerheid weten met welke apparaten het is gepaard. Als twee apparaten gepaard zijn, dan delen ze een geheime <phrase
+>koppelingssleutel</phrase
+> die is aangemaakt tijdens het paarproces en is gebaseerd op het PIN-getal en enkele andere ingrediënten. Omdat de andere zijde kan beslissen om de koppelingssleutel zonder aankondiging te verwijderen garandeert een koppelingssleutel voor een bepaald apparaat niet dat deze aan de andere zijde nog bestaat. Als een van de koppelingssleutels verdwenen is, dan bestaat de paarkoppeling niet meer. Uiteraard bent u zeker dat u <emphasis
+>geen</emphasis
+> paarkoppeling hebt met een apparaat als u er geen koppelingssleutel voor heeft. </para>
+<para
+>Hoe kunnen koppelingssleutels worden verwijderd? Dat verschilt per apparaat. De meeste telefoons of PDA's hebben een lijst met "gepaarde", "gekoppelde" of "vertrouwde" apparaten waaruit u items kunt verwijderen. Voor de huidige versie van BlueZ utils (2.6) staan de koppelingssleutels meestal in het bestand <filename
+>/etc/bluetooth/link_key</filename
+>. Omdat de koppelingssleutels geheim dienen te worden gehouden is dit bestand alleen toegankelijk voor root. U kunt dit bestand zonder zonder probleem verwijderen, maar dan bent u wel al uw paarkoppelingen kwijt. Omdat het bestand binair is kunt u het ook niet zonder meer bekijken of bewerken zonder een speciaal hulpprogramma. Momenteel heeft kdebluetooth niet zo'n hulpprogramma omdat het afhandelen van koppelingssleutels door BlueZ vroeger of later zal worden veranderd. </para>
+<para
+>Als u veel wisselt van besturingssysteem en in beide bluetooth gebruikt (meesttal Linux&lt;->Windows), dan staat u nog een ergenis te wachten: als u uw telefoon paart onder Linux, en dan in Windows opstart, dan heeft Windows geen weet van de koppelingssleutels die door BlueZ worden beheerd. Het lijkt dus alsof de computer de kopplingssleutel heeft laten vallen en u dient opnieuw een paarkoppeling aan te gaan. Afhankelijk van uw apparaat is het zelfs niet mogelijk om opnieuw te paren zonder de eerst de "oude" koppelingssleutel te verwijderen. U kunt dit probleem ook tegenkomen in BlueZ zelf als u de optie "paring single;" in het bestand <filename
+>/etc/bluetooth/hcid.conf</filename
+> hebt geactiveerd. Houd voorlopig rekening met deze tekortkoming, gebruik bluetooth niet onder beide besturingssystemen of gebruik een aparte Bluetooth-adapter voor elk systeem. Het is misschien mogelijk om koppelingssleutels te verplaatsen tussen Windows en Linux, maar bij ons is geen programma bekend die dat voor u kan doen. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

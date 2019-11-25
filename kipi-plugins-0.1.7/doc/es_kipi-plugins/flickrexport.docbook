@@ -1,0 +1,180 @@
+<chapter id="flickrexport">
+<chapterinfo>
+
+<title
+>Exportar a Flickr</title>
+
+<authorgroup>
+    <author
+><firstname
+>Vardhman</firstname
+><surname
+>Jain</surname
+> <affiliation
+><address
+><email
+>vardhman@students.iiit.net</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+  <para
+>El complemento de exportación de Flickr para Kipi permite al usuario subir fotos al servicio web de <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+  <para
+>Flickr es una aplicación de administración de fotografías en línea en internet. Flickr es una forma de conseguir las fotos de la gente que le importa. Con Flickr puede exhibir sus fotos favoritas al mundo, puede crear un diario con las fotos que haya tomado con su teléfono móvil, y de forma segura y privada puede mostrar fotos a sus amigos y familia alrededor del mundo. </para>
+  
+  <para
+>El complemento de exportación de Flickr puede utilizarse para subir una colección de imágenes desde su servidor al servidor remoto de flickr utilizando internet. </para>
+
+<sect1 id="using-plugin-flickrexport"
+> 
+  <title
+>Inicialización del complemento para el primer acceso</title>
+  
+  <para
+>Al acceder al complemento por primera vez se guiará al usuario en el proceso de obtener una señal. Ésta será utilizada para los procesos de autentificación. El siguiente diálogo hará emerger una ventana del navegador en la que el usuario podrá identificarse en <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+  
+  <figure>
+      <title
+>La vista previa del diálogo del primer acceso</title>
+      <graphic srccredit="The First Sign Up Dialog Preview" fileref="flickrexportsignup.png"/>
+  </figure>
+  
+  <para
+>Si la identificación se ha realizado con éxito se podrán subir fotos al sitio web de Flickr. Al usuario se le presentará la siguiente página de identificación aceptada. </para>
+  
+  <figure>
+      <title
+>La página de identificación aceptada de Flickr</title>
+      <graphic srccredit="The Successfull Signup Flickr page" fileref="flickrexportauthenticated.png"/>
+  </figure>
+  
+  <para
+>Solo tienen que cerrar la ventana del navegador y volver al diálogo de la aplicación servidora. Si pulsa <guilabel
+>Sí</guilabel
+>, el usuario verá la interfaz de subida de fotos para Filckr. Se describe en la siguiente sección. </para>
+
+</sect1>
+
+<sect1 id="uploading-using-plugin-flickrexport"
+> 
+<title
+>Uso habitual del complemento</title>
+
+  
+  <para
+>Cuando se llama al complemento de exportación de flickr las siguientes veces, al usuario se le recibirá con el siguiente diálogo, que muestra los permisos de acceso que tiene el complemento de exportación de flickr. El proceso de subida requiere permisos de «escritura». Por el momento el complemento no permite otros permisos. Se le preguntará al usuario si desea continuar con los permisos actuales. </para>
+     <figure>
+      <title
+>Vista previa del diálogo de permisos actuales</title>
+      <graphic srccredit="The " fileref="flickrexportcontinue.png"/>
+  </figure>
+
+      <para
+>Si pulsa <guilabel
+>Sí</guilabel
+>, el usuario verá el interfaz de subida de fotos a Flickr. </para>
+   <para
+>Si pulsa <guilabel
+>No</guilabel
+>, se repite el proceso de autentificación. </para>
+  
+      <para
+>El diálogo principal de subida se muestra a continuación. </para>
+  
+  	
+  <figure>
+      <title
+>La vista previa del diálogo de subida</title>
+      <graphic srccredit="The Main Uploading Dialog Preview" fileref="flickrexportuploaddialog.png"/>
+  </figure>
+  
+  <para
+>El botón <guilabel
+>Añadir fotos</guilabel
+> debería pulsarse después de que el usuario haya configurado el resto de opciones del diálogo. Si el usuario pulsa este botón se abrirá un diálogo selector de imágenes, de forma que pueda seleccionar las fotos que desee subir. Si pulsa aceptar se iniciará la subida de las imágenes. </para>
+  
+
+  <para
+>El campo <guilabel
+>Etiquetas</guilabel
+> se puede rellenar con una serie de palabras (separadas por comas) que se asignarán como etiquetas de las imágenes subidas. </para>
+  
+  <para
+>Puede marcar las casillas <guilabel
+>Pública</guilabel
+>, <guilabel
+>Amigos</guilabel
+> y <guilabel
+>Familia</guilabel
+> para dar los permisos de acceso adecuados a las imágenes que suba. De forma predeterminada las imágenes subidas son privadas. </para>
+  
+  <para
+>Si está seleccionada la opción <guilabel
+>Redimensionar fotos antes de subirlas</guilabel
+>, las fotos se redimensionarán antes de subirse. Los valores se tomarán del cuadro <guilabel
+>Dimensión máxima</guilabel
+>. </para>
+  
+  <para
+>El cuadro <guilabel
+>Dimensión máxima</guilabel
+> se puede utilizar para ajustar la altura máxima a la que se redimensionarán las fotos antes de subirse. La anchura se calculará manteniendo la proporción respecto a la altura. </para>
+  
+ <figure>
+      <title
+>Vista previa del diálogo de progreso de subida</title>
+      <graphic srccredit="The Uploading Progress Dialog Preview" fileref="flickrexportuploading.png"/>
+  </figure>
+  <para
+>El usuario puede pulsar el botón <guilabel
+>Cancelar</guilabel
+> para cancelar la subida de fotos. </para>
+
+<para
+>Finalmente el usuario puede ver las fotos subidas visitando el sitio web de <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: ts
+End:
+-->

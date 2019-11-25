@@ -1,0 +1,173 @@
+<chapter id="installation">
+<title
+>Installation</title>
+
+<sect1 id="installation.requirements">
+<title
+>Krav</title>
+<para
+>Afhængigheder (du har både brug for bibliotekerde og de tilsvarende dev-pakker): </para>
+<itemizedlist>
+<listitem
+><para
+>KDE 
+>=3.2 </para
+></listitem>
+<listitem
+><para
+>Openobex 
+>=1.0 </para
+></listitem>
+<listitem
+><para
+>Qt 
+>=3.2 </para
+></listitem>
+<listitem
+><para
+>bluez-libs 
+>=2.5 </para
+></listitem>
+<listitem
+><para
+>bluez-utils 
+>=2.5 </para
+></listitem>
+</itemizedlist>
+<!--<para
+>For the handsfree client you will also need libogg, libvorbisenc and libvorbisfile.</para
+>-->
+<para
+>For bemused-serveren har du brug for xmms-dev. </para>
+<para
+>Bemærk venligst at det muligvis vil kompilere med ældre udgaver af bibliotekerne. Hvis du har succes med at kompilere med ældre versioner, eller hvis det mislykkes at kompilere selvom du har installeret de rigtige versioner, så vil vi gerne vide det. </para>
+</sect1>
+
+
+<sect1 id="installation.compilation">
+<title
+>Kompilering og installation</title>
+<para
+>Pak tar-arkivet ud, <command
+>cd kdebluetooth</command
+>, kør så <command
+>./configure --prefix=...</command
+>. KDE skal være indstillet til at bruge det givne præfiks. Det er sædvanligvis <filename
+>/usr</filename
+>, men du kan tilføje andre mapper ved at sætte $KDEDIRS miljøvariablen. Se <ulink url="http://www.kde.org/documentation/faq/install.html"
+> http://www.kde.org/documentation/faq/install.html</ulink
+> for mere information. </para>
+<para
+>Hvis du kunne kompilere, kan du installere med <command
+>make install</command
+>. Men vi anbefaler stærkt at bruge en <link linkend="download.packages"
+>pakke</link
+> i stedet for at installere med en makefile - hvis du ikke bruger et præfiks der er eksklusivt for kdebluetooth, vil du få besvær med at fjerne filer efter nogle opdateringer. </para>
+</sect1>
+
+
+<sect1 id="installation.setup">
+<title
+>Opsætning</title>
+<para
+>KDE' Bluetooth-skelet selv har næsten ikke brug for nogen opsætning, men før du bruger det, vil du skulle indstille Linux' Bluetooth stak BlueZ rigtigt. Se venligst <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+> for detaljer. BlueZ kommer med en dæmon  der hedder <command
+>hcid</command
+>. Den er ansvarlig for at bringe dine enheder op og håndtere sikkerhedsrelaterede ting. Den startes sædvanligvis under bootup i et init-script. </para>
+<para
+>For kdebluetooth anbefaler vi følgende indstillinger (uændrede eller irrelevante afsnit er blevet erstattet af '...'): <screen>
+options {
+...
+        # Sikkerhedshåndteringstilstand
+        #   none - Sikkerhedshåndtering deaktiveret
+        #   auto - Brug lokal PIN for indkommende forbindelser
+        #   user - Bed altid brugeren om en PIN
+        #
+        # Brug 'security user' for kun at bruge den grafiske pin hjælper
+        # 'auto' betyder at for indkommende forbindelser bruges det statiske tal 
+        # i filen /etc/bluetooth/pin.
+        security user;
+
+        # Parringstilstand
+        # Tillad at overskrive en eksisterende parring 
+        pairing multi;
+
+        # PIN-hjælper
+        # Brug kdebluetooth's egen pin-hjælper. 
+        # Fejlmeddelelser kan findes i sysloggen.
+        # !! ÆNDR DETTE !! Ændr sti-indstillingen til at passe med din opsætning
+        pin_helper /usr/local/lib/kdebluetooth/kbluepin;
+}
+
+# Standardindstilling for HCI-enheder
+device {
+...
+        # Lokal enhedsklasse
+        # "Uncategorized computer", som lader som om den 
+        # understøtter næsten hvad som helst.
+        class 0xff0100;
+        
+        # For nogle mobiltelefoner vil du skulle mærke dit system
+        # som en Audio/Handsfree enhed for at kunne bruge din computer
+        # som en Handsfree (kun når der forbindes via telefonen)
+        # class 0xff0408;
+
+        iscan enable; pscan enable;
+        lm accept;
+        lp hold,sniff,park;
+
+        # Godkendelse og kryptering
+        # Hvis du aktiverer dette *skal* en enhed parres for at få adgang til
+        # en tjeneste på din computer
+        #auth enable;
+        #encrypt enable;
+}
+
+</screen
+> Husk at starte <command
+>hcid</command
+> igen efter hver ændring. Hvis noget ikke synes at virke når enheder skal parres, vil et hurtigt kig i dit systems syslog (på Debian: <filename
+>/var/log/syslog</filename
+>) sædvanligvis fortælle dig hvad der gik galt. </para>
+<para
+>For basal baggrundsinformation om Bluetooth sikkerhed se afsnittet <link linkend="concepts.pairing"
+>parring af bluetooth enheder</link
+>. </para>
+
+<para
+>En anden dæmon der skal køre er BlueZ's <command
+>sdpd</command
+>. Denne dæmon bruges til at publicere beskrivelser af de tjenester der tilbydes til andre enheder. </para>
+<para
+>Hvis både hcid og sdpd kører, bør du tjekke om din bluetooth-enhed virker ved at bruge de kommandolinjeværktøjer der kommer med BlueZ: </para>
+<screen
+>root:~# hciconfig      &lt;- Tjek om adaptoren blev fundet og er oppe
+hci0:   Type: USB
+        BD Address: 00:10:60:A3:8B:DE ACL MTU: 192:8  SCO MTU: 64:8
+        UP RUNNING PSCAN ISCAN AUTH ENCRYPT
+        RX bytes:176023 acl:2046 sco:0 events:1809 errors:0
+        TX bytes:23000 acl:971 sco:0 commands:469 errors:0
+
+root:~# hcitool inq    &lt;- Prøv at lede efter andre enheder der kan opdages
+Inquiring ...
+        00:A0:32:1A:B0:27       clock offset: 0x122b    class: 0x000100
+
+root:~# sdptool browse FF:FF:FF:00:00:00
+Browsing FF:FF:FF:00:00:00 ...
+Service Name: SDP Server
+Service Description: Bluetooth service discovery server
+Service Provider: BlueZ
+Service RecHandle: 0x0
+...
+root:~#
+</screen>
+<para
+>Den første kommando tjekker om din bluetooth-enhed er oppe, den anden søger efter andre enheder i området (de skal være sat op til at kunne opdages). Den sidste kommando giver en liste af tjenester der tilbydes af dig til andre bluetooth-enheder. Hvis du har kbluetoothd kørende allerede, vil du få den fulde liste af aktive tjenester her, inklusive obex push osv. Hvis det lykkes skulle du kunne bruge kdebluetooth uden yderligere opsætning. </para>
+<para
+>Start nu kdebluetooth's metaserver <command
+>kbluetoothd</command
+>. Du skulle nu kunne se kdebluetooth-ikonen i dit statusfelt. Så længe kbluetoothd kører, vil alle tjenester der kommer med kdebluetooth være tilgængelige. Prøv at venstre- og højreklikke på statusikonen og udforsk de forskellige indstillinger. Nyd det! :) </para>
+</sect1>
+
+</chapter>

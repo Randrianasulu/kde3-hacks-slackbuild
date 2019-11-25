@@ -1,0 +1,138 @@
+<chapter id="slideshow">
+<chapterinfo>
+
+<title
+>La presentazione avanzata</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin di Kipi <quote
+>Presentazione avanzata</quote
+> crea una presentazione configurabile a tutto schermo con le tue immagini. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Con questo plugin di Kipi puoi creare una perfetta presentazione con 3 clic del mouse. </para>
+
+<sect1 id="using-plugin-slideshowsettings">
+<title
+>La finestra delle impostazioni</title>
+
+<para
+>All'apertura del plugin dall'applicazione ospite apparirà la finestra <emphasis
+>Presentazione avanzata</emphasis
+>, facendoti delle domande su come vuoi impostare la presentazione. Puoi scegliere tra immagini selezionate e tutte le immagini dello stesso album. </para>
+
+<para
+>La casella <guilabel
+>Usa le transizioni di presentazione di OpenGL</guilabel
+> abilita delle transizioni delle immagini molto morbide usando la modalità di visualizzazione OpenGL. Assicurati di aver attivato OpenGL sulla tua scheda grafica, altrimenti la presentazione sarà molto lenta. </para>
+
+<para
+>La casella <guilabel
+>Visualizza nome del file</guilabel
+> abilita la visualizzazione del nome del file nell'angolo in basso a sinistra. </para>
+
+<para
+>La casella <guilabel
+>Ripetizione</guilabel
+> abilita la ripetizione continua della presentazione (fino alla conclusione manuale con <keycombo
+><keycap
+>Esc</keycap
+></keycombo
+>). </para>
+
+<para
+>La casella <guilabel
+>Immagini a caso</guilabel
+> abilita la visualizzazione casuale delle immagini (non usando l'ordine attuale della raccolta delle immagini). </para>
+
+<para
+>Il <guilabel
+>Ritardo tra le immagini</guilabel
+> può essere impostato in millisecondi. 1500 millisecondi corrispondono a un secondo e mezzo, ed sono un buon valore predefinito. La tempistica migliore dipende anche un po' dalla potenza della tua macchina e dall'effetto di transizione. Provalo da te prima di farlo vedere agli amici! </para>
+
+<para
+>Ci sono più di una dozzina di <guilabel
+>Effetti di transizione</guilabel
+> disponibili tra i quali puoi scegliere. La selezione <emphasis
+>Casuale</emphasis
+> cambierà l'effetto di transizione a ogni immagine. </para>
+
+<figure>
+    <title
+>La finestra Presentazione</title>
+    <graphic srccredit="The Slideshow Dialog" fileref="slideshow_dialog.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-slideshowinaction">
+<title
+>La presentazione in azione</title>
+
+<para
+>Durante la presentazione, l'utente può accedere a una barra degli strumenti nell'angolo in alto a sinistra dello schermo. Sposta il cursore del mouse nell'angolo in alto a sinistra per attivarla. </para>
+
+<para
+>Con questa barra degli strumenti, l'utente può controllare l'avanzamento, mettere in pausa o far ripartire la presentazione, tornare alle immagini di anteprima, avanzare alla prossima immagine, e chiudere la presentazione. </para>
+
+<para
+>Nell'angolo in basso a sinistra dello schermo puoi vedere il nome del file dell'immagine attuale, l'identificativo dell'immagine attuale nella presentazione, e il numero totale di immagini incluse. </para>
+
+<figure>
+    <title
+>Il plugin Presentazione avanzata in azione</title>
+    <graphic srccredit="The Slideshow Plugin in Action" fileref="slideshow.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

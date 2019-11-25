@@ -1,0 +1,24 @@
+--- kdenetwork/kopete/protocols/groupwise/libgroupwise/rtf.cc
++++ kdenetwork/kopete/protocols/groupwise/libgroupwise/rtf.cc
+@@ -2235,7 +2235,7 @@ void Level::setText(const char *str)
+ 
+         FontDef& def = p->fonts[m_nFont-1];
+ 
+-        char *pp = strchr(str, ';');
++        const char *pp = strchr(str, ';');
+         unsigned size;
+         if (pp != NULL)
+            size = (pp - str);
+Index: kopete-3.5.10/kopete/protocols/groupwise/libgroupwise/rtf.ll
+===================================================================
+--- kdenetwork/kopete/protocols/groupwise/libgroupwise/rtf.ll
++++ kdenetwork/kopete/protocols/groupwise/libgroupwise/rtf.ll
+@@ -570,7 +570,7 @@ void Level::setText(const char *str)
+ 
+         FontDef& def = p->fonts[m_nFont-1];
+ 
+-        char *pp = strchr(str, ';');
++        const char *pp = strchr(str, ';');
+         unsigned size;
+         if (pp != NULL)
+            size = (pp - str);

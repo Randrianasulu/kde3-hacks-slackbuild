@@ -1,0 +1,156 @@
+<chapter id="acquireimages">
+<chapterinfo>
+
+<title
+>Capturar imágenes</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard@kulzer.net</email
+></address
+></affiliation>
+    </author
+>    
+</authorgroup>
+
+<abstract>
+<para
+>El complemento para capturar imágenes de Kipi proporciona herramientas para capturar imágenes nuevas y guardarlas en las colecciones. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Este complemento se puede utilizar para capturar y añadir nuevas imágenes a la aplicación servidora a partir de fuentes externas. En estos momentos, se pueden utilizar dos funciones: </para>
+
+<itemizedlist>
+
+<listitem>
+    <para
+><guilabel
+>Digitalizar imágenes</guilabel
+>: utiliza el interfaz Kooka para explorar imágenes desde cualquier escáner plano soportado por el proyecto Sane u otra fuente de captura como transmisiones de vídeo (para que funcione debe tener instalado Kooka y Sane). </para>
+</listitem>
+
+<listitem>
+    <para
+><guilabel
+>Capturas de pantalla</guilabel
+>: realiza capturas de pantalla. </para>
+</listitem>
+
+</itemizedlist>
+
+<sect1 id="using-plugin-acquirescan">
+<title
+>Diálogo de digitalización de imágenes</title>
+
+<para
+>Cuando abra el menú <guilabel
+>Digitalizar imágenes</guilabel
+> aparecerá un diálogo que le permitirá elegir entre las fuentes de captura existentes en su ordenador. Seleccione el medio que desee. Puede configurarlo como fuente determinada para la siguiente vez. </para>
+
+<para
+>Cuando aparezca la ventana de Kooka, cambie los valores predeterminados para acomodarlos a sus necesidades. Eche un vistazo a la vista previa y recórtela antes de tomar la decisión final. El tamaño estimado del archivo se indica en la esquina inferior izquierda. Vea la parte correspondiente del <ulink url="help:/kooka/index.html"
+>manual de Kooka</ulink
+> para obtener más información. </para>
+
+<note
+><para
+>Asegúrese de que el diálogo esté completamente visible, ya que algunas opciones pueden estar ocultas si la ventana es demasiado reducida. </para
+></note>
+
+<para
+>Pulse el botón digitalizar y espere hasta que la exploración haya finalizado y aparezca el diálogo <guilabel
+>Guardar las opciones de la imagen destino</guilabel
+>. Aquí podrá modificar la calidad de compresión y el tipo del archivo de imagen (tenga en cuenta que el tipo BMP no tiene compresión y se crearán archivos grandes). El segundo elemento le permite seleccionar (o crear) la carpeta en la que se guardará la imagen. </para>
+
+<figure>
+    <title
+>El diálogo Guardar las opciones de la imagen destino en acción</title>
+    <graphic srccredit="The Save Target Dialog in Action" fileref="acquire-savetargetpreview.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-acquirescreenshot">
+<title
+>Diálogo de captura de pantalla</title>
+
+<para
+>En la <guilabel
+>Captura de pantalla</guilabel
+> podrá seleccionar el modo de captura a partir del primer elemento del menú->Importar->Captura de pantalla... Aparecerá un diálogo que le proporcionará varios modos de captura de pantalla: </para>
+
+<itemizedlist>
+<listitem>
+   <para
+>Deseleccione <guilabel
+>Capturar el escritorio completo</guilabel
+> para tomar una instantánea de la ventana situada bajo el cursor. </para>
+</listitem>
+<listitem>
+   <para
+>Cuando seleccione <guilabel
+>Ocultar todas las ventanas de la aplicación</guilabel
+> las ventanas de la aplicación servidora desaparecerán para permitirle ver otras pantallas/ventanas. Sino, después del retardo, se hará una captura de la pantalla/ventana actualmente visible (si ha deseleccionado <guilabel
+>Capturar el escritorio completo</guilabel
+>). </para>
+</listitem>
+</itemizedlist>
+
+<para
+>El retardo determina cuánto tardará en tomarse la captura de pantalla. Si necesita navegar a otras pantallas asigne un retardo lo suficientemente alto, de forma que le de tiempo a llegar. </para>
+
+<figure>
+    <title
+>El diálogo de captura de pantalla</title>
+    <graphic srccredit="The Screenshot Dialog in Action" fileref="acquire-screenshotpreview.png"/>
+</figure>
+
+<para
+>Una vez que se haya hecho la captura de pantalla aparecerá de nuevo el diálogo <guilabel
+>Guardar las opciones de la imagen destino</guilabel
+> con las mismas opciones que se describieron anteriormente. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

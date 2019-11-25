@@ -1,0 +1,61 @@
+From 0ecfaa944652fa9b7a632e6135741c4b9f473a20 Mon Sep 17 00:00:00 2001
+From: Timothy Pearson <kb9vqf@pearsoncomputing.net>
+Date: Thu, 02 Oct 2014 02:10:55 +0000
+Subject: Add flv video mimetype to supported lists for xine engine and kaboodle
+
+This relates to Bug 1908
+---
+diff --git a/kaboodle/kaboodle.desktop b/kaboodle/kaboodle.desktop
+index 345ce9f..626deca 100644
+--- a/kaboodle/kaboodle.desktop
++++ b/kaboodle/kaboodle.desktop
+@@ -12,7 +12,7 @@ Icon=kaboodle
+ X-TDE-StartupNotify=true
+ Type=Application
+ # Keep in sync with the audio types in kaboodle_component.desktop
+-MimeType=audio/x-mp3;application/ogg;audio/x-mp2;video/mpeg;audio/x-wav;audio/x-mod;video/x-msvideo;video/quicktime;video/x-flic;audio/basic;video/x-ms-asf;
++MimeType=audio/x-mp3;application/ogg;audio/x-mp2;video/mpeg;audio/x-wav;audio/x-mod;video/x-msvideo;video/quicktime;video/x-flic;audio/basic;video/x-ms-asf;video/x-flv;
+ GenericName=Media Player
+ GenericName[af]=Media Speler
+ GenericName[ar]=مشغل وسائط
+diff --git a/kaboodle/kaboodle_component.desktop b/kaboodle/kaboodle_component.desktop
+index e0d8240..9088315 100644
+--- a/kaboodle/kaboodle_component.desktop
++++ b/kaboodle/kaboodle_component.desktop
+@@ -66,7 +66,7 @@ Name[zu]=Oxubiwe Umdlai Wezezindaba
+ X-TDE-Library=libkaboodlepart
+ Icon=kaboodle
+ # Keep in sync with the audio types in kaboodle.desktop
+-MimeType=audio/x-mp3;application/ogg;audio/x-mp2;video/mpeg;audio/x-wav;audio/x-mod;video/x-msvideo;video/quicktime;video/x-flic;audio/basic;video/x-ms-asf
++MimeType=audio/x-mp3;application/ogg;audio/x-mp2;video/mpeg;audio/x-wav;audio/x-mod;video/x-msvideo;video/quicktime;video/x-flic;audio/basic;video/x-ms-asf;video/x-flv
+ ServiceTypes=KParts/ReadOnlyPart,Browser/View,KMediaPlayer/Player
+ Type=Service
+ InitialPreference=8
+diff --git a/kaboodle/kaboodleengine.desktop b/kaboodle/kaboodleengine.desktop
+index 1d94d28..a8d62a5 100644
+--- a/kaboodle/kaboodleengine.desktop
++++ b/kaboodle/kaboodleengine.desktop
+@@ -61,7 +61,7 @@ Name[zu]=Injini Yomdlali Womculom Ohlanganisiwe
+ X-TDE-Library=libkaboodlepart
+ Icon=kaboodle
+ # Keep in sync with the audio types in kaboodle.desktop
+-MimeType=audio/x-mp3;application/ogg;audio/x-mp2;video/mpeg;audio/x-wav;audio/x-mod;video/x-msvideo;video/quicktime;video/x-flic;audio/basic;video/x-ms-asf
++MimeType=audio/x-mp3;application/ogg;audio/x-mp2;video/mpeg;audio/x-wav;audio/x-mod;video/x-msvideo;video/quicktime;video/x-flic;audio/basic;video/x-ms-asf;video/x-flv
+ ServiceTypes=KMediaPlayer/Engine
+ Type=Service
+ InitialPreference=8
+diff --git a/xine_artsplugin/xineVideoPlayObject.mcopclass b/xine_artsplugin/xineVideoPlayObject.mcopclass
+index 5863fcf..eee1d12 100644
+--- a/xine_artsplugin/xineVideoPlayObject.mcopclass
++++ b/xine_artsplugin/xineVideoPlayObject.mcopclass
+@@ -1,7 +1,7 @@
+ Interface=xinePlayObject,Arts::PlayObject,Arts::VideoPlayObject,Arts::SynthModule
+ Author=Ewald Snel <ewald@rambo.its.tudelft.nl>
+ Extension=vob,mpg,mpeg,m1v,m2v,m4v,m1s,m2s,m2p,avi,asf,asx,wmv,qt,mov,moov,mp4,rv,ram,rm,smi,ogm
+-MimeType=video/x-mpg,video/x-dat,video/x-mpeg,video/mpeg,video/x-msvideo,video/x-ms-asf,video/x-ms-wmv,video/quicktime,video/x-theora,video/mp4,video/x-ogm,application/vnd.ms-asf,application/vnd.rn-realmedia,video/vnd.rn-realvideo,application/ogg
++MimeType=video/x-mpg,video/x-dat,video/x-mpeg,video/mpeg,video/x-msvideo,video/x-ms-asf,video/x-ms-wmv,video/quicktime,video/x-theora,video/mp4,video/x-ogm,application/vnd.ms-asf,application/vnd.rn-realmedia,video/vnd.rn-realvideo,application/ogg,video/x-flv
+ Language=C++
+ Library=libarts_xine.la
+ Preference=4
+--
+cgit v0.9.0.2-52-g1de3

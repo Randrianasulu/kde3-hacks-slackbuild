@@ -1,0 +1,147 @@
+/****************************************************************************
+** Digikam::BatchThumbsGenerator meta object code from reading C++ file 'batchthumbsgenerator.h'
+**
+** Created: Wed Jun 14 03:52:09 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "batchthumbsgenerator.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::BatchThumbsGenerator::className() const
+{
+    return "Digikam::BatchThumbsGenerator";
+}
+
+QMetaObject *Digikam::BatchThumbsGenerator::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__BatchThumbsGenerator( "Digikam::BatchThumbsGenerator", &Digikam::BatchThumbsGenerator::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::BatchThumbsGenerator::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::BatchThumbsGenerator", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::BatchThumbsGenerator::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::BatchThumbsGenerator", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::BatchThumbsGenerator::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = DProgressDlg::staticMetaObject();
+    static const QUMethod slot_0 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_1 = {"slotRebuildThumbs128", 0, 0 };
+    static const QUMethod slot_2 = {"slotRebuildThumbs256", 0, 0 };
+    static const QUParameter param_slot_3[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"slotRebuildThumbDone", 1, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In },
+	{ "pix", &static_QUType_varptr, "\x06", QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotRebuildThumbDone", 2, param_slot_4 };
+    static const QUMethod slot_5 = {"slotRebuildAllThumbComplete", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotCancel()", &slot_0, QMetaData::Protected },
+	{ "slotRebuildThumbs128()", &slot_1, QMetaData::Private },
+	{ "slotRebuildThumbs256()", &slot_2, QMetaData::Private },
+	{ "slotRebuildThumbDone(const KURL&)", &slot_3, QMetaData::Private },
+	{ "slotRebuildThumbDone(const KURL&,const QPixmap&)", &slot_4, QMetaData::Private },
+	{ "slotRebuildAllThumbComplete()", &slot_5, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"signalRebuildThumbsDone", 0, 0 };
+    static const QUMethod signal_1 = {"signalRebuildAllThumbsDone", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalRebuildThumbsDone()", &signal_0, QMetaData::Public },
+	{ "signalRebuildAllThumbsDone()", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::BatchThumbsGenerator", parentObject,
+	slot_tbl, 6,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__BatchThumbsGenerator.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::BatchThumbsGenerator::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::BatchThumbsGenerator" ) )
+	return this;
+    return DProgressDlg::qt_cast( clname );
+}
+
+// SIGNAL signalRebuildThumbsDone
+void Digikam::BatchThumbsGenerator::signalRebuildThumbsDone()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL signalRebuildAllThumbsDone
+void Digikam::BatchThumbsGenerator::signalRebuildAllThumbsDone()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+bool Digikam::BatchThumbsGenerator::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotCancel(); break;
+    case 1: slotRebuildThumbs128(); break;
+    case 2: slotRebuildThumbs256(); break;
+    case 3: slotRebuildThumbDone((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 4: slotRebuildThumbDone((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1)),(const QPixmap&)*((const QPixmap*)static_QUType_ptr.get(_o+2))); break;
+    case 5: slotRebuildAllThumbComplete(); break;
+    default:
+	return DProgressDlg::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::BatchThumbsGenerator::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalRebuildThumbsDone(); break;
+    case 1: signalRebuildAllThumbsDone(); break;
+    default:
+	return DProgressDlg::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::BatchThumbsGenerator::qt_property( int id, int f, QVariant* v)
+{
+    return DProgressDlg::qt_property( id, f, v);
+}
+
+bool Digikam::BatchThumbsGenerator::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

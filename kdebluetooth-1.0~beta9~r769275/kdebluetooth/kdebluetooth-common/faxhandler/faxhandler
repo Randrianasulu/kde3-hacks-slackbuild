@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# copyright 2004 by Fred Schaettgen <kdebluetooth@schaettgen.de>
+
+
+MESSAGE="To send faxes you can set up kdeprintfax to use the kbtfax script, which comes with kdebluetooth. Do you want to read more about that?"
+
+if $(kdialog --yesno "$MESSAGE" --title "KDE Bluetooth Framework") ; then
+    konqueror help:/kdebluetooth/otherprofiles.html#fax
+fi

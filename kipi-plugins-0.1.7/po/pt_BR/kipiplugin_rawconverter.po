@@ -1,0 +1,440 @@
+# translation of kipiplugin_rawconverter.po to Brazilian Portuguese
+# Anderson Carlos Daniel Sanches <anderson@ime.usp.br>, 2004.
+# Marcus Gama <marcus_gama@uol.com.br>, 2005.
+# Jose Monteiro <jf.monteiro@yahoo.com>, 2007.
+# tradução de kipiplugin_rawconverter.po para Brazilian portuguese
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-12-02 23:12-0300\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_br@mail.kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Lisiane S. Teixeira, Jose Monteiro"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "lisiane@kdemail.net, jf.monteiro@yahoo.com"
+
+#: actionthread.cpp:168
+#, fuzzy
+msgid "Cannot identify Raw image"
+msgstr "Não é possível identificar a imagem RAW"
+
+#: actionthread.cpp:175
+#, fuzzy
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Marca: %1\n"
+
+#: actionthread.cpp:176
+#, fuzzy
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Modelo: %1\n"
+
+#: actionthread.cpp:180
+#, fuzzy
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Criado em: %1\n"
+
+#: actionthread.cpp:186
+#, fuzzy
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Abertura: f/%1\n"
+
+#: actionthread.cpp:191
+#, fuzzy
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Distância focal: %1 mm\n"
+
+#: actionthread.cpp:196
+#, fuzzy
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Exposição: 1/%1 s\n"
+
+#: actionthread.cpp:201
+#, fuzzy
+msgid "Sensitivity: %1 ISO"
+msgstr "Sensibilidade: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Conversor de imagens não-processadas em lote"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Con&verter"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Interromper"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Arquivo Raw"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Arquivo de destino"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Câmera"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Salvar configurações"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+#, fuzzy
+msgid "RAW Image Converter"
+msgstr "Conversor de imagens RAW"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Um plug-in do Kipi para converter imagens RAW em lote"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Autor original"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Mantenedor"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Manual do plug-in"
+
+#: batchdialog.cpp:157
+#, fuzzy
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "Começar a converter as imagens RAW com as configurações atuais"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Interrpomper a conversão atual de arquivos Raw"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Sair do Conversor Raw"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Não existe arquivos Raw para processar na lista!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Salvar imagem convertida de '%1' como"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Falha ao salvar imagem %1"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "Conversor de imagens RAW..."
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "Conversor de imagens RAW em lote..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" não é um arquivo Raw válido."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Falha ao carregar imagem após processamento"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Formato do arquivo de saída:"
+
+#: savesettingswidget.cpp:83
+#, fuzzy
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Defina aqui o formato do arquivo de saída a usar:</p>"
+"<p><b>JPEG</b>: retorna a imagem processada no formato JPEG. Este formato "
+"resultará em arquivos de tamanhos pequenos. O nível mínimo da compressão JPEG "
+"será usado durante a conversão Raw.</p>"
+"<p><b>Atenção!!! devido ao algorítmo de compressão ser destrutivo, o JPEG é um "
+"formato com perda de qualidade.</b></p>"
+"<p><b>TIFF</b>: retorna a imagem processada no formato TIFF. Isto gera imagens "
+"grandes, sem perder a qualidade. A compressão Adobe Deflate será usada durante "
+"a conversão.</p>"
+"<p><b>PPM</b>: retorna a imagem processada no formato PPM. Isto gera imagens "
+"com os maiores tamanhos, sem perder a qualidade.</p>"
+"<p><b>PNG</b>: retorna a imagem processada no formato PNG. Isto gera imagens "
+"grandes, sem perder a qualidade. O nível máximo de compressão PNG será usado "
+"durante a coversão.</p>"
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Se o arquivo de destino existe:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Sobrescrever automaticamente"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Abrir diálogo de renomeação de arquivos"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Conversor de imagens não-processadas"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Pré-visualização"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Um plug-in do Kipi para converter uma imagem RAW"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Gera uma pré-visualização de acordo com as configurações atuais. Use uma "
+"interpolação bilinear simples para resultados rápidos."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Converte a imagem bruta de acordo com as configurações atuais. Isto usa um "
+"algoritmo adaptativo de alta qualidade."
+
+#: singledialog.cpp:143
+#, fuzzy
+msgid "<p>Abort the current Raw file conversion"
+msgstr "Interromper a conversão de arquivo RAW atual"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Falha ao gerar a pré-visualização"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Falha ao converter a imagem Raw"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Gerando pré-visualização..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Convertendo a imagem Raw..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Manual do conversor Raw"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Manual do Conversor RAW"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "Conversor de Imagem Não-processada (uma imagem)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "Conversor de Imagem Não-processada (múltiplas imagens)..."
+
+#, fuzzy
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "Conversor de imagens não-processadas em lote"
+
+#, fuzzy
+#~ msgid "RAW Decoding Settings"
+#~ msgstr "Configurações do Decodificador RAW (dcraw %1)"
+
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "<p>Interrpomper a atual conversão RAW"
+
+#~ msgid "Image Preview"
+#~ msgstr "Pré-visualização da Imagem"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Um plug-in Kipi para conversão de imagens não-processadas\n"
+#~ "Este plug-in usa o programa de decodificação de fotos RAW - \"dcraw\" - de Dave Coffin"
+
+#~ msgid "Cannot open RAW file"
+#~ msgstr "Não foi possível abrir o arquivo Raw"
+
+#~ msgid "Not a RAW file"
+#~ msgstr "Não é um arquivo Raw"
+
+#~ msgid "Cannot start dcraw instance"
+#~ msgstr "Não foi possível iniciar uma instância do dcraw"
+
+#~ msgid "Interpolate RGB as four colors"
+#~ msgstr "Interpolar RGB como quatro cores"
+
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr "<p><b>Interpola o RGB como quatro cores.</b><p> O padrão é assumir que todos os pixels verdes são os mesmos. Se cada linha par com pixels verdes for mais sensível a luz ultra-violeta do que as linhas ímpares, esta diferença causa um padrão misturado na saída; ao usar esta opção, este problema será resolvido, com o mínimo  de perda de detalhes. <p>Resumindo, esta opção desfoca a imagem um pouco, mas elimina padrões de malha 2x2 falsos com método de qualidade VNG ou embaralha com método de qualidade AHD."
+
+#~ msgid "Use camera white balance"
+#~ msgstr "Usar o balanço branco para a câmera"
+
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr "<p><b>Usa o balanço de branco da câmera</b> <p>Usa as configurações de balanço branco personalizadas da câmera. O padrão é usar os valores de brilho fixos, calculados das imagens de amostra. Se não puder ser encontrado, reverte para o padrão."
+
+#~ msgid "Automatic color balance"
+#~ msgstr "Balanceamento automático de cor"
+
+#~ msgid "<p><b>Automatic color balance</b><p>The default is to use a fixed color balance based on a white card photographed in sunlight.<p>"
+#~ msgstr "<p><b>Balanceamento automático de cor</b> <p>O padrão é usar um balanceamento de cor fixo baseado em um cartão branco fotografado ao sol.<p>"
+
+#~ msgid "Use Super-CCD secondary sensors"
+#~ msgstr "Usar sensores Super-CCD secundários"
+
+#~ msgid "<p><b>Use Super CCD secondary sensors</b><p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is ignored.<p>"
+#~ msgstr "<p><b>Usar sensores Super CCD secundários</b><p>Para câmeras Fuji Super CCD SR, use os sensores secundários, efetivamente subexpondo a imagem por quatro paradas para revelar detalhes nas áreas iluminadas. Para todas as demais câmeras esta opção é ignorada.<p>"
+
+#~ msgid "Highlights:"
+#~ msgstr "Destaques:"
+
+#~ msgid "Solid white"
+#~ msgstr "Branco Sólido"
+
+#~ msgid "Unclip"
+#~ msgstr "Não recortar"
+
+#~ msgid "Reconstruct"
+#~ msgstr "Reconstruir"
+
+#~ msgid "<p><b>Highlights</b><p>Select here the highlight cliping method:<p><b>Solid white</b>: clip all highlights to solid white<p><b>Unclip</b>: leave highlights unclipped in various shades of pink<p><b>Reconstruct</b>: reconstruct highlights using a level value."
+#~ msgstr "<p><b>Destaques</b><p>Selecione aqui o método de recorte do destaque:<p><b>Branco sólido</b>: recorta todos os destaques para branco sólido<p><b>Não recortar</b>: deixa destaques não recortados em vários tons de rosa<p><b>Reconstruir</b>: reconstrói destaques usando um valor de nível."
+
+#~ msgid "Level:"
+#~ msgstr "Nível:"
+
+#~ msgid "<p><b>Level</b><p>Specify the reconstruct highlights level of ouput image. Low value favor whites and high value favor colors."
+#~ msgstr "<p><b>Nível</b><p>Especifica o nível de reconstrução de destaques de uma imagem final. Valor baixo favorece o branco e valor alto favorece cores."
+
+#~ msgid "Brightness:"
+#~ msgstr "Brilho:"
+
+#~ msgid "<p><b>Brighness</b><p>Specify the brightness level of ouput image.The default value is 1.0.<p>"
+#~ msgstr "<p><b>Brilho</b><p>Especifica o nível de brilho de uma imagem final. O valor padrão é 1.0.<p>"
+
+#~ msgid "Quality:"
+#~ msgstr "Qualidade:"
+
+#~ msgid "Bilinear interpolation"
+#~ msgstr "Interpolação bilinear"
+
+#~ msgid "VNG interpolation"
+#~ msgstr "Interpolação VNG"
+
+#~ msgid "AHD interpolation"
+#~ msgstr "Interpolação AHD"
+
+#~ msgid "<p><b>Quality</b><p>Select here the demosaicing RAW images decoding interpolation method. A demosaicing algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction, another common spelling is demosaicing. There are 3 methods to demosaicing RAW images:<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation (default - for slow computer). In this method, the red value of a non-red pixel is computed as the average of the adjacent red pixels, and similar for blue and green.<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method computes gradients near the pixel of interest and uses the lower gradients (representing smoother and more similar parts of the image) to make an estimate.<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method selects the direction of interpolation so as to maximize a homogeneity metric, thus typically minimizing color artifacts.<p>"
+#~ msgstr "<p><b>Qualidade</b><p>Selecione aqui o método demosaicing de interpolação para decodificaçào de imagens RAW. Um algoritmo demosaicing é um processo de imagem digital usado para interpolar uma imagem completa a partir de dados RAW parciais recebidos de um sensor de imagem com filtros de cores interno em muitas câmeras digitais em forma de uma matriz de pixels coloridos. Também conhecido como interpolação CFA ou reconstrução de cor, outra nome conhecido é demosaicing. Existem 3 métodos para imagens RAW demosaicing :<p><b>Bilinear</b>: usa interpolação bilinear de alta velocidade mas baixa qualidade (padrão - para computador lento). Neste método, o valor de vermelho de um pixel não vermelho é calculado como a média dos pixels vermelhos adjacentes, e similarmente para azul e verde.<p><b>VNG</b>: usa interpolação Número Variável de Gradientes. Este método calcula gradientes próximos ao pixel de interesse e usa o menor gradiente (representando partes mais suaves e mais similares a imagem) para fazer uma estimativa.<p><b>AHD</b>: usa intepolação de Homogeneidade Dirigida Adaptativa. Este método seleciona a direção da interpolação de forma a maximizar uma métrica homogênea, desta forma tipicamente minimizando artefatos de cores.<p>"
+
+#~ msgid "Enable noise reduction"
+#~ msgstr "Habilitar Redução de Ruído"
+
+#~ msgid "<p><b>Enable Noise Reduction</b><p>Toggle bilateral filter to smooth noise while preserving edges. This option can be use to reduce low noise. The pictures edges are preserved because it is applied in CIELab color space instead of RGB.<p>"
+#~ msgstr "<p><b>Habilitar Redução de Ruído</b><p>Alterna o filtro bilateral para suavizar ruído enquanto preserva as bordas. Esta opção pode ser usada para reduzir ruídos pequenos. As bordas das figuras são preservadas porque é aplicado  em um espaço de cor CIELab em vez de RGB.<p>"
+
+#~ msgid "Domain:"
+#~ msgstr "Domínio:"
+
+#~ msgid "<p><b>Domain</b><p>Set here the noise reduction Sigma Domain in units of pixels. The default value is 2.0.<p>"
+#~ msgstr "<p><b>Domínio</b><p>Ajuste aqui o Domínio Sigma para redução de ruído em unidades de pixel. O valor  padrão é 2.0.<p>"
+
+#~ msgid "Range:"
+#~ msgstr "Faixa:"
+
+#~ msgid "<p><b>Range</b><p>Set here the noise reduction Sigma Range in units of CIELab colorspace. The default value is 4.0.<p>"
+#~ msgstr "<p><b>Faixa</b><p>Ajuste aqui a Faixa Sigma para redução de ruído em unidades de espaço de cor CIELab. O valor padrão é  4.0.<p>"
+
+#~ msgid "Color space:"
+#~ msgstr "Espaço de Cor:"
+
+#~ msgid "Raw (linear)"
+#~ msgstr "Raw (linear)"
+
+#~ msgid "sRGB"
+#~ msgstr "sRGB"
+
+#~ msgid "Adobe RGB"
+#~ msgstr "Adobe RGB"
+
+#~ msgid "Wide Gamut"
+#~ msgstr "Wide Gamut"
+
+#~ msgid "Pro-Photo"
+#~ msgstr "Pro-Photo"
+
+#~ msgid "<p><b>Color space</b><p>Select here the output color space used to decode RAW data.<p><b>Raw (linear)</b>: in this mode, none output color space is used during RAW decoding.<p><b>sRGB</b>: this color space is an RGB color space, created cooperatively by Hewlett-Packard and Microsoft, that is the best choice for images destined for the Web and portrait photography.<p><b>Adobe RGB</b>: this color space is an RGB color space, developed by Adobe, that used for photography applications such as advertising and fine art.<p><b>Wide Gamut</b>: this color space is is an expanded version of the Adobe RGB color space.<p><b>Pro-Photo</b>: this color space is an RGB color space, developed by Kodak, that offers an especially large gamut designed for use with photographic output in mind."
+#~ msgstr "<p><b>Espaço de Cor</b><p>Selecione aqui o espaço de cor de saída usado para decodificar dados RAW.<p><b>Raw (linear)</b>: neste modo, nenhum espaço de cor de saída é usado durante a decodificação RAW.<p><b>sRGB</b>: este espaço de cor é um espaço de cor RGB, criado cooperativamente pela Hewlett-Packard e pela Microsoft, e é a melhor escolha para imagens destinadas a Web e .<p><b>Adobe RGB</b>: this color space is an RGB color space, developed by Adobe, that used for photography applications such as advertising and fine art.<p><b>Wide Gamut</b>: this color space is is an expanded version of the Adobe RGB color space.<p><b>Pro-Photo</b>: this color space is an RGB color space, developed by Kodak, that offers an especially large gamut designed for use with photographic output in mind."
+
+#~ msgid "<qt><p>Unable to find the <b>%1</b> executable:<br>This program is required by this plugin to support Raw files decoding. Please check %2 installation on your computer.</p></qt>"
+#~ msgstr "<qt><p>Não foi possível encontrar o executável <b>%1</b>:<br>Este programa é requerido por este plugin para suportar decodificação de arquivos Raw. Por favor verifique a instalação de %2 em seu computador.</p></qt>"
+
+#~ msgid "<qt><p><b>%1</b> executable isn't up to date:<br>The version %2 of %3 have been found on your computer. This version is too old to run properly with this plugin. Please check %4 installation on your computer.</p><p>Note: at least, %5 version %6 is required by this plugin.</p></qt>"
+#~ msgstr "<qt><p>O executável <b>%1</b> não está atualizado:<br>A versão %2 de %3 foi encontrada em seu computador. Esta versão é muito antiga para rodar apropriadamente com este plugin. Por favor verifique a instalação de %4 iem seu computador.</p><p>Nota: ao menos %5 na versão %6 é requerido por este plugin.</p></qt>"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Um plug-in do Kipi para conversão de imagem Raw\n"
+#~ "Este plug-in usa to programa de decodificação de fotos RAW - \"dcraw\" - de Dave Coffin"

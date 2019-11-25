@@ -1,0 +1,86 @@
+<sect1 id="components.handsfree">
+<title
+>kbthandsfree: kies en converseer met behulp van uw computer</title>
+<para
+>Het handsfree-programma is een implementatie van het Bluetooth handsfree-profiel. Dit protocol is te vergelijken met het headset-profiel, maar biedt meer functionaliteit. Oorspronkelijk werd het handsfree-profiel ontworpen voor gebruik in carkits, maar steeds meer algemene Bluetooth-headsets bieden vandaag de dag ondersteuning voor het handsfree-profiel. </para>
+<para
+>Met kbthandsfree kunt u uw computer als handsfree-apparaat gebruiken. U kunt telefoonnumers kiezen (zelfs vanuit <link linkend="handsfree.kaddressbook"
+>KAddressBook</link
+>) </para>
+
+<sect2>
+<title
+>Vereisten</title>
+<sect3>
+<title
+>SCO-ondersteuning in de kernel</title>
+<para
+>Voor stemoverdracht over bluetooth heeft het handsfree-profiel een 'SCO'-verbinding nodig. Dit is een speciaal verbindingstype van bluetooth dat is geoptimaliseerd voor voice data (stemgeluid). Helaas is de ondersteuning voor SCO in oudere versies van de 2.4-kernels beschadigd. Voor kernels ouder dan 2.4.24 kunt u dit mogelijk repareren met de patches die zijn aangeleverd door Marcel Holtmann op <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+>. Wat nog veel erger is, is dat de ondersteuning voor SCO ook in de 2.6-serie van de Linux-kernel niet in orde is, en daarvoor zijn vooralsnog geen patches beschikbaar (a.u.b. corrigeer me als ik het fout heb). Dus de enige manier om kbthandsfree als een echte handsfree te kunnen gebruiken is met een recente 2.4-kernel. Zonder SCO-ondersteuning kunt u kbthandsfree alleen gebruiken om telefoonnumers te kiezen en dergelijke. </para>
+</sect3>
+
+<sect3>
+<title
+>Adapter SCO-ondersteuning</title>
+<para
+>Niet alle Bluetooth-adapters bieden goede ondersteuning voor SCO. Oudere Mitsumi dongles bijvoorbeeld hebben er problemen mee, ook al claimt de module dat het SCO ondersteunt. Er is bij ons geen manier bekend om uit te vinden of het werkt, het is een kwestie van uitproberen. Nieuwere adapters gebaseerd op de (veelgebruikte) CSR-chipset werken zeer waarschijnlijk wel goed. </para>
+</sect3>
+
+<sect3>
+<title
+>Stemmodus</title>
+<para
+>Uw bluetooth-adapter dient te worden gezet op de juiste voice-modus om de stemoverdracht werkend te krijgen. Momenteel wordt alleen de modus 0x0060 ondersteund door kbthandsfree. Dit is de standaardinstelling in de huidige versie van BlueZ, maar u kunt het ook veranderen met het commando <command
+>hciconfig hci0 voice 0x0060</command
+>. </para>
+</sect3>
+
+<sect3>
+<title
+>Apparaatklasse</title>
+<para
+>Als u de verbinding naar kbthandsfree wilt opbouwen met behulp van uw telefoon in plaats van handsfree te bellen via de PC, dan dient u er zorg voor te dragen dat uw PC herkend wordt als een handsfree-apparaat. Als u de handsfree hebt geactiveerd op tabblad Dienstern in de configuratie van kdebluetooth, dan zal het raamwerk automatisch een geschikt SDP-record opzetten die uw telefoon vertelt dat uw computer de handsfree-dienst aanlevert. </para>
+<para
+>Maar sommige telefoons, zoals de T68i, zijn afhankelijk van een goed opgezette apparaatklasse (een meer low level-instelling die gecontroleerd wordt voor de SDP-record) die het identificeert als een handsfree in plaats van een computer. U kunt die realiseren door de regel class  0xXXXXXX in hcid.con te veranderen in class 0x700408 (Nog te doen: is dit compatible met de flags die voor OBEX nodig zijn?), of dit te wijzigen met behulp van <command
+>khciconfig</command
+>. Aangezien een bluetooth-apparaat slechts één apparaatklasse tegelijk kan hebben kan het zijn dat uw computer wordt weergegeven als audio/handsfree-apparaat als u er met andere bluetooth-apparaten naar zoekt. Het is bij ons niet bekend of dit ernstige bijeffecten kan veroorzaken. </para>
+<para
+>Normaliter is het eenvoudiger om vanaf de computer een verbinding te maken met de handsfree dan andersom. Maar de apparaatklasse is ook nodig als u wilt dat uw telefoon automatisch verbinding maakt met de computer als er een gesprek binnenkomt. Niet alle telefoons kunnen dit. Bijvoorbeeld de meeste Nokia-telefoons kunnen dit niet, terwijl de s/E T68i het wel kan. Onthoud dat het handsfree-apparaat de eerste in de lijst met gepaarde apparaten dient te zijn om de T68i er automatisch mee te laten verbinden. </para>
+</sect3>
+
+</sect2>
+
+<sect2>
+<title
+>Tips en trucs</title>
+<itemizedlist>
+
+<listitem>
+<para id="handsfree.kaddressbook"
+>Sinds KDE 3.2 kunt u vanuit het adresboek een extern programma aanroepen om telefoonnummers mee te draaien. Om kbthandsfree hiervoor te gebruiken, start het programma <command
+>kaddressbook</command
+>, ga dan naar <command
+>Instellingen</command
+>, <command
+>KAddressBook instellen...</command
+>, sectie <command
+>Adresboek</command
+>, tabblad <command
+>Algemeen</command
+>. Zet bij de belscripts bij 'Telefoon' dit commando: <command
+>kbthandsfree --phonenumber %N</command
+>. Voor aanvullende commandoregelopties, zie <command
+>kbthandsfree --help</command
+>. </para>
+</listitem>
+
+<listitem>
+<para
+>U krijgt een beter overzicht over de opgenomen gesprekken in Konqueror als u de weergavemodus "Infolijstweergave" gebruikt. Dit zal de tags van de ogg/vorbis-bestanden tonen, zodat u beter ziet wie er gebeld heeft en hoe lang het gesprek duurde. </para>
+</listitem>
+
+</itemizedlist>
+</sect2>
+</sect1>
+

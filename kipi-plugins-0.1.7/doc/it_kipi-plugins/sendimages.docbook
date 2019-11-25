@@ -1,0 +1,188 @@
+<chapter id="sendimages">
+<chapterinfo>
+
+<title
+>Invio di immagini</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin di Kipi <quote
+>Invio di immagini</quote
+> è uno strumento per inviare immagini per posta elettronica. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Con questo plugin di Kipi puoi inviare per posta elettronica le immagini selezionate con il tuo programma di posta preferito. È possibile effettuare un ridimensionamento delle immagini. Puoi usare il trascinamento per aggiungere più immagini all'elenco di quelle da inviare. </para>
+
+<sect1 id="using-plugin-mailselectiondialog">
+<title
+>Finestra di selezione delle immagini</title>
+
+<para
+>All'apertura del plugin dall'applicazione ospite apparirà la finestra <emphasis
+>Immagini</emphasis
+> con le tue immagini preselezionate già nell'elenco da inviare. Con il pulsante <guilabel
+>Aggiungi immagini</guilabel
+> si apre un navigatore dei file per aggiungere altri file secondo la solita modalità di selezione. L'immagine sotto il cursore nell'elenco è visualizzata sul lato destro. </para>
+
+<tip
+><para
+>Puoi usare la funzionalità di trascinamento tra la finestra dell'applicazione ospite e l'elenco dei file immagine per aggiungere nuovi elementi da inviare. </para
+></tip>
+
+<para
+>Facendo clic sul secondo pulsante <guilabel
+>Rimuovi immagini</guilabel
+>, le immagini selezionate (evidenziate nell'elenco) saranno rimosse dall'elenco di invio. </para>
+
+<para
+>Quando hai finito di selezionare i tuoi file, fai clic su <guilabel
+>OK</guilabel
+> per aprire la finestra 'nuova e-mail' del tuo programma di posta elettronica preferito. Devi solo aggiungere il destinatario e l'oggetto. Le immagini selezionate saranno già allegate. </para>
+
+<warning
+><para
+>Assicurati di non sovraccaricare il limite di trasmissione tuo o dei tuoi destinatari: la maggior parte dei fornitori di accesso a Internet limitano la dimensione della posta elettronica a qualche megabyte di dati. Usa più e-mail se vuoi inviare molti dati. </para
+></warning>
+
+<figure>
+    <title
+>La finestra di selezione delle immagini</title>
+    <graphic srccredit="The Image Selection Dialog" fileref="sendimages_imageselection.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-mailsettingsdialog">
+<title
+>Finestra della posta</title>
+
+<para
+>La finestra della posta è usata per cambiare le impostazioni delle immagini da inviare. Queste impostazioni saranno ricordate quando chiudi il plugin fino a quando le cambierai. </para>
+
+<para
+>Seleziona il tuo programma di posta elettronica preferito dal menu a cascata. Se usi <application
+>Thunderbird</application
+>, il campo sottostante sarà disponibile per selezionare il percorso corretto a seconda della tua installazione. </para>
+
+<note
+><para
+>Se vuoi usare il servizio GMail, dovrai installare <application
+>GMailAgent</application
+> sul tuo computer, disponibile a <ulink url="http://gmailagent.sourceforge.net"
+>questo URL</ulink
+>. </para
+></note>
+
+<para
+>Se selezioni <guilabel
+>Aggiungi commenti nel file allegato</guilabel
+>, i commenti inclusi nelle immagini saranno fusi in un file di testo e allegati alla mail. </para>
+
+<para
+>I prossimi 3 elementi ti permettono di impostare la qualità delle immagini inviate. Scegline uno. Il rapporto di <guilabel
+>Nuova compressione delle immagini</guilabel
+> può essere scelto con il cursore o la casella. 75% è un rapporto di compressione standard per i file <guilabel
+>JPEG</guilabel
+>. Impostare la compressione al 100% risulterà in una compressione senza perdita al prezzo di una maggiore dimensione dei file. La differenza in dimensione dei file tra 90% e 100% può essere impressionante, nonostante che il guadagno di qualità sia minimo. Con una compressione dell'85% si ottiene già una qualità molto buona. </para>
+
+<para
+>Il formato <guilabel
+>PNG</guilabel
+>, nel menu a cascata <guilabel
+>Nuovo formato delle immagini</guilabel
+>, non è adatto a ridurre la dimensione delle immagini fotografiche, ma è più adatto a comprimere elementi senza perdita come il formato file TIFF. <guilabel
+>PNG</guilabel
+> deve essere usato se usi un collegamento veloce a Internet, e vuoi conservare la qualità delle foto. Altrimenti, <guilabel
+>JPEG</guilabel
+> è il formato raccomandato. </para>
+
+<note
+><para
+>Se scegli <guilabel
+>JPEG</guilabel
+> come <guilabel
+>Nuovo formato delle immagini</guilabel
+> e se i file originali erano nel formato <guilabel
+>JPEG</guilabel
+>, i dati Exif originali inclusi sono mantenuti nelle immagini inviate. </para
+></note>
+
+<figure>
+    <title
+>La finestra della posta</title>
+    <graphic srccredit="The Mail Dialog" fileref="sendimages_mail.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-emailimagesinaction">
+<title
+>Invio di immagini in azione</title>
+
+<para
+>Una finestra di progresso che indica il completamento all'utente. Premi il pulsante <guilabel
+>Annulla</guilabel
+> in questo stadio se vuoi interrompere il processo. </para>
+
+<para
+>Quando tutti i compiti sono conclusi, questa finestra non sarà chiusa automaticamente e l'utente potrà consultare i messaggi di progresso nel caso siano avvenuti errori in questo stadio. Il programma di posta sarà avviato automaticamente alla fine. Premi <guilabel
+>Chiudi</guilabel
+> per chiudere la finestra. </para>
+
+<figure>
+    <title
+>Il plugin Invio di immagini in azione</title>
+    <graphic srccredit="The E-mail Images Plugin in Action" fileref="sendimages_progress.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

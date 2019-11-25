@@ -1,0 +1,185 @@
+# translation of kipiplugin_jpeglossless.po to greek
+#
+# Spiros Georgaras <sng@hellug.gr>, 2005, 2006.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_jpeglossless\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-04-29 13:25+0300\n"
+"Last-Translator: Toussis Manolis <manolis@koppermind.homelinux.org>\n"
+"Language-Team: greek <kde-i18n-el@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: convert2grayscale.cpp:86 convert2grayscale.cpp:162 imageflip.cpp:86
+#: imagerotate.cpp:87 jpegtransform.cpp:162 jpegtransform.cpp:284
+msgid "Error in opening input file"
+msgstr "Σφάλμα ανοίγματος του αρχείου εισόδου"
+
+#: convert2grayscale.cpp:92 imageflip.cpp:92 imagerotate.cpp:93
+#, fuzzy
+msgid "Error in opening temporary file"
+msgstr "Σφάλμα ανοίγματος του αρχείου εξόδου"
+
+#: convert2grayscale.cpp:100
+msgid "Cannot convert to gray scale RAW file"
+msgstr "Αδύνατη η μετατροπή σε αρχείο RAW με διαβαθμίσεις του γκρι"
+
+#: convert2grayscale.cpp:124 imageflip.cpp:124 imagerotate.cpp:127
+msgid "Cannot update source image"
+msgstr "Αδύνατη η ενημέρωση της εικόνας προέλευσης"
+
+#: convert2grayscale.cpp:171 jpegtransform.cpp:171 jpegtransform.cpp:227
+#: jpegtransform.cpp:293
+msgid "Error in opening output file"
+msgstr "Σφάλμα ανοίγματος του αρχείου εξόδου"
+
+#: convert2grayscale.cpp:261
+#, c-format
+msgid "Cannot convert to gray scale: %1"
+msgstr "Αδύνατη η μετατροπή σε διαβαθμίσεις του γκρι: %1"
+
+#: imageflip.cpp:100 imagerotate.cpp:101
+msgid "Cannot rotate RAW file"
+msgstr "Αδύνατη η περιστροφή του αρχείου RAW"
+
+#: imageflip.cpp:150 imageflip.cpp:180
+msgid "Nonstandard flip action"
+msgstr "Μη τυπική ενέργεια αντιστροφής"
+
+#: imageflip.cpp:216
+#, c-format
+msgid "Cannot flip: %1"
+msgstr "Αδύνατη η αναστροφή: %1"
+
+#: imagerotate.cpp:163 imagerotate.cpp:204
+msgid "Nonstandard rotation angle"
+msgstr "Μη τυπική ενέργεια περιστροφής"
+
+#: imagerotate.cpp:240
+#, c-format
+msgid "Cannot rotate: %1"
+msgstr "Αδύνατη η περιστροφή: %1"
+
+#: plugin_jpeglossless.cpp:82
+msgid "Auto Rotate/Flip Using Exif Information"
+msgstr "Αυτόματη αντιστροφή/περιστροφή με χρήση πληροφοριών Exif"
+
+#: plugin_jpeglossless.cpp:89
+msgid "Rotate"
+msgstr "Περιστροφή"
+
+#: plugin_jpeglossless.cpp:109
+msgid "Flip"
+msgstr "Αντιστροφή"
+
+#: plugin_jpeglossless.cpp:114
+msgid "Horizontally"
+msgstr "Οριζόντια"
+
+#: plugin_jpeglossless.cpp:122
+msgid "Vertically"
+msgstr "Κατακόρυφα"
+
+#: plugin_jpeglossless.cpp:130
+msgid "Convert to Black && White"
+msgstr "Μετατροπή σε μονόχρωμο"
+
+#: plugin_jpeglossless.cpp:189
+msgid "horizontaly"
+msgstr "οριζόντια"
+
+#: plugin_jpeglossless.cpp:195
+msgid "vertically"
+msgstr "κατακόρυφα"
+
+#: plugin_jpeglossless.cpp:216
+#, c-format
+msgid "Flip images %1"
+msgstr "Αντιστροφή εικόνων %1"
+
+#: plugin_jpeglossless.cpp:239
+msgid "right (clockwise)"
+msgstr "δεξιόστροφα"
+
+#: plugin_jpeglossless.cpp:245
+msgid "left (counterclockwise)"
+msgstr "αριστερόστροφα"
+
+#: plugin_jpeglossless.cpp:251
+msgid "using Exif orientation tag"
+msgstr "με χρήση της ετικέτας προσανατολισμού Exif"
+
+#: plugin_jpeglossless.cpp:272
+#, c-format
+msgid "Rotate images %1"
+msgstr "Περιστροφή εικόνων %1"
+
+#: plugin_jpeglossless.cpp:288
+msgid ""
+"<p>Are you sure you wish to convert the selected image(s) to black and white? "
+"This operation <b>cannot</b> be undone.</p>"
+msgstr ""
+"<p>Είστε σίγουροι ότι θέλετε να μετατρέψετε την(ις) επιλεγμένη(ες) εικόνα(ες) "
+"σε ασπρόμαυρη;Αυτή η λειτουργία <b>δεν μπορεί</b> να αναιρεθεί.</p>"
+
+#: plugin_jpeglossless.cpp:305
+msgid "Convert images to black & white"
+msgstr "Μετατροπή εικόνων σε ασπρόμαυρες"
+
+#: plugin_jpeglossless.cpp:347
+msgid "Rotating Image \"%1\""
+msgstr "Περιστροφή εικόνων \"%1\""
+
+#: plugin_jpeglossless.cpp:352
+msgid "Flipping Image \"%1\""
+msgstr "Αντιστροφή εικόνων \"%1\""
+
+#: plugin_jpeglossless.cpp:357
+msgid "Converting to Black & White \"%1\""
+msgstr "Μετατροπή σε ασπρόμαυρη \"%1\""
+
+#: plugin_jpeglossless.cpp:378
+msgid "Failed to Rotate image"
+msgstr "Η περιστροφή της εικόνας απέτυχε"
+
+#: plugin_jpeglossless.cpp:383
+msgid "Failed to Flip image"
+msgstr "Η αντιστροφή της εικόνας απέτυχε"
+
+#: plugin_jpeglossless.cpp:388
+msgid "Failed to convert image to Black & White"
+msgstr "Η μετατροπή της εικόνας σε ασπρόμαυρη απέτυχε"
+
+#: plugin_jpeglossless.cpp:408
+msgid "Rotate image complete"
+msgstr "Η περιστροφή της εικόνας ολοκληρώθηκε"
+
+#: plugin_jpeglossless.cpp:413
+msgid "Flip image complete"
+msgstr "Η αντιστροφή της εικόνας ολοκληρώθηκε"
+
+#: plugin_jpeglossless.cpp:418
+msgid "Convert to Black & White complete"
+msgstr "Η μετατροπή σε μονόχρωμη ολοκληρώθηκε"
+
+#: utils.cpp:90
+msgid "unable to open source file"
+msgstr ""
+
+#: utils.cpp:117
+msgid "unable to open temp file"
+msgstr ""
+
+#: utils.cpp:129
+#, fuzzy
+msgid "Cannot rotate: unable to open temp file"
+msgstr "Αδύνατη η περιστροφή του αρχείου RAW"
+
+#: utils.cpp:178
+#, fuzzy, c-format
+msgid "Cannot update metadata: %1"
+msgstr "Αδύνατη η περιστροφή: %1"

@@ -1,0 +1,339 @@
+# translation of kipiplugin_flickrexport.pot to Japanese
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_flickrexport\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-07-18 20:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko Bando"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: flickrtalker.cpp:144
+msgid "Getting the Frob"
+msgstr "Frob を取得"
+
+#: flickrtalker.cpp:178
+msgid "Checking if previous token is still valid"
+msgstr "前回のトークンがまだ有効かどうかを確認"
+
+#: flickrtalker.cpp:203
+msgid ""
+"Please Follow through the instructions in the browser window and return back to "
+"press ok if you are authenticated or press No"
+msgstr ""
+"ブラウザウィンドウに表示されている指示に従ってください。認証されたら、ここへ戻って「はい」を押してください。そうでなければ「いいえ」を押してください。"
+
+#: flickrtalker.cpp:205
+msgid "Flickr Service Web Authorization"
+msgstr "Flickr サービスのウェブ認証"
+
+#: flickrtalker.cpp:210
+msgid "Authenticating the User on web"
+msgstr "ウェブでユーザを認証"
+
+#: flickrtalker.cpp:250
+msgid "Getting the Token from the server"
+msgstr "サーバからトークンを取得"
+
+#: flickrtalker.cpp:492
+msgid "No photo specified"
+msgstr "写真が指定されていません"
+
+#: flickrtalker.cpp:495
+msgid "General upload failure"
+msgstr "アップロード失敗"
+
+#: flickrtalker.cpp:498
+msgid "Filesize was zero"
+msgstr "ファイルサイズがゼロでした"
+
+#: flickrtalker.cpp:501
+msgid "Filetype was not recognised"
+msgstr "ファイルの種類が認識されませんでした"
+
+#: flickrtalker.cpp:504
+msgid "User exceeded upload limit"
+msgstr "ユーザのアップロード制限を越えました"
+
+#: flickrtalker.cpp:507
+msgid "Invalid signature"
+msgstr "無効な署名"
+
+#: flickrtalker.cpp:510
+msgid "Missing signature"
+msgstr "署名がありません"
+
+#: flickrtalker.cpp:513
+msgid "Login Failed / Invalid auth token"
+msgstr "ログイン失敗 / 無効な認証トークン"
+
+#: flickrtalker.cpp:516
+msgid "Invalid API Key"
+msgstr "無効な API キー"
+
+#: flickrtalker.cpp:519
+msgid "Service currently unavailable"
+msgstr "サービスは現在利用できません"
+
+#: flickrtalker.cpp:522
+msgid "Invalid Frob"
+msgstr "無効な Frob"
+
+#: flickrtalker.cpp:525
+msgid "Format \"xxx\" not found"
+msgstr "フォーマット \"xxx\" が見つかりません"
+
+#: flickrtalker.cpp:528
+msgid "Method \"xxx\" not found"
+msgstr "方法 \"xxx\" が見つかりません"
+
+#: flickrtalker.cpp:531
+msgid "Invalid SOAP envelope"
+msgstr "無効な SOAP エンベロープ"
+
+#: flickrtalker.cpp:534
+msgid "Invalid XML-RPC Method Call"
+msgstr "無効な XML-RPC メソッドコール"
+
+#: flickrtalker.cpp:537
+msgid "The POST method is now required for all setters"
+msgstr ""
+
+#: flickrtalker.cpp:540
+msgid "Unknown error"
+msgstr "未知のエラー"
+
+#: flickrtalker.cpp:545
+msgid ""
+"Error Occured: %1\n"
+" We can not proceed further"
+msgstr ""
+"エラーが発生しました: %1\n"
+"  これより先へ進めません。"
+
+#: flickrtalker.cpp:686
+msgid ""
+"_: As in the persmission to\n"
+"write"
+msgstr "書き込み"
+
+#: flickrtalker.cpp:688
+msgid ""
+"_: As in the permission to\n"
+"read"
+msgstr "読み取り"
+
+#: flickrtalker.cpp:690
+msgid ""
+"_: As in the permission to\n"
+"delete"
+msgstr "削除"
+
+#: flickrtalker.cpp:720
+msgid ""
+"Your token is invalid. Would you like to get a new token to proceed ?\n"
+msgstr ""
+"トークンが無効です。新しいトークンを取得して操作を続けますか？\n"
+
+#: flickrtalker.cpp:896
+msgid "Failed to fetch photoSets List"
+msgstr "フォトセットリストの取得に失敗"
+
+#: flickrtalker.cpp:966
+msgid "Failed to upload photo"
+msgstr "写真のアップロードに失敗"
+
+#: flickrtalker.cpp:1012
+msgid "Failed to query photo information"
+msgstr "写真情報のクエリに失敗"
+
+#: flickrwidget.cpp:78
+msgid ""
+"<qt><b>"
+"<h2><a href='http://www.flickr.com'><font color=\"#0065DE\">flick</font>"
+"<font color=\"#FF0084\">r</font></a> Export</h2></b></qt>"
+msgstr ""
+"<qt><b>"
+"<h2><a href='http://www.flickr.com'><font color=\"#0065DE\">flick</font>"
+"<font color=\"#FF0084\">r</font></a> エクスポート</h2></b></qt>"
+
+#: flickrwidget.cpp:95
+msgid "Added Tags: "
+msgstr "追加されたタグ: "
+
+#: flickrwidget.cpp:98
+msgid "Use Host Application Tags"
+msgstr "ホストアプリケーションのタグを使う"
+
+#: flickrwidget.cpp:100
+msgid "Strip Space From Host Application Tags"
+msgstr "ホストアプリケーションのタグからスペースを取り除く"
+
+#: flickrwidget.cpp:101
+msgid "Enter here new tags separated by space."
+msgstr "新しいタグをスペースで区切って入力します。"
+
+#: flickrwidget.cpp:110
+msgid "Override Default Options"
+msgstr "カスタムオプション"
+
+#: flickrwidget.cpp:117
+msgid ""
+"_: As in accessible for people\n"
+"Public (anyone can see them)"
+msgstr "公開 (すべての人に見せる)"
+
+#: flickrwidget.cpp:120
+msgid "Visible to Family"
+msgstr "家族に見せる"
+
+#: flickrwidget.cpp:123
+msgid "Visible to Friends"
+msgstr "友達に見せる"
+
+#: flickrwidget.cpp:126
+msgid "Resize photos before uploading"
+msgstr "アップロード前に写真のサイズを変更"
+
+#: flickrwidget.cpp:134
+msgid "Maximum dimension (pixels):"
+msgstr "最大ピクセル寸法:"
+
+#: flickrwidget.cpp:141
+msgid "JPEG Image Quality (higher is better):"
+msgstr "JPEG 画質 (値が大きいほど高画質):"
+
+#: flickrwidget.cpp:158
+msgid "Account"
+msgstr "アカウント"
+
+#: flickrwidget.cpp:164
+msgid "User Name: "
+msgstr "ユーザ名: "
+
+#: flickrwidget.cpp:167
+msgid "Use a different account"
+msgstr "他のアカウントを使う"
+
+#: flickrwidget.cpp:192
+msgid "Files List"
+msgstr "ファイルのリスト"
+
+#: flickrwidget.cpp:193
+msgid "Upload Options"
+msgstr "アップロードのオプション"
+
+#: flickrwindow.cpp:79
+msgid "Export to Flickr Web Service"
+msgstr "Flickr ウェブサービスにエクスポート"
+
+#: flickrwindow.cpp:103
+msgid "Start Uploading"
+msgstr "アップロード開始"
+
+#: flickrwindow.cpp:117
+msgid "Flickr Export"
+msgstr "Flickr エクスポート"
+
+#: flickrwindow.cpp:120
+msgid "A Kipi plugin to export image collection to Flickr web service."
+msgstr "Flickr ウェブサービスに画像コレクションをエクスポートする Kipi プラグイン"
+
+#: flickrwindow.cpp:125
+msgid "Author and maintainer"
+msgstr "作者およびメンテナ"
+
+#: flickrwindow.cpp:128
+msgid "Developer"
+msgstr "開発者"
+
+#: flickrwindow.cpp:133
+msgid "Plugin Handbook"
+msgstr "プラグインハンドブック"
+
+#: flickrwindow.cpp:534
+#, c-format
+msgid "Uploading file %1"
+msgstr "ファイル '%1' をアップロード"
+
+#: flickrwindow.cpp:553
+msgid ""
+"Failed to upload photo into Flickr. %1\n"
+"Do you want to continue?"
+msgstr ""
+"Flickr に写真をアップロードできませんでした。%1\n"
+"続けますか？"
+
+#: imageslist.cpp:94
+msgid "Thumbnail"
+msgstr "サムネイル"
+
+#: imageslist.cpp:95
+msgid "File Name"
+msgstr "ファイル名"
+
+#: imageslist.cpp:96
+msgid "<p>This is the list of images to upload on your Flickr account."
+msgstr "<p>あなたの Flickr アカウントにアップロードする画像の一覧です。</p>"
+
+#: imageslist.cpp:178
+msgid "&Add"
+msgstr "追加(&A)"
+
+#: login.cpp:65
+msgid "Username:"
+msgstr "ユーザ名:"
+
+#: login.cpp:68
+msgid "Password:"
+msgstr "パスワード:"
+
+#: plugin_flickrexport.cpp:65
+msgid "Export to Flickr..."
+msgstr "Flickr にエクスポート..."
+
+#. i18n: file flickralbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "New PhotoSet"
+msgstr "新規フォトセット"
+
+#. i18n: file flickralbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Create New PhotoSet </h3>"
+msgstr "<h3>新規フォトセットを作成</h3>"
+
+#. i18n: file flickralbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "タイトル (オプション):"
+
+#. i18n: file flickralbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "名前 (オプション):"
+
+#. i18n: file flickralbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "キャプション (オプション):"

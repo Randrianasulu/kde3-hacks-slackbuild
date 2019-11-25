@@ -1,0 +1,104 @@
+/****************************************************************************
+** KOsd meta object code from reading C++ file 'kosd.h'
+**
+** Created: Wed Dec 20 17:19:34 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kosd.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KOsd::className() const
+{
+    return "KOsd";
+}
+
+QMetaObject *KOsd::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KOsd( "KOsd", &KOsd::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KOsd::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KOsd", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KOsd::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KOsd", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KOsd::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"timeout", 0, 0 };
+    static const QUMethod slot_1 = {"readConfig", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "timeout()", &slot_0, QMetaData::Public },
+	{ "readConfig()", &slot_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KOsd", parentObject,
+	slot_tbl, 2,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KOsd.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KOsd::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KOsd" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool KOsd::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: timeout(); break;
+    case 1: readConfig(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KOsd::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KOsd::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool KOsd::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,73 @@
+<chapter id="metadataeditor">
+<chapterinfo>
+
+<title
+>Editor dei dati aggiuntivi</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Il plugin editor dei dati aggiuntivi di Kipi è uno strumento per aggiungere e modificare le coordinate GPS dei dati aggiuntivi delle foto. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+<keyword
+>Dati aggiuntivi</keyword
+><keyword
+>IPTC</keyword
+><keyword
+>EXIF</keyword
+><keyword
+>Makernote</keyword
+><keyword
+>Commenti</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introduzione</title>
+
+<para
+>Il plugin di Kipi <quote
+>Editor dei dati aggiuntivi</quote
+> attualmente non è documentato. Se sei interessato a sistemare la situazione, contatta la mailing list della squadra di Kipi: <email
+>kde-imaging@kde.org</email
+>. </para>
+
+	<para
+>Usare la funzione <guilabel
+>Importa</guilabel
+> del plugin per i dati aggiuntivi permette di copiare dati da un'immagine all'altra. Seleziona l'immagine che vuoi copiare nell'applicazione principale. Quindi, chiama la funzione di importazione, che aprirà un browser di file dal quale potrai selezionare l'immagine sorgente (quella da cui vuoi copiare i dati aggiuntivi). Fai clic su <guilabel
+>OK</guilabel
+> e i dati saranno copiati. </para>
+        <para
+>Questa funzionalità non funziona per tutti i formati di immagini. Puoi importare da qualsiasi cosa ma non scrivere su qualsiasi cosa. JPEG è supportato in scrittura. Riferisciti alle capacità exiv2 per sapere quali formati sono supportati. </para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,39 @@
+Index: kdenetwork-3.5.10/kopete/kopete/contactlist/kopetegroupviewitem.cpp
+===================================================================
+--- kdenetwork-3.5.10.orig/kopete/kopete/contactlist/kopetegroupviewitem.cpp
++++ kdenetwork-3.5.10/kopete/kopete/contactlist/kopetegroupviewitem.cpp
+@@ -169,7 +169,7 @@ void KopeteGroupViewItem::refreshDisplay
+ 	// the sorting itself is rather slow. Therefore we call delayedSort, which tries
+ 	// to group multiple sort requests into one.
+ 	using namespace Kopete::UI::ListView;
+-	if ( ListView::ListView *lv = dynamic_cast<ListView::ListView *>( listView() ) )
++	if ( ListView *lv = dynamic_cast<ListView *>( listView() ) )
+ 		lv->delayedSort();
+ 	else
+ 		listView()->sort();
+Index: kdenetwork-3.5.10/kopete/kopete/chatwindow/krichtexteditpart.cpp
+===================================================================
+--- kdenetwork-3.5.10.orig/kopete/kopete/chatwindow/krichtexteditpart.cpp
++++ kdenetwork-3.5.10/kopete/kopete/chatwindow/krichtexteditpart.cpp
+@@ -38,7 +38,7 @@ public:
+ KopeteRichTextEditPart::KopeteRichTextEditPart( QWidget *wparent, const char *wname, QObject*, const char*, const QStringList& )
+ 	: KParts::ReadOnlyPart( wparent, wname ? wname : "rich_text_part" )
+ {
+-	KopeteRichTextEditPart::KopeteRichTextEditPart( wparent, wname, false );
++	KopeteRichTextEditPart( wparent, wname, false );
+ }
+ 
+ KopeteRichTextEditPart::KopeteRichTextEditPart( QWidget *parent, const char *name, int capabilities )
+Index: kdenetwork-3.5.10/kopete/protocols/testbed/testbedaccount.h
+===================================================================
+--- kdenetwork-3.5.10.orig/kopete/protocols/testbed/testbedaccount.h
++++ kdenetwork-3.5.10/kopete/protocols/testbed/testbedaccount.h
+@@ -59,7 +59,7 @@ public:
+ 	/**
+ 	 * 'Connect' to the testbed server.  Only sets myself() online.
+ 	 */
+-	virtual void connect( const Kopete::OnlineStatus& initialStatus = Kopete::OnlineStatus::OnlineStatus() );
++	virtual void connect( const Kopete::OnlineStatus& initialStatus = Kopete::OnlineStatus() );
+ 	/**
+ 	 * Disconnect from the server.  Only sets myself() offline.
+ 	 */

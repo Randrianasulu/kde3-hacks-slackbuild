@@ -1,0 +1,138 @@
+<chapter id="slideshow">
+<chapterinfo>
+
+<title
+>Täiustatud slaidiseanss</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi <quote
+>täiustatud slaidiseansi</quote
+> plugin võimaldab luua oma piltidest korraliku täisekraan-slaidiseansi. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>See Kipi plugin võimaldab luua täiusliku slaidiseansi vaid kolme hiireklõpsuga. </para>
+
+<sect1 id="using-plugin-slideshowsettings">
+<title
+>Seadistustedialoog</title>
+
+<para
+>Plugina avamisel põhirakendusest ilmub aken <emphasis
+>Täiustatud slaidiseanss</emphasis
+>, mis pärib, kuidas soovid oma slaidiseansi üles ehitada. Sul on võimalik valida valitud piltide ning kõigi sama albumi piltide vahel. </para>
+
+<para
+>Märkekast <guilabel
+>Kasutatakse OpenGL slaidiseansi üleminekuid</guilabel
+> võimaldab piltide äärmiselt sujuvat üleminekut OpenGL režiimis. Kontrolli aga, et sinu videokaart toetaks OpenGL-i, sest muidu muutub slaidiseanss hoopis väga aeglaseks. </para>
+
+<para
+>Kasti <guilabel
+>Näidatakse failinime</guilabel
+> märkimisel näidatakse pildifaili nime alumises vasakus nurgas. </para>
+
+<para
+>Kasti <guilabel
+>Kordus</guilabel
+> märkimisel korratakse kogu slaidiseanssi igavesti või vähemalt seni, kuni peatad selle klahviga <keycombo
+><keycap
+>Esc</keycap
+></keycombo
+>. </para>
+
+<para
+>Kasti <guilabel
+>Suvaline järjekord</guilabel
+> märkimisel näidatakse pilte juhuslikus järjekorras (mitte selles, nagu need esinevad pildikogus). </para>
+
+<para
+><guilabel
+>Viivitus piltide vahel</guilabel
+> on võimalik kindlaks määrata millisekundilise täpsusega. 1500 millisekundit võrdub 1,5 sekundiga ning see peaks üldiselt olema sobilik vaikeväärtus. Aeg sõltub mõnevõrra ka sinu arvuti võimsusest ja üleminekuefektist. Kindlasti tasuks sellega veidi katsetada, enne kui asuda sõpradele pilte näitama. </para>
+
+<para
+><guilabel
+>Üleminekuefekt</guilabel
+>i saab valida enam kui kümne võimaluse seast. <emphasis
+>Juhuslik</emphasis
+> muudab efekti iga pildi korral. </para>
+
+<figure>
+    <title
+>Slaidiseansi dialoog</title>
+    <graphic srccredit="The Slideshow Dialog" fileref="slideshow_dialog.png"/>
+</figure>
+
+</sect1>
+
+<sect1 id="using-plugin-slideshowinaction">
+<title
+>Slaidiseanss tegevuses</title>
+
+<para
+>Slaidiseansi ajal saab kasutaja pruukida ka ekraani ülemises vasakus nurgas asuvat tööriistariba. Selle tarvitamiseks vii hiirekursor ekraani ülemisse vasakusse nurka. </para>
+
+<para
+>Tööriistaribal saab juhtida edenemist, slaidiseansi peatada ja seda uuesti alustada, liikuda tagasi eelmisele või edasi järgmisele pildile ning ka slaidiseansist väljuda. </para>
+
+<para
+>Ekraani alumises vasakus nurgas on näha parajasti nähtava pildifaili nimi, selle järjekorranumber ning slaidiseansi piltide koguarv. </para>
+
+<figure>
+    <title
+>Täiustatud slaidiseansi plugin tegevuses</title>
+    <graphic srccredit="The Slideshow Plugin in Action" fileref="slideshow.png"/>
+</figure>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

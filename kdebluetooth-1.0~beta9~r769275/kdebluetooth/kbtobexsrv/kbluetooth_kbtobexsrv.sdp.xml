@@ -1,0 +1,60 @@
+<sdprecord>
+<attributes>
+
+<!-- Service name -->
+<attribute id='0x0100'>
+<str>Obex Push Server</str>
+</attribute>
+
+<!-- Service description -->
+<attribute id='0x0101'>
+<str>KDE OBEX Object Push Service</str>
+</attribute>
+
+<!-- Supported formats list -->
+<attribute id='0x0303'>
+<seq>
+<uint val='0xFF' size='8'/><!-- anything  -->
+<uint val='0x01' size='8'/><!-- vCard 2.1 -->
+<uint val='0x02' size='8'/><!-- vCard 3.0 -->
+<uint val='0x03' size='8'/><!-- vCal  1.0 -->
+<uint val='0x04' size='8'/><!-- iCal  2.0 -->
+<uint val='0x05' size='8'/><!-- vNotes    -->
+<uint val='0x06' size='8'/><!-- vMessage  -->
+</seq>
+</attribute>
+
+<!-- Service class ID list -->
+<attribute id='0x0001'>
+<seq>
+<uuid val='0x1105' size='16'/>
+</seq>
+</attribute>
+
+<!-- Protocol descriptor list -->
+<attribute id='0x0004'>
+<seq>
+<seq><uuid val='256' size='16'/></seq>
+<seq><uuid val='3' size='16'/>
+<uint valref='rfcommchannel' size='8'/></seq>
+<seq><uuid val='0x0008' size='16'/></seq>
+</seq>
+</attribute>
+
+<!-- Browse group list-->
+<attribute id='0x0005'>
+<seq>
+<uuid val='0x1002' size='16'/>
+</seq>
+</attribute>
+
+<!-- Bluetooth profile descriptor list -->
+<attribute id='0x0009'>
+<seq>
+<seq><uuid val='0x1105' size='16'/>
+<uint val='0x0100' size='16'/></seq>
+</seq>
+</attribute>
+
+</attributes>
+</sdprecord>

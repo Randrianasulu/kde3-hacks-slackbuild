@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# This shell script is used as a mimetype handler
+# for the bluetooth/obex-ftp-protocol mimetype. 
+
+if (( $# == 0 )) ; then
+    konqueror "sdp:/"
+else
+    host=$(echo $@ | sed 's/sdp:\/\/\[\(..:..:..:..:..:..\).*/\1/')
+    channel=$(echo $@ | sed 's/.*rfcommchannel\=\([0123456789]*\)/\1/') 
+    konqueror "obex://[$host]:$channel/"
+fi

@@ -1,0 +1,254 @@
+# translation of kipiplugin_galleryexport.po to russian
+#
+# Dmitry A. Bugay <sam@vhnet.ru>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2006-09-22 18:26+0700\n"
+"Last-Translator: Dmitry A. Bugay <sam@vhnet.ru>\n"
+"Language-Team: russian <kde-rus@kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Дмитрий Бугай"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sam@vhnet.ru"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Название галереи"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "Адрес"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Пользователь"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Имя:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "Адрес:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Имя пользователя:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Пароль:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr ""
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Сетевая галерея"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Создать сетевую галерею"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Нет выбранной галереи!"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Редактировать сетевую галерею"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Вы, действительно, хотите удалить галерею? Все настройки синхронизации будут "
+"потеряны."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Удалить сетевую галерею"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "Неверный адрес галереи"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Неверное имя пользователя или пароль"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Неверный ответ с сетевой галереи"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr ""
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr ""
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Не удалось создать альбом"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Не удалось загрузить фото"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Альбомы"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Заменить параметры по умолчанию"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr ""
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr ""
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Изменить размер фотографий перед загрузкой"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Максимальный размер:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Экспорт галереи</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Создать альбом"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "&Добавить фотографии"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Экспорт галереи"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr "Модуль Kipi для загрузки коллекции изображений на сервер галерей."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr ""
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr ""
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Не удалось войти в сетевую галерею. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Повторить?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Извените, эти символы не разрешены в названии альбома: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Загрузка файла %1 "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Не удалось загрузить фото в сетевую галерею. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Продолжить?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Синхронизация сетевой галереи..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Сетевые галереи..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "Мой диалог"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Введите название нового альбома</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Название (необязательно):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Имя (необязательно):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Заголовок (необязательно):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Создать галерею"
+
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Руководство Gallery Export"
+
+#~ msgid "Author and maintainer"
+#~ msgstr "Автор и сопровождающий"

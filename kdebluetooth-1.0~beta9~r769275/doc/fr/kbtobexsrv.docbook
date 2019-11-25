@@ -1,0 +1,41 @@
+<sect1 id="components.kbtobexsrv">
+<title
+>Serveur OBEX Push : Recevoir des fichiers</title>
+<para
+>La plupart des téléphones mobiles Bluetooth ou des PDA vous laisseront envoyer des fichiers depuis le mobile vers l'ordinateur. Même s'il peut être plus confortable d'utiliser le <link linkend="components.kio_obex"
+>OBEX FTP kioslave</link
+> pour transférer les fichiers de votre téléphone vers votre ordinateur, tous les périphériques ne le supportent pas. OBEX Object push étant quant à lui supporté par la plupart des périphériques Bluetooth. </para>
+
+<sect2>
+<title
+>Utiliser le serveur OBEX Push</title>
+<para
+>Le serveur OBEX push est géré par kbluetoothd et sera lancé automatiquement si quelqu'un essaie de vous envoyer des fichiers. Veuillez vous reporter à la documentation de kbluetoothd pour savoir comment <link linkend="components.kbluetoothd.serviceconfig"
+>activer ou désactiver les services</link
+> (Le serveur OBEX Push est listé en tant que <command
+>kbtobexsrv</command
+>). </para>
+<para
+>Quand vous envoyez un message depuis votre téléphone vers votre ordinateur, l'icône kbluetoothd du tableau de bord sera en bleu et une petite fenêtre sera affichée. Par défaut (cela dépend de vos <link linkend="components.kbluetoothd.confirmation"
+>options concernant les connexions entrantes</link
+>) vous devrez accepter la connexion, puis la fenêtre principale de OBEX Push devrait apparaître et commencer à recevoir des fichiers. </para>
+<para
+>Les fichiers reçus sont enregistrés dans <filename
+>/tmp</filename
+> et seront supprimés dès la fermeture du serveur OBEX Push. Pour enregistrer vos fichiers vous aurez deux options : </para>
+<itemizedlist>
+<listitem>
+<para
+>Cliquer sur <guibutton
+>OK</guibutton
+> pour enregistrer tous les fichiers reçus dans un dossier prédéfini.</para>
+</listitem>
+<listitem>
+<para
+>Tirer un ou plusieurs fichiers vers un autre dossier. Cela est particulièrement utile si vous voulez envoyer des fichiers par email car vous pouvez tirer les fichiers directement vers kmail sans les enregistrer au préalable dans le dossier temporaire. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

@@ -1,0 +1,363 @@
+# translation of kipiplugin_rawconverter.po to galician
+# translation of kipiplugin_rawconverter.po to Galician
+# mvillarino <mvillarino@users.sourceforge.net>, 2005, 2006.
+# Marce <mvillarino@users.sourceforge.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2006-05-16 20:14+0200\n"
+"Last-Translator: mvillarino <mvillarino@users.sourceforge.net>\n"
+"Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "mvillarino"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "mvillarino@users.sourceforge.net"
+
+#: actionthread.cpp:168
+#, fuzzy
+msgid "Cannot identify Raw image"
+msgstr ""
+"Non foi posíbel identificar a imaxe en bruto\n"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr ""
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Convertedor de Lotes de Imaxes RAW"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Con&verter"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Interromper"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Imaxe Raw"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Imaxe Obxectivo"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Cámara"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Configurazón"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+#, fuzzy
+msgid "RAW Image Converter"
+msgstr "Convertedor de Imaxes RAW"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Non foi posíbel converter a imaxe en bruto"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Autor Inicial"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Mantedor"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+#, fuzzy
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>Comezar a converter as imaxes en bruto coa configurazón actual"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Cancelar a conversión actual"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Sair do Convertedor de Imaxes en Bruto"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Non hai nengunha imaxe RAW para converter para converter!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Guardar Imaxe en Bruto convertida desde '%1' como"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Erro ao guardar imaxe %1"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "Convertedor de Imaxes RAW"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "<p>Sair do Convertedor de Imaxes en Bruto"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" non é unha imaxe Raw."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Non foi posíbel carregar a imaxe após o procesamento"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr ""
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+
+#: savesettingswidget.cpp:101
+#, fuzzy
+msgid "If Target File Exists:"
+msgstr "Se o ficheiro de Destino Existe"
+
+#: savesettingswidget.cpp:103
+#, fuzzy
+msgid "Overwrite automatically"
+msgstr "Sobrescreber"
+
+#: savesettingswidget.cpp:104
+#, fuzzy
+msgid "Open rename-file dialog"
+msgstr "Diálogo para abrir ficheiros"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Convertedor de Imaxes RAW"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "Ante&visión"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Non foi posíbel converter a imaxe en bruto"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Xerar unha Antevisión coa configurazón actual. Utiliza unha interpolazón "
+"bilinear simples para ter resultados rápidos."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Converter a Imaxe en Bruto coa configurazón actual. Utiliza un algoritmo "
+"adaptativo de alta calidade."
+
+#: singledialog.cpp:143
+#, fuzzy
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Cancelar a conversión actual"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Non foi posíbel xerar a antevisión"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Non foi posíbel converter a imaxe en bruto"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "A xerar Antevisión ..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "A Converter a Imaxe en Bruto..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Manual do Convertedor de Imaxes en Bruto"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Manual do Convertedor de Imaxes en Bruto"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "Convertedor de Imaxes en Bruto (Individual)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "Convertedor de Imaxes en Bruto (Lote)..."
+
+#, fuzzy
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "Convertedor de Lotes de Imaxes RAW"
+
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "<p>Cancelar a conversión actual"
+
+#~ msgid "Image Preview"
+#~ msgstr "Antevisión da Imaxe"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Un plugin de KIPI para converter imaxes RAW\n"
+#~ "Este plugin utiliza o programa de descodificazón de fotos RAW de Dave Coffin \"dcraw\""
+
+#, fuzzy
+#~ msgid "Not a RAW file"
+#~ msgstr "Non é unha imaxe Raw!"
+
+#, fuzzy
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr "<p>Interpolar RGB como catro cores. Por defeito asumirá-se que todos os pixels verdes son o mesmo. Se os pixels das filas impares son mais sensíbeis á luz ultravioleta que os das pares esta diferenza causará un patrón de malla no resultado; usar esta opzón resolve este problema con perdas mínimas de detalle."
+
+#~ msgid "Use camera white balance"
+#~ msgstr "Utilizar balanceamento de branco da cámara"
+
+#, fuzzy
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr "<p>Usar os axustes de balanzo de branco da cámara. Por defeito usarán-se valores fixos para luz diurna, calculados a partir de imaxes de mostra."
+
+#~ msgid "Brightness:"
+#~ msgstr "Brillo:"
+
+#, fuzzy
+#~ msgid "Raw (linear)"
+#~ msgstr "Imaxe Raw"
+
+#, fuzzy
+#~ msgid "<qt><p>Unable to find the <b>%1</b> executable:<br>This program is required by this plugin to support Raw files decoding. Please check %2 installation on your computer.</p></qt>"
+#~ msgstr "<qt> <p>Non foi posíbel atopar o executábel dcraw: <br>Este programa é requerido para converter imaxes Raw. Instale dcraw mediante un pacote para a sua distribuizón ou <a href=\"%2\">através das fontes</a>.</p></qt>"
+
+#, fuzzy
+#~ msgid "<qt><p><b>%1</b> executable isn't up to date:<br>The version %2 of %3 have been found on your computer. This version is too old to run properly with this plugin. Please check %4 installation on your computer.</p><p>Note: at least, %5 version %6 is required by this plugin.</p></qt>"
+#~ msgstr "<qt> <p>Non foi posíbel atopar o executábel dcraw: <br>Este programa é requerido para converter imaxes Raw. Instale dcraw mediante un pacote para a sua distribuizón ou <a href=\"%2\">através das fontes</a>.</p></qt>"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Un plugin de KIPI para converter imaxes RAW\n"
+#~ "Este plugin utiliza o programa descodificador de fotos RAW de Dave Coffin \"dcraw\""
+
+#~ msgid ""
+#~ "Failed to start raw converter client.\n"
+#~ "Please check your installation."
+#~ msgstr ""
+#~ "Non foi posíbel iniciar o cliente de conversión en bruto.\n"
+#~ "Por favor verifique a sua instalazón."
+
+#~ msgid "Four color RGBG"
+#~ msgstr "Catro cores RGBG"
+
+#~ msgid "<p>Specify the output brightness"
+#~ msgstr "<p>Indique o brillo do resultado"
+
+#~ msgid "Red multiplier:"
+#~ msgstr "Multiplicador de vermello:"
+
+#~ msgid "<p>After all other color adjustments, multiply the red channel by this value"
+#~ msgstr "<p>Após todos os outros axustes de cor, multiplicar o canal vermello por este valor"
+
+#~ msgid "Blue multiplier:"
+#~ msgstr "Multiplicador de azul:"
+
+#~ msgid "<p>After all other color adjustments, multiply the blue channel by this value"
+#~ msgstr "<p>Após todos os outros axustes de cor, multiplicar o canal azul por este valor"
+
+#~ msgid "Save Format"
+#~ msgstr "Formato de Gravazón"
+
+#~ msgid "<p>Output the processed image in JPEG Format. Warning!!! JPEG is a lossy format, but will give smaller-sized files. Minimum JPEG compression will be used during conversion."
+#~ msgstr "<p>Escreber a imaxe procesada en formato JPEG. Aviso!!! Este formato ten perdas, pero resulta en ficheiros de menor tamaño. Empregará-se unha compresión JPEG mínima durante a conversión."
+
+#~ msgid "<p>Output the processed image in TIFF Format. This generates larges, without losing quality. Adobe Deflate compression will be used during conversion."
+#~ msgstr "<p>Escreber a imaxe procesada en formato TIFF. Isto xera ficheiros de tamaño elevado sen perder calidade. Usa-se compresión Adobe Deflate para a conversión."
+
+#~ msgid "<p>Output the processed image in PPM Format. This generates the largest files, without losing quality"
+#~ msgstr "<p>Escreber a imaxe procesada en formato PPM. Isto xera ficheiros de tamaño elevado sen perder calidade"
+
+#~ msgid "<p>Output the processed image in PNG Format. This generates larges, without losing quality. Maximum PNG compression will be used during conversion."
+#~ msgstr "<p>Escreber a imaxe procesada en formato PNG. Isto xera ficheiros de tamaño elevado sen perder calidade. Usará-se a compresión PNG máxima para a conversión."
+
+#~ msgid "None!"
+#~ msgstr "Nengunha!"

@@ -1,0 +1,20 @@
+--- /tmp/kdebase-3.5.10/kcontrol/crypto/crypto.cpp	2010-10-21 23:25:25.000000000 +0200
++++ /tmp/kdebase-3.5.10/kcontrol/crypto/crypto.cpp.new	2010-10-22 11:50:41.000000000 +0200
+@@ -2328,7 +2328,7 @@
+ 
+   meth = SSLv2_client_method();
+   SSLeay_add_ssl_algorithms();
+-  ctx = SSL_CTX_new(meth);
++  ctx = SSL_CTX_new((SSL_METHOD *) meth);
+   if (ctx == NULL) return false;
+ 
+   ssl = SSL_new(ctx);
+@@ -2357,7 +2357,7 @@
+   // We repeat for SSLv3
+   meth = SSLv3_client_method();
+   SSLeay_add_ssl_algorithms();
+-  ctx = SSL_CTX_new(meth);
++  ctx = SSL_CTX_new((SSL_METHOD *) meth);
+   if (ctx == NULL) return false;
+ 
+   ssl = SSL_new(ctx);

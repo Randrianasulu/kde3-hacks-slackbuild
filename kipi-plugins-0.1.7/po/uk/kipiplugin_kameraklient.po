@@ -1,0 +1,367 @@
+# Translation of kipiplugin_kameraklient.po to Ukrainian
+#
+# Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_kameraklient\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2007-06-11 19:30-0700\n"
+"Last-Translator: Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Іван Петрущак"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ivanpetrouchtchak@yahoo.com"
+
+#: camerafolderview.cpp:33
+msgid "Camera Folders"
+msgstr "Теки камери"
+
+#: cameraselection.cpp:55
+msgid "Camera Selection"
+msgstr "Вибір камери"
+
+#: cameraselection.cpp:60 cameraui.cpp:147 setupcamera.cpp:65
+msgid "KameraKlient"
+msgstr "KameraKlient"
+
+#: cameraselection.cpp:63 cameraui.cpp:150
+msgid "A Digital camera interface Kipi plugin"
+msgstr "Втулок Kipi інтерфейсу для цифрової камери"
+
+#: cameraselection.cpp:67 cameraui.cpp:154 setupcamera.cpp:72
+msgid "Original author from Digikam project"
+msgstr "Перший автор з проекту Digikam"
+
+#: cameraselection.cpp:70 cameraui.cpp:157 setupcamera.cpp:75
+msgid "Porting the Digikam GPhoto2 interface to Kipi. Maintainer"
+msgstr "Портування інтерфейсу Digikam GPhoto2 до Kipi. Супроводжувач"
+
+#: cameraselection.cpp:76 cameraui.cpp:162 setupcamera.cpp:81
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Підручник KameraKlient"
+
+#: cameraselection.cpp:87
+msgid "Camera Configuration"
+msgstr "Налаштування камери"
+
+#: cameraselection.cpp:95
+msgid "Cameras"
+msgstr "Камери"
+
+#: cameraselection.cpp:100
+msgid "Camera Port Type"
+msgstr "Тип порту камери"
+
+#: cameraselection.cpp:106
+msgid "USB"
+msgstr "USB"
+
+#: cameraselection.cpp:109
+msgid "Serial"
+msgstr "Послідовний"
+
+#: cameraselection.cpp:114
+msgid "Camera Port Path"
+msgstr "Шлях порту камери"
+
+#: cameraselection.cpp:122
+msgid ""
+"only for serial port\n"
+"cameras"
+msgstr ""
+"тільки для камер з\n"
+"послідовними портами"
+
+#: cameraui.cpp:120
+msgid "Setup"
+msgstr "Налаштування"
+
+#: cameraui.cpp:126
+msgid "Download"
+msgstr "Звантажити"
+
+#: cameraui.cpp:129
+msgid "Upload"
+msgstr "Вивантажити"
+
+#: cameraui.cpp:169 cameraui.cpp:289
+msgid "Connect"
+msgstr "З'єднати"
+
+#: cameraui.cpp:180
+msgid "Download to: "
+msgstr "Звантажити у: "
+
+#: cameraui.cpp:186
+msgid "&Change"
+msgstr "&Змінити"
+
+#: cameraui.cpp:207
+msgid "Ready"
+msgstr "Готова"
+
+#: cameraui.cpp:245
+msgid "Select all the images from the camera."
+msgstr "Вибрати всі зображення в камері."
+
+#: cameraui.cpp:247
+msgid "Select None"
+msgstr "Зняти вибір"
+
+#: cameraui.cpp:248
+msgid "Deselect all the images from the camera."
+msgstr "Скасувати вибір всіх зображень в камері."
+
+#: cameraui.cpp:250
+msgid "Invert Selection"
+msgstr "Інвертувати вибір"
+
+#: cameraui.cpp:251
+msgid "Invert the selection."
+msgstr "Інвертувати вибір."
+
+#: cameraui.cpp:253
+msgid "Select New Items"
+msgstr "Вибрати нові елементи"
+
+#: cameraui.cpp:254
+msgid "Select all the that were not previously downloaded."
+msgstr "Вибрати всі, що ще не були перед тим звантажені."
+
+#: cameraui.cpp:285
+msgid "Connected"
+msgstr "З'єднано"
+
+#: cameraui.cpp:286
+msgid "Disconnect"
+msgstr "Роз'єднати"
+
+#: cameraui.cpp:288
+msgid "Disconnected"
+msgstr "Роз'єднано"
+
+#: cameraui.cpp:413
+msgid "There is no configured camera!"
+msgstr "Немає налаштованої камери!"
+
+#: cameraui.cpp:438
+msgid "'%1' directory does not exist."
+msgstr "Тека \"%1\" не існує."
+
+#: cameraui.cpp:481
+msgid ""
+"About to delete these Image(s)\n"
+"Are you sure?"
+msgstr ""
+"Збираєтесь вилучити зображення\n"
+"Ви певні?"
+
+#: cameraui.cpp:513
+msgid ""
+"Camera Folder '%1' contains item '%2'\n"
+" Please, enter New Name"
+msgstr ""
+"Тека камери \"%1\" містить елемент \"%2\"\n"
+"Будь ласка, введіть нову назву"
+
+#: cameraui.cpp:618
+msgid "Camera Not Initialized"
+msgstr "Камеру не започатковано"
+
+#: cameraui.cpp:626
+msgid "Please Select a Folder on Camera to Upload"
+msgstr "Будь ласка, виберіть теку в камері для вивантаження"
+
+#: cameraui.cpp:636
+msgid "Sorry! The directory is not writable!"
+msgstr "Вибачте! В теку неможливо нічого записати!"
+
+#: dmessagebox.cpp:92
+msgid "More errors occurred and are shown below:"
+msgstr "Трапились ще деякі помилки і їх показано нижче:"
+
+#: gpcontroller.cpp:229
+msgid ""
+"Camera Model or Port not specified correctly.\n"
+"Please run Setup"
+msgstr ""
+"Не вказано правильно модель або порт камери.\n"
+"Будь ласка, запустіть налаштування"
+
+#: gpcontroller.cpp:232
+msgid ""
+"Failed to initialize camera.\n"
+"Please ensure camera is connected properly and turned on"
+msgstr ""
+"Не вдалося започаткувати камеру.\n"
+"Будь ласка, перевірте чи камеру приєднано і ввімкнено"
+
+#: gpcontroller.cpp:257
+msgid ""
+"Failed to get subfolder names from '%1'\n"
+msgstr ""
+"Не вдалося отримати назви підтек з \"%1\"\n"
+
+#: gpcontroller.cpp:278
+msgid ""
+"Failed to get images information from '%1'\n"
+msgstr ""
+"Не вдалося отримати інформацію про зображення з \"%1\"\n"
+
+#: gpcontroller.cpp:301
+msgid "Failed to get preview for '%1/%2'"
+msgstr "Не вдалося отримати перегляд для \"%1/%2\""
+
+#: gpcontroller.cpp:310
+msgid "Failed to download '%1' from '%2'"
+msgstr "Не вдалося звантажити \"%1\" з \"%2\""
+
+#: gpcontroller.cpp:322 gpcontroller.cpp:334
+msgid "Failed to open '%1'"
+msgstr "Не вдалося відкрити \"%1\""
+
+#: gpcontroller.cpp:346
+msgid "Failed to delete '%1'"
+msgstr "Не вдалося вилучити \"%1\""
+
+#: gpcontroller.cpp:358
+msgid "Failed to upload '%1'"
+msgstr "Не вдалося вивантажити \"%1\""
+
+#: gpfileiteminfodlg.cpp:90
+msgid "MimeType:"
+msgstr "Тип MIME:"
+
+#: gpfileiteminfodlg.cpp:92 gpfileiteminfodlg.cpp:98 gpfileiteminfodlg.cpp:104
+#: gpfileiteminfodlg.cpp:111 gpfileiteminfodlg.cpp:118
+#: gpfileiteminfodlg.cpp:129 gpfileiteminfodlg.cpp:140
+#: gpfileiteminfodlg.cpp:151
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: gpfileiteminfodlg.cpp:96
+msgid "Date:"
+msgstr "Дата:"
+
+#: gpfileiteminfodlg.cpp:102
+msgid "Size:"
+msgstr "Розмір:"
+
+#: gpfileiteminfodlg.cpp:105
+msgid " bytes"
+msgstr " байтів"
+
+#: gpfileiteminfodlg.cpp:109
+msgid "Width:"
+msgstr "Ширина:"
+
+#: gpfileiteminfodlg.cpp:116
+msgid "Height:"
+msgstr "Висота:"
+
+#: gpfileiteminfodlg.cpp:122
+msgid "Read permissions:"
+msgstr "Права читання:"
+
+#: gpfileiteminfodlg.cpp:133
+msgid "Write permissions:"
+msgstr "Права запису:"
+
+#: gpfileiteminfodlg.cpp:144
+msgid "Downloaded:"
+msgstr "Звантажено:"
+
+#: kameraklient.cpp:52
+msgid "Digital Camera"
+msgstr "Цифрова камера"
+
+#: savefiledialog.cpp:36
+msgid "File Already Exists"
+msgstr "Файл вже існує"
+
+#: savefiledialog.cpp:37
+msgid "The file '%1' already exists!"
+msgstr "Файл \"%1\" вже існує."
+
+#: savefiledialog.cpp:42
+msgid "Rename"
+msgstr "Перейменувати"
+
+#: savefiledialog.cpp:44
+msgid "Skip"
+msgstr "Пропустити"
+
+#: savefiledialog.cpp:45
+msgid "Skip All"
+msgstr "Пропустити всі"
+
+#: savefiledialog.cpp:46
+msgid "Overwrite"
+msgstr "Перезаписати"
+
+#: savefiledialog.cpp:47
+msgid "Overwrite All"
+msgstr "Перезаписати всі"
+
+#: setupcamera.cpp:60
+msgid "Setup Cameras"
+msgstr "Налаштувати камери"
+
+#: setupcamera.cpp:68
+msgid "An Digital camera interface Kipi plugin"
+msgstr "Втулок Kipi інтерфейсу для цифрової камери"
+
+#: setupcamera.cpp:99
+msgid "Model"
+msgstr "Модель"
+
+#: setupcamera.cpp:100
+msgid "Port"
+msgstr "Порт"
+
+#: setupcamera.cpp:111
+msgid "Add..."
+msgstr "Додати..."
+
+#: setupcamera.cpp:113
+msgid "Edit..."
+msgstr "Редагувати..."
+
+#: setupcamera.cpp:114
+msgid "Auto-Detect"
+msgstr "Автоматичне визначення"
+
+#: setupcamera.cpp:194
+msgid ""
+"Failed to auto-detect camera!\n"
+"Please retry or try setting manually."
+msgstr ""
+"Не вдалося автоматично визначити камеру!\n"
+"Будь ласка, повторіть спробу або встановіть вручну."
+
+#: setupcamera.cpp:205
+msgid "Already added camera: "
+msgstr "Вже додано камеру: "
+
+#: setupcamera.cpp:207
+msgid "Found camera: "
+msgstr "Знайдено камеру: "
+
+#~ msgid "Digital Camera interface"
+#~ msgstr "Інтерфейс для цифрових камер"

@@ -1,0 +1,81 @@
+<chapter id="developers">
+<title
+>Informations pour les développeurs</title>
+
+<sect1 id="developers.kbluetoothd">
+<title
+>KBluetoothD</title>
+<para
+>Cette section décrit comment utiliser kbluetoothd pour votre propre applications ou y accéder depuis des scripts pour retrouver les noms de périphériques stockées dans le cache ou des actions similaires. </para>
+
+<sect2>
+<title
+>Le cache de noms</title>
+<para
+>Le cache de noms traque toutes les requêtes de nom et enregistre les résultats. Avec lui, les autres applications et kbluetoothd lui-même peuvent retrouver le nom d'un autre périphérique bluetooth depuis sa seule adresse de périphérique bluetooth, même si le périphérique n'est pas joignable actuellement. Ceci est surtout utilisé pour rendre l'interface utilisateur plus simple, étant donné que des adresses bluetooth comme 00:60:AB:13:83:3D sont un peu compliquées à mémoriser. </para>
+<para
+>Ceci sera peut être obsolète dès que BlueZ fournira son propre cache de noms persistant. </para>
+<para
+>Vous pouvez accéder au cache via dcop. Pour chercher une adresse dans le cache de noms depuis la ligne de commande, saisissez <command
+>dcop kbluetoothd DeviceNameCache getCachedDeviceName &lt;adresse&gt;</command
+>. Pour chercher quel périphérique a utilisé en dernier un nom, vous pouvez faire <command
+>dcop kbluetoothd DeviceNameCache resolveCachedDeviceName &lt;nom&gt;</command
+>. Cette commande est sensible à la casse. Soyez aussi au courant que plusieurs périphériques peuvent être configurés pour utiliser le même nom. </para>
+</sect2>
+
+<sect2>
+<title
+>Le méta-serveur</title>
+<para
+>Si vous voulez implémenter une application serveur pour un nouveau protocole bluetooth, vous pouvez facilement l'intégrer à kbluetoothd, pour que votre serveur démarre automatiquement. </para>
+<para
+>Vous devez joindre un fichier XML décrivant l'enregistrement SDP et le fichier desktop correspondant. kbluetoothd mettra alors automatiquement en place un enregistrement SDP, assignera un canal rfcomm et commencera à écouter sur le canal sélectionné. Quand quelqu'un se connectera à votre service, kbluetoothd le démarrera et lui donnera une interface de connexion pour la connexion acceptée. Le numéro du canal est passé en argument à la ligne de commande. </para>
+<para
+>Le paquetage kdebluetooth contient <command
+>kbtserialchat</command
+>, qui est (en dehors de son utilisation pour le déboguage et peut être les tchats...) censé être un exemple de programme assez simple sur l'intégration d'une application dans l'interface kdebluetooth. Étant donné que kbtserialchat est client et serveur à la fois, vous n'aurez pas besoin de considérer tous les arguments en ligne de commande comme le fait kbtserialchat, en particulier les sdp-urls. </para>
+<para
+>Le format des fichiers XML-SDP devrait être assez descriptif de lui-même, si vous savez comment sont structurés les enregistrements SDP. Un point important est le positionnement des paramètres des canaux rfcomm dans l'enregistrement SDP pour le serveur. Étant donné que le canal est sélectionné automatiquement par kbluetoothd, vous ne pouvez pas l'incorporer dans le fichier d'enregistrement SDP. A la place vous utilisez &lt;uint valref='rfcommchannel' size='8'/&gt;. Les canaux rfcomm qui sont utilisés sont définis dans le fichier desktop correspondant. <varname
+>X-KDE-KBLUETOOTHD-port</varname
+> est le premier canal essayé et <varname
+>X-KDE-KBLUETOOTHD-autoPortRange</varname
+> donne le nombre de canaux qui seront essayés ensuite en ordre croissant si un canal est déjà utilisé par un autre service. </para>
+<para
+>kbluetoothd ne supporte actuellement que rfcomm, mais quand il y aura un réel besoin, nous fournirons le support de l2cap ou d'un autre protocole similaire. </para>
+</sect2>
+
+<sect2 id="developers.kbluetoothd.discovery">
+<title
+>Le service de découverte des périphériques</title>
+<para
+>kbluetoothd peut chercher activement d'autres périphériques et exécuter des commandes dès qu'un périphérique a été détecté ou a disparu. Vous pouvez configurer ce service dans le module du centre de contrôle de kbluetoothd sous l'onglet "Découverte des périphériques". </para>
+<para
+>La liste des tâches de découverte <emphasis
+>actives</emphasis
+> comme elle est affichée dans le module du centre de contrôle est juste une liste d'exécutables trouvés dans le dossier <filename
+>$HOME/.kde/share/apps/kbluetoothd/discovery_jobs/</filename
+>. Vous pouvez aussi ajouter un nouveau script dans le dossier <filename
+>$PREFIX/share/apps/kdebluetooth/job-templates/</filename
+>. Les scripts dans ce dossiers se terminant par ".template" seront affichés quand l'utilisateur cliquera sur "Ajouter une nouvelle tâche" et seront simplement copiés dans le dossiers des tâches actives dans home. </para>
+<para
+>Les scripts inclus sont séparés en deux pour rendre plus simple la mise à jour sans avoir à réinstaller les scripts. La partie ".template" contient juste les options modifiables par l'utilisateur qui sont copiés dans le dossier home. Ce script appelle alors la partie ".real" qui reste dans le dossier template. </para>
+<para
+>Pour commencer à écrire votre propre tâche, cliquez sur "Ajouter une nouvelle tâche" et sélectionnez <phrase
+>Tâche_Personnalisée</phrase
+>. Cela copiera <filename
+>Tâche_Personnalisée.template</filename
+> dans votre dossier de tâches. Maintenant cliquez sur "Configurer..." pour changer le script. Ce script liste toutes les options en ligne de commande disponibles et les variables d'environnement auxqueles vous avez accès. </para>
+<para
+>Souvenez-vous que quand vous éditez ce script, tous les changements sont annulés si vous le supprimez de la liste des tâches actives. Si vous voulez le distribuer, nous vous recommandons aussi de le séparer en une partie template pour les options et une partie real qui effectue la tâche actuelle. </para>
+
+<para
+>Pour pouvoir envoyer, télécharger ou supprimer des fichiers depuis une tâche, vous pouvez utiliser <link linkend="components.othertools.kioclient"
+>kioclient</link
+>. </para>
+<para
+>Si vous avez écrit un script sympa pour le service de découverte des périphériques qui pourrait être utile aux autres, nous serions heureux de l'inclure dans la distribution. </para>
+</sect2>
+
+</sect1>
+</chapter>
+

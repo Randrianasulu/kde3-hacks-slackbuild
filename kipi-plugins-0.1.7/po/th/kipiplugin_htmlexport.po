@@ -1,0 +1,281 @@
+# translation of kipiplugin_htmlexport.po to Thai
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_htmlexport\n"
+"POT-Creation-Date: 2008-07-08 22:18+0200\n"
+"PO-Revision-Date: 2007-02-24 01:27+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <th@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: generator.cpp:175
+msgid "Could not find theme in '%1'"
+msgstr "ไม่สามารถค้นหาชุดตกแต่งใน '%1' ได้"
+
+#: generator.cpp:182
+msgid "Copying theme"
+msgstr "กำลังทำการคัดลอกชุดตกแต่ง"
+
+#: generator.cpp:194
+msgid "Could not copy theme"
+msgstr "ไม่สามารถทำการคัดลอกชุดตกแต่งได้"
+
+#: generator.cpp:203
+msgid "Could not open file '%1' for writing"
+msgstr "ไม่สามารถเปิดแฟ้ม '%1' เพื่อเขียนแฟ้มได้"
+
+#: generator.cpp:207
+msgid "Could not save image to file '%1'"
+msgstr "ไม่สามารถบันทึกภาพไปยังแฟ้ม '%1' ได้"
+
+#: generator.cpp:236
+msgid "Could not read image '%1'"
+msgstr "ไม่สามารถอ่านแฟ้มภาพ '%1' ได้"
+
+#: generator.cpp:242
+msgid "Format of image '%1' is unknown"
+msgstr "ไม่รู้จักชนิดของแฟ้มภาพ '%1'"
+
+#: generator.cpp:251
+msgid "Error loading image '%1'"
+msgstr "เกิดข้อผิดพลาดในการเรียกภาพ '%1'"
+
+#: generator.cpp:287
+msgid "Could not save image '%1' to '%2'"
+msgstr "ไม่สามารถบันทึกภาพ '%1' ไปเป็น '%2' ได้"
+
+#: generator.cpp:305
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "ไม่สามารถบันทึกภาพตัวอย่างสำหรับภาพ '%1' ไปเป็น '%2' ได้"
+
+#: generator.cpp:329
+#, fuzzy
+msgid "Could not create gallery.xml"
+msgstr "ไม่สามารถสร้างแฟ้ม gallery.xml ได้"
+
+#: generator.cpp:340
+msgid "Generating files for \"%1\""
+msgstr "กำลังทำการสร้างแฟ้มสำหรับ \"%1\""
+
+#: generator.cpp:372
+msgid "Previous"
+msgstr "ย้อนกลับ"
+
+#: generator.cpp:373
+msgid "Next"
+msgstr "ถัดไป"
+
+#: generator.cpp:374
+msgid "Collection List"
+msgstr "รายการภาพสะสม"
+
+#: generator.cpp:375
+#, fuzzy
+msgid "Original Image"
+msgstr "ใช้ภาพต้นฉบับ"
+
+#: generator.cpp:376
+msgid "Go Up"
+msgstr ""
+
+#: generator.cpp:403
+msgid "Generating HTML files"
+msgstr "กำลังทำการสร้างแฟ้ม HTML"
+
+#: generator.cpp:409
+msgid "Could not load XSL file '%1'"
+msgstr "ไม่สามารถโหลดแฟ้ม XSL '%1' ได้"
+
+#: generator.cpp:415
+msgid "Could not load XML file '%1'"
+msgstr "ไม่สามารถโหลดแฟ้ม XML '%1' ได้"
+
+#: generator.cpp:447
+msgid "Error processing XML file"
+msgstr "เกิดข้อผิดพลาดในการประมวลผลแฟ้ม XML"
+
+#: generator.cpp:454
+#, fuzzy
+msgid "Could not open '%1' for writing"
+msgstr "ไม่สามารถเปิดแฟ้ม '%1' เพื่อทำการเขียนแฟ้มได้"
+
+#: generator.cpp:472
+#, fuzzy
+msgid "Could not create folder '%1' in '%2'"
+msgstr "ไม่สามารถบันทึกภาพ '%1' ไปเป็น '%2' ได้"
+
+#: plugin.cpp:67
+msgid "HTML Gallery..."
+msgstr "แกลเลอรีภาพแบบ HTML..."
+
+#: plugin.cpp:85
+msgid "Generating gallery..."
+msgstr "กำลังสร้างแกลเลอรี..."
+
+#. i18n: file imagesettingspage.ui line 16
+#: rc.cpp:3
+#, fuzzy, no-c-format
+msgid "ImageSettingsPage"
+msgstr "การตั้งค่าภาพ"
+
+#. i18n: file imagesettingspage.ui line 35
+#: rc.cpp:6
+#, no-c-format
+msgid "Full Image"
+msgstr "ภาพเต็มขนาด"
+
+#. i18n: file imagesettingspage.ui line 99
+#: rc.cpp:9
+#, no-c-format
+msgid "Thumbnail"
+msgstr "ภาพตัวอย่าง"
+
+#. i18n: file imagesettingspage.ui line 158
+#: rc.cpp:12
+#, no-c-format
+msgid "Save image"
+msgstr "บันทึกภาพ"
+
+#. i18n: file imagesettingspage.ui line 186
+#: rc.cpp:15
+#, no-c-format
+msgid "Max size:"
+msgstr "ขนาดสูงสุด:"
+
+#. i18n: file imagesettingspage.ui line 197
+#: rc.cpp:18 rc.cpp:39
+#, no-c-format
+msgid "Format:"
+msgstr "รูปแบบภาพ:"
+
+#. i18n: file imagesettingspage.ui line 214
+#: rc.cpp:21 rc.cpp:42
+#, no-c-format
+msgid "JPEG"
+msgstr "JPEG"
+
+#. i18n: file imagesettingspage.ui line 219
+#: rc.cpp:24 rc.cpp:45
+#, no-c-format
+msgid "PNG"
+msgstr "PNG"
+
+#. i18n: file imagesettingspage.ui line 231
+#: rc.cpp:27 rc.cpp:36
+#, no-c-format
+msgid "Quality:"
+msgstr "คุณภาพภาพ (%):"
+
+#. i18n: file imagesettingspage.ui line 273
+#: rc.cpp:30
+#, no-c-format
+msgid "Include full-size original images for download"
+msgstr ""
+
+#. i18n: file imagesettingspage.ui line 320
+#: rc.cpp:33
+#, no-c-format
+msgid "Use original image"
+msgstr "ใช้ภาพต้นฉบับ"
+
+#. i18n: file imagesettingspage.ui line 431
+#: rc.cpp:48
+#, no-c-format
+msgid "Size:"
+msgstr "ขนาดภาพ:"
+
+#. i18n: file outputpage.ui line 35
+#: rc.cpp:51
+#, no-c-format
+msgid "Destination folder:"
+msgstr "โฟลเดอร์ปลายทาง:"
+
+#. i18n: file outputpage.ui line 53
+#: rc.cpp:54
+#, no-c-format
+msgid "Open in browser"
+msgstr "เปิดใช้ในบราวเซอร์"
+
+#. i18n: file themeparameterspage.ui line 16
+#: rc.cpp:57
+#, fuzzy, no-c-format
+msgid "Form1"
+msgstr "รูปแบบภาพ:"
+
+#. i18n: file themeparameterspage.ui line 38
+#: rc.cpp:60
+#, no-c-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+
+#: wizard.cpp:139
+msgid ""
+"_: '%1' is a label for a theme parameter\n"
+"%1:"
+msgstr ""
+
+#: wizard.cpp:175
+msgid "HTML Export"
+msgstr "ส่งออกเป็น HTML"
+
+#: wizard.cpp:178
+msgid "A KIPI plugin to export image collections to HTML pages"
+msgstr "ปลั๊กอินของ KIPI สำหรับส่งออกรายการภาพสะสมเป็นหน้าข้อมูล HTML"
+
+#: wizard.cpp:181
+msgid "Author and Maintainer"
+msgstr "ผู้เขียนและผู้ดูแล"
+
+#: wizard.cpp:187
+msgid "Plugin Handbook"
+msgstr ""
+
+#: wizard.cpp:191
+msgid "Collection Selection"
+msgstr "เลือกชุดภาพสะสม"
+
+#: wizard.cpp:195
+msgid "Theme"
+msgstr "ชุดตกแต่ง"
+
+#: wizard.cpp:200
+msgid "Theme Parameters"
+msgstr ""
+
+#: wizard.cpp:203
+msgid "Image Settings"
+msgstr "การตั้งค่าภาพ"
+
+#: wizard.cpp:207
+msgid "Output"
+msgstr "ค่าส่งออก"
+
+#: wizard.cpp:250
+#, c-format
+msgid "Author: %1"
+msgstr "ผู้เขียน: %1"
+
+#~ msgid "HTML Export Handbook"
+#~ msgstr "คู่มือการใช้ปลั๊กอินส่งออกเป็น HTML"
+
+#~ msgid "Could not create '%1"
+#~ msgstr "ไม่สามารถสร้าง '%1 ได้"

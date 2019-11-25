@@ -1,0 +1,24 @@
+diff --git a/kipi-plugins/kipi-plugins/flickrexport/imageslist.cpp b/kipi-plugins/kipi-plugins/flickrexport/imageslist.cpp
+index 1127b40..92fa680 100644
+--- a/kipi-plugins/flickrexport/imageslist.cpp
++++ b/kipi-plugins/flickrexport/imageslist.cpp
+@@ -228,15 +228,15 @@ void ImagesList::slotAddImages(const KURL::List& list)
+ 
+         bool find = false;
+ 
+-        QListViewItemIterator it(d->listView);
+-        while (it.current())
++        QListViewItemIterator iter(d->listView);
++        while (iter.current())
+         {
+-            ImagesListViewItem* item = dynamic_cast<ImagesListViewItem*>(*it);
++            ImagesListViewItem* item = dynamic_cast<ImagesListViewItem*>(*iter);
+ 
+             if (item->url() == imageUrl)
+                 find = true;
+ 
+-            ++it;
++            ++iter;
+         }
+ 
+         if (!find)

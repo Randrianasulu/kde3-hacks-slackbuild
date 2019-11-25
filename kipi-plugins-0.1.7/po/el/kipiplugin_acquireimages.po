@@ -1,0 +1,361 @@
+# translation of kipiplugin_acquireimages.po to Greek
+#
+# Spiros Georgaras <sng@hellug.gr>, 2005, 2006, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_acquireimages\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2007-03-15 13:01+0200\n"
+"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"Language-Team: Greek <i18ngr@lists.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Σπύρος Γεωργαράς,Τούσης Μανώλης"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "sng@hellug.gr,manolis@koppermind.homelinux.org"
+
+#: acquireimagedialog.cpp:105
+msgid "Save Target Image Options"
+msgstr "Αποθήκευση επιλογών εικόνας προορισμού"
+
+#: acquireimagedialog.cpp:120 screenshotdialog.cpp:153
+msgid "Acquire images"
+msgstr "Ανάκτηση εικόνων"
+
+#: acquireimagedialog.cpp:123 screenshotdialog.cpp:155
+msgid "A Kipi plugin to acquire images"
+msgstr "Ένα πρόσθετο του Kipi για την ανάκτηση εικόνων"
+
+#: acquireimagedialog.cpp:126 screenshotdialog.cpp:161
+msgid "Author and maintainer"
+msgstr "Συγγραφέας και συντηρητής"
+
+#: acquireimagedialog.cpp:132 screenshotdialog.cpp:167
+msgid "Plugin Handbook"
+msgstr ""
+
+#: acquireimagedialog.cpp:152
+msgid "image"
+msgstr "εικόνα"
+
+#: acquireimagedialog.cpp:180
+msgid "Target Image"
+msgstr "Εικόνα προορισμού"
+
+#: acquireimagedialog.cpp:181
+msgid "Target Image Options"
+msgstr "Επιλογές εικόνας προορισμού"
+
+#: acquireimagedialog.cpp:190
+#, fuzzy
+msgid "File Name && Caption"
+msgstr "Όνομα αρχείου && Σχόλια"
+
+#: acquireimagedialog.cpp:191
+#, fuzzy
+msgid "<p>The target image preview with the file name and caption."
+msgstr ""
+"<p>Η προεπισκόπηση της εικόνας προορισμού με το όνομα αρχείου και τα σχόλια."
+
+#: acquireimagedialog.cpp:194
+msgid "File name (without suffix):"
+msgstr "Όνομα αρχείου (χωρίς κατάληξη):"
+
+#: acquireimagedialog.cpp:197
+msgid "acquired_image"
+msgstr "ανακτημένη_εικόνα"
+
+#: acquireimagedialog.cpp:198
+msgid ""
+"<p>Enter here the target image file name without suffix (that will be "
+"automatically added to the file name according to the file-format option.)"
+msgstr ""
+"<p>Εισάγετε εδώ το όνομα αρχείου της εικόνας προορισμού χωρίς επέκταση (θα "
+"προστεθεί αυτόματα στο αρχείο ανάλογο με την επιλογή μορφής του.)"
+
+#: acquireimagedialog.cpp:204
+msgid "Caption:"
+msgstr ""
+
+#: acquireimagedialog.cpp:209
+#, fuzzy
+msgid "<p>Enter here the target image's caption."
+msgstr "<p>Εισάγετε εδώ τα σχόλια της εικόνας προορισμού."
+
+#: acquireimagedialog.cpp:216
+msgid "<p>The preview of the target image."
+msgstr "<p>Η προεπισκόπηση της εικόνας προορισμού."
+
+#: acquireimagedialog.cpp:228
+msgid "Saving Options"
+msgstr "Επιλογές αποθήκευσης"
+
+#: acquireimagedialog.cpp:232
+msgid "<p>The saving options of the target image."
+msgstr "<p>Οι επιλογές αποθήκευσης της εικόνας προορισμού."
+
+#: acquireimagedialog.cpp:239
+msgid "Image compression:"
+msgstr "Συμπίεση εικόνας:"
+
+#: acquireimagedialog.cpp:240
+msgid "<p>The compression value of target image for JPEG and PNG formats:<p>"
+msgstr "<p>Η τιμή συμπίεσης της εικόνας προορισμού για μορφές JPEG και PNG:<p>"
+
+#: acquireimagedialog.cpp:241
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: πολύ υψηλή συμπίεση "
+"<p><b>25</b>: υψηλή συμπίεση"
+"<p><b>50</b>: μέση συμπίεση"
+"<p><b>75</b>: χαμηλή συμπίεση (προκαθορισμένη)"
+"<p><b>100</b>: χωρίς συμπίεση"
+
+#: acquireimagedialog.cpp:260
+msgid "<p>Select here the target image's file format.<p>"
+msgstr "<p>Επιλέξτε εδώ τον τύπο αρχείου της εικόνας προορισμού.<p>"
+
+#: acquireimagedialog.cpp:261
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts' Group file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Η μορφή 'Joint Photographic Experts' αρχείου είναι μια καλή μορφή "
+"για τον Ιστό αλλά χρησιμοποιεί απωλεστική συμπίεση δεδομένων."
+"<p><b>PNG</b>: Η μορφή 'Portable Network Graphics' είναι μια μορφή με μη "
+"απωλεστική συμπίεση, κινητή, καλά συμπιεσμένη αποθήκευση ψηφιακών εικόνων. Η "
+"PNG προσφέρει μια αντικατάσταση χωρίς πατέντες της GIF καθώς επίσης μπορεί να "
+"αντικαταστήσει πολλές κοινές χρήσεις της TIFF. Η PNG σχεδιάστηκε για να "
+"λειτουργεί σωστά σε ενεργές εφαρμογές προβολής, όπως ο παγκόσμιος ιστός, έτσι "
+"είναι πλήρως ικανό για προοδευτική εμφάνιση εικόνων. Επίσης, η PNG μπορεί να "
+"αποθηκεύσει γάμμα και χρωματικά δεδομένα για βελτιωμένη χρωματική σύνθεση σε "
+"ετερογενείς πλατφόρμες."
+
+#: acquireimagedialog.cpp:269
+msgid ""
+"<p><b>TIFF</b>: the Tagged Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and by "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: Η μορφή Tagged Image File Format είναι ένα αρκετά παλιό πρότυπο "
+"το οποίο είναι πολύ δημοφιλές σήμερα. Είναι πολύ ευέλικτο και ανεξάρτητο "
+"πλατφόρμας που υποστηρίζεται από πλήθος εφαρμογών επεξεργασίας εικόνας και "
+"πραγματικά όλα τα προγράμματα έντυπης σχεδίασης της αγοράς."
+
+#: acquireimagedialog.cpp:273
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generates the "
+"biggest-sized text files for encoding images without losing quality."
+msgstr ""
+"<p><b>PPM</b>: η μορφή αρχείου Portable Pixel Map χρησιμοποιείται σαν ενδιάμεση "
+"μορφή αποθήκευσης πληροφοριών χρώματος bitmap. Τα αρχεία PPM μπορεί να είναι "
+"είτε δυαδικά είτε ASCII και να αποθηκεύσουν τιμές εικονοστοιχείων έως τα 24 "
+"bits σε μέγεθος. Αυτή η μορφή δημιουργεί τα μεγαλύτερα αρχεία κειμένου κατά την "
+"κωδικοποίηση εικόνων χωρίς την απώλεια ποιότητας."
+
+#: acquireimagedialog.cpp:277
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from the Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: Η μορφή αρχείου BitMaP είναι δημοφιλής μορφή από το περιβάλλον "
+"Win32. Αποθηκεύει με αντιστοιχία ή χωρίς αντιστοιχία RGB γραφικών δεδομένων με "
+"εικονοστοιχεία  1-, 4-, 8-, ή 24-bits σε μέγεθος. Τα δεδομένα μπορούν να "
+"αποθηκευτούν ανεπεξέργαστα ή συμπιεσμένα χρησιμοποιώντας τον αλγόριθμο 4-bit ή "
+"8-bit RLE. Η BMP είναι μια άριστη επιλογή για μια απλή μορφή bitmap που "
+"υποστηρίζει ένα μεγάλο εύρος RGB δεδομένων."
+
+#: acquireimagedialog.cpp:284
+msgid "Image file format:"
+msgstr "Μορφή αρχείου εικόνας:"
+
+#: acquireimagedialog.cpp:303
+msgid "Selection"
+msgstr "Επιλογή"
+
+#: acquireimagedialog.cpp:304
+msgid "Album selection"
+msgstr "Επιλογή άλμπουμ"
+
+#: acquireimagedialog.cpp:311
+msgid "Select Folder in Which to Save Target Image"
+msgstr "Επιλογή φακέλου στον οποίο θα αποθηκευτεί η εικόνα προορισμού"
+
+#: acquireimagedialog.cpp:320
+msgid "&Add New Folder"
+msgstr "&Προσθήκη νέου φακέλου"
+
+#: acquireimagedialog.cpp:322
+msgid "<p>Add a new folder."
+msgstr "<p>Προσθήκη ενός νέου φακέλου."
+
+#: acquireimagedialog.cpp:328
+msgid "Album Description"
+msgstr "Περιγραφή άλμπουμ"
+
+#: acquireimagedialog.cpp:332
+msgid "<p>The description of the current Album in the selection list."
+msgstr "<p>Η περιγραφή του τρέχοντος άλμπουμ στη λίστα επιλογής."
+
+#: acquireimagedialog.cpp:393
+#, fuzzy, c-format
+msgid "Caption: %1"
+msgstr "Συλλογή: %1"
+
+#: acquireimagedialog.cpp:394
+#, c-format
+msgid "Collection: %1"
+msgstr "Συλλογή: %1"
+
+#: acquireimagedialog.cpp:395
+#, c-format
+msgid "Date: %1"
+msgstr "Ημερομηνία: %1"
+
+#: acquireimagedialog.cpp:396
+#, c-format
+msgid "Items: %1"
+msgstr "Αντικείμενα: %1"
+
+#: acquireimagedialog.cpp:409
+msgid "You must select a target album for this image."
+msgstr "Πρέπει να επιλέξετε ένα άλμπουμ προορισμού για αυτή την εικόνα."
+
+#: acquireimagedialog.cpp:415
+msgid "You must provide a file name for this image."
+msgstr "Πρέπει να καθορίσετε ένα όνομα αρχείου για αυτή την εικόνα."
+
+#: acquireimagedialog.cpp:474
+msgid "Cannot write image file \"%1\"."
+msgstr "Αδύνατη η εγγραφή του αρχείου εικόνας \"%1\"."
+
+#: acquireimagedialog.cpp:483
+msgid "Could not upload image to \"%1\"."
+msgstr "Αδύνατη η αποστολή του αρχείου εικόνας \"%1\"."
+
+#: acquireimagedialog.cpp:493
+msgid ""
+"<qt>Error when informing the application about the new image. The error was: "
+"%1</qt>"
+msgstr ""
+"<qt>Σφάλμα πληροφόρησης της εφαρμογής σχετικά με τη νέα εικόνα. Το σφάλμα "
+"είναι: %1</qt>"
+
+#: plugin_acquireimages.cpp:65
+msgid "Scan Images..."
+msgstr "Σάρωση εικόνων..."
+
+#: plugin_acquireimages.cpp:73
+msgid "Screenshot..."
+msgstr "Στιγμιότυπο..."
+
+#: plugin_acquireimages.cpp:114
+msgid "No KDE scan-service available; check your system."
+msgstr ""
+"Η υπηρεσία σάρωσης του KDE' δεν είναι διαθέσιμη. Ελέγξτε το σύστημά σας."
+
+#: plugin_acquireimages.cpp:115
+msgid "KIPI's 'Scan Images' Plugin"
+msgstr "Το πρόσθετο 'Σάρωσης εικόνων' του KIPI"
+
+#: screenshotdialog.cpp:71
+msgid "Screenshot"
+msgstr "Στιγμιότυπο"
+
+#: screenshotdialog.cpp:72
+msgid "&New Snapshot"
+msgstr "&Νέο στιγμιότυπο"
+
+#: screenshotdialog.cpp:82
+msgid ""
+"This dialog will grab either your desktop or a single\n"
+"application window. If you grab a single window your mouse\n"
+"cursor will change into crosshairs; then, simply select the\n"
+"window with your mouse."
+msgstr ""
+"Αυτός ο διάλογος θα κάνει σύλληψη είτε της επιφάνειας εργασίας σας ή ενός "
+"απλού\n"
+"παραθύρου εφαρμογής. Αν κάνετε σύλληψη ενός απλού παραθύρου ο δρομέας του \n"
+"ποντικιού θα αλλάξει σε σκόπευτρο, και έπειτα απλά επιλέγετε το\n"
+"παράθυρο με το ποντίκι σας."
+
+#: screenshotdialog.cpp:90
+msgid "Grab the entire desktop"
+msgstr "Σύλληψη ολόκληρης της επιφάνειας εργασίας"
+
+#: screenshotdialog.cpp:91
+msgid ""
+"<p>If you enable this option, the entire desktop will be grabbed; otherwise, "
+"only the active windows."
+msgstr ""
+"<p>Αν ενεργοποιήσετε αυτή την επιλογή, θα γίνει σύλληψη ολόκληρης της "
+"επιφάνειας εργασίας, ενώ σε άλλη περίπτωση, μόνο τα ενεργά παράθυρα."
+
+#: screenshotdialog.cpp:97
+msgid "Hide all host application windows"
+msgstr "Απόκρυψη όλων των παραθύρων εφαρμογών"
+
+#: screenshotdialog.cpp:98
+msgid ""
+"<p>If you enable this option, all host application windows will be hidden "
+"during the grab operation."
+msgstr ""
+"<p>Αν ενεργοποιήσετε αυτή την επιλογή, όλα τα παράθυρα εφαρμογών θα κρυφτούν "
+"κατά τη λειτουργία σύλληψης."
+
+#: screenshotdialog.cpp:104
+msgid "Delay:"
+msgstr "Καθυστέρηση:"
+
+#: screenshotdialog.cpp:107
+msgid "<p>The delay in seconds before the grab operation is started."
+msgstr ""
+"<p>Η καθυστέρηση σε δευτερόλεπτα πριν την έναρξη της λειτουργίας σύλληψης."
+
+#: screenshotdialog.cpp:261
+msgid "Unable to take snapshot."
+msgstr "Αδυναμία λήψης στιγμιότυπου."
+
+#: screenshotdialog.cpp:262
+msgid "Screenshot Error"
+msgstr "Σφάλμα στιγμιότυπου"
+
+#~ msgid "Acquire Images Handbook"
+#~ msgstr "Εγχειρίδιο ανάκτησης εικόνων"
+
+#~ msgid "Comments:"
+#~ msgstr "Σχόλια:"
+
+#~ msgid "Comment: %1"
+#~ msgstr "Σχόλιο: %1"

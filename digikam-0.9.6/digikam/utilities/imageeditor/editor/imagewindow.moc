@@ -1,0 +1,281 @@
+/****************************************************************************
+** Digikam::ImageWindow meta object code from reading C++ file 'imagewindow.h'
+**
+** Created: Tue Jun 13 22:44:36 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imagewindow.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ImageWindow::className() const
+{
+    return "Digikam::ImageWindow";
+}
+
+QMetaObject *Digikam::ImageWindow::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ImageWindow( "Digikam::ImageWindow", &Digikam::ImageWindow::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ImageWindow::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImageWindow", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ImageWindow::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImageWindow", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ImageWindow::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = EditorWindow::staticMetaObject();
+    static const QUMethod slot_0 = {"slotForward", 0, 0 };
+    static const QUMethod slot_1 = {"slotBackward", 0, 0 };
+    static const QUMethod slot_2 = {"slotFirst", 0, 0 };
+    static const QUMethod slot_3 = {"slotLast", 0, 0 };
+    static const QUMethod slot_4 = {"slotFilePrint", 0, 0 };
+    static const QUMethod slot_5 = {"slotLoadCurrent", 0, 0 };
+    static const QUMethod slot_6 = {"slotDeleteCurrentItem", 0, 0 };
+    static const QUMethod slot_7 = {"slotDeleteCurrentItemPermanently", 0, 0 };
+    static const QUMethod slot_8 = {"slotDeleteCurrentItemPermanentlyDirectly", 0, 0 };
+    static const QUMethod slot_9 = {"slotTrashCurrentItemDirectly", 0, 0 };
+    static const QUMethod slot_10 = {"slotChanged", 0, 0 };
+    static const QUParameter param_slot_11[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotUndoStateChanged", 3, param_slot_11 };
+    static const QUMethod slot_12 = {"slotUpdateItemInfo", 0, 0 };
+    static const QUMethod slot_13 = {"slotContextMenu", 0, 0 };
+    static const QUMethod slot_14 = {"slotRevert", 0, 0 };
+    static const QUParameter param_slot_15[] = {
+	{ "tagID", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_15 = {"slotAssignTag", 1, param_slot_15 };
+    static const QUParameter param_slot_16[] = {
+	{ "tagID", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"slotRemoveTag", 1, param_slot_16 };
+    static const QUMethod slot_17 = {"slotAssignRatingNoStar", 0, 0 };
+    static const QUMethod slot_18 = {"slotAssignRatingOneStar", 0, 0 };
+    static const QUMethod slot_19 = {"slotAssignRatingTwoStar", 0, 0 };
+    static const QUMethod slot_20 = {"slotAssignRatingThreeStar", 0, 0 };
+    static const QUMethod slot_21 = {"slotAssignRatingFourStar", 0, 0 };
+    static const QUMethod slot_22 = {"slotAssignRatingFiveStar", 0, 0 };
+    static const QUParameter param_slot_23[] = {
+	{ "rating", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_23 = {"slotAssignRating", 1, param_slot_23 };
+    static const QUParameter param_slot_24[] = {
+	{ 0, &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod slot_24 = {"slotFileMetadataChanged", 1, param_slot_24 };
+    static const QUParameter param_slot_25[] = {
+	{ "theme", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_25 = {"slotChangeTheme", 1, param_slot_25 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotForward()", &slot_0, QMetaData::Private },
+	{ "slotBackward()", &slot_1, QMetaData::Private },
+	{ "slotFirst()", &slot_2, QMetaData::Private },
+	{ "slotLast()", &slot_3, QMetaData::Private },
+	{ "slotFilePrint()", &slot_4, QMetaData::Private },
+	{ "slotLoadCurrent()", &slot_5, QMetaData::Private },
+	{ "slotDeleteCurrentItem()", &slot_6, QMetaData::Private },
+	{ "slotDeleteCurrentItemPermanently()", &slot_7, QMetaData::Private },
+	{ "slotDeleteCurrentItemPermanentlyDirectly()", &slot_8, QMetaData::Private },
+	{ "slotTrashCurrentItemDirectly()", &slot_9, QMetaData::Private },
+	{ "slotChanged()", &slot_10, QMetaData::Private },
+	{ "slotUndoStateChanged(bool,bool,bool)", &slot_11, QMetaData::Private },
+	{ "slotUpdateItemInfo()", &slot_12, QMetaData::Private },
+	{ "slotContextMenu()", &slot_13, QMetaData::Private },
+	{ "slotRevert()", &slot_14, QMetaData::Private },
+	{ "slotAssignTag(int)", &slot_15, QMetaData::Private },
+	{ "slotRemoveTag(int)", &slot_16, QMetaData::Private },
+	{ "slotAssignRatingNoStar()", &slot_17, QMetaData::Private },
+	{ "slotAssignRatingOneStar()", &slot_18, QMetaData::Private },
+	{ "slotAssignRatingTwoStar()", &slot_19, QMetaData::Private },
+	{ "slotAssignRatingThreeStar()", &slot_20, QMetaData::Private },
+	{ "slotAssignRatingFourStar()", &slot_21, QMetaData::Private },
+	{ "slotAssignRatingFiveStar()", &slot_22, QMetaData::Private },
+	{ "slotAssignRating(int)", &slot_23, QMetaData::Private },
+	{ "slotFileMetadataChanged(const KURL&)", &slot_24, QMetaData::Private },
+	{ "slotChangeTheme(const QString&)", &slot_25, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalFileDeleted", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalFileAdded", 1, param_signal_1 };
+    static const QUParameter param_signal_2[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"signalFileModified", 1, param_signal_2 };
+    static const QUParameter param_signal_3[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod signal_3 = {"signalURLChanged", 1, param_signal_3 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalFileDeleted(const KURL&)", &signal_0, QMetaData::Public },
+	{ "signalFileAdded(const KURL&)", &signal_1, QMetaData::Public },
+	{ "signalFileModified(const KURL&)", &signal_2, QMetaData::Public },
+	{ "signalURLChanged(const KURL&)", &signal_3, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ImageWindow", parentObject,
+	slot_tbl, 26,
+	signal_tbl, 4,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ImageWindow.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ImageWindow::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ImageWindow" ) )
+	return this;
+    return EditorWindow::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalFileDeleted
+void Digikam::ImageWindow::signalFileDeleted( const KURL& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalFileAdded
+void Digikam::ImageWindow::signalFileAdded( const KURL& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalFileModified
+void Digikam::ImageWindow::signalFileModified( const KURL& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalURLChanged
+void Digikam::ImageWindow::signalURLChanged( const KURL& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 3 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+bool Digikam::ImageWindow::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotForward(); break;
+    case 1: slotBackward(); break;
+    case 2: slotFirst(); break;
+    case 3: slotLast(); break;
+    case 4: slotFilePrint(); break;
+    case 5: slotLoadCurrent(); break;
+    case 6: slotDeleteCurrentItem(); break;
+    case 7: slotDeleteCurrentItemPermanently(); break;
+    case 8: slotDeleteCurrentItemPermanentlyDirectly(); break;
+    case 9: slotTrashCurrentItemDirectly(); break;
+    case 10: slotChanged(); break;
+    case 11: slotUndoStateChanged((bool)static_QUType_bool.get(_o+1),(bool)static_QUType_bool.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 12: slotUpdateItemInfo(); break;
+    case 13: slotContextMenu(); break;
+    case 14: slotRevert(); break;
+    case 15: slotAssignTag((int)static_QUType_int.get(_o+1)); break;
+    case 16: slotRemoveTag((int)static_QUType_int.get(_o+1)); break;
+    case 17: slotAssignRatingNoStar(); break;
+    case 18: slotAssignRatingOneStar(); break;
+    case 19: slotAssignRatingTwoStar(); break;
+    case 20: slotAssignRatingThreeStar(); break;
+    case 21: slotAssignRatingFourStar(); break;
+    case 22: slotAssignRatingFiveStar(); break;
+    case 23: slotAssignRating((int)static_QUType_int.get(_o+1)); break;
+    case 24: slotFileMetadataChanged((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 25: slotChangeTheme((const QString&)static_QUType_QString.get(_o+1)); break;
+    default:
+	return EditorWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::ImageWindow::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalFileDeleted((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 1: signalFileAdded((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 2: signalFileModified((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 3: signalURLChanged((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    default:
+	return EditorWindow::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ImageWindow::qt_property( int id, int f, QVariant* v)
+{
+    return EditorWindow::qt_property( id, f, v);
+}
+
+bool Digikam::ImageWindow::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

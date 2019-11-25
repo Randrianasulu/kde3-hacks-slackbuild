@@ -1,0 +1,218 @@
+<sect1 id="components.kbluetoothd">
+<title
+>kbluetoothd: de kern van het KDE Bluetooth-framework</title>
+<para
+>Kbluetoothd is het centrale gedeelte van het KDE Bluetooth-framework. Het draait normaliter continu in uw systeemvak en start andere diensten, zoals de OBEX-server of Bemused, op afroep. Het systeemvakpictogram vertelt u over de Bluetooth-verbindingen die gaande zijn en geeft u ook snelle toegang tot de configuratie van de diensten, recent gebruikte diensten, waarneembare apparaten etc. </para>
+<para
+>Programmeurs die hun programma willen integreren in kbluetooth kunnen meer informatie vinden in de <link linkend="developers.kbluetoothd"
+>programmeursectie</link
+>. </para>
+
+<sect2>
+<title
+>Kbluetoothd starten</title>
+<para
+>U kunt Kbluetoothd starten door <command
+>kbluetoothd</command
+> in te typen op de commandoprompt of door het programma te starten vanuit het K-menu (normaliter Systeem->kbluetoothd). </para
+><para
+>Kbluetoothd plaatst een pictogram in het systeemvak. Als u dat liever niet hebt, dan kunt u de optie "Altijd zichtbaar" in het contextmenu van het systeemvakpictogram uit zetten. Kbluetoothd draait dan geheel op de achtergrond zonder systeemvakpictogram, ook nadat het opnieuw is gestart. Om het pictogram terug te halen start u kbluetoothd nogmaals op. Als het pictogram uitgeschakeld is, dan verschijnt het tijdens een Bluetooth-verbinding weer in het systeemvak. </para>
+<para
+>Als Kbluetoothd draait op het moment dat u uw computer uitzet, dan wordt het automatisch weer gestart bij de volgende keer dat u zich aanmeldt. Om dat te voorkomen sluit u kbluetooth af en geeft u in de dialoog die geopend wordt aan dat u niet wilt dat het programma bij de volgende keer dat u zich aanmeldt wordt gestart.</para>
+ 
+</sect2>
+
+<sect2>
+<title
+>Wat doet kbluetoothd?</title>
+<para
+>De belangrijkste functie van kbluetoothd is de Bluetooth Metaserver. Aangezien kbluetooth continu draait observeert het ook uw Bluetooth-adapter, vertelt het u wanneer er verbinding is en houdt het naamverzoeken bij. Het idee is dat kbluetoothd het enige Bluetooth-programma is dat continu moet draaien en dat u via dit programma de andere Bluetooth-toepassingen kunt aanroepen. </para>
+<sect3>
+<title
+>De metaserver</title>
+<para
+>Als u weet wat de functie van inetd op een Linux-computer is, dan heeft u al een idee waar de metaserver van kbluetooth voor dient: het wacht op inkomende verbindingen en start de bijhorende hulpprogramma's wanneer nodig. U hoeft dus bijvoorbeeld niet continu een OBEX-server te laten draaien, als iemand u een bestand via OBEX verstuurt, dan wordt de OBEX-server automatisch gestart. </para>
+
+<para
+>Er zijn verschillende redenen om een dergelijke omleiding te gebruiken: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Het vermindert de geheugenbehoefte als u meerdere diensten gebruikt. Het KDE Bluetooth-framework komt momenteel met vier dienstprogramma's: de OBEX-server, de handsfree-client, de Bemused-server en een serieel chatprogramma. Terwijl u sommige van deze diensten zelden zult gebruiken kunt u ze gewoon actief laten zonder dat het u geheugen kost. </para>
+</listitem>
+
+<listitem>
+<para
+>Uw systeemvak wordt niet volgepropt met veel zelden gebruikte pictogrammen. </para>
+</listitem>
+
+<listitem>
+<para
+>Het verbetert de veiligheid en maakt de toegangscontrole beheersbaar. Kbluetoothd opent standaard een dialoog waarin om toestemming wordt gevraagd als er een inkomende verbinding is. De gebruiker kan dit dialoog omzeilen door permanent verbindingen voor elke dienst of apparaat toe te staan of te weigeren. Dit geeft elk programma dat door kbluetoothd wordt beheerd gratis toegangscontrole. </para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para
+>-->
+</listitem>
+
+<listitem>
+<para
+>Het heeft het potentieel om Bluetooth-diensten betrouwbaarder te maken. Elke dienst wordt gestart voor elke nieuwe verbinding. Dus als een dienst onverwacht wordt beëindigd, dan kunt u het gewoon opnieuw proberen zonder dat u iets hoeft te herstarten. </para>
+<para
+>Voor een webserver is een dergelijke is een dergelijke constructie een flessenhals, maar in het geval van Bluetooth duurt het opzetten van een verbinding zowiezo al enkele seconden en wordt elke actie gebruikelijk door de gebruiker gestart. Dit maakt dat het gebruik van een metaserver geen problemen oplevert. </para>
+</listitem>
+
+<listitem>
+<para
+>Het registreren van diensten met de SDP-server is heel eenvoudig. Zie de <link linkend="developers.kbluetoothd"
+>programmeurssectie</link
+> voor hoe een door kbluetoothd beheerd programma zich registreert bij de SDP-server. </para>
+</listitem>
+
+<listitem>
+<para
+>Eenvoudige dienstprogramma's - zelfs scripts - kunnen gebruikt worden om een Bluetooth-dienst te implementeren zonder dat ze Bluetooth-gerelateerde functies hoeven te gebruiken. </para>
+</listitem>
+</itemizedlist>
+<para
+>U kunt de diensten die kbluetoothd gebruikt aan-/uitzetten in de bijhorende configuratiemodule, tabblad "Lokale diensten". In deze module kunt u ook dienst-specifieke opties instellen door een dienst te selecteren en op de knop "Instellen..." te klikken. </para>
+<para
+>Onder tabblad "Bevestiging" kunt u bepalen hoe Kbluetoothd reageert op inkomende verbindingen. </para>
+</sect3>
+
+
+<sect3>
+<title
+>De apparaatwaarnemingsdienst</title>
+<para
+>Voor veel apparaten is het belangrijk om te weten of een bepaald apparaat momenteel bereikbaar is of niet, of om een notificatie te krijgen als een apparaat binnen het bereik komt of buiten het bereik raakt. Anders dan bij USB, waar het Hotplug-framework u informeert over nieuwe apparaten, is een dergelijke dienst niet beschikbaar voor bluetooth. </para>
+
+<para
+>kbluetoothd vult dit gat met de Apparaatwaarnemingsdienst. Het zoekt periodiek naar apparaten binnen het bereik en houdt een lijst bij met apparaten die momenteel bereikbaar zijn. Om toegang tot een gevonden apparaat te krijgen, klik met de rechter muisknop op het systeemvakpictogram en kijk in het menu "Recent geopend". Dit menu bevat uit een sectie met recentelijk gebruikte diensten (zoals "MijnTelefoon OBEX FTP") en - als er al apparaten waargenomen zijn - een tweede sectie erboven met een lijst van apparaten. Klik op een van de apparaten om de aangeboden diensten ervan in Konqueror te bekijken. </para>
+<para
+>In de configuratiemodule van kbluetoothd kunt u bepalen of en hoe vaak kbluetoothd zoekt naar apparaten ("Lijst met waarneembare apparaten periodiek bijwerken"). Wij adviseren u om geen interval kleiner dan een minuut te gebruiken. Anders kan het gebeuren dat andere programma's problemen ondervinden bij het zoeken naar apparaten. Dat komt doordat de meeste apparaten niet verwachten dat andere programma's bluetooth op hetzelfde moment gebruiken. </para>
+<para
+>Veel apparaten zijn standaard <phrase
+>niet-waarneembaar</phrase
+> omwille van privacy/veiligheidsredenen. In dat geval zal het apparaat niet worden ontdekt als u naar apparaten zoekt. In plaats daarvan dient kbluetoothd deze apparaten individueel te benaderen. U kunt een apparaat aan de lijst met niet-waarneembare apparaten voegen door te klikken op de knop "Additionele zoekopties voor niet-waarneembare apparaten". Houd er rekening mee dat u het apparaat tijdelijk op 'waarneembaar' dient te zetten of diens hardware-adres dient te kennen om het toe te kunnen voegen aan de lijst. </para>
+<para
+>Dit voorkomt gedurende 30 seconden <emphasis
+>per apparaat</emphasis
+> dat andere programma's naar apparaten gaan zoeken of zelfs een verbinding kunnen opzetten naar een ander apparaat als het apparaat momenteel niet bereikbaar is. U dient daarom hier een lange interval op te geven. 10 minuten is een redelijke waarde. Probeer het eens uit en bepaal hoe klein de interval kan zijn voordat u er last van krijgt. </para>
+
+<para
+>Alleen een lijst met momenteel waarneembare apparaten hebben is op zich niet echt bruikbaar. In plaats daarvan kunt u de apparaatwaarnemingsdienst gebruiken om <phrase
+>Waarneemtaken</phrase
+> uit te voeren als een apparaat het bereik binnenkomt of verlaat. Deze waarneemtaken zijn eenvoudige scripts. U kunt ook uw eigen script schrijven - zie de programmeurssectie voor <link linkend="developers.kbluetoothd.discovery"
+>meer informatie over waarneemscripts</link
+>. Kbluetoothd levert zelf enkele scripts, zoals: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Waarneemprotocol (discovery_protocol)</term>
+<listitem
+><para
+>Dit script maakt een HMTL-beschrijving met wat technische informatie voor elk apparaat wanneer die voor het eerst is waargenomen. U kunt dit script gebruiken als u nieuwsgierig bent wie er in uw buurt nog meer Bluetooth gebruiken. Dit script continu actief houden kan geen kwaad, aangezien het alleen toegang tot een apparaat wil als het voor het eerst is waargenomen of nadat u de bijhorende HTML-pagina hebt verwijderd. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kopete_AutoAway</term>
+<listitem
+><para
+>Dit zal de aanwezigheidsstatus van kopete instellen aan de hand van of u (en uw telefoon) waarneembaar is of niet. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Fotokopie (photo_copy)</term>
+<listitem
+><para
+>Dit script zal een map op uw telefoon via kio_obex controleren op nieuwe bestanden en ze vervolgens kopiëren naar een lokale map. Het hernoemt ze ook aan de hand van de datum van het bestand. Dit script is geschreven voor een Nokia 6230. Als u het voor uw eigen telefoon wilt gebruiken, dan dient u waarschijnlijk het script op enkele plekken aan te passen. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Schermbeveiliging (Screensaver)</term>
+<listitem
+><para
+>Dit start of stop de schermbeveiliging/vergrendeling telkens als een van de geobserveerde apparaten respectievelijk buiten of binnen het bereik is. </para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>De meeste scripts dienen te worden gewijzigd voordat ze correct werken. Als u op Instellen klikt wordt meestal KEdit geopend waarin u het instellingengedeelte van het script kunt bewerken. Let op: <emphasis
+>u dient mogelijk het aantal gerapporteerde apparaten voor elke taak te bewerken</emphasis
+>. Dit om te voorkomen dat de scripts worden uitgevoerd als iemand anders met een Bluetooth-telefoon in uw buurt komt. </para>
+
+</sect3>
+
+<sect3>
+<title
+>De lijst met "Meest recent gebruikte diensten"</title>
+<para
+>U hebt snelle toegang tot de diensten die u eerder hebt gebruikt via het submenu "Recent geopend" van het systeemvakpictogram van Kbluetoothd. Als u al eens eerder bestanden naar uw mobiel genaamd "MijnTelefoon" hebt gestuurd via kbtobexclient, dan zult u daar een menuoptie genaamd "MijnTelefoon OBEX Push-client". Deze start kbtobexclient en maakt meteen verbinding met uw telefoon zonder tijdrovende zoekprocessen. </para>
+<para
+>Onthoud dat kbluetooth alle recentelijk gebruikte apparaten toont, ongeacht of het bijhorende apparaat op dat moment bereikbaar is of niet. </para>
+<para
+>De respectievelijke toepassing dient deze functie te ondersteunen. </para>
+</sect3>
+
+<sect3>
+<title
+>Verbindingsdetails</title>
+<para
+>U kunt aan het systeemvakpictogram zien of er een Bluetooth-verbinding gaande is. Het knippert als er een verbinding wordt opgezet en is blauw als de verbinding actief is. </para>
+<para
+>U kunt meer informatie over de huidige verbinding krijgen door met de rechter muisknop op het systeemvakpictogram te klikken en menuoptie "Verbindingsdetails..." te selecteren. </para>
+<para
+>Wat kbluetooth hier toont zijn ACL-koppelingen, geen RFComm-verbindingen. Als u met meerdere programma's verbonden bent (zoals handsfree en Bemused), dan wordt dat weergegeven als één verbinding, aangezien er slechts 1 ACL-koppeling met een apparaat op hetzelfde moment kan worden aangelegd. </para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title
+>kbluetoothd instellen</title>
+<para
+>Normaliter werken Kbluetoothd en de diensten die het beheert zonder verdere configuratie. Toch zijn er enkele opties beschikbaar die u kunt veranderen. Om Kbluetoothd in te stellen kunt u het KDE Configuratiecentrum gebruiken: <guimenuitem
+>Internet en netwerk->Bluetooth->Bluetooth-diensten</guimenuitem
+>, of klik met de rechtermuis op het systeemvakpictogram en selecteer <guimenuitem
+>Configuratie -> Diensten instellen...</guimenuitem
+>. </para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title
+>Bevestiging van inkomende verbindingen</title>
+<para
+>In dit tabblad kunt u de bevestigingsinstellingen voor inkomende verbindingen wijzigen. Standaard zal Kbluetoothd een bevestigingsdialoog openen voordat het eigenlijke dienstprogramma (zoals de OBEX Push-server) wordt gestart. Hier kunt u de bevestigingsdialoog voor sommige apparaten en diensten uitschakelen, of Kbluetoothd verzoeken om inkomende verbindingen stilzwijgend te weigeren. </para>
+<para
+>Nieuwe apparaatingangen worden toegevoegd als u het selectievakje "Altijd accepteren" aanzet in een bevestigingsdialoog. </para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title
+>Lokale diensten</title>
+<para
+>In dit tabblad kunt u de verschillende Bluetooth-diensten die door Kbluetoothd worden beheerd (de)activeren. Sommige diensten, zoals de Bemused-server, bieden enkele configuratieopties. In dat geval zal de knop <guibutton
+>Instellen...</guibutton
+> actief worden als u die dienst selecteert. </para>
+<para
+>Aangezien Kbluetoothd automatisch rfcomm-kanalen toewijst aan de diensten, kan het gebeuren dat het kanaal dat voor een dienst wordt gebruikt verandert als u andere bluetooth-diensten gebruikt. Als u wilt weten welk kanaal is toegewezen aan een bepaalde dienst, dan kunt u dat in dit dialoog terugvinden. </para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

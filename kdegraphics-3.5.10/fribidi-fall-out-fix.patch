@@ -1,0 +1,22 @@
+--- kdegraphics-3.5.10/ksvg/impl/libs/libtext2path/src/Converter.cpp.orig	2015-09-11 18:50:44.652000000 +0000
++++ kdegraphics-3.5.10/ksvg/impl/libs/libtext2path/src/Converter.cpp	2015-09-11 18:55:22.564000000 +0000
+@@ -17,13 +17,19 @@
+     the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+     Boston, MA 02110-1301, USA.
+ */
++#include "config.h"
+ 
+ #include <math.h>
+ 
+ #include "myboost/shared_ptr.hpp"
+ #include <fontconfig/fontconfig.h>
+ #include <fribidi/fribidi.h>
++
++#ifndef FRIBIDI_NEW_FILENAME
+ #include <fribidi/fribidi_types.h>
++#else
++#include <fribidi/fribidi-types.h>
++#endif
+ 
+ #include "Font.h"
+ #include "Glyph.h"

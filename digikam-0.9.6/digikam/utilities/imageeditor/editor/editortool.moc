@@ -1,0 +1,240 @@
+/****************************************************************************
+** Digikam::EditorTool meta object code from reading C++ file 'editortool.h'
+**
+** Created: Tue Jun 13 22:44:36 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "editortool.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::EditorTool::className() const
+{
+    return "Digikam::EditorTool";
+}
+
+QMetaObject *Digikam::EditorTool::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__EditorTool( "Digikam::EditorTool", &Digikam::EditorTool::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::EditorTool::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorTool", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::EditorTool::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorTool", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::EditorTool::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUMethod slot_0 = {"slotTimer", 0, 0 };
+    static const QUMethod slot_1 = {"slotOk", 0, 0 };
+    static const QUMethod slot_2 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_3 = {"slotInit", 0, 0 };
+    static const QUMethod slot_4 = {"slotLoadSettings", 0, 0 };
+    static const QUMethod slot_5 = {"slotSaveAsSettings", 0, 0 };
+    static const QUMethod slot_6 = {"slotResetSettings", 0, 0 };
+    static const QUMethod slot_7 = {"slotEffect", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotTimer()", &slot_0, QMetaData::Protected },
+	{ "slotOk()", &slot_1, QMetaData::Protected },
+	{ "slotCancel()", &slot_2, QMetaData::Protected },
+	{ "slotInit()", &slot_3, QMetaData::Protected },
+	{ "slotLoadSettings()", &slot_4, QMetaData::Protected },
+	{ "slotSaveAsSettings()", &slot_5, QMetaData::Protected },
+	{ "slotResetSettings()", &slot_6, QMetaData::Protected },
+	{ "slotEffect()", &slot_7, QMetaData::Protected }
+    };
+    static const QUMethod signal_0 = {"okClicked", 0, 0 };
+    static const QUMethod signal_1 = {"cancelClicked", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "okClicked()", &signal_0, QMetaData::Public },
+	{ "cancelClicked()", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::EditorTool", parentObject,
+	slot_tbl, 8,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__EditorTool.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::EditorTool::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::EditorTool" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+// SIGNAL okClicked
+void Digikam::EditorTool::okClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL cancelClicked
+void Digikam::EditorTool::cancelClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+bool Digikam::EditorTool::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotTimer(); break;
+    case 1: slotOk(); break;
+    case 2: slotCancel(); break;
+    case 3: slotInit(); break;
+    case 4: slotLoadSettings(); break;
+    case 5: slotSaveAsSettings(); break;
+    case 6: slotResetSettings(); break;
+    case 7: slotEffect(); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::EditorTool::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: okClicked(); break;
+    case 1: cancelClicked(); break;
+    default:
+	return QObject::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::EditorTool::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool Digikam::EditorTool::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *Digikam::EditorToolThreaded::className() const
+{
+    return "Digikam::EditorToolThreaded";
+}
+
+QMetaObject *Digikam::EditorToolThreaded::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__EditorToolThreaded( "Digikam::EditorToolThreaded", &Digikam::EditorToolThreaded::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::EditorToolThreaded::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorToolThreaded", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::EditorToolThreaded::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorToolThreaded", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::EditorToolThreaded::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = EditorTool::staticMetaObject();
+    static const QUMethod slot_0 = {"slotAbort", 0, 0 };
+    static const QUMethod slot_1 = {"slotOk", 0, 0 };
+    static const QUMethod slot_2 = {"slotCancel", 0, 0 };
+    static const QUMethod slot_3 = {"slotEffect", 0, 0 };
+    static const QUMethod slot_4 = {"slotResized", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotAbort()", &slot_0, QMetaData::Public },
+	{ "slotOk()", &slot_1, QMetaData::Protected },
+	{ "slotCancel()", &slot_2, QMetaData::Protected },
+	{ "slotEffect()", &slot_3, QMetaData::Protected },
+	{ "slotResized()", &slot_4, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::EditorToolThreaded", parentObject,
+	slot_tbl, 5,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__EditorToolThreaded.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::EditorToolThreaded::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::EditorToolThreaded" ) )
+	return this;
+    return EditorTool::qt_cast( clname );
+}
+
+bool Digikam::EditorToolThreaded::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotAbort(); break;
+    case 1: slotOk(); break;
+    case 2: slotCancel(); break;
+    case 3: slotEffect(); break;
+    case 4: slotResized(); break;
+    default:
+	return EditorTool::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::EditorToolThreaded::qt_emit( int _id, QUObject* _o )
+{
+    return EditorTool::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::EditorToolThreaded::qt_property( int id, int f, QVariant* v)
+{
+    return EditorTool::qt_property( id, f, v);
+}
+
+bool Digikam::EditorToolThreaded::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

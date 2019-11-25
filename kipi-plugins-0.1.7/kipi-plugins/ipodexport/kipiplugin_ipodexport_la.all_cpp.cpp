@@ -1,0 +1,10 @@
+#define KDE_USE_FINAL 1
+#include "plugin_ipodexport.cpp"
+#include "ipodexportdialog.cpp"
+#include "ipodheader.cpp"
+#include "ipodlistitem.cpp"
+#include "imagelist.cpp"
+#include "plugin_ipodexport.moc.cpp"
+#include "ipodexportdialog.moc.cpp"
+#include "imagelist.moc.cpp"
+#include "ipodheader.moc.cpp"

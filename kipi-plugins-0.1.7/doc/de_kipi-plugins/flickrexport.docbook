@@ -1,0 +1,180 @@
+<chapter id="flickrexport">
+<chapterinfo>
+
+<title
+>Exportiere zu Flickr</title>
+
+<authorgroup>
+    <author
+><firstname
+>Vardhman</firstname
+><surname
+>Jain</surname
+> <affiliation
+><address
+><email
+>vardhman at students dot iiit dot net</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+  <para
+>Das Modul "Exportiere zu Flickr" erlaubt es Fotos zum <ulink url="http://www.flickr.com"
+>Flickr</ulink
+> Webdienst hochzuladen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KIPI</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Einführung</title>
+
+  <para
+>Flickr ist eine Online Fotoverwaltung im Internet. Mit Flickr ist es möglich seine Fotos den Menschen zukommen zu lassen, die einem wichtig sind. Sie können Ihre Lieblingsfotos der Welt zeigen, die Fotos Ihres Kamerahandys online stellen und Ihre Fotos sicher und privat Ihren Freunden und Ihrer Familie auf der ganzen Welt zeigen. </para>
+  
+  <para
+>Das Modul "Exportiere zu Flickr" kann dazu benutzt werden um Bilder von Ihrem Rechner auf einen Flickr Server im Internet hochzuladen. </para>
+
+<sect1 id="using-plugin-flickrexport"
+> 
+  <title
+>Modul Initialisierung beim ersten Zugriff</title>
+  
+  <para
+>Wenn Sie das Modul zum erstenmal benutzen werden Sie durch den Prozess der Generierung eines Tokens geführt. Dieser wird für Ihre Authentifizierung benutzt. Er ist also quasi Ihr Ausweis zu Flickr. Ein Browser wird gestartet, damit Sie sich bei <ulink url="http://www.flickr.com"
+>Flickr</ulink
+> anmelden können. </para>
+  
+  <figure>
+      <title
+>Die erste Anmeldung</title>
+      <graphic srccredit="The First Sign Up Dialog Preview" fileref="flickrexportsignup.png"/>
+  </figure>
+  
+  <para
+>Nach der erfolgreichen Anmeldung kann das Modul Fotos zur Flickr Webseite senden. Ihnen wird die folgende Seite nach einer erfolgreichen Anmeldung präsentiert. </para>
+  
+  <figure>
+      <title
+>Die Seite für eine erfolgreiche Anmeldung</title>
+      <graphic srccredit="The Successfull Signup Flickr page" fileref="flickrexportauthenticated.png"/>
+  </figure>
+  
+  <para
+>Schließen Sie einfach das Browser Fenster und kehren Sie zum Programm zurück. Nachdem Sie auf <guilabel
+>Ja</guilabel
+> gedrückt haben, bekommen Sie den Dialog zum Hochladen von Fotos nach Flickr angezeigt. Dieser wird im nächsten Abschnitt angezeigt. </para>
+
+</sect1>
+
+<sect1 id="uploading-using-plugin-flickrexport"
+> 
+<title
+>Die normale Benutzung des Moduls</title>
+
+  
+  <para
+>Wenn das Modul "Exportiere zu Flickr" zum zweitenmal gestartet wird, werden Sie mit dem folgenden Dialog, der die aktuelle Zugriffsberechtigungen die das Modul anzeigt, begrüßt. Zum Hochladen benötigen Sie Schreibberechtigungen. Das Modul unterstützt zurzeit auch keine anderen Berechtigungen. Sie werden gefragt werden, ob Sie mit diesen Berechtigungen fortfahren wollen. </para>
+     <figure>
+      <title
+>Die aktuelle Berechtigung</title>
+      <graphic srccredit="The " fileref="flickrexportcontinue.png"/>
+  </figure>
+
+      <para
+>Nach dem Sie mit <guilabel
+>Ja</guilabel
+> bestätigt haben, bekommen Sie das Fenster zum hochladen von Fotos angezeigt. </para>
+   <para
+>Falls Sie <guilabel
+>Nein</guilabel
+> wählen wird die Authentifizierung wiederholt. </para>
+  
+      <para
+>Das Hauptfenster zum Hochladen wird unten angezeigt. </para>
+  
+  	
+  <figure>
+      <title
+>Das Hauptfensters zum Hochladen</title>
+      <graphic srccredit="The Main Uploading Dialog Preview" fileref="flickrexportuploaddialog.png"/>
+  </figure>
+  
+  <para
+>Der Knopf <guilabel
+>Fotos hinzufügen</guilabel
+> sollte einmal gedrückt werden nachdem Sie alle anderen Optionen gesetzt haben. Mit diesem Knopf können Sie in einer Dateiauswahlbox die Fotos auswählen die Sie hochladen wollen. Wenn Sie auf den Ok Knopf drücken startet das Hochladen der Fotos zum Flickr Server. </para>
+  
+
+  <para
+>Das <guilabel
+>Stichworte</guilabel
+> Feld kann mit einer durch Komma getrennten Liste von Wörtern gefüllt werden. Diese werden dem Bild als Stichworte während des Hochladens hinzugefügt. </para>
+  
+  <para
+>Mit den Optionen <guilabel
+>Öffentlich</guilabel
+>, <guilabel
+>Freunde</guilabel
+> und <guilabel
+>Famillie</guilabel
+> können Sie die Zugriffsberechtigungen auf Ihre Bilder einstellen. Standardmäßig sind die Fotos als Privat eingestuft. </para>
+  
+  <para
+>Wenn Sie die Option <guilabel
+>Ändere die Größe der Fotos vor dem Hochladen</guilabel
+> wählen, werden die Fotos vor dem Hochladen in der Größe geändert. Die Größe wird aus dem bei <guilabel
+>Maximale Größe</guilabel
+> eingetragenen Wert genommen. </para>
+  
+  <para
+>Die <guilabel
+>Maximale Größe</guilabel
+> kann benutzt werden, um die maximale Höhe der Bilder festzulegen. Die Größe wird so geändert das das Seitenverhältnis konstant bleibt. </para>
+  
+ <figure>
+      <title
+>Der Fortschrittsbalken für das Hochladen</title>
+      <graphic srccredit="The Uploading Progress Dialog Preview" fileref="flickrexportuploading.png"/>
+  </figure>
+  <para
+>Sie können den <guilabel
+>Abbruch</guilabel
+> Knopf benutzen, um das Hochladen der Fotos abzubrechen. </para>
+
+<para
+>Zum Schluss können Sie die hochgeladenen Fotos auf der <ulink url="http://www.flickr.com"
+>Flickr</ulink
+> Webseite ansehen. </para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: ts
+End:
+-->

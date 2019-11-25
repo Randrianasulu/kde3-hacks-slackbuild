@@ -1,0 +1,29 @@
+<sect1 id="components.kbtserialchat">
+<title
+>kbtserialchat: väga lihtne vestlusvahend</title>
+<para
+>Abivahend kbtserialchat on väga lihtne vestlusklient ja -server. Selle peamine eesmärk on olla abiks silumisel ning näiteks, kuidas kirjutada Bluetoothi serverit, mida kbluetoothd suudaks hallata, ja klienti, mida <link linkend="components.kio_sdp"
+>SDP KIO moodul</link
+> suudaks käivitada. </para>
+
+<sect2>
+<title
+>Vestlusvahendi kasutamine</title>
+<para
+>Kbtserialchat kasutab jadapordi protokolli, mistõttu seda käivitades näidatakse kõiki seadmeid, mis pakuvad jadapordi profiili. See tähendab nii arvuteid, kuhu on paigaldatud KDE Bluetoothi raamistik, kui ka antud profiili toetavaid mobiiltelefone. </para>
+<para
+>Muu kbtserialchat serveriga ühendust võttes ilmub kbtserialchat teises süsteemis nähtavale ning on võimalik vahetada lihtsaid tekstisõnumeid. Samuti saab ühendust võtta Bluetooth telefonide jadapordiga ja saata mis tahes AT-käske. Näiteks numbri valimiseks anna käsk <command
+>ATD&lt;numberv&gt;</command
+>. </para>
+<para
+>Kuigi pole mingit erilist mõtet võtta kbtserialchat abil ühendust jadapordiga seadmel, mis kasutab jadaporti binaarandmete vahetamiseks, on selle abil võimalik ühenduda nii jadaporditeenustega kui ka iga muu teenusega, mille aluseks on Rfcomm, näiteks handsfree või peakomplekti profiil. Need teenused ei ole käivitamise ajal dialoogis kirjas, seepärast tasub kasutada järgmist võtet: tutvu seadme teenustega kio_sdp vahendusel (URL <ulink url="sdp:/"
+></ulink
+>) ning selle asemel, et lihtsalt teenusele klõpsata, klõpsa sellel hiire parema nupuga ja vali <guimenuitem
+>Ava kasutades...</guimenuitem
+> Sisesta dialoogi <command
+>kbtserialchat</command
+>, vajuta klahvi Enter ja ühendus luuaksegi. </para>
+</sect2>
+
+</sect1>
+

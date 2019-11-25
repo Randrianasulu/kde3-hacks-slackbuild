@@ -1,0 +1,328 @@
+/****************************************************************************
+** Digikam::CameraUI meta object code from reading C++ file 'cameraui.h'
+**
+** Created: Wed Jun 14 03:47:55 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "cameraui.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::CameraUI::className() const
+{
+    return "Digikam::CameraUI";
+}
+
+QMetaObject *Digikam::CameraUI::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__CameraUI( "Digikam::CameraUI", &Digikam::CameraUI::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::CameraUI::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::CameraUI", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::CameraUI::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::CameraUI", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::CameraUI::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialogBase::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "onlySelected", &static_QUType_bool, 0, QUParameter::In },
+	{ "deleteAfter", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotDownload", 2, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "onlySelected", &static_QUType_bool, 0, QUParameter::In },
+	{ "deleteAfter", &static_QUType_bool, 0, QUParameter::In },
+	{ "album", &static_QUType_ptr, "Album", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotDownload", 3, param_slot_1 };
+    static const QUMethod slot_2 = {"slotClose", 0, 0 };
+    static const QUMethod slot_3 = {"slotCancelButton", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ "url", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotProcessURL", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "val", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotConnected", 1, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ "val", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotBusy", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ "msg", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"slotErrorMsg", 1, param_slot_7 };
+    static const QUMethod slot_8 = {"slotInformations", 0, 0 };
+    static const QUParameter param_slot_9[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"slotCameraInformations", 3, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ "folderList", &static_QUType_varptr, "\x04", QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotFolderList", 1, param_slot_10 };
+    static const QUParameter param_slot_11[] = {
+	{ "fileList", &static_QUType_ptr, "GPItemInfoList", QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotFileList", 1, param_slot_11 };
+    static const QUParameter param_slot_12[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_varptr, "\x0f", QUParameter::In }
+    };
+    static const QUMethod slot_12 = {"slotThumbnail", 3, param_slot_12 };
+    static const QUMethod slot_13 = {"slotIncreaseThumbSize", 0, 0 };
+    static const QUMethod slot_14 = {"slotDecreaseThumbSize", 0, 0 };
+    static const QUMethod slot_15 = {"slotUpload", 0, 0 };
+    static const QUParameter param_slot_16[] = {
+	{ 0, &static_QUType_ptr, "KURL::List", QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"slotUploadItems", 1, param_slot_16 };
+    static const QUMethod slot_17 = {"slotDownloadSelected", 0, 0 };
+    static const QUMethod slot_18 = {"slotDownloadAll", 0, 0 };
+    static const QUMethod slot_19 = {"slotDeleteSelected", 0, 0 };
+    static const QUMethod slot_20 = {"slotDownloadAndDeleteSelected", 0, 0 };
+    static const QUMethod slot_21 = {"slotDeleteAll", 0, 0 };
+    static const QUMethod slot_22 = {"slotDownloadAndDeleteAll", 0, 0 };
+    static const QUMethod slot_23 = {"slotToggleLock", 0, 0 };
+    static const QUParameter param_slot_24[] = {
+	{ "item", &static_QUType_ptr, "CameraIconViewItem", QUParameter::In }
+    };
+    static const QUMethod slot_24 = {"slotFileView", 1, param_slot_24 };
+    static const QUParameter param_slot_25[] = {
+	{ 0, &static_QUType_ptr, "GPItemInfo", QUParameter::In }
+    };
+    static const QUMethod slot_25 = {"slotUploaded", 1, param_slot_25 };
+    static const QUParameter param_slot_26[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_26 = {"slotDownloaded", 3, param_slot_26 };
+    static const QUParameter param_slot_27[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_27 = {"slotSkipped", 2, param_slot_27 };
+    static const QUParameter param_slot_28[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_28 = {"slotDeleted", 3, param_slot_28 };
+    static const QUParameter param_slot_29[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_29 = {"slotLocked", 3, param_slot_29 };
+    static const QUParameter param_slot_30[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_30 = {"slotNewSelection", 1, param_slot_30 };
+    static const QUParameter param_slot_31[] = {
+	{ "item", &static_QUType_ptr, "CameraIconViewItem", QUParameter::In },
+	{ "selected", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_31 = {"slotItemsSelected", 2, param_slot_31 };
+    static const QUParameter param_slot_32[] = {
+	{ "folder", &static_QUType_QString, 0, QUParameter::In },
+	{ "file", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_32 = {"slotExifFromFile", 2, param_slot_32 };
+    static const QUParameter param_slot_33[] = {
+	{ "exifData", &static_QUType_varptr, "\x1d", QUParameter::In }
+    };
+    static const QUMethod slot_33 = {"slotExifFromData", 1, param_slot_33 };
+    static const QUMethod slot_34 = {"slotFirstItem", 0, 0 };
+    static const QUMethod slot_35 = {"slotPrevItem", 0, 0 };
+    static const QUMethod slot_36 = {"slotNextItem", 0, 0 };
+    static const QUMethod slot_37 = {"slotLastItem", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotDownload(bool,bool)", &slot_0, QMetaData::Public },
+	{ "slotDownload(bool,bool,Album*)", &slot_1, QMetaData::Public },
+	{ "slotClose()", &slot_2, QMetaData::Private },
+	{ "slotCancelButton()", &slot_3, QMetaData::Private },
+	{ "slotProcessURL(const QString&)", &slot_4, QMetaData::Private },
+	{ "slotConnected(bool)", &slot_5, QMetaData::Private },
+	{ "slotBusy(bool)", &slot_6, QMetaData::Private },
+	{ "slotErrorMsg(const QString&)", &slot_7, QMetaData::Private },
+	{ "slotInformations()", &slot_8, QMetaData::Private },
+	{ "slotCameraInformations(const QString&,const QString&,const QString&)", &slot_9, QMetaData::Private },
+	{ "slotFolderList(const QStringList&)", &slot_10, QMetaData::Private },
+	{ "slotFileList(const GPItemInfoList&)", &slot_11, QMetaData::Private },
+	{ "slotThumbnail(const QString&,const QString&,const QImage&)", &slot_12, QMetaData::Private },
+	{ "slotIncreaseThumbSize()", &slot_13, QMetaData::Private },
+	{ "slotDecreaseThumbSize()", &slot_14, QMetaData::Private },
+	{ "slotUpload()", &slot_15, QMetaData::Private },
+	{ "slotUploadItems(const KURL::List&)", &slot_16, QMetaData::Private },
+	{ "slotDownloadSelected()", &slot_17, QMetaData::Private },
+	{ "slotDownloadAll()", &slot_18, QMetaData::Private },
+	{ "slotDeleteSelected()", &slot_19, QMetaData::Private },
+	{ "slotDownloadAndDeleteSelected()", &slot_20, QMetaData::Private },
+	{ "slotDeleteAll()", &slot_21, QMetaData::Private },
+	{ "slotDownloadAndDeleteAll()", &slot_22, QMetaData::Private },
+	{ "slotToggleLock()", &slot_23, QMetaData::Private },
+	{ "slotFileView(CameraIconViewItem*)", &slot_24, QMetaData::Private },
+	{ "slotUploaded(const GPItemInfo&)", &slot_25, QMetaData::Private },
+	{ "slotDownloaded(const QString&,const QString&,int)", &slot_26, QMetaData::Private },
+	{ "slotSkipped(const QString&,const QString&)", &slot_27, QMetaData::Private },
+	{ "slotDeleted(const QString&,const QString&,bool)", &slot_28, QMetaData::Private },
+	{ "slotLocked(const QString&,const QString&,bool)", &slot_29, QMetaData::Private },
+	{ "slotNewSelection(bool)", &slot_30, QMetaData::Private },
+	{ "slotItemsSelected(CameraIconViewItem*,bool)", &slot_31, QMetaData::Private },
+	{ "slotExifFromFile(const QString&,const QString&)", &slot_32, QMetaData::Private },
+	{ "slotExifFromData(const QByteArray&)", &slot_33, QMetaData::Private },
+	{ "slotFirstItem()", &slot_34, QMetaData::Private },
+	{ "slotPrevItem()", &slot_35, QMetaData::Private },
+	{ "slotNextItem()", &slot_36, QMetaData::Private },
+	{ "slotLastItem()", &slot_37, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalLastDestination", 1, param_signal_0 };
+    static const QUMethod signal_1 = {"signalAlbumSettingsChanged", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalLastDestination(const KURL&)", &signal_0, QMetaData::Public },
+	{ "signalAlbumSettingsChanged()", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::CameraUI", parentObject,
+	slot_tbl, 38,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__CameraUI.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::CameraUI::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::CameraUI" ) )
+	return this;
+    return KDialogBase::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalLastDestination
+void Digikam::CameraUI::signalLastDestination( const KURL& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalAlbumSettingsChanged
+void Digikam::CameraUI::signalAlbumSettingsChanged()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+bool Digikam::CameraUI::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotDownload((bool)static_QUType_bool.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 1: slotDownload((bool)static_QUType_bool.get(_o+1),(bool)static_QUType_bool.get(_o+2),(Album*)static_QUType_ptr.get(_o+3)); break;
+    case 2: slotClose(); break;
+    case 3: slotCancelButton(); break;
+    case 4: slotProcessURL((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 5: slotConnected((bool)static_QUType_bool.get(_o+1)); break;
+    case 6: slotBusy((bool)static_QUType_bool.get(_o+1)); break;
+    case 7: slotErrorMsg((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 8: slotInformations(); break;
+    case 9: slotCameraInformations((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(const QString&)static_QUType_QString.get(_o+3)); break;
+    case 10: slotFolderList((const QStringList&)*((const QStringList*)static_QUType_ptr.get(_o+1))); break;
+    case 11: slotFileList((const GPItemInfoList&)*((const GPItemInfoList*)static_QUType_ptr.get(_o+1))); break;
+    case 12: slotThumbnail((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(const QImage&)*((const QImage*)static_QUType_ptr.get(_o+3))); break;
+    case 13: slotIncreaseThumbSize(); break;
+    case 14: slotDecreaseThumbSize(); break;
+    case 15: slotUpload(); break;
+    case 16: slotUploadItems((const KURL::List&)*((const KURL::List*)static_QUType_ptr.get(_o+1))); break;
+    case 17: slotDownloadSelected(); break;
+    case 18: slotDownloadAll(); break;
+    case 19: slotDeleteSelected(); break;
+    case 20: slotDownloadAndDeleteSelected(); break;
+    case 21: slotDeleteAll(); break;
+    case 22: slotDownloadAndDeleteAll(); break;
+    case 23: slotToggleLock(); break;
+    case 24: slotFileView((CameraIconViewItem*)static_QUType_ptr.get(_o+1)); break;
+    case 25: slotUploaded((const GPItemInfo&)*((const GPItemInfo*)static_QUType_ptr.get(_o+1))); break;
+    case 26: slotDownloaded((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
+    case 27: slotSkipped((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2)); break;
+    case 28: slotDeleted((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 29: slotLocked((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 30: slotNewSelection((bool)static_QUType_bool.get(_o+1)); break;
+    case 31: slotItemsSelected((CameraIconViewItem*)static_QUType_ptr.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 32: slotExifFromFile((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2)); break;
+    case 33: slotExifFromData((const QByteArray&)*((const QByteArray*)static_QUType_ptr.get(_o+1))); break;
+    case 34: slotFirstItem(); break;
+    case 35: slotPrevItem(); break;
+    case 36: slotNextItem(); break;
+    case 37: slotLastItem(); break;
+    default:
+	return KDialogBase::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::CameraUI::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalLastDestination((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 1: signalAlbumSettingsChanged(); break;
+    default:
+	return KDialogBase::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::CameraUI::qt_property( int id, int f, QVariant* v)
+{
+    return KDialogBase::qt_property( id, f, v);
+}
+
+bool Digikam::CameraUI::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

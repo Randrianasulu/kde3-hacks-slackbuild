@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>IrMCSync Konnector pour Kitchensync</title>
+<para
+>Ce programme est un module externe Konnector pour kitchensync, il vous permet de synchroniser votre périphérique gérant IrMCSync avec votre Calendar et/ou AddressBook. </para>
+<para
+>Désormais Calendar et AddressBook sont gerés ! </para>
+<para
+>JE VOUS SUGGÈRE DE FAIRE UNE COPIE DE VOTRE CALENDAR ET ADDRESSBOOK AVANT D'ESSAYER UNE SYNCHRONISATION. Je ne suis pas responsable si vos données sont corrompues ou détruites. </para>
+
+
+<sect2>
+<title
+>Nous avons besoin d'informations de débogage !</title>
+<para
+>VEUILLEZ lancer kitchensync depuis une console ou rediriger stdout et stderr vers un fichier. Si vous avez des problèmes, vous pouvez m'envoyer la sortie konnector. Pour activer les options de de débogage, vous pouvez lancer « kdebugdialog » et configurer les options kitchensync liées (depuis 5200) et les options génériques. </para>
+</sect2>
+
+<sect2>
+<title
+>Compilation.</title>
+<para
+>Le kitchensync actuel du CVS de kdepim a plus de fonctionnalités et fonctionne mieux que dans la version 3.3.0 de kdepim. Je vous suggère donc d'installer au moins kitchensync (et tous ses sous-projets) depuis le CVS. </para>
+<para
+>Il y a aussi une version de kdepim-3.3.0 que vous pouvez trouver dans la branche irmcsync_kdepim_3_3_branch mais elle n'est plus maintenue. Je concentrerais mon travail sur la version CVS. Cette version dépend de kdepim-3.3.0 et des versions plus anciennes ou plus récentes, vous devez donc les télécharger et les installer. Si vous voulez utiliser irmcsync_kdepim_3_3_branch vous devrez vous déplacer vers kdebluetooth/irmcsync/irmcsynckonnector et saisir : cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch </para
+>	
+
+<para
+>Pour activer la compilation de konnector vous devrez ajouter le dossier « irmcsync » dans la variable SUBDIR de kdebluetooth/Makefile.am </para>
+</sect2>
+
+<sect2>
+<title
+>Utilisation de KitchenSync</title>
+<para
+>Actuellement (25/03/2004), KitchenSync est encore en phase expérimentale, vous pouvez donc obtenir des problèmes variés. </para>
+<para
+>Après lancement, vous devez choisir les konnectors à utiliser. Vous avez besoin d'au moins 2 konnectors pour faire une synchronisation, mais vous pouvez n'en utiliser qu'un seul pour faire des tests. </para>
+<para
+>Pour ajouter un konnector, allez dans <guimenuitem
+>Configuration / Configurer Kitchensync...</guimenuitem
+> </para>
+<para
+>Si vous obtenez des erreurs sur la fenêtre, essayez de la redimensionner. Puis dans Ressources, vous obtiendrez plusieurs éléments, TOUS SONT INUTILES ET DESACTIVES, seul « konnector » est le bon. </para>
+<para
+>Par exemple, vous pouvez ajouter le Konnector IrMCSync et un Konnector local. </para>
+<para
+>Dans le Konnector IrMCSync, sélectionnez votre périphérique, et cochez les boutons Synchroniser Calendar ou Synchroniser AddressBook (actuellement, les deux ne peuvent pas être synchronisés en même temps). Dans le Konnector Local, sélectionnez un fichier Calendar ET un fichier KAddressBook (vous devez choisir les deux avec des chemins corrects ou cela ne marchera pas). Je vous suggère de créer un dossier temporaire dans lequel vous mettriez vos AB et Calendar originaux, pour effectuer une copie de sauvegarde. </para>
+<para
+>Vous pouvez les trouver habituellement dans ces dossiers : </para>
+<para
+>CALENDAR : <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>ADDRESSBOOK : <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>Puis vous devez créer un profil dans <guimenuitem
+>Configuration / Configurer les Profils</guimenuitem
+> et pour tous les profils, vous pouvez ajouter les options suivantes, chaque option accomplissant une fonction différente : </para>
+<itemizedlist>
+<listitem>
+<para
+>Option Synchronisation : faire la synchronisation RÉELLE </para>
+</listitem>
+<listitem>
+<para
+>Débogueur de Konnector : vous permet de déboguer un Konnector. </para>
+</listitem>
+<listitem>
+<para
+>Sauvegarde d'un Konnector : faire une copie de sauvegarde des données </para>
+</listitem>
+<listitem>
+<para
+>Option Aperçu : comme le titre le dit. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Si vous voulez synchroniser, vous devrez choisir au moins l'« Option Synchronisation ». </para>
+<para
+>Puis, pour faire la synchronisation, cliquez sur le bouton en haut à gauche. </para>
+<para
+>Vous pouvez vérifier le konnector, créer un profil avec l'Option Debugage du Konnector, puis actionnez les boutons Connecter le Périphérique puis Synchroniser. </para>
+</sect2>
+</sect1>
+

@@ -1,0 +1,118 @@
+<chapter id="mpegencoder">
+<chapterinfo>
+
+<title
+>Codificación MPEG</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard@kulzer.net</email
+></address
+></affiliation>
+    </author
+>        
+</authorgroup>
+
+<abstract>
+<para
+>El complemento de codificación MPEG es una herramienta para convertir series de imágenes en un archivo MPEG. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>El complemento de codificación MPEG puede utilizarse para convertir las imágenes seleccionadas a secuencias MPEG con una duración definida, mezclando imágenes en una sólo archivo MPEG. Este complemento utiliza los paquetes «MjpegTools» e «ImageMagick». Entre las imágenes puede insertar una transición básica. También puede añadir una pista de audio a la secuencia de imágenes utilizando MP2 o archivos WAV. </para>
+
+<para
+>Todas las imágenes se escalarán automáticamente al tamaño correcto del formato de vídeo seleccionado. Se seleccionará un color de fondo. Puede utilizar este complemento para crear algunos DVD/XVCD/SVCD/VCD de imágenes para su reproductor de DVD. Utiliza el programa K3b para crear este medio. </para>
+
+<sect1 id="using-plugin-mpeg_encode">
+<title
+>Utilizar el complemento</title>
+
+<para
+>Primero debe seleccionar las imágenes que se deben empaquetar en el MPEG a través del navegador de la aplicación servidora. Haga la llamada desde el menú <menuchoice
+><guimenu
+>Herramientas</guimenu
+><guimenuitem
+>Crear presentación MPEG</guimenuitem
+></menuchoice
+> de su ventana de la aplicación servidora. </para>
+
+<para
+>Las imágenes seleccionadas aparecerán en la lista <guilabel
+>Archivos de imágenes en la carpeta</guilabel
+>. Utilice este cuadro para ordenar sus archivos o para modificar el contenido de la lista. </para>
+
+<para
+>Cuando esté a gusto con el contenido, continúe con el resto de configuraciones. El formato de vídeo puede seleccionarse de entre cuatro (DVD/XVCD/SVCD/VCD) diferentes. Si el archivo MPEG debiera reproducirse en una TV, seleccione el estándar entre PAL, SECAM y NTSC. PAL es el valor predeterminado y la elección más probable en Europa Central. </para>
+
+<para
+>A continuación podrá seleccionar la duración por imagen, en segundos. La lista inferior le permitirá seleccionar el comportamiento de la transición entre las imágenes. Un valor bajo crea un cambio bastante repentino mientras que un valor alto crea una transición suave. </para>
+
+<para
+>El siguiente selector le permite escoger el color del fondo. Si tiene dudas utilice el negro. El cuadro 'Nombre del archivo MPEG de salida' especifica el nombre del archivo de salida y su ruta (dirección). Deje el mpg finalizar y cambia la ruta y el nombre del archivo al que desee. </para>
+
+<para
+>Si apunta a un archivo de audio en 'Nombre del archivo de entrada de audio', se integrará en su archivo MPEG. Una vez que termine con la configuración, pulse el botón <guilabel
+>Codificar</guilabel
+> para iniciar la conversión. Dependiendo de la velocidad de su ordenador vaya a tomarse un café corto o largo, y diviértase con la presentación cuando termine. </para>
+
+<note>
+<para
+>Si el complemento indica que los codificadores no son adecuados o que faltan herramientas puede seleccionar la ruta a los programas «MjpegTools» e «ImageMagick» en el botón inferior derecho, <guilabel
+>Preferencias</guilabel
+>. </para>
+</note>
+
+<figure>
+    <title
+>La vista previa del diálogo de codificación MPEG</title>
+    <graphic srccredit="The MPEG Encoder Dialog Preview" fileref="mpeg_encode_dialog.png"/>
+</figure>
+
+<para
+>Puede ver alguna muestra construída con esta estensión en esta <ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/"
+>dirección</ulink
+>. </para>
+
+</sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

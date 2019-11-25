@@ -1,0 +1,114 @@
+<chapter id="filterimages">
+<chapterinfo>
+
+<title
+>Pildifiltrid</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier dot gilles at free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi pildifiltrite pluginaga saab piltidele rakendada digifiltreid. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Sissejuhatus</title>
+
+<para
+>Selle pluginaga saab albumi piltidele kas või korraga rakendada filtreid. Plugin kasutab tarkvarapaketi "ImageMagick" programmi "convert". Töötlemise ajal on näha (osaline või täielik) eelvaatlus. Praegu on kasutatavad 9 filtritüüpi: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Müra lisamine</emphasis
+>: lisab pildile müra.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Antialias</emphasis
+>: eemaldab pikslite aliase.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Pehmendus</emphasis
+>: pilti pehmendatakse Gaussi operandiga.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Punktitasandus</emphasis
+>: kahandab pildi teravusmüra.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Parandamine</emphasis
+>: rakendatakse digifiltrit pildi müra tugevdamiseks.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Mediaan</emphasis
+>: pildile rakendatakse mediaanifilter.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Müratasandus</emphasis
+>: vähendatakse pildi müra.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Teravustamine</emphasis
+>: pilti teravustatakse Gaussi operandiga.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Mahateravustamine</emphasis
+>: pildi teravust kahandatakse vastava maskioperandiga.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Mõningaid näiteid plugina kasutamise võib näha aadressil <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/FilterImages/index.html"
+> <citetitle
+>url.</citetitle
+> </ulink
+></para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

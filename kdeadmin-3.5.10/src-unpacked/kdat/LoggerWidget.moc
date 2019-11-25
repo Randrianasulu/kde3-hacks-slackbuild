@@ -1,0 +1,101 @@
+/****************************************************************************
+** LoggerWidget meta object code from reading C++ file 'LoggerWidget.h'
+**
+** Created: Sun Feb 1 00:52:57 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "LoggerWidget.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *LoggerWidget::className() const
+{
+    return "LoggerWidget";
+}
+
+QMetaObject *LoggerWidget::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_LoggerWidget( "LoggerWidget", &LoggerWidget::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString LoggerWidget::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "LoggerWidget", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString LoggerWidget::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "LoggerWidget", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* LoggerWidget::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"save", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "save()", &slot_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"LoggerWidget", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_LoggerWidget.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* LoggerWidget::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "LoggerWidget" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool LoggerWidget::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: save(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool LoggerWidget::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool LoggerWidget::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool LoggerWidget::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,75 @@
+<chapter id="jpeglossless">
+<chapterinfo>
+
+<title
+>Förlustfri JPEG</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Förlustfri JPEG är ett verktyg för att transformera bilder utan förlust av kvalitet på grund av komprimering. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Insticksprogrammet är tillgängligt inne i värdprogrammet. Det låter dig lagra bilder med JPEG-format, som ofta är inställt till en komprimeringsnivå där information går förlorad (annars skulle ingen storleksminskning erhållas) utan att förlora någon kvalitet eller metadata-information. </para>
+
+<itemizedlist>
+<listitem
+><para
+>Gör förlustfri rotation med 90, 180 eller 270 grader av JPEG-bilder.</para
+></listitem>
+<listitem
+><para
+>Gör förlustfri horisontell eller vertikal vändning av JPEG-bilder.</para
+></listitem>
+<listitem
+><para
+>Gör förlustfri konvertering till svartvitt av JPEG-bilder.</para
+></listitem>
+<listitem
+><para
+>Automatisk justering med rotation eller vändning baserad på EXIF orienteringstagg.</para
+></listitem>
+<listitem
+><para
+>Gör förlustfri omkomprimering av JPEG-bilder.</para
+></listitem>
+</itemizedlist>
+<para
+>Som konsekvens av lagring utan förlust kommer filstorleken att vara större (liknande det förlustfria PNG-formatet) eftersom det inte sker någon komprimering av färgkodningsinformationen. </para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

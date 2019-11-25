@@ -1,0 +1,2150 @@
+# translation of kipiplugin_batchprocessimages.po to
+# translation of kipiplugin_batchprocessimages.po to
+# translation of kipiplugin_batchprocessimages.po to Türkçe
+# translation of kipiplugin_batchprocessimages.po to Turkish
+# Görkem Çetin <gorkem@kde.org>, 2004.
+# İsmail Şimşek <simsek@kde.org.tr>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_batchprocessimages\n"
+"POT-Creation-Date: 2008-12-11 09:37+0100\n"
+"PO-Revision-Date: 2005-04-22 12:31+0300\n"
+"Last-Translator: İsmail Şimşek <simsek@kde.org.tr>\n"
+"Language-Team:  <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Görkem Çetin, İsmail Şimşek"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "gorkem@kde.org, thelightning@mynet.com"
+
+#: batchprocessimagesdialog.cpp:136
+msgid "<p>You can choose here the options to use for the current process."
+msgstr ""
+"<p>Burada, geçerli işlem için kullanmak üzere seçenekleri "
+"değerlendirebilirsiniz."
+
+#: batchprocessimagesdialog.cpp:140
+msgid "Small preview"
+msgstr "Küçük önizleme"
+
+#: batchprocessimagesdialog.cpp:141
+msgid ""
+"<p>If you enable this option, all preview effects will be calculated on a small "
+"zone of the image (300x300 pixels in the top left corner). Enable this option "
+"if you have a slow computer."
+msgstr ""
+"<p>Bu seçeneği etkin hale getirirseniz, bütün önizleme etkileri resmin sadece "
+"küçük bir bölgesinde (sol üst köşede 300x300 piksel) hesaplanacaktır. Yavaş bir "
+"bilgisayarınız varsa bunu etkinleştirin."
+
+#: batchprocessimagesdialog.cpp:149
+msgid "&Preview"
+msgstr "Ö&nizleme"
+
+#: batchprocessimagesdialog.cpp:150
+msgid ""
+"<p>This button builds a process preview for the currently selected image on the "
+"list."
+msgstr ""
+"<p>Bu düğme listede şu anda seçili olan resim için bir işlem önizlemesi "
+"oluşturur."
+
+#: batchprocessimagesdialog.cpp:158
+msgid "File Operations"
+msgstr "Dosya İşlemleri"
+
+#: batchprocessimagesdialog.cpp:160
+msgid "Overwrite mode:"
+msgstr "Üzerine yazma kipi:"
+
+#: batchprocessimagesdialog.cpp:162 batchprocessimagesdialog.cpp:1001
+msgid "Ask"
+msgstr "Sor"
+
+#: batchprocessimagesdialog.cpp:163 batchprocessimagesdialog.cpp:1010
+msgid "Always Overwrite"
+msgstr "Her Zaman Üzerine Yaz"
+
+#: batchprocessimagesdialog.cpp:164 batchprocessimagesdialog.cpp:166
+#: batchprocessimagesdialog.cpp:1004
+msgid "Rename"
+msgstr "Yeniden Adlandır"
+
+#: batchprocessimagesdialog.cpp:165 batchprocessimagesdialog.cpp:1007
+msgid "Skip"
+msgstr "Atla"
+
+#: batchprocessimagesdialog.cpp:167
+msgid ""
+"<p>Select here the overwrite mode used if your target's image files already "
+"exist."
+msgstr ""
+"<p>Burada hedef resim dosyanız zaten mevcutsa kullanılan üzerine yazma kipini "
+"seçiniz."
+
+#: batchprocessimagesdialog.cpp:170
+msgid "Remove original"
+msgstr "Aslını Kaldır"
+
+#: batchprocessimagesdialog.cpp:171
+msgid ""
+"<p>If you enable this option, all original image files will be removed after "
+"processing."
+msgstr ""
+"<p> Bu seçeneği etkinleştirirseniz, bütün asıl resim dosyaları işlemden sonra "
+"kaldırılacaktır."
+
+#: batchprocessimagesdialog.cpp:179
+msgid "Target Folder"
+msgstr "Hedef Dizin"
+
+#: batchprocessimagesdialog.cpp:197
+msgid ""
+"<p>Here you can select the target folder which will used by the process."
+msgstr "<p>Burada, işlem tarafından kullanılacak hedef dizini seçebilirsiniz."
+
+#: batchprocessimagesdialog.cpp:213
+msgid "&Add..."
+msgstr "&Ekle..."
+
+#: batchprocessimagesdialog.cpp:215
+msgid "<p>Add images to the list."
+msgstr "<p>Resimleri listeye ekle."
+
+#: batchprocessimagesdialog.cpp:219
+msgid "<p>Remove selected image from the list."
+msgstr "<p>Seçilen resimleri listeden sil."
+
+#: batchprocessimagesdialog.cpp:226
+msgid "<p>The preview of the selected image on the list."
+msgstr "<p>Listedeki seçilen resimlerin önizlemeleri."
+
+#: batchprocessimagesdialog.cpp:236
+msgid "<p>This is the current percentage of the task completed."
+msgstr "<p>Tamamlanan görevin şu andaki yüzdesi."
+
+#: batchprocessimagesdialog.cpp:307
+msgid "Image Files List"
+msgstr "Resim Dosyaları Listesi"
+
+#: batchprocessimagesdialog.cpp:309 batchprocessimagesdialog.cpp:923
+#, c-format
+msgid ""
+"_n: Image File List (1 item)\n"
+"Image File List (%n items)"
+msgstr "Resim Dosyaları Listesi (%n adet)"
+
+#: batchprocessimagesdialog.cpp:403
+msgid ""
+"All original image files will be removed from the source Album.\n"
+"Do you want to continue?"
+msgstr ""
+"Kaynak Albümdeki bütün asıl resim dosyaları kaldırılacak.\n"
+"Devam etmek istiyor musunuz?"
+
+#: batchprocessimagesdialog.cpp:404
+msgid "Delete Original Image Files"
+msgstr "Asıl Resim Dosyalarını Sil"
+
+#: batchprocessimagesdialog.cpp:412 batchprocessimagesdialog.cpp:799
+msgid "&Stop"
+msgstr "&Dur"
+
+#: batchprocessimagesdialog.cpp:448
+msgid "You must specify a writable path for your output file."
+msgstr ""
+
+#: batchprocessimagesdialog.cpp:489
+msgid ""
+"The destination file \"%1\" already exists;\n"
+"do you want overwrite it?"
+msgstr ""
+"Hedef dosya\"%1\" zaten var;\n"
+"üzerine yazmak istiyor musunuz?"
+
+#: batchprocessimagesdialog.cpp:491
+msgid "Overwrite Destination Image File"
+msgstr "Hedef Resim Dosyasının Üzerine Yaz"
+
+#: batchprocessimagesdialog.cpp:495 batchprocessimagesdialog.cpp:560
+#: recompressimagesdialog.cpp:264 resizeimagesdialog.cpp:537
+msgid "Skipped."
+msgstr "Atlandı."
+
+#: batchprocessimagesdialog.cpp:496
+msgid "destination image file already exists (skipped by user)."
+msgstr "hedef resim dosyası zaten var (kullanıcı tarafından geçildi)."
+
+#: batchprocessimagesdialog.cpp:532 batchprocessimagesdialog.cpp:647
+#: batchprocessimagesdialog.cpp:702 batchprocessimagesdialog.cpp:738
+msgid "Failed."
+msgstr "Başarısız."
+
+#: batchprocessimagesdialog.cpp:533
+msgid "destination image file already exists and cannot be renamed."
+msgstr "hedef resim dosyası zaten var ve adı değiştirilemiyor."
+
+#: batchprocessimagesdialog.cpp:561
+msgid "destination image file already exists (skipped automatically)."
+msgstr "hedef resim dosyası zaten var (otomatik olarak geçildi)."
+
+#: batchprocessimagesdialog.cpp:610 batchprocessimagesdialog.cpp:824
+#: imagepreview.cpp:282
+msgid ""
+"Cannot start 'convert' program from 'ImageMagick' package;\n"
+"please check your installation."
+msgstr ""
+"'ImageMagick' ten dönüştürme programı başlatılamadı;\n"
+"lütfen kurulumunuzu kontrol ediniz."
+
+#: batchprocessimagesdialog.cpp:638
+#, fuzzy
+msgid ""
+"The 'convert' program from 'ImageMagick' package has been stopped abnormally"
+msgstr ""
+"'ImageMagick' ten dönüştürme programı başlatılamadı;\n"
+"lütfen kurulumunuzu kontrol ediniz."
+
+#: batchprocessimagesdialog.cpp:639
+msgid "Error running 'convert'"
+msgstr ""
+
+#: batchprocessimagesdialog.cpp:648
+#, fuzzy
+msgid ""
+"'convert' program from 'ImageMagick' package has been stopped abnormally."
+msgstr ""
+"'ImageMagick' ten dönüştürme programı başlatılamadı;\n"
+"lütfen kurulumunuzu kontrol ediniz."
+
+#: batchprocessimagesdialog.cpp:669
+msgid "no processing error"
+msgstr "işlem yok hatası"
+
+#: batchprocessimagesdialog.cpp:692
+msgid ""
+"<qt>Error adding image to application; error message was: <b>%1</b></qt>"
+msgstr "<qt>Resmin uygulamaya eklenmesinde hata; hata mesajı:  <b>%1</b></qt>"
+
+#: batchprocessimagesdialog.cpp:694
+msgid "Error Adding Image to Application"
+msgstr "Uygulamaya Resim Eklemede Hata"
+
+#: batchprocessimagesdialog.cpp:723
+msgid "Warning:"
+msgstr "Uyarı:"
+
+#: batchprocessimagesdialog.cpp:724
+msgid "cannot remove original image file."
+msgstr "asıl resim dosyası kaldırılamıyor."
+
+#: batchprocessimagesdialog.cpp:739
+msgid "cannot process original image file."
+msgstr "asıl resim dosyası işlenemiyor."
+
+#: batchprocessimagesdialog.cpp:761
+msgid "Image processing error"
+msgstr "Resim işleme hatası"
+
+#: batchprocessimagesdialog.cpp:763
+msgid ""
+"Image \"%1\": %2\n"
+"\n"
+"The output messages are:\n"
+msgstr ""
+"Resim \"%1\": %2\n"
+"\n"
+"Çıktı mesajları:\n"
+
+#: batchprocessimagesdialog.cpp:776
+msgid "You must select an item from the list to calculate the preview."
+msgstr "Önizlemeyi hesaplayabilmek için listeden bir resim seçmelisiniz."
+
+#: batchprocessimagesdialog.cpp:840
+#, fuzzy
+msgid "Cannot run properly 'convert' program from 'ImageMagick' package."
+msgstr ""
+"'ImageMagick' ten dönüştürme programı başlatılamadı;\n"
+"lütfen kurulumunuzu kontrol ediniz."
+
+#: batchprocessimagesdialog.cpp:855
+msgid " - small preview"
+msgstr " - küçük önizleme"
+
+#: batchprocessimagesdialog.cpp:879
+msgid "Preview processing error"
+msgstr "Önizleme işlem hatası"
+
+#: batchprocessimagesdialog.cpp:881
+msgid ""
+"Cannot process preview for image \"%1\".\n"
+"The output messages are:\n"
+msgstr ""
+"\"%1\" resmi için önizleme oluşturulamıyor.\n"
+"Çıktı mesajları:\n"
+
+#: batchprocessimagesdialog.cpp:921
+msgid "Image File List"
+msgstr "Resim Dosya Listesi"
+
+#: batchprocessimagesdialog.cpp:1023
+msgid "Aborted."
+msgstr "Durduruldu."
+
+#: batchprocessimagesdialog.cpp:1024
+msgid "process aborted by user"
+msgstr "işlem kullanıcı tarafından durduruldu"
+
+#: batchprocessimageslist.cpp:49
+msgid "Source Album"
+msgstr "Kaynak Albüm"
+
+#. i18n: file renameimagesbase.ui line 208
+#: batchprocessimageslist.cpp:50 rc.cpp:36
+#, no-c-format
+msgid "Source Image"
+msgstr "Kaynak Resim"
+
+#. i18n: file renameimagesbase.ui line 219
+#: batchprocessimageslist.cpp:51 rc.cpp:39
+#, no-c-format
+msgid "Target Image"
+msgstr "Hedef Resim"
+
+#. i18n: file renameimagesbase.ui line 230
+#: batchprocessimageslist.cpp:52 rc.cpp:42
+#, no-c-format
+msgid "Result"
+msgstr "Sonuç"
+
+#: batchprocessimageslist.cpp:58
+msgid ""
+"<p>You can see here the operations' results during the process. Double-click on "
+"an item for more information once the process has ended. "
+"<p>You can use the \"Add\" button or drag-and-drop to add some new items to the "
+"list. "
+"<p>If the items are taken from different Albums the process' results will be "
+"merged to the target Album."
+msgstr ""
+"<p>Burada, işlem esnasında sonuçları görebilirsiniz. İşlem bitince daha fazla  "
+"bilgi almak için herhangi bir başlığa çift tıklayabilirsiniz."
+"<p>Listeye yeni başlıklar eklemek için \"Ekle\" düğmesini veya sürükle-bırak "
+"kullanabilirsiniz."
+"<p>Eğer başlıklar farklı Albümlerden alınmış ise işlemin sonucu, hedef Albüm "
+"ile birleştirilecektir."
+
+#: borderimagesdialog.cpp:59
+msgid "Batch-Bordering Images"
+msgstr "Çoklu Resim Çerçeveleme"
+
+#: borderimagesdialog.cpp:63
+msgid "Batch Image-bordering"
+msgstr "Resimleri toptan çerçeveleme"
+
+#: borderimagesdialog.cpp:66
+msgid ""
+"A Kipi plugin for batch bordering images\n"
+"This plugin use the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Çoklu resim çerçevelemek için bir KIPI eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: borderimagesdialog.cpp:70 colorimagesdialog.cpp:69
+#: convertimagesdialog.cpp:75 effectimagesdialog.cpp:69
+#: filterimagesdialog.cpp:69 imagepreview.cpp:97 outputdialog.cpp:64
+#: recompressimagesdialog.cpp:68 renameimagesdialog.cpp:62
+#: resizeimagesdialog.cpp:70
+msgid "Author and maintainer"
+msgstr "Yazan ve geliştiren"
+
+#: borderimagesdialog.cpp:76 colorimagesdialog.cpp:75
+#: convertimagesdialog.cpp:81 effectimagesdialog.cpp:75
+#: filterimagesdialog.cpp:75 recompressimagesdialog.cpp:74
+#: renameimagesdialog.cpp:68 resizeimagesdialog.cpp:76
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Kipi Eklentileri El Kitabı"
+
+#: borderimagesdialog.cpp:85
+msgid "Images Bordering Options"
+msgstr "Resim Çerçeveleme Seçenekleri"
+
+#: borderimagesdialog.cpp:87
+msgid "Border:"
+msgstr "Çerçeve:"
+
+#: borderimagesdialog.cpp:89
+msgid "Solid"
+msgstr "Katı"
+
+#: borderimagesdialog.cpp:94
+msgid "Raise"
+msgstr "Kabartma"
+
+#: borderimagesdialog.cpp:95
+msgid "Frame"
+msgstr "Çerçeve"
+
+#: borderimagesdialog.cpp:96
+msgid "Niepce"
+msgstr "İki Renk"
+
+#: borderimagesdialog.cpp:97
+msgid ""
+"<p>Select here the border type for your images:"
+"<p><b>Solid</b>: just surround the images with a line."
+"<p><b>Niepce</b>: surround the images with a fine line and a large border "
+"(ideal for black and white pictures)."
+"<p><b>Raise</b>: creating a 3D effect around the images."
+"<p><b>Frame</b>: surround the images with an ornamental border."
+"<p>"
+msgstr ""
+"<p>Burada resimleriniz için kenarlık tipini seçebilirsiniz."
+"<p><b>Katı</b>: resmi sadece bir çizgi ile çerçeveler."
+"<p><b>İki Renk</b>: Resmi ince bi çizgi ve kalın bir kenarlık ile "
+"çerçeveler.(siyah-beyaz resimler için idealdir)."
+"<p><b>Kabartma</b>: resimlerin etrafında 3B bir etki oluşturur."
+"<p><b>Çerçeve</b>: resimlerin etrafında dekoratif bir çerçeve oluşturur."
+"<p>"
+
+#: borderoptionsdialog.cpp:52
+msgid "Border Options"
+msgstr "Kenarlık Seçenekleri"
+
+#: borderoptionsdialog.cpp:61 borderoptionsdialog.cpp:94
+#: borderoptionsdialog.cpp:112 borderoptionsdialog.cpp:123
+msgid "Border width:"
+msgstr "Kenarlık genişliği:"
+
+#: borderoptionsdialog.cpp:65 borderoptionsdialog.cpp:98
+#: borderoptionsdialog.cpp:116 borderoptionsdialog.cpp:127
+msgid "<p>Select here the border width in pixels."
+msgstr "<p>Burada kenar genişliğini piksel olarak seçiniz."
+
+#: borderoptionsdialog.cpp:69 borderoptionsdialog.cpp:102
+#: borderoptionsdialog.cpp:140
+msgid "Border color:"
+msgstr "Kenarlık rengi:"
+
+#: borderoptionsdialog.cpp:73 borderoptionsdialog.cpp:106
+#: borderoptionsdialog.cpp:144
+msgid "<p>You can select here the border color."
+msgstr "<p>Burada kenarlık rengini seçebilirsiniz."
+
+#: borderoptionsdialog.cpp:79
+msgid "Line border width:"
+msgstr "Kenarlık çizgisi genişliği:"
+
+#: borderoptionsdialog.cpp:83
+msgid "<p>Select here the line border width in pixels."
+msgstr "<p>Burada çizgi kenar genişliğini piksel olarak seçiniz."
+
+#: borderoptionsdialog.cpp:87
+msgid "Line border color:"
+msgstr "Kenarlık çizgisi rengi:"
+
+#: borderoptionsdialog.cpp:91
+msgid "<p>You can select here the line border color."
+msgstr "<p>Burada kenarlık çizgisi rengini seçebilirsiniz."
+
+#: borderoptionsdialog.cpp:131
+msgid "Bevel width:"
+msgstr "Kabartma genişliği:"
+
+#: borderoptionsdialog.cpp:135
+msgid ""
+"<p>Select here the bevel width in pixels. This value must be <= Border width / "
+"2"
+msgstr ""
+"<p>Burada kabartma genişliğini piksel olarak seçebilirsiniz. Bu değer <= "
+"Kenarlık genişliği / 2 olmalıdır."
+
+#: colorimagesdialog.cpp:58
+msgid "Batch Image-Color Processing"
+msgstr "Çoklu Resim Renklendirme İşlemi"
+
+#: colorimagesdialog.cpp:62
+msgid "Batch image-color enhancement"
+msgstr "Çoklu resim renklendirme"
+
+#: colorimagesdialog.cpp:65
+msgid ""
+"A Kipi plugin for batch image-color enhancement\n"
+"This plugin use the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Çoklu resim renklendirme için bir Kipi eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: colorimagesdialog.cpp:84
+msgid "Image Coloring Options"
+msgstr "Resim Renklendirme Seçenekleri"
+
+#: colorimagesdialog.cpp:86 filterimagesdialog.cpp:86
+msgid "Filter:"
+msgstr "Süz:"
+
+#: colorimagesdialog.cpp:88
+msgid "Decrease Contrast"
+msgstr "Zıtlığı Azalt"
+
+#: colorimagesdialog.cpp:89
+msgid "Depth"
+msgstr "Derinlik"
+
+#: colorimagesdialog.cpp:90
+msgid "Equalize"
+msgstr "Eşitle"
+
+#: colorimagesdialog.cpp:91
+msgid "Fuzz"
+msgstr "Bulanıklaştır"
+
+#: colorimagesdialog.cpp:92
+msgid "Gray Scales"
+msgstr "Gri Ölçek"
+
+#: colorimagesdialog.cpp:93
+msgid "Increase Contrast"
+msgstr "Zıtlığı Artır"
+
+#: colorimagesdialog.cpp:94
+msgid "Monochrome"
+msgstr "Tek renk"
+
+#: colorimagesdialog.cpp:95
+msgid "Negate"
+msgstr "Tersine çevir"
+
+#: colorimagesdialog.cpp:96 colorimagesdialog.cpp:99
+msgid "Normalize"
+msgstr "Normalleştir"
+
+#: colorimagesdialog.cpp:97
+msgid "Segment"
+msgstr "Bölümlendir"
+
+#: colorimagesdialog.cpp:98
+msgid "Trim"
+msgstr "Keskinleştir"
+
+#: colorimagesdialog.cpp:100
+msgid ""
+"<p>Select here the color enhancement type for your images:"
+"<p><b>Decrease contrast</b>: reduce the image contrast. The algorithm reduces "
+"the intensity difference between the lighter and darker elements of the image."
+"<p><b>Depth</b>: change the color depth of the image."
+"<p><b>Equalize</b>: perform histogram equalization to the image."
+"<p><b>Fuzz</b>: merging colors within a distance, i.e. consider them to be "
+"equal."
+"<p><b>Gray scales</b>: convert color images to grayscale images."
+"<p><b>Increase contrast</b>: enhance the image contrast. The algorithm enhances "
+"the intensity differences between the lighter and darker elements of the image."
+"<p><b>Monochrome</b>: transform the image to black and white."
+"<p><b>Negate</b>: replace every pixel with its complementary color. The red, "
+"green, and blue intensities of an image are negated. White becomes black, "
+"yellow becomes blue, etc."
+"<p><b>Normalize</b>: transform image to span the full range of color values. "
+"This is a contrast enhancement technique. The algorithm enhances the contrast "
+"of a colored image by adjusting the pixels color to span the entire range of "
+"colors available."
+"<p><b>Segment</b>: segment an image by analyzing the histograms of the color "
+"components and identifying units that are homogeneous with the fuzzy c-means "
+"technique."
+"<p><b>Trim</b>: trim an image (fuzz reverse technic). The algorithm remove "
+"edges that are the background color from the image."
+"<p>"
+msgstr ""
+"<p>Burada resimleriniz için renklendirme tipini seçebilirsiniz:"
+"<p><b>Zıtlığı azalt</b>: resim zıtlığını azaltır. Bu algoritma resmin açık ve "
+"koyu unsurları arasındaki yoğunluk farkını azaltır."
+"<p><b>Derinlik</b>: resmin renk derinliğini değiştirir."
+"<p><b>Eşitle</b>: resme histogram eşitlemesini uygular."
+"<p><b>Bulanıklaştır</b>: belli bir uzaklığa kadar resimleri birleştirir."
+"<p><b>Gri ölçek</b>: resmi gri ölçeğe çevirir."
+"<p><b>Zıtlığı artır</b>: resim zıtlığını artırır. Bu algoritma resmin açık ve "
+"koyu unsurları arasındaki yoğunluk farkını artırır."
+"<p><b>Tek renk</b>: resmi siyah-beyaza çevirir."
+"<p><b>Tersine çevir</b>: her pikseli tamamlayıcı rengine çevirir. Kırmızı, "
+"yeşil ve mavi kanalları tersine çevrilir. Beyaz siyaha, sarı maviye döner vb."
+"<p><b>Normalleştir</b>: resmi tüm renk aralıklarına yayacak şekilde dönüştürür. "
+"Bu aslında bir zıtlıkartırma tekniğidir. Algoritma, resnkli resmin zıtlığını "
+"piksel renklerini mümkün olan tüm renk aralığına yayarak artırır."
+"<p><b>Bölümlendir</b>: renk bileşenleri histogramını inceleme ve bulanık "
+"c-ortalama tekniğini kullanarak homojen birimleri belirleme yoluyla resmi "
+"bölümlendirir."
+"<p><b>Keskinleştir</b>: resmi kesninleştirir (bulanıklaştırmanın tersi). "
+"Algoritma, resimde arkaplan rengi olan kenarları kaldırır."
+"<p>"
+
+#: coloroptionsdialog.cpp:52
+msgid "Color Options"
+msgstr "Renk Seçenekleri"
+
+#: coloroptionsdialog.cpp:61
+msgid "Depth value:"
+msgstr "Derinlik değeri:"
+
+#: coloroptionsdialog.cpp:67
+msgid "<p>Select here the image depth in bits."
+msgstr "<p>Burada resim derinliğini bit olarak seçiniz."
+
+#: coloroptionsdialog.cpp:74
+msgid "Distance:"
+msgstr "Uzaklık:"
+
+#: coloroptionsdialog.cpp:78
+msgid "<p>Select here the fuzz distance in absolute intensity units."
+msgstr "<p>Burada bulanıklık ayarını tam yoğunluk birimi olarak giriniz."
+
+#: coloroptionsdialog.cpp:86
+msgid "Cluster threshold:"
+msgstr "Küme limiti:"
+
+#: coloroptionsdialog.cpp:90
+msgid ""
+"<p>Select here the value which represents the minimum number of pixels "
+"contained in a hexahedra before it can be considered valid."
+msgstr ""
+"<p>Burada, bir altı yüzeylide geçerli sayılabilmeden önceki en az benek "
+"sayısınıseçiniz. "
+
+#: coloroptionsdialog.cpp:96
+msgid "Smooth threshold:"
+msgstr "Yumuşatma limiti:"
+
+#: coloroptionsdialog.cpp:100
+msgid ""
+"<p>Select here the value which eliminates noise in the second derivative of the "
+"histogram. As the value is increased, you can expect a smoother second "
+"derivative."
+msgstr ""
+"<p>Burada, histogramın ikinci türevindeki paraziti gideren değeri seçiniz. "
+"Değer arttıkça, ikinci türevin daha yumuşak olmasını bekleyebilirsiniz."
+
+#: convertimagesdialog.cpp:64
+msgid "Batch Convert Images"
+msgstr "Çoklu Resim Dönüştürme"
+
+#: convertimagesdialog.cpp:68
+msgid "Batch convert images"
+msgstr "Çoklu resim dönüştürme"
+
+#: convertimagesdialog.cpp:71
+msgid ""
+"A Kipi plugin for batch converting images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Çoklu resim dönüştürme için bir Kipi eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: convertimagesdialog.cpp:86
+msgid "Image Conversion Options"
+msgstr "Resim Dönüştürme Seçenekleri"
+
+#: convertimagesdialog.cpp:88
+msgid "Format:"
+msgstr "Biçim:"
+
+#: convertimagesdialog.cpp:98
+msgid "<p>Select here the target image file format.<p>"
+msgstr "<p>Burada hedef resim dosyasının biçimini seçiniz.<p>"
+
+#: convertimagesdialog.cpp:99
+msgid ""
+"<b>JPEG</b>: The Joint Photographic Experts Group's file format is a good Web "
+"file format but it uses lossy data compression."
+"<p><b>PNG</b>: the Portable Network Graphics format is an extensible file "
+"format for the lossless, portable, well-compressed storage of raster images. "
+"PNG provides a patent-free replacement for GIF and can also replace many common "
+"uses of TIFF. PNG is designed to work well in online viewing applications, such "
+"as the World Wide Web, so it is fully streamable with a progressive display "
+"option. Also, PNG can store gamma and chromaticity data for improved color "
+"matching on heterogeneous platforms."
+msgstr ""
+"<b>JPEG</b>: Joint Photographic Experts' Group dosya biçimi Web için uygundur "
+"fakat kayıplı veri sıkıştırma tekniğini kullanmaktadır."
+"<p><b>PNG</b>: Portable Network Graphics dosya biçimi ham resimler için "
+"kayıpsız, taşınabilir, iyi sıkıştırılmış kayıt imkanı sağlar. PNG GIF için "
+"patentsiz bir alternatif sunar ve TIFF'in birçok genel kullanımını da ikame "
+"eder. PNG çevrimiçi görüntüleme uygulamaları için tasarlanmıştır, World Wide "
+"Web gibi, bu yüzden gelişmiş görüntüleme şartlarında tamamen akıcıdır. Aynı "
+"zamanda, PNG farklı ortamlarda daha iyi renk eşleşmesi için gamma ve "
+"chromaticity verilerini de saklar."
+
+#: convertimagesdialog.cpp:108
+msgid ""
+"<p><b>TIFF</b>: the Tag Image File Format is a rather old standard that is "
+"still very popular today. It is a highly flexible and platform-independent "
+"format which is supported by numerous image processing applications and "
+"virtually all prepress software on the market."
+msgstr ""
+"<p><b>TIFF</b>: Tagged Image File Format halen daha popüler olan ve nispeten "
+"eski bir biçimdir. Çok esnek ve ortamdan bağımsız bir biçimdir. Birçok resim "
+"işleme uygulamaları tarafından da desteklenmektedir."
+
+#: convertimagesdialog.cpp:112
+msgid ""
+"<p><b>PPM</b>: the Portable Pixel Map file format is used as an intermediate "
+"format for storing color bitmap information. PPM files may be either binary or "
+"ASCII and store pixel values up to 24 bits in size. This format generate the "
+"largest-sized text files to encode images without losing quality"
+msgstr ""
+"<p><b>PPM</b>: Portable Pixel Map doya biçimi, renkli bitmap bilgilerini "
+"saklamak için ortalama bir dosya biçimidir. PPM dosyaları ya ikilik veya ASCII "
+"olabilir ve boyut olarak 24 bit'e kadar piksel değerleri sklayabilir. Bu dosya "
+"biçimi resimleri kodlarken kaliteden kayıp vermemek için en büyük boyutlu metin "
+"dosyalarını oluşturur."
+
+#: convertimagesdialog.cpp:117
+msgid ""
+"<p><b>BMP</b>: the BitMaP file format is a popular image format from Win32 "
+"environment. It efficiently stores mapped or unmapped RGB graphics data with "
+"pixels 1-, 4-, 8-, or 24-bits in size. Data may be stored raw or compressed "
+"using a 4-bit or 8-bit RLE data compression algorithm. BMP is an excellent "
+"choice for a simple bitmap format which supports a wide range of RGB image "
+"data."
+msgstr ""
+"<p><b>BMP</b>: BitMaP dosya biçim Win32 ortamından bilinen oldukça popüler bir "
+"biçimdir. Boyut olarak 1-, 4-, 8-, veya 24-bitlik pikselli RGB grafik "
+"verilerini başarılı bir biçimde kaydeder. Veri ham veya 4-bit veya 8-bit RLE "
+"veri sıkıştırma algoritması kullanılarak sıkıştırılmış bir şekilde saklanır. "
+"BMP basit bir bitmap biçimi için mükemmel bir seçimdir ve oldukça geniş bir RGB "
+"resim verisi aralığını destekler."
+
+#: convertimagesdialog.cpp:123
+msgid ""
+"<p><b>TGA</b>: the TarGA image file format is one of the most widely used "
+"bitmap file formats for storage of 24 and 32 bits truecolor images.  TGA "
+"supports colormaps, alpha channel, gamma value, postage stamp image, textual "
+"information, and developer-definable data."
+msgstr ""
+"<p><b>TGA</b>: TarGA resim dosya biçimi 24 ve 32 bitlik renkli resimleri "
+"kaydetmek için en yaygın kullanılan bitmap dosya biçimlerinden biridir. TGA "
+"renk haritalarını, alfa kanalını, gama değerini, resim etiketlerini, metin "
+"bilgisini ve geliştirici tarafından tanımlanabilen verileri destekler."
+
+#: convertimagesdialog.cpp:127
+msgid ""
+"<p><b>EPS</b>: the  Adobe Encapsulated PostScript image file format is a "
+"PostScript language program describing the appearance of a single page. "
+"Usually, the purpose of the EPS file is to be embedded inside another "
+"PostScript language page description."
+msgstr ""
+"<p><b>EPS</b>: Adobe Encapsulated PostScript resim dosya biçimi, bir sayfanın "
+"nasıl görüneceğini tarif eden PostScript dilinde programdır. Genellikle, EPS "
+"dosyasının maksadı başka bir PostScript sayfasının içine gömülmektir."
+
+#: convertimagesdialog.cpp:213 convertimagesdialog.cpp:214
+#: convertimagesdialog.cpp:282 convertimagesdialog.cpp:296
+#: convertoptionsdialog.cpp:92 convertoptionsdialog.cpp:104
+#: recompressimagesdialog.cpp:143 recompressimagesdialog.cpp:144
+#: recompressimagesdialog.cpp:215 recompressimagesdialog.cpp:229
+#: recompressoptionsdialog.cpp:110 recompressoptionsdialog.cpp:123
+msgid "None"
+msgstr "Hiçbiri"
+
+#: convertoptionsdialog.cpp:50
+msgid "Image File Format Options"
+msgstr "Resim Dosya Biçimi Seçenekleri"
+
+#: convertoptionsdialog.cpp:59 recompressoptionsdialog.cpp:61
+#: recompressoptionsdialog.cpp:87
+msgid "Image compression level:"
+msgstr "Resim sıkıştırma düzeyi:"
+
+#: convertoptionsdialog.cpp:63
+msgid "<p>The compression value for the target images:<p>"
+msgstr "<p>Hedef resimler için sıkıştırma değeri:<p>"
+
+#: convertoptionsdialog.cpp:64 recompressoptionsdialog.cpp:65
+#: recompressoptionsdialog.cpp:91
+msgid ""
+"<b>1</b>: very high compression"
+"<p><b>25</b>: high compression"
+"<p><b>50</b>: medium compression"
+"<p><b>75</b>: low compression (default value)"
+"<p><b>100</b>: no compression"
+msgstr ""
+"<b>1</b>: çok yüksek sıkıştırma"
+"<p><b>25</b>: yüksek sıkıştırma"
+"<p><b>50</b>: orta sıkıştırma"
+"<p><b>75</b>: düşük sıkıştırma (öntanımlı değer)"
+"<p><b>100</b>: sıkıştırma yok"
+
+#: convertoptionsdialog.cpp:76 recompressoptionsdialog.cpp:74
+msgid "Use lossless compression"
+msgstr "Kayıpsız sıkıştırma kullan"
+
+#: convertoptionsdialog.cpp:77
+msgid ""
+"<p>If this option is enabled, all JPEG operations will use a lossless "
+"compression."
+msgstr ""
+"<p>Bu seçenek etkinleştirilirse, bütün JPEG işlemlerinde kayıpsız sıkıştırma "
+"kullanılacaktır."
+
+#: convertoptionsdialog.cpp:87 convertoptionsdialog.cpp:100
+#: recompressoptionsdialog.cpp:106 recompressoptionsdialog.cpp:120
+msgid "Image compression algorithm:"
+msgstr "Resim sıkıştırma algoritması:"
+
+#: convertoptionsdialog.cpp:93 convertoptionsdialog.cpp:105
+msgid "<p>Select here the compression algorithm."
+msgstr "<p>Burada sıkıştırma algoritmasını seçiniz."
+
+#: effectimagesdialog.cpp:58
+msgid "Batch Image Effects"
+msgstr "Çoklu Resim Etkileri"
+
+#: effectimagesdialog.cpp:62
+msgid "Batch image effects"
+msgstr "Çoklu resim etkileri"
+
+#: effectimagesdialog.cpp:65
+msgid ""
+"A Kipi plugin for batch image-effect transformations\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Çoklu resim etki dönüşümleri için bir Kipi eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: effectimagesdialog.cpp:84
+msgid "Image Effect Options"
+msgstr "Resim Etki Seçenekleri"
+
+#: effectimagesdialog.cpp:86
+msgid "Effect:"
+msgstr "Etki:"
+
+#: effectimagesdialog.cpp:88
+msgid "Adaptive Threshold"
+msgstr "Uyarlanır Limit"
+
+#: effectimagesdialog.cpp:89
+msgid "Charcoal"
+msgstr "Kara kalem"
+
+#: effectimagesdialog.cpp:90
+msgid "Detect Edges"
+msgstr "Sınırları belirle"
+
+#: effectimagesdialog.cpp:91 effectimagesdialog.cpp:99
+msgid "Emboss"
+msgstr "Kabartma"
+
+#: effectimagesdialog.cpp:92
+msgid "Implode"
+msgstr "Çökme"
+
+#: effectimagesdialog.cpp:93
+msgid "Paint"
+msgstr "Boya"
+
+#: effectimagesdialog.cpp:94
+msgid "Shade Light"
+msgstr "Gölge ışığı"
+
+#: effectimagesdialog.cpp:95
+msgid "Solarize"
+msgstr "Güneş ışığı"
+
+#: effectimagesdialog.cpp:96
+msgid "Spread"
+msgstr "Yayma"
+
+#: effectimagesdialog.cpp:97
+msgid "Swirl"
+msgstr "Girdap"
+
+#: effectimagesdialog.cpp:98
+msgid "Wave"
+msgstr "Dalga"
+
+#: effectimagesdialog.cpp:100
+msgid ""
+"<p>Select here the effect type for your images:"
+"<p><b>Adaptive threshold</b>: perform local adaptive thresholding. The "
+"algorithm selects an individual threshold for each pixel based on the range of "
+"intensity values in its local neighborhood. This allows for thresholding of an "
+"image whose global intensity histogram does not contain distinctive peaks."
+"<p><b>Charcoal</b>: simulate a charcoal drawing."
+"<p><b>Detect edges</b>: detect edges within an image."
+"<p><b>Emboss</b>: returns a grayscale image with a three-dimensional effect. "
+"The algorithm convolves the image with a Gaussian operator of the given radius "
+"and standard deviation."
+"<p><b>Implode</b>: implode image pixels about the center."
+"<p><b>Paint</b>: applies a special effect filter that simulates an oil "
+"painting."
+"<p><b>Shade light</b>: shines a distant light on an image to create a "
+"three-dimensional effect."
+"<p><b>Solarize</b>: negate all pixels above the threshold level. This algorithm "
+"produces a solarization effect seen when exposing a photographic film to light "
+"during the development process."
+"<p><b>Spread</b>: this is a special-effect method that randomly displaces each "
+"pixel in a block defined by the radius parameter."
+"<p><b>Swirl</b>: swirls the pixels about the center of the image. "
+"<p><b>Wave</b>: creates a \"ripple\" effect in the image by shifting the pixels "
+"vertically along a sine wave."
+"<p>"
+msgstr ""
+"<p>Burada, resimleriniz için etki tipini seçiniz:"
+"<p><b>Uyarlanır limit</b>: yerel uyarlanır limit uygular. Algoritma, herbir "
+"benek için yerel komşuluğunda yoğunluk değeri aralığına dayalı ayrı bir limit "
+"seçer."
+"<p><b>Kara kalem</b>: karakalem çizimini taklit eder."
+"<p><b>Sınırları belirle</b>: bir resimdeki sınırları bulur."
+"<p><b>Kabartma</b>: üç boyutlu görünüme sahip gri bir sonuç oluşturur. "
+"Algoritma, resmi verilen bir yarıçap ve standart sapmaya gre Gaussian işlemi "
+"ile değiştirir."
+"<p><b>Çökme</b>: resim beneklerini merkezden genişletir."
+"<p><b>Boya</b>: yağlı boya benzetmesi yapan özel bir etki."
+"<p><b>Gölge ışığı</b>:üç boyutlu etki oluşturmak için resime uzak bir ışık "
+"ekler."
+"<p><b>Güneş ışığı</b>: limit düzeyinin üstündeki tüm benekleri ters çevirir. ."
+"<p><b>Yayma</b>: belirlenen yarıçapa göre bir blok içierisinde herbir beneği "
+"rastgele değiştirir."
+"<p><b>Girdap</b>: resmin merkezi etrafında benekleri çevirir. "
+"<p><b>Dalga</b>: benekleri rastgele bir sinüs dalgasına göre dikey olarak "
+"kaydırarak dalga etkisi oluşturur."
+"<p>"
+
+#: effectoptionsdialog.cpp:51
+msgid "Effect Options"
+msgstr "Etki Seçenekleri"
+
+#: effectoptionsdialog.cpp:60
+msgid "Width:"
+msgstr "Genişlik:"
+
+#: effectoptionsdialog.cpp:64
+msgid ""
+"<p>Select here the value which represents the width of the local neighborhood."
+msgstr "<p>Burada yerel komşuluk genişliğini gösteren değeri seçiniz."
+
+#: effectoptionsdialog.cpp:69
+msgid "Height:"
+msgstr "Yükseklik:"
+
+#: effectoptionsdialog.cpp:73
+msgid ""
+"<p>Select here the value which represents the height of the local neighborhood."
+msgstr "<p>Burada yerel komşuluk yüksekliğini gösteren değeri seçiniz."
+
+#: effectoptionsdialog.cpp:78
+msgid "Offset:"
+msgstr "Uzaklık:"
+
+#: effectoptionsdialog.cpp:82
+msgid "<p>Select here the value which represents the mean offset."
+msgstr "<p>Burada ortalama uzaklık değerini seçiniz."
+
+#: effectoptionsdialog.cpp:89 effectoptionsdialog.cpp:110
+#: effectoptionsdialog.cpp:124 effectoptionsdialog.cpp:159
+#: effectoptionsdialog.cpp:208 filteroptionsdialog.cpp:77
+#: filteroptionsdialog.cpp:100 filteroptionsdialog.cpp:115
+#: filteroptionsdialog.cpp:131 filteroptionsdialog.cpp:155
+msgid "Radius:"
+msgstr "Yarıçap:"
+
+#: effectoptionsdialog.cpp:93
+msgid ""
+"<p>Select here the value which represents the radius of the pixel neighborhood."
+msgstr "<p>Burada benek komşuluğunun yarıçapını gösteren değeri seçiniz."
+
+#: effectoptionsdialog.cpp:98 effectoptionsdialog.cpp:135
+#: filteroptionsdialog.cpp:88 filteroptionsdialog.cpp:143
+#: filteroptionsdialog.cpp:168
+msgid "Deviation:"
+msgstr "Sapma:"
+
+#: effectoptionsdialog.cpp:102 effectoptionsdialog.cpp:139
+msgid ""
+"<p>Select here the value which represents the standard deviation of the "
+"Gaussian, in pixels."
+msgstr "<p>Burada benek olarak Gaussian standart sapma değerini seçiniz."
+
+#: effectoptionsdialog.cpp:114
+msgid ""
+"<p>Select here the value which represents the radius of the pixel neighborhood. "
+"Radius defines the radius of the convolution filter. If you use a radius of 0 "
+"the algorithm selects a suitable radius."
+msgstr ""
+"<p>Burada benek komşuluğunun yarıçapını gösteren değeri seçiniz. Yarıçap, "
+"bükülme filtresinin yarıçapını belirtmektedir."
+
+#: effectoptionsdialog.cpp:128
+msgid ""
+"<p>Select here the value which represents the radius of the pixel neighborhood. "
+"For reasonable results, radius should be larger than deviation. If you use a "
+"radius of 0 the algorithm selects a suitable radius."
+msgstr ""
+"<p>Burada benek komşuluğunun yarıçapını gösteren değeri seçiniz. Mantıklı "
+"sonuçlar almak için, yarıçap sapmadan büyük olmalıdır. Yarıçap olarak 0 "
+"seçerseniz, işlem kendisi uygun bir yarıçap seçecektir."
+
+#: effectoptionsdialog.cpp:147 effectoptionsdialog.cpp:196
+msgid "Factor:"
+msgstr "Çarpan:"
+
+#: effectoptionsdialog.cpp:151
+msgid "<p>Select here the value which represents the extent of the implosion."
+msgstr "<p>Burada, büyütme sınırını gösteren bir değer seçiniz."
+
+#: effectoptionsdialog.cpp:163
+msgid ""
+"<p>Select here the value which represents the radius of the circular "
+"neighborhood. Each pixel is replaced by the most frequent color occurring in a "
+"circular region defined by the radius."
+msgstr ""
+"<p>Burada, dairesel komşuluk yarıçapını gösteren bir değer seçiniz. Herbir "
+"benek, belirlenen yarıçapta dairesel bir bölgede en fazla tekrarlanan renk ile "
+"değiştirilir."
+
+#: effectoptionsdialog.cpp:173
+msgid "Azimuth:"
+msgstr "Azimut:"
+
+#: effectoptionsdialog.cpp:177
+msgid ""
+"<p>Select here the value which represents the azimuth of the light source "
+"direction. The azimuth is measured in degrees above the x axis."
+msgstr ""
+"<p>Burada ışık kaynak yönünün azimutunu gösteren değeri seçiniz. Azimut x "
+"ekseninin üzerinde derece olarak ölçülür."
+
+#: effectoptionsdialog.cpp:183
+msgid "Elevation:"
+msgstr "Yükseliş:"
+
+#: effectoptionsdialog.cpp:187
+msgid ""
+"<p>Select here the value which represents the elevation of the light source "
+"direction. The elevation is measured in pixels above the Z axis."
+msgstr ""
+"<p>Burada ışık kaynak yönünün yükselişini gösteren değeri seçiniz. Yükseliş "
+"Zekseninin üzerinde benek cinsinden ölçülür."
+
+#: effectoptionsdialog.cpp:200
+msgid ""
+"<p>Select here the value which represents the percent-threshold of the solarize "
+"intensity."
+msgstr ""
+"<p>Burada güneş ışığı etkisinin yoğunluk limitini gösteren değeri seçiniz."
+
+#: effectoptionsdialog.cpp:212
+msgid ""
+"<p>Select here the value which represents the random pixel in a neighborhood of "
+"this extent."
+msgstr "<p>Burada, bir komşulukta rastgele beneği gösteren bir değer seçiniz."
+
+#: effectoptionsdialog.cpp:220
+msgid "Degrees:"
+msgstr "Derece:"
+
+#: effectoptionsdialog.cpp:224
+msgid ""
+"<p>Select here the value which represents the tightness of the swirling effect. "
+"You get a more dramatic effect as the degrees move from 1 to 360."
+msgstr ""
+"<p>Burada girdap etkisinin sıkılığını gösteren değeri seçiniz. Derece "
+"olarak1'den 360'a doğru gittikçe daha etkili sonuç elde edersiniz."
+
+#: effectoptionsdialog.cpp:233
+msgid "Amplitude:"
+msgstr "Genişlik:"
+
+#: effectoptionsdialog.cpp:237
+msgid ""
+"<p>Select here the value which represents the amplitude of the sine wave."
+msgstr "<p>Burada sinüs eğrisinin genişliğini gösteren değeri seçiniz."
+
+#: effectoptionsdialog.cpp:242
+msgid "Length:"
+msgstr "Uzunluk:"
+
+#: effectoptionsdialog.cpp:246
+msgid ""
+"<p>Select here the value which represents the wave length of the sine wave."
+msgstr ""
+"<p>Burada sinüs eğrisinin dalga boyu uzunluğunu gösteren değeri seçiniz."
+
+#: filterimagesdialog.cpp:58
+msgid "Batch Image Filtering"
+msgstr "Çoklu Resim Filtreleme"
+
+#: filterimagesdialog.cpp:62
+msgid "Batch image filtering"
+msgstr "Çoklu resim filtreleme"
+
+#: filterimagesdialog.cpp:65
+msgid ""
+"A Kipi plugin to batch filter images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Çoklu resim filtreleme için bir KIPI eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: filterimagesdialog.cpp:84
+msgid "Image Filtering Options"
+msgstr "Resim Filtreleme Seçenekleri"
+
+#: filterimagesdialog.cpp:88
+msgid "Add Noise"
+msgstr "Parazit Ekle"
+
+#: filterimagesdialog.cpp:89
+msgid "Antialias"
+msgstr "Örtüşme Önle"
+
+#: filterimagesdialog.cpp:90
+msgid "Blur"
+msgstr "Bulanıklaştır"
+
+#: filterimagesdialog.cpp:91
+msgid "Despeckle"
+msgstr "Parazit Kaldır"
+
+#: filterimagesdialog.cpp:92
+msgid "Enhance"
+msgstr "Pekiştir"
+
+#: filterimagesdialog.cpp:93
+msgid "Median"
+msgstr "Ortalama"
+
+#: filterimagesdialog.cpp:94
+msgid "Noise Reduction"
+msgstr "Parazit Azaltma"
+
+#: filterimagesdialog.cpp:95 filterimagesdialog.cpp:97
+msgid "Sharpen"
+msgstr "Keskinleştir"
+
+#: filterimagesdialog.cpp:96
+msgid "Unsharp"
+msgstr "Yumuşat"
+
+#: filterimagesdialog.cpp:98
+msgid ""
+"<p>Select here the filter type for your images:"
+"<p><b>Add noise</b>: add artificial noise to an image."
+"<p><b>Antialias</b>: remove pixel aliasing."
+"<p><b>Blur</b>: blur the image with a Gaussian operator."
+"<p><b>Despeckle</b>: reduces the speckle noise in an image while perserving the "
+"edges of the original image."
+"<p><b>Enhance</b>: apply a digital filter to enhance a noisy image."
+"<p><b>Median</b>: apply a median filter to an image."
+"<p><b>Noise reduction</b>: reduce noise in an image. "
+"<p><b>Sharpen</b>: sharpen the image with a Gaussian operator."
+"<p><b>Unsharp</b>: sharpen the image with an unsharp mask operator."
+"<p>"
+msgstr ""
+"<p>Burada, resimleriniz için filtre çeşidi seçiniz:"
+"<p><b>Parazit Ekle</b>: resme suni parazit ekle."
+"<p><b>Örtüşme Önle</b>: örtüşen benekleri kaldır."
+"<p><b>Bulanıklaştır</b>: resmi bir Gaussian işlemi ile bulanıklaştır."
+"<p><b>Parazit Kaldır</b>: asıl resmin sınırlarını korurken, paraziti azaltır.."
+"<p><b>Pekiştir</b>: parazitli bir resmi pekiştirmek için dijital bir filtre "
+"uygula."
+"<p><b>Medyan</b>: resme bir medyan filtresi uygula."
+"<p><b>Parazit azaltma</b>: bir resimde parazit azalt. "
+"<p><b>Keskinleştir</b>: resmi Gaussian işlemi ile keskinleştir."
+"<p><b>Yumuşat</b>: maske yumuşatma işlemi ile resmi yumuşat."
+"<p>"
+
+#: filterimagesdialog.cpp:216 filterimagesdialog.cpp:287
+#: filteroptionsdialog.cpp:64
+msgid "Gaussian"
+msgstr "Gaussian"
+
+#: filterimagesdialog.cpp:286 filteroptionsdialog.cpp:63
+msgid "Uniform"
+msgstr "Tek"
+
+#: filterimagesdialog.cpp:288 filteroptionsdialog.cpp:65
+msgid "Multiplicative"
+msgstr "Çoklu"
+
+#: filterimagesdialog.cpp:289 filteroptionsdialog.cpp:66
+msgid "Impulse"
+msgstr "Vuruş"
+
+#: filterimagesdialog.cpp:290 filteroptionsdialog.cpp:67
+msgid "Laplacian"
+msgstr "Laplacian"
+
+#: filterimagesdialog.cpp:291 filteroptionsdialog.cpp:68
+msgid "Poisson"
+msgstr "Poisson"
+
+#: filteroptionsdialog.cpp:51
+msgid "Filter Options"
+msgstr "Filtre Seçenekleri"
+
+#: filteroptionsdialog.cpp:60
+msgid "Noise algorithm:"
+msgstr "Parazit algoritması:"
+
+#: filteroptionsdialog.cpp:69
+msgid ""
+"<p>Select here the algorithm method which will used to add random noise to the "
+"images."
+msgstr ""
+"<p>Burada, resme rastgele parazit ekleme için kullanılacak algoritma metodunu "
+"seçiniz."
+
+#: filteroptionsdialog.cpp:81
+msgid ""
+"<p>Select here the blur radius of the Gaussian, in pixels, not counting the "
+"center pixel. For reasonable results, the radius should be larger than "
+"deviation. If you use a radius of 0 the blur operations selects a suitable "
+"radius."
+msgstr ""
+"<p>Burada, merkezi benek sayılmamak üzere benek cinsinden Gaussian "
+"bulanıklaştırma yarıçapını seçiniz. Mantıklı sonuçlar için, yarıçap sapmadan "
+"büyük olmalıdır. Yarıçap olarak 0 seçerseniz, bulanıklaştırma işlemi uygun bir "
+"yarıçap seçecektir."
+
+#: filteroptionsdialog.cpp:92
+msgid "<p>Select here the standard deviation of the blur Gaussian, in pixels."
+msgstr ""
+"<p>Burada Gaussian bulanıklaştırmasının benek sinsinden standart sapmasını "
+"seçiniz."
+
+#: filteroptionsdialog.cpp:104
+msgid ""
+"<p>Select here the median radius of the pixel neighborhood. The algorithm "
+"applies a digital filter that improves the quality of noisy images. Each pixel "
+"is replaced by the median in a set of neighboring pixels as defined by the "
+"radius."
+msgstr ""
+"<p>Burada, benek komşuluğunun medyan yarıçapını bulunuz. Algoritma, parazitli "
+"resimlerin kalitesini yükselten dijital bir filtre uygular. Her benek, "
+"yarıçapla belirlenen bir komu benekler kümesindeki medyan ile değiştirilir."
+
+#: filteroptionsdialog.cpp:119
+msgid ""
+"<p>Select here the noise reduction radius value, in pixels. The algorithm "
+"smooths the contours of an image while still preserving edge information. The "
+"algorithm works by replacing each pixel with its neighbor closest in value. A "
+"neighbor is defined by the radius. If you use a radius of 0 the algorithm "
+"selects a suitable radius."
+msgstr ""
+"<p>Burada, benek cinsinden parazit giderme yarıçap değerini seçiniz. Algoritma, "
+"sınır bilgilerini korurken aynı zamanda bir resmin dış hatlarını da yumuşatır. "
+"Algortima, herbir beneği değer olarak en yakın komşusuyla değiştirerek işler. "
+"Komşu, yarıçap ile belirlenir. Yarıçap olarak 0 seçerseniz, algoritma uygun bir "
+"yarıçap seçecektir."
+
+#: filteroptionsdialog.cpp:135
+msgid ""
+"<p>Select here the radius of the sharpen Gaussian, in pixels, not counting the "
+"center pixel. For reasonable results, the radius should be larger than "
+"deviation. if you use a radius of 0 the sharpen operation selects a suitable "
+"radius."
+msgstr ""
+"<p>BUrada, merkezi benek sayılmadan Gaussian keskinleştirmesinin yarıçapını "
+"benek cinsinden seçiniz. Mantıklı sonuçlar için, yarıçap sapmadan büyük "
+"olmalıdır. Yarıçap olarak 0 kullanırsanız, ksekinleştirme işlemi uygun bir "
+"yarıçap seçecektir."
+
+#: filteroptionsdialog.cpp:147
+msgid "<p>Select here the sharpen deviation value of the Laplacian in pixels."
+msgstr ""
+"<p>Burada Laplacian keskinleştirmesi için standart sapma değerini benek olarak "
+"seçini"
+
+#: filteroptionsdialog.cpp:159
+msgid ""
+"<p>Select here the radius of the unsharpen Gaussian, in pixels, not counting "
+"the center pixel. The algorithm convolve the image with a Gaussian operator of "
+"the given radius and standard deviation. For reasonable results, radius should "
+"be larger than sigma. If you use a radius of 0 the algorithm selects a suitable "
+"radius."
+msgstr ""
+"<p>Burada, benek cinsinden merkezi benek hariç Gaussian yumuşatmasının "
+"yarıçapını seçiniz. Algoritma, verilen yarıçap ve standart sapmanın Gaussian "
+"işlemi ile resmi değiştirir. Mantıklı sonuçlar için yarıçap, sigma değerinden "
+"büyük olmalıdır. Yarıçap olarak 0 seçerseniz, algoritma uygun bir yarıçap "
+"seçecektir."
+
+#: filteroptionsdialog.cpp:172
+msgid ""
+"<p>Select here the unsharpen deviation value of the Gaussian, in pixels."
+msgstr ""
+"<p>Burada, benek cinsinden Gaussian için yumuşatma sapma değerini seçiniz."
+
+#: filteroptionsdialog.cpp:177
+msgid "Percent:"
+msgstr "Yüzde:"
+
+#: filteroptionsdialog.cpp:181
+msgid ""
+"<p>Select here the percentage difference between original and blurred image "
+"which should be added to original."
+msgstr ""
+"<p>Burada, asıl resme eklemek üzere, asıl ve bulanıklaştırılmış resim "
+"arasındaki fark yüzdesini seçiniz."
+
+#: filteroptionsdialog.cpp:186
+msgid "Threshold:"
+msgstr "Limit:"
+
+#: filteroptionsdialog.cpp:190
+msgid ""
+"<p>Select here the unsharpen threshold value, in pixels, needed to apply the "
+"diffence amount."
+msgstr ""
+"<p>Burada, fark miktarının uygulanmasında kullanılacak olan yumuşatma limit "
+"değerini benek cinsinden seçiniz."
+
+#: imagepreview.cpp:83
+msgid "Batch Process Preview (%1 - %2)"
+msgstr "Çoklu İşlem Önizleme (%1 - %2)"
+
+#: imagepreview.cpp:88
+msgid "Batch process images"
+msgstr "Resim Çoklu İşleme"
+
+#: imagepreview.cpp:91
+msgid ""
+"An interface to preview the \"Batch Process Images\" Kipi plugin.\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"\"Çoklu Resim İşleme\" Kipi eklentisi önizleme için bir arayüz.\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: imagepreview.cpp:103 outputdialog.cpp:70
+#, fuzzy
+msgid "Plugin Handbooks"
+msgstr "Kipi Eklentileri El Kitabı"
+
+#: imagepreview.cpp:126
+msgid "Zoom Factor"
+msgstr "Yaklaştırma Oranı"
+
+#: imagepreview.cpp:130
+msgid "<p>The zoom factor value, as a percentage."
+msgstr "<p>Yüzde olarak yaklaştırma oranı değeri."
+
+#: imagepreview.cpp:136
+msgid "<p>Moving this slider changes the zoom factor value."
+msgstr "<p>Bu ibreyi kaydırma, yaklaştırma oranı değerini değiştirir."
+
+#: imagepreview.cpp:140
+msgid "Original Image"
+msgstr "Orjinal Resim"
+
+#: imagepreview.cpp:142
+msgid ""
+"<p>This is the original image preview. You can use the mouse wheel to change "
+"the zoom factor. Click in and use the mouse to move the image."
+msgstr ""
+"<p>Asıl resim önizleme. Yaklaştırma oranını değiştirmek için fare tekerleğini "
+"kullanabilirsiniz. Resmi taşımak için tıklayın ve fareyi kullanın."
+
+#: imagepreview.cpp:147
+msgid "Destination Image"
+msgstr "Hedef Resim"
+
+#: imagepreview.cpp:149
+msgid ""
+"<p>This is the destination image preview. You can use the mouse wheel to change "
+"the zoom factor. Click in and use the mouse to move the image."
+msgstr ""
+"<p>Hedef resim önizleme. Yaklaştırma oranını değiştirmek için fare tekerleğini "
+"kullanabilirsiniz. Resmi taşımak için tıklayın ve fareyi kullanın."
+
+#: imagepreview.cpp:252
+msgid ""
+"Preview\n"
+"image\n"
+"processing\n"
+"in\n"
+"progress..."
+msgstr ""
+"Resim\n"
+"önizleme\n"
+"işlemi\n"
+"yapılıyor..."
+
+#: imagepreview.cpp:325
+msgid ""
+"Cannot\n"
+"process\n"
+"preview\n"
+"image."
+msgstr ""
+"Önizleme\n"
+"işlemi\n"
+"yapılamıyor."
+
+#: outputdialog.cpp:51
+msgid "Copy to Clip&board"
+msgstr "&Panoya kopyala"
+
+#: outputdialog.cpp:55
+msgid "Batch processes images"
+msgstr "Çoklu resim işleme"
+
+#: outputdialog.cpp:58
+msgid ""
+"An interface to show the output of the \"Batch Process Images\" Kipi plugin.\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"\"Çoklu Resim İşleme\" Kipi eklentisinin çıktısını göstermek için bir arayüz.\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: plugin_batchprocessimages.cpp:83
+msgid "Border Images..."
+msgstr "Resimleri Çerçevele..."
+
+#: plugin_batchprocessimages.cpp:91
+msgid "Color Images..."
+msgstr "Resimleri Renklendir..."
+
+#: plugin_batchprocessimages.cpp:99
+msgid "Convert Images..."
+msgstr "Resimleri Dönüştür..."
+
+#: plugin_batchprocessimages.cpp:107
+msgid "Image Effects..."
+msgstr "Resim Etkileri..."
+
+#: plugin_batchprocessimages.cpp:115
+msgid "Filter Images..."
+msgstr "Resimleri Filtrele..."
+
+#: plugin_batchprocessimages.cpp:123
+msgid "Rename Images..."
+msgstr "Resimleri Adlandır..."
+
+#: plugin_batchprocessimages.cpp:131
+msgid "Recompress Images..."
+msgstr "Resimleri Sıkıştır..."
+
+#: plugin_batchprocessimages.cpp:139
+msgid "Resize Images..."
+msgstr "Resimleri Boyutlandır..."
+
+#: plugin_batchprocessimages.cpp:229
+msgid "Please select an album or a selection of images."
+msgstr "Lütfen albüm veya resimler seçiniz."
+
+#. i18n: file renameimagesbase.ui line 16
+#: rc.cpp:3
+#, fuzzy, no-c-format
+msgid "RenameImagesBase"
+msgstr "Resimleri Adlandır..."
+
+#. i18n: file renameimagesbase.ui line 30
+#: rc.cpp:6
+#, fuzzy, no-c-format
+msgid "Template for renaming files"
+msgstr "Resimleri Adlandırmak İçin Kullanılacak Şablon"
+
+#. i18n: file renameimagesbase.ui line 41
+#: rc.cpp:9
+#, fuzzy, no-c-format
+msgid "Sequence number start value:"
+msgstr "Numaralandırma başlama değeri:"
+
+#. i18n: file renameimagesbase.ui line 54
+#: rc.cpp:12
+#, no-c-format
+msgid "Prefix string:"
+msgstr "Ön ek metin:"
+
+#. i18n: file renameimagesbase.ui line 62
+#: rc.cpp:15
+#, no-c-format
+msgid "Add original file name"
+msgstr "Orjinal dosya adı ekle"
+
+#. i18n: file renameimagesbase.ui line 70
+#: rc.cpp:18
+#, no-c-format
+msgid "Add file date"
+msgstr "Dosya tarihi ekle"
+
+#. i18n: file renameimagesbase.ui line 78
+#: rc.cpp:21
+#, no-c-format
+msgid "Use extra [X*] symbols in date format field"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 116
+#: rc.cpp:24
+#, fuzzy, no-c-format
+msgid "Date format:"
+msgstr "Biçim:"
+
+#. i18n: file renameimagesbase.ui line 197
+#: rc.cpp:33
+#, no-c-format
+msgid "Album"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 274
+#: rc.cpp:45
+#, fuzzy, no-c-format
+msgid "Reverse List"
+msgstr "Sırayı ters çevir"
+
+#. i18n: file renameimagesbase.ui line 299
+#: rc.cpp:48
+#, fuzzy, no-c-format
+msgid "Sort List"
+msgstr "Asıl listeyi sırala:"
+
+#. i18n: file renameimagesbase.ui line 307
+#: rc.cpp:51
+#, no-c-format
+msgid "Move &Down"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 315
+#: rc.cpp:54
+#, no-c-format
+msgid "Move &Up"
+msgstr ""
+
+#: recompressimagesdialog.cpp:57
+msgid "Batch Recompress Images"
+msgstr "Resimleri Çoklu Sıkıştırma"
+
+#: recompressimagesdialog.cpp:61
+msgid "Batch recompress images"
+msgstr "Resimleri çoklu sıkıştırma"
+
+#: recompressimagesdialog.cpp:64
+msgid ""
+"A Kipi plugin to batch recompress images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Çoklu resim sıkıştırma için bir KIPI eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: recompressimagesdialog.cpp:83
+msgid "Image Recompression Options"
+msgstr "Resim Sıkıştırma Seçenekleri"
+
+#: recompressimagesdialog.cpp:265 resizeimagesdialog.cpp:538
+msgid "image file format unsupported."
+msgstr "resim dosya biçimi desteklenmiyor."
+
+#: recompressoptionsdialog.cpp:50
+msgid "Recompression Options"
+msgstr "Sıkıştırma seçenekleri"
+
+#: recompressoptionsdialog.cpp:59
+msgid "JPEG File Format"
+msgstr "JPEG Dosya Biçimi"
+
+#: recompressoptionsdialog.cpp:64
+msgid "<p>The compression value for JPEG target images:<p>"
+msgstr "<p>JPEG resimleri için sıkıştırma değeri:<p>"
+
+#: recompressoptionsdialog.cpp:75
+msgid ""
+"<p>If this option is enabled, all JPEG operations will use lossless "
+"compression."
+msgstr ""
+"<p>Bu seçenek etkinleştirilirse, bütün JPEG işlemlerinde kayıpsız "
+"sıkıştırmakullanılacaktır."
+
+#: recompressoptionsdialog.cpp:85
+msgid "PNG File Format"
+msgstr "PNG Dosya Biçimi"
+
+#: recompressoptionsdialog.cpp:90
+msgid "<p>The compression value for PNG target images:<p>"
+msgstr "<p>PNG resimleri için sıkıştırma değeri:<p>"
+
+#: recompressoptionsdialog.cpp:104
+msgid "TIFF File Format"
+msgstr "TIFF Dosya Biçimi"
+
+#: recompressoptionsdialog.cpp:111
+msgid "<p>Select here the TIFF compression algorithm."
+msgstr "<p>Burada TIFF sıkıştırma algoritmasını seçiniz."
+
+#: recompressoptionsdialog.cpp:118
+msgid "TGA File Format"
+msgstr "TGA Dosya Biçimi"
+
+#: recompressoptionsdialog.cpp:124
+msgid "<p>Select here the TGA compression algorithm."
+msgstr "<p>Burada TGA sıkıştırma algoritmasını seçiniz."
+
+#: renameimagesdialog.cpp:56
+msgid "Batch-rename images"
+msgstr "Çoklu resim adlandırma"
+
+#: renameimagesdialog.cpp:59
+msgid "A Kipi plugin to batch-rename images"
+msgstr "Çoklu resim adlandırma için bir KIPI eklentisi"
+
+#: renameimageswidget.cpp:98
+msgid "Sort by Name"
+msgstr ""
+
+#: renameimageswidget.cpp:99
+#, fuzzy
+msgid "Sort by Size"
+msgstr "Güneş ışığı"
+
+#: renameimageswidget.cpp:100
+msgid "Sort by Date"
+msgstr ""
+
+#: renameimageswidget.cpp:536
+#, fuzzy
+msgid "Rename File"
+msgstr "Yeniden Adlandır"
+
+#: renameimageswidget.cpp:583
+#, fuzzy
+msgid "Skipped"
+msgstr "Atlandı."
+
+#: renameimageswidget.cpp:599
+#, fuzzy
+msgid "Failed"
+msgstr "Başarısız."
+
+#: resizeimagesdialog.cpp:59
+msgid "Batch Resize Images"
+msgstr "Çoklu Resim Boyutlandırma"
+
+#: resizeimagesdialog.cpp:63
+msgid "Batch resize images"
+msgstr "Çoklu resim boyutlandırma"
+
+#: resizeimagesdialog.cpp:66
+msgid ""
+"A Kipi plugin to batch-resize images\n"
+"This plugin uses the \"convert\" program from \"ImageMagick\" package."
+msgstr ""
+"Resimleri çoklu boyutlandırmak için bir Kipi eklentisi\n"
+"Bu eklenti \"ImageMagick\" paketinden \"convert\" programını kullanır."
+
+#: resizeimagesdialog.cpp:85
+msgid "Image Resizing Options"
+msgstr "Resim Boyutlandırma Seçenekleri"
+
+#: resizeimagesdialog.cpp:87
+msgid "Type:"
+msgstr "Tip:"
+
+#: resizeimagesdialog.cpp:89 resizeimagesdialog.cpp:93
+msgid "Proportional (1 dim.)"
+msgstr "Orantısal (1 boyut)"
+
+#: resizeimagesdialog.cpp:90
+msgid "Proportional (2 dim.)"
+msgstr "Orantısal (2 boyut)"
+
+#: resizeimagesdialog.cpp:91
+msgid "Non-Proportional"
+msgstr "Orantısal olmayan"
+
+#: resizeimagesdialog.cpp:92
+msgid "Prepare to Print"
+msgstr "Yazmaya hazırla"
+
+#: resizeimagesdialog.cpp:94
+msgid "<p>Select here the image-resize type."
+msgstr "<p>Resim boyutlandırma tipini seçiniz."
+
+#: resizeimagesdialog.cpp:95
+msgid ""
+"<p><b>Proportional (1 dim.)</b>: standard auto-resizing using one dimension. "
+"The width or the height of the images will be automatically selected, depending "
+"on the images' orientations. The images' aspect ratios are preserved."
+msgstr ""
+"<p><b>Orantısal (1 boyut)</b>: tek boyut kullanarak standart otomatik "
+"boyutlandırma. Genişlik veya yükseklikresim yönüne göre otomatik olarak "
+"seçilecektir. Resimlerin görünüm oranlarıkorunacaktır."
+
+#: resizeimagesdialog.cpp:99
+msgid ""
+"<p><b>Proportional (2 dim.)</b>: auto-resizing using two dimensions. The "
+"images' aspect ratio are preserved. You can use this, for example, to adapt "
+"your images' sizes to your screen size."
+msgstr ""
+"<p><b>Orantısal (2 boyut)</b>: iki boyut kullanarak otomatik boyutlandırma. "
+"Resimlerin görünüm oranları korunacaktır. Bunu, mesela resminizin ekran "
+"boyutunuza uygunlaştırılmasında kullanabilirsiniz."
+
+#: resizeimagesdialog.cpp:102
+msgid ""
+"<p><b>Non proportional</b>: non-proportional resizing using two dimensions. The "
+"images' aspect ratios are not preserved."
+msgstr ""
+"<p><b>Orantısal olmayan</b>: iki boyut kullanarak orantısal olmayan "
+"boyutlandırma. Resim görünüm oranları korunmayacaktır."
+
+#: resizeimagesdialog.cpp:104
+msgid ""
+"<p><b>Prepare to print</b>: prepare the image for photographic printing. The "
+"user can set the print resolution and the photographic paper size. The target "
+"images will be adapted to the specified dimensions (included the background "
+"size, margin size, and background color)."
+msgstr ""
+"<p><b>Yazdırmaya hazırla</b>: resmi fotoğrafik yazdırmaya hazırla. Kullanıcı, "
+"yazdırma çözünürlüğünü vefotoğraf kağıdının boyutunu ayarlayabilir. Hedef "
+"resimler belirlenen boyutlara uygunlaştırılacaktır. (arkaplan boyutu, kenar "
+"boşlukları ve arkaplan rengi dahil)."
+
+#: resizeoptionsdialog.cpp:53
+msgid "Image-Resize Options"
+msgstr "Resim Boyutlandırma Seçenekleri"
+
+#: resizeoptionsdialog.cpp:63 resizeoptionsdialog.cpp:176
+msgid "Resize Options"
+msgstr "Boyutlandırma Seçenekleri"
+
+#: resizeoptionsdialog.cpp:67
+msgid "New size (pixels):"
+msgstr "Yeni boyut (piksel):"
+
+#: resizeoptionsdialog.cpp:68
+msgid "<p>The new images' size in pixels."
+msgstr "<p>Yeni resimlerin piksel olarak boyutları."
+
+#: resizeoptionsdialog.cpp:72 resizeoptionsdialog.cpp:125
+#: resizeoptionsdialog.cpp:190 resizeoptionsdialog.cpp:321
+msgid "Image quality (percent):"
+msgstr "Resim kalitesi (yüzde):"
+
+#: resizeoptionsdialog.cpp:73 resizeoptionsdialog.cpp:128
+#: resizeoptionsdialog.cpp:191 resizeoptionsdialog.cpp:324
+msgid "<p>Quality for JPEG images."
+msgstr "<p>JPEG resimler için kalite."
+
+#: resizeoptionsdialog.cpp:75 resizeoptionsdialog.cpp:142
+#: resizeoptionsdialog.cpp:193 resizeoptionsdialog.cpp:292
+msgid "Filter name:"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:78 resizeoptionsdialog.cpp:144
+#: resizeoptionsdialog.cpp:196 resizeoptionsdialog.cpp:294
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Bessel"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:79 resizeoptionsdialog.cpp:145
+#: resizeoptionsdialog.cpp:197 resizeoptionsdialog.cpp:295
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Blackman"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:80 resizeoptionsdialog.cpp:146
+#: resizeoptionsdialog.cpp:198 resizeoptionsdialog.cpp:296
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Box"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:81 resizeoptionsdialog.cpp:147
+#: resizeoptionsdialog.cpp:199 resizeoptionsdialog.cpp:297
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Catrom"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:82 resizeoptionsdialog.cpp:148
+#: resizeoptionsdialog.cpp:200 resizeoptionsdialog.cpp:298
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Cubic"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:83 resizeoptionsdialog.cpp:149
+#: resizeoptionsdialog.cpp:201 resizeoptionsdialog.cpp:299
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Gaussian"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:84 resizeoptionsdialog.cpp:150
+#: resizeoptionsdialog.cpp:202 resizeoptionsdialog.cpp:300
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Hermite"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:85 resizeoptionsdialog.cpp:151
+#: resizeoptionsdialog.cpp:203 resizeoptionsdialog.cpp:301
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Hanning"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:86 resizeoptionsdialog.cpp:152
+#: resizeoptionsdialog.cpp:204 resizeoptionsdialog.cpp:302
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Hamming"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:87 resizeoptionsdialog.cpp:153
+#: resizeoptionsdialog.cpp:205 resizeoptionsdialog.cpp:303
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Lanczos"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:88 resizeoptionsdialog.cpp:154
+#: resizeoptionsdialog.cpp:206 resizeoptionsdialog.cpp:304
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Mitchell"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:89 resizeoptionsdialog.cpp:155
+#: resizeoptionsdialog.cpp:207 resizeoptionsdialog.cpp:305
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Point"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:90 resizeoptionsdialog.cpp:156
+#: resizeoptionsdialog.cpp:208 resizeoptionsdialog.cpp:306
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Quadratic"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:91 resizeoptionsdialog.cpp:157
+#: resizeoptionsdialog.cpp:209 resizeoptionsdialog.cpp:307
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Sinc"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:92 resizeoptionsdialog.cpp:158
+#: resizeoptionsdialog.cpp:210 resizeoptionsdialog.cpp:308
+#, fuzzy
+msgid ""
+"_: Filter name\n"
+"Triangle"
+msgstr "Filtre adı:"
+
+#: resizeoptionsdialog.cpp:93 resizeoptionsdialog.cpp:159
+#: resizeoptionsdialog.cpp:211 resizeoptionsdialog.cpp:309
+msgid ""
+"<p>Select here the filter name for the resize-image process. This filter will "
+"be used like a kernel convolution process during the increased image size "
+"rendering. The default filter is 'Lanczos'."
+msgstr ""
+"<p>Burada resmi boyutlandırmak için filtre adı seçiniz. Bu filtre artan resim "
+"boyutları hesaplanırken bir çekirdek dönüştürme işlemi gibi kullanılacaktır. "
+"Öntanımlı süzgeç 'Lanzcos'tur."
+
+#: resizeoptionsdialog.cpp:101
+msgid ""
+"Note: the images will be resized to\n"
+"this size. The width or the height of the\n"
+"images will be automatically\n"
+"selected in depending of the images orientation.\n"
+"The images' aspect ratios are preserved."
+msgstr ""
+"Not resimler bu boya göre yeniden\n"
+"boyutlandırılacaktır. Resimleri genişlik\n"
+"veya yüksekliği resim durumuna bağlı olarak\n"
+"otomatik olarak hesaplanacaktır.\n"
+"Resimlerin kenar oranları korunacaktır."
+
+#: resizeoptionsdialog.cpp:111
+msgid "Size Settings"
+msgstr "Boyut Ayarları"
+
+#: resizeoptionsdialog.cpp:113
+msgid "Width (pixels):"
+msgstr "Genişlik (piksel):"
+
+#: resizeoptionsdialog.cpp:116 resizeoptionsdialog.cpp:181
+msgid "<p>The new images' width in pixels."
+msgstr "<p>Yeni resimlerin piksel olarak genişliği."
+
+#: resizeoptionsdialog.cpp:119
+msgid "Height (pixels):"
+msgstr "Yükseklik (piksel)"
+
+#: resizeoptionsdialog.cpp:122 resizeoptionsdialog.cpp:186
+msgid "<p>The new images' height in pixels."
+msgstr "<p> Yeni resimlerin piksel olarak yüksekliği."
+
+#: resizeoptionsdialog.cpp:133 resizeoptionsdialog.cpp:283
+msgid "Rendering Settings"
+msgstr "Hesaplama Ayarları"
+
+#: resizeoptionsdialog.cpp:135 resizeoptionsdialog.cpp:285
+msgid "Background color:"
+msgstr "Arkaplan rengi:"
+
+#: resizeoptionsdialog.cpp:138 resizeoptionsdialog.cpp:288
+msgid ""
+"<p>You can select here the background color to be used when adapting the "
+"images' sizes."
+msgstr ""
+"<p>Burada, resim boyutları hesaplanırken kullanılacak arkaplan rengini "
+"belirleyebilirsiniz."
+
+#: resizeoptionsdialog.cpp:165
+msgid "Border size (pixels):"
+msgstr "Çerçeve boyutu (piksel):"
+
+#: resizeoptionsdialog.cpp:168
+msgid "<p>The border size around the images in pixels."
+msgstr "<p>Benek cinsinden, resmin etrafında yer alacak çerçeve büyüklüğü."
+
+#: resizeoptionsdialog.cpp:180
+msgid "New width (pixels):"
+msgstr "Yeni genişlik (piksel):"
+
+#: resizeoptionsdialog.cpp:185
+msgid "New height (pixels):"
+msgstr "Yeni yükseklik (piksel):"
+
+#: resizeoptionsdialog.cpp:222
+msgid "Use custom settings"
+msgstr "Özel ayarları kullan"
+
+#: resizeoptionsdialog.cpp:223
+msgid "<p>If this option is enabled, all printing settings can be customized."
+msgstr ""
+"<p>Bu seçenek etkinleştirilirse, bütün yazdırma ayarları özelleştirilebilir."
+
+#: resizeoptionsdialog.cpp:227
+msgid "Printing Standard Settings"
+msgstr "Yazdırma Standart Ayarları"
+
+#: resizeoptionsdialog.cpp:229
+msgid "Paper size (cm):"
+msgstr "Kağı boyutu (cm):"
+
+#: resizeoptionsdialog.cpp:242
+msgid "<p>The standard photographic paper sizes in centimeters."
+msgstr "<p>Santimetre cinsinden standart fotoğraf kağıdı boyutları."
+
+#: resizeoptionsdialog.cpp:245 resizeoptionsdialog.cpp:275
+msgid "Print resolution (dpi):"
+msgstr "Yazdırma çözünürlüğü (dpi):"
+
+#: resizeoptionsdialog.cpp:254
+msgid "<p>The standard print resolutions in dots per inch."
+msgstr "<p>İnç başına nokta (dpi) cinsinden standart yazdırma çözünürlüğü."
+
+#: resizeoptionsdialog.cpp:259
+msgid "Printing Custom Settings"
+msgstr "Yazdırma Özel Ayarları"
+
+#: resizeoptionsdialog.cpp:261
+msgid "Paper width (cm):"
+msgstr "Kağıt genişliği (cm):"
+
+#: resizeoptionsdialog.cpp:264
+msgid "<p>The customized width of the photographic paper size in centimeters."
+msgstr "<p>Fotoğraf kağıdının santimetre cinsinden özelleştirilen genişliği."
+
+#: resizeoptionsdialog.cpp:268
+msgid "Paper height (cm):"
+msgstr "Kağıt yüksekliği (cm):"
+
+#: resizeoptionsdialog.cpp:271
+msgid "<p>The customized height of the photographic paper size in centimeters."
+msgstr "<p>Fotoğraf kağıdının santimetre cinsinden özelleştirilen yüksekliği."
+
+#: resizeoptionsdialog.cpp:278
+msgid "<p>The customized print resolution in dots per inch."
+msgstr ""
+"<p>İnç başına nokta (dpi) cinsinden özelleştirilen yazdırma çözünürlüğü."
+
+#: resizeoptionsdialog.cpp:315
+msgid "Margin size (mm):"
+msgstr "Kenar boşluğu (mm):"
+
+#: resizeoptionsdialog.cpp:318
+msgid "<p>The margin around the images in millimeters."
+msgstr "<p>Milimetre cinsinden resmin etrafındaki boşluk."
+
+#: resizeoptionsdialog.cpp:363
+msgid ""
+"You must enter a custom height greater than the custom width: the photographic "
+"paper must be vertically orientated."
+msgstr ""
+"Yükseklik, genişlikten daha büyük olmalı: Fotoğraf kağıdı dik olarak "
+"yerleştirilmelidir."
+
+#~ msgid "Batch Image-Bordering Handbook"
+#~ msgstr "Çoklu Resim Çerçeveleme El Kitabı"
+
+#~ msgid "Batch Image-Color Enhancement Handbook"
+#~ msgstr "Çoklu Resim Renklendirme El Kitabı"
+
+#~ msgid "Batch Convert Images Handbook"
+#~ msgstr "Çoklu Resim Dönüştürme El Kitabı"
+
+#~ msgid "Batch Image Effects Handbook"
+#~ msgstr "Çoklu Resim Etkileri El Kitabı"
+
+#~ msgid "Batch Image Filtering Handbook"
+#~ msgstr "Çoklu Resim Filtreleme El Kitabı"
+
+#~ msgid "Batch Recompress Images Handbook"
+#~ msgstr "Çoklu Resim Sıkıştırma El Kitabı"
+
+#~ msgid "Batch-Rename Images Handbook"
+#~ msgstr "Çoklu Resim Adlandırma El Kitabı"
+
+#~ msgid "Batch Resize Images Handbook"
+#~ msgstr "Resimleri Çoklu Boyutlandırma El Kitabı"
+
+#, fuzzy
+#~ msgid "Cannot run properly 'convert' program from 'ImageMagick' package"
+#~ msgstr ""
+#~ "'ImageMagick' ten dönüştürme programı başlatılamadı;\n"
+#~ "lütfen kurulumunuzu kontrol ediniz."
+
+#~ msgid "&New..."
+#~ msgstr "&Yeni..."
+
+#~ msgid "<p>With this button, you can create a new folder."
+#~ msgstr "<p>Bu düğme ile, yeni bir dizin oluşturabilirsiniz."
+
+#~ msgid "File List Order"
+#~ msgstr "Dosya Liste Sırası"
+
+#~ msgid "By File Name"
+#~ msgstr "Dosya Adına Göre"
+
+#~ msgid "By File Size"
+#~ msgstr "Dosya Boyutuna Göre"
+
+#, fuzzy
+#~ msgid "By File Date"
+#~ msgstr "Dosya Adına Göre"
+
+#~ msgid "Rename Image File Options"
+#~ msgstr "Resim Adlandırma Seçenekleri"
+
+#~ msgid "Template to Use for Renaming Images"
+#~ msgstr "Resimleri Adlandırmak İçin Kullanılacak Şablon"
+
+#~ msgid "<p>Enter here the prefix numeric enumerator string."
+#~ msgstr "<p>Burada ön ek olarak numaralandırıcı metni giriniz."
+
+#~ msgid "Numeric enumerator start value:"
+#~ msgstr "Numaralandırma başlama değeri:"
+
+#~ msgid "<p>Enter here the first numeric enumerator value (1 to 100000)."
+#~ msgstr "<p>Burada numaralandırmaya başlama değerini seçiniz. (1 den 100000'e)"
+
+#~ msgid "<p>If you enable this option, the original file name will added in the new file name."
+#~ msgstr "<p>Bu seçeneği etkinleştirirseniz, asıl dosya ismi yeni dosya ismine eklenecektir."
+
+#~ msgid "<p>If you enable this option, the last modified image file date will added in the new file name (format: DDMMYYYY)."
+#~ msgstr "<p>Bu seçeneği etkinleştirirseniz, dosyanın son değiştirilme tarihi yeni dosya ismine eklenecektir (biçim: GGAAYYYY)."
+
+#~ msgid "Add file size"
+#~ msgstr "Dosya boyutu ekle"
+
+#~ msgid "<p>If you enable this option, the image file size will added in the new file name."
+#~ msgstr "<p>Bu seçeneği etkinleştirirseniz, resim dosya boyutu yeni dosya ismine eklenecektir."
+
+#~ msgid "Sort original list:"
+#~ msgstr "Asıl listeyi sırala:"
+
+#~ msgid "By Modification Date"
+#~ msgstr "Değiştirme Tarihine göre"
+
+#~ msgid "<p>Select here the original file list sorting method."
+#~ msgstr "<p>Burada, asıl dosya listesi sıralama metodunu seçiniz."
+
+#~ msgid "Reverse order"
+#~ msgstr "Sırayı ters çevir"
+
+#~ msgid "<p>If you enable this option, the order of images files in the list will be reversed."
+#~ msgstr "<p>Bu seçeneği etkinleştirirseniz, resimlerin listedeki sırası ters çevrilecektir."
+
+#~ msgid "Files' Dates"
+#~ msgstr "Dosyaların Tarihleri"
+
+#~ msgid "Change date of image files"
+#~ msgstr "Resim dosyalarının tarihini değiştir"
+
+#~ msgid "<p>If you enable this option, the image files' dates can be changed."
+#~ msgstr "<p>Bu seçeneği etkinleştirirseniz, resim dosyalarının tarih bilgileri değiştirilecektir."
+
+#~ msgid "<p>You can set here the time stamp of the image files."
+#~ msgstr "<p>Burada, resim dosyalarının zaman bilgilerini ayarlayabilirsiniz."
+
+#~ msgid "Always OverWrite"
+#~ msgstr "Her Zaman Üzerine Yaz"
+
+#, fuzzy
+#~ msgid "Form1"
+#~ msgstr "Biçim:"
+
+#~ msgid "Batch Rename Images"
+#~ msgstr "Çoklu Resim Adlandırma"
+
+#~ msgid "Image-Renaming Options"
+#~ msgstr "Resim Adlandırma Seçenekleri"
+
+#~ msgid "Cannot copy or move original image file."
+#~ msgstr "Asıl resim kopyalanamıyor veya taşınamıyor."
+
+#~ msgid ""
+#~ "Check the file's access rights or the amount of disk space.\n"
+#~ "The internal error is:\n"
+#~ "\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dosyanın ulaşım izinlerini veya boş disk alanını kontrol ediniz.\n"
+#~ "Dahili hata::\n"
+#~ "\n"
+#~ "%1"
+
+#~ msgid "<qt>Error adding image to the host application; error message was: <b>%1</b></qt>"
+#~ msgstr "<qt>Resmin uygulamaya eklenmesinde hata; hata mesajı:<b>%1</b></qt>"
+
+#~ msgid ""
+#~ "The destination file \"%1\" already exists.\n"
+#~ "Do you want overwrite it?"
+#~ msgstr ""
+#~ "Hedef dosya \"%1\" zaten var.\n"
+#~ "Üzerine yazılsın mı?"
+
+#~ msgid "-(%1)"
+#~ msgstr "-(%1)"

@@ -1,0 +1,154 @@
+diff -ruN kdeutils-3.5.7-original/ark/arch.cpp kdeutils-3.5.7/ark/arch.cpp
+--- kdeutils-3.5.7-original/ark/arch.cpp	2006-10-01 21:28:15 +0400
++++ kdeutils-3.5.7/ark/arch.cpp	2007-08-16 11:16:52 +0400
+@@ -33,6 +33,7 @@
+ // QT includes
+ #include <qapplication.h>
+ #include <qfile.h>
++#include <qtextcodec.h>
+ 
+ // KDE includes
+ #include <kdebug.h>
+@@ -303,15 +304,20 @@
+ bool Arch::processLine( const QCString &line )
+ {
+   QString columns[ 11 ];
++  QString unicode_line;
+   unsigned int pos = 0;
+   int strpos, len;
+ 
++  QTextCodec *codec = QTextCodec::codecForLocale();
++  unicode_line = codec->toUnicode( line );
++
++
+   // Go through our columns, try to pick out data, return silently on failure
+   for ( QPtrListIterator <ArchColumns>col( m_archCols ); col.current(); ++col )
+   {
+     ArchColumns *curCol = *col;
+ 
+-    strpos = curCol->pattern.search( line, pos );
++    strpos = curCol->pattern.search( unicode_line, pos );
+     len = curCol->pattern.matchedLength();
+ 
+     if ( ( strpos == -1 ) || ( len > curCol->maxLength ) )
+@@ -327,7 +333,7 @@
+ 
+     pos = strpos + len;
+ 
+-    columns[ curCol->colRef ] = line.mid( strpos, len );
++    columns[ curCol->colRef ] = unicode_line.mid( strpos, len );
+   }
+ 
+ 
+diff -ruN kdeutils-3.5.7-original/ark/arkwidget.cpp kdeutils-3.5.7/ark/arkwidget.cpp
+--- kdeutils-3.5.7-original/ark/arkwidget.cpp	2007-05-14 11:40:46 +0400
++++ kdeutils-3.5.7/ark/arkwidget.cpp	2007-08-16 12:57:07 +0400
+@@ -1526,7 +1526,7 @@
+                       it != selectedFiles.constEnd();
+                       ++it )
+                 {
+-                    m_extractList->append( QFile::encodeName( *it ) );
++                    m_extractList->append( *it );
+                 }
+ 
+                 if (!bOvwrt)
+diff -ruN kdeutils-3.5.7-original/ark/rar.cpp kdeutils-3.5.7/ark/rar.cpp
+--- kdeutils-3.5.7-original/ark/rar.cpp	2006-05-22 22:08:38 +0400
++++ kdeutils-3.5.7/ark/rar.cpp	2007-08-16 11:17:08 +0400
+@@ -32,6 +32,7 @@
+ // QT includes
+ #include <qfile.h>
+ #include <qdir.h>
++#include <qtextcodec.h>
+ 
+ // KDE includes
+ #include <kdebug.h>
+@@ -80,9 +81,14 @@
+ 
+ bool RarArch::processLine( const QCString &line )
+ {
++  QString unicode_line;
++
++  QTextCodec *codec = QTextCodec::codecForLocale();
++  unicode_line = codec->toUnicode( line );
++  
+   if ( m_isFirstLine )
+   {
+-    m_entryFilename = line;
++    m_entryFilename = unicode_line;
+     m_entryFilename.remove( 0, 1 );
+     m_isFirstLine = false;
+     return true;
+@@ -90,7 +96,7 @@
+ 
+   QStringList list;
+ 
+-  QStringList l2 = QStringList::split( ' ', line );
++  QStringList l2 = QStringList::split( ' ', unicode_line );
+ 
+   list << m_entryFilename; // filename
+   list << l2[ 0 ]; // size
+@@ -235,8 +241,10 @@
+   {
+     *kp << "-o-";
+   }
++  
++  QTextCodec *codec = QTextCodec::codecForLocale();
+ 
+-  *kp << m_filename;
++  *kp << codec->fromUnicode(m_filename);
+ 
+   // if the file list is empty, no filenames go on the command line,
+   // and we then extract everything in the archive.
+@@ -245,11 +253,11 @@
+     QStringList::Iterator it;
+     for ( it = m_fileList->begin(); it != m_fileList->end(); ++it )
+     {
+-      *kp << (*it);
++      *kp << codec->fromUnicode(*it);
+     }
+   }
+ 
+-  *kp << m_destDir ;
++  *kp << codec->fromUnicode(m_destDir);
+ 
+   connect( kp, SIGNAL( receivedStdout(KProcess*, char*, int) ),
+            SLOT( slotReceivedOutput(KProcess*, char*, int) ) );
+diff -ruN kdeutils-3.5.7-original/ark/zip.cpp kdeutils-3.5.7/ark/zip.cpp
+--- kdeutils-3.5.7-original/ark/zip.cpp	2007-01-15 14:25:37 +0300
++++ kdeutils-3.5.7/ark/zip.cpp	2007-08-16 12:41:02 +0400
+@@ -28,6 +28,7 @@
+ 
+ // Qt includes
+ #include <qdir.h>
++#include <qtextcodec.h>
+ 
+ // KDE includes
+ #include <kdebug.h>
+@@ -207,8 +208,10 @@
+     *kp << "-o";
+   else
+     *kp << "-n";
++  
++  QTextCodec *codec = QTextCodec::codecForLocale();
+ 
+-  *kp << m_filename;
++  *kp << codec->fromUnicode(m_filename);
+ 
+   // if the list is empty, no filenames go on the command line,
+   // and we then extract everything in the archive.
+@@ -218,11 +221,12 @@
+ 
+     for ( it = m_fileList->begin(); it != m_fileList->end(); ++it )
+     {
+-      *kp << (*it);
++      *kp << codec->fromUnicode(*it);
+     }
+   }
+ 
+-  *kp << "-d" << m_destDir;
++  *kp << "-d";
++  *kp << codec->fromUnicode(m_destDir);
+ 
+   connect( kp, SIGNAL( receivedStdout(KProcess*, char*, int) ),
+            SLOT( slotReceivedOutput(KProcess*, char*, int) ) );

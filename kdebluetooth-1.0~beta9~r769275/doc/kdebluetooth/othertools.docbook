@@ -1,0 +1,115 @@
+<sect1 id="components.othertools">
+<title>Additional Integration- and Command Line Tools</title>
+<para>
+This sections lists all the other smaller tools and script that come
+with kdebluetooth. Most of them are of limited use alone, but supposed
+to be called from within scripts or by other programs.
+</para>
+
+<sect2 id="components.othertools.kioclient">
+<title>kioclient: Script access to the KIO framework</title>
+<para>
+This is a little utility to access kioslaves from the command line.
+So <command>kioclient</command> is actually a general purpose utility, but
+since it didn't seem to exist already, I had to program it myself.
+</para>
+<para>
+With <command>kioclient</command> you can copy, list, delete any
+file or directory which is accessible by KDE's KIO Framework. You can
+copy a file from a FTP server directly to another server using WebDAV
+or list a directory via SSH with kio_fish. Or - and that's where it 
+becomes interesting for us - you can access files on your mobile phone
+via kio_obex. kioclient is used by a sample script that comes with
+kbluetoothd: The <command>copy_images</command>-script.
+</para>
+<para>
+You can list the possible arguments with <command>kioclient --help</command>,
+so here are just a few examples to get a first impression:
+<screen>
+$ kioclient cat http://www.kde.org | head -1
+&lt;?xml version="1.0" encoding="UTF-8"?>
+$ kioclient ls -s ftp://ftp.kde.org | head -4
+     4096 .
+     4096 ..
+     4096 bin
+     4096 dev
+$ kioclient ls bluetooth:/
+local system
+Fred's 6230
+Fred's 3650
+$ kioclient ls "sdp://Fred's 6230/"
+OBEX Object Push
+OBEX File Transfer
+Dial-up networking
+Nokia PC Suite
+COM 1
+Voice Gateway
+Audio Gateway
+SIM ACCESS
+.More Services
+$
+</screen>
+</para>
+<para>
+Please note that kioclient - even though it is a command line program - still needs to be
+ run from within KDE, so you won't be able to use it in cronjobs for instance. But this limitation doesn't matter when you use it for deiscovery scripts in kbluetoothd.
+</para>
+
+</sect2>
+
+<sect2>
+<title>kbtsearch: Searching for devices from within scripts</title>
+<para>
+Like <command>kioclient</command> or KDE's <command>kdialog</command>, this is a command line tool that is supposed be used in scripts. It provides a command line interface
+to the two common search dialogs of kdebluetooth - the device search dialog and the 
+service search dialog.
+</para>
+<para>
+You can use it when you want to the user to select a bluetooth device or find
+a specific service among the devices in range. Just like everywhere, the service
+selection dialog remembers the found devices and immendiatly fills the service
+list with previously found entries. The currently available services are
+added to the list after a few seconds.
+</para>
+<para>
+To search for a device, simply type <command>kbtsearch --device</command>. 
+When the user has selected a device or entered an address and clicked <guibutton>OK</guibutton>, kbtsearch will print the address of the device to stdout and return with status 0. If the user clicks <guibutton>Cancel</guibutton>, nothing is printed and the returned status code is 1:
+<screen>
+$ if ADDR=$(kbtsearch --device) ;
+> then echo "Selected address: $ADDR.";
+> else echo "No address selected."; fi
+Selected address: 00:60:57:5C:E6:BD.
+$
+</screen>
+</para>
+<para>
+You can also search for a device that implements a given Bluetooth profile with <command>kbtsearch --uuid &lt;Service-UUID></command>. For a complete list of possible UUIDs for standard Bluetooth profile, see the <ulink url="https://www.bluetooth.org/foundry/assignnumb/document/service_discovery">Bluetooth Assigned Numbers (SDP)</ulink>. kbtsearch also defines some aliases for commonly used profiles. Run <command>kbtsearch --aliases</command> to get a list of possible aliases.
+</para>
+<para>When the user selects a service and clicks <guibutton>OK</guibutton>, kbtsearch
+returns 0 and prints a line of the form '[address] [rfcommchannel]'. It is clear that this only makes sense for services that actually define an rfcomm channel. Currently there is no way to retrieve a L2CAP PSM for instance. Just tell me when you need it.
+<screen>
+$ if RET=( $(kbtsearch --uuid=FAX) ) ; 
+> then ADDRESS=${RET[0]}; CHANNEL=${RET[1]}; 
+> echo "Selected addr=$ADDRESS, channel=$CHANNEL."; 
+> else echo "No service selected."; 
+> fi
+Selected addr=00:60:57:5C:E6:BD, channel=1.
+$
+</screen>
+For additional options refer to <command>kbtsearch --help</command>.
+</para>
+</sect2>
+
+<sect2>
+<title>kbtfax: Sending fax messages with KDE applications</title>
+<para>
+This is a helper script to make sending faxes from any KDE application easier. 
+It depends on <command>efax</command> (third-party), <command>kdeprintfax</command> and <command>kdesu</command> (both part of kdebase) and the <command>rfcomm</command> tool (part of bluez-utils).
+</para>
+<para>
+When you try to send a fax with <command>kdeprintfax</command>, you can select the fax backend to be used by kdeprintfax. One option is "EFax", anothe one is "Other". Select "Other", then find the kbtfax script in your kdebluetooth installation. Enter the command line as stated in the script itself. That's it. There are many things that could go wrong though. Feel free to improve the script and send patches :)
+</para>
+</sect2>
+
+</sect1>
+

@@ -1,0 +1,345 @@
+# translation of kipiplugin_flickrexport.po to german
+#
+# Oliver Dörr <kde@doerr-privat.de>, 2005, 2006, 2007, 2008.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_flickrexport\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-05-24 06:00+0200\n"
+"Last-Translator: Oliver Dörr <kde@doerr-privat.de>\n"
+"Language-Team: german <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de"
+
+#: flickrtalker.cpp:144
+msgid "Getting the Frob"
+msgstr "Der Frob wird geholt."
+
+#: flickrtalker.cpp:178
+msgid "Checking if previous token is still valid"
+msgstr "Es wird überprüft, ob das alte Token noch gültig ist."
+
+#: flickrtalker.cpp:203
+msgid ""
+"Please Follow through the instructions in the browser window and return back to "
+"press ok if you are authenticated or press No"
+msgstr ""
+"Bitte folgen Sie den Anweiszungen im Browser und kommen Sie zurück um Ja zu "
+"drücken, wenn Sie angemeldet sind. Ansonsten drücken Sie Nein."
+
+#: flickrtalker.cpp:205
+msgid "Flickr Service Web Authorization"
+msgstr "Flickr-Dienst Web-Autorisierung"
+
+#: flickrtalker.cpp:210
+msgid "Authenticating the User on web"
+msgstr "Der Benutzer wird authentifiziert."
+
+#: flickrtalker.cpp:250
+msgid "Getting the Token from the server"
+msgstr "Token vom Server erhalten."
+
+#: flickrtalker.cpp:492
+msgid "No photo specified"
+msgstr "Kein Foto angegeben."
+
+#: flickrtalker.cpp:495
+msgid "General upload failure"
+msgstr "Allgemeiner Fehler beim Hochladen"
+
+#: flickrtalker.cpp:498
+msgid "Filesize was zero"
+msgstr "Dateigröße war Null."
+
+#: flickrtalker.cpp:501
+msgid "Filetype was not recognised"
+msgstr "Dateityp ist unbekannt."
+
+#: flickrtalker.cpp:504
+msgid "User exceeded upload limit"
+msgstr "Benutzer hat seine Grenze zum Hochladen überschritten."
+
+#: flickrtalker.cpp:507
+msgid "Invalid signature"
+msgstr "Ungültige Signatur."
+
+#: flickrtalker.cpp:510
+msgid "Missing signature"
+msgstr "Fehlende Signatur."
+
+#: flickrtalker.cpp:513
+msgid "Login Failed / Invalid auth token"
+msgstr "Anmeldung fehlgeschlagen / Ungültiger Authentifizierungstoken."
+
+#: flickrtalker.cpp:516
+msgid "Invalid API Key"
+msgstr "Ungültiger API-Schlüssel"
+
+#: flickrtalker.cpp:519
+msgid "Service currently unavailable"
+msgstr "Dienst zurzeit nicht verfügbar"
+
+#: flickrtalker.cpp:522
+msgid "Invalid Frob"
+msgstr "Ungültiger Frob"
+
+#: flickrtalker.cpp:525
+msgid "Format \"xxx\" not found"
+msgstr "Format \"xxx\" nicht gefunden."
+
+#: flickrtalker.cpp:528
+msgid "Method \"xxx\" not found"
+msgstr "Methode\"xxx\" nicht gefunden."
+
+#: flickrtalker.cpp:531
+msgid "Invalid SOAP envelope"
+msgstr "Ungültige SOAP-Hülle"
+
+#: flickrtalker.cpp:534
+msgid "Invalid XML-RPC Method Call"
+msgstr "Ungültiger XML-RPC-Methodenaufruf"
+
+#: flickrtalker.cpp:537
+msgid "The POST method is now required for all setters"
+msgstr "Die Methode POST ist nun für alle Einrichter verpflichtend."
+
+#: flickrtalker.cpp:540
+msgid "Unknown error"
+msgstr "Unbekannter Fehler"
+
+#: flickrtalker.cpp:545
+msgid ""
+"Error Occured: %1\n"
+" We can not proceed further"
+msgstr ""
+"Es ist ein Fehler aufgetreten: %1\n"
+"Es kann leider nicht fortgefahren werden."
+
+#: flickrtalker.cpp:686
+msgid ""
+"_: As in the persmission to\n"
+"write"
+msgstr "Schreib"
+
+#: flickrtalker.cpp:688
+msgid ""
+"_: As in the permission to\n"
+"read"
+msgstr "Lese"
+
+#: flickrtalker.cpp:690
+msgid ""
+"_: As in the permission to\n"
+"delete"
+msgstr "Lösch"
+
+#: flickrtalker.cpp:720
+msgid ""
+"Your token is invalid. Would you like to get a new token to proceed ?\n"
+msgstr ""
+"Ihr Token ist ungültig. Möchten Sie ein neues Token erhalten, um fortzufahren?\n"
+
+#: flickrtalker.cpp:896
+msgid "Failed to fetch photoSets List"
+msgstr "Die Liste der Fotosätze kann nicht abgefragt werden."
+
+#: flickrtalker.cpp:966
+msgid "Failed to upload photo"
+msgstr "Es trat ein Fehler beim Hochladen des Fotos auf."
+
+#: flickrtalker.cpp:1012
+msgid "Failed to query photo information"
+msgstr "Die Fotoinformationen lassen sich nicht abfragen."
+
+#: flickrwidget.cpp:78
+msgid ""
+"<qt><b>"
+"<h2><a href='http://www.flickr.com'><font color=\"#0065DE\">flick</font>"
+"<font color=\"#FF0084\">r</font></a> Export</h2></b></qt>"
+msgstr ""
+"<qt><b>"
+"<h2><a href='http://www.flickr.com'><font color=\"#0065DE\">flick</font>"
+"<font color=\"#FF0084\">r</font></a> Export</h2></b></qt>"
+
+#: flickrwidget.cpp:95
+msgid "Added Tags: "
+msgstr "Hinzugefügte Stichworte:"
+
+#: flickrwidget.cpp:98
+msgid "Use Host Application Tags"
+msgstr "Host-Anwendungsstichworte benutzen?"
+
+#: flickrwidget.cpp:100
+msgid "Strip Space From Host Application Tags"
+msgstr "Leerzeichen der Host-Anwendungsstichworte minimieren"
+
+#: flickrwidget.cpp:101
+msgid "Enter here new tags separated by space."
+msgstr "Geben Sie hier die neuen Stichworte durch Leerzeichen getrennt ein."
+
+#: flickrwidget.cpp:110
+msgid "Override Default Options"
+msgstr "Standardeinstellungen überschreiben"
+
+#: flickrwidget.cpp:117
+msgid ""
+"_: As in accessible for people\n"
+"Public (anyone can see them)"
+msgstr "Öffentlich (jeder kann Sie sehen)"
+
+#: flickrwidget.cpp:120
+msgid "Visible to Family"
+msgstr "Sichtbar für die Familie"
+
+#: flickrwidget.cpp:123
+msgid "Visible to Friends"
+msgstr "Sichtbar für Freunde"
+
+#: flickrwidget.cpp:126
+msgid "Resize photos before uploading"
+msgstr "Größe der Fotos vor dem Hochladen ändern"
+
+#: flickrwidget.cpp:134
+msgid "Maximum dimension (pixels):"
+msgstr "Maximalgröße (Pixel):"
+
+#: flickrwidget.cpp:141
+msgid "JPEG Image Quality (higher is better):"
+msgstr "JPEG-Bildqualität (höher ist besser):"
+
+#: flickrwidget.cpp:158
+msgid "Account"
+msgstr "Benutzerkonto"
+
+#: flickrwidget.cpp:164
+msgid "User Name: "
+msgstr "Benutzername:"
+
+#: flickrwidget.cpp:167
+msgid "Use a different account"
+msgstr "Mit einem anderen Benutzernamen anmelden"
+
+#: flickrwidget.cpp:192
+msgid "Files List"
+msgstr "Dateiliste"
+
+#: flickrwidget.cpp:193
+msgid "Upload Options"
+msgstr "Optionen für das Hochladen"
+
+#: flickrwindow.cpp:79
+msgid "Export to Flickr Web Service"
+msgstr "Zum Flickr Webdienst exportieren"
+
+#: flickrwindow.cpp:103
+msgid "Start Uploading"
+msgstr "Hochladen starten"
+
+#: flickrwindow.cpp:117
+msgid "Flickr Export"
+msgstr "Zu Flickr exportieren"
+
+#: flickrwindow.cpp:120
+msgid "A Kipi plugin to export image collection to Flickr web service."
+msgstr "Ein KIPI-Modul zum Exportieren von Bildern zum Flickr-Webdienst."
+
+#: flickrwindow.cpp:125
+msgid "Author and maintainer"
+msgstr "Autor und Betreuer"
+
+#: flickrwindow.cpp:128
+msgid "Developer"
+msgstr "Entwickler"
+
+#: flickrwindow.cpp:133
+msgid "Plugin Handbook"
+msgstr "Modul-Handbuch"
+
+#: flickrwindow.cpp:534
+#, c-format
+msgid "Uploading file %1"
+msgstr "Datei %1 wird hoch geladen"
+
+#: flickrwindow.cpp:553
+msgid ""
+"Failed to upload photo into Flickr. %1\n"
+"Do you want to continue?"
+msgstr ""
+"Es trat ein Fehler beim Hochladen des Fotos zu Flickr auf: %1\n"
+"Möchten Sie fortfahren? "
+
+#: imageslist.cpp:94
+msgid "Thumbnail"
+msgstr "Vorschau"
+
+#: imageslist.cpp:95
+msgid "File Name"
+msgstr "Dateiname"
+
+#: imageslist.cpp:96
+msgid "<p>This is the list of images to upload on your Flickr account."
+msgstr ""
+"<p>Dies ist die Liste der Bilder die auf Ihr Flickr-Benutzerkonto hochgeladen "
+"werden."
+
+#: imageslist.cpp:178
+msgid "&Add"
+msgstr "&Hinzufügen"
+
+#: login.cpp:65
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: login.cpp:68
+msgid "Password:"
+msgstr "Passwort:"
+
+#: plugin_flickrexport.cpp:65
+msgid "Export to Flickr..."
+msgstr "Flickr-Server ..."
+
+#. i18n: file flickralbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "New PhotoSet"
+msgstr "Neuer Fotosatz"
+
+#. i18n: file flickralbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Create New PhotoSet </h3>"
+msgstr "<h3>Neuen Fotosatz erstellen</h3>"
+
+#. i18n: file flickralbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Titel (optional):"
+
+#. i18n: file flickralbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Name (optional):"
+
+#. i18n: file flickralbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Überschrift (optional):"

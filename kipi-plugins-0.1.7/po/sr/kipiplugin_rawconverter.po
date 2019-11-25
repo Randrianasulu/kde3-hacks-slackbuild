@@ -1,0 +1,261 @@
+# translation of kipiplugin_rawconverter.po to Serbian
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2008-03-04 14:53+0100\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Слободан Симић"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Нисам успео да идентификујем сирову слику"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Произвођач: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Модел: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Направљено: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Отвор: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Фокус: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Експозиција: 1/%1 s\n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Осетљивост: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "Пакетни конвертор сирових слика"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Прет&вори"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Прекини"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Сличица"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Сирови фајл"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Циљна слика"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Апарат"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+msgid "Save settings"
+msgstr "Сачувај подешавања"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "Конвертор сирових слика"
+
+#: batchdialog.cpp:139
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr "Kipi прикључак за пакетно претварање Raw слика"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Првобитни аутор"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Одржава"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr "Приручник прикључка"
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr "<p>Почни претварање сирових слика према тренутним подешавањима."
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Прекини текуће претварање сирових фајлова"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Изађи из конвертора сирових слика"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Нема Raw фајла на листи!"
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Сними сирову слику конвертовану из „%1“ као"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Нисам успео да снимим слику %1"
+
+#: plugin_rawconverter.cpp:84
+msgid "Raw Image Converter..."
+msgstr "Конвертор сирових слика..."
+
+#: plugin_rawconverter.cpp:92
+msgid "Batch Raw Converter..."
+msgstr "Пакетни конвертор сирових слика..."
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "„%1“ није Raw фајл."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Нисам успео да учитам слику након обраде"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Формат излазног фајла:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Овде изаберите формат излазног фајла који се користи:"
+"<p><b>JPEG</b>: даје излазну слику у JPEG формату. Овај формат ће дати фајлове "
+"малих величина. Минимални ниво JPEG компресије ће бити коришћен при Raw "
+"претварању."
+"<p><b>Упозорење!!! Пошто има деструктивни алгоритам кломпресије, JPEG је формат "
+"компресије са губицима.</b>"
+"<p><b>TIFF</b>: даје излазну слику у TIFF формату. Ово ће правити велике "
+"фајлове, без губитка квалитета. Adobe Deflate компресија ће се користити током "
+"претварања."
+"<p><b>PPM</b>: даје излазну слику у PPM формату. Ово даје велике фајлове, без "
+"губитка квалитета."
+"<p><b>PNG</b>: даје излазну слику у PNG формату. Ово ће направити велики фајл, "
+"без губитка на квалитету. Максималан ниво PNG компресије ће се користити при "
+"претварању."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Ако циљни фајл постоји:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Пребриши аутоматски"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Отвори дијалог преименовања"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "Конвертор сирових слика"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Преглед"
+
+#: singledialog.cpp:119
+msgid "A Kipi plugin to convert a Raw image"
+msgstr "Kipi прикључак за претварање Raw слика"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Прави преглед према тренутним подешавањима.Користи једноставну билинеарну "
+"интерполацију за брзо добијање резултата."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Претвара сирову слику према тренутним подешавањима. Ово користи високо "
+"квалитетан адаптивни алгоритам."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Прекида текуће претварање"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Нисам успео да направим преглед"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Нисам успео да конвертујем сирову слику"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Правим преглед..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Конвертујем сирову слику..."

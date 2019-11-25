@@ -1,0 +1,47 @@
+<sect1 id="components.kio_sdp">
+<title
+>Blåtand och SDP I/O-slavar: Sök efter enheter och tjänster</title>
+<para
+>Blåtand och SDP I/O-slaven låter dig söka efter andra Blåtandsenheter, och lista och visa deras tjänster med Konqueror (eller vilken annan filhanterare som helst som kan använda KDE:s I/O-ramverk). </para>
+<sect2>
+<title
+>Använda Blåtand och SDP I/O-slaven</title>
+<para
+>För att söka efter enheter, skriv helt enkelt in <ulink url="bluetooth:/"
+>bluetooth:/</ulink
+> i Konqueror. Du ser omedelbart en post för ditt eget system, och därefter visas andra enheter som kan upptäckas en i taget efter några sekunder. </para>
+<para
+>Du kan också klicka på Blåtandsikonen i Konquerors sidopanel under fliken "Tjänster", intill LAN-bläddrare och Bläddrare för ljud-cd. Om du inte kan se ikonen, kan det hjälpa att återställa sidopanelen med <guimenuitem
+>Inställningsknappen -> Lägg till ny -> Återställ till standardvärden</guimenuitem
+>. </para>
+<para
+>För att enheter ska visas måste de inte bara vara påslagna, utan också vara i läget för att kunna upptäckas. Annars kan du ansluta till dem om du känner till adressen, men de svarar inte på en förfrågan. </para>
+<para
+>När du väljer en enhet får du en lista över tjänster som enheten publicerar. Om tjänsten stöds av Kdebluetooth, kan du klicka på den för att starta lämpligt program. Om du inte har inaktiverat det, visar Konqueror den vanliga dialogrutan för att öppna filer. Om tjänsten inte är känd, får du dialogrutan Öppna med istället. </para>
+</sect2>
+
+<sect2>
+<title
+>Avancerade ämnen </title>
+<para
+>Om du vet vad du gör kan du också öppna en given tjänst (till exempel Kbthandsfree) med ett Blåtandsprogram som inte skapades för just den profilen, genom att högerklicka på tjänstikonen och välja Öppna med. Varje tjänst som hanterar AT-kommandon via rfcomm kan exempelvis öppnas med <command
+>kbtserialchat</command
+>. </para>
+<para
+>Du kan också ändra associationen mellan program och (kända) profiler på samma sätt som du väljer vilket program som ska öppna MPEG-filmer eller PDF-filer: OBEX I/O-slaven tilldelar MIME-typer till alla listade profiler och varje klientprogram i Kdebluetooth hör ihop med profilen det stöder. Stöd för profiler som inte känns igen kan läggas till med särskilda desktop-filer i <filename
+>$PREFIX/share/services</filename
+>, som exempelvis <filename
+>sdpmime-serial-port-profile.desktop</filename
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>Nuvarande begränsningar</title>
+<para
+>SDP I/O-slaven har för närvarande inget stöd för hierarkiska bläddringsgrupper. Detta är inte svårt att lägga till, men har hittills inte behövts.</para>
+<para
+>Du kan inte ansluta till tjänster i ditt eget system genom att helt enkelt klicka på ikonen "localhost". Den har bara lagts till som ett enkelt sätt att se vilka tjänster som publiceras av ditt system. </para>
+</sect2>
+
+</sect1>

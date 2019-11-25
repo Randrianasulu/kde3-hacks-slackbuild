@@ -1,0 +1,549 @@
+# Danish translation of kipiplugin_rawconverter
+# Copyright (C)
+#
+# Rune Rønde Laursen <runerl@skjoldhoej.dk>, 2004, 2005.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_rawconverter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-06-28 19:39-0400\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Rune Rønde Laursen,Erik Kjær Pedersen"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "runerl@skjoldhoej.dk,erik@binghamton.edu"
+
+#: actionthread.cpp:168
+msgid "Cannot identify Raw image"
+msgstr "Kan ikke identificere ubehandlet billede"
+
+#: actionthread.cpp:175
+msgid ""
+"Make: %1\n"
+msgstr ""
+"Mærke: %1\n"
+
+#: actionthread.cpp:176
+msgid ""
+"Model: %1\n"
+msgstr ""
+"Model: %1\n"
+
+#: actionthread.cpp:180
+msgid ""
+"Created: %1\n"
+msgstr ""
+"Oprettet: %1\n"
+
+#: actionthread.cpp:186
+msgid ""
+"Aperture: f/%1\n"
+msgstr ""
+"Blænder: f/%1\n"
+
+#: actionthread.cpp:191
+msgid ""
+"Focal: %1 mm\n"
+msgstr ""
+"Fokallængde: %1 mm\n"
+
+#: actionthread.cpp:196
+msgid ""
+"Exposure: 1/%1 s\n"
+msgstr ""
+"Blænder: f/%1 \n"
+
+#: actionthread.cpp:201
+msgid "Sensitivity: %1 ISO"
+msgstr "Følsomhed: %1 ISO"
+
+#: batchdialog.cpp:87
+msgid "Raw Images Batch Converter"
+msgstr "RAW-konvertering"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "Con&vert"
+msgstr "Kon&vertér"
+
+#: batchdialog.cpp:89 singledialog.cpp:85
+msgid "&Abort"
+msgstr "&Afbryd"
+
+#: batchdialog.cpp:100
+msgid "Thumbnail"
+msgstr "Miniature"
+
+#: batchdialog.cpp:101
+msgid "Raw File"
+msgstr "Ubehandlet fil"
+
+#: batchdialog.cpp:102
+msgid "Target File"
+msgstr "Resultatfil"
+
+#: batchdialog.cpp:103
+msgid "Camera"
+msgstr "Kamera"
+
+#: batchdialog.cpp:117 batchdialog.cpp:120 singledialog.cpp:102
+#: singledialog.cpp:105
+#, fuzzy
+msgid "Save settings"
+msgstr "Gem indstillinger"
+
+#: batchdialog.cpp:136 singledialog.cpp:116
+msgid "RAW Image Converter"
+msgstr "RAW-billedkonvertering"
+
+#: batchdialog.cpp:139
+#, fuzzy
+msgid "A Kipi plugin to batch convert Raw images"
+msgstr ""
+"Et KIPI-plugin til at konvertere ubehandlede billeder\n"
+"Anvender biblioteket Kdcraw"
+
+#: batchdialog.cpp:143 singledialog.cpp:123
+msgid "Original author"
+msgstr "Oprindelig forfatter"
+
+#: batchdialog.cpp:146 singledialog.cpp:126
+msgid "Maintainer"
+msgstr "Vedligeholder"
+
+#: batchdialog.cpp:151 singledialog.cpp:131
+msgid "Plugin Handbook"
+msgstr ""
+
+#: batchdialog.cpp:157
+msgid "<p>Start converting the Raw images from current settings"
+msgstr ""
+"<p>Begynd at konvertere ubehandlede billeder med nuværende indstillinger"
+
+#: batchdialog.cpp:158
+msgid "<p>Abort the current Raw files conversion"
+msgstr "<p>Afbryd nuværende konvertering af ubehandlede filer"
+
+#: batchdialog.cpp:159 singledialog.cpp:145
+msgid "<p>Exit Raw Converter"
+msgstr "<p>Forlad RAW-billedkonvertering"
+
+#: batchdialog.cpp:311
+msgid "There is no Raw file to process in the list!"
+msgstr "Der er ingen ubehandlet fil at behandle i listen."
+
+#: batchdialog.cpp:522 singledialog.cpp:436
+msgid "Save Raw Image converted from '%1' as"
+msgstr "Gem RAW-billede konverteret fra '%1' som"
+
+#: batchdialog.cpp:551 singledialog.cpp:463
+#, c-format
+msgid "Failed to save image %1"
+msgstr "Kunne ikke gemme billede %1"
+
+#: plugin_rawconverter.cpp:84
+#, fuzzy
+msgid "Raw Image Converter..."
+msgstr "RAW-billedkonvertering"
+
+#: plugin_rawconverter.cpp:92
+#, fuzzy
+msgid "Batch Raw Converter..."
+msgstr "<p>Forlad RAW-billedkonvertering"
+
+#: plugin_rawconverter.cpp:170
+msgid "\"%1\" is not a Raw file."
+msgstr "\"%1\" er ikke en ubehandlet fil."
+
+#: previewwidget.cpp:110
+msgid "Failed to load image after processing"
+msgstr "Kunne ikke indlæse billede efter behandlingoprette forhåndsvisning"
+
+#: savesettingswidget.cpp:77
+msgid "Output file format:"
+msgstr "Resultatbilledformat:"
+
+#: savesettingswidget.cpp:83
+msgid ""
+"<p>Set here the output file format to use:"
+"<p><b>JPEG</b>: output the processed image in JPEG Format. this format will "
+"give smaller-sized files. Minimum JPEG compression level will be used during "
+"Raw conversion."
+"<p><b>Warning!!! duing of destructive compression algorithm, JPEG is a lossy "
+"quality format.</b>"
+"<p><b>TIFF</b>: output the processed image in TIFF Format. This generates "
+"larges, without losing quality. Adobe Deflate compression will be used during "
+"conversion."
+"<p><b>PPM</b>: output the processed image in PPM Format. This generates the "
+"largest files, without losing quality."
+"<p><b>PNG</b>: output the processed image in PNG Format. This generates larges, "
+"without losing quality. Maximum PNG compression will be used during conversion."
+msgstr ""
+"<p>Sæt resultatfilformater at bruge her:"
+"<p><b>JPEG</b>: Gem det behandlede billede i JPEG-format. Dette format giver "
+"filer med mindre størrelse. Minimal JPEG-komprimeringsniveau bruges under "
+"konvertering af ubehandlede data."
+"<p><b>Advarsel! På grund af den destruktive komprimeringsalgoritme, er JPEG et "
+"format med kvalitetstab.</b>"
+"<p><b>TIFF</b>: Gem det behandlede billede i TIFF-format. Det laver større "
+"filer, uden at tabe kvalitet. Adobe Deflate-komprimering bruges under "
+"konverteringen."
+"<p><b>PPM</b>: Gem det behandlede billede i PPM-format. Det laver de største "
+"filer, uden at tabe kvalitet."
+"<p><b>PNG</b>: Gem det behandlede billede i PNG-format. Det laver større filer, "
+"uden at tabe kvalitet. Maksimal PNG-komprimering bruges under konverteringen."
+
+#: savesettingswidget.cpp:101
+msgid "If Target File Exists:"
+msgstr "Hvis billedfil eksisterer:"
+
+#: savesettingswidget.cpp:103
+msgid "Overwrite automatically"
+msgstr "Overskriv automatisk"
+
+#: savesettingswidget.cpp:104
+msgid "Open rename-file dialog"
+msgstr "Åbn omdøb fil-dialog"
+
+#: singledialog.cpp:83
+msgid "Raw Image Converter"
+msgstr "RAW-billedkonvertering"
+
+#: singledialog.cpp:85
+msgid "&Preview"
+msgstr "&Forhåndsvis"
+
+#: singledialog.cpp:119
+#, fuzzy
+msgid "A Kipi plugin to convert a Raw image"
+msgstr ""
+"Et KIPI-plugin til at konvertere ubehandlede billeder\n"
+"Anvender biblioteket Kdcraw"
+
+#: singledialog.cpp:136
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+"<p>Opret en forhåndsvisning med nuværende indstillinger. En enkelt bilineær "
+"interpolering bruges for hurtigt at få et resultat."
+
+#: singledialog.cpp:140
+msgid ""
+"<p>Convert the Raw Image from current settings. This uses a high-quality "
+"adaptive algorithm."
+msgstr ""
+"<p>Konvertér det ubehandlede billede med nuværende indstillinger. En adaptiv "
+"algoritme med høj kvalitet bruges."
+
+#: singledialog.cpp:143
+msgid "<p>Abort the current Raw file conversion"
+msgstr "<p>Afbryd nuværende konvertering af ubehandlede filer"
+
+#: singledialog.cpp:393
+msgid "Failed to generate preview"
+msgstr "Kunne ikke oprette forhåndsvisning"
+
+#: singledialog.cpp:472
+msgid "Failed to convert Raw image"
+msgstr "Kunne ikke konvertere RAW-billede"
+
+#: singledialog.cpp:477
+msgid "Generating Preview..."
+msgstr "Opretter forhåndsvisning..."
+
+#: singledialog.cpp:490
+msgid "Converting Raw Image..."
+msgstr "Konverterer RAW-billede..."
+
+#~ msgid "Raw Converter Handbook"
+#~ msgstr "Håndbog Konvertering af ubehandlede billeder"
+
+#~ msgid "RAW Converter Handbook"
+#~ msgstr "Håndbog for RAW-billedkonvertering"
+
+#~ msgid "Raw Image Converter (Single)..."
+#~ msgstr "RAW-billedkonvertering (enkel)..."
+
+#~ msgid "Raw Images Converter (Batch)..."
+#~ msgstr "RAW-billedkonvertering (Gruppekørsel)..."
+
+#~ msgid "RAW Images Batch Converter"
+#~ msgstr "RAW-billedkonvertering"
+
+#~ msgid "RAW Decoding Settings"
+#~ msgstr "Afkodningsindstillinger for ubehandlede billeder"
+
+#~ msgid "<p>Abort the current RAW file conversion"
+#~ msgstr "<p>Afbryd nuværende konvertering af ubehandlede filer"
+
+#~ msgid "Image Preview"
+#~ msgstr "Billedeforhåndsvisning"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw images conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Et KIPI udvidelsesmodul til RAW-billedkonvertering\n"
+#~ "Dette udvidelsesmodul benytter Dave Coffins RAW fotodekoderprogram.\"dcraw\""
+
+#~ msgid "Cannot open RAW file"
+#~ msgstr "Kan ikke åbne ubehandlet fil"
+
+#~ msgid "Not a RAW file"
+#~ msgstr "Ikke en ubehandlet fil."
+
+#~ msgid "Cannot start dcraw instance"
+#~ msgstr "Kan ikke starte en instans af dcraw"
+
+#~ msgid "Interpolate RGB as four colors"
+#~ msgstr "Interpolér RGB som fire farver"
+
+#~ msgid "<p><b>Interpolate RGB as four colors</b><p>The default is to assume that all green pixels are the same. If even-row green pixels are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail.<p>To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method."
+#~ msgstr "<p><b>Interpolér RGB som fire farver</b><p>Standard er at antage at alle grønne billedpunkter er ens. Hvis grønne billedpunkter i lige rækker er mere følsomme for ultraviolet lys end for ulige rækker, forårsager forskellen et rudemønster i uddata. Ved at bruge dette tilvalg løses problemet med minimalt tab ad  detaljer.<p>For at sammenfatte, så gør dette tilvalg billedet noget mere udvisket, men eliminerer falske 2x2 rudemønstre med kvalitetsmetoden VNG, eller labyrinter med kvalitetsmetoden AHD."
+
+#~ msgid "Use camera white balance"
+#~ msgstr "Benyt kameras hvidbalancering"
+
+#~ msgid "<p><b>Use camera white balance</b><p>Use the camera's custom white-balance settings. The default is to use fixed daylight values, calculated from sample images. If this can't be found, reverts to the default."
+#~ msgstr "<p><b>Brug kameraets hvidbalance</b> <p>Brug kameraets egne indstillinger af hvidbalance. Standard er at bruge faste værdier for dagslys, beregnede fra eksempelbilleder. Hvis dette ikke kan findes, går den tilbage til standardværdien."
+
+#~ msgid "Automatic color balance"
+#~ msgstr "Automatisk farvebalance"
+
+#~ msgid "<p><b>Automatic color balance</b><p>The default is to use a fixed color balance based on a white card photographed in sunlight.<p>"
+#~ msgstr "<p><b>Automatisk farvebalance</b><p>Standardværdien er at bruge en fast farvebalance baseret på et hvidt kort fotograferet i sollys.<p>"
+
+#~ msgid "Use Super-CCD secondary sensors"
+#~ msgstr "Brug Super-CCD sekundære sensorer"
+
+#~ msgid "<p><b>Use Super CCD secondary sensors</b><p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is ignored.<p>"
+#~ msgstr "<p><b>Brug Super-CCD sekundære sensorer</b><p>Brug de sekundære sensorer for Fuji Super CCD spejlreflekskameraer, og undereksponér dermed billedet med fire blænderskridt for at synliggøre detaljer i overbelyste områder. Dette tilvalg ignoreres for alle andre kameraer.<p>"
+
+#~ msgid "Highlights:"
+#~ msgstr "Overbelysninger:"
+
+#~ msgid "Solid white"
+#~ msgstr "Helt hvidt"
+
+#~ msgid "Unclip"
+#~ msgstr "Ubeskårne"
+
+#~ msgid "Reconstruct"
+#~ msgstr "Genoprettede"
+
+#~ msgid "<p><b>Highlights</b><p>Select here the highlight cliping method:<p><b>Solid white</b>: clip all highlights to solid white<p><b>Unclip</b>: leave highlights unclipped in various shades of pink<p><b>Reconstruct</b>: reconstruct highlights using a level value."
+#~ msgstr "<p><b>Overbelysninger</b><p>Vælg beskæringsmetoden for overbelyste områder  her:<p><b>Helt hvidt</b>: beskær alle overbelysninger til helt hvidt<p><b>Ubeskåret</b>: efterlad overbelyste områder ubeskåret i forskellige lyserøde afskygninger<p><b>Genoprettede</b>: genopret overbelyste områder ved brug af en niveauværdi."
+
+#~ msgid "Level:"
+#~ msgstr "Niveau:"
+
+#~ msgid "<p><b>Level</b><p>Specify the reconstruct highlights level of ouput image. Low value favor whites and high value favor colors."
+#~ msgstr "<p><b>Niveau</b><p>Angiv niveau for genoprettede overbelyste områder i resultatbilledet. En lav værdi gør at hvidt foretrækkes, og en høj værdi gør at farver foretrækkes."
+
+#~ msgid "Brightness:"
+#~ msgstr "Lysstyrke:"
+
+#~ msgid "<p><b>Brighness</b><p>Specify the brightness level of ouput image.The default value is 1.0.<p>"
+#~ msgstr "<p><b>Lyshed</b><p>Angiv resultatbilledets lyshed. Standardværdien er 1,0.<p>"
+
+#~ msgid "Quality:"
+#~ msgstr "Kvalitet:"
+
+#~ msgid "Bilinear interpolation"
+#~ msgstr "Bilineær interpolation"
+
+#~ msgid "VNG interpolation"
+#~ msgstr "VNG-interpolation"
+
+#~ msgid "AHD interpolation"
+#~ msgstr "AHD-interpolation"
+
+#~ msgid "<p><b>Quality</b><p>Select here the demosaicing RAW images decoding interpolation method. A demosaicing algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction, another common spelling is demosaicing. There are 3 methods to demosaicing RAW images:<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation (default - for slow computer). In this method, the red value of a non-red pixel is computed as the average of the adjacent red pixels, and similar for blue and green.<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method computes gradients near the pixel of interest and uses the lower gradients (representing smoother and more similar parts of the image) to make an estimate.<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method selects the direction of interpolation so as to maximize a homogeneity metric, thus typically minimizing color artifacts.<p>"
+#~ msgstr "<p><b>Kvalitet</b><p>Vælg interpolationsmetode for afkodning af ubehandlede billeder for mosaikfjernelse. En algoritme for mosaikfjernelse er en digital billedproces som bruges til at interpolere et fuldstændigt billede fra partielt ubehandlede data i form af en matrix af farvede billedpunkter, som er modtaget fra den farvefiltrerede billedsensor som findes internt i mange digitalkameraer. Den er også kendt som CFA-interpolation eller farverekonstruktion. Der er tre metoder til at udføre mosaikfjernelse af ubehandlede billeder:<p><b>Bilineær</b>: Anvender en hurtig bilineær interpolation med lav kvalitet (standard for langsomme computerer). Med denne metoden beregnes den røde værdi af et billedpunkt som ikke er rødt som middelværdien af røde billedpunkter ved siden af, og på samme måde for blåt og grønt.<p><b>VNG</b>: Anvend interpolation med variabelt antal overgange. Denne metode beregner overgange nær det interessante billedpunkt og bruger de laveste overgange (som repræsenterer jævnere og lignende dele af billedet) til at lave en vurdering.<p><b>AHD</b>: Anvend adaptiv homogenstyret interpolation. Denne metode vælger interpolationens retning så at et homogenitetsmål maksimeres, og på den måde typisk minimeres farveafvigelser.<p>"
+
+#~ msgid "Enable noise reduction"
+#~ msgstr "Aktivér støjreducering"
+
+#~ msgid "<p><b>Enable Noise Reduction</b><p>Toggle bilateral filter to smooth noise while preserving edges. This option can be use to reduce low noise. The pictures edges are preserved because it is applied in CIELab color space instead of RGB.<p>"
+#~ msgstr "<p><b>Aktivér støjreducering</b><p>Slå bilateral filter til for at udjævne støj samtidig med at kanter bevares. Denne indstilling kan bruges til at reducere lav støj. Billedkanterne bevares for filteret bruges i CEILab farverum og ikke RGB.<p>"
+
+#~ msgid "Domain:"
+#~ msgstr "Domæne:"
+
+#~ msgid "<p><b>Domain</b><p>Set here the noise reduction Sigma Domain in units of pixels. The default value is 2.0.<p>"
+#~ msgstr "<p><b>Domæne</b> <p>Indstil støjreduceringens Sigma-domæne i pixler. Standardværdien er 2.0.<p>"
+
+#~ msgid "Range:"
+#~ msgstr "Område:"
+
+#~ msgid "<p><b>Range</b><p>Set here the noise reduction Sigma Range in units of CIELab colorspace. The default value is 4.0.<p>"
+#~ msgstr "<p><b>Udstrækning</b><p>Indstil støjreduceringens Sigma-udstrækning i enheden CIELab-farverum. Standardværdien er 4.0.<p>"
+
+#~ msgid "Color space:"
+#~ msgstr "Farverum:"
+
+#~ msgid "Raw (linear)"
+#~ msgstr "Ubehandlet (lineær)"
+
+#~ msgid "sRGB"
+#~ msgstr "sRGB"
+
+#~ msgid "Adobe RGB"
+#~ msgstr "Adobe RGB"
+
+#~ msgid "Wide Gamut"
+#~ msgstr "Stort toneomfang"
+
+#~ msgid "Pro-Photo"
+#~ msgstr "Pro-foto"
+
+#~ msgid "<p><b>Color space</b><p>Select here the output color space used to decode RAW data.<p><b>Raw (linear)</b>: in this mode, none output color space is used during RAW decoding.<p><b>sRGB</b>: this color space is an RGB color space, created cooperatively by Hewlett-Packard and Microsoft, that is the best choice for images destined for the Web and portrait photography.<p><b>Adobe RGB</b>: this color space is an RGB color space, developed by Adobe, that used for photography applications such as advertising and fine art.<p><b>Wide Gamut</b>: this color space is is an expanded version of the Adobe RGB color space.<p><b>Pro-Photo</b>: this color space is an RGB color space, developed by Kodak, that offers an especially large gamut designed for use with photographic output in mind."
+#~ msgstr "<p><b>Farverum</b><p>Vælg resultatets farverum som bruges til at afkode ubehandlet data her.<p><b>Ubehandlet (lineær)</b>: Med denne tilstand bruges intet farverum for resultatet under afkodning af ubehandlet data.<p><b>sRGB</b>: Dette farverum er et RGB-farverum, oprettet i samarbejde mellem Hewlett-Packard og Microsoft, som er det bedste valg for billeder som er beregnet til internettet og for portrætfotografering.<p><b>Adobe RGB</b>: Dette farverum er et RGB-farverum, udviklet af Adobe, som bruges til fotografiske anvendelser såsom reklame og kunst.<p><b>Stort toneomfang</b>: Dette farverum er en udvidet version af Adobes RGB-farverum.<p><b>Pro-foto</b>: Dette farverum er et RGB-farverum, udviklet af Kodak, som tilbyder et særligt stort toneomfang konstrueret til brug for fotografier."
+
+#~ msgid "<qt><p>Unable to find the <b>%1</b> executable:<br>This program is required by this plugin to support Raw files decoding. Please check %2 installation on your computer.</p></qt>"
+#~ msgstr "<qt><p>Kan ikke finde den kørbare fil <b>%1</b>:<br>Dette program kræves for at udføre konvertering af ubehandlet filformat. Kontrollér installationen af %2 på din computer.</p></qt>"
+
+#~ msgid "<qt><p><b>%1</b> executable isn't up to date:<br>The version %2 of %3 have been found on your computer. This version is too old to run properly with this plugin. Please check %4 installation on your computer.</p><p>Note: at least, %5 version %6 is required by this plugin.</p></qt>"
+#~ msgstr "<qt><p>Den kørbare fil <b>%1</b> er ikke opdateret:<br>Version %2 af %3 blev fundet på computeren. Denne version er for gammel til at køre på et rigtigt med dette plugin. Kontrollér installationen af %4 på din computer.</p><p>Bemærk: Mindst version %5 af %6 kræves af dette plugin.</p></qt>"
+
+#~ msgid ""
+#~ "A Kipi plugin for Raw image conversion\n"
+#~ "This plugin uses the Dave Coffin Raw photo decoder program \"dcraw\""
+#~ msgstr ""
+#~ "Et KIPI udvidelsesmodul til RAW-billedkonvertering\n"
+#~ "Dette udvidelsesmodul benytter Dave Coffins RAW fotodekoderprogram.\"dcraw\""
+
+#~ msgid ""
+#~ "Failed to start raw converter client.\n"
+#~ "Please check your installation."
+#~ msgstr ""
+#~ "Kunne ikke starte RAW billedkonverteringsklienten.\n"
+#~ "Tjek din installation."
+
+#~ msgid "Four color RGBG"
+#~ msgstr "Firfarvet RGBG"
+
+#~ msgid "<p>Specify the output brightness"
+#~ msgstr "<p>Angiv lysstyrke"
+
+#~ msgid "Red multiplier:"
+#~ msgstr "Rødforøgelse:"
+
+#~ msgid "<p>After all other color adjustments, multiply the red channel by this value"
+#~ msgstr "<p>Multiplicér den røde kanalen med denne værdi efter alle andre farvejusteringer"
+
+#~ msgid "Blue multiplier:"
+#~ msgstr "Blåforøgelse:"
+
+#~ msgid "<p>After all other color adjustments, multiply the blue channel by this value"
+#~ msgstr "<p>Multiplicér den blå kanal med denne værdi efter alle andre farvejusteringer"
+
+#~ msgid "Save Format"
+#~ msgstr "Gem format"
+
+#~ msgid "<p>Output the processed image in JPEG Format. Warning!!! JPEG is a lossy format, but will give smaller-sized files. Minimum JPEG compression will be used during conversion."
+#~ msgstr "<p>Udskriv det behandlede billede i JPEG-format. Dette er et format med tab, men det giver mindre filstørrelse."
+
+#~ msgid "<p>Output the processed image in TIFF Format. This generates larges, without losing quality. Adobe Deflate compression will be used during conversion."
+#~ msgstr "<p>Udskriv det behandlede billed i TIFF-format. Dette laver store filer uden at tabe kvalitet."
+
+#~ msgid "<p>Output the processed image in PPM Format. This generates the largest files, without losing quality"
+#~ msgstr "<p>Udskriv det behandlede billed i PPM-format. Dette laver de største filer uden at tabe kvalitet."
+
+#~ msgid "<p>Output the processed image in PNG Format. This generates larges, without losing quality. Maximum PNG compression will be used during conversion."
+#~ msgstr "<p>Udskriv det behandlede billede i TIFF-format. Dette laver store filer uden at tabe kvalitet."
+
+#~ msgid "None!"
+#~ msgstr "Ingen."
+
+#~ msgid "Raw Image"
+#~ msgstr "RAW-billede"
+
+#~ msgid ""
+#~ "Interpolate RGB as four colors.\n"
+#~ "The default is to assume that all green\n"
+#~ "pixels are the same. If even-row green\n"
+#~ "pixels are more sensitive to ultraviolet light\n"
+#~ "than odd-row this difference causes a mesh\n"
+#~ "pattern in the output; using this option solves\n"
+#~ "this problem with minimal loss of detail."
+#~ msgstr ""
+#~ "Interpolerer RGB som fire farver.\n"
+#~ "Som standard antages at alle grønne billedpunkter\n"
+#~ "er ens, selv hvis ligerækkede grønne billedpunkter\n"
+#~ "er mere følsomme overfor ultraviolet lys end\n"
+#~ "uligerækkede. Denne forskel danner et netmønster\n"
+#~ "på resultatet. Ved at benytte denne indstilling løses\n"
+#~ "problemet med et minimalt detaljetab."
+
+#~ msgid ""
+#~ "Output the processed images in JPEG Format.\n"
+#~ "This is a lossy format, but will give\n"
+#~ "smaller-sized files"
+#~ msgstr ""
+#~ "Gem det behandlede billede i JPEG-format.\n"
+#~ "Dette er ikke et tabsfrit format, men resulterer\n"
+#~ "i mindre filstørrelser"
+
+#~ msgid ""
+#~ "Output the processed images in TIFF Format.\n"
+#~ "This generates large files, without\n"
+#~ "losing quality"
+#~ msgstr ""
+#~ "Gem det behandlede billede i TIFF format.\n"
+#~ "Dette er tabsfrit men resulterer i store filer"
+
+#~ msgid ""
+#~ "Output the processed images in PPM Format.\n"
+#~ "This generates the largest files, without\n"
+#~ "losing quality"
+#~ msgstr ""
+#~ "Gem det behandlede billede i PPM-format.\n"
+#~ "Dette er et tabsfrit format, men resulterer\n"
+#~ "i de største filer"
+
+#~ msgid "RAW Images Batch Converter Handbook"
+#~ msgstr "Håndbog for RAW-billedkonvertering"
+
+#~ msgid "Raw Converter Cannot Handle Following Items"
+#~ msgstr "RAW-billedkonvertering kan ikke håndtere følgende elementer"
+
+#~ msgid ""
+#~ "dcraw is required for raw image conversion.\n"
+#~ "Please install it."
+#~ msgstr ""
+#~ "dcraw kræves for at kunne konvertere RAW-billeder\n"
+#~ "Installer den."
+
+#~ msgid "Author and maintainer"
+#~ msgstr "Forfatter og veligeholder"
+
+#~ msgid "P&rocess"
+#~ msgstr "Be&handl"
+
+#~ msgid "Abort processing images"
+#~ msgstr "Afbryd billedbehandling"
+
+#~ msgid "Exit raw converter"
+#~ msgstr "Forlad RAW-konvertering"
+
+#~ msgid "Gamma"
+#~ msgstr "Gamma"
+
+#~ msgid "Specify the gamma value"
+#~ msgstr "Angiv gammaværdi"

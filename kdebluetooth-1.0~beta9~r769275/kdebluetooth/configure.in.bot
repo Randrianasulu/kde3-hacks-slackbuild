@@ -1,0 +1,31 @@
+dnl put here things which have to be done as very last part of configure
+
+if test "$no_bluetooth" = "yes" ; then
+	echo ""
+	echo "You're missing libbluetooth that it's a part of bluez-libs"
+	echo "Kdebluetooth won't be compiled without it, so you should"
+	echo "consider installing it."
+	echo ""
+fi
+
+
+if test "$no_bluetooth" = "yes" ; then
+	echo ""
+	echo "You're missing libsdpd that it's a part of bluez-sdpd"
+	echo "Kdebluetooth won't be compiled without it, so you should"
+	echo "consider installing it."
+	echo ""
+fi
+
+
+if test "$OPENOBEX_LIBS" = "no" -o "$OPENOBEX_CFLAGS" = "no"; then
+	echo ""
+	echo "You're missing openobex."
+	echo "Kdebluetooth won't be compiled without it, so you should"
+	echo "consider installing it."
+	echo ""
+fi
+
+
+
+

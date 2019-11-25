@@ -1,0 +1,655 @@
+# translation of kipiplugin_printwizard.po to german
+# Thomas Fischer <th.fischer@gmx.net>, 2002.
+# Oliver Dörr <kde@doerr-privat.de>, 2003, 2004, 2005, 2006, 2007, 2008.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2004, 2006.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# translation of kipiplugin_printwizard.po to
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_printwizard\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-17 15:30+0200\n"
+"PO-Revision-Date: 2008-03-01 16:41+0100\n"
+"Last-Translator: Oliver Dörr <kde@doerr-privat.de>\n"
+"Language-Team: german <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Oliver Dörr,Thomas Reitelbach"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kde@doerr-privat.de,tr@erdfunkstelle.de"
+
+#. i18n: file frmprintwizardbase.ui line 24
+#: frmprintwizard.cpp:103 plugin_printwizard.cpp:109 rc.cpp:3
+#, no-c-format
+msgid "Print Wizard"
+msgstr "Druckassistent"
+
+#: frmprintwizard.cpp:106
+msgid "A KIPI plugin to print images"
+msgstr "Ein KIPI-Modul zum Drucken von Bildern"
+
+#: frmprintwizard.cpp:109
+msgid "Author"
+msgstr "Autor"
+
+#: frmprintwizard.cpp:111
+msgid "Developer and maintainer"
+msgstr "Entwickler und Betreuer"
+
+#: frmprintwizard.cpp:113
+msgid "Contributor"
+msgstr "Mitarbeiter"
+
+#: frmprintwizard.cpp:145
+msgid "Plugin Handbook"
+msgstr "Modul-Handbuch"
+
+#: frmprintwizard.cpp:296
+msgid "Photo %1 of %2"
+msgstr "Foto %1 von %2"
+
+#: frmprintwizard.cpp:402
+msgid ""
+"There was an error launching the Gimp. Please make sure it is properly "
+"installed."
+msgstr ""
+"Gimp lässt sich nicht starten. Bitte stellen Sie sicher, dass Gimp korrekt "
+"installiert ist."
+
+#: frmprintwizard.cpp:402
+msgid "KIPI"
+msgstr "KIPI"
+
+#: frmprintwizard.cpp:1010
+msgid "Page "
+msgstr "Seite "
+
+#: frmprintwizard.cpp:1010
+msgid " of "
+msgstr " von "
+
+#: frmprintwizard.cpp:1011
+msgid "Page %1 of %2"
+msgstr "Seite %1 von %2"
+
+#: frmprintwizard.cpp:1158
+msgid "Could not remove the Gimp's temporary files."
+msgstr "Die temporären Dateien von Gimp lassen sich nicht löschen."
+
+#. i18n: file frmprintwizardbase.ui line 2181
+#: frmprintwizard.cpp:1219 frmprintwizard.cpp:1296 rc.cpp:255
+#, no-c-format
+msgid "Complete.  Click Finish to exit the Print Wizard."
+msgstr ""
+"Der Ausdruck ist fertig. Drücken Sie den Knopf \"Fertig\", um den "
+"Druckassistenten zu beenden."
+
+#: frmprintwizard.cpp:1259
+msgid ""
+"The following file will be overwritten. Do you want to overwrite this file?"
+msgstr "Sind Sie sicher, dass die folgende Datei überschrieben werden soll?"
+
+#: frmprintwizard.cpp:1290
+msgid "Printing Canceled."
+msgstr "Druck abgebrochen."
+
+#: frmprintwizard.cpp:1476
+msgid ""
+"Don't forget to set up the correct page size according to your printer settings"
+msgstr ""
+"Vergessen Sie nicht die richtige Seitengröße in Abhängigkeit von Ihren "
+"Druckereinstellungen zu setzen."
+
+#: frmprintwizard.cpp:1477
+msgid "Page size settings"
+msgstr "Seiteneinstellungen"
+
+#: frmprintwizard.cpp:1585
+msgid "3.5 x 5\""
+msgstr "9 x 13 cm"
+
+#: frmprintwizard.cpp:1600
+msgid "4 x 6\""
+msgstr "10 x 15 cm"
+
+#: frmprintwizard.cpp:1614
+msgid "4 x 6\" Album"
+msgstr "10 x 15 cm Album"
+
+#: frmprintwizard.cpp:1627
+msgid "5 x 7\""
+msgstr "13 x 18 cm"
+
+#: frmprintwizard.cpp:1640
+msgid "8 x 10\""
+msgstr "20 x 25 cm"
+
+#: frmprintwizard.cpp:1651 frmprintwizard.cpp:1829 frmprintwizard.cpp:1866
+#: frmprintwizard.cpp:1903 frmprintwizard.cpp:1954
+msgid "Thumbnails"
+msgstr "Vorschaubilder"
+
+#: frmprintwizard.cpp:1654 frmprintwizard.cpp:1832 frmprintwizard.cpp:1869
+#: frmprintwizard.cpp:1906 frmprintwizard.cpp:1957
+msgid "Small Thumbnails"
+msgstr "Kleine Vorschaubilder"
+
+#: frmprintwizard.cpp:1658
+msgid "Album Collage 1 (9 photos)"
+msgstr "Album-Collage 1 (9 Fotos)"
+
+#: frmprintwizard.cpp:1680
+msgid "Album Collage 2 (6 photos)"
+msgstr "Album-Collage 2 (6 Fotos)"
+
+#: frmprintwizard.cpp:1706
+msgid "21 x 29.7cm"
+msgstr "21 x 29,7 cm"
+
+#: frmprintwizard.cpp:1718
+msgid "6 x 9cm (8 photos)"
+msgstr "6 x 9 cm (8 Fotos)"
+
+#: frmprintwizard.cpp:1737 frmprintwizard.cpp:1845 frmprintwizard.cpp:1894
+#: frmprintwizard.cpp:1945
+msgid "9 x 13cm"
+msgstr "9 x 13 cm"
+
+#: frmprintwizard.cpp:1752
+msgid "10 x 13.33cm"
+msgstr "10 x 13,33 cm"
+
+#: frmprintwizard.cpp:1767 frmprintwizard.cpp:1882 frmprintwizard.cpp:1933
+msgid "10 x 15cm"
+msgstr "10 x 15 cm"
+
+#: frmprintwizard.cpp:1781
+msgid "10 x 15cm Album"
+msgstr "10 x 15 cm Album"
+
+#: frmprintwizard.cpp:1794
+msgid "11.5 x 15cm Album"
+msgstr "11,5 x 15 cm Album"
+
+#: frmprintwizard.cpp:1807 frmprintwizard.cpp:1921
+msgid "13 x 18cm"
+msgstr "13 x 18 cm"
+
+#: frmprintwizard.cpp:1820
+msgid "20 x 25cm"
+msgstr "20 x 25 cm"
+
+#: frmprintwizard.cpp:1857
+msgid "10.5 x 14.8cm"
+msgstr "10,5 x 14,8 cm"
+
+#: frmprintwizard.cpp:1970
+msgid "Unsupported Paper Size"
+msgstr "Nicht unterstützte Papiergröße"
+
+#: plugin_printwizard.cpp:67
+msgid "Print Wizard..."
+msgstr "Druckassistent ..."
+
+#: plugin_printwizard.cpp:108
+msgid "Please select one or more photos to print."
+msgstr "Bitte wählen Sie ein oder mehrere Fotos zum Drucken."
+
+#. i18n: file frmprintwizardbase.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "Welcome to the Print Wizard"
+msgstr "Willkommen beim Druckassistenten."
+
+#. i18n: file frmprintwizardbase.ui line 157
+#: rc.cpp:9
+#, no-c-format
+msgid ""
+"Welcome to the Print Wizard.  This wizard will walk you through the process of "
+"printing your photos.\n"
+"\n"
+"Click the 'Next' button to begin."
+msgstr ""
+"Willkommen beim Druckassistenten. Dieser Assistent wird mit Ihnen den Prozess "
+"zum Drucken der Fotos durchgehen.\n"
+"\n"
+"Drücken Sie \"Weiter\", um zu beginnen."
+
+#. i18n: file frmprintwizardbase.ui line 190
+#: rc.cpp:14
+#, no-c-format
+msgid "Select Printer"
+msgstr "Wählen Sie einen Drucker"
+
+#. i18n: file frmprintwizardbase.ui line 266
+#: rc.cpp:17
+#, no-c-format
+msgid "Page Settings"
+msgstr "Seiteneinstellungen"
+
+#. i18n: file frmprintwizardbase.ui line 301
+#: rc.cpp:20
+#, no-c-format
+msgid "Paper size:"
+msgstr "Papierformat:"
+
+#. i18n: file frmprintwizardbase.ui line 307
+#: rc.cpp:23
+#, no-c-format
+msgid "Letter"
+msgstr "Letter"
+
+#. i18n: file frmprintwizardbase.ui line 312
+#: rc.cpp:26
+#, no-c-format
+msgid "A4"
+msgstr "A4"
+
+#. i18n: file frmprintwizardbase.ui line 317
+#: rc.cpp:29
+#, no-c-format
+msgid "A6"
+msgstr "A6"
+
+#. i18n: file frmprintwizardbase.ui line 322
+#: rc.cpp:32
+#, no-c-format
+msgid "10x15cm"
+msgstr "10 x 15 cm"
+
+#. i18n: file frmprintwizardbase.ui line 327
+#: rc.cpp:35
+#, no-c-format
+msgid "13x17cm"
+msgstr "13x17 cm"
+
+#. i18n: file frmprintwizardbase.ui line 382
+#: rc.cpp:38
+#, no-c-format
+msgid "No margins"
+msgstr "Keine Ränder"
+
+#. i18n: file frmprintwizardbase.ui line 385
+#: rc.cpp:41 rc.cpp:44
+#, no-c-format
+msgid "Full-bleed mode"
+msgstr "Voll ausgeschöpfter Modus"
+
+#. i18n: file frmprintwizardbase.ui line 416
+#: rc.cpp:47
+#, no-c-format
+msgid "Image Captions"
+msgstr "Bildtitel"
+
+#. i18n: file frmprintwizardbase.ui line 425
+#: rc.cpp:50
+#, no-c-format
+msgid "No captions"
+msgstr "Keine Titel"
+
+#. i18n: file frmprintwizardbase.ui line 430
+#: rc.cpp:53
+#, no-c-format
+msgid "Image file names"
+msgstr "Bilddateinamen"
+
+#. i18n: file frmprintwizardbase.ui line 435
+#: rc.cpp:56
+#, no-c-format
+msgid "Exif date-time"
+msgstr "Exif-Datum und Zeit"
+
+#. i18n: file frmprintwizardbase.ui line 440
+#: rc.cpp:59
+#, no-c-format
+msgid "Comments"
+msgstr "Kommentare"
+
+#. i18n: file frmprintwizardbase.ui line 445
+#: rc.cpp:62
+#, no-c-format
+msgid "Free"
+msgstr "Frei"
+
+#. i18n: file frmprintwizardbase.ui line 468
+#: rc.cpp:65
+#, no-c-format
+msgid "%d %c"
+msgstr "%d %c"
+
+#. i18n: file frmprintwizardbase.ui line 497
+#: rc.cpp:68
+#, no-c-format
+msgid ""
+"%f  filename    %t exposure time\n"
+"%c comment  %i iso\n"
+"%d date-time  %r resolution\n"
+"%a aperture    %l focal length\n"
+"\\n newline"
+msgstr ""
+"%f  Dateiname    %t Belichtungszeit\n"
+"%c Kommentar  %i ISO\n"
+"%d Datum/Zeit  %r Auflösung\n"
+"%a Blende         %l Brennweite\n"
+"\\n Neue Zeile"
+
+#. i18n: file frmprintwizardbase.ui line 527
+#: rc.cpp:75
+#, no-c-format
+msgid "Caption font"
+msgstr "Titelzeichensatz"
+
+#. i18n: file frmprintwizardbase.ui line 530
+#: rc.cpp:78
+#, no-c-format
+msgid "Choose the caption font size"
+msgstr "Wählen Sie die Zeichensatzgröße des Titels"
+
+#. i18n: file frmprintwizardbase.ui line 586
+#: rc.cpp:81
+#, no-c-format
+msgid "Size"
+msgstr "Größe"
+
+#. i18n: file frmprintwizardbase.ui line 641
+#: rc.cpp:84
+#, no-c-format
+msgid "Output Settings"
+msgstr "Ausgabeeinstellungen"
+
+#. i18n: file frmprintwizardbase.ui line 660
+#: rc.cpp:87
+#, no-c-format
+msgid "Output to printer"
+msgstr "Ausgabe auf einen Drucker"
+
+#. i18n: file frmprintwizardbase.ui line 687
+#: rc.cpp:90
+#, no-c-format
+msgid "Open image using Gimp"
+msgstr "Bild mit Gimp öffnen"
+
+#. i18n: file frmprintwizardbase.ui line 712
+#: rc.cpp:93
+#, no-c-format
+msgid "http://www.gimp.org"
+msgstr "http://www.gimp.org"
+
+#. i18n: file frmprintwizardbase.ui line 715
+#: rc.cpp:96
+#, no-c-format
+msgid "Visit Gimp website (www.gimp.org) using external browser"
+msgstr ""
+"Besuchen Sie die Gimp-Webseite (www.gimp.org) mit einem externen Browser."
+
+#. i18n: file frmprintwizardbase.ui line 750
+#: rc.cpp:99
+#, no-c-format
+msgid "Output to image file"
+msgstr "In Bilddatei ausgeben"
+
+#. i18n: file frmprintwizardbase.ui line 794
+#: rc.cpp:102
+#, no-c-format
+msgid ""
+"This wizard will output each page to this folder with the filename "
+"kipi_printwizard_1, kipi_printwizard_2, etc."
+msgstr ""
+"Dieser Assistent wird jede Seite dieses Ordners mit den Dateinamen "
+"kipi_printwizard_1, kipi_printwizard_2, usw. ausgeben."
+
+#. i18n: file frmprintwizardbase.ui line 851
+#: rc.cpp:105
+#, no-c-format
+msgid "&Browse..."
+msgstr "&Durchsuchen ..."
+
+#. i18n: file frmprintwizardbase.ui line 854
+#: rc.cpp:108
+#, no-c-format
+msgid "Alt+B"
+msgstr "Alt+B"
+
+#. i18n: file frmprintwizardbase.ui line 870
+#: rc.cpp:111
+#, no-c-format
+msgid "Select Photo Layout"
+msgstr "Wählen Sie ein Foto-Layout"
+
+#. i18n: file frmprintwizardbase.ui line 979
+#: rc.cpp:114
+#, no-c-format
+msgid "Select the photo size to print"
+msgstr "Wählen Sie die zu druckende Fotogröße:"
+
+#. i18n: file frmprintwizardbase.ui line 985
+#: rc.cpp:117
+#, no-c-format
+msgid "Photo Sizes"
+msgstr "Fotogrößen"
+
+#. i18n: file frmprintwizardbase.ui line 1021
+#: rc.cpp:120
+#, no-c-format
+msgid "Print Summary"
+msgstr "Druckzusammenfassung"
+
+#. i18n: file frmprintwizardbase.ui line 1048
+#: rc.cpp:123
+#, no-c-format
+msgid "Photos:"
+msgstr "Fotos:"
+
+#. i18n: file frmprintwizardbase.ui line 1073
+#: rc.cpp:126 rc.cpp:132 rc.cpp:138
+#, no-c-format
+msgid "<p align=\"right\">0</p>"
+msgstr "<p align=\"right\">0</p>"
+
+#. i18n: file frmprintwizardbase.ui line 1102
+#: rc.cpp:129
+#, no-c-format
+msgid "Sheets:"
+msgstr "Blätter:"
+
+#. i18n: file frmprintwizardbase.ui line 1156
+#: rc.cpp:135
+#, no-c-format
+msgid "Empty slots:"
+msgstr "Freie Slots:"
+
+#. i18n: file frmprintwizardbase.ui line 1225
+#: rc.cpp:141
+#, no-c-format
+msgid "Print Order"
+msgstr "Druckreihenfolge"
+
+#. i18n: file frmprintwizardbase.ui line 1234
+#: rc.cpp:144
+#, no-c-format
+msgid "New Item"
+msgstr "Neues Bild"
+
+#. i18n: file frmprintwizardbase.ui line 1266
+#: rc.cpp:147
+#, no-c-format
+msgid "Up"
+msgstr "Aufwärts"
+
+#. i18n: file frmprintwizardbase.ui line 1270
+#: rc.cpp:150 rc.cpp:153
+#, no-c-format
+msgid "Move Up selected photo"
+msgstr "Das ausgewählte Foto nach oben verschieben"
+
+#. i18n: file frmprintwizardbase.ui line 1310
+#: rc.cpp:156
+#, no-c-format
+msgid "Down"
+msgstr "Abwärts"
+
+#. i18n: file frmprintwizardbase.ui line 1313
+#: rc.cpp:159 rc.cpp:162
+#, no-c-format
+msgid "Move Down selected photo"
+msgstr "Das ausgewählte Foto nach unten verschieben"
+
+#. i18n: file frmprintwizardbase.ui line 1344
+#: rc.cpp:165
+#, no-c-format
+msgid "Number of times to print selected photo:"
+msgstr "Anzahl der Drucke des ausgewählten Fotos:"
+
+#. i18n: file frmprintwizardbase.ui line 1361
+#: rc.cpp:168 rc.cpp:171
+#, no-c-format
+msgid "Number of copies of selected photo"
+msgstr "Anzahl der Kopien des ausgewählten Fotos"
+
+#. i18n: file frmprintwizardbase.ui line 1403
+#: rc.cpp:174
+#, no-c-format
+msgid "Preview"
+msgstr "Vorschau"
+
+#. i18n: file frmprintwizardbase.ui line 1514
+#: rc.cpp:177
+#, no-c-format
+msgid "<"
+msgstr "<"
+
+#. i18n: file frmprintwizardbase.ui line 1517
+#: rc.cpp:180 rc.cpp:183 rc.cpp:222 rc.cpp:225
+#, no-c-format
+msgid "Previous photo"
+msgstr "Vorheriges Foto"
+
+#. i18n: file frmprintwizardbase.ui line 1559
+#: rc.cpp:186
+#, no-c-format
+msgid ">"
+msgstr ">"
+
+#. i18n: file frmprintwizardbase.ui line 1562
+#: rc.cpp:189 rc.cpp:192
+#, no-c-format
+msgid "Next page"
+msgstr "Nächste Seite"
+
+#. i18n: file frmprintwizardbase.ui line 1598
+#: rc.cpp:195
+#, no-c-format
+msgid "Crop Photos"
+msgstr "Fotos zuschneiden"
+
+#. i18n: file frmprintwizardbase.ui line 1644
+#: rc.cpp:198
+#, no-c-format
+msgid ""
+"Move the box below to tell to this wizard how to crop the photos to fit inside "
+"the photo sizes you have given.  You can crop each image differently, or just "
+"click 'Next' to use the default center cropping for each photo."
+msgstr ""
+"Bewegen Sie das Rechteck unten, um dem Assistenten anzuzeigen welcher Teil des "
+"Fotos abgeschnitten werden kann, damit das Foto in die von Ihnen gewählten "
+"Abmessungen passt. Sie können jedes Foto unterschiedlich abschneiden oder "
+"einfach auf \"Weiter\" drücken, um die Voreinstellung \"zentriert abschneiden\" "
+"für alle Fotos zu wählen."
+
+#. i18n: file frmprintwizardbase.ui line 1671
+#: rc.cpp:201
+#, no-c-format
+msgid "Click and Drag the mouse"
+msgstr "Drücken Sie die Maustaste und ziehen Sie das Objekt mit der Maus"
+
+#. i18n: file frmprintwizardbase.ui line 1731
+#: rc.cpp:204
+#, no-c-format
+msgid "&Rotate"
+msgstr "D&rehen"
+
+#. i18n: file frmprintwizardbase.ui line 1734
+#: rc.cpp:207
+#, no-c-format
+msgid "Alt+R"
+msgstr "Alt+R"
+
+#. i18n: file frmprintwizardbase.ui line 1737
+#: rc.cpp:210 rc.cpp:213
+#, no-c-format
+msgid "Rotate photo"
+msgstr "Foto drehen"
+
+#. i18n: file frmprintwizardbase.ui line 1765
+#: rc.cpp:216
+#, no-c-format
+msgid "<< Pr&evious"
+msgstr "<< Vorh&eriges"
+
+#. i18n: file frmprintwizardbase.ui line 1768
+#: rc.cpp:219
+#, no-c-format
+msgid "Alt+E"
+msgstr "Alt+E"
+
+#. i18n: file frmprintwizardbase.ui line 1782
+#: rc.cpp:228
+#, no-c-format
+msgid "Ne&xt >>"
+msgstr "&Nächstes >>"
+
+#. i18n: file frmprintwizardbase.ui line 1785
+#: rc.cpp:231
+#, no-c-format
+msgid "Alt+X"
+msgstr "Alt+X"
+
+#. i18n: file frmprintwizardbase.ui line 1788
+#: rc.cpp:234 rc.cpp:237
+#, no-c-format
+msgid "Next photo"
+msgstr "Nächstes Foto"
+
+#. i18n: file frmprintwizardbase.ui line 1824
+#: rc.cpp:240
+#, no-c-format
+msgid "Photo 0 of 0"
+msgstr "Foto 0 von 0"
+
+#. i18n: file frmprintwizardbase.ui line 1976
+#: rc.cpp:246
+#, no-c-format
+msgid "Click the Next button to print."
+msgstr "Drücken Sie \"Weiter\" zum Drucken."
+
+#. i18n: file frmprintwizardbase.ui line 2040
+#: rc.cpp:249
+#, no-c-format
+msgid "Printer job viewer"
+msgstr "Anzeige der Druckaufträge"
+
+#. i18n: file frmprintwizardbase.ui line 2055
+#: rc.cpp:252
+#, no-c-format
+msgid "Printing"
+msgstr "Druckvorgang läuft"
+
+#: utils.cpp:86
+msgid ""
+"Unable to create a temporary folder; please make sure you have proper "
+"permissions to this folder and try again."
+msgstr ""
+"Es lässt sich kein temporärer Ordner erstellen. Bitte überprüfen Sie Ihre "
+"Berechtigungen für diesen Ordner und versuchen Sie es erneut."

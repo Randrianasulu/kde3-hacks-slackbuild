@@ -1,0 +1,658 @@
+# translation of kipiplugin_gpssync.po to
+#
+# Görkem Çetin <gorkem@pardus.org.tr>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_gpssync\n"
+"POT-Creation-Date: 2008-11-18 08:53+0100\n"
+"PO-Revision-Date: 2006-11-04 23:47+0200\n"
+"Last-Translator: Görkem Çetin <gorkem@pardus.org.tr>\n"
+"Language-Team:  <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: gpseditdialog.cpp:88
+msgid "%1 - Edit Geographical Coordinates"
+msgstr ""
+
+#: gpseditdialog.cpp:98
+msgid ""
+"<p>Use the map on the right to select the location where the picture have been "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates."
+"<p>"
+msgstr ""
+
+#: gpseditdialog.cpp:102
+msgid "Altitude:"
+msgstr ""
+
+#: gpseditdialog.cpp:103
+msgid "Latitude:"
+msgstr ""
+
+#: gpseditdialog.cpp:104
+msgid "Longitude:"
+msgstr ""
+
+#: gpseditdialog.cpp:118
+msgid "Goto Location"
+msgstr ""
+
+#: gpseditdialog.cpp:144 gpssyncdialog.cpp:248 gpssyncdialog.cpp:313
+#: gpssyncdialog.cpp:321 gpssyncdialog.cpp:443 gpssyncdialog.cpp:453
+#: gpssyncdialog.cpp:462 gpssyncdialog.cpp:494
+msgid "GPS Sync"
+msgstr ""
+
+#: gpseditdialog.cpp:147
+msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgstr ""
+
+#: gpseditdialog.cpp:150 gpssyncdialog.cpp:254
+msgid "Author and Maintainer"
+msgstr ""
+
+#: gpseditdialog.cpp:155 gpssyncdialog.cpp:259 kmlexportconfig.cpp:292
+msgid "Plugin Handbook"
+msgstr ""
+
+#: gpseditdialog.cpp:306
+msgid "Altitude value is not correct!"
+msgstr ""
+
+#: gpseditdialog.cpp:307 gpseditdialog.cpp:315 gpseditdialog.cpp:323
+#: plugin_gpssync.cpp:251
+msgid "Edit Geographical Coordinates"
+msgstr ""
+
+#: gpseditdialog.cpp:314
+msgid "Latitude value is not correct!"
+msgstr ""
+
+#: gpseditdialog.cpp:322
+msgid "Longitude value is not correct!"
+msgstr ""
+
+#: gpslistviewitem.cpp:108
+msgid "Interpolated"
+msgstr ""
+
+#: gpslistviewitem.cpp:112
+msgid "Added"
+msgstr ""
+
+#: gpslistviewitem.cpp:114
+msgid "Found"
+msgstr ""
+
+#: gpslistviewitem.cpp:132
+msgid "Deleted!"
+msgstr ""
+
+#: gpslistviewitem.cpp:145
+msgid "Not available"
+msgstr ""
+
+#: gpssyncdialog.cpp:107 plugin_gpssync.cpp:73
+msgid "Geolocation"
+msgstr ""
+
+#: gpssyncdialog.cpp:114
+msgid "Correlate"
+msgstr ""
+
+#: gpssyncdialog.cpp:115
+msgid "Edit..."
+msgstr ""
+
+#: gpssyncdialog.cpp:118
+msgid ""
+"Correlate in time and interpolate distance of data from GPX file with all "
+"images on the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:119
+msgid "Manually edit GPS coordinates of selected images from the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:120
+msgid "Remove GPS coordinates of selected images from the list."
+msgstr ""
+
+#: gpssyncdialog.cpp:131
+msgid "Thumbnail"
+msgstr ""
+
+#: gpssyncdialog.cpp:132
+msgid "File Name"
+msgstr ""
+
+#: gpssyncdialog.cpp:133
+msgid "Camera time stamp"
+msgstr ""
+
+#: gpssyncdialog.cpp:134
+msgid "Latitude"
+msgstr ""
+
+#: gpssyncdialog.cpp:135
+msgid "Longitude"
+msgstr ""
+
+#: gpssyncdialog.cpp:136
+msgid "Altitude"
+msgstr ""
+
+#: gpssyncdialog.cpp:137
+msgid "Status"
+msgstr ""
+
+#: gpssyncdialog.cpp:147
+msgid "Settings"
+msgstr ""
+
+#: gpssyncdialog.cpp:151
+msgid "Load GPX File..."
+msgstr ""
+
+#: gpssyncdialog.cpp:153
+msgid "Current GPX file:"
+msgstr ""
+
+#: gpssyncdialog.cpp:154
+msgid "No GPX file"
+msgstr ""
+
+#: gpssyncdialog.cpp:158
+msgid "Max. time gap (sec.):"
+msgstr ""
+
+#: gpssyncdialog.cpp:160
+msgid ""
+"<p>Sets the maximum difference in seconds from a GPS track point to the image "
+"time to be matched. If the time difference exceeds this setting, no match will "
+"be attempted."
+msgstr ""
+
+#: gpssyncdialog.cpp:164
+msgid "Time zone:"
+msgstr ""
+
+#: gpssyncdialog.cpp:210
+msgid ""
+"<p>Sets the time zone the camera was set to during photo shooting, so that the "
+"time stamps of the images can be converted to GMT to match the GPS time "
+"reference.\n"
+"Note: positive offsets count eastwards from zero longitude (GMT), they are "
+"'ahead of time'."
+msgstr ""
+
+#: gpssyncdialog.cpp:216
+msgid "Interpolate"
+msgstr ""
+
+#: gpssyncdialog.cpp:217
+msgid ""
+"<p>Set this option to interpolate GPS track points which are not closely "
+"matched to the GPX data file."
+msgstr ""
+
+#: gpssyncdialog.cpp:220
+msgid "Difference in min.:"
+msgstr ""
+
+#: gpssyncdialog.cpp:222
+msgid ""
+"<p>Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
+"file points to image time data."
+msgstr ""
+
+#: gpssyncdialog.cpp:251
+msgid "A plugin to synchronize images' metadata with a GPS device"
+msgstr ""
+
+#: gpssyncdialog.cpp:302 kmlexportconfig.cpp:193
+msgid "%1|GPS Exchange Format"
+msgstr ""
+
+#: gpssyncdialog.cpp:303 kmlexportconfig.cpp:194
+msgid "Select GPX File to Load"
+msgstr ""
+
+#: gpssyncdialog.cpp:312 kmlexport.cpp:350
+msgid "Cannot parse %1 GPX file!"
+msgstr ""
+
+#: gpssyncdialog.cpp:320 kmlexport.cpp:356
+msgid "The %1 GPX file do not have a date-time track to use!"
+msgstr ""
+
+#: gpssyncdialog.cpp:327
+#, c-format
+msgid "Points parsed: %1"
+msgstr ""
+
+#: gpssyncdialog.cpp:371
+#, c-format
+msgid ""
+"_n: 1 image from the list is not updated.\n"
+"%n images from the list are not updated."
+msgstr ""
+
+#: gpssyncdialog.cpp:374
+msgid ""
+"<p>%1\n"
+"Do you really want to close this window without applying changes?</p>"
+msgstr ""
+
+#: gpssyncdialog.cpp:442
+msgid "Cannot find pictures to correlate with GPX file data."
+msgstr ""
+
+#: gpssyncdialog.cpp:448
+#, c-format
+msgid ""
+"_n: GPS data of 1 image have been updated on the list using the GPX data file.\n"
+"GPS data of %n images have been updated on the list using the GPX data file."
+msgstr ""
+
+#: gpssyncdialog.cpp:451
+msgid "Press Apply button to update images metadata."
+msgstr ""
+
+#: gpssyncdialog.cpp:461
+msgid ""
+"Please, select at least one image from the list to edit GPS coordinates "
+"manually."
+msgstr ""
+
+#: gpssyncdialog.cpp:493
+msgid ""
+"Please, select at least one image from the list to remove GPS coordinates."
+msgstr ""
+
+#: kmlexport.cpp:63
+msgid "Generating KML file..."
+msgstr ""
+
+#: kmlexport.cpp:83
+#, c-format
+msgid "Could not create '%1"
+msgstr ""
+
+#: kmlexport.cpp:167
+msgid "Could not read image '%1'"
+msgstr ""
+
+#: kmlexport.cpp:174
+msgid "Format of image '%1' is unknown"
+msgstr ""
+
+#: kmlexport.cpp:184
+msgid "Error loading image '%1'"
+msgstr ""
+
+#: kmlexport.cpp:224
+msgid "Could not save image '%1' to '%2'"
+msgstr ""
+
+#: kmlexport.cpp:304
+msgid "Creation of placemark '%1'"
+msgstr ""
+
+#: kmlexport.cpp:311
+msgid "Could not save icon for image '%1' to '%2'"
+msgstr ""
+
+#: kmlexport.cpp:341
+msgid "No GPX file Chosen!"
+msgstr ""
+
+#: kmlexport.cpp:363
+msgid "Tracks"
+msgstr ""
+
+#: kmlexport.cpp:443
+msgid "No position data for '%1'"
+msgstr ""
+
+#: kmlexport.cpp:455
+#, c-format
+msgid ""
+"_n: No position data for 1 picture\n"
+"No position data for %n pictures"
+msgstr ""
+
+#: kmlexport.cpp:469
+msgid "Move to final directory"
+msgstr ""
+
+#: kmlexportconfig.cpp:66 kmlexportconfig.cpp:281
+msgid "KML Export"
+msgstr ""
+
+#: kmlexportconfig.cpp:77
+msgid "Target Preferences"
+msgstr ""
+
+#: kmlexportconfig.cpp:82
+msgid "Target Type"
+msgstr ""
+
+#: kmlexportconfig.cpp:86
+msgid "&Local or web target used by GoogleEarth"
+msgstr ""
+
+#: kmlexportconfig.cpp:91
+msgid "Web target used by GoogleMap"
+msgstr ""
+
+#: kmlexportconfig.cpp:95
+msgid ""
+"When using GoogleMap, all image must have complete URL, icons are squared and "
+"when drawing a track, only linetrack is exported"
+msgstr ""
+
+#: kmlexportconfig.cpp:101
+msgid "Picture altitude"
+msgstr ""
+
+#: kmlexportconfig.cpp:105 kmlexportconfig.cpp:256
+msgid "clamp to ground"
+msgstr ""
+
+#: kmlexportconfig.cpp:106 kmlexportconfig.cpp:257
+msgid "relative to ground"
+msgstr ""
+
+#: kmlexportconfig.cpp:107 kmlexportconfig.cpp:258
+msgid "absolute"
+msgstr ""
+
+#: kmlexportconfig.cpp:108
+msgid ""
+"<p>Specifies how pictures are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+
+#: kmlexportconfig.cpp:119
+msgid "Destination directory"
+msgstr ""
+
+#: kmlexportconfig.cpp:125
+msgid "Select a directory to save the kml file and pictures"
+msgstr ""
+
+#: kmlexportconfig.cpp:129
+msgid "Destination URL"
+msgstr ""
+
+#: kmlexportconfig.cpp:136
+msgid "File name"
+msgstr ""
+
+#: kmlexportconfig.cpp:147
+msgid "Sizes"
+msgstr ""
+
+#: kmlexportconfig.cpp:152
+msgid "Icon size"
+msgstr ""
+
+#: kmlexportconfig.cpp:163
+msgid "Image size"
+msgstr ""
+
+#: kmlexportconfig.cpp:178
+msgid "GPX Tracks"
+msgstr ""
+
+#: kmlexportconfig.cpp:184
+msgid "Draw GPX track"
+msgstr ""
+
+#: kmlexportconfig.cpp:188
+msgid "GPX file"
+msgstr ""
+
+#: kmlexportconfig.cpp:197
+msgid "Time zone"
+msgstr ""
+
+#: kmlexportconfig.cpp:200
+msgid "GMT-12:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:201
+msgid "GMT-11:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:202
+msgid "GMT-10:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:203
+msgid "GMT-09:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:204
+msgid "GMT-08:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:205
+msgid "GMT-07:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:206
+msgid "GMT-06:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:207
+msgid "GMT-05:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:208
+msgid "GMT-04:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:209
+msgid "GMT-03:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:210
+msgid "GMT-02:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:211
+msgid "GMT-01:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:212
+msgid "GMT"
+msgstr ""
+
+#: kmlexportconfig.cpp:213
+msgid "GMT+01:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:214
+msgid "GMT+02:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:215
+msgid "GMT+03:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:216
+msgid "GMT+04:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:217
+msgid "GMT+05:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:218
+msgid "GMT+06:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:219
+msgid "GMT+07:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:220
+msgid "GMT+08:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:221
+msgid "GMT+09:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:222
+msgid "GMT+10:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:223
+msgid "GMT+11:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:224
+msgid "GMT+12:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:225
+msgid "GMT+13:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:226
+msgid "GMT+14:00"
+msgstr ""
+
+#: kmlexportconfig.cpp:227
+msgid ""
+"<p>Sets the time zone of the camera during picture shooting, so that the time "
+"stamps of the GPS can be converted to match the local time"
+msgstr ""
+
+#: kmlexportconfig.cpp:232
+msgid "Track width"
+msgstr ""
+
+#: kmlexportconfig.cpp:239
+msgid "Track color"
+msgstr ""
+
+#: kmlexportconfig.cpp:248
+msgid "Opacity:"
+msgstr ""
+
+#: kmlexportconfig.cpp:252
+msgid "Track altitude"
+msgstr ""
+
+#: kmlexportconfig.cpp:259
+msgid ""
+"<p>Specifies how the points are displayed<dl><dt>clamp to ground (default)</dt>"
+"<dd>Indicates to ignore an altitude specification</dd><dt>"
+"relative to ground</dt><dd>Sets the altitude of the element relative to the "
+"actual ground elevation of a particular location.</dd><dt>absolute</dt><dd>"
+"Sets the altitude of the coordinate relative to sea level, regardless of the "
+"actual elevation of the terrain beneath the element.</dd></dl>"
+msgstr ""
+
+#: kmlexportconfig.cpp:284
+msgid "A Kipi plugin for kml exporting"
+msgstr ""
+
+#: kmlexportconfig.cpp:287
+msgid "Author"
+msgstr ""
+
+#: kmlgpsdataparser.cpp:66
+msgid "Track"
+msgstr ""
+
+#: kmlgpsdataparser.cpp:95
+msgid "Points"
+msgstr ""
+
+#: kmlgpsdataparser.cpp:105
+msgid "Point"
+msgstr ""
+
+#: plugin_gpssync.cpp:78
+msgid "Correlator..."
+msgstr ""
+
+#: plugin_gpssync.cpp:86
+msgid "Edit Coordinates..."
+msgstr ""
+
+#: plugin_gpssync.cpp:94
+msgid "Remove Coordinates..."
+msgstr ""
+
+#: plugin_gpssync.cpp:105
+msgid "KML Export..."
+msgstr ""
+
+#: plugin_gpssync.cpp:139
+msgid ""
+"<qt>"
+"<p>Unable to find the gpsbabel executable:"
+"<br> This program is required by this plugin to support GPS data file decoding. "
+"Please install gpsbabel as a package from your distributor or <a href=\"%1\">"
+"download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %2 is required by this plugin.</p></qt>"
+msgstr ""
+
+#: plugin_gpssync.cpp:156
+msgid ""
+"<qt>"
+"<p>gpsbabel executable is not up to date:"
+"<br> The version %1 of gpsbabel have been found on your computer. This version "
+"is too old to run properly with this plugin. Please update gpsbabel as a "
+"package from your distributor or <a href=\"%2\">download the source</a>.</p>"
+"<p>Note: at least, gpsbabel version %3 is required by this plugin</p></qt>"
+msgstr ""
+
+#: plugin_gpssync.cpp:249
+msgid "Unable to save geographical coordinates into:"
+msgstr ""
+
+#: plugin_gpssync.cpp:265
+msgid ""
+"Geographical coordinates will be definitively removed from all selected "
+"images.\n"
+"Do you want to continue ?"
+msgstr ""
+
+#: plugin_gpssync.cpp:267 plugin_gpssync.cpp:302
+msgid "Remove Geographical Coordinates"
+msgstr ""
+
+#: plugin_gpssync.cpp:300
+msgid "Unable to remove geographical coordinates from:"
+msgstr ""
+
+#: plugin_gpssync.cpp:317
+msgid "KMLExport"
+msgstr ""

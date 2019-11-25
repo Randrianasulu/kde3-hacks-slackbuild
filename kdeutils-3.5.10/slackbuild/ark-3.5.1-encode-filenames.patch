@@ -1,0 +1,18 @@
+--- kdeutils-3.5.1/ark/arkapp.cpp~	2006-01-19 19:49:29 +0300
++++ kdeutils-3.5.1/ark/arkapp.cpp	2006-02-20 19:28:23 +0300
+@@ -32,6 +32,7 @@
+ #include <unistd.h>
+ #include <qfile.h>
+ #include <errno.h>
++#include <qtextcodec.h>
+ 
+ 
+ #include "arkapp.h"
+@@ -110,6 +111,7 @@ ArkApplication::ArkApplication()
+ {
+ 	m_mainwidget = new QWidget;
+ 	setMainWidget(m_mainwidget);
++	QTextCodec::setCodecForCStrings(QTextCodec::codecForLocale());
+ }
+ 
+ int

@@ -1,0 +1,26 @@
+--- kio/kio/kdirwatch.cpp.orig	2006-07-22 08:16:37.000000000 +0000
++++ kio/kio/kdirwatch.cpp	2011-09-18 07:01:53.000000000 +0000
+@@ -71,22 +71,10 @@
+ #include <linux/types.h>
+ // Linux kernel headers are documented to not compile
+ #define _S390_BITOPS_H
+-#include <linux/inotify.h>
++#include <sys/inotify.h>
+ 
+-static inline int inotify_init (void)
+-{
+-  return syscall (__NR_inotify_init);
+-}
+ 
+-static inline int inotify_add_watch (int fd, const char *name, __u32 mask)
+-{
+-  return syscall (__NR_inotify_add_watch, fd, name, mask);
+-}
+ 
+-static inline int inotify_rm_watch (int fd, __u32 wd)
+-{
+-  return syscall (__NR_inotify_rm_watch, fd, wd);
+-}
+ 
+ #ifndef  IN_ONLYDIR
+ #define  IN_ONLYDIR 0x01000000 

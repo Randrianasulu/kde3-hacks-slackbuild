@@ -1,0 +1,222 @@
+# translation of kipiplugin_calendar.po to Serbian
+# Chusslove Illich <caslav.ilic@gmx.net>, 2004.
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_calendar\n"
+"POT-Creation-Date: 2008-07-08 22:17+0200\n"
+"PO-Revision-Date: 2007-07-18 12:32+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: calevents.cpp:56
+msgid "Select 'Official Holidays' calendar file"
+msgstr "Izaberite fajl kalendara sa „zvaničnim praznicima“"
+
+#: calevents.cpp:70
+msgid "Select 'Family Holidays' calendar file"
+msgstr "Izaberite fajl kalendara sa „porodičnim praznicima“"
+
+#: calselect.cpp:69 calwizard.cpp:165
+msgid "Create Calendar"
+msgstr "Napravi kalendar"
+
+#: calselect.cpp:70
+msgid "Select Year"
+msgstr "Izaberite godinu"
+
+#: calselect.cpp:87
+msgid "Select Images"
+msgstr "Izaberite slike"
+
+#: calselect.cpp:119
+msgid ""
+"Left click on Months to Select Images. Right click to Clear Month.\n"
+"You can also drag and drop images onto the Months"
+msgstr ""
+"Levo kliknite na mesece da biste izabrali slike. Desno kliknite da biste "
+"očistili mesec.\n"
+"Takođe možete prevući i ispustiti slike na mesece."
+
+#: caltemplate.cpp:66
+msgid "Preview"
+msgstr "Pregled"
+
+#: caltemplate.cpp:78
+msgid "Settings"
+msgstr "Postavke"
+
+#: caltemplate.cpp:87
+msgid "Paper size:"
+msgstr "Veličina papira:"
+
+#: caltemplate.cpp:103
+msgid "Image Position"
+msgstr "Položaj slike"
+
+#: caltemplate.cpp:125
+msgid "Draw lines in calendar"
+msgstr "Crtaj linije u kalendaru"
+
+#: caltemplate.cpp:136
+msgid "Image to text ratio:"
+msgstr "Odnos slike i teksta:"
+
+#: caltemplate.cpp:150
+msgid "Font:"
+msgstr "Font:"
+
+#: calwizard.cpp:80
+msgid "Create Template for Calendar"
+msgstr "Napravi šablon za kalendar"
+
+#: calwizard.cpp:86
+msgid "Choose the events to show on the Calendar"
+msgstr "Izaberite događaje koji će se prikazati na kalendaru"
+
+#: calwizard.cpp:92
+msgid "Select Year & Images"
+msgstr "Izaberite godinu i slike"
+
+#: calwizard.cpp:117
+msgid "Current Page"
+msgstr "Tekuća strana"
+
+#: calwizard.cpp:123
+msgid "Total Pages"
+msgstr "Ukupno strana"
+
+#: calwizard.cpp:130
+msgid "Printing"
+msgstr "Štampanje"
+
+#: calwizard.cpp:137
+msgid "Calendar"
+msgstr "Kalendar"
+
+#: calwizard.cpp:140
+msgid "A Kipi plugin to create a calendar"
+msgstr "Priključak Kipi-ja za pravljenje kalendara"
+
+#: calwizard.cpp:143
+msgid "Author and maintainer"
+msgstr "Autor i održavalac"
+
+#: calwizard.cpp:146
+msgid "Former Author and maintainer"
+msgstr "Prethodni autor i održavalac"
+
+#: calwizard.cpp:152
+#, fuzzy
+msgid "Plugin Handbook"
+msgstr "Priručnik kalendara"
+
+#: calwizard.cpp:221
+msgid ""
+"Please note that you are making a calendar for"
+"<br>the current year or a year in the past."
+msgstr "Pravite kalendar za<br>tekuću ili za neku od proteklih godina."
+
+#: calwizard.cpp:226
+msgid ""
+"<br>"
+"<br>You can see KJobViewer is already started. After the plugin has prepared "
+"the calendar, it is passed to the PDF printer. In the KJobViewer you can see "
+"the progress of that part of the generation of the calendar."
+msgstr ""
+"<br>"
+"<br>Vidite da je KJobViewer već pokrenut. Nakon što priključak pripremi "
+"kalendar, on se prosleđuje PDF štampaču. U KJobViewer-u možete videti napredak "
+"tog dela stvaranja kalendara."
+
+#: calwizard.cpp:231
+msgid ""
+"Click Next to start Printing"
+"<br>"
+"<br>Following months will be printed for year %1:"
+msgstr ""
+"Kliknite na „Sledeće“ da biste pokrenuli štampanje"
+"<br>"
+"<br>Sledeći meseci će biti štampani za godinu %1:"
+
+#: calwizard.cpp:240
+msgid "No valid images selected for months<br>Click Back to select images"
+msgstr ""
+"Nema ispravnih slika izabranih za mesece"
+"<br>Kliknite na „Nazad“ da biste izabrali slike"
+
+#: calwizard.cpp:293
+msgid "Printing Cancelled"
+msgstr "Štampanje je otkazano"
+
+#: calwizard.cpp:310
+msgid "Printing Complete"
+msgstr "Štampanje je završeno"
+
+#: calwizard.cpp:322 calwizard.cpp:326
+msgid "Printing Calendar Page for %1 of %2"
+msgstr "Štampam stranu kalendara %1 od %2"
+
+#: plugin_calendar.cpp:60
+msgid "Create Calendar..."
+msgstr "Napravi kalendar..."
+
+#. i18n: file caleventsbase.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "CalEventBaseWidget"
+msgstr ""
+
+#. i18n: file caleventsbase.ui line 32
+#: rc.cpp:6
+#, no-c-format
+msgid "Select an optional calendar file with the official holidays"
+msgstr "Izaberite opcioni fajl kalendara sa zvaničnim praznicima"
+
+#. i18n: file caleventsbase.ui line 78
+#: rc.cpp:9
+#, no-c-format
+msgid ""
+"You can download a calendar for your country from http://www.icalshare.com/ or "
+"other sites.\n"
+"This is fully optional. All the events from this calendar will be printed red."
+msgstr ""
+"Možete preuzeti kalendar za vašu zemlju sa http://www.icalshare.com/ ili drugih "
+"adresa.\n"
+"Ovo je potpuno opciono. Svi događaji iz ovog kalendara biće odštampani crveno."
+
+#. i18n: file caleventsbase.ui line 108
+#: rc.cpp:13
+#, no-c-format
+msgid "Select an optional calendar file with your \"family holidays\""
+msgstr "Izaberite opcioni fajl kalendara sa vašim „porodičnim praznicima“"
+
+#. i18n: file caleventsbase.ui line 162
+#: rc.cpp:16
+#, no-c-format
+msgid ""
+"You can create such a calendar using KOrganizer or any other calendar program.\n"
+"This is fully optional. All the events from this calendar will be printed "
+"green."
+msgstr ""
+"Možete napraviti takav kalendar pomoću KOrganizer-a ili bilo kog programa za "
+"kalendar.\n"
+"Ovo je potpuno opciono. Svi događaji iz ovog kalendara biće odštampani zeleno."

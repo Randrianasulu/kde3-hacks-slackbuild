@@ -1,0 +1,91 @@
+<sect1 id="components.irmcsynckonnector">
+<title
+>Kitchensynci IrMCSync Konnector</title>
+<para
+>See programm on kitchensynci Konnectori plugin, mis võimaldab sinu IrMCSynci toetava seadme sünkroniseerida sinu kohaliku kalendri ja/või aadressiraamatuga. </para>
+<para
+>Praegu on toetatud nii kalender kui aadressiraamat! </para>
+<para
+>ME SOOVITAME TUNGIVALT TEHA ENNE SÜNKRONISEERIMIST KALENDRIST JA AADRESSIRAAMATUST VARUKOOPIA! Kindlasti ei kanna me vastutust, kui sünkroniseerimine rikub või hävitab sinu andmed. </para>
+
+
+<sect2>
+<title
+>Me vajame ka sinu silumisinfot!</title>
+<para
+>PALUN käivita kitchensync shellist või suuna stdout ja stderr faili, et kui sul peaks probleeme tekkida, võiksid saata meile Konnectori väljundi. Silumisvõimaluse sisselülitamiseks käivita "kdebugdialog" ning määra KitchenSynci puudutavad võtmed (alates 5200) ja üldvõti. </para>
+</sect2>
+
+<sect2>
+<title
+>Kompileerimine.</title>
+<para
+>Mooduli kdepim Kitchensynci SVN-versioonil on märksa enam võimalusi ja ka parem töökindlus kui kdepimi versioonil 3.3.0. Seepärast soovitame kasutada seda versiooni. Selleks tuleb paigaldada SVN-ist vähemalt kitchensync (ja kõik selle alamprojektid). </para>
+<para
+>Olemas on ka kdepim-3.3.0 versioon, mille leiab harust irmcsync_kdepim_3_3_branch, aga seda ei hoolda küll enam keegi - me oleme keskendunud SVN-versiooni arendamisele. 3.3.0 versioon sõltub kdepim-3.3.0 versioonist, võib-olla ka veidi vanemast või uuemast, nii et kui soovid, võid neid proovida. Kui soovid tõmmata irmcsync_kdepim_3_3_branch haru, pead suunduma kataloogi kdebluetooth/irmcsync/irmcsynckonnector ja andma käsu: cvs -f -z3 -q update -d -P -r irmcsync_kdepim_3_3_branch </para
+>	
+
+<para
+>Konnectori kompileerimise lubamiseks tuleb lisada kataloog "irmcsync" faili kdebluetooth/Makefile.am muutujale SUBDIR </para>
+</sect2>
+
+<sect2>
+<title
+>KitchenSynci kasutamine.</title>
+<para
+>Hetkel (25.03.2004) on KitchenSync väga eksperimentaalne, nii et ilmneda võib mitmesuguseid probleeme. </para>
+<para
+>Pärast käivitamist tuleb valida kasutatavad konnektorid. Sünkroniseerimiseks on vaja vähemalt kaht konnektorit, kuid testimiseks piisab ka ühest. </para>
+<para
+>Konnektori lisamiseks vali <guimenuitem
+>Seadistused->KitchenSynci seadistamine</guimenuitem
+> </para>
+<para
+>Kui tekib mingeid vigu, võid püüda seadistamisakna suurust muuta. Siis peaks ressursside liitkast näitama mitmesuguseid valikuid. KÕIK NEED ON KASUTUSKÕLBMATUD, töötab ainult "konnector". </para>
+<para
+>Näiteks võid lisada IrMCSync konnektori ja kohaliku konnektori. </para>
+<para
+>Vali IrMCSync konnektoris oma seade ning märgi kast "Kalendri sünkroniseerimine" või "Aadressiraamatu sünkroniseerimine" (praegu ei ole võimalik mõlemat korraga sünkroniseerida). Kohalikus konnektoris vali kalendrifail NING KDE aadressiraamatu fail (valida tuleb mõlemad ning failinimed peavad olema korrektsed, sest muidu asi lihtsalt ei tööta). Me soovitame sul luua ajutise kataloogi, kuhu testimise huvides kopeerida oma aadressiraamat ja kalender. </para>
+<para
+>Tavaliselt leiab need kataloogidest: </para>
+<para
+>KALENDER: <filename
+>$HOME/.kde/share/apps/korganizer/std.ics</filename
+> </para>
+<para
+>AADRESSIRAAMAT: <filename
+>$HOME/.kde/share/apps/kabc/std.vcf</filename
+> </para
+>	
+<para
+>Seejärel tuleb luua profiil (<guimenuitem
+>Seadistused->Profiilide seadistamine</guimenuitem
+>). Igale profiilile saab lisada erinevaid spetsiifilise funktsiooniga osasid: </para>
+<itemizedlist>
+<listitem>
+<para
+>Sünkroniseerimine: TEGELIKU sünkroniseerimise sooritamine. </para>
+</listitem>
+<listitem>
+<para
+>Konnectori silur: Konnectori silumisinfo. </para>
+</listitem>
+<listitem>
+<para
+>Konnectori varundamine: andmetest varukoopia tegemine. </para>
+</listitem>
+<listitem>
+<para
+>Ülevaade: nagu nimi ütleb. </para>
+</listitem>
+</itemizedlist>
+
+<para
+>Kui soovid sünkroniseerida, tuleb valida vähemalt "Sünkroniseerimine". </para>
+<para
+>Seejärel klõpsa sünkroniseerimise alustamiseks ülal vasakul asuvale nupule. </para>
+<para
+>Võimalik on kontrollida konnektorit, luua profiil konnektori silumisosaga ning klõpsata nupule "Ühenda seade" ning seejärel nupule ReadSyncees. </para>
+</sect2>
+</sect1>
+

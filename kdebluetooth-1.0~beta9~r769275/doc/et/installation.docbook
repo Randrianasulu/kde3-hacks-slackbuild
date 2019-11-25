@@ -1,0 +1,173 @@
+<chapter id="installation">
+<title
+>Paigaldamine</title>
+
+<sect1 id="installation.requirements">
+<title
+>Nõuded</title>
+<para
+>Sõltuvused (vaja läheb nii teeke (libs) kui vastavaid arendus- ehk devel-pakette): </para>
+<itemizedlist>
+<listitem
+><para
+>KDE 
+>=3.2 </para
+></listitem>
+<listitem
+><para
+>Openobex 
+>=1.0 </para
+></listitem>
+<listitem
+><para
+>Qt 
+>=3.2 </para
+></listitem>
+<listitem
+><para
+>bluez-libs 
+>=2.5 </para
+></listitem>
+<listitem
+><para
+>bluez-utils 
+>=2.5 </para
+></listitem>
+</itemizedlist>
+<!--<para
+>For the handsfree client you will also need libogg, libvorbisenc and libvorbisfile.</para
+>-->
+<para
+>Bemused serveri kompileerimiseks on vajalik ka xmms-dev. </para>
+<para
+>Palun arvesta, et kõik võib kompileeruda ka toodud teekide vanemate versioonidega. Kui sul see õnnestub või kui kompileerimine ei tule välja sellest hoolimata, et oled paigaldanud korrektse versiooni, võiksid meilegi sellest teada anda. </para>
+</sect1>
+
+
+<sect1 id="installation.compilation">
+<title
+>Kompileerimine ja paigaldamine</title>
+<para
+>Paki tar.gz-fail lahti, anna käsk <command
+>cd kdebluetooth</command
+> ja seejärel <command
+>./configure --prefix=...</command
+>. KDE peab olema seadistatud vastavat prefiksit kasutama. Tavaliselt on selleks <filename
+>/usr</filename
+>, kuid lisada võib ka muid katalooge, kui määrata keskkonnamuutuja $KDEDIRS. Vaata täpsemalt <ulink url="http://www.kde.org/documentation/faq/install.html"
+> http://www.kde.org/documentation/faq/install.html</ulink
+>. </para>
+<para
+>Kui kompileerimine õnnestub, paigalda see käsuga <command
+>make install</command
+>. Me soovitame siiski tungivalt kasutada <link linkend="download.packages"
+>tarkvarapaketti</link
+>, mitte aga paigaldada makefile'i abil - kui sa ei kasuta kdebluetoothile spetsiaalset prefiksit, võib uuenduste järel tekkida probleem vana kraami eemaldamisega. </para>
+</sect1>
+
+
+<sect1 id="installation.setup">
+<title
+>Seadistus</title>
+<para
+>KDE Bluetoothi raamistik ei vaja põhimõtteliselt peaaegu mingit seadistamist, kuid enne selle kasutamist tuleb korrektselt seadistada Linuxi Bluetoothi protokollistik BlueZ. Lähemat infot saad aadressilt <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+>. BlueZiga on kaasas deemon <command
+>hcid</command
+>. See tegeleb seadmete kasutuselevõtmise ja turvalisusega. Tavaliselt käivitatakse see juba arvuti alglaadimise ajal init skriptist. </para>
+<para
+>Kdebluetoothi korral soovitame järgmisi seadistusi (muutmata või ebaolulised sektsioonid on toodud kujul '...'): <screen>
+options {
+...
+        # Security Manager mode
+        #   none - Security manager disabled
+        #   auto - Use local PIN for incoming connections
+        #   user - Always ask user for a PIN
+        #
+        # Use 'security user' to use the graphical pin helper only
+        # 'auto' means that for incoming connection the static number 
+        # in the file /etc/bluetooth/pin is used.
+        security user;
+
+        # Pairing mode
+        # Allow to overwrite an existing pairing 
+        pairing multi;
+
+        # PIN helper
+        # Use kdebluetooth's own pin helper. 
+        # Errors messages can be found in the syslog.
+        # !! CHANGE ME !! Change the path according to your own setup
+        pin_helper /usr/local/lib/kdebluetooth/kbluepin;
+}
+
+# Default settings for HCI devices
+device {
+...
+        # Local device class
+        # "Uncategorized computer", which pretends 
+        # to support just about anything.
+        class 0xff0100;
+        
+        # For some mobile phones you will have to tag your system
+        # as a Audio/Handsfree device to be able to use your computer
+        # as a Handsfree (only when connecting from the phone)
+        # class 0xff0408;
+
+        iscan enable; pscan enable;
+        lm accept;
+        lp hold,sniff,park;
+
+        # Authentication and Encryption
+        # If you enable this, a device *must* be paired to access any
+        # service on your computer
+        #auth enable;
+        #encrypt enable;
+}
+
+</screen
+> Pea meeles, et pärast iga muutust tuleb <command
+>hcid</command
+> uuesti käivitada. Kui registreerimisel miski siiski ei tööta, aitab enamasti põhjuses selgusele jõuda pilk süsteemsesse logifaili (Debiani korral <filename
+>/var/log/syslog</filename
+>). </para>
+<para
+>Veidi lähemalt tutvustab kõige olulisemat Bluetoothi turvalisuse teemal <link linkend="concepts.pairing"
+>Bluetoothi seadmete registreerimisele pühendatud osa</link
+>. </para>
+
+<para
+>Veel üks deemon, mis peab töötama, on BlueZi <command
+>sdpd</command
+>. Seda kasutatakse teenuste kirjelduste teatamiseks teistele seadmetele. </para>
+<para
+>Kui nii hcid kui ka sdpd töötavad, võid kontrollida, kas sinu Bluetooth seade on korrektselt seadistatud, kasutades selleks BlueZi pakutavaid käsureavahendeid: </para>
+<screen
+>root:~# hciconfig      &lt;- Check if adaptor was found and is up
+hci0:   Type: USB
+        BD Address: 00:10:60:A3:8B:DE ACL MTU: 192:8  SCO MTU: 64:8
+        UP RUNNING PSCAN ISCAN AUTH ENCRYPT
+        RX bytes:176023 acl:2046 sco:0 events:1809 errors:0
+        TX bytes:23000 acl:971 sco:0 commands:469 errors:0
+
+root:~# hcitool inq    &lt;- Try to seach for other discoverable devices
+Inquiring ...
+        00:A0:32:1A:B0:27       clock offset: 0x122b    class: 0x000100
+
+root:~# sdptool browse FF:FF:FF:00:00:00
+Browsing FF:FF:FF:00:00:00 ...
+Service Name: SDP Server
+Service Description: Bluetooth service discovery server
+Service Provider: BlueZ
+Service RecHandle: 0x0
+...
+root:~#
+</screen>
+<para
+>Esimene käsk kontrollib, kas Bluetooth seade töötab, teine otsib piirkonnas leiduvaid seadmeid (need peavad mõistagi olema tuvastatavad). Viimane käsk loendab teenused, mida muud Bluetoothi seadmed sulle pakuvad. Kui kbluetoothd juba töötab, peaksid siin saama täieliku nimekirja aktiivsetest teenustest. Kui kõik õnnestub, peaks olema võimalik kdebluetoothi kohe kasutama hakata. </para>
+<para
+>Seejärel käivita kdebluetoothi metaserver <command
+>kbluetoothd</command
+>. Peaksid nägema kdebluetoothi ikooni süsteemses salves. Kuni kbluetoothd töötab, saab kasutada kõiki teenuseid, mida kdebluetooth pakub. Klõpsa süsteemse salve ikoonil nii hiire parema kui vasaku nupuga ja vaata, mis mida teeb. </para>
+</sect1>
+
+</chapter>

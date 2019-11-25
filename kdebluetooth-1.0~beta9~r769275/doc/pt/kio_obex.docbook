@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>'Kioslave' OBEX-kioslave: Navegar em pastas Bluetooth</title>
+
+  <sect2>
+    <title
+>Geral</title>
+    <para
+>O protocolo OBEX está desenhado para ser usado em dispositivos móveis. Se você já alguma vez &quot;enviou&quot; para alguém um cartão de vista de um dispositivo móvel para outro, você usou o OBEX. Mas existem também outras aplicações para o protocolo OBEX. A mais notória é o protocolo de navegação no sistema de ficheiros. Se o dispositivo compreender este protocolo, você poderá navegar, enviar e receber ficheiros para o sistema de ficheiro do seu dispositivo com estas implementações dos clientes. Também os protocolos de sincronização, como o IrMCSync ou o SyncML, têm interfaces de OBEX e podem ser acedidas se usar este cliente, mesmo que não haja intuito nenhuma na sincronização para o &konqueror;.</para>
+    <para
+>O protocolo OBEX pode utilizar muitos transportes diferentes. O transporte original foi IrDA, mas também existe suporte para Bluetooth, cabos série e ligações TCP/IP.</para>
+    <para
+>O OBEX suporta a autenticação nos 2 sentidos. A primeira forma, e a mais conhecida, é a autenticação do cliente no servidor. Aí, a implementação do servidor poderá verificar a identidade do cliente. Porém, também o cliente poderá verificar a identidade do servidor. Para a autenticação, é usado um desafio com um código MD5. Isto garante que as senhas não são transferidas de forma transparente para o meio de transporte.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>Formato de URL</title>
+    <para
+>O recursos OBEX são acedidos por URLs. A parte de protocolo é obex: O componente de localização tem a localização no servidor. O componente de máquina é um pouco mais complexo.</para>
+    <para
+>Para os servidores acessíveis por TCP/IP, a componente da máquina é a normal. Você também poderá usar o nome ou o endereço IP do servidor a contactar. Do mesmo modo, se o servidor correr num porto fora do normal (o porto-padrão é o 650), você poderá adicionar o número do porto, como de costume. Exemplo: <userinput
+>OBEX://maquina:porto/localizacao</userinput
+></para>
+    <para
+>Para os transportes por IrDA ou Bluetooth, você poderá usar o dispositivo de 'hardware' com a notação normal, separando os octetos por dois pontos (:). Giro, mas um pouco difícil de recordar o endereço de 'hardware' do seu dispositivo Bluetooth. Exemplo: <userinput
+>obex://[ef:01:23:45]/localizacao</userinput
+> ou <userinput
+>obex://[12:34:ef:01:23:45]/localizacao</userinput
+></para>
+    <para
+>Como tal, é possível definir nomes alternativos de máquinas para usar com o protocolo OBEX. Estes nomes são definidos no módulo OBEX do KControl. Você poderá definir um nome legível, descobrir os dispositivos e, finalmente, atribuir um endereço de 'hardware' a esse nome. Também os dispositivos sobre os cabos série são acessíveis através destes nomes. Para o IrDA e o Bluetooth existem nomes predefinidos chamados 'irda' ou 'bluetooth'. Ambos fazem a pesquisa por dispositivos e tentam ligar-se ao primeiro dispositivo que encontrarem.</para>
+    <para
+>Boa sorte ao navegar no telemóvel do seu vizinho :))</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Dicas e Truques</title>
+    <para
+>Como com qualquer outro 'kioslave', pode abrir e gravar directamente ficheiros em dispositivos bluetooth utilizando o kio_obex. Por exemplo, para escrever uma lista de compras, pode escrevê-la no kedit e gravá-la directamente no telefone. </para>
+    <para
+>Pode tornar este procedimento muito mais rápido adicionando um favorito à lista de favoritos da janela de gravação de ficheiros. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Limitações</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX e KDE</title>
+      <para
+>Dado que um 'kioclient' não pode controlar o número de 'slaves' que estão a aceder ao mesmo destino, acontece normalmente o caso em que existem vários 'slaves' a correr. Mas os transportes do OBEX, excepto a versão TCP/IP, suportam apenas uma ligação de transporte ao dispositivo. Isto faz com que os 'kioslaves' falhem na ligação com uma mensagem "Device or resource Busy" (Dispositivo ou Recurso Ocupado). O OBEX tem uma solução parcial para esse problema. Se o servidor suportar isto, ele poderá transmitir pacotes para várias ligações numa ligação de transporte. Mas ainda não se viu nenhum dispositivo que anunciasse esta funcionalidade, e isto iria necessitar de um servidor de transporte separado para cada destino. Por isso, se aparecerem dispositivos que ofereçam esta funcionalidade, esse servidor irá começar a ser implementado.</para>
+      <para
+>Não existe nenhum método especial para mudar o nome ou a localização de um ficheiro no dispositivo. Por isso, isto é feito ao copiar os dados de e para o dispositivo. Isto é lento e irá iniciar dois 'kioslaves' que terão o problema descrito acima.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Compatibilidade com dispositivos</title>
+      <para
+>Uma vez que este cliente implementa uma norma aberta espera-se que funcione bem com muitos dispositivos. Mas há sempre excepções.</para>
+      <para
+>Este cliente é desenvolvido com um SIEMENS S45i utilizando IrDA ou o protocolo SIEMENS BFB por cabo série. Como pode imaginar esta combinação funciona.</para>
+      <para
+>O telemóvel NOKIA 3650 tem um erro de 'firmware' em algumas versões. Os telemóveis com este erro devolvem ficheiros XML inválidos com as listagens das pastas. Isto conduz a directorias vazias. Este erro acontece pelo menos na versão 2.50 do 'firmware'. A versão 3.16 corrigiu este erro. Obrigado ao Fred Schaettgen &lt;Sch@ttgen.net&gt; por ter testado.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

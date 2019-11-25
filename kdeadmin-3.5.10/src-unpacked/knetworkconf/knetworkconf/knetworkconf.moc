@@ -1,0 +1,260 @@
+/****************************************************************************
+** KNetworkConf meta object code from reading C++ file 'knetworkconf.h'
+**
+** Created: Sun Feb 1 00:56:13 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "knetworkconf.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+#include <qvariant.h>
+const char *KNetworkConf::className() const
+{
+    return "KNetworkConf";
+}
+
+QMetaObject *KNetworkConf::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KNetworkConf( "KNetworkConf", &KNetworkConf::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KNetworkConf::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KNetworkConf", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KNetworkConf::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KNetworkConf", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KNetworkConf::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KNetworkConfDlg::staticMetaObject();
+    static const QUMethod slot_0 = {"saveInfoSlot", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ "state", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"setReadOnlySlot", 1, param_slot_1 };
+    static const QUMethod slot_2 = {"enableButtonsSlot", 0, 0 };
+    static const QUMethod slot_3 = {"addServerSlot", 0, 0 };
+    static const QUMethod slot_4 = {"editServerSlot", 0, 0 };
+    static const QUMethod slot_5 = {"quitSlot", 0, 0 };
+    static const QUMethod slot_6 = {"readFromStdout", 0, 0 };
+    static const QUMethod slot_7 = {"readFromStdoutUpDown", 0, 0 };
+    static const QUMethod slot_8 = {"enableInterfaceSlot", 0, 0 };
+    static const QUMethod slot_9 = {"disableInterfaceSlot", 0, 0 };
+    static const QUMethod slot_10 = {"configureDeviceSlot", 0, 0 };
+    static const QUMethod slot_11 = {"enableApplyButtonSlot", 0, 0 };
+    static const QUMethod slot_12 = {"helpSlot", 0, 0 };
+    static const QUParameter param_slot_13[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_13 = {"enableApplyButtonSlot", 1, param_slot_13 };
+    static const QUParameter param_slot_14[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_14 = {"enableApplyButtonSlot", 1, param_slot_14 };
+    static const QUMethod slot_15 = {"moveDownServerSlot", 0, 0 };
+    static const QUMethod slot_16 = {"moveUpServerSlot", 0, 0 };
+    static const QUMethod slot_17 = {"removeServerSlot", 0, 0 };
+    static const QUParameter param_slot_18[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::Out },
+	{ "dev", &static_QUType_ptr, "KNetworkInterface", QUParameter::In },
+	{ "bootProto", &static_QUType_QString, 0, QUParameter::In },
+	{ "netmask", &static_QUType_QString, 0, QUParameter::In },
+	{ "ipAddr", &static_QUType_QString, 0, QUParameter::In },
+	{ "gateway", &static_QUType_QString, 0, QUParameter::In },
+	{ "onBoot", &static_QUType_bool, 0, QUParameter::In },
+	{ "desc", &static_QUType_QString, 0, QUParameter::In },
+	{ "broadcast", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_18 = {"valuesChanged", 9, param_slot_18 };
+    static const QUParameter param_slot_19[] = {
+	{ 0, &static_QUType_QVariant, "\x04", QUParameter::Out }
+    };
+    static const QUMethod slot_19 = {"getDeviceList", 1, param_slot_19 };
+    static const QUMethod slot_20 = {"makeButtonsResizeable", 0, 0 };
+    static const QUMethod slot_21 = {"addKnownHostSlot", 0, 0 };
+    static const QUMethod slot_22 = {"aboutSlot", 0, 0 };
+    static const QUMethod slot_23 = {"editKnownHostSlot", 0, 0 };
+    static const QUMethod slot_24 = {"removeKnownHostSlot", 0, 0 };
+    static const QUMethod slot_25 = {"readFromStdErrUpDown", 0, 0 };
+    static const QUMethod slot_26 = {"getNetworkInfoSlot", 0, 0 };
+    static const QUMethod slot_27 = {"showMainWindow", 0, 0 };
+    static const QUMethod slot_28 = {"verifyDeviceStateChanged", 0, 0 };
+    static const QUParameter param_slot_29[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::Out },
+	{ "device", &static_QUType_QString, 0, QUParameter::In },
+	{ "ifconfigOutput", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_29 = {"isDeviceActive", 3, param_slot_29 };
+    static const QUParameter param_slot_30[] = {
+	{ 0, &static_QUType_ptr, "KListView", QUParameter::In },
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In },
+	{ 0, &static_QUType_varptr, "\x0e", QUParameter::In }
+    };
+    static const QUMethod slot_30 = {"showInterfaceContextMenuSlot", 3, param_slot_30 };
+    static const QUMethod slot_31 = {"enableSignals", 0, 0 };
+    static const QUMethod slot_32 = {"enableProfileSlot", 0, 0 };
+    static const QUMethod slot_33 = {"createProfileSlot", 0, 0 };
+    static const QUMethod slot_34 = {"removeProfileSlot", 0, 0 };
+    static const QUMethod slot_35 = {"updateProfileSlot", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "saveInfoSlot()", &slot_0, QMetaData::Public },
+	{ "setReadOnlySlot(bool)", &slot_1, QMetaData::Public },
+	{ "enableButtonsSlot()", &slot_2, QMetaData::Private },
+	{ "addServerSlot()", &slot_3, QMetaData::Private },
+	{ "editServerSlot()", &slot_4, QMetaData::Private },
+	{ "quitSlot()", &slot_5, QMetaData::Private },
+	{ "readFromStdout()", &slot_6, QMetaData::Private },
+	{ "readFromStdoutUpDown()", &slot_7, QMetaData::Private },
+	{ "enableInterfaceSlot()", &slot_8, QMetaData::Private },
+	{ "disableInterfaceSlot()", &slot_9, QMetaData::Private },
+	{ "configureDeviceSlot()", &slot_10, QMetaData::Private },
+	{ "enableApplyButtonSlot()", &slot_11, QMetaData::Private },
+	{ "helpSlot()", &slot_12, QMetaData::Private },
+	{ "enableApplyButtonSlot(bool)", &slot_13, QMetaData::Private },
+	{ "enableApplyButtonSlot(const QString&)", &slot_14, QMetaData::Private },
+	{ "moveDownServerSlot()", &slot_15, QMetaData::Private },
+	{ "moveUpServerSlot()", &slot_16, QMetaData::Private },
+	{ "removeServerSlot()", &slot_17, QMetaData::Private },
+	{ "valuesChanged(KNetworkInterface*,QString,QString,QString,QString,bool,QString,QString)", &slot_18, QMetaData::Private },
+	{ "getDeviceList()", &slot_19, QMetaData::Private },
+	{ "makeButtonsResizeable()", &slot_20, QMetaData::Private },
+	{ "addKnownHostSlot()", &slot_21, QMetaData::Private },
+	{ "aboutSlot()", &slot_22, QMetaData::Private },
+	{ "editKnownHostSlot()", &slot_23, QMetaData::Private },
+	{ "removeKnownHostSlot()", &slot_24, QMetaData::Private },
+	{ "readFromStdErrUpDown()", &slot_25, QMetaData::Private },
+	{ "getNetworkInfoSlot()", &slot_26, QMetaData::Private },
+	{ "showMainWindow()", &slot_27, QMetaData::Private },
+	{ "verifyDeviceStateChanged()", &slot_28, QMetaData::Private },
+	{ "isDeviceActive(const QString&,const QString&)", &slot_29, QMetaData::Private },
+	{ "showInterfaceContextMenuSlot(KListView*,QListViewItem*,const QPoint&)", &slot_30, QMetaData::Private },
+	{ "enableSignals()", &slot_31, QMetaData::Private },
+	{ "enableProfileSlot()", &slot_32, QMetaData::Private },
+	{ "createProfileSlot()", &slot_33, QMetaData::Private },
+	{ "removeProfileSlot()", &slot_34, QMetaData::Private },
+	{ "updateProfileSlot()", &slot_35, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"networkStateChanged", 1, param_signal_0 };
+    static const QMetaData signal_tbl[] = {
+	{ "networkStateChanged(bool)", &signal_0, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KNetworkConf", parentObject,
+	slot_tbl, 36,
+	signal_tbl, 1,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KNetworkConf.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KNetworkConf::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KNetworkConf" ) )
+	return this;
+    if ( !qstrcmp( clname, "KNetworkConfIface" ) )
+	return (KNetworkConfIface*)this;
+    return KNetworkConfDlg::qt_cast( clname );
+}
+
+// SIGNAL networkStateChanged
+void KNetworkConf::networkStateChanged( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+bool KNetworkConf::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: saveInfoSlot(); break;
+    case 1: setReadOnlySlot((bool)static_QUType_bool.get(_o+1)); break;
+    case 2: enableButtonsSlot(); break;
+    case 3: addServerSlot(); break;
+    case 4: editServerSlot(); break;
+    case 5: quitSlot(); break;
+    case 6: readFromStdout(); break;
+    case 7: readFromStdoutUpDown(); break;
+    case 8: enableInterfaceSlot(); break;
+    case 9: disableInterfaceSlot(); break;
+    case 10: configureDeviceSlot(); break;
+    case 11: enableApplyButtonSlot(); break;
+    case 12: helpSlot(); break;
+    case 13: enableApplyButtonSlot((bool)static_QUType_bool.get(_o+1)); break;
+    case 14: enableApplyButtonSlot((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 15: moveDownServerSlot(); break;
+    case 16: moveUpServerSlot(); break;
+    case 17: removeServerSlot(); break;
+    case 18: static_QUType_bool.set(_o,valuesChanged((KNetworkInterface*)static_QUType_ptr.get(_o+1),(QString)static_QUType_QString.get(_o+2),(QString)static_QUType_QString.get(_o+3),(QString)static_QUType_QString.get(_o+4),(QString)static_QUType_QString.get(_o+5),(bool)static_QUType_bool.get(_o+6),(QString)static_QUType_QString.get(_o+7),(QString)static_QUType_QString.get(_o+8))); break;
+    case 19: static_QUType_QVariant.set(_o,QVariant(getDeviceList())); break;
+    case 20: makeButtonsResizeable(); break;
+    case 21: addKnownHostSlot(); break;
+    case 22: aboutSlot(); break;
+    case 23: editKnownHostSlot(); break;
+    case 24: removeKnownHostSlot(); break;
+    case 25: readFromStdErrUpDown(); break;
+    case 26: getNetworkInfoSlot(); break;
+    case 27: showMainWindow(); break;
+    case 28: verifyDeviceStateChanged(); break;
+    case 29: static_QUType_bool.set(_o,isDeviceActive((const QString&)static_QUType_QString.get(_o+1),(const QString&)static_QUType_QString.get(_o+2))); break;
+    case 30: showInterfaceContextMenuSlot((KListView*)static_QUType_ptr.get(_o+1),(QListViewItem*)static_QUType_ptr.get(_o+2),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+3))); break;
+    case 31: enableSignals(); break;
+    case 32: enableProfileSlot(); break;
+    case 33: createProfileSlot(); break;
+    case 34: removeProfileSlot(); break;
+    case 35: updateProfileSlot(); break;
+    default:
+	return KNetworkConfDlg::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KNetworkConf::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: networkStateChanged((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return KNetworkConfDlg::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KNetworkConf::qt_property( int id, int f, QVariant* v)
+{
+    return KNetworkConfDlg::qt_property( id, f, v);
+}
+
+bool KNetworkConf::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

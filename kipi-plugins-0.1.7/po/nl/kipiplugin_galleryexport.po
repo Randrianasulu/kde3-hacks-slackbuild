@@ -1,0 +1,250 @@
+# translation of kipiplugin_galleryexport.po to Dutch
+# translation of kipiplugin_galleryexport.po to
+#
+# Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2006, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-03-02 23:16+0100\n"
+"Last-Translator: Rinse de Vries <rinsedevries@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Rinse de Vries"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "rinsedevries@kde.nl"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Galerijnaam"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "URL-adres"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Gebruiker"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Naam:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "URL-adres:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Gebruikersnaam:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Wachtwoord:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "&Galerij 2 gebruiken"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Externe galerijen"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Nieuwe externe galerij"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Geen galerij geselecteerd!"
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Externe galerij bewerken"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Wilt u deze galerij verwijderen? Alle synchronisatie-instellingen zullen "
+"verloren gaan. U kunt deze handeling niet ongedaan maken."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Externe galerij verwijderen"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "URL-adres van galerij is waarschijnlijk fout"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Onjuiste gebruikersnaam of wachtwoord opgegeven"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Ongeldig antwoord ontvangen van de externe galerij"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Albumlijst weergeven mislukt"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Fotolijst weergeven mislukt"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Nieuw album aanmaken mislukt"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Foto uploaden mislukt"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Albums"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Standaardopties vervangen"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "Commentaar stelt titel in"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "Commentaar stelt beschrijving in"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Foto-afmeting aanpassen voor het uploaden"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Maximumafmetingen:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Galerij-export</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Nieuw album"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "Foto's &toevoegen"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Galerij-export"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"Een KIPI-plugin voor het exporteren van een afbeeldingsverzameling naar een "
+"externe galerijserver."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Auteur"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Onderhouder"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Plugin-handboek"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Aanmelden bij externe galerij mislukt. "
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Wilt u het opnieuw proberen?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Helaas, deze tekens zijn niet toegestaan in de albumnaam: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Bestand uploaden: %1"
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Uploaden van foto naar externe galerij mislukt. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Wilt u doorgaan?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Externe galerij synchroniseren..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Externe galerijen..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "MyDialog"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Nieuwe albumnaam invoeren</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Titel (optioneel):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Naam (optioneel):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Titelbalk (optioneel):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Nieuwe galerij"

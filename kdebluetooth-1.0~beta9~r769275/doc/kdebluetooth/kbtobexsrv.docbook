@@ -1,0 +1,49 @@
+<sect1 id="components.kbtobexsrv">
+<title>OBEX Push Server: Receive files</title>
+<para>
+Most Bluetooth-enabled cell phones or PDAs will let you send
+files from the mobile to your computer. While it might be more 
+comfortable to use the <link linkend="components.kio_obex">OBEX FTP kioslave</link>
+to pull the files from your phone to your computer, not all devices
+support this. OBEX Object push on the other hand is supported by most 
+Bluetooth devices.
+</para>
+
+<sect2>
+<title>Using the OBEX Push server</title>
+<para>
+The OBEX Push server is managed by kbluetoothd and will be automatically
+started if it is enabled and someone tries to send you some files.
+Please see the documentation of kbluetoothd for how to 
+<link linkend="components.kbluetoothd.serviceconfig">enable or disable
+services</link> (The OBEX Push server is listed as <command>kbtobexsrv</command>).
+</para>
+<para>
+When you send a file from your mobile to your computer, the kbluetoothd
+tray icon will turn blue and shows a small popup. By default (depending
+on your <link linkend="components.kbluetoothd.confirmation">
+settings for incoming connections</link>) you will have to accept the
+connection first, then the main OBEX Push window should pop up 
+and start receiving the files.
+</para>
+<para>
+Incoming files are saved to <filename>/tmp</filename> and will be deleted
+after you closed the OBEX Push server. To save to files, you have two options:
+</para>
+<itemizedlist>
+<listitem>
+<para>Click <guibutton>OK</guibutton> to save all received files to 
+a predefined location.</para>
+</listitem>
+<listitem>
+<para>
+Drag one or several files to some other location. This is especially useful
+if you want to send files by email, since you can drag the files 
+directly into kmail without saving them to temporary location first.
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+

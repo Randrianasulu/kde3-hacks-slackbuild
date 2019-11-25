@@ -1,0 +1,446 @@
+/****************************************************************************
+** Digikam::Canvas meta object code from reading C++ file 'canvas.h'
+**
+** Created: Tue Jun 13 22:44:29 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "canvas.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::Canvas::className() const
+{
+    return "Digikam::Canvas";
+}
+
+QMetaObject *Digikam::Canvas::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__Canvas( "Digikam::Canvas", &Digikam::Canvas::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::Canvas::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::Canvas", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::Canvas::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::Canvas", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::Canvas::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QScrollView::staticMetaObject();
+    static const QUMethod slot_0 = {"slotIncreaseZoom", 0, 0 };
+    static const QUMethod slot_1 = {"slotDecreaseZoom", 0, 0 };
+    static const QUMethod slot_2 = {"slotRotate90", 0, 0 };
+    static const QUMethod slot_3 = {"slotRotate180", 0, 0 };
+    static const QUMethod slot_4 = {"slotRotate270", 0, 0 };
+    static const QUMethod slot_5 = {"slotFlipHoriz", 0, 0 };
+    static const QUMethod slot_6 = {"slotFlipVert", 0, 0 };
+    static const QUMethod slot_7 = {"slotCrop", 0, 0 };
+    static const QUMethod slot_8 = {"slotRestore", 0, 0 };
+    static const QUMethod slot_9 = {"slotUndo", 0, 0 };
+    static const QUParameter param_slot_10[] = {
+	{ "steps", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotUndo", 1, param_slot_10 };
+    static const QUMethod slot_11 = {"slotRedo", 0, 0 };
+    static const QUParameter param_slot_12[] = {
+	{ "steps", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_12 = {"slotRedo", 1, param_slot_12 };
+    static const QUMethod slot_13 = {"slotCopy", 0, 0 };
+    static const QUMethod slot_14 = {"slotSelectAll", 0, 0 };
+    static const QUMethod slot_15 = {"slotSelectNone", 0, 0 };
+    static const QUMethod slot_16 = {"slotSelected", 0, 0 };
+    static const QUMethod slot_17 = {"slotModified", 0, 0 };
+    static const QUParameter param_slot_18[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_18 = {"slotImageLoaded", 2, param_slot_18 };
+    static const QUParameter param_slot_19[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_19 = {"slotImageSaved", 2, param_slot_19 };
+    static const QUMethod slot_20 = {"slotCornerButtonPressed", 0, 0 };
+    static const QUParameter param_slot_21[] = {
+	{ 0, &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_21 = {"slotZoomChanged", 1, param_slot_21 };
+    static const QUParameter param_slot_22[] = {
+	{ 0, &static_QUType_varptr, "\x08", QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_22 = {"slotPanIconSelectionMoved", 2, param_slot_22 };
+    static const QUMethod slot_23 = {"slotPanIconHiden", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotIncreaseZoom()", &slot_0, QMetaData::Public },
+	{ "slotDecreaseZoom()", &slot_1, QMetaData::Public },
+	{ "slotRotate90()", &slot_2, QMetaData::Public },
+	{ "slotRotate180()", &slot_3, QMetaData::Public },
+	{ "slotRotate270()", &slot_4, QMetaData::Public },
+	{ "slotFlipHoriz()", &slot_5, QMetaData::Public },
+	{ "slotFlipVert()", &slot_6, QMetaData::Public },
+	{ "slotCrop()", &slot_7, QMetaData::Public },
+	{ "slotRestore()", &slot_8, QMetaData::Public },
+	{ "slotUndo()", &slot_9, QMetaData::Public },
+	{ "slotUndo(int)", &slot_10, QMetaData::Public },
+	{ "slotRedo()", &slot_11, QMetaData::Public },
+	{ "slotRedo(int)", &slot_12, QMetaData::Public },
+	{ "slotCopy()", &slot_13, QMetaData::Public },
+	{ "slotSelectAll()", &slot_14, QMetaData::Public },
+	{ "slotSelectNone()", &slot_15, QMetaData::Public },
+	{ "slotSelected()", &slot_16, QMetaData::Private },
+	{ "slotModified()", &slot_17, QMetaData::Private },
+	{ "slotImageLoaded(const QString&,bool)", &slot_18, QMetaData::Private },
+	{ "slotImageSaved(const QString&,bool)", &slot_19, QMetaData::Private },
+	{ "slotCornerButtonPressed()", &slot_20, QMetaData::Private },
+	{ "slotZoomChanged(double)", &slot_21, QMetaData::Private },
+	{ "slotPanIconSelectionMoved(const QRect&,bool)", &slot_22, QMetaData::Private },
+	{ "slotPanIconHiden()", &slot_23, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ "zoom", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalZoomChanged", 1, param_signal_0 };
+    static const QUMethod signal_1 = {"signalMaxZoom", 0, 0 };
+    static const QUMethod signal_2 = {"signalMinZoom", 0, 0 };
+    static const QUMethod signal_3 = {"signalChanged", 0, 0 };
+    static const QUParameter param_signal_4[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In },
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_4 = {"signalUndoStateChanged", 3, param_signal_4 };
+    static const QUParameter param_signal_5[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_5 = {"signalSelected", 1, param_signal_5 };
+    static const QUMethod signal_6 = {"signalRightButtonClicked", 0, 0 };
+    static const QUMethod signal_7 = {"signalShowNextImage", 0, 0 };
+    static const QUMethod signal_8 = {"signalShowPrevImage", 0, 0 };
+    static const QUMethod signal_9 = {"signalPrepareToLoad", 0, 0 };
+    static const QUParameter param_signal_10[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_10 = {"signalLoadingStarted", 1, param_signal_10 };
+    static const QUParameter param_signal_11[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_11 = {"signalLoadingFinished", 2, param_signal_11 };
+    static const QUParameter param_signal_12[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod signal_12 = {"signalLoadingProgress", 2, param_signal_12 };
+    static const QUParameter param_signal_13[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_13 = {"signalSavingStarted", 1, param_signal_13 };
+    static const QUParameter param_signal_14[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_14 = {"signalSavingFinished", 2, param_signal_14 };
+    static const QUParameter param_signal_15[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod signal_15 = {"signalSavingProgress", 2, param_signal_15 };
+    static const QUParameter param_signal_16[] = {
+	{ 0, &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod signal_16 = {"signalSelectionChanged", 1, param_signal_16 };
+    static const QUMethod signal_17 = {"signalToggleOffFitToWindow", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalZoomChanged(double)", &signal_0, QMetaData::Public },
+	{ "signalMaxZoom()", &signal_1, QMetaData::Public },
+	{ "signalMinZoom()", &signal_2, QMetaData::Public },
+	{ "signalChanged()", &signal_3, QMetaData::Public },
+	{ "signalUndoStateChanged(bool,bool,bool)", &signal_4, QMetaData::Public },
+	{ "signalSelected(bool)", &signal_5, QMetaData::Public },
+	{ "signalRightButtonClicked()", &signal_6, QMetaData::Public },
+	{ "signalShowNextImage()", &signal_7, QMetaData::Public },
+	{ "signalShowPrevImage()", &signal_8, QMetaData::Public },
+	{ "signalPrepareToLoad()", &signal_9, QMetaData::Public },
+	{ "signalLoadingStarted(const QString&)", &signal_10, QMetaData::Public },
+	{ "signalLoadingFinished(const QString&,bool)", &signal_11, QMetaData::Public },
+	{ "signalLoadingProgress(const QString&,float)", &signal_12, QMetaData::Public },
+	{ "signalSavingStarted(const QString&)", &signal_13, QMetaData::Public },
+	{ "signalSavingFinished(const QString&,bool)", &signal_14, QMetaData::Public },
+	{ "signalSavingProgress(const QString&,float)", &signal_15, QMetaData::Public },
+	{ "signalSelectionChanged(const QRect&)", &signal_16, QMetaData::Public },
+	{ "signalToggleOffFitToWindow()", &signal_17, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::Canvas", parentObject,
+	slot_tbl, 24,
+	signal_tbl, 18,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__Canvas.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::Canvas::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::Canvas" ) )
+	return this;
+    return QScrollView::qt_cast( clname );
+}
+
+// SIGNAL signalZoomChanged
+void Digikam::Canvas::signalZoomChanged( double t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+// SIGNAL signalMaxZoom
+void Digikam::Canvas::signalMaxZoom()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+// SIGNAL signalMinZoom
+void Digikam::Canvas::signalMinZoom()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 2 );
+}
+
+// SIGNAL signalChanged
+void Digikam::Canvas::signalChanged()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 3 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalUndoStateChanged
+void Digikam::Canvas::signalUndoStateChanged( bool t0, bool t1, bool t2 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 4 );
+    if ( !clist )
+	return;
+    QUObject o[4];
+    static_QUType_bool.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    static_QUType_bool.set(o+3,t2);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSelected
+void Digikam::Canvas::signalSelected( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 5, t0 );
+}
+
+// SIGNAL signalRightButtonClicked
+void Digikam::Canvas::signalRightButtonClicked()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 6 );
+}
+
+// SIGNAL signalShowNextImage
+void Digikam::Canvas::signalShowNextImage()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 7 );
+}
+
+// SIGNAL signalShowPrevImage
+void Digikam::Canvas::signalShowPrevImage()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 8 );
+}
+
+// SIGNAL signalPrepareToLoad
+void Digikam::Canvas::signalPrepareToLoad()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 9 );
+}
+
+// SIGNAL signalLoadingStarted
+void Digikam::Canvas::signalLoadingStarted( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 10, t0 );
+}
+
+// SIGNAL signalLoadingFinished
+void Digikam::Canvas::signalLoadingFinished( const QString& t0, bool t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 11 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalLoadingProgress
+void Digikam::Canvas::signalLoadingProgress( const QString& t0, float t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 12 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_ptr.set(o+2,&t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSavingStarted
+void Digikam::Canvas::signalSavingStarted( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 13, t0 );
+}
+
+// SIGNAL signalSavingFinished
+void Digikam::Canvas::signalSavingFinished( const QString& t0, bool t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 14 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_bool.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSavingProgress
+void Digikam::Canvas::signalSavingProgress( const QString& t0, float t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 15 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_ptr.set(o+2,&t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalSelectionChanged
+void Digikam::Canvas::signalSelectionChanged( const QRect& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 16 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_varptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalToggleOffFitToWindow
+void Digikam::Canvas::signalToggleOffFitToWindow()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 17 );
+}
+
+bool Digikam::Canvas::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotIncreaseZoom(); break;
+    case 1: slotDecreaseZoom(); break;
+    case 2: slotRotate90(); break;
+    case 3: slotRotate180(); break;
+    case 4: slotRotate270(); break;
+    case 5: slotFlipHoriz(); break;
+    case 6: slotFlipVert(); break;
+    case 7: slotCrop(); break;
+    case 8: slotRestore(); break;
+    case 9: slotUndo(); break;
+    case 10: slotUndo((int)static_QUType_int.get(_o+1)); break;
+    case 11: slotRedo(); break;
+    case 12: slotRedo((int)static_QUType_int.get(_o+1)); break;
+    case 13: slotCopy(); break;
+    case 14: slotSelectAll(); break;
+    case 15: slotSelectNone(); break;
+    case 16: slotSelected(); break;
+    case 17: slotModified(); break;
+    case 18: slotImageLoaded((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 19: slotImageSaved((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 20: slotCornerButtonPressed(); break;
+    case 21: slotZoomChanged((double)static_QUType_double.get(_o+1)); break;
+    case 22: slotPanIconSelectionMoved((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1)),(bool)static_QUType_bool.get(_o+2)); break;
+    case 23: slotPanIconHiden(); break;
+    default:
+	return QScrollView::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::Canvas::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalZoomChanged((double)static_QUType_double.get(_o+1)); break;
+    case 1: signalMaxZoom(); break;
+    case 2: signalMinZoom(); break;
+    case 3: signalChanged(); break;
+    case 4: signalUndoStateChanged((bool)static_QUType_bool.get(_o+1),(bool)static_QUType_bool.get(_o+2),(bool)static_QUType_bool.get(_o+3)); break;
+    case 5: signalSelected((bool)static_QUType_bool.get(_o+1)); break;
+    case 6: signalRightButtonClicked(); break;
+    case 7: signalShowNextImage(); break;
+    case 8: signalShowPrevImage(); break;
+    case 9: signalPrepareToLoad(); break;
+    case 10: signalLoadingStarted((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 11: signalLoadingFinished((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 12: signalLoadingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 13: signalSavingStarted((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 14: signalSavingFinished((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 15: signalSavingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 16: signalSelectionChanged((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1))); break;
+    case 17: signalToggleOffFitToWindow(); break;
+    default:
+	return QScrollView::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::Canvas::qt_property( int id, int f, QVariant* v)
+{
+    return QScrollView::qt_property( id, f, v);
+}
+
+bool Digikam::Canvas::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

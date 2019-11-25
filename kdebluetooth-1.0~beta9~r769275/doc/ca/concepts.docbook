@@ -1,0 +1,75 @@
+<chapter id="concepts">
+<title
+>Conceptes</title>
+
+<sect1 id="concepts.pairing">
+<title
+>Seguretat Bluetooth: Dispositius parell</title>
+
+<sect2 id="concepts.pairing.whatisit">
+<title
+>Què és "parell"?</title>
+<para
+>Tot sovint es requereix l'autenticació per a un dispositiu si es vol accedir a un servei. En aquest cas els dos dispositius necessiten ser <phrase
+>emparellats</phrase
+>. Quan dos dispositius estan emparellats, s'han d'assegurar de la identitat de l'altra part. Sense emparellar, s'hauria de confiar en l'adreça o el nom de l'altra dispositiu, el qual es pot falsificar amb facilitat. </para>
+<para
+>L'acció d'emparellar es sol produir una vegada entre els dos dispositius. Després d'emparellar, la connexió entre els dos dispositius serà <phrase
+>autenticada</phrase
+> automàticament. </para>
+<para
+>Normalment <emphasis
+>el procés d'emparellar s'inicia automàticament quan és necessari</emphasis
+>. No us heu de preocupar si voleu accedir als seus serveis d'un dispositiu i no s'ha emparellat. Si intenteu autentificar, però falla, el procés d'emparellar s'iniciarà automàticament. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.howdoesitwork">
+<title
+>I això com funciona?</title>
+
+<para
+>Els dispositius s'emparellen per estar segurs de la identitat de l'altra part. Però la primera passa no es pot fer automàticament. <emphasis
+>Us heu</emphasis
+> d'assegurar que sabeu qui s'emparella amb el vostre dispositiu. Això es fa introduint un "PIN" en ambdós dispositius. La noció de "PIN" és àmpliament usada, tot i que de manera confusa. No és el tipus de PIN que introduïu per a obtenir diners d'un caixer automàtic. No l'heu de recordar. I després (!) de que s'hagi realitzat l'emparellat no l'haureu de tenir en secret. Tan sols us heu d'assegurar que ningú més coneix el número fins un (o dos) usuaris introdueixin aquest número en cada dispositiu. </para>
+<para
+>Per a mantenir la unitat a salvo, tan sols haureu de mantenir el PIN en secret durant el procés d'emparellar, però haureu d'usar un número aleatori, que no s'esbrini amb facilitat. Bluetooth per a KDE us ajudarà creant un número aleatori de 8 dígits si és possible. També podeu usar caràcters per a un PIN, però podríeu tenir problemes per a introduir-lo en el diàleg de PIN d'un telèfon mòbil. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.pinhelper">
+<title
+>L'ajudant de PIN</title>
+<para
+>Però a on s'ha d'introduir el PIN? Tal i com s'ha indicat anteriorment, el dispositiu us demanarà el PIN quan sigui necessari. Per a BlueZ, les coses són una mica més complicades. Hi ha diverses maneres per a que BlueZ obtingui el número de PIN de l'usuari. </para>
+<para
+>La manera habitual és configurar el binari hcid de BlueZ per a usar una "aplicació d'ajuda de PIN" i establir la "security user;" en <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Aquest ajudant és un petit programa que l'únic que fa és demanar a l'usuari un número i dona la la sortida d'aquest número per stdout. Bluez inclou el seu propi ajudant per a obtenir el PIN, s'anomena "bluepin", el qual sembla ser causa de nombrosos problemes. També hi ha un ajudant per a generar el PIN anomenat "bluez-pin" i l'última però no per això menys important és l'ajudant de PIN, propi de kdebluetooth, "kbluepin". Si us plau, consulteu les <link linkend="installation.setup"
+>instruccions de configuració</link
+> per a saber com configurar l'ajudant per a obtenir el PIN i què fer si no funciona. </para>
+</sect2>
+
+<sect2 id="concepts.pairing.bluez">
+<title
+>Gestionar dispositius parell</title>
+<para
+>Després d'haver emparellat molts dispositius us preguntareu quins dispositius estan emparellats i quins no. També podríeu voler eliminar un parell. Les respostes solen ser males notícies. </para>
+<para
+>En primer lloc, cap dispositiu pot saber segur amb quins dispositius està emparellat. Quan dos dispositius estiguin emparellats, compartixen una <phrase
+>clau d'enllaç</phrase
+> secreta, que s'ha creat durant el procés d'emparellat basat en el número de PIN i alguns altres ingredients. Degut a que l'altra banda pot decidir esborrar una clau d'enllaç sense notificació, el tenir una clau d'enllaç per a un determinat dispositiu no garanteix que aquesta encara existeixi a l'altra banda. Si s'elimina una clau d'enllaç, l'emparellat desapareix. Per descomptat, us podeu assegurar que <emphasis
+>no</emphasis
+> esteu emparellat amb un dispositiu si no disposeu d'una clau d'enllaç per a aquest. </para>
+<para
+>Llavores, com es poden eliminar les claus d'enllaç? Això dependrà del dispositiu. La majoria dels telèfons i PDA tenen una llista de dispositius "parella" o "confiança", a on podreu eliminar un únic ítem. En la versió actual de les utilitats Bluez (2.6), les claus d'enllaç solen estar en el fitxer <filename
+>/etc/bluetooth/link_key</filename
+>. Atès que les claus d'enllaç han de romandre en secret, aquest fitxer tan sols serà accessible per a l'usuari root. Podeu esborrar aquest fitxer sense problemes, però llavores es perdran tots els emparellats. Y com el fitxer és un fitxer binari, no el podreu editar de amb facilitat sense una eina especial. De moment, kdebluetooth no conté una eina per a llegir o escriure aquest fitxer, degut a que el maneig de claus d'enllaç de Bluez canviarà aviat (o tard). </para>
+<para
+>Hi ha una cosa que és especialment molesta, quan canvieu sovint entre diferents sistemes operatius i ambdós usen Bluetooth (normalment Linux&lt;->Windows): Quan emparelleu el vostre telèfon sota Linux i reinicieu a Windows, Windows no sabrà res sobre les claus d'enllaç gestionades per Bluez. Per això, de manera que apareixerà com que l'ordinador ha perdut la clau d'enllaç i haureu de tornar a emparellar. Depenent del vostre dispositiu és possible que no pugueu fer l'emparellat sense eliminar abans la clau d'enllaç "antiga" en el telèfon. Us podeu trobar amb el mateix problema amb Bluez si seleccioneu "paring single;" en <filename
+>/etc/bluetooth/hcid.conf</filename
+>. De moment heu de ser conscient del problema, no useu Bluetooth amb dos sistemes operatius o useu un adaptador Bluetooth diferent per a cadascun d'ells. També seria possible moure les claus d'enllaç entre Windows i Linux, però no conec cap eina que ho pugui fer. </para>
+
+</sect2>
+
+</sect1>
+
+</chapter>

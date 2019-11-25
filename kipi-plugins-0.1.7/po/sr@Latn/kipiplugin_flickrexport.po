@@ -1,0 +1,385 @@
+# translation of kipiplugin_flickrexport.po to Serbian
+#
+# Slobodan Simic <simicsl@verat.net>, 2005, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_flickrexport\n"
+"POT-Creation-Date: 2008-09-15 08:37+0200\n"
+"PO-Revision-Date: 2007-07-18 12:38+0200\n"
+"Last-Translator: Slobodan Simic <simicsl@verat.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>"
+"=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Slobodan Simić"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "simicsl@verat.net"
+
+#: flickrtalker.cpp:144
+msgid "Getting the Frob"
+msgstr "Uzimam Frob"
+
+#: flickrtalker.cpp:178
+msgid "Checking if previous token is still valid"
+msgstr "Proveravam da li je prethodno obeležje još važeće"
+
+#: flickrtalker.cpp:203
+msgid ""
+"Please Follow through the instructions in the browser window and return back to "
+"press ok if you are authenticated or press No"
+msgstr ""
+"Pratite uputstva u prozoru pregledača pa se vratite i pritisnite U redu ako ste "
+"se autentifikovali ili pritisnite Ne"
+
+#: flickrtalker.cpp:205
+#, fuzzy
+msgid "Flickr Service Web Authorization"
+msgstr "Flickr::Kipi priključak:Veb autorizacija"
+
+#: flickrtalker.cpp:210
+msgid "Authenticating the User on web"
+msgstr "Autentifikujem korisnika na mreži"
+
+#: flickrtalker.cpp:250
+msgid "Getting the Token from the server"
+msgstr "Uzimam obeležje sa servera"
+
+#: flickrtalker.cpp:492
+msgid "No photo specified"
+msgstr "Nije navedena slika"
+
+#: flickrtalker.cpp:495
+msgid "General upload failure"
+msgstr "Opšta greška slanja"
+
+#: flickrtalker.cpp:498
+msgid "Filesize was zero"
+msgstr "Veličina fajla je nula"
+
+#: flickrtalker.cpp:501
+msgid "Filetype was not recognised"
+msgstr "Vrsta fajla nije prepoznata"
+
+#: flickrtalker.cpp:504
+msgid "User exceeded upload limit"
+msgstr "Korisnik je ispunio ograničenje slanja"
+
+#: flickrtalker.cpp:507
+msgid "Invalid signature"
+msgstr "Neispravan potpis"
+
+#: flickrtalker.cpp:510
+msgid "Missing signature"
+msgstr "Nedostaje potpis"
+
+#: flickrtalker.cpp:513
+msgid "Login Failed / Invalid auth token"
+msgstr "Neuspelo prijavljivanje / Loše obeležje autentifikacije"
+
+#: flickrtalker.cpp:516
+msgid "Invalid API Key"
+msgstr "Neispravan API ključ"
+
+#: flickrtalker.cpp:519
+msgid "Service currently unavailable"
+msgstr "Servis je trenutno nedostupan"
+
+#: flickrtalker.cpp:522
+msgid "Invalid Frob"
+msgstr "Neispravan Frob"
+
+#: flickrtalker.cpp:525
+msgid "Format \"xxx\" not found"
+msgstr "Format „xxx“ nije nađen"
+
+#: flickrtalker.cpp:528
+msgid "Method \"xxx\" not found"
+msgstr "Način „xxx“ nije nađen"
+
+#: flickrtalker.cpp:531
+msgid "Invalid SOAP envelope"
+msgstr "Neispravna SOAP koverta"
+
+#: flickrtalker.cpp:534
+msgid "Invalid XML-RPC Method Call"
+msgstr "Neispravan poziv XML-RPC načina"
+
+#: flickrtalker.cpp:537
+msgid "The POST method is now required for all setters"
+msgstr "POST način je sada obavezan za sve postavljače"
+
+#: flickrtalker.cpp:540
+msgid "Unknown error"
+msgstr "Nepoznata greška"
+
+#: flickrtalker.cpp:545
+msgid ""
+"Error Occured: %1\n"
+" We can not proceed further"
+msgstr ""
+"Desila se greška: %1\n"
+" Ne možemo da nastavimo dalje"
+
+#: flickrtalker.cpp:686
+msgid ""
+"_: As in the persmission to\n"
+"write"
+msgstr "upis"
+
+#: flickrtalker.cpp:688
+msgid ""
+"_: As in the permission to\n"
+"read"
+msgstr "čitanje"
+
+#: flickrtalker.cpp:690
+msgid ""
+"_: As in the permission to\n"
+"delete"
+msgstr "brisanje"
+
+#: flickrtalker.cpp:720
+msgid ""
+"Your token is invalid. Would you like to get a new token to proceed ?\n"
+msgstr ""
+"Vaše obeležje nije ispravno. Želite li da dobijete novo da biste nastavili?\n"
+
+#: flickrtalker.cpp:896
+msgid "Failed to fetch photoSets List"
+msgstr "Neuspelo dobavljanje liste foto kompleta"
+
+#: flickrtalker.cpp:966
+msgid "Failed to upload photo"
+msgstr "Nisam uspeo da pošaljem sliku"
+
+#: flickrtalker.cpp:1012
+msgid "Failed to query photo information"
+msgstr "Neuspeo upit za podacima slike"
+
+#: flickrwidget.cpp:78
+msgid ""
+"<qt><b>"
+"<h2><a href='http://www.flickr.com'><font color=\"#0065DE\">flick</font>"
+"<font color=\"#FF0084\">r</font></a> Export</h2></b></qt>"
+msgstr ""
+
+#: flickrwidget.cpp:95
+msgid "Added Tags: "
+msgstr ""
+
+#: flickrwidget.cpp:98
+#, fuzzy
+msgid "Use Host Application Tags"
+msgstr "Koristim oznake programa ?"
+
+#: flickrwidget.cpp:100
+#, fuzzy
+msgid "Strip Space From Host Application Tags"
+msgstr "Koristim oznake programa ?"
+
+#: flickrwidget.cpp:101
+msgid "Enter here new tags separated by space."
+msgstr ""
+
+#: flickrwidget.cpp:110
+msgid "Override Default Options"
+msgstr "Pregazi podrazumevane opcije"
+
+#: flickrwidget.cpp:117
+#, fuzzy
+msgid ""
+"_: As in accessible for people\n"
+"Public (anyone can see them)"
+msgstr "Javno ?"
+
+#: flickrwidget.cpp:120
+msgid "Visible to Family"
+msgstr ""
+
+#: flickrwidget.cpp:123
+msgid "Visible to Friends"
+msgstr ""
+
+#: flickrwidget.cpp:126
+msgid "Resize photos before uploading"
+msgstr "Promeni veličinu slika pre slanja"
+
+#: flickrwidget.cpp:134
+#, fuzzy
+msgid "Maximum dimension (pixels):"
+msgstr "Najveća veličina:"
+
+#: flickrwidget.cpp:141
+#, fuzzy
+msgid "JPEG Image Quality (higher is better):"
+msgstr "Kvalitet slike (više je bolje):"
+
+#: flickrwidget.cpp:158
+msgid "Account"
+msgstr ""
+
+#: flickrwidget.cpp:164
+#, fuzzy
+msgid "User Name: "
+msgstr "Korisničko ime:"
+
+#: flickrwidget.cpp:167
+#, fuzzy
+msgid "Use a different account"
+msgstr "Prijavi se sa drugim nalogom"
+
+#: flickrwidget.cpp:192
+msgid "Files List"
+msgstr ""
+
+#: flickrwidget.cpp:193
+msgid "Upload Options"
+msgstr ""
+
+#: flickrwindow.cpp:79
+#, fuzzy
+msgid "Export to Flickr Web Service"
+msgstr "Izvezi u Flickr..."
+
+#: flickrwindow.cpp:103
+msgid "Start Uploading"
+msgstr "Pokreni slanje"
+
+#: flickrwindow.cpp:117
+msgid "Flickr Export"
+msgstr "Flickr izvoz"
+
+#: flickrwindow.cpp:120
+msgid "A Kipi plugin to export image collection to Flickr web service."
+msgstr "Kipi priključak za izvoz zbirke slika na Flickr veb servis."
+
+#: flickrwindow.cpp:125
+msgid "Author and maintainer"
+msgstr "Autor i održavalac"
+
+#: flickrwindow.cpp:128
+msgid "Developer"
+msgstr ""
+
+#: flickrwindow.cpp:133
+msgid "Plugin Handbook"
+msgstr ""
+
+#: flickrwindow.cpp:534
+#, fuzzy, c-format
+msgid "Uploading file %1"
+msgstr "Šaljem fajl %1 "
+
+#: flickrwindow.cpp:553
+msgid ""
+"Failed to upload photo into Flickr. %1\n"
+"Do you want to continue?"
+msgstr ""
+"Neuspelo slanje slike na Flickr. %1\n"
+"Želite li da nastavite?"
+
+#: imageslist.cpp:94
+msgid "Thumbnail"
+msgstr ""
+
+#: imageslist.cpp:95
+#, fuzzy
+msgid "File Name"
+msgstr "Korisničko ime:"
+
+#: imageslist.cpp:96
+msgid "<p>This is the list of images to upload on your Flickr account."
+msgstr ""
+
+#: imageslist.cpp:178
+msgid "&Add"
+msgstr ""
+
+#: login.cpp:65
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#: login.cpp:68
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: plugin_flickrexport.cpp:65
+msgid "Export to Flickr..."
+msgstr "Izvezi u Flickr..."
+
+#. i18n: file flickralbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "New PhotoSet"
+msgstr "Novi komplet slika"
+
+#. i18n: file flickralbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Create New PhotoSet </h3>"
+msgstr "<h3>Napravi novi komplet slika </h3>"
+
+#. i18n: file flickralbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Naslov (opciono):"
+
+#. i18n: file flickralbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Ime (opciono):"
+
+#. i18n: file flickralbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Natpis (opciono):"
+
+#, fuzzy
+#~ msgid "Use Current Selection"
+#~ msgstr "Pošalji trenutno izabrane slike"
+
+#~ msgid "&Add Photos"
+#~ msgstr "Dod&aj slike"
+
+#~ msgid "<h2>Flickr Export</h2>"
+#~ msgstr "<h2>Flickr izvoz</h2>"
+
+#~ msgid "Tags:"
+#~ msgstr "Oznake:"
+
+#~ msgid "Family ?"
+#~ msgstr "Porodica ?"
+
+#~ msgid "Friends ?"
+#~ msgstr "Prijatelji ?"
+
+#, fuzzy
+#~ msgid "Login Details"
+#~ msgstr "Detalji korisnika"
+
+#~ msgid "Select Images For uploading"
+#~ msgstr "Izaberite slike za slanje"
+
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "FlickrUploadr"
+#~ msgstr "Flickr slanje"
+
+#~ msgid "Flickr Export Handbook"
+#~ msgstr "Priručnik za Flickr izvoz"

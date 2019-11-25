@@ -1,0 +1,47 @@
+<sect1 id="components.kio_sdp">
+<title
+>Bluetooth/SDP-kioslaves : Recherche des périphériques et services</title>
+<para
+>Les kioslave sdp et bluetooth vous permettent de chercher d'autres périphériques bluetooth, lister et utiliser leurs services avec konqueror (ou n'importe quel autre gestionnaire de fichiers pouvant utiliser l'interface de Fichier IO de KDE). </para>
+<sect2>
+<title
+>Utiliser les kioslaves SDP / Bluetooth</title>
+<para
+>Pour chercher des périphériques, saisissez simplement <ulink url="sdp:/"
+>bluetooth:/</ulink
+> dans konqueror. Vous verrez immédiatemment une entrée pour votre propre système, puis, après quelques secondes, les autres périphériques apparaîtront les uns après les autres. </para>
+<para
+>Vous pouvez aussi cliquer sur l'icône bluetooth dans la barre située sur le côté de konqueror, dans l'onglet "Services", a côté des navigateurs LAN et CD Audio. Si vous ne pouvez voir l'icône, le fait de remettre à zéro cette barre en faisant <guimenuitem
+>bouton de configuration -> Ajouter -> Revenir à la configuration par défaut</guimenuitem
+> pourrait vous aider. </para>
+<para
+>Les périphériques appraîssant ne doivent pas seulement être allumés, mais aussi en mode visible. Sinon, vous pourrez vous y connecter si vous connaissez l'adresse, mais ils ne répondront pas à un requête, si vous ne stipulez pas l'adresse. </para>
+<para
+>Quand vous sélectionnez un périphérique, vous obtiendrez une liste des services proposés par le périphérique. Si le service est supporté par kbluetooth, vous pouvez cliquer afin de lancer l'application appropriée. A moins que vous ne l'ayez désactivé, konqueror affichera la fenête d'ouverture de fichier habituelle. Si le service n'est pas connu, vous obtiendrez une fenêtre de sélection du programme à utiliser. </para>
+</sect2>
+
+<sect2>
+<title
+>Sujets avancés </title>
+<para
+>Si vous savez ce que vous faites, vous pouvez aussi ouvrir un service donné (kbthandsfree par exemple) avec une application bluetooth qui n'était pas déstinée à ce profil spécifique en effectuant un clic droit sur l'icône du serice et en sélectionnant ouvrir avec. Tous les services gérant les commandes AT via rfcomm peuvent être ouvertes avec <command
+>kbtserialchat</command
+> par exemple. </para>
+<para
+>Vous pouvez aussi changer l'association entre les applications et les profils, (connus) comme si vous vouliez sélectionner quelle application doit ouvrir les fichiers mpeg ou pdf : kio_obex assigne un type MIME à chaque profil listé et chaque application client de kbluetooth est associée avec les profils qu'elle supporte. Le support pour les profils non-reconnus peut être ajouté avec des fichiers bureaux spéciaux situés dans <filename
+>$PREFIX/share/services</filename
+>, comme <filename
+>sdpmime-serial-port-profile.desktop</filename
+> par exemple. </para>
+</sect2>
+
+<sect2>
+<title
+>Limitations actuelles</title>
+<para
+>kio_sdp ne supporte pas encore la navigation dans les groupes imbriqués. Cela ne devrait pas être dur à ajouter, mais je ne l'ai pas encore fait.</para>
+<para
+>Vous ne pouvez pas vous connecter aux services de votre propre système en cliquant simplement sur l'icône "localhost". Cela fut ajouté simplement pour voir quels services sont proposés par votre système. </para>
+</sect2>
+
+</sect1>

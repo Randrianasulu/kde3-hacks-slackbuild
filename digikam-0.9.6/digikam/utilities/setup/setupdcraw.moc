@@ -1,0 +1,104 @@
+/****************************************************************************
+** Digikam::SetupDcraw meta object code from reading C++ file 'setupdcraw.h'
+**
+** Created: Wed Jun 14 03:46:05 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "setupdcraw.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::SetupDcraw::className() const
+{
+    return "Digikam::SetupDcraw";
+}
+
+QMetaObject *Digikam::SetupDcraw::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__SetupDcraw( "Digikam::SetupDcraw", &Digikam::SetupDcraw::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::SetupDcraw::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupDcraw", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::SetupDcraw::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::SetupDcraw", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::SetupDcraw::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotSixteenBitsImageToggled", 1, param_slot_0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotSixteenBitsImageToggled(bool)", &slot_0, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::SetupDcraw", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__SetupDcraw.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::SetupDcraw::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::SetupDcraw" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Digikam::SetupDcraw::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotSixteenBitsImageToggled((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::SetupDcraw::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::SetupDcraw::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Digikam::SetupDcraw::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,12 @@
+--- kdebase-3.5.10/kcontrol/input/logitechmouse.cpp~	2006-05-22 22:12:31 +0400
++++ kdebase-3.5.10/kcontrol/input/logitechmouse.cpp	2008-09-30 20:48:44 +0400
+@@ -115,7 +115,8 @@ LogitechMouse::LogitechMouse( struct usb
+ 
+ LogitechMouse::~LogitechMouse()
+ {
+-    usb_close( m_usbDeviceHandle );
++    if ( m_usbDeviceHandle )
++	usb_close( m_usbDeviceHandle );
+ }
+ 
+ void LogitechMouse::initCordlessStatusReporting()

@@ -1,0 +1,177 @@
+<chapter id="installation">
+<title
+>Установка</title>
+
+<sect1 id="installation.requirements">
+<title
+>Требования</title>
+<para
+>Зависимости: </para>
+<itemizedlist>
+<listitem
+><para
+>KDE 
+>=3.2 </para
+></listitem>
+<listitem
+><para
+>Openobex 
+>=1.0 </para
+></listitem>
+<listitem
+><para
+>Qt 
+>=3.2 </para
+></listitem>
+<listitem
+><para
+>bluez-libs 
+>=2.5 </para
+></listitem>
+<listitem
+><para
+>bluez-utils 
+>=2.5 </para
+></listitem>
+<listitem
+><para
+>bluez-sdp 
+>=1.5 </para
+></listitem>
+</itemizedlist>
+<para
+>Для рабты клиента handsfree установите ibogg, libvorbisenc и libvorbisfile. </para>
+<para
+>Для работы сервера bemused установите xmms-dev. </para>
+<para
+>Обратите внимание, что программа может быть совместима со старыми версиями библиотек. Сообщите нам, если компиляция программы со старыми версиями библиотек прошла успешно, или компиляция с новыми версиями библиотек завершилась с ошибкой. </para>
+</sect1>
+
+
+<sect1 id="installation.compilation">
+<title
+>Компиляция и установка</title>
+<para
+>Распакуйте архивный файл, <command
+>cd kdebluetooth</command
+>, выполните команду <command
+>./configure --prefix=...</command
+>. KDE долен быть настроен на использование данного префикса. Как правило, программа устанавливается в  каталог <filename
+>/usr</filename
+>. Для установки программы в другой каталог запустите скрипт конфигурации с параметром $KDEDIRS. Подробнее о установке программы см.: <ulink url="http://www.kde.org/documentation/faq/install.html"
+> http://www.kde.org/documentation/faq/install.html</ulink
+>. </para>
+<para
+>Можно самостоятельно скомпилировать программу, выполнив команду <command
+>make install</command
+>. Рекомендуется устанавливать готовые <link linkend="download.packages"
+>пакеты</link
+>, а не компилировать программу из исходного кода. Если не использовать префикс только при компиляции программы для kdebluetooth, то после установки останутся временные файлы. </para>
+</sect1>
+
+
+<sect1 id="installation.setup">
+<title
+>Настройка</title>
+<para
+>Как правило, KDE Bluetooth Framework не требует дополнительной настройки, но для его использования требуется правильно настроить пакет BlueZ. Документацию по настройке BlueZ читайте на:  <ulink url="http://www.bluez.org"
+>www.bluez.org</ulink
+>.  В пакет BlueZ включен демон <command
+>hcid</command
+>. Он отвечает за установку соединения между устройствами и безопасность. Демон hcid запускается на этапе загрузки операционной системы, параметры запуска указаны в скрипте инициализации. </para>
+<para
+>Рекомендуемая настройка kdebluetooth (секции, значения которых не меняются или несущественны, заменены на  '...'): <screen>
+настройки {
+...
+        # Security Manager mode
+        #   none - Security manager disabled
+        #   auto - Use local PIN for incoming connections
+        #   user - Always ask user for a PIN
+        #
+        # Use 'security user' to use the graphical pin helper only
+        # 'auto' means that for incoming connection the static number 
+        # in the file /etc/bluetooth/pin is used.
+        security user;
+
+        # Pairing mode
+        # Allow to overwrite an existing pairing 
+        pairing multi;
+
+        # PIN helper
+        # Use kdebluetooth's own pin helper. 
+        # Errors messages can be found in the syslog.
+        # !! CHANGE ME !! Change the path according to your own setup
+        pin_helper /usr/local/lib/kdebluetooth/kbluepin;
+}
+
+# Default settings for HCI devices
+device {
+...
+        # Local device class
+        # "Uncategorized computer", which pretends 
+        # to support just about anything.
+        class 0xff0100;
+        
+        # For some mobile phones you will have to tag your system
+        # as a Audio/Handsfree device to be able to use your computer
+        # as a Handsfree (only when connecting from the phone)
+        # class 0xff0408;
+
+        iscan enable; pscan enable;
+        lm accept;
+        lp hold,sniff,park;
+
+        # Authentication and Encryption
+        # If you enable this, a device *must* be paired to access any
+        # service on your computer
+        #auth enable;
+        #encrypt enable;
+}
+
+</screen
+> Не забудьте перезапускать <command
+>hcid</command
+> после каждого изменеия настроек. При возникновении проблем с установкой связи парных устройств загляните в системный журнал (на  Debian: <filename
+>/var/log/syslog</filename
+>), там вы найдете описание причины ошибки. </para>
+<para
+>Базовые понятия настройки безопасности Bluetooth описаны в разделе <link linkend="concepts.pairing"
+>парные устройства bluetooth </link
+>. </para>
+
+<para
+>Демон <command
+>sdpd</command
+> также необходим для работы BlueZ. Этот демон используется для  публикации описаний сервисов, предоставляемых другим устройствам. </para>
+<para
+>Если демоны hcid и sdpd запущены, проверьте работоспособность устройств Bluetooth с помощью утилит командной строки пакета BlueZ: </para>
+<screen
+>root:~# hciconfig      &lt;- Check if adaptor was found and is up
+hci0:   Type: USB
+        BD Address: 00:10:60:A3:8B:DE ACL MTU: 192:8  SCO MTU: 64:8
+        UP RUNNING PSCAN ISCAN AUTH ENCRYPT
+        RX bytes:176023 acl:2046 sco:0 events:1809 errors:0
+        TX bytes:23000 acl:971 sco:0 commands:469 errors:0
+
+root:~# hcitool inq    &lt;- Try to seach for other discoverable devices
+Inquiring ...
+        00:A0:32:1A:B0:27       clock offset: 0x122b    class: 0x000100
+
+root:~# sdptool browse FF:FF:FF:00:00:00
+Browsing FF:FF:FF:00:00:00 ...
+Service Name: SDP Server
+Service Description: Bluetooth service discovery server
+Service Provider: BlueZ
+Service RecHandle: 0x0
+...
+root:~#
+</screen>
+<para
+>Первая команда проверяет, включено ли ваше устройство bluetooth, вторая - ищет другие доступные беспроводные устройства bluetooth (в них должен быть включен режим распознавания). Последняя команда выводит список сервисов, предоставляемых вашим компьютером другим беспроводным устройствам. Если kbluetoothd запущен, команда отобразит полный список активных сервисов, включая obex push и т.д. Если все команды выполнены успешно, дополнительная настройка не потребуется. </para>
+<para
+>Запустите мета-сервер kdebluetooth командой <command
+>kbluetoothd</command
+>. В системном лотке появится пиктограмма kbluetooth. Сервисы, предоставляемые kbluetooth, будут доступны до тех пор, пока работает демон kbluetoothd. Щелкните по пиктограмме kbluetooth левой, а затем правой кнопкой мыши для ознакомления с настройками программы. Желаем удачи! </para>
+</sect1>
+
+</chapter>

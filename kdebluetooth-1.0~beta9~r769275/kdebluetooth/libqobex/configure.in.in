@@ -1,0 +1,70 @@
+dnl
+dnl Check for tty locking libraries.
+dnl baudboy uses lockdev and is used by newer RedHat distros.
+dnl lockdev is availabel on RedHat and Debian
+dnl If none of them is available we do own locking like describesd in the
+dnl serial HOWTO.
+dnl
+
+AC_CHECK_HEADERS(sys/select.h)
+
+AC_CHECK_HEADERS(baudboy.h,HAVE_BAUDBOY_H=1,HAVE_BAUDBOY_H=0,[
+#define inline __inline__
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+])
+AC_CHECK_HEADERS(lockdev.h)
+AC_CHECK_LIB(lockdev, dev_lock, [ LIB_LOCKDEV="-llockdev" ])
+dnl We don't need liblockdev if we have baudboy working
+if test "x${HAVE_BAUDBOY_H}" = "x1"; then
+  LIB_LOCKDEV=""
+fi
+AC_SUBST(LIB_LOCKDEV)
+
+
+dnl
+dnl Bluetooth setup. Initial code here is taken from multisync.
+dnl
+
+AC_CHECK_LIB(bluetooth,baswap,BLUETOOTH=1,BLUETOOTH=0)
+AC_CHECK_LIB(bluetooth,sdp_list_free,SDP_IN_BLUETOOTH=1,SDP_IN_BLUETOOTH=0)
+AC_CHECK_LIB(sdp,sdp_list_free,SDP_IN_SDP=1,SDP_IN_SDP=0)
+AC_MSG_CHECKING(for correct SDP lib version)
+AC_TRY_COMPILE([
+#define inline __inline__
+#include <bluetooth/sdp.h>
+#include <bluetooth/sdp_lib.h>
+],[sdp_record_t t;],AC_MSG_RESULT(yes),BLUETOOTH=0;AC_MSG_RESULT(no))
+if test "x${SDP_IN_SDP}" = "x0" -a "x${SDP_IN_BLUETOOTH}" = "x0" ; then
+  BLUETOOTH=0
+  DO_NOT_COMPILE="$DO_NOT_COMPILE kdebluetooth"
+fi
+AM_CONDITIONAL(QOBEX_BTTRANSPORT,test "${BLUETOOTH}" = "1")
+if test "x${BLUETOOTH}" = "x1"; then
+  AC_DEFINE_UNQUOTED(HAVE_QOBEX_BLUETOOTH, ${BLUETOOTH}, Defined if Bluetooth is enabled.)
+  LIB_BLUETOOTH=-lbluetooth
+  if test "x${SDP_IN_SDP}" = "x1" ; then
+    LIB_SDP=-lsdp
+  else
+    LIB_SDP=
+  fi
+fi
+AC_SUBST(LIB_BLUETOOTH)
+AC_SUBST(LIB_SDP)
+
+
+dnl
+dnl IrDA setup. Initial code here is taken from multisync.
+dnl
+
+AC_MSG_CHECKING(for IrDA support)
+AC_TRY_COMPILE([
+#include <sys/socket.h>
+#include <linux/types.h>
+#include <linux/irda.h>
+], [], IRDA=1;AC_MSG_RESULT(yes), IRDA=0;AC_MSG_RESULT(no) )
+AM_CONDITIONAL(QOBEX_IRDATRANSPORT,test "${IRDA}" = "1")
+if test "x${IRDA}" = "x1"; then
+  AC_DEFINE_UNQUOTED(HAVE_QOBEX_IRDA, ${IRDA}, Defined if IrDA is enabled.)
+fi

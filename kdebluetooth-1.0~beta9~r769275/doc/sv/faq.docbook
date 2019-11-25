@@ -1,0 +1,156 @@
+<chapter id="faq">
+<title
+>Frågor och svar</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para
+>Mitt problem finns inte beskrivet i det här dokumentet. Finns det någon annanstans jag kan få hjälp?</para>
+</question>
+<answer>
+<para
+>Det finns en <ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth"
+>e-postlista</ulink
+>, dit du kan skicka in dina frågor och kommentarer. Var snäll och först titta i arkivet innan du skickar in någonting, men tveka inte att fråga oss om du inte hittade något som var till hjälp där.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Ingenting fungerar. Inte ens ett kommandoradsverktyg som <command
+>hcitool inq</command
+> hittar någonting.</para>
+</question>
+<answer>
+<para
+>Kdebluetooth beror på en fungerande Blåtandsinställning. Om det är problemet, kan du fråga om hjälp på vår e-postlista, men den riktiga och bästa platsen att ställa frågor om BlueZ är förstås e-postlistorna för <ulink url="http://www.bluez.org"
+>BlueZ</ulink
+>. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Har kdebluetooth avsomnat? Det sker inga ändringar i Sourceforge CVS längre.</para>
+</question>
+<answer>
+<para
+>Kdebluetooth har flyttat till <ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE extragear</ulink
+> (<ulink url="http://extragear.kde.org"
+>Hemsida för Extra Gear</ulink
+>).</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Min telefon frågar efter en PIN-kod, men jag vet inte var jag ska skriva in den i datorn.</para>
+</question>
+<answer>
+<para
+>BlueZ ska automatiskt visa en PIN-dialogruta när du använder <programlisting
+>security user;</programlisting
+> i <filename
+>/etc/bluetooth/hcid.conf</filename
+>. Ibland fungerar inte det vanliga verktyget <command
+>bluepin</command
+> i BlueZ. Du kan försöka att använda ersättningen med KDE-stil <command
+>kbluepin</command
+> istället. Skriv något som liknar <programlisting
+>pin_helper /usr/lib/kdebluetooth/kbluepin;</programlisting
+> i <filename
+>hcid.conf</filename
+> och starta om BlueZ-programmet <command
+>hcid</command
+>. </para>
+<para
+>Det här är i själva verket något som rör BlueZ, och har ingenting med KDE:s blåtandsramverk att göra om du inte använder kbluepin. Jag skulle vilja lägga till en länk här till motsvarande dokumentation för BlueZ, där hantering av PIN-koder beskrivs, men jag kan inte hitta den någonstans för ögonblicket. Tips är välkomna! </para>
+<para
+>Om du har ständiga bekymmer med kbluepin (eller bluepin eller något annat PIN-hjälpverktyg), bör du ta en titt i loggfilerna (<filename
+>/var/log/syslog</filename
+> eller liknande). </para>
+<para
+>Om du inte tidigare använt Blåtand, läs gärna <link linkend="concepts.pairing"
+>grunderna om par</link
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>När jag försöker para upp min dator med min telefon, säger Kbluetoothd "Par tillåts inte". </para>
+</question>
+<answer>
+<para
+>Om PIN-hjälpprogrammet för hcid är riktigt inställt, ska en dialogruta dyka upp, som frågar dig efter PIN-koden som du också matat in i telefonen. Om du klickar på "Avbryt" eller om PIN-hjälpprogrammet inte kan hittas eller startas av någon anledning, visar Kbluetoothd en varning. Kontrollera systemloggarna för att se varför hcid inte kunde starta PIN-hjälpprogrammet. </para
+></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Jag vill använda en tjänst som erbjuds av Kdebluetooth, men min klientenhet vill ansluta till en annan kanal än den som används av kbluetoothd. </para>
+</question>
+<answer>
+<para
+>Normalt ska inte blåtandstjänster använda fasta kanalnummer, utan istället använda SDP-databasen för att hitta rätt kanal. Men om du verkligen behöver det, kan du kopiera respektive skrivbordsfil från <filename
+>$PREFIX/share/services</filename
+> till <filename
+>$HOME/.kde/share/services</filename
+> och redigera kanalnumret. Det överskrider de allmänna inställningarna efter att KDE har startats om.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag använder flera adaptrar på samma dator. Hur kan jag välja vilken som ska användas? </para>
+</question>
+<answer>
+<para
+>Vissa av programmen har en kommandoradsväljare för att ändra förvald Blåtandsenhet (till exempel '--hcidevice hci1'). Som ett alternativ kan du också använda miljövariabeln HCI_DEVICE. Det senare kan till och med fungera med verktyg som inte har en kommandoradsväljare. Observera att kbluetoothd för närvarande inte fungerar särskilt bra själv med flera enheter. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>./configure hittar inte kdelibs, qt ...</para>
+</question>
+<answer>
+<para
+>Försäkra dig om att du också har installerat utvecklingspaketen för respektive bibliotek.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag får felmeddelanden som: "File generated with too recent version of Qt Designer (3.2 vs. 3.1.x)"</para>
+</question>
+<answer>
+<para
+>Qt Designer sparar sitt versionsnummer i ui-filerna så fort någon ändras. Det ger fel när du försöker kompilera kdebluetooth med en äldre version av Qt. Det verkar dock vara ofarligt att ändra versionsnumret från 3.2 till 3.1. Du kan enkelt göra det genom att köra skriptet downgrade_ui, om vi av misstag arkiverat några ändringar utan att återställa versionsnumren.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag kan starta Kbluetoothd men rätt ikon (logotypen för Kbluetooth) saknas, och en generell dokumentikon visas istället</para>
+</question>
+<answer>
+<para
+>Det betyder oftast att du har installerat Kdebluetooth på en plats där KDE inte letar efter resurser. Det är inte tillräckligt att ha kbluetoothd i sökvägen. Du måste också försäkra dig om att du använder ett prefix vid konfigurering som KDE känner till. Du kan hämta inställda kataloger för KDE-ikoner med verktyget kde-config: kde-config --path icon. Prefixet som används av KDE kan ställas in med miljövariabeln KDEDIRS.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>

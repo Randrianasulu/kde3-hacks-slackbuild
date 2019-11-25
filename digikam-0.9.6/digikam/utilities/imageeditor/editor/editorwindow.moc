@@ -1,0 +1,327 @@
+/****************************************************************************
+** Digikam::EditorWindow meta object code from reading C++ file 'editorwindow.h'
+**
+** Created: Tue Jun 13 22:44:36 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "editorwindow.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::EditorWindow::className() const
+{
+    return "Digikam::EditorWindow";
+}
+
+QMetaObject *Digikam::EditorWindow::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__EditorWindow( "Digikam::EditorWindow", &Digikam::EditorWindow::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::EditorWindow::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorWindow", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::EditorWindow::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::EditorWindow", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::EditorWindow::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KMainWindow::staticMetaObject();
+    static const QUMethod slot_0 = {"slotSave", 0, 0 };
+    static const QUMethod slot_1 = {"slotSaveAs", 0, 0 };
+    static const QUMethod slot_2 = {"slotEditKeys", 0, 0 };
+    static const QUMethod slot_3 = {"slotResize", 0, 0 };
+    static const QUMethod slot_4 = {"slotAboutToShowUndoMenu", 0, 0 };
+    static const QUMethod slot_5 = {"slotAboutToShowRedoMenu", 0, 0 };
+    static const QUMethod slot_6 = {"slotConfToolbars", 0, 0 };
+    static const QUMethod slot_7 = {"slotNewToolbarConfig", 0, 0 };
+    static const QUMethod slot_8 = {"slotToggleFullScreen", 0, 0 };
+    static const QUMethod slot_9 = {"slotEscapePressed", 0, 0 };
+    static const QUParameter param_slot_10[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotSelected", 1, param_slot_10 };
+    static const QUParameter param_slot_11[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotLoadingProgress", 2, param_slot_11 };
+    static const QUParameter param_slot_12[] = {
+	{ "filePath", &static_QUType_QString, 0, QUParameter::In },
+	{ "progress", &static_QUType_ptr, "float", QUParameter::In }
+    };
+    static const QUMethod slot_12 = {"slotSavingProgress", 2, param_slot_12 };
+    static const QUMethod slot_13 = {"slotNameLabelCancelButtonPressed", 0, 0 };
+    static const QUMethod slot_14 = {"slotThemeChanged", 0, 0 };
+    static const QUParameter param_slot_15[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_15 = {"slotLoadingStarted", 1, param_slot_15 };
+    static const QUParameter param_slot_16[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"slotLoadingFinished", 2, param_slot_16 };
+    static const QUParameter param_slot_17[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_17 = {"slotSavingStarted", 1, param_slot_17 };
+    static const QUMethod slot_18 = {"slotSetup", 0, 0 };
+    static const QUParameter param_slot_19[] = {
+	{ "theme", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_19 = {"slotChangeTheme", 1, param_slot_19 };
+    static const QUMethod slot_20 = {"slotFilePrint", 0, 0 };
+    static const QUMethod slot_21 = {"slotDeleteCurrentItem", 0, 0 };
+    static const QUMethod slot_22 = {"slotBackward", 0, 0 };
+    static const QUMethod slot_23 = {"slotForward", 0, 0 };
+    static const QUMethod slot_24 = {"slotFirst", 0, 0 };
+    static const QUMethod slot_25 = {"slotLast", 0, 0 };
+    static const QUMethod slot_26 = {"slotUpdateItemInfo", 0, 0 };
+    static const QUMethod slot_27 = {"slotChanged", 0, 0 };
+    static const QUMethod slot_28 = {"slotContextMenu", 0, 0 };
+    static const QUMethod slot_29 = {"slotRevert", 0, 0 };
+    static const QUMethod slot_30 = {"slotToggleUnderExposureIndicator", 0, 0 };
+    static const QUMethod slot_31 = {"slotToggleOverExposureIndicator", 0, 0 };
+    static const QUMethod slot_32 = {"slotToggleColorManagedView", 0, 0 };
+    static const QUMethod slot_33 = {"slotRotatedOrFlipped", 0, 0 };
+    static const QUParameter param_slot_34[] = {
+	{ "filename", &static_QUType_QString, 0, QUParameter::In },
+	{ "success", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_34 = {"slotSavingFinished", 2, param_slot_34 };
+    static const QUMethod slot_35 = {"slotDonateMoney", 0, 0 };
+    static const QUMethod slot_36 = {"slotContribute", 0, 0 };
+    static const QUMethod slot_37 = {"slotToggleSlideShow", 0, 0 };
+    static const QUMethod slot_38 = {"slotZoomTo100Percents", 0, 0 };
+    static const QUMethod slot_39 = {"slotZoomSelected", 0, 0 };
+    static const QUParameter param_slot_40[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_40 = {"slotZoomTextChanged", 1, param_slot_40 };
+    static const QUParameter param_slot_41[] = {
+	{ "isMax", &static_QUType_bool, 0, QUParameter::In },
+	{ "isMin", &static_QUType_bool, 0, QUParameter::In },
+	{ "zoom", &static_QUType_double, 0, QUParameter::In }
+    };
+    static const QUMethod slot_41 = {"slotZoomChanged", 3, param_slot_41 };
+    static const QUParameter param_slot_42[] = {
+	{ "sel", &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod slot_42 = {"slotSelectionChanged", 1, param_slot_42 };
+    static const QUMethod slot_43 = {"slotToggleFitToWindow", 0, 0 };
+    static const QUMethod slot_44 = {"slotToggleOffFitToWindow", 0, 0 };
+    static const QUMethod slot_45 = {"slotFitToSelect", 0, 0 };
+    static const QUMethod slot_46 = {"slotIncreaseZoom", 0, 0 };
+    static const QUMethod slot_47 = {"slotDecreaseZoom", 0, 0 };
+    static const QUMethod slot_48 = {"slotRawCameraList", 0, 0 };
+    static const QUMethod slot_49 = {"slotPrepareToLoad", 0, 0 };
+    static const QUMethod slot_50 = {"slotShowMenuBar", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotSave()", &slot_0, QMetaData::Protected },
+	{ "slotSaveAs()", &slot_1, QMetaData::Protected },
+	{ "slotEditKeys()", &slot_2, QMetaData::Protected },
+	{ "slotResize()", &slot_3, QMetaData::Protected },
+	{ "slotAboutToShowUndoMenu()", &slot_4, QMetaData::Protected },
+	{ "slotAboutToShowRedoMenu()", &slot_5, QMetaData::Protected },
+	{ "slotConfToolbars()", &slot_6, QMetaData::Protected },
+	{ "slotNewToolbarConfig()", &slot_7, QMetaData::Protected },
+	{ "slotToggleFullScreen()", &slot_8, QMetaData::Protected },
+	{ "slotEscapePressed()", &slot_9, QMetaData::Protected },
+	{ "slotSelected(bool)", &slot_10, QMetaData::Protected },
+	{ "slotLoadingProgress(const QString&,float)", &slot_11, QMetaData::Protected },
+	{ "slotSavingProgress(const QString&,float)", &slot_12, QMetaData::Protected },
+	{ "slotNameLabelCancelButtonPressed()", &slot_13, QMetaData::Protected },
+	{ "slotThemeChanged()", &slot_14, QMetaData::Protected },
+	{ "slotLoadingStarted(const QString&)", &slot_15, QMetaData::Protected },
+	{ "slotLoadingFinished(const QString&,bool)", &slot_16, QMetaData::Protected },
+	{ "slotSavingStarted(const QString&)", &slot_17, QMetaData::Protected },
+	{ "slotSetup()", &slot_18, QMetaData::Protected },
+	{ "slotChangeTheme(const QString&)", &slot_19, QMetaData::Protected },
+	{ "slotFilePrint()", &slot_20, QMetaData::Protected },
+	{ "slotDeleteCurrentItem()", &slot_21, QMetaData::Protected },
+	{ "slotBackward()", &slot_22, QMetaData::Protected },
+	{ "slotForward()", &slot_23, QMetaData::Protected },
+	{ "slotFirst()", &slot_24, QMetaData::Protected },
+	{ "slotLast()", &slot_25, QMetaData::Protected },
+	{ "slotUpdateItemInfo()", &slot_26, QMetaData::Protected },
+	{ "slotChanged()", &slot_27, QMetaData::Protected },
+	{ "slotContextMenu()", &slot_28, QMetaData::Protected },
+	{ "slotRevert()", &slot_29, QMetaData::Protected },
+	{ "slotToggleUnderExposureIndicator()", &slot_30, QMetaData::Private },
+	{ "slotToggleOverExposureIndicator()", &slot_31, QMetaData::Private },
+	{ "slotToggleColorManagedView()", &slot_32, QMetaData::Private },
+	{ "slotRotatedOrFlipped()", &slot_33, QMetaData::Private },
+	{ "slotSavingFinished(const QString&,bool)", &slot_34, QMetaData::Private },
+	{ "slotDonateMoney()", &slot_35, QMetaData::Private },
+	{ "slotContribute()", &slot_36, QMetaData::Private },
+	{ "slotToggleSlideShow()", &slot_37, QMetaData::Private },
+	{ "slotZoomTo100Percents()", &slot_38, QMetaData::Private },
+	{ "slotZoomSelected()", &slot_39, QMetaData::Private },
+	{ "slotZoomTextChanged(const QString&)", &slot_40, QMetaData::Private },
+	{ "slotZoomChanged(bool,bool,double)", &slot_41, QMetaData::Private },
+	{ "slotSelectionChanged(const QRect&)", &slot_42, QMetaData::Private },
+	{ "slotToggleFitToWindow()", &slot_43, QMetaData::Private },
+	{ "slotToggleOffFitToWindow()", &slot_44, QMetaData::Private },
+	{ "slotFitToSelect()", &slot_45, QMetaData::Private },
+	{ "slotIncreaseZoom()", &slot_46, QMetaData::Private },
+	{ "slotDecreaseZoom()", &slot_47, QMetaData::Private },
+	{ "slotRawCameraList()", &slot_48, QMetaData::Private },
+	{ "slotPrepareToLoad()", &slot_49, QMetaData::Private },
+	{ "slotShowMenuBar()", &slot_50, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalSelectionChanged", 1, param_signal_0 };
+    static const QUMethod signal_1 = {"signalNoCurrentItem", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalSelectionChanged(const QRect&)", &signal_0, QMetaData::Public },
+	{ "signalNoCurrentItem()", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::EditorWindow", parentObject,
+	slot_tbl, 51,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__EditorWindow.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::EditorWindow::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::EditorWindow" ) )
+	return this;
+    return KMainWindow::qt_cast( clname );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL signalSelectionChanged
+void Digikam::EditorWindow::signalSelectionChanged( const QRect& t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_varptr.set(o+1,&t0);
+    activate_signal( clist, o );
+}
+
+// SIGNAL signalNoCurrentItem
+void Digikam::EditorWindow::signalNoCurrentItem()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+bool Digikam::EditorWindow::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotSave(); break;
+    case 1: slotSaveAs(); break;
+    case 2: slotEditKeys(); break;
+    case 3: slotResize(); break;
+    case 4: slotAboutToShowUndoMenu(); break;
+    case 5: slotAboutToShowRedoMenu(); break;
+    case 6: slotConfToolbars(); break;
+    case 7: slotNewToolbarConfig(); break;
+    case 8: slotToggleFullScreen(); break;
+    case 9: slotEscapePressed(); break;
+    case 10: slotSelected((bool)static_QUType_bool.get(_o+1)); break;
+    case 11: slotLoadingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 12: slotSavingProgress((const QString&)static_QUType_QString.get(_o+1),(float)(*((float*)static_QUType_ptr.get(_o+2)))); break;
+    case 13: slotNameLabelCancelButtonPressed(); break;
+    case 14: slotThemeChanged(); break;
+    case 15: slotLoadingStarted((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 16: slotLoadingFinished((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 17: slotSavingStarted((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 18: slotSetup(); break;
+    case 19: slotChangeTheme((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 20: slotFilePrint(); break;
+    case 21: slotDeleteCurrentItem(); break;
+    case 22: slotBackward(); break;
+    case 23: slotForward(); break;
+    case 24: slotFirst(); break;
+    case 25: slotLast(); break;
+    case 26: slotUpdateItemInfo(); break;
+    case 27: slotChanged(); break;
+    case 28: slotContextMenu(); break;
+    case 29: slotRevert(); break;
+    case 30: slotToggleUnderExposureIndicator(); break;
+    case 31: slotToggleOverExposureIndicator(); break;
+    case 32: slotToggleColorManagedView(); break;
+    case 33: slotRotatedOrFlipped(); break;
+    case 34: slotSavingFinished((const QString&)static_QUType_QString.get(_o+1),(bool)static_QUType_bool.get(_o+2)); break;
+    case 35: slotDonateMoney(); break;
+    case 36: slotContribute(); break;
+    case 37: slotToggleSlideShow(); break;
+    case 38: slotZoomTo100Percents(); break;
+    case 39: slotZoomSelected(); break;
+    case 40: slotZoomTextChanged((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 41: slotZoomChanged((bool)static_QUType_bool.get(_o+1),(bool)static_QUType_bool.get(_o+2),(double)static_QUType_double.get(_o+3)); break;
+    case 42: slotSelectionChanged((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1))); break;
+    case 43: slotToggleFitToWindow(); break;
+    case 44: slotToggleOffFitToWindow(); break;
+    case 45: slotFitToSelect(); break;
+    case 46: slotIncreaseZoom(); break;
+    case 47: slotDecreaseZoom(); break;
+    case 48: slotRawCameraList(); break;
+    case 49: slotPrepareToLoad(); break;
+    case 50: slotShowMenuBar(); break;
+    default:
+	return KMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::EditorWindow::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalSelectionChanged((const QRect&)*((const QRect*)static_QUType_ptr.get(_o+1))); break;
+    case 1: signalNoCurrentItem(); break;
+    default:
+	return KMainWindow::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::EditorWindow::qt_property( int id, int f, QVariant* v)
+{
+    return KMainWindow::qt_property( id, f, v);
+}
+
+bool Digikam::EditorWindow::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

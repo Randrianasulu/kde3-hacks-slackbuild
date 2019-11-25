@@ -1,0 +1,218 @@
+<sect1 id="components.kbluetoothd">
+<title
+>kbluetoothd: El corazón de la estructura Bluetooth de KDE</title>
+<para
+>KBluetoothD es la pieza central de la estructura Bluetooth de KDE. Se está ejecutando contínuamente, generalmente, en la bandeja del sistema e inicia otros servicios como los servidores OBEX o bemused bajo petición. Su icono de la bandeja de sistema le indicará la situación de las conexiones bluetooth y también le proporcionará un acceso rápido al servicio de configuración, servicios utilizados recientemente, dispositivos accesibles y más. </para>
+<para
+>Los programadores que deseen integrar sus programas con kdebluetooth, deberían echar un vistazo a la <link linkend="developers.kbluetoothd"
+>sección de los desarrolladores</link
+> para obtener más información. </para>
+
+<sect2>
+<title
+>Iniciar kbluetoothd</title>
+<para
+>Puede iniciar KBluetoothD tecleando <command
+>kbluetoothd</command
+> en la línea de órdenes o iniciándolo desde el menú K (normalmente Sistema/kbluetoothd). </para
+><para
+>KBluetoothD muestra un icono en la bandeja del sistema, pero si no le gusta puede desactivar «Siempre visible» en el menú contextual del icono de la bandeja del sistema. A continuación kbluetoothd se ejecutará sin interfaz de usuario visible, aunque se reinicie. Para reactivar el icono, inicie nuevamente kbluetoothd. Si se había desactivado el icono, aparecerá nuevamente durante la duración de la conexión a un bluetooth. </para>
+<para
+>Si kbluetoothd está ejecutándose al apagar el sistema, se iniciará automáticamente la siguiente vez que arranque el sistema. Para evitar que kbluetooth se inicie automáticamente, ciérrelo y dígale que no se inicie cuando entre en el sistema la siguiente vez.</para>
+ 
+</sect2>
+
+<sect2>
+<title
+>Qué hace kbluetoothd</title>
+<para
+>La característica más importante de kbluetoothd es el meta servidor de Bluetooth. Como kbluetoothd se está ejecutando continuamente, monitoriza su adaptador Bluetooth, indicándole cuándo se producen conexiones y peticiones a la memoria de nombres. La idea es que kbluetoothd es solo un programa relacionado con bluetooth que necesita estar en ejecución continuamente mientras tenga activados todos los servicios. </para>
+<sect3>
+<title
+>El meta servidor</title>
+<para
+>Si sabe lo que hace inetd en un sistema Linux, entonces tendrá una idea de para qué sirve el meta servidor de kbluetoothd: Espera conexiones entrantes en el lugar de los manejadores reales del servicio y los inicia cuando sea necesario. Por eso no necesitará tener un servidor obex ejecutándose continuamente, pero cuando alguien le envía un archivo a través de OBEX, el servidor OBEX se iniciará automáticamente. </para>
+
+<para
+>Existen varias razones para utilizar esta redirección: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Reduce las necesidades de memoria cuando utiliza algunos servicios. La estructura de Bluetooth para KDE actualmente incluye cuatro programas servidores: el servidor obex, el cliente de manos libres, el cliente bemused y la herramienta de charla. Aunque necesite que alguno de estos servicios funcione en exclusiva, todavía podrá dejarle activado sin problemas. </para>
+</listitem>
+
+<listitem>
+<para
+>Su bandeja del sistema no se llenará con montones de extraños iconos. </para>
+</listitem>
+
+<listitem>
+<para
+>Mejora la seguridad y hace que el control de acceso sea sencillo de administrar. KBluetoothD hará aparecer un diálogo pidiéndole permiso en las conexiones de entrada. El usuario puede anular este diálogo y permitir o desautorizar las conexiones para cada servicio y dispositivo. Este permite que cada aplicación administrada por kbluetoothd tenga control de acceso independiente. </para>
+<!-- authentication request no implemented!! <para>
+It is also worth noting that this feature is isn't an alternative to
+the bluetooth security features, but it is completing them instead:
+When a bluetooth connection is authenticated because you paired the 
+two bluetooth devices before, you can be sure about the identity
+over the other party. With kbluetoothd now you can make use of this
+authentication feature by having per-device and per-service control over
+which device is allowed to access which service.
+</para
+>-->
+</listitem>
+
+<listitem>
+<para
+>Tiene la capacidad de hacer más fiables los servicios bluetooth. Cada servidor se inicia para cada nueva conexión, por eso si un servidor se cuelga, puede intentarlo nuevamente sin reiniciarlo. </para>
+<para
+>En un servidor web se puede producir un cuello de botella que ha de ser administrado por inetd, pero en el caso de Bluetooth, la configuración de la conexión tarda algunos segundos de todas formas y cada acción suele iniciarla el usuario, que hace uso de un metaservidor no crítico. </para>
+</listitem>
+
+<listitem>
+<para
+>El registro del servicio con el servidor SDP es muy simple. Por favor, vea la <link linkend="developers.kbluetoothd"
+>sección de desarrollo</link
+> para averiguar cómo el registro de la aplicación administra kbluetoothd con el servidor SDP. </para>
+</listitem>
+
+<listitem>
+<para
+>Pueden utilizarse sencillos programas de servidor -incluso scripts- para implementar un servidor bluetooth sin utilizar funciones relacionadas con Bluetooth. </para>
+</listitem>
+</itemizedlist>
+<para
+>Puede activar/desactivar los servicios utilizados por kbluetoothd con el módulo del centro de control en la pestaña «Servicios locales». También puede configurar opciones específicas del servicio seleccionando un servicio y pulsando el botón «Configurar...». </para>
+<para
+>En la pestaña «Confirmación» puede personalizar cómo reaccionará kbluetoothd con las conexiones entrantes. </para>
+</sect3>
+
+
+<sect3>
+<title
+>El servicio de búsqueda de dispositivos</title>
+<para
+>Para muchas aplicaciones es importante saber si un dispositivo en concreto está accesible o no, e incluso ser notificada si un dispositivo se conecta o se desconecta. A diferencia del USB, en el que una estructura de conexión en caliente le notifica sobre nuevos dispositivos, no existe este servicio para bluetooth. </para>
+
+<para
+>kbluetoothd rellena este hueco con el servicio de búsqueda de dispositivos. Buscará periódicamente dispositivos cercanos y mantendrá una lista de los que están actualmente en línea. Para acceder al dispositivo encontrado, pulse con el botón derecho en el icono de la bandeja de sistema de kbluetoothd y eche un vistazo al menú «Abrir reciente». Este menú está formado por una sección para los servicios accedidos recientemente (como «ftp obex en MiTeléfono») y -si se han encontrado dispositivos- por una segunda sección sobre una lista de dispositivos. Pulsando sobre uno de ellos se mostrarán los servicios de este dispositivo en konqueror. </para>
+<para
+>En el módulo del centro de control de kbluetoothd puede configurar si y con qué frecuencia kbluetoothd busca dispositivos («Actualizar periódicamente las listas de vecinos»). Le recomiendo no utilizar intervalos inferiores a un minuto, ya que sino las aplicaciones puede tener problemas buscando dispositivos. Esto es debido a que la mayor parte de los dispositivos no esperan que otras aplicaciones utilicen bluetooth al mismo tiempo. </para>
+<para
+>Muchos dispositivos <phrase
+>no pueden encontrarse</phrase
+> de forma predeterminada por razones de privacidad/seguridad. En este caso el dispositivo no se detectará cuando se busquen dispositivos. En su lugar, kbluetoothd tiene que intentar acceder a cada uno de estos dispositivos individualmente. Cuando un dispositivo no sea accesible puede añadirse a la lista de dispositivos pulsando en «Opciones de búsqueda adicionales para dispositivos no accesibles». Por favor, tenga en cuenta que cada uno de los que configure podrá encontrarse temporalmente a no ser que conozca la dirección de su hardware para poder añadirlo a la lista. </para>
+<para
+>Esto puede evitar que otros programas busquen dispositivos e incluso configurar conexiones a otros dispositivos durante 30 segundos <emphasis
+>por dispositivo</emphasis
+> si el dispositivo no es accesible actualmente. Por tanto, aquí debería utilizar un intervalo de tiempo bastante grande. 10 minutos podría ser un valor razonable. Inténtelo usted mismo y encuentre un intervalo lo suficientemente pequeño hasta que empiece a molestarle. </para>
+
+<para
+>Tener una lista de dispositivos que no se pueden encontrar no es muy práctico. En su lugar utilice el servicio de búsqueda de dispositivos para ejecutar <phrase
+>trabajos de búsqueda</phrase
+> cuando un dispositivo sea accesible o deje de serlo. Esto trabajos de búsqueda son scripts sencillos. Puede escribir fácilmente su propio script (vea la sección de desarrollo sobre <link linkend="developers.kbluetoothd.discovery"
+>scripts de búsqueda</link
+>. Pero kbluetoothd ya incorpora algunos scripts, incluyendo: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Protocolo de búsqueda</term>
+<listitem
+><para
+>Este script creará una página html con información técnica para cada dispositivo cuando se encuentre por primera vez. Puede utilizar este script si siente curiosidad por ver quién está utilizando bluetooth cerca de usted. Tener este script activado constantemente no consumirá mucho, ya que solo intentará acceder al dispositivo cuando se encuentre la primera vez o después de que haya borrado la correspondiente página html. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kopete_AutoAway</term>
+<listitem
+><para
+>Establecerá el estado de disponibilidad de kopete dependiendo de si (junto con su teléfono) está conectado o no. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Photo_Copy</term>
+<listitem
+><para
+>Este script comprobará una carpeta en su teléfono a través de kio_obex para comprobar si existen nuevos archivos y copiarlos a un directorio local. Los renombrará con la fecha del archivo como nombre. Escribí este script para mi Nokia 6230. Si desea utilizarlo para su propio teléfono, deberá cambiar el script en algunos lugares. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Salvapantallas</term>
+<listitem
+><para
+>Inicie o cierre el salvapantallas/bloqueo de pantalla cada vez que un dispositivo monitorizado se encuentra accesible o desaparece. </para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>La mayor parte de los scripts deberán configurarse primero para que funcionen correctamente. Pulsar «configurar», como norma general, hará aparecer kedit con la parte de la configuración del script. Sea consciente de que <emphasis
+>debería limitar los dispositivos relacionados para cada trabajo</emphasis
+>, sino quiere que el script se ejecute cuando alguien más pasa con el teléfono Bluetooth activado. </para>
+
+</sect3>
+
+<sect3>
+<title
+>La lista «servicios utilizados más recientemente»</title>
+<para
+>Puede acceder rápidamente a los servicios que utilizó anteriormente buscando en el submenú «Recientemente usados» del icono de la bandeja del sistema de kbluetoothd. Si había enviado archivos a su móvil con el nombre «Mi teléfono» a través de kbtobexclient, encontrará una entrada de menú con el nombre «Cliente obex - Mi teléfono», que iniciará kbtobexclient y se conectará a su teléfono sin perder tiempo en el proceso de búsqueda. </para>
+<para
+>Por favor, tenga en cuenta que kbluetoothd muestra todos los servicios utilizados recientemente, sin importar si el dispositivo está accesible o no. </para>
+<para
+>Esta característica debería ser soportada por la aplicación. </para>
+</sect3>
+
+<sect3>
+<title
+>Monitor de conexión</title>
+<para
+>Puede ver si hay establecida una conexión bluetooth echando un vistazo al icono de la bandeja del sistema. Parpadeará si se establece una conexión y se volverá azul una vez que la conexión se haya configurado. </para>
+<para
+>Puede obtener más información sobre la conexión actual pulsando con el botón derecho sobre el icono de la bandeja del sistema y seleccionando «Detalles de la conexión...». </para>
+<para
+>Lo que kbluetoothd muestra aquí son los enlaces ACL, no conexiones Rfcomm. Si está conectado a un solo dispositivo con varios programas (manos libres y bemused, por ejemplo), se mostrará con una conexión, ya que solo puede haber un enlace ACL a la vez al mismo dispositivo. </para>
+</sect3>
+</sect2>
+
+<sect2 id="components.kbluetoothd.configuration">
+<title
+>Configurar kbluetoothd</title>
+<para
+>Usualmente, kbluetoothd y los servidores administrados por él deberían funcionar recién instalados. Pero existen algunas opciones que puede cambiar. Para configurar kbluetoothd, también puede utilizar el centro de control de KDE e ir a <guimenuitem
+>Internet y red -> Bluetooth</guimenuitem
+>, pulse con el botón derecho en el icono de la bandeja del sistema de kbluetoothd y seleccione <guimenuitem
+>Configuración -> Servicios...</guimenuitem
+> </para>
+
+<sect3 id="components.kbluetoothd.confirmation">
+<title
+>Confirmación de las conexiones entrantes</title>
+<para
+>En esta pestaña puede cambiar las preferencias de confirmación para las conexiones entrantes. De forma predeterminada, kbluetoothd le mostrará un diálogo de confirmación antes de iniciar el programa servidor actual (como el servidor OBEX). Aquí puede desactivar este diálogo de confirmación para algunos dispositivos/servicios o indicarle a kbluetoothd que rechace las conexiones entrantes de forma silenciosa. </para>
+<para
+>Se pueden añadir las entradas de nuevos dispositivos marcando la casilla «Aceptar siempre» en el diálogo de confirmación. </para>
+</sect3>
+
+<sect3 id="components.kbluetoothd.serviceconfig">
+<title
+>Servicios locales</title>
+<para
+>En esta pestaña puede activar o desactivar determinados servicios Bluetooth que estén administrados por kbluetoothd. Algunos servicios también proporcionan algunas opciones de configuración, como el servidor bemused, por ejemplo. En este caso, <guibutton
+>Configurar...</guibutton
+> se activará cuando seleccione el servicio correspondiente. </para>
+<para
+>Como kbluetoothd asigna automáticamente los canales rfcomm a los servicios, el canal utilizado por un servicio podría cambiarse cuando esté utilizando otros servidores bluetooth. Si necesita saber qué canal se asignó a qué servicio, este diálogo se lo mostrará. </para>
+</sect3>
+
+</sect2>
+
+</sect1>
+

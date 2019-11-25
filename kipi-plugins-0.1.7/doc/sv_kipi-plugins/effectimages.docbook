@@ -1,0 +1,126 @@
+<chapter id="effectimages">
+<chapterinfo>
+
+<title
+>Bildeffekter</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier punkt gilles snabela free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Kipi-insticksprogrammet Bildeffekter är ett verktyg för att lägga till en specialeffekt i bilder. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Inledning</title>
+
+<para
+>Det här insticksprogrammet kan användas för att utföra effekttransformeringar av bilder i ett album i bakgrunden. Det använder programmet "convert" från paketet "ImageMagick". En förhandsgranskning av bildeffekten (delvis eller fullständig) är tillgänglig. Elva effektfilter har implementerats: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Adaptiv tröskel</emphasis
+>: Utför en lokal adaptiv tröskeleffekt.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Kolteckna</emphasis
+>: Simulera en kolteckning.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Detektera kanter</emphasis
+>: Detektera kanter inne i en bild.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Relief</emphasis
+>: Returnerar en gråskalebild med en tredimensionell effekt.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Implodera</emphasis
+>: Imploderar bildens bildpunkter kring centrum.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Måla</emphasis
+>: Använder en specialeffekt som simulerar en oljemålning.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Skugga ljus</emphasis
+>: Skiner ett avlägset ljus på en bild för att skapa en tredimensionell effekt.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Solarisera</emphasis
+>: Gör alla bildpunkter över tröskelnivån negativa.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Sprid</emphasis
+>: Det här är en specialeffektmetod som slumpmässigt förflyttar varje bildpunkt i ett block som anges av radieparametern.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Virvel</emphasis
+>: Virvlar bildpunkterna omkring bildens centrum.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Vågor</emphasis
+>: Skapar en krusningseffekt i bilden genom att förflytta bildpunkterna vertikalt längs en sinusvåg.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Du kan se några exempel skapade med insticksprogrammet på följande <ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/EffectImages/index.html"
+><citetitle
+>webbadress</citetitle
+></ulink
+>. </para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,191 @@
+/****************************************************************************
+** KTApp meta object code from reading C++ file 'ktapp.h'
+**
+** Created: Sun Feb 1 00:51:52 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "ktapp.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KTApp::className() const
+{
+    return "KTApp";
+}
+
+QMetaObject *KTApp::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KTApp( "KTApp", &KTApp::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KTApp::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KTApp", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KTApp::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KTApp", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KTApp::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KMainWindow::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "id_", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"statusEditCallback", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "id_", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"statusSettingsCallback", 1, param_slot_1 };
+    static const QUMethod slot_2 = {"slotFileSave", 0, 0 };
+    static const QUMethod slot_3 = {"slotFilePrint", 0, 0 };
+    static const QUMethod slot_4 = {"slotFileQuit", 0, 0 };
+    static const QUParameter param_slot_5[] = {
+	{ "qp", &static_QUType_varptr, "\x0e", QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotEdit", 1, param_slot_5 };
+    static const QUMethod slot_6 = {"slotEditCut", 0, 0 };
+    static const QUMethod slot_7 = {"slotEditCopy", 0, 0 };
+    static const QUMethod slot_8 = {"slotEditPaste", 0, 0 };
+    static const QUMethod slot_9 = {"slotEditNew", 0, 0 };
+    static const QUMethod slot_10 = {"slotEditModify", 0, 0 };
+    static const QUMethod slot_11 = {"slotEditDelete", 0, 0 };
+    static const QUMethod slot_12 = {"slotEditEnable", 0, 0 };
+    static const QUMethod slot_13 = {"slotEditRunNow", 0, 0 };
+    static const QUMethod slot_14 = {"slotViewToolBar", 0, 0 };
+    static const QUMethod slot_15 = {"slotViewStatusBar", 0, 0 };
+    static const QUParameter param_slot_16[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"slotStatusMsg", 1, param_slot_16 };
+    static const QUParameter param_slot_17[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_17 = {"slotStatusHelpMsg", 1, param_slot_17 };
+    static const QUParameter param_slot_18[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_18 = {"slotEnableModificationButtons", 1, param_slot_18 };
+    static const QUParameter param_slot_19[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_19 = {"slotEnablePaste", 1, param_slot_19 };
+    static const QUParameter param_slot_20[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_20 = {"slotEnableRunNow", 1, param_slot_20 };
+    static const QUParameter param_slot_21[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_21 = {"slotEnableEnabled", 1, param_slot_21 };
+    static const QMetaData slot_tbl[] = {
+	{ "statusEditCallback(int)", &slot_0, QMetaData::Public },
+	{ "statusSettingsCallback(int)", &slot_1, QMetaData::Public },
+	{ "slotFileSave()", &slot_2, QMetaData::Public },
+	{ "slotFilePrint()", &slot_3, QMetaData::Public },
+	{ "slotFileQuit()", &slot_4, QMetaData::Public },
+	{ "slotEdit(const QPoint&)", &slot_5, QMetaData::Public },
+	{ "slotEditCut()", &slot_6, QMetaData::Public },
+	{ "slotEditCopy()", &slot_7, QMetaData::Public },
+	{ "slotEditPaste()", &slot_8, QMetaData::Public },
+	{ "slotEditNew()", &slot_9, QMetaData::Public },
+	{ "slotEditModify()", &slot_10, QMetaData::Public },
+	{ "slotEditDelete()", &slot_11, QMetaData::Public },
+	{ "slotEditEnable()", &slot_12, QMetaData::Public },
+	{ "slotEditRunNow()", &slot_13, QMetaData::Public },
+	{ "slotViewToolBar()", &slot_14, QMetaData::Public },
+	{ "slotViewStatusBar()", &slot_15, QMetaData::Public },
+	{ "slotStatusMsg(const QString&)", &slot_16, QMetaData::Public },
+	{ "slotStatusHelpMsg(const QString&)", &slot_17, QMetaData::Public },
+	{ "slotEnableModificationButtons(bool)", &slot_18, QMetaData::Public },
+	{ "slotEnablePaste(bool)", &slot_19, QMetaData::Public },
+	{ "slotEnableRunNow(bool)", &slot_20, QMetaData::Public },
+	{ "slotEnableEnabled(bool)", &slot_21, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KTApp", parentObject,
+	slot_tbl, 22,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KTApp.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KTApp::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KTApp" ) )
+	return this;
+    return KMainWindow::qt_cast( clname );
+}
+
+bool KTApp::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: statusEditCallback((int)static_QUType_int.get(_o+1)); break;
+    case 1: statusSettingsCallback((int)static_QUType_int.get(_o+1)); break;
+    case 2: slotFileSave(); break;
+    case 3: slotFilePrint(); break;
+    case 4: slotFileQuit(); break;
+    case 5: slotEdit((const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+1))); break;
+    case 6: slotEditCut(); break;
+    case 7: slotEditCopy(); break;
+    case 8: slotEditPaste(); break;
+    case 9: slotEditNew(); break;
+    case 10: slotEditModify(); break;
+    case 11: slotEditDelete(); break;
+    case 12: slotEditEnable(); break;
+    case 13: slotEditRunNow(); break;
+    case 14: slotViewToolBar(); break;
+    case 15: slotViewStatusBar(); break;
+    case 16: slotStatusMsg((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 17: slotStatusHelpMsg((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 18: slotEnableModificationButtons((bool)static_QUType_bool.get(_o+1)); break;
+    case 19: slotEnablePaste((bool)static_QUType_bool.get(_o+1)); break;
+    case 20: slotEnableRunNow((bool)static_QUType_bool.get(_o+1)); break;
+    case 21: slotEnableEnabled((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return KMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KTApp::qt_emit( int _id, QUObject* _o )
+{
+    return KMainWindow::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KTApp::qt_property( int id, int f, QVariant* v)
+{
+    return KMainWindow::qt_property( id, f, v);
+}
+
+bool KTApp::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

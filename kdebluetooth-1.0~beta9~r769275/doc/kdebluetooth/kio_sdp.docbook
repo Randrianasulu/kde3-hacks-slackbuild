@@ -1,0 +1,68 @@
+<sect1 id="components.kio_sdp">
+<title>Bluetooth/SDP-kioslaves: Search for devices and services</title>
+<para>
+The bluetooth- and sdp-kioslaves let you search for other bluetooth devices and 
+list and use their services with konqueror (or any other file manager that can
+use KDE's File IO framework).
+</para>
+<sect2>
+<title>Using the Bluetooth/SDP kioslves</title>
+<para>To search for devices, simply enter 
+<ulink url="bluetooth:/">bluetooth:/</ulink> with konqueror. You will immediately
+see an entry for your own system, then after a few seconds other 
+discoverable devices will appear one after another.
+</para>
+<para>
+You can also click the Bluetooth-Icon in the konqueror sidebar in 
+the "Services"-tab, next to the LAN- and Audio-CD-Browser.
+If you can't see the icon it might help to reset the sidebar
+with <guimenuitem>config-button -> Add new -> Rollback to system default</guimenuitem>
+</para>
+<para>
+For devices to appear, they must not only be turned on, but
+also be in discoverable mode. Otherwise you can connect to them when
+you know the address, but they won't respond to an inquiry.
+</para>
+<para>
+When you select a device you will get a listing of the services
+published by the device. If the service is supported by kdebluetooth,
+you can click it to launch the appropriate application. 
+Unless you've disabled it, konqueror will pop up the common file-open-dialog.
+In case the service is not known, you will get an open-with-dialog instead.
+</para>
+</sect2>
+
+<sect2>
+<title>
+Advanced topics
+</title>
+<para>
+If you know what you're doing, you can also open a given service
+(kbthandsfree for instance) with a bluetooth application that was not
+designed for that specific profile by right clicking the service
+icon and select open with. Every service, that deals with AT-commands
+over rfcomm can be opened with <command>kbtserialchat</command> for instance.
+</para>
+<para>
+You can also change the association between applications and (known) profiles
+in the same way you select which appliation shall open mpeg-movies or pdf files:
+kio_obex assigns mimetype to each listed profile and each client application
+of kdebluetooth is associated with the profiles it supoprts.
+Support for yet unrecognized porfiles can be added with special desktop
+files in <filename>$PREFIX/share/services</filename>, like 
+<filename>sdpmime-serial-port-profile.desktop</filename> for instance.
+</para>
+</sect2>
+
+<sect2>
+<title>Current limitations</title>
+<para>kio_sdp has no support for nested browse groups currently. This won't
+be hard to add, but wasn't need so far.</para>
+<para>
+You can not connect to services of your own system by simply clicking
+the "localhost" icon. This was added just as an easy way to see
+what services are published by your system.
+</para>
+</sect2>
+
+</sect1>

@@ -1,0 +1,194 @@
+/****************************************************************************
+** DigikamImagesPluginCore::RatioCropTool meta object code from reading C++ file 'ratiocroptool.h'
+**
+** Created: Wed Jun 14 10:03:11 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "ratiocroptool.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *DigikamImagesPluginCore::RatioCropTool::className() const
+{
+    return "DigikamImagesPluginCore::RatioCropTool";
+}
+
+QMetaObject *DigikamImagesPluginCore::RatioCropTool::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_DigikamImagesPluginCore__RatioCropTool( "DigikamImagesPluginCore::RatioCropTool", &DigikamImagesPluginCore::RatioCropTool::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString DigikamImagesPluginCore::RatioCropTool::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::RatioCropTool", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString DigikamImagesPluginCore::RatioCropTool::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DigikamImagesPluginCore::RatioCropTool", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* DigikamImagesPluginCore::RatioCropTool::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = Digikam::EditorTool::staticMetaObject();
+    static const QUMethod slot_0 = {"slotMaxAspectRatio", 0, 0 };
+    static const QUMethod slot_1 = {"slotResetSettings", 0, 0 };
+    static const QUMethod slot_2 = {"slotCenterWidth", 0, 0 };
+    static const QUMethod slot_3 = {"slotCenterHeight", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ "x", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"slotXChanged", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "y", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotYChanged", 1, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ "w", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotWidthChanged", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ "h", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"slotHeightChanged", 1, param_slot_7 };
+    static const QUMethod slot_8 = {"slotCustomRatioChanged", 0, 0 };
+    static const QUParameter param_slot_9[] = {
+	{ "a", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"slotCustomNRatioChanged", 1, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ "a", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slotCustomDRatioChanged", 1, param_slot_10 };
+    static const QUParameter param_slot_11[] = {
+	{ "a", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_11 = {"slotPreciseCropChanged", 1, param_slot_11 };
+    static const QUParameter param_slot_12[] = {
+	{ "o", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_12 = {"slotOrientChanged", 1, param_slot_12 };
+    static const QUParameter param_slot_13[] = {
+	{ "a", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_13 = {"slotAutoOrientChanged", 1, param_slot_13 };
+    static const QUParameter param_slot_14[] = {
+	{ "a", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_14 = {"slotRatioChanged", 1, param_slot_14 };
+    static const QUParameter param_slot_15[] = {
+	{ "rect", &static_QUType_varptr, "\x08", QUParameter::In }
+    };
+    static const QUMethod slot_15 = {"slotSelectionChanged", 1, param_slot_15 };
+    static const QUParameter param_slot_16[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"slotSelectionOrientationChanged", 1, param_slot_16 };
+    static const QUParameter param_slot_17[] = {
+	{ "t", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_17 = {"slotGuideTypeChanged", 1, param_slot_17 };
+    static const QUMethod slot_18 = {"slotGoldenGuideTypeChanged", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotMaxAspectRatio()", &slot_0, QMetaData::Private },
+	{ "slotResetSettings()", &slot_1, QMetaData::Private },
+	{ "slotCenterWidth()", &slot_2, QMetaData::Private },
+	{ "slotCenterHeight()", &slot_3, QMetaData::Private },
+	{ "slotXChanged(int)", &slot_4, QMetaData::Private },
+	{ "slotYChanged(int)", &slot_5, QMetaData::Private },
+	{ "slotWidthChanged(int)", &slot_6, QMetaData::Private },
+	{ "slotHeightChanged(int)", &slot_7, QMetaData::Private },
+	{ "slotCustomRatioChanged()", &slot_8, QMetaData::Private },
+	{ "slotCustomNRatioChanged(int)", &slot_9, QMetaData::Private },
+	{ "slotCustomDRatioChanged(int)", &slot_10, QMetaData::Private },
+	{ "slotPreciseCropChanged(bool)", &slot_11, QMetaData::Private },
+	{ "slotOrientChanged(int)", &slot_12, QMetaData::Private },
+	{ "slotAutoOrientChanged(bool)", &slot_13, QMetaData::Private },
+	{ "slotRatioChanged(int)", &slot_14, QMetaData::Private },
+	{ "slotSelectionChanged(QRect)", &slot_15, QMetaData::Private },
+	{ "slotSelectionOrientationChanged(int)", &slot_16, QMetaData::Private },
+	{ "slotGuideTypeChanged(int)", &slot_17, QMetaData::Private },
+	{ "slotGoldenGuideTypeChanged()", &slot_18, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"DigikamImagesPluginCore::RatioCropTool", parentObject,
+	slot_tbl, 19,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_DigikamImagesPluginCore__RatioCropTool.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* DigikamImagesPluginCore::RatioCropTool::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "DigikamImagesPluginCore::RatioCropTool" ) )
+	return this;
+    return EditorTool::qt_cast( clname );
+}
+
+bool DigikamImagesPluginCore::RatioCropTool::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotMaxAspectRatio(); break;
+    case 1: slotResetSettings(); break;
+    case 2: slotCenterWidth(); break;
+    case 3: slotCenterHeight(); break;
+    case 4: slotXChanged((int)static_QUType_int.get(_o+1)); break;
+    case 5: slotYChanged((int)static_QUType_int.get(_o+1)); break;
+    case 6: slotWidthChanged((int)static_QUType_int.get(_o+1)); break;
+    case 7: slotHeightChanged((int)static_QUType_int.get(_o+1)); break;
+    case 8: slotCustomRatioChanged(); break;
+    case 9: slotCustomNRatioChanged((int)static_QUType_int.get(_o+1)); break;
+    case 10: slotCustomDRatioChanged((int)static_QUType_int.get(_o+1)); break;
+    case 11: slotPreciseCropChanged((bool)static_QUType_bool.get(_o+1)); break;
+    case 12: slotOrientChanged((int)static_QUType_int.get(_o+1)); break;
+    case 13: slotAutoOrientChanged((bool)static_QUType_bool.get(_o+1)); break;
+    case 14: slotRatioChanged((int)static_QUType_int.get(_o+1)); break;
+    case 15: slotSelectionChanged((QRect)(*((QRect*)static_QUType_ptr.get(_o+1)))); break;
+    case 16: slotSelectionOrientationChanged((int)static_QUType_int.get(_o+1)); break;
+    case 17: slotGuideTypeChanged((int)static_QUType_int.get(_o+1)); break;
+    case 18: slotGoldenGuideTypeChanged(); break;
+    default:
+	return EditorTool::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool DigikamImagesPluginCore::RatioCropTool::qt_emit( int _id, QUObject* _o )
+{
+    return EditorTool::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool DigikamImagesPluginCore::RatioCropTool::qt_property( int id, int f, QVariant* v)
+{
+    return EditorTool::qt_property( id, f, v);
+}
+
+bool DigikamImagesPluginCore::RatioCropTool::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

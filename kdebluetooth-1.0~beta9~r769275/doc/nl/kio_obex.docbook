@@ -1,0 +1,78 @@
+<sect1 id="components.kio_obex">
+  <title
+>OBEX-kioslave: blader door mappen met behulp van Bluetooth</title>
+
+  <sect2>
+    <title
+>Algemeen</title>
+    <para
+>Het OBEX-protocol is ontworpen voor gebruik met mobiele apparaten. Als u wel eens een visitekaartje of adres van een mobiele telefoon naar een andere mobiele telefoon hebt &quot;gestraald&quot;, dan hebt u gebruik gemaakt van OBEX. Maar er zijn ook andere toepassingen voor het OBEX-protocol. In het bijzonder het bladerprotocol. Als het mobiele apparaat dit protocol kent, dan kunt u het bestandssysteem van uw mobiele apparaat doorbladeren en bestanden van en naar uw mobieltje sturen met behulp van dit programma. Ook synchronisatieprotocollen zoals IrMCsync of SyncML hebben OBEX-bindingen en kunnen via dit programma worden benaderd, ook al is er geen synchronisatie mogelijk in Konqueror.</para>
+    <para
+>Het OBEX-protocol kan worden gebruikt voor verschillende transporttypen. Het oorspronkelijk gemaakt voor IrDA (infrarood), maar er zijn ook bindingen beschikbaar voor Bluetooth, seriële lijnen en TCP/IP-verbindingen.</para>
+    <para
+>OBEX biedt ondersteuning voor 2-weg authenticatie. De eerste, meest bekende is authenticatie van de client bij de server. Zo kan de serverimplementatie de identiteit van de client verifiëren. Maar ook de client kan de identiteit van de server verifiëren. Hiervoor wordt een md5-controlesom gebruikt. Dit garandeert dat wachtwoorden nooit onbewerkt over het transportmedium worden verzonden.</para>
+  </sect2>
+
+  <sect2 id="url_format">
+    <title
+>Opmaak van het URL-adres</title>
+    <para
+>OBEX-bronnen worden benaderd door middel van URL-adressen. In dit adres is het protocolgedeelte uiteraard 'obex:'. Het pad-gedeelte bevat het pad op de server. Het host-gedeelte is wat complexer.</para>
+    <para
+>Voor servers die bereikbaar zijn over tcp/ip is het host-gedeelte als gebruikelijk. U kunt de hostnaam of het IP-adres van de serverhost gebruiken om contact te maken. Als de server op een niet-standard-poort draait (standaardpoort is 650), dan kunt u zoals gebruikelijk het poortnummer toevoegen. Voorbeeld: <userinput
+>obex://hostnaam:poort/pad</userinput
+></para>
+    <para
+>Voor IrDA en Bluetooth kunt u het hardware-adres van het apparaat gebruiken. Deze wordt gebruikt in de standaardnotitie met octale getallen, gescheiden door dubbele punten. Handig, maar wel lastig om te onthouden. Voorbeeld: <userinput
+>obex://[ef:01"23:45]/pad</userinput
+> of <userinput
+>obex://obex://[12:34:ef:01:23:45]/pad</userinput
+>.</para>
+    <para
+>Daarom is het mogelijk om hostaliasen te definiëren voor gebruik met het OBEX-protocol. Deze alsiassen kunt u opgeven in de configuratiemodule OBEX. U kunt een leesbare naam opzetten, apparaten opzoeken en ten slotte een hardware-adres toewijzen aan die naam. Ook apparaten die gebruik maken van seriële transprten zijn via deze aliassen te bereiken. Voor IrDA en Bluetoot zijn er handige voorgedefinieerde aliassen genaamd irda of bluetooth. Beide voeren een apparaatwaarneming uit en proberen verbinding te maken met het eerstgevonden apparaat.</para>
+    <para
+>Veel succes bij het bladeren op het mobieltje van uw buurman :)</para>
+  </sect2>
+
+  <sect2>
+    <title
+>Tips &amp; trucs</title>
+    <para
+>Net als met de meeste andere kioslaves kunt u rechtstreeks bestanden openen en opslaan op een Bluetooth-apparaat met kio_obex. Dus als u een boodschappenlijstje wilt maken, typ het met kwrite en sla het op op uw telefoon. </para>
+    <para
+>U kunt deze procedure een stuk sneller maken door in het navigatiepaneel van het bestandsopslag-dialoog een ingang voor bluetooth aan te maken. </para>
+  </sect2>
+  
+  <sect2>
+    <title
+>Beperkingen</title>
+
+    <sect3 id="obex_and_kde">
+      <title
+>OBEX en KDE</title>
+      <para
+>Omdat een kio-client niet het aantal slaves die dezelfde bestemming benaderen kan beheersen komt het vaak voor dat er meerdere slaves tegelijk actief zijn. Maar het OBEX-protocol, TCP/IP-transport uitgezonderd, laat maar 1 transportverbinding tot het apparaat toe. Dit leidt tot het mislukken van de verbindingsopbouw met foutmeldingen als "Apparaat of gegevensbron is bezet" of "Kon geen verbinding maken met de host". OBEX heeft hiervoor een gedeeltelijke oplossing. Als de dienst dit ondersteunt dan kunt u pakketten voor meerdere verbindingen versturen over 1 transportverbinding. Er is bij ons echter geen apparaat bekend die deze functionaliteit heeft. Bovendien heeft dit een aparte transportdaemon nodig voor elke bestemming. Zodra we merken dat er apparaten op de markt komen die deze functie aanleveren zullen we een dergelijke daemon implementeren.</para>
+      <para
+>Er is geen speciale manier om een bestand op het apparaat te hernoemen of te verplaatsen. Vandaar dat dit wordt gedaan door de data van en naar het apparaat te kopiëren. Dit is echter traag en vraagt om twee kioslaves, wat weer bovenstaand probleem kan opleveren.</para>
+    </sect3>
+
+    <sect3 id="devices">
+      <title
+>Apparaatcompatibiliteit</title>
+      <para
+>Omdat deze client een open standaard implementeert kunnen we aannemen dat er veel apparaten verkrijgbaar zijn waarbij dit goed werkt. Maar er zullen altijd uitzonderingen zijn.</para>
+      <para
+>De client is ontwikkeld met een SIEMENS S45i, gebruik makend van IrDA of het SIEMENS-specifieke BFB-protocol op een seriële lijn. Zoals u al verwachtte werkt dit.</para>
+      <para
+>De NOKIA 3650 bevat een fout in de firmware van enkele oudere versies. Mobieltjes met deze fout sturen ongeldige XML-bestanden voor maplijsten. Dit leidt tot het tonen van lege mappen. Deze fout is in ieder geval gevonden in firmware-versie 2.50. De firmware-versie 3.16 heeft de fout gerepareerd. Met dank aan Fred Schaettgen &lt;ch@ttgen.net&gt; voor het testen.</para>
+    </sect3>
+  </sect2>
+</sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

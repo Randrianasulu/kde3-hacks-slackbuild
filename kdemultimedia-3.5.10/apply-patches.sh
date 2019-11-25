@@ -1,0 +1,9 @@
+cat $CWD/mixer_oss4.diff | patch -p4 --verbose || exit 1
+cat $CWD/kdemultimedia_svn.diff | patch -p4 --verbose || exit 1
+cat $CWD/collectionlist.diff | patch -p4 --verbose || exit 1
+cat $CWD/python_and_automake.patch | patch -p0 --verbose || exit 1
+cat $CWD/new_threading_fix.patch | patch -p1 --verbose || exit 1
+cat $CWD/fix_artsd_exiting_on_xine_errors.patch | patch -p1 --verbose || exit 1
+cat $CWD/flv_support.patch | patch -p1 --verbose || exit 1
+cat $CWD/no_mmx.patch | patch -p0  --verbose || exit 1
+#cat $CWD/alsa-11-conf2.diff | patch -p0 --verbose || exit 1

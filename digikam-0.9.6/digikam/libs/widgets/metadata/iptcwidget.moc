@@ -1,0 +1,101 @@
+/****************************************************************************
+** Digikam::IptcWidget meta object code from reading C++ file 'iptcwidget.h'
+**
+** Created: Tue Jun 13 22:20:40 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "iptcwidget.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::IptcWidget::className() const
+{
+    return "Digikam::IptcWidget";
+}
+
+QMetaObject *Digikam::IptcWidget::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__IptcWidget( "Digikam::IptcWidget", &Digikam::IptcWidget::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::IptcWidget::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::IptcWidget", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::IptcWidget::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::IptcWidget", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::IptcWidget::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = MetadataWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"slotSaveMetadataToFile", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotSaveMetadataToFile()", &slot_0, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::IptcWidget", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__IptcWidget.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::IptcWidget::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::IptcWidget" ) )
+	return this;
+    return MetadataWidget::qt_cast( clname );
+}
+
+bool Digikam::IptcWidget::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotSaveMetadataToFile(); break;
+    default:
+	return MetadataWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Digikam::IptcWidget::qt_emit( int _id, QUObject* _o )
+{
+    return MetadataWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::IptcWidget::qt_property( int id, int f, QVariant* v)
+{
+    return MetadataWidget::qt_property( id, f, v);
+}
+
+bool Digikam::IptcWidget::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

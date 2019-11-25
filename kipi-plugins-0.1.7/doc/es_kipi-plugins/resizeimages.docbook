@@ -1,0 +1,77 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Redimensionado de imágenes</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier.gilles@free.fr</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>El complemento de redimensionado de imágenes de Kipi es una herramienta para redimensionar o adaptar las dimensiones de las imágenes. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introducción</title>
+
+<para
+>Este complemento puede utilizarse para redimensionar grupos de imágenes en una colección de imágenes. Utiliza el programa «convert» del paquete «ImageMagick». Puede aumentar o reducir el tamaño de las imágenes. Se han implementado 3 tipos de redimensionados: </para>
+
+<itemizedlist>
+<listitem
+><para
+><emphasis
+>Proporcional (1 dim.)</emphasis
+>: autoredimensionado estándar utilizando una dimensión. La anchura y la altura de las imágenes se seleccionarán automáticamente dependiendo de la orientación de la imagen. Se conserva la proporción de las imágenes.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proporcional (2 dim.)</emphasis
+>: autoredimensionado utilizando dos dimensiones. Se conserva la proporción de las imágenes. Por ejemplo, puede utilizarlo para adaptar el tamaño de las imágenes al tamaño de su pantalla. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>No proporcional</emphasis
+>: redimensionado no proporcional utilizando dos dimensiones. No se conserva la proporción de la imagen.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Preparar para imprimir</emphasis
+>: prepara la imagen para una impresión fotográfica. El usuario puede seleccionar la resolución de impresión y el tamaño del papel fotográfico. La imagen de destino se adaptará a las dimensiones correctas (incluyendo el tamaño del fondo, tamaño del margen y color del fondo).</para
+></listitem>
+</itemizedlist>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

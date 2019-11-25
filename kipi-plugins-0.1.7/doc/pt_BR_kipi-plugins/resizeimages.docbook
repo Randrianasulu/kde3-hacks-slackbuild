@@ -1,0 +1,79 @@
+<chapter id="resizeimages">
+<chapterinfo>
+
+<title
+>Redimensionar Imagens</title>
+
+<authorgroup>
+<author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+><email
+>caulier dot gilles at free.fr</email
+></address>
+</affiliation>
+</author>
+</authorgroup
+> <date
+>2004-06-20</date
+> <releaseinfo
+>1.00.00</releaseinfo
+> <abstract
+> <para
+>The Kipi resize images plugin is a tool for to add a border arround the images. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Introdução</title>
+
+<para
+>Este plugin pode ser utilizado para mudar de tamanho em lote imagens de um álbum. Utiliza o programa "convert" do pacote "ImageMagick". Você pode aumentar ou diminuir o tamanho das imagens. Foram implementados 3 tipos de mudança de tamanho: <itemizedlist>
+<listitem
+><para
+><emphasis
+>Proporcional (1 dimensão)</emphasis
+>: auto-mudança de tamanho utilizando uma dimensão. A largura ou altura das imagens será automaticamente selecionada dependendo da orientação das imagens. As proporções de tamanho das imagens são mantidas.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Proporcional (2 dimensões)</emphasis
+>: auto-mudança de tamanho utilizando duas dimensões. As proporções de tamanho das imagens são mantidas. Por exemplo, você pode utilizá-lo para adaptar o tamanho das imagens ao tamanho da sua tela. </para
+></listitem>
+<listitem
+><para
+><emphasis
+>Não-proporcional</emphasis
+>: mudança de tamanho não proporcional utilizando duas dimensões. As proporções de tamanho das imagens não são mantidas.</para
+></listitem>
+<listitem
+><para
+><emphasis
+>Preparar para imprimir</emphasis
+>: preparar a imagem para impressão fotográfica. O usuário pode escolher a resolução de impressão e o tamanho do papel fotográfico. As imagens alvo serão adaptadas para as dimensões adequadas (incluindo o tamanho do fundo, o tamanho de margens e a cor de fundo).</para
+></listitem>
+</itemizedlist>
+</para>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

@@ -1,0 +1,44 @@
+[Protocol]
+# The executable
+exec=kio_obex
+# This protocol name
+protocol=obex
+
+# input/output can be one of: filesystem, stream, none
+input=none
+output=filesystem
+maxInstances=1
+
+# capabilities for this protocol
+reading=true
+writing=true
+makedir=true
+deleting=true
+moving=false
+linking=false
+
+# What to list ... FIXME work out how ...
+listing=Name,Type,Size,Date,AccessDate,Access,Owner,Group
+
+# Can be source protocol
+source=false
+
+Description=A kioslave for OBEX connections
+Description[de]=Ein kioslave für OBEX-Verbindungen
+Description[es]=Un kioslave para las conexiones OBEX
+Description[et]=OBEX-ühenduste KIO-moodul
+Description[it]=Un kioslave per le connessioni OBEX
+Description[ja]=OBEX 接続のための kioslave
+Description[lt]=OBEX prisijungimų pagalbinė programa (kioslave)
+Description[nl]=Een kioslave voor OBEX-verbindingen
+Description[pt]=Um 'kioslave' para as ligações OBEX
+Description[pt_BR]=Um 'kioslave' para as ligações OBEX
+Description[sr]=A kioslave за OBEX везе
+Description[sr@Latn]=A kioslave за OBEX везе
+Description[sv]=En I/O-slav för OBEX-anslutningar
+Description[tg]=kioslave барои пайвастагиҳои OBEX
+Description[tr]=OBEX bağlantıları için bir kioslave
+Description[xx]=xxA kioslave for OBEX connectionsxx
+Icon=remote
+
+DocPath=kdebluetooth/components.kio_obex.html

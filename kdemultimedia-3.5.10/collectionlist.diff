@@ -1,0 +1,20 @@
+--- branches/KDE/3.5/kdemultimedia/juk/collectionlist.cpp	2005/10/04 00:43:46	467017
++++ branches/KDE/3.5/kdemultimedia/juk/collectionlist.cpp	2009/03/16 03:23:09	939942
+@@ -164,7 +164,7 @@
+ 	    if(item->file().fileInfo().exists())
+ 		item->repaint();
+ 	    else
+-		delete item;
++		clearItem(item);
+ 	}
+     }
+ 
+@@ -472,7 +472,7 @@
+ 	it != m_children.end();
+ 	++it)
+     {
+-	delete *it;
++        (*it)->playlist()->clearItem(*it);
+     }
+ 
+     CollectionList *l = CollectionList::instance();

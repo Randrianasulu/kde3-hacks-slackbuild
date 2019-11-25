@@ -1,0 +1,92 @@
+/****************************************************************************
+** Digikam::ImagePropertiesMetaDataTab meta object code from reading C++ file 'imagepropertiesmetadatatab.h'
+**
+** Created: Wed Jun 14 03:23:57 2017
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "imagepropertiesmetadatatab.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Digikam::ImagePropertiesMetaDataTab::className() const
+{
+    return "Digikam::ImagePropertiesMetaDataTab";
+}
+
+QMetaObject *Digikam::ImagePropertiesMetaDataTab::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Digikam__ImagePropertiesMetaDataTab( "Digikam::ImagePropertiesMetaDataTab", &Digikam::ImagePropertiesMetaDataTab::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Digikam::ImagePropertiesMetaDataTab::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesMetaDataTab", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Digikam::ImagePropertiesMetaDataTab::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Digikam::ImagePropertiesMetaDataTab", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Digikam::ImagePropertiesMetaDataTab::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = NavigateBarTab::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"Digikam::ImagePropertiesMetaDataTab", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Digikam__ImagePropertiesMetaDataTab.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Digikam::ImagePropertiesMetaDataTab::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Digikam::ImagePropertiesMetaDataTab" ) )
+	return this;
+    return NavigateBarTab::qt_cast( clname );
+}
+
+bool Digikam::ImagePropertiesMetaDataTab::qt_invoke( int _id, QUObject* _o )
+{
+    return NavigateBarTab::qt_invoke(_id,_o);
+}
+
+bool Digikam::ImagePropertiesMetaDataTab::qt_emit( int _id, QUObject* _o )
+{
+    return NavigateBarTab::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Digikam::ImagePropertiesMetaDataTab::qt_property( int id, int f, QVariant* v)
+{
+    return NavigateBarTab::qt_property( id, f, v);
+}
+
+bool Digikam::ImagePropertiesMetaDataTab::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,10 @@
+--- kdebindings-3.5.10/qtruby/rubylib/qtruby/configure.in.in.orig	2015-09-26 00:31:42.000000000 +0300
++++ kdebindings-3.5.10/qtruby/rubylib/qtruby/configure.in.in	2015-09-26 01:41:58.334398520 +0300
+@@ -4,6 +4,7 @@
+   DO_NOT_COMPILE="$DO_NOT_COMPILE qtruby"
+ else
+   AC_MSG_CHECKING(for ruby dirs)
++  RUBY_VERSION=`$PKGCONFIG ruby-1.9 --modversion 2>/dev/null`
+   RUBY_ARCHDIR=`$RUBY -rvendor-specific -r rbconfig -e 'printf("%s",Config::CONFIG@<:@"archdir"@:>@)'`
+   RUBY_SITEARCHDIR=`$RUBY -rvendor-specific -r rbconfig -e 'printf("%s",Config::CONFIG@<:@"sitearchdir"@:>@)'`
+   RUBY_SITEDIR=`$RUBY -rvendor-specific -r rbconfig -e 'printf("%s",Config::CONFIG@<:@"sitelibdir"@:>@)'`

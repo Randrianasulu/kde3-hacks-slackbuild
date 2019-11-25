@@ -1,0 +1,310 @@
+/****************************************************************************
+** TapeDriveNode meta object code from reading C++ file 'Node.h'
+**
+** Created: Sun Feb 1 00:52:57 2015
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "Node.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8d. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *TapeDriveNode::className() const
+{
+    return "TapeDriveNode";
+}
+
+QMetaObject *TapeDriveNode::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_TapeDriveNode( "TapeDriveNode", &TapeDriveNode::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString TapeDriveNode::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "TapeDriveNode", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString TapeDriveNode::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "TapeDriveNode", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* TapeDriveNode::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUMethod slot_0 = {"slotTapeMounted", 0, 0 };
+    static const QUMethod slot_1 = {"slotTapeUnmounted", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ "tape", &static_QUType_ptr, "Tape", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotTapeModified", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotTapeMounted()", &slot_0, QMetaData::Public },
+	{ "slotTapeUnmounted()", &slot_1, QMetaData::Public },
+	{ "slotTapeModified(Tape*)", &slot_2, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"TapeDriveNode", parentObject,
+	slot_tbl, 3,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_TapeDriveNode.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* TapeDriveNode::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "TapeDriveNode" ) )
+	return this;
+    if ( !qstrcmp( clname, "Node" ) )
+	return (Node*)this;
+    return QObject::qt_cast( clname );
+}
+
+bool TapeDriveNode::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotTapeMounted(); break;
+    case 1: slotTapeUnmounted(); break;
+    case 2: slotTapeModified((Tape*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool TapeDriveNode::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool TapeDriveNode::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool TapeDriveNode::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *TapeIndexRootNode::className() const
+{
+    return "TapeIndexRootNode";
+}
+
+QMetaObject *TapeIndexRootNode::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_TapeIndexRootNode( "TapeIndexRootNode", &TapeIndexRootNode::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString TapeIndexRootNode::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "TapeIndexRootNode", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString TapeIndexRootNode::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "TapeIndexRootNode", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* TapeIndexRootNode::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "tape", &static_QUType_ptr, "Tape", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotTapeAdded", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "tape", &static_QUType_ptr, "Tape", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotTapeRemoved", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "tape", &static_QUType_ptr, "Tape", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotTapeModified", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotTapeAdded(Tape*)", &slot_0, QMetaData::Public },
+	{ "slotTapeRemoved(Tape*)", &slot_1, QMetaData::Public },
+	{ "slotTapeModified(Tape*)", &slot_2, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"TapeIndexRootNode", parentObject,
+	slot_tbl, 3,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_TapeIndexRootNode.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* TapeIndexRootNode::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "TapeIndexRootNode" ) )
+	return this;
+    if ( !qstrcmp( clname, "Node" ) )
+	return (Node*)this;
+    return QObject::qt_cast( clname );
+}
+
+bool TapeIndexRootNode::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotTapeAdded((Tape*)static_QUType_ptr.get(_o+1)); break;
+    case 1: slotTapeRemoved((Tape*)static_QUType_ptr.get(_o+1)); break;
+    case 2: slotTapeModified((Tape*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool TapeIndexRootNode::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool TapeIndexRootNode::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool TapeIndexRootNode::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *BackupProfileRootNode::className() const
+{
+    return "BackupProfileRootNode";
+}
+
+QMetaObject *BackupProfileRootNode::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_BackupProfileRootNode( "BackupProfileRootNode", &BackupProfileRootNode::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString BackupProfileRootNode::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BackupProfileRootNode", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString BackupProfileRootNode::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BackupProfileRootNode", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* BackupProfileRootNode::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "backupProfile", &static_QUType_ptr, "BackupProfile", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"slotBackupProfileAdded", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "backupProfile", &static_QUType_ptr, "BackupProfile", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"slotBackupProfileRemoved", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "backupProfile", &static_QUType_ptr, "BackupProfile", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slotBackupProfileModified", 1, param_slot_2 };
+    static const QMetaData slot_tbl[] = {
+	{ "slotBackupProfileAdded(BackupProfile*)", &slot_0, QMetaData::Public },
+	{ "slotBackupProfileRemoved(BackupProfile*)", &slot_1, QMetaData::Public },
+	{ "slotBackupProfileModified(BackupProfile*)", &slot_2, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"BackupProfileRootNode", parentObject,
+	slot_tbl, 3,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_BackupProfileRootNode.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* BackupProfileRootNode::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "BackupProfileRootNode" ) )
+	return this;
+    if ( !qstrcmp( clname, "Node" ) )
+	return (Node*)this;
+    return QObject::qt_cast( clname );
+}
+
+bool BackupProfileRootNode::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slotBackupProfileAdded((BackupProfile*)static_QUType_ptr.get(_o+1)); break;
+    case 1: slotBackupProfileRemoved((BackupProfile*)static_QUType_ptr.get(_o+1)); break;
+    case 2: slotBackupProfileModified((BackupProfile*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool BackupProfileRootNode::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool BackupProfileRootNode::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool BackupProfileRootNode::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

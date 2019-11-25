@@ -1,0 +1,11 @@
+--- branches/KDE/3.5/kdenetwork/kopete/protocols/groupwise/gwaccount.cpp	2007/08/29 14:15:56	706131
++++ branches/KDE/3.5/kdenetwork/kopete/protocols/groupwise/gwaccount.cpp	2008/09/26 14:39:26	865056
+@@ -294,7 +294,7 @@
+ 	// not implemented: error
+ 	QObject::connect( m_clientStream, SIGNAL( error(int) ), SLOT( slotCSError(int) ) );
+ 
+-	m_client = new Client( this, CMSGPRES_GW_6_5 );
++	m_client = new Client( 0, CMSGPRES_GW_6_5 );
+ 
+ 	// NB these are prefixed with QObject:: to avoid any chance of a clash with our connect() methods.
+ 	// we connected successfully

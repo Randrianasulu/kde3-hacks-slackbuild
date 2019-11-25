@@ -1,0 +1,131 @@
+<sect1 id="components.othertools">
+<title
+>Возможности интеграции и утилиты командной строки</title>
+<para
+>В этом разделе перечислены небольшие утилиты и скрипты пакета  kdebluetooth.Большинство из них не используются самостоятельно, но могут быть вызваны скриптом или другой программой. </para>
+
+<sect2 id="components.othertools.kioclient">
+<title
+>kioclient: Скрипт для доступа к пакету KIO.</title>
+<para
+>Это небольшая утилита для доступа к обработчикам протоколов ввода-вывода из командной строки.По сути <command
+>kioclient</command
+> является программой общего назначения, но мне пришлось написать ее самому. </para>
+<para
+>С помощью <command
+>kioclient</command
+> можно копировать, просматривать и удалять файлы или каталоги, доступные через подсистемы ввода-вывода KDE. Можно напрямую копировать файлы с одного FTP сервера на другой через WebDAVили просматривать содержимое каталога по SSH через утилиту kio_fish. Или - что особенно привлекательно для нас - получить доступ к файлам мобильного телефона через kio_obex. Программа kioclient используется скриптом, поставляемым с kbluetoothd: <command
+>copy_images</command
+>. </para>
+<para
+>Параметры запуска программы можно увидеть в <command
+>kioclient --help</command
+>. Вот несколько примеров: <screen
+>$ kioclient cat http://www.kde.org | head -1
+&lt;?xml version="1.0" encoding="UTF-8"?>
+$ kioclient ls -s ftp://ftp.kde.org | head -4
+     4096 .
+     4096 ..
+     4096 bin
+     4096 dev
+$ kioclient ls bluetooth:/
+local system
+Fred's 6230
+Fred's 3650
+$ kioclient ls "sdp://Fred's 6230/"
+OBEX Object Push
+OBEX File Transfer
+Dial-up networking
+Nokia PC Suite
+COM 1
+Voice Gateway
+Audio Gateway
+SIM ACCESS
+.More Services
+$
+</screen>
+</para>
+<para
+>Несмотря на то, что kioclient - программа для командной строки, работает она только под KDE. Ее нельзя вызывать из crontab.Это ограничение не важно при работе с kbluetoothd. </para>
+
+</sect2>
+
+<sect2>
+<title
+>kbtsearch: Скрипт для поиска устройств.</title>
+<para
+>Также как <command
+>kioclient</command
+> или <command
+>kdialog</command
+>, kbtsearch является утилитой командной строки и может быть вызвана скриптом другой программы. Она предоставляет интерфейс командной строки диалогам поиска kdebluetooth: диалогу поиска устройств и диалогу поиска сервисов. </para>
+<para
+>Программа может использоваться для выбора устройства bluetooth или поиска определенного сервиса, предоставляемого одним из bluetooth устройств. Также как и другие программы, диалог выбора сервисов хранит список найденных устройств и список ранее найденных сервисов. Только что найденные сервисы добавляются в список. </para>
+<para
+>Для поиска устройства наберите команду <command
+>kbtsearch --device</command
+>. Когда пользователь выберет устройство или введет его адрес и нажмет кнопку <guibutton
+>OK</guibutton
+>, kbtsearch транслирует адрес устройства в поток stdout и вернет код 0.Если пользователь нажмет кнопку <guibutton
+>Отмена</guibutton
+>, программа завершится с кодом 1. <screen
+>$ if ADDR=$(kbtsearch --device) ;
+
+> then echo "Selected address: $ADDR.";
+
+> else echo "No address selected."; fi
+Selected address: 00:60:57:5C:E6:BD.
+$
+</screen>
+</para>
+<para
+>Программа позволяет идентифицировать устройство по заданому профилю Bluetooth. Выполните команду <command
+>kbtsearch --uuid &lt;Service-UUID
+></command
+>. Для получения полного списка значений UUID для стандартного профиля bluetooth см.<ulink url="https://www.bluetooth.org/foundry/assignnumb/document/service_discovery"
+>Bluetooth коды для (SDP)</ulink
+>. kbtsearch определяет некоторые псевдонимы часто используемых профилей. Для получения списка псевдонимов выполните команду: <command
+>kbtsearch --aliases</command
+>. </para>
+<para
+>После того как пользователь выберет сервис и нажмет кнопку <guibutton
+>OK</guibutton
+>, kbtsearch вернет 0 и напечатает строку адреса устройства, типа '[address] [rfcommchannel]'Эта информация предназаначена для ранее определенных сервисов канала rfcomm.В данный момент использовать L2CAP PSM невозможно. Дайте мне знать, если вам понадобится эта возможность.<screen>
+$ if RET=( $(kbtsearch --uuid=FAX) ) ; 
+
+> then ADDRESS=${RET[0]}; CHANNEL=${RET[1]}; 
+
+> echo "Selected addr=$ADDRESS, channel=$CHANNEL."; 
+
+> else echo "No service selected."; 
+
+> fi
+Selected addr=00:60:57:5C:E6:BD, channel=1.
+$
+</screen
+> Параметры запуска программы см. <command
+>kbtsearch --help</command
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>kbtfax: Отправка факсимильных сообщений из приложений KDE.</title>
+<para
+>Этот скрипт упрощает процесс отправки факсимильных сообщений из любого приложения KDE.Он зависит от <command
+>efax</command
+>, <command
+>kdeprintfax</command
+> и <command
+>kdesu</command
+> (обе части пакета kdebase) и утилиты <command
+>rfcomm</command
+> (пакет утилит BlueZ). </para>
+<para
+>Для отправки факсимильного сообщения через программу <command
+>kdeprintfax</command
+>укажите базовую программу отправки факсов для работы с kdeprintfax. По умолчанию выбран "EFax",для работы с другой программой выберите "Другая", найдите скрипт kbtfax из пакета kdebluetooth.Запустите скрипт. Вот и все. Вы можете дополнять и исправлять скрипт по вашему усмотрению. </para>
+</sect2>
+
+</sect1>
+

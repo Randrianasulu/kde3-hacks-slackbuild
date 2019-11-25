@@ -1,0 +1,312 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+ <!ENTITY kappname "&kipi;">
+ <!ENTITY % Dutch "INCLUDE"
+> <!-- change language only here -->
+ <!ENTITY doc-acquireimages SYSTEM "acquireimages.docbook">
+ <!ENTITY doc-borderimages SYSTEM "borderimages.docbook">
+ <!ENTITY doc-calendar SYSTEM "calendar.docbook">
+ <!ENTITY doc-cdarchiving SYSTEM "cdarchiving.docbook">
+ <!ENTITY doc-colorimages SYSTEM "colorimages.docbook">
+ <!ENTITY doc-convertimages SYSTEM "convertimages.docbook">
+ <!ENTITY doc-effectimages SYSTEM "effectimages.docbook">
+ <!ENTITY doc-filterimages SYSTEM "filterimages.docbook">
+ <!ENTITY doc-findduplicateimages SYSTEM "findduplicateimages.docbook">
+ <!ENTITY doc-galleryexport SYSTEM "galleryexport.docbook">
+ <!ENTITY doc-imagesgallery SYSTEM "imagesgallery.docbook">
+ <!ENTITY doc-jpeglossless SYSTEM "jpeglossless.docbook">
+ <!ENTITY doc-kameraklient SYSTEM "kameraklient.docbook">
+ <!ENTITY doc-mpegencoder SYSTEM "mpegencoder.docbook">
+ <!ENTITY doc-printwizard SYSTEM "printwizard.docbook">
+ <!ENTITY doc-rawconverter SYSTEM "rawconverter.docbook">
+ <!ENTITY doc-recompressimages SYSTEM "recompressimages.docbook">
+ <!ENTITY doc-renameimages SYSTEM "renameimages.docbook">
+ <!ENTITY doc-resizeimages SYSTEM "resizeimages.docbook">
+ <!ENTITY doc-sendimages SYSTEM "sendimages.docbook">
+ <!ENTITY doc-slideshow SYSTEM "slideshow.docbook">
+ <!ENTITY doc-timeadjust SYSTEM "timeadjust.docbook">
+ <!ENTITY doc-wallpaper SYSTEM "wallpaper.docbook">
+]>
+
+<book lang="&language;">
+<bookinfo>
+<title
+>Het handboek van Kipi-plugins</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_free.fr</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard_at_kulzer.net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+&Rinse.Devries; 
+
+<date
+>2005-xx-xx</date>
+<releaseinfo
+>0.1.0</releaseinfo
+> <!-- Used Kicker version here -->
+
+<copyright>
+<year
+>2004-2005</year>
+<holder
+>Het ontwikkelaarsteam van Kipi</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<abstract>
+<para
+>Dit is het handboek voor de plugins van Kipi, de &kde; Images Plugins Interface. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kipi</keyword>
+<keyword
+>Plugins</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inleiding tot Kipi-plugins</title>
+
+<para
+>Het mooie van de fotobeheerprogramma's als "digiKam", "KimDaBa", "Gwenview" en "ShowImg" is de eenvoudige wijze waarop ze met behulp van plugins kunnen worden uitgebreid. Met de plugins kunt u de afbeeldingen op diverse manieren manipuleren. Het voordeel van plugins is dat het veel eenvoudiger is om een bepaalde functionaliteit aan een programma toe te voegen door het schrijven van een kleine plugin, in van het wijzigen van de broncode van het programma zelf. Veel beschikbare plugins hebben een C++-broncode van niet meer dan 100-200 tekstregels. </para>
+
+<para
+>Kipi-plugins bieden aanvullende functionaliteit voor de verschillende afbeeldingbeheerprogramma's van KDE. Ze kunnen menu's en snelkoppelingen toevoegen, en de functionaliteit van de programma's uitbreiden. Vanuit de afbeeldingprogramma's kunt u zoveel of weinig Kipi-plugins installeren als u maar wilt. </para>
+
+<para
+>Meer informatie over het activeren en gebruiken van de plugins kunt u lezen in de handleiding van het betreffende programma dat u gebruikt. </para>
+
+<para
+>De plugins die in dit handboek zijn geïnstalleerd zijn: </para>
+
+<itemizedlist>
+<listitem>
+<para
+><link linkend="acquireimages"
+>Afbeeldingen ophalen</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="borderimages"
+>Afbeelding omranden</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="calendar"
+>Kalender</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="cdarchiving"
+>Cd-archievering</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="colorimages"
+>Kleuren verbeteren</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="convertimages"
+>Afbeeldingen converteren</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="effectimages"
+>Afbeeldingeffecten</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="filterimages"
+>Afbeeldingfilter</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="findduplicateimages"
+>Dubbele afbeeldingen zoeken</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="galleryexport"
+>Afbeeldingengalerij-export</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="imagesgallery"
+>Afbeeldingengalerij</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="jpeglossless"
+>JPEG-lossless</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="kameraklient"
+>Digitale camera</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="mpegencoder"
+>MPEG-encoder</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="printwizard"
+>Afdrukassistent</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="rawconverter"
+>Rauw-conversie</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="recompressimages"
+>Afbeeldingen opnieuw comprimeren</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="renameimages"
+>Afbeeldingen hernoemen</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="resizeimages"
+>Afbeeldinggrootte wijzigen</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="sendimages"
+>Afbeeldingen verzenden</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="slideshow"
+>Diashow</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="timeadjust"
+>Tijdbijstelling</link
+></para>
+</listitem>
+<listitem>
+<para
+><link linkend="wallpaper"
+>Achtergrondafbeelding</link
+></para>
+</listitem>
+</itemizedlist>
+</chapter>
+
+&doc-acquireimages;
+&doc-borderimages;
+&doc-calendar;
+&doc-cdarchiving;
+&doc-colorimages;
+&doc-convertimages;
+&doc-effectimages;
+&doc-filterimages;
+&doc-findduplicateimages;
+&doc-galleryexport;
+&doc-imagesgallery;
+&doc-jpeglossless;
+&doc-kameraklient;
+&doc-mpegencoder;
+&doc-printwizard;
+&doc-rawconverter;
+&doc-recompressimages;
+&doc-renameimages;
+&doc-resizeimages;
+&doc-sendimages;
+&doc-slideshow;
+&doc-timeadjust;
+&doc-wallpaper;
+
+<chapter id="credits">
+<title
+>Dankbetuigingen en licentie</title>
+
+<para
+>De copyrights voor elke plugin bevinden zich in bijhorend hoofdstuk. </para>
+
+<para
+>Alle afbeeldingen copyright 2004-2005 Gilles Caulier <email
+>
+>caulier_dot_gilles_at_free.fr</email
+> en Gerhard Kulzer <email
+>gerhard_at_kulzer.net</email
+>. </para>
+&underFDL; &underGPL; </chapter>
+
+<!--
+<appendix id="installation">
+<title
+>Installation</title>
+<para
+>To be written
+</para>
+</appendix>
+-->
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+End:
+-->

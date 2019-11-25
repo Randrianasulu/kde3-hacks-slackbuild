@@ -1,0 +1,29 @@
+<sect1 id="components.kbtserialchat">
+<title
+>Kbtserialchat: Ett mycket enkelt chattverktyg</title>
+<para
+>Verktyget Kbtserialchat är en mycket enkel chattklient och server. Dess huvudsakliga syfte är felsökning och att fungera som ett exempel på hur man skriver en Blåtandsserver som hanteras av Kbluetoothd och hur man skriver en klient som kan startas med <link linkend="components.kio_sdp"
+>SDP I/O-slaven</link
+>. </para>
+
+<sect2>
+<title
+>Använda chattverktyget</title>
+<para
+>Kbtserialchatt implementerar serieportprotokollet, så den visar alla enheter som tillhandahåller profilen Serieport när du startar det. Det omfattar andra datorer där KDE:s Blåtandsramverk är installerat, men också telefoner som stöder profilen. </para>
+<para
+>När du ansluter till en annan Kbtserialchat-server, dyker Kbtserialchat upp på den andra datorn och ni kan glatt skicka dumma textmeddelanden till varandra. Du kan också ansluta till serieporten på Blåtandstelefoner och skicka godtyckliga AT-kommandon. För att till exempel slå ett nummer, skriv <command
+>ATD&lt;nummer&gt;;</command
+>. </para>
+<para
+>Även om det inte verkar särskilt vettigt att ansluta Kbtserialchat till en serieport på en enhet som använder det för att utbyta binärdata, kan du inte bara använda det för att ansluta till serieporttjänster, utan till varje tjänst som är baserad på Rfcomm, som handsfree- eller hörlursprofilen. Eftersom dessa tjänster inte listas i dialogrutan vid start, kan du använda följande trick: Bläddra till tjänsten för en enhet med SDP I/O-slaven (med webbadressen <ulink url="sdp:/"
+>sdp</ulink
+>), och sedan istället för att helt enkelt klicka på tjänsten, högerklicka på den och välj därefter <guimenuitem
+>Öppna med...</guimenuitem
+>. Skriv in <command
+>kbtserialchat</command
+> i dialogrutan, tryck på returtangenten - och du är ansluten. </para>
+</sect2>
+
+</sect1>
+

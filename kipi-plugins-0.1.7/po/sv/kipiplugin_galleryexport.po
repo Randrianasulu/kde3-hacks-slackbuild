@@ -1,0 +1,250 @@
+# translation of kipiplugin_galleryexport.po to Swedish
+#
+# Stefan Asserhäll <stefan.asserhall@comhem.se>, 2004, 2005, 2006, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kipiplugin_galleryexport\n"
+"POT-Creation-Date: 2008-02-25 19:12+0100\n"
+"PO-Revision-Date: 2008-01-17 20:20+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Stefan Asserhäll"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "stefan.asserhall@comhem.se"
+
+#: galleries.cpp:237
+msgid "Gallery Name"
+msgstr "Gallerinamn"
+
+#: galleries.cpp:238
+msgid "URL"
+msgstr "Webbadress"
+
+#: galleries.cpp:239
+msgid "User"
+msgstr "Användare"
+
+#: galleryconfig.cpp:104
+msgid "Name:"
+msgstr "Namn:"
+
+#: galleryconfig.cpp:108
+msgid "URL:"
+msgstr "Webbadress:"
+
+#: galleryconfig.cpp:112
+msgid "Username:"
+msgstr "Användarnamn:"
+
+#: galleryconfig.cpp:116
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: galleryconfig.cpp:120
+msgid "Use &Gallery 2"
+msgstr "Använd &galleri 2"
+
+#: gallerylist.cpp:50
+msgid "Remote Galleries"
+msgstr "Fjärrgallerier"
+
+#: gallerylist.cpp:142
+msgid "New Remote Gallery"
+msgstr "Nytt fjärrgalleri"
+
+#: gallerylist.cpp:162 gallerylist.cpp:183
+msgid "No gallery selected!"
+msgstr "Något galleri har inte valts."
+
+#: gallerylist.cpp:167
+msgid "Edit Remote Gallery"
+msgstr "Redigera fjärrgalleri"
+
+#: gallerylist.cpp:189
+msgid ""
+"Are you sure you want to remove this gallery? All synchronisaton settings will "
+"be lost. You cannot undo this action."
+msgstr ""
+"Är du säker på att du vill ta bort galleriet? Alla synkroniseringsinställningar "
+"kommer att gå förlorade. Du kan inte ångra åtgärden."
+
+#: gallerylist.cpp:192
+msgid "Remove Remote Gallery"
+msgstr "Ta bort fjärrgalleri"
+
+#: gallerytalker.cpp:371
+msgid "Gallery URL probably incorrect"
+msgstr "Galleriwebbadressen är troligen felaktig"
+
+#: gallerytalker.cpp:377
+msgid "Incorrect username or password specified"
+msgstr "Felaktigt användarnamn eller lösenord angivet"
+
+#: gallerytalker.cpp:472 gallerytalker.cpp:551 gallerytalker.cpp:608
+#: gallerytalker.cpp:664
+msgid "Invalid response received from remote Gallery"
+msgstr "Ogiltigt svar mottaget från fjärrgalleri"
+
+#: gallerytalker.cpp:478
+msgid "Failed to list albums"
+msgstr "Misslyckades lista album"
+
+#: gallerytalker.cpp:557
+msgid "Failed to list photos"
+msgstr "Misslyckades lista foton"
+
+#: gallerytalker.cpp:614
+msgid "Failed to create new album"
+msgstr "Misslyckades skapa nytt album"
+
+#: gallerytalker.cpp:670
+msgid "Failed to upload photo"
+msgstr "Misslyckades ladda upp foto"
+
+#: gallerywidget.cpp:71 gallerywidget.cpp:146
+msgid "Albums"
+msgstr "Album"
+
+#: gallerywidget.cpp:99
+msgid "Override Default Options"
+msgstr "Överskrid förvalda alternativ"
+
+#: gallerywidget.cpp:108
+msgid "Comment sets Title"
+msgstr "Kommentar anger titel"
+
+#: gallerywidget.cpp:112
+msgid "Comment sets Description"
+msgstr "Kommentar anger beskrivning"
+
+#: gallerywidget.cpp:116
+msgid "Resize photos before uploading"
+msgstr "Ändra storlek på foton innan uppladdning"
+
+#: gallerywidget.cpp:124
+msgid "Maximum dimension:"
+msgstr "Maximal dimension:"
+
+#: gallerywidget.cpp:145
+msgid "<h2>Gallery Export</h2>"
+msgstr "<h2>Galleriexport</h2>"
+
+#: gallerywidget.cpp:147
+msgid "&New Album"
+msgstr "&Nytt album"
+
+#: gallerywidget.cpp:148
+msgid "&Add Photos"
+msgstr "&Lägg till foton"
+
+#: gallerywindow.cpp:72 gallerywindow.cpp:81
+msgid "Gallery Export"
+msgstr "Galleriexport"
+
+#: gallerywindow.cpp:84
+msgid "A Kipi plugin to export image collection to remote Gallery server."
+msgstr ""
+"Ett KIPI-insticksprogram för att exportera bildsamlingen till en galleriserver."
+
+#: gallerywindow.cpp:87
+msgid "Author"
+msgstr "Upphovsman"
+
+#: gallerywindow.cpp:90
+msgid "Maintainer"
+msgstr "Utvecklare"
+
+#: gallerywindow.cpp:96
+msgid "Plugin Handbook"
+msgstr "Handbok för insticksprogrammet"
+
+#: gallerywindow.cpp:243
+msgid "Failed to login into remote gallery. "
+msgstr "Misslyckades logga in på fjärrgalleri"
+
+#: gallerywindow.cpp:245
+msgid ""
+"\n"
+"Do you want to try again?"
+msgstr ""
+"\n"
+"Vill du försöka igen?"
+
+#: gallerywindow.cpp:531
+#, c-format
+msgid "Sorry, these characters are not allowed in album name: %1"
+msgstr "Tyvärr är följande tecken inte tillåtna i albumnamn: %1"
+
+#: gallerywindow.cpp:603
+msgid "Uploading file %1 "
+msgstr "Laddar upp filen %1 "
+
+#: gallerywindow.cpp:620
+msgid "Failed to upload photo into remote gallery. "
+msgstr "Misslyckades ladda upp foto till fjärrgalleri. "
+
+#: gallerywindow.cpp:623
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"Vill du fortsätta?"
+
+#: plugin_galleryexport.cpp:77
+msgid "Remote Gallery Sync..."
+msgstr "Synkronisera med fjärrgalleri..."
+
+#: plugin_galleryexport.cpp:86
+msgid "Remote Galleries..."
+msgstr "Fjärrgallerier..."
+
+#. i18n: file galleryalbumdialog.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "MyDialog"
+msgstr "Mindialogruta"
+
+#. i18n: file galleryalbumdialog.ui line 36
+#: rc.cpp:6
+#, no-c-format
+msgid "<h3>Enter New Album Name</h3>"
+msgstr "<h3>Skriv in nytt albumnamn</h3>"
+
+#. i18n: file galleryalbumdialog.ui line 66
+#: rc.cpp:9
+#, no-c-format
+msgid "Title (optional):"
+msgstr "Titel (valfri):"
+
+#. i18n: file galleryalbumdialog.ui line 74
+#: rc.cpp:12
+#, no-c-format
+msgid "Name (optional):"
+msgstr "Namn (valfritt):"
+
+#. i18n: file galleryalbumdialog.ui line 82
+#: rc.cpp:15
+#, no-c-format
+msgid "Caption (optional):"
+msgstr "Rubrik (valfri):"
+
+#: galleries.h:37
+msgid "New Gallery"
+msgstr "Nytt galleri"
+
+#~ msgid "Gallery Export Handbook"
+#~ msgstr "Handbok Galleriexport"

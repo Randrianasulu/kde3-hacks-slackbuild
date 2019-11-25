@@ -1,0 +1,11 @@
+--- /tmp/kdebase-3.5.10/kcontrol/arts/arts.cpp	2007-10-08 11:51:15.000000000 +0200
++++ /tmp/kdebase-3.5.10/kcontrol/arts/arts.cpp.new	2010-10-22 12:31:49.000000000 +0200
+@@ -214,7 +214,7 @@
+ 	config = new KConfig("kcmartsrc");
+ 	load();
+ 
+-	suspendTime->setRange( 0, 999, 1, true );
++	suspendTime->setRange( 1, 999, 1, true );
+ 
+ 	connect(startServer,SIGNAL(clicked()),this,SLOT(slotChanged()));
+ 	connect(networkTransparent,SIGNAL(clicked()),this,SLOT(slotChanged()));

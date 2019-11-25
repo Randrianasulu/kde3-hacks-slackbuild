@@ -1,0 +1,160 @@
+<chapter id="faq">
+<title
+>Vragen en antwoorden</title>
+<qandaset defaultlabel="qanda">
+
+<qandaentry>
+<question>
+<para
+>Mijn probleem staat niet in deze lijst. Waar kan ik hulp krijgen?</para>
+</question>
+<answer>
+<para
+>We hebben een <ulink url="http://liste.ferrara.linux.it/listinfo/kde-bluetooth"
+>mailinglist</ulink
+> waar u uw vragen en opmerkingen naar kunt sturen. Kijk eerst in het archief voordat u iets post, maar aarzel niet om ons een vraag te stellen als u niks bruikbaars in het archief hebt gevonden.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Niets werkt, zelfs het commandopromptprogramma <command
+>hcitool inq</command
+> kan niets vinden.</para>
+</question>
+<answer>
+<para
+>kdebluetooth is afhankelijk van een werkende bluetooth-installatie. Als hier uw probleem ligt, dan kunt u op onze mailinglist om hulp vragen, maar beter is het om dergelijke vragen te stellen op de mailinglist van <ulink url="http://www.bluez.org"
+>BlueZ</ulink
+>, het achterliggende bluetooth-framework van kdebluetooth. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Bestaat kdebluetooth niet meer? Er zijn geen wijzigingen meer bij Sourceforge CVS.</para>
+</question>
+<answer>
+<para
+>kdebluetooth is verhuisd naar<ulink url="http://websvn.kde.org/trunk/extragear/pim/kdebluetooth/"
+>KDE Extragear</ulink
+>. Zie ook de <ulink url="http://extragear.kde.org"
+>website van kde-extragear</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Mijn telefoon vraagt me om een PIN/wachtwoord, maar waar kan ik die op mijn computer invoeren?</para>
+</question>
+<answer>
+<para
+>BlueZ zou automatisch een venster moeten openen waarin u een PIN kunt invoeren. Hiervoor dient u de optie <programlisting
+>security user</programlisting
+> te plaatsen in het bestand <filename
+>/etc/bluetooth/hcid.conf</filename
+> onder de sectie <programlisting
+># Security Manager mode</programlisting
+>. Deactiveer de huidige optie onder die sectie door er een hekje (#) voor te plaatsen. Verder kan het gebeuren dat het programma <command
+>bluepin</command
+> van BlueZ niet werkt. Gebruik daarom liever onze KDE-vervanger voor dit programma genaamd <command
+>kbluepin</command
+>. Bij de sectie <programlisting
+># PIN helper</programlisting
+> zet u een hekje voor de huidige pin_helper en zet daar een nieuwe regel die verwijst naar de pin_helper van kdebluetooth: <programlisting
+>pin_helper /opt/kde3/lib/kdebluetooth/kbluepin;</programlisting
+>. Vervang <filename
+>/opt/kde3</filename
+> door de hoofdmap van uw &kde;-installatie. Herstart vervolgens het BlueZ-programma <filename
+>hcid</filename
+> om uw wijzigingen te bevestigen. </para>
+<para
+>Dit is eigenlijk een BlueZ-probleem en heeft niets met het KDE Bluetooth Framework te maken zolang u geen gebruik maakt van kbluepin. Ik wil hier een verwijzing plaatsen naar de bijhorende documentatie van BlueZ over het afhandelen van PIN-codes, maar kan tot nu toe geen vinden. Hints zijn welkom :) </para>
+<para
+>Als u continu problemen ondervindt met kbluepin, bluepin of een andere pin_helper, bekijk dan uw logbestanden (<filename
+>/var/log/syslog</filename
+> of vergelijkbaar). </para>
+<para
+>Als u niet bekend bent met bluetooth, lees dan <link linkend="concepts.pairing"
+>de grondbeginselen over paarkoppelingen</link
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik probeer een paarkoppeling met mijn telefoon te maken, maar Kbluetoothd zegt "Paarkoppeling niet toegestaan". </para>
+</question>
+<answer>
+<para
+>Als de pin_helper voor hcid correct is ingesteld, dan zou er een dialoogvenster geopend moeten worden die u vraagt om de PIN-code/wachtwoordcode die u op uw telefoon hebt ingevoerd. Als u op "Annuleren" hebt geklikt, of als de pin_helper om welke reden dan ook niet is gevonden of niet kon worden gestart, dan geeft kbluetoothd een waarschuwing. Controleer uw systeemlogbestanden om uit te vinden waarom hcid de pin_helper niet kon starten. </para
+></answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Ik wil een dienst die wordt aangeboden door kdebluetooth gebruiken, maar mijn clientapparaat wil op een ander kanaal verbinden dan het kanaal dat kdebluetoothd gebruikt. </para>
+</question>
+<answer>
+<para
+>Normaliter horen bluetooth-diensten geen gebruik te maken van vaste kanaalnummers, gebruik in plaats daarvan de SDP-database om het juiste kanaal te vinden. Maar als u dat echt nodig hebt, dan kunt u het bijhorende .desktop-bestand kopiëren van <filename
+>$KDEDIR/share/services</filename
+> naar <filename
+>$KDEHOME/share/services</filename
+> en het kanaalnummer veranderen. Dit zal de globale instellingen overschrijven na een herstart van kde.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>IK gebruik meerdere dongles (bluetooth-adapters) op dezelfde PC. Hoe kan ik opgeven welke ik wil gebruiken? </para>
+</question>
+<answer>
+<para
+>Sommige hulpprogramma's hebben een commandoregeloptie waarmee u de standaard bluetooth-adapter kunt wijzigen (bijv. '--hcidevice hci1'). Als alternatief kunt u ook de omgevingsvariabele HCI_DEVICE gebruiken. Deze laatste werkt waarschijnlijk ook voor onze hulpprogramma's die geen commandoregeloptie hebben. Onthoud dat kbluetoothd vooralsnog zelf niet goed samenwerkt met meerdere adapters. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Het commando ./configure kan mijn kdelibs/qt/... niet vinden.</para>
+</question>
+<answer>
+<para
+>Verzeker u ervan dat u ook de development-pakketten voor de betreffende bibliotheek hebt geïnstalleerd.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Ik krijg een foutmelding als: "File generated with too recent version of Qt Designer (3.2 vs. 3.1.x)"</para>
+</question>
+<answer>
+<para
+>Qt Designer bewaart zijn versienummer in de ui-bestanden als u eentje opslaat. Dit zorgt voor foutmeldingen als u kdebluetooth wilt compileren met een oudere versie van Qt. U kunt waarschijnlijk veilig de versie van 3.2 naar 3.1 veranderen. Dit kan eenvoudig worden gedaan door het script downgrade_ui uit te voeren als we per ongeluk enkele wijzigingen hebben doorgevoerd zonder dat we de versienummers hebben teruggezet.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>I kan kbluetoothd starten, maar het pictogram (K-Bluetooth-logo) wordt niet gebruikt. In plaats daarvan zie ik een wit document als pictogram.</para>
+</question>
+<answer>
+<para
+>Dit betekent normaliter dat u kdebluetooth op een locatie hebt geïnstalleerd waar KDE niet zoekt naar programmabestanden. Het toevoegen van kbluetoothd aan uw zoekpad ($PATH) volstaat niet. U dient een --prefix te gebruiken tijdens ./configure zodat het programma wordt geïnstalleerd op een locatie die KDE kent. Het commando 'kde-config --path icon' vertelt u waar KDE zoekt naar pictogrammen. U kunt de prefixes die KDE gebruikt instellen met de omgevingsvariabele KDEDIRS.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+
+</chapter>
